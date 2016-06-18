@@ -5,6 +5,8 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Simple markers</title>
+    <script src="/dist/semantic.min.js" type="text/javascript"></script>
+    <link href="/dist/semantic.min.css" rel="stylesheet" type="text/css" />
     <style>
       html, body {
         height: 100%;
@@ -17,7 +19,17 @@
     </style>
   </head>
   <body>
-    <div id="map"></div>
+    <div class="ui right sidebar vertical menu" style="width:30%" >
+      <a class="item" id="nam">
+      </a>
+      <a class="item" id="url">
+      </a>
+      <a class="item" id="words">
+      </a>
+    </div>
+    <div class="pusher" style="height:100%;width:100%;">
+      <div id="map"></div>
+    </div>
     <script>
 
       function initMap() {
@@ -27,37 +39,26 @@
           zoom: 9,
           center: myLatLng
         });
-        var markers=[];
-        var contents = [];
-        var infowindows = [];
-        var prev_infowindow =false; 
-        $.getJSON("ten.json", function(data) {
+        $.getJSON("final_output.json", function(data) {
                   for(var i in data){
-
-                    markers[i] = new google.maps.Marker({
-                        position: new google.maps.LatLng(parseFloat(data[i][1]), parseFloat(data[i][2])),
+                    markers = new google.maps.Marker({
+                        position: new google.maps.LatLng(parseFloat(data[i][2]), parseFloat(data[i][3])),
                         map: map,
-                        title: data[i][0]
+                        title: data[i][1]
                     });
-
-                    markers[i].index = i; //add index property
-                    contents[i] = "<span style='word-wrap: break-word;white-space: -moz-pre-wrap;white-space: pre-wrap;'>"+data[i].slice(3).join()+"</span>";
-
-
-                    infowindows[i] = new google.maps.InfoWindow({
-                        content: contents[i],
-                        maxWidth: 3000
-                    });
-
-                    google.maps.event.addListener(markers[i], 'click', function() {
-                        if( prev_infowindow ) {
-                           prev_infowindow.close();
+                    google.maps.event.addListener(markers, 'click', (function(marker, i) {
+                      return function() {
+                        $('#nam').html('<h4>Name of the Company</h4><br>'+data[i][1]);
+                        $('#url').html('<h4>Website of the Company</h4><br>'+data[i][0]);
+                        $('#words').html('<h4>Tech-terms in the Website</h4>');
+                        tmp = data[i].slice(4);
+                        for(var j in tmp)
+                        {
+                          $('#words').append('<br>'+tmp[j]);
                         }
-                        prev_infowindow = infowindows[this.index];
-
-                        infowindows[this.index].open(map,markers[this.index]);
-                        map.panTo(markers[this.index].getPosition());
-                    });
+                        $('.ui.sidebar').sidebar({dimPage: false,transition:"overlay"}).sidebar('toggle');
+                    }
+                })(markers, i));
               }
           });
       }
