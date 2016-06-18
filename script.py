@@ -140,7 +140,7 @@ jsonfile.seek(-1, os.SEEK_END)
 jsonfile.truncate()
 jsonfile.write(']')
 
-------------------------------------------------
+#------------------------------------------------
 
 http = httplib2.Http(".cache", disable_ssl_certificate_validation=True)
 
