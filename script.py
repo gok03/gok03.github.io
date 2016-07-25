@@ -8,7 +8,6 @@ from lxml.etree import tostring
 from urlparse import urljoin
 from  more_itertools import unique_everseen
 from BeautifulSoup import BeautifulSoup, SoupStrainer
-from django.utils.encoding import smart_str
 import os
 import webbrowser
 
