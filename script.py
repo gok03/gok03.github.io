@@ -17,6 +17,7 @@ states_count = {"albany":12,"albuquerque":12,"atlanta":75,"austin":33,"baltimore
 
 for z in states_count:
     done = 0
+    print z,states_count[z]
     try:
         #---------------------------------------------------------------
         def func1():
@@ -30,7 +31,7 @@ for z in states_count:
             jsonfile1.write('[')
             jsonfile2.write('[')
             for i in range(1,states_count[z]):
-                print str(i)+'/52 - 1/7'
+                print str(i)+'/'+str(states_count[z])+' - 1/7'
                 connection = urllib.urlopen(ul+str(i))
                 dom=lxml.html.fromstring(connection.read())
                 for link in dom.xpath('//a/@href'):
