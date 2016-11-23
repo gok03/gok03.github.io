@@ -1,0 +1,2645 @@
+status: 200
+content-length: 148266
+content-location: http://www.intercerve.com/products/event-manager/sql-server-job-schedule-alert-management
+x-aspnet-version: 4.0.30319
+content-type: text/html; charset=utf-8
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+-content-encoding: gzip
+link: <http://www.intercerve.com/products/event-manager/sql-server-job-schedule-alert-management>;
+ rel="canonical"
+x-ua-compatible: IE=edge
+cache-control: private
+date: Sun, 18 Sep 2016 07:18:43 GMT
+x-powered-by: ASP.NET
+x-aspnetmvc-version: 5.2
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SQL Server Alerts | SQL Server Job Schedule | SQL Sentry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SQL Sentry Event Manager is the ultimate scheduling, alerting and response system for optimizing schedule performance of database servers across your enterprise.">
+    <meta name="author" content="">
+    <meta name="google-site-verification" content="MCOweOuzpPw-CCCkKSTMD77CWWWf4G0kfGRHNFDFttA" />
+
+    <!-- styles -->
+<link href="/css/bootstrap-transition-1?v=Hme-WLD4_tx-wvP4-qLrUIWmVINtlEj8_xiMLhkcq5o1" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/Content/layerslider/css/layerslider.css" />
+
+    <!-- scripts -->
+    <script src="/bundles/jquery?v=5YpcwJa0Dea15P6JFrXCmFOSkBKSWlYNJ0UXd18mXwg1"></script>
+
+    <script src="/bundles/jqueryui?v=y70dr8un4Tw2XdANU0qWa2Z_eettrMqLL_h29RBuTqA1"></script>
+
+    <script src="/bundles/jquery/cookie?v=GFd3l2o3uqVrxMMZAu4N1o-KVvQz490WveJnSOC0U401"></script>
+<script src="/bundles/jqueryval?v=dt3XaqpEn4rFA9MkDy2QmR-5tTdUVpSHTuOr3x-Sw981"></script>
+<script src="/bundles/plugins?v=DajbQb4kFurhnvdzeDl4Dg5zA5bcvxkCjAvVIBmmPRQ1"></script>
+
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.sqlsentry.com/SqlSentry/1.0.0/fbpixel.min.js"></script>
+<script>(window.fbpixel)||document.write('<script src="/bundles/ss/facebookPixel"><\/script>');</script>
+
+    <script src="/bundles/ss/twitterPixel?v=XRwXS-6NSfHXrvIG7oVvogGWy04raiyB3yqV85h_fXM1"></script>
+
+
+    
+    <script type="text/javascript" src="/Scripts/Plugins/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="/Scripts/Plugins/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="/Scripts/Plugins/supersized.3.2.7.min.js"></script>
+    <script type="text/javascript" src="/Scripts/Plugins/supersized.shutter.min.js"></script>
+    <script type="text/javascript" src="/Scripts/Plugins/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="/Scripts/SQLSentry/OverlayMessage.js"></script>
+
+    <script type="text/javascript" language="javascript" src="/scripts/lytebox.js"></script>
+    <script src="/bundle/flexslider?v=nsU42Af3jyjB9eFVFs-UKu1ULBtHxpNkkkKQItr9wik1"></script>
+
+    <script src="/bundle/parallax?v=w7wLHdH18tvndePPFzZZ5-fU3xbUwaZ4l9CVfc7IVeU1"></script>
+
+
+
+    <!-- External libraries: jQuery & GreenSock -->
+    <!--i think this is NOT needed because we aready include j 1.8.3-->
+    
+    <script src="/content/layerslider/js/greensock.js" type="text/javascript"></script>
+
+    <!-- LayerSlider script files -->
+    <script src="/content/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="/content/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+
+
+
+
+
+    
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- fav and touch icons -->
+    <link rel="shortcut icon" href="/Images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="/Images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Images/favicon/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Images/favicon/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Images/favicon/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Images/favicon/apple-touch-icon-144x144-precomposed.png">
+
+
+    <!-- Google Web Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <!-- always run -->
+    <script type="text/javascript">
+        var isMobile = false;
+
+        if (navigator.userAgent.match(/Android/i) ||
+            navigator.userAgent.match(/webOS/i) ||
+            navigator.userAgent.match(/iPhone/i) ||
+            navigator.userAgent.match(/iPad/i) ||
+            navigator.userAgent.match(/iPod/i) ||
+            navigator.userAgent.match(/BlackBerry/i)) {
+
+            isMobile = true;
+        }
+
+        /*iOS5 fixed-menu fix*/
+        var iOS5 = false;
+
+        if (navigator.userAgent.match(/OS 5(_\d)+ like Mac OS X/i)) {
+            iOS5 = true;
+        }
+    </script>
+
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+        }({
+            instrumentationKey: "019513f1-f7b1-4f55-8c79-b5b02df10903" // "0b2c6850-73c2-4248-a469-3e75195a1243"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+
+    <script type="text/javascript">
+        var _urq;
+        if (!Boolean(window.chrome)) {
+            _urq = _urq || [];
+            _urq.push(['initSite', '3c9fce76-a531-4e29-8ef1-15add59d40a6']);
+            (function () {
+                var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
+                ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
+            })();
+        }
+    </script>
+</head>
+<body>
+    <!--GA init script-->
+    <script type="text/javascript" src="/scripts/initUA.js"></script>
+
+    <header>
+<div class="utility">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Start Utility Menu -->
+                <ul>
+                    <li><a class="lytebox" data-lyte-options="height:695 width:1000 forceCloseClick:true beforeStart:reveal_lock afterEnd:reveal_unlock" href="/search">Search</a></li>
+
+                            <li><a class="my-account-login" href="/myaccount/login">My Account</a></li>
+
+
+                    <li><a href="#" data-toggle="modal" data-target="#contact-us-quote-form">Get a Quote</a></li>
+                    <li style="margin: 5px 0 0 0; ">
+                        <a target="_blank" href="https://cloud.sqlsentry.com">
+                            <img class="top" src="/images/icons/cloud-menu-999.png" />
+                        </a>
+                    </li>
+                </ul>
+
+
+
+                <!-- End Utility Menu -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#LogOutLink").click(function () {
+        console.log("click");
+        $.ajax({
+            type: "POST",
+            url: "/MyAccount/LogOut",
+            dataType: "json",
+            success: function (response) {
+                location.reload();
+            },
+            error: function () {
+                location.reload();
+            }
+        });
+        return false;
+    });
+   
+</script>
+
+        <div id="topContainer" style="margin-top:28px;">
+
+ <!-- Styles for my specific scrolling content -->
+<style type="text/css">
+    #carousel {
+        width: 100%;
+        height: 314px;
+        position: relative;
+    }
+
+        /* Replace the last selector for the type of element you have in
+           your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
+           if you have links use #makeMeScrollable div.scrollableArea a and so on. */
+        #carousel div.scrollableArea a {
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+            /* If you don't want the images in the scroller to be selectable, try the following
+               block of code. It's just a nice feature that prevent the images from
+               accidentally becoming selected/inverted when the user interacts with the scroller. */
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+</style>
+<div style=" background:#111;">
+
+    <div id="carousel" class="menu" style="font-size: 0; visibility: hidden; ">
+        <!-- needed to eliminate space between img -->
+        <a><img src="/images/event-manager/car/314xwide-em.png" alt=" " id="2" usemap="#" /></a>
+        <a>
+            <div style="height:314px; width: 314px;
+                    background: rgb(0,0,0);
+                    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(51,51,51,1)));
+                    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(51,51,51,1) 100%);
+                    background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(51,51,51,1) 100%);
+                    background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(51,51,51,1) 100%);
+                    background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(51,51,51,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=0 );">
+
+                <img src="/images/car/carousel-version-sentry-logo.png" alt="SQL Sentry version" style=" position:absolute; top: 64px; right:28px;" />
+                <span style="position:absolute;right: 20px; bottom: 20px;color:#555;font-family:Oswald,sans-serif">
+                    <span style="font-weight:300; font-size:24px;">
+                        VERSION
+                    </span>
+                    <span style="font-weight:700; font-size:72px;">
+                        10.1
+                    </span>
+                </span>
+            </div>
+        </a>
+        <a><img src="/images/event-manager/car/314x314-brand-em.png" alt=" " id="3" usemap="#" /></a>
+
+        <a href="#features"><img src="/images/event-manager/car/314x314-visual-schedule.png" alt=" " id="1" usemap="#" /></a>
+        <a><img src="/images/event-manager/car/314x314-jump.png" alt=" " id="1" usemap="#" /></a>
+        <a href="#features"><img src="/images/event-manager/car/314x314-event-chains.png" alt=" " id="3" usemap="#" /></a>
+        <a href="#features"><img src="/images/event-manager/car/314x314-runtime-graphs.png" alt=" " id="8" usemap="#" /></a>
+        <a href="/products/solutions-sql-server"><img src="/images/performance-advisor/car/314x314-bundles.png" alt=" " id="9" usemap="#" /></a>
+        <a><img src="/images/event-manager/car/314x314-history.png" alt=" " id="3" usemap="#" /></a>
+        <a href="http://sqlperformance.com" target="_blank"><img src="/images/performance-advisor/car/314x314-sql-perf.png" alt=" " id="9" usemap="#" /></a>
+    </div>
+</div>
+    <!-- Plugin initialization -->
+    <script type="text/javascript">
+        // Initialize the plugin with no custom options
+        $(document).ready(function () {
+            // None of the options are set
+            $("div#carousel").smoothDivScroll({
+                autoScrollingMode: "always",
+                autoScrollingDirection: "endlessLoopRight",
+                autoScrollingStep: 1,
+                autoScrollingInterval: 30,
+                mousewheelScrolling: "allDirections",
+                manualContinuousScrolling: true,
+                hiddenOnstart: true,
+                setupComplete: function () { $("div#carousel").css('visibility', 'visible'); }
+            });
+
+            // Logo parade event handlers
+            $("#carousel").bind("mouseover", function () {
+                $(this).smoothDivScroll("stopAutoScrolling");
+            }).bind("mouseout", function () {
+                $(this).smoothDivScroll("startAutoScrolling");
+            });
+
+        });
+    </script>
+
+        </div>
+
+        <!-- navigation -->
+<nav class="main">
+    <div class="container">
+        <div class="row">
+            <div class="sixteen columns col-xs-12">
+                <a href="/">
+                    <img src="/images/logos/logo-nav-x2.png" width="151" style="float:left; margin: -15px 0 0 0;" />
+                </a>
+                <!-- Start Nav Menu -->
+                <a href="/download-trial/trial" class="menuFreeTrial hideMobile" style="margin:8px 0 0 15px; float:right;">Free Trial</a>
+
+                <ul class="menu " id="nav">
+                    <li class="navItem" data-dropdown="community"><a href="/community">Community</a></li>
+                    <li class="navItem" data-dropdown="company"><a href="/company/about-us">Company</a></li>
+                    <li class="navItem" data-dropdown="support"><a href="/support">Support</a></li>
+                    <li class="navItem" data-dropdown="services"><a href="/pro-services">Services</a></li>
+                    <li class="navItem" data-dropdown="products"><a href="/products">Products</a></li>
+                    
+                </ul>
+
+                <!-- End Nav Menu -->
+                <!-- Start Dropmenu for mobile -->
+                <select class="dropmenu" name="dropmenu" onchange="moveTo(this.value)">
+                    <option value="" selected="selected">Menu</option>
+                    <option value="#top">Home</option>
+                    
+                    <option value="/products">Products</option>
+                    <option value="/pro-services">Services</option>
+                    <option value="/support">Support</option>
+                    <option value="/community">Community</option>
+                    <option value="/company/about-us">Company</option>
+                </select>
+                <!-- End Dropmenu for mobile -->
+            </div>
+        </div>
+    </div>
+    <div id="NavDropDown">
+        <div class="container">
+            <div id="products_dropdown" class="row navDropDownItem bstrnstn">
+                <div class="col-md-3" style="text-align:right;">
+                    <h3 class="NavDropDownItem-header">
+                        <a href="/products">Products:</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/products/performance-advisor/sql-server-performance">Performance Advisor</a></li>
+                        <li><a href="/products/event-manager/sql-server-job-schedule-alert-management">Event Manager</a></li>
+                        <li><a href="/products/fragmentation-manager/sql-server-index-analysis-and-defrag">Fragmentation Manager</a></li>
+                        <li><a href="/plan-explorer">Plan Explorer</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li>Bundles:</li>
+                        <li><a href="/suites/powersuitesqlserver">Power Suite for SQL Server</a></li>
+                        <li><a href="/suites/powersuiteplus">Power Suite Plus</a></li>
+                        <li><a href="/suites/bisuite">BI Suite for SSAS &amp; SQL Server</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="services_dropdown" class="row navDropDownItem bstrnstn">
+                <div class="col-md-3" style="text-align:right;">
+                    <h3 class="NavDropDownItem-header">
+                        <a href="/pro-services">Services:</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/pro-services/roi">ROI Accelerator</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/pro-services/sql-server-performance-tuner">Performance Tuner</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/pro-services/essentials">Essentials</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="support_dropdown" class="row navDropDownItem bstrnstn">
+                <div class="col-md-3" style="text-align:right;">
+                    <h3 class="NavDropDownItem-header">
+                        <a href="/support">Support:</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/products/online-help">Technical Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="https://support.sqlsentry.com/">Help Center</a></li>
+                        <li><a href="http://answers.sqlsentry.com/">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/documents/evaluation-highlights.pdf">Evaluation Highlights</a></li>
+                        <li><a href="http://www.sqlsentry.tv/">Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="company_dropdown" class="row navDropDownItem bstrnstn">
+                <div class="col-md-3" style="text-align:right;">
+                    <h3 class="NavDropDownItem-header">
+                        <a href="/company/about-us">Company:</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/company/leadership">Leadership</a></li>
+                        <li><a href="/company/success-stories">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/company/success-stories#awards">Awards and Reviews</a></li>
+                        <li><a href="/company/news-events#news-rooms">News Room</a></li>
+                        <li><a href="/company/success-stories#customers">Customers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#" class="contact-us" data-toggle="modal" data-target="#contact-us-form">Contact Us</a></li>
+                        <li><a href="/company/partners">Partners</a></li>
+                        <li><a href="/company/careers">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="community_dropdown" class="row navDropDownItem bstrnstn">
+                <div class="col-md-3" style="text-align:right;">
+                    <h3 class="NavDropDownItem-header">
+                        <a href="/community">Community:</a>
+                    </h3>
+                </div>
+                <div class="col-md-2 col-lg-3">
+                    <ul>
+                        <li><a href="/company/news-events#webinars">Webinars</a></li>
+                        <li><a href="http://blogs.sqlsentry.com/">Blogs</a></li>
+                        <li><a href="/company/news-events#events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <ul>
+                        <li><a href="http://sqlperformance.com/">SQLPerformance.com</a></li>
+                        <li><a href="http://www.sqlsentry.tv/">SQLSentry.tv</a></li>
+                        <li><a href="http://answers.sqlperformance.com">Answers.SQLPerformance.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="https://twitter.com/SQLSentry">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/SQLSentry">Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/company/129912">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- download tab -->
+            <div class="DLpanel" id="DLpanel">
+                <h3 style="font-family: 'Oswald', 'sans-serif'">Downloads</h3>
+                <h4 style="font-weight:100; font-size:24px; color:#ddd; text-align:right; font-family: 'Oswald', 'sans-serif'">VERSION<span style="font-weight:900; font-size:52px; color:#ddd; margin-left:15px; font-family: 'Oswald', 'sans-serif'">10.1</span></h4>
+                <p>Download Performance Advisor, Event Manager, and Fragmentation Manager together.</p>
+                <p><a class="linkbutton trialdl" onclick="moveToDownload();">Download Full Trial</a></p>
+
+                <hr style="border: 0;border-bottom: 1px dashed #999;background: #000;" />
+
+                <img src="/Images/logos/products/planexplorer-white.svg" style="margin:20px 0 10px 0;width:206px;height:54px" />
+                <p>One version. All features. Now completely free!</p>
+                <p><a href="#" class="linkbutton DownloadPlanExplorerLink">Download Plan Explorer</a></p>
+                <p>Existing customers <a href="#" onclick="document.location.href = '/portal/'; return false;">log in</a> to download updates.</p>
+            </div>
+            <a id="trigger" class="trigger"></a>
+            <!-- download tab end-->
+
+</nav>
+
+<script>
+    $("nav.main").sticky({ topSpacing: 28 });
+    var navHideTimeout;
+    var navHide = function (e) {
+        var isNavOrDropDown = $(e.toElement).hasClass("navItem") || $(e.relatedTarget).hasClass("navItem") ||
+                                ($.contains($("#NavDropDown")[0], e.toElement)) || $.contains($("#NavDropDown"), e.relatedTarget) || $(e.relatedTarget).attr("id") == "NavDropDown";
+        if (!isNavOrDropDown) {
+            $("#NavDropDown").slideUp(200);
+        }
+    };
+    var navShowTimeout;
+    var navShow = function () {
+        $("#NavDropDown").slideDown(200);
+    }
+    $(".navItem, #NavDropDown").mouseover(function () {
+        clearTimeout(navHideTimeout);
+        if (navShowTimeout) {
+            clearTimeout(navShowTimeout);
+            navShowTimeout = null;
+        }
+        navShowTimeout = setTimeout("navShow()", 400);
+    })
+    .mouseleave(function (e) {
+        clearTimeout(navShowTimeout);
+        navHideTimeout = setTimeout(function () { navHide(e) }, 400);
+    });
+
+    $(".navItem").mouseover(function () {
+        var sectionName = $(this).data("dropdown") + "_dropdown";
+        $(".navDropDownItem").hide();
+        $("#" + sectionName).show();
+    });
+
+    //download tab
+    $(".DLpanel").hide();
+    $("#trigger").click(function () {
+        if (!$(this).hasClass("active")) {
+            ga('send', 'pageview', '/vp/downloads-tab/'); //track opening the tab
+        }
+        $(this).toggleClass("active");
+        $(".DLpanel").toggle("fast");
+    });
+
+    $(document).click(function (event) {
+        //download tab
+        if (!($(event.target).parents("#DLpanel").length > 0) && !(event.target.id == "DLpanel") && !(event.target.id == "trigger") && $("#DLpanel").is(":visible")) {
+            $("#trigger").toggleClass("active");
+            $(".DLpanel").toggle("fast");
+        }
+    });
+
+    $(".DpanelError").hide();
+</script>
+        <!-- /navigation -->
+    </header>
+
+    
+    <!-- Start page Navigation -->
+    <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 28px;">
+        <nav class="second" style="">
+            <div class="container" >
+                <div class="sixteen columns">
+                    <!-- Start Nav Menu -->
+                    <form action="#" method="post" >
+                        <ul class="menu" id="nav">
+                            
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#reports">Reports</a></li>
+                            <li><a href="#benefits">Benefits</a></li>
+                            <li><a href="#articles">Articles</a></li>
+                            <li><a href="#videos">Videos</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </form>
+                    <!-- End Nav Menu -->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End Page Navigation -->
+    <!--start overview -->
+    <div class="page section">
+        <div class=" menuoffset" id="overview"></div>
+
+        <div class="container">
+            <div class="sixteen columns ">
+                <h1>Server Job Schedule and Alert Management</h1>
+            </div>
+
+            <div itemscope itemtype="http://schema.org/Product" class="sixteen columns marginTop">
+                <img itemprop="logo" src="/images/logos/logo-em.svg" style="margin: 0px 0px 20px 0px;" />
+                <h3 itemprop="description">
+                    Ultimate scheduling, alerting and response system for optimizing schedule performance of database servers
+                </h3>
+                <p>
+                    With specific products for SQL Server, Windows, SharePoint and Oracle, <span itemprop="name">Event Manager</span> provides DBAs with "Outlook-style" visibility and functionality for managing SQL Agent jobs, Windows Tasks, and Oracle jobs in increasingly complex cross-platform environments. Unlike most other scheduling products, Event Manager does not require an agent to be installed and managed on each server.
+                </p>
+                <p>&nbsp;</p>
+
+            </div>
+
+            <div itemscope itemtype="http://schema.org/Product" class="four columns marginTop">
+                <div style="text-align:center;"><img src="/images/event-manager/laptop-sql.png" alt="Event Manager for SQL Server" style="margin: 0 0 20px -30px" class="scale-with-grid" /></div>
+                <h3 class="gray">Visual display of SQL Server jobs along with other SQL Server events across the enterprise</h3>
+                <h4 itemprop="name">Event Manager for SQL Server</h4>
+                <ul>
+                    <li>Visual display of SQL Agent jobs along with other events across the enterprise</li>
+                    <li>Alerting and Response System for over 90 conditions including Output Content Matches</li>
+                    <li>Advanced Chaining and Queuing features</li>
+
+                </ul>
+            </div>
+
+            <div itemscope itemtype="http://schema.org/Product" class="four columns marginTop">
+                <div style="text-align:center;"><img src="/images/event-manager/laptop-win.png" alt="Event Manager for Windows" style="margin: 0 0 20px -30px" class="scale-with-grid" /></div>
+                <h3 class="gray">
+                    Unprecedented visibility for the Windows Event Log and Windows Task Scheduler
+                </h3>
+                <h4 itemprop="name">Event Manager for Windows</h4>
+                <ul>
+                    <li>Unprecedented visibility and manageability for the Windows Event Log and Task Scheduler</li>
+                    <li>Alerts and Notifications for events impacting critical services and applications</li>
+                    <li>Advanced Chaining and Queuing features</li>
+
+                </ul>
+            </div>
+
+            <div itemscope itemtype="http://schema.org/Product" class="four columns marginTop">
+                <div style="text-align:center;"><img src="/images/event-manager/laptop-sp.png" alt="Event Manager for SharePoint" style="margin: 0 0 20px -30px" class="scale-with-grid" /></div>
+                <h3 class="gray">Unparalleled visibility into exactly when SharePoint timer jobs run</h3>
+                <h4 itemprop="name">Event Manager for SharePoint</h4>
+                <ul>
+                    <li>Unparalleled visibility into exactly when timer jobs run</li>
+                    <li>Tools to easily assess which timer jobs are colliding more frequently</li>
+                    <li>Alerts and Notifications for timer job failures, runtime deviations and more</li>
+
+                </ul>
+            </div>
+
+            <div itemscope itemtype="http://schema.org/Product" class="four columns marginTop">
+                <div style="text-align:center;"><img src="/images/event-manager/laptop-orc.png" alt="Event Manager for Oracle" style="margin: 0 0 20px -30px" class="scale-with-grid" /></div>
+                <h3 class="gray">Visual display of Oracle DBMS Jobs, Oracle Enterprise Manager Jobs and Oracle Scheduler</h3>
+                <h4 itemprop="name">Event Manager for Oracle</h4>
+                <ul>
+                    <li>Calendar view of DBMS Jobs, Manager Jobs, Scheduler and other Events</li>
+                    <li>Tools to manage intricate and voluminous job streams</li>
+                    <li>Support for geographically distributed deployments and configuration of powerful cross-server event chains</li>
+
+                </ul>
+            </div>
+            <div class="row"></div>
+            <div class="seven columns marginTop">
+                <a class="km_product_overview" href="/documents/sql-sentry-product-overview.pdf" target="_blank">
+                    <img src=/images/icons/product-overview-icon.png border=0 style="float: left; margin: -6px 0px 0px 0px;" />
+                </a>
+
+                <h4 style="margin-left:90px"><a class="km_product_overview" href="/documents/sql-sentry-product-overview.pdf" target="_blank">Product Overview</a></h4>
+                <p style="margin-left:90px">The <a class="km_product_overview" target="_blank" href="/documents/sql-sentry-product-overview.pdf">Product Overview</a> provides you with all of the features in our tools. You can easily compare our tools and see which ones fit your organization’s needs.</p>
+                <p>&nbsp;</p><p>&nbsp;</p>
+            </div>
+            <div class="seven columns offset-by-one marginTop">
+
+                <a class="km_overhead_analysis" href="http://downloads.sqlsentry.com/downloads/SQLSentryOverheadAnalysis.doc" target="_blank" onclick="cdAnalytics.trackLink('http://downloads.sqlsentry.com/downloads/SQLSentryOverheadAnalysis.doc', 'Link to Overhead Analysis')">
+                    <img src=/images/icons/overhead-analysis-icon.png border=0 style="float: left; margin: -6px 0px 0px 0px;" />
+                </a>
+
+                <h4 style="margin-left:90px"><a class="km_overhead_analysis" href="http://downloads.sqlsentry.com/downloads/SQLSentryOverheadAnalysis.doc" target="_blank" onclick="cdAnalytics.trackLink('http://downloads.sqlsentry.com/downloads/SQLSentryOverheadAnalysis.doc', 'Link to Overhead Analysis')">Overhead Analysis</a></h4>
+                <p style="margin-left:90px">The <strong><a class="km_overhead_analysis" href="http://downloads.sqlsentry.com/downloads/SQLSentryOverheadAnalysis.doc" target="_blank" onclick="cdAnalytics.trackLink('http://downloads.sqlsentry.com/downloads/SQLSentryOverheadAnalysis.doc', 'Link to Overhead Analysis')">SQL Sentry Overhead Analysis</a></strong> provides both qualitative and quantitative information about the overhead impact you should expect from SQL Sentry Event Manager and Performance Advisor.</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+
+    <!--end overview -->
+    <!-- parallax screens space -->
+
+    <div id="parallax-1" class="parallax fixed" style="background-image: url(/images/slider/em/px-em-main.jpg);">
+        <div class="quoteWrap">
+            <div class="quote">
+                <div class="container">
+                    <div class="sixteen columns">
+                        <div id="layerslider" style="width: 562px; height: 331px; margin: 1px auto;">
+                            <!--LayerSlider layer-->
+                            <div class="ls-layer" style="slidedirection: fade; slideoutdirection: fade; ">
+                                <img class="ls-s1" src="/images/slider/em/visual-schedule-management.png" style="slidedirection: fade; slideoutdirection: fade; " alt=" ">
+                            </div>
+
+                            <div class="ls-layer" style="slidedirection: fade; slideoutdirection: fade; ">
+                                <img class="ls-s1" src="/images/slider/em/alerting-and-response.png" style="slidedirection: fade; slideoutdirection: fade; " alt=" ">
+                            </div>
+                            <div class="ls-layer" style="slidedirection: fade; slideoutdirection: fade; ">
+                                <img class="ls-s1" src="/images/slider/em/history-alert-filtering.png" style="slidedirection: fade; slideoutdirection: fade; " alt=" ">
+                            </div>
+
+                            <div class="ls-layer" style="slidedirection: fade; slideoutdirection: fade; ">
+                                <img class="ls-s1" src="/images/slider/em/step-callout.png" style="slidedirection: fade; slideoutdirection: fade; " alt=" ">
+                            </div>
+
+                            <div class="ls-layer" style="slidedirection: fade; slideoutdirection: fade; ">
+                                <img class="ls-s1" src="/images/slider/em/job-chaining.png" style="slidedirection: fade; slideoutdirection: fade; " alt=" ">
+                            </div>
+                            <div class="ls-layer" style="slidedirection: fade; slideoutdirection: fade; ">
+                                <img class="ls-s1" src="/images/slider/em/cross-platform-support-new.png" style="slidedirection: fade; slideoutdirection: fade; " alt=" ">
+                            </div>
+
+                            <div class="ls-layer" style="slidedirection: fade; slideoutdirection: fade; ">
+                                <img class="ls-s1" src="/images/slider/em/runtime-history.png" style="slidedirection: fade; slideoutdirection: fade; " alt=" ">
+                            </div>
+                        </div>
+
+                        <a onclick="jQuery('#begin').trigger('click');" id="em_view_screens" class="linkbutton" style="margin:20px 0px 0 0px;font-size:1.4em;">View Screens</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Scripts/Plugins/jquery-transit-modified.js" type="text/javascript"></script>
+    <script src="/Scripts/Plugins/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="/Scripts/Plugins/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#layerslider').layerSlider({
+                skinsPath: '/Content/layerslider/skins/',
+                skin: 'fullwidthdark',
+                thumbnailNavigation: 'disabled',
+                showCircleTimer: false,
+                hoverPrevNext: false,
+                hoverBottomNav: false,
+                navPrevNext: false,
+                navStartStop: false,
+                navButtons: false,
+                responsive: false,
+            });
+        });
+    </script>
+
+    <!--end parallax screens-->
+    <!--start features -->
+    <div class="page section">
+        <div class="menuoffset" id="features"></div>
+        <div class="container ">
+            <div class="sixteen columns ">
+                <h2>Features</h2>
+
+                <div id="platformselect">
+                    <span>Filter by Platform:</span>
+                    
+                    <img class="productfilterbutton" src="/images/icons/all-filter-button.png" alt="ALL" id="nofilter" border="0" />
+                    <img class="productfilterbutton" src="/images/icons/sql-filter-button.png" alt="SQL" id="filterSQL" border="0" />
+                    <img class="productfilterbutton" src="/images/icons/win-filter-button.png" alt="WIN" id="filterWIN" border="0" />
+                    <img class="productfilterbutton" src="/images/icons/sharepoint-filter-button.png" alt="SHAREPOINT" id="filterSP" border="0" />
+                    <img class="productfilterbutton" src="/images/icons/oracle-filter-button.png" alt="ORACLE" id="filterO" border="0" />
+                    <a href="/Content/html/em-matrix.html?iframe=true&amp;width=700&amp;height=440" rel="prettyPhoto" style="font-size:1em;"><img class="productfilterbutton" src="/images/icons/compare-button.png" alt="" id="compare" border="0" /></a>
+                </div>
+            </div>
+
+            <div class="sixteen columns marginTop featurelist">
+                <div class="feature filterSQL filterWIN filterSP filterO ">
+                    <a name="sql-server-performance-dashboard"></a>
+                    <h3 class="titleoverline">
+                        Visual Schedule Management
+                    </h3>
+                    <img class="producttag" src="/images/icons/sql-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/win-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/sharepoint-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/oracle-tag.png" alt=" " border="0" />
+                    <a id="begin" href="/images/event-manager/visual-schedule-management.png" rel="prettyPhoto[PA]" title="View a clear picture of your server event schedules.">
+                        <img class="productthumb " src="/images/event-manager/visual-schedule-management-thumb.png" alt="Event Manager Visual Schedule Management" border="0" />
+                    </a>
+
+                    <p>Event Manager's Outlook-style calendar view provides a clear picture of your server event schedules - giving you unprecedented visibility and control over scheduling issues that can impact server performance. Quickly view historical and future schedule information at a glance, and easily resolve conflicts using drag-and-drop.</p>
+                    <span class="read-more-content">
+                        <div class="container">
+                            <ul>
+                                <li>See your complex event schedules in a whole new light with Event Manager's robust, Outlook-style visual calendar with drag-and-drop rescheduling.</li>
+                                <li>Event Manager highlights schedule overlap and contention issues, long running events, failed events and more using clear visual indicators.</li>
+                                <li>The flexible interface allows simultaneous display of multiple calendars and graphs, and supports both full and split screen modes.</li>
+                                <li>Slice and dice schedules across servers with the Global Calendar, Group Calendars, and Custom Event Views.</li>
+                                <li>Easily assess contention levels across shared resources such as file storage areas, tape libraries, and network segments.</li>
+                                <li>You can easily create calendars showing all events or tasks that read or write to a particular SAN or NAS device, or that utilize a certain network segment.</li>
+                                <li>Multi-server calendars on Master (MSX) servers enable you to see what's happening across all Target (TSX) servers in one view.</li>
+                                <li>Monitor critical events from the Application, System, and Security Logs.<span class="color">*</span></li>
+                                <li>Control exactly which events are collected – by log, source application, severity level, or event text.<span class="color">*</span></li>
+                                <li>Monitor tasks on all versions of Windows from Server 2003 to Server 2012.<span class="color">*</span></li>
+                            </ul>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="sixteen columns color">
+                                        *Requires Event Manager for Windows
+                                    </div><br /><br />
+                                </div>
+                            </div>
+                            <img src="/images/event-manager/history-list-2.png" border="0" />
+                            <div class="twelve columns marginTop">
+                                <p>The event history view provides flexible sorting and grouping capabilities, color-coded status indicators, and full step-level details for multi-step jobs, DTS packages, and SSIS packages. For any multi-step job, DTS package or SSIS package, you can easily jump back in time to see how the job has performed over a certain time period. If the event fails, then you can easily see the red indicator and drill-down into it and find the reason it failed.</p>
+                            </div>
+                        </div>
+
+                        <p>&nbsp;</p>
+                    </span>
+                    <p>&nbsp;</p>
+                </div>
+
+                <div class="feature filterSQL filterWIN filterSP filterO">
+                    <a name="global-server-status-view"></a>
+                    <h3 class="titleoverline">
+                        Alerting and Response System
+                    </h3>
+                    <img class="producttag" src="/images/icons/sql-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/win-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/sharepoint-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/oracle-tag.png" alt=" " border="0" />
+                    <a href="/images/event-manager/alerting-and-response.png" rel="prettyPhoto[PA]" title="Choose from a wide variety of response actions to any event status, runtime or performance condition. ">
+                        <img class="productthumb " src="/images/event-manager/alerting-and-response-thumb.png" alt="Event Manager Alerting and Response" border="0" />
+                    </a>
+                    <p>SQL Sentry's Event Manager employs the most comprehensive and reliable cross-platform notification system available today, providing reliable, detailed alerts as well as a variety of other response conditions for various event types. Event Manager is agent-less, fault tolerant, and uses a centralized management system which eliminates the need to touch each server.</p>
+                    <span class="read-more-content">
+                        <div class="container">
+
+                            <ul>
+                                <li>Provides a wide variety of response actions to any event status, runtime or performance condition.</li>
+                                <li>You can even generate notifications for Windows tasks, Reporting Services, and other event sources.</li>
+                                <li>For a full-list of every action and condition that are covered in the Event Manager, check out the <a href="http://www.sqlsentry.com/help/ug/webframe.html?Alerting_And_Response_System.html">User Guide</a>.</li>
+                                <li>Easily apply special alerting rules to the servers in different locations, with Shared Groups.</li>
+                                <li>Configure multiple actions of the same type for the same condition, such as 3 different Send Email actions for the Job Failure condition - each with different alert targets (users or groups), different rulesets, and different alert windows.</li>
+                                <li>Set exactly when contacts should be alerted using configurable ranges of time, for example "Business Hours" or "Weekends". You can even create compound windows which combine multiple windows together.</li>
+                                <li>Displays exactly where the inherited settings are coming from, and allows you to Disable, Override, or Combine with an inherited condition action.</li>
+
+                            </ul>
+                            <img src="/images/event-manager/actions-log.png" border="0" />
+                            <div class="twelve columns marginTop">
+                                <p>Event Manager goes beyond the limited alerting capabilities built-in to SQL Server, Oracle, and Windows with messages that include granular, detail-level information. Event Manager alerts contain more of the information you need to quickly evaluate and resolve any condition, which can dramatically reduce response times.</p>
+                            </div>
+                        </div>
+
+                        <p>&nbsp;</p>
+                    </span>
+                    <p>&nbsp;</p>
+                </div>
+
+                <div class="feature filterSQL filterWIN">
+                    <a name="global-server-status-view"></a>
+                    <h3 class="titleoverline">
+                        History and Alert Filtering
+                    </h3>
+                    <img class="producttag" src="/images/icons/sql-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/win-tag.png" alt=" " border="0" />
+                    <a href="/images/event-manager/history-alert-filtering.png" rel="prettyPhoto[PA]" title="Decide which events are collected, displayed on the calendar, and available for alerting.">
+                        <img class="productthumb " src="/images/event-manager/history-alert-filtering-thumb.png" alt="Event Manager History and Alert Filtering" border="0" />
+                    </a>
+                    <p>Many <a href="http://www.sqlsentry.com/help/ug/#Event_Sources_Overview.html">event sources</a> have a configurable history filter which enables control over which events are collected, displayed on the calendar, and available for alerting. Alert filters let you decide exactly which events will generate notifications, based on application, host, user, and other attributes such as only sending an alert for Top SQL failures coming from a specific host machine.</p>
+
+                    <p>&nbsp;</p>
+                </div>
+
+                <div class="feature filterSQL">
+                    <a name="global-server-status-view"></a>
+                    <h3 class="titleoverline">
+                        SSIS and DTS Support
+                    </h3>
+                    <img class="producttag" src="/images/icons/sql-tag.png" alt=" " border="0" />
+
+                    <a href="/images/event-manager/step-callout.png" rel="prettyPhoto[PA]" title="Enable detailed logging for both SSIS and DTS packages with a few clicks.">
+                        <img class="productthumb " src="/images/event-manager/step-callout-thumb.png" alt="Event Manager SSIS and DTS Support" border="0" />
+                    </a>
+                    <p>Problems with SSIS and DTS packages can be some of the most difficult to troubleshoot, because there is no easy and unified way to access detailed package log data via the native SQL Server tools. SQL Sentry makes it easy to enable detailed logging for both SSIS and DTS packages with a few clicks, and view the results on the SQL Sentry calendar and history list views alongside any other events on a server. Accessing error details for failed package steps has never been simpler!</p>
+
+                    <p>&nbsp;</p>
+                </div>
+
+                <div class="feature filterSQL filterWIN filterO">
+                    <a name="global-server-status-view"></a>
+                    <h3 class="titleoverline">
+                        Job Chaining
+                    </h3>
+                    <img class="producttag" src="/images/icons/sql-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/win-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/oracle-tag.png" alt=" " border="0" />
+                    <a href="/images/event-manager/job-chaining.png" rel="prettyPhoto[PA]" title="Easily create chains to manage workflows involving SQL Agent jobs, Oracle jobs, and Windows tasks.">
+                        <img class="productthumb " src="/images/event-manager/job-chaining-thumb.png" alt="Event Manager Job Chaining" border="0" />
+                    </a>
+                    <p>Event Manager's advanced chaining features enable you to quickly and easily define dependencies and workflows involving SQL Agent jobs, Oracle jobs, and/or Windows tasks. You have ultimate flexibility with regard to how the chains are defined - the chained jobs or tasks can reside anywhere in the enterprise, and you can have unlimited levels per chain, as well as unlimited jobs/tasks per level.</p>
+                    <span class="read-more-content">
+                        <div class="container">
+                            <ul>
+                                <li>Easily enforce dependencies between SQL Server, Oracle and Windows across your environment.</li>
+                                <li>First system to enable automation and integration across different scheduling systems, ensuring precise control over which events run and when.</li>
+                                <li>Easy configuration of powerful cross-server job chains.</li>
+                                <li>Define dependencies between events occurring on disparate systems. For example, run a SQL Server job whenever a Windows task completes successfully.</li>
+                                <li>Graphical interface for easy configuration and printing of chain diagrams.</li>
+                                <li>No limit to length or complexity of chain.</li>
+                                <li>Works with your existing scheduling agents - no new schedulers are installed.</li>
+                                <li>For simpler 1-to-1 chaining scenarios, you can utilize the "Execute Job" action to trigger a job on any SQL Server in response to any other event status or performance condition, for any event type.</li>
+                                
+                            </ul>
+                        </div>
+
+                        <p>&nbsp;</p>
+                    </span>
+                    <p>&nbsp;</p>
+                </div>
+
+                <div class="feature filterSQL filterWIN filterSP filterO ">
+                    <a name="sql-server-disk-space"></a>
+                    <h3 class="titleoverline">
+                        Cross-Platform Support
+                    </h3>
+                    <img class="producttag" src="/images/icons/sql-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/win-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/sharepoint-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/oracle-tag.png" alt=" " border="0" />
+                    <a href="/images/event-manager/cross-platform-support-new.png" rel="prettyPhoto[PA]" title="Manage all SQL Agent jobs, Windows tasks, SharePoint timer jobs and Oracle jobs.">
+                        <img class="productthumb " src="/images/event-manager/cross-platform-support-thumb.png" alt="Event Manager Cross-Platform Support" border="0" />
+                    </a>
+                    <p>Event Manager seamlessly integrates external event data into calendars, and gives you unprecedented visibility and control over all of the events that can impact your server performance. Event Manager supports SQL Agent jobs, Windows tasks, SharePoint timer jobs and Oracle jobs in increasingly complex cross-platform environments.</p>
+                    <span class="read-more-content">
+                        <div class="container">
+                            <ul>
+                                <li>Event Manager doesn't replace your existing schedulers, it makes them work better.</li>
+                                <li>Using a plug-in architecture, Event Manager connector modules allow you to easily manage SQL Agent jobs, Windows tasks, SharePoint timer jobs and Oracle jobs.</li>
+                                <ul>
+                                    <li>The calendar view automatically brings all of these events together and displays them on its unified calendar, so you get the whole picture.</li>
+                                    <li>The data collected can then be used to trigger the various actions carried out by Event Manager such as sending email notifications, executing other jobs or tasks.</li>
+                                </ul>
+                                <li>Event Manager manages and automates dependencies between different event types and across multiple servers through chaining.</li>
+                            </ul>
+                        </div>
+                        <p>&nbsp;</p>
+                    </span>
+                    <p>&nbsp;</p>
+                </div>
+
+                <div class="feature filterSQL filterWIN filterSP filterO">
+                    <a name="sql-server-alwayson"></a>
+                    <h3 class="titleoverline">
+                        Schedule Reporting
+                    </h3>
+                    <img class="producttag" src="/images/icons/sql-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/win-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/sharepoint-tag.png" alt=" " border="0" />
+                    <img class="producttag" src="/images/icons/oracle-tag.png" alt=" " border="0" />
+
+                    <a href="/images/event-manager/runtime-history.png" rel="prettyPhoto[PA]" title="Manage your servers’ job schedules with event runtime reports and performance graphs.">
+                        <img class="productthumb" src="/images/event-manager/runtime-history-thumb.png" alt="Event Manager Schedule Reporting" border="0" />
+                    </a>
+
+                    <p>Event Manager offers many different reports to help manage your servers' job schedules. The event runtime graphs allow you to quickly visualize long-term trends on your jobs. The Gantt-style performance graphs highlight the events competing for resources and causing end-user performance problems. You can also export your event history and other list views to .HTML, .XML, or .CSV format so you can easily share them with other people in your organization.</p>
+                    <span class="read-more-content">
+                        <div class="container">
+                            <ul>
+                                <li>Performance data will be automatically collected whenever the scheduled event runs.</li>
+                                <li>Any Windows performance counters, including any SQL Server counters, can easily be "linked" to a SQL Agent job, Windows task or Reporting Services report.</li>
+                                <li>A combination of Gantt and Bar graphs are used to visually correlate schedule activity and performance data in an easy to read format.</li>
+                                <li>Event performance graphs clearly illustrate how schedule collisions may be impacting server and database performance.</li>
+                            </ul>
+
+                            <img src="/images/event-manager/runtime-aggregates-graph.png" border="0" />
+                            <div class="twelve columns marginTop">
+                                <p>Event runtime graphs provide both historical and aggregate views, making it easy to spot runtime trends that can be an indicator of underlying scheduling and/or resource contention issues.  For example, you can see how your nightly backups are trending over the past 3 months to determine if and when they'll fall outside of your desired backup window.</p>
+                            </div>
+                            <div class="row"></div>
+                            <img src="/images/event-manager/schedule-conflict-resolver.png" border="0" />
+                            <div class="twelve columns marginTop">
+                                <p>The conflicts viewer shows all scheduled events on a server with overlapping runtimes, sorted descending by “Total Conflict Time” by default (the total time one event overlaps with all other events). This measure is extremely valuable in determining which events may be causing the most resource contention.  You simply double-click any conflict instance to immediately jump to that spot on the calendar, and then quickly resolve the conflict using drag-and-drop.</p>
+                            </div>
+                        </div>
+
+                        <p>&nbsp;</p>
+                    </span>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end features-->
+    <!--start parallax reports-->
+    <div id="parallax-2" class="parallax fixed" style="background-image: url(/images/parallax-ad-reports.jpg);">
+        <div class="quoteWrap">
+            <div class="quote">
+                <div class="container">
+                    <div class="sixteen columns">
+                        <h3><span class="largeBold">View Reports in Client and Cloud</span></h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end parallax reports-->
+    <!--start reports -->
+    <div class="page section">
+        <div class="menuoffset" id="reports"></div>
+
+        <div class="container ">
+            <div class="sixteen columns ">
+                <h2>Reports</h2>
+            </div>
+            <p>&nbsp;</p>
+
+            <div class="container reports">
+                <div class="eight columns">
+                    <div style="border: 1px solid #ccc;background:#fff; padding: 20px 15px 30px; margin-right: 20px; border-radius: 9px; min-height:100px;">
+                        <h3>Event Manager</h3>
+                        <ul>
+                            <li>Global Server Performance</li>
+                            <li>Performance Counter History</li>
+                            <li>Performance Counter Date Range Comparison</li>
+                            <li>SQL Server Performance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="eight columns">
+                    <div style="border: 1px solid #ccc; background: #fff; padding: 20px 12px 30px; margin-right: 20px; border-radius: 9px; min-height: 100px;">
+                        <h3>General</h3>
+                        <ul>
+                            <li>Action Counts</li>
+                            <li>Active Settings List</li>
+                            <li>Configured Actions List</li>
+                            <li>Configured Notifications List</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end reports-->
+    <!--start benefits -->
+    <div class="page section">
+        <div class="menuoffset" id="benefits"></div>
+
+        <div class="container ">
+            <div class="sixteen columns ">
+                <h2>Benefits</h2>
+            </div>
+
+            <div class="seven columns marginTop">
+                <h3 class="product">Performance Improvement</h3>
+                <p>Make smarter scheduling decisions by seeing and understanding the impact that events have on production resources, and easily eliminate schedule contention via drag-and-drop to ensure applications run at optimal levels.</p>
+                <p>&nbsp;</p>
+
+                <h3 class="product">Continual Innovation</h3>
+                <p>While other SQL Server monitoring tools have stagnated, SQL Sentry has continued to push the envelope, introducing several industry firsts such as our patented SQL Server disk analysis, unrestricted historical performance reporting, comprehensive deadlock analysis, performance event calendars, intelligent wait analysis, and many more cutting edge features.</p>
+                <p>&nbsp;</p>
+
+                <h3 class="product">Lower Overhead</h3>
+                <p>SQL Sentry’s tools are built to be minimally invasive and incur the lowest possible hit on monitored servers via our agent-less architecture... while other SQL Server monitoring tools incur far more load than they will ever help you to resolve. Some even filter out all of their own query activity so you never see it! Don’t be fooled by misleading claims of lower overhead – install SQL Sentry alongside other tools to see exactly how much of a performance hit they incur. <a href="/Documents/SQLSentryOverheadAnalysis.doc">Download our Overhead Analysis.</a></p>
+                <p>&nbsp;</p>
+
+                <h3 class="product">Lower Cost</h3>
+                <p>SQL Sentry software continually delivers more features, functionality and utility than other SQL Server software tools, at a lower price point. With subscription-based and site licensing options, the relative savings can grow even further.</p>
+                <p>&nbsp;</p>
+
+                <h3 class="product">Higher Quality</h3>
+                <p>SQL Sentry software undergoes intensive regression, scalability and overhead testing in our internal test lab of over 100 SQL Servers. It is then real-world tested in one of the largest SQL Server hosting environments in the U.S., until it is deemed stable enough to release to the public... no matter how long it takes. After release, our integrated, automated exception reporter gives us a perpetual feedback loop with our customers, who are continually surprised to receive a response from a real human usually within hours of submitting an exception.</p>
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="seven columns offset-by-one marginTop">
+                <h3 class="product">Lower Database Administration Costs</h3>
+                <p>Event Manager greatly reduces the amount of manual labor required to perform mundane schedule management and troubleshoot performance problems, allowing DBA's to spend more time proactively managing their servers.</p>
+                <p>&nbsp;</p>
+
+                <h3 class="product">Scalability</h3>
+                <p>SQL Sentry software is installed in some of the largest SQL Server environments in the world. Our low overhead, agent-less, site-based approach provides almost linear scalability. We have yet to meet a SQL Server environment that the <a href="/content/html/system-architecture.html?iframe=true&amp;width=960&amp;height=700" rel="prettyPhoto">SQL Sentry architecture</a> can’t handle.</p>
+                <p>&nbsp;</p>
+
+                <h3 class="product">World-class Support</h3>
+                <p>SQL Sentry provides the highest level of support services you will find in the SQL Server software world. Our clients continually rave about the responsiveness and technical competence of our support team. You will never speak to a non-technical front-line person that doesn’t understand SQL Server or SQL Sentry software. To the contrary, you will often be speaking directly to a development team member.</p>
+                <p>&nbsp;</p>
+
+                <h3 class="product">Credibility</h3>
+                <p>We've been a Microsoft Gold Certified Partner for many years, and our customer survey results say it better than we ever could. Our marks across the board are consistently higher than other Microsoft partners. All customers fall into the "Champion" quadrant, ranking us amongst the top Microsoft ISVs in the world. <a href="/images/sql-sentry-customer-satisfaction-survey-2013.png" rel="prettyPhoto">Survey results</a>.
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+    <!--end benefits-->
+    <!--start parallax Alerting-->
+    <div id="parallax-3" class="parallax fixed" style="background-image: url(/images/parallax-ad-alerting.jpg);">
+        <div class="quoteWrap">
+            <div class="quote">
+                <div class="container">
+                    <div class="sixteen columns">
+                        <h3><span class="mediumBold">Tired of alerts based on static, outdated, or misguided thresholds?</span></h3>
+                        <span style="font-size:1.3em;"><a class="linkbutton" "km_intelligent_alerting" href="/white-papers/sql-server-sharepoint-windows-alerts">Read our white paper on the most intelligent alerting in the industry</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end parallax Alerting-->
+    <!--start articles -->
+    <div class="page section">
+        <div class="menuoffset" id="articles"></div>
+
+        <div class="container">
+            <div class="sixteen columns ">
+                <h2>Articles</h2>
+            </div>
+
+            <div class="sixteen columns marginTop">
+                <table>
+
+
+    <tr>
+        <td style="vertical-align:top;width:110px;">
+                <img alt="" title="" src="/Images/icons/b.png" style="margin: 20px 0 30px 0;" />
+        </td>
+        <td style="vertical-align:top">
+            <h3 class="blogdate">April 2015</h3>
+                <h3><a target="_blank" href="http://blogs.sqlsentry.com/jimholden/saving-settings-for-sql-sentry/">Saving settings for SQL Sentry</a></h3>
+            <p>A common question that comes into our support team is “How can I save my settings for SQL Sentry?” One of the members of our support team, Jim Holden (@SQLJim) answers that question in this blog post. He shows one approach to saving your settings for SQL Sentry – separating them from all the other data collected in the SQL Sentry database.</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div style="border-bottom:1px #ccc solid;margin:10px 0;">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align:top;width:110px;">
+                <img alt="" title="" src="/Images/icons/b.png" style="margin: 20px 0 30px 0;" />
+        </td>
+        <td style="vertical-align:top">
+            <h3 class="blogdate">February 2015</h3>
+                <h3><a target="_blank" href="http://blogs.sqlsentry.com/justinrandall/sql-sentry-v83-rundown/">SQL Sentry v8.3 Rundown</a></h3>
+            <p>In version 8.3, we have pushed the envelope again, enhancing both features to make them even more useful. Arguably the most exciting enhancements in v8.3 are found in Custom Conditions, where three important new features make their appearance. Additionally, the Show Totals feature in Performance Advisor&#39;s Top SQL module has been extended to the Procedure Stats and Query Stats tabs. We&#39;ll touch on each of these features in this post and, as always, more in-depth information is available in the User Guide.</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div style="border-bottom:1px #ccc solid;margin:10px 0;">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align:top;width:110px;">
+                <img alt="" title="" src="/Images/icons/wp.png" style="margin: 20px 0 30px 0;" />
+        </td>
+        <td style="vertical-align:top">
+            <h3 class="blogdate">February 2015</h3>
+                <h3><a target="_blank" href="http://www.sqlsentry.com/white-papers/performance-baselines-and-benchmarks-for-microsoft-sql-server">Performance Baselines and Benchmarks for Microsoft SQL Server</a></h3>
+            <p>The ability to conduct a database performance test to establish baseline measurements and workload performance benchmarks is one of the skills that strongly distinguishes the senior DBAs from the junior DBAs. The challenges in collecting the baselines and benchmarks can be daunting, but the benefits of having them are worth the time and energy.</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div style="border-bottom:1px #ccc solid;margin:10px 0;">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align:top;width:110px;">
+                <img alt="" title="" src="/Images/icons/b.png" style="margin: 20px 0 30px 0;" />
+        </td>
+        <td style="vertical-align:top">
+            <h3 class="blogdate">December 2014</h3>
+                <h3><a target="_blank" href="http://blogs.sqlsentry.com/justinrandall/didnt-know-4/">I Didn’t Know It Could Do That! – Using Notes</a></h3>
+            <p>Justin Randall (@jh_randall) shows how to use the Notes feature in SQL Sentry software to help document issues and streamline troubleshooting efforts. There are three key advantages to including notes in your monitoring solution. First, the information is readily available in the same product/interface you are using to troubleshoot and resolve issues. Second, all users have access to that information and third, the information can be automatically included in notifications when an alert is fired.</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div style="border-bottom:1px #ccc solid;margin:10px 0;">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align:top;width:110px;">
+                <img alt="" title="" src="/Images/icons/b.png" style="margin: 20px 0 30px 0;" />
+        </td>
+        <td style="vertical-align:top">
+            <h3 class="blogdate">December 2014</h3>
+                <h3><a target="_blank" href="http://sqlperformance.com/2014/12/sql-maintenance/proactive-sql-server-health-checks-2">Proactive SQL Server Health Checks, Part 2: Maintenance</a></h3>
+            <p>Erin Stellato (@erinstellato) of SQLskills.com continues her series on proactive SQL Server health checks, this time focusing on mastering maintenance tasks. She looks at the maintenance tasks that need to be run regularly such as backups, integrity checks, index maintenance and statistics updates.</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div style="border-bottom:1px #ccc solid;margin:10px 0;">
+            </div>
+        </td>
+    </tr>
+
+
+
+
+
+                </table>
+                <a class="linkbutton" href="/company/more-product-news/EM">More News</a>
+            </div>
+        </div>
+    </div>
+    <!--end articles-->
+    <!--start videos -->
+    <div class="page section">
+        <div class="menuoffset" id="videos"></div>
+
+        <div class="container">
+            <div class="sixteen columns ">
+                <h2>Videos</h2>
+            </div>
+            <div class="row">
+                <div class="four columns marginTop " id="videothumb">
+                    <div class="videothumb">
+                        <img src="/images/video-thumbs/new-in-7-thumb.jpg" alt="SQL Sentry - New in Version 7" border="0" class=" scale-with-grid" />
+                        <a href="http://vimeo.com/44390573" rel="prettyPhoto[video]" title="SQL Sentry Version 7 offers significant new features for both Event Manager and Performance Advisor." class="play"></a>
+                    </div>
+                    <h4 class="videoDescription">SQL Sentry - New in Version 7</h4>
+                    <p class="videoDescription">SQL Sentry Version 7 offers significant new features including integrated index analysis and defrag, mirroring monitoring and much more. We’ve also completely re-architected our alerting and notification functionality.</p>
+                </div>
+
+                <div class="four columns marginTop " id="videothumb">
+                    <div class="videothumb">
+                        <img src="/images/video-thumbs/em-overview.jpg" alt="Event Manager Overview" border="0" class=" scale-with-grid" />
+
+                        <a href="http://vimeo.com/44388018" rel="prettyPhoto[video]" title="SQL Sentry v6 introduces several groundbreaking features like Integrated Execution Plan Capture and Analysis, Top SQL Enhancements, VLF (virtual log file) Info along with many new reports." class="play"></a>
+                    </div>
+                    <h4 class="videoDescription">Event Manager Overview</h4>
+                    <p class="videoDescription">This video provides an overview of Event Manager, including the shared groups’ global calendar view. Calendar views are available for any server or group of servers, and can be easily customized to fit your organization’s needs.</p>
+                </div>
+
+                <div class="four columns marginTop " id="videothumb">
+                    <div class="videothumb">
+                        <img src="/images/video-thumbs/power-suite-overview-thumb.jpg" alt="Power Suite Overview" border="0" class=" scale-with-grid" />
+                        <a href="http://vimeo.com/44388853" rel="prettyPhoto[video]" title="The SQL Sentry Power Suite provides a complete performance monitoring and optimization solution for Microsoft SQL Server by combining both Performance Advisor for SQL Server and Event Manager." class="play">
+                        </a>
+                    </div>
+                    <h4 class="videoDescription">Power Suite Overview</h4>
+                    <p class="videoDescription">The SQL Sentry Power Suite provides a complete performance monitoring and optimization solution for Microsoft SQL Server by combining both Performance Advisor for SQL Server and Event Manager.</p>
+                </div>
+
+                <div class="four columns marginTop " id="videothumb">
+                    <div class="videothumb">
+                        <img src="/images/video-thumbs/intro-notifications.jpg" alt="Power Suite Overview" border="0" class=" scale-with-grid" />
+                        <a href="http://vimeo.com/44389982" rel="prettyPhoto[video]" title="The SQL Sentry Power Suite provides a complete performance monitoring and optimization solution for Microsoft SQL Server by combining both Performance Advisor for SQL Server and Event Manager." class="play">
+                        </a>
+                    </div>
+                    <h4 class="videoDescription">Introduction to Notifications</h4>
+                    <p class="videoDescription">Event Manager employs the most comprehensive and reliable notification system available for SQL Server, providing a wide variety of response actions to any job status, runtime or performance condition.</p>
+                </div>
+
+                <div class="sixteen columns" style="text-align:center">
+                    <p>Watch more <span class="bold">Event Manager</span> videos at: <a href="http://sqlsentry.tv/category/event-manager/" target="_blank"> SQLSentry.TV</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end videos -->
+    <!--start parallax sqlsentry.tv ad-->
+    <div id="parallax-4" class="parallax fixed" style="background-image: url(/images/parallax-ad-TV.jpg);">
+        <div class="quoteWrap">
+            <div class="quote">
+                <div class="container" style="width:;margin: 0 auto;">
+                    <div class="eight columns">
+                        <a href="http://sqlsentry.tv"><img src="/images/TV1-parallax.png" class="scale-with-grid" style="margin: 0 0px 0px 0;" id="TV1" /></a><br />
+                    </div>
+                    <div class="eight columns">
+                        <a href="http://sqlsentry.tv"><img src="/images/TV2-parallax.png" class="scale-with-grid" style="margin: 0 0px 0px 0;" id="TV2" /></a><br />
+                    </div>
+                    <div class="sixteen columns">
+                        <a class="linkbutton" "km_sqltv_parallax" href="http://sqlsentry.tv" style="margin:0px 0px 0 0px;font-size:1.1em;">Visit SQLSentry.TV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end parallax feature -->
+    <!--start pricing-->
+    <div class="page section">
+        <div class="menuoffset" id="pricing"></div>
+
+        <div class="container ">
+            <div class="sixteen columns ">
+                <h2>Pricing</h2>
+            </div>
+
+            <div class="sixteen columns marginTop">
+                <p>SQL Sentry Event Manager is licensed per individual monitored instance. First year annual software maintenance is required and provides technical support via e-mail and phone, fixes and updates and free version upgrades.</p>
+
+                <div class="productTable">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="1">
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="right" valign="top" width="130">License</td>
+                            <td align="right" valign="top" width="130">Maintenance</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <span class="bold">
+                                    Event Manager for Windows
+                                </span>
+                                <br>
+                            </td>
+                            <td align="right" valign="top">$295.00</td>
+                            <td align="right" valign="top">$59.00</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <span class="bold">
+                                    Event Manager for SQL Server
+                                </span>
+                                <br>
+                            </td>
+                            <td align="right" valign="top">$995.00</td>
+                            <td align="right" valign="top">$199.00</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <span class="bold">
+                                    Event Manager for SharePoint
+                                </span>
+                                <br>
+                            </td>
+                            <td align="right" valign="top">$995.00</td>
+                            <td align="right" valign="top">$199.00</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <span class="bold">
+                                    Event Manager for Oracle
+                                </span>
+                                <br>
+                            </td>
+                            <td align="right" valign="top">$995.00</td>
+                            <td align="right" valign="top">$199.00</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <span class="simptip-position-left simptip-movable simptip-smooth simptip-multiline bold color" data-tooltip="Savings is compared to purchasing the items separately.">
+                                    <span style="cursor:default;">
+                                        SAVE 20% / $1,188.00
+                                    </span>
+                                </span>
+                                <span class="bold">
+                                    BI Suite
+                                </span>
+                                <br>
+
+                                (1) Performance Advisor for Analysis Services
+                                <br>
+
+                                (1) Performance Advisor for SQL Server
+                                <br>
+
+                                (1) Event Manager for SQL Server
+                                <br>
+                            </td>
+                            <td align="right" valign="top">$3,995.00</td>
+                            <td align="right" valign="top">$799.00</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <span class="simptip-position-left simptip-movable simptip-smooth simptip-multiline bold color" data-tooltip="Savings is compared to purchasing the items separately.">
+                                    <span style="cursor:default;">
+                                        SAVE 20% / $594.00
+                                    </span>
+                                </span>
+                                <span class="bold">
+                                    Power Suite for SQL Server
+                                </span>
+                                <br>
+
+                                (1) Performance Advisor for SQL Server
+                                <br>
+
+                                (1) Event Manager for SQL Server
+                                <br>
+                            </td>
+                            <td align="right" valign="top">$1,995.00</td>
+                            <td align="right" valign="top">$399.00</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <span class="simptip-position-left simptip-movable simptip-smooth simptip-multiline bold color" data-tooltip="Savings is compared to purchasing the items separately.">
+                                    <span style="cursor:default;">
+                                        SAVE 16% / $114.00
+                                    </span>
+                                </span>
+                                <span class="bold">
+                                    Power Suite for Windows
+                                </span>
+                                <br>
+
+                                (1) Performance Advisor for Windows
+                                <br>
+
+                                (1) Event Manager for Windows
+                                <br>
+                            </td>
+                            <td align="right" valign="top">$495.00</td>
+                            <td align="right" valign="top">$99.00</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <span class="simptip-position-left simptip-movable simptip-smooth simptip-multiline bold color" data-tooltip="Savings is compared to purchasing the items separately.">
+                                    <span style="cursor:default;">
+                                        SAVE 23% / $880.00
+                                    </span>
+                                </span>
+                                <span class="bold">
+                                    Power Suite PLUS
+                                </span>
+                                <br>
+
+                                (1) Performance Advisor for SQL Server
+                                <br>
+
+                                (1) Event Manager for SQL Server
+                                <br>
+
+                                (1) Performance Advisor for Windows
+                                <br>
+
+                                (1) Event Manager for Windows
+                                <br>
+
+                                (1) Fragmentation Manager
+                                <br>
+                            </td>
+                            <td align="right" valign="top">$2,995.00</td>
+                            <td align="right" valign="top">$599.00</td>
+                        </tr>
+                    </table>
+                </div>
+                <p class="productnote">
+                    SQL Sentry Power Suites include licenses for Event Manager and Performance Advisor.<br />
+                    The first year annual software maintenance is required with license purchase.
+                </p>
+                <a class="buylinkbutton" href="mailto:sales@sqlsentry.com">CONTACT SALES TO PURCHASE</a>
+            </div>
+        </div>
+    </div>
+    <!--end pricing-->
+    <!--start download-->
+    <div class="page section">
+        <div class=" menuoffset" id="download"></div>
+
+        <div class="container contactContainer">
+            <div class="sixteen columns ">
+                <h2>Download Evaluation</h2>
+            </div>
+            <div class="sixteen columns marginTop">
+                <!-- eval download form -->
+
+
+
+
+<section class="download-eval bstrnstn">
+    <div class="container">
+        <div class="row mbt">
+            <div class="col-xs-12 col-md-7">
+                        <h1 class="H H--big H--heavy u-color-gray-darker mbm">Performance Advisor 15-Day Free Trial</h1>
+                        <span class="H H--medium u-color-gray-dark mbm">(Includes Plan Explorer Functionality)</span>
+
+                        <p class="-requestEval-text">Monitor, diagnose, and optimize your on-premises, virtual, cloud, or hybrid SQL Server environment.</p>
+
+            </div>
+            <div class="col-md-5 hidden-xs hidden-sm l-centerText mtl">
+                <img class="-trlogo mbm" src="/Images/tr-logo.svg" alt="TrustRadius Logo" />
+                <img class="mbm" src="/Images/tr-stars-red.svg" alt="Full Features, No Commitment. Rated 8.7 out of 10 by real customers on TrustRadius" style="max-width:374px;max-height:30px" />
+                <p style="font-size:0.9em">Based on 84+ verified customer ratings and reviews</p>
+            </div>
+        </div>
+    </div>
+
+<link rel="stylesheet" href="/css/views/shared/request-eval.min.css" />
+
+<div class="container download-eval-form">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2 pbm mbt">
+            <span class="H H--small mbd">Free Trial Includes:</span>
+            <div class="row u-text-bold -md-lg-right-border">
+                <div class="col-sm-6 col-md-12">
+                    <div class="List List--noBullets">
+                        <ul>
+                            <li>
+                                <div class="media media--verticalCenter">
+                                    <div class="media-left">
+                                        <img src="/Images/icons/edition-sql.svg" alt="" class="media-object">
+                                    </div>
+                                    <div class="media-body">SQL Server Instances (10)</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media media--verticalCenter">
+                                    <div class="media-left">
+                                        <img src="/Images/icons/edition-as.svg" alt="" class="media-object">
+                                    </div>
+                                    <div class="media-body">Analysis Services Instances (4)</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media media--verticalCenter">
+                                    <div class="media-left">
+                                        <img src="/Images/icons/edition-win.svg" alt="" class="media-object">
+                                    </div>
+                                    <div class="media-body">Windows Systems (10)</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <div class="List List--noBullets List--stackable--xs List--stackable--md List--stackable--lg">
+                        <ul>
+                            <li>
+                                <div class="media media--verticalCenter">
+                                    <div class="media-left">
+                                        <img src="/Images/icons/edition-v.svg" alt="" class="media-object">
+                                    </div>
+                                    <div class="media-body">VMware Hosts (2)</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media media--verticalCenter">
+                                    <div class="media-left">
+                                        <img src="/Images/icons/edition-db.svg" alt="" class="media-object">
+                                    </div>
+                                    <div class="media-body">Azure SQL Databases (5)</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-lg-4 mbt">
+            <span class="H H--small mbd">Let's Get Started:</span>
+            <form id="request-eval-form" class="form-horizontal requestEvalForm">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-push-2 col-md-9 col-md-push-3 mbs">
+                        All fields required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="FirstName" class="col-sm-2 col-md-3 control-label">First</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="text" id="FirstName" name="firstName" placeholder="First" class="form-control" maxlength="50" title="First Name" data-parsley-trigger="change" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="LastName" class="col-sm-2 col-md-3 control-label">Last</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="text" id="LastName" name="lastName" placeholder="Last" class="form-control" maxlength="50" title="Last Name" data-parsley-trigger="change" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="EmailAddress" class="col-sm-2 col-md-3 control-label">Email</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="email" id="EmailAddress" name="email" placeholder="Email" class="form-control" maxlength="50" title="Valid corporate email address" data-parsley-type="email" data-parsley-trigger="change" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="CompanyName" class="col-sm-2 col-md-3 control-label">Company</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="text" id="CompanyName" name="company" placeholder="Company" class="form-control" maxlength="50" title="Company Name" data-parsley-trigger="change" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Phone" class="col-sm-2 col-md-3 control-label">Phone</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="text" id="Phone" name="phone" placeholder="Phone" class="form-control" title="Contact Phone Number" data-parsley-pattern="[\d-\.\(\)]{10,}" data-parsley-maxlength="20" data-parsley-trigger="change" maxlength="20" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Country" class="col-sm-2 col-md-3 control-label">Country</label>
+                    <div class="col-sm-10 col-md-9">
+                        <select class="form-control" id="Country" name="Country" parsley-trigger="change" required="required"><option value="">Country</option>
+<option value="182">United States</option>
+<option value="261">Afghanistan</option>
+<option value="265">Albania</option>
+<option value="259">Algeria</option>
+<option value="262">American Samoa</option>
+<option value="266">Andorra</option>
+<option value="223">Anguilla</option>
+<option value="260">Antarctica</option>
+<option value="264">Antigua and Barbuda</option>
+<option value="208">Argentina</option>
+<option value="267">Armenia</option>
+<option value="225">Aruba</option>
+<option value="109">Australia</option>
+<option value="121">Austria</option>
+<option value="268">Azerbaijan</option>
+<option value="226">Bahamas</option>
+<option value="279">Bahrain</option>
+<option value="273">Bangladesh</option>
+<option value="227">Barbados</option>
+<option value="277">Belarus</option>
+<option value="123">Belgium</option>
+<option value="276">Belize</option>
+<option value="269">Benin</option>
+<option value="102">Bermuda</option>
+<option value="274">Bhutan</option>
+<option value="278">Bolivia, Plurinational State of</option>
+<option value="270">Botswana</option>
+<option value="280">Bouvet Island</option>
+<option value="210">Brazil</option>
+<option value="281">British Indian Ocean Territory</option>
+<option value="275">Brunei Darussalam</option>
+<option value="125">Bulgaria</option>
+<option value="271">Burkina Faso</option>
+<option value="272">Burundi</option>
+<option value="289">Cambodia</option>
+<option value="282">Cameroon</option>
+<option value="254">Canada</option>
+<option value="283">Cape Verde</option>
+<option value="229">Cayman Islands</option>
+<option value="284">Central African Republic</option>
+<option value="285">Chad</option>
+<option value="211">Chile</option>
+<option value="61">China</option>
+<option value="291">Christmas Island</option>
+<option value="292">Cocos (Keeling) Islands</option>
+<option value="212">Colombia</option>
+<option value="286">Comoros</option>
+<option value="287">Congo</option>
+<option value="293">Cook Islands</option>
+<option value="113">Costa Rica</option>
+<option value="288">Cote d’Ivoire</option>
+<option value="290">Croatia</option>
+<option value="62">Cyprus</option>
+<option value="127">Czech Republic</option>
+<option value="128">Denmark</option>
+<option value="294">Djibouti</option>
+<option value="295">Dominica</option>
+<option value="232">Dominican Republic</option>
+<option value="213">Ecuador</option>
+<option value="257">Egypt</option>
+<option value="114">El Salvador</option>
+<option value="296">Equatorial Guinea</option>
+<option value="297">Eritrea</option>
+<option value="299">Estonia</option>
+<option value="298">Ethiopia</option>
+<option value="306">Falkland Islands (Malvinas)</option>
+<option value="304">Faroe Islands</option>
+<option value="302">Fiji</option>
+<option value="305">Finland</option>
+<option value="131">France</option>
+<option value="307">French Guiana</option>
+<option value="303">French Polynesia</option>
+<option value="308">French Southern Territories</option>
+<option value="309">Gabon</option>
+<option value="310">Gambia</option>
+<option value="317">Georgia</option>
+<option value="132">Germany</option>
+<option value="311">Ghana</option>
+<option value="133">Gibraltar</option>
+<option value="134">Greece</option>
+<option value="318">Greenland</option>
+<option value="315">Grenada</option>
+<option value="316">Guadeloupe</option>
+<option value="314">Guam</option>
+<option value="115">Guatemala</option>
+<option value="312">Guinea</option>
+<option value="313">Guinea-Bissau</option>
+<option value="319">Guyana</option>
+<option value="235">Haiti</option>
+<option value="321">Heard Island and McDonald Islands</option>
+<option value="399">Holy See (Vatican City State)</option>
+<option value="320">Honduras</option>
+<option value="249">Hong Kong</option>
+<option value="135">Hungary</option>
+<option value="322">Iceland</option>
+<option value="65">India</option>
+<option value="66">Indonesia</option>
+<option value="137">Ireland</option>
+<option value="256">Israel</option>
+<option value="138">Italy</option>
+<option value="323">Jamaica</option>
+<option value="70">Japan</option>
+<option value="71">Jordan</option>
+<option value="325">Kazakhstan</option>
+<option value="324">Kenya</option>
+<option value="327">Kiribati</option>
+<option value="258">Korea, Republic of</option>
+<option value="328">Kuwait</option>
+<option value="326">Kyrgyzstan</option>
+<option value="331">Lao People’s Democratic Republic</option>
+<option value="332">Latvia</option>
+<option value="78">Lebanon</option>
+<option value="329">Lesotho</option>
+<option value="330">Liberia</option>
+<option value="140">Liechtenstein</option>
+<option value="334">Lithuania</option>
+<option value="142">Luxembourg</option>
+<option value="340">Macao</option>
+<option value="391">Macedonia, the former Yugoslav Republic of</option>
+<option value="335">Madagascar</option>
+<option value="336">Malawi</option>
+<option value="79">Malaysia</option>
+<option value="341">Maldives</option>
+<option value="337">Mali</option>
+<option value="144">Malta</option>
+<option value="343">Marshall Islands</option>
+<option value="344">Martinique</option>
+<option value="173">Mauritania</option>
+<option value="347">Mauritius</option>
+<option value="338">Mayotte</option>
+<option value="180">Mexico</option>
+<option value="346">Moldova, Republic of</option>
+<option value="146">Monaco</option>
+<option value="342">Mongolia</option>
+<option value="348">Montserrat</option>
+<option value="31">Morocco</option>
+<option value="339">Mozambique</option>
+<option value="349">Myanmar</option>
+<option value="255">Namibia</option>
+<option value="353">Nauru</option>
+<option value="352">Nepal</option>
+<option value="147">Netherlands</option>
+<option value="239">Netherlands Antilles</option>
+<option value="354">New Caledonia</option>
+<option value="110">New Zealand</option>
+<option value="356">Nicaragua</option>
+<option value="350">Niger</option>
+<option value="351">Nigeria</option>
+<option value="357">Niue</option>
+<option value="358">Norfolk Island</option>
+<option value="355">Northern Mariana Islands</option>
+<option value="148">Norway</option>
+<option value="82">Oman</option>
+<option value="-1">Other Country</option>
+<option value="83">Pakistan</option>
+<option value="359">Palau</option>
+<option value="118">Panama</option>
+<option value="360">Papua New Guinea</option>
+<option value="362">Paraguay</option>
+<option value="217">Peru</option>
+<option value="86">Philippines</option>
+<option value="361">Pitcairn</option>
+<option value="149">Poland</option>
+<option value="150">Portugal</option>
+<option value="240">Puerto Rico</option>
+<option value="363">Qatar</option>
+<option value="364">Reunion</option>
+<option value="365">Romania</option>
+<option value="152">Russian Federation</option>
+<option value="370">Saint Helena, Ascension and Tristan da Cunha</option>
+<option value="241">Saint Kitts and Nevis</option>
+<option value="242">Saint Lucia</option>
+<option value="382">Saint Pierre and Miquelon</option>
+<option value="374">Saint Vincent and the Grenadines</option>
+<option value="380">Samoa</option>
+<option value="381">San Marino</option>
+<option value="366">Sao Tome and Principe</option>
+<option value="367">Senegal</option>
+<option value="176">Seychelles</option>
+<option value="368">Sierra Leone</option>
+<option value="89">Singapore</option>
+<option value="375">Slovakia</option>
+<option value="376">Slovenia</option>
+<option value="373">Solomon Islands</option>
+<option value="369">Somalia</option>
+<option value="41">South Africa</option>
+<option value="154">Spain</option>
+<option value="91">Sri Lanka</option>
+<option value="371">Sudan</option>
+<option value="379">Suriname</option>
+<option value="377">Svalbard and Jan Mayen</option>
+<option value="372">Swaziland</option>
+<option value="157">Sweden</option>
+<option value="158">Switzerland</option>
+<option value="378">Syrian Arab Republic</option>
+<option value="250">Taiwan</option>
+<option value="385">Tajikistan</option>
+<option value="383">Tanzania, United Republic of</option>
+<option value="94">Thailand</option>
+<option value="384">Togo</option>
+<option value="392">Tokelau</option>
+<option value="387">Tonga</option>
+<option value="389">Trinidad and Tobago</option>
+<option value="47">Tunisia</option>
+<option value="95">Turkey</option>
+<option value="386">Turkmenistan</option>
+<option value="390">Turks and Caicos Islands</option>
+<option value="388">Tuvalu</option>
+<option value="393">Uganda</option>
+<option value="395">Ukraine</option>
+<option value="97">United Arab Emirates</option>
+<option value="163">United Kingdom</option>
+<option value="396">United States Minor Outlying Islands</option>
+<option value="219">Uruguay</option>
+<option value="398">US Virgin Islands</option>
+<option value="394">Uzbekistan</option>
+<option value="397">Vanuatu</option>
+<option value="220">Venezuela, Bolivarian Republic of</option>
+<option value="99">Vietnam</option>
+<option value="228">Virgin Islands, British</option>
+<option value="401">Wallis and Futuna</option>
+<option value="400">Western Sahara</option>
+<option value="402">Yemen</option>
+<option value="403">Yugoslavia</option>
+</select>
+                    </div>
+                </div>
+                <div class="form-group mvd">
+                    <div class="col-sm-10 col-sm-offset-2 col-md-9 col-md-offset-3">
+                        <div>
+                            <input type="radio" name="installer" id="64bit" title="64-bit (x64) Installer" value="64" checked>
+                            <label for="64bit">64-bit (x64) Installer</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="installer" id="32bit" title="32-bit (x86) Installer" value="32">
+                            <label for="32bit">32-bit (x86) Installer</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-2 col-sm-9 col-md-offset-3">
+                        <input type="button" class="Btn js-submitRequestEval" value="Download">
+                        <p class="mbn disclaimer mtd hidden-xs" style="width:150%">By clicking download, you agree to the SQL Sentry <a class="u-text-bold" href="/company/privacy" target="_blank">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="mbn disclaimer mtd visible-xs">By clicking download, you agree to the SQL Sentry <a class="u-text-bold" href="/company/privacy" target="_blank">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p id="submitRequestEvalMessage"></p>
+                </div>
+            </form>
+            <div id="ExistingActiveEval" style="display:none">
+                <p>
+                    Thank you for requesting a download, but it appears you already have an active evaluation in progress, which expires on
+                    <span class="evalExpiration"></span>.
+                </p>
+                <p>
+                    If you need to download the installation files again, please log in to your customer portal account
+                    <a href="/MyAccount/Index">here</a>.
+                </p>
+                <p>Your evaluation license has been re-sent.</p>
+            </div>
+            <div id="ExistingEvalExpired" style="display:none">
+                <p>You already have an evaluation license, however the evaluation period has expired. Please email <a href="mailto:sales@sqlsentry.com">sales@sqlsentry.com</a> for an evaluation period extension.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/lib/parsleyjs/dist/parsley.min.js"></script>
+<script src="/bundle/blockUI?v=JLPhDL52mGKipppCqvzU24r7_hogN_0AZ_fXWWLWEI81"></script>
+
+<script id="evalScripts" type="text/javascript" name="evalScripts" src="/js/views/shared/requesteval.min.js"></script>
+
+            <div class="container">
+                <div class="row bt mtt ptd">
+                    <div class="col-xs-12">
+                        <span class="H H--small mbs">Standalone version of <a href="/plan-explorer">Plan Explorer</a> also available.</span>
+                        <a href="/plan-explorer">
+                            <img class="mtl" src="/images/logos/products/planexplorer.svg" style="height:44px;" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+</section>
+                <!-- /eval download form -->
+            </div>
+        </div>
+    </div>
+    <!--end download-->
+
+
+    
+
+
+
+<script lang="javascript">
+    $("#filterSQL").click(function () {
+        $.when($("div")
+            .filter(".featurelist").slideUp(500)).then(showsqlfeatures());
+    });
+
+    function resetbuttons() {
+        $("#nofilter").attr('src', '/images/icons/all-filter-button.png')
+        $("#filterSQL").attr('src', '/images/icons/sql-filter-button.png')
+        $("#filterWIN").attr('src', '/images/icons/win-filter-button.png')
+        $("#filterSP").attr('src', '/images/icons/sharepoint-filter-button.png')
+        $("#filterO").attr('src', '/images/icons/oracle-filter-button.png')
+    }
+
+    function shownewfeatures() {
+        $("div")
+            .filter(".feature").slideUp();
+
+        resetbuttons();
+        $("#filterNEW").attr('src', '/images/icons/new-filter-button-on.png')
+
+        $("div")
+            .filter(".filterNEW").slideDown();
+
+        $("div")
+            .filter(".featurelist").slideDown();
+    }
+
+    $("#filterNEW").click(function () {
+        $.when($("div")
+            .filter(".featurelist").slideUp(500)).then(shownewfeatures());
+    });
+
+    function showsqlfeatures() {
+        $("div")
+            .filter(".feature").slideUp();
+
+        resetbuttons();
+        $("#filterSQL").attr('src', '/images/icons/sql-filter-button-on.png')
+
+        $("div")
+            .filter(".filterSQL").slideDown();
+
+        $("div")
+            .filter(".featurelist").slideDown();
+    }
+
+    $("#filterWIN").click(function () {
+        $.when($("div")
+            .filter(".featurelist").slideUp(500)).then(showwinfeatures());
+    });
+
+    function showwinfeatures() {
+        $("div")
+            .filter(".feature").slideUp();
+
+        resetbuttons();
+        $("#filterWIN").attr('src', '/images/icons/win-filter-button-on.png')
+
+        $("div")
+            .filter(".filterWIN").slideDown();
+
+        $("div")
+            .filter(".featurelist").slideDown();
+    }
+
+    $("#filterSP").click(function () {
+        $.when($("div")
+            .filter(".featurelist").slideUp(500)).then(showspfeatures());
+    });
+
+    function showspfeatures() {
+        $("div")
+            .filter(".feature").slideUp();
+
+        resetbuttons();
+        $("#filterSP").attr('src', '/images/icons/sharepoint-filter-button-on.png')
+
+        $("div")
+            .filter(".filterSP").slideDown();
+
+        $("div")
+            .filter(".featurelist").slideDown();
+    }
+
+    $("#filterO").click(function () {
+        $.when($("div")
+            .filter(".featurelist").slideUp(500)).then(showoraclefeatures());
+    });
+
+    function showoraclefeatures() {
+        $("div")
+            .filter(".feature").slideUp();
+
+        resetbuttons();
+        $("#filterO").attr('src', '/images/icons/oracle-filter-button-on.png')
+
+        $("div")
+            .filter(".filterO").slideDown();
+
+        $("div")
+            .filter(".featurelist").slideDown();
+    }
+
+    $("#nofilter").click(function () {
+        $.when($("div")
+            .filter(".featurelist").slideUp(500)).then(showallfeatures());
+    });
+
+    function showallfeatures() {
+        $("div")
+            .filter(".feature").slideDown();
+
+        resetbuttons();
+        $("#nofilter").attr('src', '/images/icons/all-filter-button-on.png')
+
+        $("div")
+            .filter(".featurelist").slideDown(500);
+    }
+</script>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            animation_speed: 'normal',
+            slideshow: 6000,
+            default_width: 1080,
+            default_height: 720,
+        });
+
+    });
+</script>
+
+
+<style>
+    .topFooter .headingTrigger {
+        color: #999;
+        cursor: pointer;
+    }
+
+    .topFooter .headingTrigger:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .topFooter .row {
+        min-height: 20px;
+    }
+
+    .topFooter li {
+        padding-bottom: .5em;
+    }
+
+    #popularTopics > .row {
+        margin-bottom: 0;
+    }
+</style>
+
+<link href="/css/_SQLSentryLayout_Footer?v=neP2dj87VEVTs1a6P9E8q59vYUHUKAXym2GYLLVD7Qs1" rel="stylesheet"/>
+
+
+<!--start top footer-->
+<div class="topFooter">
+    <div class="container">
+        <div class="row">
+            <div class="three columns footerColumn">
+                <p>
+                    About Us
+                </p>
+                <ul>
+                    <li><a href="/company/about-us">Overview</a></li>
+                    <li><a href="/company/leadership">Leadership</a></li>
+                    <li><a href="/company/careers">Careers</a></li>
+                    <li><a href="/company/privacy">Privacy Policy</a></li>
+                </ul>
+                <p>Partners</p>
+                <ul>
+                    <li><a href="/company/partners#find-partner">Find a Partner</a></li>
+                    <li><a href="/company/partners#become-partner">Become a Partner</a></li>
+                </ul>
+            </div>
+            <div class="three columns footerColumn">
+                <p>News & Events</p>
+                <ul>
+                    <li><a href="/company/news-events#news-room">News Room</a></li>
+                    <li><a href="/company/news-events#events">Events</a></li>
+                    <li><a href="/company/news-events#webinars">Upcoming Webinars</a></li>
+                    <li><a href="/company/news-events#eNewsSection">SQL Sentry eNews</a></li>
+                    <li><br /></li>   
+                </ul>
+                <p>Success Stories</p>
+                <ul>
+                    <li><a href="/company/success-stories#customers">Customers</a></li>
+                    <li><a href="/company/success-stories#testimonials">Testimonials</a></li>
+                    <li><a href="/company/success-stories#awards">Awards and Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="three columns footerColumn">
+                <p>Community</p>
+                <ul>
+                    <li><a href="/company/news-events#webinars">Webinars</a></li>
+                    <li><a href="http://blogs.sqlsentry.com">Blogs</a></li>
+                    <li><a href="/company/news-events#events">Events</a></li>
+                    <li><a href="/company/news-events#eNewsSection">SQL Performance News</a></li>
+                    <li class="socialIcons">
+                        <a target="_blank" href="https://www.facebook.com/SQLSentry"><img border="0" alt="facebook" src="/images/icons/16-fb.png"></a>
+                        <a target="_blank" href="https://twitter.com/SQLSentry"><img border="0" alt="twitter" src="/images/icons/16-twitter.png"></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/129912"><img border="0" alt="linkedin" src="/images/icons/16-in.png"></a>
+                        <a target="_blank" href="https://plus.google.com/111232758474398045503/posts"><img border="0" alt="gplus" src="/images/icons/16-gplus.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="three columns footerColumn">
+                <p>Contact Us</p>
+                <ul>
+                    <li><a href="#" class="contact-us" data-toggle="modal" data-target="#contact-us-form">Contact Us</a></li>
+                    <li><a href="" onclick="window.Zenbox.show(); return false;">Contact support</a></li>
+                    <li><a href="#" class="contact-us-quote" data-toggle="modal" data-target="#contact-us-quote-form">Get a quote</a></li>
+                    <li style="color:#999;">704-895-6241</li>
+                    <li style="color:#999;">855-SQL-SPEED toll-free</li>
+                    <li><a href="mailto:sales@sqlsentry.com">sales@sqlsentry.com</a></li>
+                </ul>
+            </div>
+            <div class="three columns footerColumn">
+                <p>
+                    Websites
+                </p>
+                <ul>
+                    <li><a href="http://sqlperformance.com">SQLPerformance.com</a></li>
+                    <li><a href="http://answers.sqlperformance.com">Answers<wbr/>.SQLPerformance.com</a></li>
+                    <li><a href="http://www.sqlsentry.tv">SQLSentry.TV</a></li>
+                    <li><a href="http://blogs.sqlsentry.com">Blogs.SQLSentry.com</a></li>
+                    <li><a href="http://cloud.sqlsentry.com">Cloud.SQLSentry.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="popularTopics">
+            <div class="row">
+                <div class="headingTrigger active sixteen columns footerColumn" id="popularTopics-title">
+                    <p>Popular Topics</p>
+                </div>
+            </div>
+            <div class="row switch" id="task1" style="display: block;">
+                <div class="expanded-content">
+                    <div>
+                        <div class="three columns footerColumn">
+                            <ul>
+                                <li><a href="/sql-server/alwayson">AlwaysOn</a></li>
+                                <li><a href="/white-papers/performance-baselines-and-benchmarks-for-microsoft-sql-server">Baselines and Benchmarks</a></li>
+                                <li><a href="/sql-server/sql-tools">SQL Tools</a></li>
+                                <li><a href="/sql-server/sql-reports">SQL Reports</a></li>
+                                <li><a href="/sql-server-books">SQL Server Books and eBooks</a></li>
+                            </ul>
+                        </div>
+                        <div class="three columns footerColumn">
+                            <ul>
+                                <li><a href="/sql-server/performance-tuning-in-sql">Performance Tuning in SQL</a></li>
+                                <li><a href="/white-papers/troubleshooting-sql-server-wait-stats">Troubleshooting Wait Stats</a></li>
+                                <li><a href="/sql-server/sql-server-view">SQL Server View</a></li>
+                                <li><a href="/sql-server/sql-index-fragmentation">SQL Index Fragmentation</a></li>
+                            </ul>
+                        </div>
+                        <div class="three columns footerColumn">
+                            <ul>
+                                <li><a href="/sql-server/server-monitoring-tools">Server Monitoring Tools</a></li>
+                                <li><a href="/white-papers/sql-server-sharepoint-windows-alerts">SQL, Sharepoint, Windows Alerts</a></li>
+                                <li><a href="/sql-server/sql-trace">SQL Trace</a></li>
+                                <li><a href="/sql-server/query-optimization">Query Optimization</a></li>
+                            </ul>
+                        </div>
+                        <div class="three columns footerColumn">
+                            <ul>
+                                <li><a href="/sql-server/sql-deadlock">SQL Deadlock</a></li>
+                                <li><a href="http://downloads.sqlsentry.com/downloads/SQLSentryOverheadAnalysis.doc">Overhead Analysis Report</a></li>
+                                <li><a href="/sql-server/windows-event-logs">Windows Event Logs</a></li>
+                                <li><a href="/sql-server/performance-analytics">Performance Analytics</a></li>
+                            </ul>
+                        </div>
+                        <div class="three columns footerColumn">
+                            <ul>
+                                <li><a href="/sql-server/sql-server-blocking">SQL Server Blocking</a></li>
+                                <li><a href="http://www.sqlsentry.com/help/qs">SQL Sentry Quick Start Guide</a></li>
+                                <li><a href="/sql-server/sql-tuning">SQL Tuning</a></li>
+                                <li><a href="/sql-server/database-monitoring-tools">Database Monitoring Tools</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end top footer-->
+<!--start footer-->
+<div id="footer">
+    <div class="container">
+        <div class="sixteen columns col-xs-12">
+            <p>
+                &copy; 2016 SQL Sentry, LLC All rights reserved.
+            </p>
+        </div>
+    </div>
+</div>
+<!--end footer-->
+
+<div class="bstrnstn">
+    <div id="contact-us-form" class="modal fade js-footer-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h1 class="modal-title">Contact Us</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" action="/ContactUs/ContactUsForm">
+                        <div class="form-group">
+                            <label for="contact-us-email" class="required col-xs-5 control-label">Email</label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-email" class="form-control" name="email" type="email" required placeholder="Email"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-firstName" class="required col-xs-5 control-label">First name
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-firstName" class="form-control" name="firstName" type="text" required placeholder="First name"/>
+                            </div>
+                        </div>
+                        <div class="form-group u-honey js-honey" aria-hidden="true">
+                            <label for="contact-us-username" class="col-xs-5 control-label">Reason</label>
+                            <div class="col-xs-7">
+                                <input class="form-control" id="contact-us-username" name="username" type="text" placeholder="Reason" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-lastName" class="required col-xs-5 control-label">Last name
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-lastName" class="form-control" name="lastName" type="text" required placeholder="Last name"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-message" class="required col-xs-5 control-label">Message</label>
+                            <div class="col-xs-7">
+                                <textarea class="form-control modal-textarea modal-textarea--resizeable" id="contact-us-message" name="message" rows="5" required placeholder="What may we do for you?"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group u-honey js-honey" aria-hidden="true">
+                            <label for="contact-us-reason" class="col-xs-5 control-label">Reason</label>
+                            <div class="col-xs-7">
+                                <textarea class="form-control modal-textarea modal-textarea--resizeable" id="contact-us-reason" name="reason" rows="5" placeholder="Reason"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group vertical-offset">
+                            <label for="contact-us-company" class="col-xs-5 control-label">Company</label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-company" class="form-control" name="company" type="text" placeholder="Company"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-title" class="col-xs-5 control-label">Title</label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-title" class="form-control" name="title" type="text" placeholder="Title"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-phone" class="col-xs-5 control-label">Phone</label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-phone" class="form-control" name="phone" type="tel" placeholder="Phone"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-us-numberOfServers" class="col-xs-5 control-label">Servers administered
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-numberOfServers" class="form-control" name="numberOfServers" type="number" placeholder="Number of servers administered"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-numberOfDbas" class="col-xs-5 control-label">DBAs employed</label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-numberOfDbas" class="form-control" name="numberOfDbas" type="number" placeholder="Number of DBAs">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="ajax-message"></p>
+                    <button class="Btn Btn--rectangular" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bstrnstn">
+    <div id="contact-us-quote-form" class="modal fade js-footer-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                    <h1 class="modal-title">Request A Quote</h1>
+                </div>
+                <div class="modal-body">
+                    <p>Whether you need 2 licenses or 2000, we will bring together the right purchasing options, volume
+                        pricing and more to make a cost effective proposal to fit your server environment and budget
+                        needs.</p>
+                    <p>To receive your customized SQL Sentry licensing quote, please fill out and submit the form below
+                        and a licensing proposal will be sent to your email address. It’s that simple. Alternatively,
+                        you can email <a
+                            href="mailto:sales@sqlsentry.com?subject=Quote%20Request">sales@sqlsentry.com</a> or call us
+                        toll-free at 704-895-6241 / 855-775-7733.</p>
+                    <form class="form-horizontal" action="/ContactUs/ContactUsQuoteForm">
+                        <div class="form-group full-width"><h2 class="col-xs-12 mvl">Contact Information</h2></div>
+                        <div class="form-group">
+                            <label class="required col-xs-5 control-label" for="contact-us-quote-email"
+                                   class="required">Email
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-email" class="form-control" placeholder="Email" type="email"
+                                       name="email" required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="required col-xs-5 control-label" for="contact-us-quote-firstName"
+                                   class="required">First name
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-firstName" class="form-control" placeholder="First name"
+                                       type="text"
+                                       name="firstName" required/>
+                            </div>
+                        </div>
+                        <div class="form-group u-honey js-honey" aria-hidden="true">
+                            <label for="contact-us-username" class="col-xs-5 control-label">Reason</label>
+                            <div class="col-xs-7">
+                                <input class="form-control" id="contact-us-username" name="username" type="text" placeholder="Reason" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="required col-xs-5 control-label" for="contact-us-quote-lastName"
+                                   class="required">Last name
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-lastName" class="form-control" placeholder="Last name"
+                                       type="text"
+                                       name="lastName" required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="required col-xs-5 control-label" for="contact-us-quote-company" class="required">
+                                Company
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-company" class="form-control" placeholder="Company"
+                                       type="text"
+                                       name="company" required/>
+                            </div>
+                        </div>
+                        <div class="form-group u-honey js-honey" aria-hidden="true">
+                            <label for="contact-us-quote-reason" class="col-xs-5 control-label">Reason</label>
+                            <div class="col-xs-7">
+                                <textarea class="form-control modal-textarea modal-textarea--resizeable" id="contact-us-quote-reason" name="reason" rows="5" placeholder="Reason"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="required col-xs-5 control-label" for="contact-us-quote-phone" class="required">Phone
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-phone" class="form-control" placeholder="Phone" type="text"
+                                       name="phone" required/>
+                            </div>
+                        </div>
+                        <div class="form-group full-width"><h2 class="col-xs-12 mvl">Required License Information</h2></div>
+
+                        <div class="form-group">
+                            <p class="col-xs-12">
+                                Number of instances you would like to monitor with <b>
+                                    SQL Sentry
+                                    Performance Advisor
+                                </b>
+                            </p>
+                            <label class="col-xs-5 control-label" for="contact-us-quote-PANumberOfServers">SQL Server
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-PANumberOfServers" class="form-control"
+                                       type="number" name="PANumberOfServers"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-5 control-label" for="contact-us-quote-PANumberOfServices">SQL Server
+                                Analysis Services
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-PANumberOfServices" class="form-control"
+                                       type="number" name="PANumberOfServices"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="col-xs-12"
+                               title="A license is required for each SQL Server, Oracle Server, and / or Windows system that you wish to monitor with SQL Sentry Event Manager and/or SQL Sentry Performance Advisor. For additional product information, online demonstrations or volume price quotations, please contact us via email	or phone 704-895-6241 / 855-775-7733 toll-free.">
+                                Number of instances you would like to monitor with <b>SQL Sentry Event Manager</b>
+                            </p>
+                            <label class="col-xs-5 control-label" for="contact-us-quote-EMNumberOfServers">SQL Server
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-EMNumberOfServers" class="form-control"
+                                       type="number" name="EMNumberOfServers"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-5 control-label" for="contact-us-quote-EMNumberOfWindows">Windows
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-EMNumberOfWindows" class="form-control"
+                                       type="number" name="EMNumberOfWindows"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-5 control-label" for="contact-us-quote-preferredPartner">Preferred SQL
+                                Sentry partner
+                            </label>
+                            <div class="col-xs-7">
+                                <select id="contact-us-quote-preferredPartner" class="form-control"
+                                        name="preferredPartner">
+                                    <option value="none" selected>-No preferred partner-</option>
+                                    <option value="SHI">SHI</option>
+                                    <option value="Insight">Insight</option>
+                                    <option value="QBS Software">QBS Software</option>
+                                    <option value="Softchoice">Softchoice</option>
+                                    <option value="En Pointe Technologies">En Pointe Technologies</option>
+                                    <option value="SQL Solutions, Inc.">SQL Solutions, Inc.</option>
+                                    <option value="COMPAREX Group">COMPAREX Group</option>
+                                    <option value="GreenPages Technology Solutions">GreenPages Technology Solutions
+                                    </option>
+                                    <option value="COEO">COEO</option>
+                                    <option value="Gravitar">Gravitar</option>
+                                    <option value="CompuCom">CompuCom</option>
+                                    <option value="PC Mall">PC Mall</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-5 control-label" for="contact-us-quote-comments">Comments /
+                                Questions:
+                            </label>
+                            <div class="col-xs-7">
+                                <textarea id="contact-us-quote-comments" class="form-control modal-textarea modal-textarea--resizeable" placeholder="Comments / Questions" name="comments" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="ajax-message"></p>
+                    <button class="Btn Btn--rectangular" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/Scripts/_SQLSentryLayout_Footer?v=h_58bZknr16ZXuVIWaeLNOAD4OecO0mbKuBKIb8vGfY1"></script>
+
+
+<script type="text/javascript">
+    (function (d, s, i, r) {
+        if (d.getElementById(i)) { return; }
+        var n = d.createElement(s), e = d.getElementsByTagName(s)[0];
+        n.id = i; n.src = '//js.hs-analytics.net/analytics/' + (Math.ceil(new Date() / r) * r) + '/1638705.js';
+        e.parentNode.insertBefore(n, e);
+    })(document, "script", "hs-analytics", 300000);
+</script>
+
+
+    <script type="text/javascript" src="/Scripts/Plugins/zenbox.js"></script>
+
+<style>
+    #old-browser-modal {
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top, #ffffff 0%, #e7eaee 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7eaee)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #ffffff 0%,#e7eaee 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #ffffff 0%,#e7eaee 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #ffffff 0%,#e7eaee 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #ffffff 0%,#e7eaee 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7eaee',GradientType=0 ); /* IE6-9 */
+        border: 9px solid #000;
+        width: 580px;
+    }
+
+    #browser-links li {
+        cursor: pointer;
+        float: left;
+        width: 120px;
+        height: 122px;
+        margin: 0 10px 20px 10px;
+        padding: 0;
+        text-align: center;
+    }
+</style>
+
+<div id="old-browser-modal" class="reveal-modal">
+    <div style="text-align:center;">
+        <h3 style="color:#ccc;font-size:2.2em;">LOOKS LIKE YOUR BROWSER IS OUT OF DATE</h3>
+        <p style="color:#777;">For your convenience here are links to supported browsers:</p>
+        <div>
+            <ul id="browser-links" style="list-style-type:none;padding:0;margin:0;">
+                <li id="ob_chrome">
+                    <div><a href="http://www.google.com/chrome/" target="_blank"><img src="/Images/detect-icon-chrome.png" /></a></div>
+                    <div><a href="http://www.google.com/chrome/" target="_blank">Chrome</a></div>
+                </li>
+                <li id="ob_firefox">
+                    <div><a href="https://www.mozilla.org/en-US/firefox/new" target="_blank"><img src="/Images/detect-icon-firefox.png" /></a></div>
+                    <div><a href="https://www.mozilla.org/en-US/firefox/new" target="_blank">Firefox</a></div>
+                </li>
+                <li id="ob_safari">
+                    <div><a href="http://www.apple.com/safari/" target="_blank"><img src="/Images/detect-icon-safari.png" /></a></div>
+                    <div><a href="http://www.apple.com/safari/" target="_blank">Safari</a></div>
+                </li>
+                <li id="ob_msie">
+                    <div><a href="http://www.microsoft.com/windows/Internet-explorer/" target="_blank"><img src="/Images/detect-icon-msie.png" /></a></div>
+                    <div><a href="http://www.microsoft.com/windows/Internet-explorer/" target="_blank">Internet Explorer</a></div>
+                </li>
+            </ul>
+        </div>
+        <p style="clear:both;">Your browser could be incompatible with this website.<br />If you close this window and continue you may experience less than optimal behavior.</p>
+        <a class="linkbutton old-browser-close">Don't show this again</a><!--Jason need close function-->
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (!Modernizr.input.placeholder) {
+                $("input").each(function () {
+                    if ($(this).val() == "" && $(this).attr("placeholder") != "") {
+                        $(this).val($(this).attr("placeholder"));
+                        $(this).focus(function () {
+                            if ($(this).val() == $(this).attr("placeholder")) $(this).val("");
+                        });
+                        $(this).blur(function () {
+                            if ($(this).val() == "") $(this).val($(this).attr("placeholder"));
+                        });
+                    }
+                });
+            }
+
+            $("#old-browser-modal").center();
+            $("nav.second").sticky({ topSpacing: 74 });
+        });
+
+        //Modernizr modern feature tests
+        $(function () {
+            if (document.cookie != null) {
+                var cookie = document.cookie.split(";");
+                var doNotShowAgain = false;
+                for (var i = 0; i < cookie.length; i++) {
+                    if (cookie[i].indexOf("doNotShowAgain") >= 0) {
+                        doNotShowAgain = true;
+                    }
+                }
+                if (!doNotShowAgain) {
+                    if (Modernizr.fontface &&
+                !Modernizr.borderradius &&
+                !Modernizr.boxshadow &&
+                !Modernizr.opacity &&
+                !Modernizr.cssanimations &&
+                !Modernizr.csstransforms &&
+                !Modernizr.svg &&
+                !Modernizr.video &&
+                !Modernizr.inputtypes.tel &&
+                !Modernizr.inputtypes.date) {
+
+                        $("#old-browser-modal").center();
+                        $("#old-browser-modal").reveal();
+                    }
+                }
+            }
+
+            $('.old-browser-close').click(function () {
+                $('#old-browser-modal').trigger('reveal:close');
+                document.cookie = "doNotShowAgain=true";
+            });
+
+            //document.domain = 'sqlsentry.com'
+            var cartCount = $.cookie("CartItemCount");
+            if (cartCount > 0) {
+                $(".cartlabel").html(cartCount);
+                $(".cartlink").attr("title", cartCount + " items");
+                $(".cartlabel").css("left", 30 - ($(".cartimage").width() / 2));
+                $(".cartimage").prop("src", "/images/icons/cart-red.png");
+            }
+
+
+            //hide zen brand
+            $('.branding').css('display', 'none');
+            var helpButtonLoading = setInterval(function () { HelpButtonLoading() }, 500);
+            var ticketSubmissionFormLoading = setInterval(function () { TicketSubmissionFormLoading() }, 500);
+            function HelpButtonLoading() {
+                if ($("#launcher").length) {
+                    $("#launcher").css("right", "50px");
+                    clearInterval(helpButtonLoading);
+
+                    //Track help button click on Kissmetrics
+                    var helpButton = $('#launcher').contents().find(".Button--launcher");
+                    //alert(helpButton.html());
+                    helpButton.click(function () {
+                        _kmq.push(['trackClick', 'btm_rt_help', 'click_help']);
+                        console.log('clicked help');
+                    })
+                }
+            }
+            function TicketSubmissionFormLoading() {
+                if ($("#ticketSubmissionForm").length) {
+                    $("#ticketSubmissionForm").css("right", "35px");
+                    clearInterval(ticketSubmissionFormLoading);
+                }
+            }
+        });
+
+        function reveal_lock() {
+            //Lock parent scroll when revealed
+            $("body").addClass("modal-open");
+            return true;
+        };
+
+        function reveal_unlock() {
+            //Unlock parent scroll when revealed
+            $("body").removeClass("modal-open");
+            return true;
+        };
+
+        function moveTo(contentArea) {
+            if (contentArea.indexOf("#") == 0) {
+                var goPosition = $(contentArea).offset().top;
+                $('html,body').animate({ scrollTop: goPosition }, 'slow');
+            }
+            else {
+                window.location.href = contentArea;
+            }
+        }
+
+        function moveToDownload() {
+            ga('send', 'pageview', '/vp/downloads-tab/click-dl-full-trial/');
+            if ($(".EvaluationRegistrationForm").length > 0) {
+                var goPosition = $(".EvaluationRegistrationForm").offset().top - 50;
+                $('html,body').animate({ scrollTop: goPosition }, 'slow');
+
+                if ($(".DLpanel").is(":visible")) {
+                    $("#trigger").trigger("click");
+                }
+
+                return false;
+            }
+            else {
+                document.location.href = "/download-trial/trial";
+            }
+        }
+
+        $(".DownloadPlanExplorerLink").click(function () {
+            ga('send', 'pageview', '/vp/downloads-tab/click-dl-plan-explorer/');
+            document.location.href = '/plan-explorer#download';
+
+            if ($(".DLpanel").is(":visible")) {
+                $("#trigger").trigger("click");
+            }
+
+            return false;
+        });
+
+        if (typeof (Zenbox) !== "undefined") {
+            Zenbox.init({
+                dropboxID: "20158840",
+                url: "https://sqlsentry.zendesk.com",
+                tabTooltip: "Support",
+                tabImageURL: "https://assets.zendesk.com/external/zenbox/images/tab_support.png",
+                tabColor: "black",
+                tabPosition: "Left"
+            });
+        }
+    </script>
+    
+
+    <style type="text/css" media="screen, projection">
+        @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
+    </style>
+
+    <script type="text/javascript">ScheduleOnceEmbedPosition="1,3,2";ScheduleOnceEmbedPhoneTitle="Call Us (toll-free)";ScheduleOnceEmbedPhoneText="+1-855-775-7733_so_phone_sep_";ScheduleOnceEmbedEmailTitle="Email Us";ScheduleOnceEmbedEmailBText="Send";ScheduleOnceEmbedEmailBTextColor="rgb(255, 255, 255)";ScheduleOnceEmbedEmailBBGColor="rgb(196, 18, 48)";ScheduleOnceEmbedEmailSendTo="sallison@sqlsentry.com";ScheduleOnceEmbedEmailAck="Website ScheduleOnce Request";ScheduleOnceEmbedEmailAfter="Thank you for your message.<br />We will get back to you as soon as we can.";ScheduleOnceEmbedEmailCustTemp="17";ScheduleOnceEmbedEmailUserTemp="40";ScheduleOnceEmbedBookingTitle="Schedule Online";ScheduleOnceEmbedBookingBText="Book Your Session Now";ScheduleOnceEmbedBookingBBGColor="rgb(196, 18, 48)";ScheduleOnceEmbedBookingBTextColor="rgb(255, 255, 255)";ScheduleOnceEmbedLink="//secure.scheduleonce.com/SQLSentrySEGroup&app=b&thm=gray&bc=C41230&tc=FFFFFF";ScheduleOnceEmbedWidgetTitle="Request Demo";ScheduleOnceEmbedWidgetColor="rgb(255, 255, 255)";ScheduleOnceEmbedWidgetBGColor="rgb(51, 51, 51)";ScheduleOnceEmbedWidgetLeft="right";ScheduleOnceEmbedAid="MjU2NzE4";ScheduleOnceEmbedPageName="'SQLSentrySEGroup'";</script>
+    <script type="text/javascript" src="//static.scheduleonce.com/mergedjs/ScheduleOnceEmbed.js"></script>
+    <script type="text/javascript">function SOEScriptLoaded() { if(typeof soe != 'undefined') { soe.AddEventListners(); } else { setTimeout(SOEScriptLoaded,1000); } } setTimeout(SOEScriptLoaded,1000)</script>
+
+    
+
+    <script type="text/javascript" src="/js/managedjs/utmz.min.js" async></script>
+</body>
+</html>

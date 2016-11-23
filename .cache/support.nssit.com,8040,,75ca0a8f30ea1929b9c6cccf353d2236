@@ -1,0 +1,423 @@
+status: 200
+content-length: 16012
+content-location: http://support.nssit.com:8040
+server: ScreenConnect/5.1.8473.5522-2658615205 Microsoft-HTTPAPI/2.0
+-content-encoding: gzip
+cache-control: private
+date: Thu, 29 Sep 2016 11:46:25 GMT
+p3p: CP="NON CUR OUR STP STA PRE"
+content-type: text/html; charset=utf-8
+
+
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<script>
+
+		function setTaggedSessionItem(map, tag, item) {
+			if (!item && map[tag]) {
+				delete map[tag];
+				SC.pagedata.notifyDirty();
+			} else if (map[tag] != item) {
+				map[tag] = item;
+				SC.pagedata.notifyDirty();
+			}
+		}
+
+		function setTaggedSessionCode(tag, sessionCode) {
+			window.setTaggedSessionItem(window._sessionCodesByTag, tag, sessionCode);
+		}
+
+		function setTaggedSessionID(tag, sessionID) {
+			window.setTaggedSessionItem(window._sessionIDsByTag, tag, sessionID);
+		}
+
+	</script>
+<script src="Script.ashx?__Cache=19600ef2-c919-40c6-9de2-0fab135dd2f0"></script>
+<link href="App_Themes/Embedded/Default.css?__Cache=f75de829-97e8-4f2d-8d67-a1d2e949663e" type="text/css" rel="stylesheet" /><link href="FavIcon.axd?__Cache=d675366b-6b9f-475b-b205-48bacca81ff6" rel="shortcut icon" />
+<script>SC.util.mergeIntoContext({"deferLoad":true,"userDisplayName":"","isUserAuthenticated":false,"isUserAdministrator":false,"loginUrl":"/Login","loginReturnUrlParameterName":"ReturnUrl","loginReasonParameterName":"Reason","changePasswordUrl":"ChangePassword","pageBaseFileName":"Guest","guestPageUrl":"Guest","hostPageUrl":"Host","administrationPageUrl":"Administration","notifyActivityFrequencyMilliseconds":600000,"loginAfterInactivityMilliseconds":0,"canChangePassword":true,"pageType":"GuestPage","processType":2});</script>
+<title>
+	North Star Remote Support Software
+</title></head>
+<body>
+	<script>
+		if (SC.context.deferLoad)
+			SC.ui.setVisible(document.body, false);
+	</script>
+	<div id="outerPanel">
+		<div id="headerPanel">
+			<div id="logoPanel">
+			</div>
+			<div id="navigationPanel">
+			</div>
+			<div id="toolsPanel">
+			</div>
+		</div>
+		<div id="middlePanel">
+			
+	<div>
+		<div id="welcomePanel"></div>
+		<div id="actionPanel"></div>
+	</div>
+
+		</div>
+		<div id="footerPanel">
+			
+		</div>
+	</div>
+	<script>
+		SC.context.scriptBaseUrl = SC.util.getBaseUrl(window.location.href);
+	</script>
+	
+	<script>
+
+		SC.event.addGlobalHandler(SC.event.ExecuteCommand, function (eventArgs) {
+			var joinFilterFunc = null;
+
+			switch (eventArgs.commandName) {
+				case 'JoinBySessionID':
+					joinFilterFunc = function (s) { return s.SessionID == eventArgs.commandArgument; };
+					break;
+				case 'JoinByTag':
+					joinFilterFunc = function (s) { return s.Tag == eventArgs.commandArgument; };
+					break;
+			}
+
+			// IE only allows launching urls on actual clicks
+			if (joinFilterFunc != null && (SC.ui.doesClickDispatchCommand(eventArgs.commandElement) || !SC.util.isCapable(SC.util.Caps.InternetExplorer))) {
+				var sessions = SC.pagedata.get().Sessions.filter(joinFilterFunc);
+
+				if (sessions.length != 0) {
+					SC.launch.startJoinSession(
+						sessions[0],
+						function (sessionToken, promptFieldMap, onSuccess, onFailure) {
+							onSuccess(
+								SC.util.getClientLaunchParameters(
+									sessionToken.SessionID,
+									sessionToken.SessionType,
+									sessionToken.Name,
+									promptFieldMap.participantName.value,
+									null
+								)
+							);
+						},
+						SC.util.getSessionTypeBooleanResource('JoinPanel.{0}PromptVisible', sessions[0].SessionType),
+						SC.util.getSessionTypeResource('JoinPanel.{0}PromptMessage', sessions[0].SessionType),
+						{
+							participantName: {
+								labelText: SC.util.getSessionTypeResource('JoinPanel.{0}ParticipantNameLabelText', sessions[0].SessionType),
+								value: '',
+								visible: SC.util.getSessionTypeBooleanResource('JoinPanel.{0}PromptParticipantNameVisible', sessions[0].SessionType),
+							},
+						},
+						SC.util.getSessionTypeResource('JoinPanel.{0}PromptButtonText', sessions[0].SessionType)
+					);
+				}
+			}
+		});
+
+		SC.event.addGlobalHandler(SC.event.QueryParticipantJoinedCount, function (eventArgs) {
+			var sessionInfo = SC.pagedata.get();
+			var session = sessionInfo.Sessions.find(function (s) { return s.SessionID === eventArgs.clientLaunchParameters.s; });
+
+			if (session !== undefined)
+				eventArgs.participantJoinedCount = session.ActiveConnections.filter(function (ac) { return ac.ProcessType == SC.types.ProcessType.Guest && ac.ParticipantName == eventArgs.clientLaunchParameters.r; }).length;
+		});
+
+		SC.event.addGlobalHandler(SC.event.QueryPanels, function (eventArgs) {
+			switch (eventArgs.area) {
+				case 'GuestActionPanel':
+					eventArgs.panelDefinitions.push({
+						initProc: function (container) {
+							SC.ui.setContents(container, [
+								$div({ className: 'Loading' },
+									$div({ className: 'LoadingContent' })
+								)
+							]);
+						},
+						isVisibleProc: function (pass, previousPassVisibleCount, sessionInfo) {
+							return pass == 1 && sessionInfo == null;
+						}
+					});
+
+					eventArgs.panelDefinitions.push({
+						initProc: function (container) {
+							SC.ui.setContents(container, [
+								$a({ _commandName: 'JoinByTag', _commandArgument: 'DefaultSessionID', className: 'GoLink Medium' }),
+								$h2({ _htmlResource: 'GuestActionPanel.InvitationSession.Heading' }),
+								$p({ _htmlResource: 'GuestActionPanel.InvitationSession.Message' }),
+							]);
+						},
+						isVisibleProc: function (pass, previousPassVisibleCount, sessionInfo) {
+							return pass == 3 &&
+								previousPassVisibleCount == 0 &&
+								sessionInfo != null &&
+								sessionInfo.Sessions.find(function (s) { return s.Tag == 'DefaultSessionID'; });
+						}
+					});
+
+					eventArgs.panelDefinitions.push({
+						initProc: function (container) {
+							SC.ui.setContents(container, [
+								$h2({ _htmlResource: 'GuestActionPanel.CodeSession.Heading' }),
+								$p({ _htmlResource: 'GuestActionPanel.CodeSession.Message' }),
+								$a({ _commandName: 'JoinByTag', _commandArgument: 'DefaultCode', className: 'GoLink Medium' }),
+								$p(SC.ui.createSearchTextBox({ _commandName: 'JoinByTag', _commandArgument: 'DefaultCode' })),
+							]);
+
+							SC.ui.addSearchHandler(SC.ui.findDescendentByTag(container, 'INPUT'), function (eventArgs) {
+								var sessionCode = SC.util.getTrimmedOrNull(SC.event.getElement(eventArgs).value);
+								window.setTaggedSessionCode('DefaultCode', sessionCode);
+							});
+						},
+						isVisibleProc: function (pass, previousPassVisibleCount, sessionInfo) {
+							return pass == 5 && previousPassVisibleCount == 0 && sessionInfo != null && sessionInfo.DoCodeSessionsExist;
+						},
+						refreshProc: function (container, sessionInfo, wasMadeVisible) {
+							SC.ui.setDisabled(
+								SC.ui.findDescendentByTag(container, 'A'),
+								!sessionInfo.Sessions.find(function (s) { return s.Tag == 'DefaultCode'; })
+							);
+
+							if (wasMadeVisible)
+								SC.ui.findDescendentByTag(container, 'INPUT').focus();
+						}
+					});
+
+					eventArgs.panelDefinitions.push({
+						initProc: function (container) {
+							SC.ui.setContents(container, [
+								$h2({ _htmlResource: 'GuestActionPanel.PublicSession.Heading' }),
+								$p({ _htmlResource: 'GuestActionPanel.PublicSession.Message' }),
+								$a({ _commandName: 'JoinBySessionID', className: 'GoLink Medium' }),
+								$p($select()),
+							]);
+
+							SC.event.addHandler(SC.ui.findDescendentByTag(container, 'SELECT'), 'change', function () {
+								SC.ui.findDescendentByTag(container, 'A')._commandArgument = this.options[this.selectedIndex].value;
+							});
+						},
+						isVisibleProc: function (pass, previousPassVisibleCount, sessionInfo) {
+							return pass == 5 && previousPassVisibleCount == 0 && sessionInfo != null && sessionInfo.Sessions.filter(function (s) { return s.IsPublic; }).length > 0;
+						},
+						refreshProc: function (container, sessionInfo, wasMadeVisible) {
+							var selectBox = SC.ui.findDescendentByTag(container, 'SELECT');
+							var link = SC.ui.findDescendentByTag(container, 'A');
+
+							SC.ui.setContents(selectBox,
+								sessionInfo.Sessions.filter(function (s) { return s.IsPublic; }).map(function (s) {
+									return $option({ value: s.SessionID }, s.Name)
+								})
+							);
+
+							var optionIndex = Array.prototype.findIndex.call(selectBox.options, function (o) { return o.value == link._commandArgument; });
+
+							if (optionIndex != -1)
+								selectBox.selectedIndex = optionIndex;
+							else
+								link._commandArgument = selectBox.options[selectBox.selectedIndex].value;
+						}
+					});
+
+					eventArgs.panelDefinitions.push({
+						initProc: function (container) {
+							SC.ui.setContents(container, [
+								$h2({ _htmlResource: 'GuestActionPanel.NoAvailableSessions.Heading' }),
+								$p({ _htmlResource: 'GuestActionPanel.NoAvailableSessions.Message' }),
+							]);
+						},
+						isVisibleProc: function (pass, previousPassVisibleCount, sessionInfo) {
+							return pass == 8 && previousPassVisibleCount == 0
+						}
+					});
+
+					break;
+			}
+		});
+
+		SC.event.addGlobalHandler(SC.event.PreRender, function () {
+			window._sessionCodesByTag = {};
+			window._sessionIDsByTag = {};
+
+			var queryStringMap = SC.util.parseQueryString(window.location.search);
+			window.setTaggedSessionCode('DefaultCode', queryStringMap.Code);
+			window.setTaggedSessionID('DefaultSessionID', queryStringMap.Session);
+
+			var welcomePanel = $('welcomePanel');
+			var actionPanel = $('actionPanel');
+
+			SC.ui.setVisible(welcomePanel, SC.util.getBooleanResource('GuestWelcomePanel.Visible'));
+
+			SC.ui.setContents(welcomePanel, [
+				$h2({ _htmlResource: 'GuestWelcomePanel.Heading' }),
+				$p({ _htmlResource: 'GuestWelcomePanel.Message' }),
+			]);
+
+			SC.panellist.queryAndInitializePanels(actionPanel);
+			SC.panellist.refreshPanels(actionPanel, null);
+
+			SC.pagedata.startPageDataLoop(function (version, onSuccess, onFailure) {
+				return SC.service.GetGuestSessionInfo(
+					window._sessionCodesByTag,
+					window._sessionIDsByTag,
+					version,
+					onSuccess,
+					onFailure
+				);
+			});
+		});
+
+		SC.event.addGlobalHandler(SC.event.PageDataRefreshed, function (eventArgs) {
+			SC.panellist.refreshPanels($('actionPanel'), eventArgs.pageData);
+		});
+
+	</script>
+
+	<script>
+
+		SC.event.addGlobalHandler(SC.event.QueryCommandButtons, function (eventArgs) {
+			switch (eventArgs.area) {
+				case 'ToolsPanel':
+					eventArgs.buttonDefinitions.push(
+						{ commandName: 'Extras' },
+						{ commandName: 'Help' },
+						{ commandName: 'User', text: SC.util.formatString(SC.res['Command.User.Text'], SC.context.userDisplayName) },
+						{ commandName: 'Login' }
+					);
+					break;
+				case 'UserPopoutPanel':
+					eventArgs.buttonDefinitions.push(
+						{ commandName: 'ChangePassword' },
+						{ commandName: 'Logout' }
+					);
+					break;
+				case 'HelpPopoutPanel':
+					if (SC.context.pageType !== 'GuestPage') {
+						for (var i = 1; ; i++) {
+							var resourceValue = SC.res['HelpPanel.Link' + i + '.Text'];
+
+							if (resourceValue === undefined || resourceValue === '')
+								break;
+
+							eventArgs.buttonDefinitions.push({ commandName: 'NavigateHelpLink', commandArgument: i, text: resourceValue });
+						}
+					}
+					break;
+			}
+		});
+
+		SC.event.addGlobalHandler(SC.event.QueryCommandButtonState, function (eventArgs) {
+			switch (eventArgs.commandName) {
+				case 'User':
+					eventArgs.isVisible = SC.context.isUserAuthenticated;
+					break;
+				case 'Login':
+					eventArgs.isVisible = !SC.context.isUserAuthenticated;
+					break;
+				case 'ChangePassword':
+					eventArgs.isVisible = SC.context.canChangePassword;
+					break;
+				case 'Extras':
+				case 'Help':
+					SC.popout.computePopoutCommandsVisible(eventArgs);
+					break;
+			}
+		});
+
+		SC.event.addGlobalHandler(SC.event.ExecuteCommand, function (eventArgs) {
+			switch (eventArgs.commandName) {
+				case 'Login':
+					SC.util.sendToLogin(SC.types.LoginReason.None);
+					break;
+				case 'Logout':
+					SC.util.sendToLogin(SC.types.LoginReason.Logout);
+					break;
+				case 'Extras':
+				case 'User':
+				case 'Help':
+					SC.popout.showPanelFromCommand(eventArgs);
+					break;
+				case 'ChangePassword':
+					window.location.href = SC.context.changePasswordUrl;
+					break;
+				case 'NavigateHelpLink':
+					window.open(SC.res['HelpPanel.Link' + eventArgs.commandArgument + '.Url']);
+					break;
+			}
+		});
+
+		SC.event.addGlobalHandler(SC.event.QueryNavigationLinks, function (eventArgs) {
+			eventArgs.navigationLinks.push({ href: SC.context.guestPageUrl, text: SC.res['NavigationPanel.GuestLinkText'] });
+			eventArgs.navigationLinks.push({ href: SC.context.hostPageUrl, text: SC.res['NavigationPanel.HostLinkText'] });
+
+			if (SC.context.isUserAdministrator)
+				eventArgs.navigationLinks.push({ href: SC.context.administrationPageUrl, text: SC.res['NavigationPanel.AdministrationLinkText'] });
+		});
+
+		SC.event.addGlobalHandler(SC.event.PreRender, function () {
+			var resetInactivityProc = function () {
+				window._lastNotifyActivityTime = new Date().getTime();
+
+				if (SC.context.loginAfterInactivityMilliseconds != 0) {
+					if (window._loginAfterInactivityTimer)
+						window.clearTimeout(window._loginAfterInactivityTimer);
+
+					window._loginAfterInactivityTimer = window.setTimeout(function () { SC.util.sendToLogin(SC.types.LoginReason.IdleTooLong); }, SC.context.loginAfterInactivityMilliseconds);
+				}
+			};
+
+			SC.context.prehandleServiceFailureProc = function (error) {
+				if (error.statusCode != 403)
+					return false;
+
+				SC.util.sendToLogin(SC.types.LoginReason.PermissionsInsufficient);
+			}
+
+			SC.context.unhandledServiceFailureProc = function (error) {
+				SC.dialog.showModalErrorBox(error.detail || error.message);
+			}
+
+			resetInactivityProc();
+
+			SC.ui.initializeWindowActivityTracking(function () {
+				if (new Date().getTime() - window._lastNotifyActivityTime > SC.context.notifyActivityFrequencyMilliseconds) {
+					resetInactivityProc();
+					SC.service.NotifyActivity();
+				}
+			});
+
+			var logoPanel = $('logoPanel');
+			var toolsPanel = $('toolsPanel');
+			var navigationPanel = $('navigationPanel');
+			var isTouchEnabled = (typeof document.documentElement.ontouchstart !== 'undefined');
+
+			if (SC.util.getBooleanResource('LogoPanel.IconVisible'))
+				SC.ui.addElement(logoPanel, 'DIV', { id: 'logoIcon' });
+
+			if (SC.util.getBooleanResource('LogoPanel.ImageVisible'))
+				SC.ui.addElement(logoPanel, 'DIV', { id: 'logoImage' });
+
+			if (SC.util.getBooleanResource('LogoPanel.HeadingVisible'))
+				SC.ui.addElement(logoPanel, 'H1', { id: 'logoHeading' }, SC.res['LogoPanel.Heading']);
+
+			SC.css.ensureClass(document.documentElement, 'TouchEnabled', isTouchEnabled);
+			SC.css.ensureClass(document.documentElement, 'TouchDisabled', !isTouchEnabled);
+			SC.css.ensureClass(document.documentElement, 'UserAuthenticated', SC.context.isUserAuthenticated);
+			SC.css.ensureClass(document.documentElement, 'UserAnonymous', !SC.context.isUserAuthenticated);
+			SC.css.ensureClass(document.documentElement, 'NativeClient', SC.util.isCapable(SC.util.Caps.NativeClient));
+			SC.css.ensureClass(document.documentElement, SC.context.pageType, true);
+
+			var queryNavigationLinksEventArgs = SC.event.dispatchEvent(null, SC.event.QueryNavigationLinks, { navigationLinks: [] })
+			queryNavigationLinksEventArgs.navigationLinks.forEach(function (l) { SC.ui.addElement(navigationPanel, 'A', { href: l.href, className: l.href == SC.context.pageBaseFileName ? 'Selected' : '' }, l.text); });
+
+			SC.command.queryAndAddCommandButtons(toolsPanel, 'ToolsPanel');
+			SC.command.updateCommandButtonsState(toolsPanel);
+		});
+
+		SC.extension.initializeExtensions();
+		SC.event.dispatchEvent(null, SC.event.PreRender);
+		SC.ui.setVisible(document.body, true);
+
+	</script>
+</body>
+</html>

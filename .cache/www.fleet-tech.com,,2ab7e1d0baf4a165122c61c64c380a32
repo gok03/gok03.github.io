@@ -1,0 +1,402 @@
+status: 200
+content-location: https://www.fleet-tech.com/
+x-powered-by: ASP.NET
+set-cookie: CFID=2917806; expires=Tue, 04-Sep-2046 10:36:47 GMT;
+ path=/, CFTOKEN=28677496; expires=Tue, 04-Sep-2046 10:36:47 GMT;
+ path=/, JSESSIONID=c23047fd13d8fa3ccd20505ca181e2d58435; path=/,
+ NSC_GMFFU-UFDI-DPN-443-WJQ=ffffffff09b7066245525d5f4f58455e445a4a42366a;
+ expires=Sun, 11-Sep-2016 11:36:47 GMT; path=/; secure; httponly
+server: Microsoft-IIS/6.0
+connection: close
+date: Sun, 11 Sep 2016 10:36:47 GMT
+content-type: text/html; charset=UTF-8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<title>Fleet-Tech Transportation Services - The single source for managing your fuel purchase cost.</title>
+	
+	<meta name="description" content="Fleet-Tech Transportation Services (FTS) provides fuel card and cash purchase solutions to over the road trucking companies in the U.S. and Canada.">
+	
+	
+		<meta name="keywords" content="FTS, Fleet-Tech, Fleet Tech, Fleet Tec, Fleettech, fuel card, Fuel Cards, fueling, purchase, fleet management, financing, gas, gasoline, propane, cash advance, transcheck, trucking, truckstops, financial services, EFS, US fuel card, Canadian fuel card">
+	
+	
+	<meta name="owner" content="admin@natconline.com">
+	<meta name="revisit-after" content="7 days">
+	<meta name="rating" content="General">
+	
+		<meta name="robots" content="index,follow">
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+	
+	<link href="/inc/style.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript">
+			
+			
+			
+		var preloadimages=new Array("images/ftslogosm.gif","images/ftsdemologosm.gif","images/transnet_smlogo.jpg","images/transnetdemo.jpg")
+		var targetdestination="default.cfm"
+		
+		
+		
+		function PreSubmit() {
+			
+		     var cookieEnabled=(navigator.cookieEnabled)? true : false
+		     
+		     //If not IE4+ nor NS6+
+		     if (typeof navigator.cookieEnabled=="undefined" && !cookieEnabled) {
+		     	document.cookie="testcookie"
+		     	cookieEnabled=(document.cookie.indexOf("testcookie")!=1)? true : false
+		     }
+		     
+		    if(cookieEnabled) {
+		    	document.frmLogin.submit();
+		    } else {
+		    	alert("Cookies are disabled on your browser. \n Some website functionality might not work correctly.");
+		    	document.frmLogin.submit();
+		    	
+		    }
+		}
+		
+		
+	</script>
+
+
+</head>
+
+<body bgcolor="#ffffff"> 
+	
+	
+<table width="780" border="0" cellpadding="0" cellspacing="0" align="center"> 
+	<tr>
+		<td width="180"><img src="images/pixel.gif" width="180" height="1" alt=""></td>
+		<td width="10"><img src="images/pixel.gif" width="10" height="1" alt=""></td>
+		<td width="400"><img src="images/pixel.gif" width="400" height="1" alt=""></td>
+		<td width="10"><img src="images/pixel.gif" width="10" height="1" alt=""></td>
+		<td width="180"><img src="images/pixel.gif" width="180" height="1" alt=""></td>
+	</tr>
+	<tr>
+		
+		<td width="100%" height="60"  align="right" colspan="5" valign="bottom" style="background-image: url(images/banner.jpg);" class="TopBorder">
+			<span style="color: white; font-family: Verdana, Arial; font-weight: bold; font-size:10px; vertical-align:top;">
+					<a href="./default.cfm" style="text-decoration:none; color:white;">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="./sales.cfm" style="text-decoration:none; color:white;">Sales</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					
+					<a href="./contact.cfm" style="text-decoration:none; color:white;">Contact Us</a>&nbsp;&nbsp;&nbsp;
+					
+			</span>
+			<br><img src="images/pixel.gif" height="26" width="700" alt="">
+			<a href="fuel.cfm"><img src="images/nav_fuel_off.gif" alt="fuel" border="0"></a><a href="locations.cfm"><img src="images/nav_locations_off.gif" alt="locations" border="0"></a></td>
+		
+	</tr>
+ 	<tr>
+		<td colspan="5" class="MiddleBorder"><img src="images/ftsname.gif" alt="EFS Transportation Services"><br></td>
+	</tr>
+	<tr>
+		<td bgcolor="#CCCCCC" valign="top" class="leftBorder">
+			
+			
+			<table width="100%" cellpadding="0" cellspacing="0">
+				<tr><td valign="bottom" class="LoginOutlineHeader"><img src="images/pixel.gif" alt="" height="4" width="180">
+				<img src="images/loginheader.gif" alt="Login"></td></tr>
+				<tr>
+					<td valign="top" rowspan="2" height="276" class="LoginOutlineBody" style="padding:5px;">
+					
+						<form name="frmLogin" action="fuelcard/default.cfm" method="post">
+						
+						<br>
+						&nbsp; <b>Fleet:</b><br>
+						&nbsp; <input type="text" size="6" maxlength="4" name="fleet" id="fleet" value="" class="required">
+						<br>
+						
+						
+						&nbsp; <b>UserID:</b><br>
+						&nbsp; <input type="text" size="20" name="username" id="username" value="" class="required">
+						<br>
+						&nbsp; <b>Password:</b><br>
+						&nbsp; <input type="password" size="20" name="password" id="password" class="required">
+						<br>
+						&nbsp; <input type="checkbox" name="RememberMe" id="RememberMe" value="1"> Remember My Login
+						<br><br>
+						<div align="center">
+							<a href="" onclick="PreSubmit();return false;"><img src="images/loginbutton.gif" border="0" alt="Login"></a>
+							
+							<br><br>
+							
+							 	Secure
+							 	<br>
+							 	&nbsp; <img src="images/securelock.gif" hspace="2" alt="Secure">	
+						
+						</div>
+						</form>
+					
+					</td>
+				</tr>
+			</table>
+		
+		</td>
+		<td width="10"></td>
+		<td colspan="3" valign="top" class="RightBorder">
+			<a href="http://www.ftsplus.com">
+			<img src="images/homepage_graphic_orig.jpg" alt="">
+			</a>
+		</td>
+	</tr>
+
+<!-- ws2 -->
+
+	
+	<tr>
+		<td valign="top" class="LeftBorder">
+			
+			<table width="180" bgcolor="#eeeeee" cellpadding="5">
+				<tr>
+					<td height="10" bgcolor="#eeeeee"></td>
+				</tr>
+				
+					<td class="SectionHeader">Announcements</td>
+				</tr>
+				<tr>
+					<td bgcolor="#eeeeee">
+						
+							<br><div align="center"><i>- No Announcements - </i></div><br>
+						
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td class="SectionHeader">Latest News</td>
+				</tr>
+				<tr>
+					<td bgcolor="#eeeeee">
+						<br>
+						
+							<div style="text-align:center;"><br><strong><i>Unavailable</i></strong><br></div>
+						
+						<br>
+						
+					</td>
+				</tr>
+				<tr>
+					<td class="SectionHeader">Newest Network Stops</td>
+				</tr>
+				
+				<tr>
+					<td bgcolor="#eeeeee">
+						
+						
+						<br><b>Speedway #3589</b>
+						<br>
+						&nbsp; &nbsp; Woodland Township, MI
+						<br>
+						&nbsp; &nbsp; <i>09-08-2016</i>
+						<br>
+						
+						<br><b>Kwik Trip #162</b>
+						<br>
+						&nbsp; &nbsp; Otsego, MN
+						<br>
+						&nbsp; &nbsp; <i>08-31-2016</i>
+						<br>
+						
+						<br><b>Pilot TC #1061</b>
+						<br>
+						&nbsp; &nbsp; Springfield, MO
+						<br>
+						&nbsp; &nbsp; <i>08-29-2016</i>
+						<br>
+						
+						<br><b>Kwik Trip #184</b>
+						<br>
+						&nbsp; &nbsp; Waukesha, WI
+						<br>
+						&nbsp; &nbsp; <i>08-29-2016</i>
+						<br>
+						
+						<br><b>Speedway #6914</b>
+						<br>
+						&nbsp; &nbsp; Estero, FL
+						<br>
+						&nbsp; &nbsp; <i>08-29-2016</i>
+						<br>
+						
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="10"></td>
+		<td width="400" valign="top">
+			<br>
+			<img src="images/ftscard.jpg" align="left" hspace="12" alt="Fuel Card">
+			
+			<p style="color: #000000; font-size: 12px; text-align: left; font-weight: plain;font-family: Verdana, Arial, sans-serif;">
+				Since 1996, Fleet-Tech's Discount Fuel Card program has been the premier program for the small to medium trucking company striving to lower fuel costs, lower fuel and cash purchase fees, keep their drivers satisfied, and most importantly: improve their bottom line.  
+				
+				
+			</p>
+			<br><br>
+			<hr width="350" align="center">
+			<br>
+			<span style="color: #000000; font-size: 12px; text-align: center; font-weight: plain;font-family: Verdana, Arial, sans-serif;align:center;"><b>Program Highlights</b></span>
+			<ul style="color: #000000; font-size: 12px; text-align: left; font-weight: plain;font-family: Verdana, Arial, sans-serif;">
+				<li style="padding-bottom:12px;"><b>Universal acceptance</b>: the Fleet-Tech Discount Fuel Card is accepted at over 5,000 truck stops in the United States and Canada</li>
+				<li style="padding-bottom:12px;"><b>Discount network</b>: attractive discounts at 2,554 locations and counting</li>
+				<li style="padding-bottom:12px;"><b>Competitive fees</b>: shop around and you'll find that our fees are some of the lowest in the industry for fuel, cash, and drafts</li>
+				<li style="padding-bottom:12px;"><b>Customer service</b>: we pride ourselves on customer service; with Fleet-Tech Transportation, you're not just another number</li>
+				<li style="padding-bottom:12px;"><b>Powerful software</b>: our comprehensive Internet site allows card maintenance, reporting, truck stop information and pricing, and data download for your third party software applications</li>
+				<li style="padding-bottom:12px;"><b>Flexible payment methods</b>: we will work with you to find a solution that meets your company's needs</li>				
+			</ul>
+			<p style="color: #000000; font-size: 12px;text-align: justify;font-weight: plain;font-family: Verdana, Arial, sans-serif;">
+				
+			</p>
+			<hr width="350" align="center">
+			
+			<p style="color: #000000; font-size: 12px;text-align: justify;font-weight: plain;font-family: Verdana, Arial, sans-serif; padding-left:15px;padding-right:15px;">
+				
+				If you are interested in speaking with one of our sales representatives about how we can help save you money on fuel purchases, click on the Contact Us link above, e-mail us at sales@fleet-tech.com or call us toll free at (888) 299-1571.
+			</p>
+			<br>
+			<br>
+			<br>
+		</td>
+		<td width="10"></td>
+		<td valign="top" width="180" class="RightBorder" align="center">
+			<table width="180" bgcolor="#eeeeee" cellpadding="5">
+				<tr>
+					<td height="10"></td>
+				</tr>
+				<tr>
+					<td class="SectionHeader">Daily Pump Averages</td>
+				</tr>
+				<tr>
+					<td bgcolor="#eeeeee" align="center">
+						<br>					
+						<div id="chart1">
+							
+							
+								
+								<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+												codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" 
+												WIDTH="160"
+												HEIGHT="150" 
+												id="chart1Data">
+									<PARAM NAME="movie" VALUE="chart1.swf"> 
+									<PARAM NAME="quality" VALUE="high"> 
+									<PARAM NAME="bgcolor" VALUE="#eeeeee"> 
+									<EMBED src="chart1.swf" quality="high" WIDTH="160" HEIGHT="150" NAME="Chart1" TYPE="application/x-shockwave-flash" PLUGINSPAGE="https://www.macromedia.com/go/getflashplayer"></EMBED>
+								</OBJECT>	
+							
+							
+						</div>
+						
+						
+						<br><br>
+					</td>
+				</tr>
+				<tr>
+					<td class="SectionHeader">Daily Cost Averages</td>
+				</tr>
+				<tr>
+					<td bgcolor="#eeeeee" align="center">
+						<br>
+						<div id="chart2">
+							
+							
+								
+							<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+											codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" 
+											WIDTH="160"
+											HEIGHT="150" 
+											id="chart2Data">
+								<PARAM NAME="movie" VALUE="chart2.swf"> 
+								<PARAM NAME="quality" VALUE="high"> 
+								<PARAM NAME="bgcolor" VALUE="#eeeeee"> 
+								<EMBED src="chart2.swf" quality="high" WIDTH="160" HEIGHT="150" NAME="Chart2" TYPE="application/x-shockwave-flash" PLUGINSPAGE="https://www.macromedia.com/go/getflashplayer"></EMBED>
+							</OBJECT>	
+							
+									
+						</div>
+						
+						
+						<br><br>
+					</td>
+				</tr>
+				<tr>
+					<td class="SectionHeader">Monthly Pump Averages</td>
+				</tr>
+				<tr>
+					<td bgcolor="#eeeeee" align="center">
+						<br>
+						
+				
+							
+						
+						<div id="chart3">
+								
+								
+								
+									
+								<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+												codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" 
+												WIDTH="160"
+												HEIGHT="150" 
+												id="Chart3Data">
+									<PARAM NAME="movie" VALUE="chart3.swf"> 
+									<PARAM NAME="quality" VALUE="high"> 
+									<PARAM NAME="bgcolor" VALUE="#eeeeee"> 
+									<EMBED src="chart3.swf" quality="high" WIDTH="160" HEIGHT="150" NAME="Chart3" TYPE="application/x-shockwave-flash" PLUGINSPAGE="https://www.macromedia.com/go/getflashplayer"></EMBED>
+								</OBJECT>
+								
+										
+						</div>								
+						<br><br>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+
+	<tr>
+		<td height="20" colspan="5" align="center" class="tFooter"><img src="images/pixel.gif" width="180" height="1" alt=""></td>
+	</tr>
+</table>
+	<div class="footer">
+		<!--<p>&copy;2010 First Data Corporation, All Rights Reserved. &nbsp;&nbsp;| 
+		&nbsp;&nbsp;<a href="privacypolicy.cfm" class="link">Privacy Statement</a>&nbsp;&nbsp;| 
+		&nbsp;&nbsp;<a href="default.cfm" class="link">Home</a><br />
+	All trademarks, service marks, and trade names referenced in this material are the property of their respective owners.-->
+	</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-585031-2");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

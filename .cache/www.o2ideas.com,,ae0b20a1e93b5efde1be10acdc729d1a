@@ -1,0 +1,293 @@
+status: 200
+content-location: http://www.o2ideas.com
+server: Apache/2.2.31
+date: Sun, 11 Sep 2016 10:41:50 GMT
+content-type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:site_name" content="o2ideas"/>
+  <meta property="og:title" content="We Make Happy Happen."/>
+  <meta property="og:description" content="At o2, we make happy happen. It’s that simple. Bringing this purpose to life means constantly pushing ourselves to create work that creates results. Going above and beyond to help our clients achieve their goals. And developing a culture centered on making all of us happy."/>
+  <meta property="og:url" content="http://www.o2ideas.com/">
+  <meta property="og:image" content="http://www.o2ideas.com/images/facebook_logo.png">
+  <meta property="og:type" content="website"/>
+  
+  <title>o2 | make happy happen</title>
+
+  <!-- CSS -->
+  <link href="css/flexslider.css" rel="stylesheet">
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/mediaqueries.css" rel="stylesheet">
+
+  
+  <!-- Scripts -->
+  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery.easing.min.js" type="text/javascript"></script>
+  <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+  <script src="js/bgpos.js" type="text/javascript"></script>
+  <script src="js/retina.min.js" type="text/javascript"></script>
+  <script src="js/TweenMax.min.js" type="text/javascript"></script>
+  <script src="js/parallax.min.js" type="text/javascript"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <script>
+  $(window).load(function() {
+
+    /*$(".slide1 .content").delay(200).animate({bottom: "0", opacity: "1"}, 1000);*/
+    $(".slide1 .slide_image").animate({"right":"0", "opacity":"1"}, 0);
+
+    $('.flexslider').flexslider({
+      animation: "fade",
+      directionNav:false,
+      manualControls: ".flex-control-nav li",
+      useCSS:false,
+
+      before: function(slider) {
+        /*$('.flex-active-slide').find('.content').animate({"margin-top": "-102px", opacity: "0"}, 1000);*/
+        /*$('.flex-active-slide').find('.slide_image').animate({"right":"-30px", "opacity":"0"}, 500);*/
+        TweenMax.to($('.flex-active-slide').find('.slide_image'), 0.4, {right:"-150px", opacity:"0", ease:Quad.easeInOut});
+        TweenMax.to($('.flex-active-slide').find('.slide_image'), 0, {delay:0.6, right:"150px"});
+    
+        slider.slides.eq(slider.currentSlide).delay(600);
+        slider.slides.eq(slider.animatingTo).delay(100);
+      },
+
+      after: function(slider) {
+        // animate your caption ... 
+        // find the item that is the current slide's .slidecaption and animate it
+        /*$('.flex-active-slide').find('.content').animate({"margin-top": "0", opacity: "1"}, 1000);*/
+        /*$('.flex-active-slide').find('.slide_image').animate({"right":"0", "opacity":"1"}, 500);*/
+        TweenMax.to($('.flex-active-slide').find('.slide_image'), 0.4, {right:"0", opacity:"1", ease:Quad.easeInOut});
+
+      }
+    });
+  });
+  </script>
+</head>
+
+<body id="homepage">
+
+
+<!-- begin: preloader -->
+<div id="preloader"></div>
+<!-- end: preloader -->
+
+
+<!-- begin: navigation -->
+<nav>
+  <a href="/" id="logo">o2 make happy happen</a>
+
+  <section id="navigation">
+    <ul> 
+      <li><a href="/work.php" class="nav_work">Work</a></li>
+      <li><a href="/about.php" class="nav_about">About</a></li>
+      <li><a href="/videos.php" class="nav_about">Videos</a></li>
+      <li><a href="/news.php" class="nav_news">News</a></li>
+      <li><a href="/humanity.php" class="nav_humanity">Humanity</a></li>
+      <li><a href="/blog" class="nav_blog">Blog</a></li>
+      <li><a href="/contact.php" class="nav_contact">Contact</a></li>
+    </ul>
+
+    <ul class="social">
+      <li><a href="https://www.facebook.com/o2ideas" target="_blank" class="facebook">Facebook<span></span></a></li>
+      <li><a href="https://twitter.com/o2ideas" target="_blank" class="twitter">Twitter<span></span></a></li>
+      <li><a href="https://www.instagram.com/o2ideas/" target="_blank" class="instagram">Instagram<span></span></a></li>
+      <li><a href="https://www.linkedin.com/company/o2-ideas?trk=tyah&trkInfo=tarId%3A1398261412668%2Ctas%3Ao2ideas%2Cidx%3A1-1-1" target="_blank" class="linkedin">LinkedIn<span></span></a></li>
+    </ul>
+
+    <a href="#" id="button_close">Close</a>
+    
+    <a href="#" id="button_close" class="responsive">Close</a>
+  </section>
+
+  <div id="nav_button">
+    <span class="line1"></span>
+    <span class="line2"></span>
+    <span class="line3"></span>
+  </div>
+
+  <!-- begin: mobile nav -->
+  <div id="nav_button" class="responsive">
+    <span class="line1"></span>
+    <span class="line2"></span>
+    <span class="line3"></span>
+  </div>
+  <!-- end: mobile nav -->
+</nav><!-- end: navigation -->
+
+
+<!-- begin: header -->
+<header id="slider" class="flexslider">
+  <ul class="slides">
+    <li id="grapico" class="slide1">
+      <div class="container">
+        <div class="content">
+          <h1>Making Sales Pop</h1>
+
+          <p>See how we celebrated the 100-year <br>history of a beloved Southern icon. </p>
+
+          <a href="grapico.php">Grapico</a>
+        </div>
+
+        <img src="images/slide_grapico.png" alt="Grapico" class="slide_image">
+      </div>
+
+      <img src="images/header_mask_content.png" class="mask">
+    </li>
+
+    <li id="uabhonorscollege">
+      <div class="container">
+        <div class="content">
+          <h1>Going New School</h1>
+
+          <p>How rebranding, a new website and social campaign doubled home page traffic.</p>
+
+          <a href="uab-honors-college.php">UAB Honors College</a>
+        </div>
+
+        <img src="images/slide_uabhonorscollege.png" alt="UAB Honors College" class="slide_image">
+      </div>
+
+      <img src="images/header_mask_content.png" class="mask">
+    </li>
+
+    <li id="bbvacompass">
+      <div class="container">
+        <div class="content">
+          <h1>NBA AMEX Launch</h1>
+
+          <p>Our work helped the new NBA AMEX become <br>one of the best credit cards of 2015.</p>
+
+          <a href="bbva-compass.php">BBVA Compass</a>
+        </div>
+
+        <img src="images/slide_bbvacompass.png" alt="BBVA Compass" class="slide_image">
+      </div>
+
+      <img src="images/header_mask_content.png" class="mask">
+    </li>
+
+    <li id="verizon">
+      <div class="container">
+        <div class="content">
+          <h1>A Personal Network</h1>
+
+          <p>Read how we’ve built relationships and success with Verizon over the past 17 years.</p>
+
+          <a href="verizon.php">Verizon</a>
+        </div>
+
+        <img src="images/slide_verizon.png" alt="Verizon" class="slide_image">
+        <img src="images/slide_verizon_responsive.png" alt="Verizon" class="slide_image responsive">
+      </div>
+
+      <img src="images/header_mask_content.png" class="mask">
+    </li>
+
+    <li id="buffalorock">
+      <div class="container">
+        <div class="content">
+          <h1>Making Soda Rock</h1>
+
+          <p>Here’s how we turned a classic soda into a <br>favorite on social media and in restaurants.</p>
+
+          <a href="buffalo-rock.php">Buffalo Rock</a>
+        </div>
+
+        <img src="images/slide_buffalorock.png" alt="Buffalo Rock" class="slide_image">
+      </div>
+
+      <img src="images/header_mask_content.png" class="mask">
+    </li>
+
+    <li id="lucyandruby">
+      <div class="container">
+        <div class="content">
+          <h1>Branding a Great Cause</h1>
+
+          <p>We made fundraising fun and helped a nonprofit raise more than $56,000 for brain cancer research.</p>
+
+          <a href="lucy-and-ruby.php">Lucy and Ruby’s Brainy Day</a>
+        </div>
+
+        <img src="images/slide_lucyandruby.png" alt="Lucy and Ruby’s Brainy Day" class="slide_image">
+      </div>
+
+      <img src="images/header_mask_content.png" class="mask">
+    </li>
+  </ul>
+
+  <section class="flexslider-controls">
+    <ol class="flex-control-nav">
+      <li><a href="#"><span>Grapico</span></a></li>
+      <li><a href="#"><span>UAB Honors College</span></a></li>
+      <li><a href="#"><span>BBVA Compass</span></a></li>
+      <li><a href="#"><span>Verizon</span></a></li>
+      <li><a href="#"><span>Buffalo Rock</span></a></li>
+      <li><a href="#"><span>Lucy and Ruby’s Brainy Day</span></a></li>
+    </ol>
+  </section>
+</header>
+<!-- end: header -->
+
+
+<!-- begin: homepage intro -->
+<section id="intro">
+  <div class="container_small">
+    <h2>We Make Happy Happen</h2>
+
+    <p>At o2, we make happy happen. It’s that simple. Bringing this purpose to life means constantly pushing ourselves to create work that creates results. Going above and beyond to help our clients achieve their goals. And developing a culture centered on making all of us happy.</p>
+    
+    <a href="about.php" class="button">Learn More</a>
+  </div>
+</section>
+<!-- end: homepage intro -->
+
+
+<!-- begin: testimonials 
+<section id="testimonials">
+  <div class="container">
+    <h3>"The client-agency lifespan rarely exceeds a couple of years these days. I am proud of the partnership between Verizon and o2ideas that has spanned more than 13 years and is still going strong."</h3>
+
+    <img src="images/testimonial_mikeritter.jpg">
+
+    <h2>Mike Ritter</h2>
+
+    <p>Chief Marketing Officer, Verizon Telecommunications</p>
+  </div>
+</section>-->
+<!-- end: testimonials -->
+
+
+<!-- begin: footer -->
+<footer>
+  <article class="container">
+    <h3><a href="tel:2059499494">205.949.9494</a> or <a href="mailto:info@o2ideas.com" target="_blank">info@o2ideas.com</a></h3>
+
+    <ul class="social">
+      <li><a href="https://www.facebook.com/o2ideas" target="_blank" class="facebook">Facebook<span></span></a></li>
+      <li><a href="https://twitter.com/o2ideas" target="_blank" class="twitter">Twitter<span></span></a></li>
+      <li><a href="https://www.instagram.com/o2ideas/" target="_blank" class="instagram">Instagram<span></span></a></li>
+      <li><a href="https://www.linkedin.com/company/o2-ideas?trk=tyah&trkInfo=tarId%3A1398261412668%2Ctas%3Ao2ideas%2Cidx%3A1-1-1" target="_blank" class="linkedin">LinkedIn<span></span></a></li>
+    </ul>
+
+    <p>Minority-owned, NMSDC Certified. <a href="http://www.worldwidepartners.com/" target="_blank">Member Worldwide Partners Inc.</a> <br>&copy; 2016 o2ideas</p>
+
+  </article>
+</footer><!-- end: footer -->
+
+
+</body>
+</html>

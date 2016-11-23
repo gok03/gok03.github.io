@@ -1,0 +1,271 @@
+status: 200
+content-length: 9742
+content-location: http://www.thekomputerguy.com
+accept-ranges: bytes
+server: Apache
+last-modified: Fri, 25 Dec 2015 01:15:54 GMT
+etag: "2b004eb-260e-527aeb26c48d5"
+date: Fri, 09 Sep 2016 06:00:37 GMT
+content-type: text/html
+
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Komputer Guy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/skeleton.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/superfish.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/slider.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/jquery.hoverIntent.js"></script>
+	<script src="js/jquery.responsivemenu.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				effect: 'fade',
+				fadeSpeed:700,
+				play: 7000,
+				pause: 4000,
+				generatePagination: true,
+				crossfade: true,
+				hoverPause: true,
+				animationStart: function(current){$('.caption').animate({left:-999},200);},
+				animationComplete: function(current){$('.caption').animate({left:0},300);},
+				slidesLoaded: function() {$('.caption').animate({left:0},300);}
+			});
+		});
+	</script>
+	<!--[if lt IE 8]>
+		<div style='clear: both; text-align:center; position: relative;'>
+			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.">
+			</a>
+		</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<link rel="stylesheet" href="css/ie.css"> 
+	<![endif]-->
+</head>
+<body id="page1">
+	<!--======================== header ============================-->
+	<header>
+		<div class="header-pannel">
+			<div class="container_12">
+				<div class="wrapper">
+					<div class="text"> SERVICE to tell your friends about !!!  </div>
+					<div class="contacts">Call:&nbsp;&nbsp;<span>+1-505-450-7306</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="container_12">
+			<div class="grid_12">
+				<div class="border-bottom">
+					<!--======================== logo ============================-->
+					<h1>
+						<a href="index.html"><span>The</span> Komputer <span>Guy</span> </a>
+					</h1>
+					<!--======================== menu ============================-->
+					<nav>
+						<ul class="menu responsive-menu">
+							<li class="current"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Services </a>
+                            <!-- Not currently being used
+								<ul>
+									<li><a href="#">Virus Removal</a>
+										<ul>
+											<li><a href="#">Pop-ups and spyware</a></li>
+											<li><a href="#">Speed up your computer</a></li>
+											<li class="last-item"><a href="#">Security risks</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Data Recovery </a></li>
+									<li><a href="#">Networking</a></li>
+									<li class="last-item"><a href="#">Wireless Installations</a></li>
+								</ul>
+                                -->
+							</li>
+							<li><a href="data_recovery.html">Data Recovery</a></li>
+							<li><a href="support.html">Support</a></li>
+							<li class="last-item"><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="clear"></div>
+				</div>
+				<!--=================== slider ==================-->
+				<div id="slides">
+					<div class="slides_container">
+						<div class="slide">
+							<img src="images/slider-img1.jpg" alt="">
+							<div class="slider-border">
+								<div class="caption">
+									<p class="p5">
+										<span class="row1 indents1">On-site</span>
+										<span class="row2 indents2">tech support </span>
+										<span class="row3 indents3">at competitive prices </span>
+									</p>
+									<div class="button-wrapper"><a href="#">READ MORE ABOUT US</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<img src="images/slider-img2.jpg" alt="">
+							<div class="slider-border">
+								<div class="caption">
+									<p class="p3">
+										<span class="row1 indents4">Fast and</span>
+										<span class="row2 indents5">reliable</span>
+										<span class="row3 indents6">computer repair</span>
+									</p>
+									<div class="button-wrapper"><a href="#">READ MORE ABOUT US</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<img src="images/slider-img3.jpg" alt="">
+							<div class="slider-border">
+								<div class="caption">
+									<p class="p5">
+										<span class="row1 indents7">Make </span>
+										<span class="row2 indents8">technology </span>
+										<span class="row3 indents9">work for you!</span>
+									</p>
+									<div class="button-wrapper"><a href="#">READ MORE ABOUT US</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</header>
+	<!--======================== content ===========================-->
+	<section id="content">
+		<div class="container_12">
+			<div class="wrapper">
+				<div class="grid_4">
+					<div class="wrapper p5">
+						<div class="circle">1</div>
+						<div class="extra-wrap">
+							<h3>Small Business <br><span>Computer Services</span></h3>
+						</div>
+					</div>
+					<div class="indent-left10">
+						<ul class="list-1 p5-1">
+							<li><a href="#">Fast On-site Repairs</a></li>
+							<li><a href="#">IT Consulting Services</a></li>
+							<li><a href="#">Certified Technicians</a></li>
+							<li><a href="#">Maintenance Contracts</a></li>
+						</ul>
+						<!--<a href="#" class="button">Click to Call Now!</a>-->
+                        <p class="button"> Experience </p>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="wrapper p5">
+						<div class="circle">2</div>
+						<div class="extra-wrap">
+							<h3>Corporate <br><span>Computer Services</span></h3>
+						</div>
+					</div>
+					<div class="indent-left10">
+						<ul class="list-1 p5-1">
+							<li><a href="#">On-site Service</a></li>
+							<li><a href="#">Staff Augmentation</a></li>
+							<li><a href="#">Big Project Help </a></li>
+							<li><a href="#">Service Contracts</a></li>
+						</ul>
+						<p class="button"> Reliability </p>
+					</div>
+				</div>
+				<div class="grid_4 last-col">
+					<div class="wrapper p5">
+						<div class="circle">3</div>
+						<div class="extra-wrap">
+							<h3>Cloud <br><span>Computer Services<br class="hide-ml"></span></h3>
+						</div>
+					</div>
+					<div class="indent-left10">
+						<ul class="list-1 p5-1">
+							<li><a href="#">Website Hosting</a></li>
+							<li><a href="#">Website Development</a></li>
+							<li><a href="#">Office 365 Reseller</a></li>
+							<li><a href="#">Exchange Online</a></li>
+						</ul>
+                        <p class="button">&nbsp; Results &nbsp; </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--======================== aside ===========================-->
+	<aside>
+		<div class="container_12">
+			<div class="wrapper">
+				<div class="grid_4">
+					<h4 class="p3-1">The Komputer Guy</h4>
+					<h6 class="p3-1">The Komputer Guy has been proudly serving the Albuquerque Metro area for over ten years! </h6>
+					<p class="tkglogo"><img src="images/tkglogo150.png" alt="The Komputer Guy Logo" /></p>
+                    
+                    <!--<a href="#" class="button">More</a>-->
+				</div>
+				<div class="grid_4">
+					<h4 class="p3-1">Help is just a call away!</h4>
+					<p class="p5">
+						As a former computer store owner in town, I became keenly aware that many small businesses need
+                        a friendly, knowledgeable computer person to help guide them with their technology needs. <br/>
+                        With an ever expanding myriad of available technologies, making the right choices can be confusing.
+                        Don't let technology become an anchor around your bottom line. Let us help you make technology work
+                        for you not against you!
+				
+					</p>
+                    <!--<a href="#" class="button">More</a>-->
+				</div>
+				<div class="grid_4 last-col">
+					<h4 class="p4-1">Partners</h4>
+					<ol class="list-2 p5-1">
+						<li>Microsoft Partner Network</li>
+						<li>Dell Reseller Partner</li>
+						<li>Vipre Antivirus Reseller</li>
+						<li>Techinline Remote Support</li>
+					</ol>
+					<!--<a href="#" class="button">More</a>-->
+				</div>
+			</div>
+		</div>
+	</aside>
+	<!--======================== footer ============================-->
+	<footer>
+		<div class="container_12">
+			<div class="wrapper">
+				<div class="grid_12">
+					<div class="wrapper">
+						<ul class="footer-menu hide-mp">
+							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Services </a></li>
+							<li><a href="data_recovery.html">Data Recovery</a></li>
+							<li><a href="support.html">Pricing</a></li>
+							<li class="last-item"><a href="contact.html">Contacts</a></li>
+						</ul>
+						<div class="footer-text">
+                            <span> &copy;2006-2015 The Komputer Guy. <br />All rights reserved. </span>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

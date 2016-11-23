@@ -1,0 +1,422 @@
+status: 200
+content-length: 20930
+content-location: http://www.semdesigns.com/Products/DMS/Refactoring.html?Home=Main
+-content-encoding: gzip
+accept-ranges: bytes
+expires: Fri, 09 Sep 2016 10:59:51 GMT
+vary: Accept-Encoding
+server: Apache2
+last-modified: Wed, 31 Aug 2016 16:25:40 GMT
+etag: W/"5959-1422484316000"
+date: Fri, 09 Sep 2016 10:48:45 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!-- Quirk on -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=8" >
+
+
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Refactoring</TITLE>
+<META NAME="keywords" CONTENT="software engineering, refactoring, Java, C#, C, C++, C/C++, COBOL, Fortran, PL/1,#">
+<META NAME="description" CONTENT="Refactoring">
+<meta name="author" content="Semantic Designs, Inc.">
+<!--
+<link rel="stylesheet" href="/SDprint.css" type="text/css" media="print">
+<link rel="stylesheet" href="./BBstyle.css" type="text/css" media="screen">
+-->
+
+<link rel="stylesheet" href="/SDstyle.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/SDmenustyle.css" type="text/css" media="screen">
+
+</head>
+
+<script type="text/javascript" src="/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="/LanguagesAndProducts.js"></script>
+<script type="text/javascript" src="/jquery.getUrlParam.js"></script>
+
+<script type="text/javascript">
+
+$(window).load(function () {
+
+	var speed = 1000;
+
+  	$('.posts').masonry({
+  	columnWidth: 185,
+  	// only apply masonry layout to visible elements
+ 		itemSelector: '.post-block:not(.invis)',
+ 		animate: true,
+ 		animationOptions: {
+ 	  		duration: speed,
+ 	  		queue: false }
+  		  })
+
+  		   var catClass = '.' + $(document).getUrlParam("class");
+
+  		  	if(catClass=='.cat-all' || catClass=='.null') {
+  		  	 // show all hidden boxes
+  		  	 $('.posts').children('.invis')
+  		  		 .toggleClass('invis').animate({opacity: 1},{ duration: speed });
+  		  		 $('.posts').masonry();
+  		  	} else {
+  		  	 // hide visible boxes
+  		  	 $('.posts').children().not(catClass).not('.invis')
+  		  		 .toggleClass('invis').animate({opacity: 0},{ duration: speed });
+  		  	 // show hidden boxes
+  		  	 $('.posts').children(catClass+'.invis')
+  		  		 .toggleClass('invis').animate({opacity: 1},{ duration: speed });
+  		  		$('.posts').masonry();
+  		  	}
+
+
+ });
+
+  $(document).ready(function(){
+
+
+ 	$("#cats li a").click(function(){
+  	 var catClass = '.' + $(this).attr('class');
+ 	 var speed = 1000;
+ 	 if(window.location.pathname!= "/index.html") window.location.assign("/index.html" + '?class=' + $(this).attr('class'));
+  	 if(catClass=='.cat-all') {
+  		 // show all hidden boxes
+  		 $('.posts').children('.invis')
+  			 .toggleClass('invis').animate({opacity: 1},{ duration: speed });
+  	 } else {
+  		 // hide visible boxes
+  		 $('.posts').children().not(catClass).not('.invis')
+  			 .toggleClass('invis').animate({opacity: 0},{ duration: speed });
+  		 // show hidden boxes
+  		 $('.posts').children(catClass+'.invis')
+  			 .toggleClass('invis').animate({opacity: 1},{ duration: speed });
+  	 }
+
+  	   $('.posts').masonry();
+
+  	   return false;
+   	});
+
+  });
+
+</script>
+
+<!-- google analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-189709-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- Google Code for All Revisitors Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1072422730;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "wbv7CKPMmAIQyr6v_wM"; var google_conversion_value = 0;
+/* ]]> */
+</script>
+
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1072422730/?label=wbv7CKPMmAIQyr6v_wM&amp;guid=ON&amp;script=0">
+</div>
+</noscript>
+
+<body onload="changeListRand(document.forms['drops'].language)">
+	<!--<div class="mainpage">-->
+
+ <div id="container">
+    <div id="home">
+        <div id="header">
+          <table id="banner"><tbody>
+          <tr>
+             <td id="company_name_with_legal_mark_box">
+<!--                 <a href="/index.html"><img src="/images/name.png" alt="Semantic Designs (SM)"></a> -->
+               <a href="/index.html">
+                  <div id="company_name_with_legal_mark">
+                    Semantic Designs<sup>SM</sup>
+                  </div>
+               </a>
+             </td>
+             <td id="slogan_box" align="right">
+                 <table><tbody>
+                     <tr><td class="slogan_text" align="center">Automated Tools</td></tr>
+                     <tr><td class="slogan_text" align="center">for Software Engineering</td></tr>
+                 </tbody></table>
+   <!--       The Truth is in the Details&#0153; -->
+             </td>
+          </tr></tbody>
+          </table>
+          <p id="succinct_summary">Code Search (Find, Follow), Analysis (Metrics, Static, Dynamic) and Change (Modernization, Migration, Generation, Optimization, Rearchitecting)</p>
+<!--
+          System Analysis, Modification, Translation and Generation</a></h2>
+<!--
+          <h3>Automated Large-Scale Software System Analysis, Modification, Translation and Generation</h3>
+		            <h1><a href="/index.html">Semantic Designs</a></h1>
+          <h2><a href="/index.html">The Truth is in the Details</a></h2>
+
+
+         <h3>Automated Large-Scale Software System Analysis, Modification, Translation and Generation&#0153;</h3>
+          <h1><a href="/index.html">Semantic Designs</a></h1>
+          <h2><a href="/index.html">The Truf is in the ARF Details&#0153;</a></h2>
+-->
+        </div>
+
+<ul id="css3menu">
+	<li class="topfirst"><a href="/index.html" title="Semantic Designs Home Page"><span>Home</span></a></li>
+
+	<li class="topitem"><a href="/Products/Services" title="Services"><span>Services</span></a>
+	<ul>
+		<li class="subfirst"><a href="/Products/Services/LegacyMigration.html" title="Automated Migration">Automated Migration</a></li>
+		<li><a href="/Products/DMS/DMSToolkit.html" title="Custom Analysis and Transformation">Custom Analysis and Transformation</a></li>
+		<li><a href="/Products/FrontEnds/" title="Custom Development Toolkit">Custom Development Toolkit</a></li>
+		<li> <a href="/Products/Services/SoftwareModernization.html" title="Application Modernization">Application Modernization</a></li>
+		<li><a href="/Products/Tools.html" title="Software Quality Analysis">Software Quality Analysis</a></li>
+		<li><a href="/Products/Understanding/index.html" title="Understanding Software Structure">Understanding Software Structure</a></li>
+	</ul>
+	</li>
+
+	<li class="topitem"><a href="/Products" title="Products"><span>Products</span></a>
+	<ul>
+
+        	<li class="subfirst"><a href="/Products/DMS/DMSToolkit.html" title="DMS"><span>DMS<sup>&reg;</sup></span></a></li>
+
+                <li><a href="/Products/LanguageTools" title="By Language"><span>By Language</span></a>
+		<ul>
+			<li class="subfirst"><a href="/Products/LanguageTools/CTools.html" title="C">C</a></li>
+			<li><a href="/Products/LanguageTools/CppTools.html" title="C++">C++</a></li>
+			<li><a href="/Products/LanguageTools/JavaTools.html" title="Java">Java</a></li>
+			<li><a href="/Products/LanguageTools/COBOLTools.html" title="COBOL">COBOL</a></li>
+			<li><a href="/Products/LanguageTools/CSharpTools.html" title="C#/.Net">C#/.Net</a></li>
+			<li><a href="/Products/LanguageTools/PHPTools.html" title="PHP">PHP</a></li>
+			<li><a href="/Products/LanguageTools/VHDLTools.html" title="VHDL">VHDL</a></li>
+			<li><a href="/Products/LanguageTools/VerilogTools.html" title="Verilog">Verilog</a></li>
+			<li><a href="/Products/LanguageTools" title="More...">More...</a></li>
+		</ul>
+                </li>
+
+                <li><a href="/Products/Tools.html" title="By Tool"><span>By Tool</span></a>
+		<ul>
+			<li class="subfirst"><a href="/Products/SearchEngine/" title="Search Engine">Search Engine</a></li>
+			<li><a href="/Products/Clone/" title="Clone Detection">Clone Detection</a></li>
+			<li><a href="/Products/TestCoverage/" title="Test Coverage">Test Coverage</a></li>
+			<li><a href="/Products/Formatters/" title="Formatters">Formatters</a></li>
+			<li><a href="/Products/Obfuscators/" title="Obfuscators">Obfuscators</a></li>
+			<li><a href="/Products/Metrics/index.html" title="Metrics">Metrics</a></li>
+			<li><a href="/Products/Profilers/index.html" title="Profilers">Profilers</a></li>
+			<li><a href="/Products/SmartDifferencer/" title="Smart Differencer">Smart Differencer</a></li>
+			<li><a href="/Products/Tools.html" title="More...">More...</a></li>
+		</ul>
+		</li>
+
+                <li><a href="/Products/Applications/" title="By Application"><span>By Application</span></a>
+		<ul>
+			<li class="subfirst"><a href="/Products/Architecture/HoganSystems.html" title="Hogan Analysis">Hogan (Banking) Analysis</a></li>
+			<li><a href="/Products/Applications/MoreEffectiveTesting.html" title="Effective Testing">More Effective Testing</a></li>
+			<li><a href="/Products/Applications/PatentInfringement/" title="Patent Infringement">Detecting Infringement</a></li>
+			<li><a href="/Products/Applications/Agile/AgileTesting.html" title="Agile Testing">Agile Testing</a></li>
+		</ul>
+		</li>
+
+		<li><a href="/Purchase/Justifications.html" title="Why Buy">Why Buy</a></li>
+		<li><a href="/Purchase" title="Purchase">Prices</a></li>
+		<li><a href="/Registration" title="Register">Register</a></li>
+		<li><a href="/Products/Downloads.html" title="Downloads">Downloads</a></li>
+	</ul>
+	</li>
+
+	<li class="topitem"><a href="/Company" title="Company"><span>Company</span></a>
+	<ul>
+		<li class="subfirst"><a href="/Company" title="About SD">About SD</a></li>
+		<li><a href="/SuccessStories/index.html" title="Success Stories">Success Stories</a></li>
+		<li><a href="/Announce" title="News and Events">News and Events</a></li>
+		<li><a href="/Partners" title="Partners">Partners</a></li>
+		<li><a href="/Company/CustomerList.html" title="Customers">Customers</a></li>
+		<li><a href="/Careers" title="Careers">Careers</a></li>
+		<li><a href="/Company/Publications" title="Papers">Papers</a></li>
+		<li><a href="/Company/Visions" title="Visions">Visions</a></li>
+	</ul>
+	</li>
+
+	<li class="topitem"><a href="/Contact/Support.html" title="Support"><span>Support</span></a>
+	<ul>
+		<li class="subfirst"><a href="/Contact/Support.html" title="Support Policies">Support Policies</a></li>
+		<li><a href="/Registration" title="Register">Register</a></li>
+		<li><a href="/Products/Downloads.html" title="Downloads">Downloads</a></li>
+	</ul>
+	</li>
+
+	<li class="toplast"><a href="/Contact" title="Contact"><span>Contact</span></a></li>
+</ul>
+
+        <div id="main">
+<!--          <h3>Semantic Designs provides <a href="./Products/DMS/DMSToolkit.html?Home=Main">generalized compiler technology</a> and <a href="./Products/?Home=Main">services</a> across a wide variety of computer languages, application types, and architectures.</h3>
+          -->
+
+
+<h1>Refactoring Tools</h1>
+
+<P>Refactoring is the <a href="http://en.wikipedia.org/wiki/Code_refactoring">process of modifying programs to improve program structure without changing functionality</a>. A standard guide to refactoring possibilities and methods for accomplishing such refactorings can be found in <a href="http://www.amazon.com/exec/obidos/ASIN/0201485672"><b>Refactoring: Improving the Design of Existing Code</b> <i>(Fowler et al)</i></a>, but that list of refactorings is by no means exhaustive.  The ideas apply to all scripting and programming languages and any other formal computer documents such web pages and database schemas.
+</P>
+
+<P>Refactoring can be done manually on programs of modest size.  However, it is easier and far more reliable if refactoring is implemented using robust tools that can automate the desired changes.  The ideal refactoring tool can:
+<ul>
+<li>detect a wide variety of code patterns representing opportunities for basic refactorings</li>
+<li>can apply refactorings without breaking the program</li>
+<li>can be extended to handle arbitrary refactorings</li>
+<li>can be applied to any computer language or formal document</li>
+</ul>
+</p>
+
+<P>Refactoring tools have two principal use cases. The first is <i>refactoring in the small</i>, e.g. interactive application by a programmer while operating in an IDE ("refactoring browser").  The second is <i>refactoring in the large</i>, e.g. off-line applications of single or multiple sets of refactorings by batch tools.  The first is a useful convenience.  The second can substitute entirely for the first, and can additionally carry out code modifications simply not practical by manual or even interactive refactoring.
+</P>
+
+<p>
+There are some existing refactoring tools for the most widely used modern languages, such as Java, C#  and C++, mostly as refactoring browser plug-ins to the most mainstream IDEs (e.g., Microsoft Visual Studio or Eclipse).  But these tools are generally not reliable in applying the refactorings correctly, and in fact the most reliable are for Java, followed by C#, followed by C++ as a distant third.
+They also tend not to have any means for extending the set, and none known to us work on anything other than one specific dialect of one computer language.   Refactoring tools for widely used languages such as COBOL or PHP, let alone more exotic languages, such as Coldfusion, APL or FORTRAN basically don't exist.
+</P>
+
+<P>To be able to do refactoring well, a tool must be able to:
+<ul>
+<li>parse a desired <i>dialect</i> of a specific language of interest at the same level of detail as its compiler</li>
+<li>build an compiler data structure to model the parsed program</li>
+<li>process the multiple files that comprise most applications at the same moment</li>
+<li>carry out <a href="/Products/DMS/FlowAnalysis.html?Home=Refactoring">compiler-level control and data flow analysis across multiple files</a></li>
+<li>use pattern matching and flow analysis results to recognize refactoring opportunities</li>
+<li>make changes to the compiler data structures that represent the refactoring result</li>
+<li>regenerate valid source code including the modifications, including retention of comments and code layout</li>
+</ul>
+
+<p>
+Doing all of this is quite a complex task for even a single language and is the principal explanation for why refactoring tools are so rare.  Adding the requirement that the refactoring tool be both highly interactive and integrate into a major (or worse, a minor IDE for which there is no economic justification) makes it that much harder to build such tools.
+</P>
+
+<P>One way to avoid the problem of building limited capability refactoring tools,
+is to use generalized compiler technology that can be parameterized by language syntax/semantics and analysis/change details, such as the <a href="/Products/DMS/DMSToolkit.html?Home=Refactoring">DMS Software Reengineering Toolkit</a>. Being a general purpose program transformation system, DMS can be configured to implement an unbounded variety of refactorings, for a wide variety of langauges.  Because DMS was designed to scale, it can also make such changes across very big systems reliably.
+</P>
+
+<P>
+Refactoring tools have been or can be implemented with DMS for various languages include:
+<ul>
+<li><a href="/Products/CloneDR?Home=Refactoring">Finding and removing duplicated code</a> (Martin Fowler's #1 "code smell")</li>
+<li><a href="/Products/Formatters?Home=Refactoring">Reformatting code</a> to enhance readability</li>
+<li>Renaming identifiers within a scope</li>
+<li>Replacing spaghetti-tangles of gotos with structured code</li>
+<li>Using CASE statements instead of nested IFs on the same variable</li>
+<li>Insertion of function/method documentation by automated extraction of facts</li>
+<li><a href="/Products/StyleCheckers">Style-check repairs</a></li>
+<li>Converting blocks of code into functions/subroutines/methods with appropriate parameters</li>
+<li><a href="/Products/DeadCodeRemoval?Home=Refactoring">Removing dead code</a></li>
+<li><a href="/Company/Publications/WCRE05.pdf">Restructuring APIs to support a different OS</a></li>
+</ul>
+</P>
+
+<P>
+DMS can be configured to carry out arbitrary refactorings for your language, whether it is widely used or not.  Semantic Designs can accomplish this as a service, or can provide your organization with tools and training on how to use DMS to implement such refactorings.
+</P>
+
+  </div>
+ </div>
+
+       <div id="sidebar">
+          <div class="block block-series block-list">
+          <a href="/index.html"><img border="0" src="/images/SDLogo-nowords.png" width="160" height="58" alt="Semantic Designs, Inc. logo"></a>
+
+            <form name="SDSearch" action="http://www.google.com/search" method="get" onsubmit="SDSiteSearch(this)" id="SDSearch">
+              <input id="hiddenquery" type="hidden" name="q"> <input name="qfront" type="text" style="width: 150px" value=""> <input type="submit" value="Search SD"><br>
+              <script type="text/javascript">
+
+				//Enter domain of site to search.
+				var domainroot="www.semanticdesigns.com"
+				function SDSiteSearch(curobj){
+				document.getElementById("hiddenquery").value="site:www.semanticdesigns.com "+curobj.qfront.value
+				}
+				</script>
+            </form>
+
+
+
+            <div class="block block-categories">
+              <h3>Topics</h3>
+              <ul id="cats">
+				<li class="cat-reengineering"><a class="cat-reengineering" href="/index.html">Re-engineering</a></li>
+				<li class="cat-documentation"><a class="cat-documentation" href="/index.html">Documentation</a></li>
+				<li class="cat-assessment"><a class="cat-assessment" href= "/index.html">Assessment</a></li>
+				<li class="cat-improvement"><a class="cat-improvement" href="/index.html">Improvement</a></li>
+				<li class="cat-codegen"><a class="cat-codegen" href="/index.html">Code Generation</a></li>
+				<li class="cat-hdl"><a class="cat-hdl" href="/index.html">Hardware Description Languages</a></li>
+				<li class="cat-all"><a class="cat-all" href="/index.html">All Topics</a></li>
+              </ul>
+            </div>
+
+            <form name="drops" method="post" action="http://semanticdesigns.com" id="drops">
+              Language:<br>
+              <select name="language" size="1" onchange="changeList(this)">
+                <option value="AdaProducts">
+                  language
+                </option>
+              </select><br>
+              Product:<br>
+              <select name="product" size="1">
+                <option>
+                  products
+                </option>
+              </select> <input type="button" onclick="location = ''+document.drops.product.options[document.drops.product.selectedIndex].value;" value="Go!">
+            </form>
+
+
+
+           </div>
+
+          <h3>Semantic Designs- Our Goal</h3>
+          <div id="home-mission">
+            To enable our customers to produce and maintain timely, robust and economical software by providing world-class Software Engineering tools using deep language and problem knowledge with high degrees of automation.
+          </div>
+
+      </div>
+
+	<div class="push"></div>
+	</div> <!--Container-->
+
+
+      <div class="block-masthead">For more information: <a href="mailto:info@semanticdesigns.com">info@semanticdesigns.com</a>&nbsp;&nbsp;&nbsp;&nbsp;Follow us at Twitter: <a href="http://twitter.com/SemanticDesigns">@SemanticDesigns</a><br>
+      <br>
+      <div class="copyright" >Copyright 1995-2016 Semantic Designs, Incorporated<br>
+      DMS, "Design Maintenance System" and Refactor++ are registered trademarks of Semantic Designs, Inc.<br>
+      The SD logo and "Semantic Designs" are registered service marks of Semantic Designs, Inc.<br>
+      CloneDR, PARLANSE, JOVIAL2C, Thicket, Smart Differencer are trademarks of Semantic Designs, Inc.<br>
+      The OMG logo is a registered trademark of the Object Management Group, Inc. in the United States and other countries.<br>
+      To view our Privacy Policy, click <a href="/PrivacyPolicy.html">here</a><br>
+      <br>
+      Comments or problems: <a
+      href="mailto:webmaster@semanticdesigns.com">webmaster@semanticdesigns.com</a>
+      <font size="-1"><br></font>
+      </div>
+
+    </div>
+
+
+
+
+
+<div class="slogan">
+Refactoring<BR>Tools
+</div>
+</body>
+</html>

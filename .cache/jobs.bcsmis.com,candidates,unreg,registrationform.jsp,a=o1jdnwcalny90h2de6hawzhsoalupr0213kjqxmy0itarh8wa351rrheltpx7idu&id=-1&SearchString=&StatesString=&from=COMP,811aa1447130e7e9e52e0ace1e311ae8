@@ -1,0 +1,683 @@
+status: 200
+content-length: 24414
+content-location: http://jobs.bcsmis.com/candidates/unreg/registrationform.jsp?a=o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu&id=-1&SearchString=&StatesString=&from=COMP
+set-cookie: JSESSIONID=DF7AEC9D3C2A38867C6C1A031FE94FFC;
+ Path=/, JobPortalID=262031713077162604; Expires=Sat, 24-Aug-2024 14:35:02 GMT;
+ Path=/
+vary: Accept-Encoding
+server: Apache/2.0.52 (Unix) DAV/2 mod_jk2/2.0.4
+-content-encoding: gzip
+date: Sun, 18 Sep 2016 07:17:42 GMT
+p3p: CP='CAO PSA OUR'
+content-type: text/html;charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<title>Registration</title>
+	<script type="text/javascript" src="/scripts/dojo-1.8.0/dojo/dojo.js"></script>	
+	<link id="themeStyles" rel="stylesheet" href="/scripts/dojo-1.8.0/dijit/themes/claro/claro.css"/>
+	<link rel="stylesheet" type="text/css" href="/scripts/dojo/resources/themes/blue/css/jobdiva.css" />
+	<script type="text/javascript" src="/scripts/dojo-1.8.0/dojo/example.js"></script>
+	<script type="text/javascript" src="/scripts/jquery/jquery-1.4.3.min.js"></script>
+	<style type='text/css'>		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</style>
+	<style>
+	.googledriveBtn { 
+		font-size: 16px !important;
+		font-weight: 400 !important;
+		font-family: roboto !important;
+		background: none !important;
+		border: none !important;
+		color: #00ACED !important;
+		cursor: default !important;
+		padding-left: 0px !important;		
+	}
+	
+	.icon{ 
+		width:16px; 
+		height:16px; 
+		margin-right:10px; 
+		vertical-align:top; 
+		margin-top:1px; 
+	}
+	
+	.dropin-btn-status{ 
+		margin-left: 0px !important; 
+		margin-right: 10px !important; 
+	}	
+	.select { 
+		width:180px; 
+		height:25px; 
+		position:absolute; 
+		z-index:100; 
+		opacity:0; 
+		filter:alpha(opacity=0); 
+	}
+	#container a{
+		width:180px;	
+	}
+	#dlg_captcha #recaptcha_area{ padding : 0px; }
+	</style>
+	
+	
+</head>
+
+<body class='claro unreg_registrationform'>
+<div id=div_body>
+	<div id=preloader></div>
+	<div id="wrap" align="center">
+		<div id="div_header" align=left>
+		
+
+<input type=hidden id=compid name=compid value="0"/>
+<div id='banner_header' onmouseout='removeSelected()'>
+
+		<div id="portalHeader" class="header_logo"><a href='http://www.bcsmis.com'><img id=logo border=0 src='/servlets-examples/servlet/getCompanyLogoServlet?teamid=531'></a></div>
+	
+		<div data-dojo-type='dijit/MenuBar' class="navMenu_outside" id='navMenu'>
+		<div data-dojo-type="dijit/MenuBarItem" style="visibility: hidden;">
+        <span>
+            Home
+        </span>
+    	</div>
+		
+		<div class="menu_home" data-dojo-type="dijit/MenuBarItem" onClick="javascript:window.location='/candidates/myjobs/searchjobsdone.jsp?a=o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu';">
+        <span>
+            Home
+        </span>
+    	</div>
+		
+		<div data-dojo-type="dijit/PopupMenuBarItem">
+        <span>
+            Language
+        </span>
+        <div data-dojo-type="dijit/DropDownMenu" id="languageMenu">
+            <div data-dojo-type="dijit/MenuItem" style="display: none" onClick="javascript:changeLanguage('en_US_');">
+                English
+            </div>
+            <!--<div data-dojo-type="dijit/MenuItem" onClick="javascript:changeLanguage('zh_CN_');">
+            	中文
+            </div>-->
+            <div data-dojo-type="dijit/MenuItem" style="" onClick="javascript:changeLanguage('fr_FR_');">
+                Français
+            </div>
+            <div data-dojo-type="dijit/MenuItem" style="" onClick="javascript:changeLanguage('es_ES_');">
+                Español
+            </div>
+        </div>
+    </div>
+	    <div class="menu_signin" data-dojo-type='dijit/MenuBarItem' onClick="javascript:login('/candidates/myjobs/', 'o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu');">
+	    <span>Sign in</span></div><div class="menu_register"  data-dojo-type='dijit/MenuBarItem' onClick="javascript:register('o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu')"><span>Register</span></div></div></div>	
+		
+		<div data-dojo-type="dijit/Dialog" title="Sign in" id="dlg_sign_in" name="dlg_sign_in" style="background-color:white; width:500px; display: none; overflow: hidden;">
+<form id="form_sign_in" name="form_sign_in" method="post" data-dojo-type="dijit/form/Form" action="/candidates/auth_apply_private.jsp">
+	
+	<table style="width:100%; padding-left:10px;padding-right:5px;" border=0>
+	<tr><td></td></tr>
+	<tr><td style="width:100px;"><label>Email:</label></td>
+	    <td>
+	    <input class="dijitTextBox textNormal" type="text" data-dojo-type="dijit/form/ValidationTextBox" required="true" missingMessage="Enter your email address" invalidMessage="Invalid Email Address" regExp="[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"  id="login" name="login"/>
+	    </td></tr>
+	<tr><td><label>Password:</label></td>
+	    <td>
+	    <input class="dijitTextBox textNormal" type=password id="pass" name="pass" data-dojo-type="dijit/form/ValidationTextBox" required="true" missingMessage="A password is required." onkeydown="if(event.keyCode==13) login_submit();"/>
+	    </td></tr>
+	<tr><td colspan="2" style="text-align:right; width:140px;"><a href="javascript:forgotpassword1();">Forgot your password?</a></td></tr>
+	<tr><td colspan="2" style="text-align:center;"><button data-dojo-type="dijit/form/Button" type="button" name="submitButton" id="submitButton" onclick="javascript:login_submit();" style="min-wdth:60px; width:80px;text-align:center;">Sign in</button></td></tr>
+	</table>
+	
+	<input type=hidden id=jobid name=jobid value="-1"/>
+	<input type=hidden id=SearchString name=SearchString value=''>
+	<input type=hidden id=StatesString name=StatesString value=''>
+	<input type=hidden id=from name=from value='COMP'>
+	<input type=hidden id=a name=a value='o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu'>
+</form>
+</div>
+<div data-dojo-type="dijit/Dialog" id=dlg_forget_pwd title="Forgot your password?" style="width: 350px; display: none;">
+	<div id=fm_forgot_pwd name=fm_forgot_pwd data-dojo-type="dijit/form/Form">
+		<div class="textNormal" style="padding-bottom: 10px;" id="txtMsgOnDialog">Please enter your registered email address, and we'll email you a link to reset your password right away.</div>
+		<div> 
+		   <span class="textNormalB color_grey" style="width: 100px;">Your Email</span>
+		   <span class="textNormal" nowrap style="width: 220px;">
+		   <input type="text" dojotype="dijit/form/ValidationTextBox" onkeydown="if(event.keyCode==13)sendForgotPWLink1();" regExp="[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required="true" missingMessage="Enter your email address"  invalidMessage="Invalid Email Address" id="EmailAddress" name="EmailAddress"/>
+		   <input style="display:none" id=a name=a value='o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu'/>
+		   </span>
+		</div> 
+		<div class="DojoDialogButtonBar">
+		   	<button type="button" data-dojo-type="dijit/form/Button" onclick="javascript:sendForgotPWLink1();"  id="forgetpasswordbutton">OK</button>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+if(!isInIframe() && true){
+	document.getElementById("portalHeader").style.display="";
+}
+
+function isInIframe () {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
+    dojo.ready(function(){
+    	dojo.addOnLoad(function(){
+    	dojo.query("input[type=\"text\"]").forEach(function(node, index, nodeList){
+    		dojo.attr(node, "autocomplete", "on");
+    	});
+    	});
+    });
+    function removeSelected(){
+    	dojo.query('#navMenu div').removeClass('dijitMenuItemSelected');
+    }
+    
+    function login(url, a){
+    	document.getElementById("form_sign_in").reset();
+    	dijit.byId("dlg_sign_in").show();
+    }
+    
+    function register(a){
+    	var url = "/candidates/unreg/registrationform.jsp?a="+a+"&id=-1&SearchString=&StatesString=&from=COMP";
+    	window.location.href = url;
+    }
+    
+    function forgotpassword1(){
+    	document.getElementById("fm_forgot_pwd").reset();
+    	dijit.byId("dlg_forget_pwd").show(); 
+    }
+    
+    function sendForgotPWLink1(){
+    	if(!dijit.byId("fm_forgot_pwd").validate()){
+    		return;
+    	}else{
+//    		alert("begin forgot password");
+    		var xhrArgs = {
+    			form: "fm_forgot_pwd",
+    			url: "/candidates/forgotpwd_apply.jsp",
+    			load: afterForgotPwd1
+    		};
+ //   		alert("before send forgot password");
+    		dojo.xhrPost(xhrArgs);
+    	}
+    }
+
+    function afterForgotPwd1(data, status){
+//    	alert("after forgot password");
+    	var items = data.replace(/^\s*/, '').replace(/\s*$/, '').split("%");
+//    	alert("items"+items);
+    	dojoAlert(items[1]);
+    	if(items[0]==2){
+    		dijit.byId("dlg_forget_pwd").onCancel();
+    		dijit.byId("dlg_sign_in").onCancel();
+    	}
+    }
+    
+    function login_submit(){
+//    	alert("begin login submit");
+    	if(!dijit.byId("form_sign_in").validate()){
+    		return;
+    	}else{
+    		var xhrArgs = {
+    				form: "form_sign_in",
+    				url: "/candidates/auth_apply_private.jsp",
+    				load: afterSignIn
+    			};
+    		dojo.xhrPost(xhrArgs);
+    	}
+    }
+    
+    function afterSignIn(data,state){
+//    	alert("success");
+    	var val = data.replace(/^\s*|\s*$/g, '');
+        if(val.indexOf("Notice:")==0){
+        	dojoAlert(val.substring("NOTICE:".length));
+        }else if(val.indexOf("REDIRECT:")==0){
+        	var temp=val.substring("REDIRECT:".length);
+        	var url;
+        	url=temp;
+        	window.location.href=url;
+        	return;
+        }else if(val.indexOf("EXCEPTION:")==0){
+        	dojoAlert(val.substring("EXCEPTION:".length));
+        } else if(val.indexOf("TIMESHEET")==0 || val.indexOf("EXPENSE")==0){
+        	document.form_sign_in.action = "/private/auth_apply_private.jsp";
+        	document.form_sign_in.submit();
+        	return;
+        } else{
+        	dojoAlert(val);
+        }
+//        dijit.byId("dlg_apply_unsigned").hide();
+    }
+    function changeLanguage(region){
+    	setCookie("UserLanguage", region, null, "/");
+    	location.reload(true);
+    }
+    
+    function setCookie(name, value, expires, path, domain, secure) {
+  	  var curCookie = name + "=" + escape(value) +
+  	      ((expires) ? "; expires=" + expires.toGMTString() : "") +
+  	      ((path) ? "; path=" + path : "") +
+  	      ((domain) ? "; domain=" + domain : "") +
+  	      ((secure) ? "; secure" : "");
+  	  document.cookie = curCookie;
+  }
+</script>
+		</div>
+		<div style="height: 20px;"></div>
+		<div id=div_main style="padding-bottom:20px;" overflow:auto>
+			<div class="shadowed" data-dojo-type="dijit/TitlePane" title="Registration" style="width:90%; padding-bottom: 0px;">
+			<table style="padding:20px;">
+			
+			<tr><td>Create your account so you can:</td></tr>
+			<tr><td><img src="/images/bullet_ball_blue_16.png" style="height:10px; width:10px;"></img> Upload or build your resume</td></tr>
+			<tr><td><img src="/images/bullet_ball_blue_16.png" style="height:10px; width:10px;"></img> Apply online for open positions and track your applications</td></tr>
+			<tr><td><img src="/images/bullet_ball_blue_16.png" style="height:10px; width:10px;"></img> Ask the system to suggest ideal job positions based on your resume experience and skill profile</td></tr>
+			<tr><td><br/></td></tr>
+			<tr><td>TO CREATE A NEW ACCOUNT:</td></tr>
+			<tr><td>You have a choice of four methods to input your resume. Don't worry about personal info, our intelligent robot will fill in the details for you. Or you can choose to make a new resume.</td></tr>
+         	<tr><td><br/></td></tr>
+         	<tr><td style="text-align:center;">
+         	<form name="form1" method="post" action="">
+         	<input type="radio" name="radiobutton" onClick="showUpload();" value="radiobutton">UPLOAD</input>
+         	<input type="radio" name="radiobutton" onClick="showPaste();" value="radiobutton">PASTE</input>
+         	
+			<input type="radio" name="radiobutton" value="radiobutton" onClick="gotoResumeMaker()">RESUME MAKER</input>
+            
+            
+			<input type="radio" name="radiobutton" value="radiobutton" onClick="gotoTurboReg()">REGISTER WITHOUT RESUME</input>
+            
+         	</form>
+         	</td></tr>
+			</table>
+			</div>
+
+			<div id="uploadlayer" class="NotClosableTitlePane shadowed" data-dojo-type="arizon/NotClosableTitlePane" title="Upload Resume" style="text-align:center;width:90%;z-index:6;display: none;"> 
+  			<form id=form2 name="form2" method="post" enctype="multipart/form-data">
+			<div style='text-align:right;width:100%;'>
+			<table>
+							
+				<tr>
+					<td style="width:350px;">
+						<label>How were you referred to us? </label>
+					</td>
+					<td style="padding-left:50px; text-align:left;">
+						<select id='AIReferrer_upload' name = 'AIReferrer_upload' data-dojo-type = 'dijit/form/FilteringSelect' style='width: 270px;' maxHeight=200 >
+							<option value='0'></option>
+							
+						</select>
+					</td>	
+				</tr>
+							
+				<tr>
+					<td style="width:350px; padding-top:20px; vertical-align:top;">
+						<label >Select the Resume file you wish to upload:</label>
+					</td>
+					<td style="padding-left:50px; text-align:left;">
+		   					<span id="files" style="padding-top:15px; margin-right:25px;" class="selectWrap">
+								<input class="select" type='file' id='ufile' name='ufile' onchange="upload()" />
+								<a class="dropbox-dropin-btn dropbox-dropin-default" style="width:180px;" onClick="javascript:$('.resume .selectWrap .select').click();">
+									<img class="icon" src="/images/upload.png" /><span style="margin-top:3px;">Choose from your PC</span>
+								</a>
+							</span>	
+							
+						<input type=hidden name=a value="o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu"></input>
+						<input type=hidden name=id value="-1"></input>
+						<input type=text id=forbotUpld name=forbot value="" style="display:none;"/>
+						<input type=hidden id=digestUpld name=digest value="FQFYA4xbRFNHCoSIkIiFiFpGB1tRXw=="/>		 		
+					</td>
+				</tr>
+			</table>					
+			</div>
+			</form>
+ 			</div>
+
+			<div id="pastelayer" class="NotClosableTitlePane shadowed" data-dojo-type="arizon/NotClosableTitlePane" title="Paste Paste Resume" style="text-align:center;width:90%; z-index:8; display: none;"> 
+  			<form id=form3 name="form3" method="post" action="/candidates/unreg/verifyinfopasteform_outside.jsp?a=o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu">
+  			
+			<div style='text-align:right;'><label>How were you referred to us? </label>
+					<select id='AIReferrer_paste' name = 'AIReferrer_paste' data-dojo-type = 'dijit/form/FilteringSelect' style='width: 270px;' maxHeight=200 >
+						<option value='0'></option>
+						
+					</select>
+			</div>
+			
+			<br/>
+			Paste the Resume into the text box below, then click on the Submit button.
+    			<div style="height:20px;"></div>
+    		<textarea name="txtdata" style="width:80%;max-width:95%;resize:both;" rows="15" data-dojo-type="dijit/form/SimpleTextarea"></textarea>
+     			<div style="height:20px;"></div>
+      		<button data-dojo-type="dijit/form/Button" type="button" name="send2" onclick="javascript:paste();">Submit</button>
+ 			<input type=hidden name=a value="o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu"></input>
+			<input type=hidden name=id value="-1"></input>
+			<input id=forbotPaste name=forbot type=text value="" style="display:none;"/>
+      		<input id=digestPaste name=digest type=hidden value="FQFYA4xbRFNHCoSIkIiFiFpGB1tRXw=="/>		
+ 			</form>
+			</div>
+
+			
+		</div>
+	</div>
+	
+	
+	<div data-dojo-type="dijit/Dialog" id="dlg_captcha" name="dlg_captcha" title="Captcha" style="background-color:#ffffff; width:470px;height:200px;display: none; overflow: hidden;">				
+			<form id="fm_captcha" name="fm_captcha">
+			<div style="display:inline-block;">
+				<script type="text/javascript">
+					 var RecaptchaOptions = {
+					    theme : 'clean'
+					 };
+					 </script>
+					<!-- captcha section -->
+				<script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6LcV4twSAAAAAFn-ImSS2EPHsUZInf5HBQL2bGeM"></script>
+				<noscript>
+				     <iframe src="https://www.google.com/recaptcha/api/noscript?k=6LcV4twSAAAAAFn-ImSS2EPHsUZInf5HBQL2bGeM"
+				         height="300" width="500" frameborder="0"></iframe><br>
+				     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+				     </textarea>
+				     <input type="hidden" name="recaptcha_response_field" value="manual_challenge">
+			 	</noscript>
+				<!-- captcha section end -->
+				<input type="text" name="preventSubmitByEnterKey" value="" style="display:none;">
+			</div>
+			</form>
+			<div style="text-align:center; margin-top: 20px;"><a class="mybutton mybutton_small" href="javascript:validateCaptcha();">Submit</a></div>
+	</div>
+	
+</div>
+</body>
+</html>
+<div dojoType="dijit.Dialog" id="alertDlg" title="Message" style="display: none; max-width: 500px;">
+<div style="margin:6px 8px 6px 8px; vertical-align:middle; text-align:center;">
+ <div>
+ <span id="alertDlg_alertIcon"></span>
+ <span id="alertDlg_msg"></span>
+ </div>
+<button dojoType="dijit.form.Button" style="margin-top:15px;width: 60px;" onClick="javascript:dijit.byId('alertDlg').hide();">
+OK
+</button>
+</div>
+</div>
+
+<script>
+dojo.require("dijit.Dialog");
+dojo.require("dijit.form.Button"); // optimize: load dijit layer
+
+var action;
+function dojoAlert(msg, type){
+	if(type!=null){
+		switch(type){
+		case 1:
+			dojo.addClass("alertDlg_alertIcon", "warningIcon");
+			break;
+		}
+	}
+	//alert("alert1");
+	dojo.byId("alertDlg_msg").innerHTML=msg;
+	var dlg=dijit.byId("alertDlg");
+	dlg.show();
+}
+
+</script>
+
+<script type="text/javascript" charset="utf-8">
+
+dojo.ready(function(){
+	var hideLoader = function() { 
+		dojo.style("preloader", "display", "none"); 
+	}
+		
+	dojo.addOnLoad(function(){
+		hideLoader();
+	});
+	dojo.parser.parse();
+	
+});
+
+function showUpload(){
+	document.getElementById("pastelayer").style.display="none";
+	document.getElementById("uploadlayer").style.display="";
+}
+
+function showPaste(){
+	document.getElementById("uploadlayer").style.display="none";
+	document.getElementById("pastelayer").style.display="";
+	
+}
+
+function MM_findObj(n, d) { //v4.0
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+	    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && document.getElementById) x=document.getElementById(n); return x;
+	}
+
+function MM_showHideLayers() { //v3.0
+	var i,p,v,obj,args=MM_showHideLayers.arguments;
+	for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { 
+		v=args[i+2];
+	    if (obj.style) { 
+	    	obj=obj.style; 
+	    	v=(v=='show')?'visible':(v='hide')?'hidden':v; 
+	    	}
+	    obj.visibility=v; 
+	    } 
+	}
+
+function gotoResumeMaker() {
+	  window.location="/candidates/mydocs/resmak/personalinfo.jsp?a=o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu&id=-1";
+
+	}
+
+function gotoTurboReg() {
+	window.location ="/candidates/unreg/addcandidateprofile.jsp?a=o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu&id=-1";
+
+	}
+
+function paste(){
+	
+		uploadMethod = 2;
+		checkCookie();
+		
+}
+function paste_continue() {
+	var xhrArgs = {
+			form: "form3",
+			url: "/candidates/unreg/verifyinfopasteform_outside.jsp?a=o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu",
+			load: function(data, ioArgs){
+				var res = data.replace(/^\s+|\s+$/g,'');  
+				if(res.indexOf("REDIRECT")==0){
+					var url="/candidates/unreg/verifyinfo_outside.jsp?a=o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu&id=-1";
+					window.location=url;
+		        	return;
+				}else{
+					dojoAlert(data);
+				}
+			}
+	};	  
+	dojo.xhrPost(xhrArgs);
+}
+</script>
+
+<script>
+var uploadMethod = 0;
+function upload(){
+	
+		uploadMethod = 1;
+		checkCookie();
+	
+	
+}
+
+function upload_continue() {
+	$("#preloader").css("background-color","rgba(255,255,255,0.5)").show();
+	var xhrArgs = {
+			form: "form2",
+			url: "/candidates/unreg/verifyinfoform_outside.jsp?a=o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu",
+			handleAs: "text",
+		    content: { regionCode: "en_US"},
+			handle: function(data, ioArgs){
+				var res = data.replace(/^\s+|\s+$/g,'');  
+				if(res.indexOf("REDIRECT")==0){
+					var url="/candidates/unreg/verifyinfo_outside.jsp?a=o1jdnwcalny90h2de6hawzhsoalupr0213kjqxmy0itarh8wa351rrheltpx7idu&id=-1";
+					window.location=url;
+		        	return;
+				}else{
+					dojoAlert(data);
+					$("#preloader").hide();
+
+				}
+			}
+	};	  
+	//dojo.io.iframe.send(xhrArgs);
+	require(["dojo/io/iframe"], function(ioIframe){
+		ioIframe.send(xhrArgs);
+	});
+}
+
+
+
+var _validFileExtensions = [".pdf", ".doc", ".docx", ".txt", ".rtf"];
+function validateFile(sFileName){	
+	if (sFileName.length > 0) {
+		var blnValid = false;
+        for (var j = 0; j < _validFileExtensions.length; j++) {
+            var sCurExtension = _validFileExtensions[j];
+            if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                blnValid = true;
+                break;
+            }
+        }
+
+        if (!blnValid) {
+            return false;
+        }
+ 	}else{
+ 		return false;
+ 	}            
+	return true;
+}
+
+function checkCookie(){
+	$.get("/candidates/unreg/checkUploads.jsp?t="+(new Date()).getTime(), function(data){
+		var res = data.replace(/^\s+|\s+$/g,'');
+		if(res>=3){			
+			dijit.byId("dlg_captcha").show();			
+		}else{			
+			try{
+				updateResumeCookie(false);	
+			}catch(e){}
+			
+			if(uploadMethod == 1) upload_continue();
+			else if(uploadMethod == 2) paste_continue();
+		}	
+	});	
+}
+
+function validateCaptcha(){
+	if(document.getElementById("recaptcha_response_field").value == 0){
+		dojoAlert("Please enter the characters displayed.");
+		return;
+	}
+	var xhrArgs = {
+ 			url:  "/candidates/unreg/checkCaptcha.jsp",
+ 			form: "fm_captcha",
+ 			load: afterCheckCaptcha
+ 	};
+ 	dojo.xhrPost(xhrArgs);	 					
+}
+
+function afterCheckCaptcha(data){
+	var val = data.replace(/^\s*|\s*$/g, '');
+	if(val == 0){
+		try{
+			updateResumeCookie(true);
+		}catch(e){}
+		
+		if(uploadMethod == 1) upload_continue();
+		else if(uploadMethod == 2) paste_continue();
+	}else{
+		dojoAlert("The characters you entered didn't match the word verification. Please try again.");
+		Recaptcha.reload();
+		return;
+	}
+}
+
+function updateResumeCookie(reset){
+	if(getResumeCookie("ResumesUpload").length>0){	
+		if(reset){
+			deleteResumeCookie("ResumesUpload", "/");
+			deleteResumeCookie("ResumesUploadExpire", "/");	
+			var now = new Date();
+			now.setTime(now.getTime() + 60*1000);		
+			setResumeCookie("ResumesUpload", "1", now, "/");
+			setResumeCookie("ResumesUploadExpire", now, now, "/");		
+		}else{
+			var counter = parseInt(getResumeCookie("ResumesUpload"))+1;
+			var expiration = getResumeCookie("ResumesUploadExpire");
+			deleteResumeCookie("ResumesUpload", "/");
+			setResumeCookie("ResumesUpload", counter, new Date(expiration), "/");
+		}			
+	}else{
+		// create new cookie
+		var now = new Date();
+		now.setTime(now.getTime() + 60*1000);		
+		setResumeCookie("ResumesUpload", "1", now, "/");
+		setResumeCookie("ResumesUploadExpire", now, now, "/");		
+	}	
+}
+
+function getResumeCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
+function setResumeCookie(cname, cvalue, cexpires, cpath, cdomain) { 
+	var curCookie = cname + "=" + cvalue +
+	(cexpires ? ("; expires=" + cexpires.toUTCString()) : "") +
+	(cpath ? ("; path=" + cpath) : "") +
+	(cdomain ? ("; domain=" + cdomain) : "");
+	document.cookie = curCookie;
+}
+
+function deleteResumeCookie(cname, cpath, cdomain){	
+	document.cookie = cname +"=" +
+	(cpath ? ("; path=" + cpath) : "") +
+	(cdomain ? ("; domain=" + cdomain) : "") +
+	"; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+}
+ 
+</script>

@@ -1,0 +1,1151 @@
+status: 200
+x-ars-server: web05
+content-length: 61365
+content-location: http://arstechnica.com
+set-cookie: country=US; path=/
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+link: <http://arstechnica.com/wp-json/>; rel="https://api.w.org/"
+date: Tue, 13 Sep 2016 10:50:16 GMT
+content-type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Ars Technica</title>
+    <script type="text/javascript">
+    ars = {"ASSETS":"http:\/\/cdn.arstechnica.net\/wp-content\/themes\/ars\/assets","HOME_URL":"http:\/\/arstechnica.com","LOGIN_URL":"https:\/\/arstechnica.com\/services\/login-desktop.html?v=1","CIVIS":"\/civis","THEME":"light","VIEW":"grid","MOBILE":false,"PREMIER":false,"LOGGED":false,"ENV":"production","AD":{"kw":["section_home","homepage"],"zone":"homepage","queue":[]},"TOTAL":76305,"UNREAD":0,"RECENT":[954311,954849,954817,954765,954799,954565,954621,954557,954535,954549,954441,954111,954425,954079,954381,954405,954375,954353,954359,953823,954223,954167,953759,954127,954137],"LOGINS":true,"CROSS":false,"GEOALERTS":true,"PARSELY":"arstechnica.com","COMMENTS":false,"HOMEPAGE":true,"COUNTRY":"us","SITE":1,"READY":[],"SHOW_ADS":true,"IMG_PROXY":"https:\/\/cdn.arstechnica.net\/i\/","CATEGORY":false,"PAGETITLE":""};
+  </script>
+
+  <link rel="stylesheet" type="text/css" media="all" href="http://cdn.arstechnica.net/wp-content/themes/ars/assets/css/main-022c9f4290.css" />
+      <link rel="alternate" type="application/rss+xml" href="http://feeds.arstechnica.com/arstechnica/index/" />
+  <link rel="shortcut icon" href="https://cdn.arstechnica.net/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="https://cdn.arstechnica.net/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="http://cdn.arstechnica.net/wp-content/themes/ars/assets/img/ars-ios-icon-d9a45f558c.png" />
+  <link rel="icon" sizes="192x192" href="http://cdn.arstechnica.net/wp-content/themes/ars/assets/img/material-ars-db41652381.png" />
+
+    <meta name="application-name" content="Ars Technica"/>
+  <meta name="msapplication-starturl" content="http://arstechnica.com/"/>
+  <meta name="msapplication-tooltip" content="Ars Technica: Serving the technologist for 1.2 decades"/>
+  <meta name="msapplication-task" content="name=News;action-uri=http://arstechnica.com/;icon-uri=https://cdn.arstechnica.net/favicon.ico"/>
+  <meta name="msapplication-task" content="name=Features;action-uri=http://arstechnica.com/features/;icon-uri=https://cdn.arstechnica.net/ie-jump-menu/jump-features.ico"/>
+  <meta name="msapplication-task" content="name=OpenForum;action-uri=http://arstechnica.com/civis/;icon-uri=https://cdn.arstechnica.net/ie-jump-menu/jump-forum.ico"/>
+  <meta name="msapplication-task" content="name=Subscribe;action-uri=http://arstechnica.com/subscriptions/;icon-uri=https://cdn.arstechnica.net/ie-jump-menu/jump-subscribe.ico"/>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta name="advertising" content="ask" />
+  <meta property="fb:admins" content="592156917" />
+  <meta property="fb:admins" content="108943" />
+  <meta property="fb:admins" content="10103365229664579" />
+
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="theme-color" content="#000000" />
+
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+                  <meta property="og:site_name" content="Ars Technica" />
+      <meta property="og:title" content="Ars Technica" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="http://arstechnica.com/" />
+      <meta property="og:image" content="https://cdn.arstechnica.net/wp-content/themes/arstechnica/assets/images/ars-logo-open-grey.png" />
+      <meta property="og:description" content="Serving the Technologist for more than a decade. IT news, reviews, and analysis." />
+      <meta name="google-site-verification" content="HdFEloOqFNJZvQWa7SK2BRmWVt8aVnPuagqXZ-C2U5U" />
+
+      <link rel="alternate" hreflang="en" href="http://arstechnica.com/" />
+      <link rel="alternate" hreflang="en-gb" href="http://arstechnica.co.uk/" />
+        <script type="text/javascript">var digitalData = {"keywords":{"display":""},"pageType":"home","section":"home","display":"Ars Technica","canonical":"http:\/\/arstechnica.com"};</script>
+  <meta name="description" content="Serving the Technologist for more than a decade. IT news, reviews, and analysis." />
+  
+  </head>
+<body class="home blog grid-view light blog-us">
+
+  <aside class="ad ad_crown" id="ad_crown_top"></aside>
+
+<div class="site-wrapper">
+  <header class="site-header">
+    <div class="header-left">
+      <a href="http://arstechnica.com" id="header-logo" title="Ars Technica Homepage">
+      <span class="icon icon-logo-ars-us"></span>
+  </a>
+      <div class="dropdown" id="header-search">
+        <a href="/search/" class="dropdown-toggle">
+          <span class="icon icon-search-mag-glass"></span>
+        </a>
+        <div class="dropdown-content">
+          <form action="/search/" method="GET" id="search_form">
+  <input type="hidden" name="ie" value="UTF-8">
+  <input type="text" name="q" id="hdr_search_input" value="" placeholder="Search..." tabindex="10">
+</form>
+<a class="nav-search-close">Close</a>
+        </div>
+      </div>
+      <nav id="header-nav-primary">
+        <ul>
+          
+  <li><a class="" href="/information-technology/">Biz &amp; IT</a></li>
+  <li><a class="" href="/gadgets/">Tech</a></li>
+  <li><a class="" href="/science/">Science</a></li>
+  <li><a class="" href="/tech-policy/">Policy</a></li>
+  <li><a class="" href="/cars/">Cars</a></li>
+  <li><a class="" href="/gaming/">Gaming &amp; Culture</a></li>
+  <li><a href="/civis/">Forums</a></li>        </ul>
+      </nav>
+      <div class="dropdown dropdown-mega" id="header-burger">
+        <a href="#site-footer" class="dropdown-toggle">
+          <span></span>
+        </a>
+        <div class="dropdown-content">
+          <section class="burger-navigate">
+  <h3>
+    <span class="icon icon-half-target"></span>
+    Navigate
+  </h3>
+  <ul>
+    <li><a href="http://video.arstechnica.com/">Videos</a></li>
+    <li><a href="/features/">Features</a></li>
+    <li><a href="/reviews/">Reviews</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="/rss-feeds/">RSS Feeds</a></li>
+    <li><a href="/?view=mobile">Mobile Site</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="/about-us/">About Ars</a></li>
+    <li><a href="/staff-directory/">Staff Directory</a></li>
+    <li><a href="/contact-us/">Contact Us</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="/advertise-with-us/">Advertise with Ars</a></li>
+    <li><a href="/reprints/">Reprints</a></li>
+  </ul>
+</section>
+
+<section class="burger-filter">
+  <h3>
+    <span class="icon icon-half-mag"></span>
+    Filter by topic
+  </h3>
+  <ul id="burger-nav-primary">
+    
+  <li><a class="" href="/information-technology/">Biz &amp; IT</a></li>
+  <li><a class="" href="/gadgets/">Tech</a></li>
+  <li><a class="" href="/science/">Science</a></li>
+  <li><a class="" href="/tech-policy/">Policy</a></li>
+  <li><a class="" href="/cars/">Cars</a></li>
+  <li><a class="" href="/gaming/">Gaming &amp; Culture</a></li>
+  <li><a href="/civis/">Forums</a></li>  </ul>
+</section>
+
+<section class="burger-settings">
+  <h3>
+    <span class="icon icon-half-gear"></span>
+    Settings
+  </h3>
+  <div>
+    <div class="burger-layout">
+      
+<p>Front page layout</p>
+<div class="burger-layout-grid">
+  <a rel="nofollow" href="http://arstechnica.com/?view=grid" class="">
+    <span class="icon icon-grid"></span><br>
+    Grid
+    <div class="faux-radio active"></div>
+      </a>
+</div>
+
+<div class="burger-layout-list">
+  <a rel="nofollow" href="http://arstechnica.com/?view=archive" class="">
+    <span class="icon icon-list"></span><br>
+    List
+    <div class="faux-radio "></div>
+      </a>
+</div>
+
+<div class="burger-layout-unified">
+  <a rel="nofollow" href="http://arstechnica.com/?view=unified" class="">
+    <span class="icon icon-hybrid-view"></span><br>
+    Unified
+    <div class="faux-radio "></div>
+      </a>
+</div>
+    </div>
+    <div class="burger-theme">
+      
+<p>Site theme</p>
+<div class="burger-theme-light">
+  <a rel="nofollow" href="http://arstechnica.com/?theme=light" class="">
+    <span><span>Black on white</span></span>
+    <div class="faux-radio active"></div>
+      </a>
+</div>
+
+<div class="burger-theme-dark">
+  <a rel="nofollow" href="http://arstechnica.com/?theme=dark" class="">
+    <span><span>White on black</span></span>
+    <div class="faux-radio "></div>
+      </a>
+</div>
+    </div>
+  </div>
+      <div class="burger-frs">
+      <div class="frs-desc">
+        <h3 class="cat-name">Feature Report Series</h3>
+        <a href="/feature-series/specialized-databases/" class="cat-desc subheading">The Rise of Specialized Databases</a>
+      </div>
+    </div>
+  </section>
+        </div>
+      </div>
+      <div class="dropdown dropdown-mega" id="header-account">
+      <a href="http://arstechnica.com/civis/ucp.php?mode=login&return_to=%2F" class="dropdown-toggle">
+      Sign in
+      <span class="icon dropdown-indicator icon-drop-indicator"></span>
+    </a>
+    <div class="dropdown-content">
+    <section class="profile-activity">
+      <h3>
+        <span class="icon icon-half-bubble-up"></span>
+        Comment activity
+      </h3>
+              <p>Sign up or login to join the discussions!</p>
+          </section>
+
+    <section class="profile-settings">
+              <form id="login-form" action="https://arstechnica.com/civis/ucp.php?mode=login" method="post">
+  <input type="text" name="username" id="username" placeholder="Username or Email" />
+  <input type="password" name="password" id="password"  placeholder="Password" />
+  <input type="submit" value="Submit" class="button button-orange button-wide" name="login" />
+  <label id="remember-label">
+    <input type="checkbox" name="autologin" id="autologin" />
+  Stay logged in</label> <span>|</span> <a href="/civis/ucp.php?mode=sendpassword">Having trouble?</a>
+
+  <input type="hidden" name="redirect" value="./ucp.php?mode=login&amp;return_to=%2Fservices%2Fx%2Fa.php%3Fpath%3D%2F%26s%3D1" />
+  <input type="hidden" name="return_to" value="/services/x/a.php?path=%2F&amp;s=1" />
+</form>
+<div class="register-account">
+  <span>Sign up to comment and more</span>
+  <a href="http://arstechnica.com/civis/ucp.php?mode=register" class="signup-btn button button-wide">Sign up</a>
+</div>
+      
+    </section>
+  </div>
+</div>
+    </div>
+    <div class="header-right">
+            <!-- cache hit 102:header/site-toggle:2a05a4cf44df398d720c458b68ecffc5 -->
+  <div class="dropdown dropdown-right" id="header-sites">
+                        <a href="http://arstechnica.com/?return" class="dropdown-toggle">
+          <span class="icon header-flag icon-flag-us"></span>
+          <span class="icon dropdown-indicator icon-drop-indicator"></span>
+        </a>
+                                  
+    <div class="dropdown-content">
+                        <a href="http://arstechnica.co.uk">
+            <span class="icon header-flag icon-flag-uk"></span>
+            Ars Technica UK          </a>
+          </div>
+  </div>
+          </div>
+  </header>
+
+        
+  <div class="content-wrapper">
+<!-- grid cache hit -->
+<section class="listing listing-top with-feature">
+  <!-- Grid built: 2016-09-13 10:44:04 -->
+            <!-- First article -->
+      
+<article class="tease top-latest tease-tile" data-post-id="954849">
+  
+  <a class="overlay" href="http://arstechnica.com/tech-policy/2016/09/chicago-bagman-who-helped-doj-in-red-light-camera-case-gets-6-months/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2014/08/9362527327_99c5f48498_k-640x215.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/tech-policy/2016/09/chicago-bagman-who-helped-doj-in-red-light-camera-case-gets-6-months/">Chicago bagman who helped DOJ in red light camera case gets 6 months</a></h2>
+    <p class="excerpt">Redflex contractor Martin O’Malley handed over envelopes of cash to John Bills.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/cyrus-farivar/"><span itemprop="name">Cyrus Farivar</span></a>
+      –  <time class="date" data-time="1473757207" datetime="2016-09-13T09:00:07+00:00">Sep 13, 2016 9:00 am UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="2 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/tech-policy/2016/09/chicago-bagman-who-helped-doj-in-red-light-camera-case-gets-6-months/?comments=1">
+    <span class="comment-count-number">5</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+      <!-- Feature article -->
+      
+<article class="tease top-feature tease-tile" data-post-id="954311">
+  
+  <a class="overlay" href="http://arstechnica.com/apple/2016/09/iphone-7-and-7-plus-review-great-annual-upgrades-with-one-major-catch/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/iphone7-listing-760x380.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/apple/2016/09/iphone-7-and-7-plus-review-great-annual-upgrades-with-one-major-catch/">iPhone 7 and 7 Plus review: Great annual upgrades with one major catch</a></h2>
+    <p class="excerpt">In-depth with the new phones, the AirPods, A10 Fusion, the cameras, and more.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/andrew_cunningham/"><span itemprop="name">Andrew Cunningham</span></a>
+      –  <time class="date" data-time="1473760814" datetime="2016-09-13T10:00:14+00:00">Sep 13, 2016 10:00 am UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="17 posters participating, including story author." class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/apple/2016/09/iphone-7-and-7-plus-review-great-annual-upgrades-with-one-major-catch/?comments=1">
+    <span class="comment-count-number">23</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+    
+  
+  <!-- Remaining top area articles -->
+  
+<article class="tease article tease-tile" data-post-id="954817">
+  
+  <a class="overlay" href="http://arstechnica.com/cars/2016/09/the-numbers-are-in-the-chevrolet-bolt-will-have-a-238-mile-range/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/Bolt-EV_Range-9-13-760x380.jpeg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/cars/2016/09/the-numbers-are-in-the-chevrolet-bolt-will-have-a-238-mile-range/">The numbers are in: the Chevrolet Bolt will have a 238 mile range</a></h2>
+    <p class="excerpt">Cars should arrive in dealerships before the end of the year.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/jonathan-m-gitlin/"><span itemprop="name">Jonathan M. Gitlin</span></a>
+      –  <time class="date" data-time="1473739307" datetime="2016-09-13T04:01:47+00:00">Sep 13, 2016 4:01 am UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="48 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/cars/2016/09/the-numbers-are-in-the-chevrolet-bolt-will-have-a-238-mile-range/?comments=1">
+    <span class="comment-count-number">76</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-tile" data-post-id="954765">
+  
+  <a class="overlay" href="http://arstechnica.com/science/2016/09/did-the-fourth-richest-human-just-tease-plans-to-colonize-the-moon/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/GettyImages-532206876-760x380.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/science/2016/09/did-the-fourth-richest-human-just-tease-plans-to-colonize-the-moon/">Why Bezos’ rocket is unprecedented—and worth taking seriously</a></h2>
+    <p class="excerpt">Why Blue Origin’s crazy big rocket might fly, and what it means for spaceflight.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/ericberger/"><span itemprop="name">Eric Berger</span></a>
+      –  <time class="date" data-time="1473724640" datetime="2016-09-12T23:57:20+00:00">Sep 12, 2016 11:57 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="55 posters participating, including story author." class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/science/2016/09/did-the-fourth-richest-human-just-tease-plans-to-colonize-the-moon/?comments=1">
+    <span class="comment-count-number">123</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-tile" data-post-id="954799">
+  
+  <a class="overlay" href="http://arstechnica.com/science/2016/09/sugar-industry-bought-off-scientists-skewed-dietary-guidelines-for-decades/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/5556815064_0fd13e913d_z-640x380.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/science/2016/09/sugar-industry-bought-off-scientists-skewed-dietary-guidelines-for-decades/">Sugar industry bought off scientists, skewed dietary guidelines for decades</a></h2>
+    <p class="excerpt">Harvard researchers got hefty sums to downplay role of sweets in heart disease.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/beth/"><span itemprop="name">Beth Mole</span></a>
+      –  <time class="date" data-time="1473717955" datetime="2016-09-12T22:05:55+00:00">Sep 12, 2016 10:05 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="112 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/science/2016/09/sugar-industry-bought-off-scientists-skewed-dietary-guidelines-for-decades/?comments=1">
+    <span class="comment-count-number">200</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+</section>
+
+<section class="with-xrail">
+  <!-- Horizontal listing -->
+  <div class="listing listing-latest">
+    <h3>Latest Stories Continue <span>&gt;</span></h3>
+    
+<article class="tease article tease-row" data-post-id="954565">
+  
+  <a class="overlay" href="http://arstechnica.com/cars/2016/09/bmw-at-critical-junction-on-electric-car-strategy-reuters-says/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/05/P90216959_highRes_bmw-i3-94ah-05-2016-300x150.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/cars/2016/09/bmw-at-critical-junction-on-electric-car-strategy-reuters-says/">BMW at critical junction on electric car strategy, Reuters says</a></h2>
+    <p class="excerpt">Some think building an electric mini would be too costly, others think it’s necessary.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/megan-geuss/"><span itemprop="name">Megan Geuss</span></a>
+      –  <time class="date" data-time="1473711027" datetime="2016-09-12T20:10:27+00:00">Sep 12, 2016 8:10 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="51 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/cars/2016/09/bmw-at-critical-junction-on-electric-car-strategy-reuters-says/?comments=1">
+    <span class="comment-count-number">89</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954621">
+  
+  <a class="overlay" href="http://arstechnica.com/information-technology/2016/09/hands-on-blue-hydra-can-expose-the-all-too-unhidden-world-of-bluetooth/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/bluehydra-1-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/information-technology/2016/09/hands-on-blue-hydra-can-expose-the-all-too-unhidden-world-of-bluetooth/">Hands-on: Blue Hydra can expose the all-too-unhidden world of Bluetooth</a></h2>
+    <p class="excerpt">Bluetooth Low Energy devices like smart watches, "wearables," give you up all day.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/sean-gallagher/"><span itemprop="name">Sean Gallagher</span></a>
+      –  <time class="date" data-time="1473710411" datetime="2016-09-12T20:00:11+00:00">Sep 12, 2016 8:00 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="32 posters participating, including story author." class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/information-technology/2016/09/hands-on-blue-hydra-can-expose-the-all-too-unhidden-world-of-bluetooth/?comments=1">
+    <span class="comment-count-number">41</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954557">
+  
+  <a class="overlay" href="http://arstechnica.com/security/2016/09/thousands-of-infected-ftp-servers-net-attackers-88k-in-cryptocurrency/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/ftp-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/security/2016/09/thousands-of-infected-ftp-servers-net-attackers-88k-in-cryptocurrency/">Thousands of infected FTP servers net attackers $88k in cryptocurrency</a></h2>
+    <p class="excerpt">Targets foot hardware and electricity costs of mining Monero coins.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/dan-goodin/"><span itemprop="name">Dan Goodin</span></a>
+      –  <time class="date" data-time="1473703941" datetime="2016-09-12T18:12:21+00:00">Sep 12, 2016 6:12 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="37 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/security/2016/09/thousands-of-infected-ftp-servers-net-attackers-88k-in-cryptocurrency/?comments=1">
+    <span class="comment-count-number">42</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954535">
+  
+  <a class="overlay" href="http://arstechnica.com/cars/2016/09/trouble-ahead-for-google-and-apples-car-projects/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/apple-google-car-fail-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/cars/2016/09/trouble-ahead-for-google-and-apples-car-projects/">Trouble ahead for Google’s and Apple’s car projects?</a></h2>
+    <p class="excerpt">Google is yet to find a partner, and Apple is letting go of engineers.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/jonathan-m-gitlin/"><span itemprop="name">Jonathan M. Gitlin</span></a>
+      –  <time class="date" data-time="1473703201" datetime="2016-09-12T18:00:01+00:00">Sep 12, 2016 6:00 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="67 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/cars/2016/09/trouble-ahead-for-google-and-apples-car-projects/?comments=1">
+    <span class="comment-count-number">131</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954549">
+  
+  <a class="overlay" href="http://arstechnica.com/business/2016/09/hp-snaps-up-samsungs-printer-business-for-a-cool-1-05b/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/21555636122_adeb3d1370_k-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/business/2016/09/hp-snaps-up-samsungs-printer-business-for-a-cool-1-05b/">Samsung sells HP its printer segment plus 6,500 patents for $1.05B</a></h2>
+    <p class="excerpt">HP wants to "disrupt and reinvent the $55 billion copier industry."</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/cyrus-farivar/"><span itemprop="name">Cyrus Farivar</span></a>
+      –  <time class="date" data-time="1473702004" datetime="2016-09-12T17:40:04+00:00">Sep 12, 2016 5:40 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="74 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/business/2016/09/hp-snaps-up-samsungs-printer-business-for-a-cool-1-05b/?comments=1">
+    <span class="comment-count-number">90</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954441">
+  
+  <a class="overlay" href="http://arstechnica.com/tech-policy/2016/09/youre-a-step-closer-to-getting-55-from-the-ps3-linux-debacle-lawsuit/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/ps3ps3picc-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/tech-policy/2016/09/youre-a-step-closer-to-getting-55-from-the-ps3-linux-debacle-lawsuit/">You’re a step closer to getting $55 from the PS3 Linux debacle lawsuit</a></h2>
+    <p class="excerpt">Settlement notices are on their way. The devil is in the details.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/david-kravets/"><span itemprop="name">David Kravets</span></a>
+      –  <time class="date" data-time="1473699841" datetime="2016-09-12T17:04:01+00:00">Sep 12, 2016 5:04 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="59 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/tech-policy/2016/09/youre-a-step-closer-to-getting-55-from-the-ps3-linux-debacle-lawsuit/?comments=1">
+    <span class="comment-count-number">81</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954111">
+  
+  <a class="overlay" href="http://arstechnica.com/science/2016/09/was-august-deluge-in-louisiana-worsened-by-climate-change/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/coast_guard_baton_rouge-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/science/2016/09/was-august-deluge-in-louisiana-worsened-by-climate-change/">Was August deluge in Louisiana worsened by climate change?</a></h2>
+    <p class="excerpt">Rapid analysis says: probably.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/scott-johnson/"><span itemprop="name">Scott K. Johnson</span></a>
+      –  <time class="date" data-time="1473698592" datetime="2016-09-12T16:43:12+00:00">Sep 12, 2016 4:43 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="42 posters participating, including story author." class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/science/2016/09/was-august-deluge-in-louisiana-worsened-by-climate-change/?comments=1">
+    <span class="comment-count-number">99</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954425">
+  
+  <a class="overlay" href="http://arstechnica.com/information-technology/2016/09/netflix-asks-fcc-to-declare-data-caps-unreasonable/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/07/data-cash-Aurich-Lawson-Getty-300x150.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/information-technology/2016/09/netflix-asks-fcc-to-declare-data-caps-unreasonable/">Netflix asks FCC to declare data caps “unreasonable”</a></h2>
+    <p class="excerpt">FCC should use broadband deployment power to discourage data caps, Netflix says.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/jon-brodkin/"><span itemprop="name">Jon Brodkin</span></a>
+      –  <time class="date" data-time="1473696330" datetime="2016-09-12T16:05:30+00:00">Sep 12, 2016 4:05 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="87 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/information-technology/2016/09/netflix-asks-fcc-to-declare-data-caps-unreasonable/?comments=1">
+    <span class="comment-count-number">139</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+  </div>
+  <!-- Adjust order if mobile -->
+  <div class="xrail">
+    <div class="xrail-content">
+              <aside class="ad ad_xrail ad_xrail_top" id="ad_xrail_top"></aside>
+            <aside class="follow-us">
+	<h3>Follow us</h3>
+	<a class="facebook icon" href="https://www.facebook.com/arstechnica"></a>
+	<a class="twitter icon" href="https://twitter.com/arstechnica"></a>
+	<a class="youtube icon" href="https://www.youtube.com/user/arstechnicavideos"></a>
+	<a class="instagram icon" href="https://www.instagram.com/arstechnica/"></a>
+</aside>              
+<aside class="featured-video">
+  <h3><a href="http://video.arstechnica.com" class="plain" target="_blank">Latest Ars Video <span>&gt;</span></a></h3>
+  <div class="column-video" title="PS4 Slim: A smaller, sexier console with surprisingly few compromises" data-player="//player.cnevids.com/embed/57d010b7b57ac32c3f000000/5511d76261646d5566020000?autoplay=1">
+    <div class="video-thumbnail" style="background-image: url('https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_center,h_405,q_80,w_720/v1473254048/arstechnica_ps4-slim-video-review-hands-on.jpg');"></div>
+    <div class="video-overlay"></div>
+  </div>
+  <h2><a href="http://arstechnica.com/gaming/2016/09/ps4-slim-review-2/">PS4 Slim: A smaller, sexier console with surprisingly few compromises</a></h2>
+</aside>
+          </div>
+  </div>
+</section>
+
+<section class="listing listing-earlier">
+  <h3>Earlier Stories <span>&gt;</span></h3>
+    
+<article class="tease article tease-row" data-post-id="954079">
+  
+  <a class="overlay" href="http://arstechnica.com/science/2016/09/transgenic-cotton-plant-resistant-to-common-insect-pest/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2014/12/k5927-23_cotton-300x150.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/science/2016/09/transgenic-cotton-plant-resistant-to-common-insect-pest/">Transgenic cotton plant resistant to common insect pest</a></h2>
+    <p class="excerpt">GMOs may be a solution to increasing non-food crop yields.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/roheeni-saxena/"><span itemprop="name">Roheeni Saxena</span></a>
+      –  <time class="date" data-time="1473695012" datetime="2016-09-12T15:43:32+00:00">Sep 12, 2016 3:43 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="40 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/science/2016/09/transgenic-cotton-plant-resistant-to-common-insect-pest/?comments=1">
+    <span class="comment-count-number">65</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954381">
+  
+  <a class="overlay" href="http://arstechnica.com/science/2016/09/blue-origin-unveils-plans-to-fly-a-monster-rocket-by-decades-end/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/new-glenn-large2-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/science/2016/09/blue-origin-unveils-plans-to-fly-a-monster-rocket-by-decades-end/">Jeff Bezos is not screwing around with his plans to colonize space</a></h2>
+    <p class="excerpt">Jeff Bezos also teased an even bigger rocket in the future—New Armstrong.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/ericberger/"><span itemprop="name">Eric Berger</span></a>
+      –  <time class="date" data-time="1473688760" datetime="2016-09-12T13:59:20+00:00">Sep 12, 2016 1:59 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="78 posters participating, including story author." class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/science/2016/09/blue-origin-unveils-plans-to-fly-a-monster-rocket-by-decades-end/?comments=1">
+    <span class="comment-count-number">204</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954405">
+  
+  <a class="overlay" href="http://arstechnica.com/gaming/2016/09/worlds-adrift-mmo-preview-improbable-tech/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/Ars-technica-PS4-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/gaming/2016/09/worlds-adrift-mmo-preview-improbable-tech/"><em>Worlds Adrift</em>: The future of MMOs or an improbable tech dream?</a></h2>
+    <p class="excerpt">A procedural world, small indie dev, and mysterious gameplay loop. Sounds familiar.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/johnrobertson/"><span itemprop="name">John Robertson</span></a>
+      –  <time class="date" data-time="1473688326" datetime="2016-09-12T13:52:06+00:00">Sep 12, 2016 1:52 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="52 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/gaming/2016/09/worlds-adrift-mmo-preview-improbable-tech/?comments=1">
+    <span class="comment-count-number">77</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+</section>
+
+  <aside class="ad ad_fullwidth fullwidth"></aside>
+<section class="listing listing-earlier">
+  <h3>Earlier Stories Continue <span>&gt;</span></h3>
+      
+<article class="tease article tease-row" data-post-id="954375">
+  
+  <a class="overlay" href="http://arstechnica.com/business/2016/09/microsoft-lumia-surface-phone-dead/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2015/03/nokia_lumia_92006-300x150.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/business/2016/09/microsoft-lumia-surface-phone-dead/">Microsoft set to kill off Lumia devices in favor of rumored Surface Phone</a></h2>
+    <p class="excerpt">Anonymous internal source says Lumia marque will be cease being sold in December.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/tmendelsohn/"><span itemprop="name">Tom Mendelsohn</span></a>
+      –  <time class="date" data-time="1473685928" datetime="2016-09-12T13:12:08+00:00">Sep 12, 2016 1:12 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="133 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/business/2016/09/microsoft-lumia-surface-phone-dead/?comments=1">
+    <span class="comment-count-number">199</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954353">
+  
+  <a class="overlay" href="http://arstechnica.com/gaming/2016/09/pokemon-go-jailbreak-update-workaround/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/GettyImages-586879344-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/gaming/2016/09/pokemon-go-jailbreak-update-workaround/"><em>Pokémon Go</em> update blocks jailbroken devices; workaround already found</a></h2>
+    <p class="excerpt">Adds <em>Pokémon Go Plus</em> and Buddy Pokémon support along with numerous bug fixes.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/mark_walton/"><span itemprop="name">Mark Walton</span></a>
+      –  <time class="date" data-time="1473685321" datetime="2016-09-12T13:02:01+00:00">Sep 12, 2016 1:02 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="38 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/gaming/2016/09/pokemon-go-jailbreak-update-workaround/?comments=1">
+    <span class="comment-count-number">51</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954359">
+  
+  <a class="overlay" href="http://arstechnica.com/gadgets/2016/09/samsung-galaxy-note-7-explodes-boy/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/note7-e1473680139925-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/gadgets/2016/09/samsung-galaxy-note-7-explodes-boy/">Samsung Galaxy Note 7 explodes in New York, burns six-year-old boy</a></h2>
+    <p class="excerpt">Fire was strong enough to set off homeowner's smoke detectors.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/tmendelsohn/"><span itemprop="name">Tom Mendelsohn</span></a>
+      –  <time class="date" data-time="1473684705" datetime="2016-09-12T12:51:45+00:00">Sep 12, 2016 12:51 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="98 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/gadgets/2016/09/samsung-galaxy-note-7-explodes-boy/?comments=1">
+    <span class="comment-count-number">181</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="953823">
+  
+  <a class="overlay" href="http://arstechnica.com/gaming/2016/09/recore-a-laser-shooting-robot-dog-cant-save-this-half-baked-adventure/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/Screenshot-181-360x200.png');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/gaming/2016/09/recore-a-laser-shooting-robot-dog-cant-save-this-half-baked-adventure/"><em>ReCore</em>: A laser-shooting robot dog can’t save this half-baked adventure</a></h2>
+    <p class="excerpt"><em>Metroid Prime</em> devs' latest sci-fi game could've been great but arrives undercooked.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/samred/"><span itemprop="name">Sam Machkovech</span></a>
+      –  <time class="date" data-time="1473681646" datetime="2016-09-12T12:00:46+00:00">Sep 12, 2016 12:00 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="19 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/gaming/2016/09/recore-a-laser-shooting-robot-dog-cant-save-this-half-baked-adventure/?comments=1">
+    <span class="comment-count-number">23</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954223">
+  
+  <a class="overlay" href="http://arstechnica.com/science/2016/09/confirmed-mysterious-ancient-maya-book-grolier-codex-is-genuine/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/Captive-led-by-rope-around-neck-page-6-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/science/2016/09/confirmed-mysterious-ancient-maya-book-grolier-codex-is-genuine/">Confirmed: Mysterious ancient Maya book, Grolier Codex, is genuine</a></h2>
+    <p class="excerpt">900-year-old astronomy guide is oldest known book written in the Americas.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/annalee/"><span itemprop="name">Annalee Newitz</span></a>
+      –  <time class="date" data-time="1473642950" datetime="2016-09-12T01:15:50+00:00">Sep 12, 2016 1:15 am UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="51 posters participating, including story author." class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/science/2016/09/confirmed-mysterious-ancient-maya-book-grolier-codex-is-genuine/?comments=1">
+    <span class="comment-count-number">79</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954167">
+  
+  <a class="overlay" href="http://arstechnica.com/gaming/2016/09/fire-phasers-a-lot-with-new-star-trek-panic-board-game/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/IMG_0894-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/gaming/2016/09/fire-phasers-a-lot-with-new-star-trek-panic-board-game/">Review: <em>Star Trek Panic</em> makes it almost fun to suffer hull damage</a></h2>
+    <p class="excerpt">And it comes with a 7-inch cardboard <em>Enterprise</em>.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/nate-anderson/"><span itemprop="name">Nate Anderson</span></a>
+      –  <time class="date" data-time="1473633480" datetime="2016-09-11T22:38:00+00:00">Sep 11, 2016 10:38 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="22 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/gaming/2016/09/fire-phasers-a-lot-with-new-star-trek-panic-board-game/?comments=1">
+    <span class="comment-count-number">24</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+</section>
+
+<section class="with-xrail">
+  <!-- Horizontal listing -->
+  <div class="listing listing-rest">
+    
+<article class="tease article tease-row" data-post-id="953759">
+  
+  <a class="overlay" href="http://arstechnica.com/the-multiverse/2016/09/the-50-year-mission-reveals-the-egomania-and-idealism-that-built-star-trek/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/2016-09-09-1473448165-7334458-TheFiftyYearMissionHeader-360x200.png');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/the-multiverse/2016/09/the-50-year-mission-reveals-the-egomania-and-idealism-that-built-star-trek/"><em>The 50-Year Mission</em> reveals the egomania and idealism that built Star Trek</a></h2>
+    <p class="excerpt">Two-book series on every Star Trek series and movie offers a new perspective on the franchise.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+          <span class="author" itemprop="name">Charlie Jane Anders</span>
+          –  <time class="date" data-time="1473631642" datetime="2016-09-11T22:07:22+00:00">Sep 11, 2016 10:07 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="25 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/the-multiverse/2016/09/the-50-year-mission-reveals-the-egomania-and-idealism-that-built-star-trek/?comments=1">
+    <span class="comment-count-number">33</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954127">
+  
+  <a class="overlay" href="http://arstechnica.com/the-multiverse/2016/09/an-intriguing-new-giant-monster-movie-thats-also-a-character-study/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/colossal1-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/the-multiverse/2016/09/an-intriguing-new-giant-monster-movie-thats-also-a-character-study/">An intriguing new giant monster movie that’s also a character study</a></h2>
+    <p class="excerpt">Indie flick <em>Colossal</em>, starring Anne Hathaway, is about a psychic link between monster and slacker.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/annalee/"><span itemprop="name">Annalee Newitz</span></a>
+      –  <time class="date" data-time="1473628700" datetime="2016-09-11T21:18:20+00:00">Sep 11, 2016 9:18 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="42 posters participating, including story author." class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/the-multiverse/2016/09/an-intriguing-new-giant-monster-movie-thats-also-a-character-study/?comments=1">
+    <span class="comment-count-number">60</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="954137">
+  
+  <a class="overlay" href="http://arstechnica.com/cars/2016/09/tesla-is-all-about-autopilot-and-radar-in-firmware-8/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/07/Tesla-autopilot-dash-300x150.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/cars/2016/09/tesla-is-all-about-autopilot-and-radar-in-firmware-8/">Tesla is all about autopilot and radar in firmware 8</a></h2>
+    <p class="excerpt">After the fallout with Mobileye, more sensor fusion for the Model S and X EVs.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/jonathan-m-gitlin/"><span itemprop="name">Jonathan M. Gitlin</span></a>
+      –  <time class="date" data-time="1473622455" datetime="2016-09-11T19:34:15+00:00">Sep 11, 2016 7:34 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="44 posters participating, including story author." class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/cars/2016/09/tesla-is-all-about-autopilot-and-radar-in-firmware-8/?comments=1">
+    <span class="comment-count-number">68</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="953651">
+  
+  <a class="overlay" href="http://arstechnica.com/the-multiverse/2016/09/star-trek-fandom-linked-three-generations-in-my-family/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/Screen-Shot-2016-09-09-at-5.08.40-PM-360x200.png');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/the-multiverse/2016/09/star-trek-fandom-linked-three-generations-in-my-family/">Three generations of <em>Trek</em> fandom (and non-fandom) in the family</a></h2>
+    <p class="excerpt">My dad watched <em>TNG</em> all the time, and I despised it—but finally we made peace.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/nathan-mattise/"><span itemprop="name">Nathan Mattise</span></a>
+      –  <time class="date" data-time="1473615929" datetime="2016-09-11T17:45:29+00:00">Sep 11, 2016 5:45 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="19 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/the-multiverse/2016/09/star-trek-fandom-linked-three-generations-in-my-family/?comments=1">
+    <span class="comment-count-number">22</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="795591">
+  
+  <a class="overlay" href="http://arstechnica.com/the-multiverse/2016/09/hating-parts-of-star-trek-is-an-essential-part-of-loving-star-trek/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2015/12/Spock_wearing_neural_stimulator_2-300x150.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/the-multiverse/2016/09/hating-parts-of-star-trek-is-an-essential-part-of-loving-star-trek/">Hating parts of <em>Star Trek</em> is an essential part of loving <em>Star Trek</em></a></h2>
+    <p class="excerpt">Even if <em>Beyond</em> is as bad as the trailer looks, it will still be right at home.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/andrew_cunningham/"><span itemprop="name">Andrew Cunningham</span></a>
+      –  <time class="date" data-time="1473613848" datetime="2016-09-11T17:10:48+00:00">Sep 11, 2016 5:10 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="118 posters participating, including story author." class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/the-multiverse/2016/09/hating-parts-of-star-trek-is-an-essential-part-of-loving-star-trek/?comments=1">
+    <span class="comment-count-number">262</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+
+<article class="tease article tease-row" data-post-id="945117">
+  
+  <a class="overlay" href="http://arstechnica.com/gadgets/2016/09/one-year-later-can-android-7-0-nougat-save-the-pixel-c/"></a>
+  <div class="tag"></div>
+  <figure style="background-image:url('http://cdn.arstechnica.net/wp-content/uploads/2016/09/Pixel-C-Nougat-360x200.jpg');">
+    <div></div>
+  </figure>
+  <header>
+    <h2><a href="http://arstechnica.com/gadgets/2016/09/one-year-later-can-android-7-0-nougat-save-the-pixel-c/">One year later: Can Android 7.0 Nougat save the Pixel C?</a></h2>
+    <p class="excerpt">Google throws Pixel C users a bone with split screen, but still neglects tablet basics.</p>
+    
+  <p class="byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person">
+      <a itemprop="url" href="http://arstechnica.com/author/ronamadeo/"><span itemprop="name">Ron Amadeo</span></a>
+      –  <time class="date" data-time="1473602419" datetime="2016-09-11T14:00:19+00:00">Sep 11, 2016 2:00 pm UTC</time>
+  </p>
+
+  </header>
+	<footer>
+	  	<aside class="comments-hotness ">
+  <a title="75 posters participating" class="comment-count icon-comment-bubble-up" href="http://arstechnica.com/gadgets/2016/09/one-year-later-can-android-7-0-nougat-save-the-pixel-c/?comments=1">
+    <span class="comment-count-number">106</span>
+  </a>	</aside>
+
+	</footer>
+</article>
+  </div>
+  <!-- Adjust order if mobile -->
+  <div class="xrail">
+    <div class="xrail-content">
+              <aside class="ad ad_xrail ad-xrail-bottom" id="ad_xrail_bottom"></aside>
+          </div>
+  </div>
+</section>
+
+
+<div class="prev-next-links">
+      <a href="/page/2">
+      Load more stories<br>
+      …
+    </a>
+  </div>
+  </div>
+
+  <footer class="site-footer">
+    <nav class="nav-footer">
+
+	<section>
+		<ul>
+			<li><a href="/rss-feeds/">RSS Feeds</a></li>
+			<li><a rel="nofollow" href="http://arstechnica.com/?view=mobile">View Mobile Site</a></li>
+			<li><a href="http://arstechnica.co.uk/">Visit Ars Technica UK</a></li>
+			<li><a href="/about-us/">About Us</a></li>
+		</ul>
+	</section>
+
+	<section>
+		<ul>
+			<li><a href="/contact-us/">Contact Us</a></li>
+			<li><a href="/staff-directory/">Staff</a></li>
+			<li><a href="/advertise-with-us/">Advertise with us</a></li>
+			<li><a href="/reprints/">Reprints</a></li>
+		</ul>		
+	</section>
+
+</nav>
+
+<section class="footer-terms-logo">
+	<div class="cn-logo">
+		<a href="http://condenast.com/" class="icon icon-logo-cn-us" title="Visit Condé Nast"></a>
+	</div>
+
+	<div id="copyright-terms">
+  WIRED Media Group<br>
+  Use of this Site constitutes acceptance of our <a href="http://www.condenast.com/privacy-policy" target="_blank">User Agreement</a> (effective 1/2/14) and <a href="http://www.condenast.com/privacy-policy#privacypolicy">Privacy Policy</a> (effective 1/2/14), and <a href="/amendment-to-conde-nast-user-agreement-privacy-policy/">Ars Technica Addendum (effective 5/17/2012)</a>. <a href="http://www.condenast.com/privacy-policy#privacypolicy-california">Your California Privacy Rights</a>. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written <a href="https://www.condenast.com/reprints-permissions">permission of Condé Nast</a>.
+</div>
+</section>  </footer>
+</div>
+
+<script type="text/javascript" src="http://cdn.arstechnica.net/wp-content/themes/ars/assets/js/main-779cf33049.js"></script>
+
+  <script type="text/javascript">!function(n,e,t){var s,c;s=function(){var e=n.location.hostname,s=location.search.match(/CNS_SB=([^&\s]+)[&\s]?/)||[],c=e+"/cns"+(s.length?"-sandbox/"+s[1]:"")+"/services.min.js";return t||"//"+c}(),n.cns=n.cns||{async:function(n,e){this.queue[n]||(this.queue[n]=[]),"function"==typeof e&&this.queue[n].push(e)},queue:{}},c=e.createElement("script"),c.async=!0,c.src=s,e.body.appendChild(c)}(window,document, 'http://cdn.arstechnica.net/cns/services.min.js'); </script>
+<script type="text/javascript" src="http://cdn.arstechnica.net/wp-content/themes/ars/assets/js/ars-28f58ebe5a.ads.us.js"></script>
+
+
+
+    <!-- Google Analytics start -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+  _gaq.push(
+    ['_setAccount', 'UA-31997-1'],
+    ['_setCustomVar', 1, 'view', "grid"],
+    ['_setCustomVar', 2, 'theme', "light"],
+    ['_setCustomVar', 3, 'logged_in', "false"],
+    ['_setCustomVar', 4, 'show_comments', "false"],
+    ['_setCustomVar', 5, 'is_premier', "false"],
+    ['_trackPageview']
+  );
+	(function() {
+	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+  <!-- Google Analytics end -->
+
+  <!-- Parse.ly start -->
+	<script type="text/javascript">
+  (function(d) {
+    var site = "arstechnica.com",
+    b = d.body,
+    e = d.createElement("div");
+    e.innerHTML = '<span id="parsely-cfg" data-parsely-site="'+site+'"></span>';
+    e.id = "parsely-root";
+    e.style.display = "none";
+    b.appendChild(e);
+  })(document);
+
+  (function(s, p, d) {
+    var h=d.location.protocol, i=p+"-"+s,
+    e=d.getElementById(i), r=d.getElementById(p+"-root"),
+    u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+    if (e) return;
+    e = d.createElement(s); e.id = i; e.async = true;
+    e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+  })("script", "parsely", document);
+	</script>
+  <!-- Parse.ly end -->
+
+  <!-- Adobe Tag Mgr. -->
+  <script src="//assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-56a425e07376b6977c987d46ef46ba636a6e2036.js"></script>
+
+  <script type="text/javascript">_satellite.pageBottom();</script>
+
+
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2facee05ce","applicationID":"26427541","transactionName":"ZQFUZEtVW0VWU01QCVxLY0JQG1xYU1VBFxZaFA==","queueTime":0,"applicationTime":4,"atts":"SUZXEgNPSEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

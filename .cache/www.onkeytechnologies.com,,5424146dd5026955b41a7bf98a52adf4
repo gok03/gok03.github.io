@@ -1,0 +1,265 @@
+status: 200
+content-length: 11255
+content-location: http://www.onkeytechnologies.com
+x-powered-by: ASP.NET
+accept-ranges: bytes
+server: Microsoft-IIS/7.0
+last-modified: Tue, 15 Apr 2008 16:49:17 GMT
+etag: "2fb01a5189fc81:0"
+date: Tue, 04 Oct 2016 09:13:11 GMT
+content-type: text/html
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>On Key Technologies - Technology Solutions In Tune With Your Business</title>
+<link rel="stylesheet" type="text/css" href="onkey.css">
+
+<script>
+function doOver() {
+  // Destination is the window - update status
+  if (this.dest==window) {
+    window.status = this.overValue
+    return true
+  }
+  // Destination is the input element - update value
+  else if ((this.dest.type!=null) && ((this.dest.type=="text") 
+    || (this.dest.type=="textarea")))
+    this.dest.value = this.overValue
+  // Destination is an image - update src
+  else if (this.dest.src!=null) 
+    this.dest.src = this.overValue
+  return true
+}
+
+function doOut() {
+  // Destination is the window, clear status
+  if (this.dest==window)
+    window.status=""
+  // Destination is the input element, set default value
+  else if (this.dest.type!=null)
+    this.dest.value=this.dest.defaultValue
+  // Destination is an image, reset original image
+  else if (this.dest.src)
+    this.dest.src = this.dest.osrc
+}
+
+function OverEffect(src,dest,overValue) {
+  // Assign onmouseover handler
+  src.onmouseover = doOver
+  // Assign onmouseout handler
+  src.onmouseout = doOut
+  // Store the destination element on the src
+  src.dest = dest
+  // Store the overValue on the src
+  src.overValue= overValue
+  // If an image, start downloading
+  if (dest.src!=null) {
+    dest.osrc = dest.src
+    var i = new Image()
+    i.src = src.overValue
+  }
+}
+
+function InitOverEffect(src,dest,overValue) {
+  // Setup over effect
+  OverEffect(src,dest,overValue)
+  // Make sure first rollover is applied
+  return src.onmouseover()
+}
+</script>
+
+</head>
+
+<body bgcolor="#CFCFCF">
+<div align="center">
+<table height="100%" width="800" class="MainLayout" cellpadding="5" cellspacing="5" border="0">
+	<tr>
+		<td>
+			<table height="100%" class="MainLayout" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="200" align="center"><img border="0" height="85" width="200" src="images/ok4.gif"></td>
+					<td width="585" align="center" valign="center"><img height="85" width="50" src="images/blank-1x1.gif"><img height="85" width="260" src="images/motto.gif"><img height="85" width="50" src="images/blank-1x1.gif"></td>
+					<td width="100" class="AddrText">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td class="AddrText" align="right">
+								445 State Rd 13 N<br>
+					Suite 26-184<br>
+					Jacksonville, FL 32259<br>
+								<a href="mailto:info@onkeytechnologies.com">info@onkeytechnologies.com</a><br>
+								(904) 314-7447</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center"><img border="0" height="5" width="100%" src="images/bluechip2.gif"></td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center"><img border="0" height="15" width="100%" src="images/fadetogray3.gif"></td>
+				</tr>
+				<tr>
+					<td width="200" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="25"><img height="40" width="25" src="images/green-1x1.gif"></td>
+								<td width="150"><img border="0" name="iCompany" height="40" width="150" src="images/bcompany2_sl.gif"></td>
+								<td width="25"><img height="40" width="100%" src="images/green-1x1.gif"></td>
+							</tr>
+							<tr>
+								<td width="25"><img height="2" width="25" src="images/green-1x1.gif"></td>
+								<td width="150"><a href="Services.htm"><img border="0" height="2" width="150" src="images/bsep.gif"></a></td>
+								<td width="25"><img height="2" width="100%" src="images/green-1x1.gif"></td>
+							</tr>
+							<tr>
+								<td width="25"><img height="40" width="25" src="images/green-1x1.gif"></td>
+								<td width="150"><a href="Services.htm"><img border="0" name="iServices" onmouseover='return InitOverEffect(this,document.images.iServices,"images/bservices2_ro.gif")' height="40" width="150" src="images/bservices2.gif"></a></td>
+								<td width="25"><img height="40" width="100%" src="images/green-1x1.gif"></td>
+							</tr>
+							<tr>
+								<td width="25"><img height="2" width="25" src="images/green-1x1.gif"></td>
+								<td width="150"><img border="0" height="2" width="150" src="images/bsep.gif"></td>
+								<td width="25"><img height="2" width="100%" src="images/green-1x1.gif"></td>
+							</tr>
+							<tr>
+								<td width="25"><img height="40" width="25" src="images/green-1x1.gif"></td>
+								<td width="150"><a href="Solutions.htm"><img border="0" name="iSolutions" onmouseover='return InitOverEffect(this,document.images.iSolutions,"images/bsolutions2_ro.gif")' height="40" width="150" src="images/bsolutions2.gif"></a></td>
+								<td width="25"><img height="40" width="100%" src="images/green-1x1.gif"></td>
+							</tr>
+							<tr>
+								<td width="25"><img height="2" width="25" src="images/green-1x1.gif"></td>
+								<td width="150"><img height="2" width="150" src="images/bsep.gif"></td>
+								<td width="25"><img height="2" width="100%" src="images/green-1x1.gif"></td>
+							</tr>
+							<tr>
+								<td width="25"><img height="40" width="25" src="images/green-1x1.gif"></td>
+								<td width="150"><a href="Contact.aspx"><img border="0" name="iContact" onmouseover='return InitOverEffect(this,document.images.iContact,"images/bcontact2_ro.gif")' height="40" width="150" src="images/bcontact2.gif"></a></td>
+								<td width="25"><img height="40" width="100%" src="images/green-1x1.gif"></td>
+							</tr>
+						</table>
+						<!--table border="0" cellpadding="0" cellspacing="0" bgcolor="#E7F5DC" width="100%">
+							<tr>
+								<td width="100%" class="AnnounceHead" align="center"><br>Coming soon from<br>On Key Software...</td>
+							</tr>
+							<tr>
+								<td width="100%" class="AnnounceHead" align="center"><img height="89" width="82" src="images/logo_small.gif"></td>
+							</tr>
+							<tr>
+								<td width="100%" class="AnnounceHead" align="center">BandAssistant.com</td>
+							<tr>
+								<td width="100%" class="AnnounceLink" align="center">
+								<a href="Announce.htm">Read the product announcement</a></td>
+							</tr>
+							</tr>
+						</table-->
+</td>
+					<td valign="top" height="100%" colspan="2">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="10" rowspan="3"><img height="100%" width="10" src="images/gray2-1x1.gif"></td>
+								<td width="5" height="5"><img height="5" width="5" src="images/fadetowhite_tl.gif"></td>
+								<td height="5"><img height="5" width="100%" src="images/fadetowhite_t.gif"></td>
+								<td width="5" height="5"><img height="5" width="5" src="images/fadetowhite_tr.gif"></td>
+							</tr>
+							<tr>
+								<td width="5"><img height="100%" width="5" src="images/fadetowhite_l.gif"></td>
+								<td valign="top" class="CatText" width="400" height="300">
+									<table border="0" cellpadding="5" cellspacing="0">
+										<tr>
+											<td valign="top" class="CatText">
+												<table border="0" cellpadding="5" cellspacing="0">
+													<tr>
+														<td height="100" valign="top" width="75" rowspan="2" class="CatHead">
+															<img height="100" width="75" src="images/bulb.gif"></td>
+														<td height="25" valign="top" class="CatHead">About Our Company</td>
+													</tr>
+													<tr>
+														<td valign="top" align="left" class="CatText" width="100%">
+														On Key 
+														Technologies helps our customers succeed by 
+														effectively identifying business needs, defining 
+														solutions that effectively leverage both 
+														existing and new technology, and implementing 
+														solutions that are cost-effective and add value.</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" align="left" class="CatText" width="400">
+											<!--On Key 
+											Technologies helps our customers succeed by 
+											effectively identifying business needs, defining 
+											solutions that effectively leverage both 
+											existing and new technology, and implementing 
+											solutions that are cost-effective and add value.
+											<br>
+											<br-->
+											Our solutions blend a carefully selected and 
+											meticulously orchestrated combination of 
+											services ranging from business requirements, to 
+											technology integration, to development and 
+											delivery. The relationships that we forge with 
+											our customers are also part of this solution 
+											because they enable us to work together as a 
+											team even after the initial project is 
+											completed. <br>
+											<br>
+											As your solutions provider, On Key Technologies 
+											can quickly understand your needs; define an 
+											approach that effectively balances cost, 
+											schedule, and features, and deliver on-time and 
+											on-budget. <br>
+											<br>
+											As your solutions partner, On Key Technologies 
+											can help you identify short and long term goals, 
+											define a phased cost-effective strategy for 
+											meeting these goals, and work with you as a team 
+											so that we are successful together. <br>
+											<br>
+											Our ultimate goal is to ensure that your 
+											solutions are in tune with your business needs.</td>
+										</tr>
+									</table></td>
+								<td width="5"><img height="100%" width="5" src="images/fadetowhite_r.gif"></td>
+							</tr>
+							<tr>
+								<td width="5" height="5"><img height="5" width="5" src="images/fadetowhite_bl.gif"></td>
+								<td height="5"><img height="5" width="100%" src="images/fadetowhite_b.gif"></td>
+								<td width="5" height="5"><img height="5" width="5" src="images/fadetowhite_br.gif"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td width=100%>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="bottom" colspan="3" class="FootImage" height="5" width="100%">
+					<img height="5" width="100%" src="images/bluechipUD2.gif"></td>
+				</tr>
+				<tr>
+					<td bgcolor="#177B2F" valign="top" class="FootText" height="5" width="33%">
+					Copyright 2005, On Key Technologies</td>
+					<td bgcolor="#177B2F" valign="top" class="FootText" height="5" width="33%">
+					<a class="FootText" href="default.htm">Company</a>&nbsp;|&nbsp;<a class="FootText" href="services.htm">Services</a>&nbsp;|&nbsp;
+					<a class="FootText" href="solutions.htm">Solutions</a>&nbsp;|&nbsp;<a class="FootText" href="contact.aspx">Contact</a></td>
+					<td bgcolor="#177B2F" valign="top" class="FootText" height="5" width="33%">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</div>
+</body>
+
+</html>

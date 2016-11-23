@@ -1,0 +1,378 @@
+status: 200
+content-length: 9767
+content-location: https://streamlinehealthcareers.silkroad.com/
+set-cookie: BIGipServersrtmsweb109=667000330.20480.0000; path=/
+x-aspnet-version: 4.0.30319
+server: Microsoft-IIS/7.5
+-content-encoding: gzip
+cache-control: private
+date: Sun, 18 Sep 2016 09:00:03 GMT
+x-powered-by: ASP.NET
+content-type: text/html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Streamline Health Careers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+
+
+<link rel="STYLESHEET" type="text/css" href="/map_images/main/SiteGen/streamext/Admin/Skins/Generic_Settings.css" />
+
+
+ <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <script src="/eprise/main/SiteGen/Skins/ps_resp_layout/SupportPages/respond.js"></script>
+
+  <![endif]-->
+
+
+<link rel="shortcut icon" href="" />
+
+<script type="text/javascript" src="/map_images/main/SiteGen/Skins/ps_resp_layout/SupportPages/incJavascript.js"></script>
+<script type="text/javascript" src="/map_images/main/SiteGen/Skins/ps_resp_layout/SupportPages/niftycube.js"></script>
+<script type="text/javascript">function clear_search() {document.search_form.search_phrase.value= "";}</script>
+<script type="text/javascript">
+window.onload=function()
+{
+
+if(""=="yes")
+{
+  
+}
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+ 
+<script src="/eprise/main/SiteGen/Skins/ps_resp_layout/SupportPages/doubletaptogo.min.js"</script>
+<script>
+	$( function()
+	{
+		$( '#nav_main li:has(ul)' ).attr('aria-haspopup','true').doubleTapToGo();
+
+	});
+</script>
+
+
+
+
+
+
+<meta name="description" content="&nbsp;Company homepage" />
+<meta name="keywords" content=",Company, info, home" />
+
+
+<!---->
+<!--<script type="text/javascript" src="/eprise/RedCarpetDotNet/PhysicalMaps/JS/TurboTask.js"></script>-->
+
+<script>
+function funcWriteBreadcrumbNav(BreadCrumbList) {
+	var sOutputBreadcrumbNav = new String();
+	var sClass = null;
+	var sUrl = null;
+	var sText = null;
+	var nLevel = null;
+	var aryThisLink = null;
+
+                    var sBreadCrumbOnOff ="Off";
+                    if (sBreadCrumbOnOff.length ==0) sBreadCrumbOnOff = "Off";
+                    if (sBreadCrumbOnOff.toLowerCase() == "off") return sOutputBreadcrumbNav;
+                    if ("" == "8") return sOutputBreadcrumbNav;
+
+//alert("BreadCrumbList is " + BreadCrumbList);
+
+       var sTemp = "";
+	
+	//Added variables to grab information for the current page
+
+	var sCurrentPath = "/";
+	var sCurrentPage = "Careers Home";
+
+	var arySubNav = unescape(BreadCrumbList);
+	//arySubNav = arySubNav.split("");
+	arySubNav = arySubNav.split(";");
+
+    //sOutputBreadcrumbNav += "<div id='breadcrumbs'>"
+
+	var nLen = arySubNav.length;
+	for(var i = 0; i < nLen; i++) {
+		//aryThisLink = arySubNav[i].split("");
+		aryThisLink = arySubNav[i].split(",");
+		sText = aryThisLink[0];
+		sUrl = aryThisLink[1];
+		sClass = (parseInt(aryThisLink[2])) ? "_on" : "";
+		pageLevel = aryThisLink[3];
+		
+		sOutputBreadcrumbNav += "<!-- breadcrumb trail -->";
+		// items
+
+         var sIndex = sText.indexOf("_subnav");
+         //   sOutputBreadcrumbNav += sIndex;
+
+        if(sText!=sTemp && sIndex < 0){ // added to prevent duplicates in list
+			if (i<nLen-1) {
+				//--- loop thru regular items
+				//sOutputBreadcrumbNav += "<a href='" + sUrl + "'>" + sText.toLowerCase() + "</a> &gt; ";
+				sOutputBreadcrumbNav += "<a href='" + sUrl + "'>" + sText + "&gt; </a>";
+				
+			//check if page is a bodylink	
+			} else if (i>=nLen-1 && sUrl!=sCurrentPath){
+				//--write out last page in bc list
+				sOutputBreadcrumbNav += "<a href='" + sUrl + "'>" + sText + "&gt; </a>";
+				//--- bl-last item
+				sOutputBreadcrumbNav += "<span class='breadcrumb_item" + sClass + "'>" + sCurrentPage + "</span>";
+			} else {
+				//--- last item
+				sOutputBreadcrumbNav += "<span class='breadcrumb_item" + sClass + "'>" + sText + "</span>";
+			}
+			
+              sTemp = sText;
+	     }
+
+			
+	}
+	
+    sOutputBreadcrumbNav += "<!-- end breadcrumb trail -->";
+    //sOutputBreadcrumbNav += "</div>";
+
+	return sOutputBreadcrumbNav;
+}
+</script>
+
+
+
+
+</head>
+<body  class="yui-skin-sam" id="ps-body">
+
+
+<div id="page_container">
+<!--IE6 WARNING TURNED OFF-->
+<header id="main_header">
+
+   <div id="box_header">
+     <div id="pslogo"><a href="http://www.streamlinehealth.net/"><img src="/map_images/main/SiteGen/streamext/Content/Uploads/Images/skin/logo.png" border=0></a></div>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Open+Sans:400,300,600,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+   </div>
+
+
+  <nav id="nav_main" role="navigation">
+    <a href="#nav_main" title="Show navigation">Show navigation</a>
+    <a href="#" title="Hide navigation">Hide navigation</a>
+    <ul id="nav_main_list">
+
+       <li aria-haspopup="true"><a href="/" title="Careers Home" >Careers Home</a></li><li aria-haspopup="true"><a href="/streamext/EmploymentListings.html" title="Employment Listings" >Employment Listings</a>			<ul>
+				<li>
+					<a href="https://streamlinehealth-openhire.silkroad.com/epostings/index.cfm?fuseaction=app.res_login&company_id=17192&version=1">Update Your Profile</a>
+				</li>
+				<li>
+					<a href="https://streamlinehealth-openhire.silkroad.com/epostings/submit.cfm?fuseaction=app.res_bgjobagent&company_id=17192&version=1">Create a Job Agent</a>
+				</li>
+				<li>
+					<a href="https://streamlinehealth-openhire.silkroad.com/epostings/submit.cfm?fuseaction=app.bgagentlogin&company_id=17192&version=1">Update Job Agent</a>
+				</li>
+			</ul>
+</li><li aria-haspopup="true"><a href="/streamext/AboutUs.html" title="About Us" >About Us</a></li><li aria-haspopup="true"><a href="/streamext/Corporate-Website.html" title="Corporate Website" >Corporate Website</a></li>
+
+    </ul>
+  </nav>
+
+  <nav id="breadcrumbs" role="breadcrumb">
+     <script language="JavaScript">
+  var sPageName = "Home.html";
+  if (sPageName.length !=0) sPageName = sPageName.toLowerCase();
+
+  if(sPageName !="home.html")
+    document.write(funcWriteBreadcrumbNav("Careers%20Home,/"));
+</script>
+  </nav>
+</header>
+  <div id="body_container">
+<div id="box_col_left">
+  <div class="content_snippet">
+        <div class="content_snippet_header"><div class="content_snippet_header_text">Latest Job Listings</div></div><div class="content_snippet_body">
+<div  id="theId">
+        <i>Loading Jobs</i>
+     </div>
+</div></div>
+
+   <script>
+   funcMakeRequest('/eprise/main/SiteGen/DynamicContent/Snippets/Latest_Job_Listings/Latest_Job_Listings','theId','feed=https%3a%2f%2fstreamlinehealth-openhire.silkroad.com%2fapi%2findex.cfm%3ffuseaction%3dapp.getJobListings%26FORMAT%3dxml%26KEYWORD%3d%26LANGUAGE%3den%26JOBPLACEMENT%3dexternal%26VERSION%3d1%26maxresults%3d8&listingno=8');
+   </script> 
+  <!--KEEP-->&nbsp; 
+</div>      
+    <div id="box_col_center_left_col">
+
+
+              <div id="box_col_center_banner"></div>
+              <div id="box_col_center_title"><h2>Careers</h2></div>
+
+              <p>Streamline Health Solutions, Inc. (NASDAQ: STRM) is a leading provider of SaaS-based healthcare information technology (HCIT) solutions for hospitals and physician groups with offices in Atlanta, Cincinnati, and New York. We offer a comprehensive suite of solutions includes: enterprise content management (ECM), business analytics, integrated workflow systems, clinical documentation improvement (CDI), and computer assisted coding (CAC). Across the revenue cycle, these solutions offer healthcare enterprises a flexible, customizable way to communicate between disparate departments and information systems to improve processes, boost productivity, and optimize clinical, administrative and financial performance.<br /><br />With a focus on innovation, we’re looking for talented, creative minds to join our team and take our company, and solutions, to the next level.<br /><br />Headquartered in Midtown Atlanta, we offer competitive salaries, benefits, options, 401(k) and a stock-purchase plan. We are an equal opportunity employer committed to attracting a talented and diverse workforce.<br /><br /></p>
+<ul>
+<li>    Medical</li>
+<li>    Dental</li>
+<li>    Health Savings Account</li>
+<li>    Flexible Spending Account</li>
+<li>    Short &amp; Long Term Disability</li>
+<li>    Basic Life Insurance</li>
+<li>    Supplemental &amp; Dependent Life Insurance</li>
+<li>    Accidental Death &amp; Dismemberment Insurance</li>
+<li>    Paid Medical Leave</li>
+<li>    401(k) Savings Plan with Company Match</li>
+<li>    Employee Stock Purchase Plan</li>
+<li>    Paid Vacation</li>
+<li>    Sick Time</li>
+<li>    Floating Holidays</li>
+<li>    Jury Duty</li>
+<li>    Bereavement, Family, Personal Leaves</li>
+<li>    Military Leaves</li>
+</ul>
+<p> </p>
+
+
+    </div>
+  </div>
+
+</div>
+
+<footer id="box_footer">
+<div id="footer_extra">
+
+
+
+</div>
+
+<div id="ftwrap">
+<div id="copyright">
+Copyright 2016 | Streamline Health, Inc.
+</div>
+
+<div id="social">
+<a href="http://www.facebook.com/StreamlineHealthSolutions" target="_blank" id="facebook"></a>
+<a href="https://twitter.com/STRM_Health" target="_blank" id="twitter"></a>
+<a href="https://plus.google.com/113232453925012535502/about" target="_blank" id="google"></a>
+</div>
+
+</div>
+</footer>
+
+<!--[if lt IE 8]>&nbsp;<![endif]--><!--THERE MUST BE SOMETHING HERE ELSE IE6 AND IE7 WILL IGNORE BOTTOM PAGE MARGIN-->
+
+<!-- NEW LEAF MENU ADMIN TOOLBAR START HERE -->
+
+   <div id="leafToolbar" class="leafToolbarStyle" >
+
+        <span id="toolbar_options" style="float:right; display:inline"></span>
+
+   </div> 
+
+
+
+
+</body>
+</html>

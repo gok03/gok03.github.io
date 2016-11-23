@@ -1,0 +1,407 @@
+status: 200
+content-length: 26564
+content-location: https://corp.meitechinc.com/careers/Careers.aspx
+x-powered-by: ASP.NET
+set-cookie: ASP.NET_SessionId=uarkwhvd40ryo045huccvmvx; path=/; HttpOnly
+x-aspnet-version: 2.0.50727
+server: Microsoft-IIS/7.0
+cache-control: private
+date: Fri, 30 Sep 2016 04:23:34 GMT
+content-type: text/html; charset=utf-8
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="./styles/filters/master.css" type="text/css" media="screen" />
+<!--[if gte IE 6]><link rel="stylesheet" type="text/css" href="styles/filters/ieonly.css" media="screen" /><![endif]-->
+<link rel="stylesheet" href="./styles/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="./styles/ui.tabs.css" type="text/css" />
+<title>MEI Technologies: Open Positions</title>
+<script src="./js/jquery-1.2.6.js" type="text/javascript"></script>
+<!-- script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script -->
+<script type="text/javascript" src="./js/jquery.jshowoff.js"></script>
+<script src="./js/ui.core.js" type="text/javascript"></script>
+<script src="./js/ui.tabs.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+            $(function() {
+                $('#container-1 > ul').tabs();
+				$('#container-2 > ul').tabs();
+
+            });
+</script>
+<style type="text/css">
+	#subnav ul{
+		list-style-type:none;
+	}
+	#nav{
+		margin-top:-13px;
+	}
+</style>
+
+
+<script type="text/javascript">
+function resetNavBanner(){
+	var ua = window.navigator.userAgent;
+	var msie = ua.indexOf("MSIE ");
+	if(msie!=-1){
+		$('#nav').css('margin-top','0px');
+	}
+};
+$(document).ready(function() {
+	resetNavBanner();
+});
+$(document).ready(function() {
+// hides the slickbox as soon as the DOM is ready
+// (a little sooner than page load)
+	$('#sitesearch').show();
+	$('#contractsearch').hide();
+	$('#jobsearch').hide();
+// shows the slickbox on clicking the noted link  
+	$('a#searchsite').change(function() {
+	$('#sitesearch').show();
+	$('#contractsearch').hide();
+	$('#jobsearch').hide();
+	return false;
+	});
+// hides the slickbox on clicking the noted link  
+	$('a#searchcontracts').click(function() {
+	$('#sitesearch').hide();
+	$('#contractsearch').show();
+	$('#jobsearch').hide();
+	return false;
+	});
+// toggles the slickbox on clicking the noted link  
+	$('a#searchjobs').click(function() {
+	$('#sitesearch').hide();
+	$('#contractsearch').hide();
+	$('#jobsearch').show();
+	return false;
+	});
+});
+
+</script>
+</head>
+<body id="onecol" class="careerspage">
+<div id="pagewrap">
+  <div id="wrap">
+    <style type="text/css">
+<!--
+#expo_button {
+	background-color: #363533;
+}
+-->
+</style>
+<script type="text/javascript">
+function confirmNewEmis(){
+	var message = "You are about to be redirected to the new eMIS Employee Portal.  When you are prompted to login, if you are not currently on the MUNIZ domain (the MEIT network), be sure to preface your login with 'MUNIZ\\'.  Thank you";
+	return confirm(message);
+}
+</script>
+<div id="masthead">
+      <div id="logo"><a href="http://www.meitechinc.com/">MEI Technologies</a></div>
+      <div id="globalnav">
+        <div id="topglobal"> 
+          <p>
+            <!-- <a href="http://www.facebook.com/meitechinc"><img src="./images/icon-facebook.gif" alt="Like us on Facebook" height="22" width="21" />Like us on<br />
+          Facebook</a> <a href="http://www.twitter.com/meitechinc"><img src="./images/icon-twitter.gif" alt="Follow us on Twitter" height="22" width="22" />Follow us<br />
+          on Twitter</a> --><a href="https://spnet.meitechinc.com/sites/eMIS" title="eMIS Link" onclick="return confirmNewEmis();" class="wide"><img src="./images/icon-employee.gif" alt="Employee sign-in (eMIS)" height="22" width="21" />Employee<br />
+          Sign-In (eMIS)</a> <a href="https://myid.meitechinc.com/showLogin.cc" class="wide"><img src="./images/icon_key.gif" alt="Acct" height="22" width="21" />Account Self<br />
+          Service Portal </a><a href="/status.asp" class="wide"><img src="./images/icon-weather.gif" alt="Facility &amp; Weather Status" height="22" width="21" />Facility &amp;<br />
+        Weather Status </a><a href="/status.asp" class="wide"></a></p>
+        </div>
+        <!-- /topglobal -->
+         <div id="btmglobal">
+           <form id="sitesearch" method="GET" action="/search.asp">
+             <p>
+               <input name="zoom_query" type="text" class="searchinput" />
+               <input type="submit" value="Search Site" /><br />
+           </p>
+           </form>
+           <!-- <form id="contractsearch" action="/contracts/contract_search_results.asp" method="get">
+          <input name="keyword" type="text" value="" class="searchinput" onfocus="javascript(this.value="")/>
+          <input name="Search" type="submit" value="Search Contracts" class="button" />
+          </form> 
+          <form id="jobsearch">
+          <input name="Search" type="text" value="" class="searchinput" />
+          <input name="Search" type="button" value="Search Jobs" class="button" />
+          </form>
+          <div id="searchbtns">
+          <input name="group1" type="radio" value="Entire" checked="checked" id="group1_1"/>
+            <label>Entire Site</label>
+            <input name="group1" type="radio" value="Contracts" id="group1_3" />
+            <label>Contracts</label>
+            <input name="group1" type="radio" value="Jobs" id="group1_3" />
+            <label>Jobs</label>  
+            <a href="" id="searchsite">Entire Site</a>  |  <a href="" id="searchcontracts">Contracts</a>  | <a href="" id="searchjobs">Jobs</a> -->
+         </div>
+      </div>
+        <!-- /btmglobal -->
+      </div>
+      <!-- /globalnav -->
+    </div>
+    <!-- /masthead --><style type="text/css">
+.ulWrapper{
+	position:absolute;
+}
+#contracts{
+	position:relative;
+}
+.contractDiv{
+	position:fixed;
+	opacity:.99;
+	background-image:none;
+	background-color:rgb(208,204,200);
+	border:2px solid white;
+	top:10px;
+	font-size:12px;
+	padding:4px;
+	min-width:150px;
+	font-weight:bold;
+}
+.contractDiv a{
+	text-decoration:none;
+	color:#363534;
+}
+.contractDiv a:hover {
+	color:#5e172d;
+}
+#nav{
+	position:relative;
+	z-index:100000;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#contractLink').mouseover(function(e){
+			$('.contractDiv').css('display','');
+			$('.contractDiv').css('top',(e.pageY-30)+'px');
+			$('.contractDiv').css('left',(e.pageX-30)+'px');
+		});
+		$('contractDiv').mouseout(function(){
+			$('contractDiv').hide();
+		});
+	});
+</script>
+<div id="nav">	
+	<div class='ulWrapper bottomRow'>
+		<ul class='navUl floatleft'>
+			<li id="navhome"><a href="http://www.meitechinc.com/" title="Click to open MEIT Home page"><b>Home</b></a></li>
+			<li id="navabout"><a href="http://www.meitechinc.com/about/" title="Click to learn more about MEIT"><b>About Us</b></a></li>
+			<li id="navcore"><a href="http://www.meitechinc.com/capabilities/" title="Click to for an overview of our capabilities and services"><b>Capabilities &amp; Services</b></a></li>
+		 <!--   <li id="navcontracts"><a href="http://www.meitechinc.com/contracts/"><b>Contracts</b></a></li>  -->
+			<li id="navnewsroom"><a href="http://www.meitechinc.com/newsroom/" title="Click to open the MEIT Newsroom page"><b>Newsroom</b></a></li>
+			<li id="navcareers"><a href="http://www.meitechinc.com/careers/" title="Click to view information about Careers with MEIT"><b>Careers</b></a></li>
+			<li id="navcontact"><a href="http://www.meitechinc.com/contact/" title="Click to open our Contacts page"><b>Contact</b></a></li>
+			<li id="navevents"><a href="http://www.meitechinc.com/events/" title="Click to go to our Calendar of Events"><b>Events</b></a></li>
+			<li id="contracts"><a id="contractLink" href="javascript:;"><b>Contract Vehicles & Select Contracts</b></a></li>
+		</ul>
+		<div class='contractDiv' onmouseleave='$(".contractDiv").css("display","none");' style='display:none;' title='Contract Vehicles & Select Contracts Page Links'>
+			<a href="http://www.meitechinc.com/D3I-D2/" title="Click to open the D3I-D2 page">D3I-D2</a><br />
+			<a href="http://www.meitechinc.com/seaporte/" title="Click to open the SEAPORT-E page">SEAPORT-E</a><br />   
+			<a href="http://www.meitechinc.com/oasis/" title="Click to open the OASIS page">OASIS</a><br />			
+			<a href="http://www.meitechinc.com/pdi-xz/" title="Click to open the PDI-XZ page">PDI-XZ</a><br />			
+			<a href="http://www.meitechinc.com/tmas/" title="Click to open the TMAS page">TMAS</a><br />			
+			<a href="http://www.meitechinc.com/gsa-pss/" title="Click to open the GSA-PSS page">GSA-PSS</a><br />
+		</div>
+	</div>
+</div>
+    <!-- /nav -->
+    <div id="subnav">
+      <ul class="floatleft">
+        <li id="subnav-positinos" class="selected"><a href="Careers.aspx">Open Positions</a></li>
+        <li id="subnav-benefits"><a href="http://www.meitechinc.com/careers/benefits.asp">Benefits</a></li>
+        <li id="subnav-associates" class="last"><a href="http://www.meitechinc.com/careers/associates.asp">Associates Program</a></li>
+        <!-- <li id="subnav-mymei" class="last"><a href="mymei.asp">MyMEI</a></li>  -->
+      </ul>
+      <img src="./images/banner_careers.jpg" height="229" width="631" alt="" class="floatright" />
+    </div>
+    <!-- /banner -->
+    <div id="outer">
+      <div id="innerpagewrap">
+        <div id="inner">
+          <div id="pri">
+            <table id="intro">
+            	<tr>
+                	<td width="30%"><h1>Open Positions</h1></td>
+                    <td width="70%"><div id="summary"><p>View open positions within MEI Technologies by choosing one of the options below:</p></div></td>
+                </tr>
+				<tr>
+					<td colspan="2" style="color:red; font-weight:bold; font-size:16px">ATTENTION:<br />Due to recent updates to Internet Explorer you may experience complications during the application process.  We recommend using a browser other than Internet Explorer (Mozilla Firefox, Google Chrome).</td>
+				</tr>
+            </table>
+		<form name="frmCRSS" method="post" action="Careers.aspx" id="frmCRSS">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTkyOTAwODQ2OA9kFgICBA9kFgICAQ9kFhwCAw8PFgIeB1Zpc2libGVnZBYCZg9kFgJmD2QWAmYPZBYCZg9kFgJmD2QWAmYPDxYCHgRUZXh0BaskPHA+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTZweDsgZm9udC1mYW1pbHk6IEFyaWFsOyBjb2xvcjogIzVlMTcyZDsiPjxzdHJvbmc+PGJyIC8+DQo8c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxMnB4OyI+PC9zcGFuPjwvc3Ryb25nPjxzcGFuIHN0eWxlPSJmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBUYWhvbWE7Ij5XaHkgV29yayBhdCBNRUkgVGVjaG5vbG9naWVzPzwvc3Bhbj48L3NwYW4+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IFRhaG9tYTsiPiA8L3NwYW4+PC9wPg0KPHA+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTJweDsiPjxiciAvPg0KPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IFRhaG9tYTsiPk1FSSBUZWNobm9sb2dpZXMgKE1FSVQpJm5ic3A7cHJpZGVzIGl0c2VsZiBvbiBlbXBsb3lpbmcgc29tZSBvZiB0aGUgYnJpZ2h0ZXN0LCBtb3N0IGV4cGVyaWVuY2VkIGVuZ2luZWVyaW5nIGFuZCB0ZWNobm9sb2d5IGV4cGVydHMgaW4gdGhlIG5hdGlvbi4gQXJlIHlvdSBvbmUgb2YgdGhvc2UgcGVvcGxlPyBJZiBzbywgeW91IG1pZ2h0IGVuam95IGJlaW5nIGEgcGFydCBvZiBvdXIgdGVhbS48L3NwYW4+PC9zcGFuPjwvcD4NCjxwPjxzcGFuIHN0eWxlPSJmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBUYWhvbWE7Ij48L3NwYW4+PC9wPg0KPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTNweDsiPjwvc3Bhbj4NCjxwPjxzcGFuIHN0eWxlPSJmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBUYWhvbWE7Ij4mbmJzcDs8L3NwYW4+PC9wPg0KPHA+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IFRhaG9tYTsiPjxzcGFuIGNsYXNzPSJtYWluYm9keXRleHQiIHN0eWxlPSJmb250LXNpemU6IDEycHg7Ij48c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxMnB4OyBjb2xvcjogIzAwMDAwMDsiPkNsaWNrIDxzcGFuIGlkPSJDUkNhcmVlcnMxX2xibEludHJvIiBzdHlsZT0iZm9udC1zaXplOiAxMnB4OyI+PC9zcGFuPjwvc3Bhbj48c3BhbiBjbGFzcz0ibWFpbmJvZHl0ZXh0IiBzdHlsZT0iZm9udC1zaXplOiAxMnB4OyBjb2xvcjogIzAwMDAwMDsiPjxhIGhyZWY9Imh0dHBzOi8vY29ycC5tZWl0ZWNoaW5jLmNvbS9jYXJlZXJzL0NhcmVlcnMuYXNweD9hZGF0YT1FRTlmNjVTTWFJQnZjUnVsampxTzBwZ2F5NHp5VWhvJTJmWk04S0hQWnIwR1RUMzdid3loZDAyQTRpS2RmamU0QmlORGdsbzI0Tk5CRkduTUFjYTd1cnZScWQ5ZFdMTXBoMGtPZmtmNFN6TVk0ekttdjI4VVN4OTdsZ0F5WkolMmZxRnlZeU9xcHhveThoNUZEM0x1ZG1FU05FZW5nUm5OZSUyZlVGN1UxR1BWaE1LQ2U2Ij48c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxMnB4OyBjb2xvcjogIzAwNjZjYzsiPkhFUkU8L3NwYW4+PC9hPjwvc3Bhbj48c3BhbiBjbGFzcz0ibWFpbmJvZHl0ZXh0IiBzdHlsZT0iZm9udC1zaXplOiAxMnB4OyI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTJweDsgY29sb3I6ICMwMDAwMDA7Ij4mbmJzcDt0byB2aWV3IGVtcGxveW1lbnQgb3Bwb3J0dW5pdGllcyBieSBsb2NhdGlvbiZuYnNwOzxzcGFuIGlkPSJDUkNhcmVlcnMxX2xibEludHJvIiBzdHlsZT0iZm9udC1zaXplOiAxMnB4OyI+T1IgPC9zcGFuPjwvc3Bhbj5zZWxlY3QgbG9jYXRpb24mbmJzcDthbmQgam9iIHR5cGUgYmVsb3c6PC9zcGFuPjwvc3Bhbj48YnIgLz4NCjxiciAvPg0KPC9zcGFuPjxzcGFuIHN0eWxlPSJmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBUYWhvbWE7Ij48VEFCTEUgc3R5bGU9IndpZHRoOiAzMjBweDsiPjxUUj48VEQ+PGxhYmVsIGNsYXNzPSJDYXB0aW9uU3R5bGUiIGZvcj0iQ2FyZWVyc0tleXdvcmQiPktleXdvcmQ8L2xhYmVsPjwvVEQ+PFREPjxpbnB1dCB0eXBlPXRleHQgbmFtZT1DYXJlZXJzS2V5d29yZCBpZD1DYXJlZXJzS2V5d29yZD48L1REPjxURD48SU5QVVQgdHlwZT1idXR0b24gb25jbGljaz0iaWYgKFZhbGlkYXRvclRyaW0od2luZG93LmRvY3VtZW50LmZybUNSU1MuQ2FyZWVyc0tleXdvcmQudmFsdWUpLmxlbmd0aDw9MCkge2FsZXJ0KCdQbGVhc2UgZW50ZXIgYSBrZXl3b3JkIHRvIHNlYXJjaCBmb3IuJyk7IHJldHVybiBmYWxzZTt9IGVsc2Uge3dpbmRvdy5kb2N1bWVudC5mcm1DUlNTLkZvcm1UeXBlLnZhbHVlPSdLRVlXT1JEJzsgd2luZG93LmRvY3VtZW50LmZybUNSU1Muc3VibWl0KCk7fSIgdmFsdWU9IlNlYXJjaCIgY2xhc3M9IkNhcmVlcnNCdXR0b24iPjwvVEQ+PC9UUj48L1RBQkxFPjxiciAvPg0KPFRBQkxFPjxUUj48VEQ+PGxhYmVsIGNsYXNzPSJDYXB0aW9uU3R5bGUiIGZvcj0ibHN0U0JveDEiPkxvY2F0aW9uPC9sYWJlbD48L1REPjwvVFI+PFRSPjxURD48c2VsZWN0IG5hbWU9ImxzdFNCb3gxIiBzaXplPSI0IiBtdWx0aXBsZT0ibXVsdGlwbGUiIGlkPSJsc3RTQm94MSIgc3R5bGU9ImhlaWdodDoxNDBweDt3aWR0aDozMTBweDsiPjxvcHRpb24gdmFsdWU9IkFMTCI+QWxsPG9wdGlvbiB2YWx1ZT0iRURXIj5DYWxpZm9ybmlhLSBFZHdhcmRzIEFGQjxvcHRpb24gdmFsdWU9IkRFTlZFUiI+RGVudmVyLCBDTzxvcHRpb24gdmFsdWU9IkVHTCI+RmxvcmlkYS0gRWdsaW4gQUZCPG9wdGlvbiB2YWx1ZT0iSE9VU1RPTiI+SG91c3RvbiwgVFg8b3B0aW9uIHZhbHVlPSJIU1YiPkh1bnRzdmlsbGUsIEFMPG9wdGlvbiB2YWx1ZT0iSEFOU0NPTSBBRkIgTUEiPk1hc3NhY2h1c2V0dHMtIEhhbnNjb20gQUZCPG9wdGlvbiB2YWx1ZT0iTVMiPk1pc3Npc3NpcHBpLSBTdGVubmlzIFNwYWNlIENlbnRlcjxvcHRpb24gdmFsdWU9IktJUlRMQU5EIEFGQiI+TmV3IE1leGljby0gS2lydGxhbmQgQUZCPG9wdGlvbiB2YWx1ZT0iV1NURiI+TmV3IE1leGljby0gV2hpdGUgU2FuZHMgVGVzdCBGYWNpbGl0eTxvcHRpb24gdmFsdWU9IldQQUZCIj5PaGlvLVdyaWdodCBQYXR0ZXJzb24gQUZCPG9wdGlvbiB2YWx1ZT0iVElOS0VSIj5Pa2xhaG9tYS0gVGlua2VyIEFGQjxvcHRpb24gdmFsdWU9IkxBTkdMRVkiPlZpcmdpbmlhLSBOQVNBIExhbmdsZXkgUmVzZWFyY2ggQ2VudGVyPC9zZWxlY3Q+PC9URD48L1RSPjxUUj48VEQ+PGxhYmVsIGNsYXNzPSJDYXB0aW9uU3R5bGUiIGZvcj0ibHN0U0JveDIiPkpvYiBUeXBlPC9sYWJlbD48L1REPjwvVFI+PFRSPjxURD48c2VsZWN0IG5hbWU9ImxzdFNCb3gyIiBzaXplPSI0IiBtdWx0aXBsZT0ibXVsdGlwbGUiIGlkPSJsc3RTQm94MiIgc3R5bGU9ImhlaWdodDoxNDBweDt3aWR0aDozMTBweDsiPjxvcHRpb24gdmFsdWU9IkFMTCI+QWxsPG9wdGlvbiB2YWx1ZT0iQURNSU4iPkFkbWluaXN0cmF0aXZlPG9wdGlvbiB2YWx1ZT0iQ09OVFJBQ1RTIj5Db250cmFjdHM8b3B0aW9uIHZhbHVlPSJFTkciPkVuZ2luZWVyaW5nPG9wdGlvbiB2YWx1ZT0iRVhFQ1VUSVZFIj5FeGVjdXRpdmU8b3B0aW9uIHZhbHVlPSJGSU5BTkNFIj5GaW5hbmNlPG9wdGlvbiB2YWx1ZT0iSFIiPkh1bWFuIFJlc291cmNlczxvcHRpb24gdmFsdWU9IklUIj5JbmZvcm1hdGlvbiBUZWNobm9sb2d5PG9wdGlvbiB2YWx1ZT0iTUFOQUdFUiI+TWFuYWdlcmlhbDxvcHRpb24gdmFsdWU9Ik9GRklDRSBBTkQgQ0xFUklDQUwiPk9mZmljZSAmIENsZXJpY2FsPG9wdGlvbiB2YWx1ZT0iU0NJIj5TY2llbmNlPG9wdGlvbiB2YWx1ZT0iU0VDVVJJVFkiPlNlY3VyaXR5PG9wdGlvbiB2YWx1ZT0iVEVDSE5JQ0FMIj5UZWNobmljYWw8b3B0aW9uIHZhbHVlPSJURUNITklDSUFOIj5UZWNobmljaWFuPC9zZWxlY3Q+PC9URD48L1RSPjxUUj48VEQ+PElOUFVUIHR5cGU9YnV0dG9uIG9uY2xpY2s9IndpbmRvdy5kb2N1bWVudC5mcm1DUlNTLkZvcm1UeXBlLnZhbHVlPSdTRUFSQ0gnOyB3aW5kb3cuZG9jdW1lbnQuZnJtQ1JTUy5zdWJtaXQoKTsiIHZhbHVlPSJTZWFyY2giIGNsYXNzPSJDYXJlZXJzQnV0dG9uIj48L1REPjwvVFI+PC9UQUJMRT48YnIgLz4NCjxiciAvPg0KQWxyZWFkeSZuYnNwO2hhdmUgYSBQcm9maWxlPyA8YSBocmVmPSJodHRwczovL2NvcnAubWVpdGVjaGluYy5jb20vY2FyZWVycy9BcHBTZWxmU2VydmljZS5hc3B4IiBjbGFzcz0iQXBwbHlOb3dTdHlsZSI+IEFwcGx5IGZvciZuYnNwO0FkZGl0aW9uYWwgUG9zaXRpb25zPC9hPiA8YnIgLz4NCjxiciAvPg0KPGEgaHJlZj0iaHR0cHM6Ly9jb3JwLm1laXRlY2hpbmMuY29tL2NhcmVlcnMvQXBwU2VsZlNlcnZpY2UuYXNweD9hZGF0YT1FSnRrd0t4SDhwV29GUzFoS2llRUx0MEJ1RXlPOVBOdDBrSzl5cFRFRzZycGolMmJRZXU4eFNCdGUxSDRMbjVpWnZ6OHdMakVlMkJ1Y245cDA1bzE0SzZlSkcweHp0ZzgxRGF0bUZtcm1kVUJ5NnJ2UmtIdVIyTU9QYWxrZiUyZmxSbyUyZmw1WTRYN0VxJTJmanFuY21YOGh6Q1lXeUUlMmZyYTJKSFFOUW1BSGdFbEIzSXIwN0NVQUxxN2NFQ0JkejRGUVhmTG41WjJ6Y01RRG4wZHlzY2t0elpOUmFrejZSdHJPNExDakhTU3V3Nk9EV2VpZFJkNUdvRTJzZGM4bjhCN2NFQW1ma0RnJTNkJTNkIiBjbGFzcz0iQXBwbHlOb3dTdHlsZSI+U3VibWl0IHlvdXIgaW5mb3JtYXRpb248L2E+IFdJVEhPVVQgYXBwbHlpbmcgdG8gYSBzcGVjaWZpYyBvcGVuaW5nLjwvc3Bhbj48L3A+DQo8cD4mbmJzcDs8L3A+DQo8cD48c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxM3B4OyBmb250LWZhbWlseTogQXJpYWw7Ij48L3NwYW4+PC9wPmRkAgUPDxYCHwBoZGQCBw8PFgIfAGhkZAIJDw8WAh8AaGRkAgsPDxYCHwBoZGQCDQ8PFgIfAGhkZAIPDw8WAh8AaGRkAhEPDxYCHwBoZGQCEw8PFgIfAGhkZAIVDw8WAh8AaGRkAhcPDxYCHwBoZGQCGQ8PFgIfAQUFSU5UUk9kZAIbDxYCHwEFMzxpbnB1dCB0eXBlPWhpZGRlbiBuYW1lPWxpdFZlcnNpb24gdmFsdWU9IjkuMC4xLjAiPmQCIQ8WAh8BBTI8aW5wdXQgdHlwZT1oaWRkZW4gbmFtZT1saXRORVRWZXJzaW9uIHZhbHVlPSIyLjAiPmRkehvsIkb4/OBUUgpS9fCCEsX9UDE=" />
+
+
+<script src="/Careers/ScriptResource.axd?d=QpLEQ12t5BPEqB1UsZKuplE49m72uUl6JVyLLccQ-o95cfK9rVHLW2FnJDAAqo-0Jpr37aTgb7grJKI57YJPclp087AwkU80tn1_2xuHgjCwSZ_RPzkjlHP4kHkv2KTelHTsfQKduSMxCL80JWtTaKNaA4kMz3QP9hJ-_thpw2cJB4F50&amp;t=3716c9ba" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+			<div>
+			
+
+<SCRIPT language="JavaScript">
+<!--	
+	function ValidatorTrim(s) {
+		var m = s.match(/^\s*(\S+(\s+\S+)*)\s*$/);
+		return (m == null) ? "" : m[1];
+	}
+	
+//-->
+</SCRIPT>
+
+<script language="JavaScript">
+    var nav = window.Event ? true : false;
+    if (nav) {
+        window.captureEvents(Event.KEYDOWN);
+        window.onkeydown = NetscapeEventHandler_KeyDown;
+    } else {
+        document.onkeydown = MicrosoftEventHandler_KeyDown;
+    }
+
+    function NetscapeEventHandler_KeyDown(e) {
+        if (e.which == 13 && e.target.type != 'textarea' && e.target.type != 'submit') {
+            return false;
+        }
+        return true;
+    }
+
+    function MicrosoftEventHandler_KeyDown() {
+        if (event.keyCode == 13 && event.srcElement.type != 'textarea' &&
+        event.srcElement.type != 'submit')
+            return false;
+        return true;
+    }
+</script>
+
+
+
+<table id="CRCareers1_tblIntro" border="0" width="100%">
+	<tr>
+		<td><table id="CRCareers1_tblIntro2" border="0" width="95%">
+			<tr>
+				<td colspan="2"><span id="CRCareers1_lblIntro" class="MainBodyText"><p><span style="font-size: 16px; font-family: Arial; color: #5e172d;"><strong><br />
+<span style="font-size: 12px;"></span></strong><span style="font-size: 12px; font-family: Tahoma;">Why Work at MEI Technologies?</span></span><span style="font-size: 12px; font-family: Tahoma;"> </span></p>
+<p><span style="font-size: 12px;"><br />
+<span style="font-size: 12px; font-family: Tahoma;">MEI Technologies (MEIT)&nbsp;prides itself on employing some of the brightest, most experienced engineering and technology experts in the nation. Are you one of those people? If so, you might enjoy being a part of our team.</span></span></p>
+<p><span style="font-size: 12px; font-family: Tahoma;"></span></p>
+<span style="font-size: 13px;"></span>
+<p><span style="font-size: 12px; font-family: Tahoma;">&nbsp;</span></p>
+<p><span style="font-size: 12px; font-family: Tahoma;"><span class="mainbodytext" style="font-size: 12px;"><span style="font-size: 12px; color: #000000;">Click <span id="CRCareers1_lblIntro" style="font-size: 12px;"></span></span><span class="mainbodytext" style="font-size: 12px; color: #000000;"><a href="https://corp.meitechinc.com/careers/Careers.aspx?adata=EE9f65SMaIBvcRuljjqO0pgay4zyUho%2fZM8KHPZr0GTT37bwyhd02A4iKdfje4BiNDglo24NNBFGnMAca7urvRqd9dWLMph0kOfkf4SzMY4zKmv28USx97lgAyZJ%2fqFyYyOqpxoy8h5FD3LudmESNEengRnNe%2fUF7U1GPVhMKCe6"><span style="font-size: 12px; color: #0066cc;">HERE</span></a></span><span class="mainbodytext" style="font-size: 12px;"><span style="font-size: 12px; color: #000000;">&nbsp;to view employment opportunities by location&nbsp;<span id="CRCareers1_lblIntro" style="font-size: 12px;">OR </span></span>select location&nbsp;and job type below:</span></span><br />
+<br />
+</span><span style="font-size: 12px; font-family: Tahoma;"><TABLE style="width: 320px;"><TR><TD><label class="CaptionStyle" for="CareersKeyword">Keyword</label></TD><TD><input type=text name=CareersKeyword id=CareersKeyword></TD><TD><INPUT type=button onclick="if (ValidatorTrim(window.document.frmCRSS.CareersKeyword.value).length<=0) {alert('Please enter a keyword to search for.'); return false;} else {window.document.frmCRSS.FormType.value='KEYWORD'; window.document.frmCRSS.submit();}" value="Search" class="CareersButton"></TD></TR></TABLE><br />
+<TABLE><TR><TD><label class="CaptionStyle" for="lstSBox1">Location</label></TD></TR><TR><TD><select name="lstSBox1" size="4" multiple="multiple" id="lstSBox1" style="height:140px;width:310px;"><option value="ALL">All<option value="EDW">California- Edwards AFB<option value="DENVER">Denver, CO<option value="EGL">Florida- Eglin AFB<option value="HOUSTON">Houston, TX<option value="HSV">Huntsville, AL<option value="HANSCOM AFB MA">Massachusetts- Hanscom AFB<option value="MS">Mississippi- Stennis Space Center<option value="KIRTLAND AFB">New Mexico- Kirtland AFB<option value="WSTF">New Mexico- White Sands Test Facility<option value="WPAFB">Ohio-Wright Patterson AFB<option value="TINKER">Oklahoma- Tinker AFB<option value="LANGLEY">Virginia- NASA Langley Research Center</select></TD></TR><TR><TD><label class="CaptionStyle" for="lstSBox2">Job Type</label></TD></TR><TR><TD><select name="lstSBox2" size="4" multiple="multiple" id="lstSBox2" style="height:140px;width:310px;"><option value="ALL">All<option value="ADMIN">Administrative<option value="CONTRACTS">Contracts<option value="ENG">Engineering<option value="EXECUTIVE">Executive<option value="FINANCE">Finance<option value="HR">Human Resources<option value="IT">Information Technology<option value="MANAGER">Managerial<option value="OFFICE AND CLERICAL">Office & Clerical<option value="SCI">Science<option value="SECURITY">Security<option value="TECHNICAL">Technical<option value="TECHNICIAN">Technician</select></TD></TR><TR><TD><INPUT type=button onclick="window.document.frmCRSS.FormType.value='SEARCH'; window.document.frmCRSS.submit();" value="Search" class="CareersButton"></TD></TR></TABLE><br />
+<br />
+Already&nbsp;have a Profile? <a href="https://corp.meitechinc.com/careers/AppSelfService.aspx" class="ApplyNowStyle"> Apply for&nbsp;Additional Positions</a> <br />
+<br />
+<a href="https://corp.meitechinc.com/careers/AppSelfService.aspx?adata=EJtkwKxH8pWoFS1hKieELt0BuEyO9PNt0kK9ypTEG6rpj%2bQeu8xSBte1H4Ln5iZvz8wLjEe2Bucn9p05o14K6eJG0xztg81DatmFmrmdUBy6rvRkHuR2MOPalkf%2flRo%2fl5Y4X7Eq%2fjqncmX8hzCYWyE%2fra2JHQNQmAHgElB3Ir07CUALq7cECBdz4FQXfLn5Z2zcMQDn0dyscktzZNRakz6RtrO4LCjHSSuw6ODWeidRd5GoE2sdc8n8B7cEAmfkDg%3d%3d" class="ApplyNowStyle">Submit your information</a> WITHOUT applying to a specific opening.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 13px; font-family: Arial;"></span></p></span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" name="FormType">
+
+<input type=hidden name=litVersion value="9.0.1.0">
+
+
+<input type=hidden name=litNETVersion value="2.0">
+			</div>
+    	
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+<br />
+If you are an individual with a disability and require a reasonable accommodation to complete any part of the application process, limited in the ability or unable to access or use this online application process and need an alternative methods for applying, you may contact Michelle Anderson at 281-283-6051 or <a href="mailto:michelle.anderson@meitechinc.com" title="michelle.anderson@meitechinc.com">michelle.anderson@meitechinc.com</a> for assistance.  
+<br />
+          
+          <!-- /pri -->
+        </div>
+        <!-- /inner -->
+      </div>
+      <!-- /innerpagewrap -->
+    </div>
+    <!-- /outer -->
+  </div>
+  <!-- /wrap -->
+</div>
+<!-- /pagewrap -->
+<div id="ftwrap">
+  <div id="ft"><span id="everify"><a href="http://www.uscis.gov/portal/site/uscis/menuitem.eb1d4c2a3e5b9ac89243c6a7543f6d1a/?vgnextoid=75bce2e261405110VgnVCM1000004718190aRCRD&vgnextchannel=75bce2e261405110VgnVCM1000004718190aRCRD" target="_blank"><img src="./images/logo-everify.jpg" alt="E-Verify" width="140" height="47" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.gsa.gov/portal/content/104447" target="_blank"><img src="./images/logo_gsa.gif" alt="GSA" width="45" height="45" border="0" /></a></span>
+    <ul>
+      <li><a href="http://www.meitechinc.com/">Home</a></li>
+      <li><a href="http://www.meitechinc.com/about/">About Us</a></li>
+      <li><a href="http://www.meitechinc.com/capabilities/">Capabilities &amp; Services</a></li>
+      <!-- <li><a href="/contracts/">Contracts</a></li> -->
+      <li><a href="http://www.meitechinc.com/investments/">Investments &amp; Strategic Agreements</a></li>
+      <li><a href="http://www.meitechinc.com/newsroom/">Newsroom</a></li>
+      <li><a href="http://www.meitechinc.com/careers/">Careers</a></li>
+      <li class="last"><a href="http://www.meitechinc.com/contact/">Contact</a></li>
+    </ul>
+    <ul>
+      <!-- <li><a href="/privacy.asp">Privacy Policy</a></li> -->
+      <!-- <li><a href="/terms.asp">Terms of Use</a></li> -->
+      <li class="last"><a href="http://www.meitechinc.com/sitemap.asp">Site Map</a></li>
+    </ul>
+    <p>&#169; www MEI Technologies, Inc.   MEI Technologies is an Equal Employment Opportunity/Affirmative Action Employer.</p>
+  </div>
+  <!-- /ft -->
+</div>
+<!-- /ftwrap -->
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+
+
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-10662997-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+
+
+
+</body>
+</html>

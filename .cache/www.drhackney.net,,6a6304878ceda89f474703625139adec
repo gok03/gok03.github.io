@@ -1,0 +1,636 @@
+status: 200
+content-location: http://www.drhackney.net
+x-powered-by: PHP/5.1.6, PleskLin
+server: Apache/2.2.3 (Red Hat)
+connection: close
+date: Wed, 21 Sep 2016 09:23:48 GMT
+content-type: text/html; charset=UTF-8
+x-pingback: http://www.drhackney.net/xmlrpc.php
+
+<!DOCTYPE HTML>
+<!--[if IE]><![endif]-->
+<html lang="en">
+<head>
+<title>Best Dallas Plastic Surgeon: Hackney Plastic Surgery Clinic, Dallas, TX</title>
+ 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link rel="publisher" href="https://plus.google.com/+DrhackneyNet" />
+<!-- <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'> -->
+<link type="text/css" rel="stylesheet" href="http://www.drhackney.net/wp-content/themes/drhackney.net/css/reset.css" /> 
+<link type="text/css" rel="stylesheet" href="http://www.drhackney.net/wp-content/themes/drhackney.net/css/style.css" />
+<link type="text/css" rel="stylesheet" href="http://www.drhackney.net/wp-content/themes/drhackney.net/css/structure.css" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/js/action-pack-min.js" defer="defer"></script>
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/js.js"></script>
+<link rel="shortcut icon" href="http://www.drhackney.net/wp-content/themes/drhackney.net/favicon.ico" />
+
+<!--  SWF  Use only if using flash for embedding -->
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/js/swfobject.js"></script>
+
+<!-- CUFON -->
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/js/cufon-min.js" ></script>
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/fonts/ArialRegular.font.js" ></script>
+<script type="text/javascript">
+	Cufon.replace('#ddm>li>a', {hover: true});
+	Cufon.replace('.cufonize_arial');
+</script>
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/fonts/Avenir_45_Regular.font.js" ></script>
+<script type="text/javascript">
+	Cufon.replace('h1, h2, h3, h4, h5, h6');
+	Cufon.replace('#address .tel, #address .adr');
+	Cufon.replace('.cufonize_avenir');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1108188235920743');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1108188235920743&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<!-- Cycle all -->
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/jquerycycleall/jquery.cycle.all.js" defer="defer"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+ if ($('#top_patient_stories_slides').length)					   
+    $('#top_patient_stories_slides').cycle({
+        fx: 'fade', 
+				pause:  1, /* pause on hover 1=yes, 0=no */
+				speed: 1500, /* how fast each slides transitions to the next in miliseconds */
+				timeout: 4000, /* how long each slide takes in miliseconds */
+				pager: '#top_patient_stories_nav' /* The ID of the pager/navigation/bullets */
+     });
+ if ($('#awards_media').length)					   
+    $('#awards_media').cycle({
+        fx: 'fade', 
+				pause:  1, /* pause on hover 1=yes, 0=no */
+				speed: 1500, /* how fast each slides transitions to the next in miliseconds */
+				timeout: 4000 /* how long each slide takes in miliseconds */
+				//pager: '' /* The ID of the pager/navigation/bullets */
+     });	 
+ if ($('#articles').length)					   
+    $('#articles').cycle({
+        fx: 'fade',
+				prev: '#articles_prev',
+				next: '#articles_next', 
+				pause:  1, /* pause on hover 1=yes, 0=no */
+				speed: 1500, /* how fast each slides transitions to the next in miliseconds */
+				timeout: 4000 /* how long each slide takes in miliseconds */
+				//pager: '#articles_nav' /* The ID of the pager/navigation/bullets */
+     });	
+});	 
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$.getJSON("http://api.twitter.com/1/statuses/user_timeline/HackneyPlastic.json?count=1&include_rts=1&callback=?", function(data) {
+	//$("#twitter").html(data[0].text);
+	// result returned
+        var tweet = data[0].text;
+      
+        // process links and reply
+        tweet = tweet.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, function(url) {
+            return '<a href="'+url+'" target="_blank">'+url+'</a>';
+        }).replace(/B@([_a-z0-9]+)/ig, function(reply) {
+            return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
+        });
+      
+        // output the result
+        $("#twitter").html(tweet);		 
+			 
+			 
+	});
+});
+</script>
+
+
+<link type="text/css" rel="stylesheet" href="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/fancybox/jquery.fancybox-1.3.4.css" />
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+<script type='text/javascript'>
+$(document).ready(function() {
+
+if ($("a.iframe").length){
+	$("a.iframe").fancybox({
+	'type' : 'iframe',
+	'scrolling' : 'no'	
+	});
+}
+$("a.lightboxed").fancybox({
+            'transitionIn'	: 'elastic',
+			'transitionOut'	: 'elastic',
+			'autoScale'     : false,
+			'scrolling' : 'auto'
+});
+
+});
+
+</script>
+
+<script type="text/javascript" src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/scroll/scrolltopcontrol.js"></script>
+<script type="text/javascript" src="http://www.drhackney.net/wp-content/themes/drhackney.net/js/hoverizr.js"></script>
+
+
+
+
+	<meta name="viewport" content="width=1084px" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="alternate" type="application/rss+xml" title="Hackney Plastic Surgery Center RSS Feed" href="http://www.drhackney.net/feed" />
+<link rel="pingback" href="http://www.drhackney.net/xmlrpc.php" />
+<!-- <meta name="template_directory" content="http://www.drhackney.net/wp-content/themes/drhackney.net" /> -->
+
+<!-- FROM WP -->
+<link rel="alternate" type="application/rss+xml" title="Hackney Plastic Surgery Center &raquo; Home Comments Feed" href="http://www.drhackney.net/home/feed" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.drhackney.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.drhackney.net/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Hackney Plastic Surgery Center' href='http://www.drhackney.net' />
+<link rel='next' title='Terms of Use' href='http://www.drhackney.net/terms-of-use' />
+<meta name="generator" content="WordPress 3.1.3" />
+
+<!-- All in One SEO Pack 1.6.14.3 by Michael Torbert of Semper Fi Web Design[65,102] -->
+<meta name="description" content="Rated one of the best plastic surgeons in Dallas by D Magazine, Dr. Fred Hackney certified by the American Board of Plastic Surgery.  See our video patient educator for info on breast augmentation, liposuction, face lifts, rhinoplasty and more." />
+<meta name="keywords" content="dallas plastic surgery, dallas cosmetic surgeon, fred hackney md, dr fl hackney, hackney plastic surgery clinic" />
+<link rel="canonical" href="http://www.drhackney.net/" />
+<!-- /all in one seo pack -->
+<!-- END FROM WP --><!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript">
+$(document).ready(function(){
+    $(document).bind("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+<script async src="//63283.tctm.co/t.js"></script> 
+</head>
+<body class="page-12 page-home ">
+<div id="preloader"></div>
+<div id="clip"><!-- Trim page contents to min-width -->
+
+<header class="holder" ><div class="wrapper"><div class="container"><div class="content"> 
+<div id="zdoc"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/realself-top100-doc.png" /></div>
+    <div id="banner">
+	    <a href="http://www.drhackney.net"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/banner.jpg" alt="Hackney Plastic Surgery Center � Dallas, TX"></a>
+    </div>
+    
+    <div id="address"><address>
+        <p class="tel">214.346.9222</p>
+        <a href="http://www.drhackney.net/contact-us" class="adr">8315 Walnut Hill Lane, Suite 225 | Dallas, TX 75231</a>
+
+        <div class='floatright' style='float:right; clear:both; width:100%'>
+          <a href="https://plus.google.com/+DrhackneyNet"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/google.jpg" alt=" " class=""  /></a>
+          <a href="https://twitter.com/HackneyPlastic"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/twitter.jpg" alt=" " class=""  /></a>        
+          <a href="https://www.facebook.com/HackneyPlasticSurgeryCenter"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/facebook.jpg" alt=" " class=""  /></a>        
+          <a href="http://www.drhackney.net/contact-us"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/request_app.jpg" alt=" " class=""  /></a>        
+        </div>
+    </address></div>
+    
+    <nav class="firstlast">   
+        <ul id="ddm" >
+			<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12 current_page_item menu-item-33"><a href="http://www.drhackney.net/">Home</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://www.drhackney.net/dr-hackney">Meet Dr. Hackney</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://www.drhackney.net/meet-our-staff">Meet Our Staff</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="http://www.drhackney.net/procedures">Procedures</a>
+<ul class="sub-menu">
+	<li id="menu-item-283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-283"><a href="http://www.drhackney.net/procedures/breast-augmentation">Breast Augmentation</a></li>
+	<li id="menu-item-285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285"><a href="http://www.drhackney.net/procedures/breast-lift">Breast Lift</a></li>
+	<li id="menu-item-286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-286"><a href="http://www.drhackney.net/procedures/breast-reduction">Breast Reduction</a></li>
+	<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a href="http://www.drhackney.net/procedures/male-breast-reduction">Male Breast Reduction</a></li>
+	<li id="menu-item-305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-305"><a href="http://www.drhackney.net/procedures/tummy-tuck">Tummy Tuck</a></li>
+	<li id="menu-item-296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-296"><a href="http://www.drhackney.net/procedures/liposuction">Liposuction</a></li>
+	<li id="menu-item-291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-291"><a href="http://www.drhackney.net/procedures/rhinoplasty">Rhinoplasty</a></li>
+	<li id="menu-item-289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289"><a href="http://www.drhackney.net/procedures/facelift">Face Lift</a></li>
+	<li id="menu-item-941" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-941"><a title="#eyelid_lift" href="http://www.drhackney.net/procedures/facelift">Eyelid Lift</a></li>
+	<li id="menu-item-940" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-940"><a title="#brow_lift" href="http://www.drhackney.net/procedures/facelift">Brow Lift</a></li>
+	<li id="menu-item-942" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-942"><a title="#facial_fat_grafting" href="http://www.drhackney.net/procedures/facelift">Facial Fat Grafting</a></li>
+	<li id="menu-item-869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-869"><a href="http://www.drhackney.net/procedures/ears-chin-surgery">Ears and Chin</a></li>
+	<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="http://www.drhackney.net/procedures/body-contouring">Body Contouring</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1477"><a title="#Brachioplasty" href="http://www.drhackney.net/procedures/body-contouring">Brachioplasty</a></li>
+		<li id="menu-item-1476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1476"><a title="#LowerBodyLift" href="http://www.drhackney.net/procedures/body-contouring">Lower Body Lift</a></li>
+		<li id="menu-item-1475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1475"><a title="#InnerThigh" href="http://www.drhackney.net/procedures/body-contouring">Inner Thigh Lift</a></li>
+	</ul>
+</li>
+	<li id="menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="http://www.drhackney.net/procedures/youth-and-beauty-made-simple">Youth and Beauty Made Simple</a>
+	<ul class="sub-menu">
+		<li id="menu-item-278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-278"><a href="http://www.drhackney.net/procedures/botox-cosmetic">BOTOX® Cosmetic</a></li>
+		<li id="menu-item-300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a href="http://www.drhackney.net/procedures/juvederm">Juvederm®</a></li>
+		<li id="menu-item-299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"><a href="http://www.drhackney.net/procedures/radiesse">Radiesse®</a></li>
+		<li id="menu-item-295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-295"><a href="http://www.drhackney.net/procedures/lip-augmentation">Lip Augmentation</a></li>
+		<li id="menu-item-303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303"><a href="http://www.drhackney.net/procedures/tca-peel">TCA Peel</a></li>
+		<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292"><a href="http://www.drhackney.net/procedures/dermabrasion">Dermabrasion</a></li>
+		<li id="menu-item-939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-939"><a title="#facial_fat_grafting" href="http://www.drhackney.net/procedures/facelift">Fat Injections</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166"><a href="http://www.drhackney.net/gallery/">Photo Gallery</a></li>
+<li id="menu-item-480" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-480"><a href="http://www.drhackney.net/real-patients-stories">Real Patients Real Stories</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="http://www.drhackney.net/financing">Financing</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="http://www.drhackney.net/contact-us">Your Consultation</a>
+<ul class="sub-menu">
+	<li id="menu-item-344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-344"><a href="http://www.drhackney.net/what-to-expect">What To Expect</a></li>
+	<li id="menu-item-343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-343"><a href="http://www.drhackney.net/faqs">Commonly Asked Questions</a></li>
+	<li id="menu-item-345" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-345"><a href="http://www.drhackney.net/contact-us">Schedule Your Cosmetic Consultation</a></li>
+	<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="http://www.drhackney.net/maps-directions">Maps &#038; Directions</a></li>
+	<li id="menu-item-638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-638"><a title="#visitors" href="http://www.drhackney.net/maps-directions">For Our Out-of-Town Patients</a></li>
+</ul>
+</li>
+        </ul>
+    </nav>
+    
+</div></div></div></header>
+
+<!-- Rotation of Patient Real Stories section on home page -->
+ 
+  <div id="top_highlight" class="holder" ><div class="wrapper"><div class="container"><div class="content"> 
+    <div id='top_patient_stories_nav'> </div>
+    <div id='top_patient_stories'>
+      <div id='top_patient_stories_slides'>
+      <div class="patient_sories">
+      <img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/alicia2_wide.jpg" />
+      		<div class="excerpt">
+<img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/smql.png" alt="" /> It was a blessing I found Dr. Hackney.<strong>-Alicia</strong>  <img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/smqr.png" />
+            </div>
+      </div>
+      <div class="patient_sories">
+      <img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/michelle_wide.jpg" />
+      		<div class="excerpt">
+<img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/smql.png" alt="" /> I was so happy with my results I had another surgery with him 3 years later! <strong>-Michelle</strong>  <img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/smqr.png" />
+            </div>
+      </div>
+     <div class="patient_sories">
+      <img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/dax_wide.jpg" />
+      		<div class="excerpt">
+<img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/smql.png" alt="" /> The results have exceeded my expectations, which left me with an overall better feeling about my appearance. <strong>-Dax</strong>  <img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/smqr.png" />
+            </div>
+      </div> 
+     <div class="patient_sories">
+      <img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/shmara_wide.jpg" />
+      		<div class="excerpt">
+<img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/smql.png" alt="" /> If you ask me.... would I do it all over again, I would say yes, yes, yes! <strong>-Shmara</strong>  <img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/smqr.png" />
+            </div>
+      </div>
+      <div class="patient_sories">
+      <img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/amy_wide.jpg" />
+      		<div class="excerpt"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/smql.png" alt="" /> <em>I was very pleased with Dr. Hackney and his staff.</em> I made the decision to use Dr. Hackney as my surgeon based on how comfortable he made the entire process... <strong>-Amy  <img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/smqr.png" /></strong>
+            </div>
+      </div>
+      
+      </div>
+       <a href='http://www.drhackney.net/real-patients-stories' id='view_more_patient_stories' class='cufonize_avenir'>View More Patient Stories</a>
+    </div><!-- close top_patient_stories -->
+    
+    <div id='patient_educator'>
+			<div id='patient_educator_vid_player'> </div>
+      <!--<a href='http://hackney.p2.ibctv.com/site/01-welcome' class='launchlink iframe'>Click here to launch patient educator</a>-->
+			<iframe width="275" height="268" src="http://www.youtube.com/embed/rQLQNmaaKWM?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div><!-- close patient_educator_vid -->
+    
+  </div></div></div></div> 
+  <div id="top_highlight2" class="holder" ><div class="wrapper"><div class="container"><div class="content">   
+  
+    <div id='photo_gallery_hl'>
+      <h2>Photo Gallery</h2>
+      <a href="http://www.drhackney.net/gallery"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/gallery_pic2.jpg" alt=" " /></a>
+      <a href='http://www.drhackney.net/gallery' class='launchlink'>Launch Photo Gallery</a>
+    </div>
+    <div id='awards_media_hl'>
+      <h2>Awards &amp; Media</h2>
+      <div id="awards_media">
+<!--      <a href="#"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/award_media_pic.jpg" alt=" " /></a> -->
+				<div class='awards_media'><img width="100" height="124" src="http://www.drhackney.net/wp-content/uploads/2016/06/ten-best.jpg" class="img wp-post-image" alt="ten-best" /><h5>American Institute of Plastic Surgeons 2015-2016 10 Best</h5><br/></div><div class='awards_media'><h3>Best Doctors in America&reg; 2015</h3><h5>Best Doctors in America&reg; 2015</h5><br/><p><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.drhackney.net/wp-content/uploads/2016/03/Best-Doctors-in-America.png');"  href="http://www.drhackney.net/wp-content/uploads/2016/03/Best-Doctors-in-America.png" class="lightboxed" rel="cctd2013">Click here to read the full article</a></p>
+</div><div class='awards_media'><img width="83" height="141" src="http://www.drhackney.net/wp-content/uploads/2014/02/cctd-2013-tn.jpg" class="img wp-post-image" alt="Castle Connolly Top Doctors 2013" /><h5>Castle Connolly Top Doctors 2013</h5><br/><p><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.drhackney.net/wp-content/uploads/2014/02/cctd-2013-lg.jpg');"  href="http://www.drhackney.net/wp-content/uploads/2014/02/cctd-2013-lg.jpg" class="lightboxed" rel="cctd2013">Click here to read the full article</a></p>
+</div><div class='awards_media'><img width="209" height="141" src="http://www.drhackney.net/wp-content/uploads/2014/01/nov-2013-thumb.jpg" class="img wp-post-image" alt="D Magazine November 2013" /><h5>D Magazine November 2013</h5><br/><p><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.drhackney.net/wp-content/uploads/2014/01/nov-2013-02.jpg');"  href="http://www.drhackney.net/wp-content/uploads/2014/01/nov-2013-02.jpg" class="lightboxed" rel="nov2013">Click here to read the full article</a></p>
+</div><div class='awards_media'><img width="209" height="141" src="http://www.drhackney.net/wp-content/uploads/2014/01/oct-2013-thumb.jpg" class="img wp-post-image" alt="D Magazine October 2013" /><h5>D Magazine October 2013</h5><br/><p><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.drhackney.net/wp-content/uploads/2014/01/oct-2013-02.jpg');"  href="http://www.drhackney.net/wp-content/uploads/2014/01/oct-2013-02.jpg" class="lightboxed" rel="oct2013">Click here to read the full article</a></p>
+</div>      </div>          
+      <a href='http://www.drhackney.net/awards-and-media' class='launchlink'>View All Awards &amp; Media</a>
+    </div>
+    <div id='current_specials_hl'>
+     <h2>Current Specials</h2>
+      <a href="http://www.drhackney.net/specials"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/current-specials-may-temp.png" alt=" " /></a>
+        <!-- <div class='current_specials'><a href='http://www.drhackney.net/specials' class='text'><h7><em>September Special</em></h7></a><br/><a href='http://www.drhackney.net/specials'><p><span style="font-size: 18px;">$500 Off<br />
+Breast Augmentation</span><br/> Make 'em Green with Envy</p>
+<p><span style="font-size: 12px;">Call to schedule your consultation 214-346-9222</span></p>
+</a></div> -->
+               
+      <a href='http://www.drhackney.net/specials' class='launchlink' style="margin-top: -28px">See details &amp; conditions</a>
+    </div>
+  
+  </div></div></div></div>   
+  
+
+<!-- Main Content -->
+<div id="main" class="holder"><div class="wrapper"><div class="container"><div class="content">
+
+<article><section>
+
+			<div class="post" id="post-12">
+
+			<p><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Hackney Plastic Surgery Center",
+  "alternateName": "Fred Hackney, MD",
+  "sameAs": "http://www.yelp.com/biz/hackney-plastic-surgery-center-dallas",
+  "logo": "http://www.drhackney.net/wp-content/themes/drhackney.net/images/banner.jpg",
+  "medicalSpecialty": "PlasticSurgery",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dallas",
+    "addressRegion": "TX",
+    "streetAddress": "8315 Walnut Hill Lane, Suite 225"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "32.8849592",
+    "longitude": "-96.76088609999999"
+  },
+  "url": "http://www.drhackney.net",
+  "telephone": "(214) 346-9222",
+  "openingHours": "Mo-Fr 8:00-12:00, Mo-Fr 13:00-17:00",
+  "paymentAccepted": "Visa,MasterCard,Discover,American Express, Prosper Healthcare Lending, CareCredit, United Medical Credit"
+}
+</script></p>
+<h1>Meet Dallas Plastic Surgeon Dr. Fred Hackney</h1>
+<p><img class="alignleft size-full wp-image-663" src="http://www.drhackney.net/wp-content/uploads/2012/10/D-magazine-img-2008-sm-200x3001.jpg" alt="Dallas Plastic Surgeons: Hackney Plastic Surgery Clinic, Dallas, TX" width="146" height="220" />The goal of Dallas Plastic Surgeon <a onclick="javascript:pageTracker._trackPageview('/outgoing/plus.google.com/112674026758197097436?rel=author');"  href="https://plus.google.com/112674026758197097436?rel=author">Dr. Fred Hackney</a> and his staff is to anticipate our patients needs and exceed their expectations while preserving their dignity and privacy.</p>
+<p>Though experience and board certification are important, these are only the basic requirements for practicing plastic surgery.</p>
+<p>Your confidence in choosing a plastic surgeon and ultimately your decision to have cosmetic surgery should also be based on your surgeon's level of professional excellence. Dr. Hackney has years of experience establishing a pattern of excellence you can trust. Dr. Hackney has helped patients seeking cosmetic surgery in the Dallas Fort Worth area, including Frisco, McKinney, and Plano.  Patients from over 70 different cites across Texas, Oklahoma and Louisiana, have had cosmetic procedures performed by our Dallas plastic surgery clinic.</p>
+<h4>Professional Affiliations</h4>
+<ul>
+<li>American Society of Plastic Surgeons</li>
+<li>The American Society for Aesthetic Plastic Surgery</li>
+<li>American Board of Plastic Surgery</li>
+<li>Texas Society of Plastic Surgeons</li>
+<li>American College of Surgeons</li>
+</ul>
+			<div id='home_links' class='nomobile'>
+        <a href='http://www.drhackney.net/wp-content/themes/drhackney.net/dr-hackney' class='btn'>Read More</a>
+        <a href="http://www.drhackney.net/wp-content/themes/drhackney.net/blog"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/home_blog_link.jpg" alt=" " /></a>
+        <a href="http://www.youtube.com/embed/2CiTXC0K2qg" class="iframe"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/home_vid_link.jpg" alt=" " /></a>
+      </div>
+<div style=" clear:both; display:none;">&nbsp;</div>
+     
+		</div>
+			
+</section></article>
+
+<aside class='default'><link type="text/css" rel="stylesheet" href="https://portal.realpatientratings.com/assets/css/widget-styles.css" />
+
+<!-- <div id='realpatientratings'>
+	<div class="real-patient-ratings-feed" data-mdid="10084" data-feed-type="filtered" data-survey-type="combined" data-limit="3" ></div> <script type="text/javascript" src="https://portal.realpatientratings.com/feed"></script>
+
+
+</div> -->
+
+<iframe frameborder="0" style="width:440px;height:457px" src="https://portal.realpatientratings.com/feed/widget/10084/medium"></iframe>
+
+<div id='qc'><h2>Request a Consultation</h2>	
+<form class="cmxform" action="http://tungsten.mednet-tech.com/fx/cfx.php" method="post" name="qform" id="qform" onsubmit="document.qform.mstrPage.value = document.location.href;">
+    <input name="spc" class="spc" value="" />
+    <input name="mstrPage" type="hidden" />
+   <!-- <input type="hidden" name="rx" value="fhackney2016" /> 
+    <input type="hidden" name="i_at" value="gmail.com" />     -->
+    <input type="hidden" name="redirect" value="http://www.drhackney.net/thankyou" /> 
+    
+    <div class="col one">
+        <input name="require" value="FName,EMail_Address" type="hidden" />
+        <div class='innercol'>
+        <input name="FName" class="inputSelectquick" type="text" value="First Name: *" onfocus="clearText(this)" onblur="clearText(this)" id="Name"/>
+        <input name="LName" class="inputSelectquick" type="text" value="Last Name: *" onfocus="clearText(this)" onblur="clearText(this)" id="LName"/>        
+        </div>
+        <div class='innercol two'>        
+        <input name="EMail_Address" class="inputSelectquick" type="text" value="E-Mail: *" onfocus="clearText(this)" onblur="clearText(this)" id="email" />
+        <input name="phone" class="inputSelectquick" type="text" value="Phone" onfocus="clearText(this)" onblur="clearText(this)" id="phone"/>
+        </div>
+    </div>
+    
+    <div class="col two">    
+        <textarea name="comments" id="comment" cols="17" rows="4" class="inputCommentquick" onfocus="clearText(this)" onblur="clearText(this)">Questions / Comments: Please include non-medical questions and correspondence only.
+        </textarea>
+    </div>
+    
+    <div style="clear:both;"></div>
+        
+	<input name='Submit' class='inputButton inputButtonquick' value='Submit' type='submit' />
+        
+	
+</form></div>	
+</aside></div></div></div></div>
+<!-- End of main content -->
+<!-- Bottom section -->
+	<div id="bhilights" class="holder"><div class="wrapper"><div class="container"><div class="content">
+<div id='featured_procedures'>
+	<h2 class='heading'>Featured Procedures</h2>
+  <a href='http://www.drhackney.net/procedures/breast-augmentation'><img src='http://www.drhackney.net/wp-content/themes/drhackney.net/images/bhl1.jpg' /></a>
+  <a href='http://www.drhackney.net/procedures/tummy-tuck'><img src='http://www.drhackney.net/wp-content/themes/drhackney.net/images/bhl2.jpg' /></a>
+  <a href='http://www.drhackney.net/procedures/rhinoplasty'><img src='http://www.drhackney.net/wp-content/themes/drhackney.net/images/bhl3.jpg' /></a>
+  <a href='http://www.drhackney.net/procedures/facelift'><img src='http://www.drhackney.net/wp-content/themes/drhackney.net/images/bhl4.jpg' /></a>
+  <a href='http://www.drhackney.net/procedures/liposuction'><img src='http://www.drhackney.net/wp-content/themes/drhackney.net/images/bhl5.jpg' /></a>
+  <a href='http://www.drhackney.net/procedures/breast-lift'><img src='http://www.drhackney.net/wp-content/themes/drhackney.net/images/bhl6.jpg' /></a>
+</div>
+
+<div id='bottom_aside'>
+    <div id='bottom_latest_articles'>
+      <h2 class='heading'><a href="http://www.drhackney.net/blog">Latest Blog Posts</a></h2>
+      <a href='#' id='articles_prev'></a>      
+      <a href='#' id='articles_next'></a>
+      <div id='articles'>
+            <div class='latest_articles'><div class='img'></div><h3 class='title'><a href='http://www.drhackney.net/?p=1727'><em>September Special</em></a></h3><div class='excerpt'><span style="font-size: 18px;">$500 Off  
+Breast Augmentation</span><br/> Make 'em Green with Envy
+
+<span style="font-size: 12px;">Call to schedule your consultation 214-346-9222</span>
+...</div></div><div class='latest_articles'><div class='img'></div><h3 class='title'><a href='http://www.drhackney.net/?p=2820'>Mommy Makeover 101</a></h3><div class='excerpt'>Having a child is one of life’s most precious experiences.  Though parenting brings its own set of challenges, the rewards ...</div></div><div class='latest_articles'><div class='img'></div><h3 class='title'><a href='http://www.drhackney.net/?p=2804'>Liposuction: Visceral Fat vs. Subcutaneous Fat</a></h3><div class='excerpt'>
+As many people know, liposuction can be a great option for men and women who have isolated, stubborn areas of ...</div></div><div class='latest_articles'><div class='img'></div><h3 class='title'><a href='http://www.drhackney.net/?p=2783'>Yes, Fat Can Be Your Friend: Facial Fat Grafting In Dallas</a></h3><div class='excerpt'>For many years, facial rejuvenation to restore a more youthful appearance mainly focused on one thing: sagging skin. Plastic surgeons, ...</div></div><div class='latest_articles'><div class='img'></div><h3 class='title'><a href='http://www.drhackney.net/?p=2776'>Dr. Hackney Featured In Dallas Modern Luxury</a></h3><div class='excerpt'>We were thrilled to see that our very own Dr. Hackney was recently featured in the latest issue of DALLAS ...</div></div>      </div>
+    </div>
+<br />
+		<hr class="clear" />
+    <a href="https://twitter.com/HackneyPlastic" class='floatright' target="_blank"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/tweet_follow.jpg" alt=" " /></a>  
+    <h2>Latest Tweet</h2> 
+		<img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/hackney_tweet.jpg" alt=" " class='floatleft' style='margin-right:5px'/>
+    <div id='twitter'> </div>
+		<hr />    
+    <h2>Like us on facebook</h2>
+    
+    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.drhackney.net&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
+    
+</div>
+</div></div></div></div><!-- end of bottom section -->    
+<div id="association" class="holder"><div class="wrapper"><div class="container"><div class="content">
+  <a href="http://www.plasticsurgery.org" target="_blank"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/as1.jpg" alt=" " /></a>
+  <a href="http://www.surgery.org" target="_blank"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/as2.jpg" alt=" " /></a>
+  <a href="http://www.tsps.net/Home/" target="_blank"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/as4.jpg" alt="" /></a>
+  <a href="http://www.facs.org" target="_blank"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/as5.jpg" alt=" " /></a>
+    <a href="https://www.abplsurg.org/ModDefault.aspx" target="_blank"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/as6.jpg" alt=" " /></a>
+</div></div></div></div>  
+
+
+<div id="bottom" class="holder"><div class="wrapper"><div class="container"><div class="content firstlast">
+  <section>
+  <h3>Quick Links</h3>
+  <ul>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12 current_page_item menu-item-33"><a href="http://www.drhackney.net/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://www.drhackney.net/dr-hackney">Meet Dr. Hackney</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://www.drhackney.net/meet-our-staff">Meet Our Staff</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="http://www.drhackney.net/procedures">Procedures</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166"><a href="http://www.drhackney.net/gallery/">Photo Gallery</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-480"><a href="http://www.drhackney.net/real-patients-stories">Real Patients Real Stories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="http://www.drhackney.net/financing">Financing</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="http://www.drhackney.net/contact-us">Your Consultation</a></li>
+  </ul>
+  </section>
+  
+  <section>
+  <h3>Our Locations</h3>
+  <ul class="">
+  <li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="http://www.drhackney.net/maps-directions">8315 Walnut Hill Suite 225</a></li>
+<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="http://www.drhackney.net/maps-directions">Dallas, TX 75231</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="http://www.drhackney.net/maps-directions"><b> &raquo; Map </b></a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="http://www.drhackney.net/maps-directions">&nbsp;</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="http://www.drhackney.net/maps-directions"><b>Tel.</b> 214.346.9222</a></li>
+<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="http://www.drhackney.net/maps-directions"><b>Fax.</b> 214.346.9555</a></li>
+  </ul>
+  </section>
+  
+  <section>
+  <h3>Face</h3>
+  <ul>
+  <li id="menu-item-441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-441"><a href="http://www.drhackney.net/procedures/facelift">Facelift</a></li>
+<li id="menu-item-1005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1005"><a title="#brow_lift" href="http://www.drhackney.net/procedures/facelift">Brow Lift</a></li>
+<li id="menu-item-1006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1006"><a title="#eyelid_lift" href="http://www.drhackney.net/procedures/facelift">Eye Lid Lift</a></li>
+<li id="menu-item-442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="http://www.drhackney.net/procedures/rhinoplasty">Rhinoplasty (Nose Job)</a></li>
+<li id="menu-item-916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-916"><a title="#secondary_rhinoplasty" href="http://www.drhackney.net/procedures/rhinoplasty">Secondary Rhinoplasty</a></li>
+<li id="menu-item-1004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1004"><a href="http://www.drhackney.net/procedures/facelift">Facial Fat Grafting</a></li>
+<li id="menu-item-920" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-920"><a href="http://www.drhackney.net/procedures/ears-chin-surgery">Ear Surgery (Otoplasty)</a></li>
+<li id="menu-item-921" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-921"><a title="#chin" href="http://www.drhackney.net/procedures/ears-chin-surgery">Chin Enlargement</a></li>
+  </ul>
+  </section>
+  
+  <section>
+  <h3>Body</h3>
+  <ul class="">
+  <li id="menu-item-931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-931"><a href="http://www.drhackney.net/procedures/breast-augmentation">Breast Augumentation</a></li>
+<li id="menu-item-934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-934"><a href="http://www.drhackney.net/procedures/breast-lift">Breast Lift</a></li>
+<li id="menu-item-935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="http://www.drhackney.net/procedures/breast-reduction">Breast Reduction</a></li>
+<li id="menu-item-943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943"><a href="http://www.drhackney.net/procedures/male-breast-reduction">Male Breast Reduction</a></li>
+<li id="menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455"><a href="http://www.drhackney.net/procedures/tummy-tuck">Tummy Tuck</a></li>
+<li id="menu-item-927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-927"><a title="#mini_tummy_tuck" href="http://www.drhackney.net/procedures/tummy-tuck">Mini Tummy Tuck</a></li>
+<li id="menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"><a href="http://www.drhackney.net/procedures/liposuction">Liposuction</a></li>
+<li id="menu-item-1500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1500"><a title="#ThighLift" href="http://www.drhackney.net/procedures/body-contouring">Thigh Lift</a></li>
+<li id="menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501"><a title="#BodyContouring" href="http://www.drhackney.net/procedures/body-contouring">Body Contouring</a></li>
+<li id="menu-item-1502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1502"><a title="#Brachioplasty" href="http://www.drhackney.net/procedures/body-contouring">Brachioplasty (Upper Arm Lift)</a></li>
+  </ul>    
+  </section>
+  
+  <section>
+  <h3>Skin</h3>
+  <ul class="">
+  <li id="menu-item-1002" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002"><a href="http://www.drhackney.net/procedures/youth-and-beauty-made-simple">Youth and Beauty Made Simple</a></li>
+<li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"><a href="http://www.drhackney.net/procedures/botox-cosmetic">BOTOX® Cosmetic</a></li>
+<li id="menu-item-460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460"><a href="http://www.drhackney.net/procedures/juvederm">Restylane®</a></li>
+<li id="menu-item-461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-461"><a href="http://www.drhackney.net/procedures/radiesse">Radiesse®</a></li>
+<li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="http://www.drhackney.net/procedures/tca-peel">TCA Peels</a></li>
+<li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-457"><a href="http://www.drhackney.net/procedures/dermabrasion">Dermabrasion</a></li>
+<li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="http://www.drhackney.net/procedures/lip-augmentation">Lip Augmentation</a></li>
+<li id="menu-item-1520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1520"><a title="#facial_fat_grafting" href="http://www.drhackney.net/procedures/facelift">Fat Injections</a></li>
+  </ul>    
+  </section>
+</div></div></div></div>  
+
+
+<!-- End of bottom section -->
+<!-- Footer Section -->
+<!-- Footer Section -->
+<div id="footer" class="holder"><div class="wrapper"><div class="container"><div class="content">
+<footer> 
+ 
+<section class="one">
+<ul id="footernav" class="menu-horizontal firstlast">
+	</ul>  
+
+<p id="footerlegal">
+&copy; 2016 Hackney Plastic Surgery Center and MedNet Technologies, Inc.  All Rights Reserved.<br /><a href="http://www.MedNet-Tech.com" target="_blank">MedNet-Sites&trade;   - Powered by   MedNet Technologies, Inc.</a>
+</p>
+</section>    
+
+<section class="two">    
+<a href="http://mercury.mednet-tech.com/mednet_launch.htm" >
+<img alt="MedNet Technologies" src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/mn-plates/mednetplate_light_transp.png"  class="alignright noborder" />
+</a>
+<p id="footerlinks">
+	<a href="http://www.drhackney.net/sitemap">Sitemap</a> <a>|</a>
+	<a href="http://www.drhackney.net/terms-of-use">Terms of Use</a>
+</p>
+</section>
+
+<div id="footerseo"> 
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4134415-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+ </div>
+    
+</footer>    
+</div></div></div></div> 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? 
+"https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + 
+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+  <script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4134415-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<!-- Google Code for Web Site Visitors Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1068705136;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "YbSzCNiQiwIQ8MrM_QM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1068705136/?label=YbSzCNiQiwIQ8MrM_QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- End of Footter section -->   
+   
+</div> <!-- End Trimming DIV -->
+<!-- End Footer Section -->
+  
+
+<!--[if IE 6]> <div id="ie6alert"><p>You are currently viewing this website in Internet Explorer 6. To enhance your browsing experience, please upgrade to a more current browser such as <a href="http://www.mozilla.com/firefox" target="_blank" style="color:#E45B0A">Firefox</a>, <a href="http://www.apple.com/safari/" target="_blank" style="color:#3E9FDA">Safari</a> or update to <a href="http://www.microsoft.com/windows/Internet-explorer" target="_blank" style="color:#B4D2EF">Internet Explorer 9</a>.  Click on the browser of your choice to upgrade now.</p>  </div> <![endif]-->
+<!--[if IE 7]>  <div id="ie6alert"> <p>
+You are currently viewing this website in Internet Explorer 7. To enhance your browsing experience, please upgrade to a more current browser such as <a href="http://www.mozilla.com/firefox" target="_blank" style="color:#E45B0A">Firefox</a>, <a href="http://www.apple.com/safari/" target="_blank" style="color:#3E9FDA">Safari</a> or update to <a href="http://www.microsoft.com/windows/Internet-explorer" target="_blank" style="color:#B4D2EF">Internet Explorer 9</a>.  Click on the browser of your choice to upgrade now.</p> </div><![endif]-->
+
+
+
+</body>
+</html>
+<!-- Structure Version 3.5 - 07/02/12 -->
+<!-- page-home.php-->

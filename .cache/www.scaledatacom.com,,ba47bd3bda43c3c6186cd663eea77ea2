@@ -1,0 +1,243 @@
+status: 200
+content-length: 11457
+content-location: http://www.scaledatacom.com
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Apache
+-content-encoding: gzip
+date: Tue, 13 Sep 2016 12:44:01 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<html>
+<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1"><meta name="keywords" content="iSCSI, EqualLogic, SAN, Data Storage, storage, nexsan, fiber channel, filer, nimble storage, archiving, remote replication, snapshot, disaster recovery, vdi, netapp, nas">
+
+		<title>Scale Datacom - IT Solutions Provider</title>
+		<csscriptdict>
+			<script><!--
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script>
+<!--
+<!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button3',/*URL*/'version3/datacom1.jpg',/*URL*/'version3/datacom2.jpg',/*URL*/'version3/datacom2.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button2',/*URL*/'version3/gov1.jpg',/*URL*/'version3/gov2.jpg',/*URL*/'version3/gov2.jpg','');
+
+// -->
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+		</csactiondict>
+        <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<style type="text/css">
+.arial1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+}
+.ariel-black {
+	color: #336699;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+</style></head>
+
+	<body bgcolor="#ffffff" onLoad="CSScriptInit();MM_preloadImages('version3/datacom2.jpg','version3/gov2.jpg','graphics/equallogic2.jpg','graphics/compellent2.jpg','bluearc/bluearc2.jpg','nimble/nimble_big2.jpg','graphics/nexsan12.jpg','graphics/about2.jpg','graphics/solutions2.jpg','graphics/partners2.jpg','graphics/contact2.jpg','graphics/tegile2.jpg')">
+<table border="0" cellpadding="0" cellspacing="0" width="800">
+			<tr>
+				<td><a href="index.html"><img src="version3/logo.jpg" width="166" height="44" border="0"></a></td>
+				<td></td>
+				<td width="508"><div align="center">
+				
+				        <div align="right">
+				          <table width="350" border="0">
+				            <tr>
+				              <td width="25%"><div align="center"><a href="/about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','graphics/about2.jpg',1)"><img src="graphics/about1.jpg" width="55" height="17" id="Image14"></a></div></td>
+				              <td width="25%"><div align="center"><a href="/solutions.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','graphics/solutions2.jpg',1)"><img src="graphics/solutions1.jpg" width="56" height="17" id="Image10"></a></div></td>
+				              <td width="25%"><div align="center"><a href="/partners.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','graphics/partners2.jpg',1)"><img src="graphics/partners1.jpg" width="50" height="17" id="Image11"></a></div></td>
+				              <td width="25%"><div align="center"><a href="/contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','graphics/contact2.jpg',1)"><img src="graphics/contact1.jpg" width="47" height="17" id="Image13"></a></div></td>
+			                </tr>
+			              </table>
+				        </div>
+				      </blockquote>
+			        </blockquote>
+			      </blockquote>
+				</div></td>
+			</tr>
+			<tr>
+				<td colspan="3"><img src="graphics/mid_section.jpg" width="800" height="186"></td>
+			</tr>
+			<tr height="10">
+				<td height="10"></td>
+				<td height="10"></td>
+				<td height="10"></td>
+			</tr>
+			<tr>
+				<td colspan="3"><img src="version3/tag3.jpg" width="326" height="38" hspace="5" border="0"></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+				  <div align="left"><img src="version3/guy_leaning_servers3.jpg" width="760" height="312"></div>				</td>
+			</tr>
+			
+			<tr>
+			  <td height="40" colspan="3"><strong class="ariel-black">Featured Partners:</strong></td>
+  </tr>
+			<tr>
+				<td colspan="3">
+					<div align="center">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr height="150">
+								<td width="241" height="150" valign="top"><a href="tegile/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','graphics/tegile2.jpg',1)"><img src="graphics/tegile1.jpg" width="241" height="150" id="Image19"></a></td>
+								<td width="20" height="150"></td>
+							  <td width="241" height="150" valign="top"><csobj w="241" h="150" t="Button" ht="version3/datacom2.jpg" cl="version3/datacom2.jpg"><a href="http://www.scaledatacom.com/datacom.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Datacom','','version3/datacom2.jpg',1)"></a><a href="http://www.scaledatacom.com/compellent" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','graphics/compellent2.jpg',1)"></a><a href="http://www.scaledatacom.com/equallogic" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','graphics/equallogic2.jpg',1)"></a><a href="http://www.scaledatacom.com/datacom.html" onMouseOver="return CSIShow(/*CMP*/'button3',1)" onMouseOut="return CSIShow(/*CMP*/'button3',0)" onClick="CSIShow(/*CMP*/'button3',2);return CSButtonReturn()"></a></csobj>
+						      <a href="nexsan/index.html#e60" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','graphics/nexsan12.jpg',1)"><img src="graphics/nexsan11.jpg" name="Image25" width="241" height="150" border="0"></a></td>
+								<td width="20" height="150"></td>
+								<td width="241" height="150"><csobj w="241" h="150" t="Button" ht="version3/gov2.jpg" cl="version3/gov2.jpg"><a href="http://www.scaledatacom.com/nimble/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','nimble/nimble_big2.jpg',1)"><img src="nimble/nimble_big1.jpg" name="Image16" width="241" height="150" border="0"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','bluearc/bluearc2.jpg',1)"></a><a href="http://www.scaledatacom.com/partners.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Gov','','version3/gov2.jpg',1)"></a><a href="http://www.scaledatacom.com/partners.html" onMouseOver="return CSIShow(/*CMP*/'button2',1)" onMouseOut="return CSIShow(/*CMP*/'button2',0)" onClick="CSIShow(/*CMP*/'button2',2);return CSButtonReturn()"></a></csobj></td>
+							</tr>
+						</table>
+			  </div>				</td>
+			</tr>
+			<tr height="18">
+			  <td height="18" colspan="3"></td>
+		  </tr>
+			<tr>
+				<td colspan="3"><img src="graphics/bottom_new.jpg" width="800" height="36" border="0"></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div align="center">
+			  <font size="-2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" class="arial1"><span class="small_txt">Copyright 2016  Scale Datacom, LLC</span></font></div>				</td>
+			</tr>
+	</table>
+		<p></p>
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1362966-1";
+urchinTracker();
+</script>
+<script type="text/javascript" src="ieupdate.js"></script></body><!-- BEGIN ProvideSupport.com Visitor Monitoring Code -->
+<div id="ciDTxD" style="z-index:100;position:absolute"></div><div id="sdDTxD" style="display:none"></div><script type="text/javascript">var seDTxD=document.createElement("script");seDTxD.type="text/javascript";var seDTxDs=(location.protocol.indexOf("https")==0?"https://secure.providesupport.com/image":"http://image.providesupport.com")+"/js/scale123/safe-monitor.js?ps_h=DTxD\u0026ps_t="+new Date().getTime();setTimeout("seDTxD.src=seDTxDs;document.getElementById('sdDTxD').appendChild(seDTxD)",1)</script><noscript><div style="display:inline"><a href="http://www.providesupport.com?monitor=scale123"><img src="http://image.providesupport.com/image/scale123.gif" border="0"></a></div></noscript>
+<!-- END ProvideSupport.com Visitor Monitoring Code -->
+</html>

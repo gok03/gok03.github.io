@@ -1,0 +1,578 @@
+status: 200
+content-location: http://www.drhackney.net/procedures/rhinoplasty
+x-powered-by: PHP/5.1.6, PleskLin
+server: Apache/2.2.3 (Red Hat)
+connection: close
+date: Wed, 21 Sep 2016 09:23:52 GMT
+content-type: text/html; charset=UTF-8
+x-pingback: http://www.drhackney.net/xmlrpc.php
+
+<!DOCTYPE HTML>
+<!--[if IE]><![endif]-->
+<html lang="en">
+<head>
+<title>Rhinoplasty Dallas: Dr. Fred Hackney, D Magazine Best Doctors in Dallas</title>
+ 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link rel="publisher" href="https://plus.google.com/+DrhackneyNet" />
+<!-- <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'> -->
+<link type="text/css" rel="stylesheet" href="http://www.drhackney.net/wp-content/themes/drhackney.net/css/reset.css" /> 
+<link type="text/css" rel="stylesheet" href="http://www.drhackney.net/wp-content/themes/drhackney.net/css/style.css" />
+<link type="text/css" rel="stylesheet" href="http://www.drhackney.net/wp-content/themes/drhackney.net/css/structure.css" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/js/action-pack-min.js" defer="defer"></script>
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/js.js"></script>
+<link rel="shortcut icon" href="http://www.drhackney.net/wp-content/themes/drhackney.net/favicon.ico" />
+
+<!--  SWF  Use only if using flash for embedding -->
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/js/swfobject.js"></script>
+
+<!-- CUFON -->
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/js/cufon-min.js" ></script>
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/fonts/ArialRegular.font.js" ></script>
+<script type="text/javascript">
+	Cufon.replace('#ddm>li>a', {hover: true});
+	Cufon.replace('.cufonize_arial');
+</script>
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/fonts/Avenir_45_Regular.font.js" ></script>
+<script type="text/javascript">
+	Cufon.replace('h1, h2, h3, h4, h5, h6');
+	Cufon.replace('#address .tel, #address .adr');
+	Cufon.replace('.cufonize_avenir');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1108188235920743');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1108188235920743&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<!-- Cycle all -->
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/jquerycycleall/jquery.cycle.all.js" defer="defer"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+ if ($('#top_patient_stories_slides').length)					   
+    $('#top_patient_stories_slides').cycle({
+        fx: 'fade', 
+				pause:  1, /* pause on hover 1=yes, 0=no */
+				speed: 1500, /* how fast each slides transitions to the next in miliseconds */
+				timeout: 4000, /* how long each slide takes in miliseconds */
+				pager: '#top_patient_stories_nav' /* The ID of the pager/navigation/bullets */
+     });
+ if ($('#awards_media').length)					   
+    $('#awards_media').cycle({
+        fx: 'fade', 
+				pause:  1, /* pause on hover 1=yes, 0=no */
+				speed: 1500, /* how fast each slides transitions to the next in miliseconds */
+				timeout: 4000 /* how long each slide takes in miliseconds */
+				//pager: '' /* The ID of the pager/navigation/bullets */
+     });	 
+ if ($('#articles').length)					   
+    $('#articles').cycle({
+        fx: 'fade',
+				prev: '#articles_prev',
+				next: '#articles_next', 
+				pause:  1, /* pause on hover 1=yes, 0=no */
+				speed: 1500, /* how fast each slides transitions to the next in miliseconds */
+				timeout: 4000 /* how long each slide takes in miliseconds */
+				//pager: '#articles_nav' /* The ID of the pager/navigation/bullets */
+     });	
+});	 
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$.getJSON("http://api.twitter.com/1/statuses/user_timeline/HackneyPlastic.json?count=1&include_rts=1&callback=?", function(data) {
+	//$("#twitter").html(data[0].text);
+	// result returned
+        var tweet = data[0].text;
+      
+        // process links and reply
+        tweet = tweet.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, function(url) {
+            return '<a href="'+url+'" target="_blank">'+url+'</a>';
+        }).replace(/B@([_a-z0-9]+)/ig, function(reply) {
+            return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
+        });
+      
+        // output the result
+        $("#twitter").html(tweet);		 
+			 
+			 
+	});
+});
+</script>
+
+
+<link type="text/css" rel="stylesheet" href="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/fancybox/jquery.fancybox-1.3.4.css" />
+<script type="text/javascript"  src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+<script type='text/javascript'>
+$(document).ready(function() {
+
+if ($("a.iframe").length){
+	$("a.iframe").fancybox({
+	'type' : 'iframe',
+	'scrolling' : 'no'	
+	});
+}
+$("a.lightboxed").fancybox({
+            'transitionIn'	: 'elastic',
+			'transitionOut'	: 'elastic',
+			'autoScale'     : false,
+			'scrolling' : 'auto'
+});
+
+});
+
+</script>
+
+<script type="text/javascript" src="http://www.drhackney.net/wp-content/themes/drhackney.net/assets/scroll/scrolltopcontrol.js"></script>
+<script type="text/javascript" src="http://www.drhackney.net/wp-content/themes/drhackney.net/js/hoverizr.js"></script>
+
+
+
+
+	<meta name="viewport" content="width=1084px" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="alternate" type="application/rss+xml" title="Hackney Plastic Surgery Center RSS Feed" href="http://www.drhackney.net/feed" />
+<link rel="pingback" href="http://www.drhackney.net/xmlrpc.php" />
+<!-- <meta name="template_directory" content="http://www.drhackney.net/wp-content/themes/drhackney.net" /> -->
+
+<!-- FROM WP -->
+<link rel="alternate" type="application/rss+xml" title="Hackney Plastic Surgery Center &raquo; Dallas Rhinoplasty (Nasal Surgery) Performed by Dr. Fred Hackney Comments Feed" href="http://www.drhackney.net/procedures/rhinoplasty/feed" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.drhackney.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.drhackney.net/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Hackney Plastic Surgery Center' href='http://www.drhackney.net' />
+<link rel='up' title='Procedures' href='http://www.drhackney.net/procedures' />
+<link rel='prev' title='Liposuction by Dallas Cosmetic Surgeon Dr. Fred Hackney' href='http://www.drhackney.net/procedures/liposuction' />
+<link rel='next' title='Rhinoplasty FAQs' href='http://www.drhackney.net/procedures/rhinoplasty-faqs' />
+<meta name="generator" content="WordPress 3.1.3" />
+
+<!-- All in One SEO Pack 1.6.14.3 by Michael Torbert of Semper Fi Web Design[65,138] -->
+<meta name="description" content="Rated one of the best plastic surgeons in Dallas, Dr. Fred Hackney approaches rhinoplasty using an individualized developed from years of study and practice." />
+<meta name="keywords" content="dallas nose job, rhinoplasty, rinoplasty, rhinopasty, fred hackney md, dr fl hackney, hackney plastic surgery clinic" />
+<link rel="canonical" href="http://www.drhackney.net/procedures/rhinoplasty" />
+<!-- /all in one seo pack -->
+<!-- END FROM WP --><!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript">
+$(document).ready(function(){
+    $(document).bind("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+<script async src="//63283.tctm.co/t.js"></script> 
+</head>
+<body class="page-122 page-inside ">
+<div id="preloader"></div>
+<div id="clip"><!-- Trim page contents to min-width -->
+
+<header class="holder" ><div class="wrapper"><div class="container"><div class="content"> 
+<div id="zdoc"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/realself-top100-doc.png" /></div>
+    <div id="banner">
+	    <a href="http://www.drhackney.net"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/banner.jpg" alt="Hackney Plastic Surgery Center � Dallas, TX"></a>
+    </div>
+    
+    <div id="address"><address>
+        <p class="tel">214.346.9222</p>
+        <a href="http://www.drhackney.net/contact-us" class="adr">8315 Walnut Hill Lane, Suite 225 | Dallas, TX 75231</a>
+
+        <div class='floatright' style='float:right; clear:both; width:100%'>
+          <a href="https://plus.google.com/+DrhackneyNet"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/google.jpg" alt=" " class=""  /></a>
+          <a href="https://twitter.com/HackneyPlastic"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/twitter.jpg" alt=" " class=""  /></a>        
+          <a href="https://www.facebook.com/HackneyPlasticSurgeryCenter"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/facebook.jpg" alt=" " class=""  /></a>        
+          <a href="http://www.drhackney.net/contact-us"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/request_app.jpg" alt=" " class=""  /></a>        
+        </div>
+    </address></div>
+    
+    <nav class="firstlast">   
+        <ul id="ddm" >
+			<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://www.drhackney.net/">Home</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://www.drhackney.net/dr-hackney">Meet Dr. Hackney</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://www.drhackney.net/meet-our-staff">Meet Our Staff</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-31"><a href="http://www.drhackney.net/procedures">Procedures</a>
+<ul class="sub-menu">
+	<li id="menu-item-283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-283"><a href="http://www.drhackney.net/procedures/breast-augmentation">Breast Augmentation</a></li>
+	<li id="menu-item-285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285"><a href="http://www.drhackney.net/procedures/breast-lift">Breast Lift</a></li>
+	<li id="menu-item-286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-286"><a href="http://www.drhackney.net/procedures/breast-reduction">Breast Reduction</a></li>
+	<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a href="http://www.drhackney.net/procedures/male-breast-reduction">Male Breast Reduction</a></li>
+	<li id="menu-item-305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-305"><a href="http://www.drhackney.net/procedures/tummy-tuck">Tummy Tuck</a></li>
+	<li id="menu-item-296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-296"><a href="http://www.drhackney.net/procedures/liposuction">Liposuction</a></li>
+	<li id="menu-item-291" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-122 current_page_item menu-item-291"><a href="http://www.drhackney.net/procedures/rhinoplasty">Rhinoplasty</a></li>
+	<li id="menu-item-289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289"><a href="http://www.drhackney.net/procedures/facelift">Face Lift</a></li>
+	<li id="menu-item-941" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-941"><a title="#eyelid_lift" href="http://www.drhackney.net/procedures/facelift">Eyelid Lift</a></li>
+	<li id="menu-item-940" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-940"><a title="#brow_lift" href="http://www.drhackney.net/procedures/facelift">Brow Lift</a></li>
+	<li id="menu-item-942" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-942"><a title="#facial_fat_grafting" href="http://www.drhackney.net/procedures/facelift">Facial Fat Grafting</a></li>
+	<li id="menu-item-869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-869"><a href="http://www.drhackney.net/procedures/ears-chin-surgery">Ears and Chin</a></li>
+	<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="http://www.drhackney.net/procedures/body-contouring">Body Contouring</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1477"><a title="#Brachioplasty" href="http://www.drhackney.net/procedures/body-contouring">Brachioplasty</a></li>
+		<li id="menu-item-1476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1476"><a title="#LowerBodyLift" href="http://www.drhackney.net/procedures/body-contouring">Lower Body Lift</a></li>
+		<li id="menu-item-1475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1475"><a title="#InnerThigh" href="http://www.drhackney.net/procedures/body-contouring">Inner Thigh Lift</a></li>
+	</ul>
+</li>
+	<li id="menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="http://www.drhackney.net/procedures/youth-and-beauty-made-simple">Youth and Beauty Made Simple</a>
+	<ul class="sub-menu">
+		<li id="menu-item-278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-278"><a href="http://www.drhackney.net/procedures/botox-cosmetic">BOTOX® Cosmetic</a></li>
+		<li id="menu-item-300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a href="http://www.drhackney.net/procedures/juvederm">Juvederm®</a></li>
+		<li id="menu-item-299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"><a href="http://www.drhackney.net/procedures/radiesse">Radiesse®</a></li>
+		<li id="menu-item-295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-295"><a href="http://www.drhackney.net/procedures/lip-augmentation">Lip Augmentation</a></li>
+		<li id="menu-item-303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303"><a href="http://www.drhackney.net/procedures/tca-peel">TCA Peel</a></li>
+		<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292"><a href="http://www.drhackney.net/procedures/dermabrasion">Dermabrasion</a></li>
+		<li id="menu-item-939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-939"><a title="#facial_fat_grafting" href="http://www.drhackney.net/procedures/facelift">Fat Injections</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166"><a href="http://www.drhackney.net/gallery/">Photo Gallery</a></li>
+<li id="menu-item-480" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-480"><a href="http://www.drhackney.net/real-patients-stories">Real Patients Real Stories</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="http://www.drhackney.net/financing">Financing</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="http://www.drhackney.net/contact-us">Your Consultation</a>
+<ul class="sub-menu">
+	<li id="menu-item-344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-344"><a href="http://www.drhackney.net/what-to-expect">What To Expect</a></li>
+	<li id="menu-item-343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-343"><a href="http://www.drhackney.net/faqs">Commonly Asked Questions</a></li>
+	<li id="menu-item-345" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-345"><a href="http://www.drhackney.net/contact-us">Schedule Your Cosmetic Consultation</a></li>
+	<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="http://www.drhackney.net/maps-directions">Maps &#038; Directions</a></li>
+	<li id="menu-item-638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-638"><a title="#visitors" href="http://www.drhackney.net/maps-directions">For Our Out-of-Town Patients</a></li>
+</ul>
+</li>
+        </ul>
+    </nav>
+    
+</div></div></div></header>
+
+<!-- Rotation of Patient Real Stories section on home page -->
+<div id="featured_image" class="holder" ><div class="wrapper"><div class="container"><div class="content">
+	     
+   
+        <div class='featured_img'><img width="992" height="227" src="http://www.drhackney.net/wp-content/uploads/2012/11/featured_image9.jpg" class="attachment-992x227 wp-post-image" alt="featured_image9" /></div>
+    <h1 class="heading" >Dallas Rhinoplasty (Nasal Surgery) Performed by Dr. Fred Hackney</h1>
+      </div></div></div></div> 
+
+<!-- Main Content -->
+<div id="main" class="holder"><div class="wrapper"><div class="container"><div class="content">
+
+<article><section>
+
+				<div class="post" id="post-122">
+					<p><div class='alignleft' id='youtube'></div><script type="text/javascript">
+	var so = new SWFObject("http://youtube.com/v/d9tnEVj6qKg", "youtube", "320", "240", "10", "#000000");
+	//The below line gives the flash transparency
+	so.addParam("wmode", "transparent");
+	so.write("youtube");
+</script>Primary rhinoplasty and secondary rhinoplasty, referred to as a “cosmetic nasal surgery”, creates a natural looking nose that enhances the contours of the face. <a onclick="javascript:pageTracker._trackPageview('/outgoing/plus.google.com/112674026758197097436?rel=author');" onclick="javascript:pageTracker._trackPageview('/outgoing/plus.google.com/112674026758197097436?rel=author');"  href="https://plus.google.com/112674026758197097436?rel=author" target="_blank">Dr. Hackney's</a> individualized surgical approach to rhinoplasty developed from years of studying and performing the open rhinoplasty technique. Today, he continues his quest to improve rhinoplasty results by lecturing nationally and internationally to his peers about rhinoplasty. For more information about primary rhinoplasty, secondary rhinoplasty and revision rhinoplasty, read below or call our office at 214-346-9222 for a consultation.</p>
+<p><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.drhackney.net/contact-us');" title="Contact Us"  href="http://www.drhackney.net/contact-us"><strong>Click here</strong></a> to schedule a consultation.</p>
+<h2>Primary Rhinoplasty (Cosmetic Nasal Surgery) performed by Dallas Plastic Surgeon Dr. Fred Hackney</h2>
+<p>Cosmetic nasal surgery is cosmetic surgery to improve the appearance of the nose. A natural looking nose is one, which is in balance with your facial features. Both men and women can benefit from nasal surgery but it is recommended that young people wait until their facial growth is complete-about age 13 or 14 for girls and 14 or 15 for boys.</p>
+<p>You may be a good candidate for cosmetic nasal surgery if your nose is too large for your face, you have a bump on the bridge of your nose, your tip droops or your nose is crooked. Patients who have breathing difficulties may be helped by nasal surgery.</p>
+<p>Dr. Hackney performs the <em>open rhinoplasty</em> technique. Incisions are made inside the nose and across the skin between the nostrils. This allows Dr. Hackney to see exactly what is wrong with the nose so he can best improve the appearance of the nose. This technique (secondary rhinoplasty) is especially helpful in correcting the appearance of a nose that has had multiple operations.</p>
+<p>When you see Dr. Hackney for a consultation, he will examine the inside of your nose, the quality of your skin, the shape of your nose and the relationship of your nose to your other facial features. Several photographs from different angles will also be made of your nose. During the consultation Dr. Hackney will draw on the photographs what your nose could look like with surgery. Discussing the drawings and looking at the photographs with Dr. Hackney will help you understand what can be realistically accomplished with the cosmetic nasal surgery and help Dr. Hackney understand your goals and expectations. This process will enable Dr. Hackney and you to plan your nasal surgery so you get the best results possible.</p>
+<p>Primary cosmetic nasal surgery surgery is usually a day surgery procedure. You must have someone stay with you for at least the night of surgery. You will have a small splint on the outside of your nose to provide stabilization for one week and you will have stitches on the bridge of skin in between your nostrils. The splint on the nose and the stitches will be removed one week after your surgery. Your nose will be swollen when the cast comes off and will gradually assume its new shape over the next several months.</p>
+<p><a href="contact-us">Click here</a> to schedule a consultation.</p>
+<h2 id="secondary_rhinoplasty">Secondary Rhinoplasty<strong> (Cosmetic Nasal Surgery)</strong></h2>
+<p>To view before and after images of secondary rhinoplasty (nasal surgery) patients, <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.drhackney.net/gallery/cases/rhinoplasty#main');"  href="http://www.drhackney.net/gallery/cases/rhinoplasty#main"><strong>click here</strong></a>.</p>
+<p>Secondary cosmetic nasal surgery is performed to correct problems which persist or develop after a previous rhinoplasty. Sometimes the problems are minor and easily corrected, but if they are major, the secondary nasal surgery is always more difficult and requires more expertise than the first rhinoplasty surgery. This is due to the fact that the normal anatomy is no longer intact and the tissue planes which were present before the first surgery are now filled with scar tissue making it difficult to separate and reposition the remaining cartilages and bones. However, using the proper techniques, significant improvement and sometimes dramatic results can be achieved.</p>
+<p>Since most patients for secondary nasal surgery have an unnatural looking nose that does not function properly and is not in balance and harmony with the other facial features, it is necessary to reshape the supporting framework of cartilage and bone and allow the skin to re-drape over the reconstructed framework, giving the nose its new shape. The patient's wishes in regard to the type of nose desired are always considered but there are limiting factors, such as the skin texture and thickness, the amount of scar tissue from the previous surgery and the facial proportions and contours. All this will be discussed with you during your consultation.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>
+<h2>
+<strong>The following are questions most commonly asked by patients.</strong></h2>
+<h2><strong>Can you make my nose perfect? </strong></h2>
+<p>No. There are several factors that are not under the complete control of the surgeon. Most of these occur during the healing process and affect how the nose heals. After surgery, many patients become "nose conscious" and continually look in the mirror to see if they can find anything wrong. If they look long enough they will see something that worries them. If you are a perfectionist and a significant improvement would not be good enough for you, Dr. Hackney recommends you not have nose job surgery. In almost every case, there will be imperfections if you look close enough. These are usually minor and would not be noticed if you had not had surgery. In fact, an imperfection may have been there before surgery, but was not noticed.</p>
+<h2><strong>Is it possible to show me what my new nose will look like? </strong></h2>
+<p>Not exactly. However, during your consultation photographs will be taken and Dr. Hackney will sketch on the photographs to demonstrate what he believes to be the best shaped nose for your face and discuss with you the surgical goals. These are for discussion only and do not imply or guaranty a result. However, it does give you an idea of what can and can not be achieved.</p>
+<h2>Will insurance pay for secondary nose job surgery?</h2>
+<p>Some insurance companies will pay only for the portion of surgery which is performed to improve breathing (functional surgery). They usually do not pay on that portion which is performed to improve appearance (cosmetic surgery). Dr. Hackney does not perform surgery to improve improve breathing.  This is usually done by an ENT surgeon. If you wish to a have cosmetic rhinoplasty and you need to have surgery to improve your breathing, our office will refer you to an ENT surgeon. Dr. Hackeny and the ENT surgeon will work together so you will have only surgery.</p>
+<h2>Is it necessary to pack the nose?</h2>
+<p>Usually not. Dr. Hackney tries to avoid packing and uses small soft plastic splints which have a built-in airway if internal support is needed. If packing should be required, Dr. Hackney usually uses the type that dissolves and does not have to be removed.</p>
+<h2>Will there be any incision on the outside of my nose?</h2>
+<p>In major secondary rhinoplasty surgery, it is almost always necessary to place a small incision on the column of the skin (on the underneath surface of the nose) between the nostrils. This incision usually heals very well and is not visible at conversational distances. If the base of the nose is too wide, it is narrowed by making incisions in the creases on both sides where the nostrils and cheeks join. The resulting scars are hidden in the creases.</p>
+<h2><strong>Where is the surgery performed?</strong></h2>
+<p>Nose job surgery is an outpatient procedure and is performed as an outpatient surgery procedure. If extensive grafting with rib cartilage is required, you may have to be admitted for a 1-2 night stay.</p>
+<h2>What type of anesthesia is used?</h2>
+<p>Nose job surgery is performed under a light general anesthetic. This allows the anesthetist to have complete control of the airway and keep any drainage from getting into your lungs. Since it is a light general anesthetic, you usually awaken easily with no side effects.</p>
+<h2>How much swelling will there be?</h2>
+<p>Although medicines are given prior to surgery to keep swelling to a minimum, it varies with different patients. Some swelling and bruising of the nose and around the eyes is expected. This reaches its peak 48-72 hours following surgery and then starts subsiding. You will be given iced gel eye masks to place on the eyes to help during this time.</p>
+<p>Swelling will still be present when the cast is removed at one week. Normally, after 10 days to 2 weeks, most of the visible swelling will have disappeared, but there will be a feeling of numbness and stiffness of the tip of the nose which means some swelling persists. A question frequently asked is "how swollen is it"? It is impossible to give exact percentages, but Dr. Hackney will let you know if it is more than expected.</p>
+<p>It will take the remaining swelling several months to subside completely but it will not be noticeable to anyone but you. In patients with thick, oily skin, swelling is slower to resolve. It is usually one year after nose job surgery before the nose reaches its final appearance and the final contours are visible.</p>
+<h2><strong>How soon after surgery can glasses be worn? </strong></h2>
+<p>Glasses can be worn while the cast is on. After it is removed, they can still be worn but should not rest on the nose for seven more weeks. We will show you how to do this. Contacts can be worn as soon as the swelling goes down around the eyes so they can be easily inserted and removed. This is usually within a few days of the surgery.</p>
+<h2>What are the limitations after nose job surgery?</h2>
+<p>Patients usually go back to school or to sedentary work one week after surgery. You should avoid strenuous activity (any activity which increases your hear rate) for 2 weeks. After 2 weeks you may gradually increase your activity so that you are back to your regular routine at 3 weeks. Avoid sun exposure (use sun screen), bumping your nose, and do not let your glasses rest on your nose for 8 weeks.</p>
+<h2><strong>What kind of guarantee can you give me? </strong></h2>
+<p>The only guarantee Dr. Hackney can offer is he will do his best to give you the best result possible. He will not leave the operating room until he feels your nose is in the best shape it can be.</p>
+<h2><strong>How does the surgery differ in a primary and secondary nose job surgery? </strong></h2>
+<p>In most primary nose job surgeries, bone and cartilage are removed to give the nose its new shape. In patients requiring secondary nose job surgery, usually too much bone or cartilage was removed during the primary nose job surgery and these tissues have to be replaced to rebuild the nasal framework.</p>
+<h2>Where does the tissue come from that is used to rebuild the nasal framework?</h2>
+<p>Dr. Hackney prefers the patient's own tissue. The first choice is nasal septal cartilage which is present in the partition inside your nose that separates the left and right nasal cavities. However, sometimes this cartilage has already been removed during the primary nose job surgery and is not available. If it has been removed, ear cartilage or rib cartilage have to be used. If the rebuilding involves mainly the nasal tip, ear cartilage is usually sufficient. If the bridge has to be rebuilt, rib cartilage is required.</p>
+<h2>Is there anything that can be used to rebuild the nasal framework other than the patient's own tissues?</h2>
+<p>Yes. Cartilage from a tissue bank can be used. This is cartilage taken at autopsy and treated and tested so it is safe to place in another individual. While it is safe, your own tissues are preferred as there is less chance for infection and absorption. Implants (man-made materials) are used occasionally in unusual cases, but they also have greater chance of becoming infected or rejected.</p>
+<h2>Is secondary nose job surgery more difficult to perform than primary nose job surgery?</h2>
+<p>If the deformity to be corrected is minor, there may be a simple solution. However, if it is major, the secondary nose job surgery is definitely more difficult to perform. In fact, many plastic surgeons will not attempt a secondary nose job surgery because of the disappointing results obtained if one does not perform this type of surgery often.</p>
+<h2><strong>How long do secondary nose job surgery patients have to stay in Dallas?</strong></h2>
+<p>You should remain in Dallas for at least two days after the surgery and come back at 6-7 days to have your cast removed.  If you have a plastic surgeon in your hometown who is willing to take the cast off and take care of you after surgery that is acceptable.  Most patients who travel a long distance find it easier to stay in Dallas 6-7 days and go home after the cast is removed.  After cast removal, Dr. Hackney will see you as often as needed to ensure proper healing. </td>
+</tr>
+</tbody>
+</table>
+<p><a href="contact-us">Click here</a> to schedule a consultation.</p>
+
+			            
+        	  		<hr />
+            <h2>Next Steps</h2>
+            <ul>
+            	<li><a href="http://www.drhackney.net/contact-us">Schedule your free consultation with Dr. Hackney</a></li>
+                <li><a href="http://www.drhackney.net/real-patients-stories">Read testimonials from Dr. Hackney's real patients</a></li>
+                <li><a href="http://www.drhackney.net/gallery">Visit our gallery to view before and after photos</a></li>
+            </ul>
+                
+			
+		            
+		</div>
+			
+
+	<p class="backtotop"><a href="#" >back to top</a></p>
+</section></article>
+
+<aside class='default'><h2>Video Testimonials</h2><div id="sidebar_video"></div><script type="text/javascript">
+	var so = new SWFObject("http://youtube.com/v/zyzUrFTffjk", "sidebar_video", "276", "240", "10", "#000000");
+	//The below line gives the flash transparency
+	so.addParam("wmode", "transparent");
+	so.write("sidebar_video");
+</script><br/><h2>Before and After</h2><a href="http://www.drhackney.net/gallery/cases/rhinoplasty"><img src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/sidebar-bna/122.jpg" alt="" /></a><link type="text/css" rel="stylesheet" href="https://portal.realpatientratings.com/assets/css/widget-styles.css" />
+&#8482;
+<div id='realpatientratings'>
+<div class="rpr-widget rpr-widget-medium">
+<div class="rpr-widget-header">
+	<img width="168" height="39" style="margin: 5px 0 0 16px;" src="https://portal.realpatientratings.com/assets/images/real-patient-ratings-small.png">
+</div>
+	<div class="real-patient-ratings-feed" data-mdid="10084" data-procedure-id="23" data-feed-type="filtered" data-limit="5" ></div>
+</div>
+</div>
+<script type="text/javascript" src="https://portal.realpatientratings.com/feed"></script>
+
+
+
+
+<div id='sidebar_latest_articles'>
+  <h2 class='heading'>Blog Posts</h2>
+  <a href='#' id='articles_prev'></a>      
+  <a href='#' id='articles_next'></a>
+  <div id='articles'>
+  
+ 
+<div class='latest_articles'><div class='img'></div><a href='http://www.drhackney.net/specials/mommy-makeover-march-madness'><h3 class='title'><em>September Special</em></h3></a><span class='date'>March 1, 2013</span><div class='excerpt'><span style="font-size: 18px;">$500 Off  
+Breast Augmentation</span><br/> Make 'em Green with Envy
+
+<span style="font-size: 12px;">Call to schedule your consultation 214-346-9222</span>
+...</div></div><div class='latest_articles'><div class='img'></div><a href='http://www.drhackney.net/breast-augmentation/mommy-makeover-101'><h3 class='title'>Mommy Makeover 101</h3></a><span class='date'>July 24, 2016</span><div class='excerpt'>Having a child is one of life’s most precious experiences.  Though parenting brings its own set of challenges, the rewards that accompany being a mother are hard to top!  For many women, ...</div></div><div class='latest_articles'><div class='img'></div><a href='http://www.drhackney.net/liposuction/liposuction-visceral-fat-vs-subcutaneous-fat'><h3 class='title'>Liposuction: Visceral Fat vs. Subcutaneous Fat</h3></a><span class='date'>June 23, 2016</span><div class='excerpt'>
+As many people know, liposuction can be a great option for men and women who have isolated, stubborn areas of fat.  These excess pockets of fat are sometimes an inherited trait that ...</div></div><div class='latest_articles'><div class='img'></div><a href='http://www.drhackney.net/brow-lift/yes-fat-can-be-your-friend-facial-fat-grafting-in-dallas'><h3 class='title'>Yes, Fat Can Be Your Friend: Facial Fat Grafting In Dallas</h3></a><span class='date'>May 23, 2016</span><div class='excerpt'>For many years, facial rejuvenation to restore a more youthful appearance mainly focused on one thing: sagging skin. Plastic surgeons, in an effort to correct the issue, would often recommend a face ...</div></div><div class='latest_articles'><div class='img'></div><a href='http://www.drhackney.net/tummy-tuck/dr-hackney-featured-in-dallas-modern-luxury'><h3 class='title'>Dr. Hackney Featured In Dallas Modern Luxury</h3></a><span class='date'>May 18, 2016</span><div class='excerpt'>We were thrilled to see that our very own Dr. Hackney was recently featured in the latest issue of DALLAS Modern Luxury magazine!  The article, titled Beauty State of Grace, showcased what ...</div></div><div class='latest_articles'><div class='img'></div><a href='http://www.drhackney.net/fat-transfer/dallas-lip-injections-your-411'><h3 class='title'>Dallas Lip Injections: Your 411</h3></a><span class='date'>May 1, 2016</span><div class='excerpt'>Lip augmentation with lip injections have been quite popular for some years now, but according to national statistics, the demand for a fuller pout increased by double digits in 2015. When you’re ...</div></div><div class='latest_articles'><div class='img'></div><a href='http://www.drhackney.net/arm-lift/what-does-the-term-%e2%80%98body-contouring%e2%80%99-mean'><h3 class='title'>What Does The Term ‘Body Contouring’ Mean?</h3></a><span class='date'>April 8, 2016</span><div class='excerpt'>In the world of aesthetics, there are various terms thrown around, and it can be confusing to sift through them and understand their meanings.  Body contouring is one such term that seems ...</div></div>  </div>
+</div>
+
+
+
+<div id='qc'><h2>Request a Consultation</h2>	
+<form class="cmxform" action="http://tungsten.mednet-tech.com/fx/cfx.php" method="post" name="qform" id="qform" onsubmit="document.qform.mstrPage.value = document.location.href;">
+    <input name="spc" class="spc" value="" />
+    <input name="mstrPage" type="hidden" />
+   <!-- <input type="hidden" name="rx" value="fhackney2016" /> 
+    <input type="hidden" name="i_at" value="gmail.com" />     -->
+    <input type="hidden" name="redirect" value="http://www.drhackney.net/thankyou" /> 
+    
+    <div class="col one">
+        <input name="require" value="FName,EMail_Address" type="hidden" />
+        <div class='innercol'>
+        <input name="FName" class="inputSelectquick" type="text" value="First Name: *" onfocus="clearText(this)" onblur="clearText(this)" id="Name"/>
+        <input name="LName" class="inputSelectquick" type="text" value="Last Name: *" onfocus="clearText(this)" onblur="clearText(this)" id="LName"/>        
+        </div>
+        <div class='innercol two'>        
+        <input name="EMail_Address" class="inputSelectquick" type="text" value="E-Mail: *" onfocus="clearText(this)" onblur="clearText(this)" id="email" />
+        <input name="phone" class="inputSelectquick" type="text" value="Phone" onfocus="clearText(this)" onblur="clearText(this)" id="phone"/>
+        </div>
+    </div>
+    
+    <div class="col two">    
+        <textarea name="comments" id="comment" cols="17" rows="4" class="inputCommentquick" onfocus="clearText(this)" onblur="clearText(this)">Questions / Comments: Please include non-medical questions and correspondence only.
+        </textarea>
+    </div>
+    
+    <div style="clear:both;"></div>
+        
+	<input name='Submit' class='inputButton inputButtonquick' value='Submit' type='submit' />
+        
+	
+</form></div></aside></div></div></div></div>
+<!-- End of main content -->
+<!-- Bottom section -->
+	
+<div id="bottom" class="holder"><div class="wrapper"><div class="container"><div class="content firstlast">
+  <section>
+  <h3>Quick Links</h3>
+  <ul>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://www.drhackney.net/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://www.drhackney.net/dr-hackney">Meet Dr. Hackney</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://www.drhackney.net/meet-our-staff">Meet Our Staff</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-31"><a href="http://www.drhackney.net/procedures">Procedures</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166"><a href="http://www.drhackney.net/gallery/">Photo Gallery</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-480"><a href="http://www.drhackney.net/real-patients-stories">Real Patients Real Stories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="http://www.drhackney.net/financing">Financing</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="http://www.drhackney.net/contact-us">Your Consultation</a></li>
+  </ul>
+  </section>
+  
+  <section>
+  <h3>Our Locations</h3>
+  <ul class="">
+  <li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="http://www.drhackney.net/maps-directions">8315 Walnut Hill Suite 225</a></li>
+<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="http://www.drhackney.net/maps-directions">Dallas, TX 75231</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="http://www.drhackney.net/maps-directions"><b> &raquo; Map </b></a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="http://www.drhackney.net/maps-directions">&nbsp;</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="http://www.drhackney.net/maps-directions"><b>Tel.</b> 214.346.9222</a></li>
+<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="http://www.drhackney.net/maps-directions"><b>Fax.</b> 214.346.9555</a></li>
+  </ul>
+  </section>
+  
+  <section>
+  <h3>Face</h3>
+  <ul>
+  <li id="menu-item-441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-441"><a href="http://www.drhackney.net/procedures/facelift">Facelift</a></li>
+<li id="menu-item-1005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1005"><a title="#brow_lift" href="http://www.drhackney.net/procedures/facelift">Brow Lift</a></li>
+<li id="menu-item-1006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1006"><a title="#eyelid_lift" href="http://www.drhackney.net/procedures/facelift">Eye Lid Lift</a></li>
+<li id="menu-item-442" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-122 current_page_item menu-item-442"><a href="http://www.drhackney.net/procedures/rhinoplasty">Rhinoplasty (Nose Job)</a></li>
+<li id="menu-item-916" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-122 current_page_item menu-item-916"><a title="#secondary_rhinoplasty" href="http://www.drhackney.net/procedures/rhinoplasty">Secondary Rhinoplasty</a></li>
+<li id="menu-item-1004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1004"><a href="http://www.drhackney.net/procedures/facelift">Facial Fat Grafting</a></li>
+<li id="menu-item-920" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-920"><a href="http://www.drhackney.net/procedures/ears-chin-surgery">Ear Surgery (Otoplasty)</a></li>
+<li id="menu-item-921" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-921"><a title="#chin" href="http://www.drhackney.net/procedures/ears-chin-surgery">Chin Enlargement</a></li>
+  </ul>
+  </section>
+  
+  <section>
+  <h3>Body</h3>
+  <ul class="">
+  <li id="menu-item-931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-931"><a href="http://www.drhackney.net/procedures/breast-augmentation">Breast Augumentation</a></li>
+<li id="menu-item-934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-934"><a href="http://www.drhackney.net/procedures/breast-lift">Breast Lift</a></li>
+<li id="menu-item-935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="http://www.drhackney.net/procedures/breast-reduction">Breast Reduction</a></li>
+<li id="menu-item-943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943"><a href="http://www.drhackney.net/procedures/male-breast-reduction">Male Breast Reduction</a></li>
+<li id="menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455"><a href="http://www.drhackney.net/procedures/tummy-tuck">Tummy Tuck</a></li>
+<li id="menu-item-927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-927"><a title="#mini_tummy_tuck" href="http://www.drhackney.net/procedures/tummy-tuck">Mini Tummy Tuck</a></li>
+<li id="menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"><a href="http://www.drhackney.net/procedures/liposuction">Liposuction</a></li>
+<li id="menu-item-1500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1500"><a title="#ThighLift" href="http://www.drhackney.net/procedures/body-contouring">Thigh Lift</a></li>
+<li id="menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501"><a title="#BodyContouring" href="http://www.drhackney.net/procedures/body-contouring">Body Contouring</a></li>
+<li id="menu-item-1502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1502"><a title="#Brachioplasty" href="http://www.drhackney.net/procedures/body-contouring">Brachioplasty (Upper Arm Lift)</a></li>
+  </ul>    
+  </section>
+  
+  <section>
+  <h3>Skin</h3>
+  <ul class="">
+  <li id="menu-item-1002" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002"><a href="http://www.drhackney.net/procedures/youth-and-beauty-made-simple">Youth and Beauty Made Simple</a></li>
+<li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"><a href="http://www.drhackney.net/procedures/botox-cosmetic">BOTOX® Cosmetic</a></li>
+<li id="menu-item-460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460"><a href="http://www.drhackney.net/procedures/juvederm">Restylane®</a></li>
+<li id="menu-item-461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-461"><a href="http://www.drhackney.net/procedures/radiesse">Radiesse®</a></li>
+<li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="http://www.drhackney.net/procedures/tca-peel">TCA Peels</a></li>
+<li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-457"><a href="http://www.drhackney.net/procedures/dermabrasion">Dermabrasion</a></li>
+<li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="http://www.drhackney.net/procedures/lip-augmentation">Lip Augmentation</a></li>
+<li id="menu-item-1520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1520"><a title="#facial_fat_grafting" href="http://www.drhackney.net/procedures/facelift">Fat Injections</a></li>
+  </ul>    
+  </section>
+</div></div></div></div>  
+
+
+<!-- End of bottom section -->
+<!-- Footer Section -->
+<!-- Footer Section -->
+<div id="footer" class="holder"><div class="wrapper"><div class="container"><div class="content">
+<footer> 
+ 
+<section class="one">
+<ul id="footernav" class="menu-horizontal firstlast">
+	</ul>  
+
+<p id="footerlegal">
+&copy; 2016 Hackney Plastic Surgery Center and MedNet Technologies, Inc.  All Rights Reserved.<br /><a href="http://www.MedNet-Tech.com" target="_blank">MedNet-Sites&trade;   - Powered by   MedNet Technologies, Inc.</a>
+</p>
+</section>    
+
+<section class="two">    
+<a href="http://mercury.mednet-tech.com/mednet_launch.htm" >
+<img alt="MedNet Technologies" src="http://www.drhackney.net/wp-content/themes/drhackney.net/images/mn-plates/mednetplate_light_transp.png"  class="alignright noborder" />
+</a>
+<p id="footerlinks">
+	<a href="http://www.drhackney.net/sitemap">Sitemap</a> <a>|</a>
+	<a href="http://www.drhackney.net/terms-of-use">Terms of Use</a>
+</p>
+</section>
+
+<div id="footerseo"> 
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4134415-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+ </div>
+    
+</footer>    
+</div></div></div></div> 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? 
+"https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + 
+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+  <script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4134415-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<!-- Google Code for Web Site Visitors Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1068705136;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "YbSzCNiQiwIQ8MrM_QM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1068705136/?label=YbSzCNiQiwIQ8MrM_QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- End of Footter section -->   
+   
+</div> <!-- End Trimming DIV -->
+<!-- End Footer Section -->
+  
+
+<!--[if IE 6]> <div id="ie6alert"><p>You are currently viewing this website in Internet Explorer 6. To enhance your browsing experience, please upgrade to a more current browser such as <a href="http://www.mozilla.com/firefox" target="_blank" style="color:#E45B0A">Firefox</a>, <a href="http://www.apple.com/safari/" target="_blank" style="color:#3E9FDA">Safari</a> or update to <a href="http://www.microsoft.com/windows/Internet-explorer" target="_blank" style="color:#B4D2EF">Internet Explorer 9</a>.  Click on the browser of your choice to upgrade now.</p>  </div> <![endif]-->
+<!--[if IE 7]>  <div id="ie6alert"> <p>
+You are currently viewing this website in Internet Explorer 7. To enhance your browsing experience, please upgrade to a more current browser such as <a href="http://www.mozilla.com/firefox" target="_blank" style="color:#E45B0A">Firefox</a>, <a href="http://www.apple.com/safari/" target="_blank" style="color:#3E9FDA">Safari</a> or update to <a href="http://www.microsoft.com/windows/Internet-explorer" target="_blank" style="color:#B4D2EF">Internet Explorer 9</a>.  Click on the browser of your choice to upgrade now.</p> </div><![endif]-->
+
+
+
+</body>
+</html>
+<!-- Structure Version 3.5 - 07/02/12 -->
+<!-- page.php-->

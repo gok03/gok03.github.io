@@ -1,0 +1,436 @@
+status: 200
+content-location: http://www.surequest.com
+x-powered-by: PHP/5.5.38
+server: Apache/2.4.12 (Unix) OpenSSL/1.0.1e-fips mod_bwlimited/1.4
+connection: close
+date: Wed, 21 Sep 2016 09:32:57 GMT
+content-type: text/html
+
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Food Service Management Software | SureQuest</title>
+	<link rel="icon" type="image/png" href="/a/img/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	
+		
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- css3-mediaqueries.js for IE less than 9 -->
+	 <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- ===== STYLES ===== -->
+	<link href="/a/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="/a/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="/a/css/animate.css" rel="stylesheet" type="text/css" />
+	<link href="/a/css/custom.css" rel="stylesheet" type="text/css" />
+
+	<link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800' rel='stylesheet' type='text/css'>
+
+	<!--[if lte IE 9]>
+		<link href="/a/css/custom_ie.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+
+	
+	<!-- ===== SCRIPTS ===== -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/a/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/a/js/jquery.viewportchecker.js"></script>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-75873122-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+
+<body>
+
+	<div id="header-container scrolled">
+		<div id="top-header">
+			<div class="container">
+				<div class="pull-left">
+					Questions? <span>1 800-383-1999</span>
+				</div>
+				<div class="pull-right">
+					<a href="/contact-us">Contact Us</a>
+					<a href="/support">Customer Support</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<div id="header">
+			<div class="container">
+				<a href="/"><img src="/a/img/surequest-logo.png" id="logo" alt="SureQuest Logo" /></a>
+
+				<div id="toggle-nav">
+					<span class="fa fa-bars"></span>
+				</div>
+
+				<div id="top-nav">
+					<a href="/products/">PRODUCTS</a>
+					<!-- <a href="/partners">PARTNERS</a>-->
+					<a href="/company/">COMPANY</a>
+					<a href="/support">SUPPORT</a>
+					<a href="/contact-us">CONTACT US</a>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	
+	<script>
+	$(function(){
+		$('#toggle-nav').click(function(){
+			$('#top-nav').slideToggle();
+		});
+	});
+
+	function matchCellHeight(containerSelector, cellSelector){
+				$(containerSelector).each(function(){
+					maxHeight = 0;
+					$(this).find(cellSelector).each(function(){
+						$(this).height('');
+						if($(this).height()>maxHeight){maxHeight=$(this).height();}
+					});
+
+					$(this).find(cellSelector).each(function(){
+						$(this).height(maxHeight);
+					});
+				});
+			}
+	</script>
+
+<script>
+			/*
+			function setCarouselCaption(){
+				matchCellHeight('#home-carousel .item.active .caption','.col-md-6');
+				activeSlide = $('#home-carousel').find('.item.active');
+				caption = activeSlide.find('.caption');
+
+				//Set height of caption columns off screen before placing
+				caption.css({'left':'-4000px','display':'block'});
+				maxHeight=0;
+				caption.find('div[class^="col-"]').each(function(){
+					$(this).height('');
+					if($(this).height()>maxHeight){maxHeight=$(this).height();}
+				});
+				caption.find('div[class^="col-"]').each(function(){
+					$(this).height(maxHeight);
+				});
+				caption.css({'left':'0','display':'none'});
+
+				caption.css({'top':((activeSlide.height()/2)-(caption.height()/2))});
+				caption.fadeIn("slow");
+			}
+			*/
+			function setCarouselCaption(){
+				activeSlide = $('#home-carousel .item.active');
+				caption = activeSlide.find('.caption');
+
+				caption.css({'top':(activeSlide.height()/2)-(caption.height()/2)})
+			}
+
+		</script>
+		<div id="home-carousel" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		    	<div class="container relative">
+			      <div class="caption">
+				     	<p>Meet the new SUREQUEST</p>
+				      <p class="small-text">Foodservice Management Software, built on over 30 years of industry-leading support.</p>
+			      </div>
+			    </div>
+		      <img onload="setCarouselCaption();" src="/a/img/slide2.jpg" alt="">
+		    </div>
+		  </div>
+      <!--
+		  <a class="custom-control prev" href="#home-carousel" role="button" data-slide="prev">
+		    <span class="fa fa-chevron-left"></span>
+		  </a>
+		  <a class="custom-control next" href="#home-carousel" role="button" data-slide="next">
+		    <span class="fa fa-chevron-right"></span>
+		  </a>-->
+		</div>
+
+<div class="content">
+	<div class="container">
+		<div class="row" id="home-cells">
+			<div class="col-md-3">
+				<div class="bg-blue white">
+					<p class="news-cycle bold tight-line-height" style="font-size:36px;">How can we serve you today?</p>
+					<p>I'm looking to learn more about... </p>
+				</div>
+			</div>
+			<div class="col-sm-3 animated">
+				<img src="/a/img/icon-menu.png" alt="Menu Mangement" height="70px" width="70px"/><br>
+				<p class="small-heading black">MENU MANAGEMENT</p>
+			
+				<a href="/products/menu-management" class="custom-btn white-btn">LEARN MORE</a>
+			</div>
+			<div class="col-sm-3 animated">
+				<img src="/a/img/icon-costing.png" alt="" height="70px" width="70px" /><br>
+				<p class="small-heading black">COSTING</p>
+				
+				<a href="/products/food-costing" class="custom-btn white-btn">LEARN MORE</a>
+			</div>
+			<div class="col-sm-3 animated">
+				<img src="/a/img/icon-recipes.png" alt="" height="70px" width="70px" /><br>
+				<p class="small-heading black">RECIPE DATABASE</p>
+				<p> </p>
+				<a href="/products/recipe-database-management" class="custom-btn white-btn">LEARN MORE</a>
+			</div>
+			<div class="col-sm-3 animated">
+				<img src="/a/img/icon-production.png" alt="" height="70px" width="70px" /><br>
+				<p class="small-heading black">PRODUCTION TOOLS</p>
+			
+				<a href="/products/foodservice-production-tools" class="custom-btn white-btn">LEARN MORE</a>
+			</div>
+			<div class="col-sm-3 animated">
+				<img src="/a/img/icon-inventory.png" alt="" height="70px" width="70px" /><br>
+				<p class="small-heading black">INVENTORY</p>
+				<p></p>
+				<a href="/products/foodservice-inventory-software" class="custom-btn white-btn">LEARN MORE</a>
+			</div>
+			<div class="col-sm-3 animated">
+				<img src="/a/img/icon-procurement.png" alt="" height="70px" width="70px" /><br>
+				<p class="small-heading black">PROCUREMENT</p>
+				<p></p>
+				<a href="/products/foodservice-procurement-software" class="custom-btn white-btn">LEARN MORE</a>
+			</div>
+			<div class="col-sm-3 animated">
+				<img src="/a/img/icon-mealservice.png" alt="" height="70px" width="70px" /><br>
+				<p class="small-heading black">MEAL SERVICE</p>
+				<p></p>
+				<a href="/products/meal-service" class="custom-btn white-btn">LEARN MORE</a>
+			</div>
+			
+			<div class="col-sm-3 animated">
+				<img src="/a/img/icon-people.png" alt="" height="70px" width="70px" /><br>
+				<p class="small-heading black">PEOPLE/PATIENT MANAGEMENT</p>
+				<p></p>
+				<a href="/products/people-and-patient-management" class="custom-btn white-btn">LEARN MORE</a>
+			</div>
+			<div class="col-sm-3 animated">
+				<img src="/a/img/icon-menuboard.png" alt="" height="70px" width="70px" /><br>
+				<p class="small-heading black">DISPLAY BOARDS</p>
+				<p></p>
+				<a href="/products/digital-menu-boards" class="custom-btn white-btn">LEARN MORE</a>
+			</div>
+			<div class="col-sm-3 animated">
+				<img src="/a/img/icon-pos.png" alt="" height="70px" width="70px" /><br>
+				<p class="small-heading black">POINT OF SALE</p>
+				<p></p>
+				<a href="/products/point-of-sale" class="custom-btn white-btn">LEARN MORE</a>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+
+<div class="content" style="padding-top: 0px;">
+	<div class="container">
+		<div class="row" id="home-success">
+			<div class="col-md-4">
+				<img src="/a/img/home-success.png" alt="" class="img-responsive" style="margin-top: 25px;" />
+			</div>
+			<div class="col-md-8">
+				<p class="news-cycle bold tight-line-height" style="font-size:36px;">Your success<br>is what matters to us.</p>
+				<p>Producing real results across the continuum of Nutrition, Food Service & Dining Management. We strive to ...</p>
+
+				<ul class="fa-ul">
+					<li><span class="fa-li fa fa-check-circle-o blue"></span> Help companies better manage and control food cost, food quality and client satisfaction across single and/or multi-unit operations.</li>
+					<li><span class="fa-li fa fa-check-circle-o blue"></span> Equip service staff and medical personnel with the tools needed to ensure resident safety and dietary compliance to improve health outcomes.</li>
+					<li><span class="fa-li fa fa-check-circle-o blue"></span> Enable Managers to standardize and streamline menu planning, inventory management, production practices and overall meal service operations.</li>
+					<li><span class="fa-li fa fa-check-circle-o blue"></span> Maximize the customer experience by delivering a flexible, interactive food service solution that can be tailored to meet individual client and operational specific needs.</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		<div class="spacer"></div>
+
+		<span class="blue news-cycle" style="font-size:24px;">Upcoming Events</span>
+
+		<div class="row" id="home-news">
+			<div class="col-md-5">
+
+				<p class="small-heading">LeadingAge Texas</p>
+				<p class="bold">May 23rd-25th, Dallas TX<br>Booth 621</p>
+				<p>
+				
+					Come meet our team to learn more about the ThreeSquares Cloud and our available job positions. To schedule a private meeting, please contact-us to schedule.
+				</p>
+			</div>
+			<div class="col-md-6 col-md-offset-1">
+				<div class="container">
+					<div class="row" id="home-quote">
+						<div class="col-sm-3 relative hidden-xs" style="border-right:1px solid #e3eaf1;">
+							<span class="fa fa-quote-left" style="color:#dde7f0;font-size:100px;position:absolute;top:50%;transform:translateY(-50%);"></span>
+						</div>
+						<div class="col-sm-9 news-cycle">
+							<p>
+								“I have been using the SureQuest’s <span class="bold">ThreeSquares™</span> system for 10 years. We absolutely love it. The system has a lot of flexibility for the variety of needs in food service and is an inclusive system. Also very easy to use!”
+							</p>
+
+							<p class="bold">
+								Shirley Smith, RD Director of Food and Nutrition Services - Tabitha Health Care Services
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+<script>
+$(window).load(function(){
+	matchCellHeight('#home-cells','.col-md-3');
+	matchCellHeight('#home-cells','.small-heading');
+	if($(window).width() > 975){
+		matchCellHeight('#home-success','div[class^="col-"]');
+		matchCellHeight('#home-news','div[class^="col-"]');
+	}else{
+		matchCellHeight('#home-quote','div[class^="col-"]');
+	}
+});
+
+$(document).ready(function(){
+	$('.animated').addClass('transparent').viewportChecker({
+		classToAdd: 'slideInUp',
+		classToRemove: 'transparent'
+	});
+});
+
+$(window).resize(function(){
+	matchCellHeight('#home-cells','.col-md-3');
+	matchCellHeight('#home-cells','.small-heading');
+	if($(window).width() > 975){
+		matchCellHeight('#home-success','div[class^="col-"]');
+		matchCellHeight('#home-news','.resize-cell');
+	}else{
+		matchCellHeight('#home-quote','div[class^="col-"]');
+	}
+})
+</script>
+
+
+	<div id="footer">
+		<div class="container">
+						<div class="row">
+
+				<div class="col-md-3">
+					<div class="footer-cell">
+						<p class="news-cycle bold" style="font-size:16px;">PRODUCTS</p>
+		
+						<div class="row">
+							<div class='col-md-12 col-sm-6'>
+								<a href="/products/menu-management">Menu Management</a>
+								<a href="/products/food-costing">Menu Costing </a>
+								<a href="/products/recipe-database-management">Recipe Database</a>
+								<a href="/products/foodservice-production-tools">Production Tools</a>
+								<a href="/products/foodservice-inventory-software">Inventory Management</a>
+							</div>
+							<div class="col-md-12 col-sm-6">
+								<a href="/products/foodservice-procurement-software">Procurement</a>
+								<a href="/products/meal-service">Meal Service Tools</a>
+								<a href="/products/people-and-patient-management">People/Patient Management</a>
+								<a href="/products/digital-menu-boards">Digital Menu Boards</a>
+								<a href="/products/point-of-sale">Point of Sale</a>
+							</div>
+						</div>
+					</div>
+				</div>
+						
+				<div class="col-md-2 col-sm-6">
+					<div class="footer-cell">
+						<p class="news-cycle bold" style="font-size:16px;">COMPANY</p>
+
+						<a href="/company/">Company</a>
+						<a href="/company/our-team">Management Team</a>
+						<a href="/company/careers">Join Our Team</a>
+						<a href="/company/testimonials">Testimonials</a>
+						<a href="/contact-us">Contact US</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-md-offset-4 col-sm-6 bg-md-blue">
+					<div class="col-md-9">
+						<div class="footer-cell">
+							<p class="news-cycle bold" style="font-size:16px;">SUREQUEST SYSTEMS, INC.</p>
+							<p>
+								3330 Keller Springs, Suite 205<br>
+								Carrollton, TX  75006
+							</p>
+
+							<span style="display:inline-block;height:25px;width:25px;background:#02779d;padding:2px 0;margin-bottom:5px;text-align:center;">TF</span>   800-383-1999<br>
+							<span style="display:inline-block;height:25px;width:25px;background:#02779d;padding:2px 0;margin-bottom:5px;text-align:center;">P</span>    972-238-7200<br>
+							<span style="display:inline-block;height:25px;width:25px;background:#02779d;padding:2px 0;margin-bottom:5px;text-align:center;">F</span>    972-238-7733<br>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="footer-cell">
+							<!--<a href="/123" target="_blank" class="social-icon facebook"><span class="fa fa-facebook"></span></a>
+							<a href="/123" target="_blank" class="social-icon twitter"><span class="fa fa-twitter"></span></a>
+							<a href="/123" target="_blank" class="social-icon linkedin"><span class="fa fa-linkedin"></span></a>
+							<a href="/123" target="_blank" class="social-icon googleplus"><span class="fa fa-google-plus"></span></a>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copyright">
+		<div class="container">
+			<div class="pull-left">
+        SureQuest Systems Inc
+			</div>
+			<div class="pull-right">
+				Website Development by <a class="bold" href="http://www.nobulmedia.com" target="_blank" rel="nofollow">noBul Media</a>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+piAId = '110492';
+piCId = '2290';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+
+</body>
+</html>

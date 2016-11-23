@@ -1,0 +1,342 @@
+status: 200
+content-length: 30105
+content-location: http://www.idsgrp.com/careers/
+vary: Accept-Encoding, User-Agent
+server: Apache
+connection: Keep-Alive
+-content-encoding: gzip
+link: <http://www.idsgrp.com/wp-json/>;
+ rel="https://api.w.org/", <http://www.idsgrp.com/?p=40>; rel=shortlink
+date: Mon, 17 Oct 2016 16:47:44 GMT
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.9.2 (gzip)
+
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+    <!-- Set up Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- <link rel="stylesheet" type="text/css" href="http://idsgrp.actonservice.com/acton/form.css"> -->
+<link rel="stylesheet" type="text/css" href="http://idsgrp.actonservice.com/acton/formNegCap.css">
+<script type="text/javascript" src="http://idsgrp.actonservice.com/acton/form/11571/0002/form.js">
+</script>
+<script type="text/javascript">
+function formElementSerializers() { function input(element) { switch (element.type.toLowerCase()) { case 'checkbox': case 'radio': return inputSelector(element); default: return valueSelector(element); } };
+function inputSelector(element) { return element.checked ? element.value : null; };
+function valueSelector(element) { return element.value; };
+function select(element) { return (element.type === 'select-one' ? selectOne : selectMany)(element); };
+function selectOne(element) { var index = element.selectedIndex; return index < 0 ? null : optionValue(element.options[index]); };
+function selectMany(element) { var length = element.length; if (!length) return null; var values = []; for (var i = 0; i < length; i++) { var opt = element.options[i]; if (opt.selected) values.push(optionValue(opt)); } return values; };
+function optionValue(opt) { if (document.documentElement.hasAttribute) return opt.hasAttribute('value') ? opt.value : opt.text; var element = document.getElementById(opt); if (element && element.getAttributeNode('value')) return opt.value; else return opt.text; };
+return { input: input, inputSelector: inputSelector, textarea: valueSelector, select: select, selectOne: selectOne, selectMany: selectMany, optionValue: optionValue, button: valueSelector };
+};
+var requiredFields = new Array(); var requiredFieldGroups = new Array(); addRequiredField = function (id) { requiredFields.push (id); };
+addRequiredFieldGroup = function (id, count) { requiredFieldGroups.push ([id, count]); };
+missing = function (fieldName) { var f = document.getElementById(fieldName); var v = formElementSerializers()[f.tagName.toLowerCase()](f); if (v) { v = v.replace (/^\s*(.*)/, "$1"); v = v.replace (/(.*?)\s*$/, "$1"); } if (!v) { f.style.backgroundColor = '#FFFFCC'; return 1; } else { f.style.backgroundColor = ''; return 0; } };
+missingGroup = function (fieldName, count) { var result = 1; var color = '#FFFFCC'; for (var i = 0; i < count; i++) { if (document.getElementById(fieldName+'-'+i).checked) { color = ''; result = 0; break; } } for (var i = 0; i < count; i++) document.getElementById(fieldName+'-'+i).parentNode.style.backgroundColor = color; return result; };
+var validatedFields = new Array(); addFieldToValidate = function (id, validationType, arg1, arg2) { validatedFields.push ([ id, validationType, arg1, arg2 ]); };
+validateField = function (id, fieldValidationValue, arg1, arg2) { var field = document.getElementById(id); var name = field.name; var value = formElementSerializers()[field.tagName.toLowerCase()](field); for (var i = 0; i < validators.length; i++) { var validationDisplay = validators[i][3]; var validationValue = validators[i][1]; var validationFunction = validators[i][2]; if (validationValue === fieldValidationValue) { if (!validationFunction (value,arg1,arg2,id)) { field.style.backgroundColor = '#FFFFCC'; alert (validationDisplay); return false; } else { field.style.backgroundColor = ''; } break; } } for (var i = 0; i < implicitValidators.length; i++) { var validationDisplay = implicitValidators[i][0]; var validationValue = implicitValidators[i][1]; var validationFunction = implicitValidators[i][2]; if (validationValue === fieldValidationValue) { if (!validationFunction (value,arg1,arg2,id)) { field.style.backgroundColor = '#FFFFCC'; alert (validationDisplay); return false; } else { field.style.backgroundColor = ''; } break; } } return true; };
+var r = ''; formElementById = function(form, id) { for (var i = 0; i < form.length; ++i) if (form[i].id === id) return form[i]; return null; };
+doSubmit = function(form) { try { if (typeof(customSubmitProcessing) === "function") customSubmitProcessing(); } catch (err) { } var ao_jstzo = formElementById(form, "ao_jstzo"); if (ao_jstzo) ao_jstzo.value = new Date().getTimezoneOffset(); var submitButton = document.getElementById(form.id+'_ao_submit_button'); submitButton.style.visibility = 'hidden'; var missingCount = 0; for (var i = 0; i < requiredFields.length; i++) if (requiredFields[i].indexOf(form.id+'_') === 0) missingCount += missing (requiredFields[i]); for (var i = 0; i < requiredFieldGroups.length; i++) if (requiredFieldGroups[i][0].indexOf(form.id+'_') === 0) missingCount += missingGroup (requiredFieldGroups[i][0], requiredFieldGroups[i][1]); if (missingCount >
+0) { alert ('Please fill all required fields. '); submitButton.style.visibility = 'visible'; return; } for (var i = 0; i < validatedFields.length; i++) { var ff = validatedFields[i]; if (ff[0].indexOf(form.id+'_') === 0 && !validateField (ff[0], ff[1], ff[2], ff[3])) { document.getElementById(ff[0]).focus(); submitButton.style.visibility = 'visible'; return; } } if (formElementById(form, 'ao_p').value === '1') { submitButton.style.visibility = 'visible'; return; } formElementById(form, 'ao_bot').value = 'nope'; form.submit(); };
+</script>
+    <title>Careers at IDS | (International Decision Systems)</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v3.6 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Find out more about the careers at IDS, one of the world&#039;s largest equipment leasing lifecycle software companies. View our current open positions."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://www.idsgrp.com/careers/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Careers at IDS | (International Decision Systems)" />
+<meta property="og:description" content="Find out more about the careers at IDS, one of the world&#039;s largest equipment leasing lifecycle software companies. View our current open positions." />
+<meta property="og:url" content="http://www.idsgrp.com/careers/" />
+<meta property="og:site_name" content="International Decision Systems" />
+<meta property="og:image" content="http://www.idsgrp.com/wp-content/uploads/2016/06/additional-mes-img.jpg" />
+<meta property="og:image:width" content="644" />
+<meta property="og:image:height" content="456" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Find out more about the careers at IDS, one of the world&#039;s largest equipment leasing lifecycle software companies. View our current open positions." />
+<meta name="twitter:title" content="Careers at IDS | (International Decision Systems)" />
+<meta name="twitter:image" content="http://www.idsgrp.com/wp-content/uploads/2016/06/additional-mes-img.jpg" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="International Decision Systems &raquo; Feed" href="http://www.idsgrp.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="International Decision Systems &raquo; Comments Feed" href="http://www.idsgrp.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.idsgrp.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='foundation-icon-css'  href='http://www.idsgrp.com/wp-content/plugins/easy-foundation-shortcodes/styles/foundation-icons.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='normalize-css'  href='http://www.idsgrp.com/wp-content/themes/ids/css/normalize.css' type='text/css' media='all' />
+<link rel='stylesheet' id='foundation-css'  href='http://www.idsgrp.com/wp-content/themes/ids/css/foundation.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome.min-css'  href='http://www.idsgrp.com/wp-content/themes/ids/css/plugins/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jvectormap-css'  href='http://www.idsgrp.com/wp-content/themes/ids/css/plugins/jquery-jvectormap-2.0.3.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='http://www.idsgrp.com/wp-content/themes/ids/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='media-screens-css'  href='http://www.idsgrp.com/wp-content/themes/ids/css/media-screens.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.idsgrp.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.idsgrp.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://www.idsgrp.com/wp-content/themes/ids/js/plugins/html5shiv-and-respond.js'></script>
+<![endif]-->
+<link rel='https://api.w.org/' href='http://www.idsgrp.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.idsgrp.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.idsgrp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel='shortlink' href='http://www.idsgrp.com/?p=40' />
+<link rel="alternate" type="application/json+oembed" href="http://www.idsgrp.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.idsgrp.com%2Fcareers%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.idsgrp.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.idsgrp.com%2Fcareers%2F&#038;format=xml" />
+      <style>
+        body.admin-bar {margin-top:32px !important}
+        @media screen and (max-width: 782px) {body.admin-bar { margin-top:46px !important }}
+        @media screen and (max-width: 600px) {body.admin-bar { margin-top:46px !important } html #wpadminbar{ margin-top: -46px; }}
+      </style>
+    		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<link rel="icon" href="http://www.idsgrp.com/wp-content/uploads/2016/09/cropped-ids-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="http://www.idsgrp.com/wp-content/uploads/2016/09/cropped-ids-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.idsgrp.com/wp-content/uploads/2016/09/cropped-ids-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="http://www.idsgrp.com/wp-content/uploads/2016/09/cropped-ids-favicon-270x270.png" />
+
+        <!-- Google Analytics -->
+		<script type="text/javascript">
+		 
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-34249132-1']);
+		  _gaq.push(['_setDomainName', 'www.idsgrp.com']);
+		  _gaq.push(['_trackPageview']);
+		 
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+		'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+		  })();
+		 
+		</script>
+
+        <!-- End Google Analytics -->
+
+</head>
+
+<body class="page page-id-40 page-parent page-template-default">
+
+    <header>
+        <section class="secondary-menu">
+            <div class="row">
+                <div class="columns small-12">
+                    <div class="menu-secondary-header-menu-container"><ul id="menu-secondary-header-menu" class="inline-list"><li id="menu-item-1075" class="lock menu-item menu-item-type-post_type menu-item-object-page menu-item-1075"><a href="http://www.idsgrp.com/client-login/">Support and Client Login</a></li>
+<li id="menu-item-141" class="mail menu-item menu-item-type-post_type menu-item-object-page menu-item-141"><a href="http://www.idsgrp.com/contact-us/">Contact IDS</a></li>
+<li id="menu-item-140" class="phone menu-item menu-item-type-custom menu-item-object-custom menu-item-140"><a href="#contact-pop-up">Call Us</a></li>
+</ul></div>                </div>
+            </div>
+        </section>
+        <section class="main-headline">
+            <div class="row large-uncollapse medium-uncollapse small-collapse">
+                <div class="large-6 small-12 columns slogun-wrap">
+                    <div class="logo small-only-text-center">
+                        <a href="http://www.idsgrp.com">
+                            <img src="http://www-idsgrp-com.preview.iphouse.com/wp-content/uploads/2016/07/new-logo.png" alt="International Decision Systems" />
+                        </a>
+                    </div>
+                                            <h6 class="slogun">
+                            <span>THE GLOBAL LEADER IN</span>ASSET FINANCE SOFTWARE                        </h6>
+                                    </div>
+                <div class="large-6 small-12 columns">
+                    <nav class="top-bar" data-topbar="" role="navigation" data-options="{is_hover: false, mobile_show_parent_link: true}">
+                        <ul class="title-area">
+                            <li class="name"></li>
+                            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                        </ul>
+                        <section class="top-bar-section">
+                            <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-dropdown menu-item-52"><a href="http://www.idsgrp.com/about-ids/">About IDS</a>
+<ul class="dropdrown_menu dropdown">
+	<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="http://www.idsgrp.com/about-ids/leadership-team/">Leadership Team</a></li>
+	<li id="menu-item-1348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1348"><a href="http://www.idsgrp.com/about-ids/board-of-directors/">Board of Directors</a></li>
+	<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="http://www.idsgrp.com/about-ids/professional-services/">Professional Services</a></li>
+	<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="http://www.idsgrp.com/about-ids/partnerships/">Partnerships</a></li>
+</ul>
+</li>
+<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-dropdown menu-item-56"><a href="http://www.idsgrp.com/solutions/">Solutions</a>
+<ul class="dropdrown_menu dropdown">
+	<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="http://www.idsgrp.com/solutions/originations/">Originations</a></li>
+	<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="http://www.idsgrp.com/solutions/analytics-decisioning/">Analytics &#038; Decisioning</a></li>
+	<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a href="http://www.idsgrp.com/solutions/portfolio-management/">Portfolio Management</a></li>
+	<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="http://www.idsgrp.com/solutions/vehicle-data/">Vehicle Data</a></li>
+</ul>
+</li>
+<li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-dropdown menu-item-62"><a href="http://www.idsgrp.com/news-events/">News &#038; Events</a>
+<ul class="dropdrown_menu dropdown">
+	<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="http://www.idsgrp.com/news-events/news/">News</a></li>
+	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="http://www.idsgrp.com/news-events/events/">Events</a></li>
+</ul>
+</li>
+<li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-40 current_page_item menu-item-has-children has-dropdown menu-item-66"><a href="http://www.idsgrp.com/careers/">Careers</a>
+<ul class="dropdrown_menu dropdown">
+	<li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="http://www.idsgrp.com/careers/open-positions/">Open Positions</a></li>
+	<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="http://www.idsgrp.com/careers/benefits/">Benefits</a></li>
+</ul>
+</li>
+</ul></div>                        </section>
+                    </nav>
+                </div>
+                <form method="get" id="searchform" action="http://www.idsgrp.com/">
+	<input type="text" name="s" id="s" placeholder="Search Site" />
+	<button type="submit" class="prefix" id="searchsubmit"></button>
+</form>            </div>
+        </section>
+    </header>
+
+    <section id="contact-pop-up">
+        <a href="#" class="out"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+        <h5>UNITED STATES OF AMERICA</h5>
+<p>Tel: <a href="tel:16128513200">+1.612.851.3200</a></p>
+<h5>EUROPE: <span>United Kingdom</span></h5>
+<p>Tel: <a href="tel:441256302000">+44.1256.302000</a></p>
+<h5>ASIA/PACIFIC: <span>Australia</span></h5>
+<p>Tel: <a href="tel:61292479166">+61.(0)2.9247.9166</a></p>
+<h5><span>Singapore</span></h5>
+<p>Tel: <a href="tel:6563339866">+65.6333.9866</a></p>
+<h5>INDIA</h5>
+<p>Tel: <a href="tel:918066448800">+91.80.6644.8800</a></p>
+    </section>
+<section class="page-banner" style="background-image:url(http://www.idsgrp.com/wp-content/uploads/2016/06/additional-mes-img.jpg);">
+    <div class="row">
+        <div class="columns small-12">
+            <h1>Careers</h1>
+        </div>
+    </div>
+</section>
+
+
+<section class="row main-content">
+    <div class="large-12 medium-12 small-12 columns">
+                                   <h2>WHY WORK AT INTERNATIONAL DECISION SYSTEMS?</h2>
+<h3>Joining IDS Offers a World of Opportunity with a Leading Software Company</h3>
+<p>Headquartered in beautiful downtown Minneapolis, Minnesota with offices located around the globe, International Decision Systems (IDS) provides lease and asset management software and services which help to keep the world&#8217;s economy humming. IDS serves hundreds of global equipment finance companies in wildly diverse vertical industries from agricultural equipment to solar energy. After decades of success, IDS continues to lead the market with best-in-class technology and the best people in the industry.</p>
+<p><a href="mailto:staffing@idsgrp.com">Contact us</a> to learn more about working at IDS.</p>
+<p><a class="read-more" href="http://www.idsgrp.com/careers/open-positions/">Click Here to View Open Positions</a></p>
+<hr />
+<div class="su-row">
+<div class="su-column su-column-size-1-3"><div class="su-column-inner su-clearfix">
+<img class="alignnone size-full wp-image-767" src="http://www.idsgrp.com/wp-content/uploads/2016/06/ourpeople.jpg" alt="Careers" width="419" height="299" srcset="http://www.idsgrp.com/wp-content/uploads/2016/06/ourpeople.jpg 419w, http://www.idsgrp.com/wp-content/uploads/2016/06/ourpeople-300x214.jpg 300w" sizes="(max-width: 419px) 100vw, 419px" /><br />
+</div></div>
+<div class="su-column su-column-size-2-3"><div class="su-column-inner su-clearfix">
+<h4>Our People</h4>
+<p>At IDS, you&#8217;ll be surrounded by bright, talented professionals who work hard and are ready to take on any challenge. You&#8217;ll also find that IDS team members have a lot of integrity, are supportive of one another, and like to have fun too. IDS employees have an average tenure that&#8217;s almost double the industry standard. With a mix of seasoned veterans and young professionals across the organization, IDS team members are making their mark and contributing to our success.<br />
+</div></div>
+</div>
+<hr />
+<div class="su-row">
+<div class="su-column su-column-size-2-3"><div class="su-column-inner su-clearfix">
+<h4>Career Development</h4>
+<p>IDS provides a fantastic launch-pad if you are looking for ways to further develop your career. You&#8217;ll have the ability to learn from your peers and stretch your skillset in many new directions. Since IDS is a global company with multinational customers, you&#8217;ll also have the opportunity to interact with people around the world.</p>
+<p>If you strive to be part of a fast-paced technology software company, where your talent will open doors and your energy will invite opportunity, join IDS as we bring cutting-edge equipment leasing lifecycle software solutions to some of the largest financial organizations in the world. <a href="mailto:staffing@idsgrp.com">Contact us</a> to learn more about working at IDS.<br />
+</div></div>
+<div class="su-column su-column-size-1-3"><div class="su-column-inner su-clearfix">
+<img class="alignnone size-full wp-image-768" src="http://www.idsgrp.com/wp-content/uploads/2016/06/career-development.jpg" alt="Career Development" width="419" height="299" srcset="http://www.idsgrp.com/wp-content/uploads/2016/06/career-development.jpg 419w, http://www.idsgrp.com/wp-content/uploads/2016/06/career-development-300x214.jpg 300w" sizes="(max-width: 419px) 100vw, 419px" /><br />
+</div></div>
+</div>
+                        </div>
+</section>
+
+    <section class="soc-networks">
+                    <a class="soc-network-item" href="http://www.facebook.com/IDSgrp" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+                    <a class="soc-network-item" href="http://twitter.com/idsgrp" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+                    <a class="soc-network-item" href="http://www.youtube.com/user/IDSgroup" target="_blank">
+                <i class="fa fa-youtube-play"></i>
+            </a>
+                    <a class="soc-network-item" href="http://www.linkedin.com/company/international-decision-systems" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            </section>
+
+<footer  style="background-image:url(http://www.idsgrp.com/wp-content/uploads/2016/06/footer-bg.png);">
+            <div class="row">
+            <div class="large-4 medium-5 small-12 columns">
+                <h3>CONTACT</h3>
+<p><strong>International Decision Systems</strong><br />
+220 South Sixth Street<br />
+Suite 700<br />
+Minneapolis, MN 55402</p>
+<h6>UNITED STATES OF AMERICA</h6>
+<p>Tel: <a href="tel:16128513200">+1.612.851.3200</a><br />
+Fax: <a href="tel:16128513207">+1.612.851.3207</a></p>
+<p><a href="/contact-us/"><span style="color:#2ba6cb">Global Offices</span></a></p>
+            </div>
+            <div class="large-8 medium-7 small-12 columns">
+                <h3>SUPPORT</h3>
+<p><strong>Support Hours:</strong> 7:30am &#8211; 5:00pm (CST)<br />
+<strong>Phone</strong> (including after-hours): <a href="tel:16128513201">+1.612.851.3201</a><br />
+<strong>Fax:</strong> <a href="tel:16128513205">+1.612.851.3205</a><br />
+<strong>InfoLease and CustomerCare Support E-mail:</strong> <a href="mailto:support@idsgrp.com">support@idsgrp.com</a><br />
+Rapport, InfoAnalysis, LeaseEnterprise, and PortfolioEvaluation Support<br />
+<strong>E-mail:</strong> <a href="mailto:pcprod@idsgrp.com">pcprod@idsgrp.com</a></p>
+                <div style="visibility: hidden">
+                    <form id="form_0002" class='subscribing-form' method="post" enctype="multipart/form-data" action="http://idsgrp.actonservice.com/acton/forms/userSubmit.jsp" accept-charset="UTF-8">
+                        <input type="hidden" name="ao_a" value="11571" >
+                        <input type="hidden" name="ao_f" value="0002" >
+                        <input type="hidden" name="ao_d" value="0002:d-0001" >
+                        <input type="hidden" name="ao_p" id="ao_p" value="0" >
+                        <input type="hidden" name="ao_jstzo" id="ao_jstzo" value="" >
+                        <input type="hidden" name="ao_cuid" value="" >
+                        <input type="hidden" name="ao_srcid" value="" >
+                        <input type="hidden" name="ao_bot" id="ao_bot" value="yes" >
+                        <input type="hidden" name="ao_camp" value="" >
+                        <div id="ao_alignment_container" class="aoFormContainer">
+                            <input type="text" class="formFieldText formFieldMedium" id="form_0002_fld_0" name="Website Email Subscriptions" onBlur="singleCheck ('form_0002_fld_0', 'EMAIL', 'form_0002_fld_0-Label')" placeholder="Enter Email">
+                            <script type="text/javascript">
+                            if (typeof(addFieldToValidate) != 'undefined') { addFieldToValidate ('form_0002_fld_0', 'EMAIL'); } </script>
+                            <div id="form_0002_ao_submit_button" class="submit-wrapper">
+                                <a id="form_0002_ao_submit_href" href="javascript: doSubmit(document.getElementById('form_0002'))">Subscribe</a>
+                            </div>
+                            <div class="formNegCap">
+                                <input type="text" id="ao_form_neg_cap" name="ao_form_neg_cap" value="">
+                            </div>
+                        </div>
+                        <!-- <img src='http://idsgrp.actonservice.com/acton/form/11571/0002:d-0001/pgend.gif' width='1' height='1'> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    <section class="menu-and-copy">
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="copy"><a href="http://www.elfaonline.org/" target="_blank"><img src="/wp-content/uploads/2016/08/ELFA-Member.png" alt="ELFA-Member" width="116" height="47" class="alignnone size-full wp-image-899" /></a><a href="http://aela.asn.au/" target="_blank"><img src="/wp-content/uploads/2016/08/aela-member.png" alt="aela-member" width="92" height="70" class="alignnone size-full wp-image-900" /></a><a href="http://www.leaseurope.org/" target="_blank"><img src="/wp-content/uploads/2016/08/leaseurope.png" alt="leaseurope" width="180" height="47" class="alignnone size-full wp-image-898" /></a><br /><br />Copyright 2016 International Decision Systems</div>
+                            </div>
+        </div>
+    </section>
+
+</footer>
+
+<link rel='stylesheet' id='su-box-shortcodes-css'  href='http://www.idsgrp.com/wp-content/plugins/shortcodes-ultimate/assets/css/box-shortcodes.css?ver=4.9.9' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.idsgrp.com/wp-content/themes/ids/js/foundation.min.js'></script>
+<script type='text/javascript' src='http://www.idsgrp.com/wp-content/themes/ids/js/global.js'></script>
+<script type='text/javascript' src='http://www.idsgrp.com/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script>!function ($) { $(document).foundation(); }(window.jQuery); </script>
+</body>
+</html>

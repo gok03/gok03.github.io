@@ -1,0 +1,1557 @@
+status: 200
+content-length: 115586
+content-location: https://www.landmark.solutions/
+set-cookie: dnn_IsMobile=False; path=/; HttpOnly,
+ .ASPXANONYMOUS=lwVvlsvziM-V6Dt1K_rNz0pIg3Du8OeBaizcbDoQWAqVBkg4Z8LrDkR6_lhE4gDy5jHZGrthij3uTEYPp345U7PhOQ9A9b4EhYlN64YR9PZEuld20;
+ expires=Thu, 08-Dec-2016 15:02:33 GMT; path=/; HttpOnly, language=en-US;
+ path=/; HttpOnly
+server: Microsoft-IIS/8.5
+x-ua-compatible: IE=edge
+cache-control: private
+date: Fri, 30 Sep 2016 04:22:33 GMT
+content-type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+<html  lang="en-US">
+<head id="Head">
+<!--*********************************************-->
+<!-- DNN Platform - http://www.dnnsoftware.com   -->
+<!-- Copyright (c) 2002-2014, by DNN Corporation -->
+<!--*********************************************-->
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e0d91d1457","applicationID":"7876539","transactionName":"Yl0AYUBSWksCBhddVlsXI2ZiHFBdBQQWWE0bWRFFSg==","queueTime":0,"applicationTime":187,"ttGuid":"80659E7DE4DAF86F","agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=p(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function l(e,t){g[e]=p(e).concat(t)}function p(e){return g[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",m[n]=t,t in f||(f[t]=[])})}var g={},m={},w={on:l,emit:n,get:d,listeners:p,context:t,buffer:v};return w}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},l=t.exports=o();l.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(m,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=s.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document,l="addEventListener",p="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-984.min.js"},w=d&&v&&v[l]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[l]?(s[l]("DOMContentLoaded",i,!1),f[l]("load",r,!1)):(s[p]("onreadystatechange",o),f[p]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><title>
+	Landmark Solutions - E&P software
+</title><meta id="MetaDescription" name="DESCRIPTION" content="For over 30 years, the E&amp;P industry has turned to Landmark for some of the world’s most advanced software and solutions for the exploration and production of oil and gas reserves. " /><meta id="MetaKeywords" name="KEYWORDS" content="E&amp;P software, E&amp;P services, Exploration and Production software, exploration and production services, O&amp;G software, oil and gas software, E&amp;P,DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" /><link href="/Portals/_default/default.css?cdv=39" media="all" type="text/css" rel="stylesheet"/><link href="/DesktopModules/Dnnskin.Net.MGS/module.css?cdv=39" media="all" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/Web316/skin.css?cdv=39" media="all" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Containers/Web316/container.css?cdv=39" media="all" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Containers/LayerSlider/Default.css?cdv=39" media="all" type="text/css" rel="stylesheet"/><link href="/Portals/0/portal.css?cdv=39" media="all" type="text/css" rel="stylesheet"/><link href="/Portals/0/home.css?cdv=39" media="all" type="text/css" rel="stylesheet"/><link href="/DesktopModules/DnnSharp/SearchBoost/templates/input/material-design-purple/styles.css?cdv=39" media="all" type="text/css" rel="stylesheet"/><link href="/DesktopModules/DnnSharp/SearchBoost/module.css?cdv=39" media="all" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=39" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=39" type="text/javascript"></script><link id="MGSHeaderCss467" rel="stylesheet" type="text/css" href="/DesktopModules/Dnnskin.Net.MGS/css/moduleheader467.css?3042233"></link><link id="MGSmodule467" rel="stylesheet" type="text/css" href="/DesktopModules/Dnnskin.Net.MGS/css/module467.css?3042233"></link><link id="MGScss467" rel="stylesheet" type="text/css" href="/DesktopModules/Dnnskin.Net.MGS/Templates/DNN-FocusImage/template.css"></link><link id="MGSHeaderCss469" rel="stylesheet" type="text/css" href="/DesktopModules/Dnnskin.Net.MGS/css/moduleheader469.css?3042233"></link><link id="MGSmodule469" rel="stylesheet" type="text/css" href="/DesktopModules/Dnnskin.Net.MGS/css/module469.css?3042233"></link><link id="MGScss469" rel="stylesheet" type="text/css" href="/DesktopModules/Dnnskin.Net.MGS/Templates/LightWeight/template.css"></link><style type='text/css'>
+#dnn_dnnBreadcrumb_lblBreadCrumb{display:none}
+</style><link rel='SHORTCUT ICON' href='/Portals/0/Images/HAL.ICO' type='image/x-icon' /><link rel="stylesheet" type="text/css" href="/Portals/_default/Skins/Web316/DNNStandard/StandardMenu.css"></link><link rel="stylesheet" type="text/css" href="/Portals/_default/Skins/Web316/MobileMenu/MobileMenu.css"></link></head>
+<body id="Body">
+    
+    <form method="post" action="/" id="Form" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
+<input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var g_dnnsfState = {"protocol":"https","locale":"en-US","alias":"www.landmark.solutions","rootAlias":"www.landmark.solutions"};//]]>
+</script>
+
+<script src="/DesktopModules/DnnSharp/SearchBoost/static/jquery.min.js?v=3.1.87" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(dnnsfjQuery) != 'undefined' && !dnnsfjQuery.ui) { document.write('<script src="/DesktopModules/DnnSharp/SearchBoost/static/jquery-ui.min.js?v=3.1.87"><\/script>'); }//]]>
+</script>
+
+<script src="/DesktopModules/DnnSharp/SearchBoost/static/sb-client.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+avt.sb.$(document).ready(function() { 
+                        avt.sb_initbox('dnn_avtSearch_pnlInput', 8, '/DesktopModules/DnnSharp/SearchBoost/SearchUrlService.ashx?_alias=www.landmark.solutions&iinst=0_dnn_avtSearch&language=en-US', '/DesktopModules/DnnSharp/SearchBoost/Autocomplete.ashx?_alias=www.landmark.solutions&iinst=0_dnn_avtSearch');
+                    });//]]>
+</script>
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/DNNStandard/StandardMenu.js"></script><script type="text/javascript" src="/Portals/_default/Skins/Web316/MobileMenu/MobileMenu.js"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a1453655a-6b8d-49b1-94c2-f77a352f5241%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="DPJqYrthEN3VJwAP07zSQaczhJCKa/YSvvCVAoJNO2nIF7cRej7s7pNnl6oPygF/eUt4F/Xv9BVbopuKcUulaV9m64mhGJf3UvF8oQa1UknLAaOagQ/Np/SKM5L+pskedxnvOPGudjdbVoDh2uTr93P4KHT0Pau4ACcdxQpddGJ1dtWA7qQOwVRJt1nhemru7TP8eSY3aUPSOhDDKjDQObZc6cYEUM7oOoM6xOm7eZLW6s77" />
+</div><script src="/js/dnncore.js?cdv=39" type="text/javascript"></script><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
+//]]>
+</script>
+
+        
+        
+        
+
+<!--[if IE 7]><link rel="stylesheet" href="/Portals/_default/Skins/Web316/css/fontello-ie7.css"><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/Portals/_default/Skins/Web316/css/ie8.css"><![endif]-->
+<!--[if lte IE 9]><script src="/Portals/_default/Skins/Web316/js/html5.js" type="text/javascript" charset="utf-8"></script><![endif]-->
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/jQuery.cookie.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/jquery.dnnskin.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/jquery.dataTables.rowGrouping.js"></script>
+<link rel="stylesheet" href="/Portals/_default/Skins/Web316/css/dataTable.css"/>
+
+<meta name="viewport" content="width = device-width; initial-scale=0.9; maximum-scale=1.0; user-scalable=yes;" />
+<head>
+
+<!-- START OF SmartSource Data Collector TAG v10.4.1 -->
+<!-- Copyright (c) 2014 Webtrends Inc.  All rights reserved. -->
+<script>
+    window.webtrendsAsyncInit = function () {
+        var dcs = new Webtrends.dcs().init({
+            dcsid: "dcs222u6fci9y36ewprt9f91t_7t2i",
+            domain: "statse.webtrendslive.com",
+            timezone: -6,
+            i18n: true,
+            adimpressions: true,
+            adsparam: "AdType",
+            offsite: true,
+            download: true,
+            downloadtypes: "xls,doc,pdf,txt,csv,zip,docx,xlsx,rar,gzip",
+            anchor: true,
+            onsitedoms: "landmarksoftware.com",
+            fpcdom: ".landmarksoftware.com",
+            plugins: {
+                hm: { src: "//s.webtrends.com/js/webtrends.hm.js" },
+                facebook: { src: "//s.webtrends.com/js/webtrends.fb.js" },
+                yt: { src: "//s.webtrends.com/js/webtrends.yt.js" }
+            }
+        }).track();
+    };
+    (function () {
+        var s = document.createElement("script"); s.async = true; s.src = "/Webtrend/webtrends.min.js";
+        var s2 = document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s, s2);
+    } ());
+</script>
+
+<script type="text/javascript">
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', '685875175']);
+    _elqQ.push(['elqTrackPageView']);
+
+    (function () {
+        function async_load() {
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+            s.src = '//img04.en25.com/i/elqCfg.min.js';
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        }
+        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+        else if (window.attachEvent) window.attachEvent('onload', async_load);
+    })(); 
+	</script> 
+<noscript><img alt="dcsimg" id="dcsimg" width="1" height="1" src="//statse.webtrendslive.com/dcs222u6fci9y36ewprt9f91t_7t2i/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.4.1&amp;dcssip=www.landmarksoftware.com"/></noscript>
+<!-- END OF SmartSource Data Collector TAG v10.4.1 -->
+<!-- Start Linkedin Insight tag -->
+<script type="text/javascript">
+    _bizo_data_partner_id = "9529";
+</script>
+<script type="text/javascript">
+    (function () {
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";
+        b.async = true;
+        b.src = (window.location.protocol === "https:" ? "https://sjs" : "http://js") + ".bizographics.com/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+    })();
+</script>
+<noscript>
+  <img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=9529&fmt=gif" />
+</noscript>
+<!-- End Linkedin Insight tag -->
+</head>
+<div id="dnnwrapper">
+	<header id="dnnheader">
+		<div class="dnnrow">
+			<div class="innermargin">
+				<div class="fright">
+                <div id="login">
+                
+						<div class="language-object" >
+
+
+</div>
+						
+<div id="dnn_dnnUser_registerGroup" class="registerGroup">
+    <ul class="buttonGroup">
+        
+        
+    	<li class="userDisplayName"><a id="dnn_dnnUser_enhancedRegisterLink" title="Register" class="icon-user-1" rel="nofollow" href="https://identity.halliburton.com/CustomSelfReg/register.jsp?xHalTemp=halcom" target="_blank">Register</a></li>
+                                               
+    </ul>
+</div>
+						
+<div id="dnn_dnnLogin_loginGroup" class="loginGroup">
+    <a id="dnn_dnnLogin_enhancedLoginLink" title="Login" class="icon-lock-1" rel="nofollow" onclick="this.disabled=true;" href="https://www.landmark.solutions/Login?returnurl=%2f">Login</a>
+</div>
+
+ <div class="registerGroup" id="dnn_contactusgroup">
+       <ul class="buttonGroup">
+       <li class="userDisplayName"><a id="dnn_dnnLogin_dnn_contactus" href="/About/Contact-Us">Contact Us</a></li>
+        </ul>
+       </div> 
+       <div class="registerGroup" id="Div1">
+       <ul class="buttonGroup">
+       <li class="userDisplayName"><a id="dnn_dnnLogin_enhancedLMyaccountLink"></a></li>
+        </ul>
+       </div>
+<input type="hidden" name="dnn$dnnLogin$hdnLandmarkHostName" id="dnn_dnnLogin_hdnLandmarkHostName" value="www.landmark.solutions" />
+<input type="hidden" name="dnn$dnnLogin$hdnsigninvalue" id="dnn_dnnLogin_hdnsigninvalue" value="Sign In" />
+<input type="hidden" name="dnn$dnnLogin$hdnLandmarkvalue" id="dnn_dnnLogin_hdnLandmarkvalue" value="Landmark" />
+<input type="hidden" name="dnn$dnnLogin$hdnneftexvalue" id="dnn_dnnLogin_hdnneftexvalue" value="Neftex Client" />
+<input type="hidden" name="dnn$dnnLogin$hdnRuLandmark" id="dnn_dnnLogin_hdnRuLandmark" value="www.ru.landmark.solutions" />
+<input type="hidden" name="dnn$dnnLogin$hdnLaLandmark" id="dnn_dnnLogin_hdnLaLandmark" value="www.la.landmark.solutions" />
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var loginText = $("#dnn_dnnLogin_enhancedLoginLink").attr("title");
+        var returnurl = $("#dnn_dnnLogin_enhancedLoginLink").attr("href");
+        //hostname from the config
+        var landmarkHostName = $("#dnn_dnnLogin_hdnLandmarkHostName").val();
+        var landmarkruHostName = $("#dnn_dnnLogin_hdnRuLandmark").val();
+        var landmarklaHostName = $("#dnn_dnnLogin_hdnLaLandmark").val();
+        //Reading localizes text from resource files
+        var signIntext = $("#dnn_dnnLogin_hdnsigninvalue").val();
+        var Landmarktext = $("#dnn_dnnLogin_hdnLandmarkvalue").val();
+        var Neftextext = $("#dnn_dnnLogin_hdnneftexvalue").val();
+        var hostName = window.location.hostname;
+        if (loginText == "Login" || loginText == "Вход" || loginText == "Iniciar") {
+
+            $("#dnn_dnnLogin_enhancedLoginLink").remove();
+
+
+            var loginHTML = "<div class='mobilehide'><div id='SuperFish'><ul class='mobilemenu mmstyle menuright sf-js-enabled'><li class='root first haschild child-1'>";
+
+            if ((hostName == landmarkHostName) || (hostName == landmarkruHostName) || (hostName == landmarklaHostName)) {
+                loginHTML += "<a href='#' class='sf-with-ul'>" + signIntext + "</a><ul style='display: none;'><li class='category last child-2'><a href='" + returnurl + "'>" + Landmarktext + "</a></li>";
+
+            }
+            else {
+                loginHTML += "<a href='#' class='sf-with-ul'>Login</a><ul style='display: none;'><li class='category last child-2'><a href='" + returnurl + "'>iEnergy</a></li>";
+               
+            }
+            loginHTML += "<li class='category first child-1'><a href='https://geoweb.neftex.com/Account/Login?ReturnUrl=%2f'>" + Neftextext + "</a></li></ul></li></ul></div></div>"
+            $("#dnn_dnnLogin_loginGroup").append(loginHTML);
+            
+
+            $('.mobilemenu').superfish();
+
+
+        }
+        if (loginText == "Logout") {
+            var hostName = window.location.hostname;
+
+            if (hostName == landmarkHostName) {
+
+                $('#dnn_dnnLogin_enhancedLoginLink').text('Sign Out');
+            }
+
+        }
+        /*Links to the multilingual links on the homepage*/
+        if (hostName == landmarkHostName) {
+
+            var languageHTML = '<a   id="dnn_Regional" href="/Regional-Sites">Regional Sites</a>';
+            $(".regionalSites").append(languageHTML);
+        }
+        else if (hostName == landmarklaHostName) {
+
+            var languageHTML = '<a id="dnn_Regional" href="/Regional-Sites">Sitios Regionales</a>';
+            $(".regionalSites").append(languageHTML);
+        }
+
+        else if (hostName == landmarkruHostName) {
+
+            var languageHTML = '<a  id="dnn_Regional" href="/Regional-Sites">Региональные сайты</a>';
+            $(".regionalSites").append(languageHTML);
+        }
+    });	
+				
+</script>
+                       <div class="registerGroup" id="dnn_contactusgroup">
+                         <ul class="buttonGroup">
+                         
+                         <li class="regionalSites"></li>
+                         </ul>
+                       </div> 
+                       <div class="search-wrap">
+						<div id="search-box">
+                         <div id="dnn_avtSearch_pnlInput"><div class="sb-inp sb-material-purple"><input type="text" placeholder="Search" class="search-box " value="" /></div><a href="javascript: ;" class="search-btn" rel="nofollow"></a></div>
+
+<!-- For old templates: -->
+<div>
+<script>
+    // some common functions
+    function sbInp_clearPlaceholder(sbox) {
+        sbox = avt.sb.$(sbox);
+        if (sbox.hasClass('searchBoxEmpty')) {
+            sbox.removeClass('searchBoxEmpty').val('').removeAttr('placeholder');
+        }
+    }
+    function sbInp_syncPlaceholder(sbox) {
+        sbox = avt.sb.$(sbox);
+        sbox.removeClass('searchBoxEmpty');
+        var emptyText = sbox.attr('data-empty');
+        if (avt.sb.$.trim(sbox.val()).length == 0 || avt.sb.$.trim(sbox.val()) == emptyText) {
+            sbox.addClass('searchBoxEmpty').val(emptyText).attr('placeholder', emptyText);
+        }
+    }
+</script>
+</div>
+
+                                </div>
+					</div>
+				
+				</div>
+                
+					
+				<div class="fright">
+					
+					</div>
+
+				</div>
+              <div class="logo fleft">
+						<a id="dnn_dnnLOGO_hypLogo" title="Landmark Solutions – E&amp;P Software" href="https://www.landmark.solutions/"><img id="dnn_dnnLOGO_imgLogo" src="/Portals/0/Images/LMSImages/Landmark-EP-Software.png" alt="Landmark Solutions – E&amp;P Software" /></a>
+					</div>
+               </div>
+				<div class="clr"></div>
+				
+					
+					<a href="#" class="btn-mobile-nav" title="Menu"></a>
+					<a href="#" class="btn-search" title="Search" data-original-title="Tooltip" data-toggle="tooltip"></a>
+				<div class="clr"></div>
+			</div>
+		</div>
+	</header>
+	<section class="dnnnav-container">
+		<nav id="dnnnav">
+			<div class="dnnrow">
+				<div class="innermargin">
+					<div class="mobilehide"><!-- DDRmenu v02.00.01 - DNNStandard template --><!--SEO NOINDEX--><div id="SuperFish">
+  <ul class="mobilemenu mmstyle menuright">
+    <li class="root first haschild child-1"><a href="https://www.landmark.solutions/Solutions">Solutions<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png"></a><ul>
+        <li class="category first haschild child-1"><a href="https://www.landmark.solutions/Solutions/Featured-Solutions">Featured Solutions<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a><ul>
+            <li class="leaf first child-1"><a href="https://www.landmark.solutions/DecisionSpace-Geosciences-10EP">DecisionSpace Geosciences 10ep<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-2"><a href="https://www.landmark.solutions/Unconventionals-Technology">Unconventionals Technology<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-3"><a href="https://www.landmark.solutions/DecisionSpace-Petrophysics">Petrophysics<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-4"><a href="https://www.landmark.solutions/EP-Cloud-Solutions">E&amp;P Cloud<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-5"><a href="https://www.landmark.solutions/Economics">Economics<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-6"><a href="https://www.landmark.solutions/ExplorationInsights">Exploration Insights<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf last child-7"><a href="https://www.landmark.solutions/Learning">eLearning<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+          </ul>
+        </li>
+        <li class="category haschild child-2"><a href="https://www.landmark.solutions/Solutions/Browse-by-Challenge">Browse by Challenge<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a><ul>
+            <li class="leaf first child-1"><a href="https://www.landmark.solutions/Deepwater">Deepwater<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-2"><a href="https://www.landmark.solutions/Mature-Fields">Mature Fields<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf last child-3"><a href="https://www.landmark.solutions/Unconventionals">Unconventionals<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+          </ul>
+        </li>
+        <li class="category haschild child-3"><a href="https://www.landmark.solutions/Solutions/Browse-by-Discipline">Browse by Discipline<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a><ul>
+            <li class="leaf first haschild child-1"><a href="https://www.landmark.solutions/ExplorationInsights">Exploration Insights<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a><ul>
+                <li class="leaf first child-1"><a href="https://www.landmark.solutions/Tectonostratigraphic-Analysis">Tectonostratigraphic Analysis<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf child-2"><a href="https://www.landmark.solutions/Play-Characterization">Play Characterization<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf child-3"><a href="https://www.landmark.solutions/Basin-Screening">Basin Screening<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf last child-4"><a href="https://www.landmark.solutions/Exploration-Insights-Consultancy">Consultancy and Training<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+              </ul>
+            </li>
+            <li class="leaf haschild child-2"><a href="https://www.landmark.solutions/Geosciences">Geosciences<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a><ul>
+                <li class="leaf first child-1"><a href="https://www.landmark.solutions/Geology">Geology<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf last child-2"><a href="https://www.landmark.solutions/Geophysics">Geophysics<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+              </ul>
+            </li>
+            <li class="leaf child-3"><a href="https://www.landmark.solutions/Geomechanics">Geomechanics<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-4"><a href="https://www.landmark.solutions/DecisionSpace-Petrophysics">Petrophysics<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-5"><a href="https://www.landmark.solutions/Reservoir1">Reservoir<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-6"><a href="https://www.landmark.solutions/Drilling">Drilling<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-7"><a href="https://www.landmark.solutions/Production">Production<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-8"><a href="https://www.landmark.solutions/Economics">Economics<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf haschild child-9"><a href="https://www.landmark.solutions/Information-Management">Information Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a><ul>
+                <li class="leaf first child-1"><a href="https://www.landmark.solutions/Well-Data-Management">Well Data Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf child-2"><a href="https://www.landmark.solutions/BoreholeDataManagement">Borehole Data Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf child-3"><a href="https://www.landmark.solutions/SeismicDataManagement">Seismic Data Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf child-4"><a href="https://www.landmark.solutions/ProjectDataManagement">Project Data Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf last child-5"><a href="https://www.landmark.solutions/InformationManagementServices">Information Management Services<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+              </ul>
+            </li>
+            <li class="leaf child-10"><a href="https://www.landmark.solutions/DecisionSpacePlatform">Enterprise Platform<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf last haschild child-11"><a href="https://www.landmark.solutions/Landmark-Services">Landmark Services<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a><ul>
+                <li class="leaf first child-1"><a href="https://www.landmark.solutions/Smart-Transform-for-Exploration-and-Appraisal">Smart Transform for Exploration and Appraisal<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf child-2"><a href="https://www.landmark.solutions/Smart-Transform-for-Production">Smart Transform for Production<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf child-3"><a href="https://www.landmark.solutions/Smart-Transform-for-Unconventionals">Smart Transform for Unconventionals<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+                <li class="leaf last child-4"><a href="https://www.landmark.solutions/Smart-Transform-for-Cloud-Computing">Smart Transform for Cloud Computing<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="category haschild child-4"><a href="https://www.landmark.solutions/Solutions/Browse-by-Asset-Lifecycle">Browse by Asset Lifecycle<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a><ul>
+            <li class="leaf first child-1"><a href="https://www.landmark.solutions/Reservoir-Lifecycle-Management">Reservoir Lifecycle Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-2"><a href="https://www.landmark.solutions/Drilling-Lifecycle">Drilling Lifecycle Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-3"><a href="https://www.landmark.solutions/Production-Lifecycle">Production Lifecycle Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf child-4"><a href="https://www.landmark.solutions/Petroleum-Investment-Lifecycle-Management">Petroleum Investment Lifecycle Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+            <li class="leaf last child-5"><a href="https://www.landmark.solutions/Information-Lifecycle-Management">Information Lifecycle Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+          </ul>
+        </li>
+        <li class="category last child-5"><a href="https://www.landmark.solutions/Solutions/Products-A-Z">Products A-Z<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+      </ul>
+    </li>
+    <li class="root child-2"><a href="https://www.landmark.solutions/Support">Support<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+    <li class="root haschild child-3"><a href="https://www.landmark.solutions/Learning">Learning<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png"></a><ul>
+        <li class="category first child-1"><a href="https://landmarklearning.halliburton.com/">Instructor-Led Training<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category child-2"><a href="https://www.landmark.solutions/Video-Learning-Center">Video Learning Center<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category last child-3"><a href="https://www.landmark.solutions/Webinars">Webinars<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+      </ul>
+    </li>
+    <li class="root child-4"><a href="http://www.ienergy.community/">iEnergy<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+    <li class="root last haschild child-5"><a href="https://www.landmark.solutions/About">About<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png"></a><ul>
+        <li class="category first child-1"><a href="https://www.landmark.solutions/Our-History">Our History<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category child-2"><a href="https://www.landmark.solutions/Executive-Management">Executive Management<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category child-3"><a href="https://www.landmark.solutions/Our-Experts">Meet Our Experts<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category child-4"><a href="https://jobs.halliburton.com/">Careers<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category child-5"><a href="https://www.landmark.solutions/Awards">Awards<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category child-6"><a href="https://www.landmark.solutions/News">News<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category child-7"><a href="https://www.landmark.solutions/About/Events">Events<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category child-8"><a href="https://www.landmark.solutions/About/Contact-Us">Contact Us<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category child-9"><a href="https://www.landmark.solutions/About/Locations">Locations<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+        <li class="category last child-10"><a href="https://www.landmark.solutions/Resources1">Resources<img src="/Portals/_default/Skins/Web316/DNNStandard//Images/down.png" style="visibility:collapse;"></a></li>
+      </ul>
+    </li>
+  </ul>
+</div><!--END SEO--></div>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<div id="mobile-nav-box">
+		<!-- DDRmenu v02.00.01 - MobileMenu template --><ul id="mobilemenu">
+						<li class="item first"><a href="https://www.landmark.solutions/Solutions" class="haschild">Solutions</a><a href="#" class="max"></a>
+			    <ul class="submenu">
+				    
+	<li class="toggle-wrp"><a href="https://www.landmark.solutions/Solutions/Featured-Solutions" class="haschild">Featured Solutions</a><h6><i class="dakai"></i><i class="guanbi"></i></h6>
+			    <ul class="toggle-content">
+				    
+	<li class=""><a href="https://www.landmark.solutions/DecisionSpace-Geosciences-10EP" class="">DecisionSpace Geosciences 10ep</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Unconventionals-Technology" class="">Unconventionals Technology</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/DecisionSpace-Petrophysics" class="">Petrophysics</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/EP-Cloud-Solutions" class="">E&amp;P Cloud</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Economics" class="">Economics</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/ExplorationInsights" class="">Exploration Insights</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Learning" class="">eLearning</a>
+	</li>
+
+			    </ul>
+		
+	</li>
+
+	<li class="toggle-wrp"><a href="https://www.landmark.solutions/Solutions/Browse-by-Challenge" class="haschild">Browse by Challenge</a><h6><i class="dakai"></i><i class="guanbi"></i></h6>
+			    <ul class="toggle-content">
+				    
+	<li class=""><a href="https://www.landmark.solutions/Deepwater" class="">Deepwater</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Mature-Fields" class="">Mature Fields</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Unconventionals" class="">Unconventionals</a>
+	</li>
+
+			    </ul>
+		
+	</li>
+
+	<li class="toggle-wrp"><a href="https://www.landmark.solutions/Solutions/Browse-by-Discipline" class="haschild">Browse by Discipline</a><h6><i class="dakai"></i><i class="guanbi"></i></h6>
+			    <ul class="toggle-content">
+				    
+	<li class="toggle-wrp"><a href="https://www.landmark.solutions/ExplorationInsights" class="haschild">Exploration Insights</a><h6><i class="dakai"></i><i class="guanbi"></i></h6>
+			    <ul class="toggle-content">
+				    
+	<li class=""><a href="https://www.landmark.solutions/Tectonostratigraphic-Analysis" class="">Tectonostratigraphic Analysis</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Play-Characterization" class="">Play Characterization</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Basin-Screening" class="">Basin Screening</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Exploration-Insights-Consultancy" class="">Consultancy and Training</a>
+	</li>
+
+			    </ul>
+		
+	</li>
+
+	<li class="toggle-wrp"><a href="https://www.landmark.solutions/Geosciences" class="haschild">Geosciences</a><h6><i class="dakai"></i><i class="guanbi"></i></h6>
+			    <ul class="toggle-content">
+				    
+	<li class=""><a href="https://www.landmark.solutions/Geology" class="">Geology</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Geophysics" class="">Geophysics</a>
+	</li>
+
+			    </ul>
+		
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Geomechanics" class="">Geomechanics</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/DecisionSpace-Petrophysics" class="">Petrophysics</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Reservoir1" class="">Reservoir</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Drilling" class="">Drilling</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Production" class="">Production</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Economics" class="">Economics</a>
+	</li>
+
+	<li class="toggle-wrp"><a href="https://www.landmark.solutions/Information-Management" class="haschild">Information Management</a><h6><i class="dakai"></i><i class="guanbi"></i></h6>
+			    <ul class="toggle-content">
+				    
+	<li class=""><a href="https://www.landmark.solutions/Well-Data-Management" class="">Well Data Management</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/BoreholeDataManagement" class="">Borehole Data Management</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/SeismicDataManagement" class="">Seismic Data Management</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/ProjectDataManagement" class="">Project Data Management</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/InformationManagementServices" class="">Information Management Services</a>
+	</li>
+
+			    </ul>
+		
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/DecisionSpacePlatform" class="">Enterprise Platform</a>
+	</li>
+
+	<li class="toggle-wrp"><a href="https://www.landmark.solutions/Landmark-Services" class="haschild">Landmark Services</a><h6><i class="dakai"></i><i class="guanbi"></i></h6>
+			    <ul class="toggle-content">
+				    
+	<li class=""><a href="https://www.landmark.solutions/Smart-Transform-for-Exploration-and-Appraisal" class="">Smart Transform for Exploration and Appraisal</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Smart-Transform-for-Production" class="">Smart Transform for Production</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Smart-Transform-for-Unconventionals" class="">Smart Transform for Unconventionals</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Smart-Transform-for-Cloud-Computing" class="">Smart Transform for Cloud Computing</a>
+	</li>
+
+			    </ul>
+		
+	</li>
+
+			    </ul>
+		
+	</li>
+
+	<li class="toggle-wrp"><a href="https://www.landmark.solutions/Solutions/Browse-by-Asset-Lifecycle" class="haschild">Browse by Asset Lifecycle</a><h6><i class="dakai"></i><i class="guanbi"></i></h6>
+			    <ul class="toggle-content">
+				    
+	<li class=""><a href="https://www.landmark.solutions/Reservoir-Lifecycle-Management" class="">Reservoir Lifecycle Management</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Drilling-Lifecycle" class="">Drilling Lifecycle Management</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Production-Lifecycle" class="">Production Lifecycle Management</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Petroleum-Investment-Lifecycle-Management" class="">Petroleum Investment Lifecycle Management</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Information-Lifecycle-Management" class="">Information Lifecycle Management</a>
+	</li>
+
+			    </ul>
+		
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Solutions/Products-A-Z" class="">Products A-Z</a>
+	</li>
+
+			    </ul></li>
+						<li class="item"><a href="https://www.landmark.solutions/Support" class="">Support</a></li>
+						<li class="item"><a href="https://www.landmark.solutions/Learning" class="haschild">Learning</a><a href="#" class="max"></a>
+			    <ul class="submenu">
+				    
+	<li class=""><a href="https://landmarklearning.halliburton.com/" class="">Instructor-Led Training</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Video-Learning-Center" class="">Video Learning Center</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Webinars" class="">Webinars</a>
+	</li>
+
+			    </ul></li>
+						<li class="item"><a href="http://www.ienergy.community/" class="">iEnergy</a></li>
+						<li class="item last"><a href="https://www.landmark.solutions/About" class="haschild">About</a><a href="#" class="max"></a>
+			    <ul class="submenu">
+				    
+	<li class=""><a href="https://www.landmark.solutions/Our-History" class="">Our History</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Executive-Management" class="">Executive Management</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Our-Experts" class="">Meet Our Experts</a>
+	</li>
+
+	<li class=""><a href="https://jobs.halliburton.com/" class="">Careers</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Awards" class="">Awards</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/News" class="">News</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/About/Events" class="">Events</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/About/Contact-Us" class="">Contact Us</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/About/Locations" class="">Locations</a>
+	</li>
+
+	<li class=""><a href="https://www.landmark.solutions/Resources1" class="">Resources</a>
+	</li>
+
+			    </ul></li></ul>
+
+
+
+	</div>
+	 <!-- end #nav -->
+	<div id="dnn_Wide01Pane" class="FullPane DNNEmptyPane"></div>
+	<section id="dnncontent">
+		<div class="dnnrow">
+			<div class="innermargin">
+				<div id="dnn_ContentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-464"><a name="464"></a>
+<script type="text/javascript" src="/Portals/_default/Containers/LayerSlider/js/layerslider.kreaturamedia.jquery.js"></script>
+<script type="text/javascript" src="/Portals/_default/Containers/LayerSlider/js/jquery-easing-1.3.js"></script>
+<script type="text/javascript" src="/Portals/_default/Containers/LayerSlider/js/jquerytransit.js"></script>
+<script type='text/javascript' src='/Portals/_default/Containers/LayerSlider/js/layerslider.transitions.js'></script>
+<script type="text/javascript">var lsjQuery = jQuery;</script>
+<script type="text/javascript">
+lsjQuery(document).ready(function() {
+                if(typeof lsjQuery.fn.layerSlider == "undefined") { lsShowNotice('layerslider_1','jquery'); }
+                    else if(typeof lsjQuery.transit == "undefined" || typeof lsjQuery.transit.modifiedForLayerSlider == "undefined") { lsShowNotice('layerslider_1', 'transit'); }
+                        else {
+                            lsjQuery("#layerslider_1").layerSlider({
+                                width: '960px',
+                                height: '500px',
+                                responsive : true,
+                                responsiveUnder : 0,
+                                sublayerContainer : 0,
+                                autoStart : true,
+                                pauseOnHover : true,
+                                firstLayer : 1,
+                                animateFirstLayer : true,
+                                randomSlideshow : false,
+                                twoWaySlideshow : true,
+                                loops : 0,
+                                forceLoopNum : true,
+                                autoPlayVideos : true,
+                                autoPauseSlideshow : 'auto',
+                                youtubePreview : 'maxresdefault.jpg',
+                                keybNav : true,
+                                touchNav : true,
+                                skin : 'fullwidth',
+                                skinsPath : '/Portals/_default/Containers/LayerSlider/skins/',
+								globalBGColor : 'transparent',
+								navPrevNext : true,
+                                navStartStop : true,
+                                navButtons : true,
+                                hoverPrevNext : true,
+                                hoverBottomNav : false,
+                                showBarTimer : false,
+                                showCircleTimer : true,
+                                thumbnailNavigation : 'hover',
+                                tnWidth : 100,
+                                tnHeight : 60,
+                                tnContainerWidth : '60%',
+                                tnActiveOpacity : 35,
+                                tnInactiveOpacity : 100,
+                                imgPreload : true,
+                        		yourLogo : false,
+                                yourLogoStyle : 'left: 10px; top: 10px;',
+                                yourLogoLink : false,
+                                yourLogoTarget : '_self',
+                                cbInit : function(element) { },
+                                cbStart : function(data) { },
+                                cbStop : function(data) { },
+                                cbPause : function(data) { },
+                                cbAnimStart : function(data) { },
+                                cbAnimStop : function(data) { },
+                                cbPrev : function(data) { },
+                                cbNext : function(data) { }
+                            });
+                        }
+            });
+        </script>
+<div id="dnn_ctr464_ContentPane"><!-- Start_Module_464 --><div id="dnn_ctr464_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr464_HtmlModule_lblContent" class="Normal">
+		<div class="row">
+<div class="col-md-8 col-sm-8 homepagescroller">
+<div class="gdl-top-slider full-container top-slider-enabled boxed-style-enabled">
+<div class="gdl-top-layeR_Slider-wrapper">
+<div class="ls-wp-container" id="layerslider_1" style="margin: 0px auto; width: 1900px; height: 800px;">
+<div class="ls-layer"><img class="ls-bg" alt="Landmark Software - E&amp;P Software" src="/portals/0/Images/LMSImages/business-transformation2.jpg" />
+<h1 class="ls-s-1" style="left: 51px; top: 120px; color: #000000; font-size: 60px; position: absolute;"> </h1>
+<h1 class="ls-s-1 fontcolor" style="left: 51px; top: 180px; text-transform: uppercase; font-size: 70px; position: absolute;"> </h1>
+<p class="ls-s-1" style="left: 55px; top: 270px; font-size: 16px; white-space: nowrap; position: absolute;">  <br />
+<br />
+<br />
+<br />
+<a href="/Landmark-and-Accenture" target="_blank"><span style="color: #ffffff; font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn More &raquo;</span></a></p>
+</div>
+<div class="ls-layer"><img class="ls-bg" alt="Landmark Software - E&amp;P Software" src="/portals/0/Images/LMSImages/LIFE-DS365-Banners.jpg" />
+<h1 class="ls-s-1" style="left: 51px; top: 120px; color: #000000; font-size: 60px; position: absolute;"> </h1>
+<h1 class="ls-s-1 fontcolor" style="left: 51px; top: 180px; text-transform: uppercase; font-size: 70px; position: absolute;"> </h1>
+<p class="ls-s-1" style="left: 55px; top: 270px; font-size: 16px; white-space: nowrap; position: absolute;">  <br />
+<br />
+<br />
+<br />
+<a href="/LIFE-2016-DecisionSpace-365"><span style="color: #ffffff; font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn More &raquo;</span></a></p>
+</div>
+<div class="ls-layer"><img class="ls-bg" alt="Landmark Software - E&amp;P Software " src="/portals/0/Images/LMSImages/LIFE-Voice-of-Oilfield-Banners3.jpg" />
+<h1 class="ls-s-1" style="left: 51px; top: 120px; color: #000000; font-size: 60px; position: absolute;"> </h1>
+<h1 class="ls-s-1 fontcolor" style="left: 51px; top: 180px; text-transform: uppercase; font-size: 70px; position: absolute;"> </h1>
+<p class="ls-s-1" style="left: 55px; top: 270px; font-size: 16px; white-space: nowrap; position: absolute;">  <br />
+<br />
+<br />
+<br />
+<a href="/LIFE-2016-Voice-of-the-Oilfield"><span style="color: #ffffff; font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn More &raquo;</span></a></p>
+</div>
+<div class="ls-layer"><img class="ls-bg" alt="Landmark Software - E&amp;P Software " src="/portals/0/Images/LMSImages/LIFE-iEnergy-banner.jpg" />
+<h1 class="ls-s-1" style="left: 51px; top: 120px; color: #000000; font-size: 60px; position: absolute;"> </h1>
+<h1 class="ls-s-1 fontcolor" style="left: 51px; top: 180px; text-transform: uppercase; font-size: 70px; position: absolute;"> </h1>
+<p class="ls-s-1" style="left: 55px; top: 270px; font-size: 16px; white-space: nowrap; position: absolute;">  <br />
+<br />
+<br />
+<br />
+<a href="/LIFE2016-ienergy"><span style="color: #ffffff; font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn More &raquo;</span></a></p>
+</div>
+<div class="ls-layer"><img class="ls-bg" alt="Landmark Software - E&amp;P Software " src="/portals/0/Images/LMSImages/LIFE-OpenEarth-Banners.jpg" />
+<h1 class="ls-s-1" style="left: 51px; top: 120px; color: #000000; font-size: 60px; position: absolute;"> </h1>
+<h1 class="ls-s-1 fontcolor" style="left: 51px; top: 180px; text-transform: uppercase; font-size: 70px; position: absolute;"> </h1>
+<p class="ls-s-1" style="left: 55px; top: 270px; font-size: 16px; white-space: nowrap; position: absolute;">  <br />
+<br />
+<br />
+<br />
+<a href="/LIFE-2016-OpenEarth"><span style="color: #ffffff; font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn More &raquo;</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4  homepagescroller" style="height: 100%;">
+<p><a href="http://landmark.solutions/life2016/index.html?V67" target="_blank">
+<img class="homepagetoptiles" alt="LIFE 2016" src="/portals/0/Images/LMSImages/life-tile55.jpg" /></a></p>
+<a href="http://www.ienergy.community" target="_blank">
+<img class="homepagetoptiles" alt="iEnergy" src="/portals/0/Images/LMSImages/right-tile-iE.jpg" />
+</a></div>
+</div>
+	</div>
+
+</div><!-- End_Module_464 --></div>
+
+</div></div>
+				<div class="panebox">
+                 <div> <meta name="DCSext.bcrumbs" content="Landmark Solutions - E&amp;P software\" />
+<span id="dnn_dnnBreadcrumb_lblBreadCrumb"><a href='https://www.landmark.solutions' class='breadcrumb-description'>Home</a>  »  <span class="breadcrumb-description">Landmark Solutions - E&P software</span></span>
+</div>
+                <div id="dnn_MainContentPane" class="DNNEmptyPane"></div>
+					 
+					 
+				</div>
+				<div class="panebox">
+                    
+					 
+					 
+				</div>
+				<div class="panebox">
+					 
+					 
+				</div>
+				<div class="panebox">
+					 
+					 
+					 
+				</div>
+			</div>
+		</div>
+	 	<div id="dnn_Wide02Pane" class="FullPane DNNEmptyPane"></div>
+		<div class="dnnrow">
+			<div class="innermargin">
+				<div id="dnn_MainPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-466"><a name="466"></a>
+<div id="dnn_ctr466_ContentPane"><!-- Start_Module_466 --><div id="dnn_ctr466_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr466_HtmlModule_lblContent" class="Normal">
+	<br />
+<div class="row">
+<div class="col-sm-4  col-md-4">
+<div class="pillars">
+<p style="text-align: center;"><img alt="" src="/portals/0/Images/LMSImages/exploration-insights13.png" /></p>
+<h3>EXPLORATION INSIGHTS</h3>
+<p class="fontIconDescription">Essential geologic data, knowledge, and insights</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="pillars">
+<p style="text-align: center;"><img alt="" src="/portals/0/Images/LMSImages/decisionspace-suite3.png" /></p>
+<h3>DECISIONSPACE SUITE</h3>
+<p class="fontIconDescription">Integrated science-based solutions on a single enterprise platform</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="pillars">
+<p style="text-align: center;"><img alt="" src="/portals/0/Images/LMSImages/smarttransform33.png" /></p>
+<h3>SMART TRANSFORM</h3>
+<p class="fontIconDescription">Deep expertise and knowledge to solve challenges</p>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- End_Module_466 --></div>
+
+</div><div class="DnnModule DnnModule-DnnskinNetMGS DnnModule-467"><a name="467"></a>
+<div id="dnn_ctr467_ContentPane"><!-- Start_Module_467 --><h3><span class="pageheaders">Spotlight</span></h3>
+<div class="headerborders"> </div>
+<br /><div id="dnn_ctr467_ModuleContent" class="DNNModuleContent ModDnnskinNetMGSC">
+	
+<div id="MGS467"><div class="mgsheight467 mgswidth467">	<script type="text/javascript" src="/DesktopModules/Dnnskin.Net.MGS/Templates/DNN-FocusImage/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript">
+	<!--
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+		});
+		-->
+	</script>
+<div id="mgsac467" class="recent-work">
+<div class="r-work fourcol">
+	<div class="imgbox">
+		<a href="https://www.landmark.solutions/CasingWear-Well-Integrity-Software"><img src="/Portals/_default/E_MGS_Gallery/_ThumbPic/_Thumb_1_1.jpg" alt="CasingWear™ Well Integrity Software" /></a>
+		<span class="overlay"></span>
+		<!--<a href="https://www.landmark.solutions/CasingWear-Well-Integrity-Software" class="more"></a>-->
+		<!--<a href="/Portals/0/Images/LMSImages/tile-casingwear1jpg.jpg" class="zoom fancybox" title="CasingWear™ Well Integrity Software" rel="example_group"></a>-->
+		<a href="https://www.landmark.solutions/CasingWear-Well-Integrity-Software"><div class="titlebox">CasingWear™ Well Integrity Software</div></a>
+	</div> 
+	<div class="textbox"><span>Innovative well engineering application provides a comprehensive approach to well integrity</span>...<a href="https://www.landmark.solutions/CasingWear-Well-Integrity-Software"><span class="raquo">&raquo;</a></span></div>
+</div>
+<div class="r-work fourcol">
+	<div class="imgbox">
+		<a href="https://www.landmark.solutions/DecisionSpace-Petrophysics"><img src="/Portals/_default/E_MGS_Gallery/_ThumbPic/_Thumb_3_1.jpg" alt="Petrophysics" /></a>
+		<span class="overlay"></span>
+		<!--<a href="https://www.landmark.solutions/DecisionSpace-Petrophysics" class="more"></a>-->
+		<!--<a href="/Portals/0/Images/LMSImages/tile-petrophysics.jpg" class="zoom fancybox" title="Petrophysics" rel="example_group"></a>-->
+		<a href="https://www.landmark.solutions/DecisionSpace-Petrophysics"><div class="titlebox">Petrophysics</div></a>
+	</div> 
+	<div class="textbox"><span>Industry&rsquo;s first full asset lifecycle formation evaluation solution. </span>...<a href="https://www.landmark.solutions/DecisionSpace-Petrophysics"><span class="raquo">&raquo;</a></span></div>
+</div>
+<div class="r-work fourcol">
+	<div class="imgbox">
+		<a href="https://www.landmark.solutions/FieldPlan"><img src="/Portals/_default/E_MGS_Gallery/_ThumbPic/_Thumb_0_1.png" alt="FieldPlan® Express" /></a>
+		<span class="overlay"></span>
+		<!--<a href="https://www.landmark.solutions/FieldPlan" class="more"></a>-->
+		<!--<a href="/Portals/0/Images/LMSImages/tile14.png" class="zoom fancybox" title="FieldPlan® Express" rel="example_group"></a>-->
+		<a href="https://www.landmark.solutions/FieldPlan"><div class="titlebox">FieldPlan® Express</div></a>
+	</div> 
+	<div class="textbox">Perform crucial financial assessments of oil &amp; gas fields - in minutes...<a href="https://www.landmark.solutions/FieldPlan"><span class="raquo">&raquo;</a></span></div>
+</div>
+<div class="r-work fourcol">
+	<div class="imgbox">
+		<a href=""><img src="/Portals/_default/E_MGS_Gallery/_ThumbPic/_Thumb_2_1.png" alt="eLearning " /></a>
+		<span class="overlay"></span>
+		<!--<a href="" class="more"></a>-->
+		<!--<a href="/Portals/0/Images/LMSImages/tile44.png" class="zoom fancybox" title="eLearning " rel="example_group"></a>-->
+		<a href=""><div class="titlebox">eLearning </div></a>
+	</div> 
+	<div class="textbox">Hear how to access embedded support and eLearning online and throughout DecisionSpace applications...<a href=""><span class="raquo">&raquo;</a></span></div>
+</div>
+	<div class="clear"></div>
+</div>
+<script type="text/javascript">
+<!--
+(function($){
+	var $featured = $('#featured'),
+		et_featured_width = $featured.width(),
+		et_container_width = $('.container').width();
+	
+	$(document).ready(function(){
+		var $recent_work = $('.r-work'),
+			main_speed = 450;
+		
+		$recent_work.hover( function(){
+			var $recent_work_caption = $(this).find('div.titlebox'),
+				et_window_width = $(window).width(),
+				recent_more_link_left,
+				recent_zoom_link_right,
+				recent_work_caption_height;
+				
+			//recent_work_caption_height = $recent_work_caption.data('et_height') ? $recent_work_caption.data('et_height') : $recent_work_caption.height();
+			recent_work_caption_height = 50;				
+			
+			if ( et_window_width >= 960 || et_window_width < 480 ){
+				recent_more_link_left = recent_zoom_link_right = '50%';
+			} else if ( et_window_width >= 768 && et_window_width < 960 ){
+				recent_more_link_left = '50%';
+				recent_zoom_link_right = '50%';
+				recent_work_caption_height = 45;
+			} else if ( et_window_width >= 480 && et_window_width < 768 ){
+				recent_more_link_left = '50%';
+				recent_zoom_link_right = '50%';
+			}
+			
+			$(this).find('a.more').css( { opacity : 0, 'display' : 'block', 'left' : '0' }).stop(true,true).animate( { opacity: 1, 'left' : recent_more_link_left }, main_speed );
+			$(this).find('a.zoom').css( { opacity : 0, 'display' : 'block', 'right' : '0' }).stop(true,true).animate( { opacity: 1, 'right' : recent_zoom_link_right }, main_speed );
+			
+			if ( et_window_width > 480 ) $recent_work_caption.data('et_height',recent_work_caption_height).css( { opacity : 0, 'display' : 'block', 'height' : '0', 'visibility' : 'visible' }).stop(true,true).animate( { opacity: 1, 'height' : recent_work_caption_height + 'px' }, main_speed );
+		}, function(){
+			var et_window_width = $(window).width();
+			
+			$(this).find('a.more').stop(true,true).animate( { opacity: 0, 'left' : '0' }, main_speed );
+			$(this).find('a.zoom').stop(true,true).animate( { opacity: 0, 'right' : '0' }, main_speed );
+			
+			if ( et_window_width > 480 ) $(this).find('div.titlebox').stop(true,true).animate( { opacity: 0, 'height' : '0' }, main_speed );
+			else $(this).find('p').css( 'opacity', '1' );
+		} );
+		
+	});
+	
+})(jQuery)
+-->
+</script>
+</div></div>
+
+</div><!-- End_Module_467 --></div>
+
+</div></div>
+				<div class="panebox">
+					 
+					 
+				</div>
+				<div class="panebox">
+					 
+					 
+					 
+					 
+				</div>
+			</div>
+		</div>
+		<div id="dnn_Wide03Pane" class="FullPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-468"><a name="468"></a>
+<div id="dnn_ctr468_ContentPane"><!-- Start_Module_468 --><div id="dnn_ctr468_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr468_HtmlModule_lblContent" class="Normal">
+	<div style="background-color: #dddddd;">
+<div class="dnnrow">
+<img style="margin: 10px; width: 140px; height: 165px; line-height: 20px; float: left;" alt="E&amp;P Data Analytics" src="/portals/0/Images/LMSImages/Satyam4.png" />
+<br />
+<span class="grayarea-header" style="margin-right: 10px;">What It Takes to Leverage E&amp;P Big Data</span>
+<p class="grayarea-description" style="margin: 15px;">
+Actionable insights from big data deliver big value to upstream O&amp;G. Satyam Priyadarshy, Ph.D., chief data scientist at Halliburton, explains why data-intensive scientific workflows are a good target for leveraging these technologies. </p>
+<p style="text-align: left; margin-left: 15px;">
+<a href="/Portals/0/LMSDocs/Whitepapers/What-It-Takes-To-Leverage-BigData.pdf" class="btn btn-default bgcolor" target="blank">Read Full Whitepaper
+</a> </p>
+<br />
+</div>
+</div>
+</div>
+
+</div><!-- End_Module_468 --></div>
+
+</div></div>
+		<div class="dnnrow">
+			<div class="innermargin">
+				<div id="dnn_BottomPane"><div class="DnnModule DnnModule-DnnskinNetMGS DnnModule-469"><a name="469"></a>
+<div id="dnn_ctr469_ContentPane"><!-- Start_Module_469 --><br />
+<span style="font-size: 24px; color: #363636;"><br />
+Solutions</span>
+<div style="border: 2px solid #d71920; border-image-source: none;"> </div>
+<br /><div id="dnn_ctr469_ModuleContent" class="DNNModuleContent ModDnnskinNetMGSC">
+	
+<div id="MGS469"><div class="mgsheight469 mgswidth469"><script type="text/javascript" src="/DesktopModules/Dnnskin.Net.MGS/Templates/LightWeight/js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="/DesktopModules/Dnnskin.Net.MGS/Templates/LightWeight/touchTouch/touchTouch.jquery.js"></script>
+<script id="js-dispatcher" type="text/javascript">
+
+$(function(){
+<!--	
+	// Initialize the gallery
+	$('#portfolio-items a.touchitem').touchTouch();});
+	
+// When DOM is fully loaded
+
+jQuery(document).ready(function ($) {
+
+    // Slide effects for #portfolio-items-filter
+    $.fn.slideHorzShow = function (speed, easing, callback) { this.animate({ marginLeft: 'show', marginRight: 'show', paddingLeft: 'show', paddingRight: 'show', width: 'show' }, speed, easing, callback); };
+    $.fn.slideHorzHide = function (speed, easing, callback) { this.animate({ marginLeft: 'hide', marginRight: 'hide', paddingLeft: 'hide', paddingRight: 'hide', width: 'hide' }, speed, easing, callback); };
+
+    // Test whether argument elements are parents of the first matched element
+    $.fn.hasParent = function (objs) {
+        objs = $(objs);
+        var found = false;
+        $(this[0]).parents().andSelf().each(function () {
+            if ($.inArray(this, objs) != -1) {
+                found = true;
+                return false;
+            }
+        });
+        return found;
+    };
+
+
+    /* ---------------------------------------------------------------------- */
+    /*	Portfolio Filter
+    /* ---------------------------------------------------------------------- */
+
+    (function () {
+
+        var $container = $('#portfolio-items');
+
+        if ($container.length) {
+
+            var $itemsFilter = $('#portfolio-alltags'),
+				mouseOver;
+
+
+            // Copy categories to item classes
+            $('div.fourcol', $container).each(function (i) {
+                var $this = $(this);
+                $this.addClass($this.attr('data-tags'));
+            });
+
+            // Run Isotope when all images are fully loaded
+            $(window).on('load', function () {
+
+                $container.isotope({
+                    itemSelector: 'div.fourcol',
+                    layoutMode: 'fitRows'
+                });
+
+            });
+
+            // Filter projects
+            $itemsFilter.on('click', 'a', function (e) {
+                var $this = $(this),
+					currentOption = $this.attr('data-tags');
+
+                $itemsFilter.find('a').removeClass('active');
+                $this.addClass('active');
+
+                if (currentOption) {
+                    if (currentOption !== '*') currentOption = currentOption.replace(currentOption, '.' + currentOption)
+                    $container.isotope({ filter: currentOption });
+                }
+
+                e.preventDefault();
+            });
+
+            $itemsFilter.find('a').first().addClass('active');
+            $itemsFilter.find('a').not('.active').hide();
+
+            // On mouseover (hover)
+            $itemsFilter.on('mouseenter', function () {
+                var $this = $(this);
+
+                clearTimeout(mouseOver);
+
+                // Wait 100ms before animating to prevent unnecessary flickering
+                mouseOver = setTimeout(function () {
+                    if ($(window).width() >= 240)
+                        $this.find('li a').stop(true, true).slideHorzShow(300);
+                }, 100);
+            }).on('mouseleave', function () {
+                clearTimeout(mouseOver);
+
+                if ($(window).width() >= 240)
+                    $(this).find('li a').not('.active').stop(true, true).slideHorzHide(150);
+            });
+
+        }
+
+    })();
+});
+-->
+</script>
+
+<div id="mgsac469" class="mgswidth469">
+<!--Modified for LSW homepage-->
+<!--<div class="wsc_controls"><ul class="all_tags" id="portfolio-alltags"><li><a href="https://www.landmark.solutions/" data-tags="*" class="active">All</a></li></ul></div>-->
+<div class="wsc_controls"></div>
+<div style="position: relative; overflow: hidden;" id="portfolio-items" class="clearfix isotope">
+<div class="photo" >
+    <div class="fourcol" data-tags="">
+        <div style="border:1px solid lightgray">
+            <div class="border">
+                <a href="https://www.landmark.solutions/ExplorationInsights"><img src="/Portals/0/Images/LMSImages/exploration-insights13.png" alt="Exploration Insights" /></a>
+                <!--<a href="https://www.landmark.solutions/ExplorationInsights"><span class="externallinks"></span></a>-->
+            </div>
+            <h5 class="title">Exploration Insights</h5>
+            <div class="iteminfo"><i class="icon-user-1"></i>Adriana Gutierrez &nbsp; <i class="icon-clock-alt"></i>Friday, April 29, 2016</div>
+            <div class="textcolor">Gain data, knowledge and insight to better understand geological risk to minimize exploration risk.</div>
+            <div class="learnmore">
+                <a href="https://www.landmark.solutions/ExplorationInsights" title="Exploration Insights">Learn More</a>
+            </div>
+        </div>
+    </div>
+	<hr class="hr hr3">
+</div>
+<div class="photo" >
+    <div class="fourcol" data-tags="">
+        <div style="border:1px solid lightgray">
+            <div class="border">
+                <a href="https://www.landmark.solutions/Geosciences"><img src="/Portals/0/Images/LMSImages/icons_0001_Geosciences3.png" alt="Geosciences" /></a>
+                <!--<a href="https://www.landmark.solutions/Geosciences"><span class="externallinks"></span></a>-->
+            </div>
+            <h5 class="title">Geosciences</h5>
+            <div class="iteminfo"><i class="icon-user-1"></i>Adriana Gutierrez &nbsp; <i class="icon-clock-alt"></i>Thursday, December 10, 2015</div>
+            <div class="textcolor">Analyze, interpret, and model large&nbsp;and complex data volumes more accurately.</div>
+            <div class="learnmore">
+                <a href="https://www.landmark.solutions/Geosciences" title="Geosciences">Learn More</a>
+            </div>
+        </div>
+    </div>
+	<hr class="hr hr3">
+</div>
+<div class="photo" >
+    <div class="fourcol" data-tags="">
+        <div style="border:1px solid lightgray">
+            <div class="border">
+                <a href="https://www.landmark.solutions/Geomechanics"><img src="/Portals/0/Images/LMSImages/icons_0002_Geomechanics3.png" alt="Geomechanics" /></a>
+                <!--<a href="https://www.landmark.solutions/Geomechanics"><span class="externallinks"></span></a>-->
+            </div>
+            <h5 class="title">Geomechanics</h5>
+            <div class="iteminfo"><i class="icon-user-1"></i>Adriana Gutierrez &nbsp; <i class="icon-clock-alt"></i>Thursday, December 10, 2015</div>
+            <div class="textcolor">Refine fluid and casing plans and fracture design for drilling performance and safety.</div>
+            <div class="learnmore">
+                <a href="https://www.landmark.solutions/Geomechanics" title="Geomechanics">Learn More</a>
+            </div>
+        </div>
+    </div>
+	<hr class="hr hr3">
+</div>
+<div class="photo" >
+    <div class="fourcol" data-tags="">
+        <div style="border:1px solid lightgray">
+            <div class="border">
+                <a href="https://www.landmark.solutions/Reservoir1"><img src="/Portals/0/Images/LMSImages/icons_0003_Reservoir3.png" alt="Reservoir Management" /></a>
+                <!--<a href="https://www.landmark.solutions/Reservoir1"><span class="externallinks"></span></a>-->
+            </div>
+            <h5 class="title">Reservoir Management</h5>
+            <div class="iteminfo"><i class="icon-user-1"></i>Adriana Gutierrez &nbsp; <i class="icon-clock-alt"></i>Thursday, December 10, 2015</div>
+            <div class="textcolor">Better understand reservoir dynamics, performance, risk and uncertainty.</div>
+            <div class="learnmore">
+                <a href="https://www.landmark.solutions/Reservoir1" title="Reservoir Management">Learn More</a>
+            </div>
+        </div>
+    </div>
+	<hr class="hr hr3">
+</div>
+<div class="photo" >
+    <div class="fourcol" data-tags="">
+        <div style="border:1px solid lightgray">
+            <div class="border">
+                <a href="https://www.landmark.solutions/Drilling"><img src="/Portals/0/Images/LMSImages/icons_0004_drilling3.png" alt="Drilling" /></a>
+                <!--<a href="https://www.landmark.solutions/Drilling"><span class="externallinks"></span></a>-->
+            </div>
+            <h5 class="title">Drilling</h5>
+            <div class="iteminfo"><i class="icon-user-1"></i>Adriana Gutierrez &nbsp; <i class="icon-clock-alt"></i>Thursday, December 10, 2015</div>
+            <div class="textcolor">Plan and optimize wells and fields to drill deeper, farther, and more efficiently.</div>
+            <div class="learnmore">
+                <a href="https://www.landmark.solutions/Drilling" title="Drilling">Learn More</a>
+            </div>
+        </div>
+    </div>
+	<hr class="hr hr3">
+</div>
+<div class="photo" >
+    <div class="fourcol" data-tags="">
+        <div style="border:1px solid lightgray">
+            <div class="border">
+                <a href="https://www.landmark.solutions/Production"><img src="/Portals/0/Images/LMSImages/icons_0005_production3.png" alt="Production" /></a>
+                <!--<a href="https://www.landmark.solutions/Production"><span class="externallinks"></span></a>-->
+            </div>
+            <h5 class="title">Production</h5>
+            <div class="iteminfo"><i class="icon-user-1"></i>Adriana Gutierrez &nbsp; <i class="icon-clock-alt"></i>Thursday, December 10, 2015</div>
+            <div class="textcolor">Integrate asset modeling of reservoir and facility network analysis to optimize production.</div>
+            <div class="learnmore">
+                <a href="https://www.landmark.solutions/Production" title="Production">Learn More</a>
+            </div>
+        </div>
+    </div>
+	<hr class="hr hr3">
+</div>
+<div class="photo" >
+    <div class="fourcol" data-tags="">
+        <div style="border:1px solid lightgray">
+            <div class="border">
+                <a href="https://www.landmark.solutions/Economics"><img src="/Portals/0/Images/LMSImages/icons_0006_economics3.png" alt="Economics" /></a>
+                <!--<a href="https://www.landmark.solutions/Economics"><span class="externallinks"></span></a>-->
+            </div>
+            <h5 class="title">Economics</h5>
+            <div class="iteminfo"><i class="icon-user-1"></i>Adriana Gutierrez &nbsp; <i class="icon-clock-alt"></i>Thursday, December 10, 2015</div>
+            <div class="textcolor">Manage economic risk throughout the life of the asset to maximize NPV.</div>
+            <div class="learnmore">
+                <a href="https://www.landmark.solutions/Economics" title="Economics">Learn More</a>
+            </div>
+        </div>
+    </div>
+	<hr class="hr hr3">
+</div>
+<div class="photo" >
+    <div class="fourcol" data-tags="">
+        <div style="border:1px solid lightgray">
+            <div class="border">
+                <a href="https://www.landmark.solutions/Information-Management"><img src="/Portals/0/Images/LMSImages/icons_0007_informationMgmt3.png" alt="Information Management" /></a>
+                <!--<a href="https://www.landmark.solutions/Information-Management"><span class="externallinks"></span></a>-->
+            </div>
+            <h5 class="title">Information Management</h5>
+            <div class="iteminfo"><i class="icon-user-1"></i>Adriana Gutierrez &nbsp; <i class="icon-clock-alt"></i>Thursday, December 10, 2015</div>
+            <div class="textcolor">Manage data from acquisition to decision through a common, open platform.</div>
+            <div class="learnmore">
+                <a href="https://www.landmark.solutions/Information-Management" title="Information Management">Learn More</a>
+            </div>
+        </div>
+    </div>
+	<hr class="hr hr3">
+</div>
+</div>
+</div>
+
+</div></div>
+
+</div><!-- End_Module_469 --></div>
+
+</div></div>
+				<div class="panebox">
+					 
+					 
+				</div>
+				<div class="panebox">
+					 
+					 
+				</div>
+				<div class="panebox">
+					 
+					 
+				</div>
+				<div class="panebox">
+					 
+					 
+				</div>
+				<div class="panebox">
+					 
+					 
+				</div>
+			</div>
+		</div>
+		<div id="dnn_Wide04Pane" class="FullPane DNNEmptyPane"></div>
+	</section>
+	<section id="dnncontentii">
+		<div id="dnn_Wide05Pane" class="FullPane DNNEmptyPane"></div>
+		<div class="dnnrow">
+			<div class="innermargin">
+				<div class="panebox">
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</section>       
+   	<footer id="dnnfooter">
+		<div class="dnnrow">
+				<div class="panebox">
+					<div id="side-box">
+						<a href="#top" class="totop" title="Back Top"><i class="icon-up-open whitecolor i16"></i></a>
+					</div>
+                     <div class="fleft Grid9LPane">
+    <div class="fleft Grid3LPane">
+    <span class="footerMainLink">Quick Links</span>
+<br/>
+<a href="http://www.landmark.solutions/About/Locations" class="footerSubLink">Locations</a>
+<br/>
+<a href="http://www.landmark.solutions/About/Contact-Us" class="footerSubLink">Contact Us</a>
+<br/>
+<a href="http://www.landmark.solutions/Solutions/Products-A-Z" class="footerSubLink">Product Index</a>
+    </div>
+    <div class="Grid6RPane">
+    <div class="fleft Grid3LPane">
+      <span class="footerMainLink">Company Information</span>
+      <br/>
+<a href="http://www.halliburton.com/en-US/about-us/default.page" target="_blank" class="footerSubLink">About Halliburton</a>
+<br/>
+<a href="http://www.landmark.solutions/About" class="footerSubLink">About Landmark</a>
+<br/>
+<a href="http://www.landmark.solutions/News" class="footerSubLink">News</a>
+<br/>
+  
+    </div>
+    <div class="fleft Grid3LPane">
+      <span class="footerMainLink">Careers</span>
+<br/>
+<a href="http://www.halliburton.com/en-US/careers/default.page?node-id=hgbr8q6n" class="footerSubLink">Job Openings</a>
+<br/>  
+<a href="http://www.halliburton.com/en-US/careers/go-further-faster.page" target="_blank" class="footerSubLink">Students</a>
+<br/>  
+<a href="http://www.halliburton.com/en-US/careers/halliburton-jobs-faq.page" target="_blank" class="footerSubLink">FAQs</a>
+    </div>
+    </div>
+    </div>
+    <div class="fright Grid3RPane">
+			<div class="innermargin">
+				<div class="panebox">
+                    <div class="fright">
+						<div class="fontsocial light" style="padding-top:10px">
+                            <a href="https://www.facebook.com/halliburton" target="_blank"><img style="margin-bottom:5px"src="/Portals/1/Images/IEnergy/Social/footer-fbicon.png"/></a>
+                            <a href="https://twitter.com/halliburton" target="_blank"><img style="margin-bottom:5px" src="/Portals/1/Images/IEnergy/Social/footer-twittericon.png"/></a>
+                            <a href="https://plus.google.com/+halliburton/posts" target="_blank"><img style="margin-bottom:5px" src="/Portals/1/Images/IEnergy/Social/footer-googleplusicon.png"/></a>
+                            <a href="https://www.youtube.com/user/Halliburton" target="_blank"><img style="margin-bottom:5px" src="/Portals/1/Images/IEnergy/Social/footer-youtubeicon.png" / ></a>
+                            <a href="http://halliburtonblog.com/" target="_blank"><img style="margin-bottom:5px" src="/Portals/1/Images/IEnergy/Social/footer-bloggericon.png"/></a>
+                            <a href="https://www.linkedin.com/company/e-p-software" target="_blank"><img style="margin-bottom:5px" src="/Portals/1/Images/IEnergy/Social/footer-inicon.png"/></a>     
+                            <a href="http://www.halliburton.com/en-US/rss-news-feeds.page" target="_blank"><img style="margin-bottom:5px" src="/Portals/1/Images/IEnergy/Social/footer-rssicon.png"/></a>   
+                           
+                        </div>
+                        <div style="padding-top:25px">
+                            <img src="/Portals/0/Images/LMSImages/Landmak-Logo-white.png" alt="Landmark Solutions"></img>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+					<div class="fleft copyright">
+						<span id="dnn_dnnCopyright_lblCopyright" class="copyright">Copyright © 2016 Halliburton. All Rights Reserved.</span>
+
+						<a id="dnn_dnnTerms_hypTerms" class="links" rel="nofollow" href="http://www.halliburton.com/en-US/about-us/legal/default.page" target="_blank">Terms Of Use</a> | 
+						<a id="dnn_dnnPrivacy_hypPrivacy" class="links" rel="nofollow" href="http://www.halliburton.com/en-US/about-us/legal/privacy-policy.page" target="_blank">Privacy Statement</a>
+                        <a href="http://www.halliburton.com/" target="_blank" class="footerSubLink" style="padding-left:10px">Go to Halliburton</a>
+					</div>
+					
+				</div>
+			</div>
+		
+	</footer>
+</div>
+
+<div class="rightNav">
+	<div class="ops">
+	<em class=" icon-cog-1 bgcolor"></em><strong><span id="dnn_dnnTEXTOptions_lblText" class="nostyle">Planar Client Options</span>
+</strong>
+	<div style="border:1px #eee solid; width:200px; margin-right:40px; background:#fff; position:absolute; left:0px; top:40px">
+<div id="control-panel-main">
+			<div id="dnnskin-control-inner">
+				<div class="otitle"><span id="dnn_dnnTEXTLayout_lblText" class="nostyle">Layout Style</span>
+</div>
+				<ul class="layouttype boxedwide">
+					<li id="Wide" title="Wide Layout" data-original-title="Tooltip" data-toggle="tooltip"><span id="dnn_dnnTEXTWide_lblText" class="nostyle">Wide</span>
+</li>
+					<li id="Boxed" title="Boxed Layout" data-original-title="Tooltip" data-toggle="tooltip">
+						<span id="dnn_dnnTEXTBoxed_lblText" class="nostyle">Boxed</span>
+
+						<ul class="layoutpattern themes">
+							<li id="pattern01" title="pattern01" class="pattern01" data-original-title="Tooltip" data-toggle="tooltip"></li>
+							<li id="pattern02" title="pattern02" class="pattern02" data-original-title="Tooltip" data-toggle="tooltip"></li>
+							<li id="pattern03" title="pattern03" class="pattern03" data-original-title="Tooltip" data-toggle="tooltip"></li>
+							<li id="pattern04" title="pattern04" class="pattern04" data-original-title="Tooltip" data-toggle="tooltip"></li>
+							<li id="pattern05" title="pattern05" class="pattern05" data-original-title="Tooltip" data-toggle="tooltip"></li>
+							<li id="pattern06" title="pattern06" class="pattern06" data-original-title="Tooltip" data-toggle="tooltip"></li>
+							<li id="pattern07" title="pattern07" class="pattern07" data-original-title="Tooltip" data-toggle="tooltip"></li>
+							<li id="pattern08" title="pattern08" class="pattern08" data-original-title="Tooltip" data-toggle="tooltip"></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="clr otitle"><span id="dnn_dnnTEXTTheme_lblText" class="nostyle">Theme Preview</span>
+</div>
+				<ul class="layoutcolor themes">
+					<li id="Default" title="Default" class="defaulttheme" data-original-title="Tooltip" data-toggle="tooltip"></li>
+					<li id="Red" title="Red" class="redtheme" data-original-title="Tooltip" data-toggle="tooltip"></li>
+					<li id="Green" title="Green" class="greentheme" data-original-title="Tooltip" data-toggle="tooltip"></li>
+					<li id="Blue" title="Blue" class="bluetheme" data-original-title="Tooltip" data-toggle="tooltip"></li>
+					<li id="Purple" title="Purple" class="purpletheme" data-original-title="Tooltip" data-toggle="tooltip"></li>
+					<li id="HotPink" title="HotPink" class="hotpinktheme" data-original-title="Tooltip" data-toggle="tooltip"></li>
+					<li id="SkyBlue" title="SkyBlue" class="skybluetheme" data-original-title="Tooltip" data-toggle="tooltip"></li>
+					<li id="Grey" title="Grey" class="greytheme" data-original-title="Tooltip" data-toggle="tooltip"></li>
+				</ul>
+				</div> <!-- end #dnnskin-control-inner -->
+		</div><div class="clr"></div>	</div>
+	</div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/waypoints.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/MagnificPopup.jquery.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/easyResponsiveTabs.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/customsettings.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/Web316/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript">
+	<!--
+    //////////////////////////////////////			
+    ////////mobile nav menu///////////////
+    //////////////////////////////////////
+    $(document).ready(function () {
+        $(".btn-mobile-nav").click(function () {
+            $("#mobile-nav-box").slideToggle("slow");
+            $(this).toggleClass("m-btn-active"); return false;
+        });
+
+        $(".btn-search").click(function () {
+            $("#search-box").slideToggle("fast");
+            //$(".searchBoxHolder").slideToggle("slow");
+            $(this).toggleClass("s-btn-active"); return false;
+        });
+
+    });
+    $(document).ready(function () {
+        $('#ifres').load(function () {
+            $('#ifres').contents().find("h1").css("font-size", "18px");
+        });
+    });
+
+
+    //layout type
+    $(document).ready(function () { $('head').append('<link id="cssfile" type="text/css" href="" rel="Stylesheet">') });
+    $(document).ready(function () { $('head').append('<link id="cssfilepattern" type="text/css" href="" rel="Stylesheet">') });
+    $(document).ready(function () { $('head').append('<link id="cssfilecolor" type="text/css" href="" rel="Stylesheet">') });
+    $(document).ready(function () { $('head').append('<link id="cssdatatable" type="text/css" href="" rel="Stylesheet">') });
+
+    jQuery(document).ready(function () {
+        var $li = $(".layouttype li");
+        $li.click(function () {
+            switchSkin(this.id);
+        });
+        var cookie_skin = $.cookie("MyCssSkin");
+
+        if (cookie_skin) {
+            switchSkin(cookie_skin);
+        }
+    });
+
+    function switchSkin(skinName) {
+        $("#" + skinName).addClass("selected")
+						   .siblings().removeClass("selected");
+        $("#cssfile").attr("href", null);
+        $("#cssfile").attr("href", "/Portals/_default/Skins/Web316/css/layout/" + skinName + ".css");
+        $.cookie("MyCssSkin", skinName, { path: '', expires: 10 });
+    }
+
+
+
+    jQuery(document).ready(function () {
+        var $li = $(".layoutpattern li");
+        $li.click(function () {
+            switchSkinHeader(this.id);
+        });
+        var cookie_skin = $.cookie("MyCssSkinPattern");
+
+        if (cookie_skin) {
+            switchSkinHeader(cookie_skin);
+        }
+
+    });
+
+    function switchSkinHeader(skinName) {
+        $("#" + skinName).addClass("selected")
+						   .siblings().removeClass("selected");
+        $("#cssfilepattern").attr("href", null);
+        $("#cssfilepattern").attr("href", "/Portals/_default/Skins/Web316/css/pattern/" + skinName + ".css");
+        $.cookie("MyCssSkinPattern", skinName, { path: '', expires: 10 });
+    }
+
+
+
+
+    jQuery(document).ready(function () {
+        var $li = $(".layoutcolor li");
+        $li.click(function () {
+            switchSkinColor(this.id);
+        });
+        var cookie_skin = $.cookie("MyCssSkinColor");
+
+        if (cookie_skin) {
+            switchSkinColor(cookie_skin);
+        }
+    });
+
+
+    function switchSkinColor(skinName) {
+        $("#" + skinName).addClass("selected")
+						   .siblings().removeClass("selected");
+        $("#cssfilecolor").attr("href", null);
+        $("#cssfilecolor").attr("href", "/Portals/_default/Skins/Web316/css/themes/" + skinName + ".css");
+        $.cookie("MyCssSkinColor", skinName, { path: '', expires: 10 });
+    }
+    // Right Side Bar
+    var btb = $(".rightNav");
+    var tempS;
+    $(".rightNav").hover(function () {
+        var thisObj = $(this);
+        tempS = setTimeout(function () {
+            thisObj.find("div.ops").each(function (i) {
+                var tA = $(this);
+                setTimeout(function () { tA.animate({ left: "0" }, 300); }, 50 * i);
+            });
+        }, 200);
+
+    }, function () {
+        if (tempS) { clearTimeout(tempS); }
+        $(this).find("div.ops").each(function (i) {
+            var tA = $(this);
+            setTimeout(function () {
+                tA.animate({ left: "-200" }, 300, function () {
+                });
+            }, 50 * i);
+        });
+
+    });
+    var isIE6 = !!window.ActiveXObject && !window.XMLHttpRequest;
+    if (isIE6) { $(window).scroll(function () { btb.css("top", $(document).scrollTop() + 100) }); }
+
+	
+	-->
+    
+    
+</script>
+
+        <input name="ScrollTop" type="hidden" id="ScrollTop" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" />
+        
+    
+<script type="text/javascript" src="/Resources/Shared/scripts/initWidgets.js" ></script></form>
+    
+    
+</body>
+</html>

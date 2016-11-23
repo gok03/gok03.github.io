@@ -1,0 +1,575 @@
+status: 200
+content-length: 32371
+content-location: http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/default.aspx
+x-aspnet-version: 4.0.30319
+x-powered-by: ASP.NET
+server: Microsoft-IIS/8.0
+cache-control: private
+date: Mon, 17 Oct 2016 15:40:15 GMT
+content-type: text/html; charset=utf-8
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><meta http-equiv="X-UA-Compatible" content="IE=edge" />	<!--this prevents IE compatability mode!!!-->
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link href="http://fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css" /><link href="../includes/normalize.css" rel="stylesheet" type="text/css" /><link href="../includes/StyleSheet.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+	<!--modal cart-->
+	<link href="../includes/modal/modal.css" rel="stylesheet" />    
+	
+	<!--sliding top panel-->
+	<link rel="stylesheet" href="../includes/sliding_panel/css/slide.css" type="text/css" media="screen" />
+	<script src="../includes/sliding_panel/js/slide.js" type="text/javascript"></script>
+    
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script type='text/javascript' src="../includes/modal/jquery.simplemodal.js"></script>
+	<script type='text/javascript' src="../includes/modal/modal.js"></script>			
+	<script src="../includes/slideshow/js/modernizr.custom.js"></script>			
+	<script src="../includes/slideshow/js/jquery.cbpFWSlider.js"></script>
+	
+
+       
+    <script src="../includes/jstab/jquery.responsiveTabs.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var $tabs = $('#horizontalTab');
+            $tabs.responsiveTabs({
+                rotate: false,
+                startCollapsed: 'accordion',
+                collapsible: 'accordion',
+                setHash: true,
+                disabled: [3, 4],
+                activate: function (e, tab) {
+                    $('.info').html('Tab <strong>' + tab.id + '</strong> activated!');
+                },
+                activateState: function (e, state) {
+                    //console.log(state);
+                    $('.info').html('Switched from <strong>' + state.oldState + '</strong> state to <strong>' + state.newState + '</strong> state!');
+                }
+            });
+           
+            $('.select-tab').on('click', function () {
+                $tabs.responsiveTabs('activate', $(this).val());
+            });
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function () {
+            $("#vprodpics").click(function () {
+                $(this).toggle();
+                $("#productimage").toggle();
+                $("#hprodpics").toggle().css('display', 'inline-block');
+            });
+            $("#hprodpics").click(function () {
+                $(this).toggle();
+                $("#productimage").toggle();
+                $("#vprodpics").toggle().css('display', 'inline-block');
+            });            
+        });
+	</script>
+    
+	<!-- CART FUNCTIONS -- ca -->
+    <script  type="text/javascript">
+	  function modalpopup() {
+		  $(document).ready(function () {
+			  $.modal('<iframe src="cart.aspx" height="430" width="100%" style="border:0">', {
+				  closeHTML: "",
+
+				  overlayClose: true
+			  });
+
+			  return false;
+		  });
+	  };
+	</script>
+    <!-- Login Panel -- ca -->    	
+	<script type="text/javascript">
+		function openslidingpanel() {
+			$("div#panel").slideDown("fast");
+			$("#toggle a").toggle();
+		};
+	</script>
+    <!--Image opener mobile -- ca -->
+    <script>
+        function openprodimages() {
+            $("#vprodpics").css('display', 'none');
+            $("#productimage").css('display', 'block');
+            $("#hprodpics").css('display', 'inline-block');
+        };
+    </script>
+    
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-5157989-51', 'auto');
+	  ga('send', 'pageview');
+	</script>    
+<meta name="description" content="Analytical Technology, Inc specializes in gas monitoring and water quality monitoring systems." /><title>
+	Gas Monitors and Water Quality Monitors - Analytical Technology, Inc. / +1-800-959-0299
+</title></head>
+<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" valign="top" align="center">
+<form method="post" action="./default.aspx" id="form1" enctype="multipart/form-data">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MDc3MzIxMzAPZBYCZg9kFgICAw9kFhICAQ8WAh4EVGV4dAUlPGRpdiBpZD0naGVhZGVyJyBjbGFzcz0naGVhZGVybG9naW4nPmQCAg8WAh8ABSY8ZGl2IGlkPSdsb2dpbmJhcicgY2xhc3M9J2xvZ2luaGlkZXInPmQCBg8WAh4LXyFJdGVtQ291bnQCERYiZg9kFgJmDxUCBDExMDIeUmVwbGFjZW1lbnQgQW1tb25pYSBHYXMgU2Vuc29yZAIBD2QWAmYPFQIEMTAyMBxBMTQvQTExIE1vZHVsYXIgR2FzIERldGVjdG9yZAICD2QWAmYPFQIEMTAxMx5DMTYgUG9ydGFibGUgR2FzIExlYWsgRGV0ZWN0b3JkAgMPZBYCZg8VAgQxMDI0FkYxMiBUb3hpYyBHYXMgRGV0ZWN0b3JkAgQPZBYCZg8VAgQxMDIzJkQxMiBUb3hpYyBhbmQgQ29tYnVzdGlibGUgR2FzIERldGVjdG9yZAIFD2QWAmYPFQIEMTAxNh9EMTItSVIgSW5mcmFyZWQgR2FzIFRyYW5zbWl0dGVyZAIGD2QWAmYPFQIEMTAxORlRNDVTIFdldCBIMlMgR2FzIERldGVjdG9yZAIHD2QWAmYPFQIEMTAyMRpCMTIgMi1XaXJlIEdhcyBUcmFuc21pdHRlcmQCCA9kFgJmDxUCBDEwMTcUQjE0IEdhcyBBbGFybSBNb2R1bGVkAgkPZBYCZg8VAgQxMDI1FEIxMiBXZXQgR2FzIERldGVjdG9yZAIKD2QWAmYPFQIEMTAxNCBBMTIgMi1XaXJlIFRveGljIEdhcyBUcmFuc21pdHRlcmQCCw9kFgJmDxUCBDExMDEbQzIxIERSSS1HQVMgU2FtcGxpbmcgU3lzdGVtZAIMD2QWAmYPFQIEMTEwMylFMTItMTUgSVIgSGlnaCBMZXZlbCBBbW1vbmlhIEdhcyBEZXRlY3RvcmQCDQ9kFgJmDxUCBDEwMTUfQTEyLTE3IENvbWJ1c3RpYmxlIEdhcyBEZXRlY3RvcmQCDg9kFgJmDxUCBDEwMjIiQzEyLTE3IENvbWJ1c3RpYmxlIEdhcyBUcmFuc21pdHRlcmQCDw9kFgJmDxUCBDEwMjcPQTIxIEdhcyBTYW1wbGVyZAIQD2QWAmYPFQIEMTAxOBZBMjMtMTQgT3pvbmUgR2VuZXJhdG9yZAIHDxYCHwECERYiZg9kFgJmDxUCBDEwMDMPQU1NT05JQSBNb25pdG9yZAIBD2QWAmYPFQIEMTAwNBFDSExPUklORSBNb25pdG9yc2QCAg9kFgJmDxUCBDEwMDUZQ0hMT1JJTkUgRElPWElERSBNb25pdG9yc2QCAw9kFgJmDxUCBDEwMDYVQ09ORFVDVElWSVRZIE1vbml0b3JzZAIED2QWAmYPFQIEMTAwNxlESVNTT0xWRUQgT1hZR0VOIE1vbml0b3JzZAIFD2QWAmYPFQIEMTAwOBFGTFVPUklERSBNb25pdG9yc2QCBg9kFgJmDxUCBDEwMDkaSFlEUk9HRU4gUEVST1hJREUgTW9uaXRvcnNkAgcPZBYCZg8VAgQxMDEwDk9aT05FIE1vbml0b3JzZAIID2QWAmYPFQIEMTAxMRdQRVJBQ0VUSUMgQUNJRCBNb25pdG9yc2QCCQ9kFgJmDxUCBDEwMTUUUEVSTUFOR0FOQVRFIE1vbml0b3JkAgoPZBYCZg8VAgQxMDEyD3BIL09SUCBNb25pdG9yc2QCCw9kFgJmDxUCBDEwMTMPU1VMRklERSBNb25pdG9yZAIMD2QWAmYPFQIEMTAyMA9TVUxGSVRFIE1vbml0b3JkAg0PZBYCZg8VAgQxMDIyGFNVU1BFTkRFRCBTT0xJRFMgTW9uaXRvcmQCDg9kFgJmDxUCBDEwMjERVFVSQklESVRZIE1vbml0b3JkAg8PZBYCZg8VAgQxMDE0HlBPUlRBQkxFIFdBVEVSIFFVQUxJVFkgU1lTVEVNU2QCEA9kFgJmDxUCBDEwMjMUV0FURVIgUVVBTElUWSBQQU5FTFNkAggPFgIfAQICFgRmD2QWAmYPFQIEMTE2MTFFdmVudDogV2F0ZXIgUXVhbGl0eSBUZWNobm9sb2d5IENvbmZlcmVuY2UgKEFXV0EpZAIBD2QWAmYPFQIEMTE1MBBFdmVudDogTkdXQSBFeHBvZAIJDxYCHwECAxYGZg9kFgJmDxUCBDExNTgYQVRJIEV4cGFuZHMgUHJvZHVjdCBMaW5lZAIBD2QWAmYPFQIEMTEyNiRBVEkgRmVhdHVyZWQgaW4gV2F0ZXIgV29ybGQgTWFnYXppbmVkAgIPZBYCZg8VAgQxMTI0IUFUSSBhdCB0aGUgUm95YWwgTWludDogcEggQ29udHJvbGQCCg8WAh4HVmlzaWJsZWdkAgsPDxYCHwJnZBYCAgEPFgIfAQIKFhRmD2QWAmYPFQIcaHR0cDovL3d3dy5lbnRlY2hkZXNpZ24uY29tLxcvc3lzL3NsaWRlc2hvdy8xMDQyLmpwZ2QCAQ9kFgJmDxUCDGRlZmF1bHQuYXNweBcvc3lzL3NsaWRlc2hvdy8xMDIwLmpwZ2QCAg9kFgJmDxUCZ2h0dHA6Ly93d3cuYW5hbHl0aWNhbHRlY2hub2xvZ3kuY29tL2FuYWx5dGljYWx0ZWNobm9sb2d5L2dhcy13YXRlci1tb25pdG9ycy9wcm9kdWN0LmFzcHg/UHJvZHVjdElEPTExMDEXL3N5cy9zbGlkZXNob3cvMTAzNy5qcGdkAgMPZBYCZg8VAiBwcm9kdWN0bGlzdC5hc3B4P0NhdGVnb3J5SUQ9MTAwNBcvc3lzL3NsaWRlc2hvdy8xMDE5LmpwZ2QCBA9kFgJmDxUCDGRlZmF1bHQuYXNweBcvc3lzL3NsaWRlc2hvdy8xMDIxLmpwZ2QCBQ9kFgJmDxUCG3Byb2R1Y3QuYXNweD9Qcm9kdWN0SUQ9MTA3ORcvc3lzL3NsaWRlc2hvdy8xMDIyLmpwZ2QCBg9kFgJmDxUCG3Byb2R1Y3QuYXNweD9Qcm9kdWN0SUQ9MTA2OBcvc3lzL3NsaWRlc2hvdy8xMDEzLmpwZ2QCBw9kFgJmDxUCG3Byb2R1Y3QuYXNweD9Qcm9kdWN0SUQ9MTA2Nxcvc3lzL3NsaWRlc2hvdy8xMDE0LmpwZ2QCCA9kFgJmDxUCZ2h0dHA6Ly93d3cuYW5hbHl0aWNhbHRlY2hub2xvZ3kuY29tL2FuYWx5dGljYWx0ZWNobm9sb2d5L2dhcy13YXRlci1tb25pdG9ycy9wcm9kdWN0LmFzcHg/UHJvZHVjdElEPTEwMjEXL3N5cy9zbGlkZXNob3cvMTA0MC5qcGdkAgkPZBYCZg8VAhtwcm9kdWN0LmFzcHg/UHJvZHVjdElEPTEwMzgXL3N5cy9zbGlkZXNob3cvMTAxMS5qcGdkAgwPZBYCAgEPFgIfAQIEFghmD2QWAmYPFQKDAWh0dHA6Ly93d3cuYW5hbHl0aWNhbHRlY2hub2xvZ3kuY29tL2FuYWx5dGljYWx0ZWNobm9sb2d5L2dhcy13YXRlci1tb25pdG9ycy9wcmVzcy5hc3B4P0lEPTExNTgmVGl0bGU9QVRJJTIwRXhwYW5kcyUyMFByb2R1Y3QlMjBMaW5lFy9zeXMvc2xpZGVzaG93LzEwNDMuanBnZAIBD2QWAmYPFQJWaHR0cDovL3d3dy5hbmFseXRpY2FsdGVjaG5vbG9neS5jb20vYW5hbHl0aWNhbHRlY2hub2xvZ3kvZ2FzLXdhdGVyLW1vbml0b3JzL2xvZ2luLmFzcHgXL3N5cy9zbGlkZXNob3cvMTAzOC5qcGdkAgIPZBYCZg8VAmdodHRwOi8vd3d3LmFuYWx5dGljYWx0ZWNobm9sb2d5LmNvbS9hbmFseXRpY2FsdGVjaG5vbG9neS9nYXMtd2F0ZXItbW9uaXRvcnMvcHJvZHVjdC5hc3B4P1Byb2R1Y3RJRD0xMTAyFy9zeXMvc2xpZGVzaG93LzEwNDEuanBnZAIDD2QWAmYPFQJnaHR0cDovL3d3dy5hbmFseXRpY2FsdGVjaG5vbG9neS5jb20vYW5hbHl0aWNhbHRlY2hub2xvZ3kvZ2FzLXdhdGVyLW1vbml0b3JzL3Byb2R1Y3QuYXNweD9Qcm9kdWN0SUQ9MTEwMhcvc3lzL3NsaWRlc2hvdy8xMDM5LmpwZ2RkT0X10UoM5xQq50O9qoTatj4B6SPLvnqIA35zfAk+SDs=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="247CCE67" />
+
+
+
+	<div id="toppanel">
+		<div id="panel">
+			<div class="content clearfix">
+				<!--begin normal login form-->
+				<div id="MiniLoginFormPanel" class="loginwidth">
+	
+					<table border="0" cellspacing="0" cellpadding="0" align="center" valign="middle">
+						<tr>
+							<td align="left" valign="top" colspan="100">
+								
+								
+								
+								<span id="lblInstructions"><font color="White"></font></span>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" valign="top">
+								<script type="text/javascript" language="javascript">
+									function EmailOnFocus(field){
+										if (field.value == 'Email') {
+											field.value = '';
+										}
+									}
+									function EmailOnBlur(field){
+										if (field.value == '') {
+											field.value = 'Email';
+										}
+									}
+								</script>
+								<input name="ctl00$EmailTextbox" type="text" value="Email" maxlength="50" size="20" id="EmailTextbox" onfocus="EmailOnFocus(this);" onblur="EmailOnBlur(this);" />
+							</td>
+							<td><img src="../images/empty.gif" height="1" width="7"></td>
+							<td align="left" valign="top">
+								<script type="text/javascript" language="javascript">
+									function PasswordOnFocus(field){
+										if (field.value == 'Password') {
+											field.value = '';
+										}
+									}
+									function PasswordOnBlur(field){
+										if (field.value == '') {
+											field.value = 'Password';
+										}
+									}
+								</script>
+								<input name="ctl00$PasswordTextbox" type="password" maxlength="50" size="20" id="PasswordTextbox" onfocus="PasswordOnFocus(this);" onblur="PasswordOnBlur(this);" style="font-size:10pt;" />
+							</td>
+							<td><img src="../images/empty.gif" height="1" width="7"></td>
+							<td align="right" valign="middle" colspan="2">
+								<input type="submit" name="ctl00$SubmitButton" value="Log In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SubmitButton&quot;, &quot;&quot;, true, &quot;MiniLoginForm&quot;, &quot;&quot;, false, false))" id="SubmitButton" class="searchbutton" />
+							</td>
+							</tr>
+                        <tr>
+							<td align="left" valign="top" colspan="2">
+								<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/password.aspx" class="loginlink" style="font-size:10px">Forgot Password?</a>
+							</td>
+							<td width="61">
+                                &nbsp;
+							</td>
+							<td align="right" valign="top" colspan="2">
+								<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/register.aspx" class="loginlink" style="font-size:10px">Create Account</a>
+							</td>
+						</tr>
+					</table>
+					<!--end normal login form-->
+				
+</div>
+			</div>
+		</div>
+		<div class="tab">
+			<ul class="login">
+				<li class="left">&nbsp;</li>
+				<li id="toggle">
+					<a id="open" class="open" href="#">Log In</a>
+					<a id="close" style="display: none;" class="close" href="#">Close</a>			
+				</li>
+				<li class="right">&nbsp;</li>
+			</ul> 
+		</div>
+	</div>	
+
+
+<div id='header' class='headerlogin'>
+	<div id="logo">
+		<a  href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/default.aspx"><img class="size" border="0" src="../images15/logo.png" /></a>
+	</div>
+	<div id="mobilelogo">
+		<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/default.aspx"><img class="size" border="0" src="../images15/mobilelogo.png" /></a>
+	</div>
+	<div id="chatspacer">
+    <div id="livechat">
+		
+<!--BEGIN LIVE CHAT CODE-->
+
+
+
+<script language=javascript src="http://chat.addisontech.com/SightMaxAgentInterface/Monitor.smjs?accountID=1&siteID=17&queueID=42"></script>
+<a class="loginlink" href="javascript: var e = window.open('http://chat.addisontech.com/SightMaxAgentInterface/PreChatSurvey.aspx?accountID=1&siteID=17&queueID=42','chatWindow','width=490,height=404,resizable=0,scrollbars=no,menubar=no,status=no');"onmouseout="top.status=''; return true;"onmousedown="top.status='Chat with a person';return true;"onmouseover="top.status='Chat with a person';return true;">
+Live Chat</a>
+
+
+
+<!--END LIVE CHAT CODE-->
+
+	</div>
+    <div id="loginspacer">
+
+    </div>
+	</div>
+	
+	<div id='loginbar' class='loginhider'>
+
+		<a id="LoginHyperlink" class="loginlink" href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/login.aspx">Login</a>
+	
+		<!---------------------BEGIN LOGIN AREA-------------------->
+			
+		<!---------------------END LOGIN AREA-------------------->
+	</div>
+	<div id="tagline">Measuring The Air We Breathe & the Water We Drink<br />
+		<!--BEGIN QUICK SEARCH FORM-->
+		<div id="SearchFormPanel">
+	
+			
+			<input name="ctl00$SearchPhraseTextbox" type="text" maxlength="50" id="SearchPhraseTextbox" class="searchtext" />
+			<input type="submit" name="ctl00$SearchSubmitButton" value="SEARCH" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SearchSubmitButton&quot;, &quot;&quot;, true, &quot;SearchForm&quot;, &quot;&quot;, false, false))" id="SearchSubmitButton" class="searchbutton" />
+		
+</div>							
+		<!--END QUICK SEARCH FORM-->
+	</div>
+	
+	<!--BEGIN LARGE SCREEN MENU-->
+	<div id="navigation">
+		<script type="text/javascript" src="../includes/sddm.js"></script>
+		<link href="../includes/sddm.css" rel="stylesheet" type="text/css" />
+		<ul id="sddm">
+			 <li>
+				<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/gas_monitors.aspx" onmouseover="mopen('m2')" onmouseout="mclosetime()">
+					Gas Detection</a>
+				<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+					
+					
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1102">Replacement Ammonia Gas Sensor</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1020">A14/A11 Modular Gas Detector</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1013">C16 Portable Gas Leak Detector</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1024">F12 Toxic Gas Detector</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1023">D12 Toxic and Combustible Gas Detector</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1016">D12-IR Infrared Gas Transmitter</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1019">Q45S Wet H2S Gas Detector</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1021">B12 2-Wire Gas Transmitter</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1017">B14 Gas Alarm Module</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1025">B12 Wet Gas Detector</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1014">A12 2-Wire Toxic Gas Transmitter</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1101">C21 DRI-GAS Sampling System</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1103">E12-15 IR High Level Ammonia Gas Detector</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1015">A12-17 Combustible Gas Detector</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1022">C12-17 Combustible Gas Transmitter</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1027">A21 Gas Sampler</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1018">A23-14 Ozone Generator</a>
+						
+					<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/gas_manuals.aspx">
+						O&M Manuals</a>
+					
+				</div>
+			</li>
+			<li>
+				<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/water_quality_monitors.aspx" onmouseover="mopen('m3')" onmouseout="mclosetime()">
+					Water Quality</a>
+				<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+					
+					
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1003">AMMONIA Monitor</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1004">CHLORINE Monitors</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1005">CHLORINE DIOXIDE Monitors</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1006">CONDUCTIVITY Monitors</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1007">DISSOLVED OXYGEN Monitors</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1008">FLUORIDE Monitors</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1009">HYDROGEN PEROXIDE Monitors</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1010">OZONE Monitors</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1011">PERACETIC ACID Monitors</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1015">PERMANGANATE Monitor</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1012">pH/ORP Monitors</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1013">SULFIDE Monitor</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1020">SULFITE Monitor</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1022">SUSPENDED SOLIDS Monitor</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1021">TURBIDITY Monitor</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1014">PORTABLE WATER QUALITY SYSTEMS</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?CategoryID=1023">WATER QUALITY PANELS</a>
+						
+					<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/productlist.aspx?filter=archived">
+						ARCHIVED PRODUCTS</a>
+					<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/water_manuals.aspx">
+						O&M MANUALS</a>
+					
+				</div>
+			</li>
+			<li>
+				<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/about.aspx" onmouseover="mopen('m4')" onmouseout="mclosetime()">
+					Company</a>
+				<div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+					
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/events.aspx?ID=1161">Event: Water Quality Technology Conference (AWWA)</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/events.aspx?ID=1150">Event: NGWA Expo</a>
+						
+					
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/press.aspx?ID=1158">ATI Expands Product Line</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/press.aspx?ID=1126">ATI Featured in Water World Magazine</a>
+						
+							<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/press.aspx?ID=1124">ATI at the Royal Mint: pH Control</a>
+						
+				</div>
+			</li><li>
+				<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/gas_water_manuals_choice.aspx" onmouseover="mopen('m5')" onmouseout="mclosetime()">
+					O&M Manuals</a>
+				<div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()"></div>
+			</li>
+			<li>
+				<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/contact.aspx" onmouseover="mopen('m5')" onmouseout="mclosetime()">
+					Contact Us</a>
+				<div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()"></div>
+			</li>
+		</ul>
+	</div>
+	<!--END LARGE SCREEN MENU-->
+	
+	<!--BEGIN MEDIUM SCREEN MENU-->
+	<div id="navigation2">
+	    <script type="text/javascript" src="../includes/sddm.js"></script>
+		<link href="../includes/sddm.css" rel="stylesheet" type="text/css" />
+		<ul id="sddm">
+			<li>
+				<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/gas_monitors.aspx" onmouseover="mopen('m2')" onmouseout="mclosetime()">Gas Detection</a>
+				<div id="Div1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()"></div>
+			</li>
+			<li>
+				<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/water_quality_monitors.aspx" onmouseover="mopen('m3')" onmouseout="mclosetime()">Water Quality</a>
+				<div id="Div2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()"></div>
+			</li>
+			<li>
+				<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/about.aspx" onmouseover="mopen('m4')" onmouseout="mclosetime()">Company</a>
+				<div id="Div3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()"></div>
+			</li>
+            	<li>
+				<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/gas_water_manuals_choice.aspx" onmouseover="mopen('m5')" onmouseout="mclosetime()">O&M Manuals</a>
+				<div id="Div4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()"></div>
+			</li>
+			<li>
+				<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/contact.aspx" onmouseover="mopen('m5')" onmouseout="mclosetime()">Contact Us</a>
+				<div id="Div6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()"></div>
+			</li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>
+	<!--END MEDIUM SCREEN MENU-->
+
+	<!--BEGIN SMALL SCREEN MENU-->
+	<div class="click-nav">
+		<script type="text/javascript">
+			  $(function () {
+				  $('.click-nav > ul').toggleClass('no-js js');
+				  $('.click-nav .js ul').hide();
+				  $('.click-nav .js').click(function (e) {
+					  $('.click-nav .js ul').slideToggle(200);
+					  $('.clicker').toggleClass('active');
+					  e.stopPropagation();
+				  });
+				  $(document).click(function () {
+					  if ($('.click-nav .js ul').is(':visible')) {
+						  $('.click-nav .js ul', this).slideUp();
+						  $('.clicker').removeClass('active');
+					  }
+				  });
+			  });
+		</script>
+		<ul class="no-js">
+			<li>
+				<a href="#" class="clicker"><img class="menuicon"  src="../images15/menu.png" /></a>
+				<ul>
+					<li><a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/gas_water_manuals_choice.aspx">O&M Manuals</a></li>
+					<li><a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/gas_monitors.aspx">Gas Detection</a></li>
+					<li><a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/water_quality_monitors.aspx">Water Quality</a></li>
+					<li><a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/about.aspx">Company</a></li>
+					<li><a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/contact.aspx">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!--END SMALL SCREEN MENU-->
+</div>
+
+<br /><br />
+<br />
+
+<div id="main">
+
+    <div id="SlideshowPanel">
+	
+		<!--begin slideshow-->
+		<div class="container">	
+			<link rel="stylesheet" type="text/css" href="../includes/slideshow/css/default.css" />
+			<link rel="stylesheet" type="text/css" href="../includes/slideshow/css/component.css" />
+
+			<script>
+				$('document').ready(function () {
+					$('#cbp-fwslider').cbpFWSlider();
+					setInterval(function () {
+					if ($('.cbp-fwnext').is(":visible"))
+						{ $('.cbp-fwnext').click(); }
+					else { $('.cbp-fwdots').find('span').click(); }
+						}, 10000);
+				});
+			</script>
+			<div id="cbp-fwslider" class="cbp-fwslider">
+				<ul>
+					
+							<li><a href="http://www.entechdesign.com/"><img src="/sys/slideshow/1042.jpg" width="1500" height="483" /></a></li>
+						
+							<li><a href="default.aspx"><img src="/sys/slideshow/1020.jpg" width="1500" height="483" /></a></li>
+						
+							<li><a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1101"><img src="/sys/slideshow/1037.jpg" width="1500" height="483" /></a></li>
+						
+							<li><a href="productlist.aspx?CategoryID=1004"><img src="/sys/slideshow/1019.jpg" width="1500" height="483" /></a></li>
+						
+							<li><a href="default.aspx"><img src="/sys/slideshow/1021.jpg" width="1500" height="483" /></a></li>
+						
+							<li><a href="product.aspx?ProductID=1079"><img src="/sys/slideshow/1022.jpg" width="1500" height="483" /></a></li>
+						
+							<li><a href="product.aspx?ProductID=1068"><img src="/sys/slideshow/1013.jpg" width="1500" height="483" /></a></li>
+						
+							<li><a href="product.aspx?ProductID=1067"><img src="/sys/slideshow/1014.jpg" width="1500" height="483" /></a></li>
+						
+							<li><a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1021"><img src="/sys/slideshow/1040.jpg" width="1500" height="483" /></a></li>
+						
+							<li><a href="product.aspx?ProductID=1038"><img src="/sys/slideshow/1011.jpg" width="1500" height="483" /></a></li>
+						
+				</ul>
+			</div>
+		</div>
+		<!--end slideshow-->
+	
+</div>
+    
+</div>   
+<div id="body" style="text-align:center"> 
+
+	<!--BEGIN CONTENT-->
+		
+       
+<br /><br /><br />
+
+
+		<div class="icon">
+			<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/press.aspx?ID=1158&Title=ATI%20Expands%20Product%20Line" class="iconlink"><img width="100%"  src="/sys/slideshow/1043.jpg" /></a>
+		</div>
+	
+		<div class="icon">
+			<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/login.aspx" class="iconlink"><img width="100%"  src="/sys/slideshow/1038.jpg" /></a>
+		</div>
+	
+		<div class="icon">
+			<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1102" class="iconlink"><img width="100%"  src="/sys/slideshow/1041.jpg" /></a>
+		</div>
+	
+		<div class="icon">
+			<a href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/product.aspx?ProductID=1102" class="iconlink"><img width="100%"  src="/sys/slideshow/1039.jpg" /></a>
+		</div>
+	
+    
+
+	<!--END CONTENT-->
+
+	<div id="footer">
+		<div class="footertitle">
+			<ul class="footertext">
+				US - ATI Home Office<br />
+				6 Iron Bridge Drive<br />
+				Collegeville, PA 19426<br /><br />
+				<a class="footerlink" href="tel:+18009590299" target="_blank">+1-800-959-0299</a> (<span>Toll </span>Free)<br />
+				<a class="footerlink" href="tel:+16109170991" target="_blank">+1-610-917-0991</a> (Voice)<br /> 
+				<a class="footerlink" href="tel:+16109170992" target="_blank">+1-610-917-0992</a> (FAX)<br /> <BR />
+				<a class="footerlink" href="mailto:sales@analyticaltechnology.com" target="_blank">Sales@AnalyticalTechnology.com</a><br />
+				<a class="footerlink" href="mailto:service@analyticaltechnology.com" target="_blank">Service@AnalyticalTechnology.com<br /></a><br />
+			</ul>
+		</div>
+		<div id="footermiddle">
+			<div id="footleft">
+				<a class="footerlink2" href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/gas_monitors.aspx">Gas Detection</a><br />
+				<a class="footerlink2" href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/water_quality_monitors.aspx">Water Quality Monitors</a><br />
+				<a class="footerlink2" href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/about.aspx">Company</a><br />
+				<a class="footerlink2" href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/contact.aspx">Contact Us</a>
+			</div>	
+			<div id="footright">
+				<a class="footerlink2" href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/default.aspx">Home</a><br />
+				<a class="footerlink2" href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/sitemap.aspx">Site-Map</a><br />
+				<a class="footerlink2" href="http://www.analyticaltechnology.com/analyticaltechnology/gas-water-monitors/terms.aspx">Privacy/Terms</a>
+			</div>
+			<div class="footertext"style="float:bottom">Copyright @ 2015 Analytical Technology, Inc.</div>
+		</div>
+		<div class="footertitle" id="uk">
+			<ul class="footertext">
+				ATI UK Office<br />
+				Unit 1 & 2<br />
+				Delph New Road<br />
+				Delph, Saddleworth OL3 5DE<br /><br />
+				<a class="footerlink" href="tel:+4401457873318" target="_blank">+44 (0) 1457 873 318</a> (Voice)<br />
+				<a class="footerlink" href="tel:+4401457874468" target="_blank">+44 (0) 1457 874 468</a> (FAX)<br />
+				<a class="footerlink" href="http://www.atiuk.com" target="_blank">www.atiuk.com</a><br />
+				<a class="footerlink" href="mailto:sales@atiuk.com" target="_blank">Sales@ATIUK.com<br /></a><br />
+			</ul>
+		</div>
+	</div>
+</div>    
+
+</form>
+
+</body>
+</html>

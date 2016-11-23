@@ -1,0 +1,517 @@
+status: 200
+content-length: 39781
+content-location: http://www.exec-computing.com
+x-cache-varnish: HIT
+set-cookie: PHPSESSID=ksr943leqe5crdcaqp38c34uo1; path=/
+accept-ranges: bytes
+vary: Accept-Encoding
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+link: <http://www.exec-computing.com/wp-json/>;
+ rel="https://api.w.org/", <http://www.exec-computing.com/>; rel=shortlink
+date: Fri, 09 Sep 2016 03:55:34 GMT
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" dir="ltr" lang="en-US" >
+<head>
+<title>Computer Support, Network Services, IT Consulting, Server Support – Albany, Latham, Clifton Park | Executive Computing, LLC</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+<script type="text/javascript">
+	var subTract=10
+</script>
+
+<!-- <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/widgets.css" /> -->
+<!-- <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/style.css" /> -->
+<!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/style_ie7.css" />
+<![endif]-->
+<!--<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/iterations/theme03_styleA.css" /> -->
+  <!-- <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/clients/exec-computing/css/exec-computing.css" /> -->
+
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/widgets.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/style.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/iterations/theme03_styleA.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/clients/exec-computing/css/exec-computing.css" />
+
+<!-- <link type="text/css" rel="stylesheet" media="print" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/print.css" /> -->
+
+<!-- All in One SEO Pack 2.3.8 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<meta name="description"  content="Executive Computing, LLC specializes in IT Consulting, providing business Computer Support and Network Services in Albany, Latham, Clifton Park, Troy and Schenectady." />
+
+<meta name="keywords"  content="Computer Support, Network Services, IT Consulting, Albany, Latham, Clifton Park, Troy and Schenectady" />
+
+<link rel="alternate" type="application/rss+xml" title="%blog_title% Blog" href="/feed"; />
+
+<meta name="google-site-verification" content="QBUK_7g_NTQeoYnJODFCQwEHk9DZ_vnE0OsfSsfYBPk" />
+<link rel="canonical" href="http://www.exec-computing.com/" />
+<!-- /all in one seo pack -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.exec-computing.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='pronto_facebook_frontend-css'  href='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/pronto-facebook-comments/pronto-facebook-comments-front.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js?ver=3.32'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/jquery.cycle.all.2.72.js?ver=4.5.3'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/default.js?ver=4.5.3'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.4.8'></script>
+<link rel='https://api.w.org/' href='http://www.exec-computing.com/wp-json/' />
+<meta name="generator" content="WordPress 4.5.3" />
+<link rel='shortlink' href='http://www.exec-computing.com/' />
+<link rel="alternate" type="application/json+oembed" href="http://www.exec-computing.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.exec-computing.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.exec-computing.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.exec-computing.com%2F&#038;format=xml" />
+<script src='http://prontopreview.com/?dm=8c5c56f01f9f0b4f5be9d1e5dfb3d164&amp;action=load&amp;blogid=482&amp;siteid=1&amp;t=1073559960&amp;back=http%3A%2F%2Fwww.exec-computing.com%2F' type='text/javascript'></script><link rel="stylesheet" type="text/css" href="https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/cforms/styling/cforms.css" />
+<script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/cforms/js/cforms.js"></script>
+<meta property="og:image" content="http://www.exec-computing.com/files/ExecutiveComputing_Logo.png"/><meta property="og:url" content="http://www.exec-computing.com/"/><meta property="og:type" content="website" /><meta property="og:title" content="Computer Support, Network Services, IT Consulting, Server Support – Albany, Latham, Clifton Park | Executive Computing, LLC" /><link rel="shortcut icon" href="http://exec-computing.prontopreview.com/favicon/exec-computing.ico" type="image/x-icon" /><!-- Favi --><!-- Google Analytics Tracking by Google Analyticator 6.4.8: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = [''];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-21069148-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+			<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://www.exec-computing.com/?custom-css=1&#038;csblog=482&#038;cscache=6&#038;csrev=31" />
+			
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'showCloseButton' : true, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'transitionIn' : 'elastic', 'easingIn' : 'easeOutBack', 'transitionOut' : 'elastic', 'easingOut' : 'easeInBack', 'opacity' : false, 'hideOnContentClick' : false, 'titleShow' : true, 'titlePosition' : 'over', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+<!-- <script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-includes/js/jquery/jquery.js?ver=1.2.6"></script> -->
+<!-- <script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/jquery.cycle.all.2.72.js"></script> -->
+<!-- <script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/default.js"></script> -->
+</head>
+<body id="homepage" class="level1">
+	<div class="wrapper">
+		<div id="header">
+			<div id="headerInside">
+			<div id="logo"><a href="/"><img src="/files/ExecutiveComputing_Logo.png" alt=" - Executive Computing, LLC" border="0" /></a></div>
+			<div id="header_widgets" class="widgetarea"><div id="search-2" class="headerwidget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://www.exec-computing.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div><div id="navigation_one_level-multi-883300701" class="headerwidget navigation_one_level_multi"> <div class="navigation_one_level">
+  <h3></h3>
+    <ul>
+						<li class="first"><a href="/" title="Home" >Home</a></li>
+						<li ><a href="https://www.fastsupport.com/com" title="Remote Support" target="_blank">Remote Support</a></li>
+						<li ><a href="/about-us/contact-us/" title="Contact Us" >Contact Us</a></li>
+						<li ><a href="/about-us/careers/" title="Careers" >Careers</a></li>
+		    </ul>
+</div>
+</div><div id="text-972370711" class="headerwidget widget_text">			<div class="textwidget"><img src="http://exec-computing.prontopreview.com/files/2016/02/Microsoft-Silver-Competency-logo.jpg" class="alignright" width="200" style="margin-top: 20px;"></div>
+		</div></div>
+			</div>
+		</div>
+		<div id="navigation_widgets"><div id="navigation_widgets_inside">
+<ul class="sf-menu">
+                <li class="page-item  current_page_item">
+          <a href="http://www.exec-computing.com/" ><span>Home</span></a>
+          </li>
+                <li class="page-item ">
+          <a href="http://www.exec-computing.com/why-executive-computing/" ><span>Why Executive Computing</span></a>
+              <ul id="l2-why-executive-computing">		
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/why-executive-computing/testimonials/" ><span>Success Stories</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/why-executive-computing/partners/" ><span>Partners</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/why-executive-computing/certifications/" ><span>Certifications</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/why-executive-computing/affiliations/" ><span>Affiliations</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.exec-computing.com/services-solutions/" ><span>Services & Solutions</span></a>
+              <ul id="l2-services-solutions">		
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/services-solutions/it-consulting/" ><span>IT Consulting</span></a>
+										<ul id="l3-it-consulting">
+													<li class="page-item"><a href="http://www.exec-computing.com/services-solutions/it-consulting/office-moves-wiring/" ><span>Office Moves & Wiring</span></a></li>
+							
+						</ul>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/services-solutions/security/" ><span>Security</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/services-solutions/business-continuity-planning/" ><span>Business Continuity Planning</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/services-solutions/microsoft-office-365/" ><span>Microsoft Office 365</span></a>
+										<ul id="l3-microsoft-office-365">
+													<li class="page-item"><a href="http://www.exec-computing.com/services-solutions/microsoft-office-365/office-365-services/" ><span>Office 365 Services</span></a></li>
+													<li class="page-item"><a href="http://www.exec-computing.com/services-solutions/microsoft-office-365/office-365-plans/" ><span>Office 365 Plans</span></a></li>
+							
+						</ul>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/services-solutions/microsoft-small-business-server/" ><span>Microsoft Small Business Server</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/services-solutions/remote-assistance/" ><span>Remote Assistance</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/services-solutions/on-site-services/" ><span>On-Site Services</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.exec-computing.com/blog/" ><span>Blog</span></a>
+          </li>
+                <li class="page-item ">
+          <a href="http://www.exec-computing.com/resources/" ><span>Resources</span></a>
+              <ul id="l2-resources">		
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/resources/white-papers/" ><span>Free Articles!</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.exec-computing.com/about-us/" ><span>About Us</span></a>
+              <ul id="l2-about-us">		
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/about-us/our-team/" ><span>Our Team</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/about-us/referral-program/" ><span>Referral Program</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/about-us/contact-us/" ><span>Contact Us</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/about-us/support-center/" ><span>Support Center</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/about-us/security-assessment/" ><span>Security Assessment</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.exec-computing.com/about-us/careers/" ><span>Careers</span></a>
+							</li>
+				</ul>
+         </li>
+  </ul>
+</div>
+</div>
+		<!-- Homepage: Marquee widget area-->
+		<div id="hp_marquee_widgets" class="widgetarea">
+			<div id="hp_marquee_widgets_outside">
+				<div id="hp_marquee_widgets_inside">
+				
+          <div id="text-972370709" class="hp_marquee_widget widget_text">
+                <div class="hp_marquee_widget_content">
+              			<div class="textwidget"><img src="http://exec-computing.prontopreview.com/files/2009/07/banner.jpg">
+<div style="position: absolute; top: 240px;  width: 765px;"><p style="color: rgb(255, 255, 255); font-size: 27px; line-height: 36px; text-shadow: 1px 1px 2px rgb(51, 51, 51); margin-bottom: 10px;"><strong>Are you a Private Medical Practice or Public Accounting Firm not getting results from your IT vendor? </strong></p>
+<p style="font-size: 21px; line-height: 24px; margin-bottom: 0px;">We have the knowledge of your applications and industry combined with the technical and management skills to deliver.</p>
+<p style="font-size: 18px;"><strong><a href="tel:518-783-4013">Call 518-783-4013</a></strong> or send us an <a href="#fancyboxID-1" class="fancybox"><strong>e-mail</strong></a> for a <strong>FREE</strong> second opinion.</p></div></div>
+		
+                </div>
+          </div>
+             				</div>
+			</div>
+		</div> 
+		<!--/Homepage: Marquee widget area-->
+		<script type="text/javascript">
+				
+			//Float Left when more than widgets on hp marquee
+			if( jQuery("#hp_marquee_widgets .hp_marquee_widget").length>1){
+				jQuery("#hp_marquee_widgets .hp_marquee_widget").css("float","left");
+			}
+			
+			jQuery('#hp_marquee_widgets .hp_marquee_widget_content .rotate-banner-content .div').css({"background-color":"transparent"});
+			// Add Width for wrapper, IE7.0 relied on this
+					</script>
+			<div id="contentWrapper">
+				<div id="contentWrapperInside">
+					<!--Homepage: Primary widget area-->
+					<div id="hp_primary_widgets" class="widgetarea">
+						<div id="hp_primary_widgets_inside">
+							<div id="icon-multi-973147505" class='hp_primary_widgets icon_multi'><div class='hp_primary_widgets_content'><div class="icon-wid"><img src="/files/icon/execcomputing_ico01.png" alt="" /></div>
+    <div class="icon-text">
+      <div class="text ">
+                  <h3>Private Medical Practices</h3>
+            <div class="description">We specialize in IT solutions for private medical practices in the Capital District that enables their doctors to see more patients, provide better care, and get paid faster. <a href="#private" class="fancybox" style="color: #B854A8;">Learn More</a><br />
+<div style="display:none" class="fancybox-hidden"><div id="private"><br />
+<p style="text-align: center;"><strong>HOW WE BRING VALUE TO PRIVATE MEDICAL PRACTICES</strong></p><br />
+<ol><li>Eliminating problems by properly setting up your EMR or practice management software.</li><li> Improving patient care by integrating diagnostic imaging devices with your software.</li><li> Enabling you to get more done with document scanning, digital signatures, electronic prescribing and electronic billing.</li><li>Finishing projects on time and on budget.</li><li>Keeping patient information private in accordance with HIPPA.</li></ol><br />
+</div></div><br />
+</div>
+      </div>
+    </div></div></div><div id="icon-multi-872930131" class='hp_primary_widgets icon_multi'><div class='hp_primary_widgets_content'><div class="icon-wid"><a href="/what-you-need-to-know-data-security/" ><img src="/files/icon/execcomputing_ico02.png" alt="computer support Loudonville, NY" /></a></div>
+    <div class="icon-text">
+      <div class="text ">
+                  <h3><a href="/what-you-need-to-know-data-security/" >Public<br/> Accounting Firms</a></h3>
+            <div class="description"><a href="/what-you-need-to-know-data-security/" >We specialize in IT solutions for public accounting firms in the Capital District that enables their CPAs to respond more quickly to clients, provide accurate information, and work from anywhere. <a href="#account" class="fancybox" style="color: #B854A8;">Learn More</a><br />
+<br />
+<div style="display:none" class="fancybox-hidden"><div id="account" style="width:600px;height:400px;"><br />
+<p style="text-align: center;"><strong>HOW WE BRING VALUE TO PUBLIC ACCOUNTING FIRMS</strong></p><br />
+<br />
+<p>1.	Eliminating problems by properly setting up your accounting, audit, firm management, tax, and compliance software.</p><br />
+<br />
+<p>2.	Improving client service and staff retention by enabling them to work from anywhere.</p><br />
+<br />
+<p>3.	Enabling you to get more done with document scanning and client portals.</p><br />
+<br />
+<p>4.	Finishing projects on time and on budget.</p><br />
+<br />
+<p>5.	Protecting personally identifiable information in accordance with the Privacy Act.</p><br />
+<br />
+</div></div><br />
+<br />
+<br />
+</a></div>
+      </div>
+    </div></div></div><div id="icon-multi-872930133" class='hp_primary_widgets icon_multi'><div class='hp_primary_widgets_content'><div class="icon-wid"><img src="/files/icon/execcomputing_ico03.png" alt="it consulting Loudonville, NY" /></div>
+    <div class="icon-text">
+      <div class="text ">
+                  <h3>Project<br/> Management</h3>
+            <div class="description">We deliver projects on time and on budget by getting the specification right, finding all possible risks, and planning how to manage them effectively.  <br><a href="#management" class="fancybox" style="color: #B854A8;">Learn More</a><br />
+<div style="display:none" class="fancybox-hidden"><div id="management"><br />
+<p style="text-align: center;"><strong>PROJECT MANAGEMENT:</strong></p><br />
+<ol><li>We get the specification right so you get what you expect.</li><li> We identify and manage the risks which could increase the cost, delay the delivery, or reduce the quality.</li><li> We communicate clearly throughout the process so you always know what’s going on.</li><li>We manage changes so that costs, schedule, and quality are properly considered.</li><li>We develop a testing plan which guarantees that the project meets the specification.</li></ol><br />
+</div></div></div>
+      </div>
+    </div></div></div><div id="icon-multi-872930132" class='hp_primary_widgets icon_multi'><div class='hp_primary_widgets_content'><div class="icon-wid"><img src="/files/icon/execcomputing_ico04.png" alt="network services Loudonville, NY" /></div>
+    <div class="icon-text">
+      <div class="text ">
+                  <h3>Data Security</h3>
+            <div class="description">We protect your private data with physical and electronic safeguards in accordance with the Privacy Act and HIPAA. <a href="#security" class="fancybox" style="color: #B854A8;">Learn More</a><br />
+<div style="display:none" class="fancybox-hidden"><div id="security"><br />
+<p style="text-align: center;"><strong>DATA SECURITY:</strong></p><br />
+<ol><li>We identify private information such as: social security numbers, driver’s license numbers, credit card numbers, or medical records so you know what to protect.</li><li> We make staff aware of what is private and who is authorized to view it.</li><li> We prevent physical access to private information using locks and security cameras.</li><li>We prevent electronic access to private information using complex, frequently-changed passwords, software updates, and firewalls.</li><li>We security destroy private information when it is no longer needed.</li></ol><br />
+</div></div><br />
+</div>
+      </div>
+    </div></div></div>						</div>
+					</div>
+					<script type="text/javascript">
+						jQuery(".hp_primary_widgets:first-child").addClass('first');
+					</script>
+					<div class="mainarea">
+						<!--/Homepage: Primary widget area-->
+		
+						<div id="content" class="content"> 	
+							<p><a href="/why-executive-computing/testimonials/"><img class="alignleft" style="margin: 0;" src="/files/icon/pink_testimonial.png" alt="it support Loudonville, NY" /></a></p>
+<h1 id="toc-success-stories" style="margin: 0 0 20px 0;"><a href="/why-executive-computing/testimonials/">Success Stories</a></h1>
+<p><script src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/482/scripts/testimonials8.js"></script></p>
+<div class="fancybox-hidden" style="display: none;">
+<div style="width: 890px; height: auto;">
+		<form enctype="multipart/form-data" action="/#usermessage" method="post" class="cform contact-form " id="cformsform">
+		<fieldset class="cf-fs1">
+		<legend>Contact Form</legend>
+		<ol class="cf-ol">
+			<li id="li--2" class=""><label for="cf_field_2"><span>Name</span></label><input type="text" name="cf_field_2" id="cf_field_2" class="single fldrequired" value="" onfocus="clearField(this)" onblur="setField(this)"/><span class="reqtxt">required</span></li>
+			<li id="li--3" class=""><label for="cf_field_3"><span>Email</span></label><input type="text" name="cf_field_3" id="cf_field_3" class="single fldemail fldrequired" value=""/><span class="emailreqtxt">email required</span></li>
+			<li id="li--4" class=""><label for="cf_field_4"><span>Phone</span></label><input type="text" name="cf_field_4" id="cf_field_4" class="single" value=""/></li>
+			<li id="li--5" class=""><label for="cf_field_5"><span>How did you hear about us?</span></label><select name="cf_field_5" id="cf_field_5" class="cformselect fldrequired" >
+				<option value=""></option>
+				<option value="Advertisement">Advertisement</option>
+				<option value="Business Directory">Business Directory</option>
+				<option value="Referral">Referral</option>
+				<option value="Search">Search</option>
+				<option value="Other">Other</option>
+				<option value="I'm an existing client">I'm an existing client</option>
+			</select><span class="reqtxt">required</span></li>
+			<li id="li--6" class=""><label for="cf_field_6"><span>Subject</span></label><input type="text" name="cf_field_6" id="cf_field_6" class="single fldrequired" value=""/><span class="reqtxt">required</span></li>
+			<li id="li--7" class=""><label for="cf_field_7"><span>Message</span></label><textarea cols="30" rows="8" name="cf_field_7" id="cf_field_7" class="area fldrequired"></textarea><span class="reqtxt">required</span></li>
+		</ol>
+		</fieldset>
+		<fieldset class="cf_hidden">
+			<legend>&nbsp;</legend>
+			<input type="hidden" name="comment_post_ID" id="comment_post_ID" value="4"/>
+			<input type="hidden" name="cforms_pl" id="cforms_pl" value="http://www.exec-computing.com/"/>
+			<input type="hidden" name="cf_working" id="cf_working" value="<span>One%20moment...</span>"/>
+			<input type="hidden" name="cf_failure" id="cf_failure" value="<span>Please%20fill%20in%20all%20the%20required%20fields.</span>"/>
+			<input type="hidden" name="cf_codeerr" id="cf_codeerr" value="<span>Please%20double-check%20your%20verification%20code.</span>"/>
+			<input type="hidden" name="cf_customerr" id="cf_customerr" value="yyy"/>
+			<input type="hidden" name="cf_popup" id="cf_popup" value="nn"/>
+		</fieldset>
+		<p class="cf-sb"><input type="submit" name="sendbutton" id="sendbutton" class="sendbutton" value="Submit" onclick="return cforms_validate('', false)"/></p></form><p class="linklove" id="ll"><a href="http://www.deliciousdays.com/cforms-plugin"><em>cforms</em> contact form by delicious:days</a></p></div>
+</div>
+						</div>
+						<!-- Homepage: Secondary widget area-->
+						<div id="hp_secondary_widgets" class="widgetarea">
+							<div id="hp_secondary_widgets_inside">
+							
+          <div id="feed_updates-multi-872930182" class="hp_secondary_widgets feed_updates_multi">
+             <div class="hp_secondary_top"></div>
+             <div class="hp_secondary_content_wrapper">
+                <div class="hp_secondary_content">
+              
+
+  <div class="feedupdates">
+  
+		<h3><a href="/blog/" >From the Blog</a></h3>
+	
+    <div class="text">
+      <div>
+	<ul class="feedupdates_ul">
+	  	  	    	    <li><a href="http://www.exec-computing.com/2016/09/how-fantom-is-haunting-unsuspecting-users/"><b>windows:</b> How Fantom is haunting unsuspecting users</a></li>
+	    	  	    	    <li><a href="http://www.exec-computing.com/2016/09/new-heights-in-data-compliance-penalties/"><b>Healthcare:</b> New heights in data compliance penalties</a></li>
+	    	  	    	    <li><a href="http://www.exec-computing.com/2016/09/keep-your-dropbox-secure/"><b>Security:</b> Keep your Dropbox secure</a></li>
+	    	  	    	    <li><a href="http://www.exec-computing.com/2016/09/business-projectors-a-buyers-guide/"><b>Hardware:</b> Business projectors: a buyer’s guide</a></li>
+	    	  	    	    <li><a href="http://www.exec-computing.com/2016/08/work-together-with-dropboxs-new-tool-paper/"><b>Web &amp; Cloud:</b> Work together with Dropbox’s new tool, Paper</a></li>
+	    	  		</ul>
+      </div>
+    </div>
+  </div>
+
+                </div>
+             </div>
+             <div class="hp_secondary_bottom"></div>
+          </div>
+             
+          <div id="rotate_banner_content-multi-873811701" class="hp_secondary_widgets rotate_banner_content_multi">
+             <div class="hp_secondary_top"></div>
+             <div class="hp_secondary_content_wrapper">
+                <div class="hp_secondary_content">
+              <h3></h3>
+
+<div id="rtc-873811701" class="rotate-banner-content" style="width:300px;height:80px">
+
+					<div id="frame1-873811701">
+										<a href="/why-executive-computing/partners-certifications/" >
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/482/files/widgets/873811701/partner01.jpg" width="298" height="78" alt="partner Loudonville, NY" />
+										</a>
+									</div>
+					<div id="frame2-873811701">
+										<a href="/why-executive-computing/affiliations/" >
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/482/files/widgets/873811701/partner02.jpg" width="300" height="80" alt="partner Loudonville, NY" />
+										</a>
+									</div>
+	</div>
+<script type="text/javascript">
+( function(jQuery) {
+jQuery(document).ready(function() {
+		jQuery('#rtc-873811701').cycle({ 
+			fx:'scrollLeft',
+			timeout:4000,
+			speed:2000,
+			pager:      '#rtc-nav-873811701',
+						pause: true,
+			pauseOnPagerHover: true
+
+		});
+		
+});
+} ) ( jQuery );
+</script>
+
+                </div>
+             </div>
+             <div class="hp_secondary_bottom"></div>
+          </div>
+             							</div>
+						</div>
+						<!-- /Homepage: Secondary widget area-->
+					</div>
+				</div>	
+			</div>
+
+		<div id="footer">	
+			<!-- Global Footer Widgets Area-->		
+			<div id="footer_widgets" class="widgetarea">				
+				<div id="vcard-multi-872930081" class='footerwidget vcard_multi'><h3><a href="/about-us/contact-us/" >Contact Information</a></h3>
+<div class="vcard">			
+	<span class="fn org"><strong>Executive Computing, LLC</strong></span>		
+	<div class="adr">
+		<span class="street-address">11 Callaway Circle </span> 	<span class="locality">Loudonville</span>, <span class="region">NY</span> <span class="postal-code">12211</span>	
+	</div>
+		<p class="tel"><strong>Phone:</strong> <span class="value">518-783-4013</span></p>
+			<p class="tel"><strong>Fax:</strong> <span class="value">518-207-9075</span></p>
+			</div>
+<div class="vcard-htmltext"><ja href="/about-us/contact-us/"><strong>Send us a message</strong></div></div><div id="navigation-multi-872930082" class='footerwidget navigation_multi'>
+<div class="navigation">
+     <h3><a href="/services-solutions/" >IT Services</a></h3>
+  <div class="text">
+    <ul>
+      <li class="page_item page-item-516"><a href="http://www.exec-computing.com/services-solutions/it-consulting/">IT Consulting</a></li>
+<li class="page_item page-item-582"><a href="http://www.exec-computing.com/services-solutions/security/">Security</a></li>
+<li class="page_item page-item-515"><a href="http://www.exec-computing.com/services-solutions/business-continuity-planning/">Business Continuity Planning</a></li>
+<li class="page_item page-item-513"><a href="http://www.exec-computing.com/services-solutions/microsoft-small-business-server/">Microsoft Small Business Server</a></li>
+<li class="page_item page-item-584"><a href="http://www.exec-computing.com/services-solutions/remote-assistance/">Remote Assistance</a></li>
+<li class="page_item page-item-514"><a href="http://www.exec-computing.com/services-solutions/on-site-services/">On-Site Services</a></li>
+    </ul>
+  </div>
+</div>
+</div><div id="text-872930083" class='footerwidget widget_text'><h3>Email Newsletter</h3>			<div class="textwidget"><form id="subForm" class="campaignmonitor" method="post" action="http://email.prontomarketing.com/t/r/s/bsluk/">
+<input type="text" name="cm-bsluk-bsluk" />
+<input type="submit" value="Send" class="button" id="mc_signup_submit" />
+</form>
+<p>Enter your email address to receive monthly updates about our latest news, events and free technology resources for your small business!</p> </div>
+		</div><div id="text-872930084" class='footerwidget widget_text'>			<div class="textwidget">&copy;2016 Executive Computing, LLC
+</div>
+		</div><div id="navigation_one_level-multi-872930085" class='footerwidget navigation_one_level_multi'> <div class="navigation_one_level">
+  <h3></h3>
+    <ul>
+						<li class="first"><a href="/privacy-policy/" title="Privacy Policy" >Privacy Policy</a></li>
+		    </ul>
+</div>
+</div>			</div>
+			<!--/Global Footer Widgets Area-->
+		</div>
+	</div>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/pronto-stats/js/pronto-stats.js?ver=20150224'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-includes/js/wp-embed.min.js?ver=4.5.3'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.js?ver=1.5.7'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/easy-fancybox/jquery.easing.pack.js?ver=1.3'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+
+<!-- Start Of Script Generated By cforms v14.6 [Oliver Seidel | www.deliciousdays.com] -->
+<!-- End Of Script Generated By cforms -->
+
+<script type="text/javascript">HummingbirdTracker.track();</script>
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"04e5824458","applicationID":"6280564","transactionName":"Yl1SYBZWC0dYAUVdDlsXcVcQXgpaFg5UQgRZCQ==","queueTime":0,"applicationTime":152,"atts":"ThpRFl5MGEk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

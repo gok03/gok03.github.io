@@ -1,0 +1,204 @@
+status: 200
+content-length: 9815
+content-location: http://www.centurysoftwaregroup.com
+x-aspnet-version: 4.0.30319
+vary: Accept-Encoding
+server: Microsoft-IIS/7.5
+-content-encoding: gzip
+cache-control: private
+date: Fri, 09 Sep 2016 04:09:23 GMT
+x-powered-by: ASP.NET
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>  
+	<title>Century Software Group</title>
+	<link rel="shortcut icon" href="images/favicon.png" />
+	<link rel="stylesheet" href="styles/menu.css" />
+	<link rel="stylesheet" href="styles/csg.css" />
+
+	<script type="text/javascript" src="scripts/menu.js"></script>
+	<script type="text/javascript" src="scripts/tvn_utils.js"></script>
+	
+	
+
+	<script type='text/javascript'>
+//<!-- Hide Javascript
+var opacity = 0;
+var testimonials = new Array();
+var client = new Array();
+testimonials[0] = '"I want to thank you for all of your help in preparing us for our annual conference. The ConferenceComplete software you installed for us was invaluable in managing the conference …"';
+client[0] = 'Kathy A. McMahon<br />Executive Director, Hospice and Palliative Care Association of New York State';
+testimonials[1] = '"We find their staff very knowledgeable and their customer service exceptional. I would recommend them for any Association’s needs."';
+client[1] = 'Nancy P. Geer<br />Executive Director, New York Housing Association';
+testimonials[2] = '"I want to thank you for the time, determination, professionalism, and care that you have put into making Vasilows.com a reality.  Like it or not, you have a friend for life."';
+client[2] = 'Jim Vasilow<br />Proprietor, Vasilows Confectionery, Inc.';
+testimonials[3] = '"They have answered our requests in a timely fashion.  The quality of our use of technology has increased rapidly due to their assistance."';
+client[3] = 'Lisa Hicks<br />Executive Director, New York State Dispute Resolution Association';
+var testimonialID = Math.floor(Math.random()*(3+0.9));
+window.onload=function(){
+setTimeout('nextTestimonial();', 0);
+setInterval('nextTestimonial();', 20000);
+}
+function nextTestimonial()
+{
+    var newID;
+    opacity=0;
+        if(W3CDOM && !IEDOM)
+            getObject('testimonialBox').style.MozOpacity = opacity;
+        else if(IEDOM)
+            getObject('testimonialBox').style.filter = 'alpha(opacity=' + opacity + ')';
+    setText();
+    fadeIn();
+    do
+        newID = Math.floor(Math.random()*(3+0.9));
+    while (newID == testimonialID)
+    testimonialID = newID;
+}
+function setText()
+{
+    getObject('testimonial').innerHTML = testimonials[testimonialID];
+    getObject('TVNclient').innerHTML = client[testimonialID];
+}
+function fadeIn()
+{
+    if(opacity < 100)
+    {
+        if(W3CDOM && !IEDOM)
+        {
+            getObject('testimonialBox').style.MozOpacity = opacity/100;
+        }
+        else if(IEDOM)
+        {
+            getObject('testimonialBox').style.filter = 'alpha(opacity=' + opacity + ')';
+        }
+        opacity+=6;
+    setTimeout('fadeIn()', 80);
+    }
+}
+//--> Hide Javascript
+</script>
+    
+	</head>
+	
+	<body>
+	
+	    <div id="backgroundContainer">
+		<div id="layoutHolder">
+		    
+
+
+    <img class="w6" src="images/header.jpg" style="top: 0px; left: 0px;" alt="Century Software Group Software Development"/>
+
+
+
+
+            <div class="w6" style="height: 23px; background-color: Black; position: absolute; top: 156px; left: 0px;"></div>
+
+            <a href="default.aspx" id="menuHeader" class="menuHeader" onmouseover="this.style.color='#00CCFF'" onmouseout="this.style.color='#FFFFFF'" >Home</a><div id="menuHeader8" class="menuHeader" onmouseover="showMenu(8)" onmouseout="hideMenu(8)">Software&nbsp;Development<div id="menuList8" class="menuList"><a href="services_custom.aspx" class="item">Custom&nbsp;Programming</a><a href="services_dbconsulting.aspx" class="item">Database&nbsp;Consulting</a><a href="services_portfolio.aspx" class="item">Portfolio</a></div></div><div id="menuHeader2" class="menuHeader" onmouseover="showMenu(2)" onmouseout="hideMenu(2)">Internet<div id="menuList2" class="menuList"><a href="services_webdesign.aspx" class="item">Web&nbsp;Design</a><a href="services_hosting.aspx" class="item">Web&nbsp;Hosting</a><a href="web_portfolio.aspx" class="item">Portfolio</a></div></div><div id="menuHeader1" class="menuHeader" onmouseover="showMenu(1)" onmouseout="hideMenu(1)">Products<div id="menuList1" class="menuList"><a href="software_membersComplete.aspx" class="item">MembersComplete</a><a href="software_conferenceComplete.aspx" class="item">ConferenceComplete</a><a href="software_communicationsCenter.aspx" class="item">CommunicationsCenter</a></div></div><div id="menuHeader7" class="menuHeader" onmouseover="showMenu(7)" onmouseout="hideMenu(7)">About&nbsp;Us<div id="menuList7" class="menuList"><a href="aboutus_philosophy.aspx" class="item">Philosophy/Mission</a><a href="aboutus_contactus.aspx" class="item">Contact&nbsp;Us</a><a href="aboutus_inquiry.aspx" class="item">Inquiry&nbsp;Form</a><a href="aboutus_employment.aspx" class="item">Careers</a><a href="aboutus_testimonials.aspx" class="item">Testimonials</a></div></div>
+        <div id="secondaryHeader">
+		
+			<img class="clear w2" id="HomePageImageForTestimonials" style="float: left;  display: inline;" src="images/people_sitting_with_laptop.jpg" alt="Programming" />
+			
+			<div id="testimonialHolder" style="float: left;  display: inline; background-color: white;">
+			    <div id="testimonialBox" class="w4">
+    			
+				    <div id="testimonial" class="quote"></div>
+                    <div id="TVNclient" class="title"></div>
+			    </div>
+
+                <div id="moreTestimonials">
+                    <a href="aboutus_testimonials.aspx" title="Read more testimonials From our Clients">Click here to read more testimonials...</a>
+                </div>
+			</div>	
+		</div>
+		
+
+
+            <div class="row w6">
+<!-- Begin main content -->
+
+
+
+
+        
+
+        
+           
+			<div class="Row w6 clear">
+				<div class="w3">
+					<h1 class="w3">What We Can Do For You</h1>
+				    <div class="hrw3"><hr /></div>
+                    <p>Century Software Group combines technical and business expertise to create software solutions that fit your organization. We understand the frustrations that may arise with other software developers whose focus is on what they know instead of what you need. </p>
+                    <p>We have been successfully developing applications for the desktop and web for nearly twenty years. Our software projects are successful because we balance good business sense with technical competence. We communicate with you throughout the entire development process from our free initial consultation through deployment and beyond.</p>
+				</div>
+				<div class="w3 m10">
+	                <img class="w3" src="images/Workers_With_Laptop.jpg" alt="Customer Service" style="float: right; padding: 10px"/>
+				</div>
+			</div>
+
+			<h1 class="w6" >About Our Products</h1>
+			<h2 class="w6" ><span class="Members">MembersComplete&trade;</span> and <span class="Conference">ConferenceComplete&trade;</span></h2>
+			<div class="hrw6"><hr /></div>
+			<div class="Row w6">
+				<div class="w3">
+				    <p class="w3">Century Software Group, LLC, in cooperation with New York Associations, has developed a suite of management products for the association marketplace. <span class="Members">MembersComplete&trade;</span>, an all inclusive membership and legislative software system, and <span class="Conference">ConferenceComplete&trade;</span>, a total event management system, utilize a single entry methodology into a shared database. A Web portal provides online accessibility for members and conference attendees with data integration into the system. Association staffers and executives may access real time, all aspects of their membership data and conference/event parameters and activity from a single database system.</p>
+                </div>
+				<div class="w3 m10"><img class="w3" src="images/screenshots.jpg" alt="Screenshots of ConferenceComplete" /></div>
+			</div>
+			
+            <div class="Row w6 clear">
+            	<p>Learn more about  
+			        <a href="software_membersComplete.aspx"><span class="Members">MembersComplete&trade;</span></a> and <a href="software_conferenceComplete.aspx"><span class="Conference">ConferenceComplete&trade;</span></a>
+                </p>
+            </div>
+			
+
+        
+
+        
+        
+        
+        
+<!-- End Main Content -->  
+                <div style="clear: both">&nbsp;</div>
+            </div>
+
+   			<div class="Row w6" id="footer">
+
+   			    <div class="w4" style="text-align: center; font-weight: bold; padding-left: 10px;">
+   			        <div class='copyright'>Copyright &copy; 2016 Century Software Group, LLC. All Rights Reserved.</div><div id='scroll'></div>
+                    &nbsp;
+   			    </div>
+   			    
+   			    <div class="w2" style="text-align: right; font-weight: bold; margin-left: -10px;">
+   			        Phone:  518.336.0025
+   			    </div>
+            
+                <div class="w6 clear" style="float: none; display: block;"></div>
+			</div>
+	    </div>
+	    </div>
+	    <div id="footerImage">&nbsp;</div>
+
+<!-- Begin Google Analytics -->
+	    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-12326641-1");
+        pageTracker._trackPageview();
+        } catch(err) {}</script>
+<!-- End Google Analytics -->
+	</body>
+	
+</html>

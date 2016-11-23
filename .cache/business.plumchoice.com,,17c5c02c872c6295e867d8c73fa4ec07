@@ -1,0 +1,427 @@
+status: 200
+content-length: 21582
+content-location: http://business.plumchoice.com/
+-content-encoding: gzip
+accept-ranges: bytes
+vary: Accept-Encoding,User-Agent
+server: Apache/2.4.23
+last-modified: Tue, 21 Jun 2016 19:13:23 GMT
+etag: "3bc15aa-544e-535ce9d59dac0-gzip"
+date: Tue, 13 Sep 2016 11:37:24 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.9.2 (gzip)
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="google-site-verification" content="UEHH5wcSCxUxdhZlSV8B1RfECuGiWWtNbX46Wdjeohg" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>IT Support - IT Support and IT Services for Small Businesses - Boston, MA PlumChoice IT Support</title>
+<!-- InstanceEndEditable -->
+<meta name="description" content="PlumChoice Technology Services - PlumChoice provides small business IT support services, IT hosting services, internet marketing services and data backup services to small business and non-profits in the greater Boston and Denver metro areas." />
+<meta name="keywords" content="small business IT support services, IT hosting, internet marketing, data backup, web desgn, network management, server management, Boston, MA" />
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.colorbox-min.js" type="text/javascript"></script>
+<script src="scripts/script.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://use.typekit.com/txr2fsa.js"></script>
+<script type="text/javascript">
+try{Typekit.load();}catch(e){}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script language="JavaScript">
+<!--
+
+/***********************************************
+* Required field(s) validation v1.10- By NavSurf
+* Visit Nav Surf at http://navsurf.com
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+function formCheck(formobj){
+	// Enter name of mandatory fields
+	var fieldRequired = Array("first_name", "last_name", "company", "phone", "email");
+	// Enter field description to appear in the dialog box
+	var fieldDescription = Array("first_name", "last_name", "company", "phone", "email");
+	// dialog message
+	var alertMsg = "Please complete the following fields:\n";
+
+	if ($(formobj).find('.honeypot').length > 0) {
+		var honeypot = $(formobj).find('.honeypot').val();
+	}
+
+	var l_Msg = alertMsg.length;
+
+	for (var i = 0; i < fieldRequired.length; i++){
+		var obj = formobj.elements[fieldRequired[i]];
+		if (obj){
+			switch(obj.type){
+			case "select-one":
+				if (obj.selectedIndex == -1 || obj.options[obj.selectedIndex].text == ""){
+					alertMsg += " - " + fieldDescription[i] + "\n";
+				}
+				break;
+			case "select-multiple":
+				if (obj.selectedIndex == -1){
+					alertMsg += " - " + fieldDescription[i] + "\n";
+				}
+				break;
+			case "text":
+			case "textarea":
+				if (obj.value == "" || obj.value == null){
+					alertMsg += " - " + fieldDescription[i] + "\n";
+				}
+				break;
+			default:
+			}
+			if (obj.type == undefined){
+				var blnchecked = false;
+				for (var j = 0; j < obj.length; j++){
+					if (obj[j].checked){
+						blnchecked = true;
+					}
+				}
+				if (!blnchecked){
+					alertMsg += " - " + fieldDescription[i] + "\n";
+				}
+			}
+		}
+	}
+
+	if ($(formobj).find('.honeypot').length > 0) {
+		if (alertMsg.length == l_Msg && honeypot == ""){
+			return true;
+		}else{
+			if (honeypot != "") {
+				alertMsg = "This form's honeypot has been filled in. \nPlease refresh the page and fill out the form again.";
+				alert(alertMsg);
+			} else {
+				alert(alertMsg);
+			}
+			return false;
+		}
+	} else {
+		if (alertMsg.length == l_Msg){
+			return true;
+		}else{
+			alert(alertMsg);
+			return false;
+		}
+	}
+}
+// -->
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body onLoad="MM_preloadImages('images/btn-banner-hover.gif','images/btn-banner-landing-hover.gif','images/burst-referral-h.png')">
+<div id="topnav">
+  <!-- Navbar included in incl/navbar.html -->
+</div>
+<div id="header">
+  <div class="wrap">
+    <div class="logo"><a href="index.html"><img src="images/logo.gif" alt="IT Support &amp; IT Services" border="0"></a></div>
+    <div id="menu">
+      <div class="phone-number">1-888-244-1748</div>
+      <ul id="menu">
+        <li><a href="managed_IT_service_plans.html">IT Support &amp; Management</a>
+          <ul>
+            <li><a href="managed_IT_service_plans.html">Overview</a></li>
+            <li><a href="on_demand_IT_support.html">On Demand Support Services</a></li>
+            <li><a href="IT_management_services.html">IT Management Services</a></li>
+            <li><a href="why_use_it_support_management.html">Why Use PlumChoice for IT Support & Management?</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </li>
+        <li><a href="business_services.html">Business Services</a>
+          <ul>
+            <li><a href="business_services.html">Overview</a></li>
+            <li><a href="project_services.html">Project Services</a></li>
+            <li><a href="cloud_computing_solutions.html">Cloud Computing Solutions</a></li>
+            <li><a href="cio_services_plans.html">CIO Services</a></li>
+            <li><a href="why_use_business_services.html">Why Use PlumChoice for Business Services?</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </li>
+        <li><a href="cloud_computing_solutions.html">Cloud Computing Solutions</a>
+          <ul>
+            <li><a href="cloud_computing_solutions.html">Overview</a></li>
+            <li><a href="cloud_backup.html">Online Cloud Backup</a></li>
+            <li><a href="cloud_email.html">Cloud Email Solutions</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </li>
+        <li><a href="data_backup_services.html">Data Backup</a>
+          <ul>
+            <li><a href="data_backup_services.html">Overview</a></li>
+            <li><a href="cloud_backup.html">Online Cloud Backup</a></li>
+            <li><a href="total_data_protection_plan.html">Total Data Protection<sup>&trade;</sup> Plan</a></li>
+            <li><a href="why_use_data_backup.html">Why Use PlumChoice for Data Backup?</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="banner">
+  <div class="wrap index-banner-burst">
+
+  <div class="burst-referral"><a href="technologyassessment/index.html"><img src="images/banner-index-burst-assessment.png" alt="Refer a friend or colleague and earn $500. Learn More." name="burst" width="168" height="168" border="0" id="burst" onMouseOver="MM_swapImage('burst','','images/banner-index-burst-assessment-h.png',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+    <div id="banner-text">
+      <h1>Grow, Manage &amp; Protect Your<br>
+        Business with Help from PlumChoice:</h1>
+      <h2>Our services help you use technology to grow, manage and protect what you've have worked so hard to build. </h2>
+      <div id="banner-button"><a href="managed_IT_service_plans.html"><img src="images/btn-banner.gif" alt="How We Do It" name="btnbanner" width="144" height="38" border="0" id="btnbanner" onMouseOver="MM_swapImage('btnbanner','','images/btn-banner-hover.gif',1)" onMouseOut="MM_swapImgRestore()"></a>&nbsp; <a href="#" class="cta"><img src="images/btn-banner-landing.gif" alt="Request a call from our team!" name="btnrequest" width="270" height="38" border="0" id="btnrequest" onMouseOver="MM_swapImage('btnrequest','','images/btn-banner-landing-hover.gif',1)" onMouseOut="MM_swapImgRestore()"></a> </div>
+    </div>
+  </div>
+</div>
+<div id="index-services">
+  <div class="wrap">
+    <div class="index-services-block"> <img src="images/index-service-icon-grow.gif" alt="Grow" width="73" height="72" border="0">
+      <h1>Grow</h1>
+      <p>Scale faster and more efficiently with leading-edge technology solutions designed specifically for your business.</p>
+      <ul>
+        <li><a href="project_services.html">Project Services</a></li>
+        <li><a href="cio_services_plans.html">CIO Services</a></li>
+        <li><a href="cloud_computing_solutions.html">Cloud Computing Solutions</a></li>
+      </ul>
+    </div>
+    <div class="index-services-block"> <img src="images/index-service-icon-manage.gif" alt="Manage" width="73" height="72" border="0">
+      <h1>Manage</h1>
+      <p>The right business tools can help you organize ideas, enable employees and dramatically boost productivity and accountability.</p>
+      <ul>
+        <li><a href="network_management_plans.html">Network Management</a></li>
+        <li><a href="managed_IT_service_plans.html">IT Support Services</a></li>
+        <li><a href="server_management_plans.html">Server Management</a></li>
+      </ul>
+    </div>
+    <div class="index-services-block" style="margin-right: 0px"> <img src="images/index-service-icon-protect.gif" alt="Protect" width="73" height="72" border="0">
+      <h1>Protect</h1>
+      <p>Have peace of mind knowing that your data is secure, and ensure that you can recover immediately from an unexpected data disaster.</p>
+      <ul>
+        <li><a href="data_backup_services.html">Server &amp; Desktop Backup</a></li>
+        <li><a href="cloud_computing_email_and_apps.html">Hosted Email &amp; Applications</a></li>
+        <li><a href="network_management_plans.html">Network Support Services</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="index-content">
+  <div class="wrap">
+    <div id="lc">
+      <h1>Small Business IT Support Services</h1>
+      <p>PlumChoice provides <a href="managed_IT_service_plans.html">IT Support Services</a>, <a href="business_services.html">Business Services</a>, <a href="cloud_computing_solutions.html">Cloud Computing Solutions</a>, and <a href="data_backup_services.html">Data Backup</a> to businesses and non-profits nationwide. Our services are designed to help the business owner Grow, Manage, and Protect™ the organization they've worked so hard to build.</p>
+      <p>We are entrepreneurs just like you, so we know that your time and resources are precious and that you need to be focused on what's most important. Leverage our small business IT support expertise and passion for small business success to your advantage - whether that's providing IT support to your employees, protecting your critical data, or supporting your office in the cloud with our hosted solutions.</p>
+      <p>No matter what PlumChoice services you utilize, you can count on experiencing our Remarkable Service Commitment™, delivered by a team that is 100% committed to your success and satisfaction.</p>
+      <div id="testimonial">
+        <h1>What our Clients Say:</h1>
+        <p>&quot;I got the support I needed quickly and efficiently. It was, of course, another good experience with PlumChoice. PlumChoice provides a very good service and our company is better because of it.&quot;</p>
+        <p><strong>Steve Teller, The JL Company</strong></p>
+      </div>
+    </div>
+    <div id="rc"> <a href="#" class="cta">
+      <div id="rc-block-requestcall">
+        <h4>Request a Call</h4>
+        <p>from one of our<br>
+          Business Technology<br>
+          Experts today</p>
+        <p class="link">Contact Us</p>
+      </div>
+      </a>
+      <div class="rc-block-signup">
+        <h4><a href="#" class="signup">Sign up for Special Offers<br>
+          &amp; Free Tech Tips</a></h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bluebar">
+  <div class="wrap">
+    <div class="bluebar-block">
+      <h1>Contact Us Today</h1>
+      <p>Learn How We Can Help Your Business</p>
+      <div class="bluebar-block-button"><a href="contact_us.html">Learn More</a></div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="wrap">
+    <div class="logos"><img src="images/footer-logos_01.jpg" alt="Inc. 5000" width="93" height="86"><img src="images/footer-logos_02.jpg" alt="MSPmentor 100" width="90" height="86"></div>
+    <p><a href="index.html">Home</a> | <a href="managed_IT_service_plans.html">IT Support &amp; Management</a> | <a href="business_services.html">Business Services</a> | <a href="cloud_computing_solutions.html">Cloud Computing Solutions</a> | <a href="data_backup_services.html">Data Backup</a> | <a href="contact_us.html">Contact</a><br>
+        <a href="why_choose_plumchoice.html">Why Choose PlumChoice?</a> | <a href="http://blog.everonit.com" target="_blank">Company News and Events</a> | <a href="sitemap.html">Sitemap</a> | <a href="privacy_policy.html">Privacy Policy</a> |<a href="http://plumchoice.com/careers" target="_blank">Careers</a></p>
+    <p>All materials © 2016 PlumChoice, Inc. All rights reserved</p>
+    <p><a href="boston-it-support/index.html">Boston IT Support</a> | <a href="ExDesk/members.html">Connect to PlumChoice Support</a></p>
+  </div>
+</div>
+<div class="cta-wrap">
+  <div class="cta-request-info">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><form onSubmit="return formCheck(this);" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <input type="hidden" name="oid" value="00D500000007Vur" />
+            <input type="hidden" name="retURL" value="http://www.PlumChoiceit.com/thanks.html" />
+            <input type="hidden" name="_requiredfields" value="company,first_name,last_name,email,phone" />
+            <input value="Home Page - Click To Call CTA" name="00N50000001yxDB" id="00N50000001yxDB" type="hidden" />
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><table width="100%" border="0" cellpadding="2" cellspacing="0" class="blueTable">
+                    <tr>
+                      <td><h3>Request a Call</h3>
+                        <p>from One of Our Business Technology Experts</p></td>
+                    </tr>
+                    <tr>
+                      <td class="formText"><label for="first_name">First Name*</label>
+                        <br />
+                        <input id="first_name" class="field" maxlength="40" name="first_name" size="38" type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td class="formText"><label for="last_name">Last Name*</label>
+                        <br />
+                        <input id="last_name" class="field" maxlength="40" name="last_name" size="38" type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td class="formText"><label for="email">Email*</label>
+                        <br />
+                        <input id="email" class="field" maxlength="80" name="email" size="38" type="text" onBlur="if(this.value.length>0 && !this.value.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)){alert('Please enter a valid email address!');this.value='';this.focus()}" /></td>
+                    </tr>
+                    <tr>
+                       <td class="formText"><label for="phone">Phone* (ex. 555-555-5555)</label>
+                        <br />
+                        <input id="phone" class="field" maxlength="40" name="phone" size="38" type="text" onBlur="if(this.value.length>0 && !this.value.match(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/)){alert('Please enter a valid phone number in this format: 555-555-5555');this.value='';this.focus()}"/></td>
+                    </tr>
+                    <tr>
+                      <td class="formText"><label for="company">Company*</label>
+                        <br />
+                        <input id="company" class="field" maxlength="40" name="company" size="38" type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>
+                <input type="text" name="extra" class="honeypot" style="display: none;" value="" />
+                    <input type="submit" name="login" id="login" value="I'd like to Learn More" />
+                  </p>
+                  <p class="privacy">We respect your privacy. Your information will never be given to another party, and you can opt out from our communications anytime you wish.</p></td>
+              </tr>
+            </table>
+          </form></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="cta-wrap">
+  <div class="cta-signup">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><form action="ref.php" method="post" name="Referral" id="Referral" onSubmit="return formCheck(this);">
+            <input type="hidden" name="recipients" value="marketing485145PlumChoiceit.com" />
+            <input type="hidden" name="subject" value="Technology Insider Subscription" />
+            <input type="hidden" name="good_url" value="http://www.PlumChoiceit.com/subscription_thanks.html" />
+            <input type="hidden" name="mail_options" value="FromAddr = marketing485145PlumChoiceit.com,Exclude=EmailAddr;realname;Submit;Submit_x;Submit_y;" />
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><table width="100%" border="0" cellpadding="2" cellspacing="0" class="blueTable">
+                    <tr>
+                      <td><h2>Sign Up for Special Offers <br>
+                          & Free Tech Tips</h2></td>
+                    </tr>
+                    <tr>
+                      <td class="formText"><label for="first_name">First Name*</label>
+                        <br />
+                        <input id="first_name" class="field" maxlength="40" name="first_name" size="38" type="text" /></td>
+                    </tr>
+                    <tr>
+                      <td class="formText"><label for="email">Email*</label>
+                        <br />
+                        <input id="email" class="field" maxlength="80" name="email" size="38" type="text" onBlur="if(this.value.length>0 && !this.value.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)){alert('Please enter a valid email address!');this.value='';this.focus()}" /></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>
+                <input type="text" name="extra" class="honeypot" style="display: none;" value="" />
+                    <input type="submit" name="login" id="login" value="I'd like to Learn More" />
+                  </p>
+                  <p class="privacy">We respect your privacy. Your information will never be given to another party, and you can opt out from our communications anytime you wish.</p></td>
+              </tr>
+            </table>
+          </form></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ?
+"https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost +
+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-309408-1");
+pageTracker._setDomainName(".PlumChoiceit.com");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<!-- Begin Mongoose Metrics Tracking Code -->
+<script type="text/javascript">
+var mm_c = 'ba5811ce85aac4885a7eae91a3b02273';
+var mm_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Cscript src='" + mm_protocol + "www.mongoosemetrics.com/jsfiles/js-correlation/mm-getvar.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+/* Custom Parameters */
+/* MANDATORY default_number Setup Parameter DO NOT REMOVE */
+var default_number='8882441748'; /* 10 Digits Only i.e. 8881234567 */
+
+var customer_number_format='2';
+
+function probeURL ()
+{
+var checkURL = 'NA';
+checkURL = document.URL;
+if (checkURL.length < 3){checkURL = window.location.href;}
+if (checkURL.length < 3){checkURL = document.location.href;}
+if (checkURL.length < 3){checkURL = location.href;}
+return encodeURIComponent(checkURL);
+}
+var custom2=probeURL();
+</script>
+<script type="text/javascript">
+document.write(unescape("%3Cscript src='" + mm_protocol + "www.mongoosemetrics.com/jsfiles/js-correlation/mm-control.php%3F" + mm_variables + "' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- End Mongoose Metrics Tracking Code -->
+</body>
+<!-- InstanceEnd --></html>

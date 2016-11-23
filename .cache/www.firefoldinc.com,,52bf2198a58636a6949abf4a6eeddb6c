@@ -1,0 +1,220 @@
+status: 200
+content-length: 8109
+content-location: http://www.FireFoldInc.com
+x-powered-by: ASP.NET
+accept-ranges: bytes
+server: Microsoft-IIS/7.5
+last-modified: Mon, 31 Mar 2014 20:14:59 GMT
+etag: "e1ec3ae41d4dcf1:0"
+date: Sun, 18 Sep 2016 06:55:17 GMT
+content-type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The FireFold Portal</title>
+<style type="text/css">
+<!--
+body {
+	font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+	background:#fffff url(file:///P|/FireFoldeWorks/FFI/images/stripe.gif) repeat-x 0 290px;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+a:link, a:visited { color:#5C5C5C; }
+dl:hover a:link, dl:hover a:visited { color:#000000; }
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+#container {
+	width: 80em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+#header {
+	padding: 10  
+}
+#header h1 {
+	margin: 5; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	text-align: center;
+}
+#mainContent {
+	padding: 0 2em; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	width:94em;
+	margin:0 auto;
+	position:relative;
+}
+#footer {
+	color:white;
+	padding: 0 1em; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#F7F7F7;
+	border-radius:10px;
+	border:solid .1em;
+	border-color:#444;
+	border-color:#D4D4D4;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	box-shadow: rgba(black, 0.5) 5px, 5px, 20px;
+	-moz-box-shadow:0px 0px 50px rgba(255, 255, 255, 0.25);
+	-webkit-box-shadow:0px 0px 50px rgba(255, 255, 255, 0.25);
+	width:85em;
+	margin:35em auto 0;
+	border-width: 10px;
+}
+#footer h4 {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 1em 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	font-size:1.75em;
+	font-weight:bold;
+	color:#666666;
+}
+ul {
+	list-style:none;
+	margin:0 auto;
+	width:90em;
+	padding:0;
+}
+#mainContent:after {
+	content:".";
+	height:0;
+	visibility:hidden;
+	clear:both;
+	display:block;
+
+}
+li {
+	float:left;
+	margin:1.5em;
+}
+li.first {
+	margin-left:0;
+}
+li.last {
+	margin-right:0;
+}
+dl {
+	position:absolute;
+	padding:2em;
+	margin:0 2em;
+	background:rgb(5,5,5);
+	background:#F2F2F2;
+	border:solid .1em;
+	border-color:#444;
+	border-color:rgba(255,255,255,.15);
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	box-shadow:0px 0px 40px rgba(255, 255, 255, 0.25);
+	-moz-box-shadow:0px 0px 40px rgba(255, 255, 255, 0.25);
+	-webkit-box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.25);
+	-webkit-transition-property: background, box-shadow, width, margin, color;
+	-webkit-transition-duration: 0.5s, 1s, 0.75s, 0.25s; 
+	-webkit-transition-timing-function:cubic-bezier(0, 0, 0.5, 0.5); 
+}
+#ff { left:-10%; z-index:1;}
+#ffe { left:35.5%; margin-left:-7em; z-index:0;}
+#fft { left:60%; margin-left:-5em; z-index:0;}
+#ffav { right:-9.2%;}
+dl#ff:hover, dl#ffe:hover, dl#fft:hover, dl#ffav:hover {
+	margin-top:-4em;
+	background:rgb(51, 51, 51);
+	background:rgba(255, 255, 255, 0.15);
+	box-shadow:0px 0px 50px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow:0px 0px 50px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+dd {
+	padding:0;
+	margin:1em auto 0;
+	font-weight:bold;
+	font-size:1.5em;
+	color:#999999;
+
+}
+dt img {
+	width:100%;
+	border:none;
+	border:solid .1em;
+	border-color:#ffffff;
+	border-color:rgba(255,255,255,.15);
+	text-align: center;
+}
+dt {
+	width:24em;
+	-webkit-transition-property: width;
+	-webkit-transition-duration: 0.25s;  
+
+}
+dl#fft, dl#ffe, dl#ffav { margin-top:2em; } 
+dl#fft:hover { margin-left:-15em; z-index:3;  }
+dl#ffe:hover {  z-index:3;  }
+dl#fft dt, dl#ffe dt, dl#ffav dt { width:20em; }
+dl#ff dt { width:30em; }
+dl#ff:hover dt, dl#ffe:hover dt, dl#fft:hover dt, dl#ffav:hover dt { width:36em; }
+
+dd, dd a:link, dd a:visited {
+	
+	text-decoration:none;
+}
+dl:hover dd, dl:hover dd a { 
+	color:#999999;
+	color:#999999; }
+.desc { font-size:11px; }
+
+-->
+</style>
+
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <h1><img src="images/firefold_logo.png" alt="logo" /></h1>
+    <!-- end #header -->
+  </div>
+</div>
+<div id="mainContent">
+  <dl id="ff" title="FireFold.com for all your cable needs">
+    <dt><a href="http://www.firefold.com"><img src="images/firefold_hdmi_cables_online.png" alt="FireFold.com" /></a></dt>
+    <dd><a href="http://www.firefold.com">FireFold.com</a></dd>
+    <dd class="desc">Audio/Video and Networking technology.</dd>
+  </dl>
+  <dl id="ffe" title="FireFoldexpress.com - Computers, Home Theater, Networking, PC Repair, Technology Store">
+    <dt><a href="http://www.firefoldexpress.com"><img src="images/firefold_express.png" alt="FireFold Express" /></a></dt>
+    <dd><a href="http://www.firefoldexpress.com">FireFold Express</a></dd>
+    <dd class="desc">Technology Store - Concord, NC</dd>
+  </dl>
+  <dl id="fft" title="FireFoldtech.com for all your pc needs">
+    <dt><a href="http://www.firefoldtech.com"><img src="images/firefold_technologies.png" alt="FireFold technologies" /></a></dt>
+    <dd><a href="http://www.firefoldtech.com">FireFold Technologies</a></dd>
+    <dd class="desc">Computer Support &amp; Networking</dd>
+  </dl>
+  <dl id="ffav" title="Audio/Video by FIREFOLD for all your Home Theater and Home Automation needs">
+    <dt><a href="http://www.firefoldav.com"><img src="images/firefold_audio_video.png" alt="Audio Video and Home Theater by FIREFOLD" /></a></dt>
+    <dd><a href="http://www.firefoldav.com">Audio/Video by FireFold</a></dd>
+    <dd class="desc">Audio/Video and Home Theater</dd>
+  </dl>
+  <!-- end #mainContent -->
+</div>
+<div id="footer">
+  <h4><a href="http://www.firefold.com/locations">990 Biscayne Drive - Concord, NC 28027</a>  |  Phone: 704-979-7100 </h4>
+</div>
+<!-- end #footer -->
+<!-- end #container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-403577-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

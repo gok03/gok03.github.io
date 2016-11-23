@@ -1,0 +1,1038 @@
+status: 200
+content-length: 49458
+date: Tue, 13 Sep 2016 10:42:13 GMT
+content-location: http://www.resourcesoft.com
+x-powered-by: ASP.NET
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Microsoft-IIS/8.0
+last-modified: Tue, 01 Dec 2015 01:38:20 GMT
+-content-encoding: gzip
+etag: "294680f5d82bd11:0"
+-varied-accept-encoding: gzip, deflate
+content-type: text/html
+x-powered-by-plesk: PleskWin
+-varied-accept-encoding: gzip, deflate
+
+<!doctype html>
+<html>
+<link rel="icon" type="image/ico" href="../favicon.ico" />
+<!--**************************************************
+------------Head------------
+***************************************************--> 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
+    <meta name="keywords" content="Resourcesoft, Inc., IT Consulting, IT Consultants, IT Consultancy, Massachusetts Technology Staffing, MA Technology Staffing, MA Tech Staffing, Boston IT Staffing, Boston Technology Staffing, Tech Recruiting, Technology Recruiting" />
+    <meta name="description" content="Resourcesoft is a fast growing technology consulting and IT Talent provider serving the needs of its clients through a wide network and abundant resources." />
+    <meta name="copyright" content="Copyright (c) 2015 Resourcesoft, Inc." />
+        <title>Resourcesoft, Inc. - Intelligent People Solutions</title>
+            <link rel="stylesheet" href="css/normalize.css" />
+            <!--Insert font information-->
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="css/headerFooter.css" />
+            <link rel="stylesheet" href="css/mobileMenu.css" />
+            <link rel="stylesheet" href="css/home.css" />
+            <link rel="stylesheet" href="css/mobileOnly.css" />
+            <link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
+
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+            <script type="text/javascript" src="js/jquery.wmuSlider.min.js"></script>
+
+            <!-- flexslider -->       
+            <link rel="stylesheet" href="flexslider/flexslider.css" type="text/css" media="screen" />
+            <script type="text/javascript" src="flexslider/jquery.flexslider.js"></script>
+
+
+
+            <script type="text/javascript">
+                $(window).load(function() {
+                $('.flexslider').flexslider
+                    ({
+                        animation: "fade",
+                        slideshowSpeed: 8000,
+                        animationDuration: 1000
+                    });
+                });
+                $(document).ready(function(){
+                        $(".flexslider").hover(function() {
+                            $(this).find("a.prev").stop().animate({'left':'-27px'},200); 
+                            $(this).find("a.next").stop().animate({'right':'-27px'},200);
+                        },
+                        function() {
+                            $(this).find("a.prev").stop().animate({'left':'-150px'},200);
+                            $(this).find("a.next").stop().animate({'right':'-150px'},200);
+                        });
+                });
+            </script>
+
+<style>
+/* mwuSlider */
+
+/*@media screen and (max-width: 1024px) {
+
+    #S1slider{
+        overflow: hidden !important;
+        position: fixed;
+    }
+    #S1content{
+        overflow: hidden !important;
+        position: fixed;
+    }
+
+    footer{
+        position: fixed !important;
+        overflow: hidden !important;
+    }
+    #topBar{width:100% !important; box-sizing: border-box;}
+
+    #menu {
+      color: #777;
+      display: block;
+      float: right !important;
+      height: auto;
+      margin-right: 5%;
+      overflow-x: hidden;
+      position: absolute;
+      right: 5.1% !important;
+      text-align: left;
+      width: 95%;
+    }
+
+
+    footer {
+      height: 4em;
+      top: 47.5vw;
+      width: 100%; 
+      box-sizing: border-box;
+    }
+
+    .wmuSliderPagination{
+        left: 89vw;
+    }
+
+}*/
+
+@media screen and (max-width: 839px) {
+
+    footer{
+        position: relative !important;
+        top: 0 !important;
+        height: auto;
+    }
+    #footLinks a{
+        color: #ccc;
+    }
+    #S1slider{
+    position: absolute;
+    }
+    #S1content{
+        /*overflow: hidden !important;*/
+        position: relative;
+        z-index: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    footer{
+        position: relative !important;
+        top: 0 !important;
+    }
+    #footLinks a{
+        color: #ccc;
+    }
+    #S1slider{
+    position: absolute;
+    }
+    #S1content{
+        /*overflow: hidden !important;*/
+        position: relative;
+    }
+    .newsHeader {
+        height: 4vw;
+        padding: 1.5vw 0 0 1.5vw;
+    }
+    .newsBlock ul {
+        height: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    #footSoc img {
+        max-height: 5vw;
+    }
+    #footLinks {
+        font-size: 3vw;
+    }
+    .newsHeader {
+        padding: 1vw 0 0 1.5vw;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .highPort {
+        top: 7vw !important;
+    }
+    .wmuSlider {
+        max-height: 45vw !important;
+    }   
+    .newsBlock ul {
+        height: 1.4em;
+    }
+    .newsHeader {
+        height: 5vw;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    #footSoc img {
+       max-height: 7vw;
+    }
+    .newsBlock ul {
+        height: 1.6em;
+    }
+    .newsHeader {
+        height: 7vw;
+    }
+    .flex-control-nav {
+        bottom: 0.2em;
+    }
+    .highPort {
+        top: 4vw !important;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .highPort{
+        top: 7vw;
+    }
+    .flex-control-nav li {
+        margin: 7px 0 0 7px;
+    }
+    #S1content {
+    margin-top: 5vw;
+    }
+    .pag00 {
+        padding: 0 !important;
+    }
+    .flex-control-nav {
+        bottom: 0.7em !important;
+    }
+    #footSoc img {
+        max-height: 8vw;
+    }
+    #footLinks {
+        font-size: 4vw;
+    }    
+    .newsHeader {
+        height: 8vw;
+    }
+
+}
+
+@media screen and (max-width: 439px) {
+
+    #S1slider {
+        top: 22.25vw;
+    }
+    .wmuSliderPagination {
+        margin-left: 81vw;
+    }
+    .wmuSliderPagination li {
+        float: left; margin: 0 1vw 0 0;
+    }
+}
+
+@media screen and (min-width: 1px) {
+
+    .wmuSlider {display: block; background: #000; background-image: url(slider/img/load.gif); background-repeat: no-repeat; background-position: center; width: 100vw; overflow: hidden !important; z-index: 97; }
+    .wmuSlider .wmuSliderWrapper article {position: relative; overflow: hidden; z-index: 97; }
+    .wmuSlider .wmuSliderWrapper article img {width: 100%;text-align: center;box-sizing: content-box;}
+    .wmuSliderPagination {z-index: 99;position: absolute;   }
+    .wmuSliderPagination li {float: left;list-style-type:none;  }
+    .wmuSliderPagination a {display: block;text-indent: -9999px;background: url(images/empty.png) no-repeat;background-size: cover;     z-index: 99;    }
+    .wmuSliderPagination a.wmuActive {background: url(images/cover.png) no-repeat;background-size: cover;}
+
+}
+
+@media screen and (min-width: 440px) {
+
+    .wmuSlider {       position: relative;        top: 0;        left: 0;        height: 39vw; /*Use this for change back to 80vh (also see below)*/       max-height: 39vw;    }
+    .wmuSlider .wmuSliderWrapper article {height: 39vw; /*Use this also for change back to 80vh (Now change the the footer to move up or down)*/    }
+    .wmuSliderPagination {z-index: 99; position: absolute; top: 2.3vw; left: 90vw; bottom: 25vw; }
+    .wmuSliderPagination li {margin: 0 5px 0 0; } .wmuSliderPagination a {width: 10px; height: 10px; }
+
+}
+
+@media screen and (min-width: 440px) and (max-width: 839px) {
+    #S1slider {
+        top: 15.65vw;
+    }
+    .wmuSliderPagination {
+        left: 80vw;
+    }
+}
+
+@media screen and (max-width: 839px) {
+    #S1slider {
+        height: 50vw;
+        width: 100vw;
+        max-width: 100vw;
+        overflow: hidden;
+        z-index: 98;
+    }
+    .highPort {
+        position: absolute;
+        top: 10vw;
+        width: 100vw;
+    }
+        .highPortBox {
+            width: 82vw;
+            height: 30vw;
+            margin: 0 0 0 5vw;
+            padding: 1vw 2vw;
+        /*  box-sizing: border-box;*/
+        }
+    .wmuSlider {
+        /*height: 45vw;*/
+/*      top: .75vw;*/
+    }   
+    .wmuSlider .wmuSliderWrapper {
+        width: 100%;
+    }
+    .wmuSlider .wmuSliderWrapper article {
+        height: auto;
+    }
+    .wmuSlider .wmuSliderWrapper article img {
+        width: 100%;
+    }
+    .wmuSliderPagination {
+        top: 3.5vw;
+        bottom: 0;
+    }
+    .wmuSliderPagination a {
+        width: 3vw;
+        height: 3vw;
+    }
+    #S1content{
+        /*margin-top: 50vw;*/
+    }
+}
+</style>
+
+
+</head>
+
+
+
+
+    <!--**************************************************
+    ------------Body------------
+    ***************************************************--> 
+    <body>
+        <!-- <div class="index_body"> -->
+        <div id="wrapper">
+            <!-- <div class="full_slider_body"> -->
+            <div id="S1slider">
+                <!------------------------------------
+                -------BEGIN - Slider-------
+                ------------------------------------->
+                <div class="wmuSlider">
+                    <div class="wmuSliderWrapper">
+                        <article> 
+                            <img src="slider/img/img01.jpg" />
+                            <div class="portClass highPort" id="highPort1">
+                                <a href="about/about.html"><div class="highPortBox">
+                                    Resourcesoft Inc. is a leading Technology Consulting & Project Services firm with a national presence. We provide innovative technology solutions and highly skilled IT professionals that cater to multiple industry verticals.  Our extensive industry experience helps in providing cutting edge solutions that adapt to clients’ prerequisites. 
+                                </div></a>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="slider/img/img02.jpg" />
+                            <div class="portClass highPort" id="highPort2">
+                                <a href="about/aboutWhyUs.html"><div class="highPortBox">
+                                    Our client-centric approach, performance guarantee, technical expertise and customized solutions transcend client expectations, making us a front-runner in this field. We specialize in providing technology solutions that are molded to fit clients’ budget and timelines.
+                                </div></a>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="slider/img/img03.jpg" />
+                            <div class="portClass highPort" id="highPort3">
+                                <a href="about/aboutWhyUs.html"><div class="highPortBox">
+                                     Our aim is to provide customer delight by delivering exceptional services in the most cost-effective and dependable manner. We have a proven track record in delivering reliable IT Consulting and Professional Services, helping clients’ focus on translating strategies into quantifiable results.       
+                                </div></a>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="slider/img/img04.jpg" />
+                            <div class="portClass highPort" id="highPort4">
+                                <a href="about/partnership.html"><div class="highPortBox">
+                                    We are proud to be associated with our renowned technology partners. Our partnerships help us provide a competitive edge to our client solutions. For Resourcesoft, Social Responsibility is a pledge. Our philanthropic commitments are dedicated towards the betterment of the community.
+                                </div></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <script>$('.wmuSlider').wmuSlider();</script>
+                <!------------------------------------
+                -------END - Slider-------
+                ------------------------------------->
+            </div><!--End S1slider-->
+       <!--  </div>
+    </div> -->
+            
+                <!--**************************************************
+                ------------Header------------
+                ***************************************************--> 
+                <header>
+                    <div id="topBar" class="min840">
+                        <section id="topBarS1" class="outterSec">
+                            <section id="insideS1" class="innerSec">
+                                <ul id="topBarS2" class="">
+                                   <a href="about/about.html" class="orangeUnder">About Us</a> | 
+                                    <a href="contact/contact.html" class="orangeUnder">Contact Us</a> | 
+                                    <li>
+                                        <a href="#" class="orangeUnder socMediaDrop socLead">Social Media</a> 
+                                        <ul class="dropMenu">
+                                            <li><a target="new" href="https://www.linkedin.com/company/608693">
+                                                <img src="LIdark.png" 
+                                                alt="Resourcesoft's LinkedIn page" 
+                                                class="borderIcon hovLI" /></a></li>
+                                            <li><a target="new" href="https://www.facebook.com/pages/Resourcesoft-Inc/638422522950161">
+                                                <img src="FBdark.png" 
+                                                alt="Resourcesoft's Facebook page" 
+                                                class="borderIcon hovFB" /></a></li>
+                                            <li><a target="new" href="https://twitter.com/resourcesoftinc">
+                                                <img src="TWdark.png" 
+                                                alt="Resourcesoft's Twitter page" 
+                                                class="borderIcon hovTW" /></a></li>
+                                            <li><a target="new" href="https://plus.google.com/107078787730110086855/posts">
+                                                <img src="GPdark.png" 
+                                                alt="Resourcesoft's Google Plus page" 
+                                                class="borderIcon hovGP" /></a></li>
+                                            <li><a target="new" href="https://www.flickr.com/photos/132816348@N02/">
+                                                <img src="FLdark.png" 
+                                                alt="Resourcesoft's Flickr page" 
+                                                class="borderIcon hovFL" /></a></li>
+                                            <li><a target="new" href="https://www.youtube.com/channel/UCVh8FaBO7pBgaMfMn3-moTQ">
+                                                <img src="YTdark.png" 
+                                                alt="Resourcesoft's YoutTube page"
+                                                class="hovYT" />
+                                                </a></li>
+                                        </ul>   
+                                    </li>
+                                    <script>
+                                    //DropMenu Fixes
+                                        $dropMenu = $(".dropMenu");
+                                        $socMedDr = $(".socMediaDrop");
+                                        
+                                        $dropMenu.mouseenter( function () {
+                                            $socMedDr.addClass("orangeFix");
+                                        });
+                                        $dropMenu.mouseleave( function () {
+                                            $socMedDr.removeClass("orangeFix");
+                                        });
+                                        
+                                    
+                                    </script>
+                                </ul>                       
+                            </section>
+                        </section>
+
+
+<!---------- starting of search function -------->
+                        <section id="topBarS3" class="outterSec serchh" >
+                            <section class="innerSec sm common-serch">
+                                <div id="searchWrap" class="searchWrap">
+                                    <input type="search" class="searchBar" id="searchBar" />
+                                </div>
+                                <a href="javascript:">
+                                    <img src="images/magLight.png" id="magLight" class="magLight" />
+                                </a>
+                                <div class="loginText"> | <a target="new" href="https://eservices.paychex.com/secure/default.aspx" class="orangeUnder">Login</a> </div>
+                            </section>
+                        </section>
+<!---------- end of search function -------->
+
+                    </div>
+                    <div id="lowerBar">
+                        <section id="Logo">
+                            <a href="index.html"><img src="logo.png" alt="Resourcesoft - Intelligent People Solutions" /></a>
+                        <!--    <section id="slogan">
+                                Intelligent People Solutions
+                            </section>-->
+                        </section>
+                        
+      <!--***********************************
+      Hamburger Menu (under 660)
+      ***********************************-->
+            <div class="max839" id="mobileMenuWrap">
+                <img src="hamburger.png" alt="mobile menu" id="hamburgerIcon" />
+                <ul id="mobileMenu">
+                    <li class="upperLI">
+                        <a href="#">Services ▾</a>
+                        <ul class="lowerDrop">
+                            <li class="dropLI">
+                                <a href="services/services.html">Services Overview</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="services/tech.html">Technology Staffing</a>
+                                <ul class="insideUL">
+                                    <li class="insideLI">
+                                        <a href="services/contract-staffing.html">Contract Staffing</a>
+                                    </li>
+                                    <li class="insideLI">
+                                        <a href="services/contract-hire.html">Contract to Hire</a>
+                                    </li>
+                                    <li class="insideLI">
+                                        <a href="services/direct-placement.html">Direct Placement</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropLI">
+                                <a href="services/managed.html">Managed Staffing</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="services/VMS.html">VMS Partner Solutions</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="services/expertise.html">Areas of Expertise</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="upperLI">
+                       <a href="#">Industries ▾</a>
+                        <ul class="lowerDrop">
+                            <li class="dropLI">
+                                <a href="industries/industries.html">Industries Overview</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="industries/banking.html">Banking & Financial Services</a>
+                                <ul class="insideUL">
+                                    <li class="insideLI">
+                                        <a href="industries/banking-consumer.html">Consumer Banking</a>
+                                    </li>
+                                    <li class="insideLI">
+                                        <a href="industries/banking-investment.html">Investment Banking</a>
+                                    </li>
+                                    <li class="insideLI">
+                                        <a href="industries/banking-wealth.html">Wealth & Asset Management</a>
+                                    </li>
+                                    <li class="insideLI">
+                                        <a href="industries/banking-commercial.html">Commercial Banking</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropLI">
+                                <a href="industries/education.html">Education</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="industries/government.html">Government</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="industries/healthcare.html">Healthcare & Pharmaceutical</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="industries/insurance.html">Insurance</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="industries/publishing.html">Publishing</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="upperLI">
+                        <a href="#">Job Seekers ▾</a>
+                        <ul class="lowerDrop">
+                            <li class="dropLI">
+                                <a href="jobSeekers/jobSeekers.html">Job Seekers Overview</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="jobSeekers/techJobs.html">Technology Jobs</a>
+                                <ul class="insideUL">
+                                    <li class="insideLI">
+                                        <a target="new" href="https://www.dice.com/jobs?q=resourcesoft&l">Dice</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropLI">
+                                <a href="jobSeekers/whyUs.html">Why Us</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="jobSeekers/benefits.html">Benefits</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="jobSeekers/mission.html">Mission</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="jobSeekers/postResume.html">Post Your Resume</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="upperLI">
+                        <a href="#">More ▾</a>
+                        <ul class="lowerDrop">
+                            <li class="dropLI">
+                                <a href="about/about.html">About Resourcesoft</a>
+                                <ul class="insideUL">
+                                    <li class="insideLI">
+                                        <a href="about/aboutWhyUs.html">Why Us</a>
+                                    </li>
+                                    <li class="insideLI">
+                                        <a href="about/partnership.html">Awards & Partnership</a>
+                                    </li>
+                                    <li class="insideLI">
+                                        <a href="about/ethics.html">CSR & Code of Ethics</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropLI">
+                                <a href="contact/contact.html">Contact Us</a>
+                            </li>
+                            <li class="dropLI">
+                                <a href="https://eservices.paychex.com/secure/default.aspx">Login</a>
+                            </li>
+                        </ul>
+                    </li>
+<!---------- starting of search function -------->
+            <section class="innerSec search-res common-serch" id="mobileSearch-res">
+                <div id="mobileSearchWrap" class="searchWrap">
+                    <input type="search" id="searchBar" class="searchBar" />
+                </div>
+                <div class="serch-icon">
+                    <a href="javascript:">
+                        <img src="images/magLight.png" id="magLight" class="magLight" />
+                    </a>
+                </div>
+            </section>
+<!---------- end of seach function ---------->
+                </ul>
+            </div>  
+            <script>
+                $hamburger = $("#hamburgerIcon");
+                $mobileMenu = $("#mobileMenu");
+                
+                $mobileMenu.hide();
+                
+                $hamburger.click(function () {
+                    $mobileMenu.toggle();
+                });
+                
+            </script> 
+      <!--***********************************
+      660+px Menu
+      ***********************************-->
+        <!--Start Drop-down Navigation-->
+                        <nav class="min840" id="menu">
+                            <ul id="mainMenu">
+                                <li id="servTitle">
+                                    <a href="services/services.html">Services</a>
+                                    <!--<ul id="servMenu" class="mainDrop">
+                                        <li>
+                                            <a href="#">Technology Staffing</a>
+                                        </li>
+                                            <ul class="subMenu">
+                                                <li>
+                                                    <a href="#">Contract Staffing</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Contract to Hire</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Direct Placement</a>
+                                                </li>
+                                            </ul>
+                                        <li>
+                                            <a href="#">Managed Staffing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">VMS Partner Solutions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Areas of Expertise</a>
+                                        </li>
+                                    </ul>-->
+                                </li>
+                                <li id="indTitle">
+                                   <a href="industries/industries.html">Industries</a>
+                                    <!--<ul id="indMenu" class="mainDrop">
+                                        <li>
+                                            <a href="#">Banking & Financial Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Education</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Government</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Healthcare & Pharmaceutical</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Insurance</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Publishing</a>
+                                        </li>
+                                    </ul>-->
+                                </li>
+                                <li id="jobTitle">
+                                    <a href="jobSeekers/jobSeekers.html">Job Seekers</a>
+                                    <!--<ul id="jobMenu" class="mainDrop">
+                                        <li>
+                                            <a href="#">Technology Jobs</a>
+                                        </li>
+                                            <ul class="subMenu">
+                                                <li>
+                                                    <a href="#">Dice</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">TechFetch</a>
+                                                </li>
+                                            </ul>
+                                        <li>
+                                            <a href="#">Careers at Resourcesoft</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Post Your Resume</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Benefits</a>
+                                        </li>
+                                    </ul>-->
+                                </li>
+                            </ul>
+                        </nav>   
+                        <!--<script>
+                            $indTitle = $("#indTitle"); 
+                            $servTitle = $("#servTitle");
+                            $jobTitle = $("#jobTitle");
+                            
+                            $indMenu = $("#indMenu"); 
+                            $servMenu = $("#servMenu");
+                            $jobMenu = $("#jobMenu");
+                            
+                            $indCombo = $indTitle.$indMenu;
+                            
+                            $indMenu.hide(); 
+                            $servMenu.hide();
+                            $jobMenu.hide();
+                            
+                            
+                            $indTitle.mouseenter(function() {
+                                $indMenu.show();  
+                            }).mouseleave && $indMenu.mouseleave (function() { 
+                                $indMenu.hide();
+                            });
+                            
+                            $servTitle.mouseenter(function() {
+                                $servMenu.show();  
+                            }).mouseleave && $servMenu.mouseleave (function() { 
+                                $servMenu.hide();
+                            });
+                            
+                            $jobTitle.mouseenter(function() {
+                                $jobMenu.show();  
+                            }).mouseleave && $jobMenu.mouseleave (function() { 
+                                $jobMenu.hide();
+                            });
+                        </script>     End Navigation-->                     
+                    </div>
+                        
+                </header>
+
+                       
+            <div id="S1content">
+             <!--   <div class="portClass" id="highPort">
+                    <div class="highPortBox">
+                        Information/Announcements go here:
+                    </div>
+                </div>-->
+                <!-- <section id="topBarS3" class="outterSec"> -->
+                            
+                        <!-- </section> -->
+
+
+                <div class="portClass" id="lowPort">
+                    <div id="infoBox-1" class="infoBox">
+                        <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <a href="services/services.html">
+                                    <div class="pag00 paginate-1" id="info-1a">
+                                         Resourcesoft is a full service provider, offering cutting edge technology solutions through customized staffing and management of IT projects.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="services/tech.html">
+                                    <div class="pag00 paginate-1" id="info-1b">
+                                        Our services include a workforce that provides optimized solutions to every clients’ specific business needs and requirements. Our robust performance guarantee facilitates in making the correct hiring decisions.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="services/managed.html">
+                                    <div class="pag00 paginate-1" id="info-1c">
+                                        As your Managed Staffing partner, we offer an efficient, transparent, customized solution to all your contract staffing needs. Our consolidated offering enables clients focus on their core business objectives.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="services/expertise.html">
+                                    <div class="pag00 paginate-1" id="info-1d">
+                                        If you are looking for progressive IT solutions, we have the answers to all your requirements. Our expertise covers a gamut of technology disciplines, enabling delivery of end to end services.  
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div id="infoBox-2" class="infoBox">
+                        <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <a href="industries/industries.html">
+                                    <div class="pag00 paginate-2" id="info-2a">
+                                        Providing comprehensive technology solutions across multiple industry verticals. Our expertise spans multiple technical disciplines within each industry domain we cater to.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="industries/banking.html">
+                                    <div class="pag00 paginate-2" id="info-2b">
+                                        Successfully delivering Application, Database, Data Warehousing and QA solutions to financial clients in the retail, commercial and wealth management space.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="industries/government.html">
+                                    <div class="pag00 paginate-2" id="info-2c">
+                                        Providing precise, secure and dependable solutions to the Government sector. Our offerings are designed to adhere to the stringent compliance requirements of this domain.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="industries/publishing.html">
+                                    <div class="pag00 paginate-2" id="info-2d">
+                                        Resourcesoft partners with publishing institutions to provide state of the art e-learning solutions. Our offerings are customized to cater to the constantly evolving needs of our clients.
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div id="infoBox-3" class="infoBox">
+                        <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <a href="jobSeekers/jobSeekers.html">
+                                    <div class="pag00 paginate-3" id="info-3a">
+                                        If technology is your driving force, we can guide you to a better future. Work for Resourcesoft and observe your career reach new heights.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="jobSeekers/whyUs.html">
+                                    <div class="pag00 paginate-3" id="info-3b">
+                                        If you are looking for the right challenge to help boost your career, your quest ends here. We can help accelerate your career success. 
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="jobSeekers/mission.html">
+                                    <div class="pag00 paginate-3" id="info-3b">
+                                        We are dedicated to providing our employees with suitable challenges within a nurturing environment, helping shape them into the leaders of the future.
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="jobSeekers/techJobs.html">
+                                    <div class="pag00 paginate-3" id="info-3b">
+                                        Looking for career opportunities with Resourcesoft? Start your job search here. Choose from an array of available jobs or work with our specialized recruitment team in choosing the ideal position.
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <style>
+                        .infoBox a {
+                            text-decoration: none;
+                        }
+                        .pag00 {
+                            color: #fff;
+                            height: 100%;
+                            padding: 1em 2vw;
+                            text-align: justify;
+                        }
+                        .pag00 a {
+                            color: #fff;
+                        }
+                    </style>
+                    <div class="newsBlock">
+                        <div class="newsHeader">
+                            News and Events
+                        </div>
+                        <ul id="ticker">
+                            <li>
+                                <span></span>
+                                <a href="#">
+                                    Visit us at the Babson Career fair on September 24th to learn more about our exciting new job opportunities.
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="#">
+                                    Resourcesoft is looking forward to meet the students and alumni of UMass Boston on September 29th
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="#">
+                                    Resourcesoft will be on campus at Umass Amherst and Bentley University on September 30. Currently <a target="new" href="https://twitter.com/resourcesoftinc">#hiring</a> for multiple open positions. 
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="#">
+                                    We will be at Northeastern University on the 1st of October to discuss exciting IT Career opportunities. 
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="#">
+                                    Meet our team at the Boston University job fair on October 14. We can help you take your next step towards a successful career.
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <script>
+                        $(window).load(function() {
+                            var ticker = function()
+                            {
+                                setTimeout(function(){
+                                    $('#ticker li:first').animate( {marginTop: '-2em'}, 1000, function()
+                                    {
+                                        $(this).detach().appendTo('ul#ticker').removeAttr('style');
+                                    });
+                                    ticker();
+                                }, 8000);
+                            };
+                            ticker();
+                        });
+                    </script>
+                </div>
+            </div><!--End S1content-->
+            
+            
+            
+            <!--**************************************************
+            ------------Footer------------
+            ***************************************************--> 
+            <footer>
+                <div id="footerRight">
+                    <section id="footSoc">
+                        <a target="new" href="https://www.linkedin.com/company/608693"><img src="LIdark.png" alt="Resourcesoft's LinkedIn page" class="hovLI" /></a>
+                        <a target="new" href="https://www.facebook.com/pages/Resourcesoft-Inc/638422522950161"><img src="FBdark.png" alt="Resourcesoft's Facebook page" class="hovFB" /></a>
+                        <a target="new" href="https://twitter.com/resourcesoftinc"><img src="TWdark.png" alt="Resourcesoft's Twitter page" class="hovTW" /></a>
+                        <a target="new" href="https://plus.google.com/107078787730110086855/posts"><img src="GPdark.png" alt="Resourcesoft's Google Plus page" class="hovGP" /></a> 
+                        <a target="new" href="https://www.flickr.com/photos/132816348@N02/"><img src="FLdark.png" alt="Resourcesoft's Flickr page" class="hovFL" /></a>
+                        <a target="new" href="https://www.youtube.com/channel/UCVh8FaBO7pBgaMfMn3-moTQ"><img src="YTdark.png" alt="Resourcesoft's YouTube page" class="hovYT" /></a>            
+                    </section>
+                    <script>
+                    //Social Hover Image Changes
+                        //LinkedIn
+                            $(".hovLI").mouseenter( function () {
+                                $(this).attr("src", "LI.png");
+                            });
+                            $(".hovLI").mouseleave( function () {
+                                $(this).attr("src", "LIdark.png");
+                            });
+                        //Facebook
+                            $(".hovFB").mouseenter( function () {
+                                $(this).attr("src", "FB.png");
+                            });
+                            $(".hovFB").mouseleave( function () {
+                                $(this).attr("src", "FBdark.png");
+                            });
+                        //Twitter
+                            $(".hovTW").mouseenter( function () {
+                                $(this).attr("src", "TW.png");
+                            });
+                            $(".hovTW").mouseleave( function () {
+                                $(this).attr("src", "TWdark.png");
+                            });
+                        //Google+
+                            $(".hovGP").mouseenter( function () {
+                                $(this).attr("src", "GP.png");
+                            });
+                            $(".hovGP").mouseleave( function () {
+                                $(this).attr("src", "GPdark.png");
+                            });
+                        //Flickr
+                            $(".hovFL").mouseenter( function () {
+                                $(this).attr("src", "FL.png");
+                            });
+                            $(".hovFL").mouseleave( function () {
+                                $(this).attr("src", "FLdark.png");
+                            });
+                        //YouTube
+                            $(".hovYT").mouseenter( function () {
+                                $(this).attr("src", "YT.png");
+                            });
+                            $(".hovYT").mouseleave( function () {
+                                $(this).attr("src", "YTdark.png");
+                            });
+                    </script>
+                </div>
+                <div id="footerLeft">
+                    <section id="footLinks">
+                        <a class="orangeUnder" target="new" href="docs/PrivacyStatement.pdf">Privacy Policy</a> | 
+                        <a class="orangeUnder" target="new" href="docs/TermsOfUse.pdf">Terms of Use</a>
+                    </section>
+                    <section id="copyInfo">
+                        Copyright &copy; 1999-2015 Resourcesoft Inc. All Rights Reserved.    
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </div>
+<!-- </div> -->
+<!-- </div> -->
+        <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+        <!-- // <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script type="text/javascript" src="js/jquery.wmuSlider.min.js"></script>
+        <script type="text/javascript" src="js/jquery.wmuGallery.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                // If someone resizes the window, page reloads
+                $(window).on("orientationchange", function(){
+                    // Document must reload
+                    $("body").remove();
+                    location.reload();
+                }); 
+            });
+                
+            var options = {navigationControl: true, 
+                        animation: 'slide',
+                        paginationControl: true,
+                        touch: true,
+                        slide: 'article',
+                        items: 1};
+            $(".wmuSlider").wmuslider(options);
+        </script>
+<script src="search-script.js"></script>
+    </body>
+</html>

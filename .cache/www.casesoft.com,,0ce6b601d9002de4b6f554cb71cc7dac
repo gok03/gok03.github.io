@@ -1,0 +1,38 @@
+status: 200
+content-length: 488
+content-location: http://www.casesoft.com
+x-powered-by: ASP.NET
+accept-ranges: bytes
+server: www.casesoft.com  9999
+last-modified: Fri, 18 Mar 2016 07:20:52 GMT
+etag: "0e2edb3e680d11:0"
+date: Tue, 04 Oct 2016 09:12:59 GMT
+p3p: CP="IDC DSP LAW ADM DEV TAI PSA PSD IVA IVD CON HIS TEL OUR DEL SAM OTR
+ IND OTC"
+content-type: text/html
+x-re-ref: 1 1475572379707358
+
+<!DOCTYPE html>
+
+<head>
+<title>CaseSoft | Case Analysis Made Easy</title>
+
+</head>
+
+<body >
+<script type="text/javascript">
+window.onload = redirect;
+function redirect(){
+	var locationofurl = window.location;
+	locationofurl = locationofurl.toString().toLowerCase();
+	
+	if(locationofurl.indexOf('installs/') > 0 ) {
+		//noredirect
+	} else {
+		window.location = "http://www.lexisnexis.com/litigation/products/case-analysis/casemap";
+	}
+	}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,829 @@
+status: 200
+content-length: 89026
+content-location: http://www.neogeek.net
+x-powered-by: PHP/5.6.25
+accept-ranges: bytes
+vary: Accept-Encoding
+server: LiteSpeed
+connection: close
+-content-encoding: gzip
+date: Wed, 21 Sep 2016 08:35:43 GMT
+content-type: text/html; charset=UTF-8
+x-pingback: http://www.neogeek.net/xmlrpc.php
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Neogeek | A blog by Steven Johnston</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://www.neogeek.net/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://www.neogeek.net/wp-content/themes/yoko/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+	<title>Neogeek | A blog by Steven Johnston</title>
+<link rel="alternate" type="application/rss+xml" title="Neogeek &raquo; Feed" href="http://www.neogeek.net/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="Neogeek &raquo; Comments Feed" href="http://www.neogeek.net/?feed=comments-rss2" />
+<link rel='stylesheet' id='yoko-fonts-css'  href='//fonts.googleapis.com/css?family=Droid+Sans%3A400%2C700%7CDroid+Serif%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='yoko-style-css'  href='http://www.neogeek.net/wp-content/themes/yoko/style.css?ver=2013-10-21' type='text/css' media='all' />
+<link rel='stylesheet' id='light-captcha-css'  href='http://www.neogeek.net/wp-content/plugins/light-captcha/style/style.css?ver=4.1.13' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.neogeek.net/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://www.neogeek.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.neogeek.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.neogeek.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1.13" />
+	<style type="text/css" id="yoko-themeoptions-css">
+		a {color: #009BC2;}
+		#content .single-entry-header h1.entry-title {color: #009BC2!important;}
+		input#submit:hover {background-color: #009BC2!important;}
+		#content .page-entry-header h1.entry-title {color: #009BC2!important;}
+		.searchsubmit:hover {background-color: #009BC2!important;}
+	</style>
+    <style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+
+<body class="home blog">
+<div id="page" class="clearfix">
+	<header id="branding">
+		<nav id="mainnav" class="clearfix">
+			<div class="menu"><ul><li class="current_page_item"><a href="http://www.neogeek.net/">Home</a></li><li class="page_item page-item-2"><a href="http://www.neogeek.net/?page_id=2">About</a></li></ul></div>
+		</nav><!-- end mainnav -->
+
+		
+		<hgroup id="site-title">
+					<h1><a href="http://www.neogeek.net/" title="Neogeek">Neogeek</a></h1>
+				<h2 id="site-description">A blog by Steven Johnston</h2>
+				</hgroup><!-- end site-title -->
+
+        						<img src="http://www.neogeek.net/wp-content/uploads/2012/03/ginko.jpg" class="headerimage" width="1102" height="350" alt="" /><!-- end headerimage -->
+										<div class="clear"></div>
+
+		<nav id="subnav">
+					</nav><!-- end subnav -->
+</header><!-- end header -->
+<div id="wrap">
+<div id="main">
+	<div id="content">
+									
+				
+<article id="post-815" class="post-815 post type-post status-publish format-standard hentry category-storage category-virtual-san category-vmware category-vsan tag-storage tag-virtual-san tag-vmware tag-vsan">
+
+	<div class="entry-details">
+				<p>August 18, 2014<br/>
+		by Steve<br/>
+		<a href="http://www.neogeek.net/?p=815#respond" title="Comment on How VSANs Are Like Kit Cars (in light of recent VSAN HCL Update)">0 comments</a></p>
+	</div><!-- end entry-details -->
+    
+	<header class="entry-header">
+			<h2 class="entry-title"><a href="http://www.neogeek.net/?p=815" title="Permalink to How VSANs Are Like Kit Cars (in light of recent VSAN HCL Update)" rel="bookmark">How VSANs Are Like Kit Cars (in light of recent VSAN HCL Update)</a></h2>
+	</header><!-- end entry-header -->
+        
+	<div class="entry-content">
+					<p>Sometimes the two things I love most, technology and cars overlap, or maybe I am just wanting an excuse to talk about them both.  Either way, people seem to understand analogies using cars related to technology so I am going to use one here to describe something that has happened recently affecting one of the emerging trends in technology &#8216;Software Defined Storage&#8217; (SDS). </p>
+<p>Every now and again, car manufacturers who provide pre-built cars recall certain models due to issues.  In the UK we even have a government website to check <a href="https://www.gov.uk/check-if-a-vehicle-has-been-recalled" title="UK Gov Vehicle Recall Check" target="_blank">https://www.gov.uk/check-if-a-vehicle-has-been-recalled</a>.</p>
+<p>So this brings me to what has happened recently.  VMware announced they were removing support for a dozen Storage Controllers that were previously on the VSAN Supported Hardware Compatibility List (See the VMware blog post <a href="http://blogs.vmware.com/kb/2014/08/alert-storage-controllers-virtual-san-longer-supported.html" title="VSAN Storage Controllers No Longer Supported" target="_blank">Here</a>).</p>
+<p>I wasn&#8217;t that surprise to see this, especially as two Months ago a colleague drew my attention to this post on Reddit, under the VMware Sub-Reddit (<a href="http://www.reddit.com/r/vmware/comments/2799p4/root_cause_analysis_of_my_vsan_outage/" title="VSAN Outage" target="_blank">VSAN Outage Root Cause</a>).  This post describes a VSAN outage were the conclusion which came from VMware Support was that after experiencing the outage and then needing to rebuild, that their Storage Controller, a Dell H310 (with very low queue depth of 25) simply wasn&#8217;t able to support high enough IO throughput to perform the rebuild whilst still running production.</p>
+<p>The amendments to the VSAN HCL are no doubt related to support cases like this or perhaps related to Storage Controllers that share the same family or characteristics which prevent them from being able to deal with the worst-case scenarios such as the one which happened to this unfortunate person.</p>
+<p>It isn&#8217;t really surprising to see updates to Hardware Compatibility Lists (HCL) although perhaps less usual to see amendments removing items that were already on there.  This brings me to the following conclusion.  In the Software Defined World where VSAN in this case is the Software Defined Storage (SDS) product, it isn&#8217;t just about the software.  The hardware is <strong>even</strong> more important.  </p>
+<p>So back to my car analogy.  This time I am contrasting the differences between a pre-built car and a kit car.  </p>
+<p>When you buy Off-The-Shelf storage arrays from EMC/NetApp/HDS/3PAR etc these are designed specifically to meet a certain standard of performance, just like a pre-built car.  When you buy one of the Porsche 911 models it comes with a distinctive look, feel and performance characteristic just like the Off-The-Shelf storage array. </p>
+<p>When you buy a kit car you will get a frame and other parts that define the look and feel of the car (like the software in SDS) but what you put underneath it, the engine and drivetrain (the part that delivers the engines power to the wheels) you choose determines the performance of that vehicle.  This is the same with a Software Defined Storage approach and in this analogy, the engine is like the disks and the Storage Controller like the drivetrain.</p>
+<p>There is another point that this analogy can be used to explain.  When you buy a pre-built car, you typically get a manufacturers warranty which covers everything for the first 3 years whereas if you buy a kit car then the individual components have their own warranty.<br />
+In a pre-built car, the sum of the parts are guaranteed to function as expected for the term of the warranty.  Whereas in the case of the kit-car the individual components are covered or in the case of Software Defined Storage, the software and the hardware are covered independently, so the software is assured to function with the hardware designated as supported but the performance derived from the sum of the components is not covered.  So remember the burden of ownership with regards to performance is on the customer not the supplier.  </p>
+<p>Kit cars don&#8217;t get recalled in their entirety, perhaps a component like a seat belt holder will get recalled just as a Power Supply from a server may be recalled.  If a seat belt in a pre-built car was found to be faulty then the whole car would be recalled so that could be addressed but the reason a kit car isn&#8217;t recalled in it&#8217;s entirety is because it is not the whole product.<br />
+Like a pre-built car manufacturer, Off-The-Shelf Storage Array manufacturers will normally distribute any known issues and have a fix available for them.  They may even just contact you to arrange a time to apply the hotfix included under your maintenance.  In the case of a kit car or a Software Defined Storage array, the ownership of maintaining the setup is on the customer.  </p>
+<p>So if you are running VSAN, the burden is on you the customer to ensure you are not let down by either performance or any issues that have become known.  Don&#8217;t cheap out on the components, not the disks or the Storage Controller.  The Storage Controller other than the disks is probably the most important component to ensuring it performs as you expect it to.<br />
+For known issues I would suggest frequently checking for updates from VMware, to see if there are any Knowledge Base articles specific to your hardware configuration and then arrange to upgrade, patch or amend your setup to address the issues with it as soon as possible.  To assist in keeping track of known issues use the <a href="http://blogs.vmware.com/kbdigest/" title="KBDigest" target="_blank">VMware KB Digest</a>, you can subscribe via RSS or follow their twitter account <a href="https://twitter.com/vmwarekb" title="VMwareKB Twitter" target="_blank">@vmwarekb</a>.</p>
+<p>I think Software Defined everything is great, it will help give us get many flexibility benefits just as virtualisation has already done.  I think Vmware VSAN is great, a real step forward and perhaps something which will ultimately lower the entry level cost of shared storage whilst also increasing the mobility of data.<br />
+However compared to an Off-The-Shelf Storage Array, VSAN has slightly higher maintenance needs.  It has many positive aspects too, such as it&#8217;s simplicity of operations and tremendous flexibility.<br />
+So if planning a VSAN it is worth being equipped with this knowledge before hand.  Also check the latest VMware pre-validated configurations named &#8216;Virtual SAN Ready Nodes&#8217; over <a href="http://partnerweb.vmware.com/programs/vsan/Virtual%20SAN%20Ready%20Nodes.pdf" title="VSAN Ready Nodes" target="_blank">here</a>.  It may be best to form your solution matching or close to one these.</p>
+<p>Now I just need to get a home that has a garage so I can build a kit car or maybe I will just get saving for that Porsche 911 Carrera. Ha, even if I had the cash, my Wife would have something to say about either option!</p>
+		
+								
+				
+		<footer class="entry-meta">
+			<p>			Categories: <a href="http://www.neogeek.net/?cat=27" rel="category">Storage</a>, <a href="http://www.neogeek.net/?cat=25" rel="category">Virtual SAN</a>, <a href="http://www.neogeek.net/?cat=8" rel="category">VMware</a>, <a href="http://www.neogeek.net/?cat=26" rel="category">VSAN</a> | 
+									Tags: <a href="http://www.neogeek.net/?tag=storage" rel="tag">Storage</a>, <a href="http://www.neogeek.net/?tag=virtual-san" rel="tag">Virtual SAN</a>, <a href="http://www.neogeek.net/?tag=vmware" rel="tag">VMware</a>, <a href="http://www.neogeek.net/?tag=vsan" rel="tag">VSAN</a> | 
+						<a href="http://www.neogeek.net/?p=815">Permalink </a>
+			</p>
+	</footer><!-- end entry-meta -->
+	</div><!-- end entry-content -->
+			
+</article><!-- end post-815 -->
+								
+				
+<article id="post-747" class="post-747 post type-post status-publish format-standard hentry category-emc category-emc-world category-vcenter category-vmware category-vnxe category-vplex category-vplexve tag-emc tag-vcenter tag-vmware tag-vnxe tag-vplex-ve">
+
+	<div class="entry-details">
+				<p>July 2, 2014<br/>
+		by Steve<br/>
+		<a href="http://www.neogeek.net/?p=747#comments" title="Comment on VPLEX Virtual Edition (VPLEX/VE) In The Real World">2 Comments</a></p>
+	</div><!-- end entry-details -->
+    
+	<header class="entry-header">
+			<h2 class="entry-title"><a href="http://www.neogeek.net/?p=747" title="Permalink to VPLEX Virtual Edition (VPLEX/VE) In The Real World" rel="bookmark">VPLEX Virtual Edition (VPLEX/VE) In The Real World</a></h2>
+	</header><!-- end entry-header -->
+        
+	<div class="entry-content">
+					<p>It seems so long ago now when I reviewed EMC World 2014.  One of the things I wanted to learn more about while I was there was VPLEX/VE.<br />
+So far, everything I have found out makes me wonder, &#8220;Which type of customer it is designed to fit?&#8221;.  To explain what I am talking about here you need to know the architecture.</p>
+<p><strong>VPLEX/VE Architectural Features:</strong></p>
+<ul>
+<li>Uses vApps and runs on ESXi.</li>
+<li>Requires 4 vDirectors per site and each is statically bound to an ESXi Host.</li>
+<li> Has a virtual management server per site that can reside on any of the ESXi hosts.</li>
+</ul>
+<p><a href="http://www.neogeek.net/wp-content/uploads/2014/07/VPLEX-VE_Architecture.jpg"><img src="http://www.neogeek.net/wp-content/uploads/2014/07/VPLEX-VE_Architecture.jpg" alt="VPLEX-VE_Architecture" width="1052" height="485" class="aligncenter size-full wp-image-750" /></a></p>
+<ul>
+<li>Has optional cluster witness feature and for ideal circumstances this needs a third site.</li>
+<li>VPLEX/VE will only operate between 2 sites synchronously (VPLEX Metro).</li>
+<li>2x WAN links are preferred with latency up to 10ms roundtrip between replicated sites and up to 1000ms between replicated sites and witness site</li>
+</ul>
+<p><a href="http://www.neogeek.net/wp-content/uploads/2014/07/VPLEX-VE_Architecture2.jpg"><img src="http://www.neogeek.net/wp-content/uploads/2014/07/VPLEX-VE_Architecture2.jpg" alt="VPLEX-VE_Architecture2" width="995" height="324" class="aligncenter size-full wp-image-765" /></a></p>
+<ul>
+<li>Is iSCSI only (FC is only in the bigger brother full VPLEX).</li>
+<li>Supports VNXe arrays only.</li>
+<li>Is limited to 80K IOPS</li>
+<li>Is managed via the vSphere Web Client</li>
+<li><del datetime="2014-07-07T11:25:42+00:00">Needs distributed Switches for operation</del> <strong>[Edit: Correction  , Spotted by Leonard McCluskey and supported in EMC documentation.  Is supported on vDS or vSS.  Thanks!]</strong></li>
+</ul>
+<p><strong>The Argument:</strong></p>
+<p>Having covered the above points lets extract what this really means.  VPLEX/VE is an amazing feat of engineering.  I welcome the software only version of the brilliant VPLEX hardware but I find its use may be somewhat limited currently.  Perhaps I am not thinking openly enough?   </p>
+<p>My argument is based on the fact that VPLEX/VE supports VNXe and iSCSI only, so can only appeal to companies who would use this combination of storage array and protocol for production storage. i.e. small businesses.</p>
+<p>I find the following areas conflict with the typical profile of small businesses:</p>
+<ul>
+<li>4 ESXi Hosts per site are required as a minimum.  <del datetime="2014-07-07T11:25:42+00:00">Due to needing distributing switches these Hosts will require Enterprise Plus licensing.</del>  Many small businesses aren&#8217;t likely to have as many as 8 hosts <del datetime="2014-07-07T11:25:42+00:00">and usually license vSphere at lower versions due to costs</del>. <strong>[Edit: Based on above correction]</strong> </li>
+<li>The witness should reside on a third site.  Many small businesses are lucky to have somewhere suitable to run their Server hardware at 1 site, let alone 3.</li>
+<li>Having 2 WAN links between Site 1 and Site 2 with less than 10ms round trip time is a big ask for a small business.  Even 2 WAN links between Site 1 &#038; 3 and Site 2&#038; 3 with 1000ms round trip time could be challenging in some small businesses.  I appreciate however that it will work with 1 WAN link between each Site.</li>
+<li>Implementing a stretched vSphere cluster doesn&#8217;t stop once compute resource and active/active multi-site storage has been provided.  It requires networking configuration providing a stretched layer 2 subnet and this is again something a small business is less likely to have. </li>
+</ul>
+<p>Many of these requirements are easily met in larger companies.  Multiple sites with facilities to run hardware, 4 hosts per site on 2 sites with a third to run the witness, low latency WAN links.<br />
+These are all pretty trivial for larger customers but VNXe as a main production storage array running a workload important enough to give it a multi-site stretched vSphere cluster is something I think is unlikely to be present in those customers.</p>
+<p>I appreciate that VNXe is frequently used in larger companies (e.g. branch, departmental use or backup targets) but those same companies are much more likely to run the full blown VPLEX with a high-end VNX or VMAX, especially for very important workloads.</p>
+<p>VNXe as a production storage array in my experiences are primarily found in small businesses whereas the environment required to support VPLEX/VE is rarely found in companies of that size.  There are always exceptions but to put it bluntly, if a company can afford the environment required to run VPLEX/VE, they are likely to use a higher caliber storage array (Not putting VNXe down, it is a great product).</p>
+<p>Disagree?  Let me know in the comments.  </p>
+		
+								
+				
+		<footer class="entry-meta">
+			<p>			Categories: <a href="http://www.neogeek.net/?cat=3" rel="category">EMC</a>, <a href="http://www.neogeek.net/?cat=18" rel="category">EMC World</a>, <a href="http://www.neogeek.net/?cat=13" rel="category">vCenter</a>, <a href="http://www.neogeek.net/?cat=8" rel="category">VMware</a>, <a href="http://www.neogeek.net/?cat=7" rel="category">VNXe</a>, <a href="http://www.neogeek.net/?cat=24" rel="category">VPLEX</a>, <a href="http://www.neogeek.net/?cat=23" rel="category">VPLEX/VE</a> | 
+									Tags: <a href="http://www.neogeek.net/?tag=emc" rel="tag">EMC</a>, <a href="http://www.neogeek.net/?tag=vcenter" rel="tag">vCenter</a>, <a href="http://www.neogeek.net/?tag=vmware" rel="tag">VMware</a>, <a href="http://www.neogeek.net/?tag=vnxe" rel="tag">VNXe</a>, <a href="http://www.neogeek.net/?tag=vplex-ve" rel="tag">VPLEX VE</a> | 
+						<a href="http://www.neogeek.net/?p=747">Permalink </a>
+			</p>
+	</footer><!-- end entry-meta -->
+	</div><!-- end entry-content -->
+			
+</article><!-- end post-747 -->
+								
+				
+<article id="post-695" class="post-695 post type-post status-publish format-standard hentry category-emc category-emc-world tag-emc tag-emc-world tag-isilon tag-onefs tag-vipr tag-vnx tag-vnxe tag-vplex-ve">
+
+	<div class="entry-details">
+				<p>May 15, 2014<br/>
+		by Steve<br/>
+		<a href="http://www.neogeek.net/?p=695#comments" title="Comment on My Review of EMC World 2014">4 Comments</a></p>
+	</div><!-- end entry-details -->
+    
+	<header class="entry-header">
+			<h2 class="entry-title"><a href="http://www.neogeek.net/?p=695" title="Permalink to My Review of EMC World 2014" rel="bookmark">My Review of EMC World 2014</a></h2>
+	</header><!-- end entry-header -->
+        
+	<div class="entry-content">
+					<p>This year, thanks to my employer Novosco (an EMC Partner), I got the chance to return state-side to EMC World in Las Vegas.  I had an amazing time and am now only recovering properly from the jet lag and the madness that is Vegas.</p>
+<p><a href="http://www.neogeek.net/wp-content/uploads/2014/05/photo-3-e1400143356705.jpeg"><img src="http://www.neogeek.net/wp-content/uploads/2014/05/photo-3-e1400143356705-225x300.jpeg" alt="photo 3" width="225" height="300" class="aligncenter size-medium wp-image-737" /></a></p>
+<p>From the conference, there were a number of big announcements, those that excited me most were:</p>
+<p><strong>VNXe 3200 -</strong> Which includes a pretty impressive MCx overhaul as well as bringing in new features such as FAST Cache/ FAST VP and Fibre Channel connectivity which are all firsts for the VNXe family and makes it nearly as feature rich as its bigger brother the VNX.</p>
+<p><strong>ViPR 2.0 -</strong> With the introduction of data services rather than just operating in the control plane, this is something truly to get excited about.  Its got Object but now it also has ScaleIO baked-in to provide Block services (How cool is that!).  They also announced that the Controller now supports HDS arrays and vBlocks.  </p>
+<p><strong>XtremIO Snapshots -</strong> XtremIO gets an upgrade to include snapshots with zero overhead meaning you can go nuts.  I should also mention there is a Flash Rescue Program for customers who purchased a competitor All-Flash Array (AFA), are disappointed with how it performs or behaves and need an AFA that lives up to the hype.</p>
+<p>There was also mention of a software-only version of OneFS (from Isilon and dubbed vOneFS) which will be a supported version of the virtual Isilon (which I have running on my home ESXi server and is well worth checking out!) and a software-only version of VNX (Project Liberty) targeted at test/dev.</p>
+<p>One of my goals before heading to Vegas was to find out more about VPLEX VE.  As a huge fan of VPLEX I wanted to see just what the Virtual Edition could offer so attended a session covering the architecture.  It give me a greater insight into the product, its current abilities (VNXe only today) and merits further comment but too much for here so I will follow up on this in another post.</p>
+<p>My personal highlight of this year&#8217;s conference was Chad Sakac&#8217;s Area 52.  The session was held in the largest of the rooms (a definite requirement as Chad always draws a crowd).  It&#8217;s hard to describe the scale but a large room in Vegas is an insanely massive room anywhere else, think of a football field or maybe even more, where the back row of seats would only just see Chad on stage and I&#8217;m not referring to his height either (for those who don&#8217;t know, Chad is not a tall man).  The room was rigged up with multiple screens to display Chad, the other presenters on stage and the slide contents.  I had 3rd row seats, as you can see below.<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/05/photo-11.jpeg"><img src="http://www.neogeek.net/wp-content/uploads/2014/05/photo-11-300x225.jpeg" alt="photo 1" width="300" height="225" class="aligncenter size-medium wp-image-735" /></a><br />
+Having followed Chad&#8217;s Virtual Geek posts on storage classification (which he likened to phylum) I found it engaging and thoroughly enjoyable with the session covering the same key points as his blog posts (check out the first one <a href="http://virtualgeek.typepad.com/virtual_geek/2014/01/understanding-storage-architectures.html#more" title="http://virtualgeek.typepad.com/virtual_geek/2014/01/understanding-storage-architectures.html#more" target="_blank">here</a>).  The difference was on top of his blog content, there were awesome demos of what EMC are doing in each of these areas with not every feature being completely ready for release but well on the way.  They demoed Unisphere Central, EMC Storage Integrator (free), Protectpoint which is VMAX / Data Domain integration featuring lower backup load going over the network with a massive reduction backup time, XtremIO Snaps with the impact (or lack of) of its use, OneFS Cloud Pools which is basically Isilon spanning cloud services and ScaleIO running on cloud services and being moved with a live workload against it to the EMC Hybrid Cloud.<br />
+As if those demos weren&#8217;t awesome enough, he then went on to cover what he describes as the new 5th storage type thanks to their acquisition of DSSD (really excited to hear more on this &#8211; Chad has a post on it <a href="http://virtualgeek.typepad.com/virtual_geek/2014/05/a-new-5th-branch-in-the-storage-tree-of-life.html" title="http://virtualgeek.typepad.com/virtual_geek/2014/05/a-new-5th-branch-in-the-storage-tree-of-life.html" target="_blank">here</a>).</p>
+<p><strong>Afterthought</strong><br />
+After leaving Vegas the afterthought is very much that EMC are full throttle at creating software-only versions of their products and to make things easier they are integrating these into ViPR.  Many of these software-only versions are available from their support site to get them out there, get the customer/partner familiar and to make them easier to adopt.  On that note I highly recommend the virtual Isilon, go build yourself a cluster, its excellent.  ViPR is also freely available since it is becoming the key management interface (with much more) it is also very much worth the download.<br />
+Continuing on my afterthought, it is clear that EMC recognised a while back that the era of having every product with tie in&#8217;s between tin and software are over, it has never been more clear as we are now seeing the fruits of their pursuit in providing software-only versions of everything.  I make this comment knowing full well that tin/software tie in&#8217;s will probably always have their place in this industry for guaranteed results, I&#8217;m thinking hardware VNX/VMAX/XtremIO, VBLOCKs, or a non-storage example would be Apple products.  Its very much about the synergy between the defined stack and software running on it but in todays world, in some cases people prefer mobility and flexibility which has its cost but as always is about weighing up the pro&#8217;s and con&#8217;s of the differing solutions.<br />
+It all makes me realise that we have an exciting period ahead where the need for customers to be aligned to knowledgable partner companies is, if anything, increasing because there are so many more choices today rather than just go with a hardware scale-up storage array and keeping on top of the options is a mammoth task which the typical customer doesn&#8217;t always have time for.</p>
+		
+								
+				
+		<footer class="entry-meta">
+			<p>			Categories: <a href="http://www.neogeek.net/?cat=3" rel="category">EMC</a>, <a href="http://www.neogeek.net/?cat=18" rel="category">EMC World</a> | 
+									Tags: <a href="http://www.neogeek.net/?tag=emc" rel="tag">EMC</a>, <a href="http://www.neogeek.net/?tag=emc-world" rel="tag">EMC World</a>, <a href="http://www.neogeek.net/?tag=isilon" rel="tag">Isilon</a>, <a href="http://www.neogeek.net/?tag=onefs" rel="tag">OneFS</a>, <a href="http://www.neogeek.net/?tag=vipr" rel="tag">ViPR</a>, <a href="http://www.neogeek.net/?tag=vnx" rel="tag">VNX</a>, <a href="http://www.neogeek.net/?tag=vnxe" rel="tag">VNXe</a>, <a href="http://www.neogeek.net/?tag=vplex-ve" rel="tag">VPLEX VE</a> | 
+						<a href="http://www.neogeek.net/?p=695">Permalink </a>
+			</p>
+	</footer><!-- end entry-meta -->
+	</div><!-- end entry-content -->
+			
+</article><!-- end post-695 -->
+								
+				
+<article id="post-434" class="post-434 post type-post status-publish format-standard hentry category-app-ha category-vcenter category-vmware tag-app-ha tag-hyperic tag-vcenter tag-vmware">
+
+	<div class="entry-details">
+				<p>January 24, 2014<br/>
+		by Steve<br/>
+		<a href="http://www.neogeek.net/?p=434#respond" title="Comment on Configuring vSphere App HA 1.0">0 comments</a></p>
+	</div><!-- end entry-details -->
+    
+	<header class="entry-header">
+			<h2 class="entry-title"><a href="http://www.neogeek.net/?p=434" title="Permalink to Configuring vSphere App HA 1.0" rel="bookmark">Configuring vSphere App HA 1.0</a></h2>
+	</header><!-- end entry-header -->
+        
+	<div class="entry-content">
+					<p>When vSphere 5.5 was released, there were a number of features listed that I wanted to check out, App HA 1.0 being one of them.  Recently I have been working with App HA in my homelab and realised there were a number of components which are probably new to many VMware Administrators.</p>
+<p>This blog post is to explain what App HA does and to cover an overview of the install guided by what I carried out on my homelab.<br />
+I focus on parts of configuration which would be new to most people such as in the Hyperic interface and the configuration required within vSphere to enable the functionality.  I gloss over common things like deploying vApp&#8217;s as I expect most people will have done so at some point but if they haven&#8217;t there is a ton of material out there covering that.<br />
+I hope others will find my post useful to quickly gain an understanding on the requirements to deploy it and to comprehend it&#8217;s functionality.</p>
+<p align="left">
+<p><strong>What does App HA do?</strong><br />
+App HA will assist the VMware Admin in controlling application availability by displaying the status of applications, triggering notifications when services are unavailable and performing remedial actions such as restarting the services and resetting the virtual machine.</p>
+<p>At the time of writing in App HA 1.0, the following Services are supported:<br />
+<strong><em>
+<ul>
+<li>Apache Tomcat 6.0 and 7.0 on Windows and Linux</li>
+<li>IIS 6, 7 and 8 on Windows</li>
+<li>Microsoft SQL 2005, 2008, 2008R2 and 2012 on Windows</li>
+<li>Apache HTTP Server 2.2 on Windows and Linux</li>
+<li>SharePoint 2007 and 2010 on Windows with Hyperic 5.7.1 SharePoint plug-in</li>
+<li>SpringSource tc Runtime 6.0 and 7.0 on Windows and Linux</li>
+</ul>
+<p></em></strong><br />
+This list of Services are provided by VMware <a href="http://pubs.vmware.com/appha-1/topic/com.vmware.app.ha.install_guide.doc/GUID-B8ED9F77-78F4-4B38-BCCC-19034B8ABD89.html" title="Reference" target="_blank">here</a>.</p>
+<p align="left">
+<p><strong>The Installation and Configuration Steps</strong><br />
+For the installation of App HA the first thing of note is that vSphere App HA 1.0 has a number of components that&#8217;ll need installed prior to enabling it, this includes vCenter Hyperic, the App HA vApp and Hyperic Agents.  App HA functionality is not present in the vSphere Client only within the vSphere Web Client.</p>
+<p>The Installation and Configuration Steps for App HA are:<br />
+<strong><em>
+<ul>
+<li>Deploy vCenter Hyperic 5.7x</li>
+<li>Deploy App HA virtual Appliance</li>
+<li>Hyperic Agent Installation (First of all on vCenter to allow the next step) (*)</li>
+<li>Setup vFabric Hyperic vCenter Server Plug-in (enables alarms to be sent from vCenter Server)</li>
+<li>Use Web Client to Configure App HA to see Hyperic</li>
+<li>Set Cluster Configuration for &#8220;VM &#038; Application Monitoring&#8221; (**)</li>
+<li>(Optional) Configure Hyperic agent.properties Files to Enable Automation and Mass Deployment</li>
+<li>Configure and Assign App HA Policies (*)</li>
+<li>Test Your Policies (*)</li>
+</ul>
+<p></em></strong><br />
+<em><strong>N.B. Steps with (*) need repeated for each VM.<br />
+Steps with (**) need repeated for each Cluster.</strong></em></p>
+<p align="left">
+<p><em><strong><u>Deploy vCenter Hyperic 5.7x &#8211; </u></strong></em></p>
+<p>A pre-requisite for App HA is Hyperic, which is a product in it&#8217;s own right and came from one of VMware&#8217;s acquisitions.  Hyperic is provided as either a vApp or an installer for selected Linux and Windows OS.  One important point to note, if you intend on using Hyperic outside of the App HA use case, the vApp is recommended for large environments greater than 1000 managed platforms, other configurations are for &#8220;medium scale environments&#8221;.<br />
+The Hyperic deployment type isn&#8217;t so much an issue when used with App HA as it has a scale limitation of 400 agents as mentioned in the <a href="https://www.vmware.com/support/appha/doc/releasenotes-appha10.html" title="Reference" target="_blank">App HA 1.0 release notes</a> but the vApp is easier to deploy.<br />
+The vApp is deployed via OVF and actually contains 2 VMs, one for the application and the other for the database (Remember to configure an IP Pool prior to deployment).  The full deployment instructions can be found <a href="http://pubs.vmware.com/hyperic-58/topic/com.vmware.hyperic.install.config.doc/GUID-996029EB-D20C-486F-A0F8-7F4893A44E9B.html" title="Reference" target="_blank">here</a>.</p>
+<p><img src="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_Hyperic_vApp.png" alt="vFabric_Hyperic_vApp" width="259" height="60" class="aligncenter size-full wp-image-452" /></p>
+<p>The Hyperic Dashboard looks like this:<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/Hyperic.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/Hyperic.png" alt="Hyperic" width="838" height="399" class="aligncenter size-full wp-image-440" /></a></p>
+<p align="left">
+<p><em><strong><u>Deploy App HA virtual Appliance &#8211; </u></strong></em></p>
+<p>This is the other vApp required for enabling App HA, this one being the actual AppHA vApp.  It is deployed the same as Hyperic using an OVF template.  This one consists of a single VM.  Full vApp deployment details are <a href="http://pubs.vmware.com/appha-1/topic/com.vmware.app.ha.install_guide.doc/GUID-A98FA19A-EE71-40F1-B5C8-67E8C0B21D55.html" title="Reference" target="_blank">here</a><br />
+<img src="http://www.neogeek.net/wp-content/uploads/2014/01/AppHA_vApp.png" alt="AppHA_vApp" width="250" height="20" class="aligncenter size-full wp-image-438" /></p>
+<p align="left">
+<p><em><strong><u>Hyperic Agent Installation &#8211; </u></strong></em></p>
+<p>Each Server which you intend to leverage App HA with, will require the Hyperic Agents to be deployed and <u>the Hyperic Agent will need to be installed on the vCenter Server to allow the creation of the VFabric Hyperic vCenter Server Plug-in (the next step)</u>.</p>
+<p>On the vCenter server follow the below instructions (they are the same for the deployment of the Hyperic Agent for all Windows Servers):</p>
+<ul>
+<li>Download the zip archive</li>
+<li>Extract it to a directory (e.g. <code>"c:\hyperic-hqee-agent-5.7.1"</code>)</li>
+<li>Navigate to the <em><strong>&#8220;bin&#8221;</strong></em> sub-directory (e.g. <code>"c:\hyperic-hqee-agent-5.7.1\bin"</code>)</li>
+<li>Execute <em><strong>&#8220;hq-agent.bat install&#8221;</strong></em> and wait until it finishes.</li>
+<li>Execute <em><strong>&#8220;hq-agent.bat start&#8221;</strong></em>.  Respond to the series of questions it will ask, they will be specific to your environment.  Defaults will be correct in most cases except the final question for which the response must be changed to <em><strong>&#8220;yes&#8221;</strong></em></li>
+</ul>
+<p>These steps are shown in the command prompt window below:<br />
+ <a href="http://www.neogeek.net/wp-content/uploads/2014/01/Hyp_Agent_Install.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/Hyp_Agent_Install.png" alt="Hyp_Agent_Install" width="667" height="474" class="aligncenter size-full wp-image-515" /></a></p>
+<p>The Platform (Server) will appear in the Hyperic Dashboard under the Auto-Discovery section.  From there you can add it to the inventory by clicking the <em><strong>Add to Inventory</strong></em> button.<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/Add_to_Inv.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/Add_to_Inv.png" alt="Add_to_Inv" width="1094" height="336" class="aligncenter size-full wp-image-525" /></a></p>
+<p>Perform the above Hyperic Agent install steps again for any other servers you wish to configure with App HA.<br />
+Look to the <em><strong>&#8220;(Optional) Configure Hyperic agent.properties Files to Enable Automation and Mass Deployment&#8221;</strong></em> section for details on making this easier.</p>
+<p align="left">
+<p><em><strong><u>Setup vFabric Hyperic vCenter Server Plug-in &#8211; </u></strong></em></p>
+<p>To enable alarms from vCenter Server if remediation actions are triggered, the vFabric Hyperic vCenter Server Plug-in needs created.<br />
+The Hyperic Agent needs to be installed on vCenter Server for this.  After the agent is deployed follow the steps below.</p>
+<ul>
+<li>Go to <em><strong>Resource > Browse</strong></em> as shown below</li>
+<p><a href="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_1.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_1.png" alt="vFabric_1" width="976" height="372" class="aligncenter size-full wp-image-445" /></a></li>
+<li>Click the vCenter server from the Platforms list.  In my case this is NEO-VC01<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_2.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_2.png" alt="vFabric_2" width="690" height="344" class="aligncenter size-full wp-image-446" /></a></li>
+<li>Select <em><strong>Tools Menu > New Server</strong></em><br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_3.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_3.png" alt="vFabric_3" width="1024" height="660" class="aligncenter size-full wp-image-447" /></a></li>
+<li>Enter Name as <em><strong>&#8220;VC&#8221;</strong></em>, select <em><strong>&#8220;VMware vCenter&#8221;</strong></em> from the list and Install Path <em><strong>&#8220;*&#8221;</strong></em><br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_4.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_4.png" alt="vFabric_4" width="783" height="415" class="aligncenter size-full wp-image-448" /></a></li>
+<li>Click on <em><strong>Configuration Properties</strong></em><br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_5.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_5.png" alt="vFabric_5" width="400" height="305" class="aligncenter size-full wp-image-449" /></a></li>
+<li>Fill in the <em><strong>URL</strong></em> replacing &#8220;localhost&#8221; with your vCenter name or IP.  Complete <em><strong>user</strong></em> and <em><strong>pass</strong></em> and leave <em><strong>process query</strong></em> as it is.  Finally ensure <em><strong>Auto-Discover Services?</strong></em> is unticked.<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_6.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_6.png" alt="vFabric_6" width="1535" height="463" class="aligncenter size-full wp-image-450" /></a></li>
+<li>On the vCenter Server ensure the <em><strong>VC</strong></em> Resource has a green tick beside it (note this might take a short while) and thats the VC Plug-in sorted.<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_7.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/vFabric_7.png" alt="vFabric_7" width="350" height="481.5" class="aligncenter size-full wp-image-451" /></a>
+</li>
+</ul>
+<p>VMware documentation for this is <a href="http://pubs.vmware.com/appha-1/topic/com.vmware.app.ha.install_guide.doc/GUID-A1D00BE9-F105-48FE-B754-08CABFA57A5A.html" title="Reference" target="_blank">here</a>.</p>
+<p align="left">
+<p><em><strong><u>Use Web Client to Configure App HA to see Hyperic &#8211; </u></em></strong></p>
+<p>The next step is to configure App HA from within the Web Client to see the Hyperic Server.  This is done from the Inventory under <em><strong>Administraton > vSphere App HA</strong></em> on the <em><strong>Settings</strong></em> tab.</p>
+<p>Complete the details giving IP or Hostname of <em><strong>vFabric Hyperic Server</strong></em>, <em><strong>Port</strong></em> and <em><strong>Username</strong></em>/<em><strong>Password</strong></em> as shown below.<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/Hyperic_WebC_Config.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/Hyperic_WebC_Config-1024x508.png" alt="Hyperic_WebC_Config" width="620" height="307" class="aligncenter size-large wp-image-441" /></a><br />
+Full documentation on this is <a href="http://pubs.vmware.com/appha-1/topic/com.vmware.app.ha.install_guide.doc/GUID-A768AB6C-19D8-4A5E-ABB0-932887599B66.html" title="Reference" target="_blank">here</a>.  </p>
+<p align="left">
+<p><em><strong><u>Set Cluster Configuration for &#8220;VM &#038; Application Monitoring&#8221; &#8211; </u></strong></em></p>
+<p>Each Cluster in which you wish to use App HA needs to have that functionality enabled.<br />
+To do this, select the cluster then go to <em><strong>Manage > Settings > vSphere HA</strong></em>.  From there click <em><strong>Edit</strong></em>.</p>
+<p>In this menu ensure <em><strong>Turn ON vSphere HA</strong></em> has the check box ticked if it isn&#8217;t already and under <em><strong>VM Monitoring</strong></em> select <em><strong>VM &#038; Application Monitoring</strong></em> then click <em><strong>OK</strong></em>.  The final step of this is shown in the image below.<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/Cluster_Options.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/Cluster_Options-1024x569.png" alt="Cluster_Options" width="620" height="344" class="aligncenter size-large wp-image-439" /></a><br />
+Ensure you repeat these steps for each Cluster you wish to use App HA with.<br />
+VMware documentation covering this section is <a href="http://pubs.vmware.com/appha-1/topic/com.vmware.app.ha.install_guide.doc/GUID-AA95681D-E39D-4E7B-974F-DB911BB1FAE3.html" title="Reference" target="_blank">here</a>.</p>
+<p align="left">
+<p><em><strong><u>(Optional) Configure Hyperic agent.properties Files to Enable Automation and Mass Deployment &#8211; </u></strong></em></p>
+<p>When I came across this topic within the App HA documentation, the title was not the same as I have used for this section.  I was a little confused and unsure why it was required.  The reason for my confusion was the title and description in the first line of the docs mentioned nothing of automation or enabling mass deployment.  The description on the first line was:<br />
+<em>&#8220;To trigger vSphere App HA alarms on vCenter, you must configure certain properties in the relevant vFabric Hyperic agent.properties file.&#8221;</em>.  </p>
+<p>What it doesn&#8217;t explain here is that these steps are covered when you first run <em><strong>&#8220;hq-agent start&#8221;</strong></em> and are asked a series of questions regarding Hyperic IP Address, Username and Password etc (this is described in the deploying Hyperic Agents section above).  </p>
+<p>We already know in order to use App HA the Hyperic Agent needs to be installed so if you have deployed and started the service for the Hyperic Agent then you have already ran through the series of questions covering these options and this isn&#8217;t required.</p>
+<p>So what this section within the VMware documentation is actually describing is how to automate the answers to the Hyperic Agent deploy process.  This became obvious when I looked at what it was trying to achieve and was confirmed by the description within the commented section in the <code>agent.properties</code> file.  It states<br />
+<em>&#8220;Use the following if you&#8217;d like to have the agent setup automatically from these properties.&#8221;</em><br />
+I highly recommend using these steps as it makes deploying the agent quicker, easier and most importantly enables mass deployment.</p>
+<p>If you have already deployed the Hyperic Agent to a server and the service is running but wish to remove the configuration to try again, such as for testing then follow the clean-up steps below.<br />
+<em><strong>If the Hyperic Agent has never been deployed then you will not need to perform these clean-up steps.  Skip to the section &#8220;Configure the agent.properties File:&#8221;</strong></em></p>
+<p><em><strong>Clean-up Steps (Only required if Agent already deployed):</strong></em></p>
+<ul>
+<li>Stop the vFabric Hyperic agent which is achieved by running the <em><strong>&#8220;hq-agent.bat stop&#8221;</strong></em> from a command prompt open at the agent bin directory.  In my example from the <code>"c:\hyperic-hqee-agent-5.7.1\bin\"</code> directory.</li>
+<li>Delete the <em><strong>&#8220;data&#8221;</strong></em> sub-folder from within the agent folder, in my example this is the <code>"c:\hyperic-hqee-agent-5.7.1\data\"</code> directory.</li>
+<li>Next delete the  agent Platform from the Hyperic server inventory (i.e. Delete the Server entry within the Hyperic Inventory)<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/Remove_Agent_from_Inv.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/Remove_Agent_from_Inv.png" alt="Remove_Agent_from_Inv" width="440" height="458" class="aligncenter size-full wp-image-442" /></a></li>
+</ul>
+<p>The following section describes steps to edit the <code>agent.properties</code> file and includes the properties the VMware documentation mentions as well as two other properties I found necessary to have the deployment fully automated.  I found if I did not include these properties that it would ask me for a response when the Hyperic Agent was started for the first time.  The extra properties are &#8220;agent.setup.camIP=&#8221; and &#8220;agent.setup.unidirectional=&#8221;.  The first is the Hyperic Server IP address and the second is the option on whether the agent should communicate in a unidirectional manner.</p>
+<p><em><strong>Configure the agent.properties File:</strong></em></p>
+<ul>
+<li>If the Hyperic Agent is not already on the Server, extract it to a local directory.  Open the <code>agent.properties</code> file found within the <em><strong>&#8220;conf&#8221;</strong></em> sub-directory.  In my example from the <code>"c:\hyperic-hqee-agent-5.7.1\conf\"</code> directory and edit the following values replacing the entries between the asterisks (N.B. The Username is normally hqadmin) ensuring the &#8220;#&#8221; at the beginning of the line is deleted so the option is not commented out:</p>
+<ul><strong>agent.setup.camLogin=*Replace_With_Hyperic_Username*<br />
+agent.setup.camPword=*Replace_With_Hyperic_password*<br />
+agent.setup.acceptUnverifiedCertificate=yes<br />
+accept.unverified.certificates=true<br />
+agent.setup.camIP=*Replace_With_Hyperic_Server_IP*<br />
+agent.setup.unidirectional=no<br />
+</strong></ul>
+<p>Then save the file.</li>
+<li>Start the Hyperic agent by running <em><strong>&#8220;hq-agent.bat start&#8221;</strong></em> from the command prompt opened at the agent <em><strong>&#8220;bin&#8221;</strong></em> directory.<br />
+If it is configured correctly it should not ask any questions as it did prior to using the agent.properties file.</li>
+</ul>
+<p>To use this for other Servers you intend to use with App HA:<br />
+Extract the Hyperic Agent, copy the <code>agent.properties</code> file with the modified properties above to the <em><strong>&#8220;Conf&#8221;</strong></em> sub-directory, install with <em><strong>&#8220;hq-agent.bat install&#8221;</strong></em> and start the service with <em><strong>&#8220;hq-agent.bat start&#8221;</strong></em>.  </p>
+<p>The VMware documentation covering this section can be found <a href="http://pubs.vmware.com/appha-1/topic/com.vmware.app.ha.install_guide.doc/GUID-851BF1D0-3558-4ABD-9113-67EA31BBAA99.html" title="Reference" target="_blank">here</a>.</p>
+<p align="left">
+<p><em><strong><u>Configure and Assign App HA Policies &#8211; </u></strong></em></p>
+<p>The next step for configuring App HA is to look at Policies.<br />
+Remember any servers you wish to monitor need the Hyperic Agent installed so ensure the agent is deployed before proceeding (Steps above).</p>
+<p>Policies are created from within the vSphere Web Client at <em><strong>Administration > vSphere App HA</strong></em> on the <em><strong>Policies</strong></em> tab.  </p>
+<p>For my testing I created a SQL Server policy which can be seen in this list.<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/AppHA_Policies.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/AppHA_Policies.png" alt="AppHA_Policies" width="799" height="441" class="aligncenter size-full wp-image-437" /></a></p>
+<p>To create a Policy click the green plus seen in the above image.  In the wizard assign a <em><strong>Policy Name</strong></em>, choose an <em><strong>Application Service</strong></em> with any further service specific options, choose <em><strong>Remediation</strong></em> for that service (Service restart and VM reset configuration) and whether you want to create an <em><strong>Alarms Definition</strong></em>.  Policies configured can be used across multiple VM&#8217;s, there is no need to create duplicate policies unless the configuration options are different.</p>
+<p>Now you have created a policy it just needs assigned to whatever machines you wish to provide App HA for.  This is done at the cluster level.</p>
+<p>On the cluster which contains the VM you wish to enable the policy with, navigate to <em><strong>Monitor</strong></em> then the <em><strong>Application Availability</strong></em> tab.  This will list all machines with services Hyperic is aware of.  This is shown in the image below.<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/App_Avail.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/App_Avail-1024x324.png" alt="App_Avail" width="620" height="196" class="aligncenter size-large wp-image-436" /></a></p>
+<p>From the <em><strong>Application Availability</strong></em> screen right click or use the <em><strong>Actions</strong></em> menu to <em><strong>Assign</strong></em> or <em><strong>Unassign</strong></em> a Policy. </p>
+<p>Full details on Assigning a Policy to Application Services can be found <a href="http://pubs.vmware.com/appha-1/topic/com.vmware.app.ha.users_guide.doc/GUID-2C55E2A8-3DCA-46F9-BB95-376D6AD9D8B5.html" title="Reference" target="_blank">here</a>.</p>
+<p align="left">
+<p><em><strong><u>Test Your Policies &#8211; </u></strong></em><br />
+As with anything you configure, it is prudent to test it to see if it reacts as you would expect.  In my homelab I have configured a policy for SQL Server so used that as my test.<br />
+I stopped the SQL Service on my NEO-TOOLS01 server and within about 60 seconds the following was visible from the vSphere Web Client:<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2014/01/Service_Unavail.png"><img src="http://www.neogeek.net/wp-content/uploads/2014/01/Service_Unavail-1024x375.png" alt="Service_Unavail" width="620" height="227" class="aligncenter size-large wp-image-443" /></a></p>
+<p>And nearly immediately after this alert came through, the service was restarted and the Availability Status returned to Available.</p>
+<p align="left">
+<p><strong>Wrap Up</strong><br />
+This concludes the steps which I performed in order to get App HA 1.0 up and running in my homelab environment.  If you&#8217;ve got through this far and look back at the start, at the list of tasks involved in configuration you&#8217;ll notice the steps marked with (*) which will need to be performed to add new VM&#8217;s/Applications to be monitored by App HA and steps with (**) that you&#8217;ll need to complete for each new Cluster configuration.<br />
+Once it is up and running you&#8217;ll find it&#8217;s extremely easy to add more and also once you are familiar with the process I recommending looking at methods of deploying the Hyperic Agent with the modified agent.properties file in bulk.</p>
+<p>Thanks for reading.</p>
+		
+								
+				
+		<footer class="entry-meta">
+			<p>			Categories: <a href="http://www.neogeek.net/?cat=16" rel="category">App HA</a>, <a href="http://www.neogeek.net/?cat=13" rel="category">vCenter</a>, <a href="http://www.neogeek.net/?cat=8" rel="category">VMware</a> | 
+									Tags: <a href="http://www.neogeek.net/?tag=app-ha" rel="tag">App HA</a>, <a href="http://www.neogeek.net/?tag=hyperic" rel="tag">Hyperic</a>, <a href="http://www.neogeek.net/?tag=vcenter" rel="tag">vCenter</a>, <a href="http://www.neogeek.net/?tag=vmware" rel="tag">VMware</a> | 
+						<a href="http://www.neogeek.net/?p=434">Permalink </a>
+			</p>
+	</footer><!-- end entry-meta -->
+	</div><!-- end entry-content -->
+			
+</article><!-- end post-434 -->
+								
+				
+<article id="post-395" class="post-395 post type-post status-publish format-standard hentry category-vcenter category-vcsa category-vmware tag-vcenter tag-vcsa tag-vmware">
+
+	<div class="entry-details">
+				<p>October 13, 2013<br/>
+		by Steve<br/>
+		<a href="http://www.neogeek.net/?p=395#comments" title="Comment on What has changed in vCenter Server Appliance 5.5 (vCSA)?">7 Comments</a></p>
+	</div><!-- end entry-details -->
+    
+	<header class="entry-header">
+			<h2 class="entry-title"><a href="http://www.neogeek.net/?p=395" title="Permalink to What has changed in vCenter Server Appliance 5.5 (vCSA)?" rel="bookmark">What has changed in vCenter Server Appliance 5.5 (vCSA)?</a></h2>
+	</header><!-- end entry-header -->
+        
+	<div class="entry-content">
+					<p>Strategically it makes a lot of sense for VMware to decouple themselves from the Windows Server OS for management machines.  There are many advantages to doing this which benefit SMB and Enterprises such as simplified install and no Windows or SQL licenses required.  These advantages are also valid for Service Providers along with the automation possibilities it brings.  </p>
+<p>So lets look briefly at the history of vCSA: </p>
+<p>In vSphere 5.0 along came vCenter Server Appliance (vCSA).  DB support was embedded (DB2 or Postgres) or externally on Oracle.  The single biggest problem was that using the embedded database it was severely limited.  So much that it was relegated to test labs.</p>
+<p>	<strong>vCSA with vSphere 5.0/5.1 &#8211; Supports Max 5 Hosts and 50 virtual machines.</strong></p>
+<p>The new version with vSphere 5.5 has the same DB options (with embedded on Postgres) but has removed this embedded DB limitation taking that up to well past what most customers are ever likely to use on a single vCenter</p>
+<p>	<strong>vCSA with vSphere 5.5 &#8211; Supports Max 100 Host and 3000 virtual machines.</strong></p>
+<p>There are however still other things holding the vCSA back from dominance as the preferred method of vCenter deployment.  vCenter matured on the Windows platform and had capabilities built on.</p>
+<ul>
+<li>Linked Mode (uses Microsoft ADAM)</li>
+<li>Heartbeat (only works with SQL) </li>
+</ul>
+<p>These capabilities are what to this day are still missing from the virtual appliance and are some of the reasons vCSA cannot be used in certain production environments.  For the vCSA to get these features means they need to be Linux friendly and that probably means using different methods rather than a port of existing software.</p>
+<p>Even for those that can live without Linked Mode and Heartbeat the single biggest reason why people will stick with a Windows vCenter is that Update Manager (VUM) does not come integrated in the vCSA or have a standalone virtual appliance.  <strong>There is also a 1 to 1 relationship between vCenter and Update manager meaning for every deployment assuming you want to use VUM you will need a Windows Server and a SQL database anyway</strong>, so why not use it for vCenter too.</p>
+<p>Continuing to deploy vCenter on Windows is probably the route many people will still take as it takes no real extra thought.  Components like SSO have made that install more complicated so it makes real sense to want to simplify this and the vCSA is definitely the way to do this.  </p>
+<p>Until at least the Update Manager component has its Windows dependencies removed, made into a virtual appliance or integrated into vCSA, we will continue to see vCSA reign as the quick and easy pop-up VM in the lab but not in Production.  That said, let me not play down what an important milestone this is towards the removal of Windows OS&#8217;s in vSphere administration, the core vCenter functionality is now here in vCSA and this is a great win for VMware at this stage.  Addressing the VUM component next is likely to swing sufficient number of customers over to using vCSA and it would likely snowball from there.</p>
+		
+								
+				
+		<footer class="entry-meta">
+			<p>			Categories: <a href="http://www.neogeek.net/?cat=13" rel="category">vCenter</a>, <a href="http://www.neogeek.net/?cat=14" rel="category">vCSA</a>, <a href="http://www.neogeek.net/?cat=8" rel="category">VMware</a> | 
+									Tags: <a href="http://www.neogeek.net/?tag=vcenter" rel="tag">vCenter</a>, <a href="http://www.neogeek.net/?tag=vcsa" rel="tag">vCSA</a>, <a href="http://www.neogeek.net/?tag=vmware" rel="tag">VMware</a> | 
+						<a href="http://www.neogeek.net/?p=395">Permalink </a>
+			</p>
+	</footer><!-- end entry-meta -->
+	</div><!-- end entry-content -->
+			
+</article><!-- end post-395 -->
+								
+				
+<article id="post-83" class="post-83 post type-post status-publish format-standard hentry category-emc category-vnxe tag-emc tag-esxi tag-vmware tag-vnxe">
+
+	<div class="entry-details">
+				<p>April 8, 2013<br/>
+		by Steve<br/>
+		<a href="http://www.neogeek.net/?p=83#comments" title="Comment on VNXe 3100 with ESXi using iSCSI, lets clear up the confusion.">6 Comments</a></p>
+	</div><!-- end entry-details -->
+    
+	<header class="entry-header">
+			<h2 class="entry-title"><a href="http://www.neogeek.net/?p=83" title="Permalink to VNXe 3100 with ESXi using iSCSI, lets clear up the confusion." rel="bookmark">VNXe 3100 with ESXi using iSCSI, lets clear up the confusion.</a></h2>
+	</header><!-- end entry-header -->
+        
+	<div class="entry-content">
+					<p>[<strong>Edit -</strong> I Wrote this blog post a very long time ago but never published it to the public as I felt I needed to address the addition of the SLIC cards to VNXe before I released this into the wild.  I have decided to open it up anyway as it is still relevant today in VNXe or even just general iSCSI configurations.]</p>
+<p>I do a lot of VNX work and until recently didn&#8217;t get an opportunity to deploy a VNXe. As with any product for the first time I did some research in to how it should be configured. It was a VNXe 3100 and would be used with ESXi 5.0 using iSCSI. I searched the web, asked colleagues and the results were that every configuration seemed to be slightly different. Part of the reason behind this is connectivity options. It comes with 2 on-board NICs per Storage Processor but some are also sold with an additional 4 port SLIC card in each SP and it supports link aggregation.</p>
+<p>The VNXe is designed to be simple to implement and it is exactly that. The VNXe itself is a very clever box and it is because of this that it&#8217;s hard not to implement in a way that will work under most failure situations (thanks in part to FSN). Even if most configurations will allow the VNXe to work, there are still better ways to do things.</p>
+<p>Part of the issue with VNXe is that it&#8217;s so simple, people who don&#8217;t normally dabble with storage solutions implement it and thats when people come up with these unnecessarily elaborate configurations because they aren&#8217;t familiar with multipathing, either with VMware ESXi or in general. This inspired me to create this blog post in the hope I can help steer people to the relevent documentation before they deploy their VNXe 3100.</p>
+<p>A pre-requesit before even trying to deploy any iSCSI solution with ESXi is to read the VMware guidelines.</p>
+<p>Software iSCSI Adapter configuration can be found for ESXi 4.1 and 5.0 in the following places.</p>
+<ul>
+<li>PG34 of <a href="http://www.vmware.com/pdf/vsphere4/r41/vsp_41_iscsi_san_cfg.pdf" target="_blank">http://www.vmware.com/pdf/vsphere4/r41/vsp_41_iscsi_san_cfg.pdf</a></li>
+<li>PG74 of <a href="http://pubs.vmware.com/vsphere-50/topic/com.vmware.ICbase/PDF/vsphere-esxi-vcenter-server-50-storage-guide.pdf" target="_blank">http://pubs.vmware.com/vsphere-50/topic/com.vmware.ICbase/PDF/vsphere-esxi-vcenter-server-50-storage-guide.pdf</a></li>
+</ul>
+<p>&nbsp;</p>
+<p>The part I see people getting wrong time and time again with iSCSI configurations is with VMkernel ports and physical NICs. There should always be a 1 to 1 relationship between these. 1 VMkernel port with an IP to 1 Physical vmnic port. The guides above both show this in two specific configurations.</p>
+<ul>
+<li>Option 1 &#8211; one vSwitch, multiple VMkernel Ports and multiple NICs. (Uses port-binding)<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2012/04/vSS-iSCSI-Option1.png"><img class="alignnone size-full wp-image-114" title="vSS iSCSI Option1" src="http://www.neogeek.net/wp-content/uploads/2012/04/vSS-iSCSI-Option1.png" alt="" width="426" height="158" /></a></li>
+<li>Option 2 &#8211; A seperate vSwitch for each VMkernel/NIC. (Easiest configuration, no port-binding required)<br />
+<a href="http://www.neogeek.net/wp-content/uploads/2012/04/vSS-iSCSI-Option2.png"><img class="alignnone size-full wp-image-116" title="vSS iSCSI Option2" src="http://www.neogeek.net/wp-content/uploads/2012/04/vSS-iSCSI-Option2.png" alt="" width="420" height="201" /></a></li>
+</ul>
+<p>There are excellent videos showing Option 1 (<a href="http://www.youtube.com/watch?v=Mu-HyD3E3cw">http://www.youtube.com/watch?v=Mu-HyD3E3cw</a>) and Option 2 above (<a href="http://www.youtube.com/watch?v=oKH-DW6HrMc">http://www.youtube.com/watch?v=oKH-DW6HrMc</a>). The videos also show MTU being set for Jumbo frames which is important to help increase performance.</p>
+<p>So after grasping the concept of 1-1 vmk to NIC the next question is, &#8220;<em>Is one NIC per subnet enough? Shouldn&#8217;t we have redundancy at this level?</em>&#8221;</p>
+<p>If you have the NICs then sure why not but whatever you do, <strong>DO NOT</strong> just add these as Standby NICs. This is not a supported configuration from VMware.</p>
+<p>The correct way to do this is to maintain the 1-1 vmk to NIC relationship and if using Option 1 add a NIC for each additional vmk and use port binding as you will already have done. In this setup you can add vmk ports which are in the same subnets as the existing two, i.e. add an additional port in each.</p>
+<p>For Option 2 I am lead to believe when two subnets are used, going beyond two vSwitches would be unsupported since a subnet would be required per switch.<br />
+The reason behind my opinion on this are the following line from the SAN Config guide on PG77.<br />
+&#8220;<code>NOTE If you use separate vSphere switches, you must connect them to different IP subnets. Otherwise,<br />
+VMkernel adapters might experience connectivity problems and the host will fail to discover iSCSI LUNs.</code>&#8220;.<br />
+I guess a hybrid approach where you have two vmk ports in two vSwitches using port binding would still meet the requirments and be supported as long as the same subnets are used on the two vmk ports in the same vSwitch.</p>
+<p>Ultimately the simplest configurations are normally the best and easiest to troubleshoot. The diagram below shows the same config as described in the &#8220;EMC VNXe High Availability Overview&#8221; white paper. <del datetime="2014-05-14T08:48:42+00:00">The white paper can be viewed here <a href="https://support1.emc.com/docu35554_White-Paper:-EMC-VNXe-High-Availability.pdf?language=en_US">https://support1.emc.com/docu35554_White-Paper:-EMC-VNXe-High-Availability.pdf?language=en_US</a>.</del><br />
+<strong>[Edit 14 May 2014 &#8211; This white paper is no longer available but a newer one covering the same topic and more can be found here<br />
+<a href="https://support.emc.com/docu35554_White-Paper:-VNXe-High-Availability-VNXe3100,-VNXe3150,-and-VNXe3300-Overview.pdf?language=en_US">https://support.emc.com/docu35554_White-Paper:-VNXe-High-Availability-VNXe3100,-VNXe3150,-and-VNXe3300-Overview.pdf?language=en_US</a>]</strong><br />
+The configuration below provides two pathes to each Datastore and uses the simplest vSphere configuration (Option 2 above).  In my opinion if you are using the VNXe3100 without the add-on SLIC cards then its best to adhere to the document and have a deployment as below.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.neogeek.net/wp-content/uploads/2012/04/VNXe_Failover11.jpg"><img class="alignnone size-large wp-image-88" title="VNXe_Failover1" src="http://www.neogeek.net/wp-content/uploads/2012/04/VNXe_Failover11-1024x654.jpg" alt="" width="620" height="395" /></a></p>
+		
+								
+				
+		<footer class="entry-meta">
+			<p>			Categories: <a href="http://www.neogeek.net/?cat=3" rel="category">EMC</a>, <a href="http://www.neogeek.net/?cat=7" rel="category">VNXe</a> | 
+									Tags: <a href="http://www.neogeek.net/?tag=emc" rel="tag">EMC</a>, <a href="http://www.neogeek.net/?tag=esxi" rel="tag">ESXi</a>, <a href="http://www.neogeek.net/?tag=vmware" rel="tag">VMware</a>, <a href="http://www.neogeek.net/?tag=vnxe" rel="tag">VNXe</a> | 
+						<a href="http://www.neogeek.net/?p=83">Permalink </a>
+			</p>
+	</footer><!-- end entry-meta -->
+	</div><!-- end entry-content -->
+			
+</article><!-- end post-83 -->
+								
+				
+<article id="post-152" class="post-152 post type-post status-publish format-standard hentry category-zerto tag-posh tag-powershell tag-zerto">
+
+	<div class="entry-details">
+				<p>May 6, 2012<br/>
+		by Steve<br/>
+		<a href="http://www.neogeek.net/?p=152#comments" title="Comment on Zerto Virtual Replication the PoSh way.">1 Comment</a></p>
+	</div><!-- end entry-details -->
+    
+	<header class="entry-header">
+			<h2 class="entry-title"><a href="http://www.neogeek.net/?p=152" title="Permalink to Zerto Virtual Replication the PoSh way." rel="bookmark">Zerto Virtual Replication the PoSh way.</a></h2>
+	</header><!-- end entry-header -->
+        
+	<div class="entry-content">
+					<p>Recently I have had the pleasure of deploying Zerto Virtual Replication (<a href="http://www.zerto.com/">http://www.zerto.com/</a>).  My first impressions are very good, it&#8217;s a well polished product.  The install and configuration was very straightforward and it worked without glitches.  ZVR deals with all the replication and even reconfigures the networking i.e. re-IP&#8217;ing at the DR site, this is all made effortless.  The replication is asynchronous and during our testing over a 100Mbit link we set the RPO to 2 minutes but were seeing actual RPO&#8217;s of around 12 seconds which is impressive.</p>
+<p>The architecture hinges around having a management server at each site called the Zerto Virtual Manager (ZVM) and having Virtual Replication Appliances (VRA) on each ESXi host.  The product uses the concept of the Virtual Protection Group&#8217;s (VPG) to collate machines together with common configuration such as RPO and Journal CDP History which affects the point to which you can roll back to.  When the VPG&#8217;s are protected you have the option to Move, Failover or Test the Failover.  Among the configuration options on the VPG&#8217;s there are Pre and Post Scripts and this is where PowerShell (PoSh) comes in very handy.  This post was inspired by a requirement at a customer&#8217;s site and focuses on a DNS record update script you may need to finish off your deployment.</p>
+<p>The Admin Guide is well put together, provides good guidance on the configuration and suggests some additional functionality you may wish to provide by using scripts.  Functionality suggested includes updating DNS records at the DR site after Failover and also recording Failover Testing in text files on the Zerto Virtual Manager servers.  I decided to put all this functionality into one PowerShell script since both of these suggestions are great, updating DNS is an absolute must and recording Test Failovers seems sensible.  I used the DNS Update powershell script from the Admin Guide as the basis for my script and added extra bits so only a single script is required for all VPG&#8217;s and so the Failover Test history is recorded using the same script (the Admin Guide has a separate batch file script to do this).</p>
+<p>I realised DNS should only be updated if a Move or an actual Failover occurred.  Failover Testing brings VMs up in your VM Port Group of choice but it&#8217;s very likely you&#8217;ll use an isolated network so definitely don&#8217;t want to change production DNS records.  Zerto make achieving these goals easier by providing environment variables such as<br />
+<code>%ZertoOperation%</code> with values of Move, Failover or Test and<br />
+<code>%ZertoVPGName%</code> which contains the VPG name.<br />
+These Environment variables are explained in the Admin Guide and I have used them within my script.</p>
+<p>The Post Script uses a Powershell ps1 file, Dnscmd.exe and a subfolder per VPG which contains 4 csv files.  Dnscmd.exe is wrapped in the Powershell script and updates DNS records using the relevant csv files.<br />
+Dnscmd.exe can be installed on Windows Server 2008 R2 from the Features menu and for this script to run the executable needs copied to the script directory &#8220;C:\ZertoScripts\&#8221;.  </p>
+<p>The script is run from the site you are failing over to, a common path on both ZVM servers should be used for scripts to ensure they run when you failover and failback again.  Also the service account you use for Zerto will require local admin privileges and needs to be added to the DNSAdmins group so the DNS records can be updated.  Note that the csv file contents will be different for the VPG&#8217;s at each site as you will want to change DNS to use the IP&#8217;s for whichever site you are moving the VM&#8217;s to.  The script deletes old DNS entries and imports new ones to replace them.</p>
+<p>The script directory &#8220;C:\ZertoScripts\&#8221; should contain the following files.  Note VPGName1 is an example subdirectory named exactly the same as the VPG name and will have 4 csv files within it.<br />
+<code><br />
+DNS-Change.ps1<br />
+Dnscmd.exe<br />
+VPGName1\DNS-NewA.csv<br />
+VPGName1\DNS-NewPTR.csv<br />
+VPGName1\DNS-OldA.csv<br />
+VPGName1\DNS-OldPTR.csv<br />
+</code></p>
+<p>In the Zerto tab within vCenter under the VPG&#8217;s options you&#8217;ll find the Post Script options.  For this script they need to be configured as follows:<br />
+<strong>Command:</strong>  <font color=black>%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe</font><br />
+<strong>Params:</strong>  <font color=black>C:\ZertoScripts\DNS-Change.ps1 %ZertoOperation% %ZertoVPGName%</font></p>
+<p><strong>DNS-Change.ps1 contains the following:</strong></p>
+<pre class="brush: powershell; collapse: false; gutter: true; title: ; notranslate" title="">
+#### Zerto Failover Script
+
+## Timestamp
+$timestamp = get-date -format &quot;dd-MM-yy_HHmm&quot;
+
+## Get Environment Variables
+$ZertoOperation = $args[0]
+$ZertoVPGName = $args[1]
+
+if ($ZertoOperation -ne &quot;Test&quot;){
+
+	## Set DNS servers
+	$DNSservers= @(&quot;192.168.1.1&quot;, &quot;192.168.1.2&quot;)
+	
+	## Filepath to script and CSV files
+	$FP = &quot;C:\ZertoScripts\&quot;
+	CD $FP
+		Foreach($DNSserver in $DNSservers)
+			{
+			Import-CSV .\$ZertoVPGName\DNS-OldA.csv | foreach {
+			.\dnscmd $DNSserver /RecordDelete $_.zone $_.hostname A $_.ip /f}
+			Import-CSV .\$ZertoVPGName\DNS-NewA.csv | foreach {
+			.\dnscmd $DNSserver /RecordAdd $_.zone $_.hostname A $_.ip}
+			Import-CSV .\$ZertoVPGName\DNS-OldPTR.csv | foreach {
+			.\dnscmd $DNSserver /RecordDelete $_.reversezone $_.lowip PTR $_.fqdn /f}
+			Import-CSV .\$ZertoVPGName\DNS-NewPTR.csv | foreach {
+			.\dnscmd $DNSserver /RecordAdd $_.reversezone $_.lowip PTR $_.fqdn}
+			}
+
+}
+Else {
+	
+	$LogContent = $ZertoVPGName + &quot;   &quot; + $timestamp
+	Add-Content c:\ZertoScripts\Results\ListOfTestedVPGs.txt -value $LogContent
+
+}
+</pre>
+<p>Example contents of the csv files are shown below.  Remember these are within subfolders which are named exactly the same as the VPG names.  Also note the header line in each file is required:</p>
+<p><strong>DNS-NewA.csv:</strong><br />
+<font color=black><code>zone,hostname,ip<br />
+addomain.local,server01,192.168.1.10</code></font></p>
+<p><strong>DNS-NewPTR.csv:</strong><br />
+<font color=black><code>reversezone,lowip PTR,fqdn<br />
+1.168.192.in-addr.arpa,10,server01.addomain.local</code></font></p>
+<p><strong>DNS-OldA.csv:</strong><br />
+<font color=black><code>zone,hostname,ip<br />
+addomain.local,server01,192.168.2.10</code></font></p>
+<p><strong>DNS-OldPTR.csv:</strong><br />
+<font color=black><code>reversezone,lowip PTR,fqdn<br />
+2.168.192.in-addr.arpa,10,server01.addomain.local</code></font></p>
+<p>For convenience you can download the Powershell script and example csv files in a zip(Dnscmd.exe is not included!).<br />
+<a href='http://www.neogeek.net/wp-content/uploads/2012/05/ZertoDNSChangeScript.zip'><strong>ZertoDNSChangeScript.zip</strong></a><br />
+If you extract this to the &#8220;C:\ZertoScripts\&#8221; directory and copy Dnscmd.exe to this folder on each ZVM server you will be able to run the script.</p>
+<p>I must caveat this post by saying although my initial revision of this script worked and the changes since then are minor, I currently don&#8217;t have access to an environment where I can test this.  I have requested a trial license, when I get it I will test this script thoroughly and then remove this comment from my post.</p>
+		
+								
+				
+		<footer class="entry-meta">
+			<p>			Categories: <a href="http://www.neogeek.net/?cat=10" rel="category">Zerto</a> | 
+									Tags: <a href="http://www.neogeek.net/?tag=posh" rel="tag">PoSh</a>, <a href="http://www.neogeek.net/?tag=powershell" rel="tag">PowerShell</a>, <a href="http://www.neogeek.net/?tag=zerto" rel="tag">Zerto</a> | 
+						<a href="http://www.neogeek.net/?p=152">Permalink </a>
+			</p>
+	</footer><!-- end entry-meta -->
+	</div><!-- end entry-content -->
+			
+</article><!-- end post-152 -->
+								
+				
+<article id="post-42" class="post-42 post type-post status-publish format-standard hentry category-emc category-vnx tag-emc tag-fast tag-fast-cache tag-vnx">
+
+	<div class="entry-details">
+				<p>March 2, 2012<br/>
+		by Steve<br/>
+		<a href="http://www.neogeek.net/?p=42#comments" title="Comment on FAST Cache&#8230; Its simple but think first.">4 Comments</a></p>
+	</div><!-- end entry-details -->
+    
+	<header class="entry-header">
+			<h2 class="entry-title"><a href="http://www.neogeek.net/?p=42" title="Permalink to FAST Cache&#8230; Its simple but think first." rel="bookmark">FAST Cache&#8230; Its simple but think first.</a></h2>
+	</header><!-- end entry-header -->
+        
+	<div class="entry-content">
+					<p>I love finding out how technology features work, It&#8217;s like finding out the secrets behind a magic trick. When you realise it&#8217;s not magic you can break it down, get a good understanding and learn how to maximise the benefits whilst negotiating the pitfalls.</p>
+<p>Recently I have been working on getting an environment ready to run a VDI workload. The customer uses EMC products extensively, want to do VDI but want it isolated from their other storage. VNX with FAST Cache and FAST VP is the solution. It&#8217;s whilst working with this I have come to some conclusions and I wanted to share them.</p>
+<p>Most in this industry are aware of the high IOps which can be achieved through the use of flash storage (EFD). This presents some challenges to storage vendors because the architecture in which sets of disks reside are limited by the backend bus on which they sit. It doesn&#8217;t take much to realise spreading this load around on different buses is beneficial and will help maximise the benefits of the flash you have in your array.</p>
+<p>There are a number of EMC Primus articles covering FAST Cache and the location of the flash drives used for it, if you work in this space. I recommend you read them, emc251589 and emc285141 (a Powerlink account is required to do that). I will share my experiences in the hope it can help others.</p>
+<p>Note I have gathered the points for this blog post from information within the above Primus articles and as such they are much more verbose and should be consulted before making any concrete decisions on your storage array layout. Also use your TC&#8217;s (EMC Technology Consultant&#8217;s) they are a great source of information.</p>
+<p>Since FAST Cache utilises EFD RAID1 Mirrored pairs, the same rules apply and the considerations are as follows &#8211;</p>
+<ul>
+<li>Spread the drives throughout different buses; avoid putting all the EFD drives on Bus0 (VNX OE runs here).</li>
+<p>A point to make about this is that depending on model you are limited to the number and size of FAST Cache drives you can use (see emc251589 for full details), with models like the VNX5100 you wont have a choice but to use Bus0 since thats all it has but you also can&#8217;t use more than 2x 100Gb drives so this limits the impact. A VNX5300 has Bus0 and Bus1 so you will likely want to spread the load between these, this leads on to the next consideration.</p>
+<li>Avoid using a mixture of drives which reside in the vault enclosure (the DPE).</li>
+<p>FAST Cache uses Mirrored pairs and this recommendation is because drives in the DPE are protected by SPS whilst the other drive in the pair will not be. In the case of failures your mirror will become degraded whereas if they are both unprotected by the SPS they will power off at the same time.</p>
+<li>Spread the Primary drives in each Mirrored pair among Buses, this helps with availability.</li>
+<p>This is done by using the cli. Note that the order of drives specified dictates which are primary and secondary. When executing the command the first drive will be primary, then the next will be secondary, then primary, secondary etc. So Primary1 Secondary1 Primary2 Secondary2 Primary3 Secondary3 and so on.</p>
+<p>The command is:<br />
+<code>naviseccli -address [SP_IPAddress] cache -fast -create -disks [Disk_list] -mode rw -rtype r_1</code></p>
+<p>[SP_IPAddress] is the IP address and [Disk_list] is the disks that will be used for FAST Cache. The format of the disk list for example would be<br />
+<code>0_1_0 1_1_0 1_1_1 0_1_1</code><br />
+Where the notation is &#8220;Bus&#8221;_&#8221;Enclosure&#8221;_&#8221;Disk&#8221; and they are seperated by spaces.  In my example it would be Bus0 Enclosure1 Disk0 as the primary paired with Bus1 Enclosure1 Disk0 and another pair with primary Bus1 Enclosure1 Disk1 and secondary Bus0 Enclosure1 Disk1.
+</ul>
+<p>Something worth considering is that you will likely need to move the disks around from the configuration in which they were shipped.  Typically they place a lot of EFD in the DPE and as mentioned above you wont want to mix these with disks in other enclosures.</p>
+<p>In my case I am working with VNX 5300&#8217;s. As I mentioned they have two buses, Bus0 and Bus1. The array I am working with has the DPE and 3 additional DAE&#8217;s, they have 4 disks to use for FAST Cache and a Hotspare. After a chat with a very helpful TC about the Primus articles above I relocated all the EFD in the top two DAE&#8217;s. This means they are spread across Bus0 and Bus1 whilst not being protected by the SPS. I also set it so for FAST Cache one primary disk is in Bus0 with its secondary in Bus1 and the other primary is in Bus1 with its secondary in Bus0. This part I decided based on common sense and wanting to spread the load so two primarys were not on the same bus (comments on this welcome).</p>
+		
+								
+				
+		<footer class="entry-meta">
+			<p>			Categories: <a href="http://www.neogeek.net/?cat=3" rel="category">EMC</a>, <a href="http://www.neogeek.net/?cat=4" rel="category">VNX</a> | 
+									Tags: <a href="http://www.neogeek.net/?tag=emc" rel="tag">EMC</a>, <a href="http://www.neogeek.net/?tag=fast" rel="tag">FAST</a>, <a href="http://www.neogeek.net/?tag=fast-cache" rel="tag">FAST Cache</a>, <a href="http://www.neogeek.net/?tag=vnx" rel="tag">VNX</a> | 
+						<a href="http://www.neogeek.net/?p=42">Permalink </a>
+			</p>
+	</footer><!-- end entry-meta -->
+	</div><!-- end entry-content -->
+			
+</article><!-- end post-42 -->
+								
+				
+<article id="post-32" class="post-32 post type-post status-publish format-standard hentry category-uncategorized">
+
+	<div class="entry-details">
+				<p>March 1, 2012<br/>
+		by Steve<br/>
+		<a href="http://www.neogeek.net/?p=32#respond" title="Comment on Started this blog with good intentions&#8230;">0 comments</a></p>
+	</div><!-- end entry-details -->
+    
+	<header class="entry-header">
+			<h2 class="entry-title"><a href="http://www.neogeek.net/?p=32" title="Permalink to Started this blog with good intentions&#8230;" rel="bookmark">Started this blog with good intentions&#8230;</a></h2>
+	</header><!-- end entry-header -->
+        
+	<div class="entry-content">
+					<p>Recently I had an illustrator create a character like me that I could use on this blog.  You&#8217;ve probably noticed.  If anyone knows me the peak hair cut and sharp appearance are a giveaway (maybe just the first point :p).</p>
+<p>I design and implement solutions based on Cisco UCS, EMC VNX and VMware vSphere.  This is what I do each week, I love it and find it very fulfilling.  Recently got my VCP5 also, like the rest of the masses before the Feb deadline.  </p>
+<p>I am very busy but see the value in maintaining an online record of interesting things I come across in work.  I would love it to spawn some discussion on the topics I cover as well so I want to use this blog not just as a tool to share but to build on my on knowledge and skills also.  Mutually beneficial is the goal of this blog.</p>
+<p>I bought this domain 1 year ago (I know because I just got the renewal through) and I want to make it work.  Lets see how I go.</p>
+		
+								
+				
+		<footer class="entry-meta">
+			<p>			Categories: <a href="http://www.neogeek.net/?cat=1" rel="category">Uncategorized</a> | 
+									<a href="http://www.neogeek.net/?p=32">Permalink </a>
+			</p>
+	</footer><!-- end entry-meta -->
+	</div><!-- end entry-content -->
+			
+</article><!-- end post-32 -->
+								
+											
+	</div><!-- end content -->
+
+
+<div id="secondary" class="widget-area" role="complementary">
+			<aside id="calendar-3" class="widget widget_calendar"><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>September 2016</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://www.neogeek.net/?m=201408">&laquo; Aug</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="3" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td>
+	</tr>
+	<tr>
+		<td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+	</tr>
+	<tr>
+		<td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+	</tr>
+	<tr>
+		<td>19</td><td>20</td><td id="today">21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+	</tr>
+	<tr>
+		<td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+		<td class="pad" colspan="2">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside><aside id="archives-3" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+	<li><a href='http://www.neogeek.net/?m=201408'>August 2014</a></li>
+	<li><a href='http://www.neogeek.net/?m=201407'>July 2014</a></li>
+	<li><a href='http://www.neogeek.net/?m=201405'>May 2014</a></li>
+	<li><a href='http://www.neogeek.net/?m=201401'>January 2014</a></li>
+	<li><a href='http://www.neogeek.net/?m=201310'>October 2013</a></li>
+	<li><a href='http://www.neogeek.net/?m=201304'>April 2013</a></li>
+	<li><a href='http://www.neogeek.net/?m=201205'>May 2012</a></li>
+	<li><a href='http://www.neogeek.net/?m=201203'>March 2012</a></li>
+		</ul>
+</aside>		</div><!-- #secondary .widget-area -->
+</div><!-- end main -->
+
+		<div id="tertiary" class="widget-area" role="complementary">
+			<aside id="social_links-3" class="widget widget_social_links"><h3 class="widget-title"> </h3><ul><li class="widget_sociallinks"><a href="http://twitter.com/stejoh" class="twitter" target="_blank">@stejoh</a></li></ul></aside>		<aside id="recent-posts-3" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://www.neogeek.net/?p=815">How VSANs Are Like Kit Cars (in light of recent VSAN HCL Update)</a>
+						</li>
+					<li>
+				<a href="http://www.neogeek.net/?p=747">VPLEX Virtual Edition (VPLEX/VE) In The Real World</a>
+						</li>
+					<li>
+				<a href="http://www.neogeek.net/?p=695">My Review of EMC World 2014</a>
+						</li>
+					<li>
+				<a href="http://www.neogeek.net/?p=434">Configuring vSphere App HA 1.0</a>
+						</li>
+					<li>
+				<a href="http://www.neogeek.net/?p=395">What has changed in vCenter Server Appliance 5.5 (vCSA)?</a>
+						</li>
+				</ul>
+		</aside><aside id="search-3" class="widget widget_search"><form role="search" method="get" class="searchform" action="http://www.neogeek.net/" >
+    <div>
+    <input type="text" class="search-input" value="" name="s" id="s" />
+    <input type="submit" class="searchsubmit" value="Search" />
+    </div>
+    </form></aside><aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">Links</h3><div class="menu-links-container"><ul id="menu-links" class="menu"><li id="menu-item-432" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-432"><a title="Novosco Tech Blog" href="http://tech.novosco.com">Novosco Tech Blog</a></li>
+</ul></div></aside>		</div><!-- end tertiary .widget-area -->
+</div><!-- end wrap -->
+
+	<footer id="colophon" class="clearfix">
+		<p>Proudly powered by <a href="http://wordpress.org/">WordPress</a><span class="sep"> | </span>Theme: Yoko by <a href="http://www.elmastudio.de/en/themes/">Elmastudio</a></p>
+		<a href="#page" class="top">Top</a>
+	</footer><!-- end colophon -->
+	
+</div><!-- end page -->
+<script type='text/javascript' src='http://www.neogeek.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='http://www.neogeek.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPowerShell.js?ver=3.0.9b'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://www.neogeek.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://www.neogeek.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='http://www.neogeek.net/wp-content/themes/yoko/js/smoothscroll.js?ver=1.4'></script>
+
+</body>
+</html>

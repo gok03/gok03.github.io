@@ -1,0 +1,703 @@
+status: 200
+content-length: 32628
+content-location: http://www.lbmcep.com/
+x-aspnet-version: 4.0.30319
+vary: Accept-Encoding
+-content-encoding: gzip
+cache-control: private
+date: Wed, 19 Oct 2016 17:59:18 GMT
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Tennessee HR Specialist in Employee Related Matters | LBMC Employment Partners
+</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    
+        <meta name="viewport" content="initial-scale=1.0" />
+    
+    <link rel="canonical" href="http://www.lbmcep.com/" />
+	<link rel="shortcut icon" href="/images/company/8958_ImageFavicon.png" />
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic|Roboto+Condensed:300' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="//www.lbmc.com/styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="//www.lbmc.com/styles/satgrid.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="//www.lbmc.com/styles/style_screen.css?mod=20160627" media="screen" />
+    <link rel="stylesheet" type="text/css" href="//www.lbmc.com/styles/style_print.css?mod=20150723" media="print" />
+    
+        <style type="text/css" media="screen">
+            /* On-Page Branding */
+            .brand-bg {background-color:#63a70a!important;}
+            .brand-fg, .brand-b b {color:#63a70a!important;}
+            .brand-links a {color:#63a70a!important;}
+        </style>
+    <!-- SCRIPTS HERE, RESPOND.JS SHOULD ALWAYS BE THE FIRST ONE HERE -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/scripts/respond.min.js"></script><![endif]-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//www.lbmc.com/scripts/sitewide.js?mod=20151217"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // re-route form action to root, so we can support virtual subfolder postbacks
+            var defaultPost = $('#mpform').attr('action');
+            if (defaultPost != null && defaultPost.substring(0, 1) != '/') {
+                $('#mpform').attr('action', '/' + defaultPost);
+            }
+        });
+    </script>
+    <script type="text/javascript">dataLayer = [{"Pagetype":"Homepage"}];</script>
+
+
+    <!-- ADDTHIS BEGIN -->
+    <script type="text/javascript">
+        var addthis_config = {
+            services_compact: 'twitter, linkedin, facebook, google_plusone_share, email',
+            services_exclude: 'print'
+        };
+
+        // let all media load, then optionally load addthis script if we detect a toolbox placeholder
+        $(window).load(function () {
+            if ($('.addthis_toolbox').length > 0) {
+                setTimeout(function () {
+                    var script = document.createElement('script');
+                    script.type = 'text/javascript';
+                    script.src = 'https://s7.addthis.com/js/250/addthis_widget.js';
+                    $('body').append(script);
+                }, 500);
+            }
+        });
+    </script>
+    <!-- ADDTHIS END -->
+
+    <meta name="google-site-verification" content="d_xWAl80jlKYeSsL6DbyJL6WdM-nsdArUKmZ2hOIrug" />
+<meta name="msvalidate.01" content="0020BE1FA03A31E8F47E5A087F0A5423" />
+<meta http-equiv="content-language" content="en-us">
+<meta name="geo.position" content="36.033147;-86.807965">
+<meta name="geo.placename" content="LBMC Financial Center, Brentwood, TN">
+<meta name="geo.region" content="US-TN">
+<meta name="DC.Format" content="(SCHEME=IMT) text/html">
+<meta name="DC.Language" content="en" >
+<meta name="DC.Publisher" content="https://plus.google.com/104003652512427690435/about" >
+<meta content="website" property="og:type"></meta>
+<link rel="alternate" href="http://www.lbmcep.com" hreflang="en-us" />
+
+    <script type="text/javascript" src="//www.lbmc.com/scripts/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="//www.lbmc.com/scripts/jquery.cycle2.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // kick off our "small" slideshow activities
+            sat_SlidesInitSmall();
+        });
+
+        // kick off our "small" slideshow activities
+        function sat_SlidesInitSmall() {
+            var ssSmall = $('div.companyslides');
+
+            // create slideshow if we have multiples!
+            if (ssSmall.children('.companyslide').length > 1) {
+                ssSmall.cycle({
+                    fx: 'fade',
+                    pauseOnHover: true,
+                    pager: '> .companyslide-pager',
+                    prev: '> .companyslide-navbtn-prev',
+                    next: '> .companyslide-navbtn-next',
+                    slides: '> .companyslide',
+                    speed: 250,
+                    timeout: 5000
+                });
+            }
+            else {
+                ssSmall.addClass('companyslides-single');
+            }
+
+            // slide images should be clickable if they have a link
+            $('div.companyslide').each(function (idx) {
+                var slide = $(this);
+                var slideImage = $('img.companyslide-img', slide);
+                var slideLink = $('a.companyslide-link', slide);
+                if (slideLink.length == 1) {
+                    slideImage.addClass('js-clickable').click(function () {
+                        slideLink.get(0).click();
+                        return false;
+                    });
+                }
+            });
+
+            // force a height adjust before each slide transition
+            ssSmall.on('cycle-before', function (event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
+                sat_SlidesHeightAdj(ssSmall, '.companyslide', 250);
+            });
+
+            // make sure heights adjust if we resize window
+            $(window).on('resize', function () {
+                sat_SlidesHeightAdj(ssSmall, '.companyslide', 250);
+            });
+
+            // force an initial sizing adjustment when all images have loaded
+            $(window).load(function () {
+                $(window).trigger('resize');
+            });
+        }
+
+        // check all the heights of small slides and make sure slideshow is tall enough
+        function sat_SlidesHeightAdj(slider, itemClass, minheight) {
+            var maxheight = minheight;
+            var slides = slider.find(itemClass);
+            slides.not('.cycle-sentinel').each(function (idx) {
+                // check each slide to find tallest
+                if ($(this).outerHeight() > maxheight) {
+                    maxheight = $(this).outerHeight();
+                }
+            });
+            // force the sentinel to proper size
+            slides.filter('.cycle-sentinel').css('min-height', maxheight + 'px');
+        }
+    </script>
+<meta  name="keywords" content="PEO, HRO, Payroll tax, human resources, employee benefits, outsourcing, lattimore black, tennessee, nashville, knoxville, chattanooga" />
+<meta  name="description" content="LBMC Employment Partners serve as a Professional Employer Organization (PEO), as well as a Human Resources Outsourcing (HRO)." />
+<meta  property="og:title" content="LBMC Employment Partners" />
+<meta  property="og:description" content="LBMC Employment Partners provides a comprehensive suite of HR related services to businesses ranging from five to 1,500 employees across a variety of industries." />
+<meta  property="og:image" content="http://www.lbmcep.com/images/_wbmanaged/13088_wbc_socialimage.jpg" />
+<meta  property="og:type" content="website" />
+
+<script type="text/javascript">
+ $(document).ready(function() {
+  if ($('.wb-editor-form').length>0) {
+    $.getScript("/satlib/h/resource/publicWBFormScripts.ashx");
+  }
+ });
+</script>
+</head>
+<body class=" showcompany_page ">
+
+    <!-- Google Tag Manager --><noscript><iframe
+src="//www.googletagmanager.com/ns.html?id=GTM-NS7C26"
+height="0" width="0"
+style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)
+;
+})(window,document,'script','dataLayer','GTM-NS7C26');</script><!-- End
+Google Tag Manager -->
+
+<!-- Start of Async HubSpot Analytics Code -->
+  <script type="text/javascript">
+    (function(d,s,i,r) {
+      if (d.getElementById(i)){return;}
+      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/488371.js';
+      e.parentNode.insertBefore(n, e);
+    })(document,"script","hs-analytics",300000);
+  </script>
+<!-- End of Async HubSpot Analytics Code -->
+
+    <form method="post" action="./showcompany.aspx?show=1191&amp;" id="mpform">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODQzMjExNDQ0D2QWAmYPZBYCAgEPZBYCAgUPZBYCZg8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VBwEwBDExOTEhMV9MQk1DTW9uZXlfQm9hdF85NTJ4MzIwX2pjMDEuanBnDnNtb290aCBzYWlsaW5nDnNtb290aCBzYWlsaW5nbDxkaXYgY2xhc3M9J2NvbXBhbnlzbGlkZS1ibHVyYic+TGV0IHVzIG1hbmFnZSB5b3VyIGVtcGxveWVlLXJlbGF0ZWQgbWF0dGVycyBzbyB5b3UgY2FuIHNhaWwgeW91ciBzaGlwLjwvZGl2PgBkZN8KMVcFDTuCBEeMiTj6gacjxxVhDvmNUHXPz9Pzwzm8" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E91BD1AD" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAPjnSOVeevAUjzwz5+FJirNGujfOvL8nlxZ6vgW0x8hwwcM6mErvPhjG1RKFhC64uAXWaJzxPCE37Y7WFmxYcBsD1NXouJN1GZZi3SiMLIDfg==" />
+        
+        <div class="page">
+
+            <div class="pageheaderprint printonly">
+                <img class="pageheaderprint-logo" src="/images/company/6433_ImagePrint.png" alt="LBMC Logo" />
+                <div class="pageheaderprint-slogan brand-b">make a good business <b>better</b></div>
+            </div>
+
+            <div class="pageheader noprint">
+                
+<div class="pagesearch-box">
+    <div class="pagesearch sg-pagewidth">
+
+        <div class="pagesearch-body">
+
+            <div class="sg-row sg-row-pad">
+                <div class="sg-col-md-10">
+                    <div class="pagesearch-keywords">
+                        <input name="mp$ctlSearch$TxtKeywords" type="text" id="ctlSearch_TxtKeywords" class="pagesearch-input" PlaceHolder="Search Keyword/Name..." />
+                        <span class="dummy">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="sg-col-sm-6 sg-col-md-2">
+                    <input type="submit" name="mp$ctlSearch$BtnSearch" value="Search" id="ctlSearch_BtnSearch" class="pagesearch-submit" />
+                </div>
+                <div class="sg-col-sm-6 pagesearch-cancelbox">
+                    <a class="pagesearch-cancel" href="#">Cancel</a>
+                </div>
+            </div>
+
+            <div class="sg-row sg-row-pad pagesearch-suggestions">
+                <div class="sg-col-md-4">
+                    
+                </div>
+                <div class="sg-col-md-4">
+                    
+        <div class="sharedsuggestionlist sharedsuggestionlist-recent">
+            <div class="sharedsuggestionlist-subhead">Recent</div>
+            <ul>
+    
+                <li>
+                    <a class='sharedsuggestionlist-link' href='/blog/employee-spotlight-terri-mangrum'>Employee Spotlight: Terri Mangrum</a>
+                    <span class='sharedsuggestionlist-date'>10/04/2016</span>
+                </li>
+    
+                <li>
+                    <a class='sharedsuggestionlist-link' href='/resources/client-spotlight-international-scholarship-and-tuition-services'>Client Spotlight: International Scholarship and Tuition Services</a>
+                    <span class='sharedsuggestionlist-date'>10/03/2016</span>
+                </li>
+    
+                <li>
+                    <a class='sharedsuggestionlist-link' href='/blog/the-dos-donts-of-filing-for-disability-claim'>The Do's & Don'ts of Filing for Disability Claim</a>
+                    <span class='sharedsuggestionlist-date'>09/30/2016</span>
+                </li>
+    
+                <li>
+                    <a class='sharedsuggestionlist-link' href='/blog/easing-the-transition-into-retirement'>Easing the Transition into Retirement</a>
+                    <span class='sharedsuggestionlist-date'>09/30/2016</span>
+                </li>
+    
+            </ul>
+        </div>
+    
+                </div>
+                <div class="sg-col-md-4">
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+                
+<div class="pagenav-box">
+    <div class="pagenav-maskbox brand-bg"></div>
+    <div class="pagenav sg-pagewidth">
+
+        <div class="pagenav-brand">
+            <a href="http://www.lbmcep.com/" class="pagenav-logo brand-bg" title="LBMC">
+                <img class="pagenav-logo-overlay" src="/images/pagenav-logo-overlay.png" alt="LBMC" />
+            <div class="pagenav-logo-text">
+                <table class="pagenav-logo-table" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td class="brand-b" align="left" valign="middle">Employment Partners</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </a>
+        </div>
+
+        <a class="pagenav-menutoggler noprint" href="#">Menu</a>
+        <div class="pagenav-menus noprint">
+            <ul class="pagenav-menu pagenav-menu-primary">
+                <li><a class='' href='/about'>About</a></li>
+               
+                 
+                    <li><a href="/people?c=35" class="">People</a></li>
+                
+
+                <!-- COMPANIES -->
+                
+
+                <!-- PRODUCTS -->
+                
+                
+                
+                <!-- SERVICES -->
+                <li><a class='' href='/services'>What We Do</a></li>
+                
+
+                <!-- INDUSTRIES -->
+                
+
+                <!-- RESOURCES -->
+                <li><a class='' href='/resources'>Resources</a></li>
+                
+            </ul>
+            <ul class="pagenav-menu pagenav-menu-secondary">
+                <li><a href="/locations" class="">Locations</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+                
+                <li class='sg-hide-sm'><a href='/clientlogin'>Login</a></li>
+                <li class="pagenav-searchitem">
+                    <a href="/search.aspx"><span class="pagenav-searcharrow"></span>Search</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+            </div><!-- /.pageheader -->
+
+            <div class="pagecompanyswap noprint">
+                
+<div class="pagecompanyswap-box sg-pagewidth">
+    <div class='pagecompanyswap-slogan brand-b'>make a good business <b>better</b></div>
+    <a class="pagecompanyswap-toggler" href="#"><span class="pagecompanyswap-toggler-arrow">&nbsp;</span><span class="sg-hide-sm">All LBMC </span>Companies</a>
+    <div class="pagecompanyswap-list">
+        
+                <div class="sg-row">
+                    <div class='sg-col-md-4'>
+            
+                    
+                        <a href="http://www.lbmc.com/">LBMC</a>
+            
+                    
+                        <a href="http://www.lbmcaudittaxadvisory.com/">Audit, Tax & Advisory</a>
+            
+                    
+                        <a href="http://www.lbmcstaffing.com/">Staffing Solutions</a>
+            
+                    </div><div class='sg-col-md-4'>
+                        <a href="http://www.lbmctech.com/">Technology Solutions</a>
+            
+                    
+                        <a href="http://www.lbmcep.com/">Employment Partners</a>
+            
+                    
+                        <a href="http://www.lbmcinvestmentadvisors.com/">Investment Advisors</a>
+            
+                    </div><div class='sg-col-md-4'>
+                        <a href="http://www.lbmcinformationsecurity.com/">Information Security</a>
+            
+                    
+                        <a href="http://www.lbmcphysicianbusinesssolutions.com/">Physician Business Solutions</a>
+            
+                    
+                        <a href="http://www.lbmcbusinessprocesssolutions.com/">Business Process Solutions</a>
+            
+                    </div>
+                </div>
+            
+    </div>
+</div>
+
+            </div>
+
+            <div class="pagebody sg-pagewidth">
+                <div class="pagebodybanner">
+                    <div class="pagebodybanner-image">
+                        
+
+                    </div>
+                    <div class="pagebodybanner-text">
+                        
+
+                    </div>
+                </div><!-- /.pagebodybanner -->
+
+                <div class="pagebodyprintbar printonly">
+                    <img class="pagebodyprintbar-main" alt="Print Divider" src="/images/print-colorbar.png" />
+                    <img class="pagebodyprintbar-bg" alt="Print Divider Branding" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAASSURBVBhXY0hezvUfhKEMrv8ASFAITSvya18AAAAASUVORK5CYII=" />
+                </div><!-- /.pagebodyprintbar -->
+
+                <div class="pagebodyfeature">
+                    
+
+    <h1 class="sharedhometitle" style="display:none;">LBMC Employment Partners</h1>
+
+    
+            <div class="companyslidesbox noprint">
+                <div class="companyslides">
+        
+                <div class="companyslide cycle-slide-bg" data-itemindex="0">
+                    <div class="companyslide-imgbox"><img class="companyslide-img" src="/images/_wbmanaged/gallery/1191/1_LBMCMoney_Boat_952x320_jc01.jpg" alt="smooth sailing" /></div>
+                    <div class="companyslide-content">
+                        <div class="companyslide-title">smooth sailing</div>
+                        <div class='companyslide-blurb'>Let us manage your employee-related matters so you can sail your ship.</div>
+                        
+                    </div>
+                </div>
+        
+                    <div class="companyslide-pager"></div>
+                    <div class="companyslide-navbtn companyslide-navbtn-prev">Previous</div>
+                    <div class="companyslide-navbtn companyslide-navbtn-next">Next</div>
+                </div>
+            </div>
+        
+
+    
+        <script type="text/javascript">
+            // block clicks on un-linked tiles
+            $(document).ready(function () {
+                $('a.sharedtilebox[href="#"]').click(function () {
+                    return false;
+                });
+            });
+        </script>
+        <div class="sharedtileboxes">
+            <div class="sharedtilebox-col">
+                <a class="sharedtilebox wide" href="https://youtu.be/41o0wICJXaU" rel='video'>
+                    <div class="sharedtilebox-mask">
+                        <img class='sharedtilebox-bg' src='/images/homepage/13164_Feature0Image.jpg' alt='LBMC Employment Partners' />
+                        <div class="sharedtilebox-content">
+                            
+                            <span class='sharedtilebox-videoplay' title='Play Video'>Play Video</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="sharedtilebox-col">
+                <a class="sharedtilebox" href="/services/employee-benefits" >
+                    <div class="sharedtilebox-mask">
+                        <img class='sharedtilebox-bg' src='/images/homepage/13164_Feature1Image.jpg' alt='Employee Benefits' />
+                        <div class="sharedtilebox-content">
+                            <h3>Employee Benefits</h3>
+                            
+                        </div>
+                    </div>
+                </a>
+                <a class="sharedtilebox" href="/services/peo" >
+                    <div class="sharedtilebox-mask">
+                        <img class='sharedtilebox-bg' src='/images/homepage/13164_Feature2Image.jpg' alt='Professional Employer Organization (PEO)' />
+                        <div class="sharedtilebox-content">
+                            <h3>Professional Employer Organization (PEO)</h3>
+                            
+                        </div>
+                    </div>
+                </a>
+                <a class="sharedtilebox" href="/services/hro" >
+                    <div class="sharedtilebox-mask">
+                        <img class='sharedtilebox-bg' src='/images/homepage/13164_Feature3Image.jpg' alt='Human Resources Consulting' />
+                        <div class="sharedtilebox-content">
+                            <h3>Human Resources Consulting</h3>
+                            
+                        </div>
+                    </div>
+                </a>
+                <a class="sharedtilebox" href="/services/payroll" >
+                    <div class="sharedtilebox-mask">
+                        <img class='sharedtilebox-bg' src='/images/homepage/13164_Feature4Image.jpg' alt='Payroll Services' />
+                        <div class="sharedtilebox-content">
+                            <h3>Payroll Services</h3>
+                            
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="sharedtilebox-footer brand-bg">
+                
+<div class="sharedsocialbar noprint">
+
+    <div class="sharedsocialbar-links">
+        <span class="social-trigger" data-socialtype="linkedin">
+            <span class="social-button social-linkedin">LinkedIn</span>
+            <span class="social-popmarker"></span>
+        </span>
+        <span class="social-trigger" data-socialtype="facebook">
+            <span class="social-button social-facebook">Facebook</span>
+            <span class="social-popmarker"></span>
+        </span>
+        <span class="social-trigger" data-socialtype="twitter">
+            <span class="social-button social-twitter">Twitter</span>
+            <span class="social-popmarker"></span>
+        </span>
+        <span class="social-trigger" data-socialtype="google">
+            <span class="social-button social-google">Google+</span>
+            <span class="social-popmarker"></span>
+        </span>
+        <!--
+            <a class='social-button social-linkedin' href='https://www.linkedin.com/company/lbmc-employment-partners-llc' target='_blank' title='LinkedIn'>LinkedIn</a>
+            <a class='social-button social-facebook' href='https://www.facebook.com/LBMC-Employment-Partners-LLC-121535774569939/' target='_blank' title='Facebook'>Facebook</a>
+            <a class='social-button social-twitter' href='https://twitter.com/LBMCEP' target='_blank' title='Twitter'>Twitter</a>
+            
+        -->
+        <span class="social-trigger">
+            <a class="social-button social-rss" href="/getfeed.aspx" title="RSS">RSS</a>
+        </span>
+    </div>
+
+    <div class="sharedsocialbar-pop" data-socialtype="linkedin">
+        <div class="sharedsocialbar-popliner sg-clearfix">
+            <div class="sharedsocialbar-popheader">Main LBMC LinkedIn Page</div>
+            <a class="sharedsocialbar-popimg" href="https://www.linkedin.com/company/lbmc" target="_blank"><img src="/images/socialbar-logo.png" alt="LBMC" /></a>
+            
+                    <div class="sharedsocialbar-poplistheader">All LBMC Company Pages</div>
+                    <ul class='sharedsocialbar-poplist'>
+                
+                        
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://www.linkedin.com/company/lbmc-strategic-staffing-llc" target="_blank">
+                                <span style="background-color:#dd5f13"></span>
+                                Staffing Solutions
+                            </a>
+                        </li>
+                
+                        
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="http://www.linkedin.com/company/lbmc-technologies" target="_blank">
+                                <span style="background-color:#b3282d"></span>
+                                Technology Solutions
+                            </a>
+                        </li>
+                
+                        
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://www.linkedin.com/company/lbmc-employment-partners-llc" target="_blank">
+                                <span style="background-color:#63a70a"></span>
+                                Employment Partners
+                            </a>
+                        </li>
+                
+                        
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://www.linkedin.com/company/lbmc-wealth-advisors" target="_blank">
+                                <span style="background-color:#b0851e"></span>
+                                Wealth Advisors
+                            </a>
+                        </li>
+                
+                        </ul><ul class='sharedsocialbar-poplist'>
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://www.linkedin.com/company/lbmc-investment-advisors" target="_blank">
+                                <span style="background-color:#00396f"></span>
+                                Investment Advisors
+                            </a>
+                        </li>
+                
+                        
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://www.linkedin.com/company/lbmc-security-services" target="_blank">
+                                <span style="background-color:#4e868e"></span>
+                                Information Security
+                            </a>
+                        </li>
+                
+                        
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://www.linkedin.com/company/3625562" target="_blank">
+                                <span style="background-color:#009bde"></span>
+                                LBMC LIFO
+                            </a>
+                        </li>
+                
+                    </ul>
+                
+        </div>
+    </div>
+
+    <div class="sharedsocialbar-pop" data-socialtype="facebook">
+        <div class="sharedsocialbar-popliner sg-clearfix">
+            <div class="sharedsocialbar-popheader">Main LBMC Facebook Page</div>
+            <a class="sharedsocialbar-popimg" href="https://www.facebook.com/pages/LBMC-Lattimore-Black-Morgan-Cain/148189669713" target="_blank"><img src="/images/socialbar-logo.png" alt="LBMC" /></a>
+            
+                    <div class="sharedsocialbar-poplistheader">All LBMC Company Pages</div>
+                    <ul class='sharedsocialbar-poplist'>
+                
+                        
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://www.facebook.com/LBMCTechnologies" target="_blank">
+                                <span style="background-color:#b3282d"></span>
+                                Technology Solutions
+                            </a>
+                        </li>
+                
+                        </ul><ul class='sharedsocialbar-poplist'>
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://www.facebook.com/LBMC-Employment-Partners-LLC-121535774569939/" target="_blank">
+                                <span style="background-color:#63a70a"></span>
+                                Employment Partners
+                            </a>
+                        </li>
+                
+                    </ul>
+                
+        </div>
+    </div>
+
+    <div class="sharedsocialbar-pop" data-socialtype="twitter">
+        <div class="sharedsocialbar-popliner sg-clearfix">
+            <div class="sharedsocialbar-popheader">Main LBMC Twitter Page</div>
+            <a class="sharedsocialbar-popimg" href="https://twitter.com/LBMC_PC" target="_blank"><img src="/images/socialbar-logo.png" alt="LBMC" /></a>
+            
+                    <div class="sharedsocialbar-poplistheader">All LBMC Company Pages</div>
+                    <ul class='sharedsocialbar-poplist'>
+                
+                        
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="http://twitter.com/lbmctech" target="_blank">
+                                <span style="background-color:#b3282d"></span>
+                                Technology Solutions
+                            </a>
+                        </li>
+                
+                        
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://twitter.com/LBMCEP" target="_blank">
+                                <span style="background-color:#63a70a"></span>
+                                Employment Partners
+                            </a>
+                        </li>
+                
+                        </ul><ul class='sharedsocialbar-poplist'>
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://twitter.com/lbmcsecurity" target="_blank">
+                                <span style="background-color:#4e868e"></span>
+                                Information Security
+                            </a>
+                        </li>
+                
+                    </ul>
+                
+        </div>
+    </div>
+
+    <div class="sharedsocialbar-pop" data-socialtype="google">
+        <div class="sharedsocialbar-popliner sg-clearfix">
+            <div class="sharedsocialbar-popheader">Main LBMC Google+ Page</div>
+            <a class="sharedsocialbar-popimg" href="https://plus.google.com/+LbmcFamily" target="_blank"><img src="/images/socialbar-logo.png" alt="LBMC" /></a>
+            
+                    <div class="sharedsocialbar-poplistheader">All LBMC Company Pages</div>
+                    <ul class='sharedsocialbar-poplist'>
+                
+                        
+                        <li>
+                            <a class="sharedsocialbar-poplink" href="https://plus.google.com/b/104003652512427690435/117544646763999840105/about" target="_blank">
+                                <span style="background-color:#b3282d"></span>
+                                Technology Solutions
+                            </a>
+                        </li>
+                
+                    </ul>
+                
+        </div>
+    </div>
+
+</div>
+
+            </div>
+        </div>
+    
+
+    <!-- RADAR-HOMEPAGE-OK -->
+
+
+                </div><!-- /.pagebodyfeature -->
+
+                <div class="pagebodymain">
+                    
+
+                    <div class="clearboth"></div>
+                </div><!-- /.pagebodymain -->
+
+                
+                    <div class="pagefooter noprint">
+                        
+                        <div class="pagefootercontent">
+                            Copyright &copy; 2016 LBMC Family of Companies. <span class="nowrap">All Rights Reserved.</span> &nbsp;&nbsp;&nbsp;
+                            <span class="pagefooterlinks"><a href="/privacy">Privacy Policy</a> | <a href="/sitemap.aspx">Site Map</a></span>
+                        </div>
+                    </div><!-- /.pagefooter -->
+                
+
+            </div><!-- /.pagebody -->
+
+        </div><!-- /.page -->
+    </form>
+</body>
+</html>

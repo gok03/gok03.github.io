@@ -1,0 +1,213 @@
+status: 200
+content-length: 29499
+content-location: http://www.dejarnette.com
+x-aspnet-version: 2.0.50727
+x-powered-by: ASP.NET
+server: Microsoft-IIS/7.5
+cache-control: private
+date: Sun, 11 Sep 2016 09:21:18 GMT
+content-type: text/html; charset=utf-8
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_head1"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"490a7de894","applicationID":"10562359","transactionName":"YQBbNRdTDxFVUEVaXVhKeDI1HQUHUlJEX0ZpBEoRHQ==","queueTime":0,"applicationTime":76,"ttGuid":"41E60754C43EE3C6","agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><title>
+	DeJarnette | HL7, DICOM, XDS, IHE, VNA, Vendor Neutral Archive, Data Migration
+</title><script type='text/javascript'>var mrpAssetsUrl = '//dy5vgx5yyjho5.cloudfront.net/v1';</script><link href='//dy5vgx5yyjho5.cloudfront.net/v1/css/v1/01-all.debug.css' media='all' type='text/css' rel='stylesheet' /><link href='//dy5vgx5yyjho5.cloudfront.net/v1/css/v1/print.css' media='print' type='text/css' rel='stylesheet' /><link href='//dy5vgx5yyjho5.cloudfront.net/v1/css/v1/plugins/colorbox/colorbox.css' media='screen' type='text/css' rel='stylesheet' /><link href='//dy5vgx5yyjho5.cloudfront.net/v1/css/v1/05-frontcore.debug.css' media='screen' type='text/css' rel='stylesheet' /><link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' /><link href='//dy5vgx5yyjho5.cloudfront.net/v1/css/plugins/fontello/css/mrpicon-.css?v=002' rel='stylesheet' /><link href='//dy5vgx5yyjho5.cloudfront.net/v1/css/v1/ecomcore.debug.css?v=001' media='screen' type='text/css' rel='stylesheet' /><link href='//dy5vgx5yyjho5.cloudfront.net/v1/css/v1/rncore.debug.css' media='screen' type='text/css' rel='stylesheet' /><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/plugins/01-jquery1.4.2.js'></script><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/plugins/05-colorbox1.3.9.js'></script><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/plugins/10-jquerytools1.2.5.js'></script><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/plugins/15-jqueryui-1.8.5.js'></script><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/plugins/16-autocomplete.js?v=05052011'></script><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/plugins/20-jscrollpane2.0.0.js'></script><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/plugins/25-scrollto1.4.2.js'></script><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/plugins/50-countdown.js'></script><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/plugins/55-forum.js'></script><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/core.debug.js'></script><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/javascript/v1/frontcore.debug.js?v=3'></script><link href='//dy5vgx5yyjho5.cloudfront.net/v1/siteresources/10287/v1/favicon.ico' rel='shortcut icon' type='image-xicon' /><link href='//dy5vgx5yyjho5.cloudfront.net/v1/siteresources/10287/v1/10287.css' media='screen' type='text/css' rel='stylesheet' /><script type='text/javascript' src='//dy5vgx5yyjho5.cloudfront.net/v1/siteresources/10287/v1/10287.js'></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34248966-21']);
+  _gaq.push(['_setDomainName', 'dejarnette.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><meta id="ctl00_seoKeywords" name="keywords" content="Dejarnette, Research, Systems, VNA, Vendor Neutral Archive, HL7, DICOM, IHE, XDS, XDS-I, Data Migration, Tag Morphing" /></head>
+<body id="homeBody" class='publicBody  '>
+
+<form name="aspnetForm" method="post" action="default.aspx" id="aspnetForm">
+<input type="hidden" name="ctl00_ToolkitScriptManager1_HiddenField" id="ctl00_ToolkitScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExODg2NDI5MDEPZBYCZg9kFgRmD2QWBAIBDxYCHgRUZXh0BbQVPHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnPnZhciBtcnBBc3NldHNVcmwgPSAnLy9keTV2Z3g1eXlqaG81LmNsb3VkZnJvbnQubmV0L3YxJzs8L3NjcmlwdD48bGluayBocmVmPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvY3NzL3YxLzAxLWFsbC5kZWJ1Zy5jc3MnIG1lZGlhPSdhbGwnIHR5cGU9J3RleHQvY3NzJyByZWw9J3N0eWxlc2hlZXQnIC8+PGxpbmsgaHJlZj0nLy9keTV2Z3g1eXlqaG81LmNsb3VkZnJvbnQubmV0L3YxL2Nzcy92MS9wcmludC5jc3MnIG1lZGlhPSdwcmludCcgdHlwZT0ndGV4dC9jc3MnIHJlbD0nc3R5bGVzaGVldCcgLz48bGluayBocmVmPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvY3NzL3YxL3BsdWdpbnMvY29sb3Jib3gvY29sb3Jib3guY3NzJyBtZWRpYT0nc2NyZWVuJyB0eXBlPSd0ZXh0L2NzcycgcmVsPSdzdHlsZXNoZWV0JyAvPjxsaW5rIGhyZWY9Jy8vZHk1dmd4NXl5amhvNS5jbG91ZGZyb250Lm5ldC92MS9jc3MvdjEvMDUtZnJvbnRjb3JlLmRlYnVnLmNzcycgbWVkaWE9J3NjcmVlbicgdHlwZT0ndGV4dC9jc3MnIHJlbD0nc3R5bGVzaGVldCcgLz48bGluayBocmVmPScvL21heGNkbi5ib290c3RyYXBjZG4uY29tL2ZvbnQtYXdlc29tZS80LjMuMC9jc3MvZm9udC1hd2Vzb21lLm1pbi5jc3MnIHJlbD0nc3R5bGVzaGVldCcgLz48bGluayBocmVmPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvY3NzL3BsdWdpbnMvZm9udGVsbG8vY3NzL21ycGljb24tLmNzcz92PTAwMicgcmVsPSdzdHlsZXNoZWV0JyAvPjxsaW5rIGhyZWY9Jy8vZHk1dmd4NXl5amhvNS5jbG91ZGZyb250Lm5ldC92MS9jc3MvdjEvZWNvbWNvcmUuZGVidWcuY3NzP3Y9MDAxJyBtZWRpYT0nc2NyZWVuJyB0eXBlPSd0ZXh0L2NzcycgcmVsPSdzdHlsZXNoZWV0JyAvPjxsaW5rIGhyZWY9Jy8vZHk1dmd4NXl5amhvNS5jbG91ZGZyb250Lm5ldC92MS9jc3MvdjEvcm5jb3JlLmRlYnVnLmNzcycgbWVkaWE9J3NjcmVlbicgdHlwZT0ndGV4dC9jc3MnIHJlbD0nc3R5bGVzaGVldCcgLz48c2NyaXB0IHR5cGU9J3RleHQvamF2YXNjcmlwdCcgc3JjPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvamF2YXNjcmlwdC92MS9wbHVnaW5zLzAxLWpxdWVyeTEuNC4yLmpzJz48L3NjcmlwdD48c2NyaXB0IHR5cGU9J3RleHQvamF2YXNjcmlwdCcgc3JjPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvamF2YXNjcmlwdC92MS9wbHVnaW5zLzA1LWNvbG9yYm94MS4zLjkuanMnPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0ndGV4dC9qYXZhc2NyaXB0JyBzcmM9Jy8vZHk1dmd4NXl5amhvNS5jbG91ZGZyb250Lm5ldC92MS9qYXZhc2NyaXB0L3YxL3BsdWdpbnMvMTAtanF1ZXJ5dG9vbHMxLjIuNS5qcyc+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0nLy9keTV2Z3g1eXlqaG81LmNsb3VkZnJvbnQubmV0L3YxL2phdmFzY3JpcHQvdjEvcGx1Z2lucy8xNS1qcXVlcnl1aS0xLjguNS5qcyc+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0nLy9keTV2Z3g1eXlqaG81LmNsb3VkZnJvbnQubmV0L3YxL2phdmFzY3JpcHQvdjEvcGx1Z2lucy8xNi1hdXRvY29tcGxldGUuanM/dj0wNTA1MjAxMSc+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0nLy9keTV2Z3g1eXlqaG81LmNsb3VkZnJvbnQubmV0L3YxL2phdmFzY3JpcHQvdjEvcGx1Z2lucy8yMC1qc2Nyb2xscGFuZTIuMC4wLmpzJz48L3NjcmlwdD48c2NyaXB0IHR5cGU9J3RleHQvamF2YXNjcmlwdCcgc3JjPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvamF2YXNjcmlwdC92MS9wbHVnaW5zLzI1LXNjcm9sbHRvMS40LjIuanMnPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0ndGV4dC9qYXZhc2NyaXB0JyBzcmM9Jy8vZHk1dmd4NXl5amhvNS5jbG91ZGZyb250Lm5ldC92MS9qYXZhc2NyaXB0L3YxL3BsdWdpbnMvNTAtY291bnRkb3duLmpzJz48L3NjcmlwdD48c2NyaXB0IHR5cGU9J3RleHQvamF2YXNjcmlwdCcgc3JjPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvamF2YXNjcmlwdC92MS9wbHVnaW5zLzU1LWZvcnVtLmpzJz48L3NjcmlwdD48c2NyaXB0IHR5cGU9J3RleHQvamF2YXNjcmlwdCcgc3JjPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvamF2YXNjcmlwdC92MS9jb3JlLmRlYnVnLmpzJz48L3NjcmlwdD48c2NyaXB0IHR5cGU9J3RleHQvamF2YXNjcmlwdCcgc3JjPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvamF2YXNjcmlwdC92MS9mcm9udGNvcmUuZGVidWcuanM/dj0zJz48L3NjcmlwdD48bGluayBocmVmPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvc2l0ZXJlc291cmNlcy8xMDI4Ny92MS9mYXZpY29uLmljbycgcmVsPSdzaG9ydGN1dCBpY29uJyB0eXBlPSdpbWFnZS14aWNvbicgLz48bGluayBocmVmPScvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvdjEvc2l0ZXJlc291cmNlcy8xMDI4Ny92MS8xMDI4Ny5jc3MnIG1lZGlhPSdzY3JlZW4nIHR5cGU9J3RleHQvY3NzJyByZWw9J3N0eWxlc2hlZXQnIC8+PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0nLy9keTV2Z3g1eXlqaG81LmNsb3VkZnJvbnQubmV0L3YxL3NpdGVyZXNvdXJjZXMvMTAyODcvdjEvMTAyODcuanMnPjwvc2NyaXB0PmQCAg8WAh8ABZsEPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPg0KDQogIHZhciBfZ2FxID0gX2dhcSB8fCBbXTsNCiAgX2dhcS5wdXNoKFsnX3NldEFjY291bnQnLCAnVUEtMzQyNDg5NjYtMjEnXSk7DQogIF9nYXEucHVzaChbJ19zZXREb21haW5OYW1lJywgJ2RlamFybmV0dGUuY29tJ10pOw0KICBfZ2FxLnB1c2goWydfdHJhY2tQYWdldmlldyddKTsNCg0KICAoZnVuY3Rpb24oKSB7DQogICAgdmFyIGdhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7IGdhLnR5cGUgPSAndGV4dC9qYXZhc2NyaXB0JzsgZ2EuYXN5bmMgPSB0cnVlOw0KICAgIGdhLnNyYyA9ICgnaHR0cHM6JyA9PSBkb2N1bWVudC5sb2NhdGlvbi5wcm90b2NvbCA/ICdodHRwczovL3NzbCcgOiAnaHR0cDovL3d3dycpICsgJy5nb29nbGUtYW5hbHl0aWNzLmNvbS9nYS5qcyc7DQogICAgdmFyIHMgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07IHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoZ2EsIHMpOw0KICB9KSgpOw0KDQo8L3NjcmlwdD5kAgEPZBYKAgEPFgIfAGVkAgIPFgIfAAXzGjxkaXYgaWQ9J2hlYWRsaW5lV3JhcCc+PGRpdiBpZD0naGVhZGxpbmVOYXYnPjx1bD48bGkgb25jbGljaz0nc2V0SGVhZGxpbmUoMCk7Jz4xPC9saT48bGkgb25jbGljaz0nc2V0SGVhZGxpbmUoMSk7Jz4yPC9saT48bGkgb25jbGljaz0nc2V0SGVhZGxpbmUoMik7Jz4zPC9saT48bGkgb25jbGljaz0nc2V0SGVhZGxpbmUoMyk7Jz40PC9saT48bGkgb25jbGljaz0nc2V0SGVhZGxpbmUoNCk7Jz41PC9saT48L3VsPjwvZGl2PjxkaXYgY2xhc3M9ImhlYWRsaW5lQ29udGVudCBjbGVhcmZpeCI+PGRpdiBjbGFzcz0iaGVhZGxpbmVQaWMiPjxhIGhyZWY9Jy92ZW5kb3ItbmV1dHJhbC1hcmNoaXZlL2RlZmF1bHQuYXNweCcgPjxpbWcgYWx0PSdOZXcgUGFydG5lcnMnIHNyYz0iLy9keTV2Z3g1eXlqaG81LmNsb3VkZnJvbnQubmV0L2RpbWcvdjEvczU4NHgyMjUteEUyNWtNZEgzQjR4NDUwNzQuanBnIiAvPjwvYT48L2Rpdj48ZGl2IGNsYXNzPSJoZWFkbGluZVRleHQiPjxoND48YSBocmVmPScvdmVuZG9yLW5ldXRyYWwtYXJjaGl2ZS9kZWZhdWx0LmFzcHgnID5OZXcgUGFydG5lcnM8L2E+PC9oND48cD5EZUphcm5ldHRlIGV4cGFuZGVkIGl0cyBsaXN0IG9mIHBhcnRuZXJzIGZvbGxvd2luZyBSU05BIGFuZCBISU1TUy4gVGhlIHBhcnRuZXJzIGFyZSBzZWVpbmcgbmV3IG9wcG9ydHVuaXRpZXMgZm9yIFZOQSBzb2x1dGlvbnMgYW5kIGV4cGVjdCB0byBjbG9zZSBhIG51bWJlciBvZiBkZWFscyBmb3IgeERMIGFuZCBkYXRhIG1pZ3JhdGlvbiBwcm9qZWN0cy4gIEZvciBtb3JlIGluZm9ybWF0aW9uLCBjb250YWN0IHNhbGVzQGRlamFybmV0dGUuCgoKCjwvcD48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJoZWFkbGluZUNvbnRlbnQgY2xlYXJmaXgiPjxkaXYgY2xhc3M9ImhlYWRsaW5lUGljIj48YSBocmVmPScvYWJvdXQtdXMvY29tcGFueS1oaXN0b3J5L2RlZmF1bHQuYXNweCcgPjxpbWcgYWx0PSdGaXJzdCBUbyBNYXJrZXQuLi4nIHNyYz0iLy9keTV2Z3g1eXlqaG81LmNsb3VkZnJvbnQubmV0L2RpbWcvdjEvczU4NHgyMjUtblk4VDlpeUE2RDJreDQ1MzMzLmpwZyIgLz48L2E+PC9kaXY+PGRpdiBjbGFzcz0iaGVhZGxpbmVUZXh0Ij48aDQ+PGEgaHJlZj0nL2Fib3V0LXVzL2NvbXBhbnktaGlzdG9yeS9kZWZhdWx0LmFzcHgnID5GaXJzdCBUbyBNYXJrZXQuLi48L2E+PC9oND48cD5EZUphcm5ldHRlIGlzIGZpcnN0IHRvIG1hcmtldCB3aXRoIGFuIHhEUyBhbmQgWERTLUkgaW1hZ2UgYW5kIHJlcG9ydCBicm9rZXIgY2FsbGVkIHhEUiAoY3Jvc3MtZW50ZXJwcmlzZSBkb2N1bWVudCByb3V0ZXIpLiB4RFIgaXMgdGhlIG5leHQgc3RlcCBpbiBzdGFuZGFyZHMgYmFzZWQgaW1hZ2UgYW5kIHJlcG9ydCByb3V0aW5nIGJldHdlZW4gZGlzcGFyYXRlIHN5c3RlbXMsIHRoZSBsaWtlcyBvZiB3aGljaCB3aWxsIGNoYW5nZSBtZWRpY2FsIHdvcmtmbG93IGZvcmV2ZXIuCgoKCjwvcD48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJoZWFkbGluZUNvbnRlbnQgY2xlYXJmaXgiPjxkaXYgY2xhc3M9ImhlYWRsaW5lUGljIj48YSBocmVmPScvdmVuZG9yLW5ldXRyYWwtYXJjaGl2ZS93aGl0ZS1wYXBlcnMvZGVmYXVsdC5hc3B4JyA+PGltZyBhbHQ9J0ltYWdlcyBBbnl3aGVyZS4uLicgc3JjPSIvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvZGltZy92MS9zNTg0eDIyNS1qVzVNN2ZuUDI0YkRPNng0NTMzNi5qcGciIC8+PC9hPjwvZGl2PjxkaXYgY2xhc3M9ImhlYWRsaW5lVGV4dCI+PGg0PjxhIGhyZWY9Jy92ZW5kb3ItbmV1dHJhbC1hcmNoaXZlL3doaXRlLXBhcGVycy9kZWZhdWx0LmFzcHgnID5JbWFnZXMgQW55d2hlcmUuLi48L2E+PC9oND48cD5EZUphcm5ldHRlJ3MgeERMIGFuZCB4RFIgYXJlIG9uIHRoZSBmb3JlZnJvbnQgb2YgaW1hZ2UgYW5kIHJlcG9ydCBpbnRlcm9wZXJhYmlsaXR5LiBVc2luZyB0aGUgY29tcGFueSdzIHByb3ZlbiB0ZWNobm9sb2d5LCB0aGUgc21hbGxlc3QgaW1hZ2luZyBjZW50ZXIgdG8gdGhlIGxhcmdlc3QgSUROIG9yIGNvdW50cnkgY2FuIG5vdyBzdGFuZGFyZGl6ZSB0aGVpciBpbWFnaW5nIGFuZCBwYXRpZW50IG5lZWRzIG9uIGEgZ2xvYmFsIGJhc2lzLiBDb250YWN0IHNhbGVzQGRlamFybmV0dGUuY29tCgoKCjwvcD48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJoZWFkbGluZUNvbnRlbnQgY2xlYXJmaXgiPjxkaXYgY2xhc3M9ImhlYWRsaW5lUGljIj48YSBocmVmPScvdmVuZG9yLW5ldXRyYWwtYXJjaGl2ZS93aGl0ZS1wYXBlcnMvZGVmYXVsdC5hc3B4JyA+PGltZyBhbHQ9J1doaXRlIFBhcGVycycgc3JjPSIvL2R5NXZneDV5eWpobzUuY2xvdWRmcm9udC5uZXQvZGltZy92MS9zNTg0eDIyNS1BOHM5blJtUTM3d0ZjWTR4NDUzMzguanBnIiAvPjwvYT48L2Rpdj48ZGl2IGNsYXNzPSJoZWFkbGluZVRleHQiPjxoND48YSBocmVmPScvdmVuZG9yLW5ldXRyYWwtYXJjaGl2ZS93aGl0ZS1wYXBlcnMvZGVmYXVsdC5hc3B4JyA+V2hpdGUgUGFwZXJzPC9hPjwvaDQ+PHA+RG8geW91IGtub3cgd2hhdCBhIFZOQSBpcz8gRGVKYXJuZXR0ZSB3cm90ZSB0aGUgYm9vayBvbiBiZWluZyBuZXV0cmFsIHdpdGggb3ZlciAyNyB5ZWFycyBvZiBpbnRlcm9wZXJhYmlsaXR5IGV4cGVyaWVuY2UgY3JlYXRpbmcgdW5pcXVlIHdvcmtmbG93cyBiZXR3ZWVuIGRpc3BhcmF0ZSBtZWRpY2FsIHN5c3RlbXMuQ2xpY2sgb24gdGhpcyBwYW5lbCB0byBhY2Nlc3MgYWxsIHRoZSBpbmZvcm1hdGlvbiB5b3UgbmVlZCB0byBtYWtlIGFuZCBpbmZvcm1lZCBkZWNpc2lvbi4KCgoKPC9wPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9ImhlYWRsaW5lQ29udGVudCBjbGVhcmZpeCI+PGRpdiBjbGFzcz0iaGVhZGxpbmVQaWMiPjxhIGhyZWY9Jy9zb2x1dGlvbnMvcGFjc3dhcmUtc29sdXRpb24vZHlzZWN0L2RlZmF1bHQuYXNweCcgPjxpbWcgYWx0PSdBdXRvIENUIEJyZWFrLXVwJyBzcmM9Ii8vZHk1dmd4NXl5amhvNS5jbG91ZGZyb250Lm5ldC9kaW1nL3YxL3M1ODR4MjI1LVY3ZDR1SXdGNjNvUXg0NTMzOS5qcGciIC8+PC9hPjwvZGl2PjxkaXYgY2xhc3M9ImhlYWRsaW5lVGV4dCI+PGg0PjxhIGhyZWY9Jy9zb2x1dGlvbnMvcGFjc3dhcmUtc29sdXRpb24vZHlzZWN0L2RlZmF1bHQuYXNweCcgPkF1dG8gQ1QgQnJlYWstdXA8L2E+PC9oND48cD5XZWxjb21lIHRvIGR5c2VDVCB0aGUgb25seSBwYXRlbnRlZCBhdXRvbWF0ZWQgQ1QgYnJlYWstdXAgc29mdHdhcmUgaW4gdGhlIHdvcmxkLiBMb3cgY29zdCB3ZWIgYmFzZWQgR1VJIGFuZCBhbGwgdGhlIFF1YWxpdHkgQ29udHJvbCB5b3UgbmVlZCB0byBtYWtlIGltcG9ydGFudCBjbGluaWNhbCBkZWNpc2lvbnMuUHJvdmVuIHRlY2hub2xvZ3kgYnkgYSBwcm92ZW4gY29tcGFueS4gU29mdHdhcmUgbGljZW5zZSBub3cgJDUsMDAwIHBlciBDVCBzY2FubmVyLiBzYWxlc0BkZWphcm5ldHRlLmNvbQoKCgo8L3A+PC9kaXY+PC9kaXY+PC9kaXY+ZAIDD2QWAgIHD2QWAgIBDxYCHwBlZAIEDxYCHgdWaXNpYmxlZxYGAgEPZBYCZg9kFgICAQ8WAh8ABekCPGRpdiBjbGFzcz0icXVpY2tNZXNzYWdlIj48ZGl2IGNsYXNzPSdtZFdyYXAnPjxwPkRlSmFybmV0dGUgaGFzIG92ZXIgNCwwMDAgaW5zdGFsbGF0aW9ucyBpbiBpdHMgMjcgeWVhciBoaXN0b3J5LiBUaGUgbWFqb3JpdHkgb2YgdGhlc2UgYXJlIHRocm91Z2ggdGhlIHRpZXIgb25lIG1lZGljYWwgT0VNJ3MuICBPdXIgZm9jdXMgaGFzIGJlZW4gb24gd29ya2Zsb3cgYW5kIGludGVyb3BlcmF0YWJpbHR5IHNvbHV0aW9ucy4gVG9kYXksIHRoZSBjb21wYW55IGJvYXN0cyBzb21lIG9mIHRoZSBsYXJnZXN0IGluc3RhbGxhdGlvbnMgaW4gdGhlIGVtZXJnaW5nIFZlbmRvciBOZXV0YWwgQXJjaGl2ZSBzcGFjZS48L3A+CjwvZGl2PjwvZGl2PmQCAw8WAh8ABaEBPGRpdiBjbGFzcz0nZXZlbnRGZWVkV3JhcCc+PGRpdiBjbGFzcz0nZXZlbnRGZWVkJz48ZGl2IGNsYXNzPSdldmVudEZlZWRTdWInPjxoMj5VcGNvbWluZyBFdmVudHM8L2gyPjxwIGNsYXNzPSdlbXB0eUZlZWQnPk5vIHVwY29taW5nIGV2ZW50czwvcD48L2Rpdj48L2Rpdj48L2Rpdj5kAgUPZBYEAgEPDxYEHitOb0JvdF9SZXNwb25zZVRpbWVLZXlfY3RsMDAkcXVpY2tDb24kTm9Cb3QxBqm79f4k2tNIHilOb0JvdF9TZXNzaW9uS2V5S2V5X2N0bDAwJHF1aWNrQ29uJE5vQm90MQU5Tm9Cb3RfU2Vzc2lvbktleV9jdGwwMCRxdWlja0NvbiROb0JvdDFfNjM2MDkxODI0NzkwNTY2OTUzZBYCAgEPFgIeD0NoYWxsZW5nZVNjcmlwdAUDfjU2ZAIJDxYCHwFoFgICAQ8PFgIfAAUZTWVtYmVyc2hpcCBTaWdudXAgUmVxdWVzdGRkAgUPZBYCZg8WAh8ABYIBPHVsPjxsaSBjbGFzcz0nYWRkTGluZTEnPjQwMSBXYXNoaW5ndG9uIEF2ZS48L2xpPjxsaSBjbGFzcz0nYWRkTGluZTInPlN1aXRlIDEwMTA8L2xpPjxsaSBjbGFzcz0nYWRkTG9jJz5Ub3dzb24sIE1EIDIxMjA0PC9saT48L3VsPmRkmyIH9b127cvJ+tbP7kUKgMznPXg=" />
+
+
+<script src="/ScriptResource.axd?d=5dhWhMkh41cc4B37_-0LQYsUqZOOI1gL49yOI4UW-ByZfPgm6HSyIMnhpbdv_Uto35HrqGkYANDa6RmgQfTiGsGOE8VBacC7wYjW_4p0gpReAJcx0&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/default.aspx?_TSM_HiddenField_=ctl00_ToolkitScriptManager1_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.40412.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a1547e793-5b7e-48fe-8490-03a375b13a33%3aeffe2a26%3ae00da949" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwLTxtKUAQKW6orGCQLW8fqJCQL6kOn2AwK+kfS4CQLKrsW1DAKWkbruAyidDLeq1wN0oWwIRMMjWdZXvcpE" />
+	
+	
+	<div id="site">
+	<div id="siteSub">
+	<div id="siteWrapper">
+		<div id="frameWrap">
+			<div id="frame">
+				<div id="frameSub">
+					<div id="headerWrap">
+						<a id="logo" href="/" title='DeJarnette'>DeJarnette</a>						
+						<div id="mainNav" class="menu clearfix">
+							<ul class="clearfix">
+							<li id="homeNav"><a href="/">Home</a><span></span></li>
+							<li id="aboutNav"><a href="/about-us/default.aspx">About Us</a><span></span></li>
+							<li id="pressNav"><a href="/news/">News</a><span></span></li>
+							<li id="solutionsNav"><a href="/solutions/default.aspx">Solutions</a><span></span></li>
+							<li id="supportNav"><a href="/support/default.aspx">Support</a><span></span></li>
+							<li id="libraryNav"><a href="/library/default.aspx">Library</a><span></span></li>
+							<li id="eventsNav"><a href="/events/default.aspx">Events</a><span></span></li>
+							<li id="contactNav"><a href="/contact/">Contact Us</a></li>
+							</ul>
+						</div>
+						<div id="topBtns" class="clearfix">
+						    <span></span>
+						    <span id="btnSolutions"><a href="/solutions/default.aspx"></a></span>
+						    <span id="btnArchive"><a href="/vendor-neutral-archive/default.aspx">Click here to view the Vendor Neutral Archive - White Papers, Local Storage, Enterprise Storage, etc.</a></span>
+						    <span id="btnISO"><a href="/library/default.aspx">Click here to view DICOM, IHE, xDS, and xDS-I Conformance Information.</a></span>
+						</div>
+						<div id='headlineWrap'><div id='headlineNav'><ul><li onclick='setHeadline(0);'>1</li><li onclick='setHeadline(1);'>2</li><li onclick='setHeadline(2);'>3</li><li onclick='setHeadline(3);'>4</li><li onclick='setHeadline(4);'>5</li></ul></div><div class="headlineContent clearfix"><div class="headlinePic"><a href='/vendor-neutral-archive/default.aspx' ><img alt='New Partners' src="//dy5vgx5yyjho5.cloudfront.net/dimg/v1/s584x225-xE25kMdH3B4x45074.jpg" /></a></div><div class="headlineText"><h4><a href='/vendor-neutral-archive/default.aspx' >New Partners</a></h4><p>DeJarnette expanded its list of partners following RSNA and HIMSS. The partners are seeing new opportunities for VNA solutions and expect to close a number of deals for xDL and data migration projects.  For more information, contact sales@dejarnette.
+
+
+
+</p></div></div><div class="headlineContent clearfix"><div class="headlinePic"><a href='/about-us/company-history/default.aspx' ><img alt='First To Market...' src="//dy5vgx5yyjho5.cloudfront.net/dimg/v1/s584x225-nY8T9iyA6D2kx45333.jpg" /></a></div><div class="headlineText"><h4><a href='/about-us/company-history/default.aspx' >First To Market...</a></h4><p>DeJarnette is first to market with an xDS and XDS-I image and report broker called xDR (cross-enterprise document router). xDR is the next step in standards based image and report routing between disparate systems, the likes of which will change medical workflow forever.
+
+
+
+</p></div></div><div class="headlineContent clearfix"><div class="headlinePic"><a href='/vendor-neutral-archive/white-papers/default.aspx' ><img alt='Images Anywhere...' src="//dy5vgx5yyjho5.cloudfront.net/dimg/v1/s584x225-jW5M7fnP24bDO6x45336.jpg" /></a></div><div class="headlineText"><h4><a href='/vendor-neutral-archive/white-papers/default.aspx' >Images Anywhere...</a></h4><p>DeJarnette's xDL and xDR are on the forefront of image and report interoperability. Using the company's proven technology, the smallest imaging center to the largest IDN or country can now standardize their imaging and patient needs on a global basis. Contact sales@dejarnette.com
+
+
+
+</p></div></div><div class="headlineContent clearfix"><div class="headlinePic"><a href='/vendor-neutral-archive/white-papers/default.aspx' ><img alt='White Papers' src="//dy5vgx5yyjho5.cloudfront.net/dimg/v1/s584x225-A8s9nRmQ37wFcY4x45338.jpg" /></a></div><div class="headlineText"><h4><a href='/vendor-neutral-archive/white-papers/default.aspx' >White Papers</a></h4><p>Do you know what a VNA is? DeJarnette wrote the book on being neutral with over 27 years of interoperability experience creating unique workflows between disparate medical systems.Click on this panel to access all the information you need to make and informed decision.
+
+
+
+</p></div></div><div class="headlineContent clearfix"><div class="headlinePic"><a href='/solutions/pacsware-solution/dysect/default.aspx' ><img alt='Auto CT Break-up' src="//dy5vgx5yyjho5.cloudfront.net/dimg/v1/s584x225-V7d4uIwF63oQx45339.jpg" /></a></div><div class="headlineText"><h4><a href='/solutions/pacsware-solution/dysect/default.aspx' >Auto CT Break-up</a></h4><p>Welcome to dyseCT the only patented automated CT break-up software in the world. Low cost web based GUI and all the Quality Control you need to make important clinical decisions.Proven technology by a proven company. Software license now $5,000 per CT scanner. sales@dejarnette.com
+
+
+
+</p></div></div></div>
+					</div>
+					<div id="mainWrap" class="clearfix">
+					<div id="mainTop"></div><div id="mainBtm"></div>
+						<div id="main">
+
+							    
+							
+    <div class="mainBoxSub">
+        <h1 class='subHeading'>Home</h1>
+        <div class="subContent clearfix">
+            
+
+            
+            
+            <div id="ctl00_mainContent_homeFeeds" class="homeFeeds">
+                
+            </div>
+        </div>
+    </div>
+
+							<div id="ctl00_homeLower" class="homeLower clearfix">
+					    <div id="homeAboutWrap">
+					    <h2>About DeJarnette</h2>
+					    <div id="ctl00_aboutMess_messageDiv" class="quickMessageWrap">
+	
+            <div class="quickMessage"><div class='mdWrap'><p>DeJarnette has over 4,000 installations in its 27 year history. The majority of these are through the tier one medical OEM's.  Our focus has been on workflow and interoperatabilty solutions. Today, the company boasts some of the largest installations in the emerging Vendor Neutal Archive space.</p>
+</div></div>
+        
+</div>
+
+					    </div>
+					    <div class='eventFeedWrap'><div class='eventFeed'><div class='eventFeedSub'><h2>Upcoming Events</h2><p class='emptyFeed'>No upcoming events</p></div></div></div>
+					    
+					    
+					        
+<div class="setWrap quickContactWrap clearfix">                
+<div id="ctl00_quickCon_NoBot1">
+	<span id="ctl00_quickCon_NoBot1_NoBot1_NoBotLabel"></span><input type="hidden" name="ctl00$quickCon$NoBot1$NoBot1_NoBotExtender_ClientState" id="ctl00_quickCon_NoBot1_NoBot1_NoBotExtender_ClientState" />
+</div>
+    <h2>Contact Us</h2>
+    <fieldset id="contactSet" class="set">
+        <div class="fieldWrap" id="quickConName">
+            <label>Name</label>
+            <input name="ctl00$quickCon$txtFormName" type="text" maxlength="50" id="ctl00_quickCon_txtFormName" />
+        </div>
+   
+        <div class="fieldWrap" id="quickConEmail">
+            <label>Email</label>
+            <input name="ctl00$quickCon$txtFormEmail" type="text" maxlength="50" id="ctl00_quickCon_txtFormEmail" />
+        </div>
+        
+        <div id="ctl00_quickCon_quickConPhone" class="fieldWrap">
+            <label>Phone</label>
+            <input name="ctl00$quickCon$txtFormPhone" type="text" maxlength="50" id="ctl00_quickCon_txtFormPhone" />
+        </div>
+
+                
+        
+        <input name="ctl00$quickCon$txtChecker" type="text" id="ctl00_quickCon_txtChecker" class="txtSpamChecker" />
+        
+        <input type="hidden" name="inputCheck" id="inputCheck" value="notta" />
+        
+        <div class="buttonWrap">
+            <input type="submit" name="ctl00$quickCon$btnSend" value="Send" onclick="return validateQuickContact();" id="ctl00_quickCon_btnSend" class="btnSend" />
+        </div>
+    </fieldset> 
+</div>
+					    
+					    
+					</div>
+						</div>
+					</div>
+					<div id="footer">
+		<div id="footerSubWrap">
+		<div id="footerSub">
+		<div id="contactFeedWrap">
+								<ul><li class='addLine1'>401 Washington Ave.</li><li class='addLine2'>Suite 1010</li><li class='addLoc'>Towson, MD 21204</li></ul>
+							</div>
+			<div class="footMenu clearifx">
+				<ul>
+				            <li id="Li1"><a href="/">Home</a><span></span></li>
+				            <li id="Li8"><a href="/news/">News</a><span></span></li>				            
+							<li id="Li2"><a href="/about-us/default.aspx">About Us</a><span></span></li>
+							<li id="Li3"><a href="/solutions/default.aspx">Solutions</a><span></span></li>
+							<li id="Li4"><a href="/support/default.aspx">Support</a><span></span></li>
+							<li id="li5"><a href="/library/default.aspx">Library</a><span></span></li>
+							<li id="Li6"><a href="/events/default.aspx">Events</a><span></span></li>
+							<li id="Li7"><a href="/contact/">Contact Us</a></li>
+				</ul>
+			</div>
+			<div id="footerCopy">
+									<p>
+										&#169;2016
+										DeJarnette | All rights reserved </p>
+									<p id="dev">
+										Site Development by <a target="_blank" href="http://www.myracepass.com" title="Website Development">
+											MyRacePass</a> | <a href="/admin/signin.aspx">Admin</a>
+									</p>
+								</div>
+		</div>
+		</div>
+		</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+
+	
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ctl00_ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.NoBotBehavior, {"ChallengeScript":"~56","ClientStateFieldID":"ctl00_quickCon_NoBot1_NoBot1_NoBotExtender_ClientState","id":"ctl00_quickCon_NoBot1_NoBot1_NoBotExtender"}, null, null, $get("ctl00_quickCon_NoBot1_NoBot1_NoBotLabel"));
+});
+//]]>
+</script>
+</form>
+	
+</body>
+</html>

@@ -1,0 +1,653 @@
+status: 200
+content-location: http://www.scdit.com
+accept-ranges: bytes
+server: Apache
+date: Sun, 11 Sep 2016 10:14:22 GMT
+content-type: text/html
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SCD - Business IT Solutions & Services Company MD</title>
+		
+<meta name="description" content="Certified MBE/DBE/WBE - Information Technology Maryland & DC - 24/7 Desktop / Server Support - Office Cabling - Audio / Video / Security Systems" />
+
+<meta name="keywords" content="cabling, print, priters, copiers, IT, helpdesk, documentation, electrical, a/v, audio, video, small business, computer,network consulting,network support,computer repair,web design,managed services,printer services,printer maintenance,baltimore,chestertown,kent island,annapolis,easton,maryland,md, Allegany County, Anne Arundel County, Baltimore County, Baltimore City, Calvert County, Carroll County, Cecil County, Charles County, Frederick County, Garrett County, Harford County, Howard County, Montgomery County, Prince George's County, Saint Mary's County, Washington County, Washington D.C." />
+		
+		<link href="css/phone.css" rel="stylesheet" type="text/css" media="screen and (max-width: 800px)">
+		<link href="css/slippry.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="fonts/fonts.css" rel="stylesheet" type="text/css" media="screen">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="javascript/jquery.nicescroll.min.js" type="text/javascript"></script>
+		<script src="javascript/slippry.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src = "javascript/jquery.easing-1.3.js"></script>
+		
+		<script>
+			$(function() {
+				var demo1 = $("#demo1").slippry({
+					transition: 'horizontal',
+					useCSS: false,
+					speed: 1800,
+					pause: 7500,
+					slideMargin: 5,
+					auto: true,
+					hideOnEnd: false,
+					easing: 'easeOutQuart',
+					pager: false,
+					preload: 'visible'
+				});
+
+				$('.stop').click(function () {
+					demo1.stopAuto();
+				});
+
+				$('.start').click(function () {
+					demo1.startAuto();
+				});
+
+				$('.prev').click(function () {
+					demo1.goToPrevSlide();
+					return false;
+				});
+				$('.next').click(function () {
+					demo1.goToNextSlide();
+					return false;
+				});
+				$('.reset').click(function () {
+					demo1.destroySlider();
+					return false;
+				});
+				$('.reload').click(function () {
+					demo1.reloadSlider();
+					return false;
+				});
+				$('.init').click(function () {
+					demo1 = $("#demo1").slippry();
+					return false;
+				});
+			});
+		</script>		
+		
+		<script type="text/javascript">
+		    function changeBg()
+			{
+				var images = ['one.jpg', 'two.jpg', 'three.jpg'];
+				var url = 'img/' + images[Math.floor(Math.random() * images.length)];
+				$('#page_bg').css({'background-image': 'url(' + url + ')'});
+			}
+		</script>
+		
+	
+		<!--feed 1-->	
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+		google.load("feeds", "1");
+		function initialize() {
+		var feed = new google.feeds.Feed("http://online.wsj.com/xml/rss/3_7455.xml");
+		feed.setNumEntries(7);
+		feed.load(function(result) {
+			if (!result.error) {
+			  var container = document.getElementById("feed_1");
+			  for (var i = 0; i < result.feed.entries.length; i++) {
+				var entry = result.feed.entries[i];
+				var div = document.createElement("div");
+				div.setAttribute('class', 'rss_entry');
+				  
+			
+			var mylink = document.createElement("a");
+			mylink.setAttribute('href', entry.link);
+			mylink.setAttribute('target', '_blank');				  
+			mylink.innerHTML = entry.title;
+				div.appendChild(mylink);
+				container.appendChild(div);
+			  }
+			}
+		  });
+		}
+		google.setOnLoadCallback(initialize);
+		</script>	
+		
+			
+		<!--feed 2-->
+		<script type="text/javascript">
+		google.load("feeds", "1");
+		function initialize() {
+		var feed = new google.feeds.Feed("http://scdit.tumblr.com/rss");
+		feed.setNumEntries(3);
+		feed.load(function(result) {
+			if (!result.error) {
+			  var container = document.getElementById("corp_news");
+			  for (var i = 0; i < result.feed.entries.length; i++) {
+				var entry = result.feed.entries[i];
+				var div = document.createElement("div");
+				div.setAttribute('class', 'rss_entry');
+				  
+			
+			var mylink = document.createElement("a");
+			mylink.setAttribute('href', entry.link);
+			mylink.setAttribute('target', '_blank');
+			mylink.innerHTML = entry.title;
+				div.appendChild(mylink);
+				container.appendChild(div);
+			  }
+			}
+		  });
+		}
+		google.setOnLoadCallback(initialize);
+		</script>
+		
+		<!--feed -->
+		<script type="text/javascript">
+		google.load("feeds", "1");
+		function initialize() {
+		var feed = new google.feeds.Feed("http://scdjobs.tumblr.com/rss");
+		feed.setNumEntries(3);
+		feed.load(function(result) {
+			if (!result.error) {
+			  var container = document.getElementById("job_news");
+			  for (var i = 0; i < result.feed.entries.length; i++) {
+				var entry = result.feed.entries[i];
+				var div = document.createElement("div");
+				div.setAttribute('class', 'rss_entry');
+				  
+			
+			var mylink = document.createElement("a");
+			mylink.setAttribute('href', entry.link);
+			mylink.setAttribute('target', '_blank');
+			mylink.innerHTML = entry.title;
+				div.appendChild(mylink);
+				container.appendChild(div);
+			  }
+			}
+		  });
+		}
+		google.setOnLoadCallback(initialize);
+		</script>		
+		
+		<!--feed 3-->	
+		<script type="text/javascript">
+		google.load("feeds", "1");
+		function initialize() {
+		var feed = new google.feeds.Feed("http://feeds.wired.com/wiredenterprise/");
+		feed.setNumEntries(5);
+		feed.load(function(result) {
+			if (!result.error) {
+			  var container = document.getElementById("feed_3");
+			  for (var i = 0; i < result.feed.entries.length; i++) {
+				var entry = result.feed.entries[i];
+				var div = document.createElement("div");
+				div.setAttribute('class', 'rss_entry');
+				  
+			
+			var mylink = document.createElement("a");
+			mylink.setAttribute('href', entry.link);
+			mylink.setAttribute('target', '_blank');
+			mylink.innerHTML = entry.title;
+				div.appendChild(mylink);
+				container.appendChild(div);
+			  }
+			}
+		  });
+		}
+		google.setOnLoadCallback(initialize);
+		</script>	
+		
+		<!--feed 4-->	
+		<script type="text/javascript">
+		google.load("feeds", "1");
+		function initialize() {
+		var feed = new google.feeds.Feed("http://feeds.feedburner.com/TechCrunch/");
+		feed.setNumEntries(5);
+		feed.load(function(result) {
+			if (!result.error) {
+			  var container = document.getElementById("feed_4");
+			  for (var i = 0; i < result.feed.entries.length; i++) {
+				var entry = result.feed.entries[i];
+				var div = document.createElement("div");
+				div.setAttribute('class', 'rss_entry');
+				  
+			
+			var mylink = document.createElement("a");
+			mylink.setAttribute('href', entry.link);
+			mylink.setAttribute('target', '_blank');
+			mylink.innerHTML = entry.title;
+				div.appendChild(mylink);
+				container.appendChild(div);
+			  }
+			}
+		  });
+		}
+		google.setOnLoadCallback(initialize);
+		</script>	
+		
+
+	</head>
+	<body onload="changeBg();">
+		<div class="page_bg" id="page_bg"></div>
+		
+<!-- Begin Absolute Positioned Content -->
+
+			<div class="main_rotator_area">
+  
+				<section id="slippry-slider" class="full-width">
+					<ul id="demo1">
+
+					<li> 
+						<div class = 'slippry-slide-html' style = 'background: url(./img/slider/slide1_v2.png) no-repeat 50% 0; height:365px;'>
+							<div class="slide_text">
+							</div>
+						</div>
+					</li>
+						
+					<!--<li> 
+						<a class = 'slippry-slide-html' style = 'background: url(./img/slider/sp3.jpg) no-repeat 50% 0; border:none; height:365px; display:block' href="http://scdit.tumblr.com/post/86325123421/the-new-surface-pro-3-time-to-get-serious-about-tablet" target="_blank">
+							
+						</a>
+					</li>-->						
+						
+						
+					<li> 
+						<div class = 'slippry-slide-html' style = 'background: url(./img/slider/it.jpg) no-repeat 50% 0; height:365px;'>
+							<div class="slide_text">
+								Full support for your company’s technology needs.  Our Help Desk services and Proactive Monitoring solutions will give you a truly “Worry Free” experience.
+							</div>
+							<div class="slider_more_button_positioning">
+								<div class="slider_more_button"><a href="it_services.html">partition data</a></div><a href="mailto:scott.surguy@scdit.com" class="pocbutton" id="pocbuttonav" style="left: 900px; width: 150px;"><img src="./img/email_icon.png" class="pocbuttonimage">POC: Scott Surguy</a>
+							</div>
+						</div>
+					</li>
+						
+				    <li> 
+						<div class = 'slippry-slide-html' style = 'background: url(./img/slider/systemssupport.jpg) no-repeat 50% 0; height:365px;'>
+							<div class="slide_text" style="width:300px;">
+								Specialized solutions for Systems Engineering, Software Development, Database Administration, Cybersecurity, Cloud Technologies, and much more.
+							</div>							
+							<div class="slider_more_button_positioning">
+							<div class="slider_more_button"><a href="systems_support.html">begin development</a></div></div><a href="mailto:scott.surguy@scdit.com" class="pocbutton" id="pocbuttonav" style="left: 900px;  width: 150px;"><img src="./img/email_icon.png" class="pocbuttonimage">POC: Scott Surguy</a>
+						</div>
+					</li>
+
+				    <li> 
+						<div class = 'slippry-slide-html' style = 'background: url(./img/slider/av.jpg) no-repeat 50% 0; height:365px;'>
+							<div class="slide_text" style="width:450px;">
+								Video conferencing solutions that connects you, surveillance systems that keeps you safe, and audio systems that set the right mood - we offer solutions to enhance your facility with cutting edge audio video technology.
+							</div>							
+							<div class="slider_more_button_positioning">
+							<div class="slider_more_button" ><a href="audio_video.html">turn it up</a></div></div>
+                            <a href="mailto:scott.surguy@scdit.com" class="pocbutton" id="pocbuttonav" style="left: 900px; width: 150px;"><img src="./img/email_icon.png" class="pocbuttonimage">POC: Scott Surguy</a>
+						</div>
+					</li>
+					
+
+				    <li> 
+						<div class = 'slippry-slide-html' style = 'background: url(./img/slider/operationssupport.jpg) no-repeat 50% 0; height:365px;'>
+							<div class="slide_text">
+								Support for Training and Administration, Classroom Technologies and Environments, Programmatic Support, Distance Learning, and much more.
+							</div>							
+							<div class="slider_more_button_positioning">
+							<div class="slider_more_button"><a href="operations_support.html">administer training</a></div></div>
+                            <a href="mailto:scott.surguy@scdit.com" class="pocbutton" id="pocbuttonav" style="left: 900px; width: 150px;"><img src="./img/email_icon.png" class="pocbuttonimage">POC: Scott Surguy</a>
+						</div>
+					</li>	
+
+				    <li> 
+						<div class = 'slippry-slide-html' style = 'background: url(./img/slider/web.jpg) no-repeat 50% 0; height:365px;'>
+							<div class="slide_text">
+								Graphic and web design solutions ranging from custom designed websites, full rebranding and marketing campaigns, business cards, posters, magazine ads, and mailer pieces.  
+							</div>							
+							<div class="slider_more_button_positioning">
+							<div class="slider_more_button" ><a href="websites_marketing.html">build impressions</a></div></div>
+                            <a href="mailto:scott.surguy@scdit.com" class="pocbutton" id="pocbuttonav" style="left: 900px;  width: 150px;"><img src="./img/email_icon.png" class="pocbuttonimage">POC: Scott Surguy</a>
+						</div>
+					</li>
+
+				    <li> 
+						<div class = 'slippry-slide-html' style = 'background: url(./img/slider/techarch.jpg) no-repeat 50% 0; height:365px;'>
+							<div class="slide_text">
+								All encompassing solutions for cable infrastructure, access control, network hardware, systems security, and data center management.   
+							</div>							
+							<div class="slider_more_button_positioning">
+							<div class="slider_more_button"><a href="technical_architecture.html">innovate</a></div></div><a href="mailto:scott.surguy@scdit.com" class="pocbutton" id="pocbuttonav" style="left: 900px; width: 150px;"><img src="./img/email_icon.png" class="pocbuttonimage">POC: Scott Surguy</a>
+						</div>
+					</li>
+
+				    <li> 
+						<div class = 'slippry-slide-html' style = 'background: url(./img/slider/cabling.jpg) no-repeat 50% 0; height:365px;'>
+							<div class="slide_text">
+								Low voltage cabling services including the design and installation of voice and data distribution systems, copper and fiber and much more.   
+							</div>							
+							<div class="slider_more_button_positioning">
+							<div class="slider_more_button"><a href="unified_communications.html">get plugged in</a></div></div><a href="mailto:scott.surguy@scdit.com" class="pocbutton" id="pocbuttonav" style="left: 900px;  width: 150px;"><img src="./img/email_icon.png" class="pocbuttonimage">POC: Scott Surguy</a>
+						</div>
+					</li>
+
+					
+						
+				    <li> 
+						<div class = 'slippry-slide-html' style = 'background: url(./img/slider/languagesintel.jpg) no-repeat 50% 0; height:365px;'>
+							<div class="slide_text">
+								Full-service language and intelligence solutions. Providing linguists and analysts with expertise in various topic areas, disciplines and sources.
+							</div>
+							<div class="slider_more_button_positioning">
+							<div class="slider_more_button"><a href="language_intel.html">interpret info</a></div></div>
+                            <a href="mailto:scott.surguy@scdit.com" class="pocbutton" id="pocbuttonav" style="left: 900px; width: 150px;"><img src="./img/email_icon.png" class="pocbuttonimage">POC: Scott Surguy</a>
+						</div>
+					</li>
+				
+
+					</ul>
+				</section>
+
+			</div>
+			
+<!--			<div class="second_rotator_area" style="">
+
+							<div class="slider_more_button_positioning_2">
+							<div class="slider_more_button_2"><a href="http://www.google.com" style="pointer-events:all;">learn more about data backup and loss prevention</a></div></div>
+
+			</div> -->
+          
+			
+			<div class="news_area_width">
+				<div class="news_area">
+					<div class="rss_title" style="width:980px; float:left; padding-top:30px;">
+						technology news
+					</div>
+					<div class="column_1" style="width:306px; height:auto; float:left; padding-right:30px; padding-top:27px;">
+						<a href="http://online.wsj.com/home-page" style="border:none" target="_blank"><img src="img/site_logos/wall_street_journal.png" style="width:440px; margin-top:-15px; margin-left:-17px; margin-bottom:5px;"></a><div id="feed_1" class="feed"></div>
+
+					</div>
+					<div class="column_1" style="width:306px; height:auto; float:left; padding-right:30px; padding-top:30px;">
+						<a href="http://www.wired.com/wiredenterprise/" style="border:none" target="_blank"><img src="img/site_logos/wired.png" style="width:320px; margin-left:-13px; margin-bottom:10px; margin-top:-7px;"></a><div id="feed_3" class="feed"></div>
+						
+					</div>
+					<div class="column_1" style="width:306px; height:auto; float:left; padding-right:0px; padding-top:20px;">
+						<a href="http://allthingsd.com/" style="border:none" target="_blank"><img src="https://s3.amazonaws.com/postcard-social/techcrunch-logo@2x.png" style="width:270px; margin-top: -8px; margin-left:-10px; margin-bottom:-5px;"></a><div id="feed_4" class="feed"></div>
+					</div>
+					
+				</div>
+			</div>
+
+<!-- Begin Relative, Float Content -->
+			
+			<div class="center">
+				<div class="header">
+					<link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width: 801px)" id="changeme">
+<script type="text/javascript" src = "javascript/jquery.cookie.js"></script>
+<script>
+	jQuery(document).ready(function(){
+		if($.cookie("css")) {
+			$("#changeme").attr("href",$.cookie("css"));
+		}
+		$("#toggle_theme a").click(function() { 
+			$("#changeme").attr("href",$(this).attr('rel'));
+			$.cookie("css",$(this).attr('rel'), {expires: 365, path: '/'});
+			return false;
+		});	
+	});
+</script>
+
+<div id="toggle_theme"><a class="light" href="#" rel="http://www.scdit.com/css/style_white.css">Light Theme</a> / <a class="dark" href="#" rel="http://www.scdit.com/css/style.css">Dark Theme</a></div>
+
+<a class="logo" href="index.html"></a>
+<a name="top" id="top"></a>
+<div class="menu">	
+	<div class="menu_item_link"><a href="index.html">home</a></div>
+	<div class="menu_item_dropdown"><span style="cursor:default">commercial services</span>
+		<div class="menu_item_submenu">
+			<a href="managed_it_services.html">IT Services / Help Desk</a><br />
+	<a href="structured_office_it_cabling.html">Cabling Infrastructure</a><br />
+	<a href="unified_communications_gallery.html" style="padding-left:16px;"><span class="squeeze">></span>Cabling Photo Gallery</a><br />
+	<a href="audio_video.html">Audio / Video Solutions</a><br />
+    <a href="access_control_security.html">Access Control Security Solutions</a><br />
+	<a href="websites_marketing.html">Custom Websites and Marketing</a><br />
+
+		</div>
+	</div>
+	<div class="menu_item_dropdown"><span style="cursor:default">government services</span>
+		<div class="menu_item_submenu">
+			<a href="technical_architecture.html">Technical Architecture</a><br />
+	<a href="systems_support.html">Systems Support</a><br />
+	<a href="operations_support.html">Operations Support</a><br />
+	<a href="language_intel.html">Languages and Intel</a><br />
+
+		</div>
+	</div>
+	<div class="menu_item_dropdown"><span style="cursor:default">about us</span>
+		<div class="menu_item_submenu" style="width:200px;">
+			<a href="about_us.html">About SCDIT</a><br />
+	<a href="http://scdit.tumblr.com/" target="_blank">News Blog</a><br />
+	<a href="about_us.html#nonprofit">Non-Profit Work</a><br />
+	<a href="about_us.html#certifications">Certifications</a><br />
+	<a href="about_us.html#partnerships">Partnerships</a><br />
+	<a href="directory.html">Directory</a><br />
+	<a href="calendar.html">Calendar</a><br />
+
+	<a href="../employee_portal/" target="_blank">Employee Login</a><br />
+
+
+		</div>
+	</div>
+	<div class="menu_item_link"><a href="contact_us.html">contact us</a></div>
+	<div class="menu_item_link"><a href="http://scdjobs.tumblr.com/" target="_blank">jobs</a></div>
+</div>
+<div class="menu_clear"></div>
+
+
+
+<div class="mobile_menu">
+	<div class="menu_button">menu</div>
+	<div class="menu_content">
+		<a href="index.html">home</a><br />
+			<a href="managed_it_services.html">IT Services / Help Desk</a><br />
+	<a href="structured_office_it_cabling.html">Cabling Infrastructure</a><br />
+	<a href="unified_communications_gallery.html" style="padding-left:16px;"><span class="squeeze">></span>Cabling Photo Gallery</a><br />
+	<a href="audio_video.html">Audio / Video Solutions</a><br />
+    <a href="access_control_security.html">Access Control Security Solutions</a><br />
+	<a href="websites_marketing.html">Custom Websites and Marketing</a><br />
+
+			<a href="technical_architecture.html">Technical Architecture</a><br />
+	<a href="systems_support.html">Systems Support</a><br />
+	<a href="operations_support.html">Operations Support</a><br />
+	<a href="language_intel.html">Languages and Intel</a><br />
+
+			<a href="about_us.html">About SCDIT</a><br />
+	<a href="http://scdit.tumblr.com/" target="_blank">News Blog</a><br />
+	<a href="about_us.html#nonprofit">Non-Profit Work</a><br />
+	<a href="about_us.html#certifications">Certifications</a><br />
+	<a href="about_us.html#partnerships">Partnerships</a><br />
+	<a href="directory.html">Directory</a><br />
+	<a href="calendar.html">Calendar</a><br />
+
+	<a href="../employee_portal/" target="_blank">Employee Login</a><br />
+
+
+		<a href="contact_us.html">contact us</a><br />
+		<a href="http://scdjobs.tumblr.com/" target="_blank">jobs</a><br />	
+		
+	</div>
+	<div class="menu_section_floater_commercial">C<br />o<br />m<br />m<br />e<br />r<br />c<br />i<br />a<br />l</div>		
+	<div class="menu_section_floater_government">G<br />o<br />v<br />e<br />r<br />n<br />m<br />e<br />n<br />t</div>		
+</div>
+				</div>
+
+
+<!-- First 3 Column Area -->
+
+				<div class="three_column_area skip_news_section">
+					
+					<div class="three_column" style="margin-right:40px;">
+						<div class="three_column_title">
+							About Our Company
+						</div>
+						<div class="three_column_content" style="text-align:left">
+							SCD Information Technology exists to provide innovative and superior information technology solutions to business professionals in the MD, DC and Northern VA areas and government agencies nationwide CONUS/OCONUS. SCDIT is proud to be an SBA 8(a) and Maryland State Certified MBE / DBE / WBE.
+
+							We are a well-rounded IT company committed to providing an array of products and services designed to meet the long-term needs... &nbsp;&nbsp;<a style="color:#aaa; text-decoration:underline;" href="./about_us.html">read more</a>
+						</div>						
+					</div>
+
+					<div class="three_column" id="corp-news-bg" style="margin-right:40px;">
+
+						<div class="three_column_title" id="corp-news-title">
+							SCDIT News
+						</div>
+
+						<div class="three_column_content" style="">
+							<div id="corp_news" style="overflow:hidden; text-align:center;"></div>
+						</div>
+					</div>
+
+					<div class="three_column">
+						<div class="three_column_title">
+								Contact Info
+						</div>
+						<div class="three_column_content" style="line-height:24px;">
+							<span><a class="phone-icon" style="vertical-align:middle; margin-right:20px; margin-left:5px;"></a>410.290.1591 (Office)</span><br />
+							<span><a class="phone-icon" style="vertical-align:middle; margin-right:20px; margin-left:5px;"></a>1.855.710.3723 (Help Desk)<br />
+							<span><a class="phone-icon" style="vertical-align:middle; margin-right:20px; margin-left:5px;"></a>410.290.0875 (Help Desk)<br />
+							<span><a class="email-icon" style="vertical-align:middle; margin-right:20px; margin-left:5px;"></a>contact@scdit.com</span>	<br />					
+							<span><a class="fax-icon" style="vertical-align:middle; margin-right:20px; margin-left:5px;"></a>410.290.1908 (Fax)	<br />	
+							<span><a class="map-icon" style="vertical-align:middle; margin-right:20px; margin-left:5px;"></a>7161 Columbia Gateway Drive,<br><span style="vertical-align:middle; margin-left:46px;">Suite C</span><br /></span>
+							<span style="padding-left:40px; margin-left:5px;">Columbia, MD 21046</span>	<br />
+						<a href="https://www.google.com/maps/place/7161+Columbia+Gateway+Dr,+Columbia,+MD+21046/@39.1815419,-76.8100217,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7e08c170d2685:0xfd10bdd55311f03!8m2!3d39.1815419!4d-76.8078277" target="_blank" style=""><div class="map_preview_homepage" style=""></div></a>
+						</div>	
+					</div>
+				</div>
+
+
+<!-- Second 3 Column Area -->
+
+				<div class="three_column_area" style="margin-top:0px; margin-bottom:60px;">
+					<div class="three_column" style="margin-right:40px;">
+						<div class="three_column_title">
+							Our Certifications
+						</div>	
+						<div class="three_column_content">
+						<a href="http://www.sba.gov/category/navigation-structure/contracting/contracting-support-small-businesses/8a-business-developme" target="_blank"><img src="./img/scd_8a.png" style="margin-left:-11px; margin-bottom:5px;" border="none"></a>
+						<a href="http://www.mdot.maryland.gov/Office%20of%20Minority%20Business%20Enterprise/HomePage.html" target="_blank"><img src="./img/scd_mdot.png" style="margin-left:-11px; margin-bottom:5px;" border="none"></a>
+					
+						<a href="http://www.baltimorecity.gov/Government/AgenciesDepartments/Law/MinorityandWomensBusinessOpportunityOffice.aspx" target="_blank"><img src="./img/scd_mwboo.png" style="margin-left:-11px;  margin-bottom:-11px;" border="none"></a></br>
+						<a href="./about_us.html#certifications" style="color:#999; text-align:center; margin-top:15px; margin-bottom:-15px; font-size:10px; float:left; width:100%; ">View All Certifications<a>
+						</div>
+					</div>
+
+					<div class="three_column" style="margin-right:40px;">
+						<div class="three_column_title">
+							SCDIT Job Opportunities
+						</div>
+
+						<div class="three_column_content">
+							<div id="job_news" style="overflow:hidden"></div>
+							<a href="http://scdjobs.tumblr.com/" style="text-align:center; margin-top:15px; margin-bottom:-15px; float:left; width:100%;" target="_blank">View More<a>
+
+						</div>
+					</div>
+					
+					<div class="three_column">
+						<div class="three_column_title">
+								To Show Our Thanks
+						</div>
+						<div class="three_column_content" style="line-height:28px;">
+							<a href="contact_us.html?c=2"><img src="./img/referral.jpg" style="margin-left:-11px; margin-bottom:-19px;" class="thumbnail_pic" border="none"></a>
+							<!--<a href="#" target="_blank"><img src="./img/scd_connx.png" style="margin-left:-11px; margin-bottom:5px;" border="none"></a>
+						<a href="https://www.securepaynet.net/?prog_id=440848&ci=1767&" target="_blank"><img src="./img/scd_godaddy.png" style="margin-left:-11px; margin-bottom:5px;" border="none"></a>
+					
+						<a href="http://www.constantcontact.com/index.jsp?pn=scdit" target="_blank"><img src="./img/scd_constant_contact.png" style="margin-left:-11px;  margin-bottom:-11px;" border="none"></a>-->
+
+
+						</div>	
+					</div>
+				</div>
+
+				<div class="footer">
+						<div class="footer_logo"><a href="index.html" style="display:block; width:100%; height:100%; float:left;"></a></div>
+	<div class="footer_logo" style="display:none; -webkit-filter: blur(8px); opacity:.1; margin-left:110px;"></div>
+	<div class="footer_left_column">
+	7161 Columbia Gateway Drive, Suite C<br />
+	Columbia, MD 21046<br /><br />
+	410.290.1591 (Office)<br />
+	1-855-710-3723 (Help Desk, Toll-Free)<br />
+	410.290.0875 (Help Desk, Local)<br />
+	410.290.1908 (Fax)<br />
+		<a href="mailto:Contact@scdit.com" style="color:white; text-decoration:none;">Contact@scdit.com</a><br />
+	</div>
+	<div class="footer_links_title hide_mobile">Commerical Services</div>
+	<div class="footer_links hide_mobile" style="margin-left:310px;">
+		<a href="managed_it_services.html">IT Services / Help Desk</a><br />
+	<a href="structured_office_it_cabling.html">Cabling Infrastructure</a><br />
+	<a href="unified_communications_gallery.html" style="padding-left:16px;"><span class="squeeze">></span>Cabling Photo Gallery</a><br />
+	<a href="audio_video.html">Audio / Video Solutions</a><br />
+    <a href="access_control_security.html">Access Control Security Solutions</a><br />
+	<a href="websites_marketing.html">Custom Websites and Marketing</a><br />
+
+		<br>
+		<a href="./bids-verify.html">View Our Bids List <span style="font-size:9px;"> * password required</span></a>
+	</div>
+
+	<div class="footer_links_title hide_mobile" style="margin-left:549px;">Government Services</div>
+	<div class="footer_links hide_mobile" style="margin-left:554px;">
+			<a href="technical_architecture.html">Technical Architecture</a><br />
+	<a href="systems_support.html">Systems Support</a><br />
+	<a href="operations_support.html">Operations Support</a><br />
+	<a href="language_intel.html">Languages and Intel</a><br />
+
+	</div>	
+		
+	<div class="footer_links_title hide_mobile" style="margin-left:780px;">Links</div>
+	<div class="footer_links hide_mobile" style="margin-left:783px;">
+			<a href="about_us.html">About SCDIT</a><br />
+	<a href="http://scdit.tumblr.com/" target="_blank">News Blog</a><br />
+	<a href="about_us.html#nonprofit">Non-Profit Work</a><br />
+	<a href="about_us.html#certifications">Certifications</a><br />
+	<a href="about_us.html#partnerships">Partnerships</a><br />
+	<a href="directory.html">Directory</a><br />
+	<a href="calendar.html">Calendar</a><br />
+
+	<a href="../employee_portal/" target="_blank">Employee Login</a><br />
+
+
+		<a href="http://scdjobs.tumblr.com/" target="_blank">Employment</a><br />
+		<a href="./contact_us.html">Contact Us</a><br />
+
+		<div style="position:absolute; left:-480px; bottom:-5px; width:400px; height:auto; float:left;" id="social_links">
+			<a href="http://scdit.tumblr.com/" target="_blank" id="tumblrlink" title="SCD News Blog" ><img src="./img/tumblr.png" style="width:30px;"><a/>
+			<a href="https://www.facebook.com/pages/SCD-Information-Technology/124272457586358" id="facebooklink" title="Facebook" target="_blank" style="margin-right:4px;"><img src="./img/facebook.png" style="width:30px;"></a>
+			<a href="https://twitter.com/scdit" target="_blank" style="margin-right:4px;" id="twitterlink" title="Twitter"><img src="./img/twitter.png" style="width:30px; height:30px;"></a>
+			<a href="http://www.linkedin.com/company/122008?trk=tyah&trkInfo=tas%3Ascd%2Cidx%3A1-3-3" title="LinkedIn" target="_blank" id="linkedinlink" ><img src="./img/linkedin.png" style="width:30px;"><a/>
+			
+
+				<a id="return_to_top_footer" style="position:relative; text-align:center; height:23px; width:100px; line-height:24px; margin-top:3px; margin-left:65px; padding-right:5px; font-weight:normal;" class="return_to_top" href="#top">Return To Top</a>
+
+		</div>
+
+	</div>				
+	
+	<a id="page_bottom" class="section_anchor"></a>
+		
+	<div class="copyright_notice"><span style="font-size:17px;">©</span> 2016 SCD Information Technology, all rights reserved</div>
+		
+
+				</div>
+			</div>
+						
+						<a id="tech_access_link" href="https://secure.logmeinrescue.com/Customer/Code.aspx" target="_blank">Tech Access</a>	
+						
+						
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2136706-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+						
+	</body>
+</html>

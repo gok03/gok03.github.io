@@ -1,0 +1,53 @@
+status: 200
+content-length: 1296
+content-location: http://www.axen.pro
+-content-encoding: gzip
+x-powered-by: ASP.NET
+set-cookie: ARRAffinity=cf638a3f49ccb0641f69a7efac997af5a351742600dcabb7f6cc15c291aad411;
+ Path=/; Domain=www.axen.pro
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Microsoft-IIS/8.0
+last-modified: Fri, 24 Jan 2014 23:02:31 GMT
+etag: "b44415c5819cf1:0"
+date: Fri, 09 Sep 2016 09:15:53 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<html>
+<head>
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+</head>
+<body>
+  <script language="Javascript"> 
+  
+                var pais = geoplugin_countryCode(); 
+    var sitio= "";
+                  
+                               switch(pais)
+                {
+                case "MX" : case  "MEX" :
+                
+                  sitio = "/mex/es/";
+                  
+                  break;
+                  
+                case "USA":       case "US":
+                    sitio = "/usa/";
+                  break;
+                
+                case  "ANT": case "AN": case "BHS": case "BS": case "BRB": case "BB": case "CUB": case "CU": case "DMA": case "DM": case "GRD": case "GD": case "HTI": case "HT": case "JAM": case "JM": case "DOM": case "DO": case "KNA": case "KN": case "VCT": case "VC": case "LCA": case "LC": case "TTO": case "TT": case "PRI": case "PR":
+                    sitio = "/car/";
+                  break;
+                  
+                  
+                default:
+                    sitio = "/usa/";
+                }
+                
+                
+                window.location.replace(sitio);
+                
+  </script>
+</body>
+</html>

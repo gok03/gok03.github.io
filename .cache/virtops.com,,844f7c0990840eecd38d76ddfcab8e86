@@ -1,0 +1,266 @@
+status: 200
+content-length: 21669
+content-location: http://virtops.com/
+x-powered-by: PHP/5.3.29
+server: nginx/1.8.1
+connection: keep-alive
+-content-encoding: gzip
+link: <http://virtops.com/>; rel=shortlink
+date: Thu, 20 Oct 2016 15:36:59 GMT
+content-type: text/html; charset=UTF-8
+x-pingback: http://virtops.com/xmlrpc.php
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ie ie6 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 7 ]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ie ie7 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 8 ]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE 9 ]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ie ie9 lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js"><!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta property="og:title" content="Home" />
+		<meta property="og:url" content="http://virtops.com/" />
+		<meta name="google-site-verification" content="1RZnUWmrDNgC0IcLEWNXR5p2GcYCCTz6a31SbwuHw4k" />
+		
+		<title>Orlando IT Technology Support Partner</title>
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="stylesheet" href="http://virtops.com/wp-content/themes/dp-vitrualoperations/style.css" />
+		<link rel="pingback" href="http://virtops.com/xmlrpc.php" />
+		<link rel="icon" type="image/png" href="http://virtops.com/wp-content/themes/dp-vitrualoperations/img/fav.png" />
+
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.0.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Virtual Operations based in Orlando is the premier IT technology and support partner for companies ranging from small business to Fortune 500."/>
+<link rel="canonical" href="http://virtops.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Orlando IT Technology Support Partner" />
+<meta property="og:description" content="Virtual Operations based in Orlando is the premier IT technology and support partner for companies ranging from small business to Fortune 500." />
+<meta property="og:url" content="http://virtops.com/" />
+<meta property="og:site_name" content="Virtual Operations" />
+<meta property="og:image" content="http://virtops.com/wp-content/uploads/2015/01/home-hero-bg.v21.jpg" />
+<script type='application/ld+json'>{ "@context": "http://schema.org","@type": "WebSite","url": "http://virtops.com/","potentialAction": {"@type": "SearchAction","target": "http://virtops.com/?s={search_term}","query-input": "required name=search_term"}}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Virtual Operations &raquo; Home Comments Feed" href="http://virtops.com/home/feed/" />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://virtops.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='stylesheet-normalize-css'  href='http://virtops.com/wp-content/themes/dp-vitrualoperations/stylesheets/normalize.css?ver=4.1.13' type='text/css' media='all' />
+<script type='text/javascript' src='http://virtops.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://virtops.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cssTarget = "img.";
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://virtops.com/wp-content/plugins/svg-support/js/svg-inline.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://virtops.com/wp-content/themes/dp-vitrualoperations/js/custom.js?ver=4.1.13'></script>
+<script type='text/javascript' src='http://virtops.com/wp-content/plugins/constant-contact-api/lib/form-designer/js/cc-widget.js?ver=4.1.13'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://virtops.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://virtops.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1.13" />
+<link rel='shortlink' href='http://virtops.com/' />
+        <script src="//use.typekit.net/ttf5mdt.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+	</head>
+	<body class="home page page-id-22 page-template-default" ontouchstart="">
+		
+		<header role="banner" id="header" >
+			<div class="container-header-content">
+				<a class="container-logo" href="http://virtops.com">
+					<img class="logo-color" src="http://virtops.com/wp-content/themes/dp-vitrualoperations/img/header-logo.svg" alt=""/>
+					<img class="logo-white" src="http://virtops.com/wp-content/themes/dp-vitrualoperations/img/vo-logo-white.svg"/>
+				</a>
+				<div id='container-header-menu' class="container-header-menu">
+					<div class="menu-header"><ul id="menu-main" class="menu"><li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="http://virtops.com/about-us/">About Us</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="http://virtops.com/it-services/">IT Services</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="http://virtops.com/testimonials/">Testimonials</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="http://virtops.com/blog/">Blog</a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="http://virtops.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="tel:407.268.6626">407.268.6626</a></li>
+</ul></div>				</div>
+			</div>
+		</header>
+<div class="container-home-content">
+    <div class="hero-container-default" style="background-image:url('http://virtops.com/wp-content/uploads/2015/01/home-hero-bg.v21.jpg');" ><div class="content">
+            <h1>
+                We take care of the technology,
+                <br/>
+                so you can focus on your success.
+            </h1>
+            <ul class="container-home-hero-services-content">
+                <li>
+                    Managed Services
+                </li>
+                <li>
+                    Security
+                </li>
+                <li>
+                    Cloud Infrastructure
+                </li>
+                <li>
+                    Backup & Recovery
+                </li>
+                <li>
+                    IT Planning
+                </li>
+                <li>
+                    Customized Services
+                </li>
+            </ul>
+            <a class="button" href="http://virtops.com/it-services/">See a Full List of Our Services</a></div></div>        <div class="container-cta-buttons">	<div class="container-cta left">                    <a href="http://virtops.com/network-assessment/">                Register For a Free Network Assessment            </a>        	</div>	<div class="container-cta right">                    <a href="http://virtops.com/guaranteed-results/">                See our 100% Satisfaction Guarantee            </a>        	</div></div>    <div class="container-home-section-partner">
+        <div class="container-home-section-partner-content">
+            <h1>
+                Your Technology Partner
+            </h1>
+            <p>
+                We are dedicated to the continuing growth and efficiency of your company.  Our adherence to rigorous process and methodologies, as well as our expertise in implementing the latest technologies, ensures that only the best solutions are provided to meet your IT needs.  As one of Orlando’s top choice for digital media and software development companies, Virtual Operations can be your choice too.            </p>
+        </div>
+    </div>
+    <div id="container-home-client-experience" class="container-home-client-experience">
+        <h1>
+            Client Experience
+        </h1>
+        <ul>
+                                                                <li class="icon-clientele fade-in-top">
+                        <a>
+                            <img src="http://virtops.com/wp-content/uploads/2015/01/home-icon-iron-galaxy.png" alt="Logo of Iron Galaxy"/>
+                        </a>
+                    </li>
+                                                        <li class="icon-clientele fade-in-bottom">
+                        <a>
+                            <img src="http://virtops.com/wp-content/uploads/2015/01/home-icon-n-space.png" alt="Logo of n Space"/>
+                        </a>
+                    </li>
+                                                        <li class="icon-clientele fade-in-top">
+                        <a>
+                            <img src="http://virtops.com/wp-content/uploads/2015/01/home-icon-launch-that.png" alt="Logo of Launch that"/>
+                        </a>
+                    </li>
+                                                        <li class="icon-clientele fade-in-bottom">
+                        <a>
+                            <img src="http://virtops.com/wp-content/uploads/2015/01/home-icon-canvs.png" alt="Logo of Canvs"/>
+                        </a>
+                    </li>
+                                                        </ul>
+    </div>
+        
+            <div class="container-testimonial">
+                <div class="container-testimonial-bg">
+                    <p>
+                        We recently had a critical IT emergency and contacted Virtual Operations to help. They immediately responded with a well laid out plan and dispatched a group of seasoned IT professionals. Their team quickly resolved all of our issues, clearly communicating their...
+                    </p>
+                    <a class="button-borderless" href="http://virtops.com/testimonials/">
+                        Read More
+                    </a>
+                </div>
+                <div class="passage-signature">
+                    Dan Tudge
+                    <span class="position-title">
+                        N-Space Inc.
+                    </span>
+                </div>
+            </div></div>
+		<div class="container-email-subscription">    	<h2>Subscribe to Email Updates</h2>	    <div class="kws_form gform_wrapper" id="cc_form_1"> <form id="constant-contact-signup-1" action="/" method="post">  <div class="kws_input_fields gform_fields"><div class='cc_email_address kws_input_container gfield'><input type='text' value='' placeholder='email*' name='fields[email_address][value]' class='t required' id='cc_5020312c46_email_address' /> <input type="hidden" name="fields[email_address][req]" value="1" /> </div><div class='cc_Go kws_input_container gfield'> <label for='cc_5020312c46_Go' class=''> <input type='submit' value='Subscribe' class='b button' id='cc_5020312c46_Go' name='constant-contact-signup-submit' > <div class='kws_clear'></div> </label> </div><input type="hidden" value="1390064715" name="lists[]" />
+ <input type='submit' style='position:absolute; width:0;height:0;left:-9999px;' name='constant-contact-signup-submit' /> </div>
+	        <div>
+	            <input type="hidden" id="cc_redirect_url" name="cc_redirect_url" value="" />
+	            <input type="hidden" id="cc_referral_url" name="cc_referral_url" value="%2F" />
+	            <input type="hidden" name="cc_referral_post_id" value="22" />
+	            <input type="hidden" name="uniqueformid" value="5020312c46" />
+	            <input type="hidden" name="ccformid" value="1" />
+	        </div>  <div class="kws_clear"></div>  <!-- Form Generated by the Constant Contact API WordPress Plugin by Katz Web Services, Inc. --> </form> </div><!--	<form>--><!--		<input type="text" placeholder="Email*">--><!--		<input type="submit" value="Subscribe">--><!--	</form>-->    </div>
+		<footer role="contentinfo">
+			<div class="container-footer-content">
+				<a href="http://virtops.com" class="container-footer-logo">
+					<img src="http://virtops.com/wp-content/themes/dp-vitrualoperations/img/vo-logo-black.svg"/>
+				</a>
+				<div class="menu-footer"><ul id="menu-main-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="http://virtops.com/about-us/">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="http://virtops.com/it-services/">IT Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="http://virtops.com/testimonials/">Testimonials</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="http://virtops.com/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="http://virtops.com/contact-us/">Contact Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="tel:407.268.6626">407.268.6626</a></li>
+</ul></div>				<div class="container-social-bar">
+					<a target="_blank" href="https://www.facebook.com/VirtualOperations" class="social-anchor facebook">
+						<img src="http://virtops.com/wp-content/themes/dp-vitrualoperations/img/social/facebook.svg"/>
+					</a>
+					<a target="_blank" href="https://twitter.com/VirtOpsIT" class="social-anchor twitter">
+						<img src="http://virtops.com/wp-content/themes/dp-vitrualoperations/img/social/twitter.svg"/>
+					</a>
+					<a target="_blank" href="https://plus.google.com/+VirtopsIT/posts" class="social-anchor google-plus">
+						<img src="http://virtops.com/wp-content/themes/dp-vitrualoperations/img/social/google.svg"/>
+					</a>
+					<a target="_blank" href="https://www.youtube.com/channel/UC5jfamOSDreVSy69gUt7PUw" class="social-anchor youtube">
+						<img src="http://virtops.com/wp-content/themes/dp-vitrualoperations/img/social/youtube.svg"/>
+					</a>
+					<a target="_blank" href="https://www.linkedin.com/company/virtual-operations" class="social-anchor linkedin">
+						<img src="http://virtops.com/wp-content/themes/dp-vitrualoperations/img/social/linkedin.svg"/>
+					</a>
+				</div>
+				<div class="container-footer-links">
+					<a>
+						Copyright 2016 Virtual Operations LLC All Rights Reserved
+					</a>
+					<a class="phone-number" href="tel:407.268.6626">
+						407.268.6626					</a>
+					<a class="address-line-1" target="_blank" href="https://www.google.com/maps/place/101+S+Garland+Ave+%23108,+Orlando,+FL+32801/@28.540941,-81.381257,17z/data=!3m1!4b1!4m2!3m1!1s0x88e77affb35f0db5:0xfb58711493e13792">
+						101 S Garland Ave. #108
+<!--					</a>-->
+<!--					<a class="address-line-2" href="#">-->
+						Orlando, FL 32801
+					</a>
+					<a class="email" href="mailto:info@virtops.com">
+						info@virtops.com
+					</a>
+					<a class="privacy-policy" href="http://virtops.com/privacy-policy/">
+						Privacy Policy
+					</a>
+					<a class="conduct-code" href="http://virtops.com/code-of-conduct/">
+						Code of Conduct
+					</a>
+				</div>
+				<div class="container-login">
+					<div id="dp">
+						<a href="http://www.dppad.com/" target="_blank" id="dp-powered">Powered by</a>
+						<a href="http://virtops.com/wp-admin" id="dp-login">Login</a>
+					</div>
+				</div>
+
+			</div>
+
+		</footer><!-- footer -->
+
+		<div class="ie8-disclaimer">
+			<h1>It appears you are viewing this site through an obsolete web browser.</h1>
+			<p>This site was built to comply with modern web standards and relies on features unavailable in browsers that are out of date.</p>
+			<p>You can learn more about your browser <a href="http://theie8countdown.com/" target="_blank">here</a>. And you can learn more about modern web browsers <a href="http://whatbrowser.org/" target="_blank">here</a>.</p>
+
+			<h2>To hide this notice, <a href="#hide">click here</a>.</h2>
+		</div>
+		<script type='text/javascript' src='http://virtops.com/wp-includes/js/comment-reply.min.js?ver=4.1.13'></script>
+<script type='text/javascript' src='http://virtops.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/virtops.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://virtops.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.1.1'></script>
+<script type='text/javascript' src='http://virtops.com/wp-content/plugins/constant-contact-api/lib/form-designer/js/jquery.placeholder.min.js'></script>
+
+
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45955367-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2397c60950","applicationID":"4042764","transactionName":"ZlJUMkAADxJZUxcNWF8YdwVGCA4PF1kNAFJJ","queueTime":0,"applicationTime":763,"atts":"ShVXRAgaHBw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>

@@ -1,0 +1,210 @@
+status: 200
+content-location: http://www.autocheckauctions.com/ACAOnline/
+server: Apache
+connection: close
+date: Sun, 11 Sep 2016 10:34:22 GMT
+content-type: text/html;charset=UTF-8
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="keywords" content="">
+    <title>Welcome to AutoCheck Auctions Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/ACAOnline/static/images/logos/ACAOnline.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/ACAOnline/static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/ACAOnline/static/css/styleHeaderFooter.css" type="text/css">
+    <link rel="stylesheet" href="/ACAOnline/static/css/styleHelpDesk.css" type="text/css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="/ACAOnline/static/css/styleIE.css" type="text/css">
+    <![endif]-->
+
+
+
+    <script language="JavaScript" type="text/javascript" src="/ACAOnline/static/js/menuBar.js"></script>
+    <!--[if lt IE 9]>
+<script defer type="text/javascript" src="/ACAOnline/static/js/pngfix.js"></script>
+<![endif]-->
+
+    
+    <meta name="layout" content="main"/>
+
+    
+    
+    <script src="/ACAOnline/static/plugins/jquery-1.7.1/js/jquery/jquery-1.7.1.min.js" type="text/javascript" ></script>
+<link href="/ACAOnline/static/plugins/jquery-ui-1.8.15/jquery-ui/themes/ui-lightness/jquery-ui-1.8.15.custom.css" type="text/css" rel="stylesheet" media="screen, projection" />
+<script src="/ACAOnline/static/plugins/jquery-ui-1.8.15/jquery-ui/js/jquery-ui-1.8.15.custom.min.js" type="text/javascript" ></script>
+
+</head>
+
+<body onload="MM_preloadImages(&#39;/ACAOnline/static/images/menuBar/homeRollover.jpg&#39;, &#39;/ACAOnline/static/images/menuBar/myAccountRollover.jpg&#39;, &#39;/ACAOnline/static/images/menuBar/helpDeskRollover.jpg&#39;, &#39;/ACAOnline/static/images/menuBar/fHReportsRollover.jpg&#39;, &#39;/ACAOnline/static/images/menuBar/batchReportsRollover.jpg&#39;, &#39;/ACAOnline/static/images/menuBar/aboutUsRollover.jpg&#39;)">
+<div id="container">
+    <div id="header">
+        <img class="acaLogo" src="/ACAOnline/static/images/logos/ACABanner.jpg">
+        
+        <img class="auctionPic" src="/ACAOnline/static/images/auctionPics/headerPic1.jpg">
+
+    
+
+        
+    </div>
+    
+
+<img class="auctionPicLane" src="/ACAOnline/static/images/auctionPics/auctionPicLane.jpg">
+
+<div id="titledContentWrapper">
+    <h4 class="titledContentTitle">Auto Auction Login</h4>
+
+    <div class="titledContent">
+
+        <form action="/ACAOnline/login/login" method="post" >
+            <div id="loginTextBoxControl">
+                <div class="errorText">
+                    <div class="errorMessageInvalid">
+                        <ul class="errorMessage">
+                            <li><span></span></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div id="helpHover"></div>
+
+                <div class="textBoxPadding">
+                    <div class="bodyTextBold">Customer ID</div>
+
+                    <div class="errorText">
+                        <div class="errorMessageLogin">
+                            <ul class="errorMessage">
+                                <li><span></span></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <input type="text" class="inputBox" name="loginName" id="memberName" label="Member Name" maxlength="8" tabindex="1" style="float:left; width: 88%;" value="" />
+                    <a href="#" class="helpBox" style="padding-left: 5px;"><img
+                            src="/ACAOnline/static/images/buttons/infoIcon.jpg"><span class="tooltip"><span
+                            class="top"></span><span
+                            class="middle">Customer ID can be upper or lower case.</span><span
+                            class="bottom"></span></span></a>
+                </div>
+                <script type="text/javascript" language="JavaScript">
+                    document.getElementById('memberName').focus();
+                </script>
+
+                <div class="textBoxPadding">
+                    <div class="bodyTextBold">Password</div>
+
+                    <div class="errorText">
+                        <div class="errorMessageLogin">
+                            <ul class="errorMessage">
+                                <li><span></span></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <input type="password" class="inputBox" name="password" id="password" label="Password" tabindex="2" style="float:left; width: 88%;" autocomplete="off" value="" />
+                    <a href="#" class="helpBox" style="padding-left: 5px;"><img
+                            src="/ACAOnline/static/images/buttons/infoIcon.jpg"><span class="tooltip"><span
+                            class="top"></span><span class="middle">Password is case sensitve.</span><span
+                            class="bottom"></span></span></a>
+                </div>
+                <input type="image" alt="Continue" src="/ACAOnline/static/images/buttons/loginButton.jpg"
+                       id="login_0" value="Submit" tabindex="3"/>
+
+            </div>
+
+            <div id="titledVINReqWrapper">
+                <h4 class="titledContentTitle">Request a Full History Report</h4>
+
+                <div class="titledVINReq">
+
+                    <div id="loginTextBoxControl">
+                        <div class="textBoxPadding">
+                            <div class="bodyTextBold">VIN</div>
+                            <input type="text" class="inputBox" name="singleVin" id="vin" label="VIN" maxlength="17" tabindex="4" style="float:left; width: 88%;" value="" />
+                            <a href="#" class="helpBox" style="padding-left: 5px;"><img
+                                    src="/ACAOnline/static/images/buttons/infoIcon.jpg"><span
+                                    class="tooltip"><span
+                                        class="top"></span><span
+                                        class="middle">You must enter your Customer ID & Password</span><span
+                                        class="bottom"></span></span></a>
+                        </div>
+                        <input type="image" alt="Continue"
+                               src="/ACAOnline/static/images/buttons/submitButton.jpg" id="login_2"
+                               value="Submit" tabindex="5"/>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div id="ad">
+    <object width="229" height="601" type="application/x-shockwave-flash"
+        data="/ACAOnline/ads" id="adColumn">
+    <param name=movie value="/ACAOnline/ads">
+    <param name=quality value=high>
+    <param name=bgcolor value=#FFFFFF>
+    <embed href="/ACAOnline/ads" quality="high" bgcolor="#FFFFFF" width="229"
+           height="601" name="adColumn1"
+           align="" type="application/x-shockwave-flash"
+           pluginspace="http://www.macromedia.com/go/getflashplayer"></embed>
+</object>
+</div>
+
+<div id="smallContentBox">
+    <div class="contentText">
+        <div class="boxText"><span class="boxBlueHeader">Save Time and Money</span><br/>
+            Now your auction can catch vehicles that deserve a closer look without having to run a full history on
+            every consigned vehicle. The FreeView report will give you a list of vehicles with accident data, theft,
+            taxi, rental and additional information that could cause potential arbitration problems. We will return
+            a list of VINs that do not show up on your Exception Report but have problems you want to know about.
+            Call 1-800-332-2608 for more information.
+        </div>
+    </div>
+</div>
+
+    <div class="footer" role="contentinfo"></div>
+
+    <div id="spinner" class="spinner" style="display:none;">Loading&hellip;</div>
+    
+    <script src="/ACAOnline/static/js/application.js" type="text/javascript" ></script>
+
+    
+        <div id="footerIndex">
+            <div class="footerText">
+    <p><b>Not an auction? Dealers <a href="http://www.autocheckmembers.com">register here.</a>
+        Consumers <a href="http://www.autocheck.com">register here.</a></b></p>
+    <br/>
+
+    <p>&copy; Red Mountain Technologies, LLC. All rights reserved.</p>
+</div>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://webanalytics.autotec.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 6]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="https://webanalytics.autotec.com/piwik.php?idsite=6" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+        </div>
+    
+
+</div>
+
+</body>
+</html>

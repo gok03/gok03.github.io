@@ -1,0 +1,197 @@
+status: 200
+content-length: 5076
+content-location: http://www.7bsoftware.com
+accept-ranges: bytes
+server: Apache/2.0.54 (Unix) mod_perl/1.99_09 Perl/v5.8.0 mod_ssl/2.0.54
+ OpenSSL/0.9.7a DAV/2 FrontPage/5.0.2.2635 PHP/4.4.0 mod_gzip/2.0.26.1a
+last-modified: Wed, 08 Jul 2015 16:57:33 GMT
+etag: "40150844-13d4-8f4d940"
+date: Thu, 29 Sep 2016 15:57:47 GMT
+content-type: text/html
+
+<html>
+<head>
+<title>Visualizations from 7B Software, Inc.</title>
+<META name="description" content="Software development and consulting, specializing in data visualization, situational awareness, computer security, enterprise architecture, Semantic Web, and Sharepoint 2010 branding.">
+
+<META name="keywords" content="programmer, consultant, Department of Defense, security, GUI, Linux, Unix, C++, C, Java, firewall, cross-platform, Florida, object-oriented, object, XML, defense, multilevel security, multilevel, network, enterprise architecture, ontology, semantic web, situational awareness, 32936, Sharepoint, branding">
+
+<link rel=StyleSheet href="main.css" type="text/css" />
+</head>
+<body class="main" bgcolor=white>
+
+<table>
+
+<tr> <!--This row includes company logo (c1) and company summary <c2)-->
+<td>
+<!--The company logo will go here.-->
+</td>
+<td>
+<p align=center>
+<strong><font size=6>Visualizations from 7B Software, Inc.</font></strong>
+</td>
+</tr>
+
+<tr> <!--This row includes navigation table (c1) and company info (c2)-->
+<td valign="top">
+<table border = "1" bgcolor="#e0ffff">	<!-- navigation bar -->
+
+<tr>
+<td>
+<p><font size="+1"><a href="index.html">Home</font></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><font size="+1"><a href="contact.html">Contact</a></font></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><font size="+1"><a href="about.html">About 7B Software, Inc.</a></font></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><font size="+1"><a href="How to Engage Me.htm">How to Engage Me</a></font></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><font size="+1"><a href="MarkSmithResume.html">Professional Resume</a></font></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><font size="+1"><a href="notable_hacks.html">Notable Hacks<br>
+from 7B Software</a></font></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><font size="+1"><a href="tips/index.html">Programming Techniques<br>
+from 7B Software</a></font></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><font size="+1"><a href="links.html">Links and Resources</a></font></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><font size="+1"><a href="predictions.html">Computer Industry 
+Predictions</a></font></p>
+</td>
+</tr>
+
+</td>
+</tr>
+
+</table>	<!-- navigation bar -->
+</td>
+
+<td>
+<div style="margin-top:20px; margin-left:30px"/>
+
+I'm very impressed with the 
+<a href="http://d3js.org">D3 javascript framework</a>,
+used to generate powerful, animated visualizations in the browser.
+<p>
+
+<div style="margin-top:100px; margin-left:30px"/>
+<div id="strat" style="float:left; width:400px">
+
+I used the toolkit to develop this app <a href="d3/">(see it live!)</a>.  To the right are
+three screenshots taken from it.
+<p>
+The app has the following interesting properties:
+<ul>
+<li><p>
+<strong>Input data is decoupled from presentation.</strong>  There aren't any data-specific
+kludges in the javascript code.  In addition:
+<li><p>
+<strong>
+A metadata layer ensures that data is decoupled from input controls.
+</strong>
+Adding a metadata table and joining it to the actual input is a clean method of describing
+whether particular data can be added to tooltips, used for pivots, or used for
+aggregation.  This allows a single point of control for any dataset.
+<li><p>
+<strong>
+Label placement is a pretty hard problem, solved here with a 
+<a href="https://github.com/mbostock/d3/wiki/Force-Layout">
+force graph</a>.
+</strong>
+A crowded graph presents a tricky label positioning issue.  We use a force graph
+to force label names apart (as in the screenshot directly to the right).
+<li><p>
+<strong>
+A
+force graph 
+is also being used to model a simple network.
+</strong>
+In the app, the network is a simple hierarchy built from inherent parent-child
+relationships within the dataset.
+<li><p>
+<strong>
+The app supports auto-rollup of status within the network visualization.
+</strong>
+Statuses are plotted as red (bad), yellow (warning), green (ok), and gray (unknown).  
+A parent node can have its own innate status, but it also displays (on its ringed outer border)
+the worst status of any of its descendents.
+<li><p>
+<strong>
+Data transforms are using map and reduce, allowing them to be moved easily
+to a server for large datasets.
+</strong>
+The map and reduce code handle filtering, pivoting, and aggregation.  This particular app
+does all of this work in the browser, but there's no reason why it can't be migrated
+to the server if the dataset is too big.
+<li><p>
+<strong>
+JQuery is used to populate the input controls and to support tooltips.
+</strong>
+In a future version of this app, I'll be using 
+<a href="http://angularjs.org">AngularJS</a> instead of JQuery.
+But for this particular version, JQuery does a nice job of simplifying
+access to the DOM for the input controls.
+</ul>
+
+</div>
+<div id="d3-pic" style="margin-left:440px">
+  <img src="d3/d3-bubble.png" width="600" height="475"/>
+  <br>
+  <img src="d3/d3-force.png" width="600" height="475"/>
+  <br>
+  <img src="d3/d3-map.png" width="600" height="475"/>
+
+</div>
+
+<p>
+<i>
+Mark Smith
+<br>
+7B Software, Inc.
+</i>
+
+</td>
+</tr>
+
+<tr> <!--This row includes professional membership logos-->
+<td valign = "top">
+
+</td>
+
+</tr>
+</table>
+
+<!--img src=/cgi-bin/Count.cgi?name=7bsoftwa-->

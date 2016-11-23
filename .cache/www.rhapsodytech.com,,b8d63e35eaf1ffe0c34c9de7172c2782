@@ -1,0 +1,55 @@
+status: 200
+content-length: 1711
+content-location: http://www.rhapsodytech.com
+vary: Accept-Encoding
+server: nginx/1.10.1
+connection: keep-alive
+-content-encoding: gzip
+date: Wed, 21 Sep 2016 08:46:48 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Rhapsody InfoTech</title>
+<script type="text/javascript">
+function SizeMe (e)
+{
+	if (parent.main.document.innerWidth)
+	{
+		frameWidth  = parent.main.document.innerWidth;
+		frameHeight = parent.main.document.innerHeight;
+	}
+	else if (parent.main.document.documentElement && parent.main.document.documentElement.clientWidth)
+	{
+		frameWidth = parent.main.document.documentElement.clientWidth;
+		frameHeight = parent.main.document.documentElement.clientHeight;
+	}
+	else if (parent.main.document.body)
+	{
+		frameWidth  = parent.main.document.body.clientWidth;
+		frameHeight = parent.main.document.body.clientHeight;
+	}
+	else
+	{
+		return false;
+	}
+	
+	e.style.height = (frameHeight - 29);
+}
+</script>
+</head>
+<frameset cols="*,18,643,21,*" border="0" frameborder="no">
+	<frame src="http://www.rhapsodytech.com//filler.php" name="left" noresize>
+	<frame src="http://www.rhapsodytech.com//filler.php?d=left" name="left_f" noresize>
+	<frameset rows="130,*,40" border="0" frameborder="no">
+		<frame src="http://www.rhapsodytech.com//title.php" name="title" scrolling="no" noresize>
+		<frame src="http://www.rhapsodytech.com//home.php" name="main" noresize>
+		<frame src="http://www.rhapsodytech.com//filler.php?d=footer" name="footer" scrolling="no" noresize>
+	</frameset>
+	<frame src="http://www.rhapsodytech.com//filler.php?d=right" name="right_f" noresize>
+	<frame src="http://www.rhapsodytech.com//filler.php" name="right" noresize>
+</frameset>
+</html>

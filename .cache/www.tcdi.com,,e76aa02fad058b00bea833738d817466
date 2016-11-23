@@ -1,0 +1,604 @@
+status: 200
+content-length: 39115
+via: 1.1 varnish-v4
+vary: Accept-Encoding, Cookie
+x-styx-version: StyxGo
+x-pantheon-styx-hostname: styxacf2847e
+x-pingback: http://www.tcdi.com/xmlrpc.php
+x-styx-req-id: styx-4752e0ddb65d9a2a6af7b8b1ca718fa5
+cache-control: public, max-age=600
+x-varnish: 637345615
+set-cookie: SESS9c952af6c90c534b3f09fd77e61328b6=9b48e1fdaaeb1c6d7fc31ab63589ec2c; path=/;
+ domain=.tcdi.com; HttpOnly
+accept-ranges: bytes
+-content-encoding: gzip
+link: <http://www.tcdi.com/wp-json/>;
+ rel="https://api.w.org/", <http://wp.me/P7jpfn-6r>; rel=shortlink
+date: Thu, 29 Sep 2016 16:05:56 GMT
+content-location: http://www.tcdi.com
+age: 0
+server: nginx
+connection: keep-alive
+content-type: text/html; charset=UTF-8
+x-pantheon-endpoint: 6ead8716-a54c-4901-b30f-ad5e1b74daed
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+
+
+<head profile="http://gmpg.org/xfn/11">
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+
+
+<title> TCDI</title>
+
+
+
+<link rel="stylesheet" href="http://www.tcdi.com/wp-content/themes/tcdi_custom/style.css" type="text/css" media="screen" />
+
+
+
+<link rel="stylesheet" href="http://www.tcdi.com/wp-content/themes/wp-clearvideo109/style-font.css" type="text/css" media="screen" />
+
+
+
+<link rel="pingback" href="http://www.tcdi.com/xmlrpc.php" />
+
+
+
+
+
+
+<link rel='dns-prefetch' href='//www.tcdi.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="TCDI &raquo; Feed" href="http://www.tcdi.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TCDI &raquo; Comments Feed" href="http://www.tcdi.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TCDI &raquo; Home Comments Feed" href="http://www.tcdi.com/home-2/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.tcdi.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='layerslider_css-css'  href='http://www.tcdi.com/wp-content/plugins/LayerSlider/css/layerslider.css?ver=4.6.5' type='text/css' media='all' />
+<link rel='stylesheet' id='hupso_css-css'  href='http://www.tcdi.com/wp-content/plugins/hupso-share-buttons-for-twitter-facebook-google/style.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='slb_core-css'  href='http://www.tcdi.com/wp-content/plugins/simple-lightbox/client/css/app.css?ver=2.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://www.tcdi.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.tcdi.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.tcdi.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.tcdi.com/wp-content/plugins/LayerSlider/js/layerslider.kreaturamedia.jquery.js?ver=4.6.5'></script>
+<script type='text/javascript' src='http://www.tcdi.com/wp-content/plugins/LayerSlider/js/jquery-easing-1.3.js?ver=1.3.0'></script>
+<script type='text/javascript' src='http://www.tcdi.com/wp-content/plugins/LayerSlider/js/jquerytransit.js?ver=0.9.9'></script>
+<script type='text/javascript' src='http://www.tcdi.com/wp-content/plugins/LayerSlider/js/layerslider.transitions.js?ver=4.6.5'></script>
+<script type='text/javascript' src='http://www.tcdi.com/wp-content/themes/wp-clearvideo109/js/external.js?ver=4.6.1'></script>
+<script type='text/javascript' src='http://www.tcdi.com/wp-content/themes/wp-clearvideo109/js/suckerfish.js?ver=4.6.1'></script>
+<script type='text/javascript' src='http://www.tcdi.com/wp-content/themes/wp-clearvideo109/js/jquery.mobilemenu.js?ver=4.6.1'></script>
+<link rel='https://api.w.org/' href='http://www.tcdi.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.tcdi.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.tcdi.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel="canonical" href="http://www.tcdi.com/" />
+<link rel='shortlink' href='http://wp.me/P7jpfn-6r' />
+<link rel="alternate" type="application/json+oembed" href="http://www.tcdi.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.tcdi.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.tcdi.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.tcdi.com%2F&#038;format=xml" />
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'>
+<style type='text/css'>img#wpstats{display:none}</style>
+<!-- Alternate Stylesheet -->
+<link href="http://www.tcdi.com/wp-content/themes/wp-clearvideo109/styles/default.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Styles from Theme Setting Page -->
+<style type="text/css">
+body {background-color:#ffffff;font-family:Arial,Helvetica,sans-serif;}
+h1,h2,h3,h4,h5,h6,h7,#sitetitle .title {font-family:Arial,Helvetica,sans-serif;font-weight:normal;}
+h1,h2,h3,h4,h5,h6,h7,#sitetitle .title {font-weight:normal;}
+#sitetitle .title,#sitetitle .description {float:none;text-indent:-999em;position:absolute;display:none;left:-999em;}
+#topnav,#topnav ul ul a {font-weight:normal;font-family:Arial,Helvetica,sans-serif;}
+</style>
+
+<!-- Styles from custom.css -->
+<link href="http://www.tcdi.com/wp-content/themes/wp-clearvideo109/custom.css" rel="stylesheet" type="text/css" />
+
+	<!-- MobileMenu JS -->
+	<script type="text/javascript">
+		jQuery(function () {
+			jQuery('.nav').mobileMenu({ defaultText: 'Navigate to ...' });
+		});
+	</script>
+
+	<!-- Media Queries Script for IE8 and Older -->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+<style type="text/css" id="breadcrumb-trail-css">.breadcrumbs .trail-browse,.breadcrumbs .trail-items,.breadcrumbs .trail-items li {display: inline-block;margin:0;padding: 0;border:none;background:transparent;text-indent: 0;}.breadcrumbs .trail-browse {font-size: inherit;font-style:inherit;font-weight: inherit;color: inherit;}.breadcrumbs .trail-items {list-style: none;}.trail-items li::after {content: "\002F";padding: 0 0.5em;}.trail-items li:last-of-type::after {display: none;}</style>
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="TCDI" />
+<meta property="og:url" content="http://www.tcdi.com/" />
+<meta property="og:site_name" content="TCDI" />
+<meta property="og:image" content="/wp-content/themes/tcdi_custom/images/icons/megaphone.png" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Visit the post for more." />
+			<!-- Easy Columns 2.1.1 by Pat Friedl http://www.patrickfriedl.com -->
+			<link rel="stylesheet" href="http://www.tcdi.com/wp-content/plugins/easy-columns/css/easy-columns.css" type="text/css" media="screen, projection" />
+			
+
+
+</head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77100686-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<body class="home page page-id-399 page-template-default fwidth">
+
+
+
+<div id="outer-wrap">
+
+
+
+<div id="wrap">
+
+
+
+	<div id="header">
+
+		<div id="head-content" class="clearfix">
+
+			
+				<div id="logo">
+
+					<a href="http://www.tcdi.com"><img src="http://www.tcdi.com/wp-content/uploads/2013/11/TCDI-header-960.png" alt="TCDI" /></a>
+
+				</div>
+
+			
+			
+		</div>
+
+
+
+		<div id="topnav">
+
+			<div class="limit clearfix">
+
+				
+					<ul class="nav clearfix">
+
+						<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-96"><a href="http://www.tcdi.com/who-we-are/">Who We Are</a>
+<ul class="sub-menu">
+	<li id="menu-item-734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-734"><a href="http://www.tcdi.com/who-we-are/our-story/">Our Story</a></li>
+	<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://www.tcdi.com/who-we-are/history/">History</a></li>
+	<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="http://www.tcdi.com/who-we-are/philosophy/">Philosophy</a></li>
+	<li id="menu-item-202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a href="http://www.tcdi.com/who-we-are/leadership/">Leadership</a></li>
+	<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="http://www.tcdi.com/who-we-are/clients/">Clients</a></li>
+	<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="http://www.tcdi.com/who-we-are/partners/">Partners</a></li>
+</ul>
+</li>
+<li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-97"><a href="http://www.tcdi.com/what-we-do/">What We Do</a>
+<ul class="sub-menu">
+	<li id="menu-item-1749" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1749"><a target="_blank" href="http://jurinnov.com/solutions/computer-forensics-cleveland-ohio-computer-forensic-services-cleveland/">Computer Forensics</a></li>
+	<li id="menu-item-1750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1750"><a target="_blank" href="http://jurinnov.com/solutions/cybersecurity-information-security-cleveland-ohio/">Cybersecurity</a></li>
+	<li id="menu-item-115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-115"><a href="http://www.tcdi.com/what-we-do/ediscovery/">eDiscovery</a>
+	<ul class="sub-menu">
+		<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="http://www.tcdi.com/what-we-do/ediscovery/culling-and-processing/">Culling and Processing</a></li>
+		<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="http://www.tcdi.com/what-we-do/ediscovery/analysis-and-assessment/">Analysis and Assessment</a></li>
+		<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="http://www.tcdi.com/what-we-do/ediscovery/advanced-technology-for-review-and-production/">Review and Production</a></li>
+		<li id="menu-item-1737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1737"><a target="_blank" href="http://www.tcdifox.com">CVFox</a></li>
+	</ul>
+</li>
+	<li id="menu-item-114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-114"><a href="http://www.tcdi.com/what-we-do/case-management/">Case Management</a>
+	<ul class="sub-menu">
+		<li id="menu-item-486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-486"><a href="http://www.tcdi.com/what-we-do/case-management/intake-2/">Intake</a></li>
+		<li id="menu-item-485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-485"><a href="http://www.tcdi.com/what-we-do/case-management/end-user/">End User</a></li>
+	</ul>
+</li>
+	<li id="menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-116"><a href="http://www.tcdi.com/what-we-do/data-hosting/">Data Hosting</a></li>
+</ul>
+</li>
+<li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-98"><a href="http://www.tcdi.com/how-we-do-it/">How We Do It</a>
+<ul class="sub-menu">
+	<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="http://www.tcdi.com/how-we-do-it/client-services/">Client Services</a></li>
+	<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="http://www.tcdi.com/how-we-do-it/client-data-services/">Client Data Services</a></li>
+	<li id="menu-item-256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-256"><a href="http://www.tcdi.com/how-we-do-it/continuous-process-improvement/">Continuous Process Improvement</a></li>
+	<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="http://www.tcdi.com/how-we-do-it/security/">Security</a></li>
+	<li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-201"><a href="http://www.tcdi.com/how-we-do-it/risk-reduction/">Risk Reduction</a></li>
+	<li id="menu-item-299" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-299"><a href="http://www.tcdi.com/category/case-stories/">Case Stories</a></li>
+</ul>
+</li>
+<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-109"><a href="http://www.tcdi.com/resources/">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-31" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31"><a href="http://www.tcdi.com/category/news/">News &#038; Blog</a></li>
+	<li id="menu-item-762" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-762"><a href="http://www.tcdi.com/category/library/">Library</a></li>
+	<li id="menu-item-243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-243"><a href="http://www.tcdi.com/resources/video/">Video</a></li>
+</ul>
+</li>
+<li id="menu-item-479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a href="http://www.tcdi.com/contact/">Contact</a></li>
+
+					</ul>
+
+				
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+	
+
+
+	<div id="page" class="clearfix">
+
+
+
+		<div id="contentleft">
+
+
+
+			<div id="content" class="maincontent">
+
+
+
+				
+
+
+					
+
+
+
+
+
+
+				<div class="singlepage">
+
+
+
+					<div class="post clearfix" id="post-main-399">
+
+
+
+						<div class="entry">
+
+
+
+							<!--moved this below -<h1 class="page-title">Home</h1> -->
+
+
+
+							
+
+						<!--added this for featured img -->	
+													
+							<h1 class="page-title">Home</h1>
+							<div style="padding-bottom: 40px;"><script type="text/javascript">var lsjQuery = jQuery;</script><script type="text/javascript">
+lsjQuery(document).ready(function() {
+                if(typeof lsjQuery.fn.layerSlider == "undefined") { lsShowNotice('layerslider_1','jquery'); }
+                    else if(typeof lsjQuery.transit == "undefined" || typeof lsjQuery.transit.modifiedForLayerSlider == "undefined") { lsShowNotice('layerslider_1', 'transit'); }
+                        else {
+                            lsjQuery("#layerslider_1").layerSlider({
+                                width : '1600px',
+                                height : '470px',
+                                responsive : true,
+                                responsiveUnder : 0,
+                                sublayerContainer : 0,
+                                autoStart : true,
+                                pauseOnHover : true,
+                                firstLayer : 1,
+                                animateFirstLayer : true,
+                                randomSlideshow : false,
+                                twoWaySlideshow : true,
+                                loops : 0,
+                                forceLoopNum : true,
+                                autoPlayVideos : true,
+                                autoPauseSlideshow : 'auto',
+                                youtubePreview : 'maxresdefault.jpg',
+                                keybNav : true,
+                                touchNav : true,
+                                skin : 'fullwidth',
+                                skinsPath : 'http://www.tcdi.com/wp-content/plugins/LayerSlider/skins/',
+navPrevNext : true,
+                                navStartStop : true,
+                                navButtons : true,
+                                hoverPrevNext : true,
+                                hoverBottomNav : false,
+                                showBarTimer : false,
+                                showCircleTimer : true,
+                                thumbnailNavigation : 'hover',
+                                tnWidth : 100,
+                                tnHeight : 60,
+                                tnContainerWidth : '60%',
+                                tnActiveOpacity : 35,
+                                tnInactiveOpacity : 100,
+                                imgPreload : true,
+                        		yourLogo : false,
+                                yourLogoStyle : 'left: 10px; top: 10px;',
+                                yourLogoLink : false,
+                                yourLogoTarget : '_self',
+                                cbInit : function(element) { },
+                                cbStart : function(data) { },
+                                cbStop : function(data) { },
+                                cbPause : function(data) { },
+                                cbAnimStart : function(data) { },
+                                cbAnimStop : function(data) { },
+                                cbPrev : function(data) { },
+                                cbNext : function(data) { }
+                            });
+                        }
+            });
+        </script><div class="ls-wp-fullwidth-container"><div class="ls-wp-fullwidth-helper"><div id="layerslider_1" class="ls-wp-container" style="width: 1600px; height: 470px; margin: 0px auto; "><div class="ls-layer"  style="slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0; timeshift: 0; transition2d: 5; "><img src="http://www.tcdi.com/wp-content/uploads/2013/12/TCDI-blg-slider.jpg" class="ls-bg" alt="Slide background"><span  class="ls-s-1" style="position: absolute; top:20px; left: 80%; slidedirection : left; slideoutdirection : fade; durationin : 1000; durationout : 1000; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0; showuntil : 0;  width: 20%; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px; font-family: Arial; font-size: 36px; color: #ffffff; background: rgba(38, 138, 191, 0.55); "> Serving Corporate Legal Teams and Law Firm Clients for Over Two Decades </span><a href="/who-we-are/" target="_self" class="ls-link"></a></div><div class="ls-layer"  style="slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0; timeshift: 0; transition2d: 5; "><img src="http://www.tcdi.com/wp-content/uploads/2013/12/DSC_4913-14_01-1.jpg" class="ls-bg" alt="Slide background"><span  class="ls-s-1" style="position: absolute; top:245px; left: 78px;   durationin : 1000; durationout : 1000; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0; showuntil : 0;  width: 40%; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px; font-family: Arial; font-size: 36px; color: #ffffff; background: rgba(38, 138, 191, 0.55); "> Providing Advanced Technology in eDiscovery and Large-scale Case File Management </span><a href="/what-we-do/" target="_self" class="ls-link"></a></div><div class="ls-layer"  style="slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0; timeshift: 0; transition2d: 5; "><img src="http://www.tcdi.com/wp-content/uploads/2013/12/2guys-whiteboard-slider.jpg" class="ls-bg" alt="Slide background"><span  class="ls-s-1" style="position: absolute; top:129px; left: 133px;   durationin : 1000; durationout : 1000; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0; showuntil : 0;  width: 40%; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px; font-family: Arial; font-size: 36px; color: #ffffff; background: rgba(38, 138, 191, 0.55); "> Delivering Personal Attention and Developing Deep Partnerships
+ </span><a href="/how-we-do-it/" target="_self" class="ls-link"></a></div></div></div></div></div>
+<div class="ezcol ezcol-one-third" style="margin-bottom: 10px;">
+<div class="blurb-dark">
+<div class="headline front" style="padding-bottom: 0px;">EDiscovery</div>
+</div>
+<div class="blurb-light addcrane" style="min-height: 248px;"><img class="alignleft wp-image-493" src="/wp-content/uploads/2013/11/new-crane400-150x150.png" alt="new-crane400" width="100" height="100" /> From data processing through document production, our software delivers some of the most valuable and sought-after features and capabilities. Click below to learn more about how we can bring these solutions to your eDiscovery challenges.</div>
+<div class="buttonHole-light">
+<div class="CTAbutton addcrane"><a href="/what-we-do/cv5-for-ediscovery/">Learn More</a></div>
+</div>
+</div>
+<div class="ezcol ezcol-one-third" style="margin-bottom: 10px;">
+<div class="blurb-dark">
+<div class="headline front" style="padding-bottom: 0px;">CVFOX</div>
+</div>
+<div class="blurb-light addcrane" style="min-height: 248px;">
+<p><a href="http://www.tcdifox.com" target="_blank"><img class="aligncenter wp-image-1728 size-full" src="http://www.tcdi.com/wp-content/uploads/2016/05/fox-home-only.png" width="275" height="82" /></a>CVFox, based on the mature, technologically advanced ClarVergence, brings an affordable, simple and sophisticated discovery solution to the mid-tier market with processing, ECA, CAAT analytics, review, and production in one SaaS product.</p>
+</div>
+<div class="buttonHole-light">
+<div class="CTAbutton addcrane"><a href="http://www.tcdifox.com/" target="_blank">Learn More</a></div>
+</div>
+</div>
+<div class="ezcol ezcol-one-third ezcol-last" style="margin-bottom: 10px;">
+<div class="blurb-dark">
+<div class="headline front" style="padding-bottom: 0px;">Case Management</div>
+</div>
+<div class="blurb-light addcrane" style="min-height: 248px;"><img class="alignleft size-thumbnail wp-image-493" src="/wp-content/uploads/2013/11/new-crane400-150x150.png" alt="new-crane400" width="100" height="100" />Most litigation doesn’t need a case management system as robust as ours, but for those that do&#8230; nothing compares to what we deliver. Click below to find out what makes our Case Management solution so different.</div>
+<div class="buttonHole-light">
+<div class="CTAbutton addcrane"><a href="what-we-do/cv5-for-case-management/">Learn More</a></div>
+</div>
+</div><div class="ezcol-divider"></div>
+<div class="ezcol ezcol-one-third" style="margin-bottom: 10px;">
+<div class="blurb-dark" style="min-height: 329px;">
+<div class="headline" style="line-height: 2em;">Client Services</div>
+<p><img class="alignleft size-full wp-image-429" src="/wp-content/uploads/2013/11/contact-icon.png" alt="contact-icon" width="75" height="75" />The importance of skilled and effective project management and support teams can&#8217;t be over stated. They are the catalyst for smooth and productive projects and with TCDI; they are a major ingredient to the partnership that will bring you back to us project after project.</p>
+</div>
+<div class="buttonHole-dark">
+<div class="CTAbutton"><a href="/how-we-do-it/client-services/">Learn More</a></div>
+</div>
+</div>
+<div class="ezcol ezcol-one-third" style="margin-bottom: 10px;">
+<div class="blurb-light" style="min-height: 329px;">
+<div class="headline">Continuous Process Improvement</div>
+<p><img class="alignleft size-full wp-image-428" src="/wp-content/themes/tcdi_custom/images/icons/CPI-icon.png" alt="settings-icon" width="75" height="75" />It’s not enough to be good… you have to always be getting better. At TCDI we’re committed to a culture of Continuous Process Improvement. We use methodologies and mindset to consistently drive towards offering our clients better products, services and results.</p>
+</div>
+<div class="buttonHole-light">
+<div class="CTAbutton"><a href="/how-we-do-it/continuous-process-improvement/">Learn More</a></div>
+</div>
+</div>
+<div class="ezcol ezcol-one-third ezcol-last" style="margin-bottom: 10px;">
+<div class="blurb-dark" style="min-height: 329px;">
+<div class="headline" style="line-height: 2em;">What&#8217;s New</div>
+<div style="margin-bottom: 30px;"><img class="alignleft size-full wp-image-429" src="/wp-content/themes/tcdi_custom/images/icons/megaphone.png" alt="contact-icon" width="75" height="75" />The latest news and information about what&#8217;s happening at TCDI.</div>
+<ul class="display-posts-listing"><li class="listing-item"><a class="title" href="http://www.tcdi.com/conferences/tcdi-attends-ilta/">TCDI<sup>®</sup> Attends ILTA</a></li><li class="listing-item"><a class="title" href="http://www.tcdi.com/news/bna-bloomberg-article-ediscovery-and-the-midtier-law-firm-and-corporate-markets/">BNA Bloomberg Article: eDiscovery and the Midtier Law Firm and Corporate Markets</a></li><li class="listing-item"><a class="title" href="http://www.tcdi.com/news/tcdi-announces-acquisition-of-jurinnov-ltd/">TCDI® Announces Acquisition of JURINNOV Ltd.</a></li></ul>
+</div>
+<div class="buttonHole-dark">
+<div class="CTAbutton"><a href="/category/news/">Learn More</a></div>
+</div>
+</div><div class="ezcol-divider"></div>
+
+
+
+							<div style="clear:both;"></div>
+
+
+
+							
+
+
+						</div>
+
+
+
+					</div>
+
+
+
+
+
+				</div>
+
+
+
+
+				
+
+			</div>
+
+
+
+			
+
+
+		</div>
+
+
+
+
+
+
+	</div> <!-- End #page div --> 
+
+
+
+</div> <!-- End #wrap div -->
+
+
+
+
+</div> <!-- End #outer-wrap div MOVED!!!-->
+
+<div id="fakefooter">
+<div id="footer-widgets" class="maincontent">
+
+	<div class="limit clearfix">
+
+		<div class="footer-widget1">
+
+			<div id="nav_menu-3" class="widget widget_nav_menu"><div class="widget-wrap"><h3 class="widgettitle"><span>Who We Are</span></h3><div class="menu-who-we-are-footer-container"><ul id="menu-who-we-are-footer" class="menu"><li id="menu-item-776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="http://www.tcdi.com/who-we-are/our-story/">Our Story</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-410"><a href="http://www.tcdi.com/who-we-are/history/">History</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="http://www.tcdi.com/who-we-are/philosophy/">Philosophy</a></li>
+<li id="menu-item-411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-411"><a href="http://www.tcdi.com/who-we-are/leadership/">Leadership</a></li>
+<li id="menu-item-409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-409"><a href="http://www.tcdi.com/who-we-are/clients/">Clients</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="http://www.tcdi.com/who-we-are/partners/">Partners</a></li>
+</ul></div></div></div>
+		</div>
+
+		<div class="footer-widget2">
+
+			<div id="nav_menu-4" class="widget widget_nav_menu"><div class="widget-wrap"><h3 class="widgettitle"><span>What We Do</span></h3><div class="menu-what-we-do-footer-container"><ul id="menu-what-we-do-footer" class="menu"><li id="menu-item-276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-276"><a href="http://www.tcdi.com/what-we-do/ediscovery/">eDiscovery</a></li>
+<li id="menu-item-275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-275"><a href="http://www.tcdi.com/what-we-do/case-management/">Case Management</a></li>
+<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="http://www.tcdi.com/what-we-do/data-hosting/">Data Hosting</a></li>
+</ul></div></div></div>
+		</div>
+
+		<div class="footer-widget3">
+
+			<div id="nav_menu-5" class="widget widget_nav_menu"><div class="widget-wrap"><h3 class="widgettitle"><span>How We Do It</span></h3><div class="menu-how-we-do-it-footer-container"><ul id="menu-how-we-do-it-footer" class="menu"><li id="menu-item-418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-418"><a href="http://www.tcdi.com/how-we-do-it/client-services/">Client Services</a></li>
+<li id="menu-item-417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-417"><a href="http://www.tcdi.com/how-we-do-it/client-data-services/">Client Data Services</a></li>
+<li id="menu-item-419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-419"><a href="http://www.tcdi.com/how-we-do-it/continuous-process-improvement/">Continuous Process Improvement</a></li>
+<li id="menu-item-586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586"><a href="http://www.tcdi.com/how-we-do-it/security/">Security</a></li>
+<li id="menu-item-780" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780"><a href="http://www.tcdi.com/how-we-do-it/risk-reduction/">Risk Reduction</a></li>
+<li id="menu-item-585" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-585"><a href="http://www.tcdi.com/category/case-stories/">Case Stories</a></li>
+</ul></div></div></div>
+		</div>
+
+		<div class="footer-widget4">
+
+			<div id="nav_menu-6" class="widget widget_nav_menu"><div class="widget-wrap"><h3 class="widgettitle"><span>Resources</span></h3><div class="menu-resources-footer-container"><ul id="menu-resources-footer" class="menu"><li id="menu-item-588" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-588"><a href="http://www.tcdi.com/category/news/">News &amp; Blog</a></li>
+<li id="menu-item-764" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-764"><a href="http://www.tcdi.com/category/library/">Library</a></li>
+<li id="menu-item-765" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-765"><a href="http://www.tcdi.com/category/video/">Video</a></li>
+</ul></div></div></div>
+		</div>
+
+	</div>
+
+</div>
+
+</div>
+
+
+
+
+<div id="footer">
+
+	<div class="limit clearfix">
+
+
+
+		
+
+
+		&copy;  2016 TCDI. All rights reserved. <a href="/privacy-policy">Privacy Policy</a> <div class="gcwt_tag"><a href="http://www.gatecitywebthings.com" target="_blank">Another Gate City Web Thing</a></div>
+
+
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+<!--</div>  End #outer-wrap div MOVED!!!-->
+
+
+
+<script type="text/javascript"> 
+var dpwdrsid = 'ngNayYEK01'; 
+var dpwdrs_BaseURL = (("https:" == document.location.protocol) ? "https://data.processwebsitedata.com/rsv1/" : "http://data.processwebsitedata.com/rsv1/");
+(function () { 
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; 
+va.src = dpwdrs_BaseURL + 'Scripts/rsvliveasync.js'; 
+var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); 
+})(); 
+</script> 
+	<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://www.tcdi.com/wp-includes/js/comment-reply.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201639'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2016Sepaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.tcdi.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.6.1'></script>
+<script type='text/javascript' src='http://www.tcdi.com/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>
+<script type='text/javascript' src='http://stats.wp.com/e-201639.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.3.1',blog:'108059637',post:'399',tz:'-5',srv:'www.tcdi.com'} ]);
+	_stq.push([ 'clickTrackerInit', '108059637', '399' ]);
+</script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f597862552","applicationID":"12520167","transactionName":"MlZaZEEHWBdVBkRcCQsceVNHD1kKGxVRUgM=","queueTime":0,"applicationTime":406,"atts":"HhFZEgkdSxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+
+
+</html>

@@ -1,0 +1,145 @@
+status: 200
+content-length: 4997
+content-location: http://www.adaptingcomputers.com
+server: nginx/1.10.1
+connection: keep-alive
+-content-encoding: gzip
+date: Fri, 09 Sep 2016 06:00:41 GMT
+content-type: text/html
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta  name="description" content="The directory of computer engineers including contact, phone and email information."/>
+<title>Computer Engineers Directory'</title>
+<link rel="canonical" href="http://www.adaptingcomputers.com" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="http://www.adaptingcomputers.com/css/styles.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="http://www.adaptingcomputers.com/css/demo.css" media="all" />
+    <!-- jQuery lib from google server ===================== -->
+	<script src="http://www.adaptingcomputers.com/js/jquery-1.7.2.min.js"></script>
+	
+<link rel="shortcut icon" href="http://www.adaptingcomputers.com/img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="http://www.adaptingcomputers.com/css/css.css" type="text/css" media="screen" />
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+
+<script>  
+<!--  // building select nav for mobile width only -->
+$(function(){
+	// building select menu
+	$('<select />').appendTo('nav');
+
+	// building an option for select menu
+	$('<option />', {
+		'selected': 'selected',
+		'value' : '',
+		'text': 'Choise Page...'
+	}).appendTo('nav select');
+
+	$('nav ul li a').each(function(){
+		var target = $(this);
+
+		$('<option />', {
+			'value' : target.attr('href'),
+			'text': target.text()
+		}).appendTo('nav select');
+
+	});
+
+	// on clicking on link
+	$('nav select').on('change',function(){
+		window.location = $(this).find('option:selected').val();
+	});
+});
+
+// show and hide sub menu
+$(function(){
+	$('nav ul li').hover(
+		function () {
+			//show its submenu
+			$('ul', this).slideDown(150);
+		}, 
+		function () {
+			//hide its submenu
+			$('ul', this).slideUp(150);			
+		}
+	);
+});
+//end
+</script>
+</head>
+
+
+	<body>
+<div class="container">
+			<!-- freshdesignweb top bar -->
+            <div class="freshdesignweb-top">
+                <a href="http://www.adaptingcomputers.com">Home</a>
+                <span class="right">
+                    <a href="http://www.adaptingcomputers.com">
+                         <strong>&copy Computer Engineers Directory</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div><!--/ freshdesignweb top bar -->
+			<header>
+			<h1><span>AdaptingComputers.com</span> The 2016 Computer Engineers Directory</h1> </header>       
+     <!-- start header here-->
+     
+     
+     	<header>
+		<div id="fdw">
+				<!--nav-->
+					<nav>
+						<ul>
+							<li ><a href="http://www.adaptingcomputers.com">home<span class="arrow"></span></a></li>
+							<li ><a href="http://www.adaptingcomputers.com/about">about & contact</a></li>
+							<li ><a href="http://www.adaptingcomputers.com/cat/design">computer system design</a></li>
+							<li ><a href="http://www.adaptingcomputers.com/cat/manufacturing">computer manufacturing<span class="arrow"></span></a></li>
+							<li ><a href="http://www.adaptingcomputers.com/cat/storage">storage manufacturing</a></li>
+						<li ><a href="http://www.adaptingcomputers.com/cat/misc">misc</a></li>
+						</ul>
+					</nav>
+		</div><!-- end fdw -->
+	</header><!-- end header -->     
+
+	
+    <div class = "content">
+    <p>Thank you for visiting the official 2016 Computer Engineers Directory. Select a category to review the specefic listings inside of that particular subject matter.</p>
+    
+    <p style = "text-align: center; margin-top: 15px;">
+    	<ul>
+							
+							<li>Part 1 - <A href="http://www.adaptingcomputers.com/cat/design">Computer System Design</a></li>
+							<li>Part 2 - <a href="http://www.adaptingcomputers.com/cat/manufacturing">Computer Manufacturing</a></li>
+							<li>Part 3 - <a href="http://www.adaptingcomputers.com/cat/storage">Storage Manufacturing</a></li>
+							<li>Part 4 - <a href="http://www.adaptingcomputers.com/cat/storage">Misc</a></li>
+						
+						</ul>
+						
+						</p>
+						</div>
+
+    
+            <div class = "footer">
+    <p>&copy 2015 - 2016 <A href="http://www.adaptingcomputers.com/about">The Computer Engineers Directory</A></p>
+    </div>     
+     
+</div>
+
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61924754-1', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+</html>

@@ -1,0 +1,533 @@
+status: 200
+content-length: 25250
+content-location: http://www.bullseyeengagement.com/resources/career-opportunites.aspx
+x-aspnet-version: 2.0.50727
+set-cookie: ASP.NET_SessionId=kb2sqz45vzr0nfbkqlzwgryb; path=/; HttpOnly
+vary: Accept-Encoding
+server: Microsoft-IIS/7.0
+-content-encoding: gzip
+cache-control: private
+date: Fri, 30 Sep 2016 04:04:12 GMT
+x-powered-by: ASP.NET
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8" /><title>
+	Jobs & Careers at BullseyeEngagement
+</title><meta name="google-site-verification" content="hxX5Bvs5d6vgg7e6ukJGvt9rILatxz6xyRtH7u2Dvtw" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="y_key" content="baf48d9b97437cd7" /><meta name="msvalidate.01" content="403EF8BA7EE5F8E8737FAF25E2E3F6EA" /><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta name="ROBOTS" content="NOYDIR" /><meta name="ROBOTS" content="NOODP" /><link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" /><link rel="stylesheet" type="text/css" href="../css/StyleSheet.css" /><link rel="stylesheet" media="all" href="../css/lessgrid.css" />
+    <script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="../js/jquery.cycle2.js"></script>
+    <!--dropdown-->
+    <script type="text/javascript" src="../js/dropit.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#language').dropit();
+        });
+        function Restrict(event) {
+            if (document.all)
+                return ((event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode == 0 || event.keyCode == 8 || event.keyCode == 13 || event.keyCode == 9))
+            else
+                return ((event.which >= 48 && event.which <= 57) || (event.which == 0 || event.which == 8 || event.which == 13 || event.which == 9))
+        }
+        function RestrictPrice(event) {
+            if (document.all)
+                return ((event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode == 0 || event.keyCode == 8 || event.keyCode == 13 || event.keyCode == 9 || event.keyCode == 46))
+            else
+                return ((event.which >= 48 && event.which <= 57) || (event.which == 0 || event.which == 8 || event.which == 13 || event.which == 9 || event.which == 46))
+        }   
+    </script>
+
+    <!--End dropdown-->
+
+    <script>
+        $(document).ready(function() {
+            // hide #back-top first
+            $("#back-top").hide();
+
+            // fade in #back-top
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('#back-top a').click(function() {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var pageTitle = document.title; //HTML page title
+            var pageUrl = location.href; //Location of the page
+
+            //user hovers on the share button  
+            $('#share-wrapper li').hover(function() {
+                var hoverEl = $(this); //get element
+
+                //browsers with width > 699 get button slide effect
+                if ($(window).width() > 699) {
+                    if (hoverEl.hasClass('visible')) {
+                        hoverEl.animate({ "margin-left": "-148px" }, "fast").removeClass('visible');
+                    } else {
+                        hoverEl.animate({ "margin-left": "0px" }, "fast").addClass('visible');
+                    }
+                }
+            });
+
+            //user clicks on a share button
+            $('.button-wrap').click(function(event) {
+                var shareName = $(this).attr('class').split(' ')[0]; //get the first class name of clicked element
+
+                switch (shareName) //switch to different links based on different social name
+                {
+                    case 'facebook':
+                        var openLink = 'https://www.facebook.com/BullseyeEvaluationSoftware';
+                        break;
+                    case 'twitter':
+                        var openLink = 'https://twitter.com/bullseyepm';
+                        break;
+                    case 'linkedin':
+                        var openLink = 'http://www.linkedin.com/companies/bullseyeevaluation';
+                        break;
+
+
+                    case 'google':
+                        var openLink = 'https://plus.google.com/+GraceAtkinsbullseyeengagement/posts';
+                        break;
+
+                    case 'youtubeleft':
+                        var openLink = 'https://www.youtube.com/bullseyeperformance';
+                        break;
+
+                    case 'email':
+                        var openLink = 'mailto:mgr@bepms.com?subject=' + pageTitle + '&body=Found this useful link for you : ' + pageUrl;
+                        window.location.href = openLink;
+                        return false;
+                        break;
+                }
+
+                //Parameters for the Popup window
+                winWidth = 650;
+                winHeight = 450;
+                winLeft = ($(window).width() - winWidth) / 2,
+                winTop = ($(window).height() - winHeight) / 2,
+                winOptions = 'width=' + winWidth + ',height=' + winHeight + ',top=' + winTop + ',left=' + winLeft;
+
+                //open Popup window and redirect user to share website.
+                window.open(openLink, 'Share This Link', winOptions);
+                return false;
+            });
+        });
+    </script>
+     <script type="text/javascript">
+         function validateSId(txt, e) {
+
+             if (e.keyCode == 13) {
+                 if (txt.val() == "") {
+                     alert("Please enter some text for search...");
+                     e.preventDefault();
+                     return;
+                 }
+                 var str = txt.val();
+                 var address = '/search.aspx';
+                window.location = address + "?search=" + str;
+                e.preventDefault();
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            var session = 'en-US';
+            if (session == "fr-FR") {
+                $(".footer-email").append('<a href="mailto:befrance@bepms.com">mgr@bepms.com</a>');
+                $(".head-email").append('<a href="mailto:befrance@bepms.com">mgr@bepms.com</a>');
+                $("#liIQ").hide();
+                $("#liABC").hide();
+            }
+            else if (session == "es-ES")
+            {
+                $(".footer-email").append('<a href="mailto:bemexico@bepms.com">mgr@bepms.com</a>');
+                $(".head-email").append('<a href="mailto:bemexico@bepms.com">mgr@bepms.com</a>');
+
+            }
+            else {
+                $(".head-email").append('<a href="mailto:mgr@bepms.com">mgr@bepms.com</a>');
+                $(".footer-email").append('<a href="mailto:mgr@bepms.com">mgr@bepms.com</a>');
+            }
+        });
+    </script>
+	
+	
+	<link rel="stylesheet" href="../css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		<script src="../js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		
+    
+<meta name="description" content="Employment & Career Opportunities" />
+<style type="text/css">
+	.nav a.resources{background-color: #f6f6f6;}
+</style>
+</head>
+<body>
+
+    <style>
+        #google_translate_element { background: #f8f8f8; border-bottom:1px solid #ccc; text-align: right;}
+        font {}
+
+    </style>
+    <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, multilanguagePage: true}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+
+    <form name="aspnetForm" method="post" action="career-opportunites.aspx" id="aspnetForm" target="_parent">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTU4NjI1NTM1NQ9kFgJmD2QWAgIDD2QWBAIBDxBkZBYBZmQCJg8WAh4Dc3JjBTZodHRwOi8vd3d3LmJ1bGxzZXllZW5nYWdlbWVudC5jb20vQ29udGFjdFVzTWFzdGVyLmFzcHhkZC4wHsdynFvu2lVR3bdIGfk3Zfze" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwLX9t74CAKa6O39CgKu3/72CAKu34qeDQLE3Jr0BAKD0p7QAgKI1aGACGpdU+G1o+TPQTX/oVFQis916aaR" />
+    <input type="hidden" name="ctl00$hfSession" id="ctl00_hfSession" />
+    <div id="share-wrapper">
+        <ul class="share-inner-wrp">
+		<div class="addthis">
+        <!-- AddToAny BEGIN -->
+       
+		<!--<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>-->
+            <!-- Facebook -->
+            <li class="facebook button-wrap"><a href="#" target="_blank" title="facebook">Facebook</a></li>
+            <!-- Twitter -->
+            <li class="twitter button-wrap"><a href="#" target="_blank" title="twitter">Twitter</a></li>
+            <!-- linkedin -->
+            <li class="linkedin button-wrap a2a_kit a2a_kit_size_32 a2a_default_style" style="cursor:pointer"><a class="a2a_button_linkedin">Linkedin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            <!-- Google -->
+            <li class="google button-wrap"><a href="#" target="_blank" title="google">Google+</a></li>
+            <!-- Youtube -->
+            <li class="youtubeleft button-wrap"><a href="#" title="Youtube"  target="_blank" >Youtube</a></li>
+            <!-- Email -->
+            <li class="email button-wrap"><a href="#" title="Email">Email Us</a></li>
+        </ul>
+    </div>
+    <p id="back-top">
+        <a href="#top" title="back to top"><span></span>Back to Top</a></p>
+    <div class="page-header">
+        <div class="masterwrapper relative-me">
+            <div class="head-right-cont">
+               <div class="fright">
+                <select name="ctl00$ddCultureChange" id="ctl00_ddCultureChange" class="select-st">
+	<option selected="selected" value="en-US">English</option>
+	<option value="es-ES">Spanish</option>
+	<option value="fr-FR">French</option>
+	<option value="ru-RU">Russian</option>
+
+</select>                    
+                </div>
+                <div class="searchbox">
+                    <input name="ctl00$searcht" type="text" id="ctl00_searcht" placeholder="Search..." onkeypress="validateSId($(this),(event))" />
+                </div>
+            </div>
+            <div class="clr-right">
+            </div>
+            <div class="phone-no">
+                <div class="small-text">
+                    <p>
+                        &nbsp;</p>
+                </div>
+                <div class="notext">
+                    	877-988-9808
+				</div>
+               <p class="head-email"></p>
+            </div>
+            <a title="bullseyeengagement" href="http://www.bullseyeengagement.com"><img id="ctl00_Img1" class="logo" src="../images/logo.png" alt="BullseyeEngagement" border="0" /></a>
+            <div class="clr">
+            </div>
+        </div>
+    </div>
+    <div class="masterwrapper relative-me">
+        <div class="clr">
+        </div>
+        <a id="ctl00_HyperLink12" class="free-demo" title="demo" href="../demo.aspx"><strong>Free Live Demo</strong></a>
+		<ul class="gallery clearfix">
+        <a  Class="watchvideo-btn" href="https://www.youtube.com/watch?v=kTIsZ1XpfhU" rel="prettyPhoto"><strong>Watch the Video</strong></a>
+		</ul>
+		
+        <a class="toggleMenu" href="#" title="menu">Menu</a>
+        <ul class="nav">
+            <li>
+                <a id="ctl00_HyperLink0" class="home" title="bullseyeengagement" href="http://www.bullseyeengagement.com">Home<span>Get Started</span></a></li>
+            <li>
+                <a id="ctl00_HyperLink1" class="about-us" title="about us" href="../about-us.aspx">About Us<span>Company Info</span></a>
+                <ul>
+                    <li>
+                        <a id="ctl00_HyperLink2" title="advisors" href="../about-us/advisors.aspx">Advisors</a></li>
+                    <li>
+                        <a title="be client" href="../about-us/be-client.aspx">Clients</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink8" title="strategic partners" href="../about-us/strategic-partners.aspx">Strategic Partners</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink13" title="technology partners" href="../about-us/technology-partners.aspx">Technology Partners</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink9" title="consultants" href="../about-us/consultants.aspx">Our Consultants </a></li>
+                </ul>
+            </li>
+            <li>
+                <a id="ctl00_HyperLink4" class="solutions" title="solutions" href="../solutions.aspx">Solutions<span>Awesome Stuff</span></a>
+                <ul>
+                    <li>
+                            <a id="ctl00_HyperLink26" title="employee evaluation" href="../solutions/employee-performance-evaluation.aspx">Employee Performance Evaluation</a>
+
+                    </li>
+                    <li>
+
+                        <a id="ctl00_HyperLink14" title="employee performance management system" href="../solutions/employee-performance-management-system.aspx">Bullseye Performance</a>
+                        <ul >
+                            <li>
+                                <a id="ctl00_HyperLink18" title="organization performance management system" href="../solutions/organization-performance-management-system.aspx">Bullseye OPS - Organizational Performance</a></li>
+                            <li>
+                                <a id="ctl00_HyperLink25" title="healthcare performance anagement system" href="../solutions/healthcare-performance-management-system.aspx">Bullseye MD - Healthcare</a></li>                            
+                            <li id="liIQ">
+                                <a id="ctl00_HyperLink17" title="higher education performance management system" href="../solutions/higher-education-performance-management-system.aspx">Bullseye IQ - Higher Education</a></li>
+                            <li id="liABC">
+                                <a id="ctl00_HyperLink16" title="school performance management system" href="../solutions/school-performance-management-system.aspx">Bullseye ABC - School Accountability</a></li>                            
+                        </ul>
+                    </li>
+					
+					
+					   <li><a title="talent management software" href="../solutions/talent-management-software.aspx">Talent Management</a></li>
+					    <li><a title="compensation planning" href="../solutions/compensation-plan.aspx">Compensation Planning</a></li>
+					<li>
+                        <a id="ctl00_HyperLink19" title="customer survey systems" href="../solutions/customer-survey-systems.aspx">Bullseye Surveys</a></li>
+					
+                    <li>
+                        <a id="ctl00_HyperLink15" title="KPI dashboards" href="../solutions/KPI-dashboards.aspx">Bullseye KPI Dashboards</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a id="ctl00_HyperLink3" class="services" title="services" href="../services.aspx">Services<span>What We Do</span></a></li>
+            <li>
+                <a id="ctl00_HyperLink5" class="resources" title="resources" href="../resources.aspx">Resources<span>Awesome Stuff</span></a>
+                <ul>
+                    <li>
+                        <a id="ctl00_HyperLink20" title="our testimonial" href="our-testimonial.aspx">Testimonials</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink22" title="videos" href="videos.aspx">Videos</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink21" title="press" href="press.aspx">Press Releases</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink23" title="career opportunites" href="career-opportunites.aspx">Employment & Career Opportunities</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink24" title="articles" href="articles.aspx">Articles</a></li>
+                </ul>
+            </li>
+            <li>
+                <a id="ctl00_HyperLink7" title="bullseyeengagement blog" href="http://blog.bullseyeengagement.com" target="_blank">BLOG<span>Write Message</span></a>
+            </li>
+            <li>
+                <a id="ctl00_HyperLink6" class="contact-us" title="contact" href="../contact.aspx">Contact Us
+<span>Write Message</span></a>
+            </li>
+        </ul>
+
+        <script type="text/javascript" src="../js/menu.js"></script>
+
+        <div class="clr">
+        </div>
+    </div>
+    
+<div class="page-banner-holder">
+  <div class="masterwrapper">
+    <div class="inner-page-banner">
+      <div class="inner-page-banner-box"></div>
+      <div class="inner-page-banner-toon"><img src="../images/inner-banner-resources.png" alt="Employment &amp; Career Opportunities" title="Employment & Career Opportunities" /></div>
+      <div class="inner-page-banner-txt">
+        <h2 class="topper">Employment & Career Opportunities</h2>
+        <div class="txt">
+         
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+<div class="masterwrapper">
+	<div class="inner-page-container">
+    <div class="breadcrumb-holder">
+                <div class="masterwrapper">
+                  <ul class="breadcrumb">
+                    <li><i class="fa-home"></i><a href="../Default.aspx" title="home">Home</a></li>
+                    <li><a href="../resources.aspx">Resources</a></li>
+                    <li>Employment & <span class="hilight-green">Career Opportunities</span></li>
+                  </ul>
+                </div>
+                <div class="clr"></div>
+</div>
+   	  <h1>Employment & <span class="hilight-green">Career Opportunities</span></h1>
+   	  <p>&nbsp;</p>
+   	  <p>BullseyePerformance Management Systems announces following career opportunites:</p>
+      <p>&nbsp;</p>
+      <p class="hilight-black">Sales Executives / Engineers - Technology - Nationwide </p>
+<!--<p> <a href="#">Click here for Job Requirements</a></p>-->
+<p>&nbsp;</p>
+
+      <h3> VP Sales & Marketing</h3>
+      <ul class="simple">
+        <li>Dubai, UAE </li>
+        <li>United Kingdom</li>
+      </ul>
+      <p>&nbsp;</p>
+      <h3>Director of Business Development</h3>
+      <ul  class="simple">
+        <li>Atlanta, GA</li>
+        <li>Chicago, IL</li>
+        <li>Los Angeles, CA</li>
+        <li>New York, NY</li>
+      </ul>
+      <p>&nbsp;</p>
+<h3>Client Implementation Specialist</h3>
+<div class="newtown-frame">
+<script id="gnewtonjs" type="text/javascript" src="//newton.newtonsoftware.com/career/iframe.action?clientId=8a788267506ea29401508626091d0502"></script>
+</div>
+
+
+	</div>
+      </div>
+
+    <div class="clr">
+    </div>
+    <div class="page-footer">
+        <div class="masterwrapper">
+            <div class="footer-align">
+                <div class="resources-box">
+                    <h2>
+                        More Resources</h2>
+                    <p>
+                        &nbsp;</p>
+                    <ul class="arrow-list">
+                        <li>
+                            <a title="our testimonial" href="our-testimonial.aspx">Testimonials</a></li>
+                        <li>
+                            <a title="videos" href="videos.aspx">Videos</a></li>
+                        <li>
+                            <a title="press" href="press.aspx">Press Releases</a></li>
+                        <li>
+                            <a title="career opportunites" href="career-opportunites.aspx">Employment & Career Opportunities</a></li>
+                        <li>
+                            <a title="articles" href="articles.aspx">Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-form-box">
+                    <p>
+                        <iframe id="ctl00_frmContactUsMaster" width="300" height="280" style="overflow: hidden; border: 0;" src="http://www.bullseyeengagement.com/ContactUsMaster.aspx"></iframe>
+                    </p>
+                </div>
+                <div class="footer-address">
+                    <h2>
+                        Contact Us
+</h2>
+                    <div class="footer-home-address">
+                        <p itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">6161 Savoy Drive, Suite 837</span><br />
+                            <span itemprop="addressLocality">Houston</span>, <span itemprop="addressRegion">Texas</span> <span itemprop="postalCode">77036</span>
+                        </p>
+                    </div>
+                    <div class="footer-tel-no">
+                        877-988-9808</div>
+                    <div class="footer-email">
+                        </div>
+                </div>
+                <div class="clr">
+                </div>
+            </div>
+            <div class="social-box-holder">
+                <h2>
+                    Get in touch and stay updated</h2>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/BullseyeEvaluationSoftware" class="fb" title="facebook">
+                        fb</a> <a target="_blank" href="http://www.twitter.com/bullseyepm" class="twitter" title="twitter">twitter</a>
+                    <a target="_blank" href="http://www.linkedin.com/companies/bullseyeevaluation" class="linkedin" title="linkedin">
+                        linkedin</a> <a href="https://plus.google.com/+GraceAtkinsbullseyeengagement/posts"
+                            target="_blank" class="googleplus" title="googleplus">googleplus</a> <a target="_blank" href="http://www.youtube.com/bullseyeperformance"
+                                class="youttube" title="youttube">youttube</a>
+                </div>
+                <p>
+                    &nbsp;</p>
+            </div>
+        </div>
+        <div class="page-bottom">
+            <div class="masterwrapper page-bottom-align">
+                <p>
+
+                    <script type="text/javascript">
+                        copyright = new Date();
+                        update = copyright.getFullYear();
+                        document.write("Copyright &copy; " + update + " BullseyeEngagement. All Rights Reserved.");
+                    </script>
+
+                    <span class="padding-lf-20">
+                        <a title="sitemap" href="../sitemap.aspx">Sitemap</a>
+                        |
+                        <a id="ctl00_HyperLink10" title="legal" href="../legal.aspx">Legal</a>
+                        |
+                        <a id="ctl00_HyperLink11" title="privacy policy" href="../privacy-policy.aspx">Privacy Policy</a>
+                    </span>
+                </p>
+                <a href="http://www.houston.org" title="ghp" target="_blank" class="seal-ghp">seal-ghp</a>
+                <a id="ctl00_HyperLink1451" class="seal-tcpn" title="tcpn" href="../tcpn.aspx">seal-tcpn</a>
+            </div>
+        </div>
+        <div class="clr">
+        </div>
+    </div>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-10011808-1', 'bullseyeengagement.com');
+        ga('send', 'pageview');
+
+    </script>
+    </form>
+	
+<!--Start of Tawk.to Script
+<script type="text/javascript">
+var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/558796591245226f4cafc9ff/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+Tawk.to Script-->
+
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$(".gallery a[rel^='prettyPhoto']").prettyPhoto({theme:'facebook', default_width: 800,
+    		default_height: 600});
+    		
+		});
+		</script>
+</body>
+</html>

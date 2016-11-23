@@ -1,0 +1,639 @@
+status: 200
+content-location: https://www.domainit.com/currency.html
+set-cookie: SHOPSESSID=e7fe74e1133b4d95482ffa1623fe8443; path=/;
+ domain=.domainit.com
+server: Apache/2.2.15 (CentOS)
+connection: close
+date: Sun, 18 Sep 2016 08:35:46 GMT
+content-type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>DomainIt: Currency Converter</title>
+<meta name="description" content="Currency converter with current foreign exchange rates.  Interactive currency converter includes daily exchange rates plus archives for over 160 world currencies." />
+<meta name="keywords" content="currency converter, currency exchange rate, currency exchange, currency calculator, exchange rate, foreign exchange rate" />
+<style type="text/css">
+.style88 {
+   font-size: 23px;
+   font-weight: bold;
+   color: #00316E;
+}
+.heading {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+   color: #00316E;
+}
+.steps {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   font-weight: bold;
+   color: #336633;
+   }
+.convert { float: left; margin: 10px 0px 10px 5px; }
+#h1 { margin: 144px 0px 0px 55px; }
+#heading, #heading span {
+width: 225px; height: 25px;
+background-image: url(/images/currency.gif);
+background-repeat: no-repeat;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 14px;
+color: #00316E;
+font-weight: bold;
+margin: 0px;
+}
+p { margin-top: 10px; margin-bottom: 10px; }
+
+.cheapdomains { position: absolute; z-index: 3; margin: 3px 0px 0px 8px; }
+.cchosting { position: absolute; z-index: 3; margin: 2px 0px 0px 11px; }
+.cchostinglink { position: absolute; z-index: 4; margin: 93px 0px 0px 113px; }
+.currencyaffiliates { position: absolute; z-index: 3; margin: 2px 0px 0px 8px; }
+.ccdomainsearch { position: absolute; z-index: 4; margin: 17px 0px 0px 14px; }
+.cctxt { font-size: 11px; line-height: 13px; width: 125px; }
+.crtlds { font-size: 11px; }
+.ccgo { position: relative; top: 8px; }
+a.ccmulti { position: absolute; z-index: 4; text-decoration: underline; color: #00316E; background: url(/images/myaccount/point.gif) 0px 1px no-repeat; padding-left: 15px; margin: 106px 0px 0px 140px; }
+a.ccmulti:hover { text-decoration: underline; color: #99CC33; }
+#currency-field { width: 120px; position: absolute; margin: 12px 0px 0px 4px; line-height: 12px; background-color: #FFFFFF; display: block; color: #205FAC; }
+
+</style>
+<link href='http://m.domainit.com/currency.html' rel='alternate' media='only screen and (max-width: 640px)' />
+
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" />
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="/css/ie6.css" type="text/css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/css/ie7.css" type="text/css" />
+<![endif]-->
+<script language="Javascript" type="text/javascript">
+<!--
+// Places focus on specified field of specified form
+function placeFocus(formname, fieldname) {
+	var field;
+	field = eval("document."+formname+"."+fieldname);
+	field.focus();
+}
+
+function checkBox(formname, fieldname) {
+	var field;
+	field = eval("document."+formname+"['"+fieldname+"']");
+	field.checked = !field.checked;
+}
+function OnImage(name) {
+	if (document.images) {
+		fullname = eval(name + "2");
+		document[name].src = fullname.src;
+	}
+}
+function OffImage(name) {
+  if (document.images) {
+    fullname = eval(name);
+	if (fullname.complete) {
+      document[name].src = fullname.src;
+	}
+  }
+}
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function externalLinks() {
+ if (!document.getElementsByTagName) return;
+ var anchors = document.getElementsByTagName("a");
+ for (var i=0; i<anchors.length; i++) {
+   var anchor = anchors[i];
+   if (anchor.getAttribute("href") &&
+       anchor.getAttribute("rel") == "external")
+     anchor.target = "_blank";
+ }
+}
+window.onload = externalLinks;
+//-->
+</script>
+<script language="javascript">
+function truncateString(myString, truncateLength) {
+	if(! myString && ! truncateLength) { return; }
+        var newstring = myString.substring(0,truncateLength) + '...' + myString.substring((myString.length), myString.length);
+        document.write((newstring.length > myString.length) ? myString : newstring);
+}
+function truncateString2(myString, truncateLength) {
+	if(! myString && ! truncateLength) { return; }
+        var newstring = new String();
+        if (myString.length > truncateLength + 4) {
+                newstring = myString.substring(0,truncateLength) + '..' + myString.substring((myString.length-4), myString.length);
+        } else {
+		document.write(myString);
+	}
+        document.write((newstring.length > myString.length) ? myString : newstring);
+}
+
+</script>
+
+<script type="text/javascript">
+var state = 'show';
+function toggleLayer(id)
+{
+	if (!document.getElementById) return;
+	var s = document.getElementById(id).style;
+	s.display = s.display ? '' : 'block';
+	state = s.display ? 'hide' : 'show';
+	}
+</script>
+<script type="text/javascript" src="/js/jquery-1.2.2.pack.js"></script>
+<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/js/dropdown.js"></script>
+<script type="text/javascript" src="/js/jquery.textarearesizer.compressed.js"></script>
+
+<!-- Fancybox overlay start
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="/fancybox/fancybox/jquery.easing-1.3.pack.js"></script>
+        <script type="text/javascript" src="/fancybox/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+        <script type="text/javascript" src="/fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+        <script type="text/javascript" src="/fancybox/fancybox/jquery.cockie.js"></script>
+<link rel="stylesheet" href="/fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+ Fancybox overlay ends -->
+
+
+<!-- Google Analytics -->
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-561405-1', 'domainit.com');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- End Google Analytics -->
+
+
+</head>
+<body>
+<!--
+<script>
+     jQuery(document).ready(function() {
+                   if($.cookie("halloween") != 'true')
+                     {
+
+                                $.fancybox('halloween',
+                                        {
+                                                'autoScale'             : true,
+                                                'transitionIn'          : 'none',
+                                                'transitionOut'         : 'none',
+                                                'href'                  : 'https://www.domainit.com/halloween.html',
+                                                'type'                          : 'iframe',
+                                        }
+                         );
+                         $.cookie("halloween", "true", { path: '/', expires: 7 });
+                       }
+
+        });
+</script>
+-->
+<div class="preload"><img src="/images/home-on.jpg" alt="preload" /><img src="/images/aboutus-on.jpg" alt="preload" /><img src="/images/domains-on.jpg" alt="preload" /><img src="/images/hosting-on.jpg" alt="preload" /><img src="/images/email-on.jpg" /><img src="/images/affiliates-on.jpg" alt="preload" /><img src="/images/header-log-in_on.jpg" alt="preload" /><img src="/images/go_on.jpg" alt="preload" /><img src="/images/header-checkout_on.jpg" alt="preload" /></div>
+<div id="wrapper">
+<div class="widemiddle">
+<a href="/" height="45" class="logo"><img src="/images/domainitlogo.gif" alt="DomainIt" /></a>
+<span style="position:relative;top: 5px"><img src="/images/reliableservices.jpg" /></span>
+<div class="headercontainer">
+<div class="headercontents">
+<div id="hdrcolone">
+
+<div class="loggedin"><p>Welcome to DomainIt!<br />Would you like to <a class="loginlk" onClick="elem=document.getElementById('login_form'); elem.style.width=(elem.style.width=='245px'?'0px':'245px'); elem.style.height=(elem.style.height=='55px'?'0px':'55px'); document.getElementById('user').focus();">log-in</a><br />or <a class="loginlk" href="https://www.domainit.com/createaccount.mhtml">create an account</a>?</p></div>
+
+<div id="login_form">
+<div class="preload"><form name="loginForm" onSubmit="return working();" action="https://www.domainit.com/login.mhtml" method="post" enctype="application/x-www-form-urlencoded"><input type='hidden' name='action' value='login' /></div>
+<div class="cancel"><a onclick="elem=document.getElementById('login_form'); elem.style.width=(elem.style.width=='245px'?'0px':'0px'); elem.style.height=(elem.style.height=='55px'?'0px':'0px');"><img src="/images/logincancel.gif" alt="Cancel" /></a></div>
+<label>Username</label> <input name="user" id="user" type="text" size="15" style="width:83px;" tabindex="1" />&nbsp;<a href="/forgot.mhtml" class="headerlogin">forgot it?</a><br />
+<label>Password</label> <input name="pass" type="password" size="15" style="width:83px;" tabindex="2" /><input type="image" tabindex="3" src="/images/header-log-in.jpg" onmouseover="this.src='/images/header-log-in_on.jpg'" onmouseout="this.src='/images/header-log-in.jpg'" value='Sign In' /><div class="preload"></form></div><br />
+</div>
+
+	
+</div>
+
+<div id="hdrcolthree" class="headercolumn">
+<form action="/domain-results.mhtml" method="get" enctype="application/x-www-form-urlencoded"><input type="hidden" name="action" value="search-domains"><input type="hidden" name="AdCode" value="domainit-headerbox" />
+<img src="/images/domain_name_quick_search.gif" alt="domain quick search" /><br />
+<input type="text" name="DomainName" size="18" style="font-size: 11px; width: 110px;" tabindex="4" /><input type="image" src="/images/go.jpg" onmouseover="this.src='/images/go_on.jpg'" onmouseout="this.src='/images/go.jpg'" name="search" alt="GO!" tabindex="5" style="position: relative; top: 5px; left: 3px;" />
+<div class="suggestlnk"><a href="/domain-suggest-tool.mhtml" class="sggtl">domain suggestion tool</a></div>
+</form>
+</div>
+
+
+<div id="hdrcolfour" class="headercolumn">
+<a href="https://support.domainit.com"><img src="/images/supportface.gif" alt="Support" /></a>
+</div>
+</div><!-- End .headercontents -->
+</div><!-- End .headercontainer -->
+<div id="headerlinks">
+        <a href="/"><img src="/images/home.jpg" alt="Home" onmouseover="this.src='/images/home-on.jpg'" onmouseout="this.src='/images/home.jpg'" /></a>
+<ul style="font-size: 14px" id="nav">
+ <li id="domains-ddheader" onMouseOver="ddMenu('domains',1)" onMouseOut="ddMenu('domains',-1)"><a href="/domains">Domains</a>
+  <ul id="domains-ddcontent" class="nav_cat_archive">
+          <li><a href="/domains">Register a Domain</a></li>
+          <li><a href="/transfer">Transfer a Domain</a></li>
+          <li><a href="/renew">Renew a Domain</a></li>
+          <li><a href="/forwarding">URL Forwarding</a></li>
+          <li><a href="/domains/private-registration.mhtml">Whois Privacy</a></li>
+          <li><a href="/whois">Whois Lookup</a></li>
+
+  </ul>
+ </li>
+ <li id="hosting-ddheader" onMouseOver="ddMenu('hosting',1)" onMouseOut="ddMenu('hosting',-1)"><a href="/hosting">Hosting</a>
+  <ul id="hosting-ddcontent" class="nav_cat_archive">
+          <li><a href="/hosting">Hosting Overview</a></li>
+          <li><a href="/hosting/comparison.mhtml">Hosting Plan Comparison</a></li>
+	  <li><a href="http://www.domainit.com/tools/templates.mhtml">Web Design Templates</a></li>
+          <li><a href="/tools/search_engine_submission.mhtml">Search Engine Submission</a></li>
+          <li><a href="/hosting/ssl_certificates.mhtml">Secure SSL Certificates</a></li>
+  </ul>
+ </li>
+ <li id="email-ddheader" onMouseOver="ddMenu('email',1)" onMouseOut="ddMenu('email',-1)"><a href="/email">Email</a>
+  <ul id="email-ddcontent" class="nav_cat_archive">
+          <li><a href="/email">Email Overview</a></li>
+          <li><a href="/email/comparison.mhtml">Email Plan Comparison</a></li>
+          <li><a href="/email/spamfilters.mhtml">Spam & Virus Filters</a></li>
+          <li><a href="/email/webbasedmail.mhtml">WebBasedMail</a></li>
+  </ul>
+ </li>
+ <li id="affiliates-ddheader" onMouseOver="ddMenu('affiliates',1)" onMouseOut="ddMenu('affiliates',-1)"><a href="/affiliates">Affiliates</a>
+  <ul id="affiliates-ddcontent" class="nav_cat_archive">
+          <li><a href="/affiliates">Affiliate Program Overview</a></li>
+          <li><a href="/affiliates/howitworks.mhtml">How It Works</a></li>
+          <li><a href="/affiliates/signup.mhtml">Sign Up Now</a></li>
+          <li><a href="/affiliates/samples.mhtml">Affiliate Banners</a></li>
+          <li><a href="/affiliates/faq.mhtml">Affiliate FAQ</a></li>
+          <li><a href="/affiliates/">Affiliate Log-in</a></li>
+  </ul>
+ </li>
+ <li id="aboutus-ddheader" onMouseOver="ddMenu('aboutus',1)" onMouseOut="ddMenu('aboutus',-1)"><a href="/about">About Us</a>
+  <ul id="aboutus-ddcontent" class="nav_cat_archive">
+          <li><a href="/about">Company Overview</a></li>
+          <li><a href="/about/company-timeline.mhtml">Company Timeline</a></li>
+          <li><a href="/about/president-letter.mhtml">President's Letter</a></li>
+          <li><a href="/about/service-overview.mhtml">Products and Services</a></li>
+          <li><a href="/about/affordable.mhtml">Affordable Prices</a></li>
+          <li><a href="/about/testimonials.mhtml">Client Testimonials</a></li>
+          <li><a href="/about/press.mhtml">Press Gallery</a></li>
+          <li><a href="/about/media.mhtml">Link To Us</a></li>
+          <li><a href="/about/partner.mhtml">Partner With Us</a></li>
+          <li><a href="/contact.mhtml">Contact Us</a></li>
+	  <li><a href="/couponsavings.html">Coupon Savings</a></li>
+  </ul>
+ </li>
+</ul>
+<div class="subnav">
+<div id="cart"
+
+
+>
+<img src="/images/cart-empty.gif" class="emptycart" /><div class="cartitems-empty">0 items</div>
+</div><!--end cart-->
+<div class='subnav_misctools'><a href='/tools/misctools.mhtml'>Overview</a><a href='/domains/country-domains.mhtml'>Country Domains</a><a href='/currency.html'>Currency Converter</a><a href='/support/glossary.mhtml'>Web Term Glossary</a><a href='/tools/shortcuts.mhtml'>Keyboard Shortcuts</a><a href='/tools/encoder.mhtml'>Text Encoder</a></div>
+</div>
+</div><!-- End headerlinks -->
+</div><!-- End .widemiddle -->
+ <!-- End Header File -->
+
+<div class="preload"><img src="/images/sitelinks/go_on.gif" /><img src="/images/sitelinks/signup_on.gif" /><img src="/images/convert_over.gif" /></div>
+
+<div id="background">
+
+<div id="sitelinksleft">
+<div class="topbg"><div class="toplt"> </div> <div class="toprt"></div></div>
+<div class="rightborder">
+<a href="/affiliates/"><img src="/images/sitelinks/affiliate.jpg" class="currencyaffiliates" /></a>
+<a href="/affiliates/" class="ccmulti">Learn More</a>
+	</div>
+<div class="btmbg"><div class="btmlt"> </div> <div class="btmrt"></div></div>
+</div>
+
+<div id="sitelinksmiddle">
+<div class="topbg"><div class="toplt"> </div> <div class="toprt"></div></div>
+<div class="rightborder"><a href="/domains"><img src="/images/sitelinks/cheapdomains.jpg" class="cheapdomains" /></a>
+<div class="ccdomainsearch">
+<form name="domainSearch" action="https://www.domainit.com/domain-results.mhtml" method="get" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="AdCode" value="domainit-currency" /><input type="hidden" name="action" value="search-domains" />
+
+<div id="currency-field" onClick="elem=document.getElementById('currency-field'); elem.style.display=(elem.style.display=='block'?'none':'none'); document.getElementById('CCDomain').focus();">&nbsp;Search Now</div>
+<input type="text" name="DomainName" id="CCDomain" class="cctxt" size="25" onFocus="elem=document.getElementById('currency-field'); elem.style.display=(elem.style.display=='block'?'none':'none');" onBlur="if (value == '') {elem=document.getElementById('currency-field'); elem.style.display=(elem.style.display=='block'?'none':'block')};" />
+<select name="tld" class="crtlds">
+<option value=".com">.com</option>
+<option value=".co.com">.co.com</option>
+<option value=".net">.net</option>
+<option value=".org">.org</option>
+<option value=".biz">.biz</option>
+<option value=".club">.club</option>
+<option value=".nyc">.nyc</option>
+<option value=".us">.us</option>
+<option value=".cc">.cc</option>
+<option value=".tv">.tv</option>
+<option value=".info">.info</option>
+<option value=".mobi">.mobi</option>
+<option value=".me">.me</option>
+<option value=".co">.co</option>
+<option value=".co.uk">.co.uk</option>
+<option value=".org.uk">.org.uk</option>
+<option value=".me.uk">.me.uk</option>
+<option value=".uk.com">.uk.com</option>
+<option value=".us.com">.us.com</option>
+<option value=".design">.design</option>
+<option value=".fans">.fans</option>
+<option value=".love"></option>
+<option value=".online">.online</option>
+<option value=".rent">.rent</option>
+<option value=".site">.site</option>
+<option value=".space">.space</option>
+<option value=".tech">.tech</option>
+<option value=".feedback">.feedback/option>
+<option value=".store">.store</option>
+<option value=".bar">.bar</option>
+<option value=".ink">.ink</option>
+<option value=".rest">.rest</option>
+<option value=".wiki">.wiki</option>
+<option value=".xyz">.xyz</option>
+<option value=".host">.host</option>
+<option value=".press">.press</option>
+<option value=".website">.website</option>
+<option value=".la">.la</option>
+<option value=".audio">.audio</option>
+<option value=".blackfriday">.blackfriday</option>
+<option value=".college">.college</option>
+<option value=".christmas">.christmas</option>
+<option value=".click">.click</option>
+<option value=".diet">.diet</option>
+<option value=".flowers">.flowers</option>
+<option value=".gift">.gift</option>
+<option value=".guitars">.guitars</option>
+<option value=".help">.help</option>
+<option value=".hiphop">.hiphop</option>
+<option value=".juegos">.juegos</option>
+<option value=".link">.link</option>
+<option value=".lol">.lol</option>
+<option value=".photo">.photo</option>
+<option value=".pics">.pics</option>
+<option value=".property">.property</option>
+<option value=".sexy">.sexy</option>
+<option value=".tattoo">.tattoo</option>
+<option value=".actor">.actor</option>
+<option value=".airforce">.airforce</option>
+<option value=".army">.army</option>
+<option value=".attorney">.attorney</option>
+<option value=".auction">.auction</option>
+<option value=".band">.band</option>
+<option value=".consulting">.consulting</option>
+<option value=".dance">.dance</option>
+<option value=".degree">.degree</option>
+<option value=".democrat">.democrat</option>
+<option value=".dentist">.dentist</option>
+<option value=".engineer">.engineer</option>
+<option value=".forsale">.forsale</option>
+<option value=".futbol">.futbol</option>
+<option value=".gives">.gives</option>
+<option value=".haus">.haus</option>
+<option value=".immobilien">.immobilien</option>
+<option value=".kaufen">.kaufen</option>
+<option value=".lawyer">.lawyer</option>
+<option value=".live">.live</option>
+<option value=".market">.market</option>
+<option value=".moda">.moda</option>
+<option value=".mortgage">.mortgage</option>
+<option value=".navy">.navy</option>
+<option value=".news">.news</option>
+<option value=".ninja">.ninja</option>
+<option value=".pub">.pub</option>
+<option value=".rehab">.rehab</option>
+<option value=".republican">.republican</option>
+<option value=".reviews">.reviews</option>
+<option value=".rip">.rip</option>
+<option value=".rocks">.rocks</option>
+<option value=".sale">.sale</option>
+<option value=".social">.social</option>
+<option value=".software">.software</option>
+<option value=".studio">.studio</option>
+<option value=".vet">.vet</option>
+<option value=".video">.video</option>
+
+</select>
+<input type="image" src="/images/sitelinks/go.gif" alt="Go!" onMouseOver="this.src='/images/sitelinks/go_on.gif'" onMouseOut="this.src='/images/sitelinks/go.gif'" class="ccgo" />
+</form>
+
+</div>
+</div>
+<div class="btmbg"><div class="btmlt"> </div> <div class="btmrt"></div></div>
+</div>
+
+<div id="sitelinksright">
+<div class="topbg"><div class="toplt"> </div> <div class="toprt"></div></div>
+<div class="rightborder">
+<a href="/hosting"><img src="/images/sitelinks/hosting.jpg" class="cchosting" /></a>
+<a href="/hosting" class="cchostinglink"><img src="/images/sitelinks/signup.gif" alt="sign up now" onMouseOver="this.src='/images/sitelinks/signup_on.gif'" onMouseOut="this.src='/images/sitelinks/signup.gif'" /></a>
+
+</div>
+<div class="btmbg"><div class="btmlt"> </div> <div class="btmrt"></div></div>
+</div>
+<div style="clear: left;"></div>
+<div class="widetop"> </div>
+<div class="widemiddle" id="widemiddle" style="height: 200px;">
+<div id="h1"><h1 id="heading"><span></span>Currency Converter</h1></div>
+<img src="/images/gray.gif" id="ccgreyline" />
+<img src="/images/arrow.gif" class="convert" />
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- DomainIt Currency Results 728x90 Bottom -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2552785118116636"
+     data-ad-slot="1069055751"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div style="width:300px;position:relative;left:191px; top:15px;">
+<table width="400" align="center" border="0" bordercolor="#999999" bordercolorlight="#CCCCCC" bordercolordark="#999999" cellpadding="3" cellspacing="0" style="margin: 0px 0px 0px 0px;">
+<tr><td>
+
+<div z-index="9" id="oanda_ecc" style="margin-bottom: 30px;">
+
+<iframe style="position:relative;z-index:9" height="250" frameborder="0" width="398" src="https://www.oanda.com/embedded/converter/show/b2FuZGFlY2N1c2VyLy9kZWZhdWx0/0/en/" style="width: 300px; height: 250px; border:0px solid #ffffff; display:block;" scrolling="no"></iframe>
+<!-- IF YOU ALTER OR REMOVE THE FOLLOWING CODE, THE EMBEDDED WIDGET WILL NOT WORK. --><span style="color:#000; text-decoration:none; font-size:9px;"><a id="oanda_cc_link" style="color:#000; font-size:9px;" href="https://www.oanda.com/currency/converter/">Currency Converter</a> by OANDA</span>
+<!-- <script src="https://www.oanda.com/embedded/converter/get/b2FuZGFlY2N1c2VyLy9kZWZhdWx0/?lang=en"></script>-->
+</div>
+</td></tr>
+</table>
+</div>
+
+</div>
+
+<div class="widebottom"> </div>
+<div id="topbreak">
+<a href="/hosting" onmouseover="image5.src='/images/sitelinks/index_hosting_on.gif';" onmouseout="image5.src='/images/sitelinks/index_hosting.gif';"><img name="image5" src="/images/sitelinks/index_hosting.gif" alt="Web Hosting" /></a><img src="/images/spacer.gif" width="3" /><img src="/images/whois_seperator.gif" width="86" height="169" /><img src="/images/spacer.gif" width="4" /><a href="/tools/search_engine_submission.mhtml" onmouseover="image6.src='/images/sitelinks/index_search_engine_on.gif';" onmouseout="image6.src='/images/sitelinks/index_search_engine.gif';"><img name="image6" src="/images/sitelinks/index_search_engine.gif" alt="Search Engine Submission" /></a><img src="/images/spacer.gif" width="4" /><img src="/images/whois_seperator.gif" width="86" height="169" /><img src="/images/spacer.gif" width="4" /><a href="/email" onmouseover="image7.src='/images/sitelinks/index_email_on.gif';" onmouseout="image7.src='/images/sitelinks/index_email.gif';"><img name="image7" src="/images/sitelinks/index_email.gif" alt="Email Services" /></a>
+</div>
+<!-- Start Footer File -->
+<div class="footertop">
+
+<div class="footermiddle" style="font-size:13px;padding-top:10px;">
+<table>
+<tr>
+<td style="width:185px; padding-left:20px;" valign="top">
+<h3 style="color:205FAC;font-size:16px;">Domains</h3>
+<a href='/domains'>Register a Domain</a><br>
+<a href='/renew'>Renew a Domain</a><br>
+<a href='/transfer'>Transfer a Domain</a><br>
+<a href='/domains/private-registration.mhtml'>Whois Privacy</a><br>
+<a href='/index.mhtml?bulk=Yes'>Bulk Search</a><br>
+<a href='/whois'>Whois Search</a>
+</td><td style="width:150px;" valign="top">
+<h3 style="color:205FAC;font-size:16px;">Services</h3>
+<a href='/hosting'>Web Hosting</a><br>
+<a href='/email'>Email</a><br>
+<a href='/hosting/ssl_certificates.mhtml'>SSL Certificates</a><br>
+<a href='/tools/search_engine_submission.mhtml'>Web Marketing</a><br>
+<a href='/tools'>Website Tools</a>
+</td><td style="width:175px;" valign="top">
+<h3 style="color:205FAC;font-size:16px;">Company</h3>
+<a href='/about'>About Us</a><br>
+<a href='/contact.mhtml'>Contact Us</a><br>
+<a href='https://support.domainit.com'>Support</a><br>
+<a href='/about/testimonials.mhtml'>Testimonials</a><br>
+<a href='/affiliates'>Affiliate Program</a><br>
+<a href='/couponsavings.html'>Coupon Savings</a>
+</td><td style="width:267px;padding-right:15px;padding-left:15px" valign="top">
+<h3 style="color:205FAC;font-size:16px;">Questions?</h3>
+For questions, comments or assistance <a style="color: #205FAC !important;" href="https://support.domainit.com">visit our help desk</a> at any time.
+<br>
+<br>
+<font color="#205FAC"><b>Your Satisfaction is Our #1 Priority.</b></font>
+</td>
+</tr>
+</table>
+<table height="190px"><tr>
+<td style="font-size:16px; width:280px; padding-left:20px;">
+<h3 style="color:205FAC;font-size:16px;">Follow us:</h3>
+<a href="https://www.facebook.com/DomainIt"><img style="margin: 5px 5px 0px 0px" src="/images/icon-facebook.jpg"></a>
+<a href="https://twitter.com/domainit"><img style="margin: 5px 5px 0px 0px" src="/images/icon-twitter.jpg"></a>
+<a href="https://plus.google.com/+Domainit"><img style="margin: 5px 5px 0px 0px" src="/images/icon-googleplus.jpg"></a>
+<a href="https://youtube.com/user/DomainIt"><img style="margin: 5px 5px 0px 0px" src="/images/icon-youtube.jpg"></a>
+<a href="https://www.linkedin.com/company/domainit.com"><img style="margin: 5px 5px 0px 0px" src="/images/icon-linkedin.jpg"></a>
+<img style="margin: 10px 5px 0px 0px" src="/images/bbb-rating.png" alt="DomainIt is an A+ BBB rated registrar" class="bbb" />
+<img style="margin: 10px 5px 0px 0px" src="/images/reliableservices.jpg" alt="Providing Reliable Website Services Since 1996" class="relserv" />
+<img style="margin: 10px 5px 0px 0px" src="/images/icann.jpg" alt="ICANN Accredited Registrar" class="icann" />
+<img style="margin: 10px 5px 5px 0px" src="/images/comodo.jpg" alt="DomainIt is a COMODO Authentic Site, Secured by SSL" class="comodo" />
+
+</td><td>
+	<div style="position:relative;top:47px;left:239px;"><a href="https://support.domainit.com"><img src="/images/supportimage.jpg"></a></div>
+</td>
+</tr>
+</table>
+<!-- Review our Policies, Service Agreement, and Legal Notice -->
+<div style="font-size:11px;">
+<p style="margin: 0px 0 12px 19px;">&copy; Copyright 1996-2016 DomainIt. All rights reserved. <a href="/terms.html" rel="external" class="legal">Service Agreements</a></p>
+</div>
+</div>
+</div>
+<div class="widebottom"> </div>
+</div><!-- End wrapper -->
+</div><!-- End wrapper -->
+
+<div id="workingicon" class="invisible centeredicon"><img src="/images/loading.gif"></div>
+
+<script language="javascript" type="text/javascript">
+<!--
+function working() {
+  var wi=document.getElementById('workingicon');
+  if (wi) { wi.style.display='block'; }
+  return ;
+}
+
+//-->
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+document.body.style.height = document.documentElement.scrollHeight+'px';
+-->
+</script>
+
+<!-- ADD SOCIAL PROFILE INFO TO GOOGLE KNOWLEDGE PANEL - START
+  <script type="application/ld+json">
+  { "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "name" : "DomainIt.com",
+    "url" : "https://www.DomainIt.com",
+    "logo" : "https://www.domainit.com/images/domainit220x70.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cincinnati",
+      "addressRegion": "OH",
+      "postalCode": "45242",
+      "streetAddress": "9891 Montgomery Road, #225"
+      },
+    "contactPoint" : [
+    	{ "@type" : "ContactPoint",
+	      "telephone" : "+1-513-351-4222",
+	      "contactType" : "Customer Service"
+	    } ],
+    "sameAs" : [ "http://facebook.com/domainit",
+      "http://www.twitter.com/domainit",
+      "http://plus.google.com/+domainit",
+      "https://www.linkedin.com/company/domainit.com",
+      "https://www.youtube.com/user/DomainIt"]
+  }
+  </script>
+ADD SOCIAL PROFILE INFO TO GOOGLE KNOWLEDGE PANEL - END -->
+
+
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-dz7qnsEFuZUGP"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-dz7qnsEFuZUGP.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+
+<!-- End Quantcast tag -->
+
+</body>
+<div style="position: fixed; bottom: 0; left: 0; right: 0; height: 100px;">
+<table width="135" border="0" cellpadding="2" cellspacing="0" title="Click to Verify - This site chose Symantec SSL for secure e-commerce and confidential communications.">
+<tr>
+<td width="135" align="center" valign="top"><script type="text/javascript" src="https://seal.websecurity.norton.com/getseal?host_name=www.domainit.com&amp;size=M&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en"></script><br />
+</td>
+</tr>
+</table>
+</div>
+
+</html>
+

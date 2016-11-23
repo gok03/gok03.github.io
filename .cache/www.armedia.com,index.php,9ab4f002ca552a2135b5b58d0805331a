@@ -1,0 +1,527 @@
+status: 200
+content-location: http://www.armedia.com/index.php
+x-powered-by: PHP/5.3.27
+server: Apache/2.2.26 (Unix) mod_ssl/2.2.26 OpenSSL/0.9.8e-fips-rhel5
+ mod_auth_passthrough/2.1 mod_bwlimited/1.4 mod_fcgid/2.3.6 Sun-ONE-ASP/4.0.3
+date: Fri, 09 Sep 2016 07:57:10 GMT
+content-type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+  <title>Armedia: Delivery. Integration. Enterprise Content Management.</title>
+  <meta name="msvalidate.01" content="9787CEAAD776DA894D4E28CB9979B6A1" />
+  <meta name="robots" content="NOODP">
+  <meta name"description" content="Armedia is a technology firm, focusing on information and content management solutions. Armedia has industry-acclaimed expertise, services and products in business process, document, case and record management, mobile solutions as well as collaboration, content publishing and content migration. Armedia has experience providing these services on various platforms, including: Alfresco, Drupal, EMC Documentum, IBM FileNet, Microsoft SharePoint and the Apple iPad. Armedia’s mission is to provide world-class solutions to its clients and assist them in achieving tangible returns on their technology investments.">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<link type="text/css" rel="stylesheet" media="screen" href="/styles/styles.css" />
+<!--[if IE]><link type="text/css" rel="stylesheet" media="screen" href="/styles/ie.css" /><![endif]-->
+<!--[if lt IE 8]><link type="text/css" rel="stylesheet" media="screen" href="/styles/ie7.css" /><![endif]-->
+<!-- jQuery Script -->
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+<!-- Cufon Script -->
+<script type="text/javascript" src="/js/cufon-yui.js"></script>
+<script type="text/javascript" src="/js/Mayberry_Pro_Semibold_600.font.js" ></script>
+<script type="text/javascript" src="/js/cufon.js"></script>
+<script>
+
+$(document).ready(function() {
+
+	//When page loads...
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+
+	//On Click Event
+	$("ul.tabs li").click(function() {
+
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active ID content
+		return false;
+	});
+
+	$('#testimonials .slide');
+	setInterval(function(){
+		$('#testimonials .slide').filter(':visible').fadeOut(2000,function(){
+			if($(this).next('li.slide').size()){
+				$(this).next().fadeIn(3000);
+			}
+			else{
+				$('#testimonials .slide').eq(0).fadeIn(3000);
+			}
+		});
+	},3000);	
+
+
+});
+		
+		
+
+</script>
+<script>function myFocus(element) {
+	if (element.value == element.defaultValue) {
+			element.value = '';
+	}
+}
+function myBlur(element) {
+	if (element.value == '') {
+			element.value = element.defaultValue;
+	}
+}</script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.js"></script>
+<script type="text/javascript" src="/js/bbq.js"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.5.custom.min.js"></script>
+<script type="text/javascript" src="/js/jquery.form.wizard-3.0.4.js"></script>
+
+<link rel="stylesheet" href="/styles/megamenu.css" type="text/css" media="screen" /><!-- Menu -->
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/form1.js"></script>
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="/styles/ie/ie.css" />
+<![endif]-->  </script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/slider/themes/default/jquery.slider.css" />
+  <!--[if IE 6]>
+  <link rel="stylesheet" type="text/css" href="js/slider/themes/default/jquery.slider.ie6.css" />
+  <![endif]-->
+  <script type="text/javascript" src="js/slider/jquery.slider.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'/>
+  <style>
+.caption {
+	display:none;
+}
+</style>
+  <script type="text/javascript">
+   jQuery(document).ready(function($) {
+  $(".slider").slideshow({
+    width      : 658,
+    height     : 355,
+    transition : ['slideLeft', 'slideRight', 'slideTop', 'slideBottom']
+  });
+  
+  
+   $(".caption").fadeIn(500);
+  
+  // playing with events:
+  
+  $(".slider").bind("sliderChange", function(event, curSlide) {
+    $(curSlide).children(".caption").hide();
+  });
+  
+  $(".slider").bind("sliderTransitionFinishes", function(event, curSlide) {
+    $(curSlide).children(".caption").fadeIn(500);
+  });
+});
+  </script>
+  </head>
+
+  <body>
+<!-- BEGIN: header -->
+<div> <img src="/img/blue.jpg" alt="Enterprise Content Management" class="bgImage"  /> </div>
+<div id="header">
+  <div class="wrapper">
+    <h1><a href="/index.php" title="Armedia">Armedia</a></h1>
+    <div class="wrapper_menu menu_light_theme"><!-- BEGIN MENU WRAPPER -->
+      
+      <ul class="menu menu_blue">
+        <!-- BEGIN MENU -->
+        
+        <li><a href="/what.php" class="drop">What We Do</a>
+          <div class="dropdown_3columns"> 
+            <!-- <div class="col_3 firstcolumn">
+              <h2>Armedia delivers customized solutions which leverage an organizations documents, content and processes, improving enterprise wide information flow, access, accuracy and security. </h2>
+            </div>-->
+            
+            <div class="clear"></div>
+            <H3>General Services</H3>
+            <div class="col_1 firstcolumn">
+              <ul class="plus ">
+                <li><a href="/capitalplanning.php">Capital Planning </a></li>
+                <li><a href="/ciosupport.php">CIO Support and Governance </a></li>
+                <li><a href="/cloud.php">Cloud and Virtualization</a></li>
+              </ul>
+            </div>
+            <div class="col_1">
+              <ul class="plus">
+                <li><a href="/development.php">Development and Integration</a></li>
+                <li><a href="/mobile.php">Mobile Technologies</a></li>
+                <li><a href="/om.php">Operations and Maintenance</a></li>
+              </ul>
+            </div>
+            <div class="col_1">
+              <ul class="plus">
+                <li><a href="/solution.php">Solution Integration</a></li>
+                <li><a href="/ux.php">User Experience Design</a></li>
+                <li><a href="/wcm.php">Web Content Management/SEO</a></li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+            <H3> Records and Information Management</H3>
+            <div class="col_1 firstcolumn">
+              <ul class="plus ">
+                <li><a href="/bpm.php">Business Process Management</a></li>
+                <li><a href="/capture.php">Capture Management</a></li>
+                <li><a href="/case.php">Case Management</a></li>
+              </ul>
+            </div>
+            <div class="col_1 ">
+              <ul class="plus ">
+                <li><a href="/digital.php">Digital Asset Management</a></li>
+                <li><a href="/document.php">Document Management</a></li>
+                <li><a href="/ecm.php">Enterprise Content Management</a></li>
+              </ul>
+            </div>
+            <div class="col_1 ">
+              <ul class="plus ">
+                <li><a href="/enterprise.php">Enterprise Search</a></li>
+                <li><a href="/records.php">Records Management</a></li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+            <h3>Industries</h3>
+            <div class="col_1 firstcolumn">
+              <ul class="plus ">
+                <li><a href="/government.php">Government </a></li>
+                <li><a href="/healthcare.php">Health Informatics</a></li>
+              </ul>
+            </div>
+            <div class="col_1">
+              <ul class="plus">
+                <li><a href="/financial.php">Financial</a></li>
+                <li><a href="/technology.php">Technology</a></li>
+              </ul>
+            </div>
+            <div class="col_1">
+              <ul class="plus">
+                <li><a href="/transportation.php">Transportation</a></li>
+                <li><a href="/utilities.php">Utilities</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!-- End 4 columns Item -->
+        
+        <li><a href="/how.php" class="drop">How We Do It</a><!-- Begin 3 columns Item -->
+          
+          <div class="dropdown_3columns"><!-- Begin 3 columns container -->
+            
+            <div class="col_3 firstcolumn">
+              <h2>Armedia leadership in the ECM industry is supplemented through official partnerships with industry leading technology providers. </h2>
+              <h3>Processes</h3>
+              <div class="col_1 firstcolumn">
+                <ul class="plus ">
+                  <li><a href="/agile.php">Agile</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <ul class="plus">
+                  <li><a href="/cmmi.php">CMMI</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <ul class="plus">
+                  <li><a href="/waterfall.php">Waterfall</a></li>
+                </ul>
+              </div>
+              <div class="clear"></div>
+              <h3>Products</h3>
+              <div class="col_1 firstcolumn">
+                <ul class="plus "> <li><a href="/arkcase.php">ArkCase</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <ul class="plus">
+                  <li><a href="/caliente.php">Caliente</a></li>
+                </ul>
+              </div>
+              <div class="col_1">
+                <ul class="plus">
+                  <li><a href="/conntext.php">CONNtext</a></li>
+                </ul>
+              </div>
+            </div>
+            <br />
+          </div>
+          <!-- End 3 columns container --> 
+          
+        </li>
+        <li><a href="/who.php" class="drop">Who We Are</a><!-- Begin 5 columns Item -->
+          
+          <div class="dropdown_3columns"><!-- Begin 5 columns container -->
+            <h2>Armedia is a Veteran Owned, and CMMI Level-3 Appraised LLC. </h2>
+            <div class="col_3 firstcolumn">
+             <div class="col_1 firstcolumn">
+          <ul class="levels ">
+            <!--<li><a href="/advisors.php">Board of Advisors</a></li>-->
+            <li><a href="/careers/careers.php">Careers</a></li>
+            <li><a href="/clients.php">Clients</a></li>
+          </ul>
+        </div>
+        <div class="col_1">
+          <ul class="levels">
+            <li><a href="/values.php">Core Values</a></li>
+            <li><a href="/events.php">Events</a></li>
+            <li><a href="/team.php">Management</a></li>
+          </ul>
+        </div>
+        <div class="col_1">
+          <ul class="levels">
+            <li><a href="/news.php">News</a></li>
+            <li><a href="/partners.php">Partners</a></li>
+          </ul>
+        </div>
+            </div>
+          </div>
+          <!-- End 5 columns container --> 
+          
+        </li>
+        <!-- End 5 columns Item --> 
+        
+        <!-- End 3 columns Item --> 
+        
+        <!-- End 2 columns Item -->
+        <li class="nodrop"><a href="/whitepapers" class="">Whitepapers</a> </li>
+        <li class="nodrop"><a href="/blog/">Blog</a></li>
+        
+        <!-- End 1 column Item --><!-- No Drop Down Item -->
+        
+        <li><a href="/contact.php" class="drop">Contact</a><!-- Begin Contact Item -->
+          
+          <div class="dropdown_2columns align_right"><!-- Begin right aligned container -->
+            
+            <div class="col_2 firstcolumn">
+              <h2>Contact Us</h2>
+              <p><a href="http://www.armedia.com/blog/contact-us/" style="text-decoration:underline;">Click Here To E-mail Us</a></p>
+              
+            </div>
+            <div class="col_2 firstcolumn">
+              <h2>Contact Information</h2>
+              <ul>
+                <li>
+                  <h3>ATL Office</h3>
+                 2000 Riveredge Parkway NW, Suite 775<br />
+Atlanta, Georgia 30328<br />
+                  Phone: (770) 615-4215<br />
+                  Fax: (678) 302-4300</li>
+                <li>
+                  <h3>Corporate Office </h3>
+                  8221 Old Courthouse Rd<br />
+                  Suite 300<br />
+                  Vienna, VA 22182<br />
+                  Phone: (571) 395-4800<br />
+                  Fax: (703) 935-3030</li>
+              </ul>
+            </div>
+          </div>
+          <!-- End right aligned container --> 
+          
+        </li>
+        <!-- End Contact Item -->
+        
+      </ul>
+      <!-- END MENU --> 
+      
+    </div>
+    <!-- END MENU WRAPPER --> 
+  </div>
+</div>
+<!-- END: header --> 
+<!-- BEGIN: content -->
+
+<div id="content">
+    <div class="wrapper"> 
+    <!-- BEGIN: boxes -->
+    
+    <div class="mainContent">
+        <div class="slider">
+         <div> 
+            <!--<div class="caption">
+            <h4>Armedia is CMMI Level 3 Appraised.</h4>
+          </div>--> 
+            <a href="/wp/FOIA-Infographic-NEW.png" target="_blank"><img src="img/Website-Slider-FOIAInfographic.png" alt=""/></a> </div>
+        
+         <div> 
+            <!--<div class="caption">
+            <h4>Armedia is CMMI Level 3 Appraised.</h4>
+          </div>--> 
+            <a href="/federal/" target="_blank"><img src="img/federalMicro.png" alt=""/></a> </div>
+        <div> 
+            <!--<div class="caption">
+            <h4>Armedia is CMMI Level 3 Appraised.</h4>
+          </div>--> 
+            <a href="/whitepapers/" target="_blank"><img src="img/whitepaperslider.png" alt=""/></a> </div>
+        <div> 
+            <!--<div class="caption">
+            <h4>Armedia is CMMI Level 3 Appraised.</h4>
+          </div>--> 
+            <a href="HUDCaseStudy.pdf" target="_blank"><img src="img/slider2.png" alt=""/></a> </div>
+        <div> 
+            <!--<div class="caption">
+            <h4>Armedia is CMMI Level 3 Appraised.</h4>
+          </div>--> 
+            <a href="Capabilities_brief-Armedia.pdf" target="_blank"><img src="img/Federal_Contract_Capabilities_Slider.png" alt=""/></a> </div>
+      </div>
+        <div class="searchbox">
+        <div  class="blogHeadline">
+            <div class="box">
+            <form id="searchbox_007764870188015841702:s97fyipqo_a" action="http://www.armedia.com/common/search.php" class="search">
+                <input type="hidden" name="cx" value="007764870188015841702:s97fyipqo_a" />
+                <input type="hidden" name="cof" value="FORID:9" />
+                <div>
+                <input type="text" name="q" />
+              </div>
+                <div>
+                <button type="submit">Search</button>
+              </div>
+              </form>
+            <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_007764870188015841702%3As97fyipqo_a"></script> 
+          </div>
+          </div>
+      </div>
+        <div class="optin">
+        <div  class="blogHeadline"><form action="http://armedia.us1.list-manage.com/subscribe/post?u=3e3721bebf8eb9581d1528d09&amp;id=c811f8874c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        
+        <input type="text" value="First Name" name="FNAME" class="required first" id="mce-first" onfocus="myFocus(this);" onblur="myBlur(this);">
+        <input type="text" value="Last Name" name="LNAME" class="required last" id="mce-last" onfocus="myFocus(this);" onblur="myBlur(this);">
+        
+        
+        <input type="email" value="Email Address" name="EMAIL" class="required email" id="mce-EMAIL" onfocus="myFocus(this);" onblur="myBlur(this);"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></form></div>
+      </div>
+        <div class="gov"> <a href="/federal/" target="_blank"><img src="img/federal.png" /></a> <a href="/whitepapers/"><img src="img/whitepapers.png" /></a><a href="http://Govit.armedia.com/"><img src="img/govit.png" /></a> </div>
+        <div class="clear"></div>
+        <div class="home">
+        <div class="box left">
+            <h3>Latest Blog <a href="/blog/" class="right">more blogs</a></h3>
+            <div class="blogHeadline">
+            <h4><a href="http://www.armedia.com/blog/2016/05/a-tale-of-alfresco-share-with-csrf-and-bad-information/">A tale of Alfresco Share with CSRF and bad information</a></h4><h4><a href="http://www.armedia.com/blog/2016/02/arkcase-3-1-an-overview/">ArkCase 3.1 &#8211; An Overview</a></h4><h4><a href="http://www.armedia.com/blog/2015/10/d2-starter-project/">D2 Starter Project</a></h4><h4><a href="http://www.armedia.com/blog/2015/10/access-activiti-through-an-apache-reverse-proxy-with-ssl/">Access Activiti Through an Apache Reverse Proxy with SSL</a></h4><h4><a href="http://www.armedia.com/blog/2015/10/video-arkcase-and-ephesoft-integration/">VIDEO &#8211; ArkCase and Ephesoft Integration</a></h4>          </div>
+            
+            <!--<div class="blogHeadline">
+        <h4><a href="http://www.atlantaarma.org/meetandedu.php" title="Link" target="_blank">Jan 18, 2011 - AIIM/ARMA</a></h4>
+        <h4><a href="http://www.alfresco.com/about/events/2011/01/e-gov/" title="Link" target="_blank">Jan 20, 2011 - Alfresco Day</a></h4>
+      </div>--> 
+          </div>
+        <div class="box left">
+            <h3>Careers <a href="http://www.armedia.com/careers/careers.php" class="right">more careers</a></h3>
+            <div  class="blogHeadline">
+            <h4><a href="https://app.jobvite.com/CompanyJobs/Job.aspx?j=onzm1fw3&amp;s=rss">Java Architect Requires a US Citizenship</a></h4><h4><a href="https://app.jobvite.com/CompanyJobs/Job.aspx?j=onju1fwV&amp;s=rss">Senior Programmer Analyst   Requires a US Citizenship</a></h4><h4><a href="https://app.jobvite.com/CompanyJobs/Job.aspx?j=ovju1fw3&amp;s=rss">PHP Developer  Requires a US Citizenship or Green Card</a></h4><h4><a href="https://app.jobvite.com/CompanyJobs/Job.aspx?j=oJku1fwi&amp;s=rss">Java Software Developer  Required: US Citizenship</a></h4><h4><a href="https://app.jobvite.com/CompanyJobs/Job.aspx?j=onmu1fwY&amp;s=rss">Alfresco Developer Requires a US Citizenship</a></h4><h4><a href="https://app.jobvite.com/CompanyJobs/Job.aspx?j=oHjE1fwp&amp;s=rss">JAVA Developer Requires a US Citizenship</a></h4><h4><a href="https://app.jobvite.com/CompanyJobs/Job.aspx?j=opRE1fwF&amp;s=rss">Senior Developer Scrum Certified Requires a US Citizenship</a></h4><h4><a href="https://app.jobvite.com/CompanyJobs/Job.aspx?j=oRwG1fwO&amp;s=rss">Alfresco Developer</a></h4>            <!--<ul>
+        <li><a href="http://sas.sei.cmu.edu/pars/pars_detail.aspx?a=15735" target="_blank">Armedia Achieves CMMI Level 3 Certification</a></li>
+        <li><a href="/aboutus/media/news/2010-09-09_Armedia_Develops_SharePoint_Migration_Strategy_for_NOLHGA.htm">Armedia Develops SharePoint Migration Strategy for NOLHGA</a></li>
+        <li><a href="/aboutus/media/news/2010-02-28_Armedia_Alfresco_Daeja_partner_on_HUD.htm">Armedia delivers scanning, indexing and hosted ECM solution for HUD</a></li>
+      </ul>--> 
+          </div>
+          </div>
+        <div class="box left">
+            <h3>Events <a href="events.php" class="right">more events</a></h3>
+            <div class="blogHeadline">
+            <h4><a href="http://www.armedia.com/blog/events/afresco-day-dc-92216/">Afresco Day - DC (9/22/16)</a></h4>          </div>
+            
+            <!--<div class="blogHeadline">
+        <h4><a href="http://www.atlantaarma.org/meetandedu.php" title="Link" target="_blank">Jan 18, 2011 - AIIM/ARMA</a></h4>
+        <h4><a href="http://www.alfresco.com/about/events/2011/01/e-gov/" title="Link" target="_blank">Jan 20, 2011 - Alfresco Day</a></h4>
+      </div>--> 
+          </div>
+        <div class="box left">
+            <h3>News <a href="news.php" class="right">more news</a></h3>
+            <div  class="blogHeadline">
+            <h4><a href="http://www.armedia.com/blog/news/alfresco-and-armedia-to-co-sponsor-records-management-conference-at-dgi-930gov-and-speaking-session/">Alfresco and Armedia to Co-Sponsor Records Management Conference at DGI 930gov and Speaking Session</a></h4><h4><a href="http://www.armedia.com/blog/news/armedia-named-one-of-atlantas-best-and-brightest-companies-to-work-for/">Armedia Named one of Atlanta's Best and Brightest Companies to Work For</a></h4><h4><a href="http://www.armedia.com/blog/news/armedia-named-alfrescos-2015-federal-partner-of-the-year/">Armedia Named Alfresco's 2015 Federal Partner of the Year</a></h4>          </div>
+            
+            <!--<div class="blogHeadline">
+        <h4><a href="http://www.atlantaarma.org/meetandedu.php" title="Link" target="_blank">Jan 18, 2011 - AIIM/ARMA</a></h4>
+        <h4><a href="http://www.alfresco.com/about/events/2011/01/e-gov/" title="Link" target="_blank">Jan 20, 2011 - Alfresco Day</a></h4>
+      </div>--> 
+          </div>
+      </div>
+        <div style="clear:both;"></div>
+      </div>
+    <br />
+  </div>
+    <!-- END: boxes -->
+ <div id="copy"> Copyright © 2002–2013, Armedia. All Rights Reserved.</div>
+    <div style="clear:both;"></div>
+    <br />
+  </div>
+</div>
+</div>
+</div>
+<!-- END: content --> 
+<!-- BEGIN: footer -->
+<div id="footer">
+  <div class="wrapper">
+    <ul>
+      <li>ATL Office: (770) 615-4215 </li>
+      <li class="last">Corporate Office: (571) 395-4800</li>
+    </ul>
+    
+    <ul class="social">
+      <li><a href="http://www.facebook.com/armediallc" title="Facebook">Facebook</a></li>
+      <li><a href="http://www.linkedin.com/company/armedia" title="Linkedin">Linkedin</a></li>
+      <li><a href="http://twitter.com/armediallc" title="Twitter">Twitter</a></li>
+    </ul>
+    
+     <ul class="like">
+      <li>
+        <div style="width: 225px; height: 25px; overflow: hidden; position: relative; ">
+          <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Farmediallc&amp;width=292&amp;connections=0&amp;stream=false&amp;header=false&amp;height=255" scrolling="no" frameborder="0" style="position: absolute; top: -30px; left: -60px;border:none; overflow:hidden; width:292px; height:255px;" allowTransparency="true"></iframe>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- END: footer --> 
+<script>
+$(function(){
+	$("#demoForm").formwizard({ 
+		
+	 }
+	);
+});
+</script>
+
+<script type="text/javascript">
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23810330-1']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>
+  
+<!-- ClickTale Bottom part -->
+
+<script type='text/javascript'>
+// The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
+// 
+//   function ClickTalePreRecordingHook() { /* place your customized code here */  }
+//
+// For details about ClickTale hooks, please consult the wiki page http://wiki.clicktale.com/Article/Customizing_code_version_2
+
+document.write(unescape("%3Cscript%20src='"+
+(document.location.protocol=='https:'?
+"https://cdnssl.clicktale.net/www07/ptc/c829f4e0-2a21-4526-87e6-d12a4ff07d71.js":
+"http://cdn.clicktale.net/www07/ptc/c829f4e0-2a21-4526-87e6-d12a4ff07d71.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- ClickTale end of Bottom part -->
+</body>
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+</html>

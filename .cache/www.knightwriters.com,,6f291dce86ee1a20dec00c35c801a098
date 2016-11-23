@@ -1,0 +1,143 @@
+status: 200
+content-length: 3922
+content-location: http://www.knightwriters.com
+server: nginx/1.10.1
+last-modified: Wed, 11 Apr 2007 06:24:09 GMT
+connection: keep-alive
+-content-encoding: gzip
+date: Fri, 30 Sep 2016 03:37:37 GMT
+content-type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+ 
+<HTML>
+ 
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+<META NAME="GENERATOR" CONTENT="Microsoft FrontPage 2.0"> 
+<TITLE>Knight Writers Software's Home Page</TITLE>
+</HEAD>
+
+<BODY ONLOAD="AccessWeb()" BGCOLOR="#000000">
+<SCRIPT LANGUAGE="JavaScript">
+
+function Is() {
+   var agent = navigator.userAgent.toLowerCase() ;
+	this.major = parseInt(navigator.appVersion) ;
+	this.minor = parseFloat(navigator.appVersion) ;
+	this.ns = ((agent.indexOf('mazilla')!=-1) &&
+	          ((agent.indexOf('spoofer')== -1) &&
+				  (agent.indexOf('compatible') == -1))) ;
+	this.ns2 = (this.ns && (this.major == 2)) ;
+	this.ns3 = (this.ns && (this.major == 3)) ;
+	this.ns4 = (this.ns && (this.major >= 4)) ;
+	this.ie  = (agent.indexOf("msie") != -1) ;
+	this.ie3 = (this.ie && (this.major == 2)) ;
+	this.ie4 = (this.ie && (this.major >= 4)) ;
+	this.op3 = (agent.indexOf("opera") != -1) ;
+}
+
+var is = new Is() 
+
+function AccessWeb() {
+setTimeout("SelectWeb()",6000)  ;
+}
+
+function SelectWeb() {
+if (screen.height >= 768)
+   {
+	   if (is.ie4)
+		{
+		   if (confirm('This site uses Microsoft Agent Technology for an interactive interface. \n\r\n\rWould you like to enable this feature?') )
+  			{
+  		      if (confirm('The Microsoft Agent Requires software from Microsoft, \n\rif it is not already present, to be loaded on your computer.  \n\r\n\rDo you wish to install the software now if necessary?') )
+				{
+               window.location = "hires/default.htm" ;
+				}
+				else	
+				{
+               window.location = "hires/noagent.htm" ;
+				}
+			}
+			else
+			{
+            window.location = "hires/noagent.htm" ;
+			}	
+		}
+		else if (is.ie3)
+		{
+         window.location = "hires/noagent.htm" ;
+		}		
+		else
+		{
+         window.location = "hires/netscape.htm" ;
+		}		
+   }
+   else
+   {
+	   if (is.ie4)
+		{
+		   if (confirm('This site uses Microsoft Agent Technology for an interactive interface. \n\r\n\rWould you like to enable this feature?') )
+  			{
+  		      if (confirm('The Microsoft Agent Requires software from Microsoft, \n\rif it is not already present, to be loaded on your computer.  \n\r\n\rDo you wish to install the software now if necessary?') )
+				{
+               window.location = "lores/default.htm" ;
+				}
+				else	
+				{
+               window.location = "lores/noagent.htm" ;
+				}
+			}
+			else
+			{
+            window.location = "lores/noagent.htm" ;
+			}	
+		}
+		else if (is.ie3)
+		{
+         window.location = "lores/noagent.htm" ;
+		}		
+		else
+		{
+         window.location = "lores/netscape.htm" ;
+		}		
+   }
+}
+// --></SCRIPT>
+
+<P><A HREF="hires/default.htm"></A><A HREF="lores/default.htm"></A> </P>
+<P><A HREF="hires/noagent.htm"></A><A HREF="lores/noagent.htm"></A> </P>
+<P ALIGN="center"><IMG SRC="common/images/animlogo.gif"
+ALT="Knight Writers Software, Inc." ALIGN="absmiddle" WIDTH="244"
+HEIGHT="163 "> </P>
+<P><CENTER><A HREF="http://member.linkexchange.com/cgi-bin/fc/fastcounter-login?789027"
+TARGET="_top"><IMG
+SRC="http://fastcounter.linkexchange.com/fastcounter?789027+1578061"
+BORDER="0"> <!-- END FASTCOUNTER CODE --></A> </P>
+</P>
+<P><A HREF="http://z.extreme-dm.com/s/?tag=bitsdawg" TARGET="_top"><IMG
+SRC="http://z0.extreme-dm.com/i/" BORDER="0" WIDTH="41" HEIGHT="38" NAME="im">
+<SCRIPT LANGUAGE="javascript"><!--
+an=navigator.appName;
+d=document;function
+pr(){d.write("<img src=\"http://z1.extreme-dm.com",
+"/z/?tag=bitsdawg&j=y&srw="+srw+"&srb="+srb+"&",
+"rs="+r+"&l="+escape(parent.document.referrer)+"\" height=1 ",
+"width=1>");}srb="na";srw="na";//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="javascript1.2"><!--
+s=screen;srw=s.width;an!="Netscape"?
+srb=s.colorDepth:srb=s.pixelDepth;//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="javascript"><!--
+r=41;d.images?r=d.im.width:z=0;pr();//-->
+</SCRIPT>
+
+</A></CENTER></P>
+<NOSCRIPT><P><IMG SRC="http://z1.extreme-dm.com/z/?tag=bitsdawg&amp;j=n"></P>
+</NOSCRIPT>
+</BODY>
+</HTML>
+

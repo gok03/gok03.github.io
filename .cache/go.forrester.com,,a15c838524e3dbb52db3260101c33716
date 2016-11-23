@@ -1,0 +1,621 @@
+status: 200
+content-length: 50357
+via: 1.1 varnish-v4
+x-cdn: Incapsula
+vary: Accept-Encoding, Cookie
+x-styx-version: StyxGo
+x-pantheon-styx-hostname: styxa28fb950
+x-styx-req-id: styx-9cbcb7a1ad4d0ce075509112ec73c1c2
+cache-control: public, max-age=600
+x-varnish: 794046827 800982829
+set-cookie: visid_incap_871996=c/NJptRRThmoo+umbu9fKa3l11cAAAAAQUIPAAAAAAD7Jys049DTK3JmUcRdl1AA;
+ expires=Wed, 13 Sep 2017 09:36:54 GMT; path=/;
+ Domain=.forrester.com,
+ incap_ses_488_871996=apkmSzLZEB1lgxFxgbnFBq7l11cAAAAAar/KHS+4CPeP5s3lW/wpYg==;
+ path=/; Domain=.forrester.com
+accept-ranges: bytes
+-content-encoding: gzip
+link: <https://go.forrester.com/wp-json/>;
+ rel="https://api.w.org/", <https://go.forrester.com/>; rel=shortlink
+date: Tue, 13 Sep 2016 11:31:22 GMT
+content-location: https://go.forrester.com
+age: 547
+server: nginx
+connection: keep-alive
+x-iinfo: 8-88326362-88326367 NNNN CT(23 67 0) RT(1473766829954 19) q(0 0 1 0)
+ r(1 1)
+content-type: text/html; charset=UTF-8
+x-pantheon-endpoint: b4d05f35-5550-4c74-b4c7-c1e08368b7bf
+-varied-accept-encoding: gzip, deflate
+
+
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Challenge thinking. Lead change.">
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="pingback" href="https://go.forrester.com/xmlrpc.php" />
+  <link rel="canonical" href="http://go.forrester.com/" />
+
+  <title>Welcome &middot; Forrester</title>
+
+  <link rel="stylesheet" type="text/css" href="https://go.forrester.com/wp-content/themes/forrester-timber-theme/style.css" />
+
+  <meta name="grunticonSVG"  content="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/css/icons.data.svg.css" />
+  <meta name="grunticonDataPNG"  content="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/css/icons.data.png.css" />
+  <meta name="grunticonPNG"  content="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/css/icons.fallback.css" />
+
+  <meta name="fullJS"  content="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/js/forrester_8.1.0.js" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/js/js.cookies.js"></script>
+  <script src="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/js/marketing.js"></script>
+  <script>
+  //<![CDATA[
+  !function(n,t){var e="select",s="select",c={select:"custom-"+e,text:"label-text",btn:"btn-"+e};t.fn[e]=function(){return this.each(function(){var n=t(this);n.parent().addClass(c.select);if(n.css("opacity")>=.001){var e=(n.prev().addClass(c.text),function(){return n[0].options[n[0].selectedIndex].innerHTML}),s=t("<span class='"+c.btn+"'>"+e()+"</span>");n.before(s).bind("change",function(){s.html(e())}).bind("focus",function(){s.addClass("btn-focus")}).bind("blur",function(){s.removeClass("btn-focus")})}else n.css("opacity","1")})},t(function(){t(s)[e]()})}(this,jQuery);
+  //]]>
+  </script>
+  <script>
+  //<![CDATA[
+  function loadCSS(e,n,t,o){"use strict";var a=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],i=window.document.styleSheets;return a.rel="stylesheet",a.href=e,a.media="only x",o&&(a.onload=o),r.parentNode.insertBefore(a,r),a.onloadcssdefined=function(n){for(var t,o=0;o<i.length;o++)i[o].href&&i[o].href.indexOf(e)>-1&&(t=!0);t?n():setTimeout(function(){a.onloadcssdefined(n)})},a.onloadcssdefined(function(){a.media=t||"all"}),a}function onloadCSS(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}function loadJS(e,n){"use strict";var t=window.document.getElementsByTagName("script")[0],o=window.document.createElement("script");return o.src=e,o.async=!0,t.parentNode.insertBefore(o,t),n&&"function"==typeof n&&(o.onload=n),o}!function(e){e.Forrester={}}(this),function(e){var n=function(t,o){"use strict";if(t&&3===t.length){var a=e.navigator,r=e.document,i=e.Image,s=!(!r.createElementNS||!r.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!r.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),d=new i;d.onerror=function(){n.method="png",n.href=t[2],loadCSS(t[2])},d.onload=function(){var e=1===d.width&&1===d.height,a=t[e&&s?0:e?1:2];e&&s?n.method="svg":e?n.method="datapng":n.method="png",n.href=a,onloadCSS(loadCSS(a),o)},d.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",r.documentElement.className+=" grunticon"}};n.loadCSS=loadCSS,n.onloadCSS=onloadCSS,e.grunticon=n}(this),function(e,n){"use strict";function t(n){for(var t,o=e.document.getElementsByTagName("meta"),a=0;a<o.length;a++)if(o[a].name&&o[a].name===n){t=o[a];break}return t}var o=e.document,a=e.navigator,r=e.Forrester;r.helpers={loadCSS:loadCSS,loadJS:loadJS,getMeta:t},r.supports={};var i=(a.userAgent,t("fullJS")),s=t("grunticonSVG"),d=t("grunticonDataPNG"),c=t("grunticonPNG"),l=["js"],u=function(e,n){var t=o.createElement("test").style,a="webkit Moz o O ms Ms".split(" ");if(n in t)return!0;for(var r=0,i=a.length;i>r;r++)if(a[r]+e in t)return!0;return!1};s&&d&&c&&grunticon([s.content,d.content,c.content]),"querySelector"in e.document&&e.operamini===n&&-1===e.navigator.userAgent.indexOf("Series40")&&(u("BoxShadow","boxShadow")&&(l.push("forrester-support-boxshadow"),r.supports.boxShadow=!0),u("Animation","animation")&&(l.push("forrester-support-animation"),r.supports.animation=!0),e.document.documentElement.className+=" "+l.join(" "),i&&loadJS(i.content,function(){var e=t("afterFullJS");e&&loadJS(e.content)}))}(this);
+  //]]>
+  </script>
+
+  <noscript><link rel="stylesheet" href="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/css/icons.fallback.css" /></noscript>
+  <link rel="shortcut icon" href="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/img/favicon.ico" />
+  <link rel="shortcut icon" href="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/img/favicon.png" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58959716-10', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script src="//cdn.optimizely.com/js/1078350080.js"></script>
+<!-- This site is optimized with the Yoast SEO Premium plugin v3.3.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://go.forrester.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Welcome &middot; Forrester" />
+<meta property="og:url" content="https://go.forrester.com/" />
+<meta property="og:site_name" content="Forrester" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Welcome &middot; Forrester" />
+<meta name="twitter:site" content="@forrester" />
+<meta name="twitter:creator" content="@forrester" />
+<meta property="DC.date.issued" content="2016-06-08T14:57:26+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/go.forrester.com\/","name":"Forrester","potentialAction":{"@type":"SearchAction","target":"https:\/\/go.forrester.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/go.forrester.com\/","sameAs":["https:\/\/www.facebook.com\/forrester\/","https:\/\/www.linkedin.com\/company\/forrester-research","https:\/\/www.youtube.com\/user\/ForresterResearch","https:\/\/twitter.com\/forrester"],"name":"Forrester","logo":"https:\/\/go.forrester.com\/wp-content\/uploads\/forrester-RGB_logo-1.png"}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/go.forrester.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='https://api.w.org/' href='https://go.forrester.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://go.forrester.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://go.forrester.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.3" />
+<link rel='shortlink' href='https://go.forrester.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://go.forrester.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgo.forrester.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://go.forrester.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgo.forrester.com%2F&#038;format=xml" />
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://go.forrester.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="https://go.forrester.com/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+			</head>
+
+	<body class="home page page-id-191 page-template-default wpb-js-composer js-comp-ver-4.12 vc_responsive" data-template="base.twig">
+		<div class="page">
+
+							<div class="header">
+					<div class="header-max">
+						<header>
+							<h2><a id="logo_btn" class="logo" href="/"><img src="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/img/retina_logo.png" srcset="https://go.forrester.com/wp-content/themes/forrester-timber-theme/assets/img/logo-white.svg"><span class="a11y-hide">Forrester</span></a></h2>
+							<nav role="navigation">
+								<ul class="header-nav">
+									<li class="menu-navigation"><a href="#navigation-section" class="dropdown">services</a></li>
+									<li id="secondary_btn" class="log-in-navigation"><a href="https://www.forrester.com/reg/loginfull.xhtml">log in</a></li>
+								</ul>
+							</nav>
+						</header>
+					</div>
+				</div><!-- /header -->
+
+									<div class="menu" id="navigation-section" aria-expanded="false">
+						<nav role="navigation">
+							<div class="collapsible collapsible-collapsed nav-research menu-item menu-item-type-custom menu-item-object-custom menu-item-931 menu-item-has-children" data-collapsible-hover="true" data-collapsible-set="nav">
+		<h3><span class="forrester-btn-title">Forrester</span> <span class="main-nav-name">research</span></h3>
+		<div class="menu-content menu-showextra">
+			<ul>
+				<li class="highlight-category dropdown-title">Forrester Research</li>
+					<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1629">
+		<a href="https://go.forrester.com/research/">Research Services Overview</a>
+	</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1630">
+		<a href="https://www.forrester.com/search?N=10001&range=504005&sort=3&searchRefinement=reports">Latest Research</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1563">
+		<a href="https://go.forrester.com/research/playbooks/">Playbooks</a>
+	</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1633">
+		<a href="https://www.forrester.com/search?N=10001+40004&sort=3">Forrester Waves</a>
+	</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1632">
+		<a href="https://www.forrester.com/coverageareas">Coverage Areas</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1735">
+		<a href="https://go.forrester.com/research/reprints/">Reprints</a>
+	</li>
+			</ul>
+		</div>
+	</div>
+	<div class="collapsible collapsible-collapsed nav-data menu-item menu-item-type-custom menu-item-object-custom menu-item-932 menu-item-has-children" data-collapsible-hover="true" data-collapsible-set="nav">
+		<h3><span class="forrester-btn-title">Forrester</span> <span class="main-nav-name">data</span></h3>
+		<div class="menu-content menu-showextra">
+			<ul>
+				<li class="highlight-category dropdown-title">Forrester Data</li>
+					<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1643">
+		<a href="https://go.forrester.com/data/">Data Services Overview</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1644">
+		<a href="https://go.forrester.com/data/consumer-technographics/">Consumer Technographics</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1647">
+		<a href="https://go.forrester.com/data/business-technographics/">Business Technographics</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1646">
+		<a href="https://go.forrester.com/data/forecastview/">ForecastView</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1648">
+		<a href="https://go.forrester.com/data/cx-index/">CX Index</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-4233">
+		<a href="https://go.forrester.com/data/custom-data/">Custom Data</a>
+	</li>
+			</ul>
+		</div>
+	</div>
+	<div class="collapsible collapsible-collapsed nav-peer menu-item menu-item-type-custom menu-item-object-custom menu-item-930 menu-item-has-children" data-collapsible-hover="true" data-collapsible-set="nav">
+		<h3><span class="forrester-btn-title">Forrester</span> <span class="main-nav-name">connect</span></h3>
+		<div class="menu-content menu-showextra">
+			<ul>
+				<li class="highlight-category dropdown-title">Forrester Connect</li>
+					<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1652">
+		<a href="https://go.forrester.com/connect/">Connect Overview</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1653">
+		<a href="https://go.forrester.com/connect/executive-programs/">Executive Programs</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1654">
+		<a href="https://go.forrester.com/connect/leadership-boards/">Leadership Boards</a>
+	</li>
+			</ul>
+		</div>
+	</div>
+	<div class="collapsible collapsible-collapsed nav-consulting menu-item menu-item-type-custom menu-item-object-custom menu-item-933 menu-item-has-children" data-collapsible-hover="true" data-collapsible-set="nav">
+		<h3><span class="forrester-btn-title">Forrester</span> <span class="main-nav-name">consulting</span></h3>
+		<div class="menu-content menu-showextra">
+			<ul>
+				<li class="highlight-category dropdown-title">Forrester Consulting</li>
+					<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1657">
+		<a href="https://go.forrester.com/consulting/">Consulting Overview</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1659">
+		<a href="https://go.forrester.com/consulting/cx/">CX Strategy</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1660">
+		<a href="https://go.forrester.com/consulting/digital-business/">Digital Business Strategy</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1661">
+		<a href="https://go.forrester.com/consulting/bt/">Business Technology Strategy</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1663">
+		<a href="https://go.forrester.com/consulting/contract-negotiation/">Software Contract Negotiation</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1658">
+		<a href="https://go.forrester.com/consulting/content-marketing-consulting/">Content Marketing Consulting</a>
+	</li>
+			</ul>
+		</div>
+	</div>
+	<div class="collapsible collapsible-collapsed nav-events menu-item menu-item-type-custom menu-item-object-custom menu-item-934 menu-item-has-children" data-collapsible-hover="true" data-collapsible-set="nav">
+		<h3><span class="forrester-btn-title">Forrester</span> <span class="main-nav-name">events</span></h3>
+		<div class="menu-content menu-showextra">
+			<ul>
+				<li class="highlight-category dropdown-title">Forrester Events</li>
+					<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1668">
+		<a href="https://go.forrester.com/events/">Events Overview</a>
+	</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1670">
+		<a href="https://www.forrester.com/events?N=10006+5023">Workshops</a>
+	</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1671">
+		<a href="https://www.forrester.com/events?N=10006+5025">Webinars</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1736">
+		<a href="https://go.forrester.com/events/sponsorship/">Sponsor An Event</a>
+	</li>
+			</ul>
+		</div>
+	</div>
+	<div class="collapsible collapsible-collapsed nav-analyst menu-item menu-item-type-custom menu-item-object-custom menu-item-935 menu-item-has-children" data-collapsible-hover="true" data-collapsible-set="nav">
+		<h3><span class="forrester-btn-title">Forrester</span> <span class="main-nav-name">analysts</span></h3>
+		<div class="menu-content menu-showextra">
+			<ul>
+				<li class="highlight-category dropdown-title">Forrester Analysts</li>
+					<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1681">
+		<a href="https://go.forrester.com/analysts/">Analyst Overview</a>
+	</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1682">
+		<a href="https://www.forrester.com/hub/analysts.xhtml">Analyst Directory</a>
+	</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1684">
+		<a href="https://www.forrester.com/reg/briefing.xhtml">Brief Our Analysts</a>
+	</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1678">
+		<a href="https://go.forrester.com/advisory/">Analyst Advisory</a>
+	</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1685">
+		<a href="http://blogs.forrester.com">Analyst Blogs</a>
+	</li>
+			</ul>
+		</div>
+	</div>
+						</nav>
+					</div>
+				
+								
+			
+				<div class="fullPage content" id="marketingTemplate" role="main">
+		 	<div class="marketing-rwd" >
+					<div class="pgheader pgheader-nav bg-gray">
+            <div class="pglede"><h1 class="align-left txt-default" style="font-size:2.2em;">Technology-empowered, digitally savvy customers are changing the world, the economy, and business.</h1><h1 class="align-left txt-default" style="font-size:2.2em;">How you respond determines whether you win in the age of the customer.</h1><br /><img src="https://go.forrester.com/wp-content/uploads/2016/06/HOME-tagline.svg" alt=""style="width:80%;" /> </div>
+          </div><div class="spotlight anon-hp  bg-gray-lighter"><h2 class="  ">The customer-obsessed blueprint</h2><div id="" class="group keyfeat group-3a bg-gray-lighter  "><div class="keyfeatitem group-section-a "><div class="layersnap  group-section-a spotlight_img animate-svg inviewport" data-layersnap-init  data-scroll-activate  data-layersnap-replay  style="" ><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px" height="110px" viewBox="0 0 155 110" enable-background="new 0 0 155 110" xml:space="preserve">
+          <polygon fill="#A5D25F" points="155,0 135.3,110 0,110 0,0 "></polygon>
+          <g id="drift-right_duration-1500_delay-400" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;">
+              <g>
+                  <path fill="#467F1A" d="M127.6,92.3c-3.3-4.6-8.8-5.8-13.3-6.9c-1.8-0.4-4.1-1.1-4.6-1.6c-0.7-0.7-1.1-1.5-1.3-2.3
+                      c-0.2-0.6,0.1-1.3,0.6-1.6c0.6-0.4,1.2-0.8,1.8-1.3c0.3-0.2,0.6-0.4,0.9-0.4h7.2V66.9c0-0.5,0.2-0.9,0.6-1.2c0,0,0.1-0.1,0.1-0.1
+                      c1.1-0.9,1.8-2.6,1.8-4.5c0-2.5-1.1-4.5-2.7-5c0-0.2,0-0.3,0-0.5c0-9.9-7.9-18-17.8-18c-9.9,0-18,7.9-18,17.8c0,0.3,0,0.5,0,0.7
+                      c-1.4,0.6-2.5,2.5-2.5,4.9c0,1.9,0.7,3.5,1.7,4.4c0.3,0.3,0.5,0.7,0.5,1.1l0,11.7h7.5c0.3,0,0.7,0.1,0.9,0.4c0.6,0.5,1.3,1,2,1.5
+                      c0.1,0.1,0.3,0.2,0.3,0.2s0,0.1,0,0.1c-0.1,0.9-0.4,2.5-1.5,3.4c-0.5,0.4-2.7,1.1-4.5,1.5c-4.5,1.1-10.1,2.3-13.3,6.9
+                      c-1,1.4-1.6,4.4-2.1,7.7c-0.4,2.5-0.5,5-0.6,7c0,1.3,0,2.3,0,3h58.9C130.4,107.6,130.1,96.1,127.6,92.3z"></path>
+                  <g>
+                      <path id="XMLID_241_" fill="#A5D25F" d="M86.4,64.7l0-0.1c-0.1-0.7-0.6-1.2-1.3-1.2c-0.5,0-0.9,0.2-1.1,0.6l0,0l0,0
+                          c-0.2,0-1-1-1-2.7c0-1.7,0.7-2.7,0.9-2.7c0,0,0,0,0,0c0.5,1.5,1.8,3,3.4,1.4c3.1-3.1,10.7-8.7,10.7-8.7l-6.6,7.1
+                          c0,0,6.1-4,11.7-6.5c2.9-1.3,5.9-2.3,8.3-3c2,2.3,3.5,5.3,4.1,8.8c0.1,0.6,0.6,1.4,1.3,1.4c0.5,0,0.9-0.1,1.1-0.5
+                          c0.1-0.1,0.2-0.1,0.2-0.1c0.2,0,1,1,1,2.7c0,1.7-0.7,2.7-1,2.7c0,0,0,0-0.1,0c-0.2-0.4-0.6-0.6-1.1-0.6c-0.7,0-1.2,0.6-1.3,1.1
+                          c0,0.2,0,0.2,0,0.2c-1.1,9-7.2,15.5-14.6,15.5C93.6,80.3,87.4,73.8,86.4,64.7z"></path>
+                      <path id="XMLID_239_" fill="#A5D25F" d="M93.5,86c1.7-1.1,1.9-3,2.3-4.2c0.9,0.3,3,0.8,4.9,0.9c1.7,0,3.7-0.3,5.3-0.9
+                          c0.2,1.3,0.8,2.9,2.1,4.1c0.8,0.7,2.1,1.1,3.9,1.6c-2.5,5.8-8.2,17.6-10.8,17.6c-2.8,0-8.3-11.5-10.9-17.7
+                          C91.4,87,92.3,86.7,93.5,86z"></path>
+                  </g>
+                  <g>
+                      <circle id="XMLID_238_" fill="#467F1A" cx="103.4" cy="91.4" r="1.8"></circle>
+                      <circle id="XMLID_237_" fill="#467F1A" cx="98.1" cy="91.4" r="1.8"></circle>
+                      <circle id="XMLID_236_" fill="#467F1A" cx="93.9" cy="88.7" r="1.8"></circle>
+                      <circle id="XMLID_235_" fill="#467F1A" cx="107.9" cy="88.7" r="1.8"></circle>
+                  </g>
+              </g>
+          </g>
+          <g id="drift-right_duration-800_delay-500" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;">
+              <g>
+                  <defs>
+                      <polygon id="SVGID_1_" points="95,15.1 53.8,110 31.7,110 72.7,15.1 			"></polygon>
+                  </defs>
+                  <clipPath id="SVGID_2_">
+                      <use xlink:href="#SVGID_1_" overflow="visible"></use>
+                  </clipPath>
+                  <g clip-path="url(#SVGID_2_)">
+                      <path id="XMLID_251_" fill="#669933" d="M75.4,85.7c-1.8-0.4-4.1-1.1-4.6-1.6c-1-1-1.4-2.5-1.5-3.4c1.1-0.6,2.1-1.3,3-2.2h7.7
+                          V66.3c0.3-0.1,0.5-0.2,0.7-0.4c1.1-0.9,1.8-2.6,1.8-4.5c0-2.5-1.1-4.5-2.7-5c0-0.2,0-0.3,0-0.5c0-9.9-7.9-18-17.8-18
+                          c-9.9,0-18,7.9-18,17.8c0,0.3,0,0.5,0,0.7c-1.4,0.6-2.5,2.5-2.5,4.9c0,2.2,0.9,4.1,2.2,4.8v12.4h8c0.8,0.7,1.6,1.3,2.4,1.8
+                          c0.1,0.1,0.3,0.2,0.3,0.2s0,0.1,0,0.1c-0.1,0.9-0.4,2.5-1.5,3.4c-0.5,0.4-2.7,1.1-4.5,1.5C44,86.8,38.5,88,35.2,92.6
+                          c-1,1.4-1.6,4.4-2.1,7.7c-0.4,2.5-0.6,5-0.6,6.9c-0.1,2.4-1.2,4-1.2,4v0.9c0,0,9.8,5.3,30.3,5.3s29.9-5.3,29.9-5.3v-1.5
+                          c0,0,0-13.8-2.9-18.1C85.4,88.1,79.9,86.8,75.4,85.7z"></path>
+                      <path id="XMLID_249_" fill="#A5D25F" d="M47.5,64.7l0-0.1c-0.1-0.7-0.6-1.2-1.3-1.2c-0.5,0-0.9,0.2-1.1,0.6l0,0l0,0
+                          c-0.2,0-1-1-1-2.7c0-1.7,0.7-2.7,0.9-2.7c0,0,0,0,0,0c0.5,1.5,1.8,3,3.4,1.4c3.1-3.1,10.7-8.7,10.7-8.7l-6.6,7.1
+                          c0,0,6.1-4,11.7-6.5c2.9-1.3,5.9-2.3,8.3-3c2,2.3,3.5,5.3,4.1,8.8c0.1,0.6,0.6,1.4,1.3,1.4c0.5,0,0.9-0.1,1.1-0.5
+                          c0.1-0.1,0.2-0.1,0.2-0.1c0.2,0,1,1,1,2.7c0,1.7-0.7,2.7-1,2.7c0,0,0,0-0.1,0c-0.2-0.4-0.6-0.6-1.1-0.6c-0.7,0-1.2,0.6-1.3,1.1
+                          c0,0.2,0,0.2,0,0.2c-1.1,9-7.2,15.5-14.6,15.5C54.7,80.3,48.6,73.8,47.5,64.7z"></path>
+                      <path id="XMLID_247_" fill="#A5D25F" d="M54.6,86c1.7-1.1,1.9-3,2.3-4.2c0.9,0.3,3,0.8,4.9,0.9c1.7,0,3.7-0.3,5.3-0.9
+                          c0.2,1.3,0.8,2.9,2.1,4.1c0.8,0.7,2.1,1.1,3.9,1.6c-2.5,5.8-8.2,17.6-10.8,17.6c-2.8,0-8.3-11.5-10.9-17.7
+                          C52.5,87,53.5,86.7,54.6,86z"></path>
+                      <g>
+                          <circle id="XMLID_246_" fill="#669933" cx="64.5" cy="91.4" r="1.8"></circle>
+                          <circle id="XMLID_245_" fill="#669933" cx="59.2" cy="91.4" r="1.8"></circle>
+                          <circle id="XMLID_244_" fill="#669933" cx="55" cy="88.7" r="1.8"></circle>
+                          <circle id="XMLID_243_" fill="#669933" cx="69.1" cy="88.7" r="1.8"></circle>
+                      </g>
+                  </g>
+              </g>
+          </g>
+          <g id="fade_delay-1300" style="opacity: 1;">
+              <polygon fill="#77AA41" points="32.1,110 31.4,110 79.3,0 80,0 	"></polygon>
+              <polygon fill="#669933" points="54.2,110 53.4,110 101.4,0 102.1,0 	"></polygon>
+          </g>
+          <g id="drift-right_duration-1000_delay-0" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;">
+              <g>
+                  <path fill="#77AA41" d="M31.7,110l10-23.2c-1.4-0.4-2.8-0.8-4.2-1.1c-1.8-0.4-4.1-1.1-4.6-1.6c-0.7-0.7-1.1-1.5-1.3-2.3
+                      c-0.2-0.6,0.1-1.3,0.6-1.6c0.6-0.4,1.2-0.8,1.8-1.3c0.3-0.2,0.6-0.4,0.9-0.4h7.2V67.2c0-0.5,0.2-0.9,0.6-1.2c0,0,0.1-0.1,0.1-0.1
+                      c1.1-0.9,1.8-2.6,1.8-4.5c0-2.5-1.1-4.5-2.7-5c0-0.2,0-0.3,0-0.5c0-9.9-7.9-18-17.8-18c-9.9,0-18,7.9-18,17.8c0,0.3,0,0.5,0,0.7
+                      C4.8,57,3.8,59,3.8,61.4c0,1.9,0.7,3.5,1.7,4.4C5.8,66.1,6,66.4,6,66.9v11.7h7.5c0.3,0,0.7,0.1,0.9,0.4c0.6,0.5,1.3,1,2,1.5
+                      c0.1,0.1,0.3,0.2,0.3,0.2s0,0.1,0,0.1c-0.1,0.9-0.4,2.5-1.5,3.4c-0.5,0.4-2.7,1.1-4.5,1.5C7.2,86.5,3.2,87.4,0,89.9V110H31.7z
+                       M9.7,64.7l0-0.1c-0.1-0.7-0.6-1.2-1.3-1.2c-0.5,0-0.9,0.2-1.1,0.6l0,0l0,0c-0.2,0-1-1-1-2.7c0-1.7,0.7-2.7,0.9-2.7c0,0,0,0,0,0
+                      c0.5,1.5,1.8,3,3.4,1.4c3.1-3.1,10.7-8.7,10.7-8.7l-6.6,7.1c0,0,6.1-4,11.7-6.5c2.9-1.3,5.9-2.3,8.3-3c2,2.3,3.5,5.3,4.1,8.8
+                      c0.1,0.6,0.6,1.4,1.3,1.4c0.5,0,0.9-0.1,1.1-0.5c0.1-0.1,0.2-0.1,0.2-0.1c0.2,0,1,1,1,2.7c0,1.7-0.7,2.7-1,2.7c0,0,0,0-0.1,0
+                      c-0.2-0.4-0.6-0.6-1.1-0.6c-0.7,0-1.2,0.6-1.3,1.1c0,0.2,0,0.2,0,0.2c-1.1,9-7.2,15.5-14.6,15.5S10.7,73.8,9.7,64.7z M16.8,86
+                      c1.7-1.1,1.9-3,2.3-4.2c0.9,0.3,3,0.8,4.9,0.9c1.7,0,3.7-0.3,5.3-0.9c0.2,1.3,0.8,2.9,2.1,4.1c0.8,0.7,2.1,1.1,3.9,1.6
+                      C32.6,93.3,27,105,24.3,105c-2.8,0-8.3-11.5-10.9-17.7C14.6,87,15.6,86.7,16.8,86z"></path>
+                  <g>
+                      <path fill="#A5D25F" d="M38.9,64.8c0,0,0-0.1,0-0.2c0.1-0.5,0.6-1.1,1.3-1.1c0.5,0,0.9,0.2,1.1,0.6c0,0,0,0,0.1,0
+                          c0.2,0,1-1,1-2.7c0-1.7-0.7-2.7-1-2.7c0,0-0.1,0-0.2,0.1c-0.2,0.4-0.7,0.5-1.1,0.5c-0.7,0-1.2-0.8-1.3-1.4
+                          c-0.6-3.4-2.1-6.4-4.1-8.8c-2.3,0.7-5.4,1.8-8.3,3c-5.6,2.5-11.7,6.5-11.7,6.5l6.6-7.1c0,0-7.5,5.6-10.7,8.7
+                          c-1.6,1.6-2.9,0.1-3.4-1.4c0,0,0,0,0,0c-0.2,0-0.9,0.9-0.9,2.7c0,1.7,0.7,2.7,1,2.7l0,0l0,0c0.2-0.4,0.7-0.6,1.1-0.6
+                          c0.7,0,1.2,0.6,1.3,1.2l0,0.1c1.1,9,7.2,15.5,14.6,15.5S37.8,73.8,38.9,64.8z"></path>
+                      <path fill="#A5D25F" d="M24.3,105c2.7,0,8.3-11.7,10.8-17.6c-1.8-0.4-3.1-0.9-3.9-1.6c-1.3-1.2-1.9-2.8-2.1-4.1
+                          c-1.6,0.6-3.6,0.9-5.3,0.9c-1.9-0.1-4-0.5-4.9-0.9C18.6,83,18.4,85,16.8,86c-1.2,0.7-2.1,1-3.4,1.3C16,93.5,21.5,105,24.3,105z
+                           M31.2,86.9c1,0,1.8,0.8,1.8,1.8c0,1-0.8,1.8-1.8,1.8c-1,0-1.8-0.8-1.8-1.8C29.4,87.7,30.2,86.9,31.2,86.9z M26.6,89.6
+                          c1,0,1.8,0.8,1.8,1.8c0,1-0.8,1.8-1.8,1.8s-1.8-0.8-1.8-1.8C24.8,90.4,25.6,89.6,26.6,89.6z M17.1,90.5c-1,0-1.8-0.8-1.8-1.8
+                          c0-1,0.8-1.8,1.8-1.8c1,0,1.8,0.8,1.8,1.8C18.9,89.7,18.1,90.5,17.1,90.5z M19.6,91.4c0-1,0.8-1.8,1.8-1.8c1,0,1.8,0.8,1.8,1.8
+                          c0,1-0.8,1.8-1.8,1.8C20.4,93.3,19.6,92.4,19.6,91.4z"></path>
+                  </g>
+                  <g>
+                      <circle fill="#77AA41" cx="26.6" cy="91.4" r="1.8"></circle>
+                      <circle fill="#77AA41" cx="21.4" cy="91.4" r="1.8"></circle>
+                      <circle fill="#77AA41" cx="17.1" cy="88.7" r="1.8"></circle>
+                      <circle fill="#77AA41" cx="31.2" cy="88.7" r="1.8"></circle>
+                  </g>
+              </g>
+          </g>
+          <desc>Created with Snap</desc></svg>
+</div><h3 class=" align-center  keyfeatitem_title "><span class="txt-green">Customer dynamics</span></h3></div><div class="keyfeatitem group-section-b "><div class="layersnap  group-section-a spotlight_img animate-svg" data-layersnap-init  data-layersnap-replay  style="" ><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px" height="110px" viewBox="0 0 155 110" enable-background="new 0 0 155 110" xml:space="preserve">
+          <polygon fill="#333333" points="51,110 70.7,0 155,0 135.4,110 "></polygon>
+          <g id="slide-right_delay-1800_duration-600" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;">
+              <polygon fill="#89BB4B" points="1.7,100.8 137,100.8 140.3,82.1 5,82.1 	"></polygon>
+          </g>
+          <g id="slide-right_delay-1300_duration-600" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;">
+              <polygon fill="#77AA41" points="5.9,76.8 141.3,76.8 144.6,58.2 9.3,58.2 	"></polygon>
+          </g>
+          <g id="slide-right_delay-800_duration-600" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;">
+              <polygon fill="#669933" points="10.3,52.3 145.7,52.3 149,33.7 13.6,33.6 	"></polygon>
+          </g>
+          <g id="slide-right_delay-300_duration-600_1_" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;">
+              <polygon fill="#568C27" points="18,9.3 14.7,27.9 150,27.9 153.3,9.3 	"></polygon>
+          </g>
+          <polygon fill="#ECEDED" points="19.7,0 0,110 0,0 "></polygon>
+          <desc>Created with Snap</desc><defs></defs></svg>
+</div><h3 class=" align-center  keyfeatitem_title "><span class="txt-green">Design principles</span></h3></div><div class="keyfeatitem group-section-c "><div class="layersnap  group-section-a spotlight_img animate-svg" data-layersnap-init  data-layersnap-replay  style="" ><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px" height="110px" viewBox="0 0 155 110" enable-background="new 0 0 155 110" xml:space="preserve">
+          <g>
+              <polygon fill="#333333" points="89.3,110 0,110 19.4,0 89.3,0 	"></polygon>
+              <circle fill="#333333" cx="89.3" cy="55" r="55"></circle>
+          </g>
+          <g id="rotate-right_duration-2800_delay-200" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;">
+              <circle fill="#FFFFFF" cx="89.3" cy="55" r="48.5"></circle>
+              <path fill="#467F1A" d="M124.9,46.3c-2.4-9.8-8.4-18-16.8-23.1c-8.5-5.2-18.5-6.8-28.3-4.4c-10.6,2.5-19.4,9.5-24.5,19.1l3.8,2
+                  c4.4-8.5,12.3-14.7,21.7-16.9c8.6-2.1,17.5-0.7,25.1,3.9s12.9,11.9,14.9,20.5c4.3,17.7-6.7,35.7-24.5,40
+                  C83,90.5,68.8,84.9,61.2,73.7l4.4-1.9l-11.3-8.5l-1.7,14l4.6-2c6.9,10.7,19,17.1,31.6,17.1c2.9,0,5.8-0.4,8.6-1
+                  C117.3,86.5,129.7,66.3,124.9,46.3z"></path>
+          </g>
+          <g id="rotate-right_duration-3100_delay-200" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;">
+              <g>
+                  <path id="XMLID_234_" fill="#227FB6" d="M97,48.5l0-7.6c0-1.9-0.4-3.2-1.4-4.4l-5.2-3.1c-1-0.6-2.5-0.6-3.5,0l-8.7,4.9
+                      c1.2,0,2.4,0.5,3.8,1.2L97,48.5z"></path>
+                  <path id="XMLID_233_" fill="#227FB6" d="M72.7,52.7l14.9-8.6l-6.2-3.7c-2.1-1.2-3.7-1.4-5.7-0.7l-4.2,2.4c-1,0.5-1.8,1.9-1.8,3
+                      l-0.1,10.4C70.3,54.4,71.3,53.5,72.7,52.7z"></path>
+                  <path id="XMLID_232_" fill="#227FB6" d="M79.5,67.2l0.1-17.4l-6.4,3.7c-2.5,1.4-3.4,3-3.6,6l0,0l0,3.3c0,1.1,0.8,2.5,1.7,3.1
+                      l9.1,5.3C79.8,70.1,79.5,68.8,79.5,67.2z"></path>
+                  <path id="XMLID_231_" fill="#227FB6" d="M97.9,41L98,58.3l6-3.4c1.8-1,2.8-2.2,3.2-3.8l0-5.5c0-1.1-0.8-2.5-1.7-3.1l-8.2-4.8
+                      C97.8,38.6,97.9,39.7,97.9,41z"></path>
+                  <path id="XMLID_230_" fill="#227FB6" d="M107.2,53.3c-0.6,0.9-1.5,1.7-2.8,2.4l-14.7,8.4l6,3.6c2,1.2,3.6,1.4,5.6,0.7l4-2.3
+                      c1-0.5,1.8-1.9,1.8-3L107.2,53.3z"></path>
+                  <path id="XMLID_226_" fill="#227FB6" d="M80.5,59.8l0,7.5c0,2.5,0.7,4.1,2.5,5.5l3.5,2.1c1,0.6,2.5,0.6,3.5,0l9-5.1
+                      c-1.2-0.1-2.4-0.5-3.7-1.2L80.5,59.8z"></path>
+              </g>
+          </g>
+          <desc>Created with Snap</desc><defs></defs></svg>
+</div><h3 class=" align-center  keyfeatitem_title "><span class="txt-green">Operating model</span></h3></div></div><div id="" class="group group-2b bg-gray-lighter  "><div class="group-section-a "><p class="  align-left">Forrester offers the most far-reaching solutions to anticipate dynamic customers; design strategies that are customer-led, insights-driven, and fast; and connect your operations to deliver superior experiences across touchpoints. These power a customer-obsessed operating model to help you win in the age of the customer.
+
+</p></div></div><div class="spotlight_cta"><a href="/research" class="btn " style="">Get Started</a></div></div>
+    <div class="video_desc bg-black"><div class="video_player"><div id="ooyalaplayer"></div></div><br /><p>The time is now — to win in the age of the customer. (0:56)</p><script>
+	    	(function() {
+	    			var cb = function() {
+	    					OO.ready(function() {
+	    							OO.Player.create( 'ooyalaplayer', 'tnajQ5MDE6Vj3DX--ES9MkbvhWKIf3-h' , {wmode: 'transparent'});
+	    					});
+	    			};
+	          var js = loadJS( '//player.ooyala.com/v3/f22af0574c8342cdac6055a0ebfacb17?platform=html5-priority', cb);
+	    			if( !( 'addEventListener' in js ) && js.attachEvent ) {
+	    					js.attachEvent( 'onreadystatechange', function() {
+	    							if( js.readyState === 'loaded' || js.readyState === 'complete' ) {
+	    									cb();
+	    							}
+	    					});
+	    			}
+	    	})();
+    	</script>
+    </div>
+  <div class="spotlight   bg-white"><h3 class="flag">Data Insights</h3><div id="" class="group group-2a bg-white  "><div class="group-section-a spotlight_img"><img src="https://go.forrester.com/wp-content/uploads/2016/06/HOME-features_home-cx-index.svg" alt="" /></div><div class="group-section-b "><h2 class="spotlight_title align-left txt-default"><a href=/cx-index>Create the great customer experiences that grow revenue.</a></h2></div></div></div><hr /><div class="spotlight   bg-white"><h3 class="flag">Explore &amp; Engage</h3><div id="" class="group group-2a bg-white  "><div class="group-section-a spotlight_img"><img src="https://go.forrester.com/wp-content/uploads/2016/06/HOME-features_home-analyst-events.svg" alt="" /></div><div class="group-section-b "><h2 class="spotlight_title align-left txt-default"><a href=https://solutions.forrester.com/webinars-and-events>Join Forrester analysts for free on-demand and live events.</a></h2></div></div></div><hr /><div class="spotlight   bg-white"><h3 class="flag">Evolve to Win</h3><div id="" class="group group-2a bg-white  "><div class="group-section-a spotlight_img"><img src="https://go.forrester.com/wp-content/uploads/2016/06/HOME-features_home-aoc-predictions.svg" alt="" /></div><div class="group-section-b "><h2 class="spotlight_title align-left txt-default"><a href=https://solutions.forrester.com/2016predictions> Discover what’s next in the age of the customer.</a></h2></div></div></div><div class="spotlight   bg-gray-lighter"><div id="" class="group group-2a bg-gray-lighter  "><div class="group-section-a "><h3 class="  ">Forrester’s insights are tailored to your role and your critical business initiatives.</h3><h3 class="subtitle align-left  txt-default  spotlight_title-accent "><a href="/roles">View the professional roles we serve &raquo;</a></h3></div><div class="group-section-b "><h3 class="  ">Join Forrester and fuel your intellectual curiosity and professional growth.</h3><h3 class="subtitle align-left  txt-default  spotlight_title-accent "><a href="/careers">Learn about our career opportunities &raquo;</a></h3></div></div></div>
+
+			</div>
+		</div>
+		
+				<div class="footer">
+			<footer id="footer">
+				<div class="footer-max">
+  <nav role="navigation">
+    <div class="footer-section">
+      <section>
+        <h3>About Forrester</h3>
+        <ul>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1688">
+		<a href="https://www.forrester.com/marketing/about/about-us.html">About Us</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1690">
+		<a href="https://www.forrester.com/marketing/executive/executive-leadership.html">Executive Leadership</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1692">
+		<a href="https://www.forrester.com/contactus">Contact Us</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1693">
+		<a href="https://www.forrester.com/marketing/vendor/vendor-relations.html">Analyst Briefings</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1694">
+		<a href="https://www.forrester.com/mediaresources">Media Resources</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1696">
+		<a href="http://phx.corporate-ir.net/phoenix.zhtml?c=60569&p=irol-irhome">Investor Information</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1697">
+		<a href="/careers">Careers</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1699">
+		<a href="https://www.forrester.com/policies">Policies</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1700">
+		<a href="https://www.forrester.com/terms-of-use">Terms Of Use</a>
+			</li>
+</ul>
+      </section>
+    </div>
+    <div class="footer-section">
+      <section>
+        <h3>Products &amp; Services</h3>
+        <ul>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1702">
+		<a href="https://www.forrester.com/search?N=10001&sort=3">Latest Research</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1703">
+		<a href="https://www.forrester.com/coverageareas">Coverage Areas</a>
+			</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1704">
+		<a href="https://go.forrester.com/research/">Research Services</a>
+			</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1706">
+		<a href="https://go.forrester.com/data/">Data Services</a>
+			</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1711">
+		<a href="https://go.forrester.com/connect/leadership-boards/">Councils</a>
+			</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1713">
+		<a href="https://go.forrester.com/consulting/">Consulting</a>
+			</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1714">
+		<a href="https://go.forrester.com/events/">Events</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1716">
+		<a href="https://www.forrester.com/analysts">Analyst Directory</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1718">
+		<a href="http://blogs.forrester.com/">Blogs</a>
+			</li>
+	<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-1719">
+		<a href="https://go.forrester.com/apps/">Mobile Apps</a>
+			</li>
+</ul>
+      </section>
+    </div>
+    <div class="footer-section">
+      <section>
+        <h3>Help</h3>
+        <ul>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1721">
+		<a href="https://www.forrester.com/marketing/help/help-landing.html">Help Center</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1723">
+		<a href="https://www.forrester.com/marketing/help/help-landing.html#help_1">Login Problems</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1724">
+		<a href="https://www.forrester.com/reg/contact.xhtml?id=10">Send Feedback</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1725">
+		<a href="https://www.forrester.com/marketing/help/using-the-site.html">Help Using The Site</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1727">
+		<a href="https://www.forrester.com/marketing/help/research-access.html">Research Access Help</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1729">
+		<a href="https://www.forrester.com/marketing/help/events.html">Event & Webinar Help</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1730">
+		<a href="https://www.forrester.com/reg/briefing.xhtml">Briefing Requests</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1732">
+		<a href="https://www.forrester.com/sitemap">Site Map</a>
+			</li>
+</ul>
+      </section>
+    </div>
+    <div class="footer-section">
+      <section>
+        <h3>My Account</h3>
+        <ul>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1733">
+		<a href="https://www.forrester.com/reg/contact.xhtml?id=16">Become A Client</a>
+			</li>
+	<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1734">
+		<a href="https://www.forrester.com/cart.srv">Cart</a>
+			</li>
+</ul>
+      </section>
+    </div>
+  </nav>
+  <div class="copyright">
+    <a href="https://www.forrester.com/marketing/policies/copyright.html">©2016, Forrester Research, Inc. and/or its subsidiaries.</a> All rights reserved.
+  </div>
+</div>
+			</footer>
+		</div><!-- /footer -->
+		
+		<link rel='stylesheet' id='js_composer_front-css'  href='https://go.forrester.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=4.12' type='text/css' media='all' />
+
+		</div><!-- /page -->
+
+		<script type="text/javascript">
+	    var _elqQ = _elqQ || [];
+	    _elqQ.push(['elqSetSiteId', '332']);
+	    _elqQ.push(['elqTrackPageView']);
+
+	    (function () {
+	        function async_load() {
+	            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+	            s.src = '//img.en25.com/i/elqCfg.min.js';
+	            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+	        }
+	        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+	        else if (window.attachEvent) window.attachEvent('onload', async_load);
+	    })();
+	</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"de9cd8f649","applicationID":"25511061","transactionName":"bgZUYBFTVxdQWxdbCVdMd1cXW1YKHkgCVQM=","queueTime":0,"applicationTime":1054,"atts":"QkFXFllJRBk=","errorBeacon":"bam.nr-data.net","agent":""}</script><script type="text/javascript">
+//<![CDATA[
+(function() {
+var _analytics_scr = document.createElement('script');
+_analytics_scr.type = 'text/javascript'; _analytics_scr.async = true; _analytics_scr.src = '/_Incapsula_Resource?SWJIYLWA=2977d8d74f63d7f8fedbea018b7a1d05&ns=1';
+var _analytics_elem = document.getElementsByTagName('script')[0]; _analytics_elem.parentNode.insertBefore(_analytics_scr, _analytics_elem);
+})();
+// ]]>
+</script></body>
+</html>

@@ -1,0 +1,1942 @@
+status: 200
+content-length: 88306
+content-location: http://www.intercerve.com
+x-aspnet-version: 4.0.30319
+content-type: text/html; charset=utf-8
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+-content-encoding: gzip
+link: <http://www.intercerve.com/>; rel="canonical"
+x-ua-compatible: IE=edge
+cache-control: private
+date: Sun, 18 Sep 2016 07:18:40 GMT
+x-powered-by: ASP.NET
+x-aspnetmvc-version: 5.2
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SQL Server Performance Monitoring with SQL Sentry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
+    <meta name="author" content="">
+    <meta name="google-site-verification" content="MCOweOuzpPw-CCCkKSTMD77CWWWf4G0kfGRHNFDFttA" />
+
+    <!-- styles -->
+
+    <link href="/css/bootstrap-transition-2?v=pJqmWAHjwQWN-vlKVpbOI3Ssx9kPuw-OriDZJqIU5EM1" rel="stylesheet"/>
+
+
+    <link rel="stylesheet" href="/Content/layerslider/css/layerslider.css" />
+
+    <!-- scripts -->
+    <script src="/bundles/jquery?v=5YpcwJa0Dea15P6JFrXCmFOSkBKSWlYNJ0UXd18mXwg1"></script>
+
+    <script src="/bundles/jqueryui?v=y70dr8un4Tw2XdANU0qWa2Z_eettrMqLL_h29RBuTqA1"></script>
+
+    <script src="/bundles/jquery/cookie?v=GFd3l2o3uqVrxMMZAu4N1o-KVvQz490WveJnSOC0U401"></script>
+<script src="/bundles/jqueryval?v=dt3XaqpEn4rFA9MkDy2QmR-5tTdUVpSHTuOr3x-Sw981"></script>
+<script src="/bundles/plugins?v=DajbQb4kFurhnvdzeDl4Dg5zA5bcvxkCjAvVIBmmPRQ1"></script>
+
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.sqlsentry.com/SqlSentry/1.0.0/fbpixel.min.js"></script>
+<script>(window.fbpixel)||document.write('<script src="/bundles/ss/facebookPixel"><\/script>');</script>
+
+    <script src="/bundles/ss/twitterPixel?v=XRwXS-6NSfHXrvIG7oVvogGWy04raiyB3yqV85h_fXM1"></script>
+
+
+    
+    <script type="text/javascript" src="/Scripts/Plugins/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="/Scripts/Plugins/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="/Scripts/Plugins/supersized.3.2.7.min.js"></script>
+    <script type="text/javascript" src="/Scripts/Plugins/supersized.shutter.min.js"></script>
+    <script type="text/javascript" src="/Scripts/Plugins/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="/Scripts/SQLSentry/OverlayMessage.js"></script>
+
+    <script type="text/javascript" language="javascript" src="/scripts/lytebox.js"></script>
+    <script src="/bundle/flexslider?v=nsU42Af3jyjB9eFVFs-UKu1ULBtHxpNkkkKQItr9wik1"></script>
+
+    <script src="/bundle/parallax?v=w7wLHdH18tvndePPFzZZ5-fU3xbUwaZ4l9CVfc7IVeU1"></script>
+
+
+
+    <!-- External libraries: jQuery & GreenSock -->
+    <!--i think this is NOT needed because we aready include j 1.8.3-->
+    
+    <script src="/content/layerslider/js/greensock.js" type="text/javascript"></script>
+
+    <!-- LayerSlider script files -->
+    <script src="/content/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="/content/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+
+
+
+
+
+    
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- fav and touch icons -->
+    <link rel="shortcut icon" href="/Images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="/Images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Images/favicon/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Images/favicon/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Images/favicon/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Images/favicon/apple-touch-icon-144x144-precomposed.png">
+
+
+    <!-- Google Web Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <!-- always run -->
+    <script type="text/javascript">
+        var isMobile = false;
+
+        if (navigator.userAgent.match(/Android/i) ||
+            navigator.userAgent.match(/webOS/i) ||
+            navigator.userAgent.match(/iPhone/i) ||
+            navigator.userAgent.match(/iPad/i) ||
+            navigator.userAgent.match(/iPod/i) ||
+            navigator.userAgent.match(/BlackBerry/i)) {
+
+            isMobile = true;
+        }
+
+        /*iOS5 fixed-menu fix*/
+        var iOS5 = false;
+
+        if (navigator.userAgent.match(/OS 5(_\d)+ like Mac OS X/i)) {
+            iOS5 = true;
+        }
+    </script>
+
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+        }({
+            instrumentationKey: "019513f1-f7b1-4f55-8c79-b5b02df10903" // "0b2c6850-73c2-4248-a469-3e75195a1243"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+
+    <script type="text/javascript">
+        var _urq;
+        if (!Boolean(window.chrome)) {
+            _urq = _urq || [];
+            _urq.push(['initSite', '3c9fce76-a531-4e29-8ef1-15add59d40a6']);
+            (function () {
+                var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
+                ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
+            })();
+        }
+    </script>
+</head>
+<body>
+    <!--GA init script-->
+    <script type="text/javascript" src="/scripts/initUA.js"></script>
+
+    <header>
+<div class="utility">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Start Utility Menu -->
+                <ul>
+                    <li><a class="lytebox" data-lyte-options="height:695 width:1000 forceCloseClick:true beforeStart:reveal_lock afterEnd:reveal_unlock" href="/search">Search</a></li>
+
+                            <li><a class="my-account-login" href="/myaccount/login">My Account</a></li>
+
+
+                    <li><a href="#" data-toggle="modal" data-target="#contact-us-quote-form">Get a Quote</a></li>
+                    <li style="margin: 5px 0 0 0; ">
+                        <a target="_blank" href="https://cloud.sqlsentry.com">
+                            <img class="top" src="/images/icons/cloud-menu-999.png" />
+                        </a>
+                    </li>
+                </ul>
+
+
+
+                <!-- End Utility Menu -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#LogOutLink").click(function () {
+        console.log("click");
+        $.ajax({
+            type: "POST",
+            url: "/MyAccount/LogOut",
+            dataType: "json",
+            success: function (response) {
+                location.reload();
+            },
+            error: function () {
+                location.reload();
+            }
+        });
+        return false;
+    });
+   
+</script>
+
+        <div id="topContainer" style="margin-top:28px;">
+<style>
+    #layerslider p a:link, #layerslider p a:visited {
+        color: #fff;
+        transition: color 0.5s;
+    }
+
+    #layerslider p a:hover {
+        color: #c41230;
+        transition: color 0.5s;
+    }
+</style>
+
+<div id="top" class="homepage section" style="margin-top:28px;background:#111">
+    <div id="layerslider" style="width:100%;height:400px">
+        <!-- overview slide -->
+        <div class="ls-slide" data-ls="transition2d:5;slidedelay:12000">
+            <!-- Slide background -->
+            <img class="ls-bg" src="/Images/top-red-servers.jpg" />
+
+            <!-- title -->
+            <div class="ls-l"
+                style="left:50%;top:60px;color:#fff;font-size:50px;width:100%;text-align:center;"
+                data-ls="
+                fadein: true;
+                offsetxin: 0;
+                offsetyin: 0;
+                durationin: 300;
+                easingin: linear;
+
+                offsetxout: left;
+                durationout: 700;
+                ">
+                Optimizing SQL Server Performance Everywhere
+            </div>
+
+            <!-- bottom text -->
+            <div class="ls-l"
+                style="left:50%;top:305px;color:#fff;font-size:32px;width:100%;text-align:center;"
+                data-ls="
+                fadein: true;
+                offsetxin: 0;
+                offsetyin: 0;
+                durationin: 300;
+                easingin: linear;
+
+                offsetxout: left;
+                durationout: 700;
+                ">
+                Monitor SQL Server on every platform
+            </div>
+
+            <!-- icons -->
+            <img class="ls-l" src="/Images/icons/edition-win.svg"
+                style="top:160px;left:20%;width:90px;height:84px"
+                data-ls="
+                delayin: 500;
+                fadein: true;
+                offsetxin: right;
+                offsetyin: 0;
+                durationin: 600;
+                easingin: easeOutExpo;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 200;
+                fadeout: true;
+                " />
+
+            <img class="ls-l" src="/Images/icons/edition-sql.svg"
+                style="top:160px;left:30%;width:90px;height:79px"
+                data-ls="
+                delayin: 700;
+                fadein: true;
+                offsetxin: right;
+                offsetyin: 0;
+                durationin: 600;
+                easingin: easeOutExpo;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 200;
+                fadeout: true;
+                " />
+
+            <img class="ls-l" src="/Images/icons/edition-as.svg"
+                style="top:160px;left:40%;width:90px;height:82px"
+                data-ls="
+                delayin: 900;
+                fadein: true;
+                offsetxin: right;
+                offsetyin: 0;
+                durationin: 600;
+                easingin: easeOutExpo;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 200;
+                fadeout: true;
+                " />
+
+            <img class="ls-l" src="/Images/icons/edition-v.svg"
+                style="top:160px;left:50%;width:90px;height:81px"
+                data-ls="
+                delayin: 1100;
+                fadein: true;
+                offsetxin: right;
+                offsetyin: 0;
+                durationin: 600;
+                easingin: easeOutExpo;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 200;
+                fadeout: true;
+                " />
+
+            <img class="ls-l" src="/Images/icons/edition-aps.svg"
+                style="top:160px;left:60%;width:90px;height:79px"
+                data-ls="
+                delayin: 1300;
+                fadein: true;
+                offsetxin: right;
+                offsetyin: 0;
+                durationin: 600;
+                easingin: easeOutExpo;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 200;
+                fadeout: true;
+                " />
+
+            <img class="ls-l" src="/Images/icons/edition-db.svg"
+                style="top:160px;left:70%;width:90px;height:90px"
+                data-ls="
+                delayin: 1500;
+                fadein: true;
+                offsetxin: right;
+                offsetyin: 0;
+                durationin: 600;
+                easingin: easeOutExpo;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 200;
+                fadeout: true;
+                " />
+
+            <img class="ls-l" src="/Images/icons/edition-dw.svg"
+                style="top:160px;left:80%;width:90px;height:83px"
+                data-ls="
+                delayin: 1700;
+                fadein: true;
+                offsetxin: right;
+                offsetyin: 0;
+                durationin: 600;
+                easingin: easeOutExpo;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 200;
+                fadeout: true;
+                " />
+
+            
+            <a href="/products/performance-advisor/sql-server-performance" class="ls-link"></a>
+        </div>
+
+        <!-- Azure slide -->
+        <div class="ls-slide" data-ls="transition2d:5;slidedelay:12000">
+            <!-- Slide background -->
+            <img class="ls-bg" src="/Images/top-blue-grid.jpg" />
+
+            <!-- title -->
+            <p class="ls-l"
+                style="left:30px;top:60px;color:#fff;font-size:50px"
+                data-ls="
+                offsetxin: 0;
+                offsetyin: 0;
+                fadein: true;
+                durationin: 600;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 200;
+                ">
+                Available in the Azure Marketplace
+            </p>
+
+            <!-- paragraph -->
+            <p class="ls-l"
+                style="left:30px;top:145px;color:#fff;font-size:24px;width:600px;max-width:50%"
+                data-ls="
+                delayin: 300;
+                offsetxin: 0;
+                offsetyin: 0;
+                fadein: true;
+                durationin: 600;
+
+                offsetxout: left;
+                durationout: 200;
+                ">
+                Create an instance of SQL Sentry Performance Advisor directly from the Azure Marketplace and easily monitor your Azure SQL Server instances.
+            </p>
+
+            <!-- link CTA -->
+            <p
+                class="ls-l"
+                style="left:30px;top:275px;color:#fff;font-size:30px"
+                data-ls="
+                delayin: 1200;
+                fadein: true;
+                offsetxin: 0;
+                offsetyin: bottom;
+                easingin: easeOutCubic;
+                durationin: 1700;
+
+                offsetxout: left;
+                offsetyout: 0;
+                ">
+                <a href="https://azure.microsoft.com/en-us/marketplace/partners/sqlsentry/sqlsentryplatform/" target="_blank">Visit the Azure Marketplace</a>
+            </p>
+
+            <!-- logo tile -->
+            <img class="ls-l" src="/Images/top-logo-tile.svg"
+                style="top:155px;left:740px;width:100px;height:100px"
+                data-ls="
+                delayin: 450;
+                fadein: true;
+                offsetxin: 0;
+                offsetyin: top;
+                durationin: 1700;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 2000;
+                fadeout: true;
+                " />
+
+            <!-- dotted line -->
+            <img class="ls-l" src="/Images/top-dotted-line.svg"
+                style="top:200px;left:855px;width:112px;height:46px"
+                data-ls="
+                delayin: 1000;
+                fadein: true;
+                offsetxin: 0;
+                offsetyin: 0;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 0;
+                fadeout: true;
+                " />
+
+            <!-- cloud -->
+            <img class="ls-l" src="/Images/top-cloud-shape.svg"
+                style="top:220px;left:750px;width:480px;height:215px"
+                data-ls="
+                delayin: 750;
+                fadein: true;
+                offsetxin: 0;
+                offsetyin: bottom;
+                easingin: easeOutBack;
+
+                fadeout: true;
+                offsetxout: 0;
+                offsetyout: bottom;
+                durationout: 2000;
+                " />
+        </div>
+
+        <!-- anywhere slide -->
+        <div class="ls-slide" data-ls="transition2d:5;slidedelay:12000">
+            <!-- Slide background -->
+            <img class="ls-bg" src="/Images/top-sailboat.jpg" />
+
+            <!-- title -->
+            <p class="ls-l"
+                style="left:30px;top:60px;color:#fff;font-size:50px"
+                data-ls="
+                offsetxin: 0;
+                offsetyin: 0;
+                fadein: true;
+                durationin: 600;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 200;
+                ">
+                Visualize your environment anywhere
+            </p>
+
+            <!-- paragraph -->
+            <p class="ls-l"
+                style="left:30px;top:145px;color:#fff;font-size:24px;line-height:34px;width:600px;max-width:50%"
+                data-ls="
+                delayin: 300;
+                offsetxin: 0;
+                offsetyin: 0;
+                fadein: true;
+                durationin: 600;
+
+                offsetxout: left;
+                durationout: 200;
+                ">
+                With SQL Sentry Cloud you get secure Web access to your SQL Sentry performance data.
+            </p>
+
+            <!-- link CTA -->
+            <p class="ls-l"
+                style="left:30px;top:255px;color:#fff;font-size:30px"
+                data-ls="
+                delayin: 1200;
+                fadein: true;
+                offsetxin: 0;
+                offsetyin: bottom;
+                easingin: easeOutCubic;
+                durationin: 1700;
+
+                offsetxout: left;
+                offsetyout: 0;
+                ">
+                <a href="https://cloud.sqlsentry.com" target="_blank">Visit cloud.sqlsentry.com</a>
+            </p>
+
+            <!-- devices  -->
+            <img class="ls-l" src="/Images/top-devices-overlaped.svg"
+                style="top:170px;left:580px;width:340px;height:118px"
+                data-ls="
+                delayin: 600;
+                fadein: true;
+                offsetxin: right;
+                offsetyin: 0;
+                easingin: easeOutQuart;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 2000;
+                fadeout: true;
+                " />
+        </div>
+
+        <!-- TR slide -->
+        <div class="ls-slide" data-ls="transition2d:5;slidedelay:12000">
+            <!-- Slide background -->
+            <img class="ls-bg" src="/Images/top-hands.jpg" />
+
+            <!-- stars -->
+            <img class="ls-l" src="/Images/top-tr-stars.svg"
+                style="left:50%;top:90px;width:1000px;height:82px"
+                data-ls="
+                delayin: 450;
+                fadein: true;
+                offsetxin: 0;
+                offsetyin: top;
+                easingin: easeOutBack;
+
+                offsetxout: left;
+                offsetyout: 0;
+                durationout: 2000;
+                fadeout: true;
+                " />
+
+            <!-- quote -->
+            <p class="ls-l"
+                style="left:50%;top:220px;color:#fff;font-size:30px"
+                data-ls="offsetxin:0;offsetyin:0;fadein:true;durationin:300;easingin:linear;offsetxout:left;durationout:700">
+                "SQL Sentry Performance Advisor&mdash;A Must Have Tool!"
+            </p>
+
+            <!-- source -->
+            <p class="ls-l"
+                style="left:50%;top:330px;color:#999;font-size:20px"
+                data-ls="offsetxin:0;offsetyin:0;fadein:true;durationin:300;easingin:linear;offsetxout:left;durationout:700">
+                Source: TrustRadius. The number one B2B software review site.
+            </p>
+
+            
+            <a href="https://www.trustradius.com/products/performance-advisor/reviews" class="ls-link" target="_blank"></a>
+        </div>
+    </div>
+</div>        </div>
+
+        <!-- navigation -->
+<nav class="main">
+    <div class="container">
+        <div class="row">
+            <div class="sixteen columns col-xs-12">
+                <a href="/">
+                    <img src="/images/logos/logo-nav-x2.png" width="151" style="float:left; margin: -15px 0 0 0;" />
+                </a>
+                <!-- Start Nav Menu -->
+                <a href="/download-trial/trial" class="menuFreeTrial hideMobile" style="margin:8px 0 0 15px; float:right;">Free Trial</a>
+
+                <ul class="menu " id="nav">
+                    <li class="navItem" data-dropdown="community"><a href="/community">Community</a></li>
+                    <li class="navItem" data-dropdown="company"><a href="/company/about-us">Company</a></li>
+                    <li class="navItem" data-dropdown="support"><a href="/support">Support</a></li>
+                    <li class="navItem" data-dropdown="services"><a href="/pro-services">Services</a></li>
+                    <li class="navItem" data-dropdown="products"><a href="/products">Products</a></li>
+                    
+                </ul>
+
+                <!-- End Nav Menu -->
+                <!-- Start Dropmenu for mobile -->
+                <select class="dropmenu" name="dropmenu" onchange="moveTo(this.value)">
+                    <option value="" selected="selected">Menu</option>
+                    <option value="#top">Home</option>
+                    
+                    <option value="/products">Products</option>
+                    <option value="/pro-services">Services</option>
+                    <option value="/support">Support</option>
+                    <option value="/community">Community</option>
+                    <option value="/company/about-us">Company</option>
+                </select>
+                <!-- End Dropmenu for mobile -->
+            </div>
+        </div>
+    </div>
+    <div id="NavDropDown">
+        <div class="container">
+            <div id="products_dropdown" class="row navDropDownItem bstrnstn">
+                <div class="col-md-3" style="text-align:right;">
+                    <h3 class="NavDropDownItem-header">
+                        <a href="/products">Products:</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/products/performance-advisor/sql-server-performance">Performance Advisor</a></li>
+                        <li><a href="/products/event-manager/sql-server-job-schedule-alert-management">Event Manager</a></li>
+                        <li><a href="/products/fragmentation-manager/sql-server-index-analysis-and-defrag">Fragmentation Manager</a></li>
+                        <li><a href="/plan-explorer">Plan Explorer</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li>Bundles:</li>
+                        <li><a href="/suites/powersuitesqlserver">Power Suite for SQL Server</a></li>
+                        <li><a href="/suites/powersuiteplus">Power Suite Plus</a></li>
+                        <li><a href="/suites/bisuite">BI Suite for SSAS &amp; SQL Server</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="services_dropdown" class="row navDropDownItem bstrnstn">
+                <div class="col-md-3" style="text-align:right;">
+                    <h3 class="NavDropDownItem-header">
+                        <a href="/pro-services">Services:</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/pro-services/roi">ROI Accelerator</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/pro-services/sql-server-performance-tuner">Performance Tuner</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/pro-services/essentials">Essentials</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="support_dropdown" class="row navDropDownItem bstrnstn">
+                <div class="col-md-3" style="text-align:right;">
+                    <h3 class="NavDropDownItem-header">
+                        <a href="/support">Support:</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/products/online-help">Technical Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="https://support.sqlsentry.com/">Help Center</a></li>
+                        <li><a href="http://answers.sqlsentry.com/">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/documents/evaluation-highlights.pdf">Evaluation Highlights</a></li>
+                        <li><a href="http://www.sqlsentry.tv/">Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="company_dropdown" class="row navDropDownItem bstrnstn">
+                <div class="col-md-3" style="text-align:right;">
+                    <h3 class="NavDropDownItem-header">
+                        <a href="/company/about-us">Company:</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/company/leadership">Leadership</a></li>
+                        <li><a href="/company/success-stories">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="/company/success-stories#awards">Awards and Reviews</a></li>
+                        <li><a href="/company/news-events#news-rooms">News Room</a></li>
+                        <li><a href="/company/success-stories#customers">Customers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#" class="contact-us" data-toggle="modal" data-target="#contact-us-form">Contact Us</a></li>
+                        <li><a href="/company/partners">Partners</a></li>
+                        <li><a href="/company/careers">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="community_dropdown" class="row navDropDownItem bstrnstn">
+                <div class="col-md-3" style="text-align:right;">
+                    <h3 class="NavDropDownItem-header">
+                        <a href="/community">Community:</a>
+                    </h3>
+                </div>
+                <div class="col-md-2 col-lg-3">
+                    <ul>
+                        <li><a href="/company/news-events#webinars">Webinars</a></li>
+                        <li><a href="http://blogs.sqlsentry.com/">Blogs</a></li>
+                        <li><a href="/company/news-events#events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <ul>
+                        <li><a href="http://sqlperformance.com/">SQLPerformance.com</a></li>
+                        <li><a href="http://www.sqlsentry.tv/">SQLSentry.tv</a></li>
+                        <li><a href="http://answers.sqlperformance.com">Answers.SQLPerformance.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="https://twitter.com/SQLSentry">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/SQLSentry">Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/company/129912">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- download tab -->
+            <div class="DLpanel" id="DLpanel">
+                <h3 style="font-family: 'Oswald', 'sans-serif'">Downloads</h3>
+                <h4 style="font-weight:100; font-size:24px; color:#ddd; text-align:right; font-family: 'Oswald', 'sans-serif'">VERSION<span style="font-weight:900; font-size:52px; color:#ddd; margin-left:15px; font-family: 'Oswald', 'sans-serif'">10.1</span></h4>
+                <p>Download Performance Advisor, Event Manager, and Fragmentation Manager together.</p>
+                <p><a class="linkbutton trialdl" onclick="moveToDownload();">Download Full Trial</a></p>
+
+                <hr style="border: 0;border-bottom: 1px dashed #999;background: #000;" />
+
+                <img src="/Images/logos/products/planexplorer-white.svg" style="margin:20px 0 10px 0;width:206px;height:54px" />
+                <p>One version. All features. Now completely free!</p>
+                <p><a href="#" class="linkbutton DownloadPlanExplorerLink">Download Plan Explorer</a></p>
+                <p>Existing customers <a href="#" onclick="document.location.href = '/portal/'; return false;">log in</a> to download updates.</p>
+            </div>
+            <a id="trigger" class="trigger"></a>
+            <!-- download tab end-->
+
+</nav>
+
+<script>
+    $("nav.main").sticky({ topSpacing: 28 });
+    var navHideTimeout;
+    var navHide = function (e) {
+        var isNavOrDropDown = $(e.toElement).hasClass("navItem") || $(e.relatedTarget).hasClass("navItem") ||
+                                ($.contains($("#NavDropDown")[0], e.toElement)) || $.contains($("#NavDropDown"), e.relatedTarget) || $(e.relatedTarget).attr("id") == "NavDropDown";
+        if (!isNavOrDropDown) {
+            $("#NavDropDown").slideUp(200);
+        }
+    };
+    var navShowTimeout;
+    var navShow = function () {
+        $("#NavDropDown").slideDown(200);
+    }
+    $(".navItem, #NavDropDown").mouseover(function () {
+        clearTimeout(navHideTimeout);
+        if (navShowTimeout) {
+            clearTimeout(navShowTimeout);
+            navShowTimeout = null;
+        }
+        navShowTimeout = setTimeout("navShow()", 400);
+    })
+    .mouseleave(function (e) {
+        clearTimeout(navShowTimeout);
+        navHideTimeout = setTimeout(function () { navHide(e) }, 400);
+    });
+
+    $(".navItem").mouseover(function () {
+        var sectionName = $(this).data("dropdown") + "_dropdown";
+        $(".navDropDownItem").hide();
+        $("#" + sectionName).show();
+    });
+
+    //download tab
+    $(".DLpanel").hide();
+    $("#trigger").click(function () {
+        if (!$(this).hasClass("active")) {
+            ga('send', 'pageview', '/vp/downloads-tab/'); //track opening the tab
+        }
+        $(this).toggleClass("active");
+        $(".DLpanel").toggle("fast");
+    });
+
+    $(document).click(function (event) {
+        //download tab
+        if (!($(event.target).parents("#DLpanel").length > 0) && !(event.target.id == "DLpanel") && !(event.target.id == "trigger") && $("#DLpanel").is(":visible")) {
+            $("#trigger").toggleClass("active");
+            $(".DLpanel").toggle("fast");
+        }
+    });
+
+    $(".DpanelError").hide();
+</script>
+        <!-- /navigation -->
+    </header>
+
+    
+<div class="bc-container">
+    <link href='//fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link href="/css/views/temppages/bootcamp-banner.min.css" rel="stylesheet" type="text/css">
+    <div class="l-v u-fullWidth">
+        <div class="l-v-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img class="bc-bootcampLogo u-svg" src="/Images/promo/BC2016-logo-banner-part.svg" alt="Performance Boot Camp 2016" />
+                        <img class="bc-passLogo u-svg" src="/Images/promo/PASS_2016_horz_Black.png" alt="Pass Summit 2016" />
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="bc-text">
+                            <div class="bc-description">
+                                SQL SENTRY PRE-CON<br />
+                                Basic and Advanced Tracks
+                            </div>
+                            <span class="bc-dateLocation">
+                                OCTOBER 24<br />
+                                SEATTLE, WA
+                            </span>
+                        </div>
+                        <a class="bc-enlist" href="/bootcamp" target="_blank">
+                            <img class="u-fullWidth" src="/Images/promo/enlist-button.svg" alt="Enlist Now" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+<link href="/css/views/home/index.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/content/testimonial-style.css" type="text/css">
+
+<div class="l-pageSection l-pageSection--paddingLarge -planExplorer">
+    <style>
+        .-pe-description {
+            padding-top: 3em;
+            padding-bottom: 2em;
+        }
+
+        .-pe-logoContainer {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            max-width: 80%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .-pe-logoContainer {
+                width: 400px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .-pe-logoContainer {
+                float: left;
+                width: 275px;
+                margin-right: 40px;
+            }
+        }
+
+        .-pe-title {
+            line-height: 1.2;
+            margin-top: -.2em;
+            font-weight: 300;
+            font-size: 32px;
+            letter-spacing: 0;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .-pe-title {
+                font-size: 38px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .-pe-title {
+                font-size: 32px;
+                line-height: 1.35;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .-pe-logoContainer {
+                width: 320px;
+            }
+
+            .-pe-title {
+                font-size: 40px;
+                line-height: 1.25;
+            }
+        }
+
+        .-pe-subtitle {
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+
+        .-pe-diagramContainer {
+            width: 350px;
+            max-width: 70%;
+            margin: 16px auto 0;
+        }
+
+        @media only screen and (min-width: 992px) {
+            .-pe-diagramContainer {
+                max-width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        .-pe-header {
+            font-size: 32px;
+        }
+
+        @media only screen and (min-width: 992px) {
+            .-pe-header {
+                font-size: 42px;
+            }
+        }
+
+        .-pe-link {
+            font-size: 20px;
+        }
+
+        .-pe-link + .-pe-link {
+            padding-left: 12px;
+            border-left: 2px solid #777;
+            margin-left: 13px;
+        }
+
+        .-hp-pepromo-logo {
+            width: auto;
+            height: auto;
+            max-width: 400px;
+            max-height: 104px
+        }
+
+        @media only screen and (min-width: 768px) {
+            .-hp-pepromo-logo {
+                max-width:auto;
+                max-height: auto;
+                width: 300px;
+                height: 86px
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .-hp-pepromo-logo {
+                width:273px;
+                height: 71px
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .-hp-pepromo-logo {
+                width:240px;
+                height: 63px
+            }
+        }
+    </style>
+    <div class="container">
+        
+        <div class="mbl">
+            <style>
+                .-pe-header-container {
+                    vertical-align: middle;
+                    text-align: center;
+                }
+                
+                @media only screen and (min-width: 768px) {
+                    .-pe-header-container {
+                        width: 54%;
+                        display: inline-block;
+                    }
+                }
+                @media only screen and (min-width: 992px) {
+                    .-pe-header-container {
+                        width: 55%;
+                    }
+                }
+                @media only screen and (min-width: 1200px) {
+                    .-pe-header-container {
+                        width: 60%;
+                    }
+                }
+
+                .-pe-header {
+                    font-size: 32px;
+                    font-weight: 300;
+                    padding: 20px;
+                    color: #666;
+                }
+                @media only screen and (min-width: 992px) {
+                    .-pe-header {
+                        font-size: 34px;
+                    }
+                }
+
+                @media only screen and (min-width: 1200px) {
+                    .-pe-header {
+                        font-size: 34px;
+                    }
+                }
+
+                .-pe-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-image: url(/Images/products/planexplorer/gray-play-button.png);
+                    transition: 0.25s ease-in-out;
+                    cursor: pointer;
+                }
+
+                .-pe-thumbnail-container {
+                    position: relative;
+                    display: block;
+                    width: 80%;
+                    vertical-align: middle;
+                    max-width: 400px;
+                }
+                @media only screen and (min-width: 768px) {
+                    .-pe-thumbnail-container {
+                        display: inline-block;
+                        width: 43%;
+                        max-width: none;
+                    }
+                }
+                @media only screen and (min-width: 992px) {
+                    .-pe-thumbnail-container {
+                        width: 40%;
+                    }
+                }
+                @media only screen and (min-width: 1200px) {
+                    .-pe-thumbnail-container {
+                        width: 35%;
+                    }
+                }
+
+                    .-pe-thumbnail-container:hover .-pe-overlay {
+                        background-image: url(/Images/products/planexplorer/black-play-button.png);
+                    }
+
+                .-pe-thumbnail {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: block;
+                    box-shadow: 0px 0px 14px 1px #ddd;
+                    border: 1px solid #ddd;
+                }
+            </style>
+            <div class="-pe-header-container">
+                <div class="-pe-header">Watch the webinar for great tips on how to use the new <span class="u-text-noWrap">Plan Explorer</span>!</div>
+            </div>
+            <div class="-pe-thumbnail-container mvd" style="margin:0 auto;">
+                <img class="-pe-thumbnail" src="/Images/products/planexplorer/pe-video-thumb.png" alt="thumbnail of Plan Explorer webinar" />
+                <a href="#" class="-pe-overlay" data-toggle="modal" data-target="#pe-video-form"></a>
+            </div>
+            <div id="pe-video-form" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" style="width: 683px">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <iframe src="https://player.vimeo.com/video/182169041" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="row narrow">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-1 col-lg-3 col-lg-offset-2 narrow l-centerText mtd">
+                <div class="l-centerBlock mbt">
+                    <a href="/plan-explorer">
+                        <img class="-hp-pepromo-logo" src="/Images/logos/products/planexplorer.svg" alt="Plan Explorer">
+                    </a>
+                </div>
+                <div class="l-centerBlock">
+                    <a href="/plan-explorer">
+                        <img src="/Images/products/planexplorer/diagram.svg" alt="Stylized diagram of a query plan" style="max-width:320px">
+                    </a>
+                </div>
+                <div class="hidden-xs mtd">
+                    <a class="Btn" href="/plan-explorer">Learn more</a>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-6 narrow mtd">
+                <span class="H H--medium H--heavy u-color-gray-darker mbd">Get the standalone version of Plan Explorer and get to the root of tough SQL query issues.</span>
+                <div class="List List--checkmarks List--compacter mbt">
+                    <ul>
+                        <li>Index Analysis</li>
+                        <li>Statistics Analysis with Histogram</li>
+                        <li>Query Performance Profiling and Playback</li>
+                        <li>Actual Plan Recosting</li>
+                        <li>Plan Diagram</li>
+                        <li>Management Studio Add-In</li>
+                    </ul>
+                </div>
+                <p>Collector service or database not required.</p>
+                <div class="l-centerText">
+                    <a class="Btn visible-xs-inline-block" href="/plan-explorer">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="l-pageSection tint -clientLogos" style="padding: 2.5rem 0;">
+    <div class="container">
+        <div class="col-xs-12 l-centerText">
+            <img class="-clientLogo" src="/Images/logos/clients/logoa.svg" alt="" style="padding-top:14px;width:80px">
+            <img class="-clientLogo" src="/Images/logos/clients/logods.svg" alt="" style="padding-top:11px;width:80px">
+            <img class="-clientLogo" src="/Images/logos/clients/logodp.svg" alt="s logo" style="width:52px">
+            <img class="-clientLogo" src="/Images/logos/clients/logoh.svg" alt="" style="padding-top:4px;width:32px">
+            <img class="-clientLogo" src="/Images/logos/clients/logolt.svg" alt="" style="padding-top:7px;max-width:92px">
+            <img class="-clientLogo" src="/Images/logos/clients/logosub.svg" alt="" style="padding-top:10px;max-width:120px">
+            <img class="-clientLogo" src="/Images/logos/clients/logovz.svg" alt="" style="padding-top:10px;width:80px">
+            <img class="-clientLogo" src="/Images/logos/clients/logov.svg" alt="" style="padding-top:10px;width:60px">
+            <img class="-clientLogo" src="/Images/logos/clients/logowf.svg" alt="" style="width:41px">
+            <img class="-clientLogo" src="/Images/logos/clients/logox.svg" alt="" style="padding-top:10px;max-width:64px">
+        </div>
+    </div>
+</div>
+<div class="l-pageSection l-pageSection--paddingLarge -completePerformanceSolution">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="CPSHeading">
+                    The Complete Performance Solution
+                </h1>
+                <p class="CPSsubHeading">
+                    For SQL Server and Windows
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8 col-md-6 col-lg-5 col-lg-offset-1 marginTop">
+                <ul class="cps">
+                    <li>Performance Monitoring and Tuning</li>
+                    <li>Server Schedule and Alert Management</li>
+                    <li>SQL Server Index Analysis and Defrag</li>
+                    <li>Extensive Reporting</li>
+                    <li>Secure Cloud Access</li>
+                    <li>Lowest Overhead in the Industry</li>
+                </ul>
+            </div>
+            <div class="col-xs-4 col-md-6 col-lg-5 hidden-xs l-centerText" style="margin-top: 16px;">
+                <a href="/products">
+                    <img class="scale-with-grid" src="/Images/performance-advisor/devices-2016.jpg" alt="The Complete Performance Solution" />
+                </a>
+            </div>
+        </div>
+        <div class="row marginTop">
+            <div class="col-xs-12">
+                <p class="CPSsubHeading">
+                    The best platform is built from the best tools.<br />
+                    <span style="font-size:20px">
+                        Performance Advisor | Event Manager | Fragmentation Manager | Plan Explorer
+                    </span>
+                </p>
+                <p class="l-centerText">
+                    <a href="/products" class="Btn Btn--large">Learn More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="parallax" class="parallax fixed" style="background:#111 url('/Images/parallax/red-polygons.jpg') no-repeat;">
+    <div class="quoteWrap">
+        <div class="quote">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <h2 style="color:#fff; font-weight:400;text-shadow: 0 0 8px #000;">
+                            Data professionals need tools that solve problems while saving time.
+                        </h2>
+                        <p style="color:#fff; font-weight:400;text-shadow: 0 0 8px #000;padding: 0 8%;">
+                            SQL Sentry software provides the deepest insight, the fastest root-cause troubleshooting, and the most comprehensive monitoring and alerting for Microsoft SQL Server.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="l-pageSection -testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-11">
+<div class="row">
+    <div class="col-sm-11">
+        <span class="H H--bigger u-color-gray-darker mbm">
+            Satisfied customers say the nicest things<span style="letter-spacing:1px">...</span>
+        </span>
+        <img class="mbd" src="/Images/tr-stars-red.svg" alt="TrustRadius rated 8.7 out of 10" style="width:476px;height:39px;max-width:100%"/>
+        <p class="u-text-bold mbt" style="letter-spacing:-1px">We believe if you continuously put out great software and deliver world class support, your customers will tell your story better than anyone. Don't take our word that we're the best solution. See what our customers have to say for yourself.</p>
+        <div class="tr-widget-container">
+              
+            <div class="trustradius-widget"
+                 style="height: 500px;"
+                 data-products="performance-advisor"
+                 data-show-header="false"
+                 data-max-reviews="10"
+                 data-min-rating="4"
+                 data-sort="-rating">
+            </div>
+            <footer class="mtd">
+                <div style="float:right">
+                    <a href="//www.trustradius.com/products/performance-advisor/reviews" target="_blank">Source: <img style="height:16px;margin-left:10px" src="//trustradius-static.s3.amazonaws.com/1.0.0/images/trustradius_logo_tm_240.png" alt="Software Reviews on TrustRadius"></a>
+                </div>
+            </footer>
+        </div>
+
+        <link type="text/css" rel="stylesheet" href="/css/views/shared/customertestimonials.min.css" />
+        <script type="text/javascript" src="/js/views/shared/customertestimonials.min.js"></script>
+    </div>
+</div>
+<p class="l-centerText center mtt">
+    <a class="Btn Btn--large external" href="//www.trustradius.com/products/performance-advisor/reviews" target="_blank" style="font-size:22px;">Read All</a>
+</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .topFooter .headingTrigger {
+        color: #999;
+        cursor: pointer;
+    }
+
+    .topFooter .headingTrigger:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .topFooter .row {
+        min-height: 20px;
+    }
+
+    .topFooter li {
+        padding-bottom: .5em;
+    }
+
+    #popularTopics > .row {
+        margin-bottom: 0;
+    }
+</style>
+
+<link href="/css/_SQLSentryLayout_Footer?v=neP2dj87VEVTs1a6P9E8q59vYUHUKAXym2GYLLVD7Qs1" rel="stylesheet"/>
+
+
+<!--start top footer-->
+<div class="topFooter">
+    <div class="container">
+        <div class="row">
+            <div class="three columns footerColumn">
+                <p>
+                    About Us
+                </p>
+                <ul>
+                    <li><a href="/company/about-us">Overview</a></li>
+                    <li><a href="/company/leadership">Leadership</a></li>
+                    <li><a href="/company/careers">Careers</a></li>
+                    <li><a href="/company/privacy">Privacy Policy</a></li>
+                </ul>
+                <p>Partners</p>
+                <ul>
+                    <li><a href="/company/partners#find-partner">Find a Partner</a></li>
+                    <li><a href="/company/partners#become-partner">Become a Partner</a></li>
+                </ul>
+            </div>
+            <div class="three columns footerColumn">
+                <p>News & Events</p>
+                <ul>
+                    <li><a href="/company/news-events#news-room">News Room</a></li>
+                    <li><a href="/company/news-events#events">Events</a></li>
+                    <li><a href="/company/news-events#webinars">Upcoming Webinars</a></li>
+                    <li><a href="/company/news-events#eNewsSection">SQL Sentry eNews</a></li>
+                    <li><br /></li>   
+                </ul>
+                <p>Success Stories</p>
+                <ul>
+                    <li><a href="/company/success-stories#customers">Customers</a></li>
+                    <li><a href="/company/success-stories#testimonials">Testimonials</a></li>
+                    <li><a href="/company/success-stories#awards">Awards and Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="three columns footerColumn">
+                <p>Community</p>
+                <ul>
+                    <li><a href="/company/news-events#webinars">Webinars</a></li>
+                    <li><a href="http://blogs.sqlsentry.com">Blogs</a></li>
+                    <li><a href="/company/news-events#events">Events</a></li>
+                    <li><a href="/company/news-events#eNewsSection">SQL Performance News</a></li>
+                    <li class="socialIcons">
+                        <a target="_blank" href="https://www.facebook.com/SQLSentry"><img border="0" alt="facebook" src="/images/icons/16-fb.png"></a>
+                        <a target="_blank" href="https://twitter.com/SQLSentry"><img border="0" alt="twitter" src="/images/icons/16-twitter.png"></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/129912"><img border="0" alt="linkedin" src="/images/icons/16-in.png"></a>
+                        <a target="_blank" href="https://plus.google.com/111232758474398045503/posts"><img border="0" alt="gplus" src="/images/icons/16-gplus.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="three columns footerColumn">
+                <p>Contact Us</p>
+                <ul>
+                    <li><a href="#" class="contact-us" data-toggle="modal" data-target="#contact-us-form">Contact Us</a></li>
+                    <li><a href="" onclick="window.Zenbox.show(); return false;">Contact support</a></li>
+                    <li><a href="#" class="contact-us-quote" data-toggle="modal" data-target="#contact-us-quote-form">Get a quote</a></li>
+                    <li style="color:#999;">704-895-6241</li>
+                    <li style="color:#999;">855-SQL-SPEED toll-free</li>
+                    <li><a href="mailto:sales@sqlsentry.com">sales@sqlsentry.com</a></li>
+                </ul>
+            </div>
+            <div class="three columns footerColumn">
+                <p>
+                    Websites
+                </p>
+                <ul>
+                    <li><a href="http://sqlperformance.com">SQLPerformance.com</a></li>
+                    <li><a href="http://answers.sqlperformance.com">Answers<wbr/>.SQLPerformance.com</a></li>
+                    <li><a href="http://www.sqlsentry.tv">SQLSentry.TV</a></li>
+                    <li><a href="http://blogs.sqlsentry.com">Blogs.SQLSentry.com</a></li>
+                    <li><a href="http://cloud.sqlsentry.com">Cloud.SQLSentry.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="popularTopics">
+            <div class="row">
+                <div class="headingTrigger active sixteen columns footerColumn" id="popularTopics-title">
+                    <p>Popular Topics</p>
+                </div>
+            </div>
+            <div class="row switch" id="task1" style="display: block;">
+                <div class="expanded-content">
+                    <div>
+                        <div class="three columns footerColumn">
+                            <ul>
+                                <li><a href="/sql-server/alwayson">AlwaysOn</a></li>
+                                <li><a href="/white-papers/performance-baselines-and-benchmarks-for-microsoft-sql-server">Baselines and Benchmarks</a></li>
+                                <li><a href="/sql-server/sql-tools">SQL Tools</a></li>
+                                <li><a href="/sql-server/sql-reports">SQL Reports</a></li>
+                                <li><a href="/sql-server-books">SQL Server Books and eBooks</a></li>
+                            </ul>
+                        </div>
+                        <div class="three columns footerColumn">
+                            <ul>
+                                <li><a href="/sql-server/performance-tuning-in-sql">Performance Tuning in SQL</a></li>
+                                <li><a href="/white-papers/troubleshooting-sql-server-wait-stats">Troubleshooting Wait Stats</a></li>
+                                <li><a href="/sql-server/sql-server-view">SQL Server View</a></li>
+                                <li><a href="/sql-server/sql-index-fragmentation">SQL Index Fragmentation</a></li>
+                            </ul>
+                        </div>
+                        <div class="three columns footerColumn">
+                            <ul>
+                                <li><a href="/sql-server/server-monitoring-tools">Server Monitoring Tools</a></li>
+                                <li><a href="/white-papers/sql-server-sharepoint-windows-alerts">SQL, Sharepoint, Windows Alerts</a></li>
+                                <li><a href="/sql-server/sql-trace">SQL Trace</a></li>
+                                <li><a href="/sql-server/query-optimization">Query Optimization</a></li>
+                            </ul>
+                        </div>
+                        <div class="three columns footerColumn">
+                            <ul>
+                                <li><a href="/sql-server/sql-deadlock">SQL Deadlock</a></li>
+                                <li><a href="http://downloads.sqlsentry.com/downloads/SQLSentryOverheadAnalysis.doc">Overhead Analysis Report</a></li>
+                                <li><a href="/sql-server/windows-event-logs">Windows Event Logs</a></li>
+                                <li><a href="/sql-server/performance-analytics">Performance Analytics</a></li>
+                            </ul>
+                        </div>
+                        <div class="three columns footerColumn">
+                            <ul>
+                                <li><a href="/sql-server/sql-server-blocking">SQL Server Blocking</a></li>
+                                <li><a href="http://www.sqlsentry.com/help/qs">SQL Sentry Quick Start Guide</a></li>
+                                <li><a href="/sql-server/sql-tuning">SQL Tuning</a></li>
+                                <li><a href="/sql-server/database-monitoring-tools">Database Monitoring Tools</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end top footer-->
+<!--start footer-->
+<div id="footer">
+    <div class="container">
+        <div class="sixteen columns col-xs-12">
+            <p>
+                &copy; 2016 SQL Sentry, LLC All rights reserved.
+            </p>
+        </div>
+    </div>
+</div>
+<!--end footer-->
+
+<div class="bstrnstn">
+    <div id="contact-us-form" class="modal fade js-footer-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h1 class="modal-title">Contact Us</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" action="/ContactUs/ContactUsForm">
+                        <div class="form-group">
+                            <label for="contact-us-email" class="required col-xs-5 control-label">Email</label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-email" class="form-control" name="email" type="email" required placeholder="Email"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-firstName" class="required col-xs-5 control-label">First name
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-firstName" class="form-control" name="firstName" type="text" required placeholder="First name"/>
+                            </div>
+                        </div>
+                        <div class="form-group u-honey js-honey" aria-hidden="true">
+                            <label for="contact-us-username" class="col-xs-5 control-label">Reason</label>
+                            <div class="col-xs-7">
+                                <input class="form-control" id="contact-us-username" name="username" type="text" placeholder="Reason" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-lastName" class="required col-xs-5 control-label">Last name
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-lastName" class="form-control" name="lastName" type="text" required placeholder="Last name"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-message" class="required col-xs-5 control-label">Message</label>
+                            <div class="col-xs-7">
+                                <textarea class="form-control modal-textarea modal-textarea--resizeable" id="contact-us-message" name="message" rows="5" required placeholder="What may we do for you?"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group u-honey js-honey" aria-hidden="true">
+                            <label for="contact-us-reason" class="col-xs-5 control-label">Reason</label>
+                            <div class="col-xs-7">
+                                <textarea class="form-control modal-textarea modal-textarea--resizeable" id="contact-us-reason" name="reason" rows="5" placeholder="Reason"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group vertical-offset">
+                            <label for="contact-us-company" class="col-xs-5 control-label">Company</label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-company" class="form-control" name="company" type="text" placeholder="Company"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-title" class="col-xs-5 control-label">Title</label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-title" class="form-control" name="title" type="text" placeholder="Title"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-phone" class="col-xs-5 control-label">Phone</label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-phone" class="form-control" name="phone" type="tel" placeholder="Phone"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-us-numberOfServers" class="col-xs-5 control-label">Servers administered
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-numberOfServers" class="form-control" name="numberOfServers" type="number" placeholder="Number of servers administered"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-us-numberOfDbas" class="col-xs-5 control-label">DBAs employed</label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-numberOfDbas" class="form-control" name="numberOfDbas" type="number" placeholder="Number of DBAs">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="ajax-message"></p>
+                    <button class="Btn Btn--rectangular" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bstrnstn">
+    <div id="contact-us-quote-form" class="modal fade js-footer-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                    <h1 class="modal-title">Request A Quote</h1>
+                </div>
+                <div class="modal-body">
+                    <p>Whether you need 2 licenses or 2000, we will bring together the right purchasing options, volume
+                        pricing and more to make a cost effective proposal to fit your server environment and budget
+                        needs.</p>
+                    <p>To receive your customized SQL Sentry licensing quote, please fill out and submit the form below
+                        and a licensing proposal will be sent to your email address. It’s that simple. Alternatively,
+                        you can email <a
+                            href="mailto:sales@sqlsentry.com?subject=Quote%20Request">sales@sqlsentry.com</a> or call us
+                        toll-free at 704-895-6241 / 855-775-7733.</p>
+                    <form class="form-horizontal" action="/ContactUs/ContactUsQuoteForm">
+                        <div class="form-group full-width"><h2 class="col-xs-12 mvl">Contact Information</h2></div>
+                        <div class="form-group">
+                            <label class="required col-xs-5 control-label" for="contact-us-quote-email"
+                                   class="required">Email
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-email" class="form-control" placeholder="Email" type="email"
+                                       name="email" required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="required col-xs-5 control-label" for="contact-us-quote-firstName"
+                                   class="required">First name
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-firstName" class="form-control" placeholder="First name"
+                                       type="text"
+                                       name="firstName" required/>
+                            </div>
+                        </div>
+                        <div class="form-group u-honey js-honey" aria-hidden="true">
+                            <label for="contact-us-username" class="col-xs-5 control-label">Reason</label>
+                            <div class="col-xs-7">
+                                <input class="form-control" id="contact-us-username" name="username" type="text" placeholder="Reason" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="required col-xs-5 control-label" for="contact-us-quote-lastName"
+                                   class="required">Last name
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-lastName" class="form-control" placeholder="Last name"
+                                       type="text"
+                                       name="lastName" required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="required col-xs-5 control-label" for="contact-us-quote-company" class="required">
+                                Company
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-company" class="form-control" placeholder="Company"
+                                       type="text"
+                                       name="company" required/>
+                            </div>
+                        </div>
+                        <div class="form-group u-honey js-honey" aria-hidden="true">
+                            <label for="contact-us-quote-reason" class="col-xs-5 control-label">Reason</label>
+                            <div class="col-xs-7">
+                                <textarea class="form-control modal-textarea modal-textarea--resizeable" id="contact-us-quote-reason" name="reason" rows="5" placeholder="Reason"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="required col-xs-5 control-label" for="contact-us-quote-phone" class="required">Phone
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-phone" class="form-control" placeholder="Phone" type="text"
+                                       name="phone" required/>
+                            </div>
+                        </div>
+                        <div class="form-group full-width"><h2 class="col-xs-12 mvl">Required License Information</h2></div>
+
+                        <div class="form-group">
+                            <p class="col-xs-12">
+                                Number of instances you would like to monitor with <b>
+                                    SQL Sentry
+                                    Performance Advisor
+                                </b>
+                            </p>
+                            <label class="col-xs-5 control-label" for="contact-us-quote-PANumberOfServers">SQL Server
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-PANumberOfServers" class="form-control"
+                                       type="number" name="PANumberOfServers"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-5 control-label" for="contact-us-quote-PANumberOfServices">SQL Server
+                                Analysis Services
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-PANumberOfServices" class="form-control"
+                                       type="number" name="PANumberOfServices"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="col-xs-12"
+                               title="A license is required for each SQL Server, Oracle Server, and / or Windows system that you wish to monitor with SQL Sentry Event Manager and/or SQL Sentry Performance Advisor. For additional product information, online demonstrations or volume price quotations, please contact us via email	or phone 704-895-6241 / 855-775-7733 toll-free.">
+                                Number of instances you would like to monitor with <b>SQL Sentry Event Manager</b>
+                            </p>
+                            <label class="col-xs-5 control-label" for="contact-us-quote-EMNumberOfServers">SQL Server
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-EMNumberOfServers" class="form-control"
+                                       type="number" name="EMNumberOfServers"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-5 control-label" for="contact-us-quote-EMNumberOfWindows">Windows
+                            </label>
+                            <div class="col-xs-7">
+                                <input id="contact-us-quote-EMNumberOfWindows" class="form-control"
+                                       type="number" name="EMNumberOfWindows"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-5 control-label" for="contact-us-quote-preferredPartner">Preferred SQL
+                                Sentry partner
+                            </label>
+                            <div class="col-xs-7">
+                                <select id="contact-us-quote-preferredPartner" class="form-control"
+                                        name="preferredPartner">
+                                    <option value="none" selected>-No preferred partner-</option>
+                                    <option value="SHI">SHI</option>
+                                    <option value="Insight">Insight</option>
+                                    <option value="QBS Software">QBS Software</option>
+                                    <option value="Softchoice">Softchoice</option>
+                                    <option value="En Pointe Technologies">En Pointe Technologies</option>
+                                    <option value="SQL Solutions, Inc.">SQL Solutions, Inc.</option>
+                                    <option value="COMPAREX Group">COMPAREX Group</option>
+                                    <option value="GreenPages Technology Solutions">GreenPages Technology Solutions
+                                    </option>
+                                    <option value="COEO">COEO</option>
+                                    <option value="Gravitar">Gravitar</option>
+                                    <option value="CompuCom">CompuCom</option>
+                                    <option value="PC Mall">PC Mall</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-5 control-label" for="contact-us-quote-comments">Comments /
+                                Questions:
+                            </label>
+                            <div class="col-xs-7">
+                                <textarea id="contact-us-quote-comments" class="form-control modal-textarea modal-textarea--resizeable" placeholder="Comments / Questions" name="comments" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="ajax-message"></p>
+                    <button class="Btn Btn--rectangular" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/Scripts/_SQLSentryLayout_Footer?v=h_58bZknr16ZXuVIWaeLNOAD4OecO0mbKuBKIb8vGfY1"></script>
+
+
+<script type="text/javascript">
+    (function (d, s, i, r) {
+        if (d.getElementById(i)) { return; }
+        var n = d.createElement(s), e = d.getElementsByTagName(s)[0];
+        n.id = i; n.src = '//js.hs-analytics.net/analytics/' + (Math.ceil(new Date() / r) * r) + '/1638705.js';
+        e.parentNode.insertBefore(n, e);
+    })(document, "script", "hs-analytics", 300000);
+</script>
+
+        <script type="text/javascript">
+            $(function () {
+                $('#layerslider').layerSlider({
+                    skinsPath: '/Content/layerslider/skins/',
+                    //globalBGImage: '/Images/parallax-ad-cloud.jpg',
+                    responsive: false,
+                    responsiveUnder: 1200,
+                    thumbnailNavigation: 'disabled',
+                    showCircleTimer: false,
+                    navButtons: true,
+                    navPrevNext: false,
+                    navStartStop: false,
+                    hoverPrevNext: true,
+                    hoverBottomNav: true,
+                    layersContainer: 1180,
+                    hideUnder: 560
+                });
+            });
+        </script>
+
+    <script type="text/javascript" src="/Scripts/Plugins/zenbox.js"></script>
+
+<style>
+    #old-browser-modal {
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top, #ffffff 0%, #e7eaee 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7eaee)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #ffffff 0%,#e7eaee 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #ffffff 0%,#e7eaee 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #ffffff 0%,#e7eaee 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #ffffff 0%,#e7eaee 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7eaee',GradientType=0 ); /* IE6-9 */
+        border: 9px solid #000;
+        width: 580px;
+    }
+
+    #browser-links li {
+        cursor: pointer;
+        float: left;
+        width: 120px;
+        height: 122px;
+        margin: 0 10px 20px 10px;
+        padding: 0;
+        text-align: center;
+    }
+</style>
+
+<div id="old-browser-modal" class="reveal-modal">
+    <div style="text-align:center;">
+        <h3 style="color:#ccc;font-size:2.2em;">LOOKS LIKE YOUR BROWSER IS OUT OF DATE</h3>
+        <p style="color:#777;">For your convenience here are links to supported browsers:</p>
+        <div>
+            <ul id="browser-links" style="list-style-type:none;padding:0;margin:0;">
+                <li id="ob_chrome">
+                    <div><a href="http://www.google.com/chrome/" target="_blank"><img src="/Images/detect-icon-chrome.png" /></a></div>
+                    <div><a href="http://www.google.com/chrome/" target="_blank">Chrome</a></div>
+                </li>
+                <li id="ob_firefox">
+                    <div><a href="https://www.mozilla.org/en-US/firefox/new" target="_blank"><img src="/Images/detect-icon-firefox.png" /></a></div>
+                    <div><a href="https://www.mozilla.org/en-US/firefox/new" target="_blank">Firefox</a></div>
+                </li>
+                <li id="ob_safari">
+                    <div><a href="http://www.apple.com/safari/" target="_blank"><img src="/Images/detect-icon-safari.png" /></a></div>
+                    <div><a href="http://www.apple.com/safari/" target="_blank">Safari</a></div>
+                </li>
+                <li id="ob_msie">
+                    <div><a href="http://www.microsoft.com/windows/Internet-explorer/" target="_blank"><img src="/Images/detect-icon-msie.png" /></a></div>
+                    <div><a href="http://www.microsoft.com/windows/Internet-explorer/" target="_blank">Internet Explorer</a></div>
+                </li>
+            </ul>
+        </div>
+        <p style="clear:both;">Your browser could be incompatible with this website.<br />If you close this window and continue you may experience less than optimal behavior.</p>
+        <a class="linkbutton old-browser-close">Don't show this again</a><!--Jason need close function-->
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (!Modernizr.input.placeholder) {
+                $("input").each(function () {
+                    if ($(this).val() == "" && $(this).attr("placeholder") != "") {
+                        $(this).val($(this).attr("placeholder"));
+                        $(this).focus(function () {
+                            if ($(this).val() == $(this).attr("placeholder")) $(this).val("");
+                        });
+                        $(this).blur(function () {
+                            if ($(this).val() == "") $(this).val($(this).attr("placeholder"));
+                        });
+                    }
+                });
+            }
+
+            $("#old-browser-modal").center();
+            $("nav.second").sticky({ topSpacing: 74 });
+        });
+
+        //Modernizr modern feature tests
+        $(function () {
+            if (document.cookie != null) {
+                var cookie = document.cookie.split(";");
+                var doNotShowAgain = false;
+                for (var i = 0; i < cookie.length; i++) {
+                    if (cookie[i].indexOf("doNotShowAgain") >= 0) {
+                        doNotShowAgain = true;
+                    }
+                }
+                if (!doNotShowAgain) {
+                    if (Modernizr.fontface &&
+                !Modernizr.borderradius &&
+                !Modernizr.boxshadow &&
+                !Modernizr.opacity &&
+                !Modernizr.cssanimations &&
+                !Modernizr.csstransforms &&
+                !Modernizr.svg &&
+                !Modernizr.video &&
+                !Modernizr.inputtypes.tel &&
+                !Modernizr.inputtypes.date) {
+
+                        $("#old-browser-modal").center();
+                        $("#old-browser-modal").reveal();
+                    }
+                }
+            }
+
+            $('.old-browser-close').click(function () {
+                $('#old-browser-modal').trigger('reveal:close');
+                document.cookie = "doNotShowAgain=true";
+            });
+
+            //document.domain = 'sqlsentry.com'
+            var cartCount = $.cookie("CartItemCount");
+            if (cartCount > 0) {
+                $(".cartlabel").html(cartCount);
+                $(".cartlink").attr("title", cartCount + " items");
+                $(".cartlabel").css("left", 30 - ($(".cartimage").width() / 2));
+                $(".cartimage").prop("src", "/images/icons/cart-red.png");
+            }
+
+
+            //hide zen brand
+            $('.branding').css('display', 'none');
+            var helpButtonLoading = setInterval(function () { HelpButtonLoading() }, 500);
+            var ticketSubmissionFormLoading = setInterval(function () { TicketSubmissionFormLoading() }, 500);
+            function HelpButtonLoading() {
+                if ($("#launcher").length) {
+                    $("#launcher").css("right", "50px");
+                    clearInterval(helpButtonLoading);
+
+                    //Track help button click on Kissmetrics
+                    var helpButton = $('#launcher').contents().find(".Button--launcher");
+                    //alert(helpButton.html());
+                    helpButton.click(function () {
+                        _kmq.push(['trackClick', 'btm_rt_help', 'click_help']);
+                        console.log('clicked help');
+                    })
+                }
+            }
+            function TicketSubmissionFormLoading() {
+                if ($("#ticketSubmissionForm").length) {
+                    $("#ticketSubmissionForm").css("right", "35px");
+                    clearInterval(ticketSubmissionFormLoading);
+                }
+            }
+        });
+
+        function reveal_lock() {
+            //Lock parent scroll when revealed
+            $("body").addClass("modal-open");
+            return true;
+        };
+
+        function reveal_unlock() {
+            //Unlock parent scroll when revealed
+            $("body").removeClass("modal-open");
+            return true;
+        };
+
+        function moveTo(contentArea) {
+            if (contentArea.indexOf("#") == 0) {
+                var goPosition = $(contentArea).offset().top;
+                $('html,body').animate({ scrollTop: goPosition }, 'slow');
+            }
+            else {
+                window.location.href = contentArea;
+            }
+        }
+
+        function moveToDownload() {
+            ga('send', 'pageview', '/vp/downloads-tab/click-dl-full-trial/');
+            if ($(".EvaluationRegistrationForm").length > 0) {
+                var goPosition = $(".EvaluationRegistrationForm").offset().top - 50;
+                $('html,body').animate({ scrollTop: goPosition }, 'slow');
+
+                if ($(".DLpanel").is(":visible")) {
+                    $("#trigger").trigger("click");
+                }
+
+                return false;
+            }
+            else {
+                document.location.href = "/download-trial/trial";
+            }
+        }
+
+        $(".DownloadPlanExplorerLink").click(function () {
+            ga('send', 'pageview', '/vp/downloads-tab/click-dl-plan-explorer/');
+            document.location.href = '/plan-explorer#download';
+
+            if ($(".DLpanel").is(":visible")) {
+                $("#trigger").trigger("click");
+            }
+
+            return false;
+        });
+
+        if (typeof (Zenbox) !== "undefined") {
+            Zenbox.init({
+                dropboxID: "20158840",
+                url: "https://sqlsentry.zendesk.com",
+                tabTooltip: "Support",
+                tabImageURL: "https://assets.zendesk.com/external/zenbox/images/tab_support.png",
+                tabColor: "black",
+                tabPosition: "Left"
+            });
+        }
+    </script>
+    
+
+    <style type="text/css" media="screen, projection">
+        @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
+    </style>
+
+    <script type="text/javascript">ScheduleOnceEmbedPosition="1,3,2";ScheduleOnceEmbedPhoneTitle="Call Us (toll-free)";ScheduleOnceEmbedPhoneText="+1-855-775-7733_so_phone_sep_";ScheduleOnceEmbedEmailTitle="Email Us";ScheduleOnceEmbedEmailBText="Send";ScheduleOnceEmbedEmailBTextColor="rgb(255, 255, 255)";ScheduleOnceEmbedEmailBBGColor="rgb(196, 18, 48)";ScheduleOnceEmbedEmailSendTo="sallison@sqlsentry.com";ScheduleOnceEmbedEmailAck="Website ScheduleOnce Request";ScheduleOnceEmbedEmailAfter="Thank you for your message.<br />We will get back to you as soon as we can.";ScheduleOnceEmbedEmailCustTemp="17";ScheduleOnceEmbedEmailUserTemp="40";ScheduleOnceEmbedBookingTitle="Schedule Online";ScheduleOnceEmbedBookingBText="Book Your Session Now";ScheduleOnceEmbedBookingBBGColor="rgb(196, 18, 48)";ScheduleOnceEmbedBookingBTextColor="rgb(255, 255, 255)";ScheduleOnceEmbedLink="//secure.scheduleonce.com/SQLSentrySEGroup&app=b&thm=gray&bc=C41230&tc=FFFFFF";ScheduleOnceEmbedWidgetTitle="Request Demo";ScheduleOnceEmbedWidgetColor="rgb(255, 255, 255)";ScheduleOnceEmbedWidgetBGColor="rgb(51, 51, 51)";ScheduleOnceEmbedWidgetLeft="right";ScheduleOnceEmbedAid="MjU2NzE4";ScheduleOnceEmbedPageName="'SQLSentrySEGroup'";</script>
+    <script type="text/javascript" src="//static.scheduleonce.com/mergedjs/ScheduleOnceEmbed.js"></script>
+    <script type="text/javascript">function SOEScriptLoaded() { if(typeof soe != 'undefined') { soe.AddEventListners(); } else { setTimeout(SOEScriptLoaded,1000); } } setTimeout(SOEScriptLoaded,1000)</script>
+
+    
+
+    <script type="text/javascript" src="/js/managedjs/utmz.min.js" async></script>
+</body>
+</html>

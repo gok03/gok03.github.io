@@ -1,0 +1,109 @@
+status: 200
+content-length: 3401
+content-location: http://www.paradox-tech.com
+-content-encoding: gzip
+accept-ranges: bytes
+vary: Accept-Encoding,User-Agent
+server: Apache/2.4.23
+last-modified: Tue, 24 Mar 2015 18:30:33 GMT
+etag: "1ca003e-d49-5120cfa666d39-gzip"
+date: Wed, 21 Sep 2016 08:38:51 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.9.2 (gzip)
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Paradox technologies</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/bg.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<header class="black">
+<div class="container">
+<a href="index.html" id="logo">Paradox technologies</a>
+    <nav id="menu">
+        <a href="#" class="nav-mobile" id="nav-mobile"></a>
+        <ul>
+            <li><a href="index.html" class="current">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<section class="bannerbg">
+<div class="container"><div class="banner_index"></div>
+</div>
+</section>
+
+<section class="container clearfix">
+<div class="clear padding20"></div>
+<div class="col_1_3"><img src="images/quienes_somos_paradox.jpg" alt="Paradox" class="imagen"></div>
+<div class="col_2_3 last">
+<div class="col_1_5_1"><a href="bolsa_de_trabajo.php"><img src="images/bolsa-de-trabajo.jpg" alt="Paradox" class="imagen"></a></div>
+<p>Somos una casa de desarrollo de software especializada en medio de pago electrónico, con amplia experiencia nacional e internacional. El soporte de nuestros clientes nos hace ser su primera elección para sus mantenimientos y nuevos proyectos.</p>
+</div>
+</section>
+
+<footer class="clearfix">
+<div class="footer_bottom container">
+<div class="col_2_3">
+				
+<div class="menu">
+<ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="bolsa_de_trabajo.php">Bolsa de Trabajo</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
+            </ul>
+				</div>
+</div>
+			<div class="col_1_3 last">
+<div class="social-cont">
+ <ul class="social-links">
+<li ><a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+<li ><a href="#" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
+<li ><a href="#" target="_blank"><img src="images/pinterest.png" alt="Twitter"></a></li>
+</ul>
+</div>
+</div>
+
+            <div class="clear padding10"></div>
+		</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $(function() {
+
+        var btn_movil = $('#nav-mobile'),
+            menu = $('#menu').find('ul');
+
+        // Al dar click agregar/quitar clases que permiten el despliegue del menú
+        btn_movil.on('click', function (e) {
+            e.preventDefault();
+
+            var el = $(this);
+
+            el.toggleClass('nav-active');
+            menu.toggleClass('open-menu');
+        })
+
+    });
+</script>
+</body>
+</html>

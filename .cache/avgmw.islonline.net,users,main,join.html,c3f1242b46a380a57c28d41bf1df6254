@@ -1,0 +1,266 @@
+status: 200
+content-length: 9722
+content-location: https://avgmw.islonline.net/users/main/join.html
+-content-encoding: gzip
+server: ISLCP/4.4.0beta19 avgmw-server58.islonline.net
+etag: "d28b2082f97b0175369e13217ed17e12"
+cache-control: private,max-age=0,must-revalidate
+content-type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connect to Remote Computer</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+
+    <style type="text/css">
+        .inputBoxHeight {
+            height: 50px;
+        }
+
+        .inputBoxPosition {
+            position: relative;
+            top: 100px;
+        }
+
+        body {
+            color: #6E6E6E;
+        }
+
+        .smallPlaceHolder::-webkit-input-placeholder {
+            font-size: 18px;
+            text-align: left;
+            font-style: italic;
+        }
+
+        .smallPlaceHolder::-moz-placeholder {
+            font-size: 18px;
+            text-align: left;
+            font-style: italic;
+        }
+
+        :-ms-input-placeholder {
+            font-size: 18px;
+            font-style: italic;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body style="background-color: #e8e8e8">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="row" style="margin-top: 10%">
+        	<h3 class="text-center">
+        	AVG Premium Remote Control
+        	</h3>
+
+        </div>
+        <div class="row">
+            <h1 class="text-center" style="font-size: 50px">
+                <b>Allow Access to My Computer</b>
+            </h1>
+        </div>
+
+
+        <div class="row">
+            <h5 class="text-center">
+                Live Chat, Remote Access and Support over the Internet
+            </h5>
+        </div>
+    </div>
+
+    <!-- Connection row -->
+    <div class="container">
+        <div class="row" style="margin-top: 5%">
+            <div class="col-md-3 col-sm-offset-1 text-center">
+                <img src="/users/custom/avgmw_connect_screen.png" alt="Connect Icon" height="250px">
+            </div>
+
+            <form id="formConnect">
+                <div class="col-md-4">
+                    <input id="inputSessionCode" name="sessionCodeName" type="text" placeholder="Enter Session Code Here" class="form-control inputBoxHeight inputBoxPosition smallPlaceHolder"
+                           style="font-size: 18px" />
+                    <div id="alertMsgPlaceHolder" class="inputBoxPosition" style="margin-top: 25px"></div>
+                </div>
+
+                <div class="col-md-2">
+                    <button id="btnConnect" type="submit" class="btn btn-success inputBoxHeight inputBoxPosition"
+                            data-loading-text="<i class='fa fa-spinner'></i> Connecting"
+                            style="font-size: 20px">
+                        Allow Access
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+	<div class="container">
+		<div class="row" style="margin-top: 5%">
+			<div class="text-center">Language: English - <a href="/?CPLANG=de" onclick="setLanguage('de');">Deutsch</a></div>
+		</div>
+	</div>
+
+    <script type="text/javascript">
+
+        //Constants
+        var SESSION_CODE = "sessioncode";
+        var PRC_WEB_URL = 'https://www.islonline.net/webapi2?he=JSON1&hl=en&method=' + encodeURI('session/query/1') + '&hedata=';
+        var PRC_WEB_URL_TAIL = '&jsonp=?';
+
+        //Global variables
+        var invitationSessionCode = null;
+
+        //Description: Get parameters from URL query string
+        //Return: hash table with parameter as key
+        function getQueryStrValues() {
+
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+
+            return vars;
+        }
+
+        //Description: Validate the inpute session code using validate.js
+        //Return: true if session code is valid, false otherwise
+        function validateSessionCode() {
+            var sessionCodeValidator = $("#formConnect").validate({
+                rules: {
+                    sessionCodeName: {
+                        required: true,
+                        number: true
+                    }
+                },
+                messages: {
+                    sessionCodeName: {
+                        required: "Please enter a session code",
+                        number: "Please enter a valid session code"
+                    }
+                }
+            });
+
+
+            return sessionCodeValidator.element("#inputSessionCode");
+        }
+
+        //Description: Handle session code submission error
+        //Parameters: string errType: type of error
+        //			  string errMsg : error message
+        function handleSubmitError(errType, errMsg) {
+            $("#alertMsgPlaceHolder").html('<div class="alert alert-danger" role="alert">' + errMsg + '</div>');
+            console.log("error type : " + errType + " errMsg : " + errMsg);
+        }
+
+        //Description: Handle successful session code submission
+        //Parameters: object recvData: data received from server
+        function handleSubmiteSuccess(recvData) {
+            $("#alertMsgPlaceHolder").html('<div class="alert alert-success" role="alert">Please run the program being downloaded.</div>');
+            //re-direct to download program
+            var joinLink = recvData.data.joinLink;
+            var modifiedJoinLink = joinLink.replace("cmdline=", "branch=any&stable_since=2016-04-19&cmdline=--on-connect%20%22desktop%3Fshow%26control%22%20");
+            window.location.href = modifiedJoinLink;
+        }
+
+        //Description: Submit session code to server via Ajax
+        //Parameters: string sessionCode: session code to submit
+        function submitSessionCode(sessionCode) {
+            var reqData = { "code": sessionCode };
+            var prcUrl = PRC_WEB_URL + encodeURI(JSON.stringify(reqData)) + PRC_WEB_URL_TAIL;
+
+            $.ajax({
+                url: prcUrl,
+                dataType: 'jsonp',
+                data: reqData,
+                success: function (recvData) {
+                    if (typeof (recvData) != 'object' || typeof (recvData.result) != 'object') {
+                        return;
+                    }
+
+                    if (recvData.result.code == 'OK') {
+                        handleSubmiteSuccess(recvData);
+                    }
+                    else {
+                        handleSubmitError('error_submit', recvData.result.description);
+                    }
+                },
+                timeout: 10000,
+                error: function (jqXHR, textStatus, errorThrown) {
+                    handleSubmitError(textStatus, errorThrown);
+                },
+                beforeSend: function () {
+                    var isSessionCodeValid = validateSessionCode();
+                    if (isSessionCodeValid) {
+                        $("#btnConnect").button('loading');
+                    }
+                },
+                complete: function () {
+                    $("#btnConnect").button('reset');
+                }
+            });
+        }
+
+
+        $(document).ready(function () {
+
+            // Retrieve session code and whether it is directed from email link
+            invitationSessionCode = getQueryStrValues()[SESSION_CODE];
+
+            //session code exists, it is redirected from invitation
+            if (invitationSessionCode) {
+                //fill out the session code input box
+                $("#inputSessionCode").val(invitationSessionCode);
+                $("#inputSessionCode").attr('readonly', 'true');
+            }
+
+
+            $("#btnConnect").click(function (event) {
+                event.preventDefault();
+
+                //clear up the error message regardless
+                $("#alertMsgPlaceHolder").html('');
+
+                //validate input session code
+                var isSessionCodeValid = validateSessionCode();
+
+                if (isSessionCodeValid) {
+                    //submit the session code
+                    var inputSessionCode = $("#inputSessionCode").val();
+                    submitSessionCode(inputSessionCode);
+                }
+            });
+
+        });
+        
+        function setLanguage(lang) {
+		var myrequest = null;
+		myrequest = new XMLHttpRequest();
+		myrequest.open("GET", '/users/main/login.html', false);
+		myrequest.send(null);
+
+		window.location.href = '/join?redirect=2_DB8Czxad623GXxry0fTiovqs6i8cngCu9GNPihteSOp45jfV9A.IYlbpBb.J2wPTkr96HkyXXoAnpDMaN9hLJ_emYLh2Jh6J3y80LeY5t94W_QRYBAA6AQ--&CPLANG=' + lang;
+		return false;
+	}
+    </script>
+</body>
+</html>

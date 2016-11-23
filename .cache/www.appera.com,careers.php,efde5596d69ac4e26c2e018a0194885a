@@ -1,0 +1,288 @@
+status: 200
+content-location: http://www.appera.com/careers.php
+server: Apache
+date: Wed, 21 Sep 2016 09:15:45 GMT
+content-type: text/html
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Appera - A strong partner for all your software needs</title>
+<style>
+#error,#ur,#mr,#scr
+{
+display:none;
+}
+</style>
+<script>
+function setresume()
+{
+var companyname=document.resupload.comname.value;
+var filename=document.resupload.reup.value;
+var yemail=document.resupload.emailid.value;
+var error="";
+var errorc="";
+var errormail="";
+var errorresume="";
+if(companyname=="")
+{
+error+="<br/>Please Select Title";
+errorc="Please Select Title";
+}
+if(filename=="")
+{
+error+="<br/>Please Upload Your Resume";
+errorresume="Please Upload Your Resume";
+
+} 
+if(yemail.length==0)
+{
+error+="<br/>Please enter valid Email Address";
+errormail="Please enter valid Email Address";
+}
+else
+{
+if((yemail.indexOf('@')==-1))
+{
+error+="<br/>Please enter valid Email Address";
+errormail="Please enter valid Email Address";
+}
+else
+{
+if(yemail.indexOf('.')==-1)
+{
+error+="<br/>Please enter valid Email Address";
+errormail="Please enter valid Email Address";
+}
+else if((yemail.substr(yemail.lastIndexOf('.'))).length>4)
+			{
+			  error+="<br/>Please enter valid Email Address";
+			  errormail="Please enter valid Email Address";
+			}
+}
+}
+
+
+
+if(error=="")
+{
+document.resupload.submit();
+}
+else
+{
+document.getElementById("error").style.display="none";
+document.getElementById("error").innerHTML= error;
+document.getElementById("scr").style.display="block";
+document.getElementById("scr").innerHTML= errorc;
+document.getElementById("ur").style.display="block";
+document.getElementById("ur").innerHTML= errorresume;
+document.getElementById("mailerror").style.display="block";
+document.getElementById("mailerror").innerHTML= errormail;
+
+return false;
+} 
+}
+</script>
+<!-- InstanceEndEditable -->
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<center>
+  <div class="main">
+    <div class="logo_area">
+      <table width="980" border="0">
+        <tr>
+          <td width="180" height="84" rowspan="2"><img src="images/logo.jpg" alt="Appera_logo" title="Appera_logo" width="168" height="85" /></td>
+      <td width="705" rowspan="2"><div align="left"><img src="images/caption.jpg" width="288" height="39" /></div></td>
+      <td width="60" height="42" valign="middle" class="style2">Home</td>
+      <td width="29" valign="middle"><a href="index.html"><img src="images/home_icon.jpg" width="22" height="16" border="0" /></a></td>
+    </tr>
+        <tr>
+          <td height="20" valign="middle" class="style2">Contact</td>
+      <td height="20" valign="middle"><a href="contact.php"><img src="images/contact_icon.jpg" width="19" height="18" border="0" /></a></td>
+    </tr>
+      </table>
+    </div>
+    <div class="banner">
+      <div class="welcome">
+        <div align="right"><img src="images/welcome.jpg" width="160" height="17" vspace="15" /><br />
+          </div>
+        <p>Appera Software, Inc. is a software development services organization providing comprehensive and cost effective services to its customers. Appera offers various programs to its clients including onsite software development, fixed bid projects and a combination of on-site and offsite software development.</p>
+</div>
+      <div class="banner_img"></div>
+    </div>
+    <div class="nav">
+      <div class="nav_curvy"></div>
+       
+      <div class="nav_links">
+      <ul>
+      
+      <li><a href="index.html"><img src="images/company.png" width="81" height="18" vspace="20" border="0" /></a></li>
+      <li><a href="services.html"><img src="images/services.png" width="67" height="18" vspace="20" border="0" /></a></li>
+      <li><a href="expertise.html"><img src="images/expertise.png" width="76" height="18" vspace="20" border="0" /></a></li>
+      <li><a href="careers.php"><img src="images/careers.png" width="62" height="18" vspace="20" border="0" /></a></li>
+      <li style="background-image:none;"><a href="contact.php"><img src="images/contact.png" width="66" height="18" vspace="20" border="0" /></a></li>
+      
+      </ul>
+      </div>
+      <div class="nav_curvy_right"></div>
+    </div>
+    <!-- InstanceBeginEditable name="EditRegion3" -->
+    <div class="content">
+    <div class="heading">
+          <div align="right"><img src="images/careers.jpg" width="59" height="17" hspace="20" /></div>
+      </div>
+      <table width="980" border="0" align="left" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="960" valign="top"><table width="986" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="1056" valign="top"><table width="980" border="0" align="left" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="980" valign="top"><table width="980" border="0" align="left" cellpadding="3" cellspacing="3" bgcolor="#FCFCFC">
+                      <tr>
+                        <td colspan="2" align="left"><span class="hedings_style"><strong>Career Opportunities : CURRENT OPEN POSITIONS</strong></span></td>
+                        </tr>
+                      <tr>
+                        <td colspan="2" align="left" class="text_style"><p><strong>Position 1:</strong> Java PHP Web Programmer<br /> 
+                            <strong>Date:</strong>  January 6, 2010 <br />
+                            <strong>Position ID:</strong>  PHP001 <br />
+                            <strong>No of Positions: </strong>1</p>
+                          <p><span class="hedings_style"><strong>Job Description:</strong></span><strong>  <br />
+                            <br />
+                          </strong>Experienced Java and PHP Programmers with strong object oriented skills. Should have excellent knowledge of CSS, XHTML & W3C Standards, hands on experience in jQuery/Ajax Any booking engine experience is an advantage.<br />
+<strong>Keywords: </strong>Java, HTML, JavaScript, CSS, PHP, jQuery, AJAX <br />
+                            <br />
+                            To apply, send resumes and contact information to <a href="mailto:jobs@appera.com">jobs@appera.com</a> </p>
+                          <p><strong>Position 2:  </strong>Web Designer/ Graphic Designer<br />
+                            <strong>Date: </strong> January 6, 2010<br />
+                            <strong>Position ID:  </strong>WEB001<br />
+                            <strong>No of Positions:  </strong>1<br />
+                            <br />
+                            <span class="hedings_style"><strong>Job Description:</strong></span><br />
+                            <br />
+                            Experienced graphic designer/web designer with knowledge in HTML ,CSS, PHP, Jquery, Flash, Dreamweaver and Photoshop.
+Any knowledge of Travel industry is a plus.Please apply with samples of your work.  <br />
+<strong>Keywords: </strong>Website Designer, CSS, HTML, Flash, Photoshop, XML, flash programmer, Flash Developer, Flash Designer, Creative Designer, Flash, PHP, Javascript,Web Designer, Designer  <br />
+
+To apply, send resumes and contact information to <a href="mailto:jobs@appera.com">jobs@appera.com</a> <br />
+<br />
+<p><strong>Position 3:  </strong>SEO and Online Marketing<br />
+                            <strong>Date: </strong> January 6, 2010<br />
+                            <strong>Position ID:  </strong>SEO001<br />
+                            <strong>No of Positions:  </strong>1<br />
+                            <br />
+                            <span class="hedings_style"><strong>Job Description:</strong></span><br />
+                            <br />
+                            To conduct keyword, market and competitor research and analysis, using industry tools
+ Plan on-page and off-page optimization strategies to achieve high rankings in search engine results.
+Clear understanding of SEO and affiliate marketing   <br />
+<strong>Keywords: </strong>Google ranking, Online Marketing,, Advertising, Ad Networks,online promotional activities,Search Engine Optimisation, SEO,On page Optimisation, Off Page Optimisation   <br />
+
+To apply, send resumes and contact information to <a href="mailto:jobs@appera.com">jobs@appera.com</a> <br />
+<br />
+<strong>Name of Company/Employer</strong>:  Appera Software Private Limited<br />
+<strong>Company Address</strong>: Plot No. 207, Vivekanandanagar, Kukatpally, Hyderabad - 500072</p></td>
+                        </tr>
+                      <tr>
+                        <td width="481" align="left">&nbsp;</td>
+                        <td width="478" align="left">&nbsp;</td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" background="images/repeater.jpg" class="box_pading">
+                   <form action="careers.php" enctype="multipart/form-data" method="post" name="resupload"> 
+                     <table width="700" border="0" align="center" cellpadding="0" cellspacing="5" class="content_style">
+            <tr>
+              <td valign="top"><table width="92%" border="0" align="left" cellpadding="0" cellspacing="12">
+                
+                <tr>
+                  <td width="22%" height="30" align="left" class="style6"><span class="text_style"><b>Select Title</b></span></td>
+                  <td width="27%" align="left" class="style6">
+                    <select name="comname" class="dropstyle" id="ruid">
+           <option value="">Select Title</option>
+           <option value="Mr">Mr</option>
+           <option value="Ms">Ms</option>
+                        </select>                  </td>
+                  <td width="30%" class="style6"><div class="errormsg" id="scr"></div></td>
+                  </tr>
+                <tr>
+                  <td height="30" align="left" class="text_style"><b>Your Name</b></td>
+                  <td align="left" class="style6"><label>
+                    <input name="jobseekername" type="text" class="formstyle" id="name" />
+                  </label></td>
+                  <td class="errormsg">&nbsp;</td>
+                  </tr>
+                <tr>
+                  <td height="30" align="left" class="style6"><b class="text_style">Application for the Post</b></td>
+                  <td align="left" class="style6"><input name="post" type="text" class="formstyle" id="post" /></td>
+                  <td class="errormsg">&nbsp;</td>
+                  </tr>
+                <tr>
+                  <td height="30" align="left" class="style6"><b class="text_style">Email Id</b></td>
+                  <td align="left" class="style6"><label>
+                    <input name="emailid" type="text" class="formstyle" id="email" />
+                  </label></td>
+                  <td class="style6"><div class="errormsg" id="mailerror"></div></td>
+                  </tr>
+                <tr>
+                  <td height="30" align="left" class="style6"><b class="text_style">Upload Your Resume</b></td>
+                  <td align="left" class="style6"><input name="reup" type="file" id="resume_upload" /></td>
+                  <td class="style6"><div class="errormsg" id="ur"></div></td>
+                  </tr>
+                <tr align="left">
+                  <td height="30" class="style6">&nbsp;</td>
+                  <td colspan="2" class="style6">&nbsp;</td>
+                  </tr>
+                <tr>
+                  <td height="30" align="left" class="style6">&nbsp;</td>
+                  <td align="left" class="style6"><label></label>
+                    <input type="submit" name="submit" id="button" value="Submit" onclick="return setresume();" />
+                    <input type="reset" name="button2" id="button2" value="Cancel" /></td>
+                  <td class="style6"></td>
+                  </tr>
+                <tr class="style6">
+                  <td height="30" colspan="4" align="center" class="errorStyle"><div id="error"></div>
+				  </td>
+                  </tr>
+              </table>                </td>
+            </tr>
+          </table></form>          </td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+              </table></td>
+              </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    </div>
+    <!-- InstanceEndEditable -->
+    <div class="footer">
+      <div class="footer_curvy_left"></div>
+      <div class="all_rights">All rights reserved Appera</div>
+      <div class="links">
+      <ul>
+      
+      <li><a href="index.html">Company</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="expertise.html">Expertise</a></li>
+      <li><a href="careers.php">Careers</a></li>
+      <li><a href="contact.php">Contact </a></li>
+      
+      </ul>
+      </div>
+    </div>
+  </div>
+</center>
+</body>
+<!-- InstanceEnd --></html>

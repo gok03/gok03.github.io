@@ -1,0 +1,3206 @@
+status: 200
+content-length: 190052
+content-location: http://www.pointvisionweb.com/app/
+set-cookie: M2W0=MessagesPerPage=25; path=/, solrver=1; path=/, skinui=v12;
+ path=/, ASPSESSIONIDSCBSRTTD=GEGPKIHDIIOBFLELELOLEACJ; path=/
+expires: Tue, 13 Sep 2016 10:39:25 GMT
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+-content-encoding: gzip
+pragma: no-cache,no-cache,no-cache
+cache-control: no-cache
+date: Tue, 13 Sep 2016 10:40:25 GMT
+content-type: text/html; Charset=ISO-8859-1
+-varied-accept-encoding: gzip, deflate
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<title>v12</title>
+<link rel="icon" type="image/png" href="../../app/ress/theme/V12/IMG/favicon.ico" />
+
+	<script>
+		/* Modernizr 2.8.3 (Custom Build) | MIT & BSD
+		 * Build: http://modernizr.com/download/#-canvas
+		 */
+		;window.Modernizr=function(a,b,c){function t(a){i.cssText=a}function u(a,b){return t(prefixes.join(a+";")+(b||""))}function v(a,b){return typeof a===b}function w(a,b){return!!~(""+a).indexOf(b)}function x(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:v(f,"function")?f.bind(d||b):f}return!1}var d="2.8.3",e={},f=b.documentElement,g="modernizr",h=b.createElement(g),i=h.style,j,k={}.toString,l={},m={},n={},o=[],p=o.slice,q,r={}.hasOwnProperty,s;!v(r,"undefined")&&!v(r.call,"undefined")?s=function(a,b){return r.call(a,b)}:s=function(a,b){return b in a&&v(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=p.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(p.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(p.call(arguments)))};return e}),l.canvas=function(){var a=b.createElement("canvas");return!!a.getContext&&!!a.getContext("2d")};for(var y in l)s(l,y)&&(q=y.toLowerCase(),e[q]=l[y](),o.push((e[q]?"":"no-")+q));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)s(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof enableClasses!="undefined"&&enableClasses&&(f.className+=" "+(b?"":"no-")+a),e[a]=b}return e},t(""),h=j=null,e._version=d,e}(this,this.document);
+		
+		if (Modernizr.canvas)
+		{
+		
+		}	
+		else
+			location = "../../app/upgrade_notice.asp";
+			
+		//var m_iSolrSearchVersion = 1;
+		//alert(m_iSolrSearchVersion)
+	</script>
+
+	<!-- === Page CSS      ==== -->
+	<link rel="stylesheet" type="text/css" href="../../app/ress/theme/V12/v12.asp?skinui=v12"/>
+	
+	<!-- === <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script> ==== -->
+	
+	<script type="text/javascript" src="../../app/Langvars.asp?lang="></script>
+	
+	<!-- === Page JS        ==== -->
+	
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/cd-yui_2.js"></script>
+
+
+
+<!-- Tooltip --------->
+<link rel="stylesheet" type="text/css" href="../../app/ress/theme/V12/tipTip.css">
+
+<!-- ************** NOTIFIER CODE CSS ************** -->
+<link rel="stylesheet" type="text/css" href="../../app/noty/buttons.css"/>
+
+
+<script type="text/javascript">
+
+//:::GLOBAL
+
+var m_sHTTPS = 's';
+if (window.location.protocol == "https:")
+	m_sHTTPS = "s"
+else
+	m_sHTTPS = ""
+
+var m_sCDNURL= 'https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/';
+var m_sQServerName = 'www.pointvisionweb.com';
+var m_sRessIMGURL = 'https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/';
+var m_bFirstLogin = false;//uad_korney 11/02/2015  Forced page reloading after first login to update a MailSearchForm for the SOLR v2.0
+var m_bSigendin = false;
+
+var m_InfoBarTimeID = null;
+var m_InfoInboxBarTimeID = null;
+
+var m_sAttach_PrevURL = 'http' + m_sHTTPS  + '://download.pangia.biz/attach/';
+var m_aCAtt = new Array();
+//UI
+var mLeftPanel_Customwidth = 0
+var sCheckboxCheckedColor = "#cbe8f6";
+var mbRightPanelBanner = false;
+var mbRightPanelBannerURL = ''
+var mbWelcomePage = false;
+var msWelcomePageURL = '';
+
+var mbTopBannerURL 			= "";
+var mbTopBanner				= "false";
+var miTopPanel_CustomHeight = 0;
+
+
+var m_bStorageCall = false;
+
+var mSkinUI = 'v12'
+
+var m_sCalWidgetDefault = 'close';
+
+var m_sJSUsername = "";
+var m_sDomaincode = 'enommail2worldcom';
+var m_sUsername = '';
+var m_sDomain = '';
+var m_sReadingPaneType = 'R';
+var currentGUID = '';
+var m_sControlCenter = 'no';
+var slang = '';
+
+var mIntDate = null;
+var mCurrentDate = null;
+var mGGUID = '';
+
+var m_bMobileDevice = false;
+
+var asktologout = "";
+var delemessageconf = '0';
+
+var autoaddsig = '0';
+
+var sendingdisabled = 'False';
+
+var m_arrAutoSaveContacts = [];
+
+var m_sMailAppTxt  = 'Mail';
+var m_sDriveAppTxt = 'Drive';
+
+var popsetup_authenticating = '';
+
+var m_sBP_UploadedH = 'Uploaded';
+
+var m_bUpdatedSettingsPage = 'false';
+
+var m_ClientHeight = 0;
+var m_ClientWidth = 0;
+  
+var mPOPOptVisable = false;
+var mPOPOptLastVisable = '';
+var mPOPOptLastVisablesMenuID = '';
+var mbMenuClosed = false;
+var mPOPOptTimeOut = 4000;
+var mPOPOptTimeID = null;
+
+var mimMainPanelWidth = 0;
+var mimLeftPanelWidth = 0;
+var mimRightPanelWidth = 0;
+var mimMainPanelHeight = 0;
+var mimLeftPanelHeight = 0;
+var mimRightPanelHeight = 0;
+
+var mimMainPanelHidden = false;
+var mimLeftPanelHidden = false;
+var mimRightPanelHidden = false;
+
+var mFirstInboxCall = true; 
+var mDOMReady = false;
+
+var m_bSearchMode = false;
+
+
+var m_sFolderRecords = '';
+
+var m_MSGID = '';
+
+var mRTEPriority =1;
+
+var m_bV12FullSearch = 'false';
+//m_bV12FullSearch = true;
+var m_iTotallDragMsgs = 0;
+var m_iMoveToDirIndex = null;
+
+var m_sBrowser = '';
+var m_sBrowser_os = '';
+var m_sBrowser_version = 0;
+
+var m_bDriveShareMode = false;
+var m_sDriveViewMode = 'thumbnails';
+var m_sDriveThumbV = 'Thumbnails';
+var m_sDriveDetailsV = 'Details';
+
+var m_sDriveOneFile = 'xxxx file';
+var m_sDriveFiles = 'xxxx files';
+var m_sDriveImgClk = 'Click to view';
+var m_sDriveDateUploaded = 'Date uploaded';
+var m_sDriveDateCreated = 'Date created';
+
+var m_sRTEMoveTo = 'Move to To';
+var m_sRTEMoveCc = 'Move to Cc';
+var m_sRTEMoveBcc = 'Move to Bcc';
+
+var m_sMsg_headers = 'Headers';
+var m_sMsgMe = 'me';
+
+var m_bRTEUpdate = false;
+
+//::::TEMP
+var m_sOneAttachment = 'attachment';
+var m_sAttachments   = 'attachments';
+var m_sPOPLastcheck = 'Last check on';
+var m_sPOPCheckMail = 'check mail now';
+var m_sPOPNoAccount = 'No external account found<br>Click Add and follow the instructions on the screen to add a new account';
+var m_sOneMsgDeleted = '1 message has been deleted';
+var m_sMssgDeleted = 'xxxx messages have been deleted';
+var m_sReplyBasicHeader = 'On _xxxDateANDNamexxx_ wrote:';
+var m_sSharedPictures = 'shared pictures';
+var m_sSharedFiles = 'shared files';
+var m_sSharedVideos = 'shared videos';
+var m_sContactPicPrev = 'Generating preview...';
+var m_sMySharedFiles = 'My shared files URL';
+var m_sDriveFileRename = 'Please enter a new name for the file:';
+var m_sDragnDropValidFiles = 'Folders, unsupported file types and empty files can\'t be uploaded';
+var m_sCloseFullView = 'Close full view';
+var m_sOpenFullView = 'Open in full view';
+var m_sMaxMsgSelectMsg = 'You can only select 100 messages at a time';
+var m_sBlankSignature = 'You have no signatures.  You can create new signatures in the Signatures section under Settings';
+//NotSpam lang
+var m_sNotSpamMsg1 = 'xxxEmailxxx is an invalid email and cannot be added to your safe list';
+var m_sNotSpamMsg2 = 'xxxEmailxxx is too long to be added to your safe list';
+var m_sNotSpamMsg3 = 'Your safe list has been updated.&nbsp;&nbsp;Messages from the sender\'s email address will be delivered to your Inbox';
+var m_sSendMsgTo = 'Send a message to ';
+//contacts auto-save
+var m_sContactsAutoSave0 = 'Please enter a first name';
+var m_sContactsAutoSave1 = 'Please enter a last name';
+var m_sContactsAutoSave2 = 'Please select a contact(s) to add';
+var m_SplitPaneMode = 'Split pane mode';
+var m_sNoSearchFound = 'No messages matched your search.  You can search your email in different ways by entering various search criteria.';
+var m_sDeleteDriveDirMsg = 'Are you sure you want to permanently delete the folder _xxFolderNamexx_ ? _xxbreaklinexx_ CAUTION: All files and subfolders will be lost';
+var m_sDriveMenuShare = 'Share file(s)';
+var m_sDownloadMenuDownload = 'Download file(s)';
+var m_sDriveUploadLimit = 'There is not enough space on your Drive to upload these files';
+var m_sRemoveLangvar = 'Remove';
+var m_sInvalidEmailMsg1 = "We can't verify the following email addresses:";
+var m_sInvalidEmailMsg2 = "Please modify or remove the above email addresses.";
+
+var m_sImportContactMsg = "1 contact imported"
+var m_sImportContactsMsg = "xxxx contacts imported"
+
+
+var m_sInsertImageMenu =  "Insert Image";
+var m_sInsertImageMenuURL = "Image URL:";
+
+var m_sInsertLinkMenu = "Link Options";
+var m_sInsertLinkTextMenu = "Text to display:";
+var m_sInsertLinkURLMenu = "Link to:";
+
+var m_sAtText = 'at';
+
+var m_sMiniCalMailTitleS = 'Show month calendar widget';
+var m_sMiniCalMailTitleH = 'Hide month calendar widget';
+
+if (slang == 'av')
+{
+	m_sAtText = 'en';	
+	m_sNoSearchFound = 'No hay mensajes que coincidan con tu b&#250;squeda. Usted puede buscar en su correo electr&#243;nico en diferentes maneras mediante la introducci&#243;n de diversos criterios en su b&#250;squeda.';
+	m_sOneAttachment = 'adjunto';
+	m_sAttachments   = 'archivos adjuntos';	
+	m_sPOPLastcheck = '&#218;ltimo control en';
+	m_sPOPCheckMail = 'comprobar el correo';	
+	m_sOneMsgDeleted = '1 mensaje ha sido borrado';
+	m_sMssgDeleted = 'Se han eliminado xxxx mensajes';	 
+	m_sReplyBasicHeader = 'En _xxxDateANDNamexxx_ escribi&#243;:'; 	
+	m_sPOPNoAccount = 'Cuenta externa no encontrado &lt;br&gt; clic en Agregar y siga las instrucciones que aparecen en la pantalla para agregar una nueva cuenta'; 	
+	m_sSharedPictures = 'im&#225;genes compartidas';	
+	m_sSharedFiles = 'archivos compartidos';
+	m_sSharedVideos = 'v&#237;deos compartidos';	
+	m_sContactPicPrev = 'Generando vista previa ...';	
+	m_sMySharedFiles = 'Mi URL para archivos compartidos';	
+	m_sDragnDropValidFiles = 'No se pueden arrastrar carpetas, &#250;nicamente archivos'; 
+	m_sNotSpamMsg1 = 'xxxEmailxxx es una direcci&#243;n de correo electr&#243;nico no v&#225;lida y no se puede a&#241;adir a su lista segura';
+	m_sNotSpamMsg2 = 'xxxEmailxxx es demasiado larga para ser a&#241;adido a su lista segura';
+	m_sNotSpamMsg3 = 'Su lista segura se ha actualizado. Los mensajes de correo electr&#243;nico ser&#225;n entregados a la Bandeja de entrada';	
+	m_sDriveImgClk = 'Haga clic para ver';
+	m_sDriveDateUploaded = 'Fecha de la subida';
+	m_sDriveDateCreated = 'Fecha de creaci&#243;n';
+	m_sCloseFullView = 'Cerrar la vista';
+	m_sOpenFullView = 'Abrir a la vista';	
+	m_sBlankSignature = 'No tiene firmas. Puede crear nuevas firmas en la secci&#243;n Firmas en Configuraci&#243;n';
+	m_sRTEMoveTo = 'Mover a Para';
+	m_sRTEMoveCc = 'Mover a Cc';
+	m_sRTEMoveBcc = 'Mover a la Cco';	
+	m_sMsgMe = 'yo';	
+	m_sSendMsgTo = 'Enviar un mensaje a '; 	
+	m_sDriveFileRename = 'Por favor, introduzca un nuevo nombre para el archivo:'; 	
+	m_sMaxMsgSelectMsg = 'S&#243;lo se puede seleccionar 100 mensajes a la vez'; 	
+	//contacts auto-save
+	m_sContactsAutoSave0 = 'Por favor ingrese un primer nombre';
+	m_sContactsAutoSave1 = 'Por favor ingrese un apellido';
+	m_sContactsAutoSave2 = 'Por favor seleccione un contacto(s) para agregar';	
+	m_SplitPaneMode = 'Modo de divisi&#243;n del panel';	
+	m_sDeleteDriveDirMsg = '¿Está seguro de que quiere borrar permanentemente la carpeta _xxFolderNamexx_? _xxbreaklinexx_ ADVERTENCIA: Se perderán todos los archivos y subcarpetas';	
+	m_sDriveMenuShare = 'Compartir archivos';
+	m_sDownloadMenuDownload = 'Download files';	
+	m_sDriveUploadLimit = 'No hay suficiente espacio en el Drive para cargar estos archivos'; 	
+	m_sRemoveLangvar = 'Eliminar archivo'; 
+	
+	m_sImportContactMsg  = '1 contacto importado';
+	m_sImportContactsMsg = 'xxxx contactos importados';
+	
+	m_sInsertImageMenu =  'Insertar imagen';  
+	m_sInsertImageMenuURL = 'URL del imagen:';  
+	
+	m_sInsertLinkMenu = 'Opciones de Enlace';
+	m_sInsertLinkTextMenu = 'Texto para desplegar:';  
+	m_sInsertLinkURLMenu = 'Enlace a:';  
+
+	m_sMiniCalMailTitleS = 'Mostrar widget de calendario mensual';
+	m_sMiniCalMailTitleH = 'Ocultar widget de calendario mensual';
+
+
+}
+
+
+if (slang == 'fr')
+{
+	m_sAtText = mcLang.Text('lang_Gen_58',0);
+	m_sNoSearchFound = mcLang.Text('lang_Gen_53',0);
+	m_sOneAttachment = mcLang.Text('lang_Gen_26',0);
+	m_sAttachments   = mcLang.Text('lang_Gen_27',0);
+	m_sPOPLastcheck = mcLang.Text('lang_Gen_28',0);
+	m_sPOPCheckMail = mcLang.Text('lang_Gen_29',0);
+	m_sOneMsgDeleted = mcLang.Text('lang_Gen_31',0);
+	m_sMssgDeleted = mcLang.Text('lang_Gen_32',0);
+	m_sReplyBasicHeader = mcLang.Text('lang_Gen_33',0); 
+	m_sPOPNoAccount = mcLang.Text('lang_Gen_30',0);
+	m_sSharedPictures = mcLang.Text('lang_Gen_34',0);
+	m_sSharedFiles = mcLang.Text('lang_Gen_35',0);
+	m_sSharedVideos = mcLang.Text('lang_Gen_36',0);
+	m_sContactPicPrev = mcLang.Text('lang_Gen_37',0);
+	m_sMySharedFiles = mcLang.Text('lang_Gen_38',0);
+	m_sDragnDropValidFiles = mcLang.Text('lang_Gen_40',0); 
+	m_sNotSpamMsg1 = mcLang.Text('lang_Gen_45',0);
+	m_sNotSpamMsg2 = mcLang.Text('lang_Gen_46',0);
+	m_sNotSpamMsg3 = mcLang.Text('lang_Gen_47',0);
+	m_sDriveImgClk = mcLang.Text('lang_Gen_59',0);
+	m_sDriveDateUploaded = mcLang.Text('lang_Gen_60',0);
+	m_sDriveDateCreated = mcLang.Text('lang_Gen_61',0);
+	m_sCloseFullView = mcLang.Text('lang_Gen_41',0);
+	m_sOpenFullView = mcLang.Text('lang_Gen_42',0);
+	m_sBlankSignature = mcLang.Text('lang_Gen_44',0);
+	m_sRTEMoveTo = mcLang.Text('lang_Gen_62',0);
+	m_sRTEMoveCc = mcLang.Text('lang_Gen_63',0);
+	m_sRTEMoveBcc = mcLang.Text('lang_Gen_64',0);
+	m_sMsgMe = mcLang.Text('lang_Gen_66',0);
+	m_sSendMsgTo = mcLang.Text('lang_Gen_48',0);
+	m_sDriveFileRename = mcLang.Text('lang_Gen_39',0); 
+	m_sMaxMsgSelectMsg = mcLang.Text('lang_Gen_43',0); 
+	
+	//contacts auto-save
+	m_sContactsAutoSave0 = mcLang.Text('lang_Gen_49',0);
+	m_sContactsAutoSave1 = mcLang.Text('lang_Gen_50',0);
+	m_sContactsAutoSave2 = mcLang.Text('lang_Gen_51',0);
+	m_SplitPaneMode = mcLang.Text('lang_Gen_52',0);
+	m_sDriveMenuShare = mcLang.Text('lang_Gen_54',0);
+	m_sDownloadMenuDownload = mcLang.Text('lang_Gen_55',0);
+	m_sDriveUploadLimit = mcLang.Text('lang_Gen_56',0); 
+	m_sRemoveLangvar = mcLang.Text('lang_Gen_57',0);
+	
+	m_sDeleteDriveDirMsg = 'Etes-vous sûr de vouloir supprimer définitivement le dossier _xxFolderNamexx_? _xxbreaklinexx_ ATTENTION: Tous les fichiers et sous-dossiers seront perdus'; 
+}
+
+
+var m_sPOPAddLang = 'Add';
+//:::::
+
+//Feather editor
+//::::::::::::::::::::::::@ Feather editor :::::::::::::::::::::::::::::::::
+var featherEditor;
+
+//::::::::::::::::::::::::@ CONTACTS  APP ::::::::::::::::::::::::::::
+var m_bPublicContacts = false;
+
+//::::::::::::::::::::::::@ MAIL APP :::::::::::::::::::::::::::::::::
+var MsgPerPage 		= 25;
+var sort_by			= 'Received';
+var sort_order		= 'DESC';
+var m_bReadingPane 	= "true";
+var m_bQComposer 	= "true";
+var PopUpMessageView = "FALSE";
+var m_bMsgPreFullScreen = false;
+//Inbox Mail Lang ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+inbox_confirmdelete		    = 'Delete Confirmation\n\nClick OK to continue with deletion.';
+inbox_head_from = 'From';
+head_from                   = 'From';
+empty_trash                 = 'Empty Trash';
+empty_junk                  = 'Empty Junk';
+folders_txt_nomess          = 'This folder has no messages.';
+ibx_txt8 = 'message';
+ibx_txt9 = 'messages';
+NoNewMsgs = 'There are no new messages in Inbox.';
+select_msg_action = 'Please select at least one message to perform this action.';
+mai_deleted_perm = 'Deleted Permanently';
+mail_blocked = 'blocked';
+mail_blocked_trash = 'blocked and moved to the Trash';
+mail_moved_trash = 'moved to the Trash';
+
+inbox_action_block = 'Block';
+Yesterday = 'Yesterday'; //RPL021610
+var sTitleNewMailAlert = 'New Mail Alert!';
+
+var sFolderLang_Inbox  = 'Inbox';
+var sFolderLang_Sent   = 'Sent';
+var sFolderLang_Drafts = 'Drafts';
+var sFolderLang_Trash  = 'Trash';
+var sFolderLang_Spam   = 'Spam'; //tnbinbox_tab_junk
+
+var nFolderExistErr = 'A directory with the same name already exists. Specify a different directory name.';
+
+
+
+</script>
+
+
+<!-- One JS file to rule them all! -->
+<script src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/js/cdn-JavaScriptINC_906.js"></script>
+<script src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/js/cdn-PageJS_1120.js"></script>
+
+
+<script>
+
+//:::::::
+var m_tSiteTimeout 	 = null;
+var m_bSiteTimeout 	 = false;
+var m_iSiteTimeoutMS = 3600000;
+var m_sTimeoutMsg = 'Your mail session has timed out. As a security precaution, sessions end after 30 minutes of inactivity.\n\nYou can login again to resume using your account.';
+
+//:::::::
+//:::::::
+function fnInitialAutoSiteTimeout()
+{
+	m_tSiteTimeout = setTimeout(function() {
+		
+		$(document.body).text('');
+		alert(m_sTimeoutMsg);
+		fnSignoutUser();
+	}, m_iSiteTimeoutMS);
+
+	$(document).on('mousemove', function() {
+	    if (m_tSiteTimeout !== null) {
+	        clearTimeout(m_tSiteTimeout);
+	    }
+	
+	    m_tSiteTimeout = setTimeout(function() {
+			$(document.body).text('');
+			alert(m_sTimeoutMsg);
+			fnSignoutUser();
+
+	    }, m_iSiteTimeoutMS);
+	});
+
+}
+//:::::::
+
+
+//:::::::
+//:::::::
+function fnConfirmBrowserReq()
+{
+	if ($.browser.name == "msie" && $.browser.versionNumber < 9)
+	{
+		fnYUIDialog("V12 requires advanced browsers that support HTML5. Older browsers just don’t have the chops to provide you with the same high-quality experience.<br><br>We’ll support the current and prior major release of Chrome, Firefox, Internet Explorer and Safari on a rolling basis.", 'OK, lets upgrade', 'Close')
+		return(false);
+	}
+
+
+}
+
+//:::::::
+//:::::::
+function fnSignin(sPageUsername, sPagePassword, sPageDomain, sPageRememberMe)
+{
+
+	if (mDOMReady == false)
+		return;
+	
+	m_bFirstLogin = true;	//uad_korney 11/02/2015 Set the option "First login"						
+	
+	var obj_callback = new clsAjaxcallback(); 
+	obj_callback.Ajaxcallback.success = fAXSignInResponse;
+		
+	var sURL = 'api=signin&username=' + encodeURI(sPageUsername) + '&password=' + encodeURIComponent(sPagePassword) + '&domaincode=enommail2worldcom&RememberMe=' + sPageRememberMe + '&domain=' + sPageDomain;
+	
+	//:::: For timezone
+	var ctime = "9/13/2016 3:40:25 AM";
+	var tz = null;
+	if (new Date())
+	{
+		var mydate = new Date();
+		tz = ( (mydate.getTimezoneOffset()/60) * -1 );
+		if ((tz != null) && (tz > -15) && (tz < 15)) 
+			sURL += "&tz=" + tz;
+	
+		var myyear = mydate.getYear();
+		if (myyear < 200) myyear = myyear + 1900;
+		ctime = (mydate.getMonth() + 1) + "/" + mydate.getDate() + "/" + myyear + " " + mydate.getHours() + ":" + mydate.getMinutes() + ":" + mydate.getSeconds();
+	}
+	
+	if (ctime.length > 0)
+		sURL += "&ctime=" + escape(ctime);
+	//////
+
+	
+	makePOSTRequest('../../app/pageapi.asp', obj_callback.Ajaxcallback, sURL );
+}
+
+//:::::::
+//:::::::
+function escapeRegExp(string) {
+    return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+}
+
+//:::::::
+//:::::::
+function replaceAll(string, find, replace) {
+  return string.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+}
+
+//:::::::
+//:::::::
+function fnAutoSignin()
+{	
+	if (mDOMReady == false)
+		return;
+		
+	var obj_callback = new clsAjaxcallback(); 
+	obj_callback.Ajaxcallback.success = fAXSignInResponse;
+	var sURL = '../../app/pageapi.asp?api=autosignin';
+	
+	//:::: For timezone
+	var ctime = "9/13/2016 3:40:25 AM";
+	var tz = null;
+	if (new Date())
+	{
+		var mydate = new Date();
+		tz = ( (mydate.getTimezoneOffset()/60) * -1 );
+		if ((tz != null) && (tz > -15) && (tz < 15)) 
+			sURL += "&tz=" + tz;
+	
+		var myyear = mydate.getYear();
+		if (myyear < 200) myyear = myyear + 1900;
+		ctime = (mydate.getMonth() + 1) + "/" + mydate.getDate() + "/" + myyear + " " + mydate.getHours() + ":" + mydate.getMinutes() + ":" + mydate.getSeconds();
+		
+	}
+	
+	if (ctime.length > 0)
+		sURL += "&ctime=" + escape(ctime);
+	//////
+
+	makeRequest(sURL, obj_callback.Ajaxcallback);
+	
+}
+
+//::::::
+//::::::
+function formatAMPM(date) {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ':' + date.getSeconds() + ' ' + ampm;
+  return strTime;
+}
+
+
+//:::::::
+//:::::::
+function fAXSignInResponse(o)
+{	
+	//setup Date & GUID  :::::
+	mIntDate = Date();
+	mCurrentDate = Date();
+	mGGUID = guid();
+	//:::::::::::::::::::::::
+	
+	var objSAM = eval("(" + o.responseText + ")");
+    
+    //::::special HTTP reditect?
+	if (objSAM.msg == "http_redirect")
+	{
+		location = unescape(objSAM.redirect_url);
+		return;
+	}
+	//:::::::
+		
+	if (objSAM.msg == "0")
+	{	
+	
+	    //check the last lang match the one the user have
+		if ( (slang.toLowerCase() == '' ) && (objSAM.lang.toLowerCase() == 'en') )
+		{
+		
+		}
+		else
+		{    
+			if ( slang.toLowerCase() != objSAM.lang.toLowerCase() )
+			{
+				location = location;
+				return;
+			}
+		}
+	
+		m_sUsername = objSAM.username.toLowerCase(); 
+		m_sDomain = objSAM.domain.toLowerCase();   
+		m_bPublicContacts = (objSAM.bpubliccontacts == 'True');
+		m_bSigendin = true;
+		
+        //begin uad_korney 11/02/2015 Reload Page after first login to update MailSearchForm
+        if (m_bFirstLogin)
+        {
+           location.reload();
+           return;
+        }
+        //end uad_korney 11/02/2015		
+		sName  =  objSAM.FirstName + ' ' +  objSAM.LastName;
+		
+		fnUpdateFullName(sName);
+		
+		asktologout = objSAM.asktologout;
+		delemessageconf = objSAM.delemessageconf;
+		autoaddsig = objSAM.autoaddsig;
+		sendingdisabled = objSAM.sendingdisabled;
+
+		fnLoadApp();
+		
+		//default open cal. widget?
+		if (m_sCalWidgetDefault == 'open')
+		{
+			fnShowMailMiniCal(true);
+		}
+			
+			
+		//site has auto-timeout?
+		if (m_bSiteTimeout)
+		{
+			fnInitialAutoSiteTimeout()
+		}
+		else
+		{
+			m_tSiteTimeout = null;
+		}
+	
+		
+	}
+	else
+	{		
+		$('#ifm_login')[0].contentWindow.sLoginfailed();
+	}
+			
+}
+
+
+//:::::::
+//:::::::
+function fnUpdateFullName(sName)
+{
+	sEmail = m_sUsername + '@' + m_sDomain;
+	
+	if (sName.length < 2) 
+		sName = sEmail;
+
+	sFullLengthName = sName;
+		
+	m_ClientWidth = $(window).width();
+	if ( m_ClientWidth < 1024)
+	{
+			if (sName.length > 10) 
+				sName= sName.substr(0, 10) + '...'; 
+	}
+
+	if (sName != sEmail )
+		sEmail = sFullLengthName + '\n' + sEmail
+		
+	fnInnerHTML('LoginEmail', ('<span id="LoginEmailSpan" style="cursor:default" sfullname="' + sFullLengthName + '" title="' + sEmail + '" class="jqTootltip">' + sName + '</span>') );
+
+}
+
+
+//:::::::
+//:::::::
+function fnUGUID()
+{
+    mCurrentDate = new Date();
+    //var seconds = Math.round((mCurrentDate - mIntDate )/1000);
+    //var minutes = Math.round(seconds / 60);
+    
+    var hours = Math.abs(mCurrentDate - mIntDate) / 36e5;
+    hours = parseInt(hours);
+    
+    if ( hours > 4 )
+    {
+    	mGGUID = guid();
+    	mIntDate = Date();
+    }
+        
+    return(mGGUID);
+}
+
+
+//:::::::
+//:::::::
+function fnLoadApp()
+{
+
+			//KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+	//mMainBanner
+	//MainHeader
+	/*
+	
+	var mbTopBannerURL 			= "";
+var mbTopBanner				= "false";
+var miTopPanel_CustomHeight = ;
+
+		
+	*/
+		if (mbTopBanner == 'true')
+		{	
+			var iMainHeader_height = parseInt($('#mMainHeader').css("height"));
+			$('#mMainHeader').height(iMainHeader_height + miTopPanel_CustomHeight);
+			$('#mMainBanner').height(miTopPanel_CustomHeight);
+			var sHTMLBanner = '<iframe onload="" id="ifm_topbanner" style="background-color:#fff; height:100%; width:100%; border: #ffffff 0px solid;" scrolling="no" frameborder="0" border=0 name="ifm_topbanner" src="/TopMenu.asp" width="100%" height="100%" allowTransparency  borderwidth="0"></iframe>';
+			$('#mMainBanner').html(sHTMLBanner);
+			
+			//
+
+		}
+	//////////////////////////////
+
+		//::::::::::
+		var sLoginEmail = m_sUsername + '@' + m_sDomain;
+		sLoginEmail = sLoginEmail.toLowerCase(); 
+	
+		sStorageLoginEmail = fnSotrageLoad_LoginEmail();
+		
+		if ( (sStorageLoginEmail == false) || (sStorageLoginEmail != sLoginEmail) )
+		{
+			fnSotrageReset();
+		}
+
+		fnSotrageSave_LoginEmail(sLoginEmail);
+		//::::::::::
+		
+		//check storage version
+		data = fnSotrageLoad_Version();
+		
+		if (data == false)
+		{
+			//fnSotrageReset();
+			fnSotrageSave_Version('1.0');
+		}
+		//:::::
+		        
+		HideInfobarInbox();
+		
+		//read folders from storage
+		data = fnSotrageLoad_MailFolders();
+		if (data == false)
+		{
+			//load mail-folders
+			$.ajax({
+		     type: "GET",
+		     url: '../app/folders.asp',
+		     data: "",
+		     success: function(data) {
+		        	fnSotrageSave_MailFolders(data);
+					fInitFoldersModule(data); 
+				}
+		   });
+	   }
+	   else
+	   {
+	   		fInitFoldersModule(data);
+	   		m_bStorageCall = true;
+	   		m_iTotalIncomingMsg = 0;
+	   		m_ObjCurretnSelectedDir = document.getElementById('udir' + 0);
+	   		fnRefreshFolders(); 
+	   }
+	   //::::
+
+
+		if (mSkinUI == 'telmex')
+		{
+			preload(
+					"../../app/ress/theme/Telmex/IMG/main_correo.png",
+					"../../app/ress/theme/Telmex/IMG/main_contacto.png",
+					"../../app/ress/theme/Telmex/IMG/main_drive.png",
+					"../../app/ress/theme/Telmex/IMG/main_calendario.png"
+				)
+		}
+		else
+		{
+			preload(
+				m_sRessIMGURL + "grippy.png",
+				m_sRessIMGURL + "a.png",
+				m_sRessIMGURL + "star_off.png"
+			)
+		
+		}
+
+	//grap and store the Drive storage
+	fnBackpackGetStorage(true);
+
+}
+
+
+//:::::::
+//:::::::	
+function fInitFoldersModule(sHTTPData) 
+{
+				
+	document.getElementById('spanLeftNavFolders').innerHTML = fnBuildMailDolder(sHTTPData);
+	
+	AutoCheckMailCount();
+		
+	$("#mLeftPanelBody").bind("contextmenu",function(e) {
+		    e.preventDefault();
+		    // create and show menu
+		    fnDirContextMenu(e.pageX, e.pageY);
+		
+	});
+	
+
+		data = fnSotrageLoad_Inbox();
+		
+		if (data == false)
+		{
+			fnGetInbox('/Inbox');
+		}
+		else
+		{
+			m_bInboxSotrage = true;
+			m_sFolderRecords = data;
+			sCheckFolderREcords('');
+			fnGetInbox('/Inbox');
+			m_iTotalIncomingMsg = 0;
+		}
+
+	
+	fnInitRTE();
+	
+	$(function(){
+	    mInlineEditMode = 'inbox';
+        $('.editable').inlineEdit();
+    });
+
+}
+
+//:::::::::::::::::::: STORAGE STARTS ::::::::::::::
+var m_bInboxSotrage = false;
+//:::::::
+//:::::::
+function fnSotrageSave_MailFolders(sData)
+{	
+	$.jStorage.set("MailFolders", sData);
+}
+
+//:::::::
+//:::::::
+function fnSotrageSave_ContactsOrder(sData)
+{	
+	$.jStorage.set("ContactsOrder", sData);
+}
+
+
+//:::::::
+//:::::::
+function fnSotrageLoad_MailFolders()
+{
+	//TEMP : disable it
+	return(false);
+	
+	return ($.jStorage.get("MailFolders", false));
+}
+
+
+//:::::::
+//:::::::
+function fnSotrageSave_Inbox(sData)
+{
+
+	$.jStorage.set("Inbox", sData);
+}
+
+//:::::::
+//:::::::
+function fnSotrageSave_Version(sData)
+{
+
+	$.jStorage.set("Version", sData);
+}
+
+
+//:::::::
+//:::::::
+function fnSotrageLoad_Version()
+{
+	return ($.jStorage.get("Version", false));
+}
+
+
+//:::::::
+//:::::::
+function fnSotrageLoad_Inbox()
+{
+
+	//TEMP
+	return(false);
+
+
+	return ($.jStorage.get("Inbox", false));
+}
+
+
+//:::::::
+//:::::::
+function fnSotrageLoad_ContactsOrder()
+{
+	return ($.jStorage.get("ContactsOrder", false));
+}
+
+
+//:::::::
+//:::::::
+function fnSotrageLoad_ReadingPane()
+{
+	return ($.jStorage.get("ReadingPane", false));
+}
+
+
+//:::::::
+//:::::::
+function fnSotrageSave_ReadingPane(sData)
+{
+
+	$.jStorage.set("ReadingPane", sData);
+}
+
+
+//:::::::
+//:::::::
+function fnSotrageReset()
+{
+
+	$.jStorage.flush();
+}
+
+//:::::::
+//:::::::
+function fnSotrageSave_LoginEmail(sData)
+{
+
+	$.jStorage.set("LoginEmail", sData);
+}
+
+//:::::::
+//:::::::
+function fnSotrageLoad_LoginEmail()
+{
+
+	return ($.jStorage.get("LoginEmail", false));
+}
+
+
+//:::::::::::::::::::: STORAGE ENDS    ::::::::::::::
+
+
+//:::::::
+//:::::::
+function fnOpenFeedback()
+{
+
+	sURL = "/app/feedback.asp"
+
+	var iMsgDivTop = 80;
+	var iMsgDivLeft= 120;
+	
+	var iCenterPos = (m_ClientWidth / 2) - (650 / 2) ;
+	
+	$("#feedbackForm-fullscreen").css( "display", "" );
+	$("#divFeedbackFormView").css( {'position' : 'absolute', 'left' : (iCenterPos + 'px'), 'top' : (iMsgDivTop + 'px'), 'display' : 'none'} );
+
+    
+    var iMsgDivHeight = m_ClientHeight - (iMsgDivTop * 2);
+    if (iMsgDivHeight > 550)
+    	iMsgDivHeight = 540;
+	var iMsgDivWidth  = m_ClientWidth - (iMsgDivLeft * 2);
+		
+	$('#divFeedbackFormView').width(650);
+	$('#divFeedbackFormView').height(iMsgDivHeight + 35);
+	
+	$("#divFeedbackFormView").fadeIn( "fast", function() { });
+	
+	//set iframe height
+	$('#ifm_FeedbackFormView').height(iMsgDivHeight - 5);
+	
+	$('#ifm_FeedbackFormView').attr('src','about:blank');
+	$('#ifm_FeedbackFormView').fadeOut(200, function() 
+	{ 	
+		$("#ifm_FeedbackFormView").css( {'display' : ''} );
+		$('#ifm_FeedbackFormView').attr('src',sURL);
+	});	
+
+}
+
+function fnFeedbackFormExitFullscreen()
+{
+	$("#feedbackForm-fullscreen").css( "display", "none" );
+	$("#divFeedbackFormView").css( "display", "none" );
+	$('#ifm_FeedbackFormView').attr('src','about:blank');
+}
+
+
+
+//:::::::
+//:::::::
+function fnInitFeatherEditor() 
+{
+
+			   var sToolLang = slang;
+			   
+				if (sToolLang == 'av')
+					sToolLang = 'es';	
+
+		   	   featherEditor = new Aviary.Feather({
+		       apiKey: 'rhrkapod5tcueco2',
+		       maxSize: 800,
+		       language: sToolLang,
+		       theme: 'dark',
+		       apiVersion: 2,
+		       tools: 'enhance,frames,crop,warmth,focus,contrast,splash,text,whiten,blemish,redeye,draw,sharpness,saturation,brightness,orientation,resize,stickers,effects',
+		       appendTo: '',
+		       onSave: function(imageID, newURL) {
+		           //var img = document.getElementById(imageID);
+		           //img.src = newURL;
+		           //alert(newURL);
+		           
+		           featherEditor.close();
+		           
+		           if (m_sEditToolMode == 'composer')
+		           {
+		           		fnUpdateComposerAttachPic(newURL);
+		           }
+		           else
+		           		location = '../../app/download_url.asp?sURL=' + escape(newURL) + "&UpdatePicURL="
+			
+		           
+		           
+		       },
+		       onError: function(errorObj) {
+		           alert(errorObj.message);
+		       }
+		   });
+
+
+}
+
+
+
+    //:::::::
+	//:::::::	
+	function ResizeToContent() 
+	{
+	
+		try {
+				
+			//console.log('Msg_body height before:' + $("#Msg_body").height() );
+			//console.log('$(#Msg_body).contents():' + $("#Msg_body").contents().find("#Ifrm_Msg_body").height() );
+			
+			$('#Msg_body').css({'height':'0px'});
+			
+			var Msg_Main_height = $("#Msg_Main").height();
+			
+			$('#Msg_body').css({'height':'100%'});
+			
+			var Ifrm_Msg_body_height = $("#Msg_body").contents().height() + 100;
+		
+			
+			$("#mMsgBodyScroll").height(Ifrm_Msg_body_height);
+			$("#Msg_body").height(Ifrm_Msg_body_height);
+			
+			ReSizeMsgPanel();
+			
+			if (m_bMsgPreFullScreen)
+			{
+				var m_ClientHeight = $(window).height();
+				var m_ClientWidth = $(window).width();
+				var iMsgDivTop = 80;
+				var iMsgDivLeft= 130;
+				var iMsgDivHeight = m_ClientHeight - (iMsgDivTop * 2);
+				var iMsgDivWidth  = m_ClientWidth - (iMsgDivLeft * 2);
+				$('#Msg_Panel_Msg').width(iMsgDivWidth);
+				$('#Msg_Panel_Msg').height(iMsgDivHeight);
+				$('#Msg_Main').height(iMsgDivHeight);
+				$("#mMsgBodyScroll").height(iMsgDivHeight - 30);
+			}
+
+
+		
+		}
+		catch (x) {
+				//alert("Jerr with ResizeToContent() ");
+				return;
+		}
+
+    }
+    
+    
+    //################## for Site
+//:::::::
+//:::::::
+function UpdateInboxAlert(f_sText, f_sIcon)
+{
+	window.clearTimeout(m_InfoInboxBarTimeID);
+	m_InfoInboxBarTimeID = window.setTimeout("HideInfobarInbox()",7000);
+
+	document.getElementById("MUserInboxAlert").innerHTML = f_sText;
+	document.getElementById("MUserInboxAlert").style.display = "";
+
+	var iAlertDivWidth = parseInt(document.getElementById('MUserInboxAlert').offsetWidth);
+	var xy = YAHOO.util.Dom.getXY('MUserInboxAlert');
+	xy[0] =  ((mimMainPanelWidth /2) - (iAlertDivWidth / 2)) + 170;
+	//xy[1] += 0;
+	YAHOO.util.Dom.setXY('MUserInboxAlert', xy);
+
+
+	var attributes = { height: { from: 0, to: (40) } };   
+	var anim = new YAHOO.util.Anim('MUserInboxAlert', attributes, .4, YAHOO.util.Easing.easeIn);
+	anim.animate(); 
+
+/*
+    var div=$("MUserInboxAlert");
+    div.animate({height:'300px',opacity:'0.4'},"slow");
+    div.animate({width:'300px',opacity:'0.8'},"slow");
+    div.animate({height:'100px',opacity:'0.4'},"slow");
+    div.animate({width:'100px',opacity:'0.8'},"slow");
+	*/
+}
+    
+//:::::::
+//:::::::
+function HideInfobarInbox()
+{
+
+	//var attributes = { height: { to: 0 } , width: { from: m_ClientWidth, to: 0 } };   
+	var attributes = { height: { to: 0 } };
+	var anim = new YAHOO.util.Anim('MUserInboxAlert', attributes, .5, YAHOO.util.Easing.easeIn);
+	anim.onComplete.subscribe(function () {   
+	 						QHideInfobarInbox();
+							});
+	 anim.animate(); 
+}
+
+
+//:::::::
+//:::::::
+function QHideInfobarInbox()
+{
+	document.getElementById("MUserInboxAlert").style.display = "none";
+}
+//################## for Site  ENDS
+
+
+var ResizeIDTimer;
+var m_smFolderDataHTML = '';
+var m_MsgPanelHeadHTML = '';
+
+//:::::::
+//:::::::
+function g_fInitPage()
+{
+	//reading panel resize fnOnResize
+	
+	mDOMReady = true;
+	QHideInfobarInbox();
+	
+	//@@@@ ::::::::::: read and set panel mode and size ////
+	sReadingPane = fnSotrageLoad_ReadingPane();
+	if ( sReadingPane != false )
+	{
+		Msg_Panel_Type = sReadingPane.split("|")[0];
+	}
+	
+	fnResizePage();
+	
+	m_smFolderDataHTML = $('#mFolderData').html();
+
+	//@@@@ :::::::::::
+
+	g_fInitReadingPane();
+	
+	//@@@@ ::::::::::: read and set panel mode and size ////
+	if ( sReadingPane != false )
+	{
+		Msg_Panel_Size = sReadingPane.split("|")[1];
+		
+		if (Msg_Panel_Type == 'r')
+		{
+			mFolderDataWidth = Msg_Panel_Size;
+			
+			if (mFolderDataWidth < 345)
+				mFolderDataWidth = 345;
+				
+			Msg_Panel_Inbox.resize(null, null, mFolderDataWidth, 0, 0, true); 
+		}
+	
+		if (Msg_Panel_Type == 'b')
+		{
+			mFolderDataHeight = Msg_Panel_Size;
+			
+			if (mFolderDataHeight < 200)
+				mFolderDataHeight = 200;
+		
+			Msg_Panel_Inbox.resize(null, mFolderDataHeight, null, 0, 0, true); 
+		}
+
+		
+		
+	}
+	//@@@@ :::::::::::
+
+	
+	document.getElementById('mdivApps').ondragstart = function() { return false; };
+	
+	//@@@@ :::::::::::
+	$(window).resize(function() {
+		clearTimeout(ResizeIDTimer);
+  		ResizeIDTimer = setTimeout(fnResizePage, 100);	
+	});
+	
+	//@@@@ :::::::::::
+	$(document).click(function(event) {
+	  
+	  //var target = $(event.target);
+	
+	  //if (!target.attr('id').match(/^mydiv/) && target.parents('#mydiv').length == 0) {
+	  //  $('#mydiv').hide();
+	  //}
+	  	fnDocOnClick();
+	  	
+	  	if ( $('#MUserInboxAlert') !== undefined )
+	  		QHideInfobarInbox();
+	});
+	
+	fnNewYUIUploader();
+		
+	
+	$.ajax({
+	
+		type: "GET",
+		url: '../../sql/ws.asp',
+		data: "Function=MemberIDV12Login", 
+		success: function(data) { 
+		
+			//check for mobile devices and updates m_bMobileDevice 
+			isMobileDevice();
+		     
+		    if ( (data.length > 0) && (data != -99) ) 
+			{
+				if (m_bMobileDevice == false)
+					fnAutoSignin();
+				else
+				{
+					window.location = "../../touch/home.asp"
+				}
+			}
+			else
+			{
+				
+				//if mobile device, redirect to touch
+				if (m_bMobileDevice == false)
+					$('#ifm_login')[0].contentWindow.fnLoginNoSession();
+				else
+				{
+					window.location = "../../touch/"
+				}
+
+				
+			}
+		}
+	});
+
+	
+}
+
+//:::::::
+//:::::::
+function fnSignout()
+{
+	if (asktologout == "nah")
+	{
+		fnSignoutUser();
+	}
+	else
+	{
+
+	if ( fnYUIPrompt('<div>' + mcLang.Text('lang_Gen_12',1) + '</div>', mcLang.Text('lang_Gen_13',1), mcLang.Text('lang_Gen_14',1), 'message icon-bubble', fnSignoutUser, arguments) )
+			return;
+	}
+}
+
+//:::::::
+//:::::::
+function fnSignoutUser()
+{
+
+	var cookies = $.cookie();
+	for(var cookie in cookies) {
+	   $.removeCookie(cookie, { path: '/' });
+	}
+	
+	$.cookie('lang', slang, { expires: 7, path: '/' });
+	
+	var sPageURL = window.location.search.substring(1);
+	var sDomaincode = fnGetUrlParameter(sPageURL, 'domaincode');
+	
+	//load mail-folders
+	$.ajax({
+			 type: "GET",
+		     url: '../app/rac.asp',
+		     data: "",
+		     success: function(data) {
+
+					if (typeof sDomaincode != 'undefined')
+						location.href = '../../app/?ss=' + guid() + '&domaincode=' + sDomaincode;
+					else
+						location.href = '../../app/?ss=' + guid();
+
+
+				}
+	});
+
+}
+
+//:::::::
+//:::::::
+function fnResizePage()
+{
+	if (mDOMReady != true)
+		return;
+
+	var lPanelmargin = 2;
+	var imMainPanelBannerWidth = 173;
+	if (mbRightPanelBanner == false)
+		imMainPanelBannerWidth = 0;
+
+	m_ClientHeight = $(window).height();
+	m_ClientWidth = $(window).width();
+	
+	//console.log(m_ClientWidth)
+	
+	
+	if ( $('#LoginEmailSpan') !== undefined )
+	{
+		sFullName = $('#LoginEmailSpan').attr('sfullname');
+		fnUpdateFullName(sFullName);
+	}
+	
+
+	if ( m_ClientWidth <= 800)
+	{
+		m_ClientWidth = 800;		
+
+	}
+	
+	if (mbRightPanelBanner)
+	{
+		if ( m_ClientWidth < 1024)
+		{
+			imMainPanelBannerWidth = 0;		
+			
+		}
+	}
+	
+	var mMainHeader_height = parseInt($('#mMainHeader').css("height"));
+	var mMainPanel_height = m_ClientHeight - mMainHeader_height - (lPanelmargin * 2);
+	var mLeftPanel_width = 210 +  mLeftPanel_Customwidth;
+	var mRightPanel_width = 0//150;
+	var mMainPanel_width = (m_ClientWidth - (mLeftPanel_width)) - (lPanelmargin * 1);
+	
+	mMainPanel_width -= imMainPanelBannerWidth;
+	
+	$('#mLeftPanel').width(mLeftPanel_width);
+	$('#mMainPanel').width(mMainPanel_width);
+
+	mimLeftPanelWidth = mLeftPanel_width;
+	mimMainPanelWidth = mMainPanel_width;
+	mimMainPanelHeight = mMainPanel_height;
+	
+	$('#mMainPanel').width(mMainPanel_width);
+	$('#mLeftPanel').width(mLeftPanel_width);
+	
+	if (mbRightPanelBanner)
+		$('#mMainPanelBanner').height(mMainPanel_height);
+	
+	$('#mMainPanel').height(mMainPanel_height);
+	$('#mLeftPanel').height(mMainPanel_height);
+	$('#mRightPanel').height(mMainPanel_height);
+	$('#MainWrapper').height(mMainPanel_height);
+	$('#mFolderData').height(mMainPanel_height - 22);
+		
+	/*
+	$("#MainWrapper").css({
+	     "min-width": "1300px"
+	 });
+	*/		
+	//slog = 'mMainPanel:' + $('#MainWrapper').css("min-width") + '  mimLeftPanelWidth:' + mimLeftPanelWidth + '  m_ClientWidt:' + m_ClientWidth + ' both:' + (m_ClientWidth - mimLeftPanelWidth)
+	//console.log(slog)
+	
+	try
+   {
+   		//close any  menus
+   		fnDocOnClick();
+   		
+   		fnCheckFolderScroll();
+   		
+
+				var mPOPOpt_Height = $('#mdivApps').outerHeight();
+				var MainWrapperHeight = $('#MainWrapper').height();
+				$('#mdivApps').height(MainWrapperHeight -32);;
+				$('#mdivApps').css('overflow-y', 'auto');
+				
+		fnResetPanel();
+
+   		//Run some code here
+   		fnREsizeInboxCol();
+   		       
+       if (document.getElementById("raptor-wrapper").style.visibility == "visible")
+			fnResizeRTE();
+			
+		ReSizeMsgPanel();
+		
+		//Backpack
+		if (m_iCurrentAppIndex == 3)
+		{
+			YAHOO.util.Dom.setStyle('mdivApps', 'height', ((mimMainPanelHeight - 31) + "px"));
+		}
+	
+   }
+   catch(err)
+   {
+   		//Handle errors here
+   }
+
+
+}
+
+
+//::::::: DEV ::::://////
+var mMainPanelHTML = '';
+//:::::::
+//:::::::
+function fnDEVBtn1()
+{
+	mMainPanel = $('#bodyID').html();
+	alert(mMainPanel);
+}
+//:::::::
+//:::::::
+function fnDEVBtn2()
+{
+	$('#bodyID').html(mMainPanel);
+}
+
+
+// Create Base64 Object
+var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/\r\n/g,"\n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}}
+
+
+</script>
+
+
+
+<!-- ************** NOTIFIER JS CODE STARTS  ************** -->
+
+<script type="text/javascript">
+	  
+	//window.setTimeout("NotyServerAlert()",34000);
+	//window.setTimeout("NotyUserOnline()",42000);
+	//window.setTimeout("NotyWarning()",57000);
+
+	  
+	 var g_NotyID = null;
+	
+	  //:::::::
+	  //:::::::
+	  function generate(layout, v_sType, v_stxt) {
+	  	var n = noty({
+	  		text: v_stxt,
+	  		type: v_sType,
+	      dismissQueue: true,
+	  		layout: layout,
+	  		 animation: {
+			    open: {height: 'toggle'},
+			    close: {height: 'toggle'},
+			    easing: 'swing',
+			    speed: 200 // opening & closing animation speed
+			  },
+
+	  		theme: 'default'
+	  	});
+	  	//console.log('html: '+n.options.id);
+	  	
+	  	//setTimeout(function() {
+     	// $.noty.setText(n.options.id, 'I\'m closing now!'); // same as alert.setText('Text Override')
+    	//}, 1000);
+ 
+	  //:::::::
+	  //:::::::
+       setTimeout(function() {
+      $.noty.close(n.options.id);
+    	}, 10100);
+
+
+	  	g_NotyID = n.options.id;
+	 
+	  }
+	
+	  //:::::::
+	  //:::::::
+	  function generateAll(sType, sText) {
+	  
+	  		var sNotyBody = sText;
+	  		
+	    generate('bottomRight', sType, sNotyBody);
+	    
+	    /*
+	    var snd = new Audio("../../app/sound/Ring03.wav"); // buffers automatically when created
+		snd.play();
+		*/
+	    
+	  }
+
+	  //:::::::
+	  //:::::::	  	  
+	  function NotyServerAlert()
+	  {
+	  	generateAll('warning', '<img src="../../app/noty/img/1348072346_001_11.png" style="width:24px; height:24px" align="absmiddle">&nbsp;&nbsp;You are running out of disk space!');
+
+	  }
+	  
+	  //:::::::
+	  //:::::::
+	  function NotyUserOnline()
+	  {
+	  	generateAll('alert', '<img src="../../app/noty/img/1348082709_User.png" style="width:24px; height:24px" align="absmiddle">&nbsp;&nbsp;<b>Khalid Abed</b> is online');
+
+	  }
+	 
+
+	  //:::::::
+	  //::::::: 
+	  function NotyWarning()
+	  {
+	  	generateAll('warning', '<img src="../../app/noty/img/warning.png" style="width:24px; height:26px" align="absmiddle">&nbsp;&nbsp;Your session is about to time out');
+
+	  }
+
+	  ////
+	  // Build an array of test data.
+	  var m_aDataNoty = [];
+	  
+	   //----auto-check
+	   	var m_dtTSFirstMsg = "full" //'3/13/2014 4:19:45 PM' //"full";
+    	var m_AutoCheckTimeNoty = 25000;
+    	var m_AutoCheckTimeNotyID = null;
+    	
+    	var m_AutoTimeNoty = 1400;
+    	var m_AutoTimeNotyID = null;
+    	
+    	var m_bFreshNoty = true;
+
+	 	//:::::::
+	 	//:::::::   
+	    function AutoNoty()
+	    {
+	    
+			if ( (m_dtTSFirstMsg == '') || (m_dtTSFirstMsg == 'full') )
+			{
+				var mydate = new Date();
+				var myyear = mydate.getYear();
+				if (myyear < 200) myyear = myyear + 1900;
+				m_dtTSFirstMsg = (mydate.getMonth() + 1) + "/" + mydate.getDate() + "/" + myyear + " " + formatAMPM(mydate)  
+				
+			}
+ 
+	    	window.clearTimeout(m_AutoCheckTimeNotyID);
+	        var sURL = '../../mail/ms_ajax.asp?folder=/Inbox&pg=1&msgno=25&sortby=Received&sort_order=DESC&dtTS=' + m_dtTSFirstMsg + '&JSON=yes';
+	        var obj_callback = new clsAjaxcallback();
+	        obj_callback.Ajaxcallback.success = fShowNotyModule;
+	        makeRequestInbox(sURL, obj_callback.Ajaxcallback);
+	    }
+
+		//:::::::
+		//:::::::
+	    function fPopNoty()
+	    {
+	    	if (m_aDataNoty.length > 0)
+	    	{
+	    		generateAll('alert', m_aDataNoty.pop());
+	    		window.setTimeout("fPopNoty()",m_AutoTimeNoty);
+	    	}
+	    
+	    } 
+	    
+	    //:::::::
+		//:::::::
+    	function fShowNotyModule(o) {
+    	
+    			//stop prefetch...
+    			m_iPreFetchMsgIndex = 100;
+    	 
+    			//start notifier ::::::::::
+		   		m_AutoCheckTimeNotyID = window.setTimeout("AutoNoty()",m_AutoCheckTimeNoty);
+ 
+    	 
+    			if (m_bFreshNoty)
+    			{
+    				//$.noty.closeAll();
+    				m_bFreshNoty = false;
+    			}
+    			
+    			var m_CDelimiter	="_#c|-";
+    			var m_RDelimiter	="_#r|-";
+    			
+				var sNotyMsg = '';
+				
+		        if(o.responseText !== undefined)
+		        {
+		        	sNotyMsg = '';
+		            var sHTTPData = o.responseText; 
+		            m_sFolderRecords = sHTTPData;
+		            o = null;
+				
+		            var row_arr= sHTTPData.split(m_RDelimiter);
+		            sHTTPData = "";
+			        var i =0;
+			           
+			        while (i < (row_arr.length - 1))
+		            {
+		                cell_arr = row_arr[i].split(m_CDelimiter);
+		                
+				        msg_id = cell_arr[0];  //msgid
+				        msg_su = cell_arr[1];  //subject
+				        msg_rd = cell_arr[2];  //received
+				        msg_fr = cell_arr[3];  //from
+				        msg_fe = cell_arr[4];  //fromemail
+				        msg_re = cell_arr[9];  //read
+				        msg_mc = cell_arr[17]; //messagecount
+				        
+				        if (i==0)
+		                {
+		                    m_dtTSFirstMsg = msg_rd;
+		                }
+		                
+				        
+				        if  (msg_re == "True")
+				        {
+				        	i++;
+				        	continue;
+				        }
+				        
+		                
+		                if (msg_fr.length == 0)
+				            msg_fr = msg_fe;
+			
+			            if (msg_fr.length == 0)
+				            msg_fr = "(none)";
+				            
+			            if (msg_su.length == 0)
+				            msg_su = "(no subject)";	
+				            
+
+						if (msg_su.length > 29)
+							msg_su = msg_su.substr(0, 29) + '...';
+	
+						if (msg_fr.length > 16)
+							msg_fr = msg_fr.substr(0, 16) + '...';
+		            
+			            sNotyMsg = '<div style="cursor:pointer" onclick="fnOpneNotyMsg(\'' + msg_id + '\');" style="font-family:Tahoma, Arial, serif; width:337px; text-overflow: ellipsis;  white-space: nowrap"><img src="../../app/noty/img/mail.png" style="width:24px; height:24px" align="absmiddle">&nbsp;&nbsp;&nbsp;' + mcLang.Text('lang_mail_118',1) + ' <b>' + fnEscapeHtml(msg_fe) + '</b>:<br><img src="../../images/common/trans.gif" style="width:24px; height:24px" align="absmiddle">&nbsp;&nbsp;&nbsp;' + fnEscapeHtml(msg_su) + '</div>';
+			            m_aDataNoty.unshift(sNotyMsg);
+			            			            
+		                i++;   
+		                
+		                
+		            }
+		            
+
+		           	if (m_aDataNoty.length > 0)
+	    			{
+	    				//Are we in inbox?
+	    				if ( (m_iCurrentAppIndex == 0) && (sort_by.toLowerCase() == 'received') && (sort_order.toLowerCase() == 'desc') && (m_sInboxMode == '') && (v_sFolder.toLowerCase() == '/inbox') && (CurentPage == 1) )
+	    				{
+	    						m_bAutoCheckCall = true;  
+								fShowInboxModule();	 
+						}
+
+	    			}
+		            
+		            window.setTimeout("fPopNoty()",m_AutoTimeNoty);
+	 	
+		        }
+		        
+		        AutoCheckMailCount();
+		        
+		    }
+
+		    //::::::
+		    function isMobileDevice()
+		    {
+
+				(function(a,b){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|pad|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) m_bMobileDevice = true })(navigator.userAgent||navigator.vendor||window.opera,'http://detectmobilebrowser.com/mobile');		    
+		    
+		    }
+
+
+	  </script>
+	  <!-- ************** NOTIFIER JS CODE ENDS ************** -->
+
+		
+</head>
+
+<body class="yui-skin-sam yui3-skin-sam" id="bodyID" style="background-color:#fff; overflow:auto">
+
+	<!-- ::::: MAIN SITE DIV  STARTS ::::: -->	
+	<div style="min-width:800px !important;">
+	
+		<!-- Alert -->
+		<div id="MUserInboxAlert" style="display:none; z-index: 1009"> </div>
+		
+		
+		<!-- ::::: Login Box STARTS ::::: -->	
+		<iframe onload="" id="ifm_login" style=" display:none;background-color:#F3F3F3; height:100%; width:100%; position: absolute; top: 0px; bottom: 0px; border: #ffffff 0px solid; overflow:auto" scrolling="auto" frameborder="0" border=0 name="ifm_login" src="../../app/s/LoginPage.asp" width="100%" height="100%" allowTransparency  borderwidth="0"></iframe>
+		<!-- ::::: Login Box ENDS ::::: -->
+		
+			
+		<!-- Main Header STARTS -->
+		<div id="mMainHeader">
+			<div id="mMainBanner" style="height:1px;line-height:1px;font-size:16px; background-color:#fff; margin-top:1px; clear:both"></div>
+			
+			<div class="TopHeader">
+				<div onclick="fnAppMenu(event)" id="dviAppDivBtn" class="jqTootltip" title="Apps">&nbsp;<span id="spanAppTitle">Mail</span>&nbsp;&nbsp;&nbsp;<img alt="More" height="4" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/arrow_8_white.png" width="8" /></div>
+				<div style="float: left; font-size:14px">
+					<span id="mMainHeaderActions"></span>				
+				</div>
+				<div id="mTopPanelRight" style="height:inherit;float: right; visibility:hidden;">		
+				
+					<!-- Search Box STARTS -->
+					<div id="SearchDiv" style="display:inline-block;" class="mSearchbox">
+						<div style="width:245px; display:inline-block;">
+							<input type="text" value="Search emails  " spellcheck="false" autocomplete="false" tabindex="" onclick="fnmSearchBoxFocus(this)" onfocus="fnmSearchBoxFocus(this)" dir="ltr" id="mSearchbox" onblur="fnmSearchBoxBlur(this)" onkeydown="fnrteKeyDownSearch(this, event)" onkeyup="fnmSearchBoxKeyup(this)" style=" padding-left:20px;background: transparent; color:#6b727b;display:inline-block; width:218px; border:0px #fff; font-size:12px; padding-top:5px ;font-family:Arial, Helvetica, sans-serif;"/>
+						</div>
+						<div style="width:20px; display:inline-block; cursor:pointer; visibility:hidden;" class="jqTootltip" title="Clear search" onclick="fnmSearchClear(true)" id="mSearchXdiv"><img style="width:14px; height:40px; cursor:pointer" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/search_x.png" id="mSearchX"   alt="Clear search"/></div>
+						<div style="widthx:20px; display:inline-block; cursor:pointer" class="jqTootltip" title="Show search options" onclick="fnmSearchOptions(event)">&nbsp;<img style="width:10px; height:40px;" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/search_options.png" id="mSearchOptuins" alt="Advanced search"/>&nbsp;&nbsp;&nbsp;</div>
+						<div style="width:35px; display:inline-block; cursor:pointer" class="jqTootltip" title="Search" onclick="CurentPage =1; fnmDoSearch()"><img style="width:16px; height:40px" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/search_icon.png" id="mSearchBtn" alt="Search"/></div>
+					</div>
+					<!-- Search Box ENDS -->
+
+					<a id="btnUseremail" href="JavaScript:fnUserMenu()"><span id="LoginEmail" style="font-size:13px; color:#fff"><span id="LoginEmailSpan" sfullname=""></span>&nbsp;</span>&nbsp;&nbsp;<img alt="More" height="4" id="usermenuarrow" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon_white.png" width="8" />&nbsp;</a>&nbsp;&nbsp;&nbsp;<a id="btnSettings" class="jqTootltip" title="Settings" href="JavaScript:fnSettingsAction(2);"><img  height="16"  src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/settings_icon16_white.png" width="16" />&nbsp;&nbsp;<img alt="More"  height="4"  src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon_white.png" width="8" style="display:none" /></a><img alt="V12" height="16" style=" vertical-align:middle; padding:0px; display:none" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/1355162982_041.png" width="16" /><!--<img alt="V12" height="20" style=" vertical-align:middle; padding:5px; display:none"  id="mMainHeaderOpt" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/color-swatch-icon_w.png" width="20" />-->
+				</div>
+			</div>
+
+		</div>
+		<!-- Main Header ENDS -->
+
+
+		<!-- mLeftPanel STARTS -->
+		<div style="width:100px; height:100px; float: left; display:none;" id="mLeftPanel">
+			<div id="mLeftPanelHead" style="height:30px;color:#444444;line-height:30px;font-size:14px;">
+				<a id="mLeftPanelTitle" onclick="fnBIGRedBtn(event)">Compose&nbsp;&nbsp;</a>
+			</div>
+	
+			<div style="height: 32px; display:none"><a href="JavaScript:fnShowPOPOpt('imgSearchOption', 'mMailSearchOptMenu',-132,5)"><img id="imgSearchOption" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/light-grey-arrow-down.png" class="jqTootltip" title="Show search options" style="position:absolute; left:134px; padding-top:16px; cursor:pointer" /></a><img src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/search-icon.png" onclick="fnAppSearch()" style="position:absolute; left:149px; padding-top:9px; cursor:pointer"/><input type="text" id="AppSearch" onkeydown="fnrteKeyDownSearch(this,event)" placeholder="Search mail"/></div>
+	
+			<div id="mLeftPanelBody" style=" color:#757575; padding:4px;">
+				<div id="spanLeftNavFolders">Loading...</div>
+				<div id="spanLeftNavContacts" style="display:none">Loading...</div>
+			</div>
+			<div id="divMagicBox" style=" width:100%;  text-align:center; padding:0px; height:22px; overflow:hidden;">
+
+				<iframe id="ifm_mini_cal_mail" frameborder="0" border=0 name="ifm_mini_cal_app" src="about:blank" width="175px" height="185px" style="padding-top:10px; padding-left:0px;;BORDER: #ffffff 0px solid; overflow-x: hidden; overflow-y: hidden; display:none" allowTransparency  borderwidth="0"></iframe>
+				<div id="div_mini_pico" style="background-color:#F4F4F4; height:22px; margin-top:2px; text-align:left">&nbsp;&nbsp;&nbsp;<img style="height:16px; width:16px; cursor:pointer; padding-top:2px" id="MiniCalmailico" title="Show month calendar widget" onclick="fnShowMailMiniCal(true)" src="" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/mini_cal_ico.png" class="postLoadIMG"/>&nbsp;</div>
+				
+			</div>
+		</div>
+		<!-- mLeftPanel ENDS -->
+				
+		
+		<!-- MainWrapper STARTS -->
+		<div id="MainWrapper">	
+						
+			
+			<!-- ::::: mMainPanel  STARTS ::::: -->
+			<div style="background-color:#fff; width:100px; height:100px;  float: left; display:none; overflow:hidden; " id="mMainPanel">
+			
+				<div id="mMainPanelHead" style="height:30px;line-height:30px;font-size:16px;  clear:both;">
+					<div id="mMainPanelTitle" style="float: left; width:100%;">&nbsp;</div>			
+				</div>		
+				
+				<!-- ::::: mMainPanel  STARTS ::::: -->	 
+				<div id="mMainPanelBody" style="background-color:#fff; ; clear:both">
+				
+					<!-- Main div apps (contacts, backpack..)-->
+					<div id="mdivApps" style="background-color:#fff; display:none; overflow:hidden">
+					</div>
+				
+					<!-- ::::: mFolderData  STARTS ::::: -->
+					<div id="mFolderData" style="display:none; overflow:hidden">
+						
+						<div id="Msg_Panel_Inbox">
+							<div id="Msg_Panel_Inbox_Data" style="background-color:#fff; overflow-y: scroll; overflow-x: hidden; width:100%; height:100%; border-bottom: #ffffff 2px solid; scrollbar-face-color:#E8E8E8;   scrollbar-arrow-color:#AAAAAA;   scrollbar-track-color:#F5F5F5;   scrollbar-shadow-color:#E8E8E8;   scrollbar-highlight-color:#E8E8E8;   scrollbar-3dlight-color:#E8E8E8; scrollbar-darkshadow-Color:#E8E8E8;"></div>
+						</div>
+						 
+						<!-- ::::: Msg_Panel_Msg  STARTS ::::: -->
+						<div id="Msg_Panel_Msg" style="background-color:#fff; height:300px; width:100%; border-top: #ffffff 2px solid" ddType="msgprev" onmouseout="fnDirDragLeave()" onmouseover="fnDirDragEnter(this)">
+							<div id="Msg_Main" style="display:none; background-color:#fff;">
+		        	
+								<div id="mMsgPanelHead" style=" text-align:right; height:20px;background-color:#fff;color:#F4F4F4;line-height:20px;font-size:14px; BORDER-bottom: #F3F3F3 0px solid">
+									<a id="btnMsgReply" href="javascript:QComposer('r')" title="Reply" style="padding-right:13px;" class="jqTootltipX"><img  src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/R_m.png" height="16"   width="16" />&nbsp;</a>
+									<a id="btnMsgReplyAll" href="javascript:QComposer('rall')" title="Reply all" style="padding-right:10px;" class="jqTootltipX"><img   src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/rall_m.png" height="16"  width="16" />&nbsp;</a>
+									<a id="btnMsgForward" href="javascript:QComposer('f')" title="Forward" style="padding-right:13px;" class="jqTootltipX"><img  height="16"  src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/F_m.png"  width="16" />&nbsp;</a>
+									<a id="btnMsgDelete" href="javascript:" onclick="DeleteOpenMsg(event)" title="Delete" style="padding-right:13px;" class="jqTootltipX"><img   src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/delete_m.png" height="16"  width="16" />&nbsp;</a>
+									<a id="btnMsgPrint" href="javascript:" onclick="PrintOpenMsg(event)" title="Printer Friendly" style="padding-right:13px;" class="jqTootltipX"><img   src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/print_msg-16.png" height="14"  width="16" />&nbsp;</a>
+									<a id="btnMsgFullscreen" href="javascript:fnMsgFullscreen()" title="Open in full view" style="padding-right:13px;" class="jqTootltipX"><img src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/msgpre_fullscreen.png" id="msg_screen_img" height="16"  width="16" />&nbsp;</a>
+									<a class="MsgActions" style="font-weight:bold; display:none">...</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</div>
+
+								<!-- mMsgBodyScroll STARTS -->
+								<div id="mMsgBodyScroll"  style="overflow:auto;">
+									<div style="background-color:#fff; padding-left:10px; padding-right:10px; color:#454545">
+										<div id="Msg_notspam" onclick="fnMsgNotSpam(event)" title="Click to add the sender's email address to your Safe List and move the message to your Inbox" class="jqTootltip" style=" display:none;margin:10px ; margin-top:0px; font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: 11px; line-height:17px; color: #494949; background-color:#FFEAEA; clear:both; cursor:pointer">&nbsp;<img style="width:20px; height:20px" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/not_spam.png"/>&nbsp;This is not spam?</div>
+						                <div style="text-align:center;  padding-left:10px; padding-right:10px; padding-top:5px; display:none; position:absolute" id="Msg_LoadingText"><span ><!--<img  src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/msg-loader.gif" style="width:16px; height:16px; vertical-align:middle; display:none" />-->&nbsp;Loading...</span></div>   
+										<div style="margin:10px ; margin-top:0px; font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: 17px; line-height:17px; color: #494949; overflow: hidden; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap;" id="Msg_Subject"><!-- xxxSubject --></div>
+										<div style="margin:10px; vertical-align:top">
+						                        <div style="text-align:left;  padding-top:6px; font-weight:bold; font-size:15px; display:none; cursor:pointer"   id="divMsg_from" ><span onclick="fnSenderOptMenu(event)" title="More" class="jqTootltip" id="Msg_From" ></span> <img onclick="fnSenderOptMenu(event)" id="MSgSenderOptMenu" width="8" height="4" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png"  title="More" class="jqTootltip" style="padding:5px" />&nbsp;&nbsp;<a class="linkLine" style="font-weight:normal; font-size:10px" href="JavaScript:fnShowMsgDetails()"><img id="MSgDetailsExpand" width="9" height="10" style="top:-1px; position:relative" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/arrow_less.png" title="Headers"/></a> </div> 
+						                        <div style="text-align:left; padding-top:5px"><span id="Msg_To"></span></div>
+												<div style="text-align:left; padding-top:8px"><span id="Msg_Date"><!-- 10:12 pm &nbsp;&nbsp; Wednesday, March 24 --></span></div>
+										</div> 
+										<table style="display:none"  id="MsgDetails">
+											<tr>
+												<td style="width:50px;white-space:nowrap; text-align:right; vertical-align:top">From&nbsp;&nbsp;</td>
+												<td><span id="Msg_From_more"></span>&nbsp;&nbsp;</td>
+											</tr>
+											<tr>
+												<td style="width:50px;white-space:nowrap; text-align:right; vertical-align:top">To&nbsp;&nbsp;</td>
+												<td><span id="Msg_To_more"></span></td>
+											</tr>
+											<tr id="Msg_Ccc_more_tr">
+												<td style="width:50px;white-space:nowrap; text-align:right; vertical-align:top">Cc&nbsp;&nbsp;</td>
+												<td><span id="Msg_Cc_more"></span></td>
+											</tr>
+											<tr id="Msg_Bccc_more_tr">
+												<td style="width:50px;white-space:nowrap; text-align:right; vertical-align:top">Bcc&nbsp;&nbsp;</td>
+												<td><span id="Msg_Bcc_more"></span></td>
+											</tr>
+											
+											<tr id="Msg_Attach_tr" style="display:none;" >
+												<td style="width:50px;white-space:nowrap; text-align:right; vertical-align:top; padding-top:10px"><img align="absmiddle/" style="padding-top: 3px;" width="16px" height="16px" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/a.png"/>&nbsp;&nbsp;</td>
+												<td style="padding-top:10px"><span id="Msg_Attach"></span></td>
+											</tr>
+
+											<tr style="display:none" >
+												<td style="width:50px;white-space:nowrap; text-align:right; vertical-align:top">Date&nbsp;&nbsp;</td>
+												<td><span id="Msg_DAte_more"></span></td>
+											</tr>
+											
+											<tr id="Msg_headers_more_tr"  >
+												<td style="width:50px;white-space:nowrap; text-align:right; vertical-align:top"></td>
+												<td><span id="Msg_headers_more"></span></td>
+											</tr>
+										</table>
+									</div> 
+									<div style="border-top: #C4C4C4 1px  dashed; margin:20px; padding-top:5px; padding-bottom:10px;" id="divMsg_body">
+										<img  id="Msg_Body_Hide"  src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/trans.png" style="position:absolute; height:100%; width:100%; z-index: 0; display:none; background-color:#fff; opacity:0"/>
+										<iframe onload="ResizeToContent()" id="Msg_body" style=" padding-top:5px; BORDER: #ffffff 0px solid; overflow:hidden" scrolling="no" frameborder="0" border=0 name="Msg_body" src="../../app/msg_prev.asp" width="100%" height="100%" allowTransparency  borderwidth="0"></iframe>
+									</div>				                	
+								</div>
+								<!-- mMsgBodyScroll ENDS -->
+								
+								<!-- mMSGPrevtabs STARTS --> 
+								<div id="mMSGPrevtabs" class="MsgPregMainTabs"></div>
+								<!-- mMSGPrevtabs ENDS -->
+	
+							</div>
+		            
+							<div id="Msg_Loading" style="background-color:blue;clear:both; height:48px; background-color:#fff; padding-left:10px; padding-right:10px; font-size:14px;font-weight:bold; line-height:48px; color:#6D6D7E; text-align:center">
+					                <span id="Msg_NoMessage" style=" font-size:11px; font-weight:normal; line-height:27px">Click the message you'd like to view  (or select the checkbox next to it for more options)
+					                	<div id="Mail_Storage"></div>
+					                </span>
+							</div> 
+					            
+						</div>
+						<!-- ::::: Msg_Panel_Msg  ENDS ::::: -->
+	
+					</div>
+					<!-- ::::: mFolderData  ENDS  ::::: -->
+						
+				</div>
+				<!-- ::::: mMainPanel  ENDS ::::: -->
+			</div>
+			<!-- ::::: mMainPanel  ENDS ::::: -->
+			
+			<!-- ::::: Banner  STARTS  ::::: -->
+			<div id="mMainPanelBanner" style=" text-align:right ; display:inline-block; background-color:#F5F2F3; font-size: 10px; padding-left:10px;  color:#a5a2a3; display:none; overflow:hidden">
+				<div style=" text-align:center; font-size:12px; cursor:pointer"  onclick="fnHideSideBanner()">Hide banner</div>
+				<iframe onload="" id="ifrmBanner" style="BORDER: #a5a2a3 1px solid; overflow:hidden; " scrolling="no" frameborder="0" border=0 name="ifrmBanner" src="about:blank" width="162px" height="602px" allowTransparency  borderwidth="0"></iframe>			
+			</div>
+			<!-- ::::: Banner  ENDs  ::::: -->
+			
+		</div> 
+		<!-- MainWrapper ENDS -->
+			
+	</div>
+	<!-- ::::: MAIN SITE DIV  ENDS  ::::: -->
+
+
+	<!-- ::::: DRAG-N-DROP BOX  STARTS  ::::: -->
+	<div id="divDropScreen" style="padding-top:15%;border:6px #aaabae dashed; text-align:center;  font-size:18px; color:#aaabae;position:absolute;z-index:1002;display:none; ">
+		Drop files ANYWHERE...<br/><br/><img onclick="" style="border:0px; width:128px; height:128px;  vertical-align:middle; " class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/drop_files_white.png" src="" /><br/><br/>to instantly store, organize, share or attach them
+	</div>
+	<!-- ::::: DRAG-N-DROP BOX  ENDS  ::::: -->
+
+	
+	<!-- ::::: DROP MENUS  STARTS  ::::: -->
+    <div id="mPOPOpt" class="skin0" style="position: absolute; left:0px; top:0px; padding:7px; z-index:1003;">
+		
+
+
+<!-- 
+
+##xxxxx
+-->
+		<!-- global  -->
+	    <div id="mSEttingsOptMenu" style="display:none">
+	    	 <a href="JavaScript:fnSettingsAction(2)" class="menulink">&nbsp;Settings</a> 
+	         <!--
+	         <div class="MSLine"></div>
+	         <a href="JavaScript:fnSettingsAction(2)" class="menulink">&nbsp;Help</a>
+	         -->
+	         <div class="MSLine"></div>
+	         <a href="JavaScript:fnSettingsAction(1)" class="menulink">&nbsp;Help</a>
+	         <div class="MSLine" style="display:none"></div>
+	         <a href="JavaScript:fnDEVBtn1()" style="display:none" class="menulink">DEV BTN 1</a>
+	         <a href="JavaScript:fnDEVBtn2()" style="display:none" class="menulink">DEV BTN 2</a>
+	         
+	    </div> 
+
+	    <div id="mUserOptMenu" style="display:none; width: 185px;">
+	         <a href="JavaScript:fnApp(6)" class="menulink">External mail accounts</a>
+	         <div class="MSLine"></div> 
+	         	
+			 	<a href="JavaScript:fnOpenFeedback()"class="menulink">Feedback</a>
+			 	<div class="MSLine"></div> 
+
+			 
+	         <a href="JavaScript:fnSignout()" class="menulink">Sign out</a>
+	    </div> 
+
+	    <div id="mPaneOptMenu" style="display:none; width: 155px;">
+	         <a href="JavaScript:fnSwitchRPView('r')" style="display:noneX" class="menulink">Vertical split</a>
+	         <a href="JavaScript:fnSwitchRPView('b')" style="display:noneX" class="menulink">Horizontal split</a>
+	    </div> 
+
+	    <div id="mSettingsOptMenu" style="display:none; width: 185px;">
+	         <a href="JavaScript:fnOpenSettings(1)" class="menulink">Personal Preferences</a>
+	         <a href="JavaScript:fnOpenSettings(2)" class="menulink">Mail Management</a>
+	         <div class="MSLine"></div> 
+	         <a href="JavaScript:fnOpenSettings(3)" class="menulink">Services</a>
+	         <div class="MSLine"></div> 
+	         <a href="/admin/ControlCenter/Control_Center.asp" target="_blank" class="menulink">Administration Tools</a>
+	    </div> 
+
+	    
+
+	    <div id="mAppListMenu" style="display:none; width:180px">
+	    	 	
+	    	 <a href="JavaScript:fnApp(0, false)" id="mApp0" class="menulink">&nbsp;Mail</a> 
+	    	 <a href="JavaScript:fnApp(1, false)" id="mApp1" class="menulink">&nbsp;Contacts</a> 
+	    	 
+	    	 	<a href="JavaScript:fnApp(3, false)" id="mApp3" class="menulink">&nbsp;Drive</a> 
+	    	 
+	    	 <a href="JavaScript:fnApp(4, false)" id="mApp4" class="menulink">&nbsp;Calendar</a> 
+	    </div>
+
+	    
+
+
+        <!-- mail -->
+        <div id="mCheckBoxOptions" style="display:none">
+	    	 <a href="JavaScript:CheckBoxOpt('All')" class="menulink">&nbsp;All</a> 
+	         <a href="JavaScript:CheckBoxOpt('None')" class="menulink">&nbsp;None</a> 
+	         <a href="JavaScript:CheckBoxOpt('Read')" class="menulink">&nbsp;Read</a> 
+	         <a href="JavaScript:CheckBoxOpt('Unread')" class="menulink">&nbsp;Unread</a>
+	         <div class="MSLine"></div>
+	         <a href="JavaScript:CheckBoxOpt('HPriority')" class="menulink">&nbsp;High priority</a>
+			 <a href="JavaScript:CheckBoxOpt('LPriority')" class="menulink">&nbsp;Low priority</a>
+	         <div class="MSLine"></div>
+	         <a href="JavaScript:CheckBoxOpt('Starred')" class="menulink">&nbsp;Starred</a>
+	         <a href="JavaScript:CheckBoxOpt('Unstarred')" class="menulink">&nbsp;Unstarred</a> 
+	         <div class="MSLine"></div>
+	         <a href="JavaScript:CheckBoxOpt('Replied')" class="menulink">&nbsp;Replied</a>
+	         <a href="JavaScript:CheckBoxOpt('Forwarded')" class="menulink">&nbsp;Forwarded</a>
+	         <div class="MSLine"></div>
+	         <a href="JavaScript:CheckBoxOpt('Attachment')" class="menulink">&nbsp;Has attachment</a>
+	    </div>
+
+        <div id="mInboxMoreOptions" style="display:none">
+        	 <a href="JavaScript:fnMarkAll('read')" id="mInboxMoreOptionsMarkAll" class="menulink">&nbsp;Mark all as read</a>
+        	 <div class="MSLine"></div>
+	         <a href="JavaScript:AC(9)" id="mInboxMoreOptionsBlockDel" class="menulink">&nbsp;Block &amp; delete</a>
+			 <a href="JavaScript:RCM(5)" style="display:none" class="menulink">&nbsp;Delete permanently</a>
+	    </div>
+
+        <div id="mInboxMoreOptionsNM" style="display:none">
+        	 <a href="JavaScript:fnMarkAll('read')" id="mInboxMoreOptionsMarkAll" class="menulink">&nbsp;Mark all as read</a>
+	    </div>
+	    
+        <div id="mInboxStarPOPOptt" style="display:none">
+	    	 <a class="menulink" href="JavaScript:fnAddStarBulk(1)"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/star_red.png" src="" width="16px" height="15px" alt="" /></a> 
+	    	 <a class="menulink" href="JavaScript:fnAddStarBulk(2)"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/star_yellow.png" src="" width="16px" height="15px" alt="" /></a>
+	    	 <a class="menulink" href="JavaScript:fnAddStarBulk(3)"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/star_green.png" src="" width="16px" height="15px" alt="" /></a>
+	    	 <a class="menulink" href="JavaScript:fnAddStarBulk(4)"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/star_blue.png" src="" width="16px" height="15px" alt="" /></a>
+	         <a class="menulink" href="JavaScript:fnAddStarBulk(0)"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/star_off.png" src="" width="16px" height="15px" alt="" /></a>
+	    </div>
+
+        <div id="mInboxcontextmenu" style="display:none">
+	    	 <a href="JavaScript:fnInboxContextAC(0)" class="menulink">&nbsp;Open</a>
+	    	 <a href="JavaScript:fnInboxContextAC(1)" class="menulink">&nbsp;Reply</a>
+	    	 <a href="JavaScript:fnInboxContextAC(2)" class="menulink">&nbsp;Reply all</a>
+	    	 <a href="JavaScript:fnInboxContextAC(3)" class="menulink">&nbsp;Forward</a>
+	    	 <div class="MSLine"></div>
+	    	 <a href="JavaScript:AC(2)" id="mInboxcontextmenu_read" class="menulink">&nbsp;Mark as read</a>
+	    	 <a href="JavaScript:AC(3)" id="mInboxcontextmenu_unread" class="menulink">&nbsp;Mark as unread</a>
+	    	 <div class="MSLine"></div>
+	    	 <a href="JavaScript:AC(1)" class="menulink">&nbsp;Block</a>
+	    	 <a href="JavaScript:AC(0)" class="menulink">&nbsp;Delete</a>
+	   	</div>
+	   	
+	   	<div id="mInboxShortcontextmenu" style="display:none">
+	    	 <a href="JavaScript:AC(2)" class="menulink">&nbsp;Mark as read</a>
+	    	 <a href="JavaScript:AC(3)" class="menulink">&nbsp;Mark as unread</a>
+	    	 <div class="MSLine"></div>
+	    	 <a href="JavaScript:AC(1)" class="menulink">&nbsp;Block</a>
+	    	 <a href="JavaScript:AC(0)" class="menulink">&nbsp;Delete</a>
+	   	</div>
+
+	   
+        <div id="mInboxMiniStars" style="display:none; height:20px">
+	    	 <a class="menulinkminiStart"  href="JavaScript:fnAddStar(1)"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/star_red.png" src="" width="16px" height="15px" alt="" /></a> 
+	    	 <a class="menulinkminiStart"  href="JavaScript:fnAddStar(2)"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/star_yellow.png" src="" width="16px" height="15px" alt="" /></a>
+	    	 <a class="menulinkminiStart"  href="JavaScript:fnAddStar(3)"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/star_green.png" src="" width="16px" height="15px" alt="" /></a>
+	    	 <a class="menulinkminiStart"  href="JavaScript:fnAddStar(4)"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/star_blue.png" src="" width="16px" height="15px" alt="" /></a>
+	         <a class="menulinkminiStart"  href="JavaScript:fnAddStar(0)"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/star_off.png" src="" width="16px" height="15px" alt="" /></a>
+	    </div>
+
+
+        <div id="mInboxbtnArrangeBy" style="display:none">
+	    	 <a href="JavaScript:HSort('Received', false)" class="menulink"><img id="icoSortReceived"   src="" width="16px" height="16px" alt="" />&nbsp;Date</a> 
+	    	 <a href="JavaScript:HSort('Read', false)" class="menulink"><img id="icoSortRead"  src="" width="16px" height="16px" alt="" />&nbsp;New</a>
+	         <a href="JavaScript:HSort('From', false)" class="menulink"><img id="icoSortFrom"  src="" width="16px" height="16px" alt="" />&nbsp;From</a>
+			 <a href="JavaScript:HSort('Subject', false)" class="menulink"><img id="icoSortSubject"   src="" width="16px" height="16px" alt="" />&nbsp;Subject</a>
+	         <a href="JavaScript:HSort('Followup', false)" class="menulink"><img id="icoSortFollowup"   src="" width="16px" height="16px" alt="" />&nbsp;Star</a> 
+	    </div>
+	    
+	   <div id="mInboxDirsList" style="display:none; overflow"></div>
+	   
+	   <div id="mSpellMenu" style="display:none"></div>
+	    
+	   <div id="mAttahcMenu" style="display:none; overflow-y: auto; overflow-x: hidden"></div>
+	   	   
+	   <div id="mMsgAttahcMenu" style="display:none;"></div>
+	   
+	   <div id="mContactsAutoCompMenu" style="display:none;"></div>
+	   
+	   <div id="mContactsAutoCompOpt" style="display:none;"></div>
+	   
+	   <div id="mRTEPriorityMenu" style="display:none">
+	    	 <a href="JavaScript:m_bManualPriority = true; fnRTEPriority('2')" class="menulink"><img id="icoRTEPriorityHigh" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/trans.png" width="16px" height="16px" alt="" />&nbsp;High</a> 
+	    	 <a href="JavaScript:m_bManualPriority = true; fnRTEPriority('1')" class="menulink"><img id="icoRTEPriorityNormal" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/checkmark_icon&16_p.png"  width="16px" height="16px" alt="" />&nbsp;Normal</a>
+	         <a href="JavaScript:fnRTEPriority('0')" class="menulink" style="display:none"><img id="icoRTEPriorityLow" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/trans.png" width="16px" height="16px" alt="" />&nbsp;Low</a>
+	   </div>
+	   
+	   <!-- RTE -->
+	   <div id="mRTEShare" style="display:none; width:115px">   
+			<a href="JavaScript:fnOpenFacebook()" title="Facebook" class="menulink jqTootltip" style="display:inline-block; float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/facebook-3-24.png" src="" width="24px" height="24px" alt="" />&nbsp;</a>       
+			
+			<a href="JavaScript:fnOpenGoogleDrive('youtube')" title="YouTube" class="menulink jqTootltip" style="display:inline-block; float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/youtube_icon&32.png" src="" width="24px" height="24px" alt="" />&nbsp;</a>
+			<br/>
+			
+			<a href="JavaScript:fnOpenInstagram()" title="Instagram" class="menulink jqTootltip" style="display:inline-block; float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/instagram.png" src="" width="18px" height="19px" alt="" />&nbsp;</a>       
+			<a href="JavaScript:fnOpenTumblr()" title="Tumblr" class="menulink jqTootltip" style="display:inline-block; float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/tumblr-24.png" src="" width="24px" height="24px" alt="" />&nbsp;</a> 
+			<br/>
+			
+			<a href="JavaScript:fnOpenDropBox()" title="Dropbox" class="menulink jqTootltip" style="display:inline-block; float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/dropbox.png" src="" width="22px" height="20px" alt="" />&nbsp;</a>         
+			<a href="JavaScript:fnOpenGoogleDrive('drive')" title="Google Drive" class="menulink jqTootltip" style="display:inline-block; float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/gdrive.png" src="" width="18px" height="17px" alt="" />&nbsp;</a> 
+			<br/>
+			
+			<a href="JavaScript:fnOpenSkyDrive()" title="OneDrive" class="menulink jqTootltip" style="display:inline-block; float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/skydrive.png" src="" width="27px" height="17px" alt="" />&nbsp;</a>          
+			<a href="JavaScript:fnOpenBox()" title="box" class="menulink jqTootltip" style="display:inline-block; float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/box_icon.png" src="" width="24px" height="24px" alt="" />&nbsp;</a> 
+			<a href="JavaScript:fnOpenTwitter()" title="Twitter" class="menulink jqTootltip" style="float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/twitter-24.png" src="" width="24px" height="24px" alt="" />&nbsp;</a> 
+			<a href="JavaScript:fnOpenAmazon()" title="Amazon Cloud Drive" class="menulink jqTootltip" style="float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/Amazon_drive.png" src="" width="24px" height="24px" alt="" />&nbsp;</a>
+			<br>
+			<a href="JavaScript:fnOpenflickr()" title="flickr" class="menulink jqTootltip" style="float:left; width:35px;padding-right:10px; padding-left:10px; height:24px; line-height:24px; text-align:center"><img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/44-flickr-24.png" src="" width="24px" height="24px" alt="" />&nbsp;</a> 
+	    </div>
+
+
+	    <div id="mRTEColorPicker" style="display:none">
+			<table  style="border: 0px solid #fff" cellspacing="0" cellpadding="0">
+				<tr>
+					<td ><a style="background-color: #000" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #444444" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #666666" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #999999" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #CCCCCC" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #EEEEEE" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #F3F3F3" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #ffffff" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+				</tr>
+				<tr>
+					<td ><a style="background-color: #FF0000" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #FF9900" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #FFFF00" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #00FF00" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #00FFFF" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #0000FF" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #9900FF" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #FF00FF" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+				</tr>
+				<tr>
+					<td ><a style="background-color: #F4CCCC" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #FCE5CD" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #FFF2CC" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #D9EAD3" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #D0E0E3" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #CFE2F3" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #D9D2E9" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #EAD1DC" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+				</tr>
+				<tr>
+					<td ><a style="background-color: #EA9999" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #F9CB9C" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #FFE599" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #B6D7A8" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #A2C4C9" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #9FC5E8" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #B4A7D6" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #D5A6BD" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+				</tr>
+				<tr>
+					<td ><a style="background-color: #E06666" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #F6B26B" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #FFD966" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #93C47D" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #76A5AF" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #6FA8DC" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #8E7CC3" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #C27BA0" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+				</tr>
+				<tr>
+					<td ><a style="background-color: #CC0000" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #E69138" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #F1C232" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #6AA84F" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #45818E" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #3D85C6" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #674EA7" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #A64D79" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+				</tr>
+				<tr>
+					<td ><a style="background-color: #990000" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #B45F06" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #BF9000" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #38761D" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #134F5C" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #0B5394" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #351C75" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #741B47" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+				</tr>
+				<tr>
+					<td ><a style="background-color: #660000" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #783F04" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #7F6000" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #274E13" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #0C343D" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #073763" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #20124D" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+					<td ><a style="background-color: #4C1130" class="ColorPikr" onclick="fnRTEChangeColor(this)" href="JavaScript:"></a></td>
+				</tr>
+			</table>
+			
+		</div>
+		
+		<div id="mRTEFontPicker" style="display:none">
+	    	 <a href="JavaScript:fnRTEUpdateFont('Arial')" class="menulink" style="font-family:Arial !important">Arial</a>
+	    	 <a href="JavaScript:fnRTEUpdateFont('Sans Serif')" class="menulink" style="font-family:sans-serif !important">Sans Serif</a>
+	    	 <a href="JavaScript:fnRTEUpdateFont('Tahoma')" class="menulink" style="font-family:Tahoma !important">Tahoma</a>
+	    	 <a href="JavaScript:fnRTEUpdateFont('Verdana')" class="menulink" style="font-family:Verdana !important">Verdana</a>
+	    	 <a href="JavaScript:fnRTEUpdateFont('Courier New')" class="menulink" style="font-family:'Courier New' !important">Courier New</a>
+	    	 <a href="JavaScript:fnRTEUpdateFont('Georgia')" class="menulink" style="font-family:Georgia !important">Georgia</a>
+	    	 <a href="JavaScript:fnRTEUpdateFont('Times New Roman')" class="menulink" style="font-family:'Times New Roman' !important">Times New Roman</a>
+	    	 <a href="JavaScript:fnRTEUpdateFont('Impact')" class="menulink" style="font-family:Impact !important">Impact</a>
+	    	 <a href="JavaScript:fnRTEUpdateFont('Comic Sans MS')" class="menulink" style="font-family:'Comic Sans MS' !important">Comic Sans MS</a>  
+	    </div>
+	    
+	    <div id="mRTEFontSizePicker" style="display:none">
+	    	 <a href="JavaScript:fnRTEUpdateFontSize('1')" class="menulink" style="font-family:Arial !important; font-size:small !important">Small</a>
+	    	 <a href="JavaScript:fnRTEUpdateFontSize('2')" class="menulink" style="font-family:Arial !important; font-size:medium !important">Normal</a>
+			 <a href="JavaScript:fnRTEUpdateFontSize('3')" class="menulink" style="font-family:Arial !important; font-size:large !important; display:none">3</a>
+			 <a href="JavaScript:fnRTEUpdateFontSize('4')" class="menulink" style="font-family:Arial !important; font-size:20px !important">Large</a>
+			 <a href="JavaScript:fnRTEUpdateFontSize('5')" class="menulink" style="font-family:Arial !important; font-size:x-large !important; display:none">5</a>
+			 <a href="JavaScript:fnRTEUpdateFontSize('6')" class="menulink" style="font-family:Arial !important; font-size:xx-large !important">Huge</a> 
+	    </div>
+
+	    <div id="mRTEEmoticonPicker" style="display:none; width:520px">
+    	    <div style="width:100%; text-align:left; clear:both; padding-top:7px; padding-bottom:7px">
+	    	    <a class="SmallTabSpace" style="width:10px">&nbsp;</a>
+	    	    <div style="float:left"><a id="smallTabEmoticon0" class="SmallTab SmallTabSelected" href="JavaScript:fnEmoticontabs(0)">&nbsp;Emoticon&nbsp;</a><a class="SmallTabSpace">&nbsp;</a></div>
+	    		<div style="float:left"><a id="smallTabEmoticon1" class="SmallTab" href="JavaScript:fnEmoticontabs(1)">&nbsp;Stickers&nbsp;</a><a class="SmallTabSpace">&nbsp;</a></div>
+	    		<div style="float:left"><a id="smallTabEmoticon2" class="SmallTab" href="JavaScript:fnEmoticontabs(2)">&nbsp;Emojify&nbsp;</a><a class="SmallTabSpace">&nbsp;</a></div>
+	    		<div style="width:100%; clear:both"></div>
+    		</div>
+    		<div style="width:100%; height:330px; overflow-y: auto; overflow-x: hidden; max-height: 330px">
+    			<div id="SmallTabHTML0" style="display:none">Loading...</div>
+    			<div id="SmallTabHTML1" style="display:none">Loading...</div>
+    			<div id="SmallTabHTML2" style="display:none">Loading...</div>
+    		</div>
+	    </div>
+
+	    <div id="mRTESignPicker" style="display:none; width:330px; overflow-y: auto; overflow-x: hidden; max-height: 370px"></div>
+   
+	    <div id="mRTETranslate" style="display:none; width:400px; overflow-y: auto; overflow-x: hidden; max-height: 390px;">
+	    	<a href="JavaScript:fnRTESelectTrans(0)" class="menulink">&nbsp;<input id="rdbRTETranslate0" value="none_none" name="rdbRTETranslate"  type="radio" />No translation</a>
+	    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+	    	
+	    	
+		    	<a href="JavaScript:fnRTESelectTrans(1)" class="menulink">&nbsp;<input id="rdbRTETranslate1" value="English_French" name="rdbRTETranslate" type="radio" />English to French</a>
+		    	<a href="JavaScript:fnRTESelectTrans(2)" class="menulink">&nbsp;<input id="rdbRTETranslate2" value="English_German" name="rdbRTETranslate" type="radio" />English to German</a>
+		    	<a href="JavaScript:fnRTESelectTrans(3)" class="menulink">&nbsp;<input id="rdbRTETranslate3" value="English_Italian" name="rdbRTETranslate" type="radio" />English to Italian</a>
+		    	<a href="JavaScript:fnRTESelectTrans(4)" class="menulink">&nbsp;<input id="rdbRTETranslate4" value="English_Spanish" name="rdbRTETranslate" type="radio" />English to Spanish</a>
+		    	<a href="JavaScript:fnRTESelectTrans(5)" class="menulink">&nbsp;<input id="rdbRTETranslate5" value="English_Portuguese" name="rdbRTETranslate" type="radio" />English to Portuguese</a>
+		    	<a href="JavaScript:fnRTESelectTrans(6)" class="menulink">&nbsp;<input id="rdbRTETranslate6" value="English_Japanese" name="rdbRTETranslate" type="radio" />English to Japanese</a>
+		    	<a href="JavaScript:fnRTESelectTrans(7)" class="menulink">&nbsp;<input id="rdbRTETranslate7" value="English_Arabic" name="rdbRTETranslate" type="radio" />English to Arabic</a>
+		    	<a href="JavaScript:fnRTESelectTrans(8)" class="menulink">&nbsp;<input id="rdbRTETranslate8" value="English_Swedish" name="rdbRTETranslate" type="radio" />English to Swedish</a>
+		    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+		    	
+		    	<a href="JavaScript:fnRTESelectTrans(19)" class="menulink">&nbsp;<input id="rdbRTETranslate19" value="Spanish_English" name="rdbRTETranslate" type="radio" />Spanish to English</a>
+	    		<a href="JavaScript:fnRTESelectTrans(20)" class="menulink">&nbsp;<input id="rdbRTETranslate20" value="Spanish_Italian" name="rdbRTETranslate" type="radio" />Spanish to Italian</a>
+				<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+		    	
+	    	
+	    	
+	    	<a href="JavaScript:fnRTESelectTrans(9)" class="menulink">&nbsp;<input id="rdbRTETranslate9" value="French_English" name="rdbRTETranslate" type="radio" />French to English</a>
+	    	<a href="JavaScript:fnRTESelectTrans(10)" class="menulink">&nbsp;<input id="rdbRTETranslate10" value="French_German" name="rdbRTETranslate" type="radio" />French to German</a>
+	    	<a href="JavaScript:fnRTESelectTrans(11)" class="menulink">&nbsp;<input id="rdbRTETranslate11" value="French_Italian" name="rdbRTETranslate" type="radio" />French to Italian</a>
+	    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+	    	<a href="JavaScript:fnRTESelectTrans(12)" class="menulink">&nbsp;<input id="rdbRTETranslate12" value="German_English" name="rdbRTETranslate" type="radio" />German to English</a>
+	    	<a href="JavaScript:fnRTESelectTrans(13)" class="menulink">&nbsp;<input id="rdbRTETranslate13" value="German_French" name="rdbRTETranslate" type="radio" />German to French</a>
+	    	<a href="JavaScript:fnRTESelectTrans(14)" class="menulink">&nbsp;<input id="rdbRTETranslate14" value="German_Italian" name="rdbRTETranslate" type="radio" />German to Italian</a>
+	    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+	    	<a href="JavaScript:fnRTESelectTrans(15)" class="menulink">&nbsp;<input id="rdbRTETranslate15" value="Italian_English" name="rdbRTETranslate" type="radio" />Italian to English</a>
+	    	<a href="JavaScript:fnRTESelectTrans(16)" class="menulink">&nbsp;<input id="rdbRTETranslate16" value="Italian_French" name="rdbRTETranslate" type="radio" />Italian to French</a>
+	    	<a href="JavaScript:fnRTESelectTrans(17)" class="menulink">&nbsp;<input id="rdbRTETranslate17" value="Italian_German" name="rdbRTETranslate" type="radio" />Italian to German</a>
+	    	<a href="JavaScript:fnRTESelectTrans(18)" class="menulink">&nbsp;<input id="rdbRTETranslate18" value="Italian_Spanish" name="rdbRTETranslate" type="radio" />Italian to Spanish</a>
+	    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+	    	<a href="JavaScript:fnRTESelectTrans(21)" class="menulink">&nbsp;<input id="rdbRTETranslate21" value="Portuguese_English" name="rdbRTETranslate" type="radio" />Portuguese to English</a>
+	    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+	    	<a href="JavaScript:fnRTESelectTrans(22)" class="menulink">&nbsp;<input id="rdbRTETranslate22" value="Japanese_English" name="rdbRTETranslate" type="radio" />Japanese to English</a> 
+	    </div>
+  
+		<div id="mTranslatorOptMenu" style="display:none; overflow:hidden">
+			<a href="JavaScript:fnTranslatorBoxSelect(0)" class="menulink">&nbsp;<input type="checkbox" id="TranslatorOpt0" onclick="fnTranslatorBoxSelect(0); fnCancelClick(event)" value="authormale"/>Author male</a>
+			<a href="JavaScript:fnTranslatorBoxSelect(1)" class="menulink">&nbsp;<input type="checkbox" id="TranslatorOpt1" onclick="fnTranslatorBoxSelect(1); fnCancelClick(event)" value="recipientmale"/>Recipient male</a> 
+			<a href="JavaScript:fnTranslatorBoxSelect(2)" class="menulink">&nbsp;<input type="checkbox" id="TranslatorOpt2" onclick="fnTranslatorBoxSelect(2); fnCancelClick(event)" value="formal"/>Formal</a>
+			<a href="JavaScript:fnTranslatorBoxSelect(3)" class="menulink">&nbsp;<input type="checkbox" id="TranslatorOpt3" onclick="fnTranslatorBoxSelect(3); fnCancelClick(event)" value="recipientsingular"/>Recipient singular</a>
+		</div>
+		
+
+		<div id="divColorCodeColors" style="display:none; overflow:hidden">
+		</div>
+	    
+	    
+	    	
+
+				<div id="mTranslatorMenu" style="display:none; width:400px; overflow-y: auto; overflow-x: hidden; max-height: 390px;">
+			    	<a href="JavaScript:fnTranslatorSelect(99)" class="menulink">&nbsp;<input id="rdbTranslatorMenu99" value="English_French" name="rdbTranslatorMenu" type="radio" />English to French</a> 
+			    	<a href="JavaScript:fnTranslatorSelect(2)" class="menulink">&nbsp;<input id="rdbTranslatorMenu2" value="English_German" name="rdbTranslatorMenu" type="radio" />English to German</a>
+			    	<a href="JavaScript:fnTranslatorSelect(3)" class="menulink">&nbsp;<input id="rdbTranslatorMenu3" value="English_Italian" name="rdbTranslatorMenu" type="radio" />English to Italian</a>
+			    	<a href="JavaScript:fnTranslatorSelect(4)" class="menulink">&nbsp;<input id="rdbTranslatorMenu4" value="English_Spanish" checked="checked" name="rdbTranslatorMenu" type="radio" />English to Spanish</a>
+			    	<a href="JavaScript:fnTranslatorSelect(5)" class="menulink">&nbsp;<input id="rdbTranslatorMenu5" value="English_Portuguese" name="rdbTranslatorMenu" type="radio" />English to Portuguese</a>
+			    	<a href="JavaScript:fnTranslatorSelect(6)" class="menulink">&nbsp;<input id="rdbTranslatorMenu6" value="English_Japanese" name="rdbTranslatorMenu" type="radio" />English to Japanese</a>
+			    	<a href="JavaScript:fnTranslatorSelect(7)" class="menulink" style="display:none">&nbsp;<input id="rdbTranslatorMenu7" value="English_Arabic" name="rdbTranslatorMenu" type="radio" />English to Arabic</a>
+			    	<a href="JavaScript:fnTranslatorSelect(8)" class="menulink" style="display:none" >&nbsp;<input id="rdbTranslatorMenu8" value="English_Swedish" name="rdbTranslatorMenu" type="radio" />English to Swedish</a>
+			    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>	
+			    	<a href="JavaScript:fnTranslatorSelect(19)" class="menulink">&nbsp;<input id="rdbTranslatorMenu19" value="Spanish_English" name="rdbTranslatorMenu" type="radio" />Spanish to English</a>
+			    	<a href="JavaScript:fnTranslatorSelect(20)" class="menulink">&nbsp;<input id="rdbTranslatorMenu20" value="Spanish_Italian" name="rdbTranslatorMenu" type="radio" />Spanish to Italian</a>
+		    		<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+		    		<a href="JavaScript:fnTranslatorSelect(9)" class="menulink">&nbsp;<input id="rdbTranslatorMenu9" value="French_English" name="rdbTranslatorMenu" type="radio" />French to English</a>
+			    	<a href="JavaScript:fnTranslatorSelect(10)" class="menulink">&nbsp;<input id="rdbTranslatorMenu10" value="French_German" name="rdbTranslatorMenu" type="radio" />French to German</a>
+			    	<a href="JavaScript:fnTranslatorSelect(11)" class="menulink">&nbsp;<input id="rdbTranslatorMenu11" value="French_Italian" name="rdbTranslatorMenu" type="radio" />French to Italian</a>
+			    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+			    	<a href="JavaScript:fnTranslatorSelect(12)" class="menulink">&nbsp;<input id="rdbTranslatorMenu12" value="German_English" name="rdbTranslatorMenu" type="radio" />German to English</a>
+			    	<a href="JavaScript:fnTranslatorSelect(13)" class="menulink">&nbsp;<input id="rdbTranslatorMenu13" value="German_French" name="rdbTranslatorMenu" type="radio" />German to French</a>
+			    	<a href="JavaScript:fnTranslatorSelect(14)" class="menulink">&nbsp;<input id="rdbTranslatorMenu14" value="German_Italian" name="rdbTranslatorMenu" type="radio" />German to Italian</a>
+			    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+			    	<a href="JavaScript:fnTranslatorSelect(15)" class="menulink">&nbsp;<input id="rdbTranslatorMenu15" value="Italian_English" name="rdbTranslatorMenu" type="radio" />Italian to English</a>
+			    	<a href="JavaScript:fnTranslatorSelect(16)" class="menulink">&nbsp;<input id="rdbTranslatorMenu16" value="Italian_French" name="rdbTranslatorMenu" type="radio" />Italian to French</a>
+			    	<a href="JavaScript:fnTranslatorSelect(17)" class="menulink">&nbsp;<input id="rdbTranslatorMenu17" value="Italian_German" name="rdbTranslatorMenu" type="radio" />Italian to German</a>
+			    	<a href="JavaScript:fnTranslatorSelect(18)" class="menulink">&nbsp;<input id="rdbTranslatorMenu18" value="Italian_Spanish" name="rdbTranslatorMenu" type="radio" />Italian to Spanish</a>
+			    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+			    	<a href="JavaScript:fnTranslatorSelect(21)" class="menulink">&nbsp;<input id="rdbTranslatorMenu21" value="Portuguese_English" name="rdbTranslatorMenu" type="radio" />Portuguese to English</a>
+			    	<div id="mNavDirsOptMenudivide" class="MSLine"></div>
+			    	<a href="JavaScript:fnTranslatorSelect(22)" class="menulink">&nbsp;<input id="rdbTranslatorMenu22" value="Japanese_English" name="rdbTranslatorMenu" type="radio" />Japanese to English</a> 
+				</div>
+	    	
+	    
+	    
+
+
+		<!-- msg prev -->
+		<div id="mSenderOptMenu" style="display:none">
+	    	 <a href="JavaScript:fnSenderOpt(0)" class="menulink">&nbsp;Save address</a>
+	    	 <a href="JavaScript:fnSenderOpt(1)" class="menulink">&nbsp;Block</a>
+	    	 <a href="JavaScript:fnSenderOpt(2)" class="menulink">&nbsp;Set rule</a>
+	    	 <div class="MSLine"></div>
+	    	 <a href="JavaScript:fnSenderOpt(3)" class="menulink">&nbsp;Color code</a>
+	    	 <div class="MSLine"></div>
+	    	 <a href="JavaScript:fnSenderOpt(4)" class="menulink">&nbsp;Find mail from sender in this folder</a>
+	    	 <a href="JavaScript:fnSenderOpt(5)" class="menulink">&nbsp;Find mail from sender in all folders</a>
+	    </div>
+
+		<div id="mMultiTabsOptMenu" style="display:none">
+	    	 <a href="JavaScript:fnMultiTabsMenuAction(0)" class="menulink">&nbsp;Reply</a> 
+	         <a href="JavaScript:fnMultiTabsMenuAction(1)" class="menulink">&nbsp;Reply all</a>
+			 <a href="JavaScript:fnMultiTabsMenuAction(2)" class="menulink">&nbsp;Forward</a>
+	         <div class="MSLine"></div>
+	         <a href="JavaScript:fnMultiTabsMenuAction(5)" class="menulink">&nbsp;Close</a>
+	         <a href="JavaScript:fnMultiTabsMenuAction(6)" class="menulink">&nbsp;Close all tabs</a>
+	    </div>
+
+	   <!-- Contacts --> 
+	   <div id="mContactsListMenu" style="display:none">
+	    	 <a href="JavaScript:fnChangeContactsViewPeople('0')" class="menulink">&nbsp;All</a>
+	    	 <a href="JavaScript:fnChangeContactsViewPeople('2')" class="menulink">&nbsp;People</a>
+	    	 <a href="JavaScript:fnChangeContactsViewPeople('1')" class="menulink">&nbsp;Groups</a>
+	   </div>
+	   
+	   <div id="mContactsViewtMenu" style="display:none">
+	    	 <a href="JavaScript:fnChangeContactsView('person')"style="display:none" class="menulink">&nbsp;Names</a>
+	    	 <a href="JavaScript:fnChangeContactsView('phone')" class="menulink">&nbsp;Names</a>
+	    	 <a href="JavaScript:fnChangeContactsView('card')" class="menulink">&nbsp;Cards</a>
+	    	 <a href="JavaScript:fnChangeContactsView('birthday')" class="menulink">&nbsp;Birthdays</a>
+	   </div>
+
+	   
+	   <div id="mContactsFieldstMenu" style="display:none">
+	   		 <a href="JavaScript:fnChangeContactsFields('work')" class="menulink">&nbsp;Work</a>
+	    	 <a href="JavaScript:fnChangeContactsFields('home')" class="menulink">&nbsp;Home</a>
+	   </div>
+	   
+	   	   <div id="mContactsEmailtMenu" style="display:none">
+	   		 <a href="JavaScript:fnContactsEmail('To')" class="menulink">&nbsp;To</a>
+	    	 <a href="JavaScript:fnContactsEmail('Cc')" class="menulink">&nbsp;Cc</a>
+	    	 <a href="JavaScript:fnContactsEmail('Bcc')" class="menulink">&nbsp;Bcc</a>
+	   </div>
+
+	    <div id="mContactsCheckBoxOptions" style="display:none">
+	    	 <a href="JavaScript:fnContactsCheckBoxOpt('all')" class="menulink">&nbsp;All</a> 
+	    	 <a href="JavaScript:fnContactsCheckBoxOpt('people')" class="menulink">&nbsp;People</a> 
+	    	 <a href="JavaScript:fnContactsCheckBoxOpt('groups')" class="menulink">&nbsp;Groups</a> 
+	         <a href="JavaScript:fnContactsCheckBoxOpt('none')" class="menulink">&nbsp;None</a> 
+	    </div>
+	    
+	    <div id="mContactsNewOptions" style="display:none; ">
+	    	 <a href="JavaScript:fnContactsNewAction('group')" class="menulink">&nbsp;New group</a> 
+	    	 <a href="JavaScript:fnContactsNewAction('export')" class="menulink">&nbsp;Import or export contacts</a> 
+	    </div>
+
+	    <div id="mContactsbtnArrangeBy" style="display:none">
+	    	 <a href="JavaScript:fnContactSort(0)" class="menulink sort_contact_home sort_contact_work sort_contact"><img id="icoContSort0" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Name</a>
+	    	 <a href="JavaScript:fnContactSort(6)" class="menulink sort_contact_home sort_contact_work sort_contact"><img id="icoContSort6"  class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Nickname</a>
+	    	 <a href="JavaScript:fnContactSort(28)" class="menulink sort_contact_home sort_contact"><img id="icoContSort28" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Personal IM</a>
+	    	 <a href="JavaScript:fnContactSort(24)" class="menulink sort_contact_home sort_contact"><img id="icoContSort24" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Personal Phone</a>
+	    	 <a href="JavaScript:fnContactSort(26)" class="menulink sort_contact_home sort_contact"><img id="icoContSort26" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Mobile Phone</a>
+	    	 <a href="JavaScript:fnContactSort(30)" class="menulink sort_contact_home sort_contact"><img id="icoContSort30" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Birthday</a>
+	    	 <a href="JavaScript:fnContactSort(32)" class="menulink sort_contact_home sort_contact"><img id="icoContSort32" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Anniversary</a>
+	    	 <a href="JavaScript:fnContactSort(34)" class="menulink sort_contact_home sort_contact"><img id="icoContSort34" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Spouse / Partner</a>
+	    	 
+	    	 <a href="JavaScript:fnContactSort(12)" class="menulink sort_contact_work sort_contact"><img id="icoContSort12" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Company</a>
+	    	 <a href="JavaScript:fnContactSort(20)" class="menulink sort_contact_work sort_contact"><img id="icoContSort20" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Work Phone</a>
+	    	 <a href="JavaScript:fnContactSort(22)" class="menulink sort_contact_work sort_contact"><img id="icoContSort22" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Company Directory</a>
+	    	 <a href="JavaScript:fnContactSort(24)" class="menulink sort_contact_work sort_contact"><img id="icoContSort24" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Home Phone</a>
+	    	 <a href="JavaScript:fnContactSort(26)" class="menulink sort_contact_work sort_contact"><img id="icoContSort26" class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Mobile Phone</a>
+	    	 
+	    	 <a href="JavaScript:fnContactSort(0)" class="menulink sort_contact_name sort_contact"><img id="icoContSort15"  class="contacts_sortico" src="#empty" width="16px" height="16px" alt="">&nbsp;Name</a>
+	    </div>
+	    
+	    <!-- contacts view --> 
+		<div id="mContactsViewEmailopt" style="display:none">
+	    	 <a href="JavaScript:fnConctactEmailAs(0)" class="menulink">&nbsp;HTML</a>
+	    	 <a href="JavaScript:fnConctactEmailAs(1)" class="menulink" style="display:none">&nbsp;vCard</a>
+			 <a href="JavaScript:fnConctactEmailAs(2)" class="menulink">&nbsp;Business Card</a>
+			 <a href="JavaScript:fnConctactEmailAs(3)" class="menulink">&nbsp;Web Feed</a>
+
+	    </div>
+	    
+	   	<div id="mContactsViewExportopt" style="display:none">
+	    	 <a href="JavaScript:fnContactsExportCSV()" class="menulink">&nbsp;CSV</a>
+	    	 <a href="JavaScript:fnContactsExportXML()" class="menulink">&nbsp;XML</a>
+	    </div>
+
+
+		<!-- Backpack -->
+		<div id="mNavDirsOptMenu" style="display:none">
+	    	 <a href="JavaScript:fnNavDirMenuAction(0)" class="menulink">&nbsp;New</a> 
+	         <a id="mNavDirsOptMenuRename" href="JavaScript:fnNavDirMenuAction(1)" class="menulink">&nbsp;Rename</a>
+	         <div id="mNavDirsOptMenudivide" class="MSLine"></div>
+	         <a id="mNavDirsOptMenuEmpty" href="JavaScript:fnNavDirMenuAction(2)" style="display:none" class="menulink">&nbsp;Empty</a>
+	         <a id="mNavDirsOptMenuDelete" href="JavaScript:fnNavDirMenuAction(3)" class="menulink">&nbsp;Delete</a>
+	         <div id="mNavDirsOptMenudivideRoot" class="MSLine"></div>
+	         <a href="JavaScript:fnNavDirMenuAction(10)" class="menulink">&nbsp;New main folder</a>
+	         <a href="JavaScript:fnNavDirMenuAction(11)" class="menulink">&nbsp;Refresh</a>  
+	    </div>
+	    
+	   	<div id="mBackpackViewtMenu" style="display:none">
+	    	 <a href="JavaScript:fnChangeBackpackView('thumbnails')"  class="menulink">&nbsp;Thumbnails</a>
+	    	 <a href="JavaScript:fnChangeBackpackView('details')" class="menulink">&nbsp;Details</a>
+	   	</div>
+
+
+		<div id="mBackpackCheckBoxOptions" style="display:none">
+	    	 <a href="JavaScript:fnBackpackCheckBoxOpt('all')" class="menulink">&nbsp;All</a> 
+	    	 <a href="JavaScript:fnBackpackCheckBoxOpt('none')" class="menulink">&nbsp;None</a> 
+	    	 <a href="JavaScript:fnBackpackCheckBoxOpt('misc')" class="menulink" style="display:none">&nbsp;Misc. files</a> 
+	         <a href="JavaScript:fnBackpackCheckBoxOpt('video')" class="menulink" style="display:none">&nbsp;Media files</a> 
+	         <a href="JavaScript:fnBackpackCheckBoxOpt('images')" class="menulink" style="display:none">&nbsp;Images</a>     
+	    </div>
+
+
+		<div id="mPopCollectorCheckBoxOptions" style="display:none">
+	    	 <a href="JavaScript:fnPopCollectorCheckBoxOpt('all')" class="menulink">&nbsp;All</a> 
+	    	 <a href="JavaScript:fnPopCollectorCheckBoxOpt('none')" class="menulink">&nbsp;None</a> 
+	    	 <div id="mBackPackDirsOptMenudivide" class="MSLine"></div>
+	    	 <a href="JavaScript:fnPopCollectorCheckBoxOpt('active')" class="menulink">&nbsp;Active</a> 
+	         <a href="JavaScript:fnPopCollectorCheckBoxOpt('disable')" class="menulink">&nbsp;Disabled</a> 
+	         <div class="MSLine"></div>
+	         <a href="JavaScript:fnPopCollectorCheckBoxOpt('auto')" class="menulink">&nbsp;Auto check</a>
+			<a href="JavaScript:fnPopCollectorCheckBoxOpt('manual')" class="menulink">&nbsp;Manual check</a>       
+	    </div>
+
+
+	  	<div id="mBackPackDirsOptMenu" style="display:none">
+	    	 <a href="JavaScript:fnBackPackDirMenuAction(0)" class="menulink">&nbsp;New</a> 
+	         <a id="mBackPackDirsOptMenuRename" href="JavaScript:fnBackPackDirMenuAction(1)" class="menulink">&nbsp;Rename</a>
+	         <div id="mBackPackDirsOptMenudivide" class="MSLine"></div>
+	         <a id="mBackPackDirsOptMenuDelete" href="JavaScript:fnBackPackDirMenuAction(3)" class="menulink">&nbsp;Delete</a>
+	    </div>
+
+
+	  	<div id="mBackPackFileOptMenu" style="display:none">
+	         <a id="mBackPackFileOptMenuRename" href="JavaScript:fnBackPackFileMenuAction(0)" class="menulink">&nbsp;Rename</a>
+	         <div class="MSLine"></div>
+	         <a id="mBackPackFileOptMenuDelete" href="JavaScript:fnBackPackFileMenuAction(1)" class="menulink">&nbsp;Delete</a>
+	    </div>
+
+
+	  	<div id="mBackPackShareOptMenu" style="display:none">
+	  		 <a href="JavaScript:fnBackPackSendFile(0)" class="menulink">&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/email_16.png" src=""  class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>&nbsp;Email</a> 
+	  		 <a href="JavaScript:fnBackPackSendFile(1)" class="menulink">&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/1392175135_icon-20.png" src="" class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>&nbsp;Send links</a>
+	  		 <a id="DrivePubShare" href="JavaScript:fnBackPackShareFile(0)" class="menulink">&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/1392268816_network_folder.png" src="" class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>&nbsp;Add to public folder</a>
+	  		 <div id="mBackPackDirsOptMenudivide" class="MSLine"></div>
+	  		 <a href="JavaScript:fnBackPackSendFile(7)" class="menulink menusocialDrive">&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/facebook_16.png" src=""  class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>&nbsp;Facebook</a>
+	  		 <a href="JavaScript:fnBackPackSendFile(8)" class="menulink menusocialDrive">&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/twitter_16.png" src="" class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>&nbsp;Twitter</a>
+	  		 <a href="JavaScript:fnBackPackSendFile(9)" class="menulink menusocialDrive">&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/googleplus_16.png" src=""   class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>&nbsp;Google+</a> 
+	  		 <a href="JavaScript:fnBackPackSendFile(10)" class="menulink menusocialDrive">&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/linkedin_16.png" src=""  class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>&nbsp;LinkedIn</a>   
+	  		 <div id="mBackPackDirsOptMenudivide" class="MSLine"></div>
+	    	 <a href="JavaScript:fnBackPackShareFile(1)" class="menulink">&nbsp;View my shared URL</a>
+	         <a href="JavaScript:fnBackPackShareFile(2)" class="menulink">&nbsp;Send my shared URL</a>
+	    </div>
+
+	  	<div id="mBackPackShareMiniOptMenu" style="display:none">
+	    	 <a href="JavaScript:" class="menulink">
+	    	 	 <img onclick="fnShareImg(4)" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/email_16.png" src="" title="Email" class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>
+	    	 	 &nbsp;&nbsp;&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/1392175135_icon-20.png" onclick="fnShareImg(5)" src=""  title="Send links" class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>
+		    	 &nbsp;&nbsp;&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/1392268816_network_folder.png" onclick="fnShareImg(6)" src=""  title="Add to public folder" class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>
+		    	 &nbsp;&nbsp;&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/facebook_16.png" src="" onclick="fnShareImg(7)" title="Facebook" class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>
+		    	 &nbsp;&nbsp;&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/twitter_16.png" onclick="fnShareImg(8)" src="" title="Twitter" class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>
+		         &nbsp;&nbsp;&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/googleplus_16.png" onclick="fnShareImg(9)" src=""  title="Google+" class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>
+		   		 &nbsp;&nbsp;&nbsp;<img data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/linkedin_16.png" onclick="fnShareImg(10)" src="" title="LinkedIn" class="jqTootltip postLoadIMG" style="height:16px; height:16px; cursor:pointer"/>
+	   		 </a>
+	    </div>
+
+		<div id="mBackPackDirsList" style="display:none"></div>
+	    <!-- ---- -->
+	    
+		<!--  Alias -->
+		<div id="mRTEAlias" style="display:none">
+	    </div>
+	    <!-- ---- -->
+	    
+	    <!-- Mail search popup ---------------------------------------------------------------------------------------------------------------------------------------------->
+	    <div id="mMailSearchOptMenu" onclick="event.stopPropagation();" style="display:none">
+	    
+
+			<form id="MailSearchForm" name="MailSearchForm" action="#" method="get">
+			<table cellpadding="3"  cellspacing="3" style="width: 580px;font-size:12px !important; font-family:Arial, Helvetica, sans-serif;">
+			
+				<tr>
+					<td style="white-space: nowrap; font-weight:bold">Fields</td>
+				</tr>
+				<tr>
+					<td style="width: 100%;white-space: nowrap;">
+						<input name="RadioearchField" id="RadioearchField0" onclick="fnSearchField(0)" type="radio" value="FROM" />&nbsp;From&nbsp;&nbsp;
+						<input name="RadioearchField" id="RadioearchField1" onclick="fnSearchField(1)" type="radio" value="TO" />&nbsp;To&nbsp;&nbsp;
+						<input name="RadioearchField" id="RadioearchField2" onclick="fnSearchField(2)" type="radio" value="CC" />&nbsp;Cc&nbsp;&nbsp;
+						<input name="RadioearchField" id="RadioearchField3" onclick="fnSearchField(3)" type="radio" value="SUBJECT" />&nbsp;Subject&nbsp;&nbsp;
+			                        <span id="rdbtFullSearch"><input name="RadioearchField" id="RadioearchField4" onclick="fnSearchField(4)" checked="checked" value="BODY" type="radio" />&nbsp;Full message&nbsp;&nbsp;</span>
+						<div style="display:none"><input name="RadioearchField" id="RadioearchField5" onclick="fnSearchField(5)" type="radio" value="TEXT"/>&nbsp;Message headers&nbsp;&nbsp;</div>
+					  <!-- Search mode uad_korney 11/02/2015 -->
+                                          
+                                           <select id="s_search_mode" style="display:none;">
+                                             <option value="default"></option>
+                                           </select>
+                                          
+                                        </td>
+				</tr>
+
+				<tr>
+					<td style="white-space: nowrap; font-weight:bold">Date</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="width: 100%;white-space: nowrap; vertical-align:middle;">
+						<input type="checkbox" value="ON" id="s_date_option" onclick="fnMailSearchCheckDate(this)" style="font-size:12px !important; font-family:Arial, Helvetica, sans-serif"/>
+						<select id="s_restrict_date"   style="font-size:12px !important; font-family:Arial, Helvetica, sans-serif" >
+					      	<option  value="ON">On</option>
+					      	<option  value="BEFORE">Before</option>
+					      	<option  value="SINCE">Since</option>
+                         	      	   <!-- Additional date criterias  uad_korney 04/29/2015-->
+                         	      	   <!-- KA: temp. disabled this part-->
+                         	      	   
+				      	</select>
+			      
+				      <select id="s_month" style="font-size:12px !important; font-family:Arial, Helvetica, sans-serif" onchange="document.getElementById('s_date_option').checked = true;">
+						  <option value="0"    > Month</option>
+						  <option value="Jan"  > Jan</option>
+						  <option value="Feb"  > Feb</option>
+						  <option value="Mar"  > Mar</option>
+						  <option value="Apr"  > Apr</option>
+					      <option value="May"  > May</option>
+					      <option value="Jun"  > Jun</option>
+					      <option value="Jul"  > Jul</option>
+					      <option value="Aug"  > Aug</option>
+					      <option value="Sep"  > Sep</option>
+					      <option value="Oct"  > Oct</option>
+					      <option value="Nov"  > Nov</option>
+					      <option value="Dec"  > Dec</option>
+				      </select>
+			      
+				     <select style="font-size:12px !important; font-family:Arial, Helvetica, sans-serif" id="s_day" onchange="document.getElementById('s_date_option').checked = true;">
+						 <option value="0">Day</option>
+						 <option value="1"> 1</option>
+						 <option value="2"> 2</option>
+						 <option value="3"> 3</option>
+						 <option value="4"> 4</option>
+						 <option value="5"> 5</option>
+						 <option value="6"> 6</option>
+						 <option value="7"> 7</option>
+						 <option value="8"> 8</option>
+						 <option value="9"> 9</option>
+						 <option value="10"> 10</option>
+						 <option value="11"> 11</option>
+						 <option value="12"> 12</option>
+						 <option value="13"> 13</option>
+						 <option value="14"> 14</option>
+						 <option value="15"> 15</option>
+						 <option value="16"> 16</option>
+						 <option value="17"> 17</option>
+						 <option value="18"> 18</option>
+						 <option value="19"> 19</option>
+						 <option value="20"> 20</option>
+						 <option value="21"> 21</option>
+						 <option value="22"> 22</option>
+						 <option value="23"> 23</option>
+						 <option value="24"> 24</option>
+						 <option value="25"> 25</option>
+						 <option value="26"> 26</option>
+						 <option value="27"> 27</option>
+						 <option value="28"> 28</option>
+						 <option value="29"> 29</option>
+						 <option value="30"> 30</option>
+						 <option value="31"> 31</option>
+					 </select>
+			 
+				 	<select style="font-size:12px !important; font-family:Arial, Helvetica, sans-serif" id="s_year" onchange="document.getElementById('s_date_option').checked = true;">
+					 <option value="2006"  >2006</option>
+						 <option value="2007"  >2007</option>
+						 <option value="2008"  >2008</option>
+						 <option value="2009"  >2009</option>
+						 <option value="2010" >2010</option>
+						 <option value="2011"  >2011</option>
+						 <option value="2012"  >2012</option>
+						 <option value="2013"  >2013</option>
+						 <option value="2014" >2014</option>
+						<option value="2015" >2015</option>
+						 <option value="2016" selected="selected">2016</option>
+					 </select>
+								</td>
+				</tr>
+						
+				<tr>
+					<td style="white-space: nowrap; font-weight:bold">Size</td>
+				</tr>
+				<tr>
+					<td style="width: 100%;white-space: nowrap;">
+						<input type="checkbox" value="ON" id="s_size_option" onclick="fnMailSearchSizeOpt(this)" />
+					     <select style="font-size:12px !important; font-family:Arial, Helvetica, sans-serif" id="s_restrict_size" onchange="document.getElementById('s_size_option').checked = true;" >
+				 		<option value="SMALLER"  >Less than</option>
+					 	<option value="LARGER"    >Greater than</option>
+				 		</select>
+				 		<input type="text" id="s_size" value="" size="3" maxlength="5"  onchange=""  style="font-size:11px; width:40px"/>&nbsp;KB
+					</td>
+				</tr>
+				<!-- Messages types criterias  uad_korney 04/29/2015-->
+                                
+				<tr style="display:none">
+					<td style="white-space: nowrap;  font-weight:bold">Type</td>
+				</tr>		
+				<tr style="display:none">
+					<td style="width: 100%;white-space: nowrap;">					
+					     <select id="s_message_type" >
+					         <option value="ALL"      >All</option>
+					         <option value="NEW"      >New only</option>
+					         <option value="ANSWERED" >Replied only</option>
+					         <option value="FLAGGED"  >Forwarded only</option>
+						 </select>
+					</td>
+				</tr>
+					
+				<tr>
+					<td style="white-space: nowrap; font-weight:bold; padding-top:5px">Folders</td>
+				</tr>
+				<tr>
+					<td style="width: 100%;white-space: nowrap;">
+			        <div id="pgSearchFoldersID" style="border:1px #E1E1E1 solid; max-height:110px !important ; overflow:auto; color: #8A8A8A; width:99%; margin-left:0px; padding-top:3px; font-size:12px !important; font-family:Arial, Helvetica, sans-serif">
+			            <!-- === Left Panel Folders HTML ==== -->
+			            <div style="text-align:center">Loading...</div>
+			        </div>
+			        
+			        </td>
+				</tr>  			 
+			    
+			</table>    
+			</form>
+    
+			<div id="" style=" color:#fff; padding:10px ; margin-top:5px">
+				<div style="display:inline-block; float:left; font-weight:normal;color:#708194;"></div>
+				<div style="display:inline-block; float:right; padding-bottom:3px;">
+					<a id="SearchAdvancedBtn" href="JavaScript:CurentPage =1; fnmDoSearch()" class="buttonSnd">Search</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="JavaScript:fnSearchClose()" id="SearchAdvancedCloseBtn" class="yui3-button">Close</a>
+				</div>
+			</div>	
+
+			
+	    </div>
+	    <!-- Mail search popup ENDS  ---------------------------------------------------------------------------------------------------------------------------------------------->
+	    
+		<!-- MagicBox -->
+	    <div id="mMBoxCheckBoxOptions" style="display:none">
+	    	 <a href="JavaScript:fnMBoxCheckBoxOpt('All')" class="menulink">&nbsp;All</a> 
+	         <a href="JavaScript:fnMBoxCheckBoxOpt('None')" class="menulink">&nbsp;None</a> 
+	         <div class="MSLine"></div>
+	         <a href="JavaScript:fnMBoxCheckBoxOpt('Photos')" class="menulink">&nbsp;Photos</a>
+			 <a href="JavaScript:fnMBoxCheckBoxOpt('Videos')" class="menulink">&nbsp;Videos</a>
+	         <a href="JavaScript:fnMBoxCheckBoxOpt('Audio')" class="menulink">&nbsp;Audio</a>
+	         <div class="MSLine"></div>
+	         <a href="JavaScript:fnMBoxCheckBoxOpt('Other')" class="menulink">&nbsp;Other</a>
+	    </div>
+	   
+	    <div id="mMBoxSortOptions" style="display:none">
+	    	 <a href="JavaScript:fnMBoxCheckBoxOpt('Name')" class="menulink">&nbsp;Name</a> 
+	         <a href="JavaScript:fnMBoxCheckBoxOpt('Size ')" class="menulink">&nbsp;Size</a> 
+	         <a href="JavaScript:fnMBoxCheckBoxOpt('Type')" class="menulink">&nbsp;Type</a>
+	    </div>
+	    
+	    <!-- Calendar -->
+	    <div id="mCalendarNewOptions" style="display:none; width:165px">
+	    	 <a href="JavaScript:fnCalendarNewAction('reminder')" class="menulink">&nbsp;Add Reminder</a> 
+	    	 <a href="JavaScript:fnCalendarNewAction('task')" class="menulink">&nbsp;Add task</a> 
+	    	 <a href="JavaScript:fnCalendarNewAction('note')" class="menulink">&nbsp;Add note</a> 
+	    </div>
+	    
+	    
+	    
+	    
+    </div>
+    
+    <div style="display:none; height:25px; line-height:25px; position:absolute; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; z-index:1001; border:1px #CCCCCC solid; background-color:#fff; font-family:arial, helvetica, sans-serif; font-size: 11px; color: #545454;-moz-box-shadow: 2px 2px 2px #CACACA;-webkit-box-shadow: 2px 2px 2px #CACACA;box-shadow: 2px 2px 2px #CACACA;" id="DragDIVID">&nbsp;&nbsp;<img height="16" id="icoDragnDropInbox" alt="" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/no_drop_16.png" width="16" align="middle"/>&nbsp;&nbsp;<span id="dragndrop_span">Drag to a folder or the Reading Pane</span>&nbsp;&nbsp;</div>
+    <!-- ::::: DROP MENUS  ENDS  ::::: -->
+
+    <!-- ::::: Contacts View Page STARTS  ::::: -->
+    <div id="divContactsView" class="MsgpreFullscreen" style="position:absolute;z-index:101;display:none; background-color:#fff; padding-top:0px ;">
+    	<div id="mContactMainPanelHead" style="height:32px;line-height:30px;font-size:16px; BORDER-bottom: #F3F3F3 1px solid; clear:both; visibility:hidden">	
+   			<a id="btnContactViewPrint" class="ContactActions" href="JavaScript:fnContactsViewPrint()" style="display:">Print</a>
+   			<a id="btnContactsGroupForward" class="ContactActions" href="JavaScript:fnContactsGroupForward()" style="display:none">Forward</a>
+   			<a id="btnContactGroupExport" class="ContactActions" href="JavaScript:fnContactsGroupExport()" style="display:none">Export</a>
+   			<a id="btnContactViewEmail" class="ContactActions" href="JavaScript:fnShowPOPOpt('btnContactViewEmail', 'mContactsViewEmailopt',0,0)" style="display:">Email contact as&nbsp;&nbsp;<img alt="More" height="4" class="postLoadIMG" src="" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png" width="8" /></a>
+   			<a id="btnContactViewExport" class="ContactActions" href="JavaScript:fnShowPOPOpt('btnContactViewExport', 'mContactsViewExportopt',0,0)" style="display:">Export&nbsp;&nbsp;<img alt="More" class="postLoadIMG" height="4" src="" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png" width="8" /></a>
+   			<a id="btnContactViewDownload" class="ContactActions" href="JavaScript:fnContactsViewDownloadVcard()" style="display:">Download vCard</a>
+    		<span style="float:right" >
+    			<a id="btnContactViewEdit" class="ContactActions" href="JavaScript:fnContactsViewEdit()" style="display:"><img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/con_edit.png" title="Edit" src="" /></a>
+    			<a id="btnContactViewSave" class="ContactActions" href="JavaScript:fnContactsViewSave()" style="display:none"><img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/con_save.png" title="Save" src="" /></a>
+    			<a id="btnContactViewDelete" class="ContactActions" href="JavaScript:fnContactsViewDelete()" style="display:"><img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/con_delete.png" title="Delete" src="" /></a>
+    			<a id="btnContactViewClose" class="ContactActions" href="JavaScript:fnContactsExitFullscreen()" style="display:"><img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip postLoadIMG" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_454545.png" title="Close"  /></a>&nbsp;
+    		</span>
+    	</div>
+    	<iframe id="ifm_ContactsView" style="background-color:#fff;padding-top:15px; BORDER: #ffffff 0px solid; overflow:auto" scrolling="auto" frameborder="0" border=0 name="ifm_ContactsView" src="about:blank" width="100%" height="100%" allowTransparency  borderwidth="0"></iframe>
+    </div>
+    <!-- ::::: Contacts View Page ENDS ::::: -->
+    
+
+    <!-- ::::: Feedback form View Page STARTS  ::::: -->
+    <div id="divFeedbackFormView" class="MsgpreFullscreen" style="position:absolute;z-index:101;display:none; background-color:#fff; padding-top:0px ;">
+    	<div style="height:32px;line-height:30px;font-size:16px; BORDER-bottom: #F3F3F3 1px solid; clear:both; background-color:#F4F4F4; text-align:center">	
+    		Feedback
+    		<span style="float:right" >
+    			<a class="ContactActions" href="JavaScript:fnFeedbackFormExitFullscreen()" style="display:"><img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip postLoadIMG" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_454545.png" title="Close"  /></a>&nbsp;
+    		</span>
+    	</div>
+    	<iframe id="ifm_FeedbackFormView" style="background-color:#fff;padding-top:15px; BORDER: #ffffff 0px solid; overflow:auto" scrolling="auto" frameborder="0" border=0 name="ifm_FeedbackFormView" src="about:blank" width="100%" height="100%" allowTransparency  borderwidth="0"></iframe>
+    </div>
+    <!-- ::::: Feedback form View Page ENDS ::::: -->
+
+
+    <!-- ::::: POP3 View Page STARTS  ::::: -->
+    <div id="divPOP3View" class="MsgpreFullscreen" style="position:absolute;z-index:101;display:none; background-color:#fff; padding-top:0px ;">
+    	<div id="mPOP3MainPanelHead" style="height:32px;line-height:30px;font-size:16px; BORDER-bottom: #F3F3F3 1px solid; clear:both; visibility:hidden">	
+    		<span style="float:right" >
+    			<a id="btnPOP3ViewSave" class="ContactActions" href="JavaScript:fnPOP3ViewSave()" style="display:"><img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/con_save.png" title="Save" src="" /></a>
+    			<a id="btnPOP3ViewDelete" class="ContactActions" href="JavaScript:fnPOP3ViewDelete()" style="display:none"><img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/con_delete.png" title="Delete" src="" /></a>
+    			<a id="btnPOP3ViewClose" class="ContactActions" href="JavaScript:fnPOP3ExitFullscreen()" style="display:"><img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_454545.png" title="Close" src="" /></a>&nbsp;
+    		</span>
+    	</div>
+    	<iframe id="ifm_POP3View" style="background-color:#fff;padding-top:15px; BORDER: #ffffff 0px solid; overflow:auto" scrolling="auto" frameborder="0" border=0 name="ifm_POP3View" src="about:blank" width="100%" height="100%" allowTransparency  borderwidth="0"></iframe>
+    </div>
+    <!-- ::::: POP3 View Page ENDS ::::: -->
+
+    <!-- ::::: POP3 Status POP STARTS  ::::: -->
+    <div id="divPOP3StatusView" class="MsgpreFullscreen" style="position:absolute;z-index:101;display:none; background-color:#fff; padding-top:0px ;">
+    	<div id="mPOP3StatusMainPanelHead" style="height:32px;line-height:30px;font-size:16px; BORDER-bottom: #F3F3F3 1px solid; clear:both; visibility:hidden">
+    		<span id="divPOPStatusConn" style="font-size:11px"></span>	
+    		<span style="float:right" >
+    			<a id="btnPOP3StatusViewClose" class="ContactActions" href="JavaScript:fnPOP3StatusExitFullscreen()" style="display:"><img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_454545.png" title="Close" src="" /></a>&nbsp;
+    		</span>
+    	</div>
+    	<div id="divPOPStatusInfo" style="text-align:center; padding-top:10px"></div>
+    </div>
+    <!-- ::::: POP3 Status POP ENDS ::::: -->
+
+
+    <!-- ::::: BackPack : Photos Slideshow View Page STARTS  ::::: -->
+    <div id="divBPPhotoSlideView" class="MsgpreFullscreen" style="position:absolute;z-index:101;display:none; background-color:#fff; padding-top:0px ;">
+    	<iframe id="ifm_BPPhotoSlideView" style="background-color:#000000;BORDER: #ffffff 0px solid; overflow:hidden" scrolling="no" frameborder="0" border=0 name="ifm_BPPhotoSlideView" src="about:blank" width="100%" height="100%" allowTransparency  borderwidth="0"></iframe>
+    </div>
+    <!-- ::::: BackPack : Photos Slideshow View Page ENDS ::::: -->
+    
+
+	<!-- ::::: T H E    M A G I C B O X | STARTS ::::: -->
+	<div id="divMagicBoxMenu" class="MsgpreFullscreen" style="width:540px; border:0px #F2F2F2 solid;  position:absolute; z-index:1002; display:none; background-color:#fff; padding:0px; ">
+		<!-- MBox Header -->
+		<div style="color:#fff; height:35px; line-height:35px; padding-right:15px; padding-left:15px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;" id="MBOX_Header_Title">
+			<div style="display:inline-block; float:left; font-weight:normal;  height:35px; line-height:35px;">
+				<div id="MBoxTitle" style="display:inline-block"></div>
+				<div id="MBoxTotalProgressBarBG" style="margin-left:10px ; position:relative; top:3px ;height:17px; width:158px; color:#fff; text-align:center; display:inline-block">
+					<div id="MBoxTotalProgressBar" class="ProgressBarBGC" style="width:0%; height:16px"></div>
+				</div>
+			</div>
+			<div style="display:inline-block; float:right; height:35px; line-height:35px;">
+				&nbsp;&nbsp;&nbsp;<img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip postLoadIMG" title="Close uploader.  Uploaded files will remain in your Drive" onclick="fnMagicBoxClose()"  data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_20_white.png" src="" id="MBOX_min"/>
+			</div>
+		</div>	
+		<!-- MBox Actions -->	
+		<div style="float: left; width: 100%; -moz-user-select: none; height: 30px; background-color:#F1F2F6; color: #708194; line-height: 30px; font-size: 16px; border-bottom: 1px solid rgb(243, 243, 243);" id="divMBoxList">
+			<a href="JavaScript:fnMBoxShowCheckOpt()" id="ckMPOX" class="jqTootltip" title="Select/deselect all" style="padding-right:0px; padding-left:10px" class="MBoxBtnAction">&nbsp;<input type="checkbox" onclick="MPOXCAll(this)"   id="MBOXCall" name="Call"/>&nbsp;&nbsp;<img width="8" height="4" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png" id="mMainCheckOptImg" class="jqTootltip" title="More"/>&nbsp;&nbsp;</a>&nbsp;
+			<a id="btnMBOXDelte" href="JavaScript:fnMBoxDelete()" title="Move to trash" style="display:none" class="MBoxBtnAction">Delete</a>
+			<a id="btnMBOXEmail" href="JavaScript:fnMBoxEmail()" title="Email file(s)" style="display:none" class="MBoxBtnAction">Email</a>
+			<a id="btnMBOXShare" href="JavaScript:" style="display:none" class="MBoxBtnAction">Share</a>
+			<a href="JavaScript:fnShowPOPOpt('btnMBOXMove', 'mBackPackDirsList',0,0)" id="btnMBOXMove" title="Move to a folder" style="display:none" class="MBoxBtnAction">Move&nbsp;&nbsp;<img width="8" height="4" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png" id="mMainCheckOptImg" alt="More"/></a>&nbsp;&nbsp;
+			<div style="color:#454545; display:inline-block; float: right; font-size: 12px;" id="divMBOXOpt">
+				<a href="JavaScript:fnShowPOPOpt('btnArrangeMPOX', 'mMBoxSortOptions',0,0)" id="btnArrangeMPOX" style="visibility:hidden" class="MBoxBtnAction">By Name&nbsp;&nbsp;<img width="8" height="4" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png" id="mMainCheckOptImg" alt="More"/>&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+		</div>
+		<!-- MBox List -->
+		<div id="divMagicBoxList" style=" margin-top:40px; margin-bottom:10px; min-height:200px !important; overflow-y: auto; overflow-x: hidden; max-height:350px !important;"></div>
+		<div id="divMagicBoxBtns" style=" border-top: 1px #f1f2f6 solid;color:#fff; background-color:#F1F2F6; height:50px; line-height:50px; padding-right:20px; padding-left:15px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+			<div style="display:inline-block; float:left; font-weight:normal; padding-left:0px; color:#708194;  height:50px; line-height:50px;"><span class="jqTootltip" title="Automatically sort files into folders based on type" ><input type="checkbox" saction="done" onclick="MPOXCheckAI(this)"  id="MBOXAI" name="Call"/>&nbsp;Organize files</span></div>
+			<div style="display:inline-block; float:right;  height:50px; line-height:50px;">
+				<a id="MBoxDoneBtn" href="JavaScript:fnMBoxDoneBtn()" class="yui3-button">Done</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="JavaScript:fnMBoxGoToMyfilesBtn()" id="MBoxGoToMyfilesBtn" class="buttonSnd">Go to Drive</a>
+			</div>
+		</div>	
+	
+	</div>
+	<!-- ::::: T H E    M A G I C B O X | ENDS  ::::: -->
+
+
+	<!-- ::::: TEXT TRANSLATOR STARTS  ::::: -->
+	<div id="divTranslatorMenu" class="MsgpreFullscreen" style="width:640px; border:0px #F2F2F2 solid;  position:absolute; z-index:1002; display:none; background-color:#fff; padding:0px; ">
+		<!-- MBox Header -->
+		<div style="color:#fff; height:35px; line-height:35px; padding-right:15px; padding-left:15px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;" id="TransBOX_Header_Title">
+			<div style="display:inline-block; float:left; font-weight:normal; height:35px; line-height:35px;">Translator</div>
+			<div style="display:inline-block; float:right; height:35px; line-height:35px;">
+				&nbsp;&nbsp;&nbsp;<img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip" title="Close translator" onclick="fnTranslatorBoxClose()" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_20_white.png" id="MBOX_min"/>
+			</div>
+		</div>	
+		<!-- Actions -->		
+		<div style="float: left; width: 100%; -moz-user-select: none; height: 30px; background-color:#F1F2F6; color: #708194; line-height: 30px; font-size: 16px; border-bottom: 1px solid rgb(243, 243, 243);" id="divMBoxList">
+			<a href="JavaScript:fnShowPOPOpt('btnTranslatorLangMenu', 'mTranslatorMenu',0,0)" id="btnTranslatorLangMenu" style="visibility:visible" class="MBoxBtnAction"><span id="TranslatorLangMenuTxt">English to French</span>&nbsp;&nbsp;<img width="8" height="4" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png" id="mMainCheckOptImg" alt="More"/>&nbsp;</a>
+			<a href="JavaScript:fnShowPOPOpt('btnTranslatorLangOptMenu', 'mTranslatorOptMenu',0,0)" id="btnTranslatorLangOptMenu" style="visibility:visible; display:none" class="MBoxBtnAction">Options&nbsp;&nbsp;<img width="8" height="4" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png" id="mMainCheckOptImg" alt="More"/>&nbsp;</a>
+		</div>
+		<!-- List -->
+		<div id="divTranslatorBoxList" style=" margin-top:40px; margin-bottom:10px; margin-left:10px ; min-height:200px !important; overflow-y: auto; overflow-x: hidden;">
+			<textarea rows="6" cols="70" id="translation_input" onfocus="fnmTranslateFocus()" style="width: 609px; height: 86px;">Enter text here</textarea>
+			<div style="height:10px"></div>
+			<div style="width: 615px; height: 86px; background-color:#F0F0F0; overflow:auto !important" id="translation_output"></div>
+		</div>
+		<div id="divTranslatorBoxBtns" style=" border-top: 0px #f1f2f6 solid;color:#fff; padding-right:20px; padding-left:15px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+			<div style="height:50px; line-height:50px; text-align:right; margin-top:20px ">
+				<a id="MBoxTranslateBtn" href="JavaScript:fnTranslateBtn()"  class="buttonSnd">Translate</a><span id="rteInsertTransTxt" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;<a id="MBoxTranslateBtn" href="JavaScript:fnRTETranslateBtn()"  class="buttonSnd">Use</span></a>
+			</div>
+		</div>	
+	</div>
+	<!-- ::::: TEXT TRANSLATOR ENDS ::::: -->
+
+
+ 	<!-- ::::: T H E   D R I V E B O X STARTS  ::::: -->
+	<div id="divDriveBoxMenu" class="MsgpreFullscreen" style="width:650px; border:0px #F2F2F2 solid;  position:absolute; z-index:1002; display:none; background-color:#fff; padding:0px; ">
+		<!-- MBox Header -->
+		<div style="color:#fff; height:35px; line-height:35px; padding-right:15px; padding-left:15px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;" id="DriveBOX_Header_Title">
+			<div style="display:inline-block; float:left; font-weight:normal; height:35px; line-height:35px;">
+				<div id="DriveBoxTitle" style="display:inline-block">Attach files from Drive</div>
+			</div>
+			<div style="display:inline-block; float:right; height:35px; line-height:35px;">
+				&nbsp;&nbsp;&nbsp;<img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip" title="Close" onclick="fnDriveBoxClose()" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_20_white.png" id="DriveBox_min"/>
+			</div>
+		</div>	
+		<!-- Actions -->		
+		<div style="float: left; width: 100%; -moz-user-select: none; height: 30px; background-color:#F1F2F6; color: #708194; line-height: 30px; font-size: 16px; border-bottom: 1px solid rgb(243, 243, 243);" id="divMBoxList">
+			<a href="JavaScript:fnShowPOPOpt('ckDriveBox', 'mBackpackCheckBoxOptions',0,0)" id="ckDriveBox" class="MBoxBtnAction jqTootltip" title="Select/deselect all" style="padding-right:0px; padding-left:10px">&nbsp;<input type="checkbox" onclick="fnBackpackCAll(this)"   id="CallBackpack" name="CallBackpack"/>&nbsp;&nbsp;<img  width="8" height="4" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png"  class="jqTootltip" title="More"/>&nbsp;&nbsp;</a>&nbsp;
+			<a id="btnDriveBoxBack" href="JavaScript:fnDriveBoxBack()" style="display:inline-block" class="MBoxBtnAction">Go back</a>
+		</div>
+		<!-- List -->
+		<div id="divDriveBoxList" style="height:350px !important; margin-top:40px; margin-bottom:10px; min-height:200px !important; overflow-y:scroll ; overflow-x: hidden; max-height:350px !important;"></div>
+		<div id="divDriveBoxBtns" style=" border-top: 1px #f1f2f6 solid;color:#fff; background-color:#F1F2F6; height:50px; line-height:50px; padding-right:20px; padding-left:15px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+			<div style="display:inline-block; float:left; font-weight:normal; padding-left:0px; color:#708194;  height:50px; line-height:50px;"><span style="visibility:hidden"></span></div>
+			<div style="display:inline-block; float:right;  height:50px; line-height:50px;">
+				<a id="DriveBoxeInsertBtn" href="JavaScript:fnDriveBoxAttachBtn(0)" class="yui3-button">Insert as links</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="DriveBoxeAttachBtn" href="JavaScript:fnDriveBoxAttachBtn(1)" class="yui3-button">Add as attachments</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="JavaScript:fnDriveBoxClose()" id="DriveBoxGoToMyfilesBtn" class="yui3-button">Close</a>
+			</div>
+		</div>	
+	
+	</div>
+	<!-- ::::: T H E   D R I V E B O X  ENDS  ::::: -->
+
+
+	<!-- ::::: MsgRule STARTS  ::::: -->
+	<div id="divMsgRuleMenu" class="MsgpreFullscreen" style="width:640px; border:0px #F2F2F2 solid;  position:absolute; z-index:1002; display:none; background-color:#fff; padding:0px; ">
+		<!-- SetRule Header -->
+		<div style="color:#fff; height:35px; line-height:35px; padding-right:15px; padding-left:15px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;" id="RulesBOX_Header_Title">
+			<div style="display:inline-block; float:left; font-weight:normal; height:35px; line-height:35px;">
+				Create mail rules
+			</div>
+			<div style="display:inline-block; float:right; height:35px; line-height:35px;">
+				&nbsp;&nbsp;&nbsp;<img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip" title="Close" onclick="fnMsgRuleBoxClose()" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_20_white.png" id="MBOX_min"/>
+			</div>
+		</div>			
+		<!-- SetRule List -->
+		<div id="divMsgRuleBoxList" style=" margin-top:5px; margin-bottom:10px; margin-left:10px ; min-height:200px !important; overflow-y: auto; overflow-x: hidden;"></div>
+		<div id="divMsgRuleBoxBtns" style=" border-top: 1px #f1f2f6 solid;color:#fff; background-color:#F1F2F6; padding-right:20px; padding-left:15px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+
+			<div style="height:50px; line-height:50px; text-align:right; ">
+				<a id="MBoxMsgRuleOKBtn" href="JavaScript:fnMsgRuleOKBtn()"  class="yui3-button">Confirm</a>&nbsp;&nbsp;&nbsp;<a  href="JavaScript:fnMsgRuleBoxClose()"  class="yui3-button">Cancel</a>
+			</div>
+		</div>	
+	
+	</div>
+	<!-- ::::: MsgRule ENDS ::::: -->
+	
+
+	<!-- ::::: SaveRecipients STARTS  ::::: -->
+	<div id="divSaveRecipientsMenu" class="MsgpreFullscreen" style="width:580px; border:0px #F2F2F2 solid;  position:absolute; z-index:1002; display:none; background-color:#fff; padding:0px; ">
+		<!-- SetRule Header -->
+		<div style="color:#fff; height:35px; line-height:35px; padding-right:15px; padding-left:15px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;" id="RulesBOX_Header_Title">
+			<div style="display:inline-block; float:left; font-weight:normal; height:35px; line-height:35px;">
+				Add new recipients to your contacts list
+			</div>
+			<div style="display:inline-block; float:right; height:35px; line-height:35px;">
+				&nbsp;&nbsp;&nbsp;<img style="padding-top:0px; height:16px; width:16px; cursor:pointer" class="jqTootltip" title="Close" onclick="fnSaveRecipientsBoxClose()" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_20_white.png" id="MBOX_min"/>
+			</div>
+		</div>			
+		<!-- SetRule List -->
+		<div id="divSaveRecipientsBoxList" style=" margin-top:0px; margin-bottom:0px; margin-left:0px ; min-height:200px !important; overflow-y: auto; overflow-x: hidden; max-height:200px !important; height:200px"></div>
+		<div id="divSaveRecipientsBoxBtns" style=" border-top: 1px #f1f2f6 solid;color:#fff; background-color:#F1F2F6; padding-right:20px; padding-left:15px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+
+			<div style="height:50px; line-height:50px; text-align:right; ">
+				<a id="MBoxSaveRecipientsOKBtn" href="JavaScript:fnSaveRecipientsOKBtn()"  class="yui3-button">Add</a>&nbsp;&nbsp;&nbsp;<a  href="JavaScript:fnSaveRecipientsBoxClose()"  class="yui3-button">Cancel</a>
+			</div>
+		</div>	
+	
+	</div>
+	<!-- ::::: SaveRecipients ENDS ::::: -->
+
+	
+    <!-- ::::: full screen divs STARTS  ::::: -->
+    <div id="raptor-wrapper-fullscreen" onclick="fnExitRTEFullScreen()" style="z-index:98;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="msgprev-fullscreen" onclick="fnMsgExitFullscreen()" style="z-index:100;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="settings-fullscreen" onclick="fnSettingsExitFullscreen()" style="z-index:100;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="contacts-fullscreen" onclickX="fnContactsExitFullscreen()" style="z-index:100;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="feedbackForm-fullscreen" style="z-index:100;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="POP3-fullscreen" onclickX="fnPOP3ExitFullscreen()" style="z-index:100;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="POP3Status-fullscreen" onclickX="fnPOP3StatusExitFullscreen()" style="z-index:100;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="BPPhotoSlide-fullscreen" onclick="fnBPPhotoSlideExitFullscreen()" style="z-index:100;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="DropZone-fullscreen" onclick="" style="z-index:1001;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="Translator-fullscreen" onclick="" style="z-index:1001;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="MsgRule-fullscreen" onclick="" style="z-index:1001;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<div id="SaveRecipients-fullscreen" onclick="" style="z-index:1001;width:100%;  height:100% ;position:absolute; top:0px; left:0px; background-color:#e3e4e8; display:none; opacity:.4"></div>
+	<!-- ::::: full screen divs ENDS  ::::: -->
+
+
+	<!-- ::::: RTE HTML inclide  ::::: -->
+	<!-- ##################   RTE ############################### -->
+
+    <div id="raptor-wrapper" class="RTEShadowbox" style="z-index:99; width:630px;position:absolute; top:0px; left:-1000px; font-size:12px; font-family:Arial, Helvetica, sans-serif; visibility:hidden; background-color:#fff;  border:1px #CCCCCC solid; color:#353b44"> <!-- raptor-wrapper starts -->
+
+		<div id="RTE_Header">
+			<div id="RTE_Header_Title" class="RTEHNormal" style="color:#fff;  height:30px; line-height:30px; padding-right:8px; padding-left:8px; padding-right:8px">
+				<div style="display:inline-block; float:left; font-weight:normal; max-width:480px; width: 480px ;white-space :nowrap; overflow:hidden; text-overflow: ellipsis; cursor:pointer;" id="divRTETitle">New message</div>
+				<div style="display:inline-block; float:right; height:30px; line-height:30px;"><img id="rte_min" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/minimize_rte.png"  title="Minimize"  onclick="fnRTEMinimize(); " style="height:16px; width:16px; cursor:pointer; padding-top:0px; padding-right:8px">&nbsp;&nbsp;&nbsp;<img id="rte_fullscreen" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/fullscreen.png"  title="Open in full view"  onclick="fnRTEFullScreen(false); " style="height:16px; width:16px; cursor:pointer; padding-top:0px; padding-right:8px">&nbsp;&nbsp;&nbsp;<img id="rte_min" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_20_white.png" onclick="fnRTEXClose()"  title="Close" style="padding-top:0px; height:16px; width:16px; cursor:pointer"></div>
+			</div>
+			 
+			<div id="rte_ToCc" style="width:610px; background-color:#fff; overflow-y: auto; overflow-x: hidden;  margin-left:10px; margin-right:10px">
+
+				<div id="rtEmaillistFromRow" style="min-height: 30px; clear:both; display:none">
+					<div id="rte_FromTxt" style="height:28px;line-height:30px; width:50px; display:inline-block; float:left">&nbsp;From</div>
+					<div id="" style="display:inline-block; float:left ;height:28px;line-height:30px;">
+						<a id="rtToAlias" class="jqTootltip" title="" style="" href="JavaScript:fnShowPOPOpt('rtToAlias', 'mRTEAlias',0,-10)"><span id="spanAlias"></span>&nbsp;&nbsp;<img id="mMainCheckOptImg" class="jqTootltip" width="8" height="4" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png"></a>
+					</div>
+				</div>
+				
+				<div onclick="$('#rte_to').focus();" id="rtEmaillistToRow" style="min-height: 30px; clear:both; ">
+					<div id="rte_ToTxt" style="height:28px;line-height:30px; width:50px; display:inline-block; float:left">&nbsp;To</div>
+					<div id="rtEmaillistTo" style="display:inline-block; float:left"><input type="text" value="" spellcheck="false" autocomplete="false" tabindex="10" onfocus="fnSetRTEEmailFocus(this)" dir="ltr" id="rte_to" onblur="fnrtAutoComBlur()" onkeydown="fnrteKeyDown(this,event)" onkeyup="fnCheckRTEEmails(this,event);" style=" color:#353B44; background-color:#fff;display:inline-block; float:left; width:463px; border:1px #fff; padding-top:8px; font-size:12px; font-family:Arial, Helvetica, sans-serif"><span style="display:inline-block; float:right; margin-right:1px; padding-top:4px" id="AddCcBccSpan">  <a id="aAddBcc" href="JavaScript:fnShowCcBcc('bcc')" class="AddccBcc jqTootltip"  title="Add Bcc recipients">Bcc</a> <a id="aAddCc" href="JavaScript:fnShowCcBcc('cc')" style="margin-right:3px" class="AddccBcc jqTootltip"  title="Add Cc recipients">Cc</a> </span></div>
+				</div>
+				
+				<div onclick="$('#rte_cc').focus();" id="rtEmaillistCcRow" style="min-height: 30px; display:none; clear:both; border-top : #E1E1E1 1px solid">
+					<div id="rte_ccTxt" style="height:30px;line-height:30px; width:50px; display:inline-block; float:left">&nbsp;Cc</div>
+					<div id="rtEmaillistCc" style="height:inherit; display:inline-block; float:left"><input type="text" value="" spellcheck="false" autocomplete="false" tabindex="11" onfocus="fnSetRTEEmailFocus(this)" dir="ltr" id="rte_cc" onblur="fnrtAutoComBlur()" onkeydown="fnrteKeyDown(this,event)" onkeyup="fnCheckRTEEmails(this,event);" style=" color:#353B44; background-color:#fff;display:inline-block; float:left; width:525px; border:1px #fff; padding-top:5px; padding-top:8px; font-size:12px; font-family:Arial, Helvetica, sans-serif"></div>
+				</div>
+				
+				<div onclick="$('#rte_bcc').focus();" id="rtEmaillistBccRow" style="min-height: 30px; display:none; clear:both; border-top : #E1E1E1 1px solid">
+					<div id="rte_bccTxt" style="height:30px;line-height:30px; width:50px; display:inline-block; float:left">&nbsp;Bcc</div>
+					<div id="rtEmaillistBcc" style="display:inline-block; float:left"><input type="text" value="" spellcheck="false" autocomplete="false" tabindex="12" onfocus="fnSetRTEEmailFocus(this)" dir="ltr" id="rte_bcc" onblur="fnrtAutoComBlur()" onkeydown="fnrteKeyDown(this,event)" onkeyup="fnCheckRTEEmails(this,event);" style=" color:#353B44; background-color:#fff;display:inline-block; float:left; width:525px; border:1px #fff; padding-top:5px; padding-top:8px; font-size:12px; font-family:Arial, Helvetica, sans-serif"></div>
+				</div>
+			</div>
+			
+			<div id="rte_subjectRow" onclick="$('#rte_subject').focus();" style="border-top : #E1E1E1 1px solid; margin-left:10px; margin-right:10px;">
+			
+				<div id="rteSubjectTxt" style="height:30px; line-height:30px; display:inline-block; width:50px;" >&nbsp;Subject</div>
+				<div id="rteSubjectBox" style=" display:inline-block;">
+					<input id="rte_subject" type="text" onkeydown="fnrteCheckSubject(this)" onkeypress="fnrteCheckSubject(this)" onblur="fnrteCheckSubject(this)" oncopy="fnrteCheckSubject(this)" onchange="fnrteCheckSubject(this)"  tabindex="13" value="" style=" color:#353B44; background-color :#fff;  border:1px #fff; ; padding-top:8px; font-size:12px; font-family:Arial, Helvetica, sans-serif">
+					<a id="aRTEPriority" href="JavaScript:fnShowPOPOpt('aRTEPriority', 'mRTEPriorityMenu',-55,0)" style="margin-right:3px; margin-left:6px" class="AddccBcc jqTootltip" title="Set message priority">Priority&nbsp;&nbsp;<img alt="More" height="4" id="" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/down_icon.png" width="8"></a>
+				</div>
+			</div>
+
+		</div>
+		
+ 		<!-- RTE toolbar -->	
+		<div id="rteToolbar" style="background-color:#F7F7F7; width:100%; height:40px; line-height:37px">
+			<a id="Undo" href="JavaScript:" style="display:none" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="##Undo"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/undo.png"  src=""></a>
+			<a id="Redo" href="JavaScript:" style="display:none" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="##Redo"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/redo.png"  src=""></a>
+			<a id="Bold" href="JavaScript:" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="Bold"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/bold.png"  src=""></a>
+			<a id="Italic" href="JavaScript:" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="Italic"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/italic.png"  src=""></a>
+			<a id="Underline" href="JavaScript:" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="Underline"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/underline.png"  src=""></a>
+			<a id="Strikethrough" href="JavaScript:" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="Strikethrough"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/strike_through.png"  src=""></a>
+			<div style="display:inline-block; width:10px;"></div>
+			<a id="Justifyleft" href="JavaScript:" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="Align text left"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/test_left.png"  src=""></a>
+			<a id="Justifycenter" href="JavaScript:" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="Align text center"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/test_center.png"  src=""></a>
+			<a id="Justifyright" href="JavaScript:" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="Align text right"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/text_right.png"  src=""></a>
+			<div style="display:inline-block; width:10px;"></div>
+			<a id="InsertUnorderedList" href="JavaScript:" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="Bulleted list"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/unordered_list.png"  src=""></a>
+			<a id="InsertOrderedList" href="JavaScript:" class="buttonRTE jqTootltip"   onclick="formatText(this.id,'xml_TextBody')" title="Numbered list"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/ordered_list.png"  src=""></a>
+			<div style="display:inline-block; width:10px;"></div>
+			<a id="btnRTEFont" href="JavaScript:fnRTEFontPicker('btnRTEFont')" class="buttonRTE jqTootltip"  title="Type"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/font_namepng.png"  src=""></a>
+			<a id="btnRTEFontSize" href="JavaScript:fnRTEFontSizePicker('btnRTEFontSize')" class="buttonRTE jqTootltip" title="Size"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/font_size.png"  src=""></a>
+			<a id="btnRTEColorPickerHighlight" href="JavaScript:fnOpenColorPicker('btnRTEColorPickerHighlight')" class="buttonRTE jqTootltip"   title="Highlight colors"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/text_colors.png"  src=""></a>
+			<a id="btnRTEColorPickerText" href="JavaScript:fnOpenColorPicker('btnRTEColorPickerText')" class="buttonRTE jqTootltip"   title="Text color"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/highlight_colors.png"  src=""></a>
+			<div style="display:inline-block; width:10px;"></div>
+			<a id="btnRTEEmoticon" href="JavaScript:fnRTEEmoticonPicker('btnRTEEmoticon')" class="buttonRTE jqTootltip"  title="Insert emoticon"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/1378457573_Streamline-65.png"  src=""></a>
+			
+			<a id="btnRTEEmoticon" href="JavaScript:" onclick="fnRTEInsertLink()" class="buttonRTE jqTootltip"  title="Insert link"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/1378639388__link.png"  src=""></a>
+
+			<a id="rteAddSigbtn" href="JavaScript:" class="buttonRTE jqTootltip"   onclick="fnGetSignature()" title="Insert signature"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/1378346834_profile.png"  src=""></a>
+			<a id="rteTranslatebtn" href="JavaScript:fnOpenTranslatorApp('rte')" class="buttonRTE jqTootltip"   title="Translate"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/translate.png"  src=""></a>
+			<div style="display:inline-block; width:10px;"></div>
+			<a id="rteClearbtn" href="JavaScript:" class="buttonRTE jqTootltip"  onclick="fnRTERemoveHTML()" title="Remove all HTML format"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/page_layout_icon&16.png"  src=""></a>
+			<a id="rteClearbtn" href="JavaScript:" class="buttonRTE jqTootltip"  onclick="fnCleartMsgBtn()" title="Clear message"><img class="RTEicon postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img//RTE/1378346807_delete.png"  src=""></a>
+		</div>
+		<!-- RTE iframe -->
+		<iframe src="../../app/richtextbody.asp" frameborder="0" style="width:100%; height:400px; background-color:#ffffff; border:0px; overflow:hidden" tabindex="14"  id="RichEditIFrameID"></iframe>
+
+       		         
+       <div class="ui-editor-path" id="RTE_BActions" style="display:block; height:45px; background-color:#F4F4F4;  vertical-align:middle; line-height:45px; border-top: 1px solid #D4D4D4">
+       		<div style="border: 0px solid #fff">
+       		&nbsp;&nbsp;<a id="btnSendMail" title="Send now" href="javascript:fnRTESend()" tabindex="15" class="buttonSnd" style="font-weight:bold" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+       		<a id="btnAttach" href="javascript:InitQuickAttach('composer')" tabindex="16"  title="Attach files" class="button jqTootltip">&nbsp;<img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/attRTE.png" src="" title="Attach files" style="height:16px; width:16px; cursor:pointer">&nbsp;</a>
+       		
+       		<a id="btnRTEDriveBoxMenu" href="javascript:fnOpenDriveBoxMenu(true)" tabindex="17" title="Attach files from your Drive" class="button jqTootltip">&nbsp;<img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/drivebox.png" src=""  style="height:20px; width:20px; cursor:pointer">&nbsp;</a> 
+       		<a id="btnRTEShareMenu" href="javascript:fnOpenShareMenu()" tabindex="18" title="Share files from Facebook, Twitter and other sites" class="button jqTootltip">&nbsp;<img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/share_gray.png" src=""  style="height:20px; width:20px; cursor:pointer">&nbsp;</a> 
+       		       		
+       		<a id="btnSpellChk" href="javascript:fnSpellCheck()"  tabindex="19" title="Spellcheck" class="button jqTootltip">&nbsp;<img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/spell.png" src=""  style="height:20px; width:30px; cursor:pointer">&nbsp;</a>
+       		<a id="btnSchedule" href="javascript:" title="Spellcheck" class="button buttonOff jqTootltip" style="display:none">&nbsp;<img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/1368579486_52_Clock.png" src=""  style="height:16px; width:16px; cursor:pointer">&nbsp;</a>
+       		<a id="btnSaveMail" tabindex="20" href="javascript:fnSaveDraft('m')" title="Save Draft" class="button jqTootltip">&nbsp;<img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/save.png" src=""  style="height:20px; width:20px; cursor:pointer">&nbsp;</a>
+       		<span style="float:right;"><input type="CHECKBOX" id="ckbRequestReceipt">Request Receipt&nbsp;&nbsp;&nbsp;&nbsp;</span>
+       		</div>
+       </div>
+ 
+    </div> <!-- raptor-wrapper ENDS -->
+
+    <div id="rte_Minimize" class="RTEHNormal" style="color:#fff; height:30px; line-height:30px; padding-right:8px; padding-left:8px; width:190px; position:absolute; top:100px; left:100px; visibility:hidden">
+			<div style="display:inline-block; float:left; font-weight:normal; cursor:pointer; max-width:96px; white-space:nowrap; overflow:hidden; text-overflow: ellipsis;" onclick="fnRTEMaximize()" id="divRTETitleMin" class="jqTootltip" title="Maximize">New message</div>
+			<div style="display:inline-block; float:right"><img id="rte_min" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/expand_rte.png" onclick="fnRTEMaximize();" title="Maximize"  style="height:16px; width:16px; cursor:pointer">&nbsp;&nbsp;&nbsp;<img id="rte_min_fullscreen" onclick="fnRTEFullScreen(true); "  title="Full-screen" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/fullscreen.png"   style="height:16px; width:16px; cursor:pointer;">&nbsp;&nbsp;&nbsp;<img id="rte_min" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_20_white.png" onclick="fnRTEXClose();"   title="Close" style="height:16px; width:16px; cursor:pointer"></div>
+	</div>
+	
+	
+	<div id="rte_Actionstatus" style="position :absolute; display:none;z-index:1000; height:32px; line-height:32px; ">
+		<div id="rte_attach" title="Show attachments" style=" background-color:#F4F4F4; display:none; height:32px; line-height:32px; float:left; box-shadow: 2px 2px 2px rgb(202, 202, 202)" class="jqTootltip">
+			<a id="lstAttach" href="javascript:fnShowAttachList()" class="InboxActions" >&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/a.png" style="padding-top:0px" width="16px" height="16px" align=absmiddle>&nbsp;<span id="spanAttachCount">xxx</span>&nbsp;<b>...</b>&nbsp;&nbsp;<img src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/ajax-loader.gif" width="16px" height="16px" id="AttachBusy" style="height:16px; width:16px; visibility:hidden"/></a>
+			<img style="height:16px; width:16px; cursor:pointer" class="jqTootltip" title="Remove all attachments" onclick="fnRemoveAllAttach()" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_16.png" width="16px" height="16px">&nbsp;&nbsp;
+		</div>
+		<div style="width:3px; float:left; display:block; height:32px"></div>
+		<div id="rte_Recheckspelling"  style=" background-color:#F4F4F4; display:none; height:32px; line-height:32px; float:left;"><a id="aRecheckspelling" href="javascript:fnSpellCheck()" title="Recheck spelling" class="InboxActions jqTootltip">&nbsp;&nbsp;&nbsp;Recheck spelling&nbsp;&nbsp;</a><div onclick="fnCloseSpellCheck()" class="jqTootltip"  title="Close" style="float:right; display:block ; height:32px; line-height:32px;  ;background-color:#EEEEEE; "><img  alt="Close" src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_16.png" align="absmiddle" id="" style="height:16px; width:16px; cursor:pointer; padding:8px"></div></div>
+	</div>
+	
+    
+<div id="mSendForm" style="display:none">
+  <form id="main_form" name="main_form" action="" method="post" target="my_iframe">
+    <input type="hidden" name="faction" value="none" id="Hidden2" />
+    <input type="hidden" name="SavedDraftGUID" value="" id="SavedDraftGUID" />
+    <input type="hidden" name="AllFiles" value="" id="AllFiles" />
+    <input type="hidden" name="FolderIDs" value="" id="FolderIDs" />
+    <input type="hidden" name="lastInput" value="" id="lastInput" />
+    <input type="hidden" name="TotalSize" value="0" id="TotalSize" />
+    <input type="hidden" name="xml_Priorities" value="1" id="xml_Priorities" />
+    <input type="text" name="xml_From" value="" id="xml_From" />
+    <input type="text" name="xml_To" value="" dir="ltr" size="20" id="xml_To" />
+    <input type="text" name="xml_Cc" value="" dir="ltr" size="20" id="xml_Cc" />
+    <input type="text" name="xml_Bcc" value="" dir="ltr" size="20" id="xml_Bcc" />
+    <input type="text" name="xml_Subject" value="" maxlength="80" size="20" id="xml_Subject" />
+    <input type="checkbox" name="mail_save_message" value="true" checked="checked" id="Checkbox5" />
+    <input type="checkbox" name="mail_request_receipt" value="true" id="mail_request_receipt" />
+    <input type="hidden" name="xml_TextBody" value="" id="xml_TextBodyID" />
+    <input type="hidden" name="mail_as_HTML" value="true" id="Hidden7" />
+    <input type="hidden" name="RichTextFormat" value="true" id="Hidden8" />
+    <input type="hidden" name="RemoveRichTextFormat" value="" id="Hidden9" />
+    <input type="hidden" name="sMsgId" value="" id="Hidden10" />
+    <input type="hidden" name="sAction" value="" id="Hidden11" />
+    <input type="hidden" name="multilingual" value="false" id="multilingual" />
+    <input type="hidden" name="translate_menu" value="none_none" id="translate_menu" />
+    <input type="hidden" name="Send_mail" value="" id="Hidden13" />
+    <input type="hidden" name="jsaddsig" value="" id="Hidden15" />
+    <input type="hidden" name="translate_to" value="" id="translate_to" />
+    <input type="hidden" name="translate_from" value="" id="translate_from" />
+    <input type="hidden" name="xml_AttachForward" value="" id="xml_AttachForward" />
+    <input type="hidden" name="xml_AttachSizeForward" value="" id="xml_AttachSizeForward" />
+    <input type="hidden" name="AttachTotalSizeForward" value="" id="AttachTotalSizeForward" />
+    <input type="hidden" name="Open_HTML_VK" value="false" id="Open_HTML_VK" />
+    <input type="hidden" name="save_draft" value="" id="save_draft" />
+    <input type="hidden" name="sBackgroundColorRTF" value="" id="sBackgroundColorRTF" />
+    <input type="hidden" name="VK_CurrentLang" value="English" id="VK_CurrentLang" />
+    <input type="hidden" name="MsgType" value="" id="MsgType" />
+    <input type="hidden" name="KeepSavedDraft" value="yes" id="KeepSavedDraft" />
+    <input type="hidden" name="AttachTotalSize" value="0" id="AttachTotalSize" />
+    <input type="hidden" name="sScheduledMailSentDate" value="" id="sScheduledMailSentDate" />
+    <input type="hidden" name="ScheduledMailRelateDTS" value="" id="ScheduledMailRelateDTS" />
+	<input type="hidden" name="strTextBody" value="" id="strTextBody" />
+	<input type="hidden" name="strHTMLBody" value="" id="strHTMLBody" />
+  </form>
+  <iframe name="my_iframe" id="my_iframe" src="about:blank"></iframe>
+</div>
+
+<script>
+
+
+		$(window).load(function() {
+		
+		
+		$("#RTE_Header_Title").bind('dragstart', function(){
+    		return false; 
+		});
+		
+			$('#divRTETitle').bind('mouseup', fnRTEHeaderClick);
+	 		
+		});
+
+</script>
+<!-- ##################   RTE ############################### -->
+
+
+
+
+
+	
+	<!-- ::::: UPLOADER 3 STARTS  ::::: -->
+	<img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/trans.png" style="display:none" id="image1_aviary"  src=""/>
+	<div id="selectFilesButtonContainer" style="position:absolutex; display:none; overflow:hidden; width:100px"></div>
+	<div id="uploadFilesButtonContainer" style="position:absolutex; display:none"><button type="button" id="uploadFilesButton" style="width:250px; height:35px;">##Upload Files</button></div>
+	<div id="overallProgress" style="position:absolute; display:none"></div>
+	<div id="uploaderOverlay" style="position:absolute; z-index:1000;  visibility:hidden"></div>
+	<div id="imgdivPrv" class="ImgPrev" style="position:absolute; z-index:1002; top:0px; left:0px; display:none; text-align:center"><img id="imgPrv" alt="" onload="fnShowimg()" class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/trans.png" src="" class="ImgPrevPicRTE"/></div>
+	<div style="display:none;">
+		<div style='height:16px;width:100px;background: url(https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/bar_green.gif)'></div>
+		<div style='height:16px;width:100px;background: url(https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/bar_white.gif)'></div>
+		<div style='height:16px;width:100px;background: url(https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/bar_orange.gif)'></div>
+		<div style='height:16px;width:100px;background: url(https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/bar_yellow.gif)'></div>
+		<img class="postLoadIMG" data-url="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/ajax-loader.gif" width="16px" height="16px" src="" align="absMiddle" style="border:0px; vertical-align:middle; width:16px; height:16px"/>
+	</div>
+	<!-- ::::: UPLOADER 3 ENDS ::::: -->
+
+
+    <!-- Settings Page -->
+    <div id="divSettings" class="MsgpreFullscreen" style="position:absolute;z-index:101;display:none; background-color:#fff; padding:15px; ;">
+    	<div style=" font-family:arial, sans-serif; font-size:19px; line-height:29px">&nbsp;Settings&nbsp;&nbsp;&nbsp;<a id="settingsBack" href="JavaScript:fnSettingsBack()" class="linkLine" style=" display:none; font-weight:bold">Go Back</a>  <img src="https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/img/close_big_gray.png" width="16px" height="16px" onclick="fnSettingsExitFullscreen()" title="Close" class="jqTootltip" style="padding-top:0px; height:16px; width:16px; cursor:pointer; float:right"/></div>
+    	<div  style="border-bottom:0px #E0E0E0 solid; padding-top:20px; display:none"></div>    	
+    	<div id="mSettingstabs" class="SettingsMainTabs" style="overflow:hidden;width:100%; display:none">
+    	    <div style="width:2000px; text-align:left;">
+	    	    <a class="SettingsTabSpace" style="width:10px">&nbsp;</a>
+	    	    <div style="float:left"><a id="SetTab0" class="SettingsTab" onclick="fnOpenSettingsTab(0)">&nbsp;General&nbsp;</a><a class="SettingsTabSpace">&nbsp;</a></div>
+	    		<div style="float:left"><a id="SetTab1" class="SettingsTab" onclick="fnOpenSettingsTab(1)">&nbsp;Mail&nbsp;</a><a class="SettingsTabSpace">&nbsp;</a></div>
+	    		<div style="float:left"><a id="SetTab2" class="SettingsTab" onclick="fnOpenSettingsTab(2)">&nbsp;Accounts&nbsp;</a><a class="SettingsTabSpace">&nbsp;</a></div>
+	    		<div style="float:left"><a id="SetTab3" class="SettingsTab" onclick="fnOpenSettingsTab(3)">&nbsp;Services&nbsp;</a><a class="SettingsTabSpace">&nbsp;</a></div>
+	    		<div style="float:left"><a id="SetTab4" class="SettingsTab" onclick="fnOpenSettingsTab(4)">&nbsp;Control Center&nbsp;</a><a class="SettingsTabSpace">&nbsp;</a></div>
+	    		<div style="width:1000px; height:33px;border-bottom: 1px #DADADD solid; line-height:32px;; float:left">&nbsp;</div>
+    		</div>
+    	</div>
+    	<div id="SubSettings" style="height:34px;  background-color:#F4F4F4; display:none"></div>
+    	<iframe id="ifm_settings" style="background-color:#fff;  BORDER: #ffffff 0px solid; overflow:auto" scrolling="auto" frameborder="0" border=0 name="ifm_settings" src="about:blank" width="100%" height="100%" allowTransparency  borderwidth="0"></iframe>
+    	<div style="height:29px;  line-height:29px ; background-color:#F4F4F4; text-align:center; display:none"><a  class="InboxActions" id="btnSettingsSave" href="JavaScript:fnSettingsSave()">Save Changes</a>&nbsp;&nbsp;&nbsp;<a  class="InboxActions" id="btnSettingsCancel" href="JavaScript:fnSettingsExitFullscreen()">Cancel</a></div>
+    </div>
+
+
+	<script>
+	
+		
+	
+		$(window).load(function() {
+			document.getElementById("ifm_login").style.display = "";
+			g_fInitPage();
+	 		
+	 		
+		});
+	</script>
+
+	<!-- ::::: divDebug ENDS ::::: -->		
+	<div id="divDebug" class="skin0" style="position:absolute; z-index:1000;  background-color:#e5f3fb;top:50px; left:50px; visibility:hidden; display:none">
+		<!-- DEBUG WINDOW -->
+		<div style="background-color:gray; color:white"><input onclick="fnCloseDebug()" value=" Close " type="button"/>&nbsp;&nbsp;<input onclick="fnClearDebug()" value=" Clear " type="button"/> </div>
+		<textarea rows="20" id="DebugTextarea" cols="50" style="overflow:auto; background-color:green; color:white">&nbsp;&nbsp;&nbsp;--- Debug Log enabled-- </textarea> 
+	</div>
+	
+
+	<!--
+	<script type="text/javascript">
+		function downloadJSAtOnload() {
+		var element = document.createElement("script");
+		element.src = "https://d93eb2ce3b7e6ed8b599-fa56e5a04c591cb9153ab447f5a025a3.ssl.cf2.rackcdn.com/js/cdn-JavaScriptINC_906.js";
+		document.body.appendChild(element);
+		}
+		if (window.addEventListener)
+		window.addEventListener("load", downloadJSAtOnload, false);
+		else if (window.attachEvent)
+		window.attachEvent("onload", downloadJSAtOnload);
+		else window.onload = downloadJSAtOnload;
+	</script>
+	-->
+
+	
+
+<!-- :::: Google Analytics STARTS :::: -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64560106-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- :::: Google Analytics END :::: -->
+
+</body>
+
+</html>
+
+

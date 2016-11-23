@@ -1,0 +1,24 @@
+status: 301
+x-xss-protection: 1; mode=block
+content-location: http://www.dentalwebnow.com
+x-content-type-options: nosniff
+set-cookie: __cfduid=d93ec09afa45067b0e915cfad5492cf1f1476977448;
+ expires=Fri, 20-Oct-17 15:30:48 GMT; path=/; domain=.dentalwebnow.com;
+ HttpOnly
+server: cloudflare-nginx
+connection: keep-alive
+-x-permanent-redirect-url: https://dentalwebnow.com/
+location: https://dentalwebnow.com/
+date: Thu, 20 Oct 2016 15:30:49 GMT
+x-frame-options: SAMEORIGIN
+x-sucuri-id: 14012
+content-type: text/html
+cf-ray: 2f4d835f35091858-EWR
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

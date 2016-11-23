@@ -1,0 +1,1081 @@
+status: 200
+content-length: 37443
+content-location: http://protechsoftware.com/careers/current-openings/us/
+server: nginx/1.10.1
+connection: keep-alive
+-content-encoding: gzip
+date: Fri, 16 Sep 2016 14:01:40 GMT
+content-type: text/html; charset=UTF-8
+x-pingback: http://protechsoftware.com/xmlrpc.php
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>
+Current Openings – US | Protech</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://protechsoftware.com/wp-content/themes/protech/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://protechsoftware.com/wp-content/themes/protech/pacesol.css" />
+<link rel="pingback" href="http://protechsoftware.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="Protech &raquo; Feed" href="http://protechsoftware.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Protech &raquo; Comments Feed" href="http://protechsoftware.com/comments/feed/" />
+<link rel='stylesheet' id='jobman-display-css'  href='http://protechsoftware.com/wp-content/plugins/job-manager/css/display.css?ver=0.7.17' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://protechsoftware.com/wp-content/plugins/contact-form-7/styles.css?ver=2.4.5' type='text/css' media='all' />
+<script type='text/javascript' src='http://protechsoftware.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://protechsoftware.com/wp-includes/js/jquery/jquery.js?ver=1.4.4'></script>
+<script type='text/javascript' src='http://protechsoftware.com/wp-includes/js/jquery/ui.core.js?ver=1.8.9'></script>
+<script type='text/javascript' src='http://protechsoftware.com/wp-content/plugins/job-manager/js/jquery-ui-datepicker.js?ver=0.7.17'></script>
+<script type='text/javascript' src='http://protechsoftware.com/wp-content/plugins/job-manager/js/display.js?ver=0.7.17'></script>
+<script type='text/javascript' src='http://protechsoftware.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://protechsoftware.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://protechsoftware.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Protech' href='http://protechsoftware.com/' />
+<link rel='up' title='Current Openings' href='http://protechsoftware.com/careers/current-openings/' />
+<meta name="generator" content="WordPress 3.1.2" />
+<link rel='canonical' href='http://protechsoftware.com/jobman_joblist/us/' />
+	<link rel="alternate" type="application/rss+xml" href="http://protechsoftware.com/careers/current-openings/feed/" title="Latest Jobs" />
+<script type="text/javascript"> 
+//<![CDATA[
+jQuery(document).ready(function() {
+	jQuery(".datepicker").datepicker({dateFormat: 'yy-mm-dd', changeMonth: true, changeYear: true, gotoCurrent: true});
+	jQuery("#ui-datepicker-div").css('display', 'none');
+	
+	jQuery("#jobman-jobselect-echo").click(function( event ) {
+		if( jQuery(this).hasClass("open") ) {
+			jQuery(this).removeClass("open");
+		}
+		else {
+			jQuery(".jobselect-popout").css( "left", jQuery("#jobman-jobselect").position().left + "px" );
+			jQuery(".jobselect-popout").css( "top", ( jQuery("#jobman-jobselect").position().top + 20 ) + "px" );
+			jQuery(this).addClass("open");
+		}
+
+		jQuery(".jobselect-popout").animate({ opacity: 'toggle', height: 'toggle' }, "fast");
+		
+		event.preventDefault();
+	});
+	
+	jQuery("#jobman-catselect-echo").click(function( event ) {
+		if( jQuery(this).hasClass("open") ) {
+			jQuery(this).removeClass("open");
+		}
+		else {
+			jQuery(".catselect-popout").css( "left", jQuery("#jobman-catselect").position().left + "px" );
+			jQuery(".catselect-popout").css( "top", ( jQuery("#jobman-catselect").position().top + 20 ) + "px" );
+			jQuery(this).addClass("open");
+		}
+
+		jQuery(".catselect-popout").animate({ opacity: 'toggle', height: 'toggle' }, "fast");
+		
+		event.preventDefault();
+	});
+	
+	jQuery("#jobman-jobselect-close a").click( function() { jQuery("#jobman-jobselect-echo").click(); return false; } );
+
+	jQuery("#jobman-catselect-close a").click( function() { jQuery("#jobman-catselect-echo").click(); return false; } );
+	
+	jQuery(".jobselect-popout input").click(function() {
+		jobman_update_selected_jobs();
+		return true;
+	});
+	
+	jQuery(".catselect-popout input").click(function() {
+		jobman_update_selected_cats();
+		return true;
+	});
+	
+	jobman_update_selected_jobs();
+	jobman_update_selected_cats();
+
+});
+
+var jobman_mandatory_ids = [2,3,4,18];
+var jobman_mandatory_labels = ["Name","Surname","Email Address","I have read and understood the privacy policy."];
+
+var jobman_strings = new Array();
+jobman_strings['apply_submit_mandatory_warning'] = "The following fields must be filled out before submitting";
+jobman_strings['no_selected_jobs'] = "click to select";
+jobman_strings['no_selected_cats'] = "click to select";
+
+var jobman_selected_jobs_names;
+function jobman_update_selected_jobs() {
+	jobman_selected_jobs_names = new Array();
+
+	jQuery(".jobselect-popout").find("input:checked").each( function() {
+		jobman_selected_jobs_names.push( jQuery(this).attr( 'title' ) );
+	});
+	
+	var jobs;
+	if( jobman_selected_jobs_names.length ) {
+		jobs = jobman_selected_jobs_names.join( ", " );
+	}
+	else {
+		jobs = "&lt;" + jobman_strings['no_selected_jobs'] + "&gt;";
+	}
+	jQuery("#jobman-jobselect-echo").html( jobs );
+
+}
+
+var jobman_selected_cats_names;
+function jobman_update_selected_cats() {
+	jobman_selected_cats_names = new Array();
+
+	jQuery(".catselect-popout").find("input:checked").each( function() {
+		jobman_selected_cats_names.push( jQuery(this).attr( 'title' ) );
+	});
+	
+	var cats;
+	if( jobman_selected_cats_names.length ) {
+		cats = jobman_selected_cats_names.join( ", " );
+	}
+	else {
+		cats = "&lt;" + jobman_strings['no_selected_cats'] + "&gt;";
+	}
+	jQuery("#jobman-catselect-echo").html( cats );
+
+}
+
+//]]>
+</script> 
+<style>
+.inner_page_content {
+	width: 505px;
+}
+</style>
+<style type="text/css">
+#slidedeck_frame {
+	width: 500px;
+	height: 300px;
+	margin-top: 20px;
+}
+</style>
+<link rel="stylesheet" href="http://protechsoftware.com/wp-content/themes/protech/Linking/css/global.css">
+<link rel="stylesheet" type="text/css" href="http://protechsoftware.com/wp-content/themes/protech/slidedec/slidedeck.skin.css" media="screen" />
+<script src="http://protechsoftware.com/wp-content/themes/protech/js/googleapi.js"></script>
+<script src="http://protechsoftware.com/wp-content/themes/protech/Linking/js/slides.min.jquery.js"></script>
+<!-- Include jQuery first. -->
+<!--<script type="text/javascript" src="jquery-1.3.2.min.js"></script>-->
+<!-- Include the below script, Copyright 2010, Brandon Aaron (http://brandonaaron.net/) for scrollwheel support. -->
+<script type="text/javascript" src="http://protechsoftware.com/wp-content/themes/protech/slidedec/jquery.mousewheel.min.js"></script>
+<!-- Styles for the skin that only load for Internet Explorer -->
+<!--[if lte IE 8]>
+
+	<link rel="stylesheet" type="text/css" href="http://protechsoftware.com/wp-content/themes/protech/slidedeck.skin.ie.css" media="screen,handheld" />
+
+<![endif]-->
+<!-- Include the SlideDeck jQuery script. -->
+<script type="text/javascript" src="http://protechsoftware.com/wp-content/themes/protech/slidedec/slidedeck.jquery.lite.pack.js"></script>
+<script>
+
+$(function(){
+	// Set starting slide to 1
+	var startSlide = 0;
+	// Get slide number if it exists
+
+	if (window.location.hash) {
+		startSlide = window.location.hash.replace('#','');
+	}
+
+	// Initialize Slides
+
+	$('#slides').slides({
+		preload: true,
+		preloadImage: 'img/loading.gif',
+		generatePagination: false,
+		play: 5000,
+		/*pause: 20000,*/
+		hoverPause: true,
+		// Get the starting slide
+		start: startSlide,
+		animationComplete: function(current){
+			// Set the slide number as a hash
+			window.location.hash = '#' + current;
+		}
+
+	});
+
+});
+
+</script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+								
+
+	$("#wpsb_email").blur( function(){ 
+
+
+
+		if(this.value==''){this.value='Enter Your Email ID';}				 
+
+
+
+			 });
+
+		$("#wpsb_email").focus( function(){ 
+
+
+
+			if(this.value=='Enter Your Email ID')
+
+
+
+			this.value='';					 
+
+
+
+	 });
+
+		
+
+		 $("#wpsb_email").click(function(){
+
+
+
+			if(this.value=='Enter Your Email ID')	
+
+
+
+			this.value='';
+
+			 });
+
+			  
+
+	   // $('.page-id-12 a:eq(0)').hide();
+
+		
+
+			$('.my_menu li a').wrap('<div class="hello"><span></span></div>');
+
+			$('.my_menu li li div').removeClass("hello");
+
+			
+
+		  $('.my_menu li div.hello').click(function(){
+
+			if(false == $(this).next().is(':visible')) {
+
+$('#accordion ul').slideUp(300);
+
+}
+
+				$(this).next().slideToggle(300);
+
+			});  
+
+	  });
+
+								
+
+</script>
+<script type="text/javascript">
+
+$(function()
+
+{
+
+	$("div#access ul.sub-menu").parent("li").addClass("menu-parent");
+
+	$("div#access ul.sub-menu ul.sub-menu").parent("ul.sub-menu li").addClass("menu-parent2");
+
+});
+
+</script>
+<link rel="stylesheet" href="http://protechsoftware.com/wp-content/themes/protech/jcarousel/tango/skin.css">
+<link rel="stylesheet" href="http://protechsoftware.com/wp-content/themes/protech/jcarousel/ie7/skin.css">
+<script src="http://protechsoftware.com/wp-content/themes/protech/jcarousel/jquery.jcarousel.min.js"></script>
+<script src="http://protechsoftware.com/wp-content/themes/protech/jcarousel/jquery.jcarousel.js"></script>
+<script src="http://protechsoftware.com/wp-content/themes/protech/js/jquery.autofill.min.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function()
+
+{
+
+	jQuery("#latestnews-3  >div").wrapAll("<ul id='third-carousel' class='jcarousel-skin-tango' />");
+
+	jQuery("#latestnews-3  > ul > div").wrap("<li></li>");
+
+	jQuery('#athird-carousel').jcarousel({
+
+        vertical: true, auto:1,wrap: 'circular',animation:10000,scroll:5
+
+    });
+
+	jQuery('#first-carousel').jcarousel({
+
+		 auto:1,wrap: 'circular',animation:10000,scroll:1
+
+	});	
+
+	jQuery('#idName').autofill({
+
+						value: 'Name',
+
+						defaultTextColor: '#000',
+
+	});
+
+	jQuery('#idEmail').autofill({
+
+						value: 'Email',
+
+						defaultTextColor: '#000',
+
+	});
+
+	jQuery('#idMessage').autofill({
+
+						value: 'Message',
+
+						defaultTextColor: '#000',
+
+	});
+
+	
+
+});
+
+function clearMe(formfield)
+
+{
+
+	if (formfield.defaultValue==formfield.value)
+
+		formfield.value = "";
+
+}
+
+function resetMe(formfield)
+
+{
+
+	if (formfield.value=="")
+
+		formfield.value = formfield.defaultValue;
+
+}	
+
+</script>
+<link rel="stylesheet" type="text/css" href="bx_styles/bx_styles.css" />
+<script src="http://protechsoftware.com/wp-content/themes/protech/js/jquery.bxSlider.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $('#slider1').bxSlider({
+
+            mode: 'fade',
+
+            captions: true,
+
+            auto: true,
+
+            controls: false
+
+        });
+
+    });
+
+</script>
+</head>
+<body class="page page-id--1 page-child parent-pageid-145">
+<div id="outer">
+<div id="wrapper" class="hfeed">
+<div id="header">
+    <div id="site-title"> <span> <a href="http://protechsoftware.com/" title="Protech" rel="home">
+  Protech  </a> </span> </div>
+  <div class="top_menu">
+    <div class="top-header-menu"><ul id="menu-top-menu" class="menu"><li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14"><a href="http://protechsoftware.com/">Home</a></li>
+<li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15"><a href="http://protechsoftware.com/company/about-us/">About Us</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="http://protechsoftware.com/services/">Services</a></li>
+<li id="menu-item-771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-771"><a href="http://protechsoftware.com/resources/career/">Careers</a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="http://protechsoftware.com/company/contact-us/">Contact Us</a></li>
+</ul></div>  </div>
+  <div class="conact_no"> <span>
+    <div  class="usa-flag usa">
+      <div class="num-count">716-636-5355</div>
+      <img src="http://protechsoftware.com/wp-content/themes/protech/images/usa.png" alt="USA"></div>
+      </span> </div>
+  <div id="access" role="navigation">
+        <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">
+      Skip to content      </a></div>
+        <div class="menu-header"><ul id="menu-main-menu" class="menu"><li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19"><a href="http://protechsoftware.com/">Home</a></li>
+<li id="menu-item-236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236"><a title="protechsoftware.com/an-overview" href="http://protechsoftware.com/company-2/">Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a href="http://protechsoftware.com/an-overview/">An Overview</a></li>
+	<li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="http://protechsoftware.com/why-protech/">Why Protech</a></li>
+	<li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="http://protechsoftware.com/company-2/methodologies/">Methodologies</a>
+	<ul class="sub-menu">
+		<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="http://protechsoftware.com/company-2/methodologies/project-delivery-capabilities/">Project Delivery Capabilities</a></li>
+		<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="http://protechsoftware.com/company-2/methodologies/project-management-methodologies/">Project Management Methodologies</a></li>
+		<li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254"><a href="http://protechsoftware.com/company-2/methodologies/project-planning-methodologies/">Project Planning Methodologies</a></li>
+		<li id="menu-item-255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-255"><a href="http://protechsoftware.com/company-2/methodologies/qa-risk-management-process/">QA &#038; Risk Management Process</a></li>
+		<li id="menu-item-256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-256"><a href="http://protechsoftware.com/company-2/methodologies/offshore-migration-approach/">Offshore Migration Approach</a></li>
+		<li id="menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a href="http://protechsoftware.com/company-2/methodologies/project-staffing-model/">Project Staffing Model</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-284"><a href="http://protechsoftware.com/it-services/">IT Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-283"><a href="http://protechsoftware.com/it-services/e-learning/">E-Learning</a></li>
+	<li id="menu-item-282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-282"><a href="http://protechsoftware.com/it-services/software-development/">Software Development</a></li>
+	<li id="menu-item-281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-281"><a href="http://protechsoftware.com/it-services/support-maintenance/">Support &#038; Maintenance</a></li>
+	<li id="menu-item-280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-280"><a href="http://protechsoftware.com/it-services/project-outsourcing/">Project Outsourcing</a></li>
+</ul>
+</li>
+<li id="menu-item-310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-310"><a href="http://protechsoftware.com/technical-staffing/">Technical Staffing</a>
+<ul class="sub-menu">
+	<li id="menu-item-309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-309"><a href="http://protechsoftware.com/technical-staffing/staff-augmentation/">Staff Augmentation</a></li>
+</ul>
+</li>
+<li id="menu-item-348" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-348"><a href="http://protechsoftware.com/resources/career/">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a href="http://protechsoftware.com/resources/career/">Careers</a>
+	<ul class="sub-menu">
+		<li id="menu-item-340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-340"><a href="http://protechsoftware.com/resources/career/benefits/">Benefits</a></li>
+		<li id="menu-item-502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-502"><a href="http://protechsoftware.com/careers/current-openings/us/">Current Openings</a></li>
+	</ul>
+</li>
+	<li id="menu-item-342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="http://protechsoftware.com/resources/potential-clients/">Potential Clients</a>
+	<ul class="sub-menu">
+		<li id="menu-item-337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-337"><a href="http://protechsoftware.com/resources/potential-clients/company-intro/">Company Intro</a></li>
+		<li id="menu-item-336" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-336"><a href="http://protechsoftware.com/resources/potential-clients/value-proposition/">Value Proposition</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-347"><a href="http://protechsoftware.com/company/contact-us/">Contact</a></li>
+</ul></div>  </div>
+  <!-- #access -->
+</div>
+<!-- #header -->
+<div class="banner">
+  <div id="slides">
+       <div class="slides_container">
+      <div class="slide"> <img src="http://protechsoftware.com/wp-content/uploads/2011/06/current-oppening.jpg" width="934" height="292" /> </div>
+      <div class="slide"> <img src="<http://protechsoftware.com/wp-content/uploads/2011/06/current-oppening.jpg" width="934" height="292" /> </div>
+      <div class="slide"> <img src="http://protechsoftware.com/wp-content/uploads/2011/06/current-oppening.jpg" width="934" height="292" /> </div>
+      <div class="slide"> <img src="http://protechsoftware.com/wp-content/uploads/2011/06/current-oppening.jpg" width="934" height="292" /> </div>
+      <div class="slide"> <img src="http://protechsoftware.com/wp-content/uploads/2011/06/current-oppening.jpg" width="934" height="292" /> </div>
+      <div class="slide"> <img src="http://protechsoftware.com/wp-content/uploads/2011/06/current-oppening.jpg" width="934" height="292" /> </div>
+      <div class="slide"> <img src="http://protechsoftware.com/wp-content/uploads/2011/06/current-oppening.jpg" width="934" height="292" /> </div>
+    </div>
+	      
+          </div>
+</div>
+<div class="clear"></div>
+<div id="main">
+<script type="text/javascript" src="http://protechsoftware.com/wp-content/themes/protech/js/expand.js"></script>
+<style>
+.joblisting .expand{padding-bottom:.75em}
+
+/* --- Links  --- */
+.joblisting a:link, a:visited {
+/*  border:1px dotted #ccc;*/
+  border-width:0;
+  text-decoration:none;
+  color:blue
+}
+/*.joblisting .job-table .even a:hover, 
+.joblisting .job-table .even a:active, 
+.joblisting .job-table .even a:focus,
+.joblisting .job-table .odd a:hover, 
+.joblisting .job-table .odd a:active, 
+.joblisting .job-table .odd a:focus
+ {
+  background-color:#F90;
+  outline:0 none
+}
+.joblisting .job-table .odd:hover,
+.joblisting .job-table .odd a:active,
+.joblisting .job-table .odd:focus,
+.joblisting .job-table .even:hover,
+.joblisting .job-table .even a:active,
+.joblisting .job-table .even:focus
+{
+	background:#F90;
+	}*/
+.open .even,
+.open .odd
+{
+	background-color:#F90 !important;
+	}	
+.joblisting a:active, a:focus {
+  color:red;
+}
+.joblisting .expand a {
+  display:block;
+  padding:0px
+}
+.joblisting .expand a:link, .joblisting .expand a:visited {
+  border-width:1px;
+  background-image:url(http://protechsoftware.com/wp-content/themes/protech/js/arrow-down.gif);
+  background-repeat:no-repeat;
+  background-position:98% 50%;
+}
+.joblisting .expand a:hover, .joblisting .expand a:active, .joblisting .expand a:focus {
+}
+.joblisting .expand a.open:link, .joblisting .expand a.open:visited {
+/*  border-style:solid;*/
+  background:url(http://protechsoftware.com/wp-content/themes/protech/js/arrow-up.gif) no-repeat 98% 50%
+}
+.joblisting .job-table .odd {
+	background:#f8f8f8;
+	    padding: 8px;
+	}
+.joblisting .job-table .even{
+	background:#FFF;
+	  padding: 8px;
+	}	
+.joblisting tabel{
+	background:#FFF;
+	}	
+.joblisting .expand div.short_detail{
+	font-family:Arial;
+	color:#6b6b6b;
+	font-size:11px;
+	font-style:italic;
+	}
+div.short_detail p{
+	margin:0px;
+	}	
+
+.job-apply-table input[type="text"]{
+	width:180px;
+	margin-bottom: 5px;
+   	}	
+.job-apply-table textarea {
+width:180px;
+}	
+</style>
+<!--[if lte IE 7]>
+<style type="text/css">
+h3 a, .demo {position:relative; height:1%}
+</style>
+<![endif]-->
+
+<!--[if lte IE 6]>
+<script type="text/javascript">
+   try { document.execCommand( "BackgroundImageCache", false, true); } catch(e) {};
+</script>
+<![endif]-->
+<!--[if !lt IE 6]><!-->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$(function() {
+
+    $("#demo2 h3.expand").toggler({});
+	    
+    $("#demo2").expandAll({
+      trigger: "h3.expand", 
+      ref: "h3.expand", 
+      showMethod: "slideDown", 
+      hideMethod: "slideUp", 
+      oneSwitch : false
+    });
+});
+//--><!]]>
+$(document).ready(function(){
+
+	$('#demo2 .switch a').eq(0).addClass('naveed');
+	/*$('.demo .expand .odd').click(function(){
+		$('.demo .expand .odd').removeClass('active');
+		$('.demo .expand .even').removeClass('active1');
+		$('.demo .expand .odd').addClass('active');
+		
+		});
+	$('.demo .expand .even').click(function(){
+		$('.demo .expand .odd').removeClass('active');
+		$('.demo .expand .odd').removeClass('active1');
+		$('.demo .expand .even').addClass('active1');
+		
+		});	*/
+    
+	
+	});
+</script>
+
+
+
+		<div class="inner_content" style="background:none;">    
+<STYLE>
+#accordion {
+	list-style: none;
+	padding: 0 0 0 0;
+	width: 208px;
+}
+#accordion  div {
+	display: block;
+	font-weight: normal;
+	color:#121212;
+	cursor: pointer;
+	    width: 195px;
+	list-style: circle;
+	background:url(http://protechsoftware.com/wp-content/themes/protech/images/left-errow.png) no-repeat left bottom;
+	line-height:32px;
+	  padding-left: 13px;
+	
+}
+#accordion ul {
+	list-style: none;
+	padding: 0 0 0 0;
+}
+#accordion ul{
+	display: none;
+}
+#accordion ul li {
+	font-weight: normal;
+	cursor: auto;
+	padding: 0 0 0 7px;
+
+}
+#accordion ul ul{
+	background-color: #f2f2f2;
+	}
+#accordion  div a{
+	font-weight: bold;
+	color:#121212;
+	cursor: pointer;
+	
+	}
+#accordion  div  span{
+    background: url("http://protechsoftware.com/wp-content/themes/protech/images/arrow-left-menu.png") no-repeat scroll right center transparent;
+    display: block;
+    height: 33px;
+    margin-right: 6px;
+    overflow: hidden;
+    padding-right: 11px;
+	}	
+#accordion a {
+	text-decoration: none;
+}
+#accordion a:hover {
+	text-decoration: none;
+}
+#accordion ul li a{
+    color: #121212;
+    cursor: pointer;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    padding-left: 7px;
+    padding-top: 2px;
+	}
+.leftsidebar{
+	float: left;
+    width: 208px;
+	background-color:#f2f2f2;
+	}
+.leftsidebar h3{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#ebebeb;
+	font-weight:normal;
+	background:#2f2f2f;
+	line-height:33px;
+	padding-left:13px;
+	}	
+
+</STYLE>
+<div class="leftsidebar">
+     
+  
+
+      
+    
+         <!--<ul id="accordion">
+
+	<li>
+        <div><span><a href="#">Executive Team</a></span></div>
+		
+        
+        <ul>
+			<li><a href="#">iPhone</a></li>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Twitter</a></li>
+		</ul>
+	
+    
+    </li>
+    
+    </ul>-->
+
+
+
+<!--	<li><div><span><a href="#">Advisors</a></span></div>
+		<ul>
+			<li><a href="#">Obama</a></li>
+			<li><a href="#">Iran Election</a></li>
+			<li><a href="#">Health Care</a></li>
+		</ul>
+	</li>
+    
+    <li><div><span><a href="#">News</a></span></div>
+		<ul>
+			<li><a href="#">Obama</a></li>
+			<li><a href="#">Iran Election</a></li>
+			<li><a href="#">Health Care</a></li>
+		</ul>
+	</li>
+    <li><div><span><a href="#">Contact Us</a></span></div>
+		<ul>
+			<li><a href="#">Obama</a></li>
+			<li><a href="#">Iran Election</a></li>
+			<li><a href="#">Health Care</a></li>
+		</ul>
+	</li>
+  
+</ul>   -->
+
+
+ <ul id="accordion" class="my_menu">
+       <li class="page_item page-item-491"><a href="http://protechsoftware.com/careers/current-openings/us/" title="Current Openings &#8211; US">Current Openings &#8211; US</a></li>
+<li class="page_item page-item-473"><a href="http://protechsoftware.com/careers/current-openings/india/" title="Current Openings India">Current Openings India</a></li>
+</ul>   
+    </div>        <div class="inner_page_content" style="width:760px;">
+ <h3 class="page_title">Current Openings – US</h3>
+
+<h3>Related Categories</h3><a href="http://protechsoftware.com/careers/current-openings/us/" title="Jobs for Current Openings – US">Current Openings – US</a><br /><form action='http://protechsoftware.com/careers/current-openings/apply/' method='post'><div class="joblisting">
+
+<script type="text/javascript">
+$(function() {
+	
+				
+	 		
+	$('#job799').click(function(){
+		  
+		
+		$('.job799').toggle() ;
+	
+			
+	
+		
+		});
+		
+		$('.naveed').click(function(){
+		  
+		$('.job799').hide() ;
+		
+		});	
+		$('.open').click(function(){
+		
+		$('.job799').show() ;
+		
+		});	
+				
+	$('#job801').click(function(){
+		  
+		
+		$('.job801').toggle() ;
+	
+			
+	
+		
+		});
+		
+		$('.naveed').click(function(){
+		  
+		$('.job801').hide() ;
+		
+		});	
+		$('.open').click(function(){
+		
+		$('.job801').show() ;
+		
+		});	
+				
+	$('#job426').click(function(){
+		  
+		
+		$('.job426').toggle() ;
+	
+			
+	
+		
+		});
+		
+		$('.naveed').click(function(){
+		  
+		$('.job426').hide() ;
+		
+		});	
+		$('.open').click(function(){
+		
+		$('.job426').show() ;
+		
+		});	
+		
+		 
+		
+	});
+	
+		
+</script>
+<div class="job4 job even">
+
+<div class="job-table">
+<div id="demo2" class="demo">
+            
+                        
+               
+              <h3 class="expand" id="job799">
+              <div class="odd">
+                             <a href="http://protechsoftware.com/careers/current-openings/network-security-engineer-ii/">NETWORK SECURITY ENGINEER, II</a><div class="job799 short_detail"><p>NETWORK SECURITY ENGINEER, II (Buffalo, NY): develop network gateway architectures, malware prote&#8230;</div>
+              </div>
+              </h3>
+              
+            <div class="collapse">
+            
+           
+<table class="job-table">
+  
+
+  <tr>
+     <th scope="row">Categories</th>
+     <td><a href="http://protechsoftware.com/careers/current-openings/us/" title="Jobs for Current Openings – US">Current Openings – US</a></td>
+  </tr>
+
+
+  
+
+  
+  <tr>
+    <th scope="row">Start Date</th>
+    <td>2012-08-20</td>
+  </tr>
+  
+
+  
+
+  
+  <tr>
+    <th scope="row">Location</th>
+    <td>Buffalo, NY</td>
+  </tr>
+  
+
+  
+  <tr>
+    <th scope="row">Job Information</th>
+    <td><p>NETWORK SECURITY ENGINEER, II (Buffalo, NY): develop network gateway architectures, malware protection systems, firewalls, intrusion detection systems; identify security risks/modify software/hardware to maintain operational efficiency. Travel to unanticipated projects required.</p>
+<p>Req:  Master’s deg. (or foreign equiv.) in Comp. Sci., Comp. Info. Sys., Tech., or rel. + experience of at least 4 following technologies:</p>
+<p>MySQL DBA, Oracle, VB.NET, MS-Access, Crystal Reports, Windows Servers, MySQL GUI Tools, Nice to have CCNA.  In lieu of Master’s deg. will accept Bachelor’s deg (or foreign equiv.) in listed fields + 5 yrs progressive exp. and knowledge of at least 4 listed techs above.</p>
+<p>Apply online or Send resume/cover letter to</p>
+<p>Protech Software Solutions, Inc.<br />38 Echowood Dr.,<br />E. Amherst, N.Y. 14051.</p>
+</td>
+  </tr>
+  
+
+  <tr>
+    <td></td>
+    <td class="jobs-applynow"><a href='http://protechsoftware.com/careers/current-openings/apply/799/'>Apply Now</a></td>
+  </tr>
+</table>
+           
+            </div>
+            
+               
+              <h3 class="expand" id="job801">
+              <div class="even">
+                             <a href="http://protechsoftware.com/careers/current-openings/as400-rpg-programmer/">AS/400 RPG programmer</a><div class="job801 short_detail"><ul>
+<li>Experience as AS/400 RPG programmer</li>
+<li>Looking for a person that can do full life-cy&#8230;</div>
+              </div>
+              </h3>
+              
+            <div class="collapse">
+            
+           
+<table class="job-table">
+  
+
+  <tr>
+     <th scope="row">Categories</th>
+     <td><a href="http://protechsoftware.com/careers/current-openings/us/" title="Jobs for Current Openings – US">Current Openings – US</a></td>
+  </tr>
+
+
+  
+
+  
+
+  
+
+  
+  <tr>
+    <th scope="row">Location</th>
+    <td>Buffalo, NY</td>
+  </tr>
+  
+
+  
+  <tr>
+    <th scope="row">Job Information</th>
+    <td><ul>
+<li>Experience as AS/400 RPG programmer</li>
+<li>Looking for a person that can do full life-cycle development (analysis, requirements documents, system and application specs, etc), coding </li>
+<li>Must be able to work independently with little direction</li>
+</ul>
+</td>
+  </tr>
+  
+
+  <tr>
+    <td></td>
+    <td class="jobs-applynow"><a href='http://protechsoftware.com/careers/current-openings/apply/801/'>Apply Now</a></td>
+  </tr>
+</table>
+           
+            </div>
+            
+               
+              <h3 class="expand" id="job426">
+              <div class="odd">
+                             <a href="http://protechsoftware.com/careers/current-openings/java-front-end-developer/">Java Front End Developer</a><div class="job426 short_detail"><p>Our client is looking for a Junior Java Front-end Developer.</p>
+<p>This is a long term position &#8230;</div>
+              </div>
+              </h3>
+              
+            <div class="collapse">
+            
+           
+<table class="job-table">
+  
+
+  <tr>
+     <th scope="row">Categories</th>
+     <td><a href="http://protechsoftware.com/careers/current-openings/us/" title="Jobs for Current Openings – US">Current Openings – US</a></td>
+  </tr>
+
+
+  
+
+  
+
+  
+
+  
+  <tr>
+    <th scope="row">Location</th>
+    <td>Buffalo, NY</td>
+  </tr>
+  
+
+  
+  <tr>
+    <th scope="row">Job Information</th>
+    <td><p>Our client is looking for a Junior Java Front-end Developer.</p>
+<p>This is a long term position which will later be converted to Full-Time employment with the Client.</p>
+</td>
+  </tr>
+  
+
+  <tr>
+    <td></td>
+    <td class="jobs-applynow"><a href='http://protechsoftware.com/careers/current-openings/apply/426/'>Apply Now</a></td>
+  </tr>
+</table>
+           
+            </div>
+            
+                
+                     </div>
+
+
+</div>
+</div>
+
+
+
+</div></p></form>
+
+        </div>  
+</div>
+	</div><!-- #main -->
+</div><!-- #wrapper -->
+</div><!-- #outer -->
+	<div id="footer" role="contentinfo">
+		
+    <div class="footer_inner">
+         <div class="footer_inner_left"></div>
+        <div class="footer_inner_center">
+            <div class="footer_wrap_in">   
+   
+
+			<div id="footer-widget-area" role="complementary">
+
+				<div id="first" class="widget-area">
+					<ul class="xoxo">
+						<li id="nav_menu-3" class="widget-container widget_nav_menu"><h3 class="widget-title">About Protech</h3><div class="menu-about-protech-container"><ul id="menu-about-protech" class="menu"><li id="menu-item-755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-755"><a href="http://protechsoftware.com/company/about-us/">Who we are</a></li>
+<li id="menu-item-756" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-756"><a href="http://protechsoftware.com/why-protech/">Why Choose us</a></li>
+<li id="menu-item-769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769"><a href="http://protechsoftware.com/resources/career/">Careers</a></li>
+<li id="menu-item-770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-770"><a href="http://protechsoftware.com/company/contact-us/">Contact Us</a></li>
+</ul></div></li>					</ul>
+				</div><!-- #first .widget-area -->
+
+				<div id="second" class="widget-area">
+					<ul class="xoxo">
+						<li id="nav_menu-4" class="widget-container widget_nav_menu"><h3 class="widget-title">Services</h3><div class="menu-services-container"><ul id="menu-services" class="menu"><li id="menu-item-763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-763"><a href="http://protechsoftware.com/technical-staffing/">Technical Staffing</a></li>
+<li id="menu-item-761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-761"><a href="http://protechsoftware.com/it-services/software-development/">Software Development</a></li>
+<li id="menu-item-762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-762"><a href="http://protechsoftware.com/it-services/support-maintenance/">Support &#038; Maintenance</a></li>
+<li id="menu-item-764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-764"><a href="http://protechsoftware.com/it-services/project-outsourcing/">Project Outsourcing</a></li>
+<li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="http://protechsoftware.com/it-services/e-learning/">E-Learning</a></li>
+</ul></div></li>					</ul>
+				</div><!-- #second .widget-area -->
+
+				<div id="third" class="widget-area">
+					<ul class="xoxo">
+						<li id="nav_menu-5" class="widget-container widget_nav_menu"><h3 class="widget-title">Solutions</h3><div class="menu-bpo-container"><ul id="menu-bpo" class="menu"><li id="menu-item-765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-765"><a href="http://protechsoftware.com/bpo-kpo/outbound-services/">Outbound Services</a></li>
+<li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-766"><a href="http://protechsoftware.com/bpo-kpo/inbound-services/">Inbound Services</a></li>
+<li id="menu-item-767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-767"><a href="http://protechsoftware.com/bpo-kpo/e-mail-chat-support/">E-Mail &#038; Chat Support</a></li>
+<li id="menu-item-768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-768"><a href="http://protechsoftware.com/bpo-kpo/medical-transcription/">Medical Transcription</a></li>
+</ul></div></li>					</ul>
+				</div><!-- #third .widget-area -->
+
+
+			</div><!-- #footer-widget-area -->
+     <div class="news_social">    
+       	   <div id="quick-quote">
+       	<span class="h1">Quick Quote</span>
+        <div style="clear:both; height:15px;"></div>
+       	<div class="wpcf7" id="wpcf7-f1-t1-o1"><form action="/careers/current-openings/us/#wpcf7-f1-t1-o1" method="post" class="wpcf7-form">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="1" />
+<input type="hidden" name="_wpcf7_version" value="2.4.5" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1-t1-o1" />
+</div>
+<div class="myleft">
+<p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="Name" id="idName" class="wpcf7-text wpcf7-validates-as-required" size="40" /></span> </p>
+<p><span class="wpcf7-form-control-wrap your-email"><input type="text" name="your-email" value="Email" id="idEmail" class="wpcf7-text wpcf7-validates-as-email wpcf7-validates-as-required" size="40" /></span> </p>
+<p><input type="submit" value=" " class="wpcf7-submit" /><img class="ajax-loader" style="visibility: hidden;" alt="Sending ..." src="http://protechsoftware.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" /></p>
+</div>
+<div class="myright">
+<p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" id="idMessage" cols="40" rows="10">Message</textarea></span> </p>
+</div>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div> 
+       </div>
+     
+    
+       
+     </div>
+    
+     </div>
+    <span class="fleft">&copy; 2011 Protech Software Solutions, Inc. All rights reserved. Privacy Policy</span>
+     <span class="fright">&nbsp;<!--Designed By: <a title="Website Design Company" href="http://pacesol.com" target="_blank">Pace Solutions</a>--></span>
+    
+    </div>
+         <div class="footer_inner_right"></div>
+    </div>
+
+	</div><!-- #footer -->
+    
+
+<script type='text/javascript' src='http://protechsoftware.com/wp-content/plugins/contact-form-7/jquery.form.js?ver=2.52'></script>
+<script type='text/javascript' src='http://protechsoftware.com/wp-content/plugins/contact-form-7/scripts.js?ver=2.4.5'></script>
+</body>
+</html>

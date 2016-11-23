@@ -1,0 +1,212 @@
+status: 200
+content-length: 8887
+content-location: http://www.kcpc.com
+-content-encoding: gzip
+x-powered-by: ASP.NET
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+last-modified: Tue, 27 Oct 2015 23:20:03 GMT
+etag: "7f75332e11d11:0"
+date: Thu, 06 Oct 2016 17:57:30 GMT
+content-type: text/html
+x-powered-by-plesk: PleskWin
+-varied-accept-encoding: gzip, deflate
+
+<html>
+
+<head>
+<meta name="description" content="KCPC is Kansas City Personal Computers in Lenexa Kansas, New and Used Computer Sales, Computer Service, Network Design and Installation, Pager Service">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="keywords" content="Computers, Kansas City Computer Sales, KCPC, Western Digital, AMD, Intel, Microsoft, Networking, Mod Chips, Computer Service, DSL, HP Printers, scanners, Book PC's, ">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Kansas City Personal Computer, Inc. </title>
+<style>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:10pt;
+	font-family:Verdana;
+      font-weight:bold;
+	color:black;
+}
+</style>
+<script>
+
+/*
+Cursor Trailor Text- By Peter Gehrig (http://www.24fun.ch/)
+Permission given to Dynamicdrive.com to feature script in it's archive.
+For full source code, installation instructions, and 1000's more DHTML scripts,
+visit http://dynamicdrive.com
+*/
+
+var x,y
+var step=20
+var flag=0
+
+// Your snappy message. Important: the space at the end of the sentence!!!
+var message="Big Savings on System Upgrades "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+	y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+	flag=1
+}
+
+function makesnake() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	else if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+<meta name="Microsoft Theme" content="indust 011">
+<meta name="Microsoft Border" content="tb">
+</head>
+
+<body onLoad="makesnake()" style="width:100%;overflow-x:hidden;overflow-y:scroll"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><p align="left">&nbsp;</p>
+</td></tr><!--msnavigation--></table><!--msnavigation--><table dir="ltr" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+
+<p align="left"><img border="0" src="images/Copy_of_KCPC_Logobar2.gif" width="487" height="69">
+</p>
+
+<p align="center"><font color="#0000FF" size="4">913-438-KCPC(5272)</font>&nbsp;
+</p>
+
+<p align="center"><font size="4" color="#0000FF"><b><i>Welcome to Kansas City
+Personal Computers<br>
+</i></b></font><font color="#0000A0" size="2">KCPC is &quot;Kansas City Personal Computers&quot; is a full line computer store with a Personal touch. If you need a
+new computer for home or business, Parts, Networking. We repair all brands of computers,
+notebooks, printers, &amp; monitors. If you need Upgrades, or hard to find Accessories,
+you've come to the right place.&nbsp; Plus, we give
+you the Personal Service you deserve.&nbsp;Just Click on the &quot;Launch Pad&quot;
+to Find what you Want!<br>
+<br>
+</font><br>
+<a href="launch_page.htm"><img src="images/lpad812.gif"
+alt="lpad812.gif (12848 bytes)" border="0" width="81" height="81"></a><font color="#0000FF"><b><i><br>
+<br>
+ Just Click on the &quot;Launch Pad&quot;
+to Find what you Want!</i></b></font><font color="#0000A0" size="2"><br>
+</font></p>
+
+<h2><font color="#0000A0" size="4">Contact Information</font><font face="Bookman Old Style" color="#0000A0" size="2"><br>
+</font><font face="Bookman Old Style" size="2" color="#800000">Retail store hours are Monday through
+Friday 9am. to 6pm. (Central Time) and Saturday 10am. to 4pm. Technical support is
+available after hours and voice mail is on line 24 hours a day.</font></h2>
+
+<dl>
+  <dt><strong><font face="Bookman Old Style" color="#0000A0">Telephone<br>
+    </font><font face="Arial" color="#800000">(</font></strong><font face="Arial" color="#800000"><b><font size="3">913)-438-KCPC
+    (5272)<br>
+    <br>
+    </font></b></font><font face="Bookman Old Style" color="#800000"><b> 1-888-465-KCPC (5272)</b> Toll Free Sales Outside Kansas City</font></dt>
+  <dt><font face="Bookman Old Style" color="#0000A0"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </strong>&nbsp; </font></dt>
+  <dt><font face="Bookman Old Style" color="#0000A0"><strong>FAX<br>
+    </strong></font><font face="Bookman Old Style" color="#800000"><b> 913-438-5273</b></font></dt>
+  <dd>&nbsp;</dd>
+</dl>
+
+<dl>
+  <dt><font face="Bookman Old Style" color="#0000A0"><strong>Postal address<br>
+    </strong></font><font face="Bookman Old Style" color="#800000">7106 Larsen
+    ST. Shawnee, KS. 66203</font></dt>
+  <dd><font face="Bookman Old Style" color="#0000A0">&nbsp;&nbsp;&nbsp;&nbsp;</font></dd>
+  <dt><font face="Bookman Old Style" color="#0000A0"><strong>Electronic mail<br>
+    </strong> </font><font face="Bookman Old Style" color="#800000">
+    Jim Senato/Owner</font><font face="Bookman Old Style" color="#0000A0">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="mailto:jims@kcpc.com">jims@kcpc.com<br>
+    <br>
+    </a></font></dt>
+  <dd><font face="Bookman Old Style" color="#000080"><b>General Information:</b></font><font face="Bookman Old Style" color="#0000A0"> <a
+    href="mailto:kcpc@kcpc.com">kcpc@kcpc.com</a><br>
+    </font><font face="Bookman Old Style" color="#000080"><b>
+    Sales:</b></font><font face="Bookman Old Style" color="#0000A0">  <a href="mailto:jims@kcpc.com">Jims@kcpc.com</a></font></dd>
+  <dd><font face="Bookman Old Style" color="#000080"><b>Customer Support:</b></font><font face="Bookman Old Style" color="#0000A0"> <a
+    href="mailto:jims@kcpc.com">support@kcpc.com</a></font></dd>
+  <dt><font face="Bookman Old Style" color="#0000A0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </font><font face="Bookman Old Style" color="#000080"><b>Webmaster:</b></font><font face="Bookman Old Style" color="#0000A0"> <a href="mailto:Dale@kcpc.com">Dale@kcpc.com</a>
+    </font></dt>
+</dl>
+
+<p><a href="http://www.wunderground.com/US/KS/Shawnee_Mission.html"></a></p>
+<a href="http://www.wunderground.com/US/KS/Lenexa.html">
+
+<p align="center"><img
+src="http://banners.wunderground.com/banner/gizmotimetempbig/US/KS/Lenexa.gif"
+alt="Click for Lenexa, Kansas Forecast" height="40" width="467"></a> </p>
+
+<p align="center"><a href="launch_page.htm"><img src="images/lpad812.gif"
+alt="lpad812.gif (12848 bytes)" border="0" width="81" height="81"></a></p>
+
+<div align="center"><center>
+
+<table border="0" width="52%" cellpadding="0" bgcolor="#0000FF">
+  <tr>
+    <td width="25%"><p align="center"><a href="ad.htm" style="color: rgb(255,255,255)"><strong><font color="#FFFFFF">Systems</font></strong></a></td>
+    <td width="25%"><p align="center"><a href="links.htm" style="color: rgb(255,255,255)"><font
+    color="#FFFFFF"><strong>Links</strong></font></a></td>
+    <td width="25%"><p align="center"><a href="feedback.htm" style="color: rgb(255,255,255)"><strong><font
+    color="#FFFFFF">Feedback</font></strong></a></td>
+    <td width="25%"><p align="center"><a href="parts&amp;.htm" style="color: rgb(255,255,255)"><strong><font
+    color="#FFFFFF">Parts</font></strong></a></td>
+  </tr>
+</table>
+</center></div>
+
+<p align="center"><big><big><em><strong><font color="#FF0000">You Are Visitor Number </font></strong></em></big></big></p>
+
+<p align="center"><!--webbot bot="HitCounter" startspan i-image="4" i-digits="0"
+PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" u-custom i-resetvalue="6552" --><img src="_vti_bin/fpcount.exe/?Page=default.htm|Image=4" alt="Hit Counter"><!--webbot
+bot="HitCounter" endspan i-checksum="15465" --> </p>
+
+<p align="left">&nbsp;<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+
+<h5 align="left"><font color="#000000"><strong>mail to <a href="mailto:Dale@kcpc.com" style="color: #FF0000">Dale@kcpc.com</a>
+with questions or comments
+about this web site.<br>
+&nbsp;Last modified: March 10, 2005</strong></font></h5>
+</td></tr><!--msnavigation--></table></body>
+</html>

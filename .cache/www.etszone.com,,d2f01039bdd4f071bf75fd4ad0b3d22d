@@ -1,0 +1,433 @@
+status: 200
+content-location: https://www.etszone.com/
+x-powered-by: PHP/5.2.6-1+lenny16
+set-cookie: SESS598b248a2e32482cb5dbf927aa681261=cadc60a6e7e7abc26a5e6654c3d6dc6e;
+ expires=Sun, 23 Oct 2016 06:14:09 GMT; path=/; domain=.etszone.com
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+server: Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny16 with Suhosin-Patch
+ mod_ssl/2.2.9 OpenSSL/0.9.8g
+last-modified: Fri, 30 Sep 2016 02:40:49 GMT
+cache-control: store, no-cache, must-revalidate, post-check=0, pre-check=0
+date: Fri, 30 Sep 2016 02:40:49 GMT
+content-type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Welcome to ETSZONE</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.etszone.com/blogapi/rsd" />
+
+<link rel="shortcut icon" href="/sites/default/files/atck_favicon_0.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ckeditor/ckeditor.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/tagadelic/tagadelic.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/atck/css/style.css?8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/atck/css/page-layout.css?8" />
+  <!--[if lt IE 7]>
+    <style type="text/css" media="all">@import "/sites/all/themes/atck/css/fix-ie-6.css";</style>
+  <![endif]-->
+  <!--[if IE 7]>
+    <style type="text/css" media="all">@import "/sites/all/themes/atck/css/fix-ie-7.css";</style>
+  <![endif]-->
+  <script type="text/javascript" src="/sites/all/modules/jquery_update/replace/jquery.min.js?8"></script>
+<script type="text/javascript" src="/misc/drupal.js?8"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip" } });
+//--><!]]>
+</script>
+
+<script type="text/javascript">
+var BrowserDetect = {
+	init: function () {
+		this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+		this.version = this.searchVersion(navigator.userAgent)
+			|| this.searchVersion(navigator.appVersion)
+			|| "an unknown version";
+		this.OS = this.searchString(this.dataOS) || "an unknown OS";
+	},
+	searchString: function (data) {
+		for (var i=0;i<data.length;i++)	{
+			var dataString = data[i].string;
+			var dataProp = data[i].prop;
+			this.versionSearchString = data[i].versionSearch || data[i].identity;
+			if (dataString) {
+				if (dataString.indexOf(data[i].subString) != -1)
+					return data[i].identity;
+			}
+			else if (dataProp)
+				return data[i].identity;
+		}
+	},
+	searchVersion: function (dataString) {
+		var index = dataString.indexOf(this.versionSearchString);
+		if (index == -1) return;
+		return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+	},
+	dataBrowser: [
+		{
+			string: navigator.userAgent,
+			subString: "Chrome",
+			identity: "Chrome"
+		},
+		{ 	string: navigator.userAgent,
+			subString: "OmniWeb",
+			versionSearch: "OmniWeb/",
+			identity: "OmniWeb"
+		},
+		{
+			string: navigator.vendor,
+			subString: "Apple",
+			identity: "Safari",
+			versionSearch: "Version"
+		},
+		{
+			prop: window.opera,
+			identity: "Opera"
+		},
+		{
+			string: navigator.vendor,
+			subString: "iCab",
+			identity: "iCab"
+		},
+		{
+			string: navigator.vendor,
+			subString: "KDE",
+			identity: "Konqueror"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "Firefox",
+			identity: "Firefox"
+		},
+		{
+			string: navigator.vendor,
+			subString: "Camino",
+			identity: "Camino"
+		},
+		{		// for newer Netscapes (6+)
+			string: navigator.userAgent,
+			subString: "Netscape",
+			identity: "Netscape"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "MSIE",
+			identity: "Explorer",
+			versionSearch: "MSIE"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "Gecko",
+			identity: "Mozilla",
+			versionSearch: "rv"
+		},
+		{ 		// for older Netscapes (4-)
+			string: navigator.userAgent,
+			subString: "Mozilla",
+			identity: "Netscape",
+			versionSearch: "Mozilla"
+		}
+	],
+	dataOS : [
+		{
+			string: navigator.platform,
+			subString: "Win",
+			identity: "Windows"
+		},
+		{
+			string: navigator.platform,
+			subString: "Mac",
+			identity: "Mac"
+		},
+		{
+			   string: navigator.userAgent,
+			   subString: "iPhone",
+			   identity: "iPhone/iPod"
+	    },
+		{
+			string: navigator.platform,
+			subString: "Linux",
+			identity: "Linux"
+		}
+	]
+
+};
+BrowserDetect.init();
+
+</script>
+
+<script type="text/javascript">
+/*	if (BrowserDetect.version != "6") {
+		$IE6 = false;
+	}
+	else if ((BrowserDetect.version == "6") && (BrowserDetect.browser == "Explorer")) {
+		$IE6 = true;
+	}
+
+if ($IE6 == false) {
+	$(document).ready(function() {
+		$('#sidebar_right').css('left','217px');
+		//$('#sidebar_right').css('background','#f3f5f7');
+		$('#content').css('width','880px');
+		$('a#toggle').click(function() {
+			$bar = $('#sidebar_right');
+			$('#sidebar_right').animate({
+				left: parseInt($bar.css('left'),10) == 0 ?
+				$bar.outerWidth() - 19 : 
+				0
+			});
+			$('#sidebar_right').animate({
+				'z-index': parseInt($bar.css('z-index'),10) == 0 ?
+				20 :
+				0
+                        });
+		});
+	});
+}
+*/
+</script>
+
+
+</head>
+
+<!-- BEGIN BODY -->
+<body class="center">
+
+<div id="borders">
+        <div id="front-page" class="front ntype-page no-sidebars">
+	<div class="fixed-xlg" id="container">
+
+ 	<!-- BEGIN SECTION 1 -->		
+		<div class="section">
+
+		<!-- BEGIN HEADER -->
+			<div id="header">
+                                	                        				                                        <div id="logo"><a href="/"><img src="/sites/all/themes/atck/images/atck_logo.png" alt="ETSZONE Logo" /></a></div>
+                                
+				<!-- BEGIN MISSION -->
+                                        						<div id="mission">Advanced technology services for business and influence</div>
+						<div id="mission-shadow"></div>
+									<!-- END MISSION -->
+
+                        </div><!-- /#header -->
+		<!-- END HEADER -->
+
+		<!-- BEGIN PRIMARY LINKS -->
+			        			<div id="main_menu">
+	                		<ul class="links"><li class="menu-191 first"><a href="/services" title="">SERVICES</a></li>
+<li class="menu-117"><a href="/blog" title="">BLOG</a></li>
+<li class="menu-115"><a href="/about" title="">ABOUT</a></li>
+<li class="menu-118"><a href="/contact" title="">CONTACT</a></li>
+<li class="menu-294 last"><a href="/support" title="support">SUPPORT</a></li>
+</ul>	        	       </div> <!-- /#main_menu -->
+		        		<!-- END PRIMARY LINKS -->
+	
+		<!-- BEGIN SECONDARY LINKS -->
+					<!-- END SECONDARY LINKS -->
+
+		</div>
+	<!-- END SECTION 1 -->
+
+	<!-- BEGIN SECTION 2 -->
+		<div class="section">
+
+		<!-- BEGIN CONTENT -->
+			<div class="classic untidy"><!-- '.classic untidy' allows columns of unequal heights -->
+			<div class="layout b-c"><!-- 'layout' specifies how many columns the row will contain -->
+
+			<!-- BEGIN COLUMN 1 -->
+				<!-- <div class="gr a"> --><!-- the first of three columns for this row -->
+				
+				<!-- BEGIN SIDEBAR LEFT -->
+									<!-- END SIDEBAR LEFT -->
+				<!-- </div> -->
+			<!-- END COLUMN 1 -->
+
+			<!-- BEGIN COLUMN 2 -->
+				<div class="gr b" id="center"><!-- the second of three columns for this row -->
+					
+					<!-- BEGIN HEADER -->
+											<!-- END HEADER -->
+
+					<!-- BEGIN CONTENT -->
+						<div id="wrapper" class="clear-block">
+						<div id="subwrapper">
+						<div id="content">
+
+						<!-- BEGIN HELP -->
+													<!-- END HELP -->
+
+						<!-- BEGIN MESSAGES -->
+													<!-- END MESSAGES -->
+						
+						<!-- BEGIN CONTENT TOP -->
+															<div id="content-top"><div id="block-block-11" class="block block-block">
+    <div class="content">
+    <p style="margin: 0; padding: 0;">
+<video controls="" height="530" width="942" poster="/etszone-video-poster.png"><br />
+	<source src="/etszone-video.mp4" type="video/mp4"> Sorry, your browser is not capable of displaying the latest web video formats! That means it&#39;s several years out of date - please upgrade to the latest version, or <a href="https://www.google.com/chrome/browser/desktop/">download a new one</a>. </source></video>
+</p>
+
+  </div>
+</div> <!-- /#block-block-11 -->
+
+</div>
+													<!-- END COMTENT TOP -->
+
+						<!-- BEGIN TABS -->
+													<!-- END TABS -->
+
+						<!-- BEGIN TITLE -->
+													<!-- END TITLE -->
+
+						<!-- BEGIN CONTENT -->
+															<div id="node-1" class="">
+<div class="content">
+<span class='print-link'></span><div id="front">
+	<div id="home_page_table">
+		<table>
+			<tbody>
+				<tr>
+					<td class="image">
+						<a href="/services/consulting-collaboration-designs-special-projects"><img alt="Consulting, Collaboration designs and Special Projects" border="0" src="/sites/all/themes/atck/images/consulting-serv.png" /></a></td>
+					<td class="text">
+						<h2>
+							<a href="/services/consulting-collaboration-designs-special-projects">Consulting Services and Special Projects</a></h2>
+						Assess business situations, evaluate challenges and conflicts, design resolutions, produce results. <a href="/services/consulting-collaboration-designs-special-projects">Learn more...</a></td>
+					<td class="image">
+						<a href="/services/web-influence-strategies"><img alt="Web marketing and Influence Strategies" border="0" src="/sites/all/themes/atck/images/influence-strategies.png" /></a></td>
+					<td class="text2">
+						<h2>
+							<a href="/services/web-influence-strategies">Web Influence<br />
+							Strategies</a></h2>
+						Engage, observe and influence thought and action on the web with social media and the ETSZONE Influence Platform&trade;. <a href="/services/web-influence-strategies">Learn more...</a></td>
+				</tr>
+				<tr>
+					<td class="image">
+						<a href="/services/business-application-services"><img alt="Business Application Services" border="0" src="/sites/all/themes/atck/images/business-app-services.png" /></a></td>
+					<td class="text">
+						<h2>
+							<a href="/services/business-application-services">Business Application Services</a></h2>
+						Serve customers better, operate more efficiently, expand capacities with enterprise business application services. <a href="/services/business-application-services">Learn more...</a></td>
+					<td class="image table_hack">
+						<a href="/services/systems-management-services"><img alt="Systems support and Management Services" border="0" src="/sites/all/themes/atck/images/sms.png" /></a></td>
+					<td class="text2">
+						<h2>
+							<a href="/services/systems-management-services">IT Services</a></h2>
+						Keep mission-critical business applications, services, and systems supported, maintained and running. <a href="/services/systems-management-services">Learn more...</a></td>
+				</tr>
+				<tr>
+					<td class="image">
+						<a href="/services/managed-communication-services"><img alt="IP Telephony and Managed Communication Services" border="0" src="/sites/all/themes/atck/images/mvs.png" /></a></td>
+					<td class="text">
+						<h2>
+							<a href="/services/managed-communication-services">Integrated Telephony Services</a></h2>
+						Customize IP (Internet protocol) networks and technologies for voice services, communications and business integration. <a href="/services/managed-communication-services">Learn more...</a></td>
+					<td class="image">
+						<a href="/services"><img alt="ets" border="0" src="/sites/all/themes/atck/images/ets.png" /></a></td>
+					<td class="text2">
+						<h2>
+							<a href="/services">Why Choose ETSZONE</a></h2>
+						<p>Our <a href="/philosophy">philosophy</a>, <a href="/service-model">service model</a>, <a href="/etszone-network">network</a> and <a href="/road-map">road map</a> add up to produce uncommonly high value for your business. Only ETSZONE offers the unique and powerful portfolio of services you need for leadership and success. <a href="/services">Get started now...</a></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<table>
+	<tbody>
+		<tr>
+			<td>
+				<div id="home_page_posts">
+										<p class="moreposts"><a href="/blog">&nbsp;More Posts &raquo;</a></p>
+				</div>
+			</td>
+			<td>
+				</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>
+  </div>
+</div> <!-- /#node-1 -->
+
+													<!-- END CONTENT -->
+						
+						<!-- BEGIN CONTENT BOTTOM -->
+													<!-- END CONTENT BOTTOM -->
+
+						</div><!-- /content -->
+						</div> <!-- /subwrapper -->
+						</div><!-- /#wrapper -->
+					<!-- END CONTENT -->
+
+				</div><!-- /gr b -->
+			<!-- END COLUMN 2 -->
+			
+			<!-- BEGIN COLUMN 3 -->
+				<div class="gr c" id="sidebar"><!-- the third of three columns for this row -->
+
+				<!-- BEGIN SEARCH BOX -->
+ 	                                				<!-- END SEARCH BOX -->
+
+				<!-- BEGIN SIDEBAR RIGHT -->
+									<!-- END SIDEBAR RIGHT -->
+				
+				</div><!-- /gr c -->
+			<!-- END COLUMN 3 -->
+			
+			</div><!-- /layout a-b-c --><br class="shim" />
+			</div><!-- /classic untidy -->
+		<!-- END CONTENT -->
+
+		</div><!-- /section -->
+	<!-- END SECTON 2 -->
+
+	<!-- BEGIN SECTION 3 -->
+		<div class="section">
+
+		<!-- BEGIN FOOTER -->
+							<div id="footer">
+				Copyright &copy; 2010 ETS<b>ZONE</b>. Some rights reserved.				<div id="block-block-10" class="block block-block">
+    <div class="content">
+    <div align="center"><a href="http://www.etszone.com/about">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.etszone.com/contact">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.etszone.com/terms-of-service">Terms of Service</a></div>
+
+  </div>
+</div> <!-- /#block-block-10 -->
+
+				<br />
+				</div><!-- /#footer -->
+					<!-- END FOOTER -->
+
+		</div>
+	<!-- END SECTION 3 -->
+
+	<!-- BEGIN CLOSURE -->
+					<script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?8"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{var pageTracker = _gat._getTracker("UA-65559619-1");pageTracker._trackPageview();} catch(err) {}
+//--><!]]>
+</script>
+			<!-- END CLOSURE -->
+
+	</div><!-- /fixed-xlg container -->
+	</div><!-- style-wrappers -->
+
+</div>
+<div id="bottom_border"></div>
+</body>
+<!-- END BODY -->
+
+</html>

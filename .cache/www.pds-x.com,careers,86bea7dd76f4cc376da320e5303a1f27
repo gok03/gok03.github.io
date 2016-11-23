@@ -1,0 +1,813 @@
+status: 200
+content-length: 43939
+via: 1.1 varnish-v4
+vary: Accept-Encoding, Cookie, Cookie
+x-styx-version: StyxGo
+x-pantheon-styx-hostname: styxa6ef6bc5
+content-language: en
+x-styx-req-id: styx-98119c18d0b96be79dd959091f223a88
+etag: W/"1475162135-0"
+cache-control: public, max-age=1800
+x-varnish: 877369523
+accept-ranges: bytes
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+last-modified: Thu, 29 Sep 2016 15:15:35 GMT
+-content-encoding: gzip
+link: </careers>; rel="canonical",</node/14>; rel="shortlink"
+date: Thu, 29 Sep 2016 16:06:35 GMT
+x-drupal-cache: HIT
+content-location: http://www.pds-x.com/careers
+age: 0
+server: nginx
+connection: keep-alive
+content-type: text/html; charset=utf-8
+x-pantheon-endpoint: 0179d93d-aec4-4970-8eb8-b3b5b8a39073
+x-generator: Drupal 7 (http://drupal.org)
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/sites/all/themes/base-themes/bento/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+<link href="/sites/all/themes/base-themes/bento/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+<link href="/sites/all/themes/base-themes/bento/apple-touch-icon-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144" />
+<link href="/sites/all/themes/base-themes/bento/apple-touch-icon-57x57.png" rel="apple-touch-icon-precomposed" sizes="57x57" />
+<link rel="shortcut icon" href="http://www.pds-x.com/sites/default/files/favicon_0.png" type="image/png" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/careers" />
+<link rel="shortlink" href="/node/14" />
+  <title>Careers | Piedmont Digital Solutions</title>
+  <style>
+@import url("http://www.pds-x.com/modules/system/system.base.css?o8xxcn");
+</style>
+<style>
+@import url("http://www.pds-x.com/sites/all/modules/contrib/calendar/css/calendar_multiday.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/modules/contrib/commerce_add_to_cart_confirmation/css/commerce_add_to_cart_confirmation.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/modules/contrib/date/date_api/date.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?o8xxcn");
+@import url("http://www.pds-x.com/modules/field/theme/field.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/modules/contrib/om_maximenu/css/om_maximenu.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/modules/contrib/extlink/extlink.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/modules/contrib/views/css/views.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/modules/contrib/ckeditor/css/ckeditor.css?o8xxcn");
+</style>
+<style>
+@import url("http://www.pds-x.com/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/modules/contrib/ctools/css/ctools.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/modules/contrib/om_maximenu/skin/bubble/bubble.css?o8xxcn");
+</style>
+<style>body.contextual-links-region{position:static;}
+</style>
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" media="all" />
+<style>
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/drawer.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/typography.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/shades.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/superfish.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/forms.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/buttons.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/social.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/secondary.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/content.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/overrides.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/color.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/skinr.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/mobile.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/base-themes/bento/css/catalog.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/profile.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/gallery.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/calendar.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/events.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/slideshow.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/revolution.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/careers.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/testimonials.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/blog.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/misc.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/feature-colors.css?o8xxcn");
+@import url("http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/css/style.css?o8xxcn");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://www.pds-x.com/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script>
+<script src="http://www.pds-x.com/misc/jquery.once.js?v=1.2"></script>
+<script src="http://www.pds-x.com/misc/drupal.js?o8xxcn"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="http://www.pds-x.com/sites/all/modules/contrib/commerce_add_to_cart_confirmation/js/commerce_add_to_cart_confirmation.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/modules/contrib/equalheights/equalheights.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/modules/contrib/om_maximenu/js/om_maximenu.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/modules/contrib/extlink/extlink.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/libraries/colorbox/jquery.colorbox-min.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/modules/contrib/colorbox/js/colorbox.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/modules/contrib/google_analytics/googleanalytics.js?o8xxcn"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-10563615-32"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script src="http://www.pds-x.com/sites/all/themes/base-themes/bento/js/hoverIntent.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/themes/base-themes/bento/js/superfish.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/themes/base-themes/bento/js/bento.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/themes/base-themes/bento/js/bentosuperfish.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/js/jquery.snappoint-1.5.min.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/js/jquery.themepunch.plugins.min.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/js/jquery.themepunch.revolution.min.js?o8xxcn"></script>
+<script src="http://www.pds-x.com/sites/all/themes/site-specific-themes/xfcanada/js/bento_features.js?o8xxcn"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"xfcanada","theme_token":"-uqsLJfS4rMDuXK-7qK9TEPgrco1ebFf8g8_iQ4lKGw","js":{"sites\/all\/themes\/base-themes\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/netdna.bootstrapcdn.com\/bootstrap\/3.0.2\/js\/bootstrap.min.js":1,"sites\/all\/modules\/contrib\/commerce_add_to_cart_confirmation\/js\/commerce_add_to_cart_confirmation.js":1,"sites\/all\/modules\/contrib\/equalheights\/equalheights.js":1,"sites\/all\/modules\/contrib\/om_maximenu\/js\/om_maximenu.js":1,"sites\/all\/modules\/contrib\/extlink\/extlink.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/base-themes\/bento\/js\/hoverIntent.js":1,"sites\/all\/themes\/base-themes\/bento\/js\/superfish.js":1,"sites\/all\/themes\/base-themes\/bento\/js\/bento.js":1,"sites\/all\/themes\/base-themes\/bento\/js\/bentosuperfish.js":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/js\/jquery.snappoint-1.5.min.js":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/js\/jquery.themepunch.plugins.min.js":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/js\/jquery.themepunch.revolution.min.js":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/js\/bento_features.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/commerce_add_to_cart_confirmation\/css\/commerce_add_to_cart_confirmation.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/om_maximenu\/css\/om_maximenu.css":1,"sites\/all\/modules\/contrib\/extlink\/extlink.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/om_maximenu\/skin\/bubble\/bubble.css":1,"0":1,"\/\/netdna.bootstrapcdn.com\/bootstrap\/3.0.2\/css\/bootstrap.min.css":1,"sites\/all\/themes\/base-themes\/bootstrap\/css\/overrides.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/drawer.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/typography.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/shades.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/superfish.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/forms.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/buttons.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/social.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/secondary.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/content.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/overrides.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/color.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/skinr.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/mobile.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/catalog.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/profile.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/gallery.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/calendar.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/events.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/slideshow.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/revolution.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/careers.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/testimonials.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/email.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/blog.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/commerce.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/misc.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/feature-colors.css":1,"sites\/all\/themes\/site-specific-themes\/xfcanada\/css\/style.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-14 node-type-page published" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div class="bento       social-style-5     bdr  bdrb  bp  bc  br ">
+	
+		<div id="mobile-wrapper" class="mobile-wrapper closed phone bdrmob ">
+	    <div class="mobile-wrapper-inner">
+	      <div class="mobile open1">
+	        <div class="mobile-inner">
+
+	        </div> <!-- .mobile-inner -->
+	      </div>   <!-- .mobile open1 -->
+
+	      <div class="mobile closed1">
+	        <div class="mobile-inner">
+
+	        </div>  <!-- .mobile-inner -->
+	      </div>  <!-- .mobile closed1 -->
+	      <div class="region region-mobile">
+    <div id="block-system-main-menu" class="block block-system block-menu"><div class="block-inner">
+
+    <h2 class="block-title">Main menu</h2>
+  
+  <div class="content">
+    <ul class="sf-menu"><li class="first expanded active-trail"><a href="/who-we-are" class="active-trail">Who We Are</a><ul class="sf-depth-2" style="display:none""><li class="first leaf"><a href="/about">The Xerox Agent Channel</a></li>
+<li class="leaf"><a href="/our-total-satisfaction-guarantee">Our Total Satisfaction Guarantee</a></li>
+<li class="last leaf active-trail"><a href="/careers" class="active-trail active">Careers</a></li>
+</ul></li>
+<li class="collapsed"><a href="/what-we-do">What We Do</a></li>
+<li class="collapsed"><a href="/how-you-benefit">How You Benefit</a></li>
+<li class="collapsed"><a href="/support">Support</a></li>
+<li class="last leaf"><a href="/products">Product Catalog</a></li>
+</ul>  </div>
+</div></div>
+  </div>
+	    </div> <!-- .mobile-wrapper-inner -->
+	</div> <!-- mobile-wrapper -->
+	<div class="mobile-pusher"></div>
+	
+
+
+	
+	<div class="page">	
+		<div class="page-inner">
+	
+
+		
+			<div class="top-wrapper w-navigation">
+				<div class="top-wrapper wo-navigation">
+							
+		
+										<div id="secondary-wrapper" class="secondary-wrapper wrapper bdrm ">
+						<div id="secondary-container" class="container bcs ">
+							<div class="inner">
+								<div id="secondary-navigation" class="secondary-navigation ">
+									<div class="inner-inner">
+										<ul id="secondary-menu" class="links list-inline clearfix"><li class="menu-1879 first"><a href="tel:+3362945557" class="phonestyle disabled">336.294.5557</a></li>
+<li class="menu-1887"><a href="/news">Xerox News</a></li>
+<li class="menu-1837"><a href="/request-services">Services</a></li>
+<li class="menu-1838"><a href="/supplies">Supplies</a></li>
+<li class="menu-1987"><a href="/blog">Blog</a></li>
+<li class="menu-1840 last"><a href="/contact">Contact Us</a></li>
+</ul>									</div> <!--.inner-inner -->
+								</div> <!--#secondary-navigation -->
+							</div> <!-- .inner -->
+						</div> <!-- #secondary-container -->
+					</div> <!-- #secondary-wrapper -->
+					
+					<header id="header-wrapper" class="header-wrapper wrapper bdrh  bph ">
+						<div class="header-wrapper-inner">
+							<div id="header-container" class="container bch ">
+								<div class="header-inner">
+				
+		
+									<div id="site-info" class="site-info col-xs-12 col-sm-5 col-lg-4">
+										<div class="inner">
+						
+																						<div class="logo">
+												<a class="logo ol-xs-5" href="/" title="Home">
+													<img src="http://www.pds-x.com/sites/default/files/pds-x_revisedlogo.jpg" alt="Home" /></a>
+											</div> <!-- .logo -->		
+											
+											
+											
+										</div> <!-- .inner -->
+									</div> <!-- .site-info -->
+
+									<div id="header" class="header-region region brh  col-xs-12 col-sm-7 col-lg-8">
+										<div class="inner">
+											  <div class="region region-header">
+    <div id="block-block-1" class="block block-block"><div class="block-inner">
+
+    
+  <div class="content">
+    <div class="xerox-agent"><img alt="Xerox Authorized Sales Agent" class="float right noshaddow" src="/sites/default/files/imce/ts/xerox-auth-blue.png" style="width: 134px; height: 90px;" /></div>
+<style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+/* =========================================== */
+/* =          Mobile Styles        = */
+/* =========================================== */
+/* 1 ******************** iPad Portrait/Browser *************************/
+@media only screen and (min-width:768px) and (max-width:959px){/* ============================== */
+
+
+}
+/* 2 ******************** Mobile Landscape/Browser ***************************/
+@media only screen and (min-width:480px) and (max-width:767px){
+.xerox-agent img {height: auto !important;
+ margin-left: 145px;
+ width: 130px !important;}
+
+}
+/* 3 ********************* Anything smaller than 480 ***************************/
+@media only screen and (max-width:479px){
+ .xerox-agent img {height: auto !important;
+  margin-left: 78px;
+  width: 130px !important;}
+
+}
+
+/*--><!]]>*/
+</style>  </div>
+</div></div>
+  </div>
+										</div>
+									</div>
+								</div> <!-- .header-inner -->
+							</div> <!-- #header-container -->
+						</div> <!-- .header-wrapper-inner -->
+					</header> <!-- #header-wrapper -->
+				</div> <!-- .topper-wrapper .wo-navigation-->
+
+								<nav id="main-navigation-wrapper" class="main-navigation-wrapper wrapper desktop bdrm ">
+					<div id="main-navigation" class="main-navigation container ">
+						<div class="inner">
+		                     
+
+  <div id="om-maximenu-main-menu" class="om-maximenu om-maximenu-bubble om-maximenu-main-menu code-om-u3-826187318">     
+            
+
+<div id="om-menu-main-menu-ul-wrapper" class="om-menu-ul-wrapper">
+  <ul id="om-menu-main-menu" class="om-menu">
+                  
+
+   
+  <li id="om-leaf-om-u3-826187318-1" class="om-leaf first leaf-who-we-are">   
+    <a  class="om-link  link-who-we-are" href="/who-we-are">Who We Are</a>      
+  <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-top">
+      <div class="om-maximenu-top-left"></div>
+      <div class="om-maximenu-top-right"></div>
+    </div><!-- /.om-maximenu-top --> 
+    <div class="om-maximenu-middle">
+      <div class="om-maximenu-middle-left">
+        <div class="om-maximenu-middle-right">
+           
+
+<div class="block block-block block-block-id-18 first last">           
+  <h3 class="title">Mega Menu: Who We Are</h3>    <div class="content"><div class="mega-menu-block">
+<div class="links">
+<ul><li><a href="/about">The Xerox Agent Channel</a></li>
+<li><a href="/our-total-satisfaction-guarantee">Our Total Satisfaction Guarantee</a></li>
+<li><a href="/careers">Careers</a></li>
+</ul></div>
+<div class="image"><img src="/sites/default/files/imce/ts/who-we-are.jpg" style="width: 300px; height: 300px;" /></div>
+</div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+          <div class="om-clearfix"></div>
+        </div><!-- /.om-maximenu-middle-right --> 
+      </div><!-- /.om-maximenu-middle-left --> 
+    </div><!-- /.om-maximenu-middle --> 
+    <div class="om-maximenu-bottom">
+      <div class="om-maximenu-bottom-left"></div>
+      <div class="om-maximenu-bottom-right"></div>
+    </div><!-- /.om-maximenu-bottom -->  
+    <div class="om-maximenu-arrow"></div>
+    <div class="om-maximenu-open">
+      <input type="checkbox" value="" />
+      Stay    </div><!-- /.om-maximenu-open -->  
+  </div><!-- /.om-maximenu-content -->  
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+                  
+
+   
+  <li id="om-leaf-om-u3-826187318-2" class="om-leaf leaf-what-we-do">   
+    <a  class="om-link  link-what-we-do" href="/what-we-do">What We Do</a>      
+  <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-top">
+      <div class="om-maximenu-top-left"></div>
+      <div class="om-maximenu-top-right"></div>
+    </div><!-- /.om-maximenu-top --> 
+    <div class="om-maximenu-middle">
+      <div class="om-maximenu-middle-left">
+        <div class="om-maximenu-middle-right">
+           
+
+<div class="block block-block block-block-id-19 first last">           
+  <h3 class="title">Mega Menu: What We Do</h3>    <div class="content"><div class="mega-menu-block">
+<div class="links">
+<ul><li><a href="/products">Product Catalog</a></li>
+<li><a href="/managed-services">Services</a></li>
+<li><a href="/fp-mailing">FP Mailing</a></li>
+<li><a href="/it">IT</a>
+<ul></ul></li>
+</ul></div>
+<div class="image"><img src="/sites/default/files/imce/ts/what-we-do.jpg" style="width: 300px; height: 300px;" /><a href="#"> </a></div>
+</div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+          <div class="om-clearfix"></div>
+        </div><!-- /.om-maximenu-middle-right --> 
+      </div><!-- /.om-maximenu-middle-left --> 
+    </div><!-- /.om-maximenu-middle --> 
+    <div class="om-maximenu-bottom">
+      <div class="om-maximenu-bottom-left"></div>
+      <div class="om-maximenu-bottom-right"></div>
+    </div><!-- /.om-maximenu-bottom -->  
+    <div class="om-maximenu-arrow"></div>
+    <div class="om-maximenu-open">
+      <input type="checkbox" value="" />
+      Stay    </div><!-- /.om-maximenu-open -->  
+  </div><!-- /.om-maximenu-content -->  
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+                  
+
+   
+  <li id="om-leaf-om-u3-826187318-3" class="om-leaf leaf-how-you-benefit">   
+    <a  class="om-link  link-how-you-benefit" href="/how-you-benefit">How You Benefit</a>      
+  <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-top">
+      <div class="om-maximenu-top-left"></div>
+      <div class="om-maximenu-top-right"></div>
+    </div><!-- /.om-maximenu-top --> 
+    <div class="om-maximenu-middle">
+      <div class="om-maximenu-middle-left">
+        <div class="om-maximenu-middle-right">
+           
+
+<div class="block block-block block-block-id-21 first last">           
+  <h3 class="title">Mega Menu: How You Benefit</h3>    <div class="content"><div class="mega-menu-block">
+<div class="links">
+<ul><li><a href="/control-your-costs">Control Your Costs</a></li>
+<li><a href="/improve-office-productivity">Improve Office Productivity</a></li>
+<li><a href="/secure-your-office">Secure Your Office</a></li>
+<li><a href="/improve-convenience">Improve Convenience</a></li>
+<li><a href="/reduce-environmental-impact">Reduce Environmental Impact</a></li>
+</ul></div>
+<div class="image"><img src="/sites/default/files/imce/ts/how-you-benefit.jpg" style="width: 300px; height: 300px;" /></div>
+</div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+          <div class="om-clearfix"></div>
+        </div><!-- /.om-maximenu-middle-right --> 
+      </div><!-- /.om-maximenu-middle-left --> 
+    </div><!-- /.om-maximenu-middle --> 
+    <div class="om-maximenu-bottom">
+      <div class="om-maximenu-bottom-left"></div>
+      <div class="om-maximenu-bottom-right"></div>
+    </div><!-- /.om-maximenu-bottom -->  
+    <div class="om-maximenu-arrow"></div>
+    <div class="om-maximenu-open">
+      <input type="checkbox" value="" />
+      Stay    </div><!-- /.om-maximenu-open -->  
+  </div><!-- /.om-maximenu-content -->  
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+                  
+
+   
+  <li id="om-leaf-om-u3-826187318-4" class="om-leaf leaf-support">   
+    <a  class="om-link  link-support" href="/support">Support</a>      
+  <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-top">
+      <div class="om-maximenu-top-left"></div>
+      <div class="om-maximenu-top-right"></div>
+    </div><!-- /.om-maximenu-top --> 
+    <div class="om-maximenu-middle">
+      <div class="om-maximenu-middle-left">
+        <div class="om-maximenu-middle-right">
+           
+
+<div class="block block-block block-block-id-20 first last">           
+  <h3 class="title">Mega Menu: Support</h3>    <div class="content"><div class="mega-menu-block">
+<div class="links">
+<ul><li><a href="/request-services">Request Services</a></li>
+<li><a href="/news">Xerox News</a></li>
+<li><a href="/supplies">Order Supplies</a></li>
+<li><a href="http://www.support.xerox.com/support/enus.html" target="_blank">Xerox Support &amp; Drivers</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul></div>
+<div class="image"><img src="/sites/default/files/imce/ts/support.jpg" style="width: 300px; height: 300px;" /></div>
+</div>
+</div>
+  </div><!-- /.block -->
+
+
+
+
+
+          <div class="om-clearfix"></div>
+        </div><!-- /.om-maximenu-middle-right --> 
+      </div><!-- /.om-maximenu-middle-left --> 
+    </div><!-- /.om-maximenu-middle --> 
+    <div class="om-maximenu-bottom">
+      <div class="om-maximenu-bottom-left"></div>
+      <div class="om-maximenu-bottom-right"></div>
+    </div><!-- /.om-maximenu-bottom -->  
+    <div class="om-maximenu-arrow"></div>
+    <div class="om-maximenu-open">
+      <input type="checkbox" value="" />
+      Stay    </div><!-- /.om-maximenu-open -->  
+  </div><!-- /.om-maximenu-content -->  
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+                  
+
+   
+  <li id="om-leaf-om-u3-826187318-5" class="om-leaf last leaf-product-catalog">   
+    <a  class="om-link  link-product-catalog" href="/products">PRODUCT CATALOG</a>      
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+      </ul><!-- /.om-menu -->    
+</div><!-- /.om-menu-ul-wrapper -->   
+
+
+
+      </div><!-- /#om-maximenu-[menu name] -->   
+
+
+						</div> <!-- .inner -->
+					</div> <!-- .main-navigation -->
+				</nav> <!-- .main-navigation-wrapper -->
+							</div> <!-- .topper-wrapper .w-navigation-->
+
+
+
+			<div id="content-area-wrapper" class="content-area-wrapper bdrcw ">
+
+								
+				<div id="content-wrapper" class="content-wrapper wrapper">
+					<div class="row">
+						<div id="content-container" class="container bcc ">	
+
+							
+							<section class="col-sm-9"> <!-- begin content column-->
+
+
+								    
+
+
+																
+								<div class="content-region bdrc ">
+
+									<a id="main-content"></a>
+
+										
+																					<h1 class="page-header title">Careers</h1>
+										
+										
+										
+																															
+										
+										
+										<div id="node-14" class="node node-page clearfix" about="/careers" typeof="foaf:Document">
+
+  
+      <span property="dc:title" content="Careers" class="rdf-meta element-hidden"></span>
+  
+  <div class="content">
+    <div class="field field-name-field-image field-type-image field-label-above"><div class="field-label">Image:&nbsp;</div><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="http://www.pds-x.com/sites/default/files/styles/page_image/public/image-uploads/careers.jpg?itok=679rZzTu" width="940" height="300" alt="Careers" /></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Are you looking for an exciting career in business-to-business technology sales? As the local Xerox agency, we help businesses apply the latest Xerox technologies to improve their business operations.</p>
+<h2>Why work for a Xerox Authorized Channel Partner?</h2>
+<ul><li>Enjoy a rewarding compensation package</li>
+<li>Develop new business relationships</li>
+<li>Be on the front line of technology</li>
+<li>Benefit from excellent training</li>
+<li>Work in a flexible and productive environment</li>
+</ul><p>To apply for positions, or to submit your resume, please <a href="/submit-resume">click here</a>.</p>
+</div></div></div><div class="field field-name-field-page-tags field-type-taxonomy-term-reference field-label-above"><div class="field-label">Tags:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="/tags/careers" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Careers</a></div></div></div>  </div>
+
+  
+  
+</div>
+										
+									    									</div> <!-- .content-region -->
+												
+							</section> <!-- /content column -->
+
+
+
+														<aside class="col-sm-3 sidebar-last sidebar region bdrsr  bpside  brside " role="complementary">
+								<div class="inner">
+									  <div class="region region-sidebar-second">
+    <div id="block-views-related-content-block" class="block block-views"><div class="block-inner">
+
+    <h2 class="block-title">Related Call To Action</h2>
+  
+  <div class="content">
+    <div class="view view-related-content view-id-related_content view-display-id-block view-dom-id-182438cc071c891997527fb71a74e4e9">
+        
+    
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="cta-wrapper">
+ <div class="cta-inner">
+ <div class="cta-image">
+ <a href="http://www.pds-x.com/contact"></a>
+ </div>
+ <div class="cta-text">
+ <div class="calltoaction">
+<h3 class="top"><a href="/contact">NEED MORE INFORMATION?</a></h3>
+<p><a href="/contact"><img src="/sites/default/files/imce/ts/need-more-info.png" /></a></p>
+<h3 class="bottom"><a href="/contact">WE ARE HERE TO HELP!</a></h3>
+</div>
+
+ </div>
+ </div>
+ </div>
+</span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div></div>
+<div id="block-views-related-content-block-5" class="block block-views"><div class="block-inner">
+
+    
+  <div class="content">
+    <div class="view view-related-content view-id-related_content view-display-id-block_5 view-dom-id-c20ec09f55c20e7494b6d38844a39a79">
+        
+    
+      <div class="view-empty">
+      <div class="view view-related-content view-id-related_content view-display-id-block_4 view-dom-id-fb7c97c4de20d75e970308c0ae156fd0">
+            <div class="view-header">
+      <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+h2.related-news {display: none;}
+/*--><!]]>*/
+</style><h2>Recent News</h2>
+    </div>
+  
+    
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/news/new-xerox-documate-3125-improves-office-productivity-increased-speed-and-improved-compatibility">New Xerox DocuMate 3125 Improves Office Productivity with Increased Speed and Improved Compatibility</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/news/xerox-fights-productivity-drain-new-multifunction-devices-small-office-%E2%80%93-everyone-can-use">Xerox Fights Productivity Drain with New Multifunction Devices for the Small Office – That Everyone Can Use</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/news/new-xerox-documate-6440-quick-well-rounded-scanner-puts-organizations-fast-track-digital">New Xerox DocuMate 6440 is a Quick, Well-Rounded Scanner That Puts Organizations on the Fast Track for Digital Success</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div></div>
+  </div>
+								</div> <!-- .inner -->
+							</aside>  <!-- /#sidebar-second -->
+													
+						</div> <!-- #content-container -->
+					</div> <!-- #content-wrapper -->
+				</div> <!-- .row -->
+			</div> <!-- .content-area-wrapper -->
+			
+			
+			
+			
+			
+			
+			
+			<!-- long page regions -->
+
+									
+
+									
+
+						
+
+						
+						
+			<!-- end long page regions -->
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			<footer class="footer-outer bdrf  bppost ">
+				<div class="footer-outer-inner">
+				
+										<div id="footer-wrapper" class="footer-wrapper wrapper">
+						<div class="footer-wrapper-inner">
+							<div id="footer-container" class="container bcf ">
+								<div id="footer" class="region brf  clearfix" >
+									<div class="inner">
+										  <div class="region region-footer">
+    <div id="block-block-6" class="block block-block col-lg-8 col-md-8 col-sm-12 col-xs-12"><div class="block-inner">
+
+    
+  <div class="content">
+    <div class="the-footer column-two">
+<ul><li><a href="/support">Support</a></li>
+<li><a href="/news">Xerox News</a></li>
+</ul></div>
+<div class="the-footer column-three">
+<ul><li><a href="/products">Product Catalog</a></li>
+<li><a href="/product-catalog?title=&amp;field_catalog_family_tid[]=6&amp;field_catalog_family_tid[]=10&amp;field_catalog_family_tid[]=7&amp;field_catalog_manufacturer_tid[]=3&amp;field_speed2_value=All">Multifunction</a></li>
+<li><a href="/product-catalog?title=&amp;field_catalog_family_tid[]=5&amp;field_catalog_manufacturer_tid[]=3&amp;field_speed2_value=All">Production</a></li>
+<li><a href="/product-catalog?title=&amp;field_catalog_family_tid[]=8&amp;field_catalog_family_tid[]=9&amp;field_catalog_manufacturer_tid[]=3&amp;field_speed2_value=All">Printing</a></li>
+<li><a href="/product-catalog?title=&amp;field_catalog_family_tid[]=4&amp;field_catalog_manufacturer_tid[]=3&amp;field_speed2_value=All">Digital Press</a></li>
+</ul></div>
+<div class="the-footer column-four">
+<div class="company-info">
+<p>Piedmont Digital Solutions<br />
+3 Centerview Drive, Suite 250<br />
+Greensboro, NC 27407<br />
+336.294.5557</p>
+<p><a href="/contact">Contact us</a></p>
+</div>
+<div class="social-icons">
+<ul><li><a class="facebook" href="https://www.facebook.com/Preferred-Document-Solutions-Xerox-134090889973239/" target="_blank">facebook</a></li>
+<li><a class="twitter" href="http://twitter.com" target="_blank">twitter</a></li>
+<li><a class="linkedin" href="https://www.linkedin.com/company/preferred-document-solutions---xerox" target="_blank">linkedin</a></li>
+</ul></div>
+<div class="footer-attribution">
+<p>© 2015 xfactor<br />
+powered by <a href="http://www.xfactorsites.com" target="blank">xFactor Marketing</a></p>
+</div>
+</div>
+  </div>
+</div></div>
+<div id="block-views-opn-news-feed-block" class="block block-views col-lg-4 col-md-4 col-sm-12 col-xs-12"><div class="block-inner">
+
+    <h2 class="block-title">News</h2>
+  
+  <div class="content">
+    <div class="view view-opn-news-feed view-id-opn_news_feed view-display-id-block view-dom-id-7bbce5927ef540b84432658cf7b99f34">
+        
+    
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/news/new-xerox-documate-3125-improves-office-productivity-increased-speed-and-improved-compatibility">New Xerox DocuMate 3125 Improves Office Productivity with Increased Speed and Improved Compatibility</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/news/xerox-fights-productivity-drain-new-multifunction-devices-small-office-%E2%80%93-everyone-can-use">Xerox Fights Productivity Drain with New Multifunction Devices for the Small Office – That Everyone Can Use</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/news/new-xerox-documate-6440-quick-well-rounded-scanner-puts-organizations-fast-track-digital">New Xerox DocuMate 6440 is a Quick, Well-Rounded Scanner That Puts Organizations on the Fast Track for Digital Success</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/news">
+    Read All  </a>
+</div>
+  
+  
+  
+</div>  </div>
+</div></div>
+  </div>
+									</div> <!-- .inner -->
+								</div> <!-- #footer -->
+							</div> <!-- #footer-container -->
+						</div> <!-- .footer-wrapper-inner -->
+					</div> <!-- .footer-wrapper -->
+										
+
+					<div id="footer-information" class="footer-information-wrapper wrapper">
+						<div class="footer-information-wrapper-inner">
+							<div id="footer-information-container" class="container bcf ">
+								<div id="footer-information" class="region brf  clearfix" >
+									<div class="inner">
+										<div>&copy;2016 </div>
+
+																			</div> <!-- .inner -->
+								</div> <!-- #footer-information -->
+							</div> <!-- #footer-information-container -->
+						</div> <!-- .footer-information-wrapper-inner -->
+					</div> <!-- .footer-information-wrapper -->
+
+					
+					<div id="attribution-line" class="attribution-wrapper wrapper">
+						<div id="attribution-container" class="container bcf ">
+							<div class="inner">
+								<div class="attribution-line-inside brf bra ">
+									<div class="inner-inner">
+										powered by Tribute Media - a <a href="http://www.tributemedia.com" target="_new" alt>web design &amp; marketing agency</a>. | <a href="/user">Login</a>.									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- #attribution-line -->
+
+				</div> <!-- .footer-outer-inner -->
+			</footer> <!-- .footer-outer -->
+
+		</div> <!-- .page-inner -->
+			</div> <!-- .page -->
+</div> <!-- .bento -->
+
+
+
+  <script src="http://www.pds-x.com/sites/all/themes/base-themes/bootstrap/js/bootstrap.js?o8xxcn"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"88a844bf6d","applicationID":"25007242","transactionName":"bl0BYEBYXUNZV0cIVlcXNkZbFhxZVlBWGRdJUBM=","queueTime":0,"applicationTime":12,"atts":"QhoCFghCTk0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

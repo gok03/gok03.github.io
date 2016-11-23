@@ -1,0 +1,493 @@
+status: 200
+content-length: 28301
+content-location: http://www.digitalintelligence.com
+vary: Accept-Encoding
+server: nginx/1.10.1
+connection: keep-alive
+-content-encoding: gzip
+date: Mon, 17 Oct 2016 11:15:16 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<title>Computer Forensics, Computer Forensics Training, Forensic Training, Forensic Computers, Forensic Hardware, and Forensic Software Solutions for the Computer Forensics Community</title>
+<meta name="description" content="Computer Forensics Training, Forensic Computers, Forensic Training, Forensic Hardware, and Forensic Software Solutions for the Computer Forensics Community, Law Enforcement, Intelligence Agencies, and Corporate Security Professionals">
+<meta name="keywords" content="Computer Forensics Training, Forensic Computers, Forensic Hardware, Forensic Software, Forensic Training, Computer Forensics, FRED, FREDDIE, FRED Sr, DriveSpy, PDWipe, PDBlock, Image, Part, SCSIBlock, FIREBlock">
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.menu {	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-TOP:5px; PADDING-BOTTOM:5px
+}
+body      { color: black; background-color: white; font-family: arial }
+a         { text-decoration: none; border-bottom-style: transparent; border-bottom-width: 1px }
+a:link    { border-bottom-color: #336699 }
+a:visited { border-bottom-color: #336699 }
+a:hover   { border-bottom-color: #336699; color: #FF9900 }
+a:active  { border-bottom-color: #336699 }
+.style39 {color: #FFFFFF}
+.style45 {
+	font-size: 17px;
+	color: #fbe971;
+}
+.style53 {
+	color: #336699;
+	font-size: 12px;
+}
+</style>
+
+<script type="text/javascript">
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+ 
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+//fadeimages[0]=["images/intro_fred.gif", "", ""] //plain image syntax
+//fadeimages[0]=["photo3.jpg", "http://www.digitalintelligence.com", "_new"] //image with link and target syntax
+//fadeimages[1]=["images/intro_promo.gif", "products/ultrablock_ide-sata_ro/", ""]
+fadeimages[0]=["images/intro_twitter.gif", "http://twitter.com/DigitalIntel", "_blank"]
+fadeimages[1]=["images/intro_facebook.gif", "http://www.facebook.com/pages/New-Berlin-WI/Digital-Intelligence/379171186624", "_blank"]
+fadeimages[2]=["images/intro_dihq.gif", "", ""]
+fadeimages[3]=["images/intro_fred.gif", "forensichardware.php", ""]
+fadeimages[4]=["images/intro_software.gif", "forensicsoftware.php", ""]
+fadeimages[5]=["images/intro_training.gif", "forensictraining.php", ""]
+ 
+//var fadeimages2=new Array() //2nd array set example. Remove or add more sets as needed.
+//SET IMAGE PATHS. Extend or contract array as needed
+//fadeimages2[0]=["photo1.jpg", "", ""] //plain image syntax
+//fadeimages2[1]=["photo2.jpg", "http://www.digitalintelligence.com", ""] //image with link syntax
+//fadeimages2[2]=["photo3.jpg", "http://www.digitalintelligence.com", "_new"] //image with link and target syntax
+
+var fadebgcolor="white"
+
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+ 
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+ 
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+ 
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+ 
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+</script>
+
+</HEAD>
+<BODY text="#666666" vLink="#336699" aLink="#336699" link="#336699" topmargin="0" leftmargin="0" bottommargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+
+<style type="text/css">
+<!--
+.holidayheading {
+	color: #c00000;
+	font-size: 11px;
+	font-family: Tahoma, Verdana;
+	text-decoration: underline;
+	text-align: center;
+}
+-->
+</style>
+<!-- Begin Holiday Announcement
+<link href="/styles.css" rel="stylesheet" type="text/css">
+<p align="center"><strong><span class="holidayheading">HOLIDAY SCHEDULE</span></strong><br />
+<span class="smalltext">DI is closed on these dates:</span><br />
+<span class="smalltext">Sep 5, 2016 | Labor Day</span></p>
+End Holiday Announcement -->
+<!-- Begin Closing Announcement
+<link href="/styles.css" rel="stylesheet" type="text/css">
+<p align="center">
+<strong><span class="smalltext" style="color:red">DI WILL BE CLOSED THE AFTERNOON OF FRIDAY, AUGUST 5, 2016</span></strong><br>
+<span class="smalltext">All orders placed online will be processed on Monday, August 8th</span></p>
+End Closing Announcement -->
+<!-- Begin Packer Announcement
+<link href="/styles.css" rel="stylesheet" type="text/css">
+<p align="center"><strong><span class="bigheading" style="color:green"><br><img src="images/gopackgo.jpg" alt="Green Bay Packers Beat Pittsburgh!" width="40" height="40">&nbsp;&nbsp;GO PACK GO!&nbsp;&nbsp;</span></strong><img src="images/gopackgo.jpg" alt="Green Bay Packers Beat Pittsburgh!" width="40" height="40"></p>
+End Packer Announcement -->
+
+<TABLE width="785" border="0" align="center" cellPadding="0" cellSpacing="0" bgcolor="#FFFFFF" height="200">
+  <TR>
+	<!-- <td rowspan="4" width="50%" height="100%" background="/images/bg1222.jpg" style="background-position:right top; background-repeat:repeat-y"></td> -->
+	<td rowspan="4" width="50%" height="100%" style="background-position:right top; background-repeat:repeat-y"></td>
+	<td rowspan="4" width="1" bgcolor="#000000"></td>
+    <td bgcolor="#ffffff"><table cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td><a href="/"><img src="/images/header_static.jpg" alt="Computer Forensics" width="780" height="125" border="0" style="display: block" /></a></td>
+</tr>
+<tr>
+	<td><a href="/forensichardware.php"><img src="/includes/images/forensichardware.gif" alt="Computer Forensics Hardware" width="99" height="27" border="0" /></a><a href="/forensicsoftware.php"><img src="/includes/images/forensicsoftware.gif" alt="Computer Forensics Software" width="100" height="27" border="0" /></a><a href="/forensictraining.php"><img src="/includes/images/forensictraining.gif" alt="Computer Forensics Training" width="117" height="27" border="0" /></a><a href="http://services.digitalintelligence.com/"><img src="/includes/images/forensicservices.gif" alt="Computer Forensics Services" width="104" height="27" border="0" /></a><a href="/cart"><img src="/includes/images/purchase.gif" alt="Purchase Forensic Computer Products" width="101" height="27" border="0" /></a><a href="/support.php"><img src="/includes/images/supportforums.gif" alt="Technical Support" width="131" height="27" border="0" /></a><a href="/resellers.php"><img src="/includes/images/resellers.gif" alt="Resellers" width="88" height="27" border="0" /></a><a href="/info.php"><img src="/includes/images/info.gif" alt="Company Information" width="40" height="27" border="0" /></a></td>
+</tr>
+</table></TD>
+	<td rowspan="4" width="1" bgcolor="#000000"></td>
+	<td rowspan="4" width="50%" height="100%" style="background-position:left top; background-repeat:repeat-y"></td>
+	<!-- <td rowspan="4" width="50%" height="100%" background="/images/bg1223.jpg" style="background-position:left top; background-repeat:repeat-y"></td> -->
+  </TR>
+  <TR>
+    <TD bgColor=#ffffff height=1><IMG height=1 src="images/spacer.gif" width=1></TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE width="780" border="0" cellPadding="0" cellSpacing="0">
+        <TBODY>
+        <TR>
+          <TD width="310" valign="top" background="images/line_bgb.gif"><div align="center">
+            <p><br>
+            <font color="#555555" size="5"><strong>Computer Forensics</strong></font><br><br>
+<script type="text/javascript">
+//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+new fadeshow(fadeimages, 209, 185, 0, 5000, 1)
+//new fadeshow(fadeimages, 209, 185, 0, 3000, 1, "R")
+//new fadeshow(fadeimages2, 140, 225, 0, 3000, 0)
+</script>
+            <div align="center">
+              <p><strong><a href="forensichardware.php">Computer Forensics Systems</a>, <a href="forensictraining.php">Training</a> and <a href="forensicservices.php">Services</a><br>
+                <a href="ultrabay3d.php">UltraBay 3d</a> - <a href="forensicwriteblockers.php">UltraBlocks</a> - <a href="products/sas_write_blocker/">SAS Write Blocking </a><br>
+                <a href="products/usb_write_blocker/">USB Write Blocking</a> - <a href="products/ultrablock_firewire/">Firewire Write Blocking</a></strong></p>
+            </div>
+          </div></TD>
+          <TD width="470" valign="top" bgcolor="#f6f6f6">
+            <TABLE cellSpacing=0 cellPadding=0 width=470 border=0 bgcolor="#f6f6f6">
+              <tr>
+                <td height="25" valign="bottom" bgcolor="#FFFFFF" style="padding-left:10px"><p align="left"><strong><span class="style53">a n n o u n c e m e n t s</span></strong></p></td>
+              </tr>
+			<tr>
+              <td height="1" bgcolor="#DDDDDD"></td>
+            </tr>
+              <tr>
+                <td bgcolor="#f6f6f6"><iframe src="includes/announcements.php" width="470" height="125" marginwidth="0" marginheight="0" frameborder="0"></iframe></td>
+              </tr>
+              <tr>
+                <td height="25" valign="bottom" bgcolor="#FFFFFF" style="padding-left:10px"><p align="left"><strong><span class="style53">r e c e n t&nbsp;&nbsp;&nbsp;n e w s</span></strong></p></td>
+              </tr>
+            <tr>
+              <td colspan="3" height="1" bgcolor="#DDDDDD"></td>
+            </tr>
+                <td><iframe id="NewsWindow" src="includes/recentnews.php" width="470" height="130" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe></td>
+            </TABLE></TD>
+		  </TR>
+        </TBODY></TABLE></TD></TR>
+  <TR>
+    <TD height="5"></TD>
+  </TR>
+  <TR>
+  <TR>
+    <td rowspan="2" width="1"></td>
+    <td rowspan="2" width="1"></td>
+  </TR>
+    <TD>
+      <div align="left">
+<!--
+        <TABLE cellSpacing=0 cellPadding=0 width=780 border=0>
+              <tr>
+                <td colspan="12" height="25" valign="bottom" bgcolor="#F6F6F6" style="padding-bottom:5px"><p align="center"><strong><span class="style53">D I G I T A L&nbsp;&nbsp;&nbsp;I N T E L L I G E N C E&nbsp;&nbsp;&nbsp;I S&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;S P O N S O R&nbsp;&nbsp;&nbsp;A N D&nbsp;&nbsp;&nbsp;E X H I B I T O R&nbsp;&nbsp;&nbsp;F O R&nbsp;&nbsp;&nbsp;C E I C&nbsp;&nbsp;&nbsp;2 0 1 5</span></strong></p></td>
+              </tr>
+            <TR vAlign=top>
+              <TD width="450" style="padding-top:0px"><P align="left" class=menu><span>Digital Intelligence is proud to be a sponsor/exhibitor at CEIC 2015, hosted by Guidance Software.</span><br>
+                  <br>
+                  <span>CEIC is one of the largest international gatherings of security, legal, enterprise, law enforcement, government, and risk and compliance attendees in the world, with a focus on the latest developments in digital investigations and invaluable training for EnCE and EnCEP certifications. Learn from some of the most well-known and innovative experts on the planet, deepen your understanding of EnCase techniques and technology in unique hands-on labs, connect with your peers, and get an inside look at state-of-the-art technology and services. CEIC 2015 is taking place May 18-22 at Caesars Palace in Las Vegas, Nevada.</span><br>
+                  <br>
+                  <span><strong>Get $100 off your registration</strong> with our special customer discount code <strong>D1git4Li5</strong>, and<strong> visit us at Booth #401</strong>. For more information and registration please visit:<br>
+              <a href="http://www.encase.com/ceic" target="_blank"><strong>http://www.EnCase.com/CEIC</strong></a></span></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD width="250" style="padding-top:5px"><P align="left" class=menu><span><a href="http://www.encase.com/ceic" target="_blank"><img src="images/Events_CEIC.jpg" alt="CEIC 2015" width="300" height="262" border="0"></a></span></P></TD>
+            </TR>
+        </TABLE>
+-->
+        <TABLE style="border-style:double" cellSpacing=0 cellPadding=0 width=780 border=0>
+            <TR vAlign=top bgcolor="#336699">
+              <TD width=194 bgcolor="#334466"><P align="center" class=menu><a href="forensichardware.php" class="style45">Forensic Hardware</a></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD width=194 bgcolor="#334466"><P align="center" class=menu><a href="forensicsoftware.php" class="style45">Forensic Software</a></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD width=194 bgcolor="#334466"><P align="center" class=menu><a href="forensictraining.php" class="style45">Forensic Training</a></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD width=194 bgcolor="#334466"><P align="center" class=menu><a href="forensicservices.php" class="style45">Forensic Services</a></P></TD>
+            </TR>
+            <TR vAlign=top bgcolor="#336699">
+              <TD width=194 background="images/line_bgt.gif" bgcolor="#336699">
+              <P align="left" class=menu><span class="style39">Our FRED systems are highly integrated platforms used both for the acquisition and analysis of computer based evidence via the UltraBay forensic imaging bay. <u>Only</u> at Digital Intelligence!</span></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD width=194 background="images/line_bgt.gif" bgcolor="#336699">
+              <P align="left" class=menu><span class="style39">Digital Intelligence is the only computer forensic solutions provider which designs and builds both forensic software and forensic hardware solutions using in-house expertise.</span></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD width=194 background="images/line_bgt.gif" bgcolor="#336699">
+              <P align="left" class=menu><span class="style39">Computer forensics training introduces students to techniques and tools providing a solid foundation in concepts related to the investigation, preservation, and processing of computer evidence.</span></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD width=194 background="images/line_bgt.gif" bgcolor="#336699"><P align="left" class=menu><span class="style39">Our skilled professionals understand the specific challenges associated with complex forensic examination. Our staff is court qualified at federal, state and local levels for both criminal and civil cases.</span></P></TD>
+            </TR>
+        </TABLE>
+        <TABLE>
+            <tr>
+              <td colspan="1" height="1"></td>
+            </tr>
+        </TABLE>
+<!-- BEGIN EVENTS (3)
+        <TABLE cellSpacing=0 cellPadding=0 width=780 border=0>
+              <tr>
+                <td colspan="12" height="25" valign="bottom" bgcolor="#F6F6F6" style="padding-bottom:3px"><p align="center"><strong><span class="style53">D I G I T A L&nbsp;&nbsp;&nbsp;I N T E L L I G E N C E&nbsp;&nbsp;&nbsp;W I L L&nbsp;&nbsp;&nbsp;B E&nbsp;&nbsp;&nbsp;A T T E N D I N G&nbsp;&nbsp;&nbsp;T H E&nbsp;&nbsp;&nbsp;F O L L O W I N G&nbsp;&nbsp;&nbsp;F O R E N S I C&nbsp;&nbsp;&nbsp;E V E N T S</span></strong></p></td>
+              </tr>
+            <TR vAlign=top>
+              <TD style="padding-top:7px"><P align="center"><a href="https://www.guidancesoftware.com/enfuse-conference" target="_blank"><a href="http://www.icactraining.org/" target="_blank"><img src="images/Events_Enfuse.gif" alt="Enfuse" width="165" height="55" border="0"></a></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD style="padding-top:17px"><P align="center"><a href="http://www.technosecurity.us/" target="_blank"><img src="images/Events_TSFIC.gif" alt="Techno Security" width="165" height="39" border="0"></a></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD style="padding-top:5px"><P align="center"><a href="http://www.htciaconference.org/" target="_blank"><img src="images/Events_HTCIA.gif" alt="HTCIA" width="165" height="60" border="0"></a></P></TD>
+            </TR>
+            <TR vAlign=top>
+              <TD>
+              <P align="center"><strong>Enfuse<br>
+              May 23-26 , 2016<br>
+              Las Vegas, NV</strong></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD>
+              <P align="center"><strong>Techno Security<br>
+              June 5-8 , 2016<br>
+              Myrtle Beach, SC</strong></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD>
+              <P align="center"><strong>HTCIA<br>
+              August 28-31, 2016<br>
+              Summerlin, NV</strong></P></TD>
+            </TR>
+        </TABLE>
+END EVENTS (3) -->
+<!-- BEGIN EVENTS (6)
+        <TABLE cellSpacing=0 cellPadding=0 width=780 border=0>
+              <tr>
+                <td colspan="12" height="25" valign="bottom" bgcolor="#F6F6F6" style="padding-bottom:5px"><p align="center"><strong><span class="style53">D I G I T A L&nbsp;&nbsp;&nbsp;I N T E L L I G E N C E&nbsp;&nbsp;&nbsp;W I L L&nbsp;&nbsp;&nbsp;B E&nbsp;&nbsp;&nbsp;A T T E N D I N G&nbsp;&nbsp;&nbsp;T H E&nbsp;&nbsp;&nbsp;F O L L O W I N G&nbsp;&nbsp;&nbsp;F O R E N S I C&nbsp;&nbsp;&nbsp;E V E N T S</span></strong></p></td>
+              </tr>
+            <TR vAlign=top>
+              <TD style="padding-top:20px"><P align="center" class=menu><a href="http://www.ceicconference.com/" target="_blank"><a href="http://www.icactraining.org/" target="_blank"><img src="images/Events_ICAC.gif" width="100" height="33" border="0"></a></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD style="padding-top:23px"><P align="center" class=menu><a href="http://accessdata.com/aduc/" target="_blank"><img src="images/Events_ADUC.gif" width="100" height="28" border="0"></a></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD style="padding-top:20px"><P align="center" class=menu><a href="http://www.ceicconference.com/" target="_blank"><img src="images/Events_CEIC.gif" width="100" height="35" border="0"></a></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD style="padding-top:10px"><P align="center" class=menu><a href="http://thetrainingco.com/" target="_blank"><img src="images/Events_TECHNOSEC.gif" width="50" height="51" border="0"></a></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD style="padding-top:10px"><P align="center" class=menu><a href="http://www.htciaconference.org/" target="_blank"><img src="images/Events_HTCIA.gif" width="100" height="60" border="0"></a></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD style="padding-top:5px"><P align="center" class=menu><a href="http://www.pfic-conference.com/" target="_blank"><img src="images/Events_PFIC.gif" width="100" height="55" border="0"></a></P></TD>
+            </TR>
+            <TR vAlign=top>
+              <TD>
+              <P align="center" class=menu><span><span>ICAC<br>
+                <span>April 17-19 , 2012<br>
+Atlanta, GA</span></span></span></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD>
+              <P align="center" class=menu><span>ADUC<br>
+                  <span>May 15-18 , 2011<br>
+              Las Vegas, NV </span></span></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD>
+              <P align="center" class=menu><span><span>CEIC<br>
+                    <span>May 21-24, 2012<br>
+Summerlin, NV </span></span></span></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD>
+              <P align="center" class=menu><span>Techno Security<br>
+              June 3-6, 2012<br>
+              Myrtle Beach, SC </span></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD>
+              <P align="center" class=menu><span>HTCIA<br>
+                  <span>Sep 16-19, 2012<br>
+Hershey, PA</span></span></P></TD>
+              <TD width=1 bgcolor="#FFFFFF">&nbsp;</TD>
+              <TD><P align="center" class=menu><span>Paraben Forensic Innovations<br>
+Nov 5-9, 2011<br>
+Park City, UT</span></P></TD>
+            </TR>
+        </TABLE>
+END EVENTS (6) -->
+      </div></TD>
+    <TR>
+    <td rowspan="2" width="1"></td>
+    <td rowspan="2" width="1"></td>
+    </TR>
+	</TR>
+  <TR>
+    <TD height=5></TD>
+  </TR>
+  <TR>
+  <TR>
+    <td rowspan="2" width="1"></td>
+    <td rowspan="2" width="1"></td>
+  </TR>
+    <TD bgColor=#000000 height=1><IMG height=1 src="images/spacer.gif" width=1></TD>
+  </TR>
+  </TR>
+  <TR>
+    <TD bgColor=#eeeeee height=2></TD>
+  </TR>
+  <TR>
+    <TD height=4>
+      <div align="left"><IMG height=5 src="images/spacer.gif" width=1></div>
+    </TD>
+  </TR>
+  <TR>
+  <TR>
+    <td rowspan="2" width="1"></td>
+    <td rowspan="2" width="1"></td>
+  </TR>
+    <TD height=10 class="smalltext">
+    <TABLE cellSpacing=0 cellPadding=0 width=780 border=0>
+    <TBODY>
+    <TR vAlign=top>
+    <TD height=10 width="575">
+		<div align="left">
+		<span class="footermenu"><img style="MARGIN-RIGHT: 5px" height="11" src="images/phoneicon.gif" width="15" align="absMiddle" border="0">
+		866-DIGINTEL (866-344-4683)	| 262-782-3332 |
+		<a href="https://www.digitalintelligence.com/productregistration.php"><strong>REGISTER YOUR NEW FRED</strong></a>
+<!--
+         |
+		<a href="mailinglist.php"><strong>DI MAILING LIST</strong></a>
+-->
+         |
+		<a href="http://www.digitalintelligence.com/cart/ComputerForensicsProducts/contact-us.html"><strong>E-MAIL DI SALES</strong></a></span></div>
+	</TD>
+    <TD height=10 width="205">
+      <div align="right">
+	  <span class="footermenu">
+	  Copyright &copy; 2016 Digital Intelligence, Inc.
+	  </span>
+	  </div>
+	</TD>
+    </TR>
+    </TBODY>
+    </TABLE>
+  </TR>
+</TABLE>
+<br><center> <br><br></center>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5755446-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</BODY>
+</HTML>

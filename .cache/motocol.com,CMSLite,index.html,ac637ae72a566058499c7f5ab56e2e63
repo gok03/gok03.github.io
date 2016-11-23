@@ -1,0 +1,370 @@
+status: 200
+content-length: 26430
+content-location: http://motocol.com/CMSLite/index.html
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Apache
+-content-encoding: gzip
+date: Thu, 29 Sep 2016 10:34:46 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Motocol - Enterprise Mobile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes"/> 
+    <link rel="apple-touch-icon" href="img/motocol_favicon1.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/motocol_favicon1.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/motocol_favicon1.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/motocol_favicon1.png" />
+    <link rel="icon" type="image/png" href="img/motocol_favicon1.png">
+
+    <!-- iPhone -->
+    <link href="apple-startup-iphone.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <!-- iPhone (Retina) -->
+    <link href="apple-startup-iphone-retina.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- iPhone 5 -->
+    <link href="apple-startup-iphone-tall-retina.png"  media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- iPad Portrait -->
+    <link href="apple-startup-ipad-portrait.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <!-- iPad Landscape -->
+    <link href="apple-startup-ipad-landscape.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <!-- iPad Portrait (Retina) -->
+    <link rel="apple-touch-startup-image" href="apple-startup-ipad-portrait-retina.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" />
+    <!-- iPad Landscape (Retina) -->
+    <link rel="apple-touch-startup-image" href="apple-startup-ipad-landscape-retina.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" />
+    <script src="ie8fixes.js" ></script>
+    <link rel="stylesheet" href="../3rdParty/jqm/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+
+    <script src="../3rdParty/jquery/jquery-1.9.1.min.js"></script>
+    <script src="../3rdParty/jquery/jquery-migrate-1.1.1.min.js"></script>
+    <script src="../archetype/archetype-MVC.js"></script>
+    <script src="../archetype/websql_patch.js"></script>
+    <script src="../archetype/shiny/map.js"></script>
+    <script src="../3rdParty/jqm/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+    <script src="custom.js"></script>
+<!---------------------------------------------------
+  -  CODE TO MAKE YOUTUBE IFRAME PLUGIN ADAPTIVE  -
+  --------------------------------------------------->
+
+</head>
+
+<body onresize="resizeIFrames()">
+    <!--*********************************************************************************************************************
+    * ARCHETYPE REQUIRES 5 special tags:
+    *   1) data-motocol-app:  Holds ALL front end configuration ... the majority of config is backend driven.
+    *   2) Empty page - the first page in the DOM flashes for a moment during initialization ... having a blank page removes flicker
+        3)
+    *   EMPTY to reduce first load flicker, MORE button container, LOGIN for 401 errors and ERROR for other errors
+    *************************************************************************************************************************-->
+    <div data-motocol-appconfig="CMSLite" data-motocol-app="Motocol Website" data-motocol-action="../archetype/webservice/archetype-REST.php" data-motocol-startpage="home" data-motocol-method="GET" data-motocol-ajaxtimeout="3000" ></div>
+    <!---------------------------------- Login page ----------------------------------->
+    <div data-role="page" id="empty" data-motocol-archetype="Page" data-theme="d"></div>
+    <!---------------------------------- Login page ----------------------------------->
+    <div data-role="page" id="login-archetype" data-motocol-archetype="Page" data-theme="d" data-motocol-login="page">See examples if you require a login page</div>
+    <!---------------------------------- More Button Container ----------------------------------->
+    <div data-role="page"><div id="recmoreid" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-d" data-motocol-recstart="0" data-motocol-recperpage="10" data-motocol-recmore-default>MORE RECORDS</div></div>
+    <!---------------------------------- Error page ----------------------------------->
+    <div data-role="page" id="exception-archetype" data-theme="d" data-motocol-error="page">
+        <div data-role="header" data-theme="f"><h1>Error</h1></div>
+        <div data-role="content">
+            <h3>An unexpected error has occured</h3>
+            <form data-motocol-login="form">
+                <h1 style="color:red;" data-motocol-error="errorcode"></h1><div style="color:red;" data-motocol-error="errortext"></div><div style="color:red;" data-motocol-error="errorinfo"></div><div style="color:red;" data-motocol-error="errortype"></div>
+                <a href="#home" data-role="button" data-transition="pop" data-direction="reverse" data-theme="a">Ok</a>
+            </form>
+        </div><!-- /content -->
+    </div><!-- /error page -->
+    <!--************************************************************************************************************************************
+    *  END OF SPECIAL ARCHETYPE TAG SECTION
+    ****************************************************************************************************************************************-->
+
+    <!-- HOME PAGE -->
+    <div  data-motocol-archetype="Page" data-role="page" id="home-archetype" data-theme="d">
+        <div data-motocol-schema="Service"></div>
+        <div data-motocol-schema="motocolwebsite"></div>
+
+        <div data-role="header" data-id="header" id="header" data-tap-toggle="false" data-theme="a" data-position="fixed" class="down-shadow">
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><a href="#home"><img src="img/motocol_logo_white_text.png" style="max-width: 200%;"/></a></div>
+                <div class="ui-block-b">
+                    <div data-motocol-schema="motocolwebsite.navmenu" class="ui-grid-d large-nav-menu">
+                        <div data-motocol-item=".repeat:true; .class:'ui-block-',gridposition; .iff:gridposition; .sort:gridposition" >
+                            <div data-theme="b" data-role="button" data-inline="true"><a data-motocol-itemkey=".href:navmenu_link,'?section=',navmenu_text;.textarea:navmenu_text" >Services</a></div>
+                        </div>
+                    </div>
+                    <div class="ui-grid-d menu-button">
+                        <div class="ui-block-a"></div><div class="ui-block-b"></div><div class="ui-block-c"></div>
+                        <div class="ui-block-d">
+                            <a href="#nav-panel">
+                                <div data-role="button" data-inline="true">
+                                    <img src="img/menu-large-white.png" style="max-width: 2em;"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ui-block-e"></div>
+                    </div>
+                </div>
+            </div>
+            <div data-role="panel" id="nav-panel"  data-position="right" data-display="overlay" data-theme="b">
+                <ul data-motocol-schema="motocolwebsite.navmenu" data-role="listview" data-theme="a">
+                    <li data-motocol-item=".repeat:true; .iff:gridposition">
+                        <a data-motocol-itemkey=".href:navmenu_link,'?section=',navmenu_text; .textarea:navmenu_text" href="#replacethis">replacethis</a>
+                    </li>
+               </ul>
+            </div><!-- /panel -->
+        </div>
+        <div data-role="content" data-theme="b">
+            <ul data-role="listview" data-theme="b">
+                <li data-theme="b">
+                    <div align="center">
+                        <h1 class="tagline" style="white-space:normal; font-size:1.5em; color:lightcyan;">We Simplify Enterprise Mobility</h1>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-grid-b ui-responsive">
+                        <div class="ui-block-a">
+                            <a href="#company?section=Company" data-role="button" data-theme="b" data-icon="arrow-r" data-iconpos="right">
+                                <h3 style="white-space:nowrap;color:lightcyan;">Why Motocol?</h3>
+                            </a>
+                            <div align="center">
+                                <a href="#company?section=Company"><img src="img/city8-light-blue.png" style="max-width:50%"></a>
+                                <p style="white-space:normal;font-size:1.1em; margin:5%; color:lightcyan;">We make
+                                    enterprise mobility easier, reduce risk and technical debt, and find ways to maximize
+                                    ROI.</p>
+                            </div>
+                        </div>
+                        <div class="ui-block-b">
+                            <a href="#services?section=Services" data-role="button" data-theme="b" data-icon="arrow-r"
+                               data-iconpos="right">
+                                <h3 style="white-space:nowrap;color:lightcyan;">Mobile Strategy</h3>
+                            </a>
+                            <div align="center">
+                                <a href="#services?section=Services"><img src="img/iphone-light-blue.png" style="max-width:50%"></a>
+                                <p style="white-space:normal; font-size:1.1em; margin:5%; color:lightcyan;">How mobile can
+                                    increase customer interaction, boost employee productivity, and enhance brand
+                                    recognition!</p>
+                            </div>
+                        </div>
+                        <div class="ui-block-c">
+                            <a href="#products?section=Products" data-role="button" data-theme="b" data-icon="arrow-r" data-iconpos="right">
+                                <h3 style="white-space:nowrap;color:lightcyan;">Products/Solutions</h3>
+                            </a>
+                            <div align="center">
+                                <a href="#products?section=Products"><img src="img/full-stack-light-blue-2.png" style="max-width:50%"></a>
+                                <p style="white-space:normal; font-size:1.1em; margin:5%; color:lightcyan;"> We address
+                                    issues such as security, integration, cross-platform compatibility, connectivity,
+                                    display, and distribution. </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-theme="c">
+                    <div class="ui-grid-b ui-responsive">
+                        <div class="ui-block-a rounded-border">
+                            <div>
+                                <div style="margin-left:20%;">
+                                    <h1 style="white-space:normal;">
+                                        <strong>Contact Us:</strong>
+                                    </h1>
+                                    <h2 style="white-space:normal; margin-bottom:10%;">
+                                        (855)-MOTOCOL
+                                        </br>
+                                        <a style="color:#2489ce" href="mailto:sales@motocol.com?subject=Sales%20Inquiry" target="_top">sales@motocol.com</a>
+                                        </br>
+                                        </br>7951 E Maplewood Ave #328
+                                        </br>Greenwood Village, CO 80111
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-block-b" style="margin-top:5%; margin-bottom:5%">
+                            <div align="center">
+                                <h1>Social Media</h1>
+                                <a href="https://www.linkedin.com/company/motocol"><img src="img/linkedin.png" style="max-width:2.5em;"></a>
+                                <a href="https://www.facebook.com/Motocol"><img src="img/facebook.png" style="max-width:2.5em;"></a>
+                                <a href="https://twitter.com/motocol"><img src="img/twitter.png" style="max-width:2.5em;"></a>
+                                <a href="https://plus.google.com/106230191624722789902/posts"><img src="img/google.png" style="max-width:2.5em;"></a>
+                                <a href="https://www.youtube.com/user/MotocolVideos"><img src="img/youtube.png" style="max-width:2.5em;"></a>
+                                <!-- pre-load the other images -->
+                                <span data-motocol-schema="motocolwebsite.elements">
+                                    <img onload="$(this).hide()" width="1" height="1" border="0" data-motocol-item=".repeat:true; .iff:element_image; .src:element_image;"/>
+                                    <img onload="$(this).hide()" width="1" height="1" border="0" data-motocol-item=".repeat:true; .iff:image_map; .src:image_map;"/>
+                                    <img onload="$(this).hide()" width="1" height="1" border="0" data-motocol-item=".repeat:true; .iff:image_video; .src:image_video;"/>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="ui-block-c rounded-border">
+                            <div>
+                                <form data-motocol-formaction="process" data-motocol-validate=".validate:validateForm">
+                                    <input type="hidden" name="querytype" value="create" >
+                                    <input type="hidden" name="queryhow" value="item">
+                                    <input type="hidden" name="itemloc" value="Service">
+                                    <input type="hidden" name="itemtype" value="subscribe">
+                                    <input type="hidden" name="onFetchDataSuccess" value="subscribeThankYou">
+                                    <input type="hidden" name="onFetchDataFail" value="subscribeError">
+
+                                    <h2 style="white-space:normal;">Get latest Tech News directly to your inbox...</h2>
+                                    <div style="margin-left:2%; margin-right:2%;">
+                                        <input id="email_address" type="email"  name="email_address" id="email_address" placeholder="Enter your email..." value="" data-theme="d" >
+                                    </div>
+                                    <input id="submit_button" type="submit" value="Subscribe Now" data-role="button" data-theme="d" >
+                                </form>
+                                </br>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div  style="max-width:1600px;" data-motocol-archetype="Page" data-role="page" id="archetype" data-theme="d">
+        <div data-role="header" data-id="header" id="header" data-tap-toggle="false" data-theme="a" data-position="fixed" class="down-shadow">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#home"><img src="img/motocol_logo_white_text.png" style="max-width: 200%;"/></a>
+                </div>
+                <div class="ui-block-b">
+                    <div data-motocol-schema="motocolwebsite.navmenu" class="ui-grid-d large-nav-menu">
+                        <div data-motocol-item=".repeat:true; .class:'ui-block-',gridposition; .iff:gridposition; .sort:gridposition" >
+                            <div data-theme="b" data-role="button" data-inline="true"><a data-motocol-itemkey=".href:navmenu_link,'?section=',navmenu_text;.textarea:navmenu_text">..Services</a></div>
+                        </div>
+                    </div>
+                    <div class="ui-grid-d menu-button">
+                        <div class="ui-block-a"></div>
+                        <div class="ui-block-b"></div>
+                        <div class="ui-block-c"></div>
+                        <div class="ui-block-d">
+                            <a href="#nav-panel">
+                                <div data-role="button" data-inline="true">
+                                    <img src="img/menu-large-white.png" style="max-width: 2em;"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ui-block-e"></div>
+                    </div>
+                </div>
+            </div>
+            <div data-role="panel" id="nav-panel"  data-position="right" data-display="overlay" data-theme="b">
+                <ul data-motocol-schema="motocolwebsite.navmenu" data-role="listview" data-theme="a">
+                    <li data-motocol-item=".repeat:true;"><a data-motocol-itemkey=".href:navmenu_link,'?section=',navmenu_text;.textarea:navmenu_text" href="#thisgetsreplaced">..home</a></li>
+                </ul>
+            </div><!-- /panel -->
+        </div>
+        <div data-role="content" data-theme="b">
+            <div data-motocol-schema="motocolwebsite.sections" data-motocol-key="section_name" data-motocol-params="item:section" align="center">
+                <h1 data-motocol-item=".textarea:section_text"  class="tagline" style="white-space:normal; font-size:1.5em; color:lightcyan;">... loading ...</h1>
+            </div>
+        </div>
+        <div data-role="content" data-theme="a" data-motocol-schema="motocolwebsite.elements" data-motocol-key="section_name" data-motocol-params="item:section">
+            <div data-motocol-item=".repeat:true; .sort:element_position;  .id:element_name,'-',element_id;" data-motocol-field-layout=".namesort:element_image,image_map,image_video,element_content; .fieldmap:refImg,refImgMap,refImgVideo,refContent" style="padding:0px; margin-bottom:1em;background-color:white;" class="rounded-border" >
+                <div data-role="field-contain"><h4 align="center" data-motocol-itemkey=".iff:element_header; .textarea:element_header; .style:'padding: 1em; padding-right:.2em; background-color: #005e9d; color:lightcyan; background-color: ',element_header_color,'; border-top-left-radius: .5em; border-top-right-radius: .5em; margin-top: 0px; margin-bottom: 0;'"></h4></div>
+                <div data-motocol-choose="fieldmap" style="padding: 1em;" class="ui-grid-a ui-responsive" >
+                    <div data-motocol-itemkey=".iff:zoom_msg; .textarea:zoom_msg" data-motocol-choose-filter="refImg" style="color:lightgray; margin-left:6em;" ></div>
+
+                    <a data-motocol-choose-filter="refImg" data-motocol-itemkey=".iff:element_image; .href:'#image',itemid" data-rel="popup" data-position-to="window" data-transition="fade">
+                        <img onload="$(this).css('display','block')" data-motocol-field=".src:value" class="ui-block-a" style="display:none; margin-right:2em; margin-bottom:2em; min-width:50px; max-width:300px; border: .1em solid #a1a1a1; background: #dddddd; border-radius: 1em; box-shadow: .25em .25em .25em #888888;" />
+                    </a>
+                    <div data-motocol-choose-filter="refImg" data-role="popup" data-motocol-itemkey=".iff:zoom_msg; .id:'image',itemid" data-overlay-theme="a" data-theme="d" data-corners="false">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                        <img onload="$(this).css('display','block')" data-motocol-field=".src:value" class="ui-block-a" style="display:none; max-height:650px; border: .1em solid #a1a1a1; background-color: #dddddd; border-radius: 1em; box-shadow: .25em .25em .25em #888888;" />
+                    </div>
+
+                    <a data-motocol-choose-filter="refImgMap" data-motocol-itemkey=".iff:image_map; .href:'#map?',image_map">
+                        <img onload="$(this).css('display','block')" data-motocol-field=".src:value" class="ui-block-a" style="display:none; margin-right:2em; margin-bottom:2em; min-width:50px; max-width:300px; border: .1em solid #a1a1a1; background: #dddddd; border-radius: 1em; box-shadow: .25em .25em .25em #888888;" />
+                    </a>
+
+                    <a data-motocol-choose-filter="refImgVideo" data-motocol-itemkey=".iff:image_video; " >
+                        <img onload="$(this).css('display','block');createIFrame();"  onclick="createIFrame();" class="ui-block-a" id="video-image" data-motocol-field=".src:value"  style="display:none; margin-right:2em; margin-bottom:2em; min-width:50px; max-width:300px; border: .1em solid #a1a1a1; background: #dddddd; border-radius: 1em; box-shadow: .25em .25em .25em #888888;" />
+                    </a>
+
+                    <p data-motocol-choose-filter="refContent" data-motocol-itemkey=".iff:element_content; .textarea:element_content" class="ui-block-b" ></p>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="f" style="background-color: white; vertical-align: text-top; border: 1px solid #14c4ff" >
+            <div class="ui-grid-a" align="center" >
+                <div class="ui-block-a">
+                    <p style="vertical-align: text-top; font-size: xx-small;" >Site powered by <img style="vertical-align: bottom" src="img/archetype-logo-small_xx.png"/></p>
+                </div>
+                <div class="ui-block-b">
+                    <p style="vertical-align: text-top; font-size: xx-small;" >© 2015 <img style="vertical-align: bottom" src="img/motocol_logo_sm_xx.png"/></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-motocol-archetype="Page"  id="map-archetype" data-theme="d">
+        <div data-role="header" data-id="header" id="header" data-tap-toggle="false" data-theme="a" data-position="fixed" class="down-shadow">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#home"><img src="img/motocol_logo_white_text.png" style="max-width: 200%;"/></a>
+                </div>
+                <div class="ui-block-b">
+                    <div data-motocol-schema="motocolwebsite.navmenu" class="ui-grid-d large-nav-menu">
+                        <div data-motocol-item=".repeat:true; .class:'ui-block-',gridposition; .iff:gridposition; .sort:gridposition" >
+                            <div data-theme="b" data-role="button" data-inline="true"><a data-motocol-itemkey=".href:navmenu_link,'?section=',navmenu_text;.textarea:navmenu_text">..Services</a></div>
+                        </div>
+                    </div>
+                    <div class="ui-grid-d menu-button">
+                        <div class="ui-block-a"></div>
+                        <div class="ui-block-b"></div>
+                        <div class="ui-block-c"></div>
+                        <div class="ui-block-d">
+                            <a href="#nav-panel">
+                                <div data-role="button" data-inline="true">
+                                    <img src="img/menu-large-white.png" style="max-width: 2em;"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ui-block-e"></div>
+                    </div>
+                </div>
+            </div>
+            <div data-role="panel" id="nav-panel"  data-position="right" data-display="overlay" data-theme="b">
+                <ul data-motocol-schema="motocolwebsite.navmenu" data-role="listview" data-theme="a">
+                    <li data-motocol-item=".repeat:true"><a data-motocol-itemkey=".href:navmenu_link,'?section=',navmenu_text;.textarea:navmenu_text" href="#thisgetsreplaced">..home</a></li>
+                </ul>
+            </div><!-- /panel -->
+        </div>
+        <div data-role="content">
+            <div data-motocol-schema="motocolwebsite.locations"
+                 data-motocol-key="location_id"
+                 data-motocol-item="1"
+                 data-shiny-object-map=".single:address city, state zip; .size:browser-84" class="jqm-map">
+
+                <div data-shiny-object-map="marker" style="height: 150px;width:200px;overflow-x:hidden;">
+                    <span  class="map-title" ></span>
+                    <p style="font-size:9px;color:#000;text-shadow:none;">
+                        <img data-motocol-itemkey=".src:image"/>
+                        <strong>
+                            <!--<span  data-motocol-itemkey=".textarea:company_name"></span>-->
+                            <span data-motocol-itemkey=".textarea:address" ></span>
+                            <br/>
+                            <span data-motocol-itemkey=".textarea:city,', ',state,'  ',zip"></span>
+                        </strong>
+                    </p>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <a href="tel:" data-motocol-itemkey=".href:'tel:+1 ',phone;.textarea:phone" target="_blank" style="text-decoration:none;"></a>
+                        </div>
+                        <div class="ui-block-b">
+                            <a class="takemethere" href="#" data-shiny-object-map=".onclick:direct">Take me there</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

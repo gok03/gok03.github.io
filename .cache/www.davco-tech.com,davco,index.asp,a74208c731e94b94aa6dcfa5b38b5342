@@ -1,0 +1,311 @@
+status: 200
+content-length: 19740
+content-location: http://www.davco-tech.com/davco/index.asp
+set-cookie: SessionID=; expires=Mon, 17-Oct-2016 17:51:38 GMT;
+ path=/, ASPSESSIONIDCQSQDCCA=LPPPODMBKHFEKPPHEIKHHLKK; path=/
+expires: Mon, 17 Oct 2016 15:50:38 GMT
+vary: Accept-Encoding
+server: Microsoft-IIS/8.0
+-content-encoding: gzip
+cache-control: Public
+date: Mon, 17 Oct 2016 15:51:38 GMT
+x-powered-by: ASP.NET
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+
+
+<script>
+var fadeid;
+var fadeOpacityValue;
+var fadeTo;
+
+function setOpacity(element, value) {
+	if (value == 100)
+	{
+		window.document.getElementById(element).style.opacity = 1;
+		window.document.getElementById(element).style.filter = '';
+	}
+	else
+	{
+		window.document.getElementById(element).style.opacity = value/100;
+		window.document.getElementById(element).style.filter = 'alpha(opacity=' + value + ')';
+	}
+}
+
+function fadeOpacityTimer(element) {
+	fadeOpacityValue=fadeOpacityValue-5;
+	if (fadeOpacityValue > fadeTo)
+	{
+		setOpacity(element, fadeOpacityValue);
+	}
+	else
+	{
+		clearInterval(fadeid);
+	}
+}
+
+function fadeOpacity(element, value, duration) {
+	fadeOpacityValue = 100;
+	fadeTo = value;
+	fadeid = setInterval("fadeOpacityTimer('" + element + "')",duration/100);
+}
+
+function showOpacityTimer(element) {
+	fadeOpacityValue=fadeOpacityValue+5;
+	if (fadeOpacityValue <= fadeTo)
+	{
+		setOpacity(element, fadeOpacityValue);
+	}
+	else
+	{
+		clearInterval(fadeid);
+	}
+}
+
+function showOpacity(element, value, duration) {
+	fadeOpacityValue = 0;
+	fadeTo = value;
+	fadeid = setInterval("showOpacityTimer('" + element + "')",duration/100);
+}
+
+//autocomplete
+
+var isOpera = navigator.userAgent.indexOf("Opera") > -1; 
+var isIE = navigator.userAgent.indexOf("MSIE") > 1 && !isOpera; 
+var isMoz = navigator.userAgent.indexOf("Mozilla/5.") == 0 && !isOpera; 
+
+function textboxSelect (oTextbox, iStart, iEnd) { 
+
+   switch(arguments.length) { 
+       case 1: 
+           oTextbox.select(); 
+           break; 
+
+       case 2: 
+           iEnd = oTextbox.value.length; 
+           /* falls through */ 
+            
+       case 3:          
+           if (isIE) { 
+               var oRange = oTextbox.createTextRange(); 
+               oRange.moveStart("character", iStart); 
+               oRange.moveEnd("character", -oTextbox.value.length + iEnd);      
+               oRange.select();                                              
+           } else if (isMoz){ 
+               oTextbox.setSelectionRange(iStart, iEnd); 
+           }                     
+   } 
+
+   oTextbox.focus(); 
+} 
+
+function textboxReplaceSelect (oTextbox, sText) { 
+
+   if (isIE) { 
+       var oRange = document.selection.createRange(); 
+       oRange.text = sText; 
+       oRange.collapse(true); 
+       oRange.select();                                 
+   } else if (isMoz) { 
+       var iStart = oTextbox.selectionStart; 
+       oTextbox.value = oTextbox.value.substring(0, iStart) + sText + oTextbox.value.substring(oTextbox.selectionEnd, oTextbox.value.length); 
+       oTextbox.setSelectionRange(iStart + sText.length, iStart + sText.length); 
+   } 
+
+   oTextbox.focus(); 
+} 
+
+function autocompleteMatch (sText, arrValues) { 
+
+   for (var i=0; i < arrValues.length; i++) { 
+       if (arrValues[i].toLowerCase().indexOf(sText.toLowerCase()) == 0) { 
+           return arrValues[i]; 
+       } 
+   } 
+
+   return null; 
+
+} 
+
+function autocomplete(oTextbox, oEvent, arrValues) { 
+
+   switch (oEvent.keyCode) { 
+       case 38: //up arrow  
+       case 40: //down arrow 
+       case 37: //left arrow 
+       case 39: //right arrow 
+       case 33: //page up  
+       case 34: //page down  
+       case 36: //home  
+       case 35: //end                  
+       case 13: //enter 
+       case 9: //tab  
+       case 27: //esc  
+       case 16: //shift  
+       case 17: //ctrl  
+       case 18: //alt  
+       case 20: //caps lock 
+       case 8: //backspace  
+       case 46: //delete 
+           return true; 
+           break; 
+
+       default: 
+
+		textboxReplaceSelect(oTextbox, String.fromCharCode(isIE ? oEvent.keyCode : oEvent.charCode)); 
+		var iLen = oTextbox.value.length; 
+
+		var sMatch = autocompleteMatch(oTextbox.value, arrValues); 
+
+		if (sMatch != null) { 
+		oTextbox.value = sMatch; 
+		textboxSelect(oTextbox, iLen, oTextbox.value.length); 
+		}  
+
+		return false; 
+   } 
+} 
+
+// floating headers
+var headTop = -1;
+var FloatHead1;
+function processScroll()
+{
+if (headTop < 0)
+{
+saveHeadPos();
+}
+if (headTop > 0)
+{
+if (document.documentElement && document.documentElement.scrollTop)
+theTop = document.documentElement.scrollTop;
+else if (document.body)
+theTop = document.body.scrollTop;
+
+if (theTop > headTop)
+FloatHead1.style.top = (theTop-headTop) + 'px';
+else
+FloatHead1.style.top = '0px';
+}
+}
+
+function GetInnerSize () {
+	var x,y;
+	if (self.innerHeight) // all except Explorer
+	{
+		x = self.innerWidth;
+		y = self.innerHeight;
+	}
+	else if (document.documentElement && document.documentElement.clientHeight)
+		// Explorer 6 Strict Mode
+	{
+		x = document.documentElement.clientWidth;
+		y = document.documentElement.clientHeight;
+	}
+	else if (document.body) // other Explorers
+	{
+		x = document.body.clientWidth;
+		y = document.body.clientHeight;
+	}
+	return [x,y];
+}
+
+function ResizeToInner (w, h, x, y) {
+	// make sure we have a final x/y value
+	// pick one or the other windows value, not both
+	if (x==undefined) x = window.screenLeft || window.screenX;
+	if (y==undefined) y = window.screenTop || window.screenY;
+	// for now, move the window to the top left
+	// then resize to the maximum viewable dimension possible
+	window.moveTo(0,0);
+	window.resizeTo(screen.availWidth,screen.availHeight);
+	// now that we have set the browser to it's biggest possible size
+	// get the inner dimensions.  the offset is the difference.
+	var inner = GetInnerSize();
+	var ox = screen.availWidth-inner[0];
+	var oy = screen.availHeight-inner[1];
+	// now that we have an offset value, size the browser
+	// and position it
+	window.resizeTo(w+ox, h+oy);
+	window.moveTo(x,y);
+}
+
+function saveHeadPos()
+{
+parTable = document.getElementById("headStart");
+if (parTable != null)
+{
+headTop = parTable.offsetTop + 3;
+FloatHead1 = document.getElementById("FloatingHeader");
+FloatHead1.style.position = "relative";
+}
+}
+/* add event handlers here */
+window.onscroll = processScroll;
+</script>
+
+
+<div id="helpDiv" style="position:absolute;visibility:hidden;z-index:1;background-color:#BFD4FA;font-family:verdana;font-size:11;color:#000000;padding:5px;border:2px outset white;"></div> 
+<div id="edithelpDiv" style="position:absolute;visibility:hidden;z-index:1;padding:5px;border:2px outset white;"></div> 
+<SCRIPT>
+function helpCheck (TableName, FieldName) {
+	document.getElementById('edithelpDiv').style.left=event.x;
+	document.getElementById('edithelpDiv').style.top=event.y+document.body.scrollTop;
+	document.getElementById('edithelpDiv').style.visibility='visible';
+	document.getElementById('edithelpDiv').style.zIndex=1;
+	document.getElementById('edithelpDiv').innerHTML="<iframe src='https://www.davco-tech.com/global/edithelp.asp?TableName=" + TableName + "&FieldName=" + FieldName + "' width=300 height=150 scrolling=no>";
+	window.event.returnValue=false
+}
+</SCRIPT>
+<script>
+parent.document.getElementById('MainPage').style.opacity = 1;
+parent.document.getElementById('MainPage').style.filter = parent.document.getElementById('TopPage').style.filter;
+</script>
+
+<script>
+var lastMenuShown;
+</script>
+
+<html><body topmargin=0 leftmargin=0 rightmargin=0 bottommargin=0><center><style><!--ADDRESS, BLOCKQUOTE, BODY, DD, DIV, DL, DT, FIELDSET, FORM, FRAME, FRAMESET, H1, H2, H3, H4, H5, H6, IFRAME, NOFRAMES, OBJECT, OL, P, UL, APPLET, CENTER, DIR, HR, MENU, PRE    {display: block }, LI     {display: list-item }, HEAD   {display: none }, TABLE  {display: table }, TR     {display: table-row }, THEAD  {display: table-header-group }, TBODY  {display: table-row-group }, TFOOT  {display: table-footer-group }, COL    {display: table-column }, COLGROUP {display: table-column-group }, CAPTION  {display: table-caption }, A:link   {text-decoration: none; color: #003399; font-weight: normal;}, A:visited {text-decoration: none; color: #003399; font-weight: normal;}, A:active {text-decoration: none; color: #003399; font-weight: normal;}, A:hover  {text-decoration: none; color: 999966; font-weight: normal;}, BODY	 {font-size: 10pt; font-family:Verdana, Arial, Helvetica, sans-serif; color:000000; font-weight: normal; background-color: #B7B3FB}, INPUT    {font-size: 10pt; font-family:Verdana, Arial, Helvetica, sans-serif; padding-left=3px}, TEXTAREA {font-size: 10pt; font-family:Verdana, Arial, Helvetica, sans-serif; padding-left=3px}, SELECT   {font-size: 10pt; font-family:Verdana, Arial, Helvetica, sans-serif}, TD       {display: table-cell; font-size:10pt; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight: normal;}, TH       {display: table-cell; font-size:11pt; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight: bolder; text-align: center}, CAPTION  {text-align: center }, H1       {font-size: 2em}, H2       {font-size: 1.5em}, H3       {font-size: 1.17em}, H4, BLOCKQUOTE, UL, FIELDSET, FORM, OL, DL, DIR, H5 {font-size: .83em; line-height: 1.17em}, H6       {font-size: .67em}, H1, H2, H3, H4, H5, H6, B, STRONG {font-weight: bolder }, I, CITE, EM, VAR, ADDRESS {font-style: italic }, PRE, TT, CODE, KBD, SAMP  {font-family: monospace }, PRE      {white-space: pre }, BIG      {font-size: 1.17em }, SMALL, SUB, SUP {font-size: .83em }, SUB      {vertical-align: sub }, SUP      {vertical-align: super }, S, STRIKE, DEL  {text-decoration: line-through }, HR       {border: 1px inset }, OL, UL, DIR, OL  {list-style-type: decimal }, OL UL, UL OL, U, INS {text-decoration: underline }, CENTER   {text-align: center }, BR:before { content: "\A" }, BLOCKQUOTE {margin-left: 40px; margin-right: 40px }, @media print {@page         { margin: 1% }, H1, H2, H3, H4, H5, H6    {page-break-after: avoid; page-break-inside: avoid }, BLOCKQUOTE, PRE           {page-break-inside: avoid }, UL, OL, DL                {page-break-before: avoid }} //--></style>
+
+<table border=1 rules=none bordercolor=silver rules=none cellspacing=0 cellpadding=0 width='100%' height='100%'><tr height=58 bgcolor='FFFFFF'><td><table cellspacing=0 cellpadding=0 width='100%'><tr><td><TABLE width="100%">
+<TBODY>
+<TR>
+<TD><IMG src="http://www.davco-tech.com/images/1/15.jpg" border=0></TD></TR></TBODY></TABLE></td></tr></table></td></tr><form method='post'><tr><td bgcolor='FFFFFF'><table cellspacing=0 cellpadding=3 width='100%'><tr>
+<td align=center id=TD80 style='cursor:hand;border-bottom-width:thin;border-bottom-style:dotted;border-top-width:thin;border-top-style=dotted;color:000099;font-size:10pt' onClick="document.location.href='index.asp?Page=Home'" onMouseOver={lastMenuShown.style.visibility='hidden';this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Home</td>
+<td align=center id=TD81 style='cursor:hand;border-bottom-width:thin;border-bottom-style:dotted;border-top-width:thin;border-top-style=dotted;color:000099;font-size:10pt' onMouseOver={lastMenuShown.style.visibility='hidden';this.style.backgroundColor='B7B3FB';ShowSubMenu81(this.offsetParent.offsetParent.offsetParent.offsetLeft+this.offsetParent.offsetParent.offsetLeft+this.offsetParent.offsetLeft+this.offsetLeft+1);} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Products and Services</td>
+<td align=center id=TD116 style='cursor:hand;border-bottom-width:thin;border-bottom-style:dotted;border-top-width:thin;border-top-style=dotted;color:000099;font-size:10pt' onMouseOver={lastMenuShown.style.visibility='hidden';this.style.backgroundColor='B7B3FB';ShowSubMenu116(this.offsetParent.offsetParent.offsetParent.offsetLeft+this.offsetParent.offsetParent.offsetLeft+this.offsetParent.offsetLeft+this.offsetLeft+1);} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Our Company</td>
+<td align=center id=TD117 style='cursor:hand;border-bottom-width:thin;border-bottom-style:dotted;border-top-width:thin;border-top-style=dotted;color:000099;font-size:10pt' onClick="document.location.href='employment.asp'" onMouseOver={lastMenuShown.style.visibility='hidden';this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Careers</td><td align=center style='cursor:hand;border-bottom-width:thin;border-bottom-style:dotted;border-top-width:thin;border-top-style=dotted;color:000099;font-size:10pt' onClick="document.location.href='https://www.davco-tech.com/portal/login.asp'" onMouseOver={lastMenuShown.style.visibility='hidden';this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Support</td><td align=right style='border-bottom-width:thin;border-bottom-style:dotted;border-top-width:thin;border-top-style=dotted;font-size:10pt'><input name=PageSearch size=10 value='' style='font-size:8pt'></td><td width=10 style='border-bottom-width:thin;border-bottom-style:dotted;border-top-width:thin;border-top-style=dotted;'><img src='searchbutton.gif'></td></tr></table></td></tr><tr id=MainPage><td valign=top height='99%' bgcolor='FFFFFF'><table width='100%' cellspacing=0 cellpadding=10><tr><td valign=top align=center ><P>
+<CENTER><IMG src="http://www.davco-tech.com/images/162/18.jpg"><BR><BR>
+<TABLE>
+<TBODY>
+<TR>
+<TD><IMG src="http://www.davco-tech.com/images/162/19.jpg"></TD>
+<TD><A href="https://www.davco-tech.com/davco/index.asp?Page=Electrical">Electrical</A></TD></TR>
+<TR>
+<TD><IMG src="http://www.davco-tech.com/images/162/19.jpg"></TD>
+<TD><A href="https://www.davco-tech.com/davco/products.asp?Category=Computer">Computer Sales and Repair</A></TD></TR>
+<TR>
+<TD><IMG src="http://www.davco-tech.com/images/162/19.jpg"></TD>
+<TD><A href="https://www.davco-tech.com/davco/index.asp?Page=Networking">Network Engineering</A></TD></TR>
+<TR>
+<TD><IMG src="http://www.davco-tech.com/images/162/19.jpg"></TD>
+<TD><A href="https://www.davco-tech.com/davco/index.asp?Page=Machine Automation">Machine Automation</A></TD></TR>
+<TR>
+<TD><IMG src="http://www.davco-tech.com/images/162/19.jpg"></TD>
+<TD><A href="https://www.davco-tech.com/davco/index.asp?Page=Software Engineering">Software Engineering</A></TD></TR>
+<TR>
+<TD><IMG src="http://www.davco-tech.com/images/162/19.jpg"></TD>
+<TD><A href="https://www.davco-tech.com/davco/products.asp?Category=Security">Security Systems</A></TD></TR>
+<TR>
+<TD><IMG src="http://www.davco-tech.com/images/162/19.jpg"></TD>
+<TD><A href="https://www.davco-tech.com/davco/products.asp?Category=Telecommunications">Telecommunications</A></TD></TR></TBODY></TABLE></CENTER><p><table width='100%'><tr><td valign=top width='33%'>&nbsp</td><td valign=top width='33%'>&nbsp</td><td valign=top width='33%'>&nbsp</td></tr></table></td></tr></table></td></tr><tr><td colspan=2  align=center bgcolor=FFFFFF><P>
+<TABLE class=body cellSpacing=0 cellPadding=0 width="100%" bgColor=white border=0 rightmargin="0" leftmargin="0">
+<TBODY>
+<TR>
+<TD align=right><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>© Davco Technologies, Inc.&nbsp;2009 |&nbsp;<A href="http://www.davco-tech.com/login.asp">login</A></FONT></TD></TR></TBODY></TABLE></P></td></tr></table>
+<div id='SubMenu81' onMouseLeave={this.style.visibility='hidden'} style='position:absolute; visibility:hidden; width:10px; border:2px outset white; z-index:9; layer-background-color:lightgrey; '><table cellspacing=0 cellpadding=0 width='100%' bgcolor='FFFFFF'><tr><td><td valign=top><table cellspacing=0 cellpadding=3><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='index.asp?Page=Electrical'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Electrical</td></tr><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='products.asp?Category=Computer'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Computer</td></tr><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='index.asp?Page=Networking'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Networking</td></tr><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='index.asp?Page=Machine Automation'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Machine Automation</td></tr><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='index.asp?Page=Software Engineering'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Software Engineering</td></tr></table></td><td valign=top><table cellspacing=0 cellpadding=3><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='products.asp?Category=Security'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Security Systems</td></tr><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='products.asp?Category=Telecommunications'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Telecommunications</td></tr><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='products.asp?Category=Surplus Equipment'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Surplus Equipment</td></tr></table></td></tr></table></div>
+<script>function ShowSubMenu81(lft) {lastMenuShown=document.getElementById('SubMenu81');document.getElementById('SubMenu81').style.width=document.getElementById('TD81').offsetWidth+'px';document.getElementById('SubMenu81').style.left=lft + 'px';document.getElementById('SubMenu81').style.top=document.getElementById('MainPage').offsetTop + 'px';document.getElementById('SubMenu81').style.visibility='visible';clearInterval(fadeid);setOpacity('SubMenu81', '5');showOpacity('SubMenu81', '95', '1000');}lastMenuShown = document.getElementById('SubMenu81');</script>
+<div id='SubMenu116' onMouseLeave={this.style.visibility='hidden'} style='position:absolute; visibility:hidden; width:10px; border:2px outset white; z-index:9; layer-background-color:lightgrey; '><table cellspacing=0 cellpadding=0 width='100%' bgcolor='FFFFFF'><tr><td><td valign=top><table cellspacing=0 cellpadding=3><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='index.asp?Page=About Us'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >About Us</td></tr><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='index.asp?Page=Location'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Location</td></tr><tr><td nowrap style='cursor:hand;color:000099;font-size:10pt' onClick="document.location.href='contactus.asp'" onMouseover={this.style.backgroundColor='B7B3FB'} onMouseLeave={this.style.backgroundColor='FFFFFF'} >Contact Us</td></tr></table></td></tr></table></div>
+<script>function ShowSubMenu116(lft) {lastMenuShown=document.getElementById('SubMenu116');document.getElementById('SubMenu116').style.width=document.getElementById('TD116').offsetWidth+'px';document.getElementById('SubMenu116').style.left=lft + 'px';document.getElementById('SubMenu116').style.top=document.getElementById('MainPage').offsetTop + 'px';document.getElementById('SubMenu116').style.visibility='visible';clearInterval(fadeid);setOpacity('SubMenu116', '5');showOpacity('SubMenu116', '95', '1000');}lastMenuShown = document.getElementById('SubMenu116');</script></center></body></html>

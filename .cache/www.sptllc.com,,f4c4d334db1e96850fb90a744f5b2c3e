@@ -1,0 +1,451 @@
+status: 200
+content-length: 22308
+content-location: http://www.sptllc.com
+x-powered-by: ASP.NET
+set-cookie: ASP.NET_SessionId=sla00l5523150l552q4okk45; path=/; HttpOnly
+x-aspnet-version: 2.0.50727
+server: Microsoft-IIS/7.0
+cache-control: private
+date: Sun, 18 Sep 2016 07:11:27 GMT
+content-type: text/html; charset=utf-8
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head id="ctl01_Head1"><title>
+	 - Home
+</title>
+<link rel='stylesheet' type='text/css' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/themes/hot-sneaks/jquery.ui.all.css' />
+<link rel='stylesheet' type='text/css' href='/csshandler.ashx?skin=artisteer-spt1&amp;s=1&amp;v=2.3.5.1' />
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="http://www.sptllc.com/Data/Sites/1/skins/artisteer-spt1/style.ie6.css" type="text/css" id="IEMenuCSS" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="http://www.sptllc.com/Data/Sites/1/skins/artisteer-spt1/style.ie7.css" type="text/css" id="IE7MenuCSS" />
+<![endif]-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="search" type="application/opensearchdescription+xml" title=" Site Search" href="http://www.sptllc.com/SearchEngineInfo.ashx" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
+	<![endif]-->
+    
+<link rel='shortcut icon' href='http://www.sptllc.com/Data/Sites/1/skins/artisteer-spt1/favicon.ico' />
+
+    <script type="text/javascript">
+        function setfocus() {
+            document.forms[0].partno.text = "enter part no";
+            document.forms[0].partno.focus();
+            document.forms[0].partno.select();
+
+
+        }
+</script>
+
+<script type="text/javascript">
+function checkclear(what){
+if(!what._haschanged)
+{  what.value=''};
+what._haschanged = true;
+what.style.backgroundColor = "yellow";
+}
+function checkclearb(what) {
+
+
+    document.forms(0).partnoh.value = what.value;
+   // alert("cleared " + what.value);
+        what._haschanged = false;
+        //what.value = 'enter manufacturer part no';
+        what.value = 'enter MPN';
+        what.style.backgroundColor = "white";
+    }
+
+
+
+    function passvalue() {
+
+        var frm = document.forms(0);
+        var partnovalue = frm.partnoh.value;
+        var url = "//remote.sptllc.com/SPTVInv/Pages/ProductDetailSearch.aspx?partno=" + partnovalue;
+        
+        //frm.action = "//spt01server/SPTVInv/Pages/ProductDetailSearch.aspx?partno=" + partnovalue;
+        //alert(frm.action);
+       // frm.action = "http://www.sptllc.com?t1=" + t1value + "&t2=" + t2value;
+        // frm.submit();
+
+
+        // popupWindow = window.open(url, 'popUpWindow', 'height=700,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');
+
+        //popupWindow = window.open(url, 'popUpWindow', 'height=700,width=800,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');
+        //  <a href="http://google.com/" title="Google" rel="gb_page_fs[]">Launch google.com in fullscreen window</a>
+
+        return url;
+
+    }
+
+    function changeURL() {
+
+        var frm = document.forms(0);
+        var partnovalue;
+
+        if (frm.partno.value != "enter MPN")
+            partnovalue = frm.partno.value;
+        else
+            partnovalue = document.forms(0).partnoh.value;
+            
+        document.forms(0).partnoh.value = partnovalue;    
+        var url = "//remote.sptllc.com/SPTVInv/Pages/ProductDetailSearch.aspx?partno=" + partnovalue;
+    
+        var lnk = document.getElementById('slink');
+        lnk.href = "//remote.sptllc.com/SPTVInv/Pages/ProductDetailSearch.aspx?partno=" + partnovalue;
+
+
+        //alert(lnk.href);
+
+        return lnk.href;
+      
+        
+    }
+
+
+    function KeyDownHandler(btn) {
+        // process only the Enter key
+        if (event.keyCode == 13) {
+            // cancel the default submit
+            event.returnValue = false;
+            event.cancel = true;
+            // submit the form by programmatically clicking the specified button
+            btn.click();
+        }
+    }
+
+
+
+    </script>
+
+    <script type="text/javascript">
+        function Change(obj, evt) {
+            if (evt.type == "focus")
+                obj.style.borderColor = "red";
+            else if (evt.type == "blur") {
+                obj.style.borderColor = "gray";
+                //document.forms[0].partno.text = "_______________________";
+            }
+        }
+    </script>
+
+<link href="App_Themes/default/theme.css" type="text/css" rel="stylesheet" />
+<link rel='canonical' href='http://www.sptllc.com/home.aspx' /></head>
+<body class="pagebody">
+
+    
+    
+
+    
+    <form name="aspnetForm" method="post" action="Default.aspx" id="aspnetForm">
+<input type="hidden" name="ctl01_ScriptManager1_HiddenField" id="ctl01_ScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="13" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ9kFgJmD2QWAgIFD2QWFAIBDxYCHg9TaXRlTWFwUHJvdmlkZXIFCW1vam9zaXRlMWQCAw8WAh8ABQlt" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="b2pvc2l0ZTFkAhcPZBYCZg8PFgIeB1Zpc2libGVoZBYGAgEPFgIfAWgWAmYPDxYCHgRUZXh0BQtTaXRlIFNlYXJjaGRkAgMPDxYC" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="HwFoZGQCBQ8PFgIfAWhkZAIdDw8WAh8BaGRkAiUPZBYCAgEPDxYCHwFoZGQCKQ8PFgYeCENzc0NsYXNzBS1hcnQtbGF5b3V0LWNl" />
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="bGwgYXJ0LXNpZGViYXIxIGxlZnRzaWRlIGNtc3pvbmUeBF8hU0ICAh8BaGQWAgIBDw8WAh8BaGRkAisPDxYEHwMFOWFydC1sYXlv" />
+<input type="hidden" name="__VIEWSTATE4" id="__VIEWSTATE4" value="dXQtY2VsbCBhcnQtY29udGVudC13aWRlIGNlbnRlci1ub21hcmdpbnMgY21zem9uZR8EAgJkFgYCAQ8PFgIfAWhkZAIDDw8WAh8B" />
+<input type="hidden" name="__VIEWSTATE5" id="__VIEWSTATE5" value="aGRkAgUPZBYCZg9kFgJmDw8WBB8DBQdtb2R1bGUwHwQCAmQWAgIBD2QWAgIDD2QWAgIDD2QWAgIBDw8WBB4LQ29udGVudEd1aWQo" />
+<input type="hidden" name="__VIEWSTATE6" id="__VIEWSTATE6" value="KVhTeXN0ZW0uR3VpZCwgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1i" />
+<input type="hidden" name="__VIEWSTATE7" id="__VIEWSTATE7" value="NzdhNWM1NjE5MzRlMDg5JDI5YjRjZTEzLWExNDgtNDFkOC05MDg0LWM4NmRkNDMzYWQ4NB8BaGQWAgIBD2QWAmYPZBYEAgUPZBYC" />
+<input type="hidden" name="__VIEWSTATE8" id="__VIEWSTATE8" value="Zg8WAh4KQ2FsbGJhY2tJRAUpY3RsMDEkbWFpbkNvbnRlbnQkY3RsMDAkUmF0aW5nJFVzZXJSYXRpbmdkAgcPFgIeBVZhbHVlBSQy" />
+<input type="hidden" name="__VIEWSTATE9" id="__VIEWSTATE9" value="OWI0Y2UxMy1hMTQ4LTQxZDgtOTA4NC1jODZkZDQzM2FkODRkAi0PDxYGHwMFLmFydC1sYXlvdXQtY2VsbCBhcnQtc2lkZWJhcjIg" />
+<input type="hidden" name="__VIEWSTATE10" id="__VIEWSTATE10" value="cmlnaHRzaWRlIGNtc3pvbmUfBAICHwFoZGQCLw8PFgIfAWhkFgoCAQ8PFgIfAWhkZAIDDw8WAh8BaGRkAgUPDxYCHwFoZGQCBw8P" />
+<input type="hidden" name="__VIEWSTATE11" id="__VIEWSTATE11" value="FgIfAWhkZAIJDw8WAh8BaGRkAjEPDxYCHwFoZGQYAQUVY3RsMDEkU2l0ZU1lbnUxJGN0bDAwDw9kBSQ2ZWU5NzFjZC05OTU2LTRk" />
+<input type="hidden" name="__VIEWSTATE12" id="__VIEWSTATE12" value="YzMtODE2Mi1hNDg4NDEzZTdmNThk1+wQQFD75vTceew2N2eGfdfsFc8=" />
+
+
+<script  type="text/javascript">var GB_ROOT_DIR = '/ClientScript/greybox/'; var GBCloseText = 'Close'; </script>
+<script  src="/ClientScript/greybox/gbcombined.js" type="text/javascript" ></script>
+<script  src="/ClientScript/mojocombined.js" type="text/javascript" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqmojo/jquery.cluetip.js" type="text/javascript"></script>
+<script  src="/ClientScript/oomph/oomph.min.js" type="text/javascript" ></script>
+<script src="/Data/Sites/1/skins/artisteer-spt1/script.js" type="text/javascript" ></script>
+<script src="/ScriptResource.axd?d=-JSdW2t5IIYiRVXcOZm-xtVBx7Zq3ZCg5wAAKsdAYbQVV1KX0yT0kQispdGuodPaGyjkm9AgTUHaGwBWX2Su-zyDBG-OCcBbOP8xCa5teIVo1EYQbhUbPQgFW8Llvvap7TDE8g2&amp;t=ffffffffe0753117" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Services._AuthenticationService.DefaultWebServicePath = 'Authentication_JSON_AppService.axd';
+Sys.Services._RoleService.DefaultWebServicePath = 'Role_JSON_AppService.axd';
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+    
+    
+    
+    
+    <!--
+    <div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    -->
+   
+
+
+   
+    <img class="xr_ap" src="/sptllc/data/sites/1/images/0ps.png" alt="" title="" style="left: 680px; top: 20px; width: 256px; height: 79px;"/>
+ <span class="xr_s0ps" style="  position: absolute; left:687px; top:54px;">
+  <span class="xr_tc xr_s1aps" style="left: 31px; top: -18px; width: 112px;"><span id="Panel:32text"></span>Rapid Part Search </span>
+  <span class="xr_tr xr_s1ps" style="left: 0px; top: 6px; width: 120px;"><span class="xr_s3ps"><input type="text" name="partno"  size="25" style="font-size:13px; font-style:italic" value="enter MPN"  onKeyDown="KeyDownHandler(slink)" onchange="changeURL();" onfocus="checkclear(this)" onblur="checkclearb(this)"/>  <input type="hidden" name="partnoh"  />
+
+  </span>
+  </span>
+ </span>
+ 
+<!--
+ <a href="http://google.com/" title="Google" rel="gb_page_fs[]">Launch google.com in fullscreen window</a>
+
+ <a href="javascript: passvalue()" onclick="return(xr_nn());">
+ -->
+ <a  id="slink" href="#" title="part search"  onclick="return GB_showFullScreen('PartSearch', changeURL())" >
+  <img class="xr_ap" src="/sptllc/data/sites/1/images/1ps.png" alt="" title=""  style="left: 880px; top: 24px; width: 48px; height: 48px;"/> 
+ </a>
+ <span class="xr_s4ps" style="position: absolute; left:721px; top:37px;">
+ </span>
+ <span class="xr_s5ps" style="position: absolute; left:690px; top:71px;">
+   
+  
+  
+ </span>
+ <div id="xr_xo0" class="xr_ap" style="left:0; top:0; width:800px; height:100px; visibility:hidden;">
+ <a href="" onclick="return(false);">
+ <img class="xr_ap" src="/sptllc/data/sites/1/images/2ps.png" alt="" title="" style="left: 880px; top: 24px; width: 48px; height: 48px;"/>
+ </a>
+ </div>
+
+   
+   
+   
+    <div class="topnavwrap">
+        <div class="topnav">
+            <!--
+    <a  style=" padding-left:0px; padding-top:0px;" href="./" title="Shore Point Technology - The Mobile &amp; Embedded Systems Experts">
+     <img src='Data/Sites/1/skins/artisteer-spt1/images/sitelogoheadermedm.png' alt="Shore Point Technology - The Mobile &amp; Embedded Systems Experts" 
+     title="Shore Point Technology - The Mobile &amp; Embedded Systems Experts" /></a>
+     -->
+            <div class="toplink">
+                <a href="./" title="Shore Point Technology - The Material Management Experts"></a>
+            </div>
+            <div style="float: right">
+                <ul>
+                    
+                    <li class="firstnav"><a class="sitelink" href="/">Home</a></li>
+                     <!--
+                    <li class="topnavitem"><a class="sitelink" href="/SiteMap.aspx">Site Map</a></li>
+                      -->
+                    
+                    
+                    
+                    
+                    <li class='topnavitem'><a href='/SearchResults.aspx' class='sitelink'>Search</a></li>
+                    <!--
+                    <li class="topnavitem"><a class="sitelink" href="/Secure/Register.aspx">Register</a></li>
+                    -->
+                    <li class="topnavitem"><a class="sitelink" href="/Secure/Login.aspx">Partner Sign In</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-nav">
+                    <div class="l">
+                    </div>
+                    <div class="r">
+                    </div>
+                    
+
+<div class="AspNet-Menu-Horizontal" id="ctl01_SiteMenu1_ctl00">
+		<ul class="art-menu AspNet-Menu">
+			<li class="AspNet-Menu-Leaf active AspNet-Menu-SelectedLeaf">
+				<a href="/home.aspx" class="AspNet-Menu active AspNet-Menu-SelectedLeaf">
+					<span class="l"></span><span class="r"></span><span class="t">Home</span></a>
+			</li>
+			<li class="AspNet-Menu-Leaf">
+				<a href="/about-us.aspx" class="AspNet-Menu">
+					<span class="l"></span><span class="r"></span><span class="t">About Us</span></a>
+			</li>
+			<li class="AspNet-Menu-Leaf">
+				<a href="/contact-us.aspx" class="AspNet-Menu">
+					<span class="l"></span><span class="r"></span><span class="t">Contact Us</span></a>
+			</li>
+		</ul>
+
+</div>
+
+
+                </div>
+                <div class="art-header">
+                    <div class="art-header-png">
+                    </div>
+                    <div class="art-header-jpeg">
+                    </div>
+                    <div class="art-logo">
+                        <h1 class='art-Logo-name art-logo-name siteheading'><a class='siteheading' href='http://www.sptllc.com/Default.aspx'></a></h1>
+                        <a href='#startcontent' class='skiplink'>Skip over navigation</a>
+                        <div id="ctl01_InsecurePanel1" class="addthisbutton">
+	
+                            
+                        
+</div>
+                        <div id="slogan-text" class="art-logo-text">
+                            </div>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        
+                        <div id="ctl01_divCenter" class="art-layout-cell art-content-wide center-nomargins cmszone">
+	
+                            
+                            
+                            <a id="startcontent"></a>
+                            <div id="ctl01_mainContent_ctl00_pnlContainer" class="module0">
+		
+<div class='art-post'>
+<div class="art-post-tl"></div>
+<div class="art-post-tr"></div>
+<div class="art-post-bl"></div>
+<div class="art-post-br"></div>
+<div class="art-post-tc"></div>
+<div class="art-post-bc"></div>
+<div class="art-post-cl"></div>
+<div class="art-post-cr"></div>
+<div class="art-post-cc"></div>
+<div class="art-post-body">
+
+<div id="ctl01_mainContent_ctl00_pnlWrapper" class="art-Post-inner panelwrapper htmlmodule">
+			
+<div class="art-postmetadataheader">
+<a id='module0'></a><h2 class="art-postheader moduletitle"> <a class="ModuleEditLink"></a></h2></div>
+<div class='art-PostContent'>
+
+
+<div class=" modulecontent">
+<div id="ctl01_mainContent_ctl00_divContent" class="slidecontainer">
+				<div style="width: 942px; height: 510px">
+<script type="text/javascript" src="/sptllc/data/sites/1/images/roe.js"></script>	<div class="xr_ap" id="xr_xr" style="width: 962px; height: 510px; margin-left: -481px; top: 15px; left: 50%">
+<script type="text/javascript">var xr_xr=document.getElementById("xr_xr")</script>		<img alt="" class="xr_ap" src="/sptllc/data/sites/1/images/0.png" style="width: 976px; height: 524px; top: -2px; left: -2px" title="" /> <!--[if IE]><div class="xr_ap" id="xr_xri" style="width: 962px; height: 510px; clip: rect(0px 962px 510px 0px);"><![endif]--><!--[if !IE]>-->
+		<div class="xr_ap" id="xr_xri" style="clip: rect(0px 962px 510px 0px); width: 962px; height: 510px">
+<!--<![endif]-->			<img alt="" class="xr_ap" src="/sptllc/data/sites/1/images/1.png" style="width: 929px; height: 567px; top: 3px; left: 20px" title="" /> <img alt="" class="xr_ap" src="/sptllc/data/sites/1/images/2.png" style="width: 935px; height: 497px; top: 1px; left: 17px" title="" /> <span class="xr_s0" style="position: absolute; top: 99px; left: 405px"><span class="xr_tl" style="top: -11px">Shore Point Technology is an international supply chain partner with a goal of providing </span><span class="xr_tl" style="top: 5px">honest, reliable, and professional solutions for electronic components and excess material </span><span class="xr_tl" style="top: 21px">management.</span> <span class="xr_tl" style="top: 53px">Our company's objective is to continuously supply our business partners with quality </span><span class="xr_tl" style="top: 70px">material, value added solutions and the highest level of customer support.</span> <span class="xr_tl" style="top: 102px">With our OEM/CM partnerships and over 40 years of combined experience in the </span><span class="xr_tl" style="top: 118px">semiconductor and electronics industries, Shore Point Technology is qualified to be your </span><span class="xr_tl" style="top: 134px">trusted partner.</span> <span class="xr_tl" style="top: 166px">To find out how we can be your strategic partner, <a href="mailto:sales@sptllc.com" onmousemove="xr_mo(this,0)">contact us</a>&nbsp;today.</span> </span><span class="xr_s1" style="position: absolute; top: 39px; left: 403px"><span class="xr_tl" style="top: -26px">Welcome</span> <span class="xr_tl xr_s2" style="top: 14px">Shore Point Technology</span> </span><img alt="" class="xr_ap" src="/sptllc/data/sites/1/images/3.jpg" style="width: 378px; height: 273px; top: 16px; left: 19px" title="" /> <img alt="" class="xr_ap" src="/sptllc/data/sites/1/images/4.png" style="width: 933px; height: 179px; top: 301px; left: 20px" title="" /> <span class="xr_s4" style="position: absolute; top: 326px; left: 45px"><span class="xr_tc" style="width: 289px; top: -11px; left: -10px">EOL / Obsolescence Material Management</span> </span><span class="xr_s4" style="position: absolute; top: 326px; left: 349px"><span class="xr_tc" style="width: 126px; top: -11px; left: 74px">Quality Assurance</span> </span><span class="xr_s5" style="position: absolute; top: 326px; left: 661px"><span class="xr_tc" style="width: 164px; top: -12px; left: 57px"><span class="xr_s4">Value Added Solutions </span><span class="xr_s6">&nbsp;</span></span> </span><img alt="" class="xr_ap" src="/sptllc/data/sites/1/images/5.jpg" style="width: 308px; height: 137px; top: 339px; left: 332px" title="" />
+			<div class="xr_ap" id="xr_xo0" style="width: 962px; height: 100px; visibility: hidden; top: 0px; left: 0px">
+				 </div>
+			<div id="xr_xd0">
+				 </div>
+		</div>
+	</div>
+</div>
+
+			</div>
+
+</div>
+<div class="modulefooter"></div>
+
+</div>
+<div class="cleared"></div>
+
+		</div>
+
+
+</div><div class="cleared"></div>
+</div>
+
+	</div>
+
+                        
+</div>
+                        
+                    </div>
+                </div>
+                <div class="cleared">
+                </div>
+                <div class="art-footer">
+                    <div class="art-footer-t">
+                    </div>
+                    <div class="art-footer-body">
+                       
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+                       
+                        <div class="art-footer-text">
+                            <p>
+                               <a href="mailto:sales@sptllc.com">Contact Us</a> | <a href="http://www.iso.org" TARGET="_blank" title="ISO">ISO 9001:2008 Certified</a> | <a href="data/sites/1/images/ISOCertificate.pdf" TARGET="_blank" title="ISO">View Certificate</a><br />
+                                Copyright &copy; 2011 Shore Point Technology. All Rights Reserved.</p>
+                        </div>
+                        <div class="cleared">
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+        <div class="cleared">
+        </div>
+        <p class="art-page-footer">
+            <br />
+            <br />
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    
+    
+    
+<script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ctl01_ScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+
+<script type="text/javascript" > $('div.mojo-accordion').accordion(); $('div.mojo-accordion-nh').accordion({autoHeight: false});  $('div.mojo-tabs').tabs(); $('input.jqbutton').button(); </script>
+<script type="text/javascript" >$(document).ready(function () { $('a.cluetiplink').cluetip({attribute:'href', topOffset:25, leftOffset:25}); }); </script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+    
+</body>
+</html>

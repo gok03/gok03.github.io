@@ -1,0 +1,169 @@
+status: 200
+content-length: 14302
+content-location: http://www.lumitron-ir.com
+-content-encoding: gzip
+set-cookie: SESSa1dcdc428fd7edd1634d99fd9de2d4f2=qm4o0pt9obse2hnfgsehom3ao3;
+ expires=Sat, 29-Oct-2016 23:36:47 GMT; path=/; domain=.lumitron-ir.com
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+vary: Accept-Encoding
+server: Apache
+last-modified: Wed, 05 Oct 2016 23:22:52 GMT
+etag: "9a0aaed64160c8272f5d5582f6911bb3"
+cache-control: must-revalidate
+date: Thu, 06 Oct 2016 20:03:27 GMT
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="Lumitron - Thermal Imaging Products RSS" href="http://www.lumitron-ir.com/rss.xml" />
+<link rel="shortcut icon" href="/sites/lumitron-ir.com/files/lumitron_favicon_0.jpg" type="image/x-icon" />
+
+    <title>Lumitron - Thermal Imaging Products</title>
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/lumitron-ir.com/files/css/css_bb83763e8e781b04088b1d83c58024f7.css" />
+    <script type="text/javascript" src="/sites/lumitron-ir.com/files/js/js_9ac5a4bfd372356833d4e5adba16d748.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)sites/lumitron-ir.com/files", "default_image": "/sites/all/modules/lightbox2/images/brokenimage.jpg", "border_size": 10, "font_color": "000", "box_color": "fff", "top_position": "", "overlay_opacity": "0.8", "overlay_color": "000", "disable_close_click": 1, "resize_sequence": 0, "resize_speed": 400, "fade_in_speed": 400, "slide_down_speed": 600, "use_alt_layout": 0, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "show_caption": 1, "loop_items": 0, "node_link_text": "View Image Details", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "original", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": "lightbox_ungrouped", "custom_trigger_classes": "img.lumitron_lightbox", "disable_for_gallery_lists": 1, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": true, "slideshow_automatic_exit": true, "show_play_pause": true, "pause_on_next_click": false, "pause_on_previous_click": true, "loop_slides": false, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": 0 }, "CToolsUrlIsAjaxTrusted": { "/": true } });
+//--><!]]>
+</script>
+  </head>
+  
+  <body>
+    <div id="container"> 
+      <div class="wrpHead">
+        <div class="top_header"></div>	
+        <div class="header">
+          <a href="/" title="Lumitron Home">
+            <div class="logo"></div>
+          </a>
+          <div id="slogan"></div>
+        </div>
+        <div class="btm_header"></div>
+        <!-- Primary links section begins -->
+          <div id="navigation_home_page" class="menu ">
+                              <ul class="links primary-links"><li class="menu-947 first"><a href="/company" title="COMPANY">COMPANY</a></li>
+<li class="menu-949"><a href="/products-and-services" title="PRODUCT &amp; SERVICES">PRODUCT &amp; SERVICES</a></li>
+<li class="menu-952"><a href="/applications" title="APPLICATION">APPLICATION</a></li>
+<li class="menu-954 last"><a href="/customer-service" title="CUSTOMER SERVICE">CUSTOMER SERVICE</a></li>
+</ul>                        </div>
+        <!-- Primary links section ends -->
+      </div>
+      
+      <!-- MAIN PAGE WRAPPER STARTS HERE  -->
+      <div class="wrapContainer clear-block">
+          
+          <!-- Navigation Blocks ONLY on the Home page/ front page on the website STARTS here -->
+            <div class="menu-details common-bg ">
+              
+              <div id="header-blk-1" class="floatleft home_list custom_header_block_1">
+                              </div>
+              <div class="seperator floatleft"></div>
+              
+              <div id="header-blk-2" class="floatleft home_list custom_header_block_2">
+                              </div>
+              <div class="seperator floatleft"></div>
+              
+              <div id="header-blk-3" class="floatleft home_list custom_header_block_3">
+                              </div>
+              <div class="seperator floatleft"></div>
+              
+              <div id="header-blk-4" class="floatleft home_list custom_header_block_4">
+                              </div>
+            </div>
+            
+            <div class="menu-bottom floatleft"></div>
+          <!-- Navigation Blocks ONLY on the Home page/ front page on the website ENDS here -->
+                
+                                                          
+          <div class="wid614 dbfl">
+            <div class="innerleftSec-front wid162"> 
+                              <div id="block-block-1" class="clear-block block block-block with-block-editing">
+    <div class='content_description'>
+    <p><img height="30" width="161" vspace="3" border="0" align="middle" src="/sites/lumitron-ir.com/files/assets/images/image_gallery.jpg" alt="" /></p>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tbody>
+<tr>
+<td>
+<ul class="gallery">
+<li><a href="gallery-lwir-cameras">LWIR Cameras</a> <br />
+                &nbsp;</li>
+<li><a href="gallery-mwir-cameras">MWIR Cameras</a><br />
+                &nbsp;</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+  </div>
+</div>
+                               
+                <div class="search_box_on_front_page">
+                                      <form action="/"  accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline">
+  <div class="form-item" id="edit-search-theme-form-1-wrapper">
+ <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="13" value="" style="border: 1px solid #838383; font-family: Arial, Helvetica, sans-serif; font-size: 11px;margin-right:0px;margin-left:18px;" class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="GO"  style="border: 1px solid #838383; font-family: Arial, Helvetica, sans-serif; font-size: 11px;width: 30px; height: 18px;" class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-HsMILT-EUqEATbI3N31zG6RTqvT7Qx-gIQmHwajQQ7A" value="form-HsMILT-EUqEATbI3N31zG6RTqvT7Qx-gIQmHwajQQ7A"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+</div>
+
+</div></form>
+                                  </div>
+            </div>
+
+            <div class="rightSec_front wid420">
+              <div id="node-1" class="with-node-editing node clear-block">
+  
+  
+      <h1><a href="/quality-thermal-imaging-solutions-our-oem-clients" title="Quality Thermal Imaging Solutions for Our OEM Clients">Quality Thermal Imaging Solutions for Our OEM Clients</a></h1>
+  
+  <div class="meta">
+    
+      </div>
+  
+    
+  <div class='content body_text'>
+    <p>For over 10 years, Lumitron has provided our partners with  state-of-the-art components and systems for their infrared technology  needs. While specializing in world-class imaging electronics, Lumitron  additionally provides optics, software, mechanical pieces, camera cores  and even complete camera systems into private-labeled market places.  Teaming with Lumitron enables OEM manufacturers and systems integrators  to acquire custom subassemblies and thermal cameras with minimal  development costs and rapid time-to-market.</p>
+  </div>
+
+    
+</div>
+            </div>
+
+                          <div class="rightSec wid420">
+                              </div>
+             
+          </div>
+      </div>
+      <!-- MAIN PAGE WRAPPER ENDS HERE  -->    
+      
+      <div class="wrapFooter">
+                    <div align="center" id="footer"> 
+              <div id="block-menu-menu-footer-menu" class="clear-block block block-menu with-block-editing">
+    <div class='content_description'>
+    <ul class="menu"><li class="leaf first active-trail"><a href="/" title="Home" class="active">Home</a></li>
+<li class="leaf"><a href="/company" title="Company">Company</a></li>
+<li class="leaf"><a href="/products-and-services" title="Products">Products</a></li>
+<li class="leaf"><a href="/applications" title="Application Solutions">Application Solutions</a></li>
+<li class="leaf"><a href="/customer-service" title="Customer Service">Customer Service</a></li>
+<li class="leaf"><a href="/gallery-lwir-cameras" title="Image Gallery">Image Gallery</a></li>
+<li class="leaf last"><a href="/sitemap" title="Site Map">Site Map</a></li>
+</ul>  </div>
+</div>
+            </div> 
+                </div>
+      
+    </div>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-31631252-1"]);_gaq.push(["_setDomainName", ".lumitron-ir.com"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a97553f48c","applicationID":"13496036","transactionName":"MwMEYRZZWhYEUkNaWwpJM0cNF10LAVRPHUQMFg==","queueTime":0,"applicationTime":4,"atts":"H0QHF15DSRg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

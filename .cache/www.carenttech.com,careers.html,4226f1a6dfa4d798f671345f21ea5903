@@ -1,0 +1,2332 @@
+status: 200
+content-length: 58787
+content-location: http://www.carenttech.com/careers.html
+-content-encoding: gzip
+x-powered-by: ASP.NET
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+last-modified: Thu, 28 Jan 2016 14:20:18 GMT
+etag: "9a469e3d759d11:0"
+date: Thu, 06 Oct 2016 18:12:56 GMT
+content-type: text/html
+x-powered-by-plesk: PleskWin
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Careers</title>
+
+
+
+
+<link rel="canonical" href="index.html" />
+
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+
+<!--Dropdown-->
+
+<script type="text/javascript" src="dropdown/jquery.min.js"></script>
+
+<script type="text/javascript" src="dropdown/jqueryslidemenu.js"></script>
+
+<link href="dropdown/dropdown.css" rel="stylesheet" type="text/css" />
+
+<!--Dropdown-->
+
+<script type="text/javascript" src="autoresize.jquery.js"></script>
+
+<script type="text/javascript" src="check.js"></script>
+
+<script language="javascript">
+
+function next(count,country)
+
+
+
+{
+
+
+
+xmlHttp=GetXmlHttpObject()
+
+
+
+if (xmlHttp==null)
+
+
+
+ {
+
+
+
+ alert ("Browser does not support HTTP Request")
+
+
+
+ return
+
+
+
+ }
+
+var url="next03d2.html?q="+count+"&country="+country;
+
+
+
+
+
+
+
+xmlHttp.onreadystatechange=stateChanged
+
+
+
+xmlHttp.open("GET.html",url,true)
+
+
+
+xmlHttp.send(null)
+
+
+
+}
+
+
+
+function stateChanged() 
+
+
+
+{ 
+
+
+
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+
+
+
+ { 
+
+ 
+
+ document.getElementById("txtHint").innerHTML = "<h4>Loading...</h4><div  style='height:200px;' align='center'><img src='ajax-loader.gif' alt='please wait, the content is still loading'/></div>"; 
+
+setTimeout('example_ajax_request_go()', 2000); 
+
+
+
+ } 
+
+
+
+}
+
+function example_ajax_request_go()
+
+{
+
+document.getElementById("txtHint").innerHTML=xmlHttp.responseText; 
+
+
+
+}
+
+function GetXmlHttpObject()
+
+
+
+{
+
+
+
+var xmlHttp=null;
+
+
+
+try
+
+
+
+ {
+
+
+
+ // Firefox, Opera 8.0+, Safari
+
+
+
+ xmlHttp=new XMLHttpRequest();
+
+
+
+ }
+
+
+
+catch (e)
+
+
+
+ {
+
+
+
+ //Internet Explorer
+
+
+
+ try
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+
+
+
+
+
+
+
+  }
+
+
+
+ catch (e)
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+
+
+  }
+
+
+
+ }
+
+
+
+return xmlHttp;
+
+
+
+}
+
+
+
+
+
+function rchange(count)
+
+
+
+{
+
+
+
+xmlHttp=GetXmlHttpObject10()
+
+
+
+if (xmlHttp==null)
+
+
+
+ {
+
+
+
+ alert ("Browser does not support HTTP Request")
+
+
+
+ return
+
+
+
+ }
+
+
+
+var url="rchange03d2.html?q="+count;
+
+
+
+
+
+
+
+xmlHttp.onreadystatechange=stateChanged10
+
+
+
+xmlHttp.open("GET.html",url,true)
+
+
+
+xmlHttp.send(null)
+
+
+
+}
+
+
+
+function stateChanged10() 
+
+
+
+{ 
+
+
+
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+
+
+
+ { 
+
+ 
+
+document.getElementById("txtHint10").innerHTML=xmlHttp.responseText; 
+
+
+
+ } 
+
+
+
+}
+
+
+
+function GetXmlHttpObject10()
+
+
+
+{
+
+
+
+var xmlHttp=null;
+
+
+
+try
+
+
+
+ {
+
+
+
+ // Firefox, Opera 8.0+, Safari
+
+
+
+ xmlHttp=new XMLHttpRequest();
+
+
+
+ }
+
+
+
+catch (e)
+
+
+
+ {
+
+
+
+ //Internet Explorer
+
+
+
+ try
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+
+
+
+
+
+
+
+  }
+
+
+
+ catch (e)
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+
+
+  }
+
+
+
+ }
+
+
+
+return xmlHttp;
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+<script language="javascript">
+
+function calm1(count)
+
+
+
+{
+
+
+
+fmonth=document.frm.fmonth1.value;
+
+fyear=document.frm.fyear1.value;
+
+tyear=document.frm.tyear1.value;
+
+tmonth=document.frm.tmonth1.value;
+
+
+
+xmlHttp=GetXmlHttpObject2()
+
+
+
+if (xmlHttp==null)
+
+
+
+ {
+
+
+
+ alert ("Browser does not support HTTP Request")
+
+
+
+ return
+
+
+
+ }
+
+if(fmonth!="" && fyear!="" && tyear!="" && tmonth!="")
+
+{
+
+var url="calm103d2.html?q="+fmonth+"&q1="+fyear+"&q2="+tmonth+"&q3="+tyear;
+
+
+
+xmlHttp.onreadystatechange=stateChanged2
+
+
+
+xmlHttp.open("GET.html",url,true)
+
+
+
+xmlHttp.send(null)
+
+}
+
+}
+
+
+
+function stateChanged2() 
+
+
+
+{ 
+
+
+
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+
+
+
+ { 
+
+ document.frm.difm2.value=xmlHttp.responseText 
+
+ } 
+
+
+
+}
+
+
+
+function GetXmlHttpObject2()
+
+
+
+{
+
+
+
+var xmlHttp=null;
+
+
+
+try
+
+
+
+ {
+
+
+
+ // Firefox, Opera 8.0+, Safari
+
+
+
+ xmlHttp=new XMLHttpRequest();
+
+
+
+ }
+
+
+
+catch (e)
+
+
+
+ {
+
+
+
+ //Internet Explorer
+
+
+
+ try
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+
+
+
+
+
+
+
+  }
+
+
+
+ catch (e)
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+
+
+  }
+
+
+
+ }
+
+
+
+return xmlHttp;
+
+
+
+}
+
+
+
+
+
+function snext(count)
+
+
+
+{
+
+
+
+xmlHttp=GetXmlHttpObject15()
+
+
+
+if (xmlHttp==null)
+
+
+
+ {
+
+
+
+ alert ("Browser does not support HTTP Request")
+
+
+
+ return
+
+
+
+ }
+
+
+
+var url="statechange03d2.html?q="+count;
+
+
+
+
+
+
+
+xmlHttp.onreadystatechange=stateChanged15
+
+
+
+xmlHttp.open("GET.html",url,true)
+
+
+
+xmlHttp.send(null)
+
+
+
+}
+
+
+
+function stateChanged15() 
+
+
+
+{ 
+
+
+
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+
+
+
+ { 
+
+ 
+
+document.getElementById("txtHint15").innerHTML=xmlHttp.responseText; 
+
+
+
+ } 
+
+
+
+}
+
+
+
+function GetXmlHttpObject15()
+
+
+
+{
+
+
+
+var xmlHttp=null;
+
+
+
+try
+
+
+
+ {
+
+
+
+ // Firefox, Opera 8.0+, Safari
+
+
+
+ xmlHttp=new XMLHttpRequest();
+
+
+
+ }
+
+
+
+catch (e)
+
+
+
+ {
+
+
+
+ //Internet Explorer
+
+
+
+ try
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+
+
+
+
+
+
+
+  }
+
+
+
+ catch (e)
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+
+
+  }
+
+
+
+ }
+
+
+
+return xmlHttp;
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+<script language="javascript">
+
+function calm(count)
+
+
+
+{
+
+
+
+fmonth=document.frm.fmonth.value;
+
+fyear=document.frm.fyear.value;
+
+tyear=document.frm.tyear.value;
+
+tmonth=document.frm.tmonth.value;
+
+
+
+xmlHttp=GetXmlHttpObject1()
+
+
+
+if (xmlHttp==null)
+
+
+
+ {
+
+
+
+ alert ("Browser does not support HTTP Request")
+
+
+
+ return
+
+
+
+ }
+
+if(fmonth!="" && fyear!="" && tyear!="" && tmonth!="")
+
+{
+
+var url="calm03d2.html?q="+fmonth+"&q1="+fyear+"&q2="+tmonth+"&q3="+tyear;
+
+
+
+xmlHttp.onreadystatechange=stateChanged1
+
+
+
+xmlHttp.open("GET.html",url,true)
+
+
+
+xmlHttp.send(null)
+
+}
+
+}
+
+
+
+function stateChanged1() 
+
+
+
+{ 
+
+
+
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+
+
+
+ { 
+
+ document.frm.difm1.value=xmlHttp.responseText 
+
+ } 
+
+
+
+}
+
+
+
+function GetXmlHttpObject1()
+
+
+
+{
+
+
+
+var xmlHttp=null;
+
+
+
+try
+
+
+
+ {
+
+
+
+ // Firefox, Opera 8.0+, Safari
+
+
+
+ xmlHttp=new XMLHttpRequest();
+
+
+
+ }
+
+
+
+catch (e)
+
+
+
+ {
+
+
+
+ //Internet Explorer
+
+
+
+ try
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+
+
+
+
+
+
+
+  }
+
+
+
+ catch (e)
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+
+
+  }
+
+
+
+ }
+
+
+
+return xmlHttp;
+
+
+
+}
+
+</script>
+
+
+
+<script language="javascript">
+
+function calm2(count)
+
+
+
+{
+
+
+
+fmonth=document.frm.fmonth2.value;
+
+fyear=document.frm.fyear2.value;
+
+tyear=document.frm.tyear2.value;
+
+tmonth=document.frm.tmonth2.value;
+
+
+
+xmlHttp=GetXmlHttpObject2()
+
+
+
+if (xmlHttp==null)
+
+
+
+ {
+
+
+
+ alert ("Browser does not support HTTP Request")
+
+
+
+ return
+
+
+
+ }
+
+if(fmonth!="" && fyear!="" && tyear!="" && tmonth!="")
+
+{
+
+var url="calm203d2.html?q="+fmonth+"&q1="+fyear+"&q2="+tmonth+"&q3="+tyear;
+
+
+
+xmlHttp.onreadystatechange=stateChanged3
+
+
+
+xmlHttp.open("GET.html",url,true)
+
+
+
+xmlHttp.send(null)
+
+}
+
+}
+
+
+
+function stateChanged3() 
+
+
+
+{ 
+
+
+
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+
+
+
+ { 
+
+ document.frm.difm3.value=xmlHttp.responseText 
+
+ } 
+
+
+
+}
+
+
+
+function GetXmlHttpObject3()
+
+
+
+{
+
+
+
+var xmlHttp=null;
+
+
+
+try
+
+
+
+ {
+
+
+
+ // Firefox, Opera 8.0+, Safari
+
+
+
+ xmlHttp=new XMLHttpRequest();
+
+
+
+ }
+
+
+
+catch (e)
+
+
+
+ {
+
+
+
+ //Internet Explorer
+
+
+
+ try
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+
+
+
+
+
+
+
+  }
+
+
+
+ catch (e)
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+
+
+  }
+
+
+
+ }
+
+
+
+return xmlHttp;
+
+
+
+}
+
+</script>
+
+
+
+
+
+
+
+<script language="javascript">
+
+function calm3(count)
+
+
+
+{
+
+
+
+fmonth=document.frm.fmonth3.value;
+
+fyear=document.frm.fyear3.value;
+
+tyear=document.frm.tyear3.value;
+
+tmonth=document.frm.tmonth3.value;
+
+
+
+xmlHttp=GetXmlHttpObject4()
+
+
+
+if (xmlHttp==null)
+
+
+
+ {
+
+
+
+ alert ("Browser does not support HTTP Request")
+
+
+
+ return
+
+
+
+ }
+
+if(fmonth!="" && fyear!="" && tyear!="" && tmonth!="")
+
+{
+
+
+
+var url="calm303d2.html?q="+fmonth+"&q1="+fyear+"&q2="+tmonth+"&q3="+tyear;
+
+
+
+xmlHttp.onreadystatechange=stateChanged4
+
+
+
+xmlHttp.open("GET.html",url,true)
+
+
+
+xmlHttp.send(null)
+
+}
+
+}
+
+
+
+function stateChanged4() 
+
+
+
+{ 
+
+
+
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+
+
+
+ { 
+
+ 
+
+ document.frm.difm4.value=xmlHttp.responseText 
+
+ } 
+
+
+
+}
+
+
+
+function GetXmlHttpObject4()
+
+
+
+{
+
+
+
+var xmlHttp=null;
+
+
+
+try
+
+
+
+ {
+
+
+
+ // Firefox, Opera 8.0+, Safari
+
+
+
+ xmlHttp=new XMLHttpRequest();
+
+
+
+ }
+
+
+
+catch (e)
+
+
+
+ {
+
+
+
+ //Internet Explorer
+
+
+
+ try
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+
+
+
+
+
+
+
+  }
+
+
+
+ catch (e)
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+
+
+  }
+
+
+
+ }
+
+
+
+return xmlHttp;
+
+
+
+}
+
+</script>
+
+<script language="javascript">
+
+function calm6(count)
+
+
+
+{
+
+
+
+fmonth=document.frm.fmonth6.value;
+
+fyear=document.frm.fyear6.value;
+
+tyear=document.frm.tyear6.value;
+
+tmonth=document.frm.tmonth6.value;
+
+
+
+xmlHttp=GetXmlHttpObject25()
+
+
+
+if (xmlHttp==null)
+
+
+
+ {
+
+
+
+ alert ("Browser does not support HTTP Request")
+
+
+
+ return
+
+
+
+ }
+
+if(fmonth!="" && fyear!="" && tyear!="" && tmonth!="")
+
+{
+
+
+
+var url="calm603d2.html?q="+fmonth+"&q1="+fyear+"&q2="+tmonth+"&q3="+tyear;
+
+
+
+xmlHttp.onreadystatechange=stateChanged24
+
+
+
+xmlHttp.open("GET.html",url,true)
+
+
+
+xmlHttp.send(null)
+
+}
+
+}
+
+
+
+function stateChanged25() 
+
+
+
+{ 
+
+
+
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+
+
+
+ { 
+
+ 
+
+ document.frm.difm6.value=xmlHttp.responseText 
+
+ } 
+
+
+
+}
+
+
+
+
+
+function GetXmlHttpObject25()
+
+
+
+{
+
+
+
+var xmlHttp=null;
+
+
+
+try
+
+
+
+ {
+
+
+
+ // Firefox, Opera 8.0+, Safari
+
+
+
+ xmlHttp=new XMLHttpRequest();
+
+
+
+ }
+
+
+
+catch (e)
+
+
+
+ {
+
+
+
+ //Internet Explorer
+
+
+
+ try
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+
+
+
+
+
+
+
+  }
+
+
+
+ catch (e)
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+
+
+  }
+
+
+
+ }
+
+
+
+return xmlHttp;
+
+
+
+}
+
+</script>
+
+<script language="javascript">
+
+function calm7(count)
+
+
+
+{
+
+
+
+fmonth=document.frm.fmonth7.value;
+
+fyear=document.frm.fyear7.value;
+
+tyear=document.frm.tyear7.value;
+
+tmonth=document.frm.tmonth7.value;
+
+
+
+xmlHttp=GetXmlHttpObject24()
+
+
+
+if (xmlHttp==null)
+
+
+
+ {
+
+
+
+ alert ("Browser does not support HTTP Request")
+
+
+
+ return
+
+
+
+ }
+
+if(fmonth!="" && fyear!="" && tyear!="" && tmonth!="")
+
+{
+
+
+
+var url="calm703d2.html?q="+fmonth+"&q1="+fyear+"&q2="+tmonth+"&q3="+tyear;
+
+
+
+xmlHttp.onreadystatechange=stateChanged24
+
+
+
+xmlHttp.open("GET.html",url,true)
+
+
+
+xmlHttp.send(null)
+
+}
+
+}
+
+
+
+function stateChanged24() 
+
+
+
+{ 
+
+
+
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+
+
+
+ { 
+
+ 
+
+ document.frm.difm7.value=xmlHttp.responseText 
+
+ } 
+
+
+
+}
+
+
+
+function GetXmlHttpObject24()
+
+
+
+{
+
+
+
+var xmlHttp=null;
+
+
+
+try
+
+
+
+ {
+
+
+
+ // Firefox, Opera 8.0+, Safari
+
+
+
+ xmlHttp=new XMLHttpRequest();
+
+
+
+ }
+
+
+
+catch (e)
+
+
+
+ {
+
+
+
+ //Internet Explorer
+
+
+
+ try
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+
+
+
+
+
+
+
+  }
+
+
+
+ catch (e)
+
+
+
+  {
+
+
+
+  xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+
+
+  }
+
+
+
+ }
+
+
+
+return xmlHttp;
+
+
+
+}
+
+</script>
+
+</head>
+
+
+
+<body><!--Header Start-->
+<div class="main-container dark-blue"> 
+  <div class="header"> <a class="logo fl" href="index-2.html">Carenttech, Swift, Secure, Error-Free Transcription Services</a> 
+    <div class="panel fr"> 
+      <div class="tollfree fr">Tel: 092-344-486-4064 
+      </div> 
+      <div class="clear"></div> 
+      <div class="clear"></div> 
+    </div> 
+  </div> 
+</div><!--Header End-->
+
+
+
+<!--Banner Start-->
+<div class="main-container light-blue"> 
+  <div class="inner-banner"> 
+    <div class="inner-image"><img width="1000" height="190" alt="" src="images/careers.jpg" /> 
+    </div> 
+    <div class="menu"> 
+      <div id="myslidemenu" class="jqueryslidemenu"> 
+        <ul> 
+          <li><a class="home" href="index-2.html">Home</a></li> 
+          <li><a href="about-us.html">About Us</a></li> 
+          <li><a href="services.html">Services</a></li> 
+          <li><a href="emr-data-update.html">EMR Indexing</a></li> 
+          <li><a href="why-Carenttech.html">Why Carenttech</a></li> 
+          <li><a href="careers.html">Careers</a></li> 
+          <li><a href="rates.html">Rates</a></li> 
+          <li style="background: none repeat scroll 0% 0% transparent;"><a href="contact-us.html">Contact Us</a></li> 
+        </ul>      <!--jqueryslidemenu end -->
+    
+      
+      
+      
+      
+      
+      
+      </div> 
+    </div> 
+    <div class="inner-tag"> 
+      <p>The Carent Technologies Pvt. Ltd is one of the best transcription services in the world .</p> <span>We Provide Trusted Services....</span> 
+    </div> 
+    <div class="inner-transfer"> 
+      <ul> 
+        <li class="email"><a href="mailto:services@carenttech.com">services@carenttech.com</a></li> 
+      </ul> 
+    </div> 
+    <div class="heading"><h1>Careers</h1> 
+    </div> 
+    <div class="inner-contact"> 
+      <script type="text/javascript" src="/spaw/empty/autoresize.jquery.js">
+      </script> <form onsubmit="return validate_15(this);" id="myform" name="myform" method="post"> <input name="act" type="hidden" value="1" /> <input id="qname" onblur="if(this.value=='')this.value='Name'" onfocus="if(this.value=='Name')this.value=''" name="qname" class="input text1" type="text" value="Name" /> <input id="qemail" onblur="if(this.value=='')this.value='Email'" onfocus="if(this.value=='Email')this.value=''" name="qemail" class="input text2" type="text" value="Email" /> <input id="qphone" onblur="if(this.value=='')this.value='Phone'" onfocus="if(this.value=='Phone')this.value=''" name="qphone" class="input text3" type="text" value="Phone" /> <select id="qcountry" name="qcountry" class="select text4" type="select-one" value="#"> <option value="#">Country</option> <option value="Afghanistan">AF</option> <option value="Albania">AL</option> <option value="Algeria">DZ</option> <option value="American Samoa">AS</option> <option value="Andorra">AD</option> <option value="Angola">AO</option> <option value="Anguilla">AI</option> <option value="Antarctica">AQ</option> <option value="Antigua and Barbuda">AG</option> <option value="Argentina">AR</option> <option value="Armenia">AM</option> <option value="Aruba">AW</option> <option value="Australia">AU</option> <option value="Austria">AT</option> <option value="Azerbaijan">AZ</option> <option value="Bahamas">BS</option> <option value="Bahrain">BH</option> <option value="Bangladesh">BD</option> <option value="Barbados">BB</option> <option value="Belarus">BY</option> <option value="Belgium">BE</option> <option value="Belize">BZ</option> <option value="Benin">BJ</option> <option value="Bermuda">BM</option> <option value="Bhutan">BT</option> <option value="Bolivia">BO</option> <option value="Bosnia and Herzegowina">BA</option> <option value="Botswana">BW</option> <option value="Bouvet Island">BV</option> <option value="Brazil">BR</option> <option value="British Indian Ocean Territory">IO</option> <option value="Brunei Darussalam">BN</option> <option value="Bulgaria">BG</option> <option value="Burkina Faso">BF</option> <option value="Burundi">BI</option> <option value="Cambodia">KH</option> <option value="Cameroon">CM</option> <option value="Canada">CA</option> <option value="Cape Verde">CV</option> <option value="Cayman Islands">KY</option> <option value="Central African Republic">CF</option> <option value="Chad">TD</option> <option value="Chile">CL</option> <option value="China">CN</option> <option value="Christmas Island">CX</option> <option value="Cocos (Keeling) Islands">CC</option> <option value="Colombia">CO</option> <option value="Comoros">KM</option> <option value="Congo">CG</option> <option value="Congo, the Democratic Republic of the">CD</option> <option value="Cook Islands">CK</option> <option value="Costa Rica">CR</option> <option value="Cote d'Ivoire">CI</option> <option value="Croatia (Hrvatska)">HR</option> <option value="Cuba">CU</option> <option value="Cyprus">CY</option> <option value="Czech Republic">CZ</option> <option value="Denmark">DK</option> <option value="Djibouti">DJ</option> <option value="Dominica">DM</option> <option value="Dominican Republic">DO</option> <option value="East Timor">TP</option> <option value="Ecuador">EC</option> <option value="Egypt">EG</option> <option value="El Salvador">SV</option> <option value="Equatorial Guinea">GQ</option> <option value="Eritrea">ER</option> <option value="Estonia">EE</option> <option value="Ethiopia">ET</option> <option value="Falkland Islands (Malvinas)">FK</option> <option value="Faroe Islands">FO</option> <option value="Fiji">FJ</option> <option value="Finland">FI</option> <option value="France">FR</option> <option value="France, Metropolitan">FX
+
+        </option><option value="French Guiana">GF</option> <option value="French Polynesia">PF</option> <option value="French Southern Territories">TF</option> <option value="Gabon">GA</option> <option value="Gambia">GM</option> <option value="Georgia">GE</option> <option value="Germany">DE</option> <option value="Ghana">GH</option> <option value="Gibraltar">GI</option> <option value="Greece">GR</option> <option value="Greenland">GL</option> <option value="Grenada">GD</option> <option value="Guadeloupe">GP</option> <option value="Guam">GU</option> <option value="Guatemala">GT</option> <option value="Guinea">GN</option> <option value="Guinea-Bissau">GW</option> <option value="Guyana">GY</option> <option value="Haiti">HT</option> <option value="Heard and Mc Donald Islands">HM</option> <option value="Holy See (Vatican City State)">VA</option> <option value="Honduras">HN</option> <option value="Hong Kong">HK</option> <option value="Hungary">HU</option> <option value="Iceland">IS</option> <option value="India">IN</option> <option value="Indonesia">ID</option> <option value="Iran (Islamic Republic of)">IR</option> <option value="Iraq">IQ</option> <option value="Ireland">IE</option> <option value="Israel">IL</option> <option value="Italy">IT</option> <option value="Jamaica">JM</option> <option value="Japan">JP</option> <option value="Jordan">JO</option> <option value="Kazakhstan">KZ</option> <option value="Kenya">KE</option> <option value="Kiribati">KI</option> <option value="Korea, Democratic People's Republic of">KP</option> <option value="Korea, Republic of">KR</option> <option value="Kuwait">KW</option> <option value="Kyrgyzstan">KG</option> <option value="Lao People's Democratic Republic">LA</option> <option value="Latvia">LV</option> <option value="Lebanon">LB</option> <option value="Lesotho">LS</option> <option value="Liberia">LR</option> <option value="Libyan Arab Jamahiriya">LY</option> <option value="Liechtenstein">LI</option> <option value="Lithuania">LT</option> <option value="Luxembourg">LU</option> <option value="Macau">MO</option> <option value="Macedonia, The Former Yugoslav Republic of">MK</option> <option value="Madagascar">MG</option> <option value="Malawi">MW</option> <option value="Malaysia">MY</option> <option value="Maldives">MV</option> <option value="Mali">ML</option> <option value="Malta">MT</option> <option value="Marshall Islands">MH</option> <option value="Martinique">MQ</option> <option value="Mauritania">MR</option> <option value="Mauritius">MU</option> <option value="Mayotte">YT</option> <option value="Mexico">MX</option> <option value="Micronesia, Federated States of">FM</option> <option value="Moldova, Republic of">MD</option> <option value="Monaco">MC</option> <option value="Mongolia">MN</option> <option value="Montserrat">MS</option> <option value="Morocco">MA</option> <option value="Mozambique">MZ</option> <option value="Myanmar">MM</option> <option value="Namibia">NA</option> <option value="Nauru">NR</option> <option value="Nepal">NP</option> <option value="Netherlands">NL</option> <option value="Netherlands Antilles">AN</option> <option value="New Caledonia">NC</option> <option value="New Zealand">NZ</option> <option value="Nicaragua">NI</option> <option value="Niger">NE</option> <option value="Nigeria">NG</option> <option value="Niue">NU</option> <option value="Norfolk Island">NF</option> <option value="Northern Mariana Islands">MP</option> <option value="Norway">NO</option> <option value="Oman">OM</option> <option value="Pakistan">PK</option> <option value="Palau">PW</option> <option value="Panama">PA</option> <option value="Papua New Guinea">PG</option> <option value="Paraguay">PY</option> <option value="Peru">PE</option> <option value="Philippines">PH</option> <option value="Pitcairn">PN</option> <option value="Poland">PL</option> <option value="Portugal">PT</option> <option value="Puerto Rico">PR</option> <option value="Qatar">QA</option> <option value="Reunion">RE</option> <option value="Romania">RO</option> <option value="Russian Federation">RU</option> <option value="Rwanda">RW</option> <option value="Saint Kitts and Nevis">KN</option> <option value="Saint LUCIA">LC</option> <option value="Saint Vincent and the Grenadines">VC</option> <option value="Samoa">WS</option> <option value="San Marino">SM</option> <option value="Sao Tome and Principe">ST</option> <option value="Saudi Arabia">SA</option> <option value="Senegal">SN</option> <option value="Seychelles">SC</option> <option value="Sierra Leone">SL</option> <option value="Singapore">SG</option> <option value="Slovakia (Slovak Republic)">SK</option> <option value="Slovenia">SI</option> <option value="Solomon Islands">SB</option> <option value="Somalia">SO</option> <option value="South Africa">ZA</option> <option value="South Georgia and the South Sandwich Islands">GS</option> <option value="Spain">ES</option> <option value="Sri Lanka">LK</option> <option value="St. Helena">SH</option> <option value="St. Pierre and Miquelon">PM</option> <option value="Sudan">SD</option> <option value="Suriname">SR</option> <option value="Svalbard and Jan Mayen Islands">SJ</option> <option value="Swaziland">SZ</option> <option value="Sweden">SE</option> <option value="Switzerland">CH</option> <option value="Syrian Arab Republic">SY</option> <option value="Taiwan, Province of China">TW</option> <option value="Tajikistan">TJ</option> <option value="Tanzania, United Republic of">TZ</option> <option value="Thailand">TH</option> <option value="Togo">TG</option> <option value="Tokelau">TK</option> <option value="Tonga">TO</option> <option value="Trinidad and Tobago">TT</option> <option value="Tunisia">TN</option> <option value="Turkey">TR</option> <option value="Turkmenistan">TM</option> <option value="Turks and Caicos Islands">TC</option> <option value="Tuvalu">TV</option> <option value="Uganda">UG</option> <option value="Ukraine">UA</option> <option value="United Arab Emirates">AE</option> <option value="United Kingdom">GB</option> <option value="United States">US</option> <option value="United States Minor Outlying Islands">UM</option> <option value="Uruguay">UY</option> <option value="Uzbekistan">UZ</option> <option value="Vanuatu">VU</option> <option value="Venezuela">VE</option> <option value="Viet Nam">VN</option> <option value="Virgin Islands (British)">VG</option> <option value="Virgin Islands (U.S.)">VI</option> <option value="Wallis and Futuna Islands">WF</option> <option value="Western Sahara">EH</option> <option value="Yemen">YE</option> <option value="Yugoslavia">YU</option> <option value="Zambia">ZM</option> <option value="Zimbabwe">ZW</option> </select> <textarea onblur="if(this.value=='')this.value='Question'" onfocus="if(this.value=='Question')this.value=''" id="qquestion" rows="5" name="qquestion" class="textarea text5" type="textarea" value="Question">Question</textarea> 
+        <div class="text7">4 + 5
+   <input name="i" type="hidden" value="4" /> <input name="j" type="hidden" value="5" /> <input name="k" type="hidden" value="9" />              =
+        
+        
+        
+        
+        
+        
+        </div> <input id="security" onblur="if(this.value=='')this.value='Calculate'" onfocus="if(this.value=='Calculate')this.value=''" name="num" class="input text6" type="text" value="Calculate" /> <input id="button2" name="Submit" class="text8" type="submit" value="Submit" /> </form> 
+      <script type="text/javascript">/*<![CDATA[*/(function(a){a.fn.autoResize=function(j){var b=a.extend({onResize:function(){},animate:true,animateDuration:150,animateCallback:function(){},extraSpace:20,limit:1000},j);this.filter('textarea').each(function(){var c=a(this).css({resize:'none','overflow-y':'hidden'}),k=c.height(),f=(function(){var l=['height','width','lineHeight','textDecoration','letterSpacing'],h={};a.each(l,function(d,e){h[e]=c.css(e)});return c.clone().removeAttr('id').removeAttr('name').css({position:'absolute',top:0,left:-9999}).css(h).insertBefore(c)})(),i=null,g=function(){f.height(0).val(a(this).val()).scrollTop(10000);var d=Math.max(f.scrollTop(),k)+b.extraSpace,e=a(this).add(f);if(i===d){return}i=d;if(d>=b.limit){a(this).css('overflow-y','');return}b.onResize.call(this);b.animate&&c.css('display')==='block'?e.stop().animate({height:d},b.animateDuration,b.animateCallback):e.height(d)};c.unbind('.dynSiz').bind('keyup.dynSiz',g).bind('keydown.dynSiz',g).bind('change.dynSiz',g)});return this}})(jQuery);$('textarea#qquestion').autoResize();/*]]>*/
+      </script> 
+    </div> 
+  </div> 
+</div><!--Banner end-->
+
+
+
+<!--Middle Start-->
+<div class="main-container gradient"> 
+  <div class="middle"> 
+    <div class="left-panel fl"> 
+      <div class="services"> <h1>Transcription Services</h1> 
+        <ul> 
+          <li>Medical Transcription</li> 
+          <li>Academic Transcription</li> 
+          <li>Business Transcription</li> 
+          <li>Conference Call Transcription</li> 
+          <li>Dictation Services</li> 
+          <li>Focus Group Transcription</li> 
+          <li>Interview Transcription</li> 
+          <li>Insurance Transcription</li> 
+          <li>Investigative Transcription</li> 
+          <li>Legal Transcription</li> 
+          <li>Market Research Transcription</li> 
+          <li>Media Transcription</li> 
+          <li>Podcast Transcription</li> 
+          <li>Text-to-Text Transcription</li> 
+          <li>Webinar Transcription</li> 
+          <li>English Transcription</li> 
+          <li>Spanish Transcription</li> 
+          <li>French Transcription</li> 
+        </ul> 
+      </div> 
+    </div> 
+    <div class="mid-mid fr"> 
+      <div class="inner-left fr"> 
+        <p>We Hire Something Special Like We Need As Much AS You Need.
+If U Have Skills So Don't Waste It Contact Us And We Will Tell U.</p> <h2>Please Enter Your Details  </h2> 
+        <table width="600" cellspacing="0" cellpadding="4" border="0" align="center" class="block"> 
+          <tbody> 
+            <tr> 
+              <td width="100%" valign="top" align="left" colspan="2"> <form onsubmit="return rvalidate(this)" method="post" name="frm"> 
+                  <table width="545" cellspacing="0" cellpadding="0" border="0"> 
+                    <tbody> 
+                      <tr> 
+                        <td>	<!--FORM 1 STARTS-->
+
+	
+                          
+                          
+                          
+                          
+                          
+                          
+                          <table width="545" cellspacing="5" cellpadding="5" border="0" align="center"> 
+                            <tbody> 
+                              <tr> 
+                                <td width="143" align="right"> 
+                                  <div class="fom_A">First Name
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td width="367"><input size="20" name="fname" class="style2" type="text" /></td> 
+                              </tr> 
+                              <tr> 
+                                <td align="right"> 
+                                  <div class="fom_A">Last Name
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td><input size="20" name="lname" class="style2" type="text" /></td> 
+                              </tr> 
+                              <tr> 
+                                <td align="right"> 
+                                  <div class="fom_A">Email
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td><input size="20" name="email" class="style2" type="text" /></td> 
+                              </tr> 
+                              <tr> 
+                                <td align="right"> 
+                                  <div class="fom_A">Tel
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td><input size="20" name="tel" class="style2" type="text" /></td> 
+                              </tr> 
+                              <tr> 
+                                <td align="right"> 
+                                  <div class="fom_A">Mobile
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td><input size="20" name="mobile" class="style2" type="text" /></td> 
+                              </tr> 
+                              <tr> 
+                                <td align="right"> 
+                                  <div class="fom_A">Address
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td><textarea cols="20" name="address" class="style2" type="textarea"></textarea></td> 
+                              </tr> 
+                              <tr> 
+                                <td align="right"> 
+                                  <div class="fom_A">Country
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td><select onchange="snext(this.value)" id="country" name="country" style="width: 150px;" type="select-one" value="--Select--"> <option selected="selected" value="--Select--">--Select--</option> <option value="Afghanistan">              Afghanistan
+              </option> <option value="Albania">              Albania
+              </option> <option value="Algeria">              Algeria
+              </option> <option value="American Samoa">              American Samoa
+              </option> <option value="Andorra">              Andorra
+              </option> <option value="Angola">              Angola
+              </option> <option value="Anguilla">              Anguilla
+              </option> <option value="Antarctica">              Antarctica
+              </option> <option value="Antigua and/or Barbuda">              Antigua and/or Barbuda
+              </option> <option value="Argentina">              Argentina
+              </option> <option value="Armenia">              Armenia
+              </option> <option value="Aruba">              Aruba
+              </option> <option value="Australia">              Australia
+              </option> <option value="Austria">              Austria
+              </option> <option value="Azerbaijan">              Azerbaijan
+              </option> <option value="Bahamas">              Bahamas
+              </option> <option value="Bahrain">              Bahrain
+              </option> <option value="Bangladesh">              Bangladesh
+              </option> <option value="Barbados">              Barbados
+              </option> <option value="Belarus">              Belarus
+              </option> <option value="Belgium">              Belgium
+              </option> <option value="Belize">              Belize
+              </option> <option value="Benin">              Benin
+              </option> <option value="Bermuda">              Bermuda
+              </option> <option value="Bhutan">              Bhutan
+              </option> <option value="Bolivia">              Bolivia
+              </option> <option value="Bosnia and Herzegovina">              Bosnia and Herzegovina
+              </option> <option value="Botswana">              Botswana
+              </option> <option value="Bouvet Island">              Bouvet Island
+              </option> <option value="Brazil">              Brazil
+              </option> <option value="British lndian Ocean Territory">              British lndian Ocean Territory
+              </option> <option value="Brunei Darussalam">              Brunei Darussalam
+              </option> <option value="Bulgaria">              Bulgaria
+              </option> <option value="Burkina Faso">              Burkina Faso
+              </option> <option value="Burundi">              Burundi
+              </option> <option value="Cambodia">              Cambodia
+              </option> <option value="Cameroon">              Cameroon
+              </option> <option value="Canada">              Canada
+              </option> <option value="Cape Verde">              Cape Verde
+              </option> <option value="Cayman Islands">              Cayman Islands
+              </option> <option value="Central African Republic">              Central African Republic
+              </option> <option value="Chad">              Chad
+              </option> <option value="Chile">              Chile
+              </option> <option value="China">              China
+              </option> <option value="Christmas Island">              Christmas Island
+              </option> <option value="Cocos (Keeling) Islands">              Cocos (Keeling) Islands
+              </option> <option value="Colombia">              Colombia
+              </option> <option value="Comoros">              Comoros
+              </option> <option value="Congo">              Congo
+              </option> <option value="Cook Islands">              Cook Islands
+              </option> <option value="Costa Rica">              Costa Rica
+              </option> <option value="Croatia (Hrvatska)">              Croatia (Hrvatska)
+              </option> <option value="Cuba">              Cuba
+              </option> <option value="Cyprus">              Cyprus
+              </option> <option value="Czech Republic">              Czech Republic
+              </option> <option value="Denmark">              Denmark
+              </option> <option value="Djibouti">              Djibouti
+              </option> <option value="Dominica">              Dominica
+              </option> <option value="Dominican Republic">              Dominican Republic
+              </option> <option value="East Timor">              East Timor
+              </option> <option value="Ecudaor">              Ecudaor
+              </option> <option value="Egypt">              Egypt
+              </option> <option value="El Salvador">              El Salvador
+              </option> <option value="Equatorial Guinea">              Equatorial Guinea
+              </option> <option value="Eritrea">              Eritrea
+              </option> <option value="Estonia">              Estonia
+              </option> <option value="Ethiopia">              Ethiopia
+              </option> <option value="Falkland Islands (Malvinas)">              Falkland Islands (Malvinas)
+              </option> <option value="Faroe Islands">              Faroe Islands
+              </option> <option value="Fiji">              Fiji
+              </option> <option value="Finland">              Finland
+              </option> <option value="France">              France
+              </option> <option value="France, Metropolitan">              France, Metropolitan
+              </option> <option value="French Guiana">              French Guiana
+              </option> <option value="French Polynesia">              French Polynesia
+              </option> <option value="French Southern Territories">              French Southern Territories
+              </option> <option value="Gabon">              Gabon
+              </option> <option value="Gambia">              Gambia
+              </option> <option value="Georgia">              Georgia
+              </option> <option value="Germany">              Germany
+              </option> <option value="Ghana">              Ghana
+              </option> <option value="Gibraltar">              Gibraltar
+              </option> <option value="Greece">              Greece
+              </option> <option value="Greenland">              Greenland
+              </option> <option value="Grenada">              Grenada
+              </option> <option value="Guadeloupe">              Guadeloupe
+              </option> <option value="Guam">              Guam
+              </option> <option value="Guatemala">              Guatemala
+              </option> <option value="Guinea">              Guinea
+              </option> <option value="Guinea-Bissau">              Guinea-Bissau
+              </option> <option value="Guyana">              Guyana
+              </option> <option value="Haiti">              Haiti
+              </option> <option value="Heard and Mc Donald Islands">              Heard and Mc Donald Islands
+              </option> <option value="Honduras">              Honduras
+              </option> <option value="Hong Kong">              Hong Kong
+              </option> <option value="Hungary">              Hungary
+              </option> <option value="Iceland">              Iceland
+              </option> <option value="India">              India
+              </option> <option value="Indonesia">              Indonesia
+              </option> <option value="Iran (Islamic Republic of)">              Iran (Islamic Republic of)
+              </option> <option value="Iraq">              Iraq
+              </option> <option value="Ireland">              Ireland
+              </option> <option value="Israel">              Israel
+              </option> <option value="Italy">              Italy
+              </option> <option value="Ivory Coast">              Ivory Coast
+              </option> <option value="Jamaica">              Jamaica
+              </option> <option value="Japan">              Japan
+              </option> <option value="Jordan">              Jordan
+              </option> <option value="Kazakhstan">              Kazakhstan
+              </option> <option value="Kenya">              Kenya
+              </option> <option value="Kiribati">              Kiribati
+              </option> <option value="Korea, Democratic People's Republic of">              Korea, Democratic People's Republic of
+              </option> <option value="Korea, Republic of">              Korea, Republic of
+              </option> <option value="Kuwait">              Kuwait
+              </option> <option value="Kyrgyzstan">              Kyrgyzstan
+              </option> <option value="Lao People's Democratic Republic">              Lao People's Democratic Republic
+              </option> <option value="Latvia">              Latvia
+              </option> <option value="Lebanon">              Lebanon
+              </option> <option value="Lesotho">              Lesotho
+              </option> <option value="Liberia">              Liberia
+              </option> <option value="Libyan Arab Jamahiriya">              Libyan Arab Jamahiriya
+              </option> <option value="Liechtenstein">              Liechtenstein
+              </option> <option value="Lithuania">              Lithuania
+              </option> <option value="Luxembourg">              Luxembourg
+              </option> <option value="Macau">              Macau
+              </option> <option value="Macedonia">              Macedonia
+              </option> <option value="Madagascar">              Madagascar
+              </option> <option value="Malawi">              Malawi
+              </option> <option value="Malaysia">              Malaysia
+              </option> <option value="Maldives">              Maldives
+              </option> <option value="Mali">              Mali
+              </option> <option value="Malta">              Malta
+              </option> <option value="Marshall Islands">              Marshall Islands
+              </option> <option value="Martinique">              Martinique
+              </option> <option value="Mauritania">              Mauritania
+              </option> <option value="Mauritius">              Mauritius
+              </option> <option value="Mayotte">              Mayotte
+              </option> <option value="Mexico">              Mexico
+              </option> <option value="Micronesia, Federated States of">              Micronesia, Federated States of
+              </option> <option value="Moldova, Republic of">              Moldova, Republic of
+              </option> <option value="Monaco">              Monaco
+              </option> <option value="Mongolia">              Mongolia
+              </option> <option value="Montserrat">              Montserrat
+              </option> <option value="Morocco">              Morocco
+              </option> <option value="Mozambique">              Mozambique
+              </option> <option value="Myanmar">              Myanmar
+              </option> <option value="Namibia">              Namibia
+              </option> <option value="Nauru">              Nauru
+              </option> <option value="Nepal">              Nepal
+              </option> <option value="Netherlands">              Netherlands
+              </option> <option value="Netherlands Antilles">              Netherlands Antilles
+              </option> <option value="New Caledonia">              New Caledonia
+              </option> <option value="New Zealand">              New Zealand
+              </option> <option value="Nicaragua">              Nicaragua
+              </option> <option value="Niger">              Niger
+              </option> <option value="Nigeria">              Nigeria
+              </option> <option value="Niue">              Niue
+              </option> <option value="Norfork Island">              Norfork Island
+              </option> <option value="Northern Mariana Islands">              Northern Mariana Islands
+              </option> <option value="Norway">              Norway
+              </option> <option value="Oman">              Oman
+              </option> <option value="Pakistan">              Pakistan
+              </option> <option value="Palau">              Palau
+              </option> <option value="Panama">              Panama
+              </option> <option value="Papua New Guinea">              Papua New Guinea
+              </option> <option value="Paraguay">              Paraguay
+              </option> <option value="Peru">              Peru
+              </option> <option value="Philippines">              Philippines
+              </option> <option value="Pitcairn">              Pitcairn
+              </option> <option value="Poland">              Poland
+              </option> <option value="Portugal">              Portugal
+              </option> <option value="Puerto Rico">              Puerto Rico
+              </option> <option value="Qatar">              Qatar
+              </option> <option value="Reunion">              Reunion
+              </option> <option value="Romania">              Romania
+              </option> <option value="Russian Federation">              Russian Federation
+              </option> <option value="Rwanda">              Rwanda
+              </option> <option value="Saint Kitts and Nevis">              Saint Kitts and Nevis
+              </option> <option value="Saint Lucia">              Saint Lucia
+              </option> <option value="Saint Vincent and the Grenadines">              Saint Vincent and the Grenadines
+              </option> <option value="Samoa">              Samoa
+              </option> <option value="San Marino">              San Marino
+              </option> <option value="Sao Tome and Principe">              Sao Tome and Principe
+              </option> <option value="Saudi Arabia">              Saudi Arabia
+              </option> <option value="Senegal">              Senegal
+              </option> <option value="Seychelles">              Seychelles
+              </option> <option value="Sierra Leone">              Sierra Leone
+              </option> <option value="Singapore">              Singapore
+              </option> <option value="Slovakia">              Slovakia
+              </option> <option value="Slovenia">              Slovenia
+              </option> <option value="Solomon Islands">              Solomon Islands
+              </option> <option value="Somalia">              Somalia
+              </option> <option value="South Africa">              South Africa
+              </option> <option value="South Georgia South Sandwich Islands">              South Georgia South Sandwich Islands
+              </option> <option value="Spain">              Spain
+              </option> <option value="Sri Lanka">              Sri Lanka
+              </option> <option value="St. Helena">              St. Helena
+              </option> <option value="St. Pierre and Miquelon">              St. Pierre and Miquelon
+              </option> <option value="Sudan">              Sudan
+              </option> <option value="Suriname">              Suriname
+              </option> <option value="Svalbarn and Jan Mayen Islands">              Svalbarn and Jan Mayen Islands
+              </option> <option value="Swaziland">              Swaziland
+              </option> <option value="Sweden">              Sweden
+              </option> <option value="Switzerland">              Switzerland
+              </option> <option value="Syrian Arab Republic">              Syrian Arab Republic
+              </option> <option value="Taiwan">              Taiwan
+              </option> <option value="Tajikistan">              Tajikistan
+              </option> <option value="Tanzania, United Republic of">              Tanzania, United Republic of
+              </option> <option value="Thailand">              Thailand
+              </option> <option value="Togo">              Togo
+              </option> <option value="Tokelau">              Tokelau
+              </option> <option value="Tonga">              Tonga
+              </option> <option value="Trinidad and Tobago">              Trinidad and Tobago
+              </option> <option value="Tunisia">              Tunisia
+              </option> <option value="Turkey">              Turkey
+              </option> <option value="Turkmenistan">              Turkmenistan
+              </option> <option value="Turks and Caicos Islands">              Turks and Caicos Islands
+              </option> <option value="Tuvalu">              Tuvalu
+              </option> <option value="Uganda">              Uganda
+              </option> <option value="Ukraine">              Ukraine
+              </option> <option value="United Arab Emirates">              United Arab Emirates
+              </option> <option value="United Kingdom">              United Kingdom
+              </option> <option value="United States">              United States
+              </option> <option value="United States minor outlying islands">              United States minor outlying islands
+              </option> <option value="Uruguay">              Uruguay
+              </option> <option value="Uzbekistan">              Uzbekistan
+              </option> <option value="Vanuatu">              Vanuatu
+              </option> <option value="Vatican City State">              Vatican City State
+              </option> <option value="Venezuela">              Venezuela
+              </option> <option value="Vietnam">              Vietnam
+              </option> <option value="Virgin Islands (U.S.)">              Virgin Islands (U.S.)
+              </option> <option value="Virigan Islands (British)">              Virigan Islands (British)
+              </option> <option value="Wallis and Futuna Islands">              Wallis and Futuna Islands
+              </option> <option value="Western Sahara">              Western Sahara
+              </option> <option value="Yemen">              Yemen
+              </option> <option value="Yugoslavia">              Yugoslavia
+              </option> <option value="Zaire">              Zaire
+              </option> <option value="Zambia">              Zambia
+              </option> <option value="Zimbabwe">              Zimbabwe
+              </option> </select>          &nbsp; </td> 
+                              </tr> 
+                              <tr> 
+                                <td align="right"> 
+                                  <div class="fom_A">State
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td><span id="txtHint15"><input size="20" name="state" class="style2" type="text" /></span></td> 
+                              </tr> 
+                              <tr> 
+                                <td align="right"> 
+                                  <div class="fom_A">City
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td><input size="20" name="city" class="style2" type="text" /></td> 
+                              </tr> 
+                              <tr> 
+                                <td align="right"> 
+                                  <div class="fom_A">PIN # / ZIP Code
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td><input size="20" name="pin" class="style2" type="text" /></td> 
+                              </tr> 
+                              <tr> 
+                                <td align="right"> 
+                                  <div class="fom_A">Applying For
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </div></td> 
+                                <td><select onchange="next(this.value,document.getElementById('country').value)" id="applyfor" name="applyfor" style="width: 150px;" type="select-one" value="----Select----"> <option selected="" value="----Select----">----Select----</option> <option value="1">Quality Analyst</option> <option value="2">Medical Transcriptionist</option> <option value="3">Home Based Transcriptionist</option> <option value="4">Training</option> </select> </td> 
+                              </tr> 
+                            </tbody> 
+                          </table>	<!--FORM 1 ENDS-->	</td> 
+                      </tr> 
+                      <tr> 
+                        <td> <span id="txtHint">&nbsp;</span> <br /></td> 
+                      </tr> 
+                    </tbody> 
+                  </table> </form> </td> 
+            </tr> 
+          </tbody> 
+        </table> 
+      </div> 
+      <div class="clear"></div> 
+    </div> 
+    <div class="clear"></div> 
+  </div> 
+</div><!--Middle End-->
+
+
+
+<!--Footer Start-->
+<script type="text/javascript" src="/spaw/empty/Scripts/swfobject_modified.js">
+</script> 
+<div class="main-container down-gradient"> 
+  <div class="ad-area"> 
+    <div class="box fl"> <img width="86" height="88" alt="" src="images/guarantee.png" /> <h1>Our Guarantee</h1> 
+      <p>We pledge to give our customers a refund or re-do transcription should we not deliver a high level of quality on your good audio files.</p> 
+    </div> 
+    <div class="box fl"> <img width="86" height="88" alt="" src="images/quality.png" /> <h1>Quality Policy</h1> 
+      <p>Carent Technologies Provide You Best Transcription In the World.With Great Rates.</p> 
+    </div> 
+    <div class="box fl"> <embed width="311" height="190" wmode="transparent" type="application/x-shockwave-flash" src="/spaw/empty/Indo_ad2.swf"></embed> 
+    </div> 
+    <div class="free-trial"><a href="contact-us.html"><h1>Click Here For A Free Trial Now</h1> 
+        <p>• No Strings Attatched • Easy Uploads • Low Cost Transcription • Quality Transcription</p></a> 
+    </div> 
+    <div class="clear"></div> 
+  </div> 
+</div> 
+<div class="main-container footer-link"> 
+  <div class="bottom-link"> 
+    <div class="link fl"> <h1>Links</h1> 
+      <ul> 
+        <li><a href="index-2.html">Home</a></li> 
+        <li><a href="about-us.html">About Us</a></li> 
+        <li><a href="services.html">Services</a></li> 
+        <li><a href="emr-data-update.html">EMR Indexing</a></li> 
+        <li><a href="why-Carenttech.html">Why Carenttech</a></li> 
+        <li><a href="careers.html">Careers</a></li> 
+        <li><a href="contact-us.html">Contact Us</a></li> 
+        <li><a href="rates.html">Rates</a></li> 
+      </ul> 
+    </div> 
+    <div class="links fr"> 
+      <div class="share"><!-- AddThis Button BEGIN -->
+        
+        
+        
+        
+        
+        
+        <div class="addthis_toolbox addthis_default_style"> <a class="addthis_counter addthis_pill_style"></a> 
+        </div> 
+        <script type="text/javascript" src="/spaw/s7.addthis.com/js/250/addthis_widget.js#username=xa-4cea23c45deda3b8">
+        </script><!-- AddThis Button END -->
+      
+      
+      
+      
+      
+      
+      </div> <h1>Transcription Services</h1> 
+      <ul> 
+        <li>Academic Transcription Services</li> 
+        <li>Business Transcription Services</li> 
+        <li>Conference Call Transcription Services</li> 
+        <li>Dictation Services</li> 
+        <li>Focus Group Transcription Services</li> 
+        <li>General Correspondence</li> 
+        <li>Interview Transcription Services</li> 
+        <li>Insurance Transcription Services</li> 
+        <li>Investigative Transcription Services</li> 
+        <li>Legal Transcription Services</li> 
+        <li>Market Research Transcription Services</li> 
+        <li>Podcast Transcription Services</li> 
+        <li>Text-to-Text Transcription Services</li> 
+        <li>Spanish Transcription Services</li> 
+        <li>French Transcription Services</li> 
+        <li>Medical Transcription Services</li> 
+      </ul> 
+    </div> 
+    <div class="clear"></div> 
+  </div> 
+</div> 
+<div class="main-container dark-blue"> 
+  <div class="copyright"> 
+    <p>Copyright © 2013 Carent Technologies Pvt. Ltd. | All Rights Reserved.<br />Your Business Is Our Plessure.</p> 
+  </div> 
+</div><!--Footer End-->
+<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript">try {
+var pageTracker = _gat._getTracker("UA-10536652-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script> 
+<script type="text/javascript">var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21233524-1']);
+  _gaq.push(['_trackPageview']);
+  (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> </body>
+
+</html>

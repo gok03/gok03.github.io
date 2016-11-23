@@ -1,0 +1,421 @@
+status: 200
+content-location: http://www.datavoiceint.com/www/html/homepage.php
+x-powered-by: PHP/5.4.20
+server: Apache
+date: Wed, 21 Sep 2016 09:20:47 GMT
+content-type: text/html
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="ESRI Quantum GIS, QGIS, datavoice, OMS, Outage Management, IMS, Incident Management, IVR, Interactive Voice Response, VOIP, Voice over IP, GIS, GIS Tools, GeoSpatial Analysis Tools, Work Force Management, Network Evaluator, Map Viewer, GIS Publisher, Solutions, Automated Customer Service, Account Inquiry, Call Management, AVL, Automated Vehicle Location" />
+		<meta name="description" content="For over 20 years, utilities have depended on dataVoice to help manage and prevent outages while measurably enhancing customer service. Utilities trust the innovative and easy-to-use, browser-based solutions for Outage Management, Work Force Management, Geospatial Analysis Tools, and VoIP IVR (Interactive Voice Response) solutions." />
+
+		<title>dataVoice International  | Utility Management Systems</title>
+
+		<link rel="stylesheet" type="text/css" href="ddsmoothmenu.css" />
+		<link rel="stylesheet" type="text/css" href="default.css" media="all" />
+
+		<!-- This includes the ImageFlow CSS and JavaScript -->
+		<link rel="stylesheet" href="imageflow.packed.css" type="text/css" />
+		<script type="text/javascript" src="imageflow.packed.js"></script>
+
+
+		<link rel="stylesheet" type="text/css" media="screen" href="/common_includes/jquery/jquery-ui-1.7.custom.css?v=" />
+		<link rel="stylesheet" type="text/css" media="screen" href="/common_includes/jquery/jAlert/jquery.alerts.css" />
+<script type="text/javascript" src="/Common_Includes/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/Common_Includes/jquery/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript">
+function setDlgHeight(dlg) {
+    var id = dlg.element[0].id;
+	$.ui.dialog.prototype._originalOpen.apply(dlg, arguments);
+	var parent = $("#"+id).parent();
+	var title_ht = parent.find("div.ui-dialog-titlebar").outerHeight(true);
+	var buttons_ht = parent.find("div.ui-dialog-buttonpane").outerHeight(true);
+	var need_ht = Math.ceil(title_ht+buttons_ht);
+	var win_ht = $(window).height()-10;
+	var orig_dlg_height = $("#"+id).dialog('option','height');
+	if(orig_dlg_height == 'auto') {
+		orig_dlg_height = $("#"+id).outerHeight(true);
+	}
+	orig_dlg_height = parseInt(orig_dlg_height,10);
+	var dlg_ht = parseInt(Math.min(orig_dlg_height,(win_ht-need_ht)),10);
+	$("#"+id).css('height',(dlg_ht-20)+'px');
+	parent.css('height',(dlg_ht+need_ht)+'px');
+}
+// This is a fix for the dialog height problem with IE
+$.ui.dialog.prototype._originalOpen = $.ui.dialog.prototype.open;
+$.ui.dialog.prototype.open = function() {
+	setDlgHeight(this);
+};
+$.ui.dialog.prototype._originalDrag = $.ui.dialog.prototype.drag;
+$.ui.dialog.prototype.drag = function() {
+	setDlgHeight(this);
+};
+</script>
+
+<script>
+	$(document).ready(function() {
+		$("body").append('<div id="resultsDiv" style="float:left;clear:both;width:100;display:none;"><ul id="results"></ul></div>');
+	});
+
+	function assert(value, desc) {
+		if(value == false) {	// Only show failures
+			var html = '<li class="fail">'+desc+'</li>';
+			$("#resultsDiv").show().find(">#results").append(html);
+		}
+	}
+</script>
+<style>
+	#results li.pass { color: green; }
+	#results li.fail { color: red; }
+</style>
+		<script type="text/javascript" src="/Common_Includes/jquery/jAlert/jquery.alerts.js"></script>
+
+		<script type="text/javascript" src="ddsmoothmenu.js">
+			/***********************************************
+			* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+			* This notice MUST stay intact for legal use
+			* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+			***********************************************/
+		</script>
+
+		<style type="text/css">
+			.style2 {font-weight: bold}
+			.style4 {color: #414141}
+			.style5 {
+				color: #339900;
+				font-weight: bold;
+			}
+			.style7 {
+				font-style: italic;
+				color: #FFFFFF;
+				font-size: 14px;
+				font-family: Georgia, "Times New Roman", Times, serif;
+			}
+			.style8 {
+				font-family: verdana;
+				font-size: 15px;
+				font-weight:bold;
+			}
+		</style>
+	</head>
+<body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75461881-1', 'auto');
+  ga('send', 'pageview');
+</script>
+	<div id="outer">
+	  <div id="wrapper">
+		<div id="wrapper-bgbtm">
+		  <div id="header-wrapper">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="ddsmoothmenu.css" />
+		<link rel="stylesheet" type="text/css" href="default.css" media="all" />
+
+		<link rel="stylesheet" type="text/css" media="screen" href="/common_includes/jquery/jquery-ui-1.7.custom.css?v=" />
+		<link rel="stylesheet" type="text/css" media="screen" href="/common_includes/jquery/jAlert/jquery.alerts.css" />
+		<script type="text/javascript" src="/Common_Includes/jquery/jAlert/jquery.alerts.js"></script>
+
+		<script type="text/javascript" src="ddsmoothmenu.js">
+
+			/***********************************************
+			* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+			* This notice MUST stay intact for legal use
+			* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+			***********************************************/
+
+		</script>
+		<style type="text/css">
+			.style7 {	font-style: italic;
+				color: #FFFFFF;
+				font-size: 14px;
+				font-family: Georgia, "Times New Roman", Times, serif;
+			}
+			.style8 {	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+				font-family: verdana;
+				font-size: 15px;
+				font-weight:bold;
+			}
+		</style>
+	</head>
+<script>
+var contact_id = '';
+var campaign= '';
+var referring_url='';
+var current_url='/www/html/homepage.php';
+var ip_address='104.236.64.140';
+$.ajax({
+				type: "POST",
+				url: "ajax/ajaxLogUserInfo.php" ,
+				data: { 
+						campaign: campaign,
+						contact_id: contact_id,
+						current_page: current_url,
+						referring_page : referring_url,
+						visitor_ip_address : ip_address
+				}, 
+				dataType: "json",
+				success: function( msg ) {
+					
+				},
+				error: function( XMLHttpRequest, textStatus, errorThrown ) {
+					alert("AJAX XMLHttpRequest status: "+textStatus + "error= " + errorThrown);
+				}
+			});
+			
+</script>
+<body>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" id="header" class="container">
+		<tr valign="top">
+			<td style="width:300px;padding-left:20px;">
+				<a href="homepage.php">
+					<img src="images/homepage_01-2.jpg" alt="" width="200" height="100" border="0" />
+				</a>
+			</td>
+			<td valign="middle">
+			 <p style="font-style: italic;color: #FFFFFF;font-size: 22pt;font-family: font-family: Trebuchet MS, Arial, Helvetica, sans-serif;">Mobility Is Power!</p>
+			 <!-- font-style: italic;
+				color: #FFFFFF;
+				font-size: 14px;
+				font-family: Georgia, "Times New Roman", Times, serif;
+			}
+			.style8 {	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+				font-family: verdana;
+				font-size: 15px;
+				font-weight:bold; -->
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="middle" style="padding-left:20px;">
+				<div id="smoothmenu1" class="ddsmoothmenu">
+					<ul>
+						<li><a href="homepage.php" class="current">Home</a></li>
+						<li><a href="#">Solutions</a>
+							<ul>
+								<li><a href="integrations.php">Integrated Utility Management System</a></li>
+
+								<li><a href="outage.php">Outage Management (OMS)</a></li>
+								<li><a href="ivr.php">Interactive Voice Response (VOIP IVR)</a></li>
+								<li><a href="powerpal.php">Mobile Apps</a></li>
+								<li><a href="meter.php">Meter Analysis (AMI)</a></li>
+								<li><a href="wfm.php">Work Force Management</a></li>
+								<li><a href="gis.php">GIS Solutions and Services (GIS)</a></li>
+								<li><a href="avl.php">Vehicle Tracking Systems (AVL)</a></li>
+							</ul>
+						</li>
+						<li><a href="services.php">Services</a></li>
+						<li><a href="https://dvweb.biz:26433/UGM/UGM2016.php">
+								Training Conference 2016
+							</a>
+						</li>						
+						<li><a href="testimonials.php">Testimonials</a></li>
+						<li><a href="https://www.datavoiceint.com/blog/">Blog</a></li>
+						<li><a href="news.php">News</a></li>
+						<li><a href="careers.php">Careers</a></li>
+<!--						<li><a href="careers.php">Careers</a></li>  -->
+						<li><a href="contact.php">Contact</a></li>
+					</ul>
+<!--					<br style="clear: left" />  -->
+              </div>
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$("#smoothmenu1 a").each(function() {
+				var currentpage = window.location.href.substring(window.location.href.lastIndexOf('/')+1,window.location.href.length);
+				if ($(this).attr('href') == currentpage ){
+					$(this).addClass('current');
+				} else {
+					$(this).removeClass('current');
+				}
+
+			});
+		});
+		ddsmoothmenu.init({
+			mainmenuid: "smoothmenu1", //menu DIV id
+			orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+			classname: 'ddsmoothmenu', //class added to menu's outer DIV
+			//customtheme: ["#1c5a80", "#18374a"],
+			contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+		});
+
+	</script>
+
+</body>
+</html>
+		  </div>
+		  <div id="page">
+			<div id="page-bgtop">
+			  <div id="page-bgbtm">
+				<div id="page-content" class="container">
+				  <div id="content">
+					<table  id="banner" style="width:100%; height:400px;">
+					  <tr valign="top"  class="body2">
+						<td bgcolor="#414141"><!-- This is all the XHTML ImageFlow needs -->
+
+						<div id="image_flow" class="imageflow">
+							<span class="style4">.</span>
+							<img src="banners/dataVoice_web_graphic1.jpg" longdesc="services.php" alt="dataVoice International" />
+							<!--<img src="banners/dataVoice_web_graphic2.jpg"    longdesc="ivr.php" alt="VOIP IVR" />
+							<img src="banners/dataVoice_web_graphic3.jpg"    longdesc="wfm.php" alt="Work Force Management" />-->
+							<img src="banners/dataVoice_web_graphic4.jpg"  longdesc="managersapp.php" alt="Manager's App" />
+							<img src="banners/dataVoice_web_graphic5.jpg"  longdesc="outage.php" alt="Outage Management Solutions" />
+							<img src="banners/dataVoice_web_graphic6.jpg"  longdesc="ivr.php" alt="VOIP IVR Solutions" />
+							<img src="banners/dataVoice_web_graphic7.jpg"  longdesc="gis.php" alt="GIS Solutions" />
+							<img src="banners/dataVoice_web_graphic8.jpg"  longdesc="avl.php" alt="Vehicle Tracking(AVL) Solutions" />
+
+						  </div>
+						 </td>
+					  </tr>
+					</table>
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" class="box-style3">
+					  <tr>
+						<td><h2 class="title">Solutions</h2></td>
+					  </tr>
+					</table>
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" class="two-columns">
+					  <tr>
+						<td><div id="column1">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" class="box-style2">
+							  <tr valign="top">
+								<td class="content"><ul class="style2">
+									<li class="first"><a href="outage.php"><img src="images/outage_thumb.jpg" alt="" width="77" height="77" border="0" /></a>
+									  <h3>Outage Management (OMS)</h3>
+									  <p>Offering superior performance, ease of use, reliability and value, dataVoice's Outage Management Solutions allow utilities to better manage, predict and prevent outages while measurably enhancing customer service. <a href="outage.php">More&#8230;</a></p>
+									</li>
+									<li><a href="ivr.php"><img src="images/ivr_thumb.jpg" alt="" width="77" height="77" border="0" /></a>
+									  <h3>Interactive Voice Response (IVR)</h3>
+									  <p>Provide service at your customer's convenience, account information, pay by credit card, extension requests, meter readings, etc. with an IVR (Interactive Voice Response) system. <a href="ivr.php">More&#8230;</a></p>
+									  <p>&nbsp;</p>
+									</li>
+									<li><a href="powerpal.php"><img src="images/mobileapps2.png" alt="" width="77" height="77" border="0" /></a>
+									  <h3>Mobile Application Suite</h3>
+									  <p>
+										<!--Using the dataVoice Outage System in conjunction with the AMI system, personnel from many different departments can tap into a wealth of data to better manage and analyze power problems in the utility network.
+										-->
+	In keeping with our tradition of leading the Outage Management industry with innovative and "first to market" applications, we continually look at ways to integrate today's leading edge technology into our products and solutions.  In 2011, we announced support for Apple and Android devices with the Outage Management System that allowed users to view and manage outages remotely.<br />
+	Over time, we have continued to develop "Mobile" applications for utility <b>consumers, managers, and lineman</b>.
+										<a href="powerpal.php">More&#8230;</a></p>
+									</li>
+								  </ul>
+								  <p>&nbsp;</p>
+								  <p>&nbsp;</p></td>
+							  </tr>
+							</table>
+						  </div>
+						  <div id="column2">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" class="box-style2">
+							  <tr valign="top">
+								<td class="content"><ul class="style2">
+									<li class="first"><a href="wfm.php"><img src="images/wfm_thumb.jpg" alt="" width="77" height="77" border="0" /></a>
+									  <h3>Work Force Management</h3>
+									  <p>The dataVoice Mobile Work Force Management System provides real-time, accessible, interactive information that field crews need to get their jobs done as quickly and efficiently as possible. <a href="wfm.php">More&#8230;</a></p>
+									</li>
+									<li><a href="gis.php"><img src="images/gis_thumb.jpg" alt="" width="77" height="77" border="0" /></a>
+									  <h3>GIS Solutions for ESRI (GIS)</h3>
+									  <p>From our "New Mobile ESRI GIS and Asset Management Solutions", to publishing Geometric  Network Connectivity from ESRI, AutoCad, MicroStation and other GIS Solutions,  dataVoice provides a wide range of GIS Solution services. <a href="gis.php">More&#8230;</a></p>
+									</li>
+									<li><a href="avl.php"><img src="images/avl_thumb.jpg" alt="" width="77" height="77" border="0" /></a>
+									  <h3>Vehicle Tracking (AVL)</h3>
+									  <p>With AVL (Automatic Vehicle Location) integration, you can improve safety, significantly reduce outage response times, and more effectively manage crews. <a href="avl.php">More&#8230;</a></p>
+									</li>
+								  </ul>
+								  <p>&nbsp;</p>
+								  <p>&nbsp;</p></td>
+							  </tr>
+							</table>
+						  </div></td>
+					  </tr>
+					</table>
+				  </div>
+				  <div id="sidebar">
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" class="box-style1">
+					  <tr>
+						<td valign="top"><h4 class="title">dataVoice International</h4></td>
+					  </tr>
+					  <tr>
+						<td class="content">For over 25 years, utilities have depended on dataVoice to help manage and prevent outages while measurably enhancing customer service. Our solutions help utilities improve the accuracy of their data, more accurately determine the extent and location of an outage, and provide tools to keep your management, crews, and customers informed.
+						  </p></td>
+					  </tr>
+					</table>
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" class="box-style1" id="box2">
+					  <tr>
+						<td valign="top"><h4 class="title"><!--Customer Testimonial --> Corporate Strategy</h4>
+						  </a></td>
+					  </tr>
+					  <tr>
+						<td class="content"><p>
+								<em>A lot has happened in the last three years, we have been laying the framework for our <b>mobile-first strategy</b>. We are now providing our customers with a full suite of &quot;smart applications&quot; for Apple and Android devices to improve customer service and business productivity. All our products from our new ESRI GIS to our OMS, VOIP IVR and AVL are &quot;mobile ready&quot; and <b>positioned to run securely in the cloud</b>.</em>
+							<br /><br />
+	 <!--                       - Abdiel Leon, Magic Valley Electric
+	 -->
+							Roy Rooker founder of dataVoice
+							</p>
+	  <!--                    <p> <a href="testimonials.php">More testimonials&#8230;</a></p></td>
+	  -->
+					  </tr>
+					</table>
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" class="box-style1">
+					  <tr>
+						<td valign="top"><h2 class="title">News</h2>
+						  </a></td>
+					  </tr>
+					  <tr>
+						<td><b>dataVoice and 3-GIS Partnered to Provide a Single Source Solution</b><br /><br />
+						<!--	<img  width="100%" src="images/search_wht_prt.png">   -->
+						<p>
+<em> <img src="images/dv3gisPartner.png" width="70px" align="left"> dataVoice and 3-GIS have announced a contractual partnership to bundle the 3-GIS Asset Management and GIS products with dataVoice's existing Utility Management Suite.  Under this agreement, dataVoice will market and support the 3-GIS software, providing customers a unified solution to manage electric, water, and gas operations.</p></em>
+						</td>
+					  </tr>
+					  <tr>
+	<!--                    <td class="content"><p>The dataVoice User Conference will be held <span class="style5">April 10-13, 2011 </span>, at the Westin Stonebriar Resort in Frisco, Texas. We are really looking forward to the conference this year. We have many new and exciting things to share, and some fun entertainment planned! <a href="news.php">More&#8230;</a></p></td> -->
+							<td class="content"><p><!--You Deserve a New FREE Tablet! Right? -->
+								Catch up on the latest dataVoice News
+									<a href="news.php">&nbsp;More News&#8230;</a></p></td>
+					  </tr>
+					</table>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div id="footer-wrapper">
+	  <div id="footer">
+		<p>Copyright (c) 2011-2015 www.datavoiceint.com. All rights reserved.</p>
+	  </div>
+	</div>
+
+	<script type="text/javascript">
+
+		ddsmoothmenu.init({
+			mainmenuid: "smoothmenu1", //menu DIV id
+			orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+			classname: 'ddsmoothmenu', //class added to menu's outer DIV
+			//customtheme: ["#1c5a80", "#18374a"],
+			contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+		})
+
+	</script>
+</body>
+</html>

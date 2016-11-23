@@ -1,0 +1,331 @@
+status: 200
+content-length: 8873
+content-location: http://www.jarsoft.com
+vary: Accept-Encoding
+server: nginx/1.10.1
+connection: keep-alive
+-content-encoding: gzip
+date: Tue, 13 Sep 2016 11:58:26 GMT
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+
+<html>
+<head>
+	<title>JARSoft :: Home</title>
+<META NAME="KEYWORDS" CONTENT="  Project Consulting,Application Development, Technology Partner Service,Contract Staffing,Offshore development,Outsourcing, Technology, Careers,Jobs Careers,Small Business IT Solutions, JBoss Reseller, Redhat Reseller">
+    <META NAME="DESCRIPTION" CONTENT="JARSoft provides systems integration services, outsources software development and IT staffing solutions to the Fortune 2000 and a host of other industry-leading companies. Our core competencies include Small Business IT Solutions">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="revisit-after" content="2 days">
+	<meta http-equiv="reply-to" content="webmaster@jarsoft.com">
+	<meta name="robots" content="ALL">
+	<meta name="copyright" content="JARSoft Inc">
+	<meta name="author" content="JARSoft Inc">
+	<link rel="stylesheet" type="text/css" href="/extjs/resources/css/ext-all.css" /> 
+    <link rel="stylesheet" type="text/css" href="/css/jars.css" />
+	<script type="text/javascript" src="/extjs/adapter/ext/ext-base.js"></script> 
+ 	<!-- ENDLIBS --> 
+ 
+    <script type="text/javascript" src="/extjs/ext-all-debug.js"></script> 
+    
+	<script type="text/javascript"> 
+		Ext.onReady(function(){
+	
+	if(!Ext.getDom('hd')){
+		return;
+	}
+	
+	var activeMenu;
+	
+	function createMenu(name){
+		var el = Ext.get(name+'-link');
+		var tid = 0, menu, doc = Ext.getDoc();
+		
+		var handleOver = function(e, t){
+			if(t != el.dom && t != menu.dom && !e.within(el) && !e.within(menu)){
+				hideMenu();
+			}	
+		};
+				
+		var hideMenu = function(){
+			if(menu){
+				menu.hide();
+				el.setStyle('text-decoration', '');
+				doc.un('mouseover', handleOver);
+				doc.un('mousedown', handleDown);
+			}
+		}
+		
+		var handleDown = function(e){
+			if(!e.within(menu)){
+				hideMenu();
+			}
+		}
+		
+		var showMenu = function(){
+			clearTimeout(tid);
+			tid = 0;
+			
+			if (!menu) {
+				menu = new Ext.Layer({shadow:'sides',hideMode: 'display'}, name+'-menu');
+			}
+			menu.hideMenu = hideMenu;
+				
+			menu.el = el;
+			if(activeMenu && menu != activeMenu){
+				activeMenu.hideMenu();
+			}
+			activeMenu = menu;
+			
+			if (!menu.isVisible()) {
+				menu.show();
+				menu.alignTo(el, 'tl-bl?');
+				menu.sync();
+				el.setStyle('text-decoration', 'underline');
+				
+				doc.on('mouseover', handleOver, null, {buffer:150});
+				doc.on('mousedown', handleDown);
+			}
+		}
+		
+		el.on('mouseover', function(e){
+			if(!tid){
+				tid = showMenu.defer(150);				
+			}
+		});
+		
+		el.on('mouseout', function(e){
+			if(tid && !e.within(el, true)){
+				clearTimeout(tid);
+				tid = 0;				
+			}
+		});
+	}
+	
+	createMenu('services');
+	createMenu('partners');
+	createMenu('company');
+	
+	
+	// expanders
+	Ext.getBody().on('click', function(e, t){
+		t = Ext.get(t);
+		e.stopEvent();
+		
+		var bd = t.next('div.expandable-body');
+		bd.enableDisplayMode();
+		var bdi = bd.first();
+		var expanded = bd.isVisible();
+		
+		if(expanded){
+			bd.hide();
+		}else{
+			bdi.hide();
+			bd.show();
+			bdi.slideIn('l', {duration:.2, stopFx: true, easing:'easeOut'});	
+		}
+		
+		t.update(!expanded ? 'Hide details' : 'Show details');
+			
+	}, null, {delegate:'a.expander'});
+	
+	var gs = Ext.get('gsearch-box');
+	if(gs){
+		gs.on('focus', function(){
+			if(gs.getValue() == 'Search with google'){
+				gs.dom.value = '';
+				gs.up('div').addClass('gs-active');
+			}
+		});
+		
+		gs.on('blur', function(){
+			if(gs.getValue() == ''){
+				gs.dom.value = 'Search with google';
+				gs.up('div').removeClass('gs-active');
+			}
+		});
+		
+		if(gs.getValue() == ''){
+			gs.dom.value = 'Search with google';
+		}
+	}
+	
+   
+});
+
+	</script>	
+
+	</head>
+<body>
+
+
+<div id="viewport">
+
+<div id="hd">
+	
+	<h1><a href="/" title="Home"><span>Ext</span></a></h1>
+	<!--<div id="msg-ct"><div id="msg"><div id="msg-inner"></div></div></div>-->
+	<table cellspacing="0" class="nav main-nav">
+	   <tr>
+		<td class="active"><a id="home-link" href="/"><span>Home</span></a></td>
+        <td ><a id="services-link" href="/services"><span>Services</span></a></td>
+        
+        <td><a id="jobs-link" href="/careers"><span>Careers</span></a></td>
+        <td><a id="company-link" href="/company"><span>Company</span></a></td>		
+       </tr>
+	</table>
+	
+	<table cellspacing="0" class="sub-nav">
+		<tr>
+		<td>JARSoft :: An end-to-end corporate IT consulting service provider</td>		</tr>
+	</table>
+	
+</div>
+	
+<div id="bd">
+
+<div style="padding:10px 0 0;" >
+<div class="left-column">
+	<div  class="content-box">
+	<br>
+	<div class="box">
+		<table cellspacing="0" >
+	   <tr>
+		<td valign="top"><img src="/images/home.png" width="500"/></td>
+        <td width="15px">&nbsp;</td>
+        <td ><div class="side-box2">
+        <div class="side-box-inner2">
+		<p align="justify"> JARSoft provides systems integration services, outsources software development and IT staffing solutions to the Fortune 2000 and a host of other industry-leading companies. &nbsp;&nbsp;&nbsp;&nbsp;<a href="/company"><img src="/images/c-sep.gif" /></a></p>
+        
+	</div></div>
+	</td>		
+       </tr>
+	</table>
+		</div>
+</div>
+	<br>
+    <div  class="content-box">
+	<br>
+	<div class="box">
+		<table cellspacing="0" >
+	   <tr>
+		
+        <td ><div class="side-box3"><div class="side-box-inner3">
+         <h5>Solutions</h5>
+		<p align="justify"> JARSoft Inc provides customers with high quality industry-specific corporate IT solutions and services by effectively adopting innovative and emerging technologies to assist their continually changing IT environments.
+        Ever since our inception JARSoft has maintained a relentless commitment to cutting-edge technological innovation and uncompromising quality.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/services"><img src="/images/c-sep.gif" /></a></p>
+        
+        <p><br></p>
+       </div> 
+	</div>
+	</td>	
+        
+      	
+    <td width="25px">&nbsp;&nbsp;&nbsp;</td>
+
+    <td ><div class="side-box3"><div class="side-box-inner3">
+         <h5>Partners</h5>
+		<p align="justify"> To support the corporate's growing demand for best-in-class Open Source solutions, JARsoft has teamed with the industry's leading providers to offer you a range of options to support your enterprise than buying monolithic software, building from scatch, or renting undifferentiated software.
+        JARSoft offers Software license and support services in addition to our own implementation services.
+         &nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/c-sep.gif" /></p>
+       </div> 
+	</div>
+	</td>	
+    
+ 
+    
+    <td width="25px">&nbsp;&nbsp;&nbsp;</td>
+    
+    <td ><div class="side-box3"><div class="side-box-inner3">
+         <h5>Clients</h5>
+		<p align="justify">  JARSoft is pleased to be working with leaders in various vertical markets such as Government, Finance, Health Care, Banking, Transportation, Insurance and Telecom to deliver customized solutions that address their most complex business challenges. Our growing client roster continues to give us the opportunity to learn from our collaborators every day. &nbsp;&nbsp;&nbsp;&nbsp;<a href="/company/clients.php"><img src="/images/c-sep.gif" /></a></p>
+       </div> 
+	</div>
+	</td>
+    	
+       </tr>
+	</table>
+		</div>
+</div>
+	
+    
+    
+    
+	</div>
+	</div>
+	
+
+
+	
+	
+
+<div style="clear:both"></div>
+</div><!-- end bd -->
+
+<div id="ft">
+	<table cellspacing="0" class="nav" >
+		<tr>
+		<td><a id="home-foot-link" href="/">Home</a></td>
+        <td class="active"><a id="services-foot-link" href="/services">Services</a></td>
+        
+        <td><a id="jobs-foot-link" href="/careers">Careers</a></td>
+        <td><a id="company-foot-link" href="/company">Company</a></td>		</tr>
+	</table>
+	
+</div>
+
+</div><!-- end viewport -->
+
+<div class="flyout-menu" id="services-menu" style="display:none;">
+	<div style="width:225px;">
+	<p>We Provide end-to-end IT Consulting Services</p><br/>
+	<ul>
+		<li><a href="/services/ciss.php">Corporate IT Solutions & Services</a></li>
+		<li><a href="/services/itis.php">IT Implementation Services</a></li>
+		<li><a href="/services/bpms.php">Business Process Management Services</a></li>
+		<li><a href="/services/aos.php">Application Outsourcing Services</a></li>
+		
+	</ul>
+	
+	
+	</div>
+</div>
+
+
+<div class="flyout-menu" id="company-menu" style="display:none;">
+	<div style="width:150px;">
+	<ul>
+		<li><a href="/company">Company Overview</a></li>
+        <li><a href="/company/clients.php">Clients</a></li>
+        <li><a href="/company/contactus.php">Contact Us</a></li>
+	</ul>
+	<br/>
+	
+	</div>
+</div>
+
+
+<!--
+
+<div class="flyout-menu" id="partners-menu" style="display:none;">
+	<div style="width:85px;">
+	<ul>
+		<li><a href="/partners/redhat"><img src="/images/redhat.png" align="middle"/>&nbsp;Red Hat</a></li>
+		<li><a href="/partners/jboss"><img src="/images/jboss.png" align="middle"/>&nbsp;JBoss</a></li>
+	</ul>
+	<br/>
+	
+	</div>
+</div>
+
+
+-->
+
+
+
+</body>
+</html>
+
+
+

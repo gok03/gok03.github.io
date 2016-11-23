@@ -1,0 +1,358 @@
+status: 200
+content-location: http://www.allwebsitescripts.com
+server: Zeus/4.3
+date: Thu, 20 Oct 2016 15:39:21 GMT
+content-type: text/html
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+        <meta name="author" content="hostalia"/> 
+        <title>Parking de Dominio</title>
+        <style type="text/css">
+			body {
+				color: #666;
+				font: 13px Arial, sans-serif;
+				font-weight: 400;
+				line-height: 1.4;
+				padding: 0;	
+			}
+			h1,h2,h3,h4,h5,h6 {
+				clear: both;
+			}
+			a {
+				color: #e31c23;	
+				text-decoration: underline;
+			}
+			h1 {
+				border-bottom: 10px solid #ccc;
+				color: #747474;
+				font: 30px 'OpenSansSemibold', Arial, sans-serif;
+				font-weight: normal;
+				margin-bottom: 40px;
+				padding-bottom: 25px;
+			}
+			h2 {
+				color: #9F9F9F;
+				font: 18px 'OpenSansLight',Arial,sans-serif;
+				margin-bottom: 2px;
+			}
+			h3 {
+				font: 14px 'OpenSansLight',Arial,sans-serif;
+				font-weight: bold;
+				margin-bottom: 14px;
+			}
+			ul, ol {
+				margin:0;
+				padding:0;
+			}
+			li {
+				list-style-type: none;
+				padding-left: 12px
+			}
+			.clear {
+				clear: both;	
+			}
+			.left {
+				float: left;	
+			}
+			.right {
+				float: right;	
+			}
+			.separador {
+				border: 0;
+				clear: both;
+				margin: 20px 0;	
+			}
+			.px7 {
+				border: 0;
+				border-bottom: 7px solid #cdcdcd;
+				clear:both;
+				margin: 22px 0;
+			}
+			/*contenedores*/
+			.wrap {
+				margin: 40px auto 0;	
+				width: 1000px;
+			}
+			.colIzq {
+				border-right: 1px solid #aeaeae;
+				margin-bottom: 40px;
+				margin-right: 20px;
+				padding-right: 20px;
+				position: relative;
+				width: 75%;	
+			}
+			.colDcha {
+				width: 20%;	
+			}
+			.un2 {
+				float: left;
+				margin-right: 20px;
+				width: 37.2%;		
+			}
+			.un4 {
+				margin-right: 20px;
+				width: 16.5%;		
+			}
+			.dos4 {
+				margin-right: 20px;
+				width: 33%;		
+			}
+			.tres4 {
+				margin-right: 20px;
+				width: 66%;		
+			}
+			.last {
+				margin-right: 0!important;	
+			}
+			.bgGris {
+				background-color: #e6e6e6;
+				background-position: 13px 5px!important;
+				/*margin-top: 40px;*/
+				padding: 20px 10px;
+			}
+			.bgGris ul {
+				float: left;
+				width: 205px;	
+			}
+			.cajaBuscar {
+				border-bottom: 1px solid #ccc;
+				border-top: 1px solid #ccc;
+				padding: 8px 3px 10px;
+				margin-bottom: 50px;
+			}
+			.cajaBuscar .un4 {
+				width: 25%;		
+			}
+			.colIzq .tres4 {
+				margin-bottom: 22px;
+			}
+			/*Images*/
+			.info {
+				background-image: url(http://www.hostalia.com/mkt/parking/acerca_hostalia.png);
+				background-repeat: no-repeat;
+				background-position: 13px 0;
+				padding-left: 35px;
+			}
+			.screen {
+				position: absolute;
+				right: 40px;	
+				top: -12px;
+			}
+			.icoMail, .icoSEO, .icoLWeb, .icoTienda {
+				background-position: 16px 0px;
+				background-repeat: no-repeat;
+				padding-left: 85px;
+			}
+			.icoMail {
+				background-image: url(http://www.hostalia.com/mkt/parking/correo_hostalia.png);	
+			}
+			.icoSEO {
+				background-image: url(http://www.hostalia.com/mkt/parking/interfaz_hostalia.png);	
+			}
+			.icoLWeb {
+				background-image: url(http://www.hostalia.com/mkt/parking/calidad_hostalia.png);	
+			}
+			.icoTienda {
+				background-image: url(http://www.hostalia.com/mkt/parking/tienda_online_hostalia.png);	
+			}
+			footer img {
+				margin-right: 10px;
+			}
+			
+			/*text style*/
+			.listaGuion li {
+				background: url(http://www.hostalia.com/mkt/parking/guionLista.jpg) no-repeat 0 9px;	
+			}
+			.info h3 {
+				margin-left: 31px;
+			}
+			.cajaBuscar h3 {
+				font-size: 18px;
+				font-weight: normal;
+				line-height: 1;
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+			.cajaBuscar h3 strong {
+				display: block;	
+				font-size: 28px;
+			}
+			.formWww {
+				bottom: 12px;
+				font-size: 21px;
+				position: relative; 	
+				top: 5px;
+			}
+			#form-domain {
+				position: relative;
+				top: 2px;
+			}
+			#form-domain input {
+				background: #e6e6e6;	
+				border: 1px solid #ccc;
+				padding: 6px;
+			}
+			#form-domain select {
+				border: 1px solid #ccc;
+				padding: 6px;
+			}
+			#form-domain .btn_rojo {
+				border: 3px solid #ccc;
+				border-radius: 5px;
+				background: #E43137;
+				color: #fff;
+				cursor: pointer;
+				white-space: nowrap;	
+			}
+			
+			.titular {
+				font: 14px 'OpenSansLight',Arial,sans-serif;
+				margin-bottom: 10px;
+			}
+			.titular a:link {
+				text-decoration: none;	
+			}
+			.titular strong {
+				color: #e31c23;
+				display: block;
+				fon-family: 'OpenSans',Arial,sans-serif;
+			}
+			.colDcha p {
+				margin-bottom: 10px;	
+			}
+			.colDcha li {
+				padding-left: 0;	
+			}
+			.colDcha p:last-child {
+				margin-bottom: 0px;	
+			}
+			.colDcha h3 {
+				margin-bottom: 25px;	
+			}
+			.colDcha .bgGris {
+				margin-bottom: 20px;	
+			}
+		</style>
+	</head>
+    <body>
+    	<div class="wrap">
+    		<article>
+            
+                <h2>Bienvenido a la futura página de </h2>
+
+		<h1>www.allwebsitescripts.com</h1>
+                <div class="colIzq left">
+                    <div class="tres4 last left">
+                        <p class="">Bienvenido a la página de parking de <strong>www.allwebsitescripts.com</strong></p>
+                        <hr class="separador" />
+                        <div class="bgGris info">
+                            <h3>Ventajas de tu dominio</h3>
+                            <ul class="listaGuion">
+                                <li>Redirección de correo</li>
+                                <li>Modificación DNS</li>
+                                <li>Panel gestión de dominios</li>
+                                <li>Renovación automática</li>
+                            </ul>
+                            <ul class="listaGuion">
+                                <li>Soporte personalizado</li>
+                                <li>Ilimitados alias</li>
+                                <li>Página de parking</li>
+                                <li>Alojamiento web con IP española</li>
+                            </ul>
+                            <p class="clear"></p>                    
+                        </div>
+                    </div>
+                    <img src="http://www.hostalia.com/mkt/parking/hostalia-parking-img.png" height="238" alt="parking hostalia" class="screen" />
+                    <hr class="separador" />
+                    <section>
+                        <div class="cajaBuscar">
+                            <h3 class="un4 left">Encuentra ahora <strong>TU DOMINIO</strong></h3>
+                            <form name="form-domain" method="get" action="https://www.hostalia.com/contratacion/dominios/" id="form-domain">
+                               <label for="whois_dominio" class="formWww">WWW. </label><input type="text" value="" name="whois_dominio" id="whois_dominio" placeholder="" style="width: 286px;">
+                                <select name="whois_extension" id="whois_extension">
+                                    <option value="com">.com</option>
+                                    <option value="es">.es</option>
+                                    <option value="eu">.eu</option>
+                                    <option value="net">.net</option>
+                                    <option value="org">.org</option>
+                                    <option value="info">.info</option>
+                                    <option value="mobi">.mobi</option>
+                                    <option value="biz">.biz</option>
+                                    <option value="com.es">.com.es</option>
+                                    <option value="org.es">.org.es</option>
+                                    <option value="nom.es">.nom.es</option>
+                                    <option value="gob.es">.gob.es</option>
+                                    <option value="edu.es">.edu.es</option>
+                                    <option value="xxx">.xxx</option>
+                                    <option value="cat">.cat</option>
+                                    <option value="tel">.tel</option>
+                                </select>
+                                <input type="submit" value="Buscar" class="btn_rojo"></p>
+                            </form>
+                            <p class="clear"></p>
+                        </div>
+                    </section>
+                    <hr class="separador" />
+                    <section>
+                   	  <div class="un2 icoMail">
+                        	<p class="titular"><a href="http://www.hostalia.com/correo/?utm_source=parking-hostalia&utm_medium=link&utm_content=correo-profesional&utm_campaign=titulo" title="Correo profesional" target="_blank"><strong>Correo profesional,</strong></a> con tu nombre de dominio</p>
+                            <p>Soluciones de <a href="http://www.hostalia.com/correo/?utm_source=parking-hostalia&utm_medium=link&utm_content=correo-profesional&utm_campaign=texto" title="correo hostalia" target="_blank">correo profesional</a> ideales para las necesidades exclusivas de correo, totalmente configurables y escalables para adaptarse al crecimiento de tu negocio.</p>
+                        </div>
+                      <div class="un2 icoSEO last">
+                        	<p class="titular"><strong><a href="http://www.hostalia.com/seo/informe-gratuito.html?utm_source=parking-hostalia&utm_medium=link&utm_content=informe-seo&utm_campaign=titulo" title="Click SEO" target="_blank">Informe SEO Gratis,</a></strong> conoce tu posicionamiento</p>
+                            <p>Realizamos un <a href="http://www.hostalia.com/seo/informe-gratuito.html?utm_source=parking-hostalia&utm_medium=link&utm_content=informe-seo&utm_campaign=texto" title="Click SEO" target="_blank">análisis de marketing</a> y te proporcionamos algunos consejos  para ayudarte a mejorar el posicionamiento de tu web.</p>
+                      </div>
+                         <hr class="separador" />
+                      <div class="un2 icoLWeb">
+                        	<p class="titular">Crea fácilmente <strong><a href="http://www.hostalia.com/inventa-tu-web/?utm_source=parking-hostalia&utm_medium=link&utm_content=tu-web&utm_campaign=titulo" title="Tu web" target="_blank">Tu web</a></strong></p>
+                            <p>¡Por fin puedes crear fácilmente tu web o la de tu empresa! Con <a href="http://www.hostalia.com/inventa-tu-web/?utm_source=parking-hostalia&utm_medium=link&utm_content=tu-web&utm_campaign=texto" title="tu Web" target="_blank">'Crea tu web!'</a> puedes crear tu sitio web más personal de forma sencilla, con ayuda de herramientas de diseño intuitivas.</p>
+                        </div>
+                      <div class="un2 icoTienda last">
+                        	<p class="titular"><strong><a href="http://www.hostalia.com/tiendas/?utm_source=parking-hostalia&utm_medium=link&utm_content=tienda-online&utm_campaign=titulo" title="Tienda online," target="_blank">Tienda online,</a></strong> empieza a vender en Internet</p>
+                            <p>La solución profesional de <a href="http://www.hostalia.com/tiendas/?utm_source=parking-hostalia&utm_medium=link&utm_content=tienda-online&utm_campaign=texto" title="Cmercio electrónico" target="_blank">comercio electrónico</a> más completa. Gracias a su sencillo administrador web, podrás crear tu tienda online sin tener conocimientos de diseño y desarrollo.</p>
+                        </div>
+                    </section>
+                    <hr class="separador" />
+                </div>
+            </article>
+            <aside>
+                <div class="colDcha left">
+               		<div class="bgGris">
+                    	<h3>¿Porqué estoy viendo esta página?</h3>
+                        <p>Este dominio está registrado en <a href="http://www.hostalia.com/?utm_source=parking-hostalia&utm_medium=link&utm_content=branding&utm_campaign=dominio-alojado-en-hostalia" title="hostalia" target="_blank">www.hostalia.com</a>. </p>
+                        <p>Si estás viendo esta página después de subir el contenido del sitio, probablemente no has reemplazado el archivo <strong>index.html</strong>.</p>
+                    </div>
+                    <ul>
+                      <li><a href="http://www.hostalia.com/dominios/dominios-genericos.html?utm_source=parking-hostalia&utm_medium=link&utm_content=dominios-genericos&utm_campaign=keywords-lateral" title="Registro de dominios .com" target="_blank">Registro de dominios .com</a></li>
+                      <li><a href="http://www.hostalia.com/dominios/dominios-territoriales.html?utm_source=parking-hostalia&utm_medium=link&utm_content=dominios-territoriales&utm_campaign=keywords-lateral" title="Compra tu dominio .es" target="_blank">Compra tu dominio .es</a></li>
+                      <li><a href="http://www.hostalia.com/alojamiento/?utm_source=parking-hostalia&utm_medium=link&utm_content=hosting&utm_campaign=keywords-lateral" title="Alojamiento Web con IP" target="_blank">Alojamiento Web con IP española</a></li>
+                      <li><a href="http://www.hostalia.com/dedicados/?utm_source=parking-hostalia&utm_medium=link&utm_content=servidores-dedicados&utm_campaign=keywords-lateral" title="Servidores Dedicados" target="_blank">Servidores Dedicados</a></li>
+                      <li><a href="http://www.hostalia.com/cloud-dedicado/?utm_source=parking-hostalia&utm_medium=link&utm_content=cloud-dedicado&utm_campaign=keywords-lateral" title="cloud dedicado" target="_blank">Cloud dedicado</a></li>
+                      <li><a href="http://www.hostalia.com/cloudseo/?utm_source=parking-hostalia&utm_medium=link&utm_content=posicionamiento-seo&utm_campaign=keywords-lateral" title="Marketing y SEO" target="_blank">Posicionamiento SEO</a></li>
+                      <li><a href="http://www.hostalia.com/tiendas/?utm_source=parking-hostalia&utm_medium=link&utm_content=tiendas-online&utm_campaign=keywords-lateral" title="Tiendas Online" target="_blank">Tiendas Online</a></li>
+                      <li><a href="http://www.hostalia.com/correo/?utm_source=parking-hostalia&utm_medium=link&utm_content=correo-profesional&utm_campaign=keywords-lateral" title="Correo profesional para empresas" target="_blank">Correo profesional</a></li>
+                      <li></li>
+                    </ul>
+                </div>                
+            </aside> 
+             <hr class="separador" />
+            <footer>
+            	<hr class="px7" />
+                <a href="http://www.hostalia.com/&utm_medium=logo&utm_content=branding&utm_campaign=dominio-alojado-en-hostalia" target="_blank"><img src="http://www.hostalia.com/mkt/parking/logo-hostalia.png" height="42" alt="hostalia" class="left" /></a>
+                <img src="http://www.hostalia.com/mkt/parking/logos.jpg" height="42" alt="hostalia" class="last" />
+              <p class="clear"></p>
+                <script type="text/javascript" src="js/jquery.js"></script>
+              <script type="text/javascript">
+				  $( document ).ready( function() {
+					$( '#paco' ).load( "http://www.hostalia.com/" );
+				  });
+				</script>
+              <div id="paco" style="width: 100%; height: 100px;"></div>
+            </footer>
+    	</div>
+    </body>
+</html>
+

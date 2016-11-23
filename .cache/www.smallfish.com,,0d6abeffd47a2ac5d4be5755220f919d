@@ -1,0 +1,70 @@
+status: 200
+content-length: 3018
+content-location: http://www.smallfish.com
+-content-encoding: gzip
+server: nginx/1.11.3
+last-modified: Fri, 07 Oct 2016 14:34:49 GMT
+connection: keep-alive
+etag: W/"57f7b289-bca"
+date: Mon, 17 Oct 2016 16:13:13 GMT
+content-type: text/html
+
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>Smallfish</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The branded video marketplace. Hosting a collection of original video concepts from hand-picked creators and premium partners that can be implemented through a cloud, end-to-end workflow.">
+    <meta name="robots" content="nofollow" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <link rel='stylesheet' id='open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.3.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='material-icons-css' href='https://fonts.googleapis.com/icon?family=Material+Icons&#038;ver=2.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='ng-material-css' href='//ajax.googleapis.com/ajax/libs/angular_material/1.0.6/angular-material.min.css' type='text/css' media='all' />
+    <link href="assets/css/style.css?_=1475852233165" rel="stylesheet" type='text/css' media='all' />
+    <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <sf-header></sf-header>
+    <sf-menu-backdrop id="menu-backdrop-1"></sf-menu-backdrop>
+    <sf-menu id="main-menu-1">
+        <sf-menu-item page="#home"> <div translate>MENU-HOME</div></sf-menu-item>
+        <sf-menu-item page="#howitworks"> <div translate>MENU-HOWITWORKS</div></sf-menu-item>
+        <sf-menu-item page="#aboutus"> <div translate>MENU-THETEAM</div></sf-menu-item>
+        <sf-menu-item page="#casestudies.1"> <div translate>MENU-CASESTUDIES</div></sf-menu-item>
+        <!-- <sf-menu-item page="clients">Clients say...</sf-menu-item> -->
+        <div layout-padding></div>
+        <!-- <sf-menu-item page="tank" class="tank">Smallfish Tank</sf-menu-item>
+        <sf-menu-item page="piranha" class="pirana">Pira&ntilde;a Film</sf-menu-item> -->
+        
+        <sf-footer></sf-footer>
+    </sf-menu>
+    <!-- <div id="main-section" class="main-section main" ui-view ng-class="[transitionClass]" ng-controller="MainController">
+    </div> -->
+    <div class="pages-container" id="pages-container" ng-controller="MainController">
+        
+        <home></home>
+        <howitworks></howitworks>
+        <aboutus></aboutus>
+        <casestudies></casestudies>
+    </div>
+    
+    <script src="assets/js/vendor/moment-with-locales.js"></script>
+    <script src="assets/js/vendor.js?_=1475852233165"></script>
+    <script src="assets/js/app.js?_=1475852233165"></script>
+    <script src="//content.jwplatform.com/libraries/lDZ7gVRk.js"></script>
+    <script>
+    (function() {
+        'use strict';
+        angular.element(document).ready(function() {
+            angular.bootstrap(document, ['smallfish.marketplace']);
+        });
+    }());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+status: 200
+content-length: 12696
+content-location: http://www.tekniq.com/careers.html
+x-powered-by: PHP/5.6.24-1+deb.sury.org~trusty+1
+vary: Accept-Encoding
+server: nginx/1.10.1
+connection: keep-alive
+-content-encoding: gzip
+date: Thu, 06 Oct 2016 18:08:35 GMT
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<META NAME="keywords" CONTENT="Tekniq Careers, Careers, copier sales, printer sales, network enineering, software developement, website design, overland park, kansas city, kansas, missouri">
+<META NAME="description" CONTENT="Build your career at Tekniq. Great positions in Copier and Printer Sales, Network Engineering, Software Development, and Website Design.  ">
+<title>Careers by Tekniq Data, Kansas City Metro Area's IT Professionals</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/lib/lead-form.js"></script>
+<script type="text/javascript" src="/lib/contact.js"></script>
+<script type="text/javascript" src="/lib/rsvp.js"></script>
+<script type="text/javascript" src="/lib/laserfiche.js"></script>
+<script type="text/javascript" src="/lib/newsletter.js"></script>
+<script type="text/javascript" src="/lib/magicbox/magicbox.js"></script>
+<link href="/lib/magicbox/magicbox.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+	jQuery(function(){		
+		$('#main-menu li').hover(function(){
+			$(this).children('ul.sub-menu').show();
+		}, function(){
+			$(this).children('ul.sub-menu').hide();
+		});
+		
+		$('#pop_up_news').click(function(){
+			return magicbox.load('/pop_up_newsletter.html', { title: 'Newsletter Sign-up' });
+		});
+		
+		$('#pop_up_news2').click(function(){
+			return magicbox.load('/pop_up_newsletter.html', { title: 'Newsletter Sign-up' });
+		});
+		
+		$('#pop_up_terms').click(function(){
+			return magicbox.load('/pop_up_terms.html', { title: 'Terms and Conditions' });
+		});
+		
+		$('#pop_up_privacy').click(function(){
+			return magicbox.load('/pop_up_privacy.html', { title: 'Privacy Policy' });
+		});
+	});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var currentPosition = 0;
+  var slideWidth = 560;
+  var slides = $('.slide');
+  var numberOfSlides = slides.length;
+  var slideshow = true;
+  var slideshowSeconds = 10;
+  
+  setInterval(function(){
+	if (slideshow) {
+		currentPosition = $('#rightControl').is(':visible') ? currentPosition+1 : 0;
+		updatePosition();
+	}
+  }, slideshowSeconds * 1000);
+
+  $('div.slide').click(function(){
+	slideshow = false;
+  });					
+
+  // Remove scrollbar in JS
+  $('#slidesContainer').css('overflow', 'hidden');
+
+  // Wrap all .slides with #slideInner div
+  slides.wrapAll('<div id="slideInner"></div>').css({
+      'float' : 'left',
+      'width' : slideWidth
+  });
+
+  // Set #slideInner width equal to total width of all slides
+  $('#slideInner').css('width', slideWidth * numberOfSlides);
+
+  // Insert controls in the DOM
+  $('#slideshow')
+    .prepend('<span class="control" id="leftControl">Clicking moves left</span>')
+    .append('<span class="control" id="rightControl">Clicking moves right</span>');
+
+  // Hide left arrow control on first load
+  manageControls(currentPosition);
+
+  // Create event listeners for .controls clicks
+  $('.control').bind('click', function(){
+	slideshow = false;
+							
+    // Determine new position
+	currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
+	updatePosition();
+  });
+  
+  updatePosition = function(){
+	// Hide / show controls
+    manageControls(currentPosition);
+    // Move slideInner using margin-left
+    $('#slideInner').animate({
+      'marginLeft' : slideWidth*(-currentPosition)
+    });
+  };
+
+  // manageControls: Hides and Shows controls depending on currentPosition
+  function manageControls(position){
+    // Hide left arrow if position is first slide
+	if(position==0){ $('#leftControl').hide() } else{ $('#leftControl').show() }
+	// Hide right arrow if position is last slide
+    if(position==numberOfSlides-1){ $('#rightControl').hide() } else{ $('#rightControl').show() }
+	
+  }	
+});
+
+
+
+</script></head>
+
+<body>
+<center>
+<table width="1000" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+    <td><a href="/index.html" title="Home"><img src="/images/header.gif" alt="I.T Pros at your service, Tekniq Data 913-491-4600" width="1000" height="65" border="0" /></a></td>
+  </tr>
+    <tr>
+    <td class="nav_bg" height="40">
+		<table width="1000" border="0" cellspacing="0" cellpadding="0" height="40">
+		  <tr>
+			<td width="35">&nbsp;</td>
+			<td width="840">
+			<ul id="main-menu">
+				<li><span class="nav_link">IT Services +</span>
+                    <ul class="sub-menu">
+                        <li><a href="/cloud.html" title="Cloud">&nbsp;Cloud</a></li>
+                        <li><a href="/computer_networks.html" title="computer networks">&nbsp;Computer Networks</a></li>
+                        <li><a href="/managed_services.html" title="Network command, managed services">&nbsp;Managed Services</a></li>
+                        <li><a href="/virtualization.html" title="Server Virtualization">&nbsp;Virtualization</a></li>
+                    </ul>
+				</li>
+                <li><span class="nav_link">Software +</span>
+                    <ul class="sub-menu">
+                        <li><a href="/business_software.html" title="custom software development">&nbsp;Custom Software</a></li>
+                        <li><a href="/document_management.html" title="Document Management">&nbsp;Document Management</a></li>
+                    </ul>
+				</li>
+				<li><span class="nav_link">Why Tekniq +</span>
+                    <ul class="sub-menu">
+                        <li><a href="/about.html">&nbsp;About Us</a></li>
+                        <li><a href="/testimonials.html">&nbsp;Testimonials</a></li>
+                    </ul>
+				</li>
+                <li><a href="/careers.html" class="nav_link">Careers</a></li>
+				<li><span class="nav_link">Contact +</span>
+                    <ul class="sub-menu">
+                        <li><a href="/contact.html">&nbsp;Contact Us</a></li>
+                        <li><a href="/support.html">&nbsp;Help &amp; Support</a></li>
+                    </ul>
+				</li>
+			</ul>
+			</td>
+			<td width="125">&nbsp;</td>
+		  </tr>
+		</table>
+	</td>
+  </tr>    <tr>
+    <td style="background-image:url(images/bg_repeat.gif); background-repeat:repeat-y;">
+	<table width="1000" border="0" cellspacing="0" cellpadding="0" >
+	  <tr>
+		<td width="26">&nbsp;</td>
+		<td width="374" valign="top" height="505">
+		<table width="874" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td height="5">&nbsp;</td>
+			  </tr>
+			  <tr>
+				<td height="25"><h1>TEKNIQ CAREERS</h1></td>
+			  </tr>
+			  <tr>
+				<td height="10" style="background-image:url(images/header_underline.gif); background-repeat:repeat-x;">&nbsp;</td>
+			  </tr>
+			  <tr>
+			  	<td height="446" valign="top" style="padding-right:5px;">
+                    <!-- Place this exact code where you want the Jobscore job widget to appear on the page.  The widget will expand to the size of the containing div -->
+                    <div class='jobscore-jobs' data-font-family='Trebuchet MS, sans-serif' data-font-size='13px' data-header-bg-color='#E2FFE3' data-zebra-stripe='true' data-list-type='multi' >
+                    <div class='js-fallback' style='color:#888'><a style='color:#888;text-decoration:underline;' href='http://www.jobscore.com/jobs/tekniq'>Tekniq jobs</a> powered by <a style='color:#888' href='http://www.jobscore.com'><img style='padding:0;' align='bottom' src='//www.jobscore.com/images/new/jobscore_logo_embed.png' alt='Applicant Tracking, Social Recruiting and Software Hiring Solution - JobScore'></a></div>
+                    </div><!-- /jobscore-jobs -->
+
+                    <!-- Place this script right before the closing /body tag.  Only one copy of the code below is needed per page. -->
+                    <script type='text/javascript'>
+                    (function(d, s, c) {
+                      if (window._jobscore_loader) { return; } else { window._jobscore_loader = true; }
+                      var o = d.createElement(s); o.type = 'text/javascript'; o.async = true;
+                      var sc = d.getElementsByTagName(s)[0]; sc.parentNode.insertBefore(o, sc);
+                      o.src = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//www.jobscore.com/jobs/' + c + '/widget.js';
+                    })(document, 'script', 'tekniq');
+                    </script>
+				</td>
+			  </tr>
+			</table>
+		</td>
+
+	  </tr>
+	</table>
+	</td>
+  </tr>
+ 		<tr xmlns="http://www.w3.org/1999/html">
+    <td class="bg_bottom" height="213">
+		<table width="1000" border="0" cellspacing="0" cellpadding="0" height="213">
+		<tr>
+			<td height="5" width="25"></td>
+			<td width="226"></td>
+			<td width="16"></td>
+			<td width="227"></td>
+			<td width="17"></td>
+			<td width="226"></td>
+			<td width="17"></td>
+			<td width="226"></td>
+			<td width="19"></td>
+		</tr>
+		  <tr>
+			<td height="30" width="25">&nbsp;</td>
+			<td align="center" width="226"><h2 class="txt_white_big">Document Management</h2></td>
+			<td width="16">&nbsp;</td>
+			<td align="center" width="227"><h2 class="txt_white_big">Custom Software</h2></td>
+			<td width="17">&nbsp;</td>
+			<td align="center" width="226"><h2 class="txt_white_big">Managed Services</h2></td>
+			<td width="17">&nbsp;</td>
+			<td align="center" width="226"><h2 class="txt_white_big">Cloud</h2></td>
+			<td width="19">&nbsp;</td>
+		  </tr>
+		  <tr>
+			<td height="178" width="25">&nbsp;</td>
+			<td valign="top" align="center" width="226">
+                <table width="226" border="0" cellspacing="0" cellpadding="0" height="160">
+			    <tr>
+				    <td width="226" height="140" colspan="2" align="center" valign="top"><p class="txt_bold" style="padding-top:8px; text-align:center;"><a href="/document_management.html" target="_self"><img src="/images/laserfiche-logo-small.png" width="175" height="45" alt="Laserfiche Logo" border="0" /></a></p><p class="txt_bold" style="padding-top:8px; text-align:center;">Save time and money<br>with electronic documents</p></td>
+			    </tr>
+			    </table>
+			</td>
+			<td width="16"></td>
+			<td valign="top" width="226" align="center">
+                <p class="txt_bold" align="center" style="padding-bottom:10px; padding-top:5px;">Speed up<br>by automating your processes</p><a href="/business_software.html" target="_self"><img src="/images/software_icon.jpg" alt="Learn more about custom software" border="0" /></a>
+            </td>
+			<td>&nbsp;</td>
+			<td valign="top" width="226" align="center">
+			    <p class="txt_bold" align="center" style="padding-bottom:10px; padding-top:5px;">Keep your systems<br>running smoothly</p><a href="/managed_services.html" target="_self"><img src="/images/network_home.jpg" width="125" height="77" alt="IT Managed Services" border="0" /></a>
+			</td>
+			<td width="17">&nbsp;</td>
+			<td valign="top" align="center" width="226" style="padding-top:4px;">
+                <a href="/cloud.html" target="_self"><img src="/images/cloud_icon.jpg" alt="Cloud" border="0" /></a><p class="txt_bold" align="center" style="padding-bottom:10px; padding-top:5px; text-align:center;">Lower costs and gain flexibility<br>by migrating to the cloud</p>
+			</td>
+			<td width="19">&nbsp;</td>
+		</tr>	
+		</table>
+	</td>
+  </tr>
+  <tr>
+    <td height="20">
+		<table width="1000" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="200">&nbsp;</td>
+			<td align="center">Copyright &copy; 2000-2016 Tekniq Data Corporation, Overland Park, KS 66210</td>
+			<td align="right" width="200" style="padding-right:20px;"><a href="#" id="pop_up_terms">Terms of Use</a>  |  <a href="#" id="pop_up_privacy">Privacy</a></td>
+		  </tr>
+		</table>
+	</td>
+  </tr>    <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</center>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1248225-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></body>
+</html>
+

@@ -1,0 +1,553 @@
+status: 200
+content-location: http://www.contrib.com/brand/details/globalventures.com
+x-powered-by: PHP/5.4.45
+set-cookie: ci_session=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%221ea66709706abd9a0fa16fb43b3b38f9%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A14%3A%22104.236.64.140%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A28%3A%22Python-httplib2%2F0.9.2+%28gzip%29%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1476723210%3B%7D2a865ec365603676b9e95330edf57df8;
+ expires=Mon, 17-Oct-2016 18:53:30 GMT; path=/
+server: Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/0.9.8e-fips-rhel5
+ mod_bwlimited/1.4
+date: Mon, 17 Oct 2016 16:53:30 GMT
+content-type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Individual Brand page -Globalventures.com - Global Ventures, LLC, established in 1996, is a Real Estate and Technology company focused on building and leveraging electronic corporations (eCorp) within the Domain Name System.  Premium domains and companies such as Referrals.com,Staffing.com, Mergers.com, Domain Holdings, VentureCamp, Handyman.com, DSL.com and over 20,000 others are the core digital asset and building blocks of Global Ventures.. Apply, develop, and help build Globalventures.com  today</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/dashboard3/nprogress.css">
+        <link rel="stylesheet" type="text/css" href="/css/dashboard3/main-dash-v2.css">
+    	<link rel="stylesheet" type="text/css" href="/css/dashboard3/followed-brands.css">
+        <link rel="stylesheet" type="text/css" href="/css/dashboard3/contrib-apps-pages.css">
+        <link rel="stylesheet" type="text/css" href="/css/dashboard3/brand-details-v2.0.css">
+    	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+		
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/dashboard3/nprogress.js"></script>       
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+        		NProgress.start();
+        		setTimeout(function() { 
+        			NProgress.done(); 
+        			$('.fadeIn-body').removeClass('out'); 
+        		}, 1000);
+
+                $('[data-toggle="tooltip"]').tooltip();
+				
+						
+                $('#notifications').click(function(){
+
+                    //var userid = $('#user_id').val();
+                    //alert("test");
+
+                    $.post('/network/setReadNotification',function(data){
+                        $('#new_notif_count').text('');
+                        $('#new_notif_count').attr('class',' ');
+                    });
+
+
+
+                });
+				
+				
+				$.post('/network/getUnreadNotificationsCount',function(data){
+					if(data == '0'){
+						//do nothing..
+					}else{
+						$('#new_notif_count').text(data);
+						$('#new_notif_count').attr('class','msg-noti');
+						$('#new_notif').text("You have new notifications");
+					}
+				});
+				
+				$.post('/network/getUnreadNotificatios',function(data){
+					if(data == '0'){
+						//do nothing..
+						$('#notification_list').html("no notifications");
+					}else{
+						$('#notification_list').html(data);
+					}
+				});
+        	});
+        </script>
+    	<style>
+		.equity-container {
+			background: #e9e9e9;
+			padding: 8px 0px 4px 0px;
+		}
+		.equity-container .col-md-6 {
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+		.equity-container .cwp {
+			display: inline-block;
+			text-align: center;
+			margin-right: 8px;
+		}
+		.equity-container .eqp {
+			display: inline-block;
+			text-align: center;
+		}
+		.equity-container .cwp b {
+			color:#1D772A;
+			font-size:28px;
+		}
+		.equity-container .eqp b {
+			color:#1D772A;
+			font-size:28px;
+		}	
+		.equity-container .edesc {
+			font-size: 11px;
+			line-height: 12px;
+			display: inline-block;
+			text-align: left;
+		}
+		.dd-select .btn-warning {
+			color: #fff;
+			background-color: #30A240;
+			border-color: #2A9439;
+		}
+		.dd-select .btn-warning:hover {
+			color: #fff;
+			background-color: #207E2E;
+			border-color: #2A9439;
+		}
+		</style>
+    </head>
+    <!-- add .fade.out to body for effects-->
+    <body>
+    	<nav class="navbar navbar-default navbar-fixed-top nabvar-white">
+    		<div class="container">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<a class="navbar-brand nbb-custom" href="/dashboard" target="_blank">
+                        <!-- <img class="logo" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-contrib-xmas-1.png" title="Contrib.com" alt="Contrib, Build and Earn Equity with your next Startup. Join our Network today." style="height:35px"> -->
+    					<img class="logo" src="/images/assets/logo-contrib.png" title="Contrib.com" alt="Contrib, Build and Earn Equity with your next Startup. Join our Network today." style="height:35px">
+    				</a>
+    			</div>
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    				<ul class="nav navbar-nav">
+    					
+    					
+    					<li>
+    						<a href="/marketplace" target="_blank">
+    							<i class="fa fa-shopping-cart"></i>
+    							Marketplace
+    						</a>
+    					</li>
+                      
+                  
+    					<li class="dropdown">
+    						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help<span class="caret"></span></a>
+    						<ul class="dropdown-menu">
+    								<!--li><a target="_blank" href="/network/getstarted" target="_blank"><i class="icon-arrow-right"></i> Get Started</a></li-->
+									<li><a target="_blank" href="http://blog.contrib.com/contrib-faq/" target="_blank"><i class="icon-arrow-right"></i> FAQ</a></li>
+                                    <li><a target="_blank" href="/home/contact" target="_blank"><i class="icon-arrow-right"></i> Contact Us</a></li>
+    						</ul>
+    					</li>
+    				</ul>
+    				
+    				
+    				
+    				<ul class="nav navbar-nav navbar-right">
+    				    						<li>
+    						<a href="/signup/firststep">
+    							<i class="fa fa-edit"></i>
+    							Sign Up
+    						</a>
+    					</li>
+    					<li>
+    						<a href="/home/signin">
+    							<i class="fa fa-lock"></i>
+    							Login
+    						</a>
+    					</li>
+    					    				</ul>
+    				
+    				
+    			</div><!-- /.navbar-collapse -->
+    		</div><!-- /.container-fluid -->
+</nav>
+<link rel="stylesheet" type="text/css" href="/css/dashboard3/newsfeed-d-v2.css">
+<link rel="stylesheet" type="text/css" href="/css/dashboard3/brand-details-v2.0.css">
+<link rel="stylesheet" href="/css/dashboard3/team-details-page.css">
+<script type="text/javascript" src="/js/dashboard3/brand_details.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.number.js"></script>
+<link class="include" rel="stylesheet" type="text/css" href="/js/jqplot/jquery.jqplot.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/dashboard3/examples.min.css" />
+<link type="text/css" rel="stylesheet" href="/js/jqplot/syntaxhighlighter/styles/shCoreDefault.min.css" />
+<link type="text/css" rel="stylesheet" href="/js/jqplot/syntaxhighlighter/styles/shThemejqPlot.min.css" />
+<script class="include" type="text/javascript" src="/js/jqplot/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="/js/jqplot/syntaxhighlighter/scripts/shCore.min.js"></script>
+<script type="text/javascript" src="/js/jqplot/syntaxhighlighter/scripts/shBrushJScript.min.js"></script>
+<script type="text/javascript" src="/js/jqplot/syntaxhighlighter/scripts/shBrushXml.min.js"></script>
+<script class="include" type="text/javascript" src="/js/jqplot/plugins/jqplot.pieRenderer.min.js"></script>
+	    
+<div class="fadeIn out">
+     <style>
+.tab-brandDetails .cp-tab {
+	background: transparent url("https://rdbuploads.s3.amazonaws.com/icons/btn-contrib-150x50-2.png") repeat scroll 0% 0% / cover;
+	text-decoration:none;
+	height: 41px;
+	width: 144px;
+}
+.tab-brandDetails .cp-tab:hover {
+	background: transparent url("https://rdbuploads.s3.amazonaws.com/icons/btn-contrib-150x50-3.png") repeat scroll 0% 0% / cover;
+	text-decoration:none;
+	border-bottom: none !important;
+}
+</style>
+<div class="brandDetails-topHeader">
+	    		<div class="brandDetails-topHeader-domain">
+			    	<div class="container">
+			    		<div class="row">
+			    			<div class="col-md-12 text-center">
+			    				<a href="/brand/details/globalventures.com" title="globalventures.com" target="_blank">
+			    				   			    					<img class="img-responsive img-bd-logo" src="https://contrib.com/uploads/logo/image_logo-gventures10-420x60.png">
+			    								    				</a>
+			    				<ul class="list-inline">
+	    							<li>
+	    								<a href="http://globalventures.com" class="gray2" target="_blank">
+	    									<i class="fa fa-desktop"></i>
+	    									View  Website
+	    								</a>
+	    							</li>
+	    						</ul>
+	    		               <div class="wrap-stats-tdp">
+	    							<ul class="list-inline">
+	    								<li>
+	    									<span class="tdp-num">
+	    										1,105,890	    									</span>
+	    									<span class="text-capitalize">
+	    										theoretical value
+	    									</span>
+	    								</li>
+	    								<li>
+	    									<span class="tdp-num">
+	    										1,400	    									</span>
+	    									<span class="text-capitalize">
+	    										Equity Points 
+	    									</span>
+	    								</li>
+	    							</ul>
+	    						</div>				
+			    			</div>
+			    		</div>
+			    	</div>
+		    	</div>
+		    	<div class="brandDetails-btmHeader">
+		    		<div class="container">
+		    			<div class="row">
+		    				<div class="col-md-12">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs tab-brandDetails" role="tablist">
+									<li role="presentation" class="active">
+										<a href="#dt" aria-controls="dt" role="tab" data-toggle="tab" onclick="initializetabs();">Details</a>
+									</li>
+									<li role="presentation">
+										<a href="/to/globalventures.com"  role="tab"target="_blank" class="cp-tab"></a>
+									</li>
+									<li role="presentation">
+										<a href="#tm" aria-controls="tm" role="tab" data-toggle="tab" onclick="loadbrandteam('globalventures.com','642')">Team</a>
+									</li>
+									<li role="presentation">
+										<a href="#pt" aria-controls="pt" role="tab" data-toggle="tab" onclick="loadbrandpartners('globalventures.com');">Partners</a>
+									</li>
+									<li role="presentation">
+										<a href="#rl" aria-controls="rl" role="tab" data-toggle="tab" onclick="loadbrandroles('642','globalventures.com')">Roles</a>
+									</li>
+									<li role="presentation">
+										<a href="#ideas" aria-controls="ideas" role="tab" data-toggle="tab" onclick="loadbrandideas('globalventures.com')">Ideas</a>
+									</li>
+									<!-- <li role="presentation">
+										<a href="#ct" aria-controls="ct" role="tab" data-toggle="tab" onclick="loadbrandcrowdtasks('globalventures.com','642')">Crowd Tasks</a>
+									</li> -->
+									<li role="presentation" onclick="loadbrandreferralpro();">
+										<a href="#rp" aria-controls="rp" role="tab" data-toggle="tab">Referral Program</a>
+									</li>
+									
+									<li role="presentation">
+										<a href="#lc" aria-controls="lc" role="tab" data-toggle="tab" onclick="initializetabs();">Latest Contribution</a>
+									</li>
+								</ul>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+</div>     <div class="container">
+	    <div class="row">
+	    	 <div class="col-md-12">
+	    				<!-- Tab panes -->
+             <div class="row" id="brand_main_content">
+						     <div class="col-md-4 col-md-push-8" id="brand_right_content">
+						        <div class="wdget-dv2-main" id="brand_socials_content">
+    <div id="loader-socials" style="text-align:center"><img src="/images/ajax-loader.gif"> loading socials</div>
+</div>
+
+<div class="wdget-dv2-main" id="brand_action_content">
+												
+</div>
+
+<div class="wrap-lb-main" id="brand_top_contributors">
+ <div id="loader-contributors" style="text-align:center"><img src="/images/ajax-loader.gif"> loading top contributors</div>
+</div>
+<script>
+$(document).ready(function() {
+	loadbrandsocials('642');
+	loadbrandactions('globalventures.com');
+	loadbrandtopcontributors('globalventures.com');
+});
+</script>						     </div>
+						     <div class="col-md-8 col-md-pull-4" id="brand_left_content">
+						        <div class="tab-content">
+										<div role="tabpanel" class="tab-pane active" id="dt">
+											   <div class="wrap-note-tpv2-main">
+											<div class="wrap-note-content quote-rght">
+												<p>
+													Global Ventures, LLC, established in 1996, is a Real Estate and Technology company focused on building and leveraging electronic corporations (eCorp) within the Domain Name System.  Premium domains and companies such as Referrals.com,Staffing.com, Mergers.com, Domain Holdings, VentureCamp, Handyman.com, DSL.com and over 20,000 others are the core digital asset and building blocks of Global Ventures.												</p>
+																							</div>
+										</div>
+										<div class="alert alert-info">
+											Welcome To Contrib. Help us build out <a href="" class="alert-link text-uppercase">GLOBALVENTURES.COM</a> with other great people around the world and earn equity, compensation and experience with other like minded people. Apply today before the desired opportunities are taken. 
+										</div>
+										<div class="wdget-dv2-main">
+											<div class="row">
+											   
+												<div class="col-md-6" id="brand_analytics_content">
+													<div id="loader-analytics" style="text-align:center"><img src="/images/ajax-loader.gif"> loading analytics</div>
+												</div>
+												<div class="col-md-6" id="brand_earnings_content">
+													<div id="loader-earnings" style="text-align:center"><img src="/images/ajax-loader.gif"> loading earnings</div>
+												</div>
+											</div>
+										</div>
+										<div class="wdget-dv2-main" id="brand_chart_content">
+											<div id="loader-chart" style="text-align:center"><img src="/images/ajax-loader.gif"> loading equity percentage</div>
+										</div>
+										<div class="wdget-dv2-main" id="brand_theovalue_content">
+								            <div id="loader-theovalue" style="text-align:center"><img src="/images/ajax-loader.gif"> loading theoretical value</div>
+										</div>
+										<div class="wdget-dv2-main" id="brand_members_equity_content">
+											 <div id="loader-memberequity" style="text-align:center"><img src="/images/ajax-loader.gif"> loading member equity points</div>
+										</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	loadbrandanalytics('57183117',1);
+	loadbrandearnings('globalventures.com');
+	loadbrandchart('globalventures.com');
+	loadbrandtheo('globalventures.com');
+	loadbrandmemberequity('642');
+	updatetheovalue('642');
+});
+</script>										</div>	
+										<div role="tabpanel" class="tab-pane " id="tm">
+										    <div class="row">
+											    <div class="row"  id="brand_team_content">
+
+</div>											</div>    
+										</div> 
+										<div role="tabpanel" class="tab-pane " id="pt">
+										 	    <div class="wrap-note-tpv2-main">
+											<div class="wrap-note-content">
+												<h4>Would you like to Partner with Globalventures.com</h4>
+												<p>
+													We have different types of partnership options you could choose from, moreover, you can add and partner with as many assets in the marketplace that suits your brand.<a href="/partners/apply/globalventures.com">Send in your Partnership Application Today</a>
+												</p>
+											</div>
+										</div>
+										<div class="wdget-dv2-main">
+											<div class="row" id="brand_partners_content">
+										
+											</div>
+                                      </div>										
+										</div>  
+										<div role="tabpanel" class="tab-pane " id="rl">
+										          <div class="wrap-note-tpv2-main">
+											<div class="wrap-note-content">
+												<h4>
+													You can now join and assume the roles of any of the skills we need for globalventures.com												</h4>
+											</div>
+										</div>
+										<div class="row" id="brand_roles_content">
+										
+										</div>										</div>
+										<div role="tabpanel" class="tab-pane " id="ideas">
+										           <div class="wdget-dv2-main">
+											<a href="/ideas/create/globalventures.com" target="_blank">
+												<img class="img-responsive" src="https://d2qcctj8epnr7y.cloudfront.net/images/2013/banner-contrib-1-3.png">
+											</a>
+   </div>
+   <input type="hidden" name="domain_logo" id="domain_logo" value="https://contrib.com/uploads/logo/image_logo-gventures10-420x60.png">
+   <div class="row" id="brand_ideas_content">
+											
+  </div>										</div>
+										<div role="tabpanel" class="tab-pane " id="ct">
+										     <div class="row">
+											         <div class="row" id="brand_crowdtasks_content">
+											
+</div>											  </div>      
+										</div>
+										<div role="tabpanel" class="tab-pane " id="rp">
+										     <div class="row" id="brand_referral_program_content">
+									<div class="col-md-10" >
+										<div class="wdget-dv2-main">
+											<legend>
+												Banners
+											</legend>
+											<dl class="dl-horizontal">
+												<dt>Marketing Group</dt><dd>Contrib</dd>
+												<dt>Banner Size</dt><dd>728 x 90</dd>
+												<dt>Banner Description</dt><dd>Globalventures.com Banner</dd>
+												<dt>Target URL</dt><dd>http://www.globalventures.com</dd>
+											</dl>
+											<script type="text/javascript" src="https://www.contrib.com/widgets/leadbanner/globalventures.com/"></script>
+											<br>
+											<p>
+												Source Code - Copy/Paste Into Your Website
+											</p>
+											<textarea readonly="readonly" onclick="this.focus();this.select()" class="form-control"><script type="text/javascript" src="https://www.contrib.com/widgets/leadbanner/globalventures.com/"></script></textarea>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<div class="wdget-dv2-main">
+											<dl class="dl-horizontal">
+												<dt>Marketing Group</dt><dd>Contrib</dd>
+												<dt>Banner Size</dt><dd>180 x 150</dd>
+												<dt>Banner Description</dt><dd>Globalventures.com Banner</dd>
+												<dt>Target URL</dt><dd>http://www.globalventures.com</dd>
+											</dl>
+											 <script type="text/javascript" src="https://www.contrib.com/widgets/roundleadbanner/globalventures.com/"></script>
+											<p>
+												Source Code - Copy/Paste Into Your Website
+											</p>
+											<textarea readonly="readonly" onclick="this.focus();this.select()" class="form-control"><script type="text/javascript" src="https://www.contrib.com/widgets/roundleadbanner/globalventures.com/"></script></textarea>
+										</div>
+									</div>
+        <div id="other_referral_programs">
+            
+        </div>									
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	loadbrandreferralprogram('globalventures.com');
+});
+</script>										</div>
+										<div role="tabpanel" class="tab-pane " id="cp">
+										           <script type="text/javascript" src="/js/dashboard3/dashboard.js"></script>
+<ul class="list-inline ul-mrgBtm">
+											<li>
+												<h4>I'd like to contribute </h4>
+											</li>
+											<li>
+												<div class="form-group">
+													<select class="form-control text-capitalize" id="contribution_type">
+														<option value="1">Time</option>
+														<option value="2">Content</option>
+														<option value="3">Distribution</option>
+														<option value="4">Code/Apps</option>
+														<option value="5">Social</option>
+														<option value="6">Marketing/PR</option>
+														<option value="7">Referral</option>
+														<option value="8">Capital</option>
+													</select>
+												</div>
+											</li>
+											<li>
+												<h4 class="text-capitalize">globalventures.com</h4>
+											</li>
+										</ul>
+										<hr class="hr-btm">
+										<div id="dashchange">
+	
+	    				                </div> <!-- last div main content -->
+<input type="hidden" name="domain_name" id="domain_name" value="globalventures.com"> 
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		var domain = $('#domain_name').val();
+		changetab(domain,'time');
+		$('#contribution_type').change(function(){
+			var ctype = $(this).val();
+			changetab(domain,ctype,0);
+		});	
+	});
+</script>												</div>
+										<div role="tabpanel" class="tab-pane " id="lc">
+										  	    	
+	<h5 class="grey-text fnt-bold text-uppercase caps">
+											activity for this week
+										</h5>
+	<div id="brand_activites_content">									
+										
+   </div>
+   
+   	<center style="display: inline-block;width: 100%;">
+							<div id="paginatn_label" style="margin: 30px 0 -18px;font-size: 11px;">
+								Showing 1 to 12 of 175 activities
+							</div>
+														<ul class="pagination">
+								<li>
+								  <a href="javascript:void(0);" aria-label="Previous" id="manage_pg_back" onClick="javascript:nextPageAct(1,12,175,15,'globalventures.com')">
+									<span aria-hidden="true">&laquo;</span>
+								  </a>
+								</li>								
+																	<li class="paginatn page1 active"><a href="javascript:void(0);" onClick="javascript:nextPageAct(1,12,175,15,'globalventures.com');">1</a></li>
+																	<li class="paginatn page2 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(2,12,175,15,'globalventures.com');">2</a></li>
+																	<li class="paginatn page3 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(3,12,175,15,'globalventures.com');">3</a></li>
+																	<li class="paginatn page4 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(4,12,175,15,'globalventures.com');">4</a></li>
+																	<li class="paginatn page5 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(5,12,175,15,'globalventures.com');">5</a></li>
+																	<li class="paginatn page6 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(6,12,175,15,'globalventures.com');">6</a></li>
+																	<li class="paginatn page7 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(7,12,175,15,'globalventures.com');">7</a></li>
+																	<li class="paginatn page8 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(8,12,175,15,'globalventures.com');">8</a></li>
+																	<li class="paginatn page9 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(9,12,175,15,'globalventures.com');">9</a></li>
+																	<li class="paginatn page10 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(10,12,175,15,'globalventures.com');">10</a></li>
+																	<li class="paginatn page11 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(11,12,175,15,'globalventures.com');">11</a></li>
+																	<li class="paginatn page12 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(12,12,175,15,'globalventures.com');">12</a></li>
+																	<li class="paginatn page13 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(13,12,175,15,'globalventures.com');">13</a></li>
+																	<li class="paginatn page14 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(14,12,175,15,'globalventures.com');">14</a></li>
+																	<li class="paginatn page15 "><a href="javascript:void(0);" onClick="javascript:nextPageAct(15,12,175,15,'globalventures.com');">15</a></li>
+																<li>
+								  <a href="javascript:void(0);" aria-label="Next" id="manage_pg_next" onClick="javascript:nextPageAct(2,12,175,15,'globalventures.com')">
+									<span aria-hidden="true">&raquo;</span>
+								  </a>
+								</li>
+							</ul>						
+						</center>	
+						<script type="text/javascript">
+				        	$(document).ready(function(){
+				        		nextPageAct(1,12,175,15,'globalventures.com');
+				        	 });
+                      </script>			                        										</div>	
+									</div>
+						     </div>
+                        </div>	    				
+			</div>
+		</div>
+	</div>					
+</div>
+<input type="hidden" id="base_url" value="/">
+
+   </body>
+</html>

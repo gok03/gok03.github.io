@@ -1,0 +1,319 @@
+status: 200
+content-length: 14132
+content-location: http://www.avalanchewebdesign.com
+accept-ranges: bytes
+server: Apache
+last-modified: Fri, 07 Aug 2015 00:31:57 GMT
+connection: close
+date: Mon, 17 Oct 2016 16:40:28 GMT
+content-type: text/html
+
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!--- Doteasy Under Construction Template --->
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Under Construction - Doteasy.com</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="doteasy-under-construction/styles.css" />
+		<!--[if lte IE 7]>
+		<link rel="stylesheet" type="text/css" href="doteasy-under-construction/ie_styles.css" />
+		<![endif]-->
+		
+		<link rel="stylesheet" href="doteasy-under-construction/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="doteasy-under-construction/fancybox/jquery.fancybox.js"></script>
+		<script type="text/javascript" src="doteasy-under-construction/fancybox/helpers/jquery.fancybox-media.js"></script>
+	</head>
+	<body>
+		<script>
+		  (function() {
+		    var c = document.createElement('script');
+		    c.type = 'text/javascript'; c.async = true;
+		    c.src = "https://chat.doteasy.com/ChatLink.ashx?config=3&id=delivechat";
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(c,s);
+		  })();
+		</script>
+		<script type="text/javascript">
+			var liveChatOpen = function(e){
+				e.preventDefault();
+				var liveChatOffline = function(){
+					 $.fancybox.open([
+				        {
+				            type: 'html',
+				            content: '<h3 style="font-size:16px;font-weight:bold;margin-bottom:15px;line-height:1.5em;">Doteasy Live Chat Support</h3><p style="color:#222;font-size:14px;line-height:1.5em;">Our Live Chat is now either offline or busy. If you have any questions, please feel free to contact us by opening a new service ticket at <a href="https://www.doteasy.com/ContactUs/SMS3" target="_blank">https://www.doteasy.com/ContactUs/SMS3</a></p>'
+				        }
+				    ], {
+				        maxWidth	: 400,
+						maxHeight	: 150,
+						fitToView	: false,
+						autoSize	: false,
+						closeClick	: false,
+						openEffect	: 'none',
+						closeEffect	: 'none'
+				    });
+				};
+				$("a","#delivechat").each(function(){
+					var $chatLink = $(this);
+					if($chatLink.css("display") !== "none"){
+						var liveChatID = $chatLink.attr("id");
+						if(liveChatID==="delivechat_online"){
+							$("a#delivechat_online","#delivechat").click();
+						} else if (liveChatID==="delivechat_offline"){
+							liveChatOffline();
+						}
+					}
+				});
+			};
+		</script>
+		<div id="container">
+			<div id="header">
+				<h1>Welcome <span>to <span id="domainName"></span></span></h1>
+				<div id="poweredBy" class="right">
+					<div>
+						<span class="image"></span>
+						Powered by
+					</div>
+					<div> 
+						<a href="http://www.doteasy.com" target="_blank" id="doteasyHomepage">
+						Web Hosting
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="activatedContainer" class="image top left">
+				<div>Your Doteasy hosting service has been activated and is ready for you to create your website and your email accounts.</div>
+			</div>
+			
+			<div id="gettingStartedContainer" class="top right">
+				<div id="gettingStarted" class="image">
+					<div class="container">
+						<div class="title">Getting Started</div>
+						<div class="subtitle">with your Doteasy Web Hosting service</div>
+						<p>This video is a brief getting started guide to your Doteasy web hosting services.</p>
+						<p>
+							All of the information you need to get started with your web hosting services, including the Doteasy Website Creator, Hosted Applications, FTP, 
+							and email, can be found by logging into Member Zone.
+						</p>
+						<a id="memberZone" class="image" href="https://member.doteasy.com/"><span>Access Member Zone</span></a>
+					</div>
+				</div>
+				<div id="gettingStartedVideo" class="image">
+					<a href="http://www.youtube.com/watch?v=6QnqiB-PoOE" target="_blank" class="fancybox">
+						<div class="play image"></div>
+					</a>
+				</div>
+			</div>
+			
+			<div id="videoContainer" class="left">
+				<div class="container">
+					<div class="image"></div>
+					<div class="subtitle">Doteasy</div>
+					<div class="title">Video Tutorials</div>
+					<p>Doteasy has a number of video tutorials that can help you make the best of your web hosting services.</p>
+					
+					<div class="create">
+						<div class="heading">Create Your Website:</div>
+						<ul>
+							<li><a href="http://www.youtube.com/playlist?list=PLaAFSCvSX__5GwIpZPldUJuRSIdJeEbOY" target="_blank">Website.com Site Builder</a></li>
+							<li><a href="http://youtu.be/4KMB2U8tJ-M" target="_blank" class="fancybox">Installing 5 Scripts in 5 Minutes</a></li>
+							<li><a href="http://youtu.be/D0nrbBujVNM" target="_blank" class="fancybox">Using FTP</a></li>
+							<li><a href="http://youtu.be/YcDC3eo8URs" target="_blank" class="fancybox">Using FTP (Mac version)</a></li>
+						</ul>
+					</div>
+					
+					<div class="setup">
+						<div class="heading">Setup Email Accounts:</div>
+						<ul>
+							<li><a href="http://youtu.be/BF4VLYgJR4g" target="_blank" class="fancybox">Email on iPhone</a></li>
+							<li><a href="http://youtu.be/Vh1Vr9xCL8o" target="_blank" class="fancybox">Email on Android</a></li>
+							<li><a href="http://youtu.be/qeF0HqSBkKM" target="_blank" class="fancybox">Email on Thunderbird</a></li>
+							<li><a href="http://youtu.be/6VYCXrxHDOs" target="_blank" class="fancybox">Email on Mac Mail</a></li>
+							<li><a href="http://youtu.be/z5rv844Oops" target="_blank" class="fancybox">Email on Window Live Mail</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div id="hostingAppsContainer" class="right">
+				<div id="hostingAppVideo" class="image">
+					<a href="http://www.youtube.com/watch?v=RnpjLNjgihI" target="_blank" class="fancybox">
+						<div class="play image"></div>
+					</a>	
+				</div>
+				<div id="hostingApps" class="image">
+					<div class="container">
+						<div class="title">Hosting Apps Installer</div>
+						<p>
+							With Doteasy Softaculous auto script installer, you can install over 250 hosting applications 
+							from over 20 categories with a few simple clicks. Whether you need a blog, gallery forum, or 
+							shopping cart website, we have the perfect solution for you. To use auto script installer, 
+							please sign in to your Doteasy cPanel. 
+						</p>
+						<a id="exploreHostingApps" class="image" href="http://www.doteasy.com/websites/" target="_blank"><span>Explore Now</span></a>
+						<p class="footnote">
+							*Doteasy Softaculous auto script installer is available to Unlimited Hosting 
+							& Ultra Hosting customers.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="needHelpContainer">
+				<div class="container">
+					<div class="title">Need Help?</div>
+					<ul>
+						<li><a id="forum" href="http://forums.doteasy.com/" target="_blank"><div class="image"></div><span>Doteasy Forum</span></a></li>
+						<li>
+							<a id="liveChat" href="#" onclick="liveChatOpen(event);"><div class="image"></div><span>Live Chat</span></a>
+							<div id="delivechat" style="display:none"></div>
+						</li>
+						<li><a id="contactUs" target="_blank" href="https://www.doteasy.com/contact-us"><div class="image"></div><span>Contact Us</span></a></li>
+						<li class="paddingRight"><a target="_blank" id="knowledgeBase" href="http://kb.doteasy.com/"><div class="image"></div><span>Knowledge Base</span></a></li>
+						<li><a id="videoTutorials" target="_blank" href="http://www.youtube.com/doteasyhosting"><div class="image"></div><span>Video Tutorials</span></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="followDoteasyContainer" class="right">
+				<div class="container">
+					<div class="title">Follow Doteasy</div>
+					<ul>
+						<li><a id="scriptLibrary" target="_blank" href="http://scriptslibrary.doteasy.com/"><span>Script Library</span></a></li>
+						<li><a id="twitter" target="_blank" class="image" href="http://twitter.com/doteasy"></a></li>
+						<li><a id="youtube" target="_blank" class="image" href="http://www.youtube.com/doteasyhosting"></a></li>
+						<li><a id="googlePlus" target="_blank" class="image" href="http://plus.google.com/+DoteasyTechnology"></a></li>
+						<li><a id="facebook" target="_blank" class="image" href="http://www.facebook.com/Doteasy"></a></li>
+						<li><a id="blog" target="_blank" class="image" href="http://blog.doteasy.com/"></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="protectEmailContainer" class="left">
+				<div class="flag image"></div>
+				
+				<div class="container">
+					<div class="title"><a href="http://www.doteasy.com/web-hosting/email-protection.cfm" target="_blank">Protect <span class="small">Your Emails</span></a></div>
+					<div class="slide">
+						<div class="show">
+							<p>
+								The Doteasy Email Protection System combines enterprise-level email filtering with an
+								easy-to-use web-based interface to help you fight spam and email virus. One key feature
+								of the system is the ability to customize spam control for each individual email account.
+							</p>
+						</div>
+						<div class="hide">
+							<p>
+								For only <span class="price">US$6<span class="super">.95</span></span>/month, the protection 
+								service covers all email accounts under the same domain name.
+							</p>
+							<a href="http://www.doteasy.com/web-hosting/email-protection.cfm" target="_blank" class="learnMore"><span>Learn More</span><div class="triangle"></div></a>
+							<div class="clearBoth"></div>
+							<div class="subtitle">Order now and receive a FREE 2GB domain email storage upgrade!</div>
+							<a href="https://www.doteasy.com/sign-up/" target="_blank" id="orderEmail" class="image"><span>Order Now</span></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="corner image"></div>
+			</div>
+		
+			<div id="cloudContainer" class="bottom">
+				<div class="flag image"></div>
+					<div class="container">
+					<div class="title"><a href="http://www.doteasy.com/cloud-hosting/" target="_blank"><span class="small">Join Doteasy</span> Cloud</a></div>
+					<div class="slide">
+						<div class="show">
+							<p>
+								Not only does Doteasy Cloud Hosting give you complete control over virtually an unlimited 
+								amount of dedicated resources, it also offers you a hosting environment that is powerful,
+								secure, reliable and stable. At the same time, this fully-managed service comes with 
+								hassle-free reseller capabilities powered by WHM and cPanel.
+							</p>
+						</div>
+						<div class="hide">
+							<div class="subtitle">Perfect hosting solution for:</div>
+							<ul>
+								<li>Webmasters and Resellers</li>
+								<li>Power Bloggers and Rich Media Websites</li>
+								<li>E-commerce Websites</li>
+								<li>Corporate Websites</li>
+							</ul>
+							<div class="subtitle">Packages start at just <span class="price">$39</span>/mo</div>
+							<a href="http://www.doteasy.com/cloud-hosting" target="_blank" class="learnMore"><span>Learn More</span><div class="triangle"></div></a>
+						</div>
+					</div>
+				</div>
+				<div class="corner image"></div>
+			</div>
+			
+			<div id="managedHostingContainer" class="right bottom">
+				<div class="flag image"></div>
+				<div class="container">
+					<div class="title"><a href="http://www.doteasy.com/managed-hosting/" target="_blank">Managed <span class="small">Hosting</span></a></div>
+					<div class="slide">
+						<div class="show">
+							<div class="subtitle">Don't know where to start? We can help!</div>
+							<p>
+								Doteasy Managed Hosting is an add-on service that includes assistance on all the features
+								of your web hosting plan.
+							</p>
+							<p>
+								Whenever you need to update your website content or upgrade your web apps, just come to
+								us and we will handle it for you.
+							</p>
+						</div>
+						<div class="hide">
+							<div class="subtitle">Let us take care of your website for you:</div>
+							<ul>
+								<li>Application installation and upgrade <span class="regular">(including WordPress, Joomla, Drupal and more)</span></li>
+								<li>Automated website backup</li>
+								<li>HTML website updates, <span class="regular">such as changing images or text</span></li>
+								<li>Email archiving and log checking</li>
+								<li>Installation of 3rd party SSL certificates</li>
+							</ul>
+							<p class="nomargin">And more...</p>
+							<div class="subtitle nomargin">Now only<span class="price">$29<span class="super">.95</span></span>/month!</div>
+							<a href="http://www.doteasy.com/managed-hosting" target="_blank"" class="learnMore"><span>Learn More</span><div class="triangle"></div></a>				
+						</div>
+					</div>								
+				</div>
+				<div class="corner image"></div>
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#protectEmailContainer,#cloudContainer,#managedHostingContainer").hover(
+				function(){
+					var bottom = $(this).find("div.show").height() + $(this).find("div.hide").height() + 105;
+					$(this).find("div.slide").delay(200).stop(true).animate({
+						scrollTop: bottom
+					},1000)
+				},
+				function(){
+					$(this).find("div.slide").delay(200).stop(true).animate({
+						scrollTop: 0
+					},1200)
+				}
+			);
+			
+			var domain = document.location.href;
+			//remove 'http://' and everything after first '/'
+			domain = domain.replace("http://","");
+			if (domain.indexOf("/") > -1) {
+				domain = domain.substring(0, domain.indexOf("/"));
+			}
+			$("#domainName").html(domain);
+			
+			$(".fancybox").fancybox({
+				helpers : {
+					media : {}
+				}
+			});
+		});
+	</script>
+</html>

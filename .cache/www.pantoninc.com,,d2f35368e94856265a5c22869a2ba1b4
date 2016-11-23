@@ -1,0 +1,366 @@
+status: 200
+content-length: 14793
+pantoninc.com: www.pantoninc.com
+content-location: http://www.pantoninc.com
+accept-ranges: bytes
+-varied-accept-encoding: gzip, deflate
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+last-modified: Thu, 15 Sep 2016 22:12:12 GMT
+-content-encoding: gzip
+etag: "0643359efd21:0"
+date: Fri, 30 Sep 2016 04:08:51 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="initial-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+		<title>Panton</title>
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,300,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/GEO_masterStyle.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="css/GEO_iPhoneMaster.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="css/GEO_iPadMaster.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="css/GEO_Report.css" media="screen" title="no title" charset="utf-8">
+
+		<script src="js/jquery.js" charset="utf-8"></script>
+		<script src="js/underscore.js" charset="utf-8"></script>
+		<script src="js/moment.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="searchBar">
+			<img class="logo" src="img/logo.png" alt="Panton Inc." />
+			<div id="mainSearchForm" action="#">
+				<div class="searchBarWrapper">
+					<input type="text" class="search-text" name="name" value="" placeholder="Search Panton" onkeyup="window.searchFunction(this, event);">
+					<input type="submit" class="search-submit" name="name" value="">
+				</div>
+			</div>
+			<span id="loginButton"><a href="https://roof.pantoninc.com/Insight/Search/Index?showLogin=true">Log in</a></span>
+		</div>
+		<div id="searchResultsSugestions"></div>
+		<nav>
+		</nav>
+		<div class="animatedBanner">
+			<img src="img/play_btn.png" alt="Play"  id="playButton" onclick="animatedBanner.playWords();" />
+			<img src="img/pause_btn.png" alt="Play"  id="pauseButton" onclick="animatedBanner.pauseWords();" />
+			<img src="img/reload_btn.png" alt="Play"  id="reloadButton" onclick="animatedBanner.playWords();" />
+			<img class="animationElement images" src="img/banner1.jpg">
+			<img class="animationElement images" src="img/banner3.jpg">
+			<img class="animationElement images" src="img/banner2.jpg">
+			<img class="animationElement images" src="img/banner4.jpg">
+			<img class="animationElement images" src="img/banner5.jpg">
+			<img class="animationElement images" src="img/banner6.jpg">
+		</div>
+
+		<div id="services">
+			<div class="boxWrapper" id="insuranceSection">
+				<div class="leftSection" data-uta="true">
+					<h1>Insurance</h1>
+					<h2>Your P&amp;C roof claims process can be as fast as 1 hour.</h2>
+					<p>
+						By applying advanced image analysis and machine learning, Panton turns your collection of images into what you need: a claims report, a check, a record of the structure you are photographing, and most importantly, a happy customer.
+					</p>
+					<div class="fkButton" onclick="gotoInsurance();">
+						Enter
+					</div>
+				</div>
+				<div class="rightsection withAnimation" style="margin-top:50px;">
+					<div class="phoneCover" id="insurancePhone">
+						<img src="img/InsuranceMobile1.png" alt="" />
+						<img src="img/InsuranceMobile2.png" alt="" />
+						<img src="img/InsuranceMobile3.png" alt="" />
+					</div>
+					<div class="monitorCover" id="insuranceMonitor">
+						<img src="img/Insurance1.png" alt="" />
+						<img src="img/Insurance2.png" alt="" />
+						<img src="img/Insurance3.png" alt="" />
+					</div>
+
+						<img src="img/phone.png" class="phone" alt="" />
+						<img src="img/monitor.png" class="monitor" alt="" />
+				</div>
+				<div class="spacer"></div>
+			</div>
+			<div class="boxWrapper" id="PipelineSection" data-uta="true">
+				<div class="rightsection" data-uta="true">
+					<h1>Pipeline</h1>
+					<h2>No more walking pipeline ROWs and naked eye pilot spotting.</h2>
+					<ul>
+						<li>Minimize risks of excavation and construction related damage in rights-of-ways.</li>
+						<li>Identify ROW encroachments and determine pipeline risks in minutes.</li>
+						<li>Real-time detection and response to product leaks for the entire pipeline.</li>
+						<li>Identify corrosion and damage on above-ground structures in minutes.</li>
+					</ul>
+					<div class="fkButton" onclick="gotoPipeline()">
+						Enter
+					</div>
+				</div>
+				<div class="leftSection withAnimation" style="margin-top:50px;">
+					<div class="phoneCover" id="pipPhone">
+						<img src="img/pipMobile1.png" alt="" />
+						<img src="img/pipMobile2.png" alt="" />
+					</div>
+					<div class="monitorCover" id="pipMonitor">
+						<img src="img/pipMonitor1.png" alt="" />
+						<img src="img/pipMonitor2.png" alt="" />
+					</div>
+					<img src="img/phone.png" class="phone" alt="" />
+					<img src="img/monitor.png" class="monitor" alt="" />
+				</div>
+				<div class="spacer"></div>
+			</div>
+			<div class="boxWrapper" id="WindmillSection" data-uta="true">
+				<div class="leftSection">
+					<h1>Wind Turbine</h1>
+					<h2>Rope-based inspections are a thing of the past!</h2>
+					<ul>
+						<li>Eliminate the risk of rope-based inspections for inspectors.</li>
+						<li>Identify cosmetic and structural damage of wind turbines in real-time using aerial drone images.</li>
+						<li>Predict power output by combining the location and weather data.</li>
+						<li>Detect potential icing formations to optimize operation and minimize downtime.</li>
+					</ul>
+					<div class="fkButton" onclick="gotoWindmill()">
+						Enter
+					</div>
+				</div>
+				<div class="rightsection withAnimation" style="margin-top:50px;">
+					<!--
+					<div class="phoneCover" id="windmillPhone">
+						<img src="img/driverDB1.png" alt="" />
+						<img src="img/driverDB2.png" alt="" />
+						<img src="img/driverDB3.png" alt="" />
+					</div>
+					-->
+					<div class="monitorCover" id="windmillMonitor">
+						<img src="img/windMonitor1.png" alt="" />
+						<img src="img/windMonitor2.png" alt="" />
+					</div>
+					<!--
+					<img src="img/phone.png" class="phone" alt="" />
+					-->
+					<img src="img/monitor.png" class="monitor" alt="" />
+				</div>
+				<div class="spacer"></div>
+			</div>
+			<div class="boxWrapper" id="OilandGasSection" data-uta="true">
+				<div class="rightsection">
+					<h1>Oil and Gas</h1>
+					<h2>Your Meter Measurements at the snap of a photo.</h2>
+					<ul>
+						<li>Chart processing – Image-to-volume-reports in 1 minute.</li>
+						<li>Measurement data management - 10 times more efficient (all data sources).</li>
+						<li>Accessibility – Any device; phone, tablet, laptop.</li>
+						<li>Availability – Anywhere with web access; data plan or Wi-Fi.</li>
+					</ul>
+					<div class="fkButton" onclick="gotoOilAndGas()">
+						Enter
+					</div>
+				</div>
+				<div class="leftSection withAnimation" style="margin-top:50px;">
+					<div class="phoneCover" id="OGPhone">
+						<img src="img/OGmobile1.png" alt="" />
+						<img src="img/OGmobile2.png" alt="" />
+					</div>
+					<div class="monitorCover" id="OGMonitor">
+						<img src="img/OG1.png" alt="" />
+						<img src="img/OG2.png" alt="" />
+						<img src="img/OG3.png" alt="" />
+						<img src="img/OG5.png" alt="" />
+					</div>
+					<img src="img/pad.png" class="phone" alt="" />
+					<img src="img/monitor.png" class="monitor" alt="" />
+				</div>
+				<div class="spacer"></div>
+			</div>
+
+			<div class="boxWrapper" id="TruckingSection" data-uta="true">
+				<div class="leftSection">
+					<h1>Trucking</h1>
+					<h2>Everything you need in one spot.</h2>
+					<ul>
+						<li>BOL, IFTA, CSA, invoices, tracking: your business is at your fingertips with real-time access in the cloud.</li>
+						<li>We capture everything for you in one dashboard: generate reports, evaluate driver performance, monitor your business health, enhance operational efficiency.</li>
+						<li>Makes truck safety monitoring real time and systematic.</li>
+					</ul>
+					<div class="fkButton" onclick="gotoTrucking();">
+						Enter
+					</div>
+				</div>
+				<div class="rightsection withAnimation" style="margin-top:50px;">
+					<div class="phoneCover" id="truckingPhone">
+						<img src="img/driverDB1.png" alt="" />
+						<img src="img/driverDB2.png" alt="" />
+						<img src="img/driverDB3.png" alt="" />
+					</div>
+					<div class="monitorCover" id="truckingMonitor">
+						<img src="img/truckingDB1.png" alt="" />
+						<img src="img/truckingDB2.png" alt="" />
+						<img src="img/truckingDB3.png" alt="" />
+					</div>
+					<img src="img/phone.png" class="phone" alt="" />
+					<img src="img/monitor.png" class="monitor" alt="" />
+				</div>
+				<div class="spacer"></div>
+			</div>
+		</div>
+
+
+		<div class="boxWrapper" id="clients" data-uta="true">
+			<h3>Our Clients</h3>
+			<ul>
+				<li>
+						<img class="clientLogo" src="img/clients/texicanLogo.png">
+						<div class="clientMessage">
+							One of our great customers and we are happy to work with them.
+						</div>
+				</li>
+				<li>
+						<img class="clientLogo" src="img/clients/superiorLogo.png">
+						<div class="clientMessage">
+							One of our great customers and we are happy to work with them.
+						</div>
+				</li>
+				<li>
+						<img class="clientLogo" src="img/clients/temlogo.png">
+						<div class="clientMessage">
+							One of our great customers and we are happy to work with them.
+						</div>
+				</li>
+				<li>
+						<img class="clientLogo" src="img/clients/uesLogo.png">
+						<div class="clientMessage">
+							One of our great customers and we are happy to work with them.
+						</div>
+				</li>
+				<li>
+						<img class="clientLogo" src="img/clients/PeninsulaLogo.png">
+						<div class="clientMessage">
+							One of our great customers and we are happy to work with them.
+						</div>
+				</li>
+				<li>
+						<img class="clientLogo" src="img/clients/enlinkLogo.png">
+						<div class="clientMessage">
+							One of our great customers and we are happy to work with them.
+						</div>
+				</li>
+				<li>
+						<img class="clientLogo" src="img/clients/mansfieldLogo.png">
+						<div class="clientMessage">
+							One of our great customers and we are happy to work with them.
+						</div>
+				</li>
+				<li>
+						<img class="clientLogo" src="img/clients/blackcreek.png">
+						<div class="clientMessage">
+							One of our great customers and we are happy to work with them.
+						</div>
+				</li>
+			</ul>
+
+		</div>
+		<div id="contactInfo" data-uta="true" class="contactInfo supportContent">
+			<h1>REQUEST A DEMO</h1>
+			<div class="legend">
+				We will streamline your business process to increase your operational efficiency and your margins.
+			</div>
+			<div id="demoRequestForm" action="index.html" method="post">
+				<input id="contactFormName" tabindex="1" type="text" name="name" value="" placeholder="Name">
+				<textarea id="contactFormMessage" tabindex="4" name="name" placeholder="Message"></textarea>
+				<input id="contactFormEmail" tabindex="2" type="email" name="email" value="" placeholder="Email Address">
+				<input id="contactFormCompany" tabindex="3" type="text" name="company" value="" placeholder="Company">
+			</div>
+			<div id="contactFormSend" class="fkButton" onclick="contactForm()" style="clear:both; float:right; margin:10px 0 0 0;">
+				Send
+			</div>
+		</div>
+		<footer class="supportContent">
+			<div>
+				<div class="findOutMore">
+					<div class="findOutMore_section">
+						<h1>About</h1>
+						<p>
+							24 Greenway Plaza, Suite 1180<br>
+							Houston, TX 77046<br>
+							713.589.6850<br>
+							info@pantoninc.com
+						</p>
+					</div>
+					<div class="findOutMore_section" id="footerLinks"  data-uta="true">
+						<h1>Links</h1>
+						<p>
+							<a href="careers.html">Join us</a><br>
+						</p>
+					</div>
+					<div class="findOutMore_section">
+						<h1>Social</h1>
+						<p>
+							<a href="https://www.facebook.com/pantoninc/" target="_blank"><img src="img/facebookLogo.png" alt="Facebook" id="facebookLogo" data-uta="true" /></a>
+							<a href="https://twitter.com/pantoninc"target="_blank"><img src="img/tweiterLogo.png" alt="Twiter" id="twitterLogo" data-uta="true" /></a>
+							<a href="https://www.linkedin.com/company/panton-inc"target="_blank"><img src="img/linkedin.png" alt="LinkedIn" id="LinkedInLogo" data-uta="true" /></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="loginWrapper">
+			<div id="loginForm">
+				<h1>Log in</h1>
+				<div class="errorMessage">
+						The user name or password provided is incorrect.
+				</div>
+				<label for="">Username</label>
+				<input type="text" name="username" id="username" onkeyup="SubmitOnEnter(event)" value="" placeholder="username">
+				<label for="">Password</label>
+				<input type="password" name="password" id="password" onkeyup="SubmitOnEnter(event)" value="" placeholder="password">
+				<img src="img/qrcode.png" alt="" />
+				<button type="button" name="cancel" id="formsCancelButton" class="redButton">Cancel</button>
+				<button type="button" name="login" id="formsLoginButton" class="blueButton">Log in</button>
+			</div>
+		</div>
+		<div class="signatureBox">
+			© 2016 Copyright, Panton Incorporated. All Rights Reserved.
+		</div>
+		<script src="js/GEO_customScripts.js" charset="utf-8"></script>
+		<script src="js/GEO_pantonSearch.js" charset="utf-8"></script>
+		<script src="js/GEO_homepageAnimations.js" charset="utf-8"></script>
+		<script src="js/GEO_Report.js" charset="utf-8"></script>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-57454504-1', 'auto');
+		ga('send', 'pageview');
+
+		$('.animatedBanner').mouseover(function(){
+			/**
+			* Show the pause or play button
+			* only when the mouse os over the banner
+			*/
+			if(animatedBanner.isPaused == true){
+				// show play button
+				$('#playButton').css('top', '10%');
+			}else{
+				// show pause button
+				$('#pauseButton').css('top', '10%');
+			}
+			$('#playButton, #pauseButton').show();
+		}).mouseleave(function(){
+			// move buttons up and hide them
+			$('#playButton').css('top', '-50%');
+			$('#pauseButton').css('top', '-50%');
+			$('#playButton, #pauseButton').hide();
+		});
+
+		</script>
+	</body>
+</html>

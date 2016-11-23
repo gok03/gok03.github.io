@@ -1,0 +1,714 @@
+status: 200
+content-length: 53274
+x-xss-protection: 1; mode=block
+content-location: https://www.pkware.com/
+x-content-type-options: nosniff
+set-cookie: d05dccaa2dbf89dd494a06a66c66cb22=i5psuo2efkk39bri3mhfirc9m4; path=/;
+ domain=pkware.com; secure; HttpOnly
+expires: Wed, 17 Aug 2005 00:00:00 GMT
+vary: Accept-Encoding
+server: Apache
+last-modified: Mon, 17 Oct 2016 10:19:02 GMT
+etag: https://www.pkware.com/
+-varied-accept-encoding: gzip, deflate
+pragma: no-cache
+cache-control: no-transform
+date: Mon, 17 Oct 2016 11:34:44 GMT
+x-frame-options: SAMEORIGIN
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+<link href="https://www.pkware.com/" rel="canonical" />
+
+		<base href="https://www.pkware.com/" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Data security software from PKWARE secures data files at rest and in transit with passphrase or certificate-based encryption and cross-platform capability" />
+	
+	<title>PKWARE - Enterprise data encryption, reinvented.</title>
+	<link href="/feed/rss/" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="/feed/atom/" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" href="/media/com_finder/css/finder.css" type="text/css" />
+	<script src="/templates/pkware2/js/jui/jquery.min.js" type="text/javascript"></script>
+	<script src="/templates/pkware2/js/jui/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="/templates/pkware2/js/jui/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js" type="text/javascript"></script>
+	<script src="/templates/pkware2/js/jui/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.autocomplete.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
+jQuery(document).ready(function() {
+	var value, searchword = jQuery('#mod-finder-searchword');
+
+		// Set the input value if not already set.
+		if (!searchword.val())
+		{
+			searchword.val('Search ...');
+		}
+
+		// Get the current value.
+		value = searchword.val();
+
+		// If the current value equals the default value, clear it.
+		searchword.on('focus', function()
+		{	var el = jQuery(this);
+			if (el.val() === 'Search ...')
+			{
+				el.val('');
+			}
+		});
+
+		// If the current value is empty, set the previous value.
+		searchword.on('blur', function()
+		{	var el = jQuery(this);
+			if (!el.val())
+			{
+				el.val(value);
+			}
+		});
+
+		jQuery('#mod-finder-searchform').on('submit', function(e){
+			e.stopPropagation();
+			var advanced = jQuery('#mod-finder-advanced');
+			// Disable select boxes with no value selected.
+			if ( advanced.length)
+			{
+				advanced.find('select').each(function(index, el) {
+					var el = jQuery(el);
+					if(!el.val()){
+						el.attr('disabled', 'disabled');
+					}
+				});
+			}
+		});
+	var suggest = jQuery('#mod-finder-searchword').autocomplete({
+		serviceUrl: '/finder?Itemid=101&format=json&task=suggestions.suggest&tmpl=component',
+		paramName: 'q',
+		minChars: 1,
+		maxHeight: 400,
+		width: 300,
+		zIndex: 9999,
+		deferRequestBy: 500
+	});});
+	</script>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwIOVlFXGwIDXVJaAAgO"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!p){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function l(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:l,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a};return g}function i(){return new r}function a(){p=!0,u=l.backlog={}}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o(),p=!1;l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-995.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.ico?v=2" />
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="/images/favicon.ico?v=2" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favicons/favicon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicons/favicon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="/images/favicons/favicon-96x96.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/favicons/favicon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/images/favicons/favicon-128x128.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicons/favicon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicons/favicon-152x152.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="195x195" href="/images/favicons/favicon-195x195.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="228x228" href="/images/favicons/favicon-228x228.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/images/favicons/favicon-144.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="wPJzMoJxDxVCCOciF9RMbR5sksmNteHfCEg04hpddaU" />
+    <meta name="google-site-verification" content="PxFfJ8YZlX6zXw56sobyrnBgq4TKRhk_mmurQHdXmQw" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400italic|Montserrat:400,700|Raleway:400,100,200,300,500,600,700,800|Dancing+Script">
+	<link rel="stylesheet" href='/templates/pkware2/css/bootstrap.css'>
+	<link rel="stylesheet" href='/templates/pkware2/css/icons.css'>
+	<link rel="stylesheet" href='/templates/pkware2/css/typography.css'>
+	<link rel="stylesheet" href='/templates/pkware2/css/scrollbar.css'>
+	<link rel="stylesheet" href='/templates/pkware2/css/animate.css'>
+	<link rel="stylesheet" href='/templates/pkware2/cloudslider/css/cloudslider.css'>
+	<link rel="stylesheet" href='/templates/pkware2/cubeportfolio/css/cubeportfolio.css'>
+	<link rel="stylesheet" href='/templates/pkware2/nivo-lightbox/nivo-lightbox.css'>
+	<link rel="stylesheet" href='/templates/pkware2/nivo-lightbox/themes/default/default.css'>
+	<link rel="stylesheet" href='/templates/pkware2/css/click-hover-effects.css'>
+	<link rel="stylesheet" href='/templates/pkware2/owl-carousel/assets/owl.carousel.css'>
+	<link rel="stylesheet" href='/templates/pkware2/owl-carousel/assets/owl.theme.default.min.css'>
+	<link rel="stylesheet" href='/templates/pkware2/css/theme.css'>
+	<link rel="stylesheet" href='/templates/pkware2/css/color.css'>
+	<link rel="stylesheet" href='/templates/pkware2/css/custom.css'>
+	<script src='/templates/pkware2/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'></script>
+
+
+<!-- Google sitename markup-->
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "WebSite",
+  "name" : "PKWARE",
+    "url" : "https://www.pkware.com/"
+}
+</script>
+<!-- End of Google sitename markup-->
+
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WSVDLX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WSVDLX');</script>
+<!-- End Google Tag Manager -->
+	<!-- preloader START -->
+	<div class="preloader">
+		<div class="spinner-wrap">
+			<div class="spinner spinner-wave">
+				<div class="rect1"></div>
+				<div class="rect2"></div>
+				<div class="rect3"></div>
+				<div class="rect4"></div>
+				<div class="rect5"></div>
+			</div>
+		</div>
+	</div>
+	<!-- preloader END -->
+	<div id="ahem">
+		<div class="ahem-body">
+			<p>Your browser identified itself as a version of IE that was often shipped with default settings that were less than secure. Your internet experience could be made more secure by opening Internet Options in your browser, going to the Advanced tab and looking under the security settings for "Use TLS 1.1" and "Use TLS 1.2". Ensure these are turned on (checked). Doing so will enable your browser to support a higher quality of encryption on this and other websites. You will still be able to browse this site without turning on support for TLS 1.1 and 1.2, but we will have to use a lower level of encryption to accomodate you. <a href="http://superuser.com/questions/342148/why-are-some-use-tls-and-use-ssl-options-turned-off">See this question on Stack Exchange's Superuser forum</a> from 2011 for more details keeping in mind the comments about TLS 1.2 non-support were made many years ago, and things have changed since then.</p>
+			<p>If the support for better cryptography has been turned on for your browser, thank you, and you can safely ignore this advisory.</p>
+		</div>
+		<div class="ahem-tab">
+			<p>Browser Security Alert</p>
+		</div>
+	</div>
+	<!-- main navigation START -->
+	<nav class="navbar navbar-custom transparent-nav navbar-fixed-top mega-menu" role="navigation">
+		<div class="container">
+	
+			<!-- toggle group -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="/images/logos/pkware-dark.png" alt="PKWARE"></a>
+			</div>		
+		
+			<ul class="nav navbar-nav navbar-right search-cart">
+				<li class="dropdown search">
+					<a href="#" class="dropdown-toggle" role="button" aria-expanded="false"><i class="ion-ios-search-strong"></i></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="clearfix">
+						
+							<!-- search START -->
+													
+<form id="mod-finder-searchform" action="/full-search" method="get" class="form-search">
+	<div class="finder form-group">
+		<input type="text" name="q" id="mod-finder-searchword" class="form-control search-query input-sm" size="25" value="" placeholder="Enter Search Here" /><button class="btn btn-primary btn-sm  finder" type="submit" title="Go" placeholder="Search..."><i class="fa fa-search"></i></button>
+							</div>
+</form>
+
+													<!-- search END -->
+						
+						</li>
+					</ul>
+				</li>
+			</ul>
+	
+			<!-- nav toggle -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							
+<ul class="nav menu navbar-nav navbar-right">
+<li class="dropdown item-132 deeper parent"><a  class="disabled dropdown-toggle" data-toggle="dropdown"href="/products-overview">Products <span class="fa fa-chevron-down">&nbsp;</span></a><ul class="nav-child unstyled small dropdown-menu"><li class="dropdown item-133"><a  title="Smartctrypt"href="/smartcrypt">Smartcrypt Platform</a></li><li class="dropdown item-194"><a  class="menu-indent-1"href="/smartcrypt-application">Application</a></li><li class="dropdown item-196"><a  class="menu-indent-1"href="/smartcrypt-manager">Manager</a></li><li class="dropdown item-195"><a  class="menu-indent-1"href="/smartcrypt-sdk">SDK</a></li><li class="dropdown item-299"><a  class="menu-indent-1"href="/smartcrypt-tde">TDE</a></li><li class="dropdown item-197 divider"><span class="separator">Other Products</span>
+</li><li class="dropdown item-134"><a  class="menu-indent-1" title="SecureZIP"href="/securezip">SecureZIP</a></li><li class="dropdown item-135"><a  class="menu-indent-1" title="PKZIP"href="/pkzip">PKZIP</a></li><li class="dropdown item-136"><a  class="menu-indent-1" title="Free ZIP Reader"href="/zip-reader">ZIP Reader <span class="label label-info">FREE</span></a></li></ul></li><li class="dropdown item-137 deeper parent"><a  class="dropdown-toggle" data-toggle="dropdown" href="/Industry">Industry <span class="fa fa-chevron-down">&nbsp;</span></a><ul class="nav-child unstyled small dropdown-menu"><li class="dropdown item-138"><a  title="Financial"href="/financial">Financial</a></li><li class="dropdown item-139"><a  title="Healthcare"href="/healthcare">Healthcare</a></li><li class="dropdown item-140"><a  title="Government"href="/government">Government</a></li><li class="dropdown item-141"><a  title="retail"href="/retail">Retail</a></li><li class="dropdown item-142"><a  title="Manufacturing"href="/manufacturing">Manufacturing</a></li></ul></li><li class="dropdown item-143 deeper parent"><a  class="disabled dropdown-toggle" data-toggle="dropdown"href="/solutions">Solutions <span class="fa fa-chevron-down">&nbsp;</span></a><ul class="nav-child unstyled small dropdown-menu"><li class="dropdown item-144"><a  title="DLP" href="/solutions#solutionsdlp">DLP</a></li><li class="dropdown item-145"><a  title="Email" href="/solutions#solutionsemail">Email</a></li><li class="dropdown item-146"><a  title="Cloud" href="/solutions#solutionscloud">Cloud</a></li><li class="dropdown item-147"><a  title="Software as a Service" href="/solutions#solutionssaas">SaaS</a></li><li class="dropdown item-148"><a  title="Bring Your Own Device" href="/solutions#solutionsbyod">BYOD</a></li><li class="dropdown item-150"><a  title="Compliance" href="/solutions#solutionscomp">Compliance</a></li><li class="dropdown item-151"><a  title="Mainframe" href="/solutions#solutionsmain">Mainframe</a></li><li class="dropdown item-152"><a  title="Key Management" href="/solutions#solutionskey">Key Management</a></li></ul></li><li class="dropdown item-153 deeper parent"><a  class="dropdown-toggle" data-toggle="dropdown" href="#">Support <span class="fa fa-chevron-down">&nbsp;</span></a><ul class="nav-child unstyled small dropdown-menu"><li class="dropdown item-154"><a  title="Help Request"href="/support/help-request">Help Request</a></li><li class="dropdown item-155"><a  title="PKWARE Tech Support Center" href="https://support.pkware.com">Support Center</a></li><li class="dropdown item-156"><a  title="Product Updates" href="https://support.pkware.com/display/SC/Latest+Product+Updates">Product Updates</a></li></ul></li><li class="dropdown item-157 deeper parent"><a  class="dropdown-toggle" data-toggle="dropdown" href="#">Resources <span class="fa fa-chevron-down">&nbsp;</span></a><ul class="nav-child unstyled small dropdown-menu"><li class="dropdown item-158"><a  title="Blog"href="/blog/">Blog</a></li><li class="dropdown item-159"><a  title="PKWARE in the News"href="/in-the-news">PKWARE in the News</a></li><li class="dropdown item-160"><a  title="Press Releases"href="/list/press-releases/">Press Releases</a></li><li class="dropdown item-162"><a  title="Media Kit"href="/media-kit">Media Kit</a></li><li class="dropdown item-275"><a href="/events">Trade Shows &amp; Events</a></li><li class="dropdown item-198"><a href="/publications">Publications</a></li><li class="dropdown item-163"><a  title="Analyst Reports"href="/analyst-reports">Analyst Reports</a></li></ul></li></ul>
+
+						</div><!-- /.navbar-collapse -->
+		
+		</div><!-- /.container -->
+	</nav>
+	<!-- main navigation END -->
+	<div class="content">
+				<div id="system-message-container">
+	</div>
+
+	<div class="blog-featured" itemscope itemtype="https://schema.org/Blog">
+
+<div class="items-leading clearfix">
+			<div class="leading-0 clearfix" 
+			itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+			
+
+
+
+
+
+
+
+
+<!-- section START -->
+	<div id="constructionSlider" class="construction-slider">
+				
+		<!-- slide1 START -->
+		<div class="kr-sky" data-duration="12000" data-transition="14">
+			
+			<!-- Setting slide background -->
+        	<img class="sky-background" src="/images/slides/home/slide3.jpg" alt="" data-size="cover">
+			
+			<h1 class="kr-cloud slide-title light-color text-center"
+				style="top:220px; width:100%;"
+				data-transitionin="offsety:500;duration:1500;delay:900;easing:easeOutQuart;"
+				data-transitionout="offsety:-500; scaley:0.1; ">
+			Smartcrypt</h1>
+			
+			<p 	class="kr-cloud slide-sub-title light-color text-center"
+				style="top:310px; left:150px; width:900px;"
+				data-transitionin="offsety:500;duration:1500;delay:1200;easing:easeInOutExpo;"
+				data-transitionout="offsety:-500; scaley:0.1; ">
+			Enterprise data encryption, reinvented<br>Protect data everywhere it is used, shared, and stored</p>
+			
+			<p 	class="kr-cloud slide-sub-title text-center"
+				style="top:420px; width:100%;"
+				data-transitionin="offsety:500;duration:1500;delay:1400;easing:easeOutQuart;"
+				data-transitionout="offsety:500; scaley:0.1; ">
+				<a class="btn btn-info btn-lg nivo-lightbox cbutton cbutton--effect-ivana wow zoomIn" href="https://youtu.be/Ua61Nv4r7v0">Watch Video </a>
+				<a href="/smartcrypt" class="btn btn-info btn-lg" title="Lest Start">Learn More</a>
+			</p>
+			
+		</div>
+</div>
+<!-- section END -->
+
+<!-- trending posts START -->
+	<section class="sticky-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="news-sticky">
+						<div class="sticky-title bg-info">
+							Top Industry News
+						</div>
+						
+						<div id="carousel-example-generic" class="carousel slide news-sticky-slider" data-ride="carousel"> 	
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<div class="carousel-caption"><a href="https://fcw.com/articles/2016/10/04/usaf-cyber-campaign.aspx" target="_blank" title="Air Force cybersecurity campaign takes off">Air Force cybersecurity campaign takes off</a></div>
+								</div>
+								<div class="item">
+									<div class="carousel-caption"><a href="http://www.politico.com/story/2016/09/states-major-election-hacking-228978" target="_blank" title="More than 20 states have faced major election hacking attempts, DHS says">More than 20 states have faced major election hacking attempts, DHS says</a></div>
+								</div>
+								<div class="item"> 
+									<div class="carousel-caption"><a href="http://www.scmagazineuk.com/ncsc-will-be-based-in-the-nova-office-and-shopping-complex-near-victoria-station-in-london/article/526405/" target="_blank" title="National Cyber Security Centre HQ operational">National Cyber Security Centre HQ operational</a></div>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="fa fa-angle-left" aria-hidden="true"></span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="fa fa-angle-right" aria-hidden="true"></span>
+							</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- trending posts END -->
+
+
+<!-- section START -->
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+					<div class="section-header">
+						<!-- <small class="text-uppercase strong base-color">PKWARE IN THE NEWS</small> -->
+						<!-- <h1>Featured</h1> -->
+					</div>
+					<!-- <hr class="spacer-10"> -->
+				</div>
+			</div>
+			<div class="row">
+			<div class="col-sm-4">
+				
+					<div class="thumbnail style1">
+						<!-- <div class="thumb-wrapper">
+							<img src="/images/thumbnails/thumb13.jpg" alt="Thumbnail">
+						</div> -->
+						<div class="caption">
+							<h3><a href="http://www.forbes.com/sites/ianmorris/2016/06/30/expert-claims-isis-will-hack-trump-clinton-or-the-us-power-grid-this-year/#5e13b3257211" target="_blank" class="post-title" title="451 on PKWARE">Expert Claims ISIS Will Hack Trump, Clinton Or The US Power Grid This Year</a></h3>
+							<div class="post-meta">
+								<span class="post-category">Forbes</span>
+								<span class="post-date">30 June, 2016</span>
+							</div>
+							<p>Each year Pkware releases some predictions about what the next 12 months will hold for security....</p>
+							<a href="http://www.forbes.com/sites/ianmorris/2016/06/30/expert-claims-isis-will-hack-trump-clinton-or-the-us-power-grid-this-year/#5e13b3257211" target="_blank" class="btn btn-info btn-sm" title="Expert Claims ISIS Will Hack Trump, Clinton Or The US Power Grid This Year">Read Article</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-sm-4">
+				
+					<div class="thumbnail style1">
+						<!-- <div class="thumb-wrapper">
+							<img src="/images/thumbnails/thumb18.jpg" alt="Thumbnail">
+						</div> -->
+						<div class="caption">
+							<h3><a href="http://securitymedia.uberflip.com/i/721230-security-news-desk-issue-20/0" target="_blank" class="post-title" title="GDPR is coming up fast, are you ready?">GDPR is coming up fast, are you ready?</a></h3>
+							<div class="post-meta">
+								<span class="post-category">Security News Desk</span>
+								<span class="post-date">September 2016</span>
+							</div>
+							<p>General Data Protection Regulation (GDPR) or Regulation (EU) 2016/679, to give it its official reference, comes into force on 25th May 2018...</p>
+							<a href="http://securitymedia.uberflip.com/i/721230-security-news-desk-issue-20/0" target="_blank" class="btn btn-info btn-sm" title="Read 451 05FEB2016 PDF">Read PDF</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail style1">
+						<!-- <div class="thumb-wrapper">
+							<img src="/images/thumbnails/thumb17.jpg" alt="Thumbnail">
+						</div> -->
+						<div class="caption">
+							<h3><a href="https://www.gartner.com/doc/3371735?ref=SiteSearch&sthkw=hype%20cycle%20for%20data%20security&fnl=search&srcId=1-3478922254" target="_blank" class="post-title" title="Hype Cycle for Data Security, 2016">PKWARE discuss GDPR and the case for Smart Encryption</a></h3>
+							<div class="post-meta">
+								<span class="post-category">Security News Desk</span>
+								<span class="post-date">12 October, 2016</span>
+							</div>
+							<p>PKWARE reckons that the GDPR, which becomes an enforceable law in all EU countries in early 2018....</p>
+							<a href="http://www.securitynewsdesk.com/pkware-discuss-gdpr-and-the-case-for-smart-encryption/" target="_blank" class="btn btn-info btn-sm" title="Read Article">Read Article </a>
+						</div>
+					</div>
+					
+				</div>		
+			</div>
+		</div>
+	</section>
+<!-- section END -->
+
+<!-- section START -->
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-lg-12 section img-bg-color-overlay" data-path="images/bg/bg9.jpg" style="text-align: center">
+				
+					<!-- <div class="section-header text-center">
+					<h2 class="h1"><a href="https://www.pkware.com/events" style="text-decoration: none; color: #ffffff;">PKWARE EVENTS</h2>
+					<hr class="spacer-30"></div> -->
+
+				<div class="row vdivide">
+				    <div class="col-sm-4 stripe text-center"><h1>Secure World</h1>
+				      <p><b>October 18, 2016</b><br>America's Center - St. Louis, MO</p>
+				    <a href="https://www.secureworldexpo.com/st-louis/home" target="_blank" class="btn btn-primary">Visit Secure World</a></div>
+
+				    <div class="col-sm-4 stripe text-center"><h1>Data Connectors</h1>
+				     <p><b>October 20, 2016</b><br>Crowne Plaza - Memphis, TN </p>
+				    <a href="http://www.dataconnectors.com/event/memphis-thursday-10-20-2016/" target="_blank" class="btn btn-primary">Visit Data Connectors</a></div>
+
+				    <div class="col-sm-4 text-center"><h1>Secure World</h1>
+				    <p><b>October 27, 2016</b><br>San Jose Marriott - Bay Area</p>
+				    <a href="https://www.secureworldexpo.com/bay-area/home" target="_blank" class="btn btn-primary">Visit Data Connectors</a> </div>
+  				</div>
+			</div>
+				
+		</div>
+	</div>
+</section>
+<!-- section END -->
+
+<!-- section START -->
+<section class="section gray-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+			
+				<div class="section-header alt-style">
+					<h1 class="strong" style="padding-left: 22px;">35,000+ <br>Enterprise <br>Customers</h1>
+					<small class="base-color">PKWARE solutions are designed with our customers’ needs in mind—not around infrastructure or assets. The ultimate security solution should provide the security needed to protect data, while at the same time giving it the freedom to be responsive to business needs. Business growth is accelerated by allowing data to be readily accessed by authorized users while eliminating the traditional trade-off between security and business requirements. PKWARE is in the unique position to provide such a solution across all major computing platforms, serving both internal and external users of the data.</small>
+				</div>
+				
+				<hr class="spacer-10">
+
+				<div class="featured-clients">
+					<a title="6 of the TOP 10 Financial Services Companies"><img class="wow flipInX" data-wow-delay="0.5s" src="/images/clients/1.png" width="280" height="260" alt="Client Name"></a>
+					<a title="200+ Government Agencies"><img class="wow flipInX" data-wow-delay="0.7s" src="/images/clients/2.png" width="280" height="260" alt="Client Name"></a>
+					<a title="4 of the TOP 10 Retail Companies"><img class="wow flipInX" data-wow-delay="0.9s" src="/images/clients/3.png" width="280" height="260" alt="Client Name"></a>
+					<a title="5 of the TOP 10 Manufacturing Companies"><img class="wow flipInX" data-wow-delay="1.1s" src="/images/clients/4.png" width="280" height="260" alt="Client Name"></a>
+					<a title="10 of the TOP 20 Insurance Companies"><img class="wow flipInX" data-wow-delay="1.3s" src="/images/clients/5.png" width="280" height="260" alt="Client Name"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- section END -->	
+
+
+<!-- form section START -->
+<section id="home" class="agency-emailform horizontal-form-ae">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center">
+<section class="form-elements">
+<p class="slide-sub-title light-color wow fadeInUp" data-wow-delay="0.5">Sign up and be the first to get updates, news, product announcements, and more!</p>
+<h1 class="slide-title light-color wow fadeInUp" data-wow-delay="1s">EMAIL SIGN UP</h1>
+<div class="form-wrapper">
+  <form enctype="application/x-www-form-urlencoded" action="https://comm.pkware.com/index.php/leadCapture/save" id="mktoForm_1335" name="mktoForm_1335" method="post">
+<div class="row">
+<div class="col-md-3">
+<div class="form-group"><input id="FirstName" name="FirstName" class="form-control input-lg" required="" type="text" placeholder="Full Name" /></div>
+</div>
+<div class="col-md-3">
+<div class="form-group"><input id="Email" name="Email" class="form-control input-lg" required="" type="email" placeholder="Email address" /></div>
+</div>
+<div class="col-md-3">
+<div class="form-group"><input id="Company" name="Company" class="form-control input-lg" type="text" placeholder="Company" /></div>
+</div>
+<div class="col-md-3"><button class="btn btn-info btn-lg btn-block" type="submit">Subscribe Now</button></div>
+</div>
+  <input type="hidden" name="formid" value="1335">
+  <input type="hidden" name="lpId" value="5783">
+  <input type="hidden" name="subId" value="29">
+  <input type="hidden" name="munchkinId" value="374-JUR-656">
+  <input type="hidden" name="lpurl" value="//comm.pkware.com/email-subscribe.html?cr={creative}&kw={keyword}">
+  <input type="hidden" name="ret" value="https://www.pkware.com/thank-you-for-signing-up">
+  <input type="hidden" name="_mkt_disp" value="return">
+  <input type="hidden" name="cr" value>
+  <input type="hidden" name="kw" value>
+  <input type="hidden" name="q" value>
+</form></div>
+</section>
+<small class="form-disclaimer light-color"><strong>*</strong> We respect your privacy and will not sell or misuse your email address.</small></div>
+</div>
+</div>
+</section>
+<!-- form section END -->
+
+<!-- section START -->
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 text-center"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="icon-box style2">
+					<img src="/images/collateral/collateral1.jpg" alt="">
+					<hr class="spacer-5">
+						<h4 class="box-title strong">Case Studies</h4>
+						<p>When organizations face data security challenges, PKWARE has the right solutions.</p>
+						<a href="/publications#casestudies" class="btn btn-primary btn-sm" title="View Information">View Information <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon-box style2">
+					<img src="/images/collateral/collateral2.jpg" alt="">
+					<hr class="spacer-5">
+						<h4 class="box-title strong">Whitepapers</h4>
+						<p>In-depth analysis of data security issues, business trends, and emerging technology.</p>
+						<a href="/publications#whitepapers" class="btn btn-primary btn-sm" title="View Information">View Information <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon-box style2">
+					<img src="/images/collateral/collateral3.jpg" alt="">
+					<hr class="spacer-5">
+						<h4 class="box-title strong">Customer Success</h4>
+						<p>See how PKWARE’s innovative solutions are helping customers meet new challenges.</p>
+						<a href="/publications#customersuccess" class="btn btn-primary btn-sm" title="View Information">View Information <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon-box style2">
+					<img src="/images/collateral/collateral4.jpg" alt="">
+					<hr class="spacer-5">
+						<h4 class="box-title strong">Compliance</h4>
+						<p>Find out how PKWARE can help you meet government mandates and industry requirements.</p>
+						<a href="/publications#compliance" class="btn btn-primary btn-sm" title="View Information">View Information <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon-box style2">
+					<img src="/images/collateral/collateral5.jpg" alt="">
+					<hr class="spacer-5">
+						<h4 class="box-title strong">Data Sheets</h4>
+						<p>Technical specifications and other key info on Smartcrypt and other PKWARE solutions.</p>
+						<a href="/publications#datasheets" class="btn btn-primary btn-sm" title="View Information">View Information <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon-box style2">
+					<img src="/images/collateral/collateral6.jpg" alt="">
+					<hr class="spacer-5">
+						<h4 class="box-title strong">Product Overviews</h4>
+						<p>Learn more about PKWARE’s industry-leading data security and file management solutions.</p>
+						<a href="/publications#productoverviews" class="btn btn-primary btn-sm" title="View Information">View Information <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- section END -->
+
+
+<!-- section START -->
+<section>
+	<a class="info-box bg-success text-center no-margin wow flipInX" data-wow-delay="0.5s" href="/contact-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1">
+					<i class="livicon pull-right visible-lg" data-name="angle-double-right" data-color="#fff" data-hovercolor="false" data-size="36" data-onparent="true"></i>
+					<p class="h2">Want to learn more about the Smart Encryption Platform?</p>
+				</div>
+			</div>
+		</div>
+	</a>
+</section>
+<!-- section END -->	
+<!-- page content END -->
+
+
+
+		</div>
+			</div>
+
+
+
+</div>
+
+			
+
+	</div>
+	<footer class="footer">
+		<div class="container">
+					
+
+<div class="custom"  >
+	<div class="row">
+<div class="col-lg-4 col-sm-12">
+				<h4 class="strong">About PKWARE</h4>
+				<p>PKWARE protects the world's data with Smart Encryption software and solutions. In use by more than 35,000 businesses, PKWARE's easy-to-use security armors data itself and eliminates vulnerabilities wherever data is used, shared or stored.</p>
+				<a href="/contact-us" title="Contact Us" class="btn btn-info btn-icon contact-btn"><i class="livicon" data-name="mail" data-color="#fff" data-hovercolor="false" data-size="18"></i> Contact Us</a>
+			</div>
+<div class="col-lg-2 col-sm-4 col-lg-offset-2">
+<h4 class="strong">Newsroom</h4>
+<ul class="ft-list">
+<li><a href="/in-the-news">PKWARE In The News</a></li>
+<li><a href="/list/press-releases/">Press Releases</a></li>
+<li><a href="/media-kit">Media Kit</a></li>
+<li><a href="/analyst-reports">Analyst Reports</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-sm-4">
+<h4 class="strong">Resources</h4>
+<ul class="ft-list">
+<li><a title="Blog" href="/blog/">Blog</a></li>
+<li><a title="Store" href="/store/">Store</a></li>
+<li><a href="/publications">Publications</a></li>
+<li><li><a title="Solutions" href="/solutions">Solutions</a></li></li>
+</ul>
+</div>
+<div class="col-lg-2 col-sm-4">
+<h4 class="strong">About PKWARE</h4>
+<ul class="ft-list">
+<li><a title="Careers" href="/careers">Careers</a></li>
+<li><a title="Leadership" href="/leadership">Leadership</a></li>
+<li><a title="Partners" href="/partners">Partners</a></li>
+<li><a title="Contact" href="/contact-us">Contact</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div class="row">
+<div class="col-sm-8 hidden-xs">
+<ul class="list-inline">
+<li><a title="Legal" href="/legal">Legal</a></li>
+<li><a title="Privacy Policy" href="/privacy">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="col-sm-4"> 
+<div class="ft-social text-right">
+  <a class="cst-btn-ten" href="https://www.youtube.com/user/PKWAREinc" target="_blank"><i class="fa fa-youtube"> </i></a> 
+  <a class="cst-btn-ten" href="https://www.linkedin.com/company/pkware" target="_blank"><i class="fa fa-linkedin"> </i></a> 
+  <a class="cst-btn-ten" href="https://twitter.com/PKWARE" target="_blank"><i class="fa fa-twitter"> </i></a> 
+</div>
+</div></div>
+
+					<div class="row"
+				<div class="col-lg-12 col-sm-6">
+				<p class="copyright">©2016 PKWARE, Inc. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>jQuery.fn.modal || document.write('<script src="/templates/pkware2/js/vendor/bootstrap.js"><\/script>')</script>
+	<script src='/templates/pkware2/js/easing.js'></script>
+	<script src='/templates/pkware2/js/scrollbar.js'></script>
+<!-- 
+	<script src='/templates/pkware2/js/retina.js'></script>
+ -->
+	<script src='/templates/pkware2/js/raphael.js'></script>
+	<script src='/templates/pkware2/js/tabs.js'></script>
+	<script src='/templates/pkware2/js/livicons.js'></script>
+<!-- 
+	<script src='/templates/pkware2/js/icheck.js'></script>
+ -->
+	<script src='/templates/pkware2/js/jquery.checkable.min.js'></script>
+	<script src='/templates/pkware2/js/mousewheel.js'></script>
+	<script src='/templates/pkware2/js/selectik.js'></script>
+	<script src='/templates/pkware2/js/spinedit.js'></script>
+	<script src='/templates/pkware2/js/wow.js'></script>
+	<script src='/templates/pkware2/js/hover-dropdown.js'></script>
+	<script src='/templates/pkware2/js/classie.js'></script>
+	<script src='/templates/pkware2/cloudslider/js/cloudslider.jquery.min.js'></script>
+	<script src='/templates/pkware2/cubeportfolio/js/jquery.cubeportfolio.js'></script>
+	<script src='/templates/pkware2/nivo-lightbox/nivo-lightbox.min.js'></script>
+	<script src='/templates/pkware2/js/appear.js'></script>
+	<script src='/templates/pkware2/js/pie-chart.js'></script>
+	<script src='/templates/pkware2/js/vide.js'></script>
+	<script src='/templates/pkware2/js/fitvids.js'></script>
+	<script src='/templates/pkware2/owl-carousel/owl.carousel.min.js'></script>
+	<script src='/templates/pkware2/js/jflickrfeed.js'></script>
+	<script src='/templates/pkware2/js/tweecool.js'></script>
+	<script src='/templates/pkware2/js/chart.js'></script>
+	<script src='/templates/pkware2/js/totop.js'></script>
+<!-- 
+	<script src='/templates/pkware2/js/sm-scroll.js'></script>
+ -->
+	<script src='/templates/pkware2/js/smooth-scroll.js'></script>
+	<script src='/templates/pkware2/js/ajaxchimp.js'></script>
+	<script src='/templates/pkware2/js/contact.js'></script>
+	<script src='/templates/pkware2/js/form.js'></script>
+	<script src='/templates/pkware2/js/validate.js'></script>
+	<script src='/templates/pkware2/js/countdown.js'></script>
+	<script src='/templates/pkware2/js/tempo.js'></script>
+	<script src='/templates/pkware2/js/main.js'></script>
+    <script id="olark-wrapper" data-cfasync="false">window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('4829-387-10-4624');/*]]>*/</script><noscript><a href="https://www.olark.com/site/4829-387-10-4624/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+
+<noscript><strong>JavaScript is currently disabled.</strong>Please enable it for a better experience of <a href="http://2glux.com/projects/jumi">Jumi</a>.</noscript><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ce1557a9a0","applicationID":"13938799","transactionName":"ZQcBYxNYV0QAURJZC1xNNkUIFlBZBVceHhRaEg==","queueTime":0,"applicationTime":28,"atts":"SUACFVtCREo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

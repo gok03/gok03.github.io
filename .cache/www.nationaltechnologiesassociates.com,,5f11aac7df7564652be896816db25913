@@ -1,0 +1,250 @@
+status: 200
+content-length: 10154
+content-location: http://www.nationaltechnologiesassociates.com
+x-powered-by: ASP.NET
+accept-ranges: bytes
+server: Microsoft-IIS/7.5
+last-modified: Tue, 27 Sep 2016 23:43:22 GMT
+etag: "d0e415ef1819d21:0"
+date: Tue, 04 Oct 2016 09:25:19 GMT
+content-type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NTA > Home</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-ui.js" ></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		//fx interval: the rate at which animations fire 
+	$("#featured").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 3000, true); // this line is neccessary
+	$("#featured").hover( // these lines neccessary?
+	function() {
+	$("#featured").tabs("rotate",0,true); 
+	},
+	function() {
+	$("#featured").tabs("rotate",3000,true);
+	}
+	);
+});
+
+$(function() {
+$('.external_link').click(function() {
+	//Get the value of an attribute for the first element in the set of matched elements.
+	//The .attr() method gets the attribute value for only the first element in the matched set.
+	//data-accordion is the number of the accordion panel
+var dataAccordion = $(this).attr('data-accordion');
+//window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.
+//The location.href property returns the URL of the current page.
+//question mark in the URL specifies that anything coming after the question mark is what is called a "querystring"
+//This URL is telling the website to open up a page, and to load up the specific data and output results. 
+//It passes variables from a link into a script that produces output or stores the data in a database. 
+window.location.href = 'programs.html#'+ dataAccordion;
+return false;
+})
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper"> <!-- Begin wrapper --><!-- #BeginLibraryItem "/Library/header.lbi" --><div id="header"> <!-- Begin header -->
+      <a id="ntaLogo" href="index.html"><img src="images/ntaLogo.jpg" width="109" height="85" alt="NTA Logo" /></a>
+      <a id="ntaText" href="index.html">National Technologies Associates, Inc.</a>
+      <a id="linkedIn" target="_blank" href="https://www.linkedin.com/company/national-technologies-associates?trk=nmp_rec_act_company_name"><img src="images/linkedIn.png" width="25" height="25" alt="Linked In" /></a>
+      <a id="facebook" target="_blank" href="https://www.facebook.com/pages/National-Technologies-Associates-Inc/126892027366397"><img src="images/facebook.png" width="25" height="25" alt="Facebook" /></a>
+</div><!-- end header --><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/mainmenu.lbi" --><div id="menu"><!-- begin main menu -->
+<ul>
+<!-- Begin About Us Menu -->
+  <li style="width:100px;"><a href="about.html" class="parent_link">About Us</a>
+    <div class="dropdown_1column">
+       <div class="col_1">
+          <h1 class="dropdown_h1">About NTA</h1>
+          <a href="leadership.html">Leadership</a>
+          <a href="founders.html">Our Founders</a>
+          <a href="coreValues.html">Vision, Mission &amp; Values</a>
+       	</div>
+     </div><!-- End drop column -->
+  </li><!-- End About Us Menu -->  
+    
+<!-- Begin what We Do Menu -->  
+  <li style="width:120px;"><a href="whatWeDo.html" class="parent_link">What We Do</a>
+    <div class="dropdown_2columns" style="margin-left:100px;">
+      <div class="capabilities_col">
+      <h1 class="dropdown_h1">What We Do</h1>
+         <a href="programMgmt.html">Program Management, Analysis, and Support</a>
+         <a href="configMgmt.html">Configuration Management Support</a>
+         <a href="acquisition.html">Acquisition and Sustainment Logistics Support</a>
+         <a href="training.html">Technical Training</a>
+         <a href="production.html">Production Support</a>
+         <a href="productionEngineering.html">Production Engineering Support</a>
+         <a href="pbl.html">Performance Based Logistics</a>
+       </div>
+    </div><!-- End drop columns -->
+  </li><!-- End What We Do -->    
+  
+<!-- Begin Contracts Menu -->
+  <li style="width:100px;">
+  <a href="#" class="parent_link">Contracts</a>
+    <div style="width:400px;" class="dropdown_5columns">
+         
+      <div class="col_1"> 
+      <div class="columnImg">
+      <a href="seaport.html"><img style="padding-bottom:10px;" alt="SeaPort" src="images/seaportContract.jpg" /></a>
+      </div>
+         <a href="seaport.html"><h1 class="dropdown_h1">SeaPort Enhanced</h1></a>
+         <a href="seaport.html">NTA SeaPort POCs</a>
+         <a href="seaportTOs.html">Task Orders</a>
+         <a href="seaportFunctionalAreas.html">Functional Areas</a>
+         <a href="seaportCapabilities.html">Capabilities</a>
+         <a href="seaportContacts.html">Customer Contacts</a>
+         <a href="seaportTeam.html">Team Members</a>
+         <a href="seaportQA.html">Quality Assurance</a>
+      </div>
+            
+      <div class="col_1"> 
+      <div class="columnImg"> 
+      <a href="gsa.html"><img style="padding-bottom:10px;" alt="GSA" src="images/gsaContracts.jpg" /></a>
+         </div>
+         <a href="gsa.html"><h1 class="dropdown_h1">GSA</h1></a>
+         <a href="gsa.html">Professional Services<br /> Schedule (PSS) IT-70</a>
+      </div>
+	</div><!-- End 3 columns container -->
+  </li><!-- End Contracts Item -->
+  
+   <li style="width:180px;"><a href="quality.html" class="parent_link">Quality Management</a>
+    
+  <li style="width:70px;"><a href="news.html" class="parent_link">News</a></li>
+    
+  <li style="width:90px;"><a href="careers.html" class="parent_link">Careers</a>
+  
+  <div class="dropdown_1column" style="margin-left:570px;">
+      
+     <div class="col_1">
+         <h1 class="dropdown_h1">Join Us</h1>
+         <a href="culture.html">Our Culture</a>
+         <a href="careers.html">Job Listings</a>
+         <a href="benefits.html">Benefits</a>
+     </div>
+   </div><!-- End drop column -->
+   </li><!-- End Careers Item -->
+    
+  <li style="width:100px;"><a href="contact.html" class="parent_link">Contact Us</a></li>
+    
+   <li style="width:145px;"><a href="Intranet/employeeIntranet.html" class="parent_link">Employee Logon</a></li>
+    
+    </ul> 
+    
+</div><!-- end main menu --><!-- #EndLibraryItem --><div id="featured"><!-- begin image slider -->
+ 
+   	<!-- First Content -->
+	<div id="fragment-1" class="ui-tabs-panel">
+    	<div class="caption">
+    	<h1>F/A-18A-F and<br /> In-service Systems</h1>
+        <a href="programMgmt.html"><img src="images/learnMore-bt.png" width="126" height="37" alt="Learn More" /></a>
+    	</div>
+    
+    <img src="images/indexImages/image1.jpg" border="0" alt="Super Hornet" /></a>
+    
+	</div>
+
+	<!-- Second Content -->
+	<div id="fragment-2" class="ui-tabs-panel ui-tabs-hide">
+		<div class="caption">
+    	<h1>V-22<br />Osprey</h1>
+         <a href="acquisition.html"><img src="images/learnMore-bt.png" width="126" height="37" alt="Learn More" /></a>
+    	</div>
+   <img src="images/indexImages/image2.jpg" border="0" alt="" /></a>
+	</div>
+    
+    <!-- Third Content -->
+	<div id="fragment-3" class="ui-tabs-panel ui-tabs-hide">
+    <div class="caption">
+    	<h1>P-3C<br />Orion</h1>
+        <a href="pbl.html"><img src="images/learnMore-bt.png" width="126" height="37" alt="Learn More" /></a>
+   	  </div>
+	<img src="images/indexImages/image3.jpg" border="0" alt="" /></a>
+	</div>
+
+	<!-- Fourth Content -->
+	<div id="fragment-4" class="ui-tabs-panel ui-tabs-hide">
+    <div class="caption">
+    	<h1>MQ-8C<br />Fire Scout</h1>
+        <a href="training.html"><img src="images/learnMore-bt.png" width="126" height="37" alt="Learn More" /></a>
+   	  </div>
+	<img src="images/indexImages/image4.jpg" border="0" alt="" /></a>
+	</div>
+	
+	<!-- Fifth Content -->
+	<div id="fragment-5" class="ui-tabs-panel ui-tabs-hide">
+    <div class="caption">
+    	<h1>P-8<br />Poseidon</h1>
+        <a href="pbl.html"><img src="images/learnMore-bt.png" width="126" height="37" alt="Learn More" /></a>
+   	  </div>
+	<img src="images/indexImages/image5.jpg" border="0" alt="" /></a>
+	</div>
+    
+     <ul class="ui-tabs-nav" style="width:100px;">
+		<li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1">
+        	<a href="#fragment-1"></a>
+        </li>
+		<li class="ui-tabs-nav-item" id="nav-fragment-2">
+        	<a href="#fragment-2"></a>
+        </li>
+		<li class="ui-tabs-nav-item" id="nav-fragment-3">
+        	<a href="#fragment-3"></a>
+        </li>
+		<li class="ui-tabs-nav-item" id="nav-fragment-4">
+        	<a href="#fragment-4"></a>
+        </li>
+        <li class="ui-tabs-nav-item" id="nav-fragment-5">
+        	<a href="#fragment-5"></a>
+        </li>
+	</ul>
+    
+  </div> <!-- end image slider -->
+    
+  <div id="contracts">
+    	<div class="contracts-link contracts-left">
+         <a href="whatWeDo.html">
+         <h1>Our Capabilities</h1>
+        
+       
+       </a>
+        </div>
+     	<div class="contracts-link contracts-center"><a href="seaport.html" >
+        <h1>Seaport Enhanced</h1>
+        <h2>Naval Sea Systems Command</h2>
+         
+        </a>
+      </div>
+        <div class="contracts-link contracts-right"><a href="gsa.html" >
+        <h1>General Services<br />Administration</h1>
+        <h2 style="padding-top: 62px;">Contract Information</h2>
+       
+        </a>
+        </div>
+    </div> <!-- end contracts --><!-- #BeginLibraryItem "/Library/footer.lbi" --><div id="footer">
+    <hr/>	
+		<p>© 2016 NTA <span class="divider"></span>
+        <a href="index.html" class="footer_link">Home</a>
+        <span class="divider">|</span>
+        <a href="gsa.html" class="footer_link">GSA Contracts</a>
+        <span class="divider">|</span>
+        <a href="contact.html" class="footer_link">Contact Us</a>
+        <span class="divider">|</span>
+        <a href="news.html" class="footer_link">News</a></p>
+    
+    </div> <!-- end footer --><!-- #EndLibraryItem --></div> <!-- end wrapper -->
+
+
+
+</body>
+</html>

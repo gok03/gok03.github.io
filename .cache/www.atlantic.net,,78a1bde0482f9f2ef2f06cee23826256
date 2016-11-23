@@ -1,0 +1,68 @@
+status: 301
+content-type: text/html
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src 'self' *.disqus.com *.google.com
+ *.livechatinc.com *.atlantic.net *.addthis.com *.optimizely.com;
+ script-src 'self' 'unsafe-inline' 'unsafe-eval' *.disquscdn.com
+ https://ajax.cloudflare.com/cdn-cgi/
+ https://s3.amazonaws.com/cdn.knightlab.com/libs/timeline/latest/js/
+ *.twitter.com *.linkedin.com *.facebook.com *.api.twitter.com *.atlantic.net
+ *.iljmp.com *.addthis.com *.optimizely.com *.livechatinc.com
+ https://libs.a2zinc.net/Common/JS/10.6.0.0/a2zWidget.js *.woopra.com
+ *.googleapis.com *.clicky.com *.getclicky.com https://s.adroll.com
+ https://d.adroll.com https://www.google-analytics.com
+ https://www.googleadservices.com https://s.adroll.com/j/roundtrip.js
+ https://static.getclicky.com/js https://www.googletagmanager.com/
+ *.disqus.com https://a.disquscdn.com/embed.js
+ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js
+ https://www.google.com https://www.gstatic.com https://apis.google.com;
+ img-src 'self' data: https://t.co/ *.wikimedia.org *.kiosked.com
+ *.smartadserver.com *.lijit.com *.admaym.com *.pubmatic.com *.adtechus.com
+ *.swid.switchads.com *.gumgum.com *.doubleclick.net *.openx.net
+ *.disquscdn.com
+ https://a.disquscdn.com/next/embed/assets/img/loader-bg.83a51a23e5c47337475113016b8fb0de.png
+ https://s3.amazonaws.com/cdn.knightlab.com/libs/timeline/latest/css/ *.t.co
+ *.google.com *.googleapis.com *.addthis.com *.optimizely.com *.gstatic.com
+ *.getclicky.com *.googleusercontent.com *.livechatinc.com
+ https://secure.adnxs.com https://ads.yahoo.com https://x.bidswitch.net
+ https://ib.adnxs.com https://analytics.twitter.com https://idsync.rlcdn.com
+ https://d.adroll.com https://www.facebook.com
+ https://www.google-analytics.com/ https://stats.g.doubleclick.net/
+ https://googleads.g.doubleclick.net/ https://pixel.sitescout.com
+ https://ssl.gstatic.com *.gravatar.com *.disqus.com data *.disqus.com;
+ style-src 'self' 'unsafe-inline'
+ https://s3.amazonaws.com/cdn.knightlab.com/libs/timeline/latest/css/
+ *.google.com *.getclicky.com *.optimizely.com https://fonts.googleapis.com
+ https://a.disquscdn.com https://use.typekit.net/
+ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css
+ https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css
+ https://fonts.googleapis.com;
+ frame-src 'self' *.youtube.com *.addthis.com https://libs.a2zinc.net
+ *.optimizely.com http://status.atlantic.net *.livechatinc.com
+ https://www.google.com https://disqus.com;
+ font-src 'self' data: *.livechatinc.com *.googleusercontent.com
+ *.optimizely.com https://fonts.gstatic.com; object-src 'none'
+set-cookie: __cfduid=df79d3e0a37cca8431ad311d848f0d34d1476977422;
+ expires=Fri, 20-Oct-17 15:30:22 GMT; path=/; domain=.atlantic.net; HttpOnly
+strict-transport-security: max-age=31536000
+server: cloudflare-nginx
+connection: keep-alive
+-x-permanent-redirect-url: https://www.atlantic.net/
+public-key-pins: pin-sha256="klO23nT2ehFDXCfx3eHTDRESMz3asj1muO+4aIdjiuY=";
+ pin-sha256="633lt352PKRXbOwf4xSEa1M517scpD3l5f79xMD9r9Q="; max-age=2592000;
+ includeSubDomains
+location: https://www.atlantic.net/
+date: Thu, 20 Oct 2016 15:30:22 GMT
+cf-ray: 2f4d82bab4fd215c-EWR
+cf-railgun: direct (starting new WAN connection)
+x-frame-options: SAMEORIGIN
+content-location: http://www.atlantic.net
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

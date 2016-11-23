@@ -1,0 +1,307 @@
+status: 200
+content-length: 11410
+content-location: http://www.meptechnologies.com
+accept-ranges: bytes
+server: Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips DAV/2
+ mod_bwlimited/1.4 mod_fcgid/2.3.9
+last-modified: Mon, 12 Nov 2012 06:41:34 GMT
+etag: "12006f3-2c92-4ce4697a44380"
+date: Sun, 11 Sep 2016 10:10:57 GMT
+content-type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:: MEP Technologies - Home Page ::</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet"  href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.rcarousel.js"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+				function generatePages() {
+					var _total, i, _link;
+					
+					_total = $( "#carousel" ).rcarousel( "getTotalPages" );
+					
+					for ( i = 0; i < _total; i++ ) {
+						_link = $( "<a href='#'></a>" );
+						
+						$(_link)
+							.bind("click", {page: i},
+								function( event ) {
+									$( "#carousel" ).rcarousel( "goToPage", event.data.page );
+									event.preventDefault();
+								}
+							)
+							.addClass( "bullet off" )
+							.appendTo( "#pages" );
+					}
+					
+					// mark first page as active
+					$( "a:eq(0)", "#pages" )
+						.removeClass( "off" )
+						.addClass( "on" )
+						.css( "background-image", "url(images/page-on.png)" );
+
+				}
+
+				function pageLoaded( event, data ) {
+					$( "a.on", "#pages" )
+						.removeClass( "on" )
+						.css( "background-image", "url(images/page-off.png)" );
+
+					$( "a", "#pages" )
+						.eq( data.page )
+						.addClass( "on" )
+						.css( "background-image", "url(images/page-on.png)" );
+				}
+				
+				$("#carousel").rcarousel(
+					{
+						visible: 1,
+						step: 1,
+						speed: 700,
+						auto: {
+							enabled: true
+						},
+						width: 986,
+						height: 350,
+						start: generatePages,
+						pageLoaded: pageLoaded
+					}
+				);
+				
+				$( "#ui-carousel-next" )
+					.add( "#ui-carousel-prev" )
+					.add( ".bullet" )
+					.hover(
+						function() {
+							$( this ).css( "opacity", 0.7 );
+						},
+						function() {
+							$( this ).css( "opacity", 1.0 );
+						}
+					);
+			});
+		</script>
+</head>
+
+<body>
+<div class="brwnLine"></div>
+<div class="softline"></div>
+<div class="wrapperHole">
+
+    <div class="header">
+        
+        <ul class="navigation">
+        	<li class="firseNav"></li>
+            	<li class="navMenu" id="active"><a href="#">Home</a></li>
+            	<li class="navMenu"><a href="aboutus.html">About Us</a></li>
+            	<li class="navMenu"><a href="services.html">Services</a>
+                <ul class="drop">
+                <li><a href="services.html">Mechanical Design Service</a></li>
+                <li><a href="drafting.html">Mechanical Drafting</a></li>
+                <li><a href="staffing.html">Staffing & Recruitment</a></li>
+                </ul>
+                </li>
+            	<li class="navMenu"><a href="career.html">Careers</a>
+                <ul class="drop">
+                <li><a href="career.html">Our Culture</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="jobs.php">Jobs @ MEP</a></li>
+                </ul>
+                </li>
+            	<li class="navMenu"><a href="ourmission.html">Our Mission</a>
+                <ul class="drop">
+                <li><a href="ourmission.html">Our Values</a></li>
+                <li><a href="ourvision.html">Our Vision</a></li>
+                <li><a href="philosophy.html">Our Philosophy</a></li>
+                </ul>
+                </li>
+				<li class="navMenu"><a href="sitemap.html">Sitemap</a></li>
+            	<li class="navMenu"><a href="contactus.php">Contact Us</a></li>
+                <li class="navMenu1"><a href="http://email.meptechnologies.com" target="_blank">Staff Login</a></li>
+                
+            	
+            <li class="lastNav"></li>
+        </ul>
+    </div>
+    
+   <div class="clear"></div>	
+    
+    <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" />
+            </a>
+        </div>
+     
+     <div class="clear"></div>	
+     
+    <div class="sliderHolder">
+            <div id="container">
+                            <div id="carousel">
+                                <div id="slide01" class="slide">
+                                    <img src="images/slider1.png" />
+                                </div>
+                                
+                                <div id="slide02" class="slide">
+                                    <img src="images/slider2.png" />
+                                </div>
+                                
+                                <div id="slide03" class="slide">
+                                    <img src="images/slider3.png" />
+                                </div>
+                                
+                                <div id="slide04" class="slide">
+                                    <img src="images/slider4.png"/>
+                                </div>
+                                			
+                            </div>
+                            <a href="#" id="ui-carousel-next"><span>next</span></a>
+                            <a href="#" id="ui-carousel-prev"><span>prev</span></a>
+                            <div id="pages"></div>
+                        </div>    
+    </div>    
+	
+    <div class="dataPrt">
+        <div class="datasec">
+            <div class="dataHeader">
+                <span class="dbullet">
+                </span>
+                <h2 class="dataH2">Mechanical Design Services
+                </h2>
+                <div class="clear"></div>
+               
+                <p class="dataPara">
+                MEP Technologies Pvt. Ltd.,  provides high precision and exclusive Mechanical Design Services to clients across the globe. We provide Services in the following domains…
+                </p>
+                <a href="services.html"><input type="button"  class="readmore"/></a>
+            </div>
+        </div>
+        <div class="datasec">
+                <div class="dataHeader">
+                    <span class="dbullet">
+                    </span>
+                    <h2 class="dataH2">Staffing & Recruitment   
+                    </h2>
+                    <div class="clear"></div>
+                    
+                    <p class="dataPara">
+    Our goal in Recruitment & Staffing is to help with your employment needs. MEP Technologies Pvt. Ltd. recruits professionals for contract, contract-to-hire…                </p>
+                 <a href="staffing.html">  <input type="button"  class="readmore"/></a>
+                </div>
+            </div>   
+        
+			
+			<div class="datasec1">
+                <div class="dataHeader">
+                    <span class="dbullet">
+                    </span>
+                    <h2 class="dataH2">Contact US 
+                    </h2>
+                    <div class="clear"></div>
+                   
+                    <p class="dataPara">
+					MEP Technologies Pvt. Ltd.,<br />
+					‘2J’ Indira Enclave,<br />
+                    No.52, Narashiman Street,<br />
+					Nelsonmonickam Road,<br />
+					Aminjikarai,<br />
+					Chennai – 600029. India<br /></p>
+                    <table>
+                    <tr class="dataPara">
+                    <td><strong>Office:</strong></td>
+                    <td>+91 44 2374 6474</td>
+                   </tr>
+                   <tr class="dataPara">
+                   <td><strong>Mobile:</strong></td>
+		           <td> +91 94 4594 6474</td>
+                   </tr>
+                   <tr class="dataPara">
+                   <td><strong>E-mail:</strong></td>
+                   <td>Contact@meptechnologies.com</td>
+                   </table>
+
+                </div>
+            </div>
+			 
+        <div class="clear"></div>
+    </div>
+	
+	<div class="dataPrt ptbm">
+        <div class="datasec">
+            <div class="dataHeader">
+                <span class="dbullet">
+                </span>
+                <h2 class="dataH2">Mechanical Drafting
+                </h2>
+                <div class="clear"></div>
+               
+                <p class="dataPara">
+               MEP Technologies Pvt. Ltd., specializes in mechanical drafting services comprising of Simple 2D Drawing sets or complex detailing. Whether it is simple mec...
+                </p>
+                <a href="drafting.html"><input type="button"  class="readmore"/></a>
+            </div>
+        </div>
+        <div class="datasec">
+                <div class="dataHeader">
+                    <span class="dbullet">
+                    </span>
+                    <h2 class="dataH2">Our Mission	   
+                    </h2>
+                    <div class="clear"></div>
+                   
+                    <p class="dataPara">
+   We committed to achieve efficient services for our clients, partners and employees with our driving values Agility, Commitment, Determination and Integri...                </p>
+                    <a href="ourmission.html"><input type="button"  class="readmore"/></a>
+                </div>
+            </div>   
+            
+        <div class="datasec1">
+                <div class="dataHeader">
+                    <span class="dbullet">
+                    </span>
+                    <h2 class="dataH2">Google Map 
+                    </h2>
+                    <div class="clear"></div>
+                    
+                  <p class="dataPara">
+					<iframe width="300" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=205600754254705248505.0004c8c936f3f2eaa87d4&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=13.071912,80.220945&amp;spn=0.001568,0.003219&amp;z=17&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msid=205600754254705248505.0004c8c936f3f2eaa87d4&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=13.071912,80.220945&amp;spn=0.001568,0.003219&amp;z=17&amp;source=embed" target="_blank" style="color:#0000FF;text-align:left">MEP Technologies Pvt. Ltd.,</a> in a larger map</small>
+            </p>
+                    
+                </div>
+            </div>   
+        <div class="clear"></div>
+    </div>
+	
+    <div class="clear"></div>
+</div>
+<div class="mecBg">
+	<div class="reqAcote">
+    	<span class="reqBtn"><a href="contactus.php"><img src="images/reqacote.png" border="0" /></a> </span>    </div>
+</div>
+<div class="footerL1">
+	<div class="footerL2">
+    	<div class="footerL3">
+        	<div class="footerContent">
+            	<div class="footerStrip">
+                	<div class="footerCntnt">
+                    	<p class="copyRight">All Rights Reserved MEP Technologies Pvt Ltd © 2012</p>
+                        <ul class="social">
+                        	<li class="sclIcon"><a href="#"><img src="images/rss.png" /></a></li>
+                        	<li class="sclIcon"><a href="#"><img src="images/twitter.png" /></a></li>
+                        	<li class="sclIcon"><a href="#"><img src="images/facebook.png" /></a></li>
+                        	<li class="sclIcon"><a href="#"><img src="images/gooplus.png" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

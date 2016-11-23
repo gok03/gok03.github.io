@@ -1,0 +1,437 @@
+status: 200
+content-length: 10917
+content-location: https://www.aeroxchange.com/aexportal/
+set-cookie: JSESSIONID=541F2A303CC5F3DD725B953C1DA74A46; Path=/aexportal/;
+ HttpOnly
+vary: Accept-Encoding
+server: Apache-Coyote/1.1
+-content-encoding: gzip
+date: Wed, 21 Sep 2016 07:30:04 GMT
+content-type: text/html;charset=ISO-8859-1
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+		<title>
+			Aeroxchange
+		</title>
+        <link REL="SHORTCUT ICON" HREF="favicon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="description" content="Aeroxchange,Singapore Airlines" />
+		<meta name="keywords" content="Aeroxchange,Singapore Airlines" />
+
+        <link rel="stylesheet" type="text/css" media="all" href="csspath/n1768678083/bundles/mi_base.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="csspath/n1979450715/bundles/entry.css" />
+    	<link rel="stylesheet" type="text/css" media="all" href="csspath/n457011715/common/css/skins/dark.css" />
+      <!-- Slider code -->
+
+
+
+   <link rel="stylesheet" type="text/css" href="javascript/slider/themes/minimalist/jquery.slider.css" />
+  <!--[if IE 6]>
+  <link rel="stylesheet" type="text/css" href="javascript/slider/themes/default/jquery.slider.ie6.css" />
+  <![endif]-->
+
+  <script type="text/javascript" src="javascript/jquery.min.js"></script>
+   <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+  <script type="text/javascript" src="javascript/slider/jquery.slider.js"></script>
+<script type="text/javascript" src="tilex.js"></script>
+<script type="text/javascript">
+	function inIframe () {
+    	try {
+        	return window.self !== window.top;
+    	} catch (e) {
+        	return true;
+    	}
+	}
+	
+    $(document).ready(function($) {
+
+
+		$("#spinner").show();
+
+		$('iframe#corpiframe').load(function() {
+			$("#spinner").hide();
+		  	//$('#s5_header_area1').hide();
+  			//alert("the iframe has been loaded");
+		});
+	 $("#card-center-two").hide();
+	$("#card-center-three").hide();
+	$("#card-center-four").hide();
+	$("#card-center-five").hide();
+	$("#card-center-six").hide();
+	$("#card-center-seven").hide();
+
+	$("#card2").hide();
+	$("#card3").hide();
+	$("#card4").hide();
+	$("#card5").hide();
+	$("#card6").hide();
+	$("#card7").hide();
+
+	$("#text1").hide();
+$(".slider p").show();
+     $(".slider").slideshow({
+	  navigation   : false,
+	  selector        : true,
+	  pauseOnClick    : false,
+	  pauseOnHover    : false,
+	  control      : false,
+        width      : 920,
+        height     : 184,
+		delay      : 9500,
+        transition : 'Fade'
+      });
+
+tile();
+
+$('#sign-in').click(function(){
+
+	if($('#my-account-control').hasClass('widget-expanded')){
+	$.cookie('signin', 'collapsed');
+	}
+	else{
+	$.cookie('signin', 'expanded');
+	}
+//alert($.cookie('signin'));
+});
+
+var expandCollapse = $.cookie('signin');
+//alert(expandCollapse);
+if(expandCollapse == 'expanded'){
+$('#my-account-control').addClass('widget-expanded')
+$('#my-account-container').css({visibility: "visible"})
+document.getElementById('my-account-container').style.display='block';
+var widgetTop = $("#header").position().top+("50px");
+var widgetLeft= $('#my-account-control').is('a')?$('#my-account-control').parent().position().left:$('#my-account-control').position().left;
+$('#my-account-container').css("top",widgetTop);
+$('#my-account-container').css("left",widgetLeft);
+$(".my-account-control-title",".my-account-control-container").css("backgroundPosition","0 -87px");
+}
+if(expandCollapse == 'collapsed'){
+$('#my-account-control').removeClass('widget-expanded')
+$('#my-account-container').css({visibility: "hidden"})
+document.getElementById('my-account-container').style.display='none';
+}
+    });
+
+function ssoExit() {			     		
+	      $.ajax({
+	          url: '/cognos10/cgi-bin/cognos.cgi?b_action=xts.run&m=portal/logoff.xts&h_CAM_action=logoff',
+	          type: 'POST',
+	          dataType:"html",
+	          context: document.body,
+	          complete: function( jqXHR, textStatus ) {
+				deleteAllCookies();	          
+	          }
+	      }); 
+	}
+    function deleteAllCookies() {
+	    var cookies = document.cookie.split(";");
+	    for (var i = 0; i < cookies.length; i++) eraseCookie(cookies[i].split("=")[0]);
+    }
+    function createCookie(name,value,days) {
+        if (days) {
+        	var date = new Date();
+        	date.setTime(date.getTime()+(days*24*60*60*1000));
+        	var expires = "; expires="+date.toGMTString();
+        }
+        else var expires = "";
+        document.cookie = name+"="+value+expires+"; path=/";
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+	
+
+  </script>
+
+
+
+<style type="text/css">
+
+		.flash-card h2 {
+
+    margin-top: 0 !important;
+}
+		.transparent-colour{
+
+			font:  17px arial, helvetica, sans-serif;
+			font-weight:bold;
+			letter-spacing: -1px;
+			padding-top: 6px;
+			padding-bottom:10px;
+			margin-top:0px;
+			opacity: 0.8;
+			filter: alpha(opacity = 50); zoom:1;
+			}
+		h2 span{
+			background-color: #000000;
+			font:  16px/19px arial, helvetica, sans-serif;
+			letter-spacing: -1px;
+			padding-top: 6px;
+			padding-bottom:10px;
+			margin-top:5px;
+			width: 100%;
+			opacity: 0.8;
+			filter: alpha(opacity = 50); zoom:1;
+			}
+	    h2 span.spacer {
+              background: none repeat scroll 0 0 transparent;
+              padding: 0 2px;}
+	carousel-container1 {
+    float: left;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+.content_box {
+	margin-top:50px;
+	margin-left:0px
+	 }
+	.col_allw300 {
+	float: left;
+	margin-right: 0px;
+	width: 130px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.fp_service_box img {
+    float: left;
+    margin-right: 20px;
+}
+
+.img1 {
+    border: medium none;
+}
+.font-extra{
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight: normal;
+}
+.card-content-centre{
+	position: relative;
+	background-color: #000000;
+	letter-spacing: 0px;
+	opacity: 0.8;
+	filter: alpha(opacity = 50);
+	zoom:1;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-left: 12px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 218px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 13px;
+	text-align: left;
+}
+ .slider-movie-example
+  {
+    width:300px;
+    height:100%;
+    color: #000;
+    padding:10px;
+    position:absolute;
+    top:0;
+    left:20px;
+	font-family:"Arial", Gadget, sans-serif;
+	font-size:20px;
+	line-height:30px;
+	text-align: left;
+	letter-spacing:2px;
+  }
+  ul li.align3
+  {
+	  padding-bottom:5px;
+	  font-size:15px;
+  }
+#wrapper
+{
+ overflow:hidden;
+ width:920px;
+ height:185px;
+}
+.slider p
+{
+	display:none;
+}
+#page-container{
+    position: relative;
+}
+
+.spinner {
+	    position: fixed;
+	    top: 50%;
+	    left: 50%;
+	    margin-left: -50px; /* half width of the spinner gif */
+	    margin-top: -50px; /* half height of the spinner gif */
+	    text-align:center;
+	    z-index:1234;
+	    overflow: auto;
+	    width: 100px; /* width of the spinner gif */
+	    height: 102px; /*hight of the spinner gif +2px to fix IE8 issue */
+}
+
+
+		</style>
+
+</head>
+
+
+
+<body  id="homepage" class="page-grid-b" style="background-image: none">
+
+<div class="spinner" id="spinner" style="display: none;">
+<img id="img-spinner" alt="Loading" src="images/spinner.gif"/>
+</div>
+	
+
+
+<div id="page-container" style="width:1200px">
+
+
+<!--  These are variables to hold the hardcoded values passed from tiles configuration -->
+
+
+
+	<div id="header" style="margin-bottom:7px;">
+
+<a href="#layout-container" class="hidden-label">Skip Main Navigation</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="nav-container">
+<ul id="site-tools"> </ul>
+<br>
+<br>
+<a href="/aexportal/home.jsp" id="logo"><img src="/aexportal/images/logo.png"
+		alt="Aeroxchange" width="239" height="72" /> </a>
+<div id="loginform" class="fix-ie-z-index"
+	data-openaccountwidget="'false'">
+
+	<div id="errordiv" style="position:absolute;left: 430px;width: 150px;height: 100%">
+	
+	</div>
+
+	<div id="formdiv" style="position:absolute; left:580px">
+
+	<form name="userLoginForm" method="post" action="/aexportal/ProcessUserLogin.do;jsessionid=541F2A303CC5F3DD725B953C1DA74A46" id="userLoginForm">
+		<fieldset>
+			<input type="hidden" name="accountWidgetRequest" value="true" />
+
+			<table width="230px" border="0px" style="float:right">
+				<tr>
+					<td style="padding-top: 2px;padding-right: 8px">
+						<label for="my-account-userid" style="font-size: 11px;">
+							Login
+						</label>
+					</td>
+					<td style="padding-bottom: 5px;">
+                       <input type="password" style="display:none" autocomplete="off">					
+						<input type="text" name="loginName" maxlength="80" size="40" value="" style="border-color:#003366 ; border:thin solid" id="my-account-userid">
+					</td>
+					<td style="padding-top: 2px;padding-left: 15px; padding-right: 8px">
+						<label for="my-account-password" style="font-size: 11px;">
+							Password
+						</label>
+					</td>
+					<td style="padding-bottom: 10px;">
+						<!-- html:password name="userLoginForm" property="password"
+							styleId="my-account-password" maxlength="20" size="40"
+							style="border-color:#003366 ; border:thin solid" /-->
+                        <input type="password" name="password" maxlength="20" size="40" 
+                        value="" style="border-color:#003366 ; border:thin solid" id="my-account-password" autocomplete="off">
+							
+					</td>
+					<td style="padding-left: 25px">
+						<button name="btnAction" id="my-account-signin-button"
+							type="submit" value="Login" class="submit widget-button"
+							title="Sign In">
+							<em>Log In</em>
+						</button>
+
+					</td>
+				</tr>
+				
+				<tr>
+					<td >&nbsp;</td>
+					<td>
+						<a href="/aexportal/preLogin/ProcessRegistrationEmail.do" title="New member">Want
+						to be a member?</a>
+					</td>
+					
+					<td>&nbsp;</td>
+				
+					<td style="padding-top: 2px;padding-left: 15px; padding-right: 8px">
+						<a href="/aexportal/preLogin/ProcessForgotPasswordStep1.do"
+						title="Forgot password">Forgot password?</a>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				
+				
+			</table>
+
+		</fieldset>
+		<input type='hidden' name='csrftoken' value='null' >
+
+	</form>	
+</div>   
+</div>
+</div>
+
+
+
+  
+</div>
+<div id="layout-container" style="100%">
+
+	    <div id="layout-body-container" style="width:100%">
+
+
+          <div id="layout-body" style="width: 100%">
+
+
+
+					<iframe id="corpiframe" src="https://corp.aeroxchange.com/homepage-pull" width="100%" height="3300px" scrolling="no" align="left" marginheight="0" marginwidth="0" frameborder="0">
+
+					<!--<a href = "http://corp.aeroxchange.com"><img src="images/aex-mainpage.gif" /></a>-->
+
+			</div>
+
+	    </div>
+    </div>
+
+
+
+
+
+</div>
+
+<script type="text/javascript" src="jspath/n1137420894/bundles/milib.js" ></script>
+<script type="text/javascript" src="jspath/n1977143926/common/js/libs/plugins/jquery/mi.carousel.js" ></script>
+<script type="text/javascript" src="jspath/728443338/common/js/mi.entryPage.js" ></script>
+
+
+
+</body>
+
+</html>

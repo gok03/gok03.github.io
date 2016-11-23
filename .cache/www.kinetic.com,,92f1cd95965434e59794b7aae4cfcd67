@@ -1,0 +1,403 @@
+status: 200
+content-location: https://www.kinetic.com/
+x-powered-by: PleskLin
+server: nginx
+connection: keep-alive
+link: <https://www.kinetic.com/wp-json/>;
+ rel="https://api.w.org/", <https://www.kinetic.com/>; rel=shortlink
+date: Sun, 11 Sep 2016 10:36:59 GMT
+content-type: text/html; charset=UTF-8
+
+<!DOCTYPE HTML>
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-US" class="no-js"> <!--<![endif]-->
+<head>
+<meta name="google-site-verification" content="Nbi812ZZrQJSKBwPkIZQRpQ7wOMtCA-dsny88g1sag4" />
+<meta name="google-site-verification" content="FcaJQaWEDEk4fdXlZJupAACYCtB_3QMxmCCLp4TeNO4" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<title>Birmingham Web Design, Development, &amp; Marketing - Kinetic Communications</title>
+<meta name="apple-mobile-web-app-title" content="Kinetic">
+
+<link rel="Shortcut Icon" href="https://www.kinetic.com/wp-content/themes/kinetic/style/images/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://www.kinetic.com/wp-content/themes/kinetic/style/images/apple-touch-icon.png"/>
+
+<meta property="og:image" content="https://www.kinetic.com/images/kinetic-social-media-2.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+<link href='//fonts.googleapis.com/css?family=Abel|Anton' rel='stylesheet' type='text/css' />
+<link rel="pingback" href="https://www.kinetic.com/xmlrpc.php" />
+
+
+
+<!-- All in One SEO Pack 2.3.6.1 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<meta name="description" itemprop="description" content="Since 1995, Kinetic has been helping organizations understand and apply the latest technologies to become more competitive." />
+
+<meta name="keywords" itemprop="keywords" content="Kinetic, Kinetic Communications, Kinetic design, internet, multimedia, e-commerce, electronic commerce, web marketing, web advertising, Birmingham, Alabama, Jay Brandrup, consulting, marketing, training, advertising, graphics, graphic artists, HTML, HTML programming, web consulting, search engine, registration, optimization, SEO, digital, video, video production, content designer, creator, interactive, CD, CD-ROM, enhanced CD, kiosk, business presentations, media 100, interdev, IIS, visual studio, .net, active server pages, asp, cgi, perl, java, javascript, scripting, linux, qtime, quicktime, qt, qtvr, quicktime vr, latest, technology, technologies, database, connectivity, ODBC" />
+
+<link rel="canonical" href="https://www.kinetic.com/" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Kinetic Communications &raquo; Feed" href="https://www.kinetic.com/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/www.kinetic.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.4"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='shadowbox-css-css'  href='https://www.kinetic.com/wp-content/uploads/shadowbox-js/src/shadowbox.css?ver=3.0.3' type='text/css' media='screen' />
+<link rel='stylesheet' id='shadowbox-extras-css'  href='https://www.kinetic.com/wp-content/plugins/shadowbox-js/css/extras.css?ver=3.0.3.10' type='text/css' media='screen' />
+<link rel='stylesheet' id='gss_css-css'  href='https://www.kinetic.com/wp-content/plugins/gallery-slideshow/gss.css?ver=4.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='screen-css-css'  href='https://www.kinetic.com/wp-content/themes/kinetic/style/css/screen.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='thickbox-css-css'  href='https://www.kinetic.com/wp-content/themes/kinetic/style/css/thickbox.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='print-css-css'  href='https://www.kinetic.com/wp-content/themes/kinetic/style/css/print.css' type='text/css' media='print' />
+<link rel='stylesheet' id='kbox-css-css'  href='https://www.kinetic.com/wp-content/themes/kinetic/style/css/kbox.css' type='text/css' media='screen' />
+      <script>
+      if (document.location.protocol != "https:") {
+          document.location = document.URL.replace(/^http:/i, "https:");
+      }
+      </script>
+      <script type='text/javascript' src='https://www.kinetic.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/plugins/gallery-slideshow/jquery.cycle2.min.js?ver=2.1.3'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/plugins/gallery-slideshow/jquery.cycle2.center.min.js?ver=v20140128'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/plugins/gallery-slideshow/jquery.cycle2.carousel.min.js?ver=v20140114'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/plugins/gallery-slideshow/gss.js?ver=4.5.4'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.4.9'></script>
+<link rel='https://api.w.org/' href='https://www.kinetic.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.kinetic.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.kinetic.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://www.kinetic.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.kinetic.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kinetic.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.kinetic.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kinetic.com%2F&#038;format=xml" />
+<!-- <meta name="NextGEN" version="2.1.46" /> -->
+
+
+<!-- Plugin: Open external links a new window. Plugin by Kristian Risager Larsen, http://kristianrisagerlarsen.dk . Download it at http://wordpress.org/extend/plugins/open-external-links-in-a-new-window/ -->
+<script type="text/javascript">//<![CDATA[
+	function external_links_in_new_windows_loop() {
+		if (!document.links) {
+			document.links = document.getElementsByTagName('a');
+		}
+		var change_link = false;
+		var force = '';
+		var ignore = 'http://www.youtube.com/v/LFQbdZE_x2c, http://www.reverbnation.com/KipTraylor';
+
+		for (var t=0; t<document.links.length; t++) {
+			var all_links = document.links[t];
+			change_link = false;
+			
+			if(document.links[t].hasAttribute('onClick') == false) {
+				// forced if the address starts with http (or also https), but does not link to the current domain
+				if(all_links.href.search(/^http/) != -1 && all_links.href.search('www.kinetic.com') == -1) {
+					// alert('Changeda '+all_links.href);
+					change_link = true;
+				}
+					
+				if(force != '' && all_links.href.search(force) != -1) {
+					// forced
+					// alert('force '+all_links.href);
+					change_link = true;
+				}
+				
+				if(ignore != '' && all_links.href.search(ignore) != -1) {
+					// alert('ignore '+all_links.href);
+					// ignored
+					change_link = false;
+				}
+
+				if(change_link == true) {
+					// alert('Changed '+all_links.href);
+					document.links[t].setAttribute('onClick', 'javascript:window.open(\''+all_links.href+'\'); return false;');
+					document.links[t].removeAttribute('target');
+				}
+			}
+		}
+	}
+	
+	// Load
+	function external_links_in_new_windows_load(func)
+	{	
+		var oldonload = window.onload;
+		if (typeof window.onload != 'function'){
+			window.onload = func;
+		} else {
+			window.onload = function(){
+				oldonload();
+				func();
+			}
+		}
+	}
+
+	external_links_in_new_windows_load(external_links_in_new_windows_loop);
+	//]]></script>
+
+<!-- Google Analytics Tracking by Google Analyticator 6.4.9: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = [''];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-427213-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<!--[if lte IE 8]>
+<link href="https://www.kinetic.com/wp-content/themes/kinetic/style/css/screen-ie.css" type="text/css" rel="stylesheet" media="screen" />
+<![endif]-->
+
+</head>
+<body class="home page page-id-458 page-template page-template-static page-template-static-php">
+<div id="wrap">
+    <header>
+    	<div id="header-wrap">
+    	<h1><a href="https://www.kinetic.com"><img src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/logo.png" alt="Kinetic Communications Logo"  class="print-hide"/></a><img src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/print-logo.png" alt="Kinetic Communications Logo"  class="print-show"/></h1>
+        <nav>
+			<div class="menu-main-navigation-container"><ul id="menu-main-navigation" class="menu"><li id="menu-item-461" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-461"><a title="Home" href="https://www.kinetic.com/">Home</a></li>
+<li id="menu-item-465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-465"><a title="The Company" href="https://www.kinetic.com/the-company/">The Company</a></li>
+<li id="menu-item-466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-466"><a title="The Services" href="https://www.kinetic.com/the-services/">The Services</a></li>
+<li id="menu-item-467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-467"><a title="The Work" href="https://www.kinetic.com/the-work">The Work</a></li>
+<li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"><a title="Channel K" href="https://www.kinetic.com/channel-k/">Channel K</a></li>
+<li id="menu-item-464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-464"><a title="Contact Us" href="https://www.kinetic.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-463"><a title="Client Extranet" href="https://www.kinetic.com/client-extranet/">Client Extranet</a></li>
+</ul></div>        </nav>
+        </div>
+    </header>
+	<div class="tiny-phone-wrapper">
+		<a href ="http://screen.yahoo.com/chris-kattan-snl-skits/jeffreys-1-000000370.html">
+			<img src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/will-ferrell-tiny-phone.jpg" alt="Will Ferrell Image" />
+		</a>
+		<h4>"Check out my tiny phone!"<br /><br />
+                    You must be testing the responsiveness of our site, since nobody has a screen this small. Enjoy!</h4>
+	</div>
+	<div class="print-show home-header-print"><img width="auto" height="200" src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/home-rotators/interior-rotators/rotator-21.jpg" class="attachment-home-page-slider wp-post-image" alt="rotator-21" /></div>
+	<div id="rotator-wrap">
+    	<section id="rotator">
+            <div id="featured">
+            	<ul class="rotator-slideshow">	
+					<li><a href = ".../holiday-images/"><img width="1210" height="416" src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/home-rotators/holiday-rotators/rotator-holiday-12.jpg" class="attachment-home-page-slider wp-post-image" alt="rotator-image"></a></li>
+				<li><a><img width="1210" height="416" src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/home-rotators/interior-rotators/rotator-21.jpg" class="attachment-home-page-slider wp-post-image" alt="rotator-21" /></a></li>
+				<li><a><img width="1210" height="416" src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/home-rotators/interior-rotators/rotator-22.jpg" class="attachment-home-page-slider wp-post-image" alt="rotator-22" /></a></li>
+				<li><a><img width="1210" height="416" src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/home-rotators/interior-rotators/rotator-19.jpg" class="attachment-home-page-slider wp-post-image" alt="rotator-19" /></a></li>
+				<li><a><img width="1210" height="416" src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/home-rotators/interior-rotators/rotator-15.jpg" class="attachment-home-page-slider wp-post-image" alt="rotator-15" /></a></li>
+				<li><a><img width="1210" height="416" src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/home-rotators/interior-rotators/rotator-17.jpg" class="attachment-home-page-slider wp-post-image" alt="rotator-17" /></a></li>
+				<li><a><img width="1210" height="416" src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/home-rotators/interior-rotators/rotator-18.jpg" class="attachment-home-page-slider wp-post-image" alt="rotator-18" /></a></li>
+               
+		                </ul>
+            <div id="description-wrap">
+                <div class="description rotator-slideshow">
+					<div class="description-text">
+						<h3>helping companies understand and apply the latest Internet technologies</h3>
+<p>From fresh, visually appealing <a href="https://www.kinetic.com/the-services/website-design-development/" title="Web Design &amp; Development"> web design</a> and custom <a href="https://www.kinetic.com/the-services/application-development/" title="Application Development">application development</a> to <a href="https://www.kinetic.com/the-services/search-engine-optimization-seo/" title="Search Engine Optimization">search engine optimization</a> and <a href="https://www.kinetic.com/the-services/traffic-analysis-analytics/" title="Traffic Analysis &amp; Analytics">advanced analytics</a>, we help clients compete. <span class="slider-last-sentence"> Learn about <a href="https://www.kinetic.com/the-services/" title="The Services">our services</a>, check out <a href="https://www.kinetic.com/the-work/" title="The Work">our work</a>, peek into <a href="https://www.kinetic.com/the-company/virtual-tour/" title="The Tour">our workspace</a> and <a href="https://www.kinetic.com/contact-us/" title="Contact Us">give us a call</a>. </span>
+						</p><br />
+					</div>
+					<div class="description-text">
+						<h3>helping companies understand and apply the latest Internet technologies</h3>
+<p>From fresh, visually appealing <a href="https://www.kinetic.com/the-services/website-design-development/" title="Web Design &amp; Development"> web design</a> and custom <a href="https://www.kinetic.com/the-services/application-development/" title="Application Development">application development</a> to <a href="https://www.kinetic.com/the-services/search-engine-optimization-seo/" title="Search Engine Optimization">search engine optimization</a> and <a href="https://www.kinetic.com/the-services/traffic-analysis-analytics/" title="Traffic Analysis &amp; Analytics">advanced analytics</a>, we help clients compete.<span class="slider-last-sentence"> Learn about <a href="https://www.kinetic.com/the-services/" title="The Services">our services</a>, check out <a href="https://www.kinetic.com/the-work/" title="The Work">our work</a>, peek into <a href="https://www.kinetic.com/the-company/virtual-tour/" title="The Tour">our workspace</a> and <a href="https://www.kinetic.com/contact-us/" title="Contact Us">give us a call</a>. </span>
+						</p><br />
+					</div>
+					<div class="description-text">
+						<h3>helping companies understand and apply the latest Internet technologies</h3>
+<p>From fresh, visually appealing <a href="https://www.kinetic.com/the-services/website-design-development/" title="Web Design &amp; Development"> web design</a> and custom <a href="https://www.kinetic.com/the-services/application-development/" title="Application Development">application development</a> to <a href="https://www.kinetic.com/the-services/search-engine-optimization-seo/" title="Search Engine Optimization">search engine optimization</a> and <a href="https://www.kinetic.com/the-services/traffic-analysis-analytics/" title="Traffic Analysis &amp; Analytics">advanced analytics</a>, we help clients compete. <span class="slider-last-sentence"> Learn about <a href="https://www.kinetic.com/the-services/" title="The Services">our services</a>, check out <a href="https://www.kinetic.com/the-work/" title="The Work">our work</a>, peek into <a href="https://www.kinetic.com/the-company/virtual-tour/" title="The Tour">our workspace</a> and <a href="https://www.kinetic.com/contact-us/" title="Contact Us">give us a call</a>. </span>
+						</p><br />
+					</div>
+					<div class="description-text">
+						<h3>helping companies understand and apply the latest Internet technologies</h3>
+<p>From fresh, visually appealing <a href="https://www.kinetic.com/the-services/website-design-development/" title="Web Design &amp; Development"> web design</a> and custom <a href="https://www.kinetic.com/the-services/application-development/" title="Application Development">application development</a> to <a href="https://www.kinetic.com/the-services/search-engine-optimization-seo/" title="Search Engine Optimization">search engine optimization</a> and <a href="https://www.kinetic.com/the-services/traffic-analysis-analytics/" title="Traffic Analysis &amp; Analytics">advanced analytics</a>, we help clients compete. <span class="slider-last-sentence"> Learn about <a href="https://www.kinetic.com/the-services/" title="The Services">our services</a>, check out <a href="https://www.kinetic.com/the-work/" title="The Work">our work</a>, peek into <a href="https://www.kinetic.com/the-company/virtual-tour/" title="The Tour">our workspace</a> and <a href="https://www.kinetic.com/contact-us/" title="Contact Us">give us a call</a>. </span>
+						</p><br />
+					</div>
+					<div class="description-text">
+						<h3>helping companies understand and apply the latest Internet technologies</h3>
+<p>From fresh, visually appealing <a href="https://www.kinetic.com/the-services/website-design-development/" title="Web Design & Development"> web design</a> and custom <a href="https://www.kinetic.com/the-services/application-development/" title="Application Development">application development</a> to <a href="https://www.kinetic.com/the-services/search-engine-optimization-seo/" title="Search Engine Optimization">search engine optimization</a> and <a href="https://www.kinetic.com/the-services/traffic-analysis-analytics/" title="Traffic Analysis & Analytics">advanced analytics</a>, we help clients compete. <span class="slider-last-sentence"> Learn about <a href="https://www.kinetic.com/the-services/" title="The Services">our services</a>, check out <a href="https://www.kinetic.com/the-work/" title="The Work">our work</a>, peek into <a href="https://www.kinetic.com/the-company/virtual-tour/" title="The Tour">our workspace</a> and <a href="https://www.kinetic.com/contact-us/" title="Contact Us">give us a call</a>. </span>
+						</p><br />
+					</div>
+					<div class="description-text">
+						<h3>helping companies understand and apply the latest Internet technologies</h3>
+<p>From fresh, visually appealing <a href="https://www.kinetic.com/the-services/website-design-development/" title="Web Design & Development"> web design</a> and custom <a href="https://www.kinetic.com/the-services/application-development/" title="Application Development">application development</a> to <a href="https://www.kinetic.com/the-services/search-engine-optimization-seo/" title="Search Engine Optimization">search engine optimization</a> and <a href="https://www.kinetic.com/the-services/traffic-analysis-analytics/" title="Traffic Analysis & Analytics">advanced analytics</a>, we help clients compete. <span class="slider-last-sentence"> Learn about <a href="https://www.kinetic.com/the-services/" title="The Services">our services</a>, check out <a href="https://www.kinetic.com/the-work/" title="The Work">our work</a>, peek into <a href="https://www.kinetic.com/the-company/virtual-tour/" title="The Tour">our workspace</a> and <a href="https://www.kinetic.com/contact-us/" title="Contact Us">give us a call</a>. </span>
+						</p><br />
+					</div>
+					<div class="description-text">
+						<h3>helping companies understand and apply the latest Internet technologies</h3>
+<p>From fresh, visually appealing <a href="https://www.kinetic.com/the-services/website-design-development/" title="Web Design & Development"> web design</a> and custom <a href="https://www.kinetic.com/the-services/application-development/" title="Application Development">application development</a> to <a href="https://www.kinetic.com/the-services/search-engine-optimization-seo/" title="Search Engine Optimization">search engine optimization</a> and <a href="https://www.kinetic.com/the-services/traffic-analysis-analytics/" title="Traffic Analysis & Analytics">advanced analytics</a>, we help clients compete. <span class="slider-last-sentence"> Learn about <a href="https://www.kinetic.com/the-services/" title="The Services">our services</a>, check out <a href="https://www.kinetic.com/the-work/" title="The Work">our work</a>, peek into <a href="https://www.kinetic.com/the-company/virtual-tour/" title="The Tour">our workspace</a> and <a href="https://www.kinetic.com/contact-us/" title="Contact Us">give us a call</a>. </span>
+						</p><br />
+					</div>
+                </div>
+            </div>
+            </div>
+            <div id="controls">
+            	<div class="next">
+                    <a id="next" href="#"></a>
+                </div>
+                <div class="prev">
+                    <a id="prev" href="#"></a>
+                </div>
+            </div>
+            <div id="pager">
+            	<div id="pager-bkgd"></div>
+                <div id="pager-dots"></div>
+            </div>
+		</section>
+    </div>
+	
+
+	
+    <div id="home-content">
+   	  <section id="content">
+        	<div id="overview">
+		            </div>
+        <div id="magnets">
+        	<div id="magnet-01">
+						<a href="http://www.kineticcup.com/"><img src="https://www.kinetic.com/wp-content/uploads/kinetic-cup-magnet.png" alt="Magnet 01" width="100" height="100" /></a><h3><a href="http://www.kineticcup.com/">2016 Kinetic Cup</a></h3><p>The Kinetic Cup is back! Swing by our office this month and try to qualify with your best score. The top 16 scores will make the cut and play for the trophy. Whether you're a golfer or a spectator, come over and enjoy an afternoon at our annual rooftop golf tournament on Oct. 6th.</p><p class="learn-more"><a href="http://www.kineticcup.com/">Get the Details</a></p>			
+            </div>
+           	<div id="magnet-02">
+						<a href="https://www.kinetic.com/the-company/virtual-tour/"><img src="https://www.kinetic.com/wp-content/uploads/most_admired.jpg" alt="Magnet 01" width="100" height="100" /></a><h3><a href="https://www.kinetic.com/the-company/virtual-tour/">Thanks, y'all!</a></h3><p>We’ve sure been flattered by the response to both our work and our workspace these past few years. We've been honored to be recognized for everything from being named one of the <a href="http://www.bizjournals.com/birmingham">BBJ</a>'s Most Admired Companies to being voted  <a href="https://www.facebook.com/photo.php?fbid=10151756890700688&set=a.10151755280165688.1073741827.59057835687&type=1&theater">Birmingham’s #CoolestOfficeSpace</a>. </p><p class="learn-more"><a href="https://www.kinetic.com/the-company/virtual-tour/">Take a Tour</a></p>			            </div>
+        </div>
+        <div id="featured-projects">
+            <h3><a href="https://www.kinetic.com/the-work">Featured Project<span class="no-s">s</span></a></h3>
+	                <div id="project-content">
+	                <p><a href="https://www.kinetic.com/the-work/robins-morton/" class="hp-featured">
+	    <img width="300" height="275" src="https://www.kinetic.com/wp-content/uploads/work-morton-collage1.jpg" class="right main-img no-border project-collage-home wp-post-image" alt="work-morton-collage" /></a><span class="hp-featured-small"><a href="https://www.kinetic.com/the-work/robins-morton/">
+	    <img width="150" height="175" src="https://www.kinetic.com/wp-content/uploads/hp-rmg-t.png" class="attachment-full size-full" alt="hp-rmg-t" />  </a></span>
+		<strong>
+			Robins &#038; Morton		</strong></p>
+		<p>For America&#8217;s #1 healthcare general contractor, we blueprinted a website that highlighted the company&#8217;s commitment to excellence and showcase its projects in a robust, dynamic portfolio. We broke ground with the WordPress platform and laid the cornerstone with a custom-built project plug-in.</p>
+            <p class="featured-learn-more"><a href="https://www.kinetic.com/the-work/robins-morton/">Learn More</a><span class="view-all-projects"> or <a href="https://www.kinetic.com/the-work/">View All Projects</a></span></p>
+	            </div>
+        </div>
+      <div id="featured-project-thumbnails">
+      <p><strong id="additional-featured" class="no-s" >Additional Featured Projects<br /></strong></p>
+	                <a href="https://www.kinetic.com/the-work/alabama-power/" class= "hp-featured-thumbnails image-0">
+	    <img width="150" height="175" src="https://www.kinetic.com/wp-content/uploads/hp-ala-t.png" class="attachment-full size-full" alt="hp-ala-t" /></a>
+			                <a href="https://www.kinetic.com/the-work/starnes-davis-florie/" class= "hp-featured-thumbnails image-1">
+	    <img width="150" height="175" src="https://www.kinetic.com/wp-content/uploads/hp-sta-t.png" class="attachment-full size-full" alt="hp-sta-t" /></a>
+			                <a href="https://www.kinetic.com/the-work/state-traditions/" class= "hp-featured-thumbnails image-2">
+	    <img width="150" height="175" src="https://www.kinetic.com/wp-content/uploads/hp-trd-t.png" class="attachment-full size-full" alt="hp-trd-t" /></a>
+			            <p class="featured-view-all no-s"><a href="https://www.kinetic.com/the-work/">View All Projects</a> or <a href="https://www.kinetic.com/video-portfolio/"> View Our 90 Second Demo Reel</a></p>
+        </div>
+      </section>
+      </div>
+</div>
+
+
+<!-- The wp_footer tag must remain for some plugins to work properly -->
+<!-- ngg_resource_manager_marker -->      <script>
+      if (document.location.protocol != "https:") {
+          document.location = document.URL.replace(/^http:/i, "https:");
+      }
+      </script>
+      <script type='text/javascript' src='https://www.kinetic.com/wp-content/uploads/shadowbox-js/09c8ed97d6aa03ea5cd396e7891a0d6d.js?ver=3.0.3'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/themes/kinetic/style/scripts/AC_OETags.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/www.kinetic.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/themes/kinetic/style/scripts/hoverintent.js'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/themes/kinetic/style/scripts/modernizr.custom.08512.js'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/themes/kinetic/style/scripts/okzoom.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var STYLEPATH = {"path":"https:\/\/www.kinetic.com\/wp-content\/themes\/kinetic"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/themes/kinetic/style/scripts/site-wide.min.js'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/themes/kinetic/style/scripts/kbox.min.js'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/themes/kinetic/style/scripts/jquery.simple.cycle.js'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/themes/kinetic/style/scripts/jquery.touchwipe.min.js'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-content/themes/kinetic/style/scripts/rotator-touchwipe.min.js'></script>
+<script type='text/javascript' src='https://www.kinetic.com/wp-includes/js/wp-embed.min.js?ver=4.5.4'></script>
+
+<!-- Begin Shadowbox JS v3.0.3.10 -->
+<!-- Selected Players: html, iframe, img, qt, swf, wmp -->
+<script type="text/javascript">
+/* <![CDATA[ */
+	var shadowbox_conf = {
+		animate: true,
+		animateFade: true,
+		animSequence: "sync",
+		modal: false,
+		showOverlay: true,
+		overlayColor: "#000",
+		overlayOpacity: "0.8",
+		flashBgColor: "#000000",
+		autoplayMovies: true,
+		showMovieControls: true,
+		slideshowDelay: 0,
+		resizeDuration: "0.35",
+		fadeDuration: "0.35",
+		displayNav: true,
+		continuous: false,
+		displayCounter: true,
+		counterType: "default",
+		counterLimit: "10",
+		viewportPadding: "20",
+		handleOversize: "resize",
+		handleUnsupported: "link",
+		autoDimensions: false,
+		initialHeight: "160",
+		initialWidth: "320",
+		enableKeys: true,
+		skipSetup: false,
+		useSizzle: false,
+		flashParams: {bgcolor:"#000000", allowFullScreen:true},
+		flashVars: {},
+		flashVersion: "9.0.0"
+	};
+	Shadowbox.init(shadowbox_conf);
+/* ]]> */
+</script>
+<!-- End Shadowbox JS -->
+
+<div id="footer-wrap">
+	<div id="footer-container">
+		<div id="footer">
+			<footer>
+				<div id="col-01">
+					<p style="padding-bottom: 5px">&copy; Copyright 1995-2016 Kinetic Communications LLP</p>
+					<p class="print-hide"><a href="https://www.kinetic.com/privacy-policy">Privacy Policy</a></p>
+						<a href="https://www.facebook.com/kinetic" title="Join us on Facebook!" target="_blank" ><img src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/video-facebook.png" alt="Kinetic Facebook" width"24" height="24" style="margin: 2px;" class="print-hide"/></a>
+						<a href="http://www.youtube.com/kineticteam" title="See us on YouTube!" target="_blank"><img src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/video-youtube.png" alt="Kinetic on YouTUbe" width"24" height="24" style="margin: 2px;" class="print-hide"/></a>
+						<a href="https://twitter.com/kinetic" title="Stay in touch with us on Twitter!" target="_blank"><img src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/video-twitter.png" alt="Kinetic on Twitter" width"24" height="24" style="margin: 2px;" class="print-hide"/></a>
+						<a href="https://www.linkedin.com/company/kinetic-communications" title="Connect with us on Linkedin!" target="_blank"><img src="https://www.kinetic.com/wp-content/themes/kinetic/style/images/linkedin.png" alt="Kinetic on Linkedin" width"24" height="24" style="margin: 2px;" class="print-hide"/></a>
+				</div>
+		   		<div class="col-02 print-hide" style="float: center">
+						<p>2025 Morris Avenue &nbsp; &middot; &nbsp; Birmingham, Alabama 35203<br />
+							Phone: (205) 324-5858 &nbsp; &middot; &nbsp; Fax: (205) 324-7620<br />
+							<span class="print-hide">Email: <a href="mailto:info@kinetic.com">info@kinetic.com</a></span></p>
+				</div>
+                <div class="col-02 print-show" style="float: left">
+						<p>2025 Morris Avenue, Birmingham, Alabama 35203, Phone: (205) 324-5858, www.kinetic.com</p>
+				</div>
+				
+				</footer>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d975e4f82f","applicationID":"12501126","transactionName":"NgcDbEUAWERUABZRWw9NIFtDCFlZGhAWWUAIAQ==","queueTime":0,"applicationTime":1000,"atts":"GkAAGg0aS0o=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+<!-- Really Simple SSL mixed content fixer active -->

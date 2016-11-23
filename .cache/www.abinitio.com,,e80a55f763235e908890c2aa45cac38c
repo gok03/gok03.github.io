@@ -1,0 +1,97 @@
+status: 200
+content-length: 5002
+content-location: http://www.abinitio.com
+x-content-type-options: nosniff
+set-cookie: tid=ae51588a.53c6146137668; path=/;
+ expires=Fri, 11-Sep-26 10:42:48 GMT
+accept-ranges: bytes
+server: Apache/2.4.10 (Debian)
+last-modified: Thu, 30 Jun 2016 17:44:02 GMT
+etag: "138a-536826a675182"
+date: Tue, 13 Sep 2016 10:42:48 GMT
+content-type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+<html style="">
+  <head>
+    <title>Ab Initio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/site.css">
+    <script src="/scripts/underscore.min.js"></script>
+    <script src="/scripts/jquery.min.js"></script>
+    <script src="/scripts/jquery.cookie.js"></script>
+    <script src="/scripts/jquery.color-2.1.1.min.js"></script>
+    <script src="/scripts/jquery.mousewheel.js"></script>
+    <script src="/scripts/jquery.transform2d.js"></script>
+    <script src="/vendor/js/CSSPlugin.min.js"></script>
+    <script src="/vendor/js/EasePack.min.js"></script>
+    <script src="/vendor/js/TweenLite.min.js"></script>
+  </head>
+  <body locale-id="en" layout="classic">
+    <div id="fontloader_oswald">Oswald Regular</div>
+    <div id="fontloader_opensans">OpenSans Regular</div>
+    <div id="sectionMenuWrapper">
+      <div id="sectionMenu">
+        <div id="system" hilitecolor="#d91206" style="color:#AAA" class="menuButton horizontalLayout useHandCursor">
+          <div class="menuTitle notSelectable "><a href="/en/system">One System.</a></div>
+        </div>
+        <div id="architecture" hilitecolor="#20ab27" style="color:#AAA" class="menuButton horizontalLayout useHandCursor">
+          <div class="menuTitle notSelectable "><a href="/en/architecture">One Architecture.</a></div>
+        </div>
+        <div id="applications" hilitecolor="#e38624" style="color:#AAA" class="menuButton horizontalLayout useHandCursor">
+          <div class="menuTitle notSelectable "><a href="/en/applications">Many Applications.</a></div>
+        </div>
+        <div id="about" hilitecolor="#29abe2" style="color:#AAA" class="menuButton horizontalLayout useHandCursor">
+          <div class="menuTitle notSelectable "><a href="/en/about"><img src="/assets/ab_logo_200x45_mask_backup.png" class="menu_icon"><img id="printLogo" src="/assets/ab_logo_200x45.png"></a></div>
+        </div><a href="/en/sections.json" style="visibility: hidden"></a>
+      </div>
+    </div>
+    <div id="arrowWrapper"><img id="leftArrow" src="/assets/ab_arrow_left_50x21_mask.png" class="arrow"><img id="rightArrow" src="/assets/ab_arrow_right_50x21_mask.png" class="arrow"></div>
+    <div id="tokenMenuWrapper">
+      <div class="tokenMenu static">
+      </div>
+      <div class="toc">
+      </div>
+    </div>
+    <div id="locales">
+      <div id="en" data-is-current-locale="" class="localePick footerButton horizontalLayout notSelectable"><a href="/en" class="localeLink">
+          <div class="language">Language: </div>
+          <div class="localeName">English</div><img src="/assets/flags/en.png" class="flagImg"></a></div>
+      <div id="fr" class="localePick footerButton horizontalLayout notSelectable"><a href="/fr" class="localeLink">
+          <div class="language"></div>
+          <div class="localeName">Français</div><img src="/assets/flags/fr.png" class="flagImg"></a></div>
+      <div id="es" class="localePick footerButton horizontalLayout notSelectable"><a href="/es" class="localeLink">
+          <div class="language"></div>
+          <div class="localeName">Español</div><img src="/assets/flags/es.png" class="flagImg"></a></div>
+      <div id="de" class="localePick footerButton horizontalLayout notSelectable"><a href="/de" class="localeLink">
+          <div class="language"></div>
+          <div class="localeName">Deutsch</div><img src="/assets/flags/de.png" class="flagImg"></a></div>
+      <div id="zh_CN" class="localePick footerButton horizontalLayout notSelectable"><a href="/zh_CN" class="localeLink">
+          <div class="language"></div>
+          <div class="localeName">简体中文</div><img src="/assets/flags/zh_CN.png" class="flagImg"></a></div>
+      <div id="ja" class="localePick footerButton horizontalLayout notSelectable"><a href="/ja" class="localeLink">
+          <div class="language"></div>
+          <div class="localeName">日本語</div><img src="/assets/flags/ja.png" class="flagImg"></a></div>
+      <div id="dropdown">▼</div>
+    </div>
+    <div id="footer" style="color: rgb(170, 170, 170);" class="footerButton horizontalLayout notSelectable useHandCursor"><a href="/en/legal/terms-of-use.html" target="legal">Copyright © 2002-2016 Ab Initio. All rights reserved. Terms of Use</a></div>
+    <div id="overlayWrapper"></div>
+    <div id="cover"></div>
+    <script>
+      //- $("#jswarning").hide()
+      $('#switcher a').text("showing crawlable version")
+      window.toggleView = function () {
+        var isStatic = $.cookie('static') == 'true';
+        $.cookie('static', !isStatic, { path: '/'});
+        document.location.reload();
+      }
+      
+    </script>
+    <script src="/scripts/main.js"></script>
+    <noscript>
+      <div id="jswarning">! For an enhanced experience, enable JavaScript in your web browser.</div>
+    </noscript>
+  </body>
+</html>

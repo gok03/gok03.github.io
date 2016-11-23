@@ -1,0 +1,120 @@
+status: 200
+content-length: 4208
+content-location: http://www.datarecoverynewyork.com
+accept-ranges: bytes
+server: Apache
+last-modified: Wed, 28 Oct 2015 19:28:17 GMT
+etag: "6f2a2-1070-5232f32477fb1"
+date: Fri, 09 Sep 2016 03:58:44 GMT
+content-type: text/html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            html, body, #partner, iframe {
+                height:100%;
+                width:100%;
+                margin:0;
+                padding:0;
+                border:0;
+                outline:0;
+                font-size:100%;
+                vertical-align:baseline;
+                background:transparent;
+            }
+            body {
+                overflow:hidden;
+            }
+            #blurb{
+                display: none;
+                position: fixed;
+                bottom: 0px;
+                width: 100%;
+                z-index: 1024;
+            }
+            #blurb p{
+                font-family: 'Open Sans', sans-serif;
+                background-color: rgb(54, 54, 54);
+                color: rgb(224, 224, 224);
+                width: 90%;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+                height: auto;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                position: relative;
+                border: 1px solid rgb(54, 54, 54);
+                transition: height 1.5s ease;
+            }
+            #blurb a{
+                color: #C9EC6A;
+                text-decoration: none;
+            }
+            #blurb a:hover{
+                color: #E57921;
+            }
+            .open_box{
+              display: none;
+              background-color: rgba(255,255,255,0.2);
+              transition: background-color 0.5s ease;
+              border-top-right-radius: 10px;
+              padding: 22px 5px;
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 50px;
+              cursor: pointer;
+            }
+            .open_box:hover{
+              background-color: rgba(255,255,255,0.3);
+            }
+        </style>
+        <meta content="NOW" name="expires">
+        <meta content="index, follow, all" name="GOOGLEBOT">
+        <meta content="index, follow, all" name="robots">
+        <!-- Following Meta-Tag fixes scaling-issues on mobile devices -->
+        <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="partner"></div>
+        <div id="blurb">
+            <p>
+            This domain is expired. If you are the owner please click <a id="renew_url" href="http://www.namejuice.com">Here</a> to renew your domain.
+            <span class="open_box"><i class="fa fa-angle-double-up"></i></span>
+            </p>
+        </div>
+        <script type="text/javascript">
+            document.write(
+                '<script type="text/javascript" language="JavaScript"'
+                    + 'src="//sedoparking.com/frmpark/'
+                    + window.location.host + '/'
+                    + 'DRSI'
+                    + '/park.js">'
+                + '<\/script>'
+            );
+        </script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                var hn = window.location.hostname.split('.').reverse();
+                var domain = hn[1] + '.' + hn[0];
+                console.log(domain);
+                $.get( "getreg.asp?dom=" + domain, function( data ) {
+                    console.log(data);
+                    if (data.show) {
+                        $( "#blurb" ).css({
+                            'display' : 'block'
+                        });
+                        var url = data.url + "/getname.asp?regren=R&dom=" + domain + "&pagefrom=parking&test=1"
+                        $( "#renew_url" ).attr( "href", url );
+                    };
+                }, "json");
+            });
+        </script>
+    </body>
+</html>

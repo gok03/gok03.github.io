@@ -1,0 +1,567 @@
+status: 200
+content-location: http://www.leadertech.com
+set-cookie: LT_DT=6p9X9Et9GEYAAGiuBVoAAAAj
+server: Apache/2.2.3 (CentOS)
+date: Fri, 09 Sep 2016 06:04:17 GMT
+content-type: text/html
+
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<!-- TOP HEADER -->
+
+<head>
+<title>Welcome to Leader Technologies</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<!-- Beginning of compulsory drop down menu code below -->
+
+<link href="/css/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/style.css" type="text/css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,400italic,100,700,100italic,500">
+
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/jquery/jquery.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.dropdown.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+<![endif]-->
+<!-- / END -->
+
+
+<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/mm_menu.js"></script>
+<script type="text/javascript" src="/js/library.js"></script>
+<script type="text/javascript" src="/js/library.js"></script>
+<script type="text/javascript" src="/js/yui_2.6.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="/js/yui_2.6.0/build/animation/animation-min.js"></script>
+<script type="text/javascript" src="/js/swfobject.js"></script> <!-- http://code.google.com/p/swfobject/ -->
+<script type="text/javascript" src="/js/imageslideshow.js"></script>
+<script type="text/javascript">
+//enable passthrough of errors from YUI Event:
+if ((typeof YAHOO !== "undefined") && (YAHOO.util) && (YAHOO.util.Event)) {
+        YAHOO.util.Event.throwErrors = true;
+}
+</script>
+
+<script type="text/javascript">
+
+var flashFiles = [
+                  { file: "index_files/final_flash_focus6.swf", time : 17},
+                  { file: "index_files/final_arrows_flash2.swf", time : 17},
+                  { file: "index_files/final_flash_leader2.swf", time : 17}
+                 ];
+
+var whichFlashFile = 0;
+
+function swfswap()
+{
+  var params = { // Parameters for display
+      wmode: "transparent",
+      loop: "false"
+    };
+
+  swfobject.embedSWF(flashFiles[whichFlashFile].file, "nonflashintro", "1000", "293", "9.0.0","","",params);
+
+  setTimeout(swfswap, flashFiles[whichFlashFile].time*1000);
+  whichFlashFile = (whichFlashFile+1) % flashFiles.length;
+}
+
+</script>
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+//v1.7
+// Flash Player Version Detection
+// Detect Client Browser type
+// Copyright 2005-2008 Adobe Systems Incorporated.  All rights reserved.
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+function ControlVersion()
+{
+	var version;
+	var axo;
+	var e;
+	// NOTE : new ActiveXObject(strFoo) throws an exception if strFoo isn't in the registry
+	try {
+		// version will be set for 7.X or greater players
+		axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");
+		version = axo.GetVariable("$version");
+	} catch (e) {
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 6.X players only
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+			
+			// installed player is some revision of 6.0
+			// GetVariable("$version") crashes for versions 6.0.22 through 6.0.29,
+			// so we have to be careful. 
+			
+			// default to the first public version
+			version = "WIN 6,0,21,0";
+			// throws if AllowScripAccess does not exist (introduced in 6.0r47)		
+			axo.AllowScriptAccess = "always";
+			// safe to call for 6.0r47 or greater
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 4.X or 5.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = axo.GetVariable("$version");
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 3.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+			version = "WIN 3,0,18,0";
+		} catch (e) {
+		}
+	}
+	if (!version)
+	{
+		try {
+			// version will be set for 2.X player
+			axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash");
+			version = "WIN 2,0,0,11";
+		} catch (e) {
+			version = -1;
+		}
+	}
+	
+	return version;
+}
+// JavaScript helper required to detect Flash Player PlugIn version information
+function GetSwfVer(){
+	// NS/Opera version >= 3 check for Flash plugin in plugin array
+	var flashVer = -1;
+	
+	if (navigator.plugins != null && navigator.plugins.length > 0) {
+		if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+			var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+			var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+			var descArray = flashDescription.split(" ");
+			var tempArrayMajor = descArray[2].split(".");			
+			var versionMajor = tempArrayMajor[0];
+			var versionMinor = tempArrayMajor[1];
+			var versionRevision = descArray[3];
+			if (versionRevision == "") {
+				versionRevision = descArray[4];
+			}
+			if (versionRevision[0] == "d") {
+				versionRevision = versionRevision.substring(1);
+			} else if (versionRevision[0] == "r") {
+				versionRevision = versionRevision.substring(1);
+				if (versionRevision.indexOf("d") > 0) {
+					versionRevision = versionRevision.substring(0, versionRevision.indexOf("d"));
+				}
+			}
+			var flashVer = versionMajor + "." + versionMinor + "." + versionRevision;
+		}
+	}
+	// MSN/WebTV 2.6 supports Flash 4
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1) flashVer = 4;
+	// WebTV 2.5 supports Flash 3
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1) flashVer = 3;
+	// older WebTV supports Flash 2
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 2;
+	else if ( isIE && isWin && !isOpera ) {
+		flashVer = ControlVersion();
+	}	
+	return flashVer;
+}
+// When called with reqMajorVer, reqMinorVer, reqRevision returns true if that version or greater is available
+function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision)
+{
+	versionStr = GetSwfVer();
+	if (versionStr == -1 ) {
+		return false;
+	} else if (versionStr != 0) {
+		if(isIE && isWin && !isOpera) {
+			// Given "WIN 2,0,0,11"
+			tempArray         = versionStr.split(" "); 	// ["WIN", "2,0,0,11"]
+			tempString        = tempArray[1];			// "2,0,0,11"
+			versionArray      = tempString.split(",");	// ['2', '0', '0', '11']
+		} else {
+			versionArray      = versionStr.split(".");
+		}
+		var versionMajor      = versionArray[0];
+		var versionMinor      = versionArray[1];
+		var versionRevision   = versionArray[2];
+        	// is the major.revision >= requested major.revision AND the minor version >= requested minor
+		if (versionMajor > parseFloat(reqMajorVer)) {
+			return true;
+		} else if (versionMajor == parseFloat(reqMajorVer)) {
+			if (versionMinor > parseFloat(reqMinorVer))
+				return true;
+			else if (versionMinor == parseFloat(reqMinorVer)) {
+				if (versionRevision >= parseFloat(reqRevision))
+					return true;
+			}
+		}
+		return false;
+	}
+}
+function AC_AddExtension(src, ext)
+{
+  if (src.indexOf('?') != -1)
+    return src.replace(/\?/, ext+'?'); 
+  else
+    return src + ext;
+}
+function AC_Generateobj(objAttrs, params, embedAttrs) 
+{ 
+  var str = '';
+  if (isIE && isWin && !isOpera)
+  {
+    str += '<object ';
+    for (var i in objAttrs)
+    {
+      str += i + '="' + objAttrs[i] + '" ';
+    }
+    str += '>';
+    for (var i in params)
+    {
+      str += '<param name="' + i + '" value="' + params[i] + '" /> ';
+    }
+    str += '</object>';
+  }
+  else
+  {
+    str += '<embed ';
+    for (var i in embedAttrs)
+    {
+      str += i + '="' + embedAttrs[i] + '" ';
+    }
+    str += '> </embed>';
+  }
+  document.write(str);
+}
+function AC_FL_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".swf", "movie", "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+     , "application/x-shockwave-flash"
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_SW_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".dcr", "src", "clsid:166B1BCA-3F9C-11CF-8075-444553540000"
+     , null
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
+  var ret = new Object();
+  ret.embedAttrs = new Object();
+  ret.params = new Object();
+  ret.objAttrs = new Object();
+  for (var i=0; i < args.length; i=i+2){
+    var currArg = args[i].toLowerCase();    
+    switch (currArg){	
+      case "classid":
+        break;
+      case "pluginspage":
+        ret.embedAttrs[args[i]] = args[i+1];
+        break;
+      case "src":
+      case "movie":	
+        args[i+1] = AC_AddExtension(args[i+1], ext);
+        ret.embedAttrs["src"] = args[i+1];
+        ret.params[srcParamName] = args[i+1];
+        break;
+      case "onafterupdate":
+      case "onbeforeupdate":
+      case "onblur":
+      case "oncellchange":
+      case "onclick":
+      case "ondblclick":
+      case "ondrag":
+      case "ondragend":
+      case "ondragenter":
+      case "ondragleave":
+      case "ondragover":
+      case "ondrop":
+      case "onfinish":
+      case "onfocus":
+      case "onhelp":
+      case "onmousedown":
+      case "onmouseup":
+      case "onmouseover":
+      case "onmousemove":
+      case "onmouseout":
+      case "onkeypress":
+      case "onkeydown":
+      case "onkeyup":
+      case "onload":
+      case "onlosecapture":
+      case "onpropertychange":
+      case "onreadystatechange":
+      case "onrowsdelete":
+      case "onrowenter":
+      case "onrowexit":
+      case "onrowsinserted":
+      case "onstart":
+      case "onscroll":
+      case "onbeforeeditfocus":
+      case "onactivate":
+      case "onbeforedeactivate":
+      case "ondeactivate":
+      case "type":
+      case "codebase":
+      case "id":
+        ret.objAttrs[args[i]] = args[i+1];
+        break;
+      case "width":
+      case "height":
+      case "align":
+      case "vspace": 
+      case "hspace":
+      case "class":
+      case "title":
+      case "accesskey":
+      case "name":
+      case "tabindex":
+        ret.embedAttrs[args[i]] = ret.objAttrs[args[i]] = args[i+1];
+        break;
+      default:
+        ret.embedAttrs[args[i]] = ret.params[args[i]] = args[i+1];
+    }
+  }
+  ret.objAttrs["classid"] = classid;
+  if (mimeType) ret.embedAttrs["type"] = mimeType;
+  return ret;
+}
+// -->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!--
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 5;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Revision of Flash required
+var requiredRevision = 58;
+// -----------------------------------------------------------------------------
+// -->
+</script>
+
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript">
+		function startReportingSlideshow() {
+		$('#picReportOne').fadeIn(1000).delay(2000).fadeOut(2000);
+		$('#picReportTwo').delay(6000).fadeIn(2000).fadeOut(4000, startReportingSlideshow);
+		}
+		
+		function startSurveySlideshow() {
+		$('#picSurveyOne').fadeIn(1000).delay(2000).fadeOut(2000);
+		$('#picSurveyTwo').delay(3000).fadeIn(3000).fadeOut(3000);
+		$('#picSurveyThree').delay(7000).fadeIn(4000).fadeOut(4000, startSurveySlideshow);
+		}
+		
+		$(document).ready(function() {
+			startReportingSlideshow();
+			startSurveySlideshow();
+		});
+</script>
+    <script type="text/javascript">
+
+        $(function() {
+        
+        $('#toggle1').click(function() {
+
+        $('.toggle1').toggle();
+
+        return false;
+
+            });
+
+        });
+    </script>
+
+	
+<!--<script type='text/javascript' src='/index_files/menuitem_index1.js'></script>-->
+<!--<script type='text/javascript' src='/index_files/menu_com.js'></script>-->
+<noscript>This site requires script support.</noscript>
+<!-- <script language="JavaScript1.2">mmLoadMenus();</script> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39220981-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+
+<meta name="description" content="Leader Technologies provides consumer product companies global next-generation Customer Experience Management (CXM) solutions."/>
+
+</head>
+<body link="#666666" alink="#333333" vlink="#999999" onload="swfswap()">
+
+	<div id="container">
+        <!--Header-->    
+        <div id="header">
+            <table>
+            <tr>
+            <td>
+			<span id="logo"><a href="/" style="TEXT-DECORATION: NONE;"><img border="0" src="/index_files/leadertechlogo.jpg"  alt="Leader Technologies Logo"></a></span></td>
+			<!--<div id="header_text"><i><b>Product Registartion Powering the<br> &#160; &#160; &#160;&#160;&#160;&#160;World's Most Successful CXM Strategies</b></i></div>-->
+			<td>
+            <div id="navbar">
+			<ul class="dropdown dropdown-horizontal">
+				<li><a href="/prod_solutions" class="dir">PRODUCTS &amp; SOLUTIONS</a>
+				<ul>
+					<li><a href="/prod_solutions">Products &amp; Solutions</a>
+					<li><a href="/ereg" title="Automated Product Registration">PowerReg</a></li>
+					<li><a href="/powersurvey" title="NPS Customer Surveys">PowerSurvey</a></li>
+					<li><a href="/datacollection" title="Database Management">PowerData</a></li>
+                    <li><a href="/reporting" title="In-Product Messaging">PowerMessaging</a></li>
+					<li><a href="/ecommerce" title="Sales & Marketing Tools">PowerMarketing</a></li>
+				</ul>
+				</li>
+
+			<li><a href="/about" class="dir">ABOUT US</a>
+			</li>
+    
+			<li><a href="/contact" class="dir">CONTACT US</a>
+			</li>
+    
+			<li><a href="/login" class="dir">CIAC LOGIN</a>
+		
+			</li>
+	
+		</ul>
+		</div>
+        </td></tr>
+        </table>
+         <div id="navbarmobile">
+			<ul class="dropdown dropdown-horizontal">
+				<li><a href="/prod_solutions" class="dir">PRODUCTS &amp; SOLUTIONS <span>/</span></a>
+				</li>
+
+                <li><a href="/about" class="dir">ABOUT US <span>/</span></a>
+                </li>
+    
+                <li><a href="/contact" class="dir">CONTACT US <span>/</span></a>
+                </li>
+    
+                <li><a href="/login" class="dir">CIAC LOGIN</a>
+                </li>
+	
+            </ul>
+		</div>
+		</div><!-- Sep 09 2016 -->
+<!--Content Area -->
+		<div id="content_area">
+           <!-- <div id = "form_container"></div>-->
+			<div id="banner">
+            <img src="/index_files/hero_background.jpg" width="100%" border="0" alt="bridge" />
+            <!--<div id="transparentbox">
+            <p>test</p>
+            </div>-->
+            </div>
+            
+			<div id ="body_text6">Product registration powering the world's most successful CXM strategies</div>			
+			
+            
+			
+            <!--
+			<div class="block">
+			<a href="/ereg"><img src="/index_files/power_reg.jpg" alt="PowerReg" title="Automated Product Registration" border="0" /></a>
+			</div>
+			
+            <div class="block">
+			<a href="/powersurvey"><img src="/index_files/power_survey.jpg" alt="PowerSurvey" title="NPS Consumer Surveys" border="0" /></a>
+			</div>
+			
+            <div class="block">
+			<a href="/datacollection"><img src="/index_files/power_data.jpg" alt="PowerData" title="Database Management" border="0" /></a>
+            </div>
+            
+            <div class="block">
+            <a href="/reporting"><img src="/index_files/power_messaging.jpg" alt="PowerMessaging" title="In-Product Messaging" border="0" /></a>
+            </div>
+						
+			<div class="block">
+            <a href="/ecommerce"><img src="/index_files/power_marketing.jpg" alt="PowerMarketing" title="Sales & Marketing Tools" border="0" /></a>		
+			</div>-->
+           
+            <div id="products">
+			<table cellspacing="5">
+            <tr>
+			
+			<td><a href="/ereg"><img src="/index_files/power_reg.jpg" alt="PowerReg" title="Automated Product Registration" border="0" /></a></td>
+						
+			<td><a href="/powersurvey"><img src="/index_files/power_survey.jpg" alt="PowerSurvey" title="NPS Consumer Surveys" border="0" /></a></td>
+						
+			<td><a href="/datacollection"><img src="/index_files/power_data.jpg" alt="PowerData" title="Database Management" border="0" /></a></td>
+            
+            <td><a href="/reporting"><img src="/index_files/power_messaging.jpg" alt="PowerMessaging" title="In-Product Messaging" border="0" /></a></td>
+						
+			<td><a href="/ecommerce"><img src="/index_files/power_marketing.jpg" alt="PowerMarketing" title="Sales & Marketing Tools" border="0" /></a></td>		
+			</tr>
+            </table>
+			</div>
+			
+			<div id="customer_text">Successful brands using LeaderTech</div>
+			
+            <div id="customer_images">
+                <div class="customer_images">
+				<img src="/index_files/logos_1A.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_1B.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_1C.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_1D.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_1E.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_1F.jpg"   border="0" alt="LeaderTech Customer Logos"/>
+                </div>
+                <div class="customer_images">
+                <img src="/index_files/logos_2A.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_2B.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_2C.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_2D.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_2E.jpg"   border="0" alt="LeaderTech Customer Logos"/>
+                </div>
+                <div class="customer_images">
+                <img src="/index_files/logos_3A.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_3B.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_3C.jpg"   border="0" alt="LeaderTech Customer Logos"/><img src="/index_files/logos_3D.jpg"   border="0" alt="LeaderTech Customer Logos"/></div>
+			</div>
+		</div><!-- Footer -->
+    <div id="footerbackground">
+		<div id="footer">
+            <a href="/about" >ABOUT US </a> <span>/</span>
+            <a href="/contact">CONTACT US </a> <span>/</span>
+            <a href="/login">CIAC LOGIN</a> 
+            
+            <div id="footer_text">
+            <span>© 2013 Leader Technologies. All other trademarks and copyrights are the property of their respective owners.</span>
+            </div>
+        </div>
+    </div>
+</div> <!--End Container-->
+</body>
+</html>
+
+
+

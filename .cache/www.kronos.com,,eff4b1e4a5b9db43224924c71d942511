@@ -1,0 +1,1367 @@
+status: 200
+content-length: 91899
+content-location: http://www.kronos.com
+-content-encoding: gzip
+set-cookie: EktGUID=4bbef573-cabb-4bf4-b21b-4ee86a00b301;
+ expires=Thu, 21-Sep-2017 09:25:38 GMT; path=/, EkAnalytics=0;
+ expires=Thu, 21-Sep-2017 09:25:38 GMT; path=/,
+ KRONOS_PUBLIC_US=FLi2lwVZhC_tIt95kbsJ7t5SDpTRrdJQIDxuPxjluQwT9dCi78tfscw2Y7ayNWuYte3vFynkv799kBlUMShPZ_IMzCFqiMcgcMmlgGeSSLZpGo0a5rHhSEf90gUhSmWCSce9MoZRxAAPqHrMrvEC2-SwYk9jO8dHiCnbM6JWruAI1rRWW27peB3aGGAStO910;
+ expires=Tue, 29-Nov-2016 20:05:38 GMT; path=/;
+ HttpOnly, ASP.NET_SessionId=mtr2oq1uvpyplocs3zlpubaz; path=/;
+ HttpOnly, KRONOS=ecid=701610000005jmCAAQ&eqid=142;
+ expires=Fri, 21-Oct-2016 09:25:38 GMT; path=/,
+ ecm=user_id=0&isMembershipUser=0&site_id=&username=&new_site=/&unique_id=0&site_preview=0&langvalue=0&DefaultLanguage=1033&NavLanguage=1033&LastValidLanguageID=1033&DefaultCurrency=840&SiteCurrency=840&ContType=&UserCulture=1033&dm=www.kronos.com&SiteLanguage=1033;
+ path=/, KronosInc=318779402.20480.0000; path=/,
+ TS015186f3=01f556670b896f92f2d3e1d070974030e91bf8b599dc67861fe18c6c27598be57f07ce28a67a0339586b98051be2c3ad9cb95a6fdb6b176649f084e0ebc8e8f8406da79a7ee4689bd6f68f324db2d73cb16683be2ebff1488c42683669b49cdb3e936ebcbe67f8e96fa6294325369a7ec44cdbc33e3408978959a2fb89e5554f48934860ee3cacb1fe753ec5964dda11683775afae;
+ Path=/
+x-powered-by: ASP.NET
+vary: Accept-Encoding
+connection: Keep-Alive
+etag: ""
+x-ua-compatible: IE=edge,chrome=1,requiresActiveX=true
+cache-control: private
+date: Wed, 21 Sep 2016 09:25:38 GMT
+access-control-allow-origin: *
+content-type: text/html; charset=utf-8
+x-aspnet-version: 4.0.30319
+-varied-accept-encoding: gzip, deflate
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html id="ctl00_html1" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#" lang="en-us">
+
+<!-- HEADER START -->
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5be32cabaa","applicationID":"2301710","transactionName":"YgZbNUYEX0QFARJQDFtMeDJkSlBHFD0WWARQEBYVUQhBWwUWA0pMXQxUBEQEVlJWUlcMTVQQSRk=","queueTime":0,"applicationTime":352,"ttGuid":"B97918AA4CF45210","agent":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgcAUFNaGwEDVFBVBgE="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(12),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(13),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(5),t(4),"addEventListener"in window&&t(3),s.xhrWrappable&&t(6),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(14)(a),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r="object"==typeof n,o=r?function(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}:n;if("function"==typeof o){var i=s(o,"nr@wrapped",function(){return c(o,"fn-",null,o.name||"anonymous")});this.wrapped=t[1]=i}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){var r=t("ee").get("raf"),o=t(14)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],5:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(14)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],6:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",c)}function i(t){y.push(t),h&&(w=-w,x.data=w)}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t(14)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,g),g.prototype=p.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var w=1,x=document.createTextNode(w);new h(a).observe(x,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],7:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(8),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(11),h=t(10),m=window.XMLHttpRequest;a.features.xhr=!0,t(6),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],8:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],9:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(12),c=t(13),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],10:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],11:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],12:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],13:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],14:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(13),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],c])}f(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],c),l}finally{f(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<n.length;s++)c=n[s],a=t[c],r(a)||(t[c]=e(a,f?c+o:o,i,c))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var u=f[v[n]];return u&&u.push([y,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){s(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},y={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return y}function i(){return new r}var a="nr@context",c=t("gos"),s=t(12),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!w++){var t=g.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=u.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}}function o(){"complete"===u.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(12),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(9);var m=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-984.min.js"},y=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:m,features:{},xhrWrappable:y};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),c("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader",2,7]);</script><meta name="viewport" content="width=955" /><meta name="msapplication-config" content="none" /><script type="text/javascript" src="/WorkArea/FrameworkUI/js/ektron.javascript.ashx?id=-1028355414+1948574407+-1388997516+2009761168+27274999+1979897163+-422906301+-1818005853+-1357665627+1808714324+659787066+-1965253052"></script><link rel="stylesheet" type="text/css" href="/WorkArea/FrameworkUI/css/ektron.stylesheet.ashx?id=-1759591071" />
+    <!-- http://msdn.microsoft.com/en-us/library/ie/dn320426%28v=vs.85%29.aspx -->
+
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" /><link rel="stylesheet" type="text/css" href="/css/main.css?date=101012" /><link rel="stylesheet" type="text/css" media="print" href="/css/print.css" /><link rel="stylesheet" type="text/css" href="/css/Site2012.master.css" /><link rel="icon" href="http://www.kronos.com/favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="http://www.kronos.com/favicon.ico" type="image/x-icon" /><link rel="alternate" type="application/rss+xml" title="Kronos Incorporated" href="http://www.kronos.com/kronos.xml" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png" /><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png" /><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" /><link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png" /><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" /><link rel="apple-touch-icon-precomposed" sizes="48x48" href="/apple-touch-icon-48x48-precomposed.png" /><link rel="apple-touch-icon" sizes="48x48" href="/apple-touch-icon-48x48.png" /><link rel="apple-touch-icon-precomposed" sizes="29x29" href="/apple-touch-icon-29x29-precomposed.png" /><link rel="apple-touch-icon" sizes="29x29" href="/apple-touch-icon-29x29.png" />
+    <script type="text/javascript" src="/app_pages/Plugins/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/js/BrowserDetect.js" language="JavaScript"></script>
+    <script type="text/javascript" src="/js/floatbox/floatbox.js" language="JavaScript"></script>
+    
+    
+    
+
+    
+<!-- Optimizely Start -->
+<script type="text/javascript" src="//cdn.optimizely.com/js/1605677885.js"></script>
+<!-- Optimizely End -->
+
+
+<!-- Universal Google Analytics Start -->
+<script type='text/javascript'>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-1679717-1', 'auto', {'allowLinker': true});
+ga('require', 'linker');
+ga('require', 'displayfeatures');
+ga('require', 'linkid', 'linkid.js');
+ga('linker:autoLink', ['solutions.kronos.com']);
+// Custom Dimensions Start //
+ga('set', 'dimension1',  "unknown");
+ga('set', 'dimension2',  "isp");
+ga('set', 'dimension5', "SMB");
+ga('set', 'dimension6', "1");
+// Custom Dimensions End //
+
+window.optimizely = window.optimizely || [];
+window.optimizely.push("activateUniversalAnalytics");
+ga('send', 'pageview');
+</script>
+<!-- Universal Google Analytics End -->
+
+
+<!-- Eloqua Analytics Start -->
+<script type='text/javascript'>
+var _elqQ = _elqQ || [];
+_elqQ.push(['elqSetSiteId', '1763']);
+_elqQ.push(['elqTrackPageView']);
+(function () {
+function async_load() {
+var s = document.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = '//img.en25.com/i/elqCfg.min.js';
+var x = document.getElementsByTagName('script')[0];
+x.parentNode.insertBefore(s, x);
+}
+if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+else if (window.attachEvent) window.attachEvent('onload', async_load);
+})();
+</script>
+<!-- Eloqua Analytics End -->
+
+
+<!-- Sitelinks Search Box start -->
+<script type="application/ld+json">
+{
+"@context":"http://schema.org",
+"@type":"WebSite",
+"url":"http://www.kronos.com/",
+"potentialAction":
+{
+"@type":"SearchAction",
+"target": "http://www.kronos.com/search.aspx?searchtext={search_term_string}&source=slsb",
+"query-input": "required name=search_term_string"
+}
+}
+</script>
+<!-- Sitelinks Search Box end -->
+
+<link rel="canonical" href="http://www.kronos.com/" /><link rel="stylesheet" type="text/css" href="/App_Pages/Plugins/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="/css/usercontrols/ctaheroslider/heroslider.css" />
+<link rel="stylesheet" type="text/css" href="/css/Homepage/homepage2015.standard.css" />
+<link rel="stylesheet" type="text/css" href="/css/Homepage/homepage2015.us.css" />
+<style type="text/css">/* ====== ContentTitle_Industry Selector CSS_ID_23622327809 ======= */
+    .selector_container {
+        width: 270px;
+        height: 120px;
+        border: 1px solid #4D92D5;
+        padding: 10px;
+        z-index: 99;
+        background-color: #fff;
+    }
+
+        .selector_container .container_thumbnail {
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            margin-right: 10px;
+        }
+
+            .selector_container .container_thumbnail img {
+                width: 120px;
+                height: 120px;
+            }
+
+        .selector_container .container_body {
+            display: inline-block;
+            vertical-align: top;
+            width: 130px;
+        }
+
+            .selector_container .container_body .title {
+                font-size: 14px;
+                color: #274d7e;
+                line-height: 18px;
+                font-family: Verdana;
+                font-weight: bold;
+            }
+
+            .selector_container .container_body .subtitle {
+                padding-top: 5px;
+                font-size: 11px;
+                color: #000;
+                line-height: 14px;
+                font-family: Verdana;
+                font-weight: normal !important;
+            }
+
+        .selector_container .container_indicator {
+            position: relative;
+            bottom: 15px;
+            right: 5px;
+            float: right;
+            z-index: 100;
+        }
+
+            .selector_container .container_indicator a.popup {
+                background-image: url(/images/homepage/carousel/link_popup.png);
+                width: 15px;
+                height: 15px;
+                display: block;
+                color: #4D92D5;
+            }
+
+    .selector_popup.active {
+        display: block;
+        z-index: 101;
+        /*top: -220px;*/
+    }
+
+    .selector_popup.inactive {
+        display: none;
+        z-index: 98;
+        /*top: -220px;*/
+    }
+
+    .selector_popup {
+        float: left;
+        position: absolute;
+        left: 0px;
+        width: 294px;
+        background: #fff url(/images/homepage/carousel/popupBGD.png) bottom left repeat-x;
+        box-shadow: 0px 0px 10px 0px #ccc;
+        -moz-box-shadow: 0px 0px 10px 0px #ccc;
+        -webkit-box-shadow: 0px 0px 10px 0px #ccc;
+        height: 260px;
+        top: -57px;
+    }
+
+        .selector_popup .popup_title {
+            padding: 20px 20px 5px 20px;
+            text-align: left;
+            color: rgb(241, 92, 34);
+            line-height: 20px;
+            font-family: Verdana;
+            font-size: 18px;
+        }
+
+        .selector_popup .industryImage {
+            text-align: center;
+            margin-right: 30px;
+            margin-left: 20px;
+            border-bottom-color: rgb(204, 204, 204);
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            position: relative;
+        }
+
+            .selector_popup .industryImage .ImgShow {
+                position: relative;
+                top: 20px;
+                width: 45px;
+                height: 45px;
+                left: -8px;
+            }
+
+        .selector_popup .industryList {
+            text-align: left;
+            color: rgb(77, 146, 213);
+            line-height: 20px;
+            margin-top: 30px;
+            font-family: Verdana;
+            font-size: 12px;
+            font-weight: bold;
+            float: left;
+            position: relative;
+            margin-left: 28px;
+        }</style><link id="ctl00_SiteFooter2012Css" rel="stylesheet" type="text/css" href="/css/SiteFooter2012.css" /><meta name="keywords" content="Time Tracking Software;Scheduling;Absence Management Software;Human Resources Software;Talent Management;Business Intelligence Software;Workforce Management Suite;Workforce Management;Airline Workforce Management;Restaurant Workforce Management;Government Workforce Management;Labor Analysis;Recruiting Software;HR &amp;amp; Payroll Software;Human Resource Software;Payroll Software;iSeries" /><meta name="description" content="Thousands of customers in more than 100 countries rely on Kronos global workforce management to better manage their workforce in the cloud. With full human capital management (HCM) capabilities, Kronos solutions can help your organization take on the challenges of an evolving workforce." /><link id="ctl00_CarouselCSS" rel="stylesheet" type="text/css" href="/css/Homepage/HomepageCarousel.css" /><link id="ctl00_flexslider" rel="stylesheet" type="text/css" href="/css/Homepage/flexslider.css" /><meta property="og:image" content="http://www.kronos.com/images/kronos-icon.jpg" /><meta property="og:type" content="article" /><meta property="og:site_name" content="Kronos Incorporated" /><meta property="fb:app_id" content="133429843379332" /><meta property="og:url" content="http://www.kronos.com/default.aspx" /><meta property="og:title" content="Workforce Management, Time &amp;amp; Attendance, HR &amp;amp; Payroll - Kronos Incorporated" /><meta property="og:description" content="Thousands of customers in more than 100 countries rely on Kronos global workforce management to better manage their workforce in the cloud. With full human capital management (HCM) capabilities, Kronos solutions can help your organization take on the challenges of an evolving workforce." /><title>
+	Workforce Management, Time &amp; Attendance, HR &amp; Payroll - Kronos Incorporated
+</title></head>
+<!-- HEADER END -->
+<body>
+    
+    <!-- Google Tag Manager Start -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M4J8VH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-M4J8VH');</script>
+<!-- Google Tag Manager End -->
+
+
+    
+
+    <!-- This will create the title,keywords, and description tags in the HEAD and assign values from the main content of the current page -->
+    
+
+    <form method="post" action="/" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="EktronClientManager" id="EktronClientManager" value="-1028355414,1948574407,-1388997516,2009761168,27274999,1979897163,-422906301,-1818005853,-1357665627,1808714324,-1759591071,659787066,-1965253052" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3ODkwOTg0MjhkZObLwPS/aKZCVAApOK7bKKjMTgletqJ2nindJuMK02o5" />
+</div>
+
+
+<script src="/js/FlexSlider/jquery.flexslider.js" type="text/javascript"></script>
+<script src="/js/jquery.simpletip-1.3.1.js" type="text/javascript"></script>
+<script src="/js/homepage/ContentCarousel.js" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0BE60811" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABfzeKDqFBNwegND/Ui5eGWCo+tNiyqHlUEA9Y4qeADgawPdRq6FWr5HQlJN5oBB2AWhWeirB302tweip8HW1sJW5R8s63IZSpUwih1ztMXVS6CpT4m/MQBUSJ93wFXfvxd3lFJWQw2gVmPqGwuoNqGV4PbA9E0DdjndjnJGecoHZtDlHu2DprS7Dn1rpROgStHbFeGPjDeRkw/mCvaRQWBpEq3/LGq2WvPmA+RmtK0RdcymxNmqf7H2c1DnwXEuz0BIn3Df/b/IC08cBUBwXAOUWzIb3bAkPa5kO+UDJLB7i55ZbTC0ibe9bFNOhrCg2/Bladpqm+k5Lo/nojBwcywnEbTYiXaNEWcV+W74lufmgjuYXQo+MG18O+dmUXgDc0duqcuFf5yVC5O22R2yx6tqN9LiaCc/ZHXaaf9NjU38UE4ImPk+8HALst0zsOsbRfoYKYcTkSZuyUUApLOMcoahdlC1EYAFr/JiN+8R2UfE0TJfR6TgQJvZ1PTGqaRUgOT7sI1h8y69qgVHI9TqPrU/" />
+</div>
+
+        
+
+
+<input type="hidden" name="ctl00$SiteAnalytics$GoogleAnalyticsAccount" id="ctl00_SiteAnalytics_GoogleAnalyticsAccount" value="UA-1679717-1" />
+<input type="hidden" name="ctl00$SiteAnalytics$ContactUsLink" id="ContactUsLink" value="/contact/contact-kronos.aspx?ecid=701610000005jmCAAQ&amp;eqid=142" />
+
+
+<!-- 
+Added literal control which will allow us to inject tracking code (Google, Omniture, Adroll, etc..) into  the page during the Page_Load event and NOT during PostBacks. 
+If you want to inject code during a PostBack you need to explicity set this value at runtime within the calling page template and pass the proper javascript.
+NOTE: You MUST pass "var s_code=s.t();if(s_code)document.write(s_code)" as the last piece of
+javascript if you've defined Omniture events so they will be sent to Omniture.
+12/01/2011 - added CustomPageLevelCode literal control that will be used for content block specific tracking code. This tracking code may or may not be written to the page each and every time like the GenericPageLevelCode
+ -->
+
+
+<!-- AddThisCustomization Start -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var addthis_config = {data_ga_social : true, data_ga_property: 'UA-1679717-1' , services_compact: 'facebook, twitter,  linkedin, delicious, stumbleupon, reddit, digg, more' , services_exclude: 'favorites, email, print'};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=kronosinc"></script>
+<!-- AddThisCustomization End -->
+
+
+<!-- Google Breadcrumbs Start -->
+<script type="application/ld+json">
+{
+"@context":"http://schema.org",
+"@type":"BreadcrumbList",
+"itemListElement":[
+{
+"@type":"ListItem",
+"position":1,
+"item":
+{
+"@id":"http://www.kronos.com/",
+"name":"Home"
+}
+}
+]
+}
+</script>
+<!-- Google Breadcrumbs End -->
+
+
+<!-- Google Organization Logo Start -->
+<script type="application/ld+json">
+{
+"@context":"http://schema.org",
+"@type":"Organization",
+"url":"http://www.kronos.com",
+"logo":"http://www.kronos.com/images/Kronos-Corporate-Logo-400x400.png"
+}
+</script>
+<!-- Google Organization Logo End -->
+
+
+<!-- Google Social Profiles Start -->
+<script type="application/ld+json">
+{
+"@context":"http://schema.org",
+"@type":"Organization",
+"name":"Kronos Incorporated",
+"url":"http://www.kronos.com",
+"sameAs":["https://www.linkedin.com/company/kronos","https://twitter.com/KronosInc","https://www.facebook.com/KronosIncorporated","https://plus.google.com/104512223036997156990","https://www.youtube.com/user/kronosinc"]
+}
+</script>
+<!-- Google Social Profiles End -->
+
+
+<!-- Google Corporate Contacts Start -->
+<script type="application/ld+json">
+{
+"@context":"http://schema.org",
+"@type":"Organization",
+"url":"http://www.kronos.com",
+"contactPoint":[{
+"@type":"ContactPoint",
+"telephone":"+1 (800) 225-1561",
+"contactType":"sales"
+}
+,{
+"@type":"ContactPoint",
+"telephone":"+1 (800) 394-4357",
+"contactType":"customer support"
+}
+]
+}
+</script>
+<!-- Google Corporate Contacts End -->
+
+
+<!-- Google Events Start -->
+<script type="application/ld+json">
+[{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"Kronos Workforce Ready Suite Demonstration",
+"description":"Kronos® Workforce Ready™ cloud-based HR, payroll, and time & attendance solutions give you a competitive advantage with consistent, real-time employee data — all in one platform with one employee record and one simple user interface.",
+"startDate":"2016-09-15T13:00:00Z",
+"endDate":"2016-09-15T14:00:00Z",
+"location":{
+"@type":"Place",
+"name":"Webinar",
+"address":"297 Billerica Road,Chelmsford,MA"
+},
+"offers":{
+"@type":"Offer",
+"name":"Demo",
+"price":"0.00",
+"priceCurrency":"USD",
+"url":"http://solutions.kronos.com/forms/FY-12-OTH-DEM-Workforce-Ready-Pre-SalesDemos-2"
+}
+}
+,{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"Oracle OpenWorld 2016",
+"description":"Oracle OpenWorld is an annual Oracle convention for business decision-makers, IT management, and line-of-business end users. It is held in September in San Francisco, California. The world's largest conference for Oracle customers and technologists, Oracle OpenWorld San Francisco attracted some 60,000 visitors in 2014 and an additional 7 million followed the event online.",
+"startDate":"2016-09-18",
+"endDate":"2016-09-22",
+"url":"http://www.kronos.com/events/tradeshow/oracle-openWorld-2016.aspx",
+"location":{
+"@type":"Place",
+"name":"Moscone Convention Center",
+"address":"San Francisco,CA"
+}
+},{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"Kronos Workforce Ready Suite Demonstration",
+"description":"Kronos® Workforce Ready™ cloud-based HR, payroll, and time & attendance solutions give you a competitive advantage with consistent, real-time employee data — all in one platform with one employee record and one simple user interface.",
+"startDate":"2016-09-22T13:00:00Z",
+"endDate":"2016-09-22T14:00:00Z",
+"location":{
+"@type":"Place",
+"name":"Webinar",
+"address":"297 Billerica Road,Chelmsford,MA"
+},
+"offers":{
+"@type":"Offer",
+"name":"Demo",
+"price":"0.00",
+"priceCurrency":"USD",
+"url":"http://solutions.kronos.com/forms/FY-12-OTH-DEM-Workforce-Ready-Pre-SalesDemos-2"
+}
+}
+,{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"CUPA-HR Annual Conference & Expo 2016",
+"description":"The CUPA-HR Annual Conference and Expo is the nation's
+premier higher education HR event, a gathering of professionals in Higher-Ed HR
+from colleges and universities from across the country. You don’t want to miss
+the opportunity to gather with 1,000+ higher ed HR professionals to learn how
+other colleges and universities are tackling HR’s biggest challenges. ",
+"startDate":"2016-09-25",
+"endDate":"2016-09-27",
+"url":"http://www.kronos.com/events/tradeshow/cupa-hr-annual-conference-expo-2016.aspx",
+"location":{
+"@type":"Place",
+"name":"Washington Hilton",
+"address":"Washington,DC"
+}
+},{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"Adapt HR Practices to the Digital Age",
+"description":"In this webinar guest speaker Paul Hamerman, Vice President and Principal Analyst at Forrester Research discusses how HR is delivering better business outcomes by adapting to the digital age. ",
+"startDate":"2016-09-28T14:00:00Z",
+"endDate":"2016-09-28T15:00:00Z",
+"location":{
+"@type":"Place",
+"name":"Webinar",
+"address":"MA"
+},
+"offers":{
+"@type":"Offer",
+"name":"Webinar",
+"price":"0.00",
+"priceCurrency":"USD",
+"url":"http://www.kronos.com/webinar/adapt-hr-practices-to-the-digital-age.aspx"
+}
+}
+,{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"Kronos Workforce Ready Suite Demonstration",
+"description":"Kronos® Workforce Ready™ cloud-based HR, payroll, and time & attendance solutions give you a competitive advantage with consistent, real-time employee data — all in one platform with one employee record and one simple user interface.",
+"startDate":"2016-09-29T13:00:00Z",
+"endDate":"2016-09-29T14:00:00Z",
+"location":{
+"@type":"Place",
+"name":"Webinar",
+"address":"297 Billerica Road,Chelmsford,MA"
+},
+"offers":{
+"@type":"Offer",
+"name":"Demo",
+"price":"0.00",
+"priceCurrency":"USD",
+"url":"http://solutions.kronos.com/forms/FY-12-OTH-DEM-Workforce-Ready-Pre-SalesDemos-2"
+}
+}
+,{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"2016 ATA Management Conference & Expo",
+"description":"The 2016 ATA Management Conference &amp; Exhibition (MCE) is the most important meeting this year for trucking executives. MCE offers unparalleled access to government and industry policy makers, top suppliers, and industry experts that are critical to your success in today's rapidly changing business, regulatory and political environment. ",
+"startDate":"2016-10-01",
+"endDate":"2016-10-04",
+"url":"http://www.kronos.com/events/tradeshow/2016-ata-management-conference-expo.aspx",
+"location":{
+"@type":"Place",
+"name":"Mandalay Bay Resort & Casino",
+"address":"Las Vegas,NV"
+}
+},{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"HR Technology Conference & Expo",
+"description":"The HR Technology Conference is the original, the largest and the best conference on leveraging HR technology to drive your organization’s success. Every minute of the conference is designed to show organizations of all shapes and sizes how to utilize technology to reach new heights. ",
+"startDate":"2016-10-04",
+"endDate":"2016-10-07",
+"url":"http://www.kronos.com/events/tradeshow/hr-technology-conference-expo.aspx",
+"location":{
+"@type":"Place",
+"name":"McCormick Place",
+"address":"Chicago,IL"
+}
+},{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"ANCC National Magnet Conference",
+"description":"Empowering Nurses to Transform Health Care
+- Discover the next wave of nursing innovations at the 2016 ANCC National Magnet Conference®. Join more than 9,000 nurses, nursing executives, and health care professionals from top hospitals around the world to share proven best practices and spark your passion for change.",
+"startDate":"2016-10-05",
+"endDate":"2016-10-07",
+"url":"http://www.kronos.com/events/tradeshow/ancc-national-magnet-conf.aspx",
+"location":{
+"@type":"Place",
+"name":"Orange County Convention Center",
+"address":"Orlando,FL"
+}
+},{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"Staffing World 2016",
+"description":"Please join the American Staffing Association at this unprecedented event, where the largest gathering of business pioneers, thought leaders, and trailblazers will take part in a historic celebration of the industry.",
+"startDate":"2016-10-25",
+"endDate":"2016-10-27",
+"url":"http://www.kronos.com/events/tradeshow/staffing-world-2016.aspx",
+"location":{
+"@type":"Place",
+"name":"San Diego Convention Center",
+"address":"San Diego,CA"
+}
+},{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"EDUCAUSE Annual Conference 2016",
+"description":"The EDUCAUSE Annual Conference is the premier convening of IT professionals and technology providers across the diverse higher education landscape. The conference creates networking opportunities for colleagues to share ideas regarding strategies, leading change, effective processes, what's working, and sometimes—more importantly—what isn't.",
+"startDate":"2016-10-25",
+"endDate":"2016-10-28",
+"url":"http://www.kronos.com/events/tradeshow/educause-annual-conference-2016.aspx",
+"location":{
+"@type":"Place",
+"name":"Anaheim Convention Center",
+"address":"Anaheim,CA"
+}
+},{
+"@context":"http://schema.org",
+"@type":"BusinessEvent",
+"name":"28th Annual National Forum",
+"description":"2016 marks the 28th year of an event that has shaped the course of health care quality improvement in profound, enduring ways. Lend your voice, share your ideas, and join a force of great minds that will inspire and challenge you. This conference is more than a chance to network with nearly 6,000 health care professionals and gain actionable ideas for your organization. It's also an opportunity to play a part in effecting real change in health care quality and safety.",
+"startDate":"2016-12-04",
+"endDate":"2016-12-07",
+"url":"http://www.kronos.com/events/tradeshow/28th-annual-national-forum.aspx",
+"location":{
+"@type":"Place",
+"name":"World Center Marriott",
+"address":"Orlando,FL"
+}
+}]
+</script>
+<!-- Google Events End -->
+
+
+
+
+<!-- Generic function to pull the Google Analytics account information -->
+<script type="text/javascript">
+
+    /* <![CDATA[ */
+
+    function getLocaleSpecificGoogleAnalyticsAccount()
+    {
+        var hiddenFieldID = 'ctl00_SiteAnalytics_GoogleAnalyticsAccount';
+        var googleAnalyticsAccount = document.getElementById(hiddenFieldID).value;
+        return googleAnalyticsAccount;
+    }
+
+    /* ]]> */
+
+</script>
+
+<!-- Generc function to populate the href value of any dom element ID named "ContactKronos, ContactCTADescription, or ContactCTAButton with our link to the contact form on eloqua -->
+<script type="text/javascript">
+
+    /* <![CDATA[ */
+
+    $(document).ready(function ()
+    {
+        var contactUsLinkID = 'ContactUsLink';
+        var contactUsLinkValue = $("#" + contactUsLinkID).val();
+        var nextGenUIContactButton = document.getElementById("ContactKronos");
+        var contactCTADescription = document.getElementById("ContactCTADescription");
+        var contactCTAButton = document.getElementById("ContactCTAButton");
+
+        if (contactUsLinkID != null)
+        {
+
+            if (nextGenUIContactButton != null)
+                nextGenUIContactButton.setAttribute("href", contactUsLinkValue);
+
+            if (contactCTADescription != null)
+                contactCTADescription.setAttribute("href", contactUsLinkValue);
+
+            if (contactCTAButton != null)
+                contactCTAButton.setAttribute("href", contactUsLinkValue);
+
+        }
+
+        // dma (02/10/2014)
+        // send _trackEvent to google to capture viewport 3 seconds after page has loaded
+        // dma (09/26/2014)
+        // commenting out trackViewPort
+        //setTimeout(trackViewPort, 3000);
+
+        $('a.ContactKronosLink').each(function ()
+        {
+            $(this).attr('href', $('#ContactUsLink').val());
+        });
+
+    });
+
+    /* ]]> */
+
+</script>
+
+
+        
+
+<div id="IndustrySelectorContainer" style="display:none; width: 100%; background-color: #F15C22; text-align: center; margin: 0 auto; padding-bottom: 5px; border-bottom:1px solid #666;">
+    <div id="IndustrySelectorList" style="padding-top: 10px;">
+        <select name="ctl00$IndustrySelector$ddIndustries" id="ddIndustries" style="font-family: Verdana, Arial, sans-serif; font-size: 10px;">
+	<option value="Business Services">Business Services</option>
+	<option value="Education">Education</option>
+	<option value="Energy">Energy</option>
+	<option value="Financial Services">Financial Services</option>
+	<option value="Government">Government</option>
+	<option value="Healthcare">Healthcare</option>
+	<option value="Hospitality">Hospitality</option>
+	<option value="Life Sciences">Life Sciences</option>
+	<option value="Logistics">Logistics</option>
+	<option value="Manufacturing">Manufacturing</option>
+	<option value="None">None</option>
+	<option value="Other">Other</option>
+	<option value="Public Safety">Public Safety</option>
+	<option value="Retail">Retail</option>
+
+</select>
+    </div>
+    <div id="IndustrySelectorButton" style="padding: 5px;">
+        <input type="submit" name="ctl00$IndustrySelector$btnIndustrySelector" value="Set Industry" id="btnIndustrySelector" style="-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-family: Verdana, Arial, sans-serif; font-size: 11px;" />
+    </div>
+</div>
+
+        <!-- PAGE CONTAINER START -->
+        <div id="pageContainer">
+
+            <!-- GLOBAL HEADER CONTAINER START -->
+            <div id="globalHeaderContainer">
+
+                <div id="globalHeader">
+                    
+
+<style>
+    #headerSocialSearch { float: right;display: inline-block;}
+    #headerSocialNav { float: left;padding-right: 25px;margin-top: 3px;}
+    .customer-login-btn { padding-right: 8px;float: left;padding-top: 4px;text-transform: lowercase;}
+    .customer-login-btn .slimbutton { display: inline-block; outline: none; height: 10px; cursor: pointer; text-align: center; text-decoration: none; font: 14px/100% Arial, Helvetica, sans-serif; padding: .5em 2em .55em; text-shadow: 0 1px 1px rgba(0,0,0,.3); -webkit-border-radius: .5em; -moz-border-radius: .5em; border-radius: .5em; -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2); box-shadow: 0 1px 2px rgba(0,0,0,.2); }
+    .customer-login-btn .slimbutton:hover { text-decoration: none; }
+    .customer-login-btn .slimbutton:active { position: relative; top: 1px; } 
+    .customer-login-btn .blue {color: #fff !important;font-weight: bold; border: solid 1px #5191cd;background: #5191cd;background: -webkit-gradient(linear, left top, left bottom, from(#5191cd), to(#5191cd));background: -moz-linear-gradient(top,  #5191cd,  #5191cd);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5191cd', endColorstr='#5191cd');}
+    .customer-login-btn .blue:hover {background: #5191cd;background: -webkit-gradient(linear, left top, left bottom, from(#5191cd), to(#5191cd));background: -moz-linear-gradient(top,  #5191cd,  #5191cd);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5191cd', endColorstr='#5191cd');}
+    .customer-login-btn .orange {color: #fff !important;font-weight: bold; border: solid 1px #da7c0c;background: #F15C22;background: -webkit-gradient(linear, left top, left bottom, from(#F15C22), to(#F15C22));background: -moz-linear-gradient(top,  #F15C22,  #F15C22);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#F15C22', endColorstr='#F15C22');}
+    .customer-login-btn .orange:hover {background: #f47c20;background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));background: -moz-linear-gradient(top,  #f88e11,  #f06015);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');}
+    .customer-login-btn .small {font-size: 10px; padding: 0.15em 0.75em 0.25em; }
+</style>
+
+<div id="headerContainer">
+
+    <div id="topNav" class="topnav">
+        
+        <ul><li><a href="/about-us.aspx">About Kronos</a> | </li>
+<li><a href="/careers">Careers</a> | </li>
+<li><a href="/services/services.aspx">Services</a> | </li>
+<li><a href="/industry/industry-solutions.aspx">Industries</a> | </li>
+<li><a href="/partner/workforce-management-consulting.aspx">Partners</a> | </li>
+<li><a href="/resources/library-search.aspx">Resources</a></li>
+</ul>
+            
+        <div id="functions">
+            <div class="customer-login-btn"><a class="slimbutton orange small" href="/contact/contact-kronos.aspx?ecid=701610000005jmCAAQ&eqid=142">Contact Us</a></div>
+            <div class="customer-login-btn">
+                <a class="slimbutton blue small" href="/customer-support-login.aspx">
+                    Customer Login
+                </a>
+            </div>
+            <ul>
+                <li class="topNavText">
+                    <b>USA</b> 
+                    <a id="ctl00_SiteHeader1_lnkCountrySelect" class="smallLink" href="/countryselect.aspx">[change]</a>
+                     
+                </li>         
+            </ul>
+        </div> 
+                  
+    </div>
+    
+</div>
+
+<div id="logoSearch">
+
+    <a href="/" id="ctl00_SiteHeader1_logoLink">
+        <img src="/images/kronos-logo-2012.gif" alt="Kronos" id="logo" width="350" height="35" />
+    </a>
+    <div id="headerSocialSearch">
+        <div id="headerSocialNav">
+            <ul id="socialNav">
+                <li id="ctl00_SiteHeader1_linkedinIco" class="social-icons linkedin-icon"><a href="http://www.kronos.com/linkedin/" id="ctl00_SiteHeader1_A3" target="_blank"><span>LinkedIn</span></a></li>               
+                <li id="ctl00_SiteHeader1_twitterIco" class="social-icons twitter-icon"><a href="http://www.kronos.com/twitter/" id="ctl00_SiteHeader1_A2" target="_blank"><span>Twitter</span></a></li>
+                <li id="ctl00_SiteHeader1_facebookIco" class="social-icons facebook-icon"><a href="http://www.kronos.com/facebook/" id="ctl00_SiteHeader1_A1" target="_blank"><span>Facebook</span></a></li>
+                <li id="ctl00_SiteHeader1_googleIco" class="social-icons google-icon"><a href="http://www.kronos.com/googleplus/" id="ctl00_SiteHeader1_A4" target="_blank"><span>Google</span></a></li>
+                <li id="ctl00_SiteHeader1_youtubeIco" class="social-icons youtube-icon"><a href="http://www.kronos.com/youtube/" id="ctl00_SiteHeader1_A5" target="_blank"><span>YouTube</span></a></li>
+                <li id="ctl00_SiteHeader1_rssfeedIco" class="social-icons rssfeed-icon"><a id="A6" href="http://www.kronos.com/kronos.xml" target="_blank"><span>RssFeed</span></a></li>
+                
+                
+            </ul>
+        </div>
+        <div id="search">
+            
+
+<div id="searchBox">
+    
+    
+    <input id="SiteSearchAlias" name="SiteSearchAlias" type="hidden" value="/search.aspx" />
+    <input name="ctl00$SiteHeader1$SearchBox1$searchField" type="text" maxlength="50" id="searchField" class="searchField" />
+    
+    <img id="searchButton" class="searchButton" src="/images/search-button.gif" alt="Go" />
+    
+</div>
+<script type="text/javascript" src="/App_Pages/Plugins/typeahead/typeahead.bundle.min.js"></script>
+<script type="text/javascript">
+  
+
+    $(document).ready(function () {
+        
+        var _langid = $(".SiteLangId");
+        var _appendLangId = "";
+        if (_langid.length !== 0 && _langid.val() != 'undefined') {
+            _appendLangId = "?langid=" + _langid.val();
+        }
+        
+        var keywords = new Bloodhound({
+            datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.name); },
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            identify: function (d) { return d.id; },
+            prefetch: {
+                url: '/App_Handlers/Handler_GetSearchKeyWords.ashx' + _appendLangId,
+                cache: false
+            }
+
+        });
+
+        function keywordsWithDefaults(q, sync) {
+            if (q === '') {
+                var arr = [];
+                for (var i = 0; i < 5; i++) {
+                    arr[i] = i;
+                }
+                sync(keywords.get(arr));
+            }
+
+            else {
+                keywords.search(q, sync);
+            }
+        }
+
+        $('input#searchField').typeahead({
+            minLength: 0,
+            hint: true,
+            highlight: true
+        },
+        {
+            source: keywordsWithDefaults,
+            displayKey: function (keywords) {
+                return keywords.name;
+            }
+        });
+
+        $('input#searchField').bind('typeahead:selected', function (obj, datum, name) {
+            //alert(JSON.stringify(obj)); // object
+            //// outputs, e.g., {"type":"typeahead:selected","timeStamp":1371822938628,"jQuery19105037956037711017":true,"isTrigger":true,"namespace":"","namespace_re":null,"target":{"jQuery19105037956037711017":46},"delegateTarget":{"jQuery19105037956037711017":46},"currentTarget":
+            //alert(JSON.stringify(datum)); // contains datum value, tokens and custom fields
+            //// outputs, e.g., {"redirect_url":"http://localhost/test/topic/test_topic","image_url":"http://localhost/test/upload/images/t_FWnYhhqd.jpg","description":"A test description","value":"A test value","tokens":["A","test","value"]}
+            //// in this case I created custom fields called 'redirect_url', 'image_url', 'description'   
+
+            //alert(JSON.stringify(name)); // contains dataset name
+            //// outputs, e.g., "my_dataset"
+
+            var s_text = datum.name;
+            var uet = escape(s_text);
+            var ssa = $("input#SiteSearchAlias").val();
+            var rdu = ssa + "?searchtext=" + uet;
+            window.location = rdu;
+        });
+
+        var searchtext = function () {
+            var uet = $("input#searchField").val();
+            uet = escape(uet);
+            var ssa = $("input#SiteSearchAlias").val();
+            var rdu = ssa + "?searchtext=" + uet;
+            window.location = rdu;
+        };
+
+
+        $("img#searchButton").click(function () {
+            searchtext();
+        });
+
+        $("input#searchField").keydown(function (event) {
+            if (event.which || event.keyCode) {
+                if ((event.which == 13) || (event.keyCode == 13)) {
+                    event.preventDefault();
+                    searchtext();
+                }
+            };
+        });
+    });
+</script>
+<style>
+    img#searchButton:hover {
+        cursor: pointer;
+    }
+
+    #searchBox .tt-menu {
+        width: 120%;
+        margin: 12px 0;
+        padding: 8px 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    }
+
+        #searchBox .tt-menu .tt-suggestion:hover {
+            background-color: #e9f4fa;
+            cursor: pointer;
+        }
+
+        #searchBox .tt-menu .tt-dataset {
+            margin-left: 10px;
+        }
+</style>
+
+        </div>
+    </div>
+
+    
+</div>
+
+<div id="primaryNav" class="primarynav">
+    
+    <ul><li class="circle"><a id="TimeAndAttendance" href="/time-attendance/business-selector.aspx"><img border="0" alt="Time &amp; Attendance" title="Time &amp; Attendance" src="/uploadedImages/Global_Content/Common_Content_Modules/Navigation/nav_time-and-attendance.gif" /></a></li>
+<li class="circle"><a id="Scheduling" href="/scheduling-software/business-selector.aspx"><img border="0" alt="Scheduling" title="Scheduling" src="/uploadedImages/Global_Content/Common_Content_Modules/Navigation/nav_scheduling.gif" /></a></li>
+<li class="circle"><a id="AbsenceManagement" href="/absence-management/business-selector.aspx"><img border="0" alt="Absence Management" title="Absence Management" src="/uploadedImages/Global_Content/Common_Content_Modules/Navigation/nav_absence-management.gif" /></a></li>
+<li class="circle"><a id="HRPayroll" href="/hr/business-selector.aspx"><img border="0" alt="HR &amp; Payroll" title="HR &amp; Payroll" src="/uploadedImages/Global_Content/Common_Content_Modules/Navigation/nav_hr-payroll.gif" /></a></li>
+<li class="circle"><a id="Hiring" href="/hiring-software/business-selector.aspx"><img border="0" alt="Hiring" title="Hiring" src="/uploadedImages/Global_Content/Common_Content_Modules/Navigation/nav_hiring.gif" /></a></li>
+<li class="circle"><a id="LaborAnalytics" href="/labor-analysis/business-selector.aspx"><img border="0" alt="Labor Analytics" title="Labor Analytics" src="/uploadedImages/Global_Content/Common_Content_Modules/Navigation/nav_labor-analytics.gif" /></a></li>
+</ul>
+     
+</div>
+
+
+
+<script type="text/javascript" src="/js/EloquaDataLookup.js"></script>
+<script type="text/javascript" src="/js/elq/elqPersChk.js?cb=864"></script>
+
+<div id="__kpchk" style="display:none; width:525px; margin:0 auto; padding-top:20px; padding-bottom:20px;">
+    
+</div>
+                </div>
+
+            </div>
+            <!-- GLOBAL HEADER CONTAINER END -->
+            <div id="usRotatorSection" class="SiteUsRatator"></div>
+
+            <!-- MAIN CONTENT AREA START -->
+            <div id="mainContentArea">
+                
+                
+
+    <!-- Home Page Specific Tracking Code List Start -->
+    <!-- Pulls content list from TrackingCode metadata tag associated with the HomePage Tracking Code content block (15342) at the root of each site folder within the CMS -->
+    <!--  02/27/2012 - dma - this is no longer needed now that we have an alias for the homepage, we can associate  -->
+    <!-- TrackingCode metadata to it instead of having it being pulled from a seperate content block  -->
+    <!--  -->
+
+    <!-- Home Page Specific Tracking Code List End -->
+
+    
+
+    <!-- Hidden Fields Start -->
+    <input type="hidden" name="ctl00$MainContentPlaceHolder$SiteLangType" id="ctl00_MainContentPlaceHolder_SiteLangType" />
+    <input type="hidden" name="ctl00$MainContentPlaceHolder$Locale" id="ctl00_MainContentPlaceHolder_Locale" />
+    <!-- Hidden Fields End -->
+
+
+    <div id="phModuleHolder">
+        
+    </div>
+    <div id="herosliderContainer">
+        <div class="CTAHeroContainer_custompaging" id="homepageheroslider" style="visibility:hidden">  <div class="hero_slide"  rel="/compliance-resource-center.aspx">                                           
+                                               <div style="margin-top: 25px; margin-left: 35px; float: left;"><a href="/compliance-resource-center.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:FLSA-overtime-rules-change:Text"><img width="437" height="240" title="FLSA overtime rules change" alt="FLSA overtime rules change" data-lazy="/uploadedImages/Global_Content/Call_To_Action/HeroSlider/FLSA-hero-banner-text.png" /></a></div><div class="AnimateText" style="right: 25px; margin-top: 0px; margin-bottom: 20px; float: right; position: relative;"><a href="/compliance-resource-center.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:FLSA-overtime-rules-change:Graphic"><img width="417" height="282" title="FLSA overtime rules change" style="margin-left: 60px;" alt="FLSA overtime rules change" data-lazy="/uploadedImages/Global_Content/Call_To_Action/HeroSlider/FLSA-hero-banner-graphic.png" /></a><p style="text-align: right; margin-top: -15px; margin-left: 200px; position: absolute;"><a class="ctalink orange" href="/compliance-resource-center.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:FLSA-overtime-rules-change:Button">Learn More &gt;</a></p></div><div class="thumbnail" style="display: none"><img data-lazy="/uploadedimages/global_content/call_to_action/heroslider/flsa-icon.png?n=90210" title="FLSA overtime rules change" clicktaleeventtrigger="homepageheroslider:FLSA overtime rules change:Thumbnail" /></div>
+                                            </div>  <div class="hero_slide"  rel="/employee-engagement-resource-center.aspx">                                           
+                                               <div style="margin-top: 30px; margin-right: 60px; margin-left: 60px; float: left;"><a href="/employee-engagement-resource-center.aspx"><img title="Prevent Employee Burnout" alt="Prevent Employee Burnout" data-lazy="/uploadedImages/Global_Content/Call_To_Action/HeroSlider/prevent-employee-burnout.png" /></a></div><div class="AnimateText" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; float: left;"><a href="/employee-engagement-resource-center.aspx"><img title="Prevent Employee Burnout" alt="Prevent Employee Burnout" data-lazy="/uploadedImages/Global_Content/Call_To_Action/HeroSlider/circular.png" /></a><p style="text-align: right; margin-top: -25px; margin-left: 65px; position: absolute;"><a class="ctalink orange" href="/employee-engagement-resource-center.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:PreventEmployeeBurnout:Button">Learn more &gt;</a></p></div><div class="thumbnail" style="display: none"><img data-lazy="/uploadedimages/global_content/call_to_action/heroslider/engaged-icon.png" title="Customer Success" clicktaleeventtrigger="homepageheroslider:Customer Success:Thumbnail" /></div>
+                                            </div>  <div class="hero_slide"  rel="/products/smb-solutions/workforce-ready.aspx">                                           
+                                               <div style="margin-top: 35px; margin-left: 35px; float: left;"><a href="/products/smb-solutions/workforce-ready.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:WFR:Graphic/Text"><img title="WFR unified platform" alt="WFR unified platform" data-lazy="/uploadedImages/Global_Content/Call_To_Action/HeroSlider/WFR-feature.png" /></a></div><div class="AnimateText" style="margin-top: 0px; margin-left: 0px; float: left;"><a href="/products/smb-solutions/workforce-ready.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:WFR:Graphic"><img title="Workforce Ready" alt="Workforce Ready" data-lazy="/uploadedImages/Global_Content/Common_Content_Modules/Home_Page_V2_Slide_Content/WFR-Laptop-2015.png" /></a><p style="text-align: right; margin-top: -25px; margin-left: 65px; position: absolute;"><a class="ctalink orange" href="/products/smb-solutions/workforce-ready.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:WFR:Button">See how it can fit your 
+ needs &gt;</a></p></div><div class="thumbnail" style="display: none"><img data-lazy="/uploadedimages/global_content/common_content_modules/home_page_v2_slide_content/workforce-ready-icon.jpg" title="Workforce Ready" clicktaleeventtrigger="homepageheroslider:Workforce Ready:Thumbnail" /></div>
+                                            </div>  <div class="hero_slide"  rel="/products/workforce-management-suite.aspx">                                           
+                                               <div style="padding-left: 0px; margin-top: 0px;"><a data-clicktaleeventtrigger="HomepageHeroSlider:WFC8:Graphic/Text" href="/products/workforce-management-suite.aspx"><img data-lazy="/uploadedImages/Global_Content/Call_To_Action/HeroSlider/EN-WFC8-Hero-banner-No-Boundaries.png" alt="Workforce Central 8 - see how it can fit your needs" title="Workforce Central 8 - see how it can fit your needs" /></a></div><div style="margin-top: -10px; margin-right: 140px; float: right; display: inline-block;" class="AnimateText"><p><a data-clicktaleeventtrigger="HomepageHeroSlider:WFC8:Button" href="/products/workforce-management-suite.aspx" class="ctalink orange">See how it can fit your needs &gt;</a></p></div><div class="thumbnail" style="display: none"><img data-lazy="/uploadedimages/global_content/call_to_action/heroslider/wfc8-icon.png" title="Workforce Central 8" clicktaleeventtrigger="homepageheroslider:Workforce Central 8:Thumbnail" /></div>
+                                            </div>  <div class="hero_slide"  rel="/why-kronos/workforce-management.aspx">                                           
+                                               <div style="margin-top: 30px; margin-left: 40px; float: left;"><a href="/why-kronos/workforce-management.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:Why Workforce Management:Graphic/Text"><img title="Why Workforce Management" alt="Why Workforce Management" data-lazy="/uploadedImages/Global_Content/Call_To_Action/HeroSlider/why-workforce-management.png" /></a></div><div class="AnimateText" style="margin-top: 15px; float: right; position: relative; right:5px"><a href="/why-kronos/workforce-management.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:Why Workforce Management:Graphic"><img width="212" height="228" title="Why Workforce Management" style="margin-left: 60px;" alt="Why Workforce Management" data-lazy="/uploadedImages/Global_Content/Call_To_Action/HeroSlider/kronos-triforce.png" /></a><p style="margin-top: 5px;"><a class="ctalink orange" href="/why-kronos/workforce-management.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:ACA:Button">See how workforce management drives value &gt;</a></p></div><div class="thumbnail" style="display: none"><img data-lazy="/uploadedimages/global_content/call_to_action/heroslider/wfmgmt-icon.jpg?n=915" title="Workforce Management" clicktaleeventtrigger="homepageheroslider:Workforce Management:Thumbnail" /></div>
+                                            </div>  <div class="hero_slide"  rel="/cloud/cloud-workforce-management.aspx">                                           
+                                               <div style="margin-top: 0px; margin-left: 20px; float: left;"><a href="/cloud/cloud-workforce-management.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:TheCloud:Graphic"><img width="460" height="300" title="Get the benefits of our software on demand" alt="Get the benefits of our software on demand" data-lazy="/uploadedImages/Global_Content/Common_Content_Modules/Home_Page_V2_Slide_Content/KronosInTheCloud-2014.png" /></a></div><div class="AnimateText" style="margin-top: 55px; margin-left: 0px;"><a href="/cloud/cloud-workforce-management.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:TheCloud:Graphic/Text"><img title="Get the benefits of our software on demand" alt="Get the benefits of our software on demand" data-lazy="/uploadedImages/Global_Content/Common_Content_Modules/Home_Page_V2_Slide_Content/KronosInTheCloud-Text-2014.png" /></a><p style="margin-top: 75px; margin-left: 65px; display: inline-block;"><a class="ctalink orange" href="/cloud/cloud-workforce-management.aspx" data-clicktaleeventtrigger="HomepageHeroSlider:TheCloud:Button">See the value of software in the cloud &gt;</a></p></div><div class="thumbnail" style="display: none"><img data-lazy="/uploadedimages/global_content/common_content_modules/home_page_v2_slide_content/cloud-thumb-en-us.jpg?n=4106" title="kronosCloud" clicktaleeventtrigger="homepageheroslider:kronosCloud:Thumbnail" /></div>
+                                            </div></div>
+
+<input name="ctl00$MainContentPlaceHolder$HomepageHero$ControllerInfoCTAHeroValue" type="hidden" id="ctl00_MainContentPlaceHolder_HomepageHero_ControllerInfoCTAHeroValue" class="ControllerInfoCTAHeroValue" value="{&quot;SliderName&quot;:&quot;homepageheroslider&quot;,&quot;Autoplay&quot;:&quot;True&quot;,&quot;LazyLoad&quot;:&quot;True&quot;, &quot;CustomThumbnails&quot;:&quot;True&quot;,&quot;Arrows&quot;:&quot;True&quot;,&quot;Speed&quot;:&quot;4000&quot;,&quot;cacheobjects&quot;:&quot;Kronos_CTA_HeroSlider_Id_23622329705_Language_1033Kronos_CTA_HeroSlider_Id_23622328725_Language_1033Kronos_CTA_HeroSlider_Id_23622326963_Language_1033Kronos_CTA_HeroSlider_Id_23622327248_Language_1033Kronos_CTA_HeroSlider_Id_23622327801_Language_1033Kronos_CTA_HeroSlider_Id_23622325688_Language_1033&quot;}" />
+
+
+    </div>
+
+    <div id="slideshowContainer">
+        
+
+<div class="HomePageCarousel">
+    
+    <div class="flex-container" style="width: 955px; margin: 0 auto">
+        <div class="flexslider" id="HomePageCarouselSlider">
+            <ul class="slides"><li><div class="CarouselContainer"><a class = "popup_false" href = "http://solutions.kronos.com/q1-17-oth-trd-hr-tech?src=kron-homepage" target = "_blank" title = "http://solutions.kronos.com/q1-17-oth-trd-hr-tech?src=kron-homepage" alt = "http://solutions.kronos.com/q1-17-oth-trd-hr-tech?src=kron-homepage"><div class="carouselSlide"><div class="SlideThumbnail"><img title="Visit us at HR Tech 2016" alt="Visit us at HR Tech 2016" src="/uploadedImages/Global_Content/Common_Content_Modules/Home_Page_V2_Carousel_Content/HR-Tech-thumbnail.jpg" /></div><div class="SlideInfo"><div class="slideTitle">Visit us at<br />HR Tech 
+ 2016</div><div class="carouselSubTitle">Create and manage an   
+ engaged workforce with Kronos<br /><b>Booth #1622</b></div></div></div></a><div class="PopupIndicator"><a title="http://solutions.kronos.com/q1-17-oth-trd-hr-tech?src=kron-homepage" href="http://solutions.kronos.com/q1-17-oth-trd-hr-tech?src=kron-homepage" target="_blank" Class="popup_false"></a></div></div></li><li><div class="CarouselContainer"><a class = "popup_false" href = "http://solutions.kronos.com/Q4-16-WBR-WFC-8-No-Boundaries-More-Possibilities" target = "_blank" title = "http://solutions.kronos.com/Q4-16-WBR-WFC-8-No-Boundaries-More-Possibilities" alt = "http://solutions.kronos.com/Q4-16-WBR-WFC-8-No-Boundaries-More-Possibilities"><div class="carouselSlide"><div class="SlideThumbnail"><img title="Webinar: Introducing Workforce Central 8" alt="Workforce Central 8: On-Demand Webinar" src="/uploadedImages/Global_Content/Common_Content_Modules/Home_Page_V2_Carousel_Content/WFC8-100x100.jpg" /></div><div class="SlideInfo"><div class="slideTitle">Workforce Central      
+8</div><div class="carouselSubTitle"><p>Learn about the latest<br />features available to you.</p><p> </p><p>View Now</p></div></div></div></a><div class="PopupIndicator"><a title="http://solutions.kronos.com/Q4-16-WBR-WFC-8-No-Boundaries-More-Possibilities" href="http://solutions.kronos.com/Q4-16-WBR-WFC-8-No-Boundaries-More-Possibilities" target="_blank" Class="popup_false"></a></div></div></li><li><div class="CarouselContainer"><a class = "popup_false" href = "http://www.kronos.com/research/fatigue-management-in-the-oil-and-gas-industry.aspx" target = "_self" title = "Fatigue Management" alt = "Fatigue Management"><div class="carouselSlide"><div class="SlideThumbnail"><img width="100" height="100" title="Fatigue Management" style="width: 100px; height: 100px;" alt="Fatigue Management" src="/uploadedImages/Global_Content/Common_Content_Modules/Home_Page_V2_Carousel_Content/Fatigue-management-home-slider-100.jpg?n=4177" /></div><div class="SlideInfo"><div class="slideTitle">Fatigue Management   in <br />Oil and Gas</div><div class="carouselSubTitle">Proactively        
+ schedule rest <br /> to prevent employee  <br />burnout</div></div></div></a><div class="PopupIndicator"><a title="Fatigue Management" href="http://www.kronos.com/research/fatigue-management-in-the-oil-and-gas-industry.aspx" Class="popup_false"></a></div></div></li><li><div class="CarouselContainer"><a class = "popup_false" href = "http://www.kronos.com/kronosworks16" target = "_self" title = "http://www.kronos.com/kronosworks16" alt = "http://www.kronos.com/kronosworks16"><div class="carouselSlide"><div class="SlideThumbnail"><img title="KronosWorks 2016" alt="KronosWorks 2016" src="/uploadedImages/Global_Content/Common_Content_Modules/Home_Page_V2_Carousel_Content/KW16-Homepage-carousel.png" /></div><div class="SlideInfo"><div class="slideTitle">Join us at KronosWorks          
+ 2016</div><div class="carouselSubTitle">The World's Leading        
+  Workforce Information Exchange!</div></div></div></a><div class="PopupIndicator"><a title="http://www.kronos.com/kronosworks16" href="http://www.kronos.com/kronosworks16" Class="popup_false"></a></div></div></li><li><div class="CarouselContainer"><a class = "popup_false" href = "https://vts.inxpo.com/Launch/QReg.htm?ShowKey=30490" target = "_blank" title = "https://vts.inxpo.com/Launch/QReg.htm?ShowKey=30490" alt = "https://vts.inxpo.com/Launch/QReg.htm?ShowKey=30490"><div class="carouselSlide"><div class="SlideThumbnail"><img title="Services Virtual Conference" alt="Services Virtual Conference" src="/uploadedImages/Global_Content/Common_Content_Modules/Home_Page_V2_Carousel_Content/Services-Virtual-Conference-LightBulb.jpg?n=6603" /></div><div class="SlideInfo"><div class="slideTitle">Achieving  Excellence with Your 
+  Kronos System</div><div class="carouselSubTitle">On-Demand        
+ Virtual    Conference</div></div></div></a><div class="PopupIndicator"><a title="https://vts.inxpo.com/Launch/QReg.htm?ShowKey=30490" href="https://vts.inxpo.com/Launch/QReg.htm?ShowKey=30490" target="_blank" Class="popup_false"></a></div></div></li><li><div class="CarouselContainer"><a class = "popup_false" href = "/video/kronos-paragon.aspx" target = "_self" title = "http://www.kronos.com/video/kronos-paragon.aspx" alt = "http://www.kronos.com/video/kronos-paragon.aspx"><div class="carouselSlide"><div class="SlideThumbnail"><img alt="Paragon" src="/uploadedImages/Global_Content/Common_Content_Modules/Home_Page_V2_Carousel_Content/paragon-billboard.jpg?n=8181" /></div><div class="SlideInfo"><div class="slideTitle">Kronos                         
+Paragon</div><div class="carouselSubTitle">Experience a faster      
+ approach to workforce management implementation with <br />Kronos               
+ Paragon.</div></div></div></a><div class="PopupIndicator"><a title="http://www.kronos.com/video/kronos-paragon.aspx" href="/video/kronos-paragon.aspx" Class="popup_false"></a></div></div></li></ul>        
+        </div>
+            <div class="PopupHP"></div>
+        <div id="HPCIndicator" class="CarouselIndicator">
+            <div class="CI_active item1"></div><div class="CI_active item2"></div><div class="CI_active item3"></div><div class="CI_inactive item4"></div><div class="CI_inactive item5"></div><div class="CI_inactive item6"></div>
+        </div>
+    </div>
+</div>
+<div id="controllers">
+    <input name="ctl00$MainContentPlaceHolder$HomepageContentCarousel$HPCarouselControllerInfo" type="hidden" id="ctl00_MainContentPlaceHolder_HomepageContentCarousel_HPCarouselControllerInfo" class="HPCarouselControllerInfoValue" />
+</div>
+
+    </div>
+    <div id="hpMiddle">
+        <div class="middle_left">
+            <div class="kronos-scb scenario_cb_23622327792"><div class="p_content_body"><h3>See how workforce management delivers for your industry</h3><div><p><a href="/why-kronos/why-kronos.aspx" title="Better manage your workforce with Kronos" alt="Better manage your workforce with Kronos">Better manage your workforce with Kronos.</a> Our solutions help optimize your workforce for a direct and positive impact on your bottom line — no matter your industry.
+                  </p><br /><p>
+                    Kronos solutions automate processes to help engage employees and increase operational efficiencies. Learn how we help you <a href="/controlling-costs-resource-center.aspx" title="control labor costs" alt="control labor costs">control labor costs</a>, <a href="/compliance-resource-center.aspx" title="minimize compliance risk" alt="minimize compliance risk">minimize compliance risk</a>, and <a href="/compliance-resource-center.aspx" title="improve workforce productivity" alt="improve workforce productivity">improve workforce productivity</a> to gain a competitive edge.
+                  </p></div></div></div>
+
+
+        </div>
+        <div class="middle_right">
+            <div class="kronos-scb cta_cb_23622327797"><div class="industrySelector"><div class="selector_container"><div class="container_thumbnail"><img title="Industry Billboard" alt="Industry Billboard" src="/uploadedImages/Global_Content/Call_To_Action/Industry_Selector/industry-billboard.jpg" /></div><div class="container_body"><div class="title">
+                Looking for <br />your
+                industry?
+            </div><div class="subtitle">
+                See how a Kronos
+                <br />solution can help an
+<br />organization like yours.
+            </div></div><div class="container_indicator"><a class="popup"></a></div></div><div class="selector_popup inactive"><div class="popup_title">
+            See
+            how we can help an <br />organization like yours
+        </div><div class="industryImage"><img src="/images/k-logo.jpg" alt="Kronos" class="ImgShow" /></div><div class="industryList"><div style="width: 100px; float: left; position: relative;"><div><a href="/industry/business-services/business-services-workforce-management.aspx">Services</a><span style="display: none;"><img alt="Business Services" src="/images/industry/global/business-services.jpg" /></span></div><div><a href="/industry/education.aspx">Education</a><span style="display: none;"><img alt="Education" src="/images/industry/global/education.jpg" /></span></div><div><a href="/industry/energy/energy-workforce-management.aspx">Energy</a><span style="display: none;"><img alt="Energy" src="/images/industry/global/energy.jpg" /></span></div><div><a href="/industry/financial-services/financial-services-workforce-management.aspx">Financial</a><span style="display: none;"><img alt="Financial" src="/images/industry/global/finance.jpg" /></span></div><div><a href="/industry/government/government-workforce-management.aspx">Government</a><span style="display: none;"><img alt="Government" src="/images/industry/global/government.jpg" /></span></div></div><div style="width: 120px; padding-left: 30px; float: left; position: relative;"><div><a href="/Industry/Healthcare/Healthcare-Workforce-Management.aspx">Healthcare</a><span style="display: none;"><img alt="Healthcare" src="/images/industry/global/healthcare.jpg" /></span></div><div><a title="Hospitality" href="/industry/hospitality/hospitality-workforce-management.aspx">Hospitality</a><span style="display: none;"><img alt="Hospitality" src="/images/industry/global/hospitality.jpg" /></span></div><div><a href="/industry/logistics/logistics-workforce-management.aspx">Logistics</a><span style="display: none;"><img alt="Logistics" src="/images/industry/global/logistics.jpg" /></span></div><div><a href="/industry/manufacturing/manufacturing-workforce-management.aspx">Manufacturing</a><span style="display: none;"><img alt="Manufacturing" src="/images/industry/global/manufacturing.jpg" /></span></div><div><a href="/industry/retail/retail-workforce-management.aspx">Retail</a><span style="display: none;"><img alt="Retail" src="/images/industry/global/retail.jpg" /></span></div></div></div></div></div></div>
+
+
+        </div>
+    </div>
+    <div id="homepageBottom">
+        <!-- Home Page Bottom Left -->
+        <div id="hpBottomLeft">
+            
+                <div id="mainFeature">
+                    <div id="ctl00_MainContentPlaceHolder_mainFeatureContent">
+	<h3>Why Kronos?</h3>
+<p>The Kronos <a href="hcm/human-capital-management-trends.aspx"> unified human capital management (HCM) platform</a> embraces your <em>entire</em> workforce with an integrated toolset that helps manage all aspects of the employee lifecycle.</p>
+<p> </p>
+<p>Built for a range of industries, <a href="/workforce-management.aspx">Kronos workforce management solutions</a> serve the needs of your entire workforce as well with uncompromised functionality and the ability to integrate with existing ERP or HCM applications. </p>
+<p> </p>
+<p><a href="/Why-Kronos/Why-Kronos.aspx">Why Kronos?</a> For organizations of all sizes and in all industries, it’s simply <strong>Workforce Innovation That Works<sup>™</sup></strong>. </p>
+</div>
+                </div>
+            
+        </div>
+
+        <!-- Home Page Bottom Middle  -->
+        <div id="hpBottomMiddle">
+            
+<!-- standalone page styling (can be removed) -->
+<style>
+    .newsevents {
+        width: 280px;
+        margin: 0 auto;
+    }
+        /* style for tabs start  */
+        .newsevents ul.tabs {
+            list-style: none;
+            margin: 0 !important;
+            padding: 0;
+            height: 30px;
+            border-bottom: none;
+        }
+
+            /* single tab */
+            .newsevents ul.tabs li {
+                float: left;
+                text-indent: 0;
+                padding: 0;
+                margin: 0 !important;
+                list-style-image: none !important;
+            }
+
+            /* link inside the tab. uses a background image */
+            .newsevents ul.tabs a {
+                background-color: #EBEBEB;
+                border: 1px solid #999;
+                font-size: 11px;
+                display: block;
+                height: 30px;
+                line-height: 30px;
+                width: 134px;
+                text-align: center;
+                text-decoration: none;
+                color: #293E6B;
+                padding: 0px;
+                margin: 0px;
+                position: relative;
+                top: 1px;
+            }
+
+            .newsevents ul.tabs li.ui-tabs-active a, ul.tabs li.ui-state-active a {
+                background-color: white;
+                border-bottom: none;
+                padding-bottom: 1px;
+            }
+        /* style for tabs end  */
+
+        /* style for panels start  */
+        .newsevents div.panels {
+            padding: 15px 10px; /*border: 1px solid #999;*/
+            border: 1px solid #999;
+            font-size: 14px;
+            background-color: #fff;
+            width: 255px;
+            float: left;
+        }
+
+        .newsevents .panels #tabs-News, .newsevents .panels #tabs-Events {
+            text-align: center;
+        }
+
+        .newsevents .panels .Items {
+            text-align: left;
+        }
+
+            .newsevents .panels .Items .pr_date {
+                position: relative;
+                display: inline-block;
+                width: 37px;
+                height: 37px;
+                padding-top: 1px;
+                background-image: url(/images/HomePage/NewsEvents/Btn_Calendar.png);
+                background-position: left top;
+                background-repeat: no-repeat;
+                line-height: 1.3em;
+                vertical-align: top;
+                text-align: center;
+                text-transform: uppercase;
+                float: left;
+                clear: both;
+            }
+
+                .newsevents .panels .Items .pr_date span.pr_date_month {
+                    position: relative;
+                    width: 93px;
+                    font-size: 11px;
+                    font-weight: bold;
+                    color: #E3E3ED;
+                    padding-right: 4px;
+                    top: -2px;
+                }
+
+                .newsevents .panels .Items .pr_date span.pr_date_day {
+                    position: relative;
+                    width: 93px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #586899;
+                    padding-top: 3px;
+                    padding-right: 4px;
+                    top: -2px;
+                }
+
+            .newsevents .panels .Items .pr_title {
+                color: #2a6ebb;
+                display: inline-block;
+                font-family: Verdana;
+                font-size: 12px;
+                line-height: 1.4em; /*     margin-left: 10px;     padding: 0 0 15px;     */
+                padding-left: 10px;
+                padding-bottom: 15px;
+                position: relative;
+                width: 200px;
+                vertical-align: top;
+            }
+
+                .newsevents .panels .Items .pr_title a {
+                    font-size: 12px;
+                }
+
+
+        .newsevents .panels .ViewAll {
+            display: inline-block;
+            position: relative;
+            bottom: 0px;
+        }
+    /* style for panels end  */
+</style>
+<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#newsevents").tabs();
+        setEventHeight();
+    });
+
+    function setEventHeight() {
+
+        var RecentNewsHeight = $('#tabs-News').height();
+        var UpcomingEventsHeight = $('#tabs-Events').height();
+        $('.panels').height((RecentNewsHeight > UpcomingEventsHeight) ? RecentNewsHeight + 10 : UpcomingEventsHeight + 10);
+    }
+
+</script>
+
+
+
+<div class="newsevents" id="newsevents">
+    <ul class="tabs">
+        <li><a href="#tabs-News">Recent News</a></li>
+        <li><a href="#tabs-Events">Upcoming Events</a></li>
+    </ul>
+    <div class="panels">
+        <div id="tabs-News" class="tabs-News">
+            <div class="Items">
+                                  <div class="pr_date">
+                                   <span class="pr_date_month">Sep</span>
+                                   <span class="pr_date_day">20</span>
+                                  </div>
+                                  <div class="pr_title">
+                                   <a href="/pr/kalamazoo-anesthesiology-expands-use-of-kronos-adds-kronos-ezcall.aspx" title="Kalamazoo Anesthesiology Expands Use of Kronos; Adds Kronos EZCall" alt="Kalamazoo Anesthesiology Expands Use of Kronos; Adds Kronos EZCall">Kalamazoo Anesthesiology Expands Use of Kronos; Adds Kronos EZCall</a>
+                                  </div>
+                                </div><div class="Items">
+                                  <div class="pr_date">
+                                   <span class="pr_date_month">Sep</span>
+                                   <span class="pr_date_day">19</span>
+                                  </div>
+                                  <div class="pr_title">
+                                   <a href="/pr/aron-ain-of-kronos-named-ceo-of-the-year.aspx" title="Aron Ain of Kronos Named CEO of the Year" alt="Aron Ain of Kronos Named CEO of the Year">Aron Ain of Kronos Named CEO of the Year</a>
+                                  </div>
+                                </div><div class="Items">
+                                  <div class="pr_date">
+                                   <span class="pr_date_month">Sep</span>
+                                   <span class="pr_date_day">14</span>
+                                  </div>
+                                  <div class="pr_title">
+                                   <a href="/pr/kronos-recognized-as-a-best-place-to-work-in-australia.aspx" title="Kronos Recognized as a Best Place to Work in Australia" alt="Kronos Recognized as a Best Place to Work in Australia">Kronos Recognized as a Best Place to Work in Australia</a>
+                                  </div>
+                                </div>
+            <div class="ViewAll">
+                <a href="/pressroom/press-room.aspx" class="events">
+                    <img src="/images/HomePage/NewsEvents/btn_viewAll.png" /></a>
+            </div>
+        </div>
+        <div id="tabs-Events" class="tabs-Events">
+            <div class="Items">
+                                  <div class="pr_date">
+                                   <span class="pr_date_month">Sep</span>
+                                   <span class="pr_date_day">28</span>
+                                  </div>
+                                  <div class="pr_title">
+                                   <a href="/webinar/adapt-hr-practices-to-the-digital-age.aspx" title="Adapt HR Practices to the Digital Age" alt="Adapt HR Practices to the Digital Age">Adapt HR Practices to the Digital Age</a>
+                                  </div>
+                                </div><div class="Items">
+                                  <div class="pr_date">
+                                   <span class="pr_date_month">Sep</span>
+                                   <span class="pr_date_day">25</span>
+                                  </div>
+                                  <div class="pr_title">
+                                   <a href="/events/tradeshow/cupa-hr-annual-conference-expo-2016.aspx" title="CUPA-HR Annual Conference & Expo 2016" alt="CUPA-HR Annual Conference & Expo 2016">CUPA-HR Annual Conference & Expo 2016</a>
+                                  </div>
+                                </div><div class="Items">
+                                  <div class="pr_date">
+                                   <span class="pr_date_month">Sep</span>
+                                   <span class="pr_date_day">18</span>
+                                  </div>
+                                  <div class="pr_title">
+                                   <a href="/events/tradeshow/oracle-openWorld-2016.aspx" title="Oracle OpenWorld 2016" alt="Oracle OpenWorld 2016">Oracle OpenWorld 2016</a>
+                                  </div>
+                                </div>
+            <div class="ViewAll">
+                <a href="/events/workforce-management-events.aspx" class="events">
+                    <img src="/images/HomePage/NewsEvents/btn_viewAll.png" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+
+        <!-- Home Page Bottom Right  -->
+        <div id="hpBottomRight">
+            
+                <div id="homeRightCol">
+                    
+
+  <div class="ctablockV2" xmlns:obj="urn:localization"><div class="ctaheadV2"><img width="21" height="21" class="widgetIcon" alt="Event" src="/images/icon_our-conference.gif" /><h3>See a demonstration of Kronos Workforce Ready</h3></div><div class="ctadescV2"><a href="/products/smb-solutions/workforce-ready/demo-center.aspx">Enterprise-class HR, payroll, and timekeeping simplified</a></div><div class="ctabutton"><a class="buttonCta" href="/products/smb-solutions/workforce-ready/demo-center.aspx"><span>view demo</span></a></div></div><div class="ctablockV2" xmlns:obj="urn:localization"><div class="ctaheadV2"><img width="21" height="21" class="widgetIcon" alt="Download" src="/images/icon_download.gif" /><h3>Free Guide</h3></div><div class="ctadescV2"><a href="/white-paper/time-and-attendance-buyers-guide.aspx">How to Select an Automated Time and Attendance Solution</a></div><div class="ctabutton"><a class="buttonCta" href="/white-paper/time-and-attendance-buyers-guide.aspx"><span>download</span></a></div></div>
+  
+                    
+                </div>
+            
+        </div>
+    </div>
+
+    <!-- Home Page Specific Tracking Code Start -->
+    
+    <!-- Home Page Specific Tracking Code End -->
+
+
+            </div>
+            <!-- MAIN CONTENT AREA END -->
+
+            <div style="clear: both"></div>
+
+            <!-- GLOBAL FOOTER START -->
+            <div id="globalFooter">
+                
+
+<div id="footerTop">
+    <a href="/time-attendance/business-selector.aspx">Time &amp; Attendance</a>
+<span class="itemspacer">|</span>
+<a href="/scheduling-software/business-selector.aspx">Scheduling</a>
+<span class="itemspacer">|</span>
+<a href="/absence-management/business-selector.aspx">Absence Management</a>
+<span class="itemspacer">|</span>
+<a href="/hr/business-selector.aspx">HR &amp; Payroll</a>
+<span class="itemspacer">|</span>
+<a href="/hiring-software/business-selector.aspx">Hiring</a>
+<span class="itemspacer">|</span>
+<a href="/labor-analysis/business-selector.aspx">Labor Analytics</a>
+
+</div>
+
+<div id="footerMiddle">
+
+    <div id="footerMiddleTop">
+          <a href="/contact/contact-kronos.aspx?ecid=701610000005jmCAAQ&eqid=142">Contact Us</a>
+<span class="itemspacer">|</span>
+<a href="/careers/careers.aspx">Careers</a>
+<span class="itemspacer">|</span>
+<a href="/terms-of-use.aspx">Terms of Use</a>
+<span class="itemspacer">|</span>
+<a href="/trademark-policy.aspx">Trademarks</a>
+<span class="itemspacer">|</span>
+<a href="/kronos-site-usage-privacy-policy.aspx">Privacy Policy</a>
+<span class="itemspacer">|</span>
+<a href="/site-map.aspx">Site Map</a>
+<span class="itemspacer">|</span>
+<a href="/socialmedia.aspx">Social Media</a>
+
+    </div>
+    
+    <div id="footerMiddleCenter">
+        <strong>Sales:</strong> (800) 225-1561<span class="itemspacer">|</span><strong>Support:</strong> (800) 394-4357
+    </div>
+    
+    
+    
+</div>
+
+<div id="footerBottom">
+
+    <span id="footerBottomCopyright">
+        &copy; 2003-2016, Kronos Incorporated. All rights reserved.<span class="itemspacer">|</span>
+    </span>
+    
+    <span id="footerBottomSocialNav">
+        <ul id="socialNav">
+            <li id="ctl00_SiteFooter_linkedinIco" class="social-icons linkedin-icon"><a href="http://www.kronos.com/linkedin/" id="ctl00_SiteFooter_A3" target="_blank"><span>LinkedIn</span></a></li>           
+            <li id="ctl00_SiteFooter_twitterIco" class="social-icons twitter-icon"><a href="http://www.kronos.com/twitter/" id="ctl00_SiteFooter_A2" target="_blank"><span>Twitter</span></a></li>
+            <li id="ctl00_SiteFooter_facebookIco" class="social-icons facebook-icon"><a href="http://www.kronos.com/facebook/" id="ctl00_SiteFooter_A1" target="_blank"><span>Facebook</span></a></li>
+            <li id="ctl00_SiteFooter_googleIco" class="social-icons google-icon"><a href="http://www.kronos.com/googleplus/" id="ctl00_SiteFooter_A4" target="_blank"><span>Google</span></a></li>
+            <li id="ctl00_SiteFooter_youtubeIco" class="social-icons youtube-icon"><a href="http://www.kronos.com/youtube/" id="ctl00_SiteFooter_A5" target="_blank"><span>YouTube</span></a></li>
+            <li id="ctl00_SiteFooter_rssfeedIco" class="social-icons rssfeed-icon"><a id="A6" href="http://www.kronos.com/kronos.xml" target="_blank"><span>RssFeed</span></a></li>
+            
+            
+        </ul>
+    </span>
+            
+</div>
+                
+
+
+<p style="display:none">dcb query string parameter missing</p>
+                
+            </div>
+            <!-- GLOBAL FOOTER END -->
+
+        </div>
+        <!-- PAGE CONTAINER END -->
+
+        <div style="display: none;">PUBPRO2</div>
+
+    </form>
+
+    
+    <script type="text/javascript" src="/app_pages/plugins/slick/slick.js"></script><script type="text/javascript" src="/js/usercontrols/ctaheroslider/heroslider.js"></script>
+    <script type="text/javascript">/* ====== ContentTitle_Industry Selector JS_ID_23622327810 ======= */
+ jQuery(document).ready(function () {
+        var isToggle = false;
+        $('.industrySelector .selector_container').mouseenter(function () {
+            $('.selector_popup').removeClass("inactive").addClass("active");
+            isToggle = true;
+        });
+
+        $('.selector_popup').mouseleave(function () {
+            if (isToggle) {
+                $('.selector_popup').removeClass("active").addClass("inactive");
+                isToggle = false;
+            }
+        });
+
+        $('.industryList a').each(function () {
+            $(this).hover(function () {
+
+                $(".industryImage img").replaceWith($(this).next().children("img").clone().addClass("ImgShow"));
+            }, function () {
+                $(".industryImage img").replaceWith('<img src="/images/k-logo.jpg" alt="Kronos" class="ImgShow">');
+            }
+            );
+        });
+    });</script>
+    <input name="ctl00$SiteLangId" type="hidden" id="ctl00_SiteLangId" class="SiteLangId" value="1033" />
+</body>
+
+</html>

@@ -1,0 +1,666 @@
+status: 200
+content-length: 50526
+content-location: http://www.trutech.com/about-us/careers/project-engineer/
+x-cache-varnish: HIT
+accept-ranges: bytes
+vary: Accept-Encoding
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+link: <http://www.trutech.com/wp-json/>;
+ rel="https://api.w.org/", <http://www.trutech.com/?p=4195>; rel=shortlink
+date: Tue, 04 Oct 2016 05:58:53 GMT
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" dir="ltr" lang="en-US" >
+<head>
+<title>Project Engineer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+<script type="text/javascript">
+	var subTract=10
+</script>
+
+<!-- <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/widgets.css" /> -->
+<!-- <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/style.css" /> -->
+<!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/style_ie7.css" />
+<![endif]-->
+<!--<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/iterations/theme03_styleA.css" /> -->
+  <!-- <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/clients/itsupportjax/css/itsupportjax.css" /> -->
+
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/widgets.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/style.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/iterations/theme03_styleA.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/clients/itsupportjax/css/itsupportjax.css" />
+
+<!-- <link type="text/css" rel="stylesheet" media="print" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/print.css" /> -->
+
+<!-- All in One SEO Pack 2.3.8 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<link rel="alternate" type="application/rss+xml" title="%blog_title% Blog" href="/feed/"; />
+
+<meta name="google-site-verification" content="UgyT261fyipmYJA9S8KpMkpds-oJEcFEHdIFECSoOv0" />
+
+
+<!-- BEGIN LivePerson Monitor. --> 
+<script type="text/javascript"> 
+window.lpTag={site:'89540201', lpSrv:'server.iad.liveperson.net', _v:'1.0',protocol:location.protocol,events:{bind:function(app,ev,fn){lpTag.defer(function(){lpTag.events.bind(app,ev,fn)})},trigger:function(app,ev,json){lpTag.defer(function(){lpTag.events.trigger(app,ev,json)})}},defer:function(fn){this._defL=this._defL||[];this._defL.push(fn)},load:function(src,chr,id){if(!src){src=this.protocol+'//'+((this.ovr&&this.ovr.domain)?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site}var s=document.createElement('script');s.setAttribute('charset',chr?chr:'UTF-8');if(id){s.setAttribute('id',id)}s.setAttribute('src',src);document.getElementsByTagName('head').item(0).appendChild(s)},init:function(){this._timing=this._timing||{};this._timing.start=(new Date()).getTime();var that=this;if(window.attachEvent){window.attachEvent('onload',function(){that._domReady('domReady')})}else{window.addEventListener('DOMContentLoaded',function(){that._domReady('contReady')},false);window.addEventListener('load',function(){that._domReady('domReady')},false)}if(typeof(_lptStop)=='undefined'){this.load()}},_domReady:function(n){this.isDom=true;this._timing[n]=(new Date()).getTime();this.events.trigger('LPT','DOM_READY')}};lpTag.init(); 
+</script> 
+<!-- END LivePerson Monitor. -->
+
+<script type="text/javascript"> 
+document.write(unescape("%3Cscript src='" + document.location.protocol + 
+"//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E")); 
+</script> 
+<script>Munchkin.init("614-OVO-168");</script>
+
+<!-- Start of Async HubSpot Analytics Code --> 
+<script type="text/javascript"> 
+(function(d,s,i) { 
+if (d.getElementById(i)){return;} 
+var n = d.createElement(s),e = document.getElementsByTagName(s)[0]; 
+n.id=i;n.src = "//js.hubspot.com/analytics/176288.js"; 
+e.parentNode.insertBefore(n, e); 
+})(document, "script", "hs-analytics"); 
+</script> 
+<!-- End of Async Hubspot Analytics Code -->
+
+<script type="text/javascript"> 
+setTimeout(function(){var a=document.createElement("script"); 
+var b=document.getElementsByTagName("script")[0]; 
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/4108.js?"+Math.floor(new Date().getTime()/3600000); 
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1); 
+</script>
+<link rel="canonical" href="http://www.trutech.com/about-us/careers/project-engineer/" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//www.trutech.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.trutech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='pronto_facebook_frontend-css'  href='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/pronto-facebook-comments/pronto-facebook-comments-front.css?ver=4.6.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js?ver=3.32'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/jquery.cycle.all.2.72.js?ver=4.6.1'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/default.js?ver=4.6.1'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.4.8'></script>
+<link rel='https://api.w.org/' href='http://www.trutech.com/wp-json/' />
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel='shortlink' href='http://www.trutech.com/?p=4195' />
+<link rel="alternate" type="application/json+oembed" href="http://www.trutech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.trutech.com%2Fabout-us%2Fcareers%2Fproject-engineer%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.trutech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.trutech.com%2Fabout-us%2Fcareers%2Fproject-engineer%2F&#038;format=xml" />
+<script src='http://prontopreview.com/?dm=8c5c56f01f9f0b4f5be9d1e5dfb3d164&amp;action=load&amp;blogid=1556&amp;siteid=1&amp;t=297570109&amp;back=http%3A%2F%2Fwww.trutech.com%2Fabout-us%2Fcareers%2Fproject-engineer%2F' type='text/javascript'></script><link rel="stylesheet" type="text/css" href="https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/cforms/styling/cforms.css" />
+<script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/cforms/js/cforms.js"></script>
+<meta property="og:image" content="http://www.trutech.com/files/TruTech_Logo_300.png"/><meta property="og:url" content="http://www.trutech.com/about-us/careers/project-engineer/"/><meta property="og:type" content="website" /><meta property="og:title" content="Project Engineer" /><link rel="shortcut icon" href="https://ddodupf0i60zw.cloudfront.net/favicon/itsupportjax.ico" type="image/x-icon" /><!-- Favi -->
+<link rel='dns-prefetch' href='//v0.wordpress.com'>
+<link rel="icon" href="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/2016/02/cropped-TruTech_Graphic_Online-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/2016/02/cropped-TruTech_Graphic_Online-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/2016/02/cropped-TruTech_Graphic_Online-180x180.png" />
+<meta name="msapplication-TileImage" content="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/2016/02/cropped-TruTech_Graphic_Online-270x270.png" />
+<!-- Google Analytics Tracking by Google Analyticator 6.4.8: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = [''];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-7782449-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+			<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://www.trutech.com/?custom-css=1&#038;csblog=1556&#038;cscache=6&#038;csrev=40" />
+			<!-- <script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-includes/js/jquery/jquery.js?ver=1.2.6"></script> -->
+<!-- <script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/jquery.cycle.all.2.72.js"></script> -->
+<!-- <script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/default.js"></script> -->
+</head>
+<body id="about-us-careers" class="level3">
+	<div class="wrapper">
+		<div id="header">
+			<div id="headerInside">
+			<div id="logo"><a href="/"><img src="/files/TruTech_Logo_300.png" alt=" - TruTechnology Managed IT Services" border="0" /></a></div>
+			<div id="header_widgets" class="widgetarea"><div id="search-3" class="headerwidget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://www.trutech.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div><div id="icon-multi-2" class="headerwidget icon_multi"><div class="icon-wid"><a href="/about-us/contact-us/" ><img src="/files/icon/phone-blue.png" alt="it support" /></a></div>
+    <div class="icon-text">
+      <div class="text ">
+                  <h3><a href="/about-us/contact-us/" >866-324-3324</a></h3>
+            <div class="description"><a href="/about-us/contact-us/" ></a></div>
+      </div>
+    </div></div><div id="text-17" class="headerwidget widget_text">			<div class="textwidget"><!-- ClickTale Top part --> 
+<script type="text/javascript"> 
+var WRInitTime=(new Date()).getTime(); 
+</script> 
+<!-- ClickTale end of Top part --></div>
+		</div></div>
+			</div>
+		</div>
+		<div id="navigation_widgets"><div id="navigation_widgets_inside">
+<ul class="sf-menu">
+                <li class="page-item ">
+          <a href="http://www.trutech.com/" ><span>Home</span></a>
+          </li>
+                <li class="page-item ">
+          <a href="http://www.buildingitc.com/services-solutions/products-and-services/" ><span>Services & Solutions</span></a>
+              <ul id="l2-products-and-services">		
+			
+			<li class="page-item"><a href="http://www.trutech.com/services-solutions/products-and-services/" ><span>Products and Services</span></a>
+										<ul id="l3-products-and-services">
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/products-and-services/backup-and-disaster-recovery/" ><span>Backup and Disaster Recovery</span></a></li>
+													<li class="page-item"><a href="/services-solutions/the-plumbing/network-performance-monitoring/monitoring/" ><span>Network Performance Monitoring</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/products-and-services/managed-security-services/" ><span>Managed Security Services</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/products-and-services/email-spam-protection/" ><span>Email &amp; Spam Protection</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/products-and-services/endpoint-security/" ><span>Endpoint Security</span></a></li>
+							
+						</ul>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/services-solutions/fixed-cost-managed-it-services/" ><span>Fixed Cost Managed IT Services</span></a>
+										<ul id="l3-fixed-cost-managed-it-services">
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/fixed-cost-managed-it-services/proactive-technology-management/" ><span>Proactive Technology Management</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/fixed-cost-managed-it-services/network-administration/" ><span>Network Administration</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/fixed-cost-managed-it-services/technology-consulting/" ><span>Technology Consulting</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/fixed-cost-managed-it-services/professional-services/" ><span>Professional Services</span></a></li>
+							
+						</ul>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/services-solutions/co-managed-it-service/" ><span>Co-Managed IT Service</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/services-solutions/the-end-result/" ><span>The End Result</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.trutech.com/our-methodology/" ><span>Our Methodology</span></a>
+              <ul id="l2-our-methodology">		
+			
+			<li class="page-item"><a href="http://www.trutech.com/our-methodology/reactive-support-services/" ><span>Pillar 1: Reactive Support Services</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/our-methodology/standardized-technology-management/" ><span>Pillar 2: Standardized Technology Management</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/our-methodology/network-auditing-and-alignment/" ><span>Pillar 3: Network Auditing and Alignment</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/our-methodology/technology-consulting/" ><span>Pillar 4: Technology Consulting</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/our-methodology/project-implementation/" ><span>Pillar 5: Project Implementation</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.trutech.com/resources/" ><span>Resources</span></a>
+              <ul id="l2-resources">		
+			
+			<li class="page-item"><a href="http://www.trutech.com/resources/white-papers/" ><span>White Papers</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.trutech.com/support-center/" ><span>Support Center</span></a>
+          </li>
+                <li class="page-item  current_page_item">
+          <a href="http://www.trutech.com/about-us/" ><span>About Us</span></a>
+              <ul id="l2-about-us">		
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/why-trutech/" ><span>Why TruTech</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/referral-program/" ><span>You Refer, We Donate</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/contact-us/" ><span>Contact Us</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/careers/" ><span>Careers</span></a>
+										<ul id="l3-careers">
+													<li class="page-item"><a href="http://www.trutech.com/about-us/careers/network-administrator/" ><span>Network Administrator</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/about-us/careers/project-engineer/" ><span>Project Engineer</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/about-us/careers/support-engineer/" ><span>Support Engineer</span></a></li>
+							
+						</ul>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/blog/" ><span>Our Blog</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/press-releases/" ><span>Press Releases</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/partners-certifications/" ><span>Partners & Certifications</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.trutech.com/connectwithus/" ><span>Connect with us!</span></a>
+          </li>
+  </ul>
+</div>
+</div>
+		<div id="contentWrapper">
+			<div id="contentWrapperOutside">
+				<div id="contentWrapperInside">
+					<div id="content" class="content"> 	
+																				<h2>Project Engineer</h2>
+							<table>
+<tr>
+<td>
+<strong>Department:</strong>
+</td>
+<td style="padding-left:30px;">Managed Services</td>
+</tr>
+<tr>
+<td><strong>Reports To:</strong> </td>
+<td style="padding-left:30px;">Service Manager </td>
+</tr>
+<tr>
+<td><strong>Pay:</strong> </td>
+<td style="padding-left:30px;">Salary (Full-Time Exempt) + Benefits + Bonus</td>
+</tr>
+</table>
+<p><strong>Job Summary</strong><br />
+The Project Engineer helps design and implement proposed technology projects. Their goal is to deliver projects on time and on budget while being as transparent to the Client as possible. All projects will be thoroughly documented and upon completion they will perform a knowledge transfer to internal staff.</p>
+<p>This person has a past history of successful implementations and has the ability to quickly learn new technologies through the use of self-study materials and intuition.</p>
+<p><strong>Job Responsibilities</strong></p>
+<ul>
+<li>Technical resource for Design Desk (the process by which we research a solution, it’s impact on the Client’s business, the required materials, and the time in which it will take to complete the implementation)</li>
+<li>Execution and conclusion of projects on-time and on-budget</li>
+<li>Works closely with Clients assigned vCIO and NetAdmin to understand project requirements and deliverables</li>
+<li>Conducts a knowledge transfer to internal and external resources upon project completion (verbally and through comprehensive documentation)</li>
+<li>Escalation contact for the Dispatcher and Service Desk</li>
+<li>Communication with the Service Manager with regards to events and changes transpiring at Client sites</li>
+<li>Any other assigned duties</li>
+</ul>
+<p><strong>Key Characteristics</strong></p>
+<ul>
+<li>Actively mentors other Engineers</li>
+<li>Receives positive Client feedback, considered responsive, reliable, knowledgeable, and diligent</li>
+<li>Receives positive internal staff feedback, considered responsive, reliable, knowledgeable, and diligent</li>
+<li>Projects are installed on time and on budget</li>
+<li>Documentation is detailed and knowledge transfer is thorough</li>
+<li>High Billable Hours / Utilization</li>
+<li>Ability to provide accurate time estimates for how long a task will take</li>
+<li>Enjoys helping people to the extent that no problem is considered mundane, no matter how simple the solution (i.e. &#8212; Susie can&#8217;t print)</li>
+</ul>
+<p><strong>Qualifications / Knowledge Required</strong></p>
+<ul>
+<li><strong>Server Operating Systems</strong>
+<ul style="list-style-type: circle;">
+<li>Required: Windows</li>
+<li>Installation, configuration and troubleshooting</li>
+<li>Configure file, print and remote access services</li>
+<li>Administration, including add/remove users and groups, configure NTFS file permissions, check event logs, configure and restore from backup</li>
+</ul>
+</li>
+<li><strong>Enterprise E-mail</strong>
+<ul style="list-style-type: circle;">
+<li>Required: Exchange Server</li>
+<li>Installation, configuration and troubleshooting</li>
+<li>Administration of enterprise e-mail application, including add/remove users and group, name changes, forward mail to other accounts, and add aliases. Replication and Clustering a plus.</li>
+</ul>
+</li>
+<li><strong>Workstation</strong>
+<ul style="list-style-type: circle;">
+<li>Required: Windows</li>
+<li>Troubleshooting and configuration</li>
+<li>Installation, configuration, troubleshooting and customization of Microsoft Office Suite applications</li>
+<li>Solid understanding of and ability to troubleshoot and test workstation hardware including video cards, NICs, sound cards, and hard drives</li>
+</ul>
+</li>
+<li><strong>Datacenter Technologies (Clustering/HA a plus)</strong>
+<ul style="list-style-type: circle;">
+<li>Working Knowledge of Hyper-V and VMware</li>
+<li>Working Knowledge of SQL</li>
+<li>Working Knowledge of Exchange</li>
+<li>Working Knowledge of Enterprise Backup Systems</li>
+<li>Working Knowledge of Citrix Technologies</li>
+</ul>
+</li>
+<li><strong>Infrastructure</strong>
+<ul style="list-style-type: circle;">
+<li>Working Knowledge of Firewall Technologies – Cisco ASA, Cisco Meraki, Dell SonicWALL, WatchGuard, Juniper</li>
+<li>Working Knowledge of SAN architecture (iSCSI and/or Fiber Channel)</li>
+<li>Working Knowledge of Wireless Technologies</li>
+<li>Working Knowledge of Switches (VLAN, SNMP, STP)</li>
+</ul>
+</li>
+<li><strong>Other Preferred Technical Knowledge</strong>
+<ul style="list-style-type: circle;">
+<li>Solid understanding of and ability to configure TCP/IP subnetting and troubleshooting Internet connectivity</li>
+<li>Experience with and understanding of routers and firewalls</li>
+<li>Experience and understanding of Terminal Services &#038; Citrix</li>
+<li>Understanding of relationship between switches, patch panels, and connecting nodes to a network</li>
+<li>Understanding of network services such as DNS and DHCP</li>
+<li>Understanding of High Availability / Load Balancing solutions</li>
+</ul>
+</li>
+<li><strong>Other Considerations</strong>
+<ul style="list-style-type: circle;">
+<li>Regular and timely completion of Minimum Documentation Standards for each client</li>
+<li>On-going self-training to preserve professional viability is a must</li>
+<li>The ability to regularly score 10’s on the Quality Assurance survey</li>
+<li>Execution and conclusion of projects on-time and/or successful management of client expectations when targets cannot be met</li>
+<li>Ability to communicate with client at all levels from IT personnel to CxO’s and to understand business issues in context of IT issues</li>
+<li>Takes ownership of tasks and follows through to ensure complete resolution</li>
+<li>Takes a personal interest in, and responsibility for, quality of work they perform or are associated with</li>
+<li>Ability to pay close attention to detail while performing technically detailed tasks</li>
+<li>Ability to deal effectively with stressful situations</li>
+<li>Ability and willingness to recognize when it is necessary to ask for technical expertise from others without unnecessarily burdening other team members</li>
+<li>Ability to provide accurate time estimates for how long a task will take</li>
+<li>Understands that the success of individuals is measured by the success of their teams</li>
+<li>Ability to quickly learn new technologies through the use of self-study materials and intuition</li>
+<li>Enjoys helping people to the extent that no problem is considered mundane, no matter how simple the solution (i.e. &#8212; Susie can&#8217;t print)</li>
+<li>Enjoys sharing information, supporting others, and working on a team to achieve team goals</li>
+</ul>
+</li>
+<li><strong>Credentials and Experience:</strong>
+<ul style="list-style-type: circle;">
+<li>Engineer with minimum four years’ production hands on experience (two for Support Engineer)</li>
+<li>Minimum 4 years’ production experience &#8211; Active Directory Support, Microsoft Windows and Windows Server Support, Microsoft Exchange Support</li>
+<li>Minimum 4 years’ production experience &#8211; Switching/VLAN/Routing/Firewall Support</li>
+<li>Minimum 4 years’ production experience &#8211; Server Hardware Technologies (CPU/RAID/RAM/NICs) Support</li>
+<li>Minimum 4 years’ production experience &#8211; Data Backup and Recovery Support, Corporate Antivirus Solutions, VPN Connectivity Support</li>
+<li>Have multiple certifications, high skill level. The following certifications are preferred: MCSA/MCITP, CCNA/CCDA/CCVP/CCIE, VCP, Project+, Network+</li>
+</ul>
+</li>
+</ul>
+<style>
+#text-18 {
+display:none;
+}
+#text-19 {
+display:none;
+}
+#cforms-11 > div.sidebarwidget_content_container{
+display:none;
+}
+</style>
+																									</div>
+
+					<!-- Sidebar Widget Area-->
+					<div id="sidebar_widgets" class="widgetarea">
+					 
+<div class="sectionnavigation">
+  <div class="sectionnavigation_top"></div>
+  <div class="sectionnavigation_content_container">
+     <ul id="sectionnavigation_header" class="sectionnavigation_main">
+	 <li class="page_item page-item-12 current_page_ancestor"><a href="http://www.trutech.com/about-us/">About Us</a></li>
+	 </ul>
+    <ul class="sectionnavigation_main">
+      <li class="page_item page-item-8"><a href="http://www.trutech.com/about-us/why-trutech/">Why TruTech</a></li>
+<li class="page_item page-item-145"><a href="http://www.trutech.com/about-us/referral-program/">You Refer, We Donate</a></li>
+<li class="page_item page-item-30"><a href="http://www.trutech.com/about-us/contact-us/">Contact Us</a></li>
+<li class="page_item page-item-4193 page_item_has_children current_page_ancestor current_page_parent"><a href="http://www.trutech.com/about-us/careers/">Careers</a>
+<ul class='children'>
+	<li class="page_item page-item-4194"><a href="http://www.trutech.com/about-us/careers/network-administrator/">Network Administrator</a></li>
+	<li class="page_item page-item-4195 current_page_item"><a href="http://www.trutech.com/about-us/careers/project-engineer/">Project Engineer</a></li>
+	<li class="page_item page-item-4196"><a href="http://www.trutech.com/about-us/careers/support-engineer/">Support Engineer</a></li>
+</ul>
+</li>
+<li class="page_item page-item-117"><a href="http://www.trutech.com/about-us/blog/">Our Blog</a></li>
+<li class="page_item page-item-2568"><a href="http://www.trutech.com/about-us/press-releases/">Press Releases</a></li>
+<li class="page_item page-item-2908"><a href="http://www.trutech.com/about-us/partners-certifications/">Partners &#038; Certifications</a></li>
+    </ul>
+  </div>
+  <div class="sectionnavigation_bottom"></div>
+</div>
+
+          <div id="cforms-11" class="sidebarwidget widgetcform">
+             <div class="sidebarwidget_top"></div>
+             <div class="sidebarwidget_content_container">
+                <div class="sidebarwidget_content">
+              <h3></h3>
+		<div id="usermessage10a" class="cf_info "></div>
+		<form enctype="multipart/form-data" action="/about-us/careers/project-engineer/#usermessage10a" method="post" class="cform free-consultation  cfnoreset" id="cforms10form">
+		<ol class="cf-ol">
+			<li id="li-10-1" class="textonly"><h2>Get a FREE Consultation!</h2></li>
+			<li id="li-10-2" class=""><label for="cf10_field_2"><span>Name</span></label><input type="text" name="cf10_field_2" id="cf10_field_2" class="single fldrequired" value="" onfocus="clearField(this)" onblur="setField(this)"/><span class="reqtxt">(required)</span></li>
+			<li id="li-10-3" class=""><label for="cf10_field_3"><span>Phone</span></label><input type="text" name="cf10_field_3" id="cf10_field_3" class="single fldrequired" value=""/><span class="reqtxt">(required)</span></li>
+			<li id="li-10-4" class=""><label for="cf10_field_4"><span>Email</span></label><input type="text" name="cf10_field_4" id="cf10_field_4" class="single fldemail fldrequired" value=""/><span class="emailreqtxt">(valid email required)</span></li>
+			<li id="li-10-5" class=""><label for="cf10_field_5"><span>Message</span></label><textarea cols="30" rows="8" name="cf10_field_5" id="cf10_field_5" class="area"></textarea></li>
+			<li id="li-10-6" class=""><label for="cforms_captcha10" class="seccap"><span>Verification</span></label><input type="text" name="cforms_captcha10" id="cforms_captcha10" class="secinput" value=""/><img id="cf_captcha_img10" class="captcha" src="/wp-content/plugins/cforms/cforms-captcha.php?ts=10&amp;i=i&amp;w=115&amp;h=25&amp;c=000066&amp;l=000066&amp;f=font4.ttf&amp;a1=-12&amp;a2=12&amp;f1=11&amp;f2=13&amp;b=1.gif" alt=""/><a title="reset captcha image" href="javascript:reset_captcha('10')"><img class="captcha-reset" src="https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/cforms/images/spacer.gif" alt="Captcha"/></a></li>
+			<li id="li-10-7" class="textonly"><img class="alignleft" width="20px" src="/files/2013/06/lock.png" style="margin-top: -5px;"><p style="margin-left:10px;margin-top: 7px;">We protect your <a target="_blank" href="/privacy-policy/" style="color:#0076e0;">privacy</a></p></li>
+		</ol>
+		<fieldset class="cf_hidden">
+			<legend>&nbsp;</legend>
+			<input type="hidden" name="cf_working10" id="cf_working10" value="<span>One%20moment%20please...</span>"/>
+			<input type="hidden" name="cf_failure10" id="cf_failure10" value="<span>Please%20fill%20in%20all%20the%20required%20fields.</span>"/>
+			<input type="hidden" name="cf_codeerr10" id="cf_codeerr10" value="<span>Please%20double-check%20your%20verification%20code.</span>"/>
+			<input type="hidden" name="cf_customerr10" id="cf_customerr10" value="yyy"/>
+			<input type="hidden" name="cf_popup10" id="cf_popup10" value="nn"/>
+		</fieldset>
+		<p class="cf-sb"><input type="submit" name="sendbutton10" id="sendbutton10" class="sendbutton" value="Get a FREE Consultation" onclick="return cforms_validate('10', false)"/></p></form><p class="linklove" id="ll10"><a href="http://www.deliciousdays.com/cforms-plugin"><em>cforms</em> contact form by delicious:days</a></p>
+                </div>
+             </div>
+             <div class="sidebarwidget_bottom"></div>
+          </div>
+             
+          <div id="text-19" class="sidebarwidget widget_text">
+             <div class="sidebarwidget_top"></div>
+             <div class="sidebarwidget_content_container">
+                <div class="sidebarwidget_content">
+              			<div class="textwidget"><em>"We have been using TruTechnology since 2010. Our experience with them has been flawless. They took us from an unstable environment to one of stability and predictability. Our trouble calls are answered promptly and our network down time has been reduced to virtually zero."</em><br />
+<div align="right"><h4><strong>
+Greg C. Frazier</strong></h4>
+Chief Development Officer<br />
+Community Connections of Jacksonville</div>
+</div>
+		
+                </div>
+             </div>
+             <div class="sidebarwidget_bottom"></div>
+          </div>
+             
+          <div id="text-18" class="sidebarwidget widget_text">
+             <div class="sidebarwidget_top"></div>
+             <div class="sidebarwidget_content_container">
+                <div class="sidebarwidget_content">
+              			<div class="textwidget"><center><p style="text-align:center"><img src="/files/2013/08/inc500-5000_tagline.jpg"></p><p><a target="_blank" href="/files/2013/06/The-Building-IT-Co.-Jacksonville.pdf"><img src="/files/2013/06/JB-Logo.png"></a></p></center></div>
+		
+                </div>
+             </div>
+             <div class="sidebarwidget_bottom"></div>
+          </div>
+             					  
+    <div id="cforms-13" class="sidebarwidget widgetcform">
+    <div class="sidebarwidget_top"></div>
+    <div class="sidebarwidget_content_container">
+    <div class="sidebarwidget_content">
+    <h3></h3>
+		<div id="usermessage14a" class="cf_info "></div>
+		<form enctype="multipart/form-data" action="/about-us/careers/project-engineer/#usermessage14a" method="post" class="cform career-application-form  cfnoreset" id="cforms14form">
+		<ol class="cf-ol">
+			<li id="li-14-1" class="textonly"><h4>Submit your resume and a brief explanation of why you want to join our team. </h4></li>
+			<li id="li-14-2" class=""><label for="cf14_field_2"><span>Name</span></label><input type="text" name="cf14_field_2" id="cf14_field_2" class="single fldrequired" value="" onfocus="clearField(this)" onblur="setField(this)"/><span class="reqtxt">(required)</span></li>
+			<li id="li-14-3" class=""><label for="cf14_field_3"><span>Email</span></label><input type="text" name="cf14_field_3" id="cf14_field_3" class="single fldemail fldrequired" value=""/><span class="emailreqtxt">(valid email required)</span></li>
+			<li id="li-14-4" class=""><label for="cf14_field_4"><span>Phone</span></label><input type="text" name="cf14_field_4" id="cf14_field_4" class="single fldrequired" value=""/><span class="reqtxt">(required)</span></li>
+			<li id="li-14-5" class=""><label for="cf14_field_5"><span>Message</span></label><textarea cols="30" rows="8" name="cf14_field_5" id="cf14_field_5" class="area"></textarea></li>
+			<li id="li-14-6" class=""><label for="cf14_field_6"><span>Position</span></label><select name="cf14_field_6" id="cf14_field_6" class="cformselect fldrequired" >
+				<option value=""></option>
+				<option value="Network Administrator">Network Administrator</option>
+				<option value="Project Engineer">Project Engineer</option>
+				<option value="Support Engineer">Support Engineer</option>
+			</select><span class="reqtxt">(required)</span></li>
+			<li id="li-14-7" class=""><label for="cf_uploadfile14-7"><span>Resume Attachment</span></label><input type="file" name="cf_uploadfile14[]" id="cf_uploadfile14-7" class="cf_upload upload fldrequired"/><span class="reqtxt">(required)</span></li>
+		</ol>
+		<fieldset class="cf_hidden">
+			<legend>&nbsp;</legend>
+			<input type="hidden" name="comment_post_ID14" id="comment_post_ID14" value="4195"/>
+			<input type="hidden" name="cforms_pl14" id="cforms_pl14" value="http://www.trutech.com/about-us/careers/project-engineer/"/>
+			<input type="hidden" name="cf_working14" id="cf_working14" value="<span>One%20moment%20please...</span>"/>
+			<input type="hidden" name="cf_failure14" id="cf_failure14" value="<span>Please%20fill%20in%20all%20the%20required%20fields.</span>"/>
+			<input type="hidden" name="cf_codeerr14" id="cf_codeerr14" value="<span>Please%20double-check%20your%20verification%20code.</span>"/>
+			<input type="hidden" name="cf_customerr14" id="cf_customerr14" value="yyy"/>
+			<input type="hidden" name="cf_popup14" id="cf_popup14" value="nn"/>
+		</fieldset>
+		<p class="cf-sb"><input type="submit" name="sendbutton14" id="sendbutton14" class="sendbutton" value="Submit" onclick="return cforms_validate('14', true)"/></p></form><p class="linklove" id="ll14"><a href="http://www.deliciousdays.com/cforms-plugin"><em>cforms</em> contact form by delicious:days</a></p>		<div id="usermessage14b" class="cf_info " ></div>
+
+    </div>
+    </div>
+    <div class="sidebarwidget_bottom"></div>
+    </div>
+    					</div>
+					<!-- /Sidebar Widget Area-->
+				</div>
+			</div>
+		</div>
+		<div id="footer">	
+			<!-- Global Footer Widgets Area-->		
+			<div id="footer_widgets" class="widgetarea">				
+				<div id="text-26" class='footerwidget widget_text'><h3>Support</h3>			<div class="textwidget"><div class="footerwidget navigation_multi first" id="navigation-multi-4" style="width: 230px; height: 457px;">
+<div class="navigation">
+<div class="text">
+    <ul>
+<li><a href="#">Partnership Support</a></li>
+<li class="page_item page-item-513"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/">Flat-Rate IT Support</a>
+	<ul><li class="page_item page-item-1180"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/proactive-technology-management/">Proactive Technology Management</a></li>
+<li class="page_item page-item-1192"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/reactive-support-services/">Reactive Support Services</a></li>
+<li class="page_item page-item-1204"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/network-administration/">Network Administration</a></li>
+<li class="page_item page-item-1212"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/technology-consulting/">Technology Consulting</a></li>
+<li class="page_item page-item-1220"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/professional-services/">Professional Services</a></li>
+<li class="page_item page-item-1228"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/the-end-result/">The End Result</a></li>
+	</ul>
+</li>
+<li><a href="http://www.buildingitc.com/support-center/">Support Center</a></li>
+</li>
+    </ul>
+  </div>
+</div>
+</div></div>
+		</div><div id="navigation-multi-2" class='footerwidget navigation_multi'>
+<div class="navigation">
+     <h3><a href="/products-and-services/" >Products / Services</a></h3>
+  <div class="text">
+    <ul>
+      <li class="page_item page-item-1244"><a href="http://www.trutech.com/services-solutions/products-and-services/backup-and-disaster-recovery/">Backup and Disaster Recovery</a></li>
+<li class="page_item page-item-1004"><a href="/services-solutions/the-plumbing/network-performance-monitoring/monitoring/">Network Performance Monitoring</a></li>
+<li class="page_item page-item-1044"><a href="http://www.trutech.com/services-solutions/products-and-services/managed-security-services/">Managed Security Services</a></li>
+<li class="page_item page-item-1056"><a href="http://www.trutech.com/services-solutions/products-and-services/email-spam-protection/">Email &amp; Spam Protection</a></li>
+<li class="page_item page-item-1068"><a href="http://www.trutech.com/services-solutions/products-and-services/endpoint-security/">Endpoint Security</a></li>
+    </ul>
+  </div>
+</div>
+</div><div id="text-27" class='footerwidget widget_text'><h3>Information</h3>			<div class="textwidget"><div class="footerwidget navigation_multi" id="navigation-multi-5" style="width: 220px; height: 531px;">
+<div class="navigation">
+  <div class="text">
+    <ul>
+	<li class="page_item page-item-26"><a href="http://www.buildingitc.com/resources/white-papers/">White Papers</a></li>
+	<li class="page_item page-item-25"><a href="http://www.buildingitc.com/resources/newsletter-archive/">Newsletter Archive</a></li>
+	<li class="page_item page-item-8"><a href="http://www.buildingitc.com/about-us/why-trutech/">Why TruTech</a></li>
+     <li class="page_item page-item-579"><a href="http://www.buildingitc.com/getstarted/">Get Started</a></li>
+<li class="page_item page-item-2908"><a href="http://www.buildingitc.com/about-us/partners-certifications/">Partners &amp; Certifications</a></li>
+<li class="page_item page-item-2568"><a href="http://www.buildingitc.com/about-us/press-releases/">Press Releases</a></li>
+	<li><a href="#">Latest News & Tips</a></li>
+<li class="page_item page-item-30"><a href="http://www.buildingitc.com/about-us/contact-us/">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<!-- Start of Woopra Code -->
+<script>
+(function(){
+    var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+})("woopra");
+
+woopra.config({
+    domain: 'buildingitc.com'
+});
+woopra.track();
+</script>
+<!-- End of Woopra Code --></div>
+		</div><div id="vcard-multi-2" class='footerwidget vcard_multi'><h3><a href="/about-us/contact-us/" >TruTechnology</a></h3>
+<div class="vcard">			
+	<span class="fn org"><strong>Main Office</strong></span>		
+	<div class="adr">
+		<span class="street-address">841 Prudential Dr</span> 12th Floor<br />	<span class="locality">Jacksonville</span>, <span class="region">FL</span> <span class="postal-code">32207</span>	
+	</div>
+		<p class="tel"><strong>Toll-Free:</strong> <span class="value">(866) 324-3324</span></p>
+				</div>
+<div class="vcard-htmltext"><h4 style="margin-top: 15px ! important; color: white; margin-bottom: 0px; font-size: 16px;">Network Operations Center</h4>
+<p style="margin-bottom: 0px;">4800 Spring Park Rd<br>
+Suite 221<br>
+Jacksonville, FL 32207</p>
+<strong style="font-size: 12px;">Toll-Free: </strong>(866) 324-3324</p>
+
+<table>
+<tbody>
+<tr>
+<td><img src="/files/2013/07/cta_footer_crn.png" /></td>
+<td><img src="/files/2013/07/cta_footer_jax.png"></td>
+
+</tr>
+</tbody>
+</table>
+
+</div></div><div id="text-4" class='footerwidget widget_text'>			<div class="textwidget">&copy;2016 TruTechnology
+<!-- ClickTale Bottom part --> 
+<div id="ClickTaleDiv"></div> 
+ <script>
+if(document.location.protocol!='https:') 
+document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRc9.js'%20type='text/javascript'%3E%3C/script%3E")); 
+ 
+ 
+if(typeof ClickTale=='function') ClickTale(23630,0.6,"www02"); 
+ 
+</script>
+<!-- ClickTale end of Bottom part -->
+
+
+<p>
+<a href="http://www.linkedin.com/in/douglowenthal" target="_blank"><img src="https://ddodupf0i60zw.cloudfront.net/pageimages/widget/socialnetwork/linkedin.png" alt="LinkedIn" border="0" /></a>
+<a href="https://www.facebook.com/TruTechnology-265111883688695/" target="_blank"><img src="https://ddodupf0i60zw.cloudfront.net/pageimages/widget/socialnetwork/facebook.png" alt="Facebook" border="0" /></a>
+<a href="https://twitter.com/TruTechnology" target="_blank"><img src="https://ddodupf0i60zw.cloudfront.net/pageimages/widget/socialnetwork/twitter.png" alt="Twitter" border="0" /></a>
+<a href="/feed" target="_blank"><img src="https://ddodupf0i60zw.cloudfront.net/pageimages/widget/socialnetwork/rss.png" alt="RSS" border="0" /></a></p></div>
+		</div><div id="navigation_one_level-multi-3" class='footerwidget navigation_one_level_multi'> <div class="navigation_one_level">
+  <h3></h3>
+    <ul>
+						<li class="first"><a href="/privacy-policy/" title="Privacy Policy" >Privacy Policy</a></li>
+		    </ul>
+</div>
+</div>			</div>
+			<!--/Global Footer Widgets Area-->
+		</div>
+	</div>	
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/pronto-stats/js/pronto-stats.js?ver=20150224'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+
+<!-- Start Of Script Generated By cforms v14.6 [Oliver Seidel | www.deliciousdays.com] -->
+<!-- End Of Script Generated By cforms -->
+
+<script type="text/javascript">HummingbirdTracker.track();</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"04e5824458","applicationID":"6280564","transactionName":"Yl1SYBZWC0dYAUVdDlsXcVcQXgpaFg5UQgRZCw==","queueTime":0,"applicationTime":232,"atts":"ThpRFl5MGEk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

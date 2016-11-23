@@ -1,0 +1,772 @@
+status: 200
+content-length: 57701
+via: 1.1 varnish-v4
+vary: Accept-Encoding, Cookie, Cookie
+x-styx-version: StyxGo
+x-styx-req-id: styx-2bfd2611ca65a921fcd3391261258995
+content-language: en
+x-pantheon-styx-hostname: styx198d4884
+etag: W/"1473704104-0"
+cache-control: public, max-age=86400
+x-varnish: 856542582 636622732
+accept-ranges: bytes
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+last-modified: Mon, 12 Sep 2016 18:15:04 GMT
+-content-encoding: gzip
+link: </home>; rel="canonical",</node/7>; rel="shortlink"
+date: Mon, 12 Sep 2016 18:33:25 GMT
+x-drupal-cache: HIT
+content-location: http://www.benchmark-office.com
+age: 39735
+server: nginx
+connection: keep-alive
+content-type: text/html; charset=utf-8
+x-pantheon-endpoint: 0c6c7fbe-9bd2-4a45-aaed-e432a012a629
+x-generator: Drupal 7 (http://drupal.org)
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/sites/all/themes/base-themes/bento/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+<link href="/sites/all/themes/base-themes/bento/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+<link href="/sites/all/themes/base-themes/bento/apple-touch-icon-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144" />
+<link href="/sites/all/themes/base-themes/bento/apple-touch-icon-57x57.png" rel="apple-touch-icon-precomposed" sizes="57x57" />
+<link rel="shortcut icon" href="http://www.benchmark-office.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/home" />
+<link rel="shortlink" href="/node/7" />
+  <title>Benchmark Office Systems | Authorized Xerox Sales Agent</title>
+  <link type="text/css" rel="stylesheet" href="http://www.benchmark-office.com/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.benchmark-office.com/sites/default/files/css/css_vZ_wrMQ9Og-YPPxa1q4us3N7DsZMJa-14jShHgRoRNo.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://www.benchmark-office.com/sites/default/files/css/css_f7ZwbtJFfo14V5-WOZ1kmp96NEv69aNuX5077sWYof8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.benchmark-office.com/sites/default/files/css/css_Ig4KQe5avEZDFs4nPJZLi7t5P0R7rdBfz1YXOH2QCVM.css" media="all" />
+<style>body.contextual-links-region{position:static;}
+</style>
+<link type="text/css" rel="stylesheet" href="http://www.benchmark-office.com/sites/default/files/css/css_hCkqHZAJnd7ElcvdLFu-YIDaK8G6XMGP6jO56GP-iqQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.0.2/css/bootstrap.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.benchmark-office.com/sites/default/files/css/css_e5N6JBVvc2EE8SUBpnPVBLp9O4D8uag33QJAehNwNSY.css" media="all" />
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://www.benchmark-office.com/sites/all/modules/base-modules/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.3"></script>
+<script src="http://www.benchmark-office.com/misc/jquery.once.js?v=1.2"></script>
+<script src="http://www.benchmark-office.com/misc/drupal.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/base-modules/equalheights/jquery.equalheights.js?v=1.0"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/base-modules/views_slideshow/js/views_slideshow.js?v=1.0"></script>
+<script src="http://www.benchmark-office.com/misc/form.js?v=7.44"></script>
+<script src="//cdn.jsdelivr.net/bootstrap/3.0.2/js/bootstrap.js"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/base-modules/equalheights/equalheights.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/base-modules/extlink/extlink.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/libraries/colorbox/jquery.colorbox-min.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/base-modules/colorbox/js/colorbox.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/base-modules/colorbox/styles/default/colorbox_style.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/contrib/custom_search/js/custom_search.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/libraries/flexslider/jquery.flexslider-min.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/base-modules/flexslider_views_slideshow/js/flexslider_views_slideshow.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/base-modules/compact_forms/compact_forms.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/misc/textarea.js?v=7.44"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/base-modules/webform/js/webform.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/libraries/imagesloaded/jquery.imagesloaded.min.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/modules/base-modules/google_analytics/googleanalytics.js?oblozc"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-81849907-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script src="http://www.benchmark-office.com/sites/all/modules/contrib/mmenu/js/mmenu.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/libraries/mmenu/hammer/hammer.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/libraries/mmenu/jquery.hammer/jquery.hammer.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/libraries/mmenu/main/src/js/jquery.mmenu.min.all.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/themes/base-themes/bento/js/hoverIntent.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/themes/base-themes/bento/js/superfish.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/themes/base-themes/bento/js/bento.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/themes/base-themes/bento/js/bentosuperfish.js?oblozc"></script>
+<script src="http://www.benchmark-office.com/sites/all/themes/site-specific-themes/prosperouswide/js/bento_features.js?oblozc"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"prosperouswide","theme_token":"Eqd4hdgxszPJmqt7Dd03D6sKjCOIO65j1nAB_EnRQ54","js":{"sites\/all\/themes\/base-themes\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/base-modules\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/base-modules\/equalheights\/jquery.equalheights.js":1,"sites\/all\/modules\/base-modules\/views_slideshow\/js\/views_slideshow.js":1,"misc\/form.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.0.2\/js\/bootstrap.js":1,"sites\/all\/modules\/base-modules\/equalheights\/equalheights.js":1,"sites\/all\/modules\/base-modules\/extlink\/extlink.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/base-modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/base-modules\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/custom_search\/js\/custom_search.js":1,"sites\/all\/libraries\/flexslider\/jquery.flexslider-min.js":1,"sites\/all\/modules\/base-modules\/flexslider_views_slideshow\/js\/flexslider_views_slideshow.js":1,"sites\/all\/modules\/base-modules\/compact_forms\/compact_forms.js":1,"misc\/textarea.js":1,"sites\/all\/modules\/base-modules\/webform\/js\/webform.js":1,"sites\/all\/libraries\/imagesloaded\/jquery.imagesloaded.min.js":1,"sites\/all\/modules\/base-modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/contrib\/mmenu\/js\/mmenu.js":1,"sites\/all\/libraries\/mmenu\/hammer\/hammer.js":1,"sites\/all\/libraries\/mmenu\/jquery.hammer\/jquery.hammer.js":1,"sites\/all\/libraries\/mmenu\/main\/src\/js\/jquery.mmenu.min.all.js":1,"sites\/all\/themes\/base-themes\/bento\/js\/hoverIntent.js":1,"sites\/all\/themes\/base-themes\/bento\/js\/superfish.js":1,"sites\/all\/themes\/base-themes\/bento\/js\/bento.js":1,"sites\/all\/themes\/base-themes\/bento\/js\/bentosuperfish.js":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/js\/bento_features.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/base-modules\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/features\/better_directory_2016\/css\/directory.css":1,"sites\/all\/modules\/features\/better_directory_2016\/css\/font-awesome.min.css":1,"sites\/all\/modules\/base-modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/base-modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/base-modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/base-modules\/extlink\/extlink.css":1,"sites\/all\/modules\/base-modules\/views\/css\/views.css":1,"sites\/all\/modules\/base-modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/base-modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/base-modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/custom_search\/custom_search.css":1,"sites\/all\/modules\/base-modules\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/all\/libraries\/flexslider\/flexslider.css":1,"sites\/all\/modules\/base-modules\/compact_forms\/compact_forms.css":1,"sites\/all\/modules\/base-modules\/webform\/css\/webform.css":1,"0":1,"sites\/all\/libraries\/mmenu\/main\/src\/css\/jquery.mmenu.all.css":1,"sites\/all\/libraries\/mmenu\/icomoon\/icomoon.css":1,"sites\/all\/modules\/contrib\/mmenu\/themes\/mm-basic\/styles\/mm-basic.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.0.2\/css\/bootstrap.min.css":1,"sites\/all\/themes\/base-themes\/bootstrap\/css\/3.0.2\/overrides.min.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/drawer.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/typography.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/shades.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/superfish.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/forms.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/buttons.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/social.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/secondary.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/content.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/overrides.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/color.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/skinr.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/mobile.css":1,"sites\/all\/themes\/base-themes\/bento\/css\/landing.css":1,"sites\/all\/themes\/base-themes\/catalog\/css\/catalog.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/profile.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/gallery.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/calendar.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/events.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/slideshow.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/revolution.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/careers.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/testimonials.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/email.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/blog.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/commerce.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/misc.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/feature-colors.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/style.css":1,"sites\/all\/themes\/site-specific-themes\/prosperouswide\/css\/xf-styles.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"custom_search":{"form_target":"_self","solr":0},"viewsSlideshow":{"slideshow_presentation-block":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow"],"pause":["viewsSlideshowControls","flexsliderViewsSlideshow"],"play":["viewsSlideshowControls","flexsliderViewsSlideshow"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"flexslider_views_slideshow":{"#flexslider_views_slideshow_main_slideshow_presentation-block":{"num_divs":5,"id_prefix":"#flexslider_views_slideshow_main_","vss_id":"slideshow_presentation-block","namespace":"flex-","selector":".slides \u003E li","easing":"swing","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":600,"initDelay":0,"useCSS":true,"touch":true,"video":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"controlsContainer":".flex-control-nav-container","sync":"","asNavFor":"","itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"animation":"fade","slideshow":true,"slideshowSpeed":7000,"directionNav":true,"controlNav":true,"prevText":"Previous","nextText":"Next","pausePlay":false,"pauseText":"Pause","playText":"Play","randomize":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"animationLoop":true,"pauseOnAction":true,"pauseOnHover":false,"manualControls":""}},"compactForms":{"forms":["user-login-form","webform-client-form-4","webform-client-form-178","webform-client-form-179","webform-client-form-187"],"stars":1},"urlIsAjaxTrusted":{"\/":true},"equalHeightsModule":{"classes":[{"selector":".directory-entry.grid, .directory-entry.cards","mediaquery":"(min-width:768px)","minheight":"","maxheight":"","overflow":"visible"},{"selector":".directory-entry.grid .info-wrapper, .directory-entry.cards .info-wrapper","mediaquery":"(min-width:768px)","minheight":"","maxheight":"","overflow":"visible"}],"imagesloaded_ie8":1},"mmenu":{"mmenu_left":{"enabled":"1","title":"Left menu","name":"mmenu_left","blocks":[{"module_delta":"system|main-menu","menu_parameters":{"min_depth":"1"},"title":"Main menu","collapsed":"0","wrap":"0","module":"system","delta":"main-menu"}],"options":{"classes":"mm-basic","effects":[],"slidingSubmenus":false,"clickOpen":{"open":false,"selector":""},"counters":{"add":false,"update":false},"dragOpen":{"open":true,"pageNode":"body","threshold":100,"maxStartPos":50},"footer":{"add":true,"content":"","title":"Copyright \u00a92015","update":true},"header":{"add":true,"content":"","title":"XFactor | Demo","update":true},"labels":{"collapse":false},"offCanvas":{"enabled":true,"modal":false,"moveBackground":true,"position":"left","zposition":"next"},"searchfield":{"add":false,"addTo":"menu","search":false,"placeholder":"Search","noResults":"No results found.","showLinksOnly":true}},"configurations":{"clone":false,"preventTabbing":false,"panelNodetype":"div, ul, ol","transitionDuration":400,"classNames":{"label":"Label","panel":"Panel","selected":"Selected","buttonbars":{"buttonbar":"anchors"},"counters":{"counter":"Counter"},"fixedElements":{"fixedTop":"FixedTop","fixedBottom":"FixedBottom"},"footer":{"panelFooter":"Footer"},"header":{"panelHeader":"Header","panelNext":"Next","panelPrev":"Prev"},"labels":{"collapsed":"Collapsed"},"toggles":{"toggle":"Toggle","check":"Check"}},"dragOpen":{"width":{"perc":0.8,"min":140,"max":440},"height":{"perc":0.8,"min":140,"max":880}},"offCanvas":{"menuInjectMethod":"prepend","menuWrapperSelector":"body","pageNodetype":"div","pageSelector":".mm-page"}},"custom":[],"position":"left"}},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body role="document" class="html front not-logged-in no-sidebars page-node page-node- page-node-7 node-type-page published">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div class="bento   block-style-1 superfish-style-8   social-style-1     bdr  bdrb  bp  bc  br ">
+	
+	<div class="mm-page">
+	
+			<div id="mobile-wrapper" class="mobile-wrapper phone bdrmob ">
+		
+			  <div class="region region-mobile">
+    <div id="block-block-8" class="block block-block"><div class="block-inner">
+
+    
+  <div class="content">
+    <div id="mobile-sliding-menu-wrapper">
+    <a href="#mmenu_left" id="my-menu">Menu</a>
+</div>  </div>
+</div></div>
+  </div>
+
+			 		 
+		 
+		</div> <!-- mobile-wrapper -->
+		
+	
+	
+	<div class="page">	
+		<div class="page-inner">
+	
+			<div class="top-wrapper w-navigation">
+				<div class="top-wrapper wo-navigation">
+							
+		
+										<div id="secondary-wrapper" class="secondary-wrapper wrapper bdrm ">
+						<div id="secondary-container" class="container bcs ">
+							<div class="inner">
+								<div id="secondary-navigation" class="secondary-navigation ">
+									<div class="inner-inner">
+										<ul id="secondary-menu" class="links list-inline clearfix"><li class="menu-1146 first"><a href="/products">Product Catalog</a></li>
+<li class="menu-1147"><a href="/support">Customer Center</a></li>
+<li class="menu-1148"><a href="/supplies">Supplies</a></li>
+<li class="menu-1149"><a href="/blog">Blog</a></li>
+<li class="menu-1150"><a href="/contact">Contact Us</a></li>
+<li class="menu-1017"><a href="https://www.facebook.com/Benchmark-Office-Systems-153905024658896/" class="facebook" target="_blank">Facebook</a></li>
+<li class="menu-1015 last"><a href="https://twitter.com/BOS_NH" class="twitter" target="_blank">Twitter</a></li>
+</ul>									</div> <!--.inner-inner -->
+								</div> <!--#secondary-navigation -->
+							</div> <!-- .inner -->
+						</div> <!-- #secondary-container -->
+					</div> <!-- #secondary-wrapper -->
+					
+					<header id="header-wrapper" class="header-wrapper wrapper bdrh  bph ">
+						<div class="header-wrapper-inner">
+							<div id="header-container" class="container bch ">
+								<div class="header-inner">
+				
+		
+									<div id="site-info" class="site-info col-xs-12 col-sm-5 col-lg-4">
+										<div class="inner">
+						
+																						<div class="logo">
+												<a class="logo ol-xs-5" href="/" title="Home">
+													<img src="http://www.benchmark-office.com/sites/default/files/benchmark_logo_h-cmyk.jpg" alt="Home" /></a>
+											</div> <!-- .logo -->		
+											
+																						<div class="site-name">	
+												<a class="name ol-xs-5" href="/" title="Home">Benchmark Office Systems</a>
+											</div> <!-- .site-name -->
+											
+											
+										</div> <!-- .inner -->
+									</div> <!-- .site-info -->
+
+									<div id="header" class="header-region region brh  col-xs-12 col-sm-7 col-lg-8">
+										<div class="inner">
+											  <div class="region region-header">
+    <div id="block-block-9" class="block block-block"><div class="block-inner">
+
+    
+  <div class="content">
+    <p><img alt="" src="/sites/default/files/imce/ts/unnamed-1.jpg" style="line-height: 1.6em; width: 130px; height: 88px;" /></p>
+  </div>
+</div></div>
+<div id="block-block-2" class="block block-block"><div class="block-inner">
+
+    
+  <div class="content">
+    <div class="phone-box phone">
+   <h3><a href="tel:16038902474">603.890.2474</a></h3>
+</div>
+
+<div class="phone-box desktop">
+   <h3>603.890.2474</h3>
+</div>
+
+<style>
+ .phone-box {text-align:center;margin-top:0;}
+ .phone-box h3 {margin-top:0;}
+@media (min-width:768px) {
+ .phone-box {text-align:right;margin-top:40px;}
+
+}
+
+</style>  </div>
+</div></div>
+<div id="block-search-form" class="block block-search"><div class="block-inner">
+
+    
+  <div class="content">
+    <form class="search-form form-search content-search" role="search" action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div>
+      <h2 class="element-invisible">Search form</h2>
+    <div class="input-group"><input title="Enter the terms you wish to search for." class="custom-search-box form-control form-text" placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" /><span class="input-group-btn"><button type="submit" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></span></div><div class="form-actions form-wrapper form-group" id="edit-actions"><button class="element-invisible btn btn-primary form-submit" type="submit" id="edit-submit" name="op" value="Search Products">Search Products</button>
+</div><input class="custom-search-selector custom-search-types" type="hidden" name="custom_search_types" value="c-catalog_product" />
+<input type="hidden" name="form_build_id" value="form-s8Fn7Hww1ZAA3tiaPfx0_Et8ml9qONl7FnOyN4K-zkI" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div></div>
+<div id="block-block-10" class="block block-block"><div class="block-inner">
+
+    
+  <div class="content">
+    <p><!-- Google Tag Manager --></p><p></p><noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WZLP49" height="0" width="0" style="display:none;visibility:hidden"></iframe><p></p></noscript>
+<script>
+<!--//--><![CDATA[// ><!--
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZLP49');
+//--><!]]>
+</script><!-- End Google Tag Manager -->  </div>
+</div></div>
+  </div>
+										</div>
+									</div>
+								</div> <!-- .header-inner -->
+							</div> <!-- #header-container -->
+						</div> <!-- .header-wrapper-inner -->
+					</header> <!-- #header-wrapper -->
+				</div> <!-- .topper-wrapper .wo-navigation-->
+
+								<nav id="main-navigation-wrapper" class="main-navigation-wrapper wrapper desktop bdrm ">
+					<div id="main-navigation" class="main-navigation container ">
+						<div class="inner">
+		                    <ul class="sf-menu"><li class="first leaf"><a href="/" class="active">Home</a></li>
+<li class="expanded"><a href="/who-we-are">Who We Are</a><ul class="sf-depth-2" style="display:none""><li class="first leaf"><a href="/about-us">About Us</a></li>
+<li class="leaf"><a href="/total-satisfaction-guarantee">Total Satisfaction Guarantee</a></li>
+<li class="last leaf"><a href="/careers">Careers</a></li>
+</ul></li>
+<li class="expanded"><a href="/what-we-do">What We Do</a><ul class="sf-depth-2" style="display:none""><li class="first leaf"><a href="/multifunction-printers-copiers">Multifunction Printers &amp; Copiers</a></li>
+<li class="leaf"><a href="/connectkey-app-technology-multifunction-printers">iSeries Apps</a></li>
+<li class="leaf"><a href="/printers">Printers</a></li>
+<li class="leaf"><a href="/xerox-managed-print-services">Xerox Managed Print Services</a></li>
+<li class="leaf"><a href="/document-management">Document Management</a></li>
+<li class="leaf"><a href="/mobile-printing-solutions">Mobile Printing Solutions</a></li>
+<li class="leaf"><a href="/scan-cloud">Scan to Cloud</a></li>
+<li class="leaf"><a href="/production-print-workflow">Production Print &amp; Workflow</a></li>
+<li class="last leaf"><a href="/document-imaging">Document Imaging</a></li>
+</ul></li>
+<li class="expanded"><a href="/how-you-benefit">How You Benefit</a><ul class="sf-depth-2" style="display:none""><li class="first leaf"><a href="/control-your-costs">Control Your Costs</a></li>
+<li class="leaf"><a href="/be-more-productive">Be More Productive</a></li>
+<li class="leaf"><a href="/secure-your-office">Secure Your Office</a></li>
+<li class="last leaf"><a href="/be-greener">Be Greener</a></li>
+</ul></li>
+<li class="leaf"><a href="/support">Support</a></li>
+<li class="leaf"><a href="/e-concierge">E-Concierge</a></li>
+<li class="last leaf"><a href="/search">Product Search</a></li>
+</ul>						</div> <!-- .inner -->
+					</div> <!-- .main-navigation -->
+				</nav> <!-- .main-navigation-wrapper -->
+							</div> <!-- .topper-wrapper .w-navigation-->
+
+
+
+			<div id="content-area-wrapper" class="content-area-wrapper bdrcw ">
+
+								<section id="preface-wrapper" class="preface-wrapper wrapper bdrpre  bppre ">
+					<div id="preface-container" class="container-fluid bcpre ">
+						<div id="preface" class="region brpre  clearfix">
+							<div class="inner">
+								  <div class="region region-preface">
+    <div id="block-views-slideshow-presentation-block" class="block block-views"><div class="block-inner">
+
+    <h2 class="block-title">Slideshow Presentation</h2>
+  
+  <div class="content">
+    <div class="view view-slideshow-presentation view-id-slideshow_presentation view-display-id-block view-dom-id-1fee1eab951e2a44dcb45ca2d54a9bb0">
+        
+    
+      <div class="view-content">
+      
+  <div class="skin-default">
+    
+    <div id="flexslider_views_slideshow_main_slideshow_presentation-block" class="flexslider_views_slideshow_main views_slideshow_main"><div class="flex-nav-container">
+  <div class="flexslider">
+    <ul id="flexslider_views_slideshow_slideshow_presentation-block" class="flexslider-views-slideshow-main-frame slides">
+        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-1 views-row-odd">
+      
+  <div class="views-field views-field-field-slide-url-text">        <div class="field-content"><div class="slideshow-wrapper">
+  <div class="slideshow-inner inner">
+    <div class="slideshow-image-wrapper">
+      <div class="slideshow-image-inner">
+        <img typeof="foaf:Image" class="img-responsive" src="http://www.benchmark-office.com/sites/default/files/styles/wide-home-banner/public/home-page-slides/small_town_main_street.jpg?itok=LRManYOM" width="1280" height="480" alt="Harness the Power of Xerox Locally!" title="Harness the Power of Xerox Locally!" />
+      </div> 
+    </div> 
+   
+    <div class="slideshow-text-area-wrapper">
+      <div class="slideshow-text-area-inner">
+
+        <div class="slideshow-title-wrapper">
+          <div class="slideshow-title-inner">
+            Harness the Power of Xerox Locally!
+          </div> 
+        </div> 
+   
+        <div class="slideshow-subtitle-wrapper">
+          <div class="slideshow-subtitle-inner">
+            
+          </div> 
+        </div> 
+  
+        <div class="slideshow-text-wrapper">
+          <div class="slideshow-text-inner">
+            Partner up with a local Xerox agent and enjoy the benefits of working with a local company!
+          </div> 
+        </div> 
+  
+        <div class="slideshow-url-wrapper">
+          <div class="slideshow-url-inner">
+            <a class="slideshow-url button" href="/about-us">Learn More</a>
+          </div> 
+        </div> 
+  
+      </div> 
+    </div> 
+  </div> 
+</div> </div>  </div>  </li>
+  <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even">
+      
+  <div class="views-field views-field-field-slide-url-text">        <div class="field-content"><div class="slideshow-wrapper">
+  <div class="slideshow-inner inner">
+    <div class="slideshow-image-wrapper">
+      <div class="slideshow-image-inner">
+        <img typeof="foaf:Image" class="img-responsive" src="http://www.benchmark-office.com/sites/default/files/styles/wide-home-banner/public/home-page-slides/slide2_small.jpg?itok=x4Ta6IRl" width="1280" height="480" alt="Managed Print Services" title="Managed Print Services" />
+      </div> 
+    </div> 
+   
+    <div class="slideshow-text-area-wrapper">
+      <div class="slideshow-text-area-inner">
+
+        <div class="slideshow-title-wrapper">
+          <div class="slideshow-title-inner">
+            Managed Print Services
+          </div> 
+        </div> 
+   
+        <div class="slideshow-subtitle-wrapper">
+          <div class="slideshow-subtitle-inner">
+            
+          </div> 
+        </div> 
+  
+        <div class="slideshow-text-wrapper">
+          <div class="slideshow-text-inner">
+            You don&#039;t want your printers to get in the way of your business. We&#039;ll manage your printers so you can do what you do best.
+          </div> 
+        </div> 
+  
+        <div class="slideshow-url-wrapper">
+          <div class="slideshow-url-inner">
+            <a class="slideshow-url button" href="/xerox-managed-print-services">Learn More</a>
+          </div> 
+        </div> 
+  
+      </div> 
+    </div> 
+  </div> 
+</div> </div>  </div>  </li>
+  <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd">
+      
+  <div class="views-field views-field-field-slide-url-text">        <div class="field-content"><div class="slideshow-wrapper">
+  <div class="slideshow-inner inner">
+    <div class="slideshow-image-wrapper">
+      <div class="slideshow-image-inner">
+        <img typeof="foaf:Image" class="img-responsive" src="http://www.benchmark-office.com/sites/default/files/styles/wide-home-banner/public/home-page-slides/slide3_small.jpg?itok=okoohDaU" width="1280" height="480" alt="Mobile Print" title="Mobile Print" />
+      </div> 
+    </div> 
+   
+    <div class="slideshow-text-area-wrapper">
+      <div class="slideshow-text-area-inner">
+
+        <div class="slideshow-title-wrapper">
+          <div class="slideshow-title-inner">
+            Mobile Print
+          </div> 
+        </div> 
+   
+        <div class="slideshow-subtitle-wrapper">
+          <div class="slideshow-subtitle-inner">
+            
+          </div> 
+        </div> 
+  
+        <div class="slideshow-text-wrapper">
+          <div class="slideshow-text-inner">
+            Xerox mobile print allows you to print securely from your tablet or smartphone.
+          </div> 
+        </div> 
+  
+        <div class="slideshow-url-wrapper">
+          <div class="slideshow-url-inner">
+            <a class="slideshow-url button" href="/mobile-printing-solutions">Learn More</a>
+          </div> 
+        </div> 
+  
+      </div> 
+    </div> 
+  </div> 
+</div> </div>  </div>  </li>
+  <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-even">
+      
+  <div class="views-field views-field-field-slide-url-text">        <div class="field-content"><div class="slideshow-wrapper">
+  <div class="slideshow-inner inner">
+    <div class="slideshow-image-wrapper">
+      <div class="slideshow-image-inner">
+        <img typeof="foaf:Image" class="img-responsive" src="http://www.benchmark-office.com/sites/default/files/styles/wide-home-banner/public/home-page-slides/slide4_small.jpg?itok=ZGCX2-Rb" width="1280" height="480" alt="Multifunction Printers Copiers" title="Multifunction Printers Copiers" />
+      </div> 
+    </div> 
+   
+    <div class="slideshow-text-area-wrapper">
+      <div class="slideshow-text-area-inner">
+
+        <div class="slideshow-title-wrapper">
+          <div class="slideshow-title-inner">
+            ConnectKey
+          </div> 
+        </div> 
+   
+        <div class="slideshow-subtitle-wrapper">
+          <div class="slideshow-subtitle-inner">
+            
+          </div> 
+        </div> 
+  
+        <div class="slideshow-text-wrapper">
+          <div class="slideshow-text-inner">
+            You need a secure, productive work environment that keeps costs under control. We put it all at your fingertips with Xerox ConnectKey multifunction printers and copiers.
+          </div> 
+        </div> 
+  
+        <div class="slideshow-url-wrapper">
+          <div class="slideshow-url-inner">
+            <a class="slideshow-url button" href="/multifunction-printers-copiers">Learn More</a>
+          </div> 
+        </div> 
+  
+      </div> 
+    </div> 
+  </div> 
+</div> </div>  </div>  </li>
+  <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-5 views_slideshow_cycle_hidden views-row-odd">
+      
+  <div class="views-field views-field-field-slide-url-text">        <div class="field-content"><div class="slideshow-wrapper">
+  <div class="slideshow-inner inner">
+    <div class="slideshow-image-wrapper">
+      <div class="slideshow-image-inner">
+        <img typeof="foaf:Image" class="img-responsive" src="http://www.benchmark-office.com/sites/default/files/styles/wide-home-banner/public/home-page-slides/green-slide.jpg?itok=sQHXyiyA" width="1280" height="480" alt="Xerox® ConnectKey® Apps" title="Xerox® ConnectKey® Apps" />
+      </div> 
+    </div> 
+   
+    <div class="slideshow-text-area-wrapper">
+      <div class="slideshow-text-area-inner">
+
+        <div class="slideshow-title-wrapper">
+          <div class="slideshow-title-inner">
+            Xerox® ConnectKey® Apps
+          </div> 
+        </div> 
+   
+        <div class="slideshow-subtitle-wrapper">
+          <div class="slideshow-subtitle-inner">
+            
+          </div> 
+        </div> 
+  
+        <div class="slideshow-text-wrapper">
+          <div class="slideshow-text-inner">
+            On-board apps to simplify every day tasks to keep you moving.
+          </div> 
+        </div> 
+  
+        <div class="slideshow-url-wrapper">
+          <div class="slideshow-url-inner">
+            <a class="slideshow-url button" href="/be-greener">Learn More</a>
+          </div> 
+        </div> 
+  
+      </div> 
+    </div> 
+  </div> 
+</div> </div>  </div>  </li>
+    </ul>
+  </div>
+</div></div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div></div>
+  </div>
+							</div><!-- .inner -->
+						</div> <!-- #preface -->
+					</div>  <!-- #preface-container -->
+				</section>
+								
+				<div id="content-wrapper" class="content-wrapper wrapper">
+					<div class="row">
+						<div id="content-container" class="container bcc ">	
+
+							
+							<section class="col-sm-12"> <!-- begin content column-->
+
+
+								    
+
+
+																
+								<div class="content-region bdrc ">
+
+									<a id="main-content"></a>
+
+										
+																					<h1 class="page-header title">Home</h1>
+										
+										
+										
+																															
+										
+										
+										  <div class="region region-content">
+    <div id="block-block-3" class="block block-block col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="block-inner">
+
+    
+  <div class="content">
+    <div class="block-image-hover">
+<div class="block-image-hover-container">
+<div class="block-image-hover-icon"><a href="/support"><img alt="Customer Center" src="/sites/default/files/imce/ts/icon-customer-center.png" style="width: 50px; height: 50px;" /></a></div>
+<div class="block-image-hover-title"><a href="/support">Customer Center</a></div>
+</div>
+</div>
+<div class="block-image"><img alt="Customer Center" src="/sites/default/files/imce/ts/block-customer-service-2.jpg" /></div>
+  </div>
+</div></div>
+<div id="block-block-4" class="block block-block col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="block-inner">
+
+    
+  <div class="content">
+    <div class="production-print-container">
+<div class="block-image-hover">
+<div class="block-image-hover-container">
+<div class="block-image-hover-icon"><a href="/control-your-costs"><img alt="Control Costs" src="/sites/default/files/imce/ts/icon-control-costs.png" style="width: 50px; height: 50px;" /></a></div>
+<div class="block-image-hover-title"><a href="/control-your-costs">Control Costs</a></div>
+</div>
+</div>
+<div class="block-image"><img alt="Control Costs" src="/sites/default/files/imce/ts/block-control-costs-2.jpg" /></div>
+</div>
+<div class="printer-supplies-container">
+<div class="block-image-hover">
+<div class="block-image-hover-container">
+<div class="block-image-hover-icon"><a href="/xerox-managed-print-services"><img alt="Managed Print Servives" src="/sites/default/files/imce/ts/icon-managed-print-services.png" style="width: 50px; height: 50px;" /></a></div>
+<div class="block-image-hover-title"><a href="/xerox-managed-print-services">Managed Print Services</a></div>
+</div>
+</div>
+<div class="block-image"><img alt="Managed Print Services" src="/sites/default/files/imce/ts/block-managed-print-2.jpg" /></div>
+</div>
+  </div>
+</div></div>
+<div id="block-block-5" class="block block-block col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="block-inner">
+
+    
+  <div class="content">
+    <div class="block-image-hover">
+<div class="block-image-hover-container">
+<div class="block-image-hover-icon"><a href="/products"><img alt="Product Catalog" src="/sites/default/files/imce/ts/icon-product-catalog.png" style="width: 50px; height: 50px;" /></a></div>
+<div class="block-image-hover-title"><a href="/products">Product Catalog</a></div>
+</div>
+</div>
+<div class="block-image"><img alt="Product Catalog" src="/sites/default/files/imce/ts/block-product-catalog-2_0.jpg" /></div>
+  </div>
+</div></div>
+<div id="block-system-main" class="block block-system"><div class="block-inner">
+
+    
+  <div class="content">
+    <div id="node-7" class="node node-page clearfix" about="/home" typeof="foaf:Document">
+
+  
+      <span property="dc:title" content="Home" class="rdf-meta element-hidden"></span>
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><style> .front h1.page-header.title { display: none; } </style></div></div></div>  </div>
+
+  
+  
+</div>
+  </div>
+</div></div>
+  </div>
+									</div> <!-- .content-region -->
+												
+							</section> <!-- /content column -->
+
+
+
+													
+						</div> <!-- #content-container -->
+					</div> <!-- #content-wrapper -->
+				</div> <!-- .row -->
+			</div> <!-- .content-area-wrapper -->
+		
+						<section id="postscript-wrapper" class="postscript-wrapper wrapper bdrpost  bppost ">
+				<div class="postscript-wrapper-inner">
+					<div id="postscript-container" class="container bcpost ">
+						<div id="postscript" class="region brpost  clearfix">
+							<div class="inner">
+								  <div class="region region-postscript">
+    <div id="block-views-blog-block" class="block block-views col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="block-inner">
+
+    <h2 class="block-title">Recent Posts</h2>
+  
+  <div class="content">
+    <div class="view view-blog view-id-blog view-display-id-block view-dom-id-ad8078a6d75d722d29c84a41e40c8963">
+        
+    
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/xerox-fights-productivity-drain-new-multifunction-devices-small-office-%E2%80%93-everyone-can-use">Xerox Fights Productivity Drain with New Multifunction Devices for the Small Office – That Everyone Can Use</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/new-xerox-documate-6440-quick-well-rounded-scanner-puts-organizations-fast-track-digital-success">New Xerox DocuMate 6440 is a Quick, Well-Rounded Scanner That Puts Organizations on the Fast Track for Digital Success</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/print-audit-announces-printreleaf-integration">Print Audit Announces PrintReleaf Integration</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/evolution-print-service-praas">The Evolution of Print as a Service (PRaaS)</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/got-two-sided-scanning-xerox-introduces-affordable-one-pound-scanner-duplex-features-mobile-users">Got Two-Sided Scanning? Xerox Introduces Affordable, One-Pound Scanner with Duplex Features for Mobile Users</a></span>  </div></li>
+          <li class="views-row views-row-6 views-row-even views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/how-smart-can-multifunction-printer-really-be">How Smart Can a Multifunction Printer Really Be?</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/blog">
+    Read More  </a>
+</div>
+  
+  
+  
+</div>  </div>
+</div></div>
+<div id="block-webform-client-block-4" class="block block-webform col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="block-inner">
+
+    <h2 class="block-title">Get Started!</h2>
+  
+  <div class="content">
+    <form class="webform-client-form webform-client-form-4" enctype="multipart/form-data" action="/" method="post" id="webform-client-form-4" accept-charset="UTF-8"><div><fieldset  class="webform-component-fieldset webform-component--form-container panel panel-default form-wrapper">
+      <div class="panel-body">
+        <div  class="form-item webform-component webform-component-textfield webform-component--form-container--name form-group">
+  <label class="control-label" for="edit-submitted-form-container-name">Name <span class="form-required" title="This field is required.">*</span></label>
+ <input required="required" class="form-control form-text required" type="text" id="edit-submitted-form-container-name" name="submitted[form_container][name]" value="" size="60" maxlength="128" />
+</div>
+<div  class="form-item webform-component webform-component-email webform-component--form-container--email form-group">
+  <label class="control-label" for="edit-submitted-form-container-email">Email <span class="form-required" title="This field is required.">*</span></label>
+ <input required="required" class="email form-control form-text form-email required" type="email" id="edit-submitted-form-container-email" name="submitted[form_container][email]" size="60" />
+</div>
+<div  class="form-item webform-component webform-component-textfield webform-component--form-container--phone form-group">
+  <label class="control-label" for="edit-submitted-form-container-phone">Phone </label>
+ <input class="form-control form-text" type="text" id="edit-submitted-form-container-phone" name="submitted[form_container][phone]" value="" size="60" maxlength="128" />
+</div>
+<div  class="form-item webform-component webform-component-textarea webform-component--form-container--comments form-group">
+  <label class="control-label" for="edit-submitted-form-container-comments">Comments </label>
+ <div class="form-textarea-wrapper resizable"><textarea class="form-control form-textarea" id="edit-submitted-form-container-comments" name="submitted[form_container][comments]" cols="60" rows="5"></textarea></div>
+</div>
+<div  class="nosee form-item webform-component webform-component-textfield webform-component--form-container--what-is-2--2 form-group">
+  <label class="control-label" for="edit-submitted-form-container-what-is-2-2">What is 2 + 2? </label>
+ <input class="form-control form-text" type="text" id="edit-submitted-form-container-what-is-2-2" name="submitted[form_container][what_is_2__2]" value="" size="60" maxlength="128" />
+</div>
+  </div>
+  </fieldset>
+<input type="hidden" name="details[sid]" />
+<input type="hidden" name="details[page_num]" value="1" />
+<input type="hidden" name="details[page_count]" value="1" />
+<input type="hidden" name="details[finished]" value="0" />
+<input type="hidden" name="form_build_id" value="form-c1o8l3AvNs1dqJNyq4KCweStXCmi3OhIo_LL63vNufk" />
+<input type="hidden" name="form_id" value="webform_client_form_4" />
+<div class="form-actions"><button class="webform-submit button-primary btn btn-default form-submit" type="submit" name="op" value="Contact Us">Contact Us</button>
+</div></div></form>  </div>
+</div></div>
+  </div>
+							</div> <!-- .inner -->
+						</div> <!-- #postscript -->
+					</div> <!-- #postscript-container -->
+				</div> <!-- .postscript-wrapper-inner -->
+			</section>
+			
+			<footer class="footer-outer bdrf dark-region bppost ">
+				<div class="footer-outer-inner">
+				
+										
+
+					<div id="footer-information" class="footer-information-wrapper wrapper">
+						<div class="footer-information-wrapper-inner">
+							<div id="footer-information-container" class="container bcf ">
+								<div id="footer-information" class="region brf br-10 clearfix" >
+									<div class="inner">
+										<div>&copy;2016 Benchmark Office Systems</div>
+
+																					  <div class="region region-information">
+    <div id="block-block-1" class="block block-block"><div class="block-inner">
+
+    
+  <div class="content">
+    <div class="vcard" id="">
+<div class="org">
+<h3>Benchmark Office</h3>
+</div>
+
+<div class="adr">
+<div class="street-address">75 Gilcreast Road Suite 311</div>
+<span class="locality">Londonderry</span>, <span class="region">NH</span> <span class="postal-code">03053</span></div>
+
+<div class="tel">1-603-890-2474</div>
+</div>
+  </div>
+</div></div>
+  </div>
+																			</div> <!-- .inner -->
+								</div> <!-- #footer-information -->
+							</div> <!-- #footer-information-container -->
+						</div> <!-- .footer-information-wrapper-inner -->
+					</div> <!-- .footer-information-wrapper -->
+
+					
+					<div id="attribution-line" class="attribution-wrapper wrapper">
+						<div id="attribution-container" class="container bcf ">
+							<div class="inner">
+								<div class="attribution-line-inside brf bra br-10">
+									<div class="inner-inner">
+										powered by <a href="http://www.xfactorsites.com" target="_new" alt>XFactor</a> Marketing | <a href="/user">Login</a>.									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- #attribution-line -->
+
+				</div> <!-- .footer-outer-inner -->
+			</footer> <!-- .footer-outer -->
+
+		</div> <!-- .page-inner -->
+				</div> <!-- .page -->
+	</div><!-- .mm-page -->
+</div> <!-- .bento -->
+
+
+
+  
+<nav id="mmenu_left" class="mmenu-nav clearfix">
+  <ul>
+                            <li class="mmenu-expanded">
+            <span class="mmenu-block-expanded mmenu-block"><i class="mmenu-block-icon mmenu-block-icon-system-main-menu"></i><span class="mmenu-block-title">Main menu</span></span>
+          </li>
+                          <ul class="mmenu-mm-list-level-1"><li class="mmenu-mm-list-mlid-218 mmenu-mm-list-path-front"><a href="/" class="mmenu-mm-list "><i class="icon-home"></i><span class="mmenu-block-title">Home</span></a></li><li class="mmenu-mm-list-mlid-1121 mmenu-mm-list-path-node-150"><a href="/who-we-are" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Who We Are</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-1122 mmenu-mm-list-path-node-151"><a href="/about-us" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">About Us</span></a></li><li class="mmenu-mm-list-mlid-1125 mmenu-mm-list-path-node-154"><a href="/total-satisfaction-guarantee" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Total Satisfaction Guarantee</span></a></li><li class="mmenu-mm-list-mlid-1126 mmenu-mm-list-path-node-155"><a href="/careers" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Careers</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1127 mmenu-mm-list-path-node-156"><a href="/what-we-do" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">What We Do</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-1128 mmenu-mm-list-path-node-157"><a href="/multifunction-printers-copiers" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Multifunction Printers & Copiers</span></a></li><li class="mmenu-mm-list-mlid-1222 mmenu-mm-list-path-node-195"><a href="/connectkey-app-technology-multifunction-printers" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">iSeries Apps</span></a></li><li class="mmenu-mm-list-mlid-1129 mmenu-mm-list-path-node-158"><a href="/printers" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Printers</span></a></li><li class="mmenu-mm-list-mlid-1130 mmenu-mm-list-path-node-159"><a href="/xerox-managed-print-services" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Xerox Managed Print Services</span></a></li><li class="mmenu-mm-list-mlid-1131 mmenu-mm-list-path-node-160"><a href="/document-management" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Document Management</span></a></li><li class="mmenu-mm-list-mlid-1132 mmenu-mm-list-path-node-161"><a href="/mobile-printing-solutions" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Mobile Printing Solutions</span></a></li><li class="mmenu-mm-list-mlid-1133 mmenu-mm-list-path-node-162"><a href="/scan-cloud" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Scan to Cloud</span></a></li><li class="mmenu-mm-list-mlid-1134 mmenu-mm-list-path-node-163"><a href="/production-print-workflow" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Production Print & Workflow</span></a></li><li class="mmenu-mm-list-mlid-1135 mmenu-mm-list-path-node-164"><a href="/document-imaging" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Document Imaging</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1136 mmenu-mm-list-path-node-165"><a href="/how-you-benefit" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">How You Benefit</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-1137 mmenu-mm-list-path-node-166"><a href="/control-your-costs" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Control Your Costs</span></a></li><li class="mmenu-mm-list-mlid-1138 mmenu-mm-list-path-node-167"><a href="/be-more-productive" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Be More Productive</span></a></li><li class="mmenu-mm-list-mlid-1139 mmenu-mm-list-path-node-168"><a href="/secure-your-office" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Secure Your Office</span></a></li><li class="mmenu-mm-list-mlid-1140 mmenu-mm-list-path-node-169"><a href="/be-greener" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Be Greener</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1141 mmenu-mm-list-path-node-170"><a href="/support" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Support</span></a></li><li class="mmenu-mm-list-mlid-1142 mmenu-mm-list-path-node-171"><a href="/e-concierge" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">E-Concierge</span></a></li><li class="mmenu-mm-list-mlid-1143 mmenu-mm-list-path-search"><a href="/search" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Product Search</span></a></li></ul>                    </ul>
+</nav>
+<script src="http://www.benchmark-office.com/sites/all/themes/base-themes/bootstrap/js/bootstrap.js?oblozc"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"31ed2ebb8d","applicationID":"27804129","transactionName":"ZlNRNksCX0JSAENdC18ZZhBQTB5YXQdSTEpBXkM=","queueTime":0,"applicationTime":13,"atts":"ShRSQAMYTEw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

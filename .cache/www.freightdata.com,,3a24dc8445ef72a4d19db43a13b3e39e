@@ -1,0 +1,611 @@
+status: 200
+content-length: 27796
+content-location: http://www.freightdata.com
+-content-encoding: gzip
+x-powered-by: ASP.NET
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+last-modified: Tue, 26 Apr 2016 09:10:50 GMT
+etag: "f82d34879b9fd11:0"
+date: Thu, 20 Oct 2016 15:44:35 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- DW6 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="About" content="This web site was designed, developed and authored in its entirety by the Internet Development team at Freightdata.  We hope you enjoy it. ;) ">
+<meta name="Description" content="Freightdata 2000: freight software for freight forwarders. Freight forwarding software handling all your shipping and customs requirements. Covers air freight and deep sea, shipping and road transport. Including FREE state of the art cargo shipment tracking with CargoFind internet tracking Software.">
+<meta name="Keywords" content="freightdata, freight software, freight forwarding software, freight, tracking software, freight tracking software, air, sea, shipping, road, transport, cargo, courier, tracking, international, track and trace, air freight software, air cargo tracking, software de carga, carga, logiciel du transport, fret, transport, Fracht-Software, Ladung, software del carico, trasporto, track and trace software, secure cargo, security, IATA, air freight, bill of lading, awb, freight forwarding, freight management, ocean, transportation, waybill, export, import, cargofind, oracle, sql server, cargo tracking, accounting, distribution, freight data, quotations, rates, buy freight software, purchase freight software, buy on-line, shop on-line, freight software store, worldpay, asgard">
+<meta name="Author" CONTENT="Freightdata 2000 Ltd - International freight Software with cargo shipment tracking"> 
+
+<title>Freightdata 2000: Freight software for all your freight forwarding needs; air
+freight and deep sea, shipping and road transport. Shipment tracking with internet track and trace.</title>
+
+<noscript></noscript>
+<link rel="stylesheet" href="css/fd2_nav.css" type="text/css">
+<link rel="stylesheet" href="css/fd2_slide-out-menu-new.css" media="screen" type="text/css"></link>
+<script type="text/javascript">
+	
+
+/**************************************************************************
+
+**********************************
+	(C) www.freightdata.com, July 2011  Script for slide out menu functions 
+	
+     
+
+***************************************************************************
+
+*************/
+
+	var timeBeforeAutoHide = 700;	// Microseconds to wait before auto hiding menu(1000 = 1 second)
+	var slideSpeed_out = 10;	// Steps to move sub menu at a time ( higher = faster)
+	var slideSpeed_in = 10;
+		
+	
+	var slideTimeout_out = 25;	// Microseconds between slide steps ( lower = faster)
+	var slideTimeout_in = 10;	// Microseconds between slide steps ( lower = faster)
+	
+	var showSubOnMouseOver = true;	// false = show sub menu on click, true = show sub menu on mouse over
+	var fixedSubMenuWidth = false;	// Width of sub menu items - A number(width in pixels) or false when width should be dynamic
+	
+	var xOffsetSubMenu = 0; 	// Offset x-position of sub menu items - use negative value if you want the sub menu to overlap main menu
+	
+	var slideDirection = 'right';	// Slide to left or right ?
+	
+	/* Don't change anything below here */
+	
+	var activeSubMenuId = false;
+	var activeMainMenuItem = false;
+	var currentZIndex = 1000;		
+	var autoHideTimer = 0;
+	var submenuObjArray = new Array();
+	var okToSlideInSub = new Array();
+	var subPositioned = new Array();
+	
+
+	function stopAutoHide()
+	{
+		autoHideTimer = -1;
+	}
+	
+	function initAutoHide()
+	{
+		autoHideTimer = 0;
+		if(autoHideTimer>=0)autoHide();
+	}
+	
+	function autoHide()
+	{
+		
+		if(autoHideTimer>timeBeforeAutoHide)
+		{
+			
+			if(activeMainMenuItem){
+				activeMainMenuItem.className='';
+				activeMainMenuItem = false;
+			}
+			
+			if(activeSubMenuId){
+				var obj = 
+
+document.getElementById('subMenuDiv' + activeSubMenuId);
+				showSub();
+			}
+		}else{
+			if(autoHideTimer>=0){
+				autoHideTimer+=50;
+				setTimeout('autoHide()',50);
+			}
+		}
+	}	
+	
+	function getTopPos(inputObj)
+	{		
+	  var returnValue = inputObj.offsetTop;
+	  while((inputObj = inputObj.offsetParent) != null)returnValue += inputObj.offsetTop;
+	  return returnValue;
+	}
+	
+	function getLeftPos(inputObj)
+	{
+	  var returnValue = inputObj.offsetLeft;
+	  while((inputObj = inputObj.offsetParent) != null)returnValue += inputObj.offsetLeft;
+	  return returnValue;
+	}
+	
+	function showSub()
+	{
+		var subObj = false;
+		if(this && this.tagName){
+			var numericId = this.parentNode.id.replace(/[^0-9]/g,'');
+			okToSlideInSub[numericId] = false;
+			var subObj = document.getElementById('subMenuDiv' + numericId);
+			
+
+if(activeMainMenuItem)activeMainMenuItem.className='';
+			if(subObj){
+				if(!subPositioned[numericId]){
+					if(slideDirection=='right'){
+						subObj.style.left = getLeftPos(submenuObjArray[numericId]['parentDiv']) + 
+
+submenuObjArray[numericId]['parentDiv'].offsetWidth + xOffsetSubMenu + 'px';
+					}else{
+						subObj.style.left = getLeftPos(submenuObjArray[numericId]['parentDiv']) + xOffsetSubMenu + 'px';
+						
+					}
+					submenuObjArray[numericId]['left'] = subObj.style.left.replace(/[^0-9]/g,'');
+					subObj.style.top = getTopPos(submenuObjArray[numericId]['parentDiv']) + 'px';
+					subPositioned[numericId] = true;
+				}				
+				subObj.style.visibility = 'visible';
+				subObj.style.zIndex = currentZIndex;
+				currentZIndex++;	
+				this.className='activeMainMenuItem';
+				activeMainMenuItem = this;
+			}
+		}else{
+			var numericId = activeSubMenuId;
+		}
+		if(activeSubMenuId && (numericId!=activeSubMenuId || 
+
+!subObj))slideMenu(activeSubMenuId,(slideSpeed_in*-1));
+		if(numericId!=activeSubMenuId && this && subObj){
+			subObj.style.width = '0px';	
+			slideMenu(numericId,slideSpeed_out);
+			activeSubMenuId = numericId;
+		}else{
+			if(numericId!=activeSubMenuId)activeSubMenuId = false;
+		}
+		if(showSubOnMouseOver)stopAutoHide();
+	}
+	
+	function slideMenu(menuIndex,speed){
+		var obj = submenuObjArray[menuIndex]['divObj'];
+		var obj2 = submenuObjArray[menuIndex]['ulObj'];
+		var width = obj.offsetWidth + speed;
+		if(speed<0){
+			if(width<0)width = 0;
+			obj.style.width = width + 'px';
+			if(slideDirection=='left'){
+				obj.style.left = submenuObjArray[menuIndex]['left'] - width + 'px';
+				obj2.style.left = '0px';
+			}else{
+				obj2.style.left = width - submenuObjArray[menuIndex]['width'] + 'px' 
+			}
+			if(width>0 && 
+
+okToSlideInSub[menuIndex])setTimeout('slideMenu(' + menuIndex + ',' + speed 
++ ')',slideTimeout_in); else{
+				obj.style.visibility = 'hidden';
+				obj.style.width = '0px';
+				
+
+if(activeSubMenuId==menuIndex)activeSubMenuId=false;
+			}
+			
+		}else{
+			if(width>submenuObjArray[menuIndex]['width'])width = submenuObjArray[menuIndex]['width'];
+			if(slideDirection=='left'){
+				obj.style.left = submenuObjArray[menuIndex]['left'] - width + 'px';
+				obj2.style.left = '0px';
+			}else{
+				obj2.style.left = width - submenuObjArray[menuIndex]['width'] + 'px' 
+			}		
+			
+			obj.style.width = width + 'px';
+			if(width<submenuObjArray[menuIndex]['width']){
+				setTimeout('slideMenu(' + menuIndex + ',' + speed + ')',slideTimeout_out);
+			}else{
+				okToSlideInSub[menuIndex] = true;
+			}
+		}
+	}
+	function resetPosition()
+	{
+		subPositioned.length = 0;
+	}
+			
+	function initLeftMenu()
+	{
+		var menuObj = document.getElementById('fd2_slide_menu');	
+		var mainMenuItemArray = new Array();
+		
+		var mainMenuItem = menuObj.getElementsByTagName('LI')[0];
+		while(mainMenuItem){
+			if(mainMenuItem.tagName && 
+
+mainMenuItem.tagName.toLowerCase()=='li'){
+				mainMenuItemArray[mainMenuItemArray.length] = mainMenuItem;
+				var aTag = mainMenuItem.getElementsByTagName('A')[0];
+				if(showSubOnMouseOver)
+					aTag.onmouseover = showSub;	
+				else
+					aTag.onclick = showSub;	
+			}
+			mainMenuItem = mainMenuItem.nextSibling;
+		}		
+		
+		var lis = menuObj.getElementsByTagName('A');
+		for(var no=0;no<lis.length;no++){
+			if(!showSubOnMouseOver)lis[no].onmouseover = stopAutoHide;
+			lis[no].onmouseout = initAutoHide;
+			lis[no].onmousemove = stopAutoHide;
+		}
+				
+		for(var no=0;no<mainMenuItemArray.length;no++){
+			var sub = mainMenuItemArray[no].getElementsByTagName('UL')[0];
+			if(sub){
+				mainMenuItemArray[no].id = 'mainMenuItem' + (no+1);
+				var div = document.createElement('DIV');
+				div.className='fd2_slide_subMenu';
+				document.body.appendChild(div);
+				div.appendChild(sub);
+				if(slideDirection=='right'){
+					div.style.left = getLeftPos(mainMenuItemArray[no]) + mainMenuItemArray[no].offsetWidth + xOffsetSubMenu + 'px';
+				}else{
+					div.style.left = getLeftPos(mainMenuItemArray[no]) + xOffsetSubMenu + 'px';
+				}
+				div.style.top = getTopPos(mainMenuItemArray[no]) + 'px';
+				div.id = 'subMenuDiv' + (no+1);
+				sub.id = 'submenuUl' + (no+1);
+				sub.style.position = 'relative';	
+
+				
+
+if(navigator.userAgent.indexOf('Opera')>=0){
+					submenuObjArray[no+1] = new Array();
+					submenuObjArray[no+1]['parentDiv'] = mainMenuItemArray[no];
+					submenuObjArray[no+1]['divObj'] = div;
+					submenuObjArray[no+1]['ulObj'] = sub;
+					submenuObjArray[no+1]['width'] = sub.offsetWidth;
+					submenuObjArray[no+1]['left'] = div.style.left.replace(/[^0-9]/g,'');
+				}
+				sub.style.left = 1 - sub.offsetWidth + 'px';	
+				
+				// if(document.all)div.style.width = '1px';	
+					
+				if(navigator.userAgent.indexOf('Opera')<0){
+					submenuObjArray[no+1] = new Array();
+					submenuObjArray[no+1]['parentDiv'] = mainMenuItemArray[no];
+					submenuObjArray[no+1]['divObj'] = div;
+					submenuObjArray[no+1]['ulObj'] = sub;
+					submenuObjArray[no+1]['width'] = sub.offsetWidth;
+					
+					
+					
+					submenuObjArray[no+1]['left'] = div.style.left.replace(/[^0-9]/g,'');
+					
+if(fixedSubMenuWidth)submenuObjArray[no+1]['width'] = fixedSubMenuWidth;
+				}	
+
+				if(!document.all)div.style.width = '1px';						
+			}			
+		}		
+		
+		menuObj.style.visibility = 'visible';
+		
+		window.onresize = resetPosition;
+	}
+		
+	window.onload = initLeftMenu;
+</script>
+
+
+<SCRIPT language=JavaScript> <!--
+// No rightclick script
+// (c) Freightdata 2000
+// Freightdata@Freightdata.com
+// Don't delete this header!
+
+var message="Sorry, Freightdata is a no right click zone.\n\n Please contact Freightdata@Freightdata.com for further information."; // Message for the alert box
+
+// Don't edit below!
+
+function click(e) {
+if (document.all) {
+if (event.button == 2) {
+alert(message);
+return false;
+}
+}
+if (document.layers) {
+if (e.which == 3) {
+alert(message);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=click;
+// --> 
+</SCRIPT>
+<SCRIPT language=JavaScript> <!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</SCRIPT>
+</head>
+
+<body >
+
+<div id="reg" align=right>
+<div style="position: absolute; width: 21px; height: 23px; z-index: 1; left: 226px; top: 8px" id="layer1">
+  <b><font face="Times New Roman" color="#FFFFFF" size="4">®</font></b></div>
+</div>
+
+<div id="siteInfo" align=left height = 20px style="position: absolute; width: 900px; left:10px; top:110px"> 
+     <p><img src="Images/fdlogo14x14.gif">  
+     <a href="http://www.freightdata.com/">Home</a> | 
+	 <a target="_blank" href="http://www.freightdata.com/shoponline">Shop On-Line</a> |
+	 <a href="solutions/solutions.htm">Software Products</a> |
+	 <a href="solutions/retailprice.htm">Price List</a> |
+     <a href="downloads/registerdownload.htm">Freightdata Downloads</a> |
+     <a href="offices/profile.htm">Company Information</a> | 
+     <a href="email/emailmenu.htm">Contact Us</a> |</p> 
+</div>
+   <hr style="position: absolute; top: 134px; width: 100%">
+<div style="position: absolute; left:0px; top:160px; height:687px" id="mainContainer">
+
+	<div id="MicrosoftTranslatorWidget" style="position: absolute; left: 5px; top: 0px; width: 200px; min-height: 83px; border-color: #000033; background-color: #003399;">
+	<noscript>
+	<a href="http://www.microsofttranslator.com/bv.aspx?a=http%3a%2f%2fwww.freightdata.com%2f">Translate this page</a><br />
+	Powered by <a href="http://www.microsofttranslator.com">Microsoft® Translator</a>
+	</noscript>
+	</div> 
+	<script type="text/javascript"> /* <![CDATA[ */ setTimeout(function() { var s = document.createElement("script"); s.type = "text/javascript"; s.charset = "UTF-8"; s.src = ((location && location.href && location.href.indexOf('https') == 0) ? "https://ssl.microsofttranslator.com" : "http://www.microsofttranslator.com" ) + "/ajax/v2/widget.aspx?mode=auto&from=en&layout=ts"; var p = document.getElementsByTagName('head')[0] || document.documentElement; p.insertBefore(s, p.firstChild); }, 0); /* ]]> */ 
+	</script>
+
+	<div  style="position: absolute; left:0px; top:100px" id="leftContainer">
+		<!--- START MENU HTML -->
+		<div id="fd2_slide_menu" style="position: relative; width: 205px; height: 602px; cursor:hand">
+		<ul>
+			<li><a href="http://www.freightdata.com/">Home</a></li>
+			<li><a target="_blank" href="http://www.freightdata.com/shoponline">Buy Freightdata On-Line!</a></li>
+			<li><a href="#">Solutions</a>
+				<ul>
+					<li><a href="solutions/solutions.htm">Software Products</a></li>
+					<li><a href="solutions/fds.htm">Freightdata 2000 Standard Edition</a></li>
+					<li><a href="solutions/fdp.htm">Freightdata 2000 Professional Edition</a></li>
+					<li><a href="solutions/cfwelcome.htm">CargoFind <font face="Times New Roman">™</font> Track and Trace</a></li>
+					<li><a href="solutions/fdtq.htm">Tariff Quote</a></li>
+					<li><a href="solutions/techspec.htm">Technical Specification</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Price List</a>
+				<ul>
+					<li><a href="solutions/retailprice.htm">Retail Price List</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Support</a>
+				<ul>
+					<li><a href="solutions/supportoptions2012.htm">Support Options</a></li>
+					<li><a href="usersupport/userdownloads.htm">Manual On-line</a></li>
+					<li><a href="support/productsupport.htm">Help On-line</a></li>
+				</ul>
+			</li>
+			<li><a href="#">News</a>
+				<ul>
+					<li><a href="news/newsindex.htm">Freightdata News</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Tracking</a>
+				<ul>
+					<li><a href="http://www.cargofind.com">CargoFind
+					<font face="Times New Roman">™</font> Track and Trace</a></li>
+					<li><a href="tracking/airtracking.htm">Air Freight Tracking</a></li>
+				</ul>
+			</li>
+			<li><a href="downloads/registerdownload.htm">Freightdata Downloads</a></li>
+			<li><a href="#">About Freightdata</a>
+				<ul>
+					<li><a href="offices/profile.htm">Company Profile</a></li>
+					<li><a href="offices/clients.htm">Client List</a></li>
+					<li><a href="offices/offmenu.htm">Offices</a></li>
+					<li><a href="links.htm">Links</a></li>
+				</ul>
+			</li>
+			<li><a href="email/emailmenu.htm">Contact Us</a></li>
+		</div>
+		<!-- END MENU HTML-->
+		
+	</div>	
+	<script type="text/javascript">
+	document.getElementById('fd2_slide_menu').style.visibility='hidden';	// Because the ads make it a little slow
+	</script>
+    <div style="position: relative; width: 180px; height: 180px; top: 370px; id="FDLinkLogos">
+          <table  align="left">
+          <tr ><td valign=middle width=180 align=center>
+            <img  border="0" src="Images/30years.gif" width="80" height="80" alt="Freightdata Freight Software 30 Years">
+         </td></tr>
+          <tr ><td valign=middle width=180 align=center>
+            <img  border="0" src="Images/iata.gif" width="61" height="40" alt="IATA Approved Software">
+         </td></tr>
+           <tr ><td valign=middle width=180 align=center>
+            <img  border="0" src="Images/fiata.gif"" alt="FIATA Documents Produced">
+         </td></tr>
+        </table>
+        </div>
+    <div style="position: absolute; left:220px; top:0px; width:762px" id="contentContainer">
+      <table border="0" color="white" width="63%" bordercolor="#FFFFFF">
+    <!-- MSCellType="ContentBody" -->
+      <tr>
+          <td width="63" height="66">
+          <a title="Buy Freightdata Freight Software On-Line" target="_blank" href="http://www.freightdata.com/shoponline">
+          <img border="0" src="Images/buyFD.gif" width="55" height="55"></a></td>
+          <td>
+          <h3><font size="2">
+			<a target="_blank" href="http://www.freightdata.com/shoponline">Buy 
+			Freightdata &amp; Tariff Quote On-Line</a> 
+			- <font color="#FF0000">NEW Freightdata 2015 Now Available!</font></font></h3>
+          <font face="Arial" size="2">Amazing Prices! Buy On-line, Download and 
+			use Freightdata today! Secure purchase with PayPal!</font></td>
+          
+        </tr>
+      <tr>
+          <td width="63" height="66">
+          <a title="Freightdata Freight Software produced by Professionals" href="solutions/solutions.htm">
+          <img border="0" src="Images/info_round.jpg" width="55" height="55"></a></td>
+          <td>
+          <h3><font size="2">
+          <a title="Freightdata Software produced by professionals" href="solutions/solutions.htm">Freightdata Information</a></font></h3>
+          <font size="2" face="Arial">Find out more about Freightdata and how we can help you develop your business
+        </font>
+          
+          </td>
+          
+        </tr>
+        <tr>
+          <td width="63" height="66">
+          <a title="Freightdata and CargoFind Demonstrations" href="downloads/registerdownload.htm">
+          <img border="0" src="Images/downloads.jpg" width="55" height="55"></a></td>
+          <td>
+          <h3><font size="2">
+          <a title="Freightdata and CargoFind Demonstrations" href="downloads/registerdownload.htm">Downloads</a> 
+			-<font color="#FF0000"> NEW!</font></font></h3>
+          <font face="Arial" size="2">Free Downloads! Try out the Freightdata, 
+			Tariff Quote 
+          and CargoFind Interactive Demonstrations</td>
+        </tr>
+        <tr>
+          <td width="63" height="66">
+          <a title="Worldwide Client List" href="offices/clients.htm">
+          <img border="0" src="Images/internationalround.jpg" width="55" height="55"></a></td>
+          <td>
+          <h3><a href="Offices/clients.htm"><font size="2">World-wide Client 
+          Base</font></a></h3>
+          <font face="Arial" size="2">Multi-language and currencies.</font>
+          <font face="Arial" size="2">World-wide sales - see our Client list.</br></td>
+        </tr>
+        <tr>
+          <td width="63" height="66">
+          <a title="CargoFind - Shipment Track and Trace" href="solutions/cfwelcome.htm">
+          <img border="0" src="Images/CFround.jpg" width="55" height="55"></a></td>
+          <td>
+          <h3><a href="solutions/cfwelcome.htm"><font face="Arial" size="2">Cargo Tracking with CargoFind</font><font face="Times New Roman" size="2">™</font></a></h3>
+          <font face="Arial" size="2">Integrated free Cargo Tracking with email pre-alerts</font></td>
+        </tr>
+        <tr>
+          <td width="63" height="66">
+          <a title="Freightdata Support Options" href="solutions/supportoptions2012.htm">
+          <img border="0" src="Images/support.jpg" width="55" height="55"></a></td>
+          <td>
+          <h3><font face="Arial" size="2">
+          <a title="Freightdata Support Options" href="solutions/supportoptions2012.htm">Technical Support</a></font></h3>
+          <font face="Arial" size="2">The best technical support providing optional 
+          packages for individual needs</font></td>
+        </tr>
+        <tr>
+          <td width="63" height="66">
+          <a title="Freight Software - Air Freight, Deep Sea, Shipping and Road" href="solutions/solutions.htm">
+          <img border="0" src="Images/fdlogoround.jpg" width="55" height="55"></a></td>
+          <td>
+          <h3><font face="Arial" size="2">
+          <a href="solutions/solutions.htm">Freightdata Freight Software</a></font></h3>
+          <font face="Arial" size="2">Freight software for freight forwarders. Covers air freight, deep sea, shipping and road transport. 
+         </font></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+          <font face="Arial" size="2">
+          Includes <b>FREE</b> state of the art cargo shipment tracking with CargoFind</font><font face="Times New Roman" size="2">™</font>
+          <font face="Arial" size="2"> internet tracking Software.</font>
+          <br>
+			<font face="Arial" size="2">Includes <b>FREE</b> unique Document Storage 
+			System.<br>
+          Multi-lingual, multi-currency, multi-modal.</font></td>
+       </tr>
+       </tr>
+
+      </table>
+    <td valign="top" colspan="2">
+      
+     <div style="position: absolute; left:486px; top:1px; width:233px; height:630px" id="contentContainer2">
+     <table height="203" width="260">
+    <!-- MSCellType="NavBody2" -->
+      <tr>
+      <td width="262" height="168" align="left"><p align="center"><img src="images/blue.gif" width="198" height="1"> 
+      <div>
+      <marquee bgcolor="#000080" onMouseOver="this.scrollAmount=0" onMouseOut="this.scrollAmount=4" scrollamount="4" direction="up" width="100%" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <center><font color="#ffffff" size="+1">Freightdata 2000 for</font><p><font color="#ff0000" size="+1">Professional</font><p><font color="#ffffff" size="+1">Freight Forwarding Solutions</font><p><font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">for</font><p><font color="#ffffff" size="+1"></font><p><font color="#ff0000" size="+1">Imports, Exports &</font><p><font color="#ff0000" size="+1">Domestic Movements</font><p><font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">by</font><p><font color="#ffffff" size="+1"></font><p><font color="#ff0000" size="+1">Road, Rail</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#ff0000" size="+1">Air & Sea</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">FEATURING</font><p><font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">Accounting Links &</font><p><font color="#ffffff" size="+1">Full Job Costing</font><p><font color="#ffffff" size="+1">Multi-Currency</font><p><font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">Fully IATA Approved</font><p><font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">Five Languages</font><p><font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">Three Database Options</font><p><font color="#ffffff" size="+1">MS Access</font><p><font color="#ffffff" size="+1">MS SQL Server</font><p><font color="#ffffff" size="+1">or ORACLE</font><p><font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">Windows 7/8/10</font><p><font color="#ffffff" size="+1">32 bit and 64 bit Connectivity</font><p><font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">Web Integration</font><p><font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">Internet Cargo Track & Trace</font><p><font color="#ffffff" size="+1"></font><p><font color="#ffffff" size="+1">Full Job Costing</font><p><p><font color="#ffffff" size="+1">Unique Document Storage System</font><p></center></marquee>
+      </div>          
+      </td>
+      </tr>
+	      <tr align=center><td>
+            <img SRC="images/newsmenu.gif"  BORDER="2">
+		</td></tr>
+		<tr align=left><td valign=top height="20"><font size="1">
+          <img border="0" src="images/BlueDot.gif" width="20" height="20"><font color="#0E20EB"><a target="_blank" href="http:/www.freightdata.com">Freightdata 2015 - 
+          Major Update with Document Storage System ..</a></font></font></td></tr>
+		<tr align=left><td valign=top height="20"><font size="1">
+          <img border="0" src="images/BlueDot.gif" width="20" height="20"><font color="#0E20EB"><a target="_blank" href="http://www.freightdata.com/shoponline">Buy 
+			Freightdata &amp; Tariff Quote ON-LINE! ..</a></font></font></td></tr>
+		<tr align=left><td valign=top height="20"><font size="1">
+          <img border="0" src="images/BlueDot.gif" width="20" height="20"><font color="#0E20EB"><a target="_blank" href="news/news01006.htm">Freightdata - 
+          EXEL Middle East Installation ..</a></font></font></td></tr>
+		<tr align=left><td valign=top height="20"><font size="1">
+          <img border="0" src="images/BlueDot.gif" width="20" height="20"><font color="#0E20EB"><a target="_blank" href="news/news32005.htm">Freightdata - 
+          New users ..</a></font></font></td></tr>
+		<tr align=left><td><font size="1">
+		<img border="0" src="images/BlueDot.gif" width="20" height="20"><font color="#0E20EB"><a target="_blank" href="news/news42005.htm">Freightdata - 
+          Global presence ..</a></font></font></td></tr>
+         
+
+<!-- PayPal Logo -->
+<table border="0" cellpadding="10" cellspacing="0" align="center">
+<tr><td align="center"></td></tr>
+<tr><td align="center"><a href="https://www.paypal.com/uk/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_SbyPP_mc_vs_ms_ae_UK.png" border="0" alt="PayPal Acceptance Mark"></a></td></tr></table>
+<!-- PayPal Logo -->		
+	     <tr align=center><td width=262 align=center>
+	     <td align="center"><img SRC="images/visualstudio.gif"  BORDER="1" WIDTH="195" HEIGHT="80"></td>
+	     </tr>
+	     <tr>
+	     <td align="center"><img SRC="images/platforms.gif"  BORDER="1" WIDTH="110" HEIGHT="80"></td>
+	      </tr>
+      &nbsp;</table></td></div>
+	</div>
+</div>
+    <!-- MSCellType="ContentFoot" -->
+      <div style="position: absolute; left:3px; top:864px"id="bottom">
+      <font color="#800040" size="1" face="Tahoma">Copyright © 1979-<SCRIPT>
+<!--
+var year=new Date();
+year=year.getYear();
+if (year<1900) year+=1900;
+document.write(year);
+//-->
+</SCRIPT>
+,&nbsp;Freightdata 2000®.</font>
+      <font color="#808080" size="1" face="Tahoma">All rights reserved. Information in these 
+      documents are subject to change without notice.<br>Other products and 
+      Companies referred to herein are trademarks or registered trademarks of 
+      their respective companies or mark holders.</font>
+      <div style="position: absolute; width: 305px; height: 46px;  left: 0px; top: 90px">
+        <b><font face="Times New Roman" color="#0000FF">Site Updated: </font>
+		<font face="Times New Roman" color="#000000">&nbsp;25th April 2016</font></b></div>
+      </div>
+    
+
+</body>
+
+</html>

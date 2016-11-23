@@ -1,0 +1,646 @@
+status: 200
+content-length: 28892
+content-location: http://www.interventiontechnologies.com
+iisexport: This web site was exported using IIS Export v4.1
+x-powered-by: ASP.NET
+set-cookie: ASPSESSIONIDCSARRASS=MOEJCJJAJHLPBEJOLCJOGMNC; path=/
+server: Microsoft-IIS/5.0
+cache-control: private
+date: Sun, 11 Sep 2016 09:33:56 GMT
+content-type: text/html
+
+<!--   -->
+<title>baltimore maryland application development, web site design, microsoft .NET solutions-Intervention Technologies</title>
+<META NAME="DESCRIPTION" CONTENT="Full service technology solutions firm features award-winning web design, application development, .net development, content management, information architecture, marketing, advertising and more.">
+<META NAME="KEYWORDS" CONTENT="e-business professional services baltimore technology internet world wide web maryland .NET consulting application development content management information architecture design business online">
+<META NAME="ROBOTS" CONTENT="INDEX,FOLLOW">
+<META NAME="REVISIT-AFTER" CONTENT="15">
+<META NAME="AUTHOR" CONTENT="Baltimore, Maryland based Intervention technologies, Inc.">
+
+
+
+<!--
+<STYLE type=text/css>A:link {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+BODY {
+	FONT-SIZE: 12px
+}
+TD {
+	FONT-SIZE: 12px
+}
+TABLE {
+	FONT-SIZE: 12px
+}
+TH {
+	FONT-SIZE: 12px
+}
+TR {
+	FONT-SIZE: 12px
+}
+</STYLE> -->
+<link rel="stylesheet" href="master.css" type="text/css">
+<SCRIPT language=JAVASCRIPT>
+<!--
+function SetFrame()
+	{
+	document.cookie="Frame=149";
+	}
+
+function loadimages()
+{
+	if(document.images)
+			{
+			picIMG=new Array(11);
+picIMG[1] = new Array(new Image (262,214),"AonLine version 2.0");picIMG[1][0].src="images/al-1.gif";
+picIMG[2] = new Array(new Image (262,214),"AonLine version 3.0");picIMG[2][0].src="images/al-2.gif";
+picIMG[3] = new Array(new Image (262,214),"AonLine version 4.0");picIMG[3][0].src="images/al-4.gif";
+		}
+}
+
+function changeimage(i)
+	{
+	document.images["pic"].src=picIMG[i][0].src;
+	document.all["aLabel"].innerHTML = picIMG[i][1];
+	if (picIMG[i][1] == "No Photo Available")
+	{
+		document.images["pic"].width = 262;
+		document.images["pic"].height = 214;
+	}
+	}
+
+function MM_displayStatusMsg(msgStr) { //v1.0
+  status=msgStr;
+  document.MM_returnValue = true;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</SCRIPT>
+<SCRIPT language=JavaScript type=text/javascript><!--
+			delay = 60;
+			imgs = new Array();
+			counter = new Array();
+			peelingup = new Array();
+			peelingdown = new Array();
+			currentsection = 'news'
+			initializing = true;
+			lastover = '';
+			oldsection = 'news';
+
+			function preloadmenu(section) {
+				if (document.images) {
+					imgs[section] = new Array();
+					for (i=0; i < 6; i++) {
+						imgs[section][i] = new Image();
+						imgs[section][i].src = "images/" + section + i + ".gif";
+					}
+					counter[section] = 1;
+				}
+			}
+
+
+			preloadmenu('faq');
+
+
+
+			peelingup['faq'] = 1;
+
+
+			if (currentsection) {
+				peelingup[currentsection] = 0;
+				peelingdown[currentsection] = 1;
+
+			}
+
+			function startpeelup(section) {
+				if (section != currentsection) {
+					startpeeldown(lastover);
+					lastover = section;
+					peelingup[section] = 1;
+					peelingdown[section] = 0;
+					peelup(section);
+				}
+			}
+
+			function startpeeldown(section) {
+				if (section != currentsection) {
+					peelingdown[section] = 1;
+					peelingup[section] = 0;
+					peeldown(section);
+				}
+			}
+
+			function peelup(section) {
+				if (section != currentsection) {
+					if (! peelingdown[section]) {
+						if (counter[section] < 5) {
+							document.images[section].src = imgs[section][counter[section]].src;
+							if (counter[section] < 4) {
+								counter[section] = counter[section] + 1;
+								setTimeout("peelup('" + section + "')",delay);
+							}
+						}
+					}
+				}
+			}
+
+			function peeldown(section) {
+				if (section != currentsection) {
+					if (! peelingup[section]) {
+						if (counter[section] > -1) {
+							document.images[section].src = imgs[section][counter[section]].src;
+							if (counter[section] > 0) {
+								counter[section] = counter[section] - 1;
+								setTimeout("peeldown('" + section + "')",delay);
+							}
+						}
+					}
+				}
+			}
+
+
+
+		// -->
+		</SCRIPT>
+
+<SCRIPT language=javascript><!--
+			var IE = navigator.appVersion.indexOf("MSIE")>0;
+			var msieIndex = navigator.appVersion.indexOf("MSIE") + 5;
+			var version = parseFloat(navigator.appVersion.substr(msieIndex,3))
+			var IE4 = IE && version>=4 && version<5;
+			var IE5 = IE && version>=5;
+			var Macintosh = navigator.userAgent.indexOf('Mac')>0;
+
+
+			preload('btnlinktext8on','images/icon8_text.gif');
+			preload('btnlinktextoff','images/iconempty_text.gif');
+            preload('headtextfaq','images/faq.gif');
+
+
+			function preload(imgObj,imgSrc) {
+				if (document.images) {
+					eval(imgObj+' = new Image()')
+					eval(imgObj+'.src = "'+imgSrc+'"')
+				}
+			}
+
+			function changeImage(layer,imgName,imgObj) {
+				if (document.images) {
+					if (!IE && layer!=login.htm) eval('document.'+layer+'.document.images["'+imgName+'"].src = '+imgObj+'.src')
+					else document.images[imgName].src = eval(imgObj+".src")
+				}
+			}
+
+		// -->
+		</SCRIPT>
+
+<SCRIPT language=javascript><!--
+
+			function slide() {
+				var block = document.blockDiv;
+				block.xpos = parseInt(document.blockDiv.left);
+				block.ypos = parseInt(document.blockDiv.top);
+				if (block.ypos > 10) {
+				block.ypos -= 4
+				document.blockDiv.top = block.ypos
+				setTimeout("slide()",30);
+			}
+				else if (block.ypos == 10) {
+					show('staticform')
+				}
+			}
+
+			function slideAway() {
+				var block = document.blockDiv;
+				block.xpos = parseInt(document.blockDiv.left);
+				block.ypos = parseInt(document.blockDiv.top);
+				if (block.ypos < 50) {
+					block.ypos += 4
+					document.blockDiv.top = block.ypos
+					setTimeout("slideAway()",30);
+				}
+				else if (block.ypos == 50) {
+					show('backdropdown');
+					startpeeldown('mailinglist');
+					setsection(oldsection);
+				}
+			}
+
+		// -->
+		</SCRIPT><script language="JavaScript">
+
+function MM_openBrWindow(theURL,winName,features) { //v1.0
+
+  window.open(theURL,winName,features);
+
+}
+
+</script>
+<script language="JavaScript1.2">
+<!--
+
+/* Zooming link script by Paul Anderson, copyright 2001 CNET Builder.com.
+   May be freely used with attribution. Not for resale. All rights reserved.
+   Make a link zoom open by adding the event handler
+
+   onclick="zoomBox(event,this);return false"
+
+   To zoom into a new, positioned window add width, height, left, and top
+
+   onclick="zoomBox(event,this,640,480,100,50);return false"
+   */
+
+var maxW,maxH,fromX,fromY,toX,toY,adjX,adjY,zBox,zStep=0,zLink,zNew;
+
+function zoomBox(evt,zlink,maxw,maxh,tox,toy) {
+if (arguments.length > 2) zNew=1;
+scrollH=(window.pageYOffset!=null)?window.pageYOffset:document.body.scrollTop;
+maxW=maxw?maxw:window.innerWidth?innerWidth:document.body.clientWidth;
+maxH=maxh?maxh:window.innerHeight?innerHeight:document.body.clientHeight;
+toX=tox?tox:0;
+toY=(toy?toy:0)+scrollH;
+fromX=evt.pageX?evt.pageX:evt.clientX;
+fromY=(evt.pageY?evt.pageY:evt.clientY)+(document.all?scrollH:0);
+adjX=toX+evt.screenX-fromX;
+adjY=toY+evt.screenY-fromY;
+if (document.createElement && document.body.appendChild && !zBox) {
+	zBox=document.createElement("div");
+	zBox.style.position="absolute";
+	document.body.appendChild(zBox);
+} else if (document.all && !zBox) {
+	document.all[document.all.length-1].outerHTML+='<div id="zBoxDiv" style="position:absolute"></div>';
+	zBox=document.all.zBoxDiv;
+} else if (document.layers && !zBox) {
+	zBox=new Layer(maxW);
+	zBox.style=zBox;
+	}
+zLink=zlink;
+doZoom();
+}
+
+function doZoom() {
+zStep+=1;
+zPct=(10-zStep)/10
+if (document.layers) {
+	zBox.moveTo(toX+zPct*(fromX-toX),toY+zPct*(fromY-toY));
+	zBox.document.open();
+	zBox.document.write("<table width='"+maxW*(1-zPct)+"' height="+maxH*(1-zPct)+" border=2 cellspacing=0><tr><td></td></tr></table>");
+	zBox.document.close();
+	} else {
+	zBox.style.border="2px solid #999999";
+	zBox.style.left=toX+zPct*(fromX-toX);
+	zBox.style.top=toY+zPct*(fromY-toY);
+	zBox.style.width=maxW*(1-zPct);
+	zBox.style.height=maxH*(1-zPct);
+	}
+zBox.style.visibility="visible";
+if (zStep < 10) setTimeout("doZoom("+fromX+","+fromY+","+toX+","+toY+")",30);
+else {
+	zBox.style.visibility='hidden';
+	zStep=0;
+	if (zLink && !zNew) location.href=zLink.href;
+	else if (zLink && zNew) {
+		var w=window.open(zLink.href,'','width='+maxW+',height='+maxH+',left='+adjX+',top='+adjY+',');
+		zNew=null;
+		}
+	}
+}
+
+//-->
+</script>
+<STYLE type=text/css>
+#blockDiv {
+	HEIGHT: 35px; LEFT: 299px; POSITION: absolute; TOP: 50px; WIDTH: 452px; Z-INDEX: 2
+}
+</STYLE>
+</HEAD>
+<BODY bgColor=#eeeeee onload=SetFrame();loadimages();MM_preloadImages('images/primaryNav-roll_03.gif','images/primaryNav-roll_04.gif','images/primaryNav-roll_02.gif','images/home2.jpg','images/nav-roll_05.gif') leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD height=50>
+      <table height=59 cellspacing=0 cellpadding=0 width=777 align=center
+      bgcolor=white border=0>
+          <tbody>
+            <tr>
+              <td width=1 bgcolor=black rowspan="2"></td>
+              <td width=354 valign="baseline" rowspan="2"><img src="images/iti-logo.gif" width="354" height="65">
+              </td>
+              <td width=388 height="35" valign="bottom"> <div align="right">
+                  <table border=0 cellpadding=0 cellspacing=0 height=24 width=157>
+                    <tbody>
+                      <tr>
+                        <td height=24 valign=top width=20><img align=top height=24 name=icontext
+            src="images/iconempty_text.gif"
+      width=137></td>
+                        <td height=24 width=137><a
+            href="itisecure/index.asp"
+            onClick="changeImage(null,'icontext','btnlinktextoff');zoomBox(event,this,560,300,100,100);return false"
+            onMouseOut="startpeeldown('faq'); changeImage(null,'icontext','btnlinktextoff'); self.status='' ; return true"
+            onMouseOver="startpeelup('faq'); changeImage(null,'icontext','btnlinktext8on'); self.status='[ Client Access ]' ; return true"
+            target=_parent><img align=top border=0 height=20 name=faq
+            src="images/faq0.gif" width=20></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div></td>
+              <td width=1 bgcolor=black rowspan="2"></td>
+            </tr>
+            <tr>
+              <td width=388> <TABLE WIDTH=388 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+                  <TR>
+                    <TD> <a href="ITI-Profile.asp"><IMG SRC="images/nav-sel_01.gif" alt="About Us" name="Image1" WIDTH=71 HEIGHT=30 border="0" id="Image1"></a></TD>
+                    <TD> <a href="ITI-Products.asp" onMouseOver="MM_swapImage('Image2','','images/nav-roll_02.gif',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="images/nav-reg_02.gif" alt="Products" name="Image2" WIDTH=80 HEIGHT=30 border="0" id="Image2"></a></TD>
+                    <TD> <a href="ITI-Services.asp" onMouseOver="MM_swapImage('Image3','','images/nav-roll_03.gif',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="images/nav-reg_03.gif" alt="Services" name="Image3" WIDTH=74 HEIGHT=30 border="0" id="Image3"></a></TD>
+                    <TD> <a href="ITI-CaseStudies-aonline.htm" onMouseOver="MM_swapImage('Image4','','images/nav-roll_04.gif',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="images/nav-reg_04.gif" alt="Case Studies" name="Image4" WIDTH=101 HEIGHT=30 border="0" id="Image4"></a></TD>
+                    <TD> <a href="GenericMailer.aspx" onMouseOver="MM_swapImage('Image51','','images/nav-roll_05.gif',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="images/nav-reg_05.gif" alt="Contact" name="Image51" WIDTH=62 HEIGHT=30 border="0" id="Image5"></a></TD>
+                  </TR>
+                </TABLE></td>
+            </tr>
+          </tbody>
+        </table>
+    </TD>
+  </TR>
+  <TR>
+    <TD width=984 bgColor=black height=1></TD>
+  </TR>
+  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 dwcopytype="CopyTableRow">
+    <TBODY>
+    <TR>
+      <TD vAlign=center align=middle bgColor=#006633 height=58>
+        <div align="left"><img src="images/banner-rt3.gif" width="350" height="63"></div>
+      </TD>
+      <TD vAlign=center  bgColor=#006633 height="58" width="490"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF" size="4"><b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font></TD>
+    </TR>
+    </TBODY>
+  </TABLE>
+  <TD width=984 bgColor=black height=1></TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE height="100%" cellSpacing=0 cellPadding=0 width=777 align=center
+      bgColor=white border=0>
+        <TBODY>
+        <TR>
+          <TD width=1 bgColor=black rowSpan=2></TD>
+          <TD width=775 valign="top">
+            <table cellspacing=0 cellpadding=0 width=762 border=0 valign="top">
+                <tbody>
+                  <tr>
+                    <td valign=top width=130><img src="images/spacer.gif" width="130" height="50"><br> <table cellspacing=0 cellpadding=0 width="100%" border=0>
+                        <tbody>
+                          <tr>
+                            <td background="images/tile_dot.gif"><img
+            height=1 src="images/spacer.gif"
+          width=1></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <table cellspacing=0 cellpadding=0 width="100%" border=0>
+                        <tbody>
+                          <tr>
+                            <td><img height=14
+            src="images/spacer.gif" width=17></td>
+                            <td width="100%" noWrap class="leftnav2"><a class=leftnav2 href="ITI-aboutus-history.htm">History</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table cellspacing=0 cellpadding=0 width="100%" border=0>
+                        <tbody>
+
+                        </tbody>
+                      </table>
+                      <table cellspacing=0 cellpadding=0 width="100%" border=0>
+                        <tbody>
+                          <tr>
+                            <td background="images/tile_dot.gif"><img
+            height=1 src="images/spacer.gif"
+          width=1></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </td>
+                    <td valign=top width=30 height=><img height=10
+      src="images/spacer.gif" width=30></td>
+                    <td width="385" valign=top> <p><img src="images/spacer.gif" width="200" height="19"><br>
+                        <img src="images/h_aboutus.gif" alt="About Us" width="365" height="24">
+                        <br>
+                        <img src="images/385_dotted_line.gif" width="385" height="16">
+                        <br>
+                        <span class="txtdkheadgrn"><strong>ITI is a full service
+                        design and software development company servicing the
+                        health, insurance, IT, and education industries. </strong><br>
+                        <br>
+                        Not only do we create innovative web designs, we also
+                        provide the development, infrastructure, and implementation
+                        to support them. Whether you're looking to build a secure
+                        business-to-business extranet or corporate intranet, ITI
+                        can meet all your web-based needs. <em><br>
+                        </em></span><br>
+                        Our award-winning designers, internet application programmers,
+                        and system architects have a proven reputation for delivering
+                        success. From building state-of-the-art web designs and
+                        multi-platform extranet sites, to secure electronic commerce
+                        and custom database integration, ITI consistently delivers
+                        quality systems and designs on time to satisfied customers.
+                      </p>
+                      <p>(<a href="ITI-CaseStudies-aonline.htm">click here to
+                        see a list of our customers</a>). Our pledge to provide
+                        superior customer service speaks for itself. Since 2000,
+                        more than 90% of our customers continue to contract with
+                        us.</p>
+                      <p><span class="txtdkheadgrn"><br>
+                        </span></p></td>
+                    <br>
+                <td valign=top width=21 height=311 rowspan="2"><img height=10
+      src="images/spacer.gif" width=21></td>
+                    <td width="196" valign=top><p><img src="images/spacer.gif" width="195" height="1"><br>
+                      </p>
+                      <p>&nbsp; </p>
+                      <div align="center">
+                        <TABLE class=tbl cellSpacing=0 cellPadding=0 width=165 border=0>
+                          <TBODY>
+                            <TR>
+                              <TD vAlign=center bgColor=#d7d7d7 height=20><div align="center"><SPAN
+            class=title_emph><B>WHAT'S NEW AT ITI<br>
+                                  </B></SPAN>
+                                  <SPAN
+            class=txtclientaccess><script language = "JavaScript" class="txtclientaccess">
+var now = new Date();
+var dayNames = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+var monNames = new Array("Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec");
+document.write("" + dayNames[now.getDay()] + ", " + monNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear());
+</script></SPAN>
+                                </div></TD>
+                            </TR>
+                            <TR>
+                              <TD bgColor=#aaaaaa height=1><IMG height=1
+            src="images/spacer.gif"
+            width=1 border=0></TD>
+                            </TR>
+                            <TR>
+                              <TD bgColor=#f4f4f4> <TABLE cellSpacing=0 cellPadding=3 border=0>
+                                  <TBODY>
+                                    <TR>
+                                      <TD vAlign=top>&nbsp;</TD>
+                                      <TD width="100%" vAlign=top nowrap class="leftnav2on"><span class="leftnav2on">Latest
+                                        News:</span></TD>
+                                    </TR>
+                                    <TR>
+                                      <TD vAlign=top>&nbsp;</TD>
+                                      <TD vAlign=top class="txtblack"> <p><br>
+                                          <strong>Search Engine Optimization </strong>&amp; <strong>Search Engine Marketing</strong>. ITI's spin-off company <a href="http://www.seogameplan.com">SEO GAME PLAN</a> enhances clients' online visibility and Brand Awareness. Using the latest Web 2.0 Technologies, clients are benefiting from increased traffic and conversions. Clients that have adopted SEO GAME PLAN's strategy include:</p>
+                                        <p><a href="http://www.insuranceandfinancialadvisor.com/" target="_blank">Insurance and Financial Advisor</a></p>
+                                        <p><a href="http://blog.school-store.net/" target="_blank">School-Store.Net </a></p>
+                                        <p><a href="http://tutorsasap.com/" target="_blank">TutorsASAP.com</a> </p>
+                                        <p>ITI creates website and print collateral
+                                          material for <a href="http://www.suretycenter.net" target="_blank">The
+                                          Surety Center</a>, an investment and
+                                          business diversification opportunity
+                                          offered by Pittsburgh Development LP.</p>
+                                        <p><br>
+                                          ITI deploys LegacyTerm.com Term insurance
+                                          website (<a href="http://www.legacyterm.com" target="_blank">www.legacyterm.com</a>).</p>
+                                        <p>ITI also developed and and maintains
+                                          Call-Center application to support Legacy
+                                          Group of America's DRTV campaigns.</p>
+                                        <p><br>
+                                          ITI signs contract with Legacy Term,
+                                          LLC to develop National Instant Issue
+                                          Term Life Insurance website.</p>
+                                        <p><br>
+                                          ITI deploys Risk Management Portal &quot;<a href="http://www.starriskonline.com" target="_blank">StarRisk
+                                          OnLine</a>&quot; for Starwood Hotels
+                                          &amp; Resorts Worldwide, Inc.</p>
+                                        <p><br>
+                                          ITI partners with WECOM, Inc. to develop
+                                          premier e-commerce site <a href="http://www.school-store.net" target="_blank">School-Store.Net</a>.</p>
+                                        <p><br>
+                                          ITI develops and deploys Term Life Insurance
+                                          site for <a href="http://www.terminsurance.com" target="_blank">TermInsurance.com</a>.</p>                                      </TD>
+                                    </TR>
+                                    <TR>
+                                      <TD height="8" vAlign=top>&nbsp;</TD>
+                                      <TD height="8" vAlign=middle class="txtblack"><img src="images/150_dotted_line.gif" width="150" height="8"></TD>
+                                    </TR>
+                                  </TBODY>
+                                </TABLE>
+                                <TABLE cellSpacing=0 cellPadding=3 border=0>
+                                  <TBODY>
+                                    <TR>
+                                      <TD vAlign=top>&nbsp;</TD>
+                                      <TD width="100%" vAlign=top class="txtblack"><img src="images/cms.jpg" alt="College Marketing Solutions" width="150" height="81"></TD>
+                                    </TR>
+                                  </TBODY>
+                                </TABLE>
+                                <TABLE cellSpacing=0 cellPadding=3 border=0>
+                                  <TBODY>
+                                    <TR>
+                                      <TD height="8" vAlign=top>&nbsp;</TD>
+                                      <TD width="100%" height="8" vAlign=middle class="txtblack"><p>ITI
+                                          announced today it acquired College
+                                          Marketing Solutions, a Massachusetts-
+                                          based marketing and custom software
+                                          solutions provider targeting the educational
+                                          industry. Financial terms of the deal
+                                          were not disclosed. <a href="cms.asp">...more</a><br>
+                                        </p></TD>
+                                    </TR>
+                                    <TR>
+                                      <TD height="8" vAlign=top>&nbsp;</TD>
+                                      <TD height="8" vAlign=middle class="txtblack"><img src="images/150_dotted_line.gif" width="150" height="8"></TD>
+                                    </TR>
+                                    <TR>
+                                      <TD vAlign=top>&nbsp;</TD>
+                                      <TD vAlign=top nowrap class="txtblack"><span class="leftnav2on">Sites
+                                        just released: </span> <li><a href="http://www.school-store.net" target="_blank" class="leftnav2" onClick="zoomBox(event,this,800,600,100,0);return false">School-Store.net</a>
+                                        </li>
+                                        <li><a href="http://www.abimltd.com" target="_blank" class="leftnav2" onClick="zoomBox(event,this,800,600,100,0);return false">Alex
+                                          Brown Investment<br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;Management</a></li>
+                                        <li><a href="http://www.strategiescorp.net/" target="_blank" class="leftnav2" onClick="zoomBox(event,this,800,600,100,0);return false">Strategies,
+                                          Inc. </a></li>
+                                        <li><a href="http://www.interventiontechnologies.com/hopkins/index.html" target="_blank" class="leftnav2" onClick="zoomBox(event,this,800,600,100,0);return false">Johns
+                                          Hopkins University<br>
+                                          </a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.interventiontechnologies.com/hopkins/index.html" target="_blank" class="leftnav2" onClick="zoomBox(event,this,800,600,100,0);return false">Health
+                                          Executive MBA</a> </li>
+                                        <li><a href="http://www.mobi-usa.com" target="_blank" class="leftnav2" onClick="zoomBox(event,this,800,600,100,0);return false">Mobi</a>
+                                        </li>
+                                        <li><a class="leftnav2" href="http://www.wellforjourney.org" onClick="zoomBox(event,this,800,600,100,0);return false">Well
+                                          for the Journey</a> </li></TD>
+                                    </TR>
+                                  </TBODY>
+                                </TABLE>
+                                <br>
+                              </TD>
+                            </TR>
+                            <TR>
+                              <TD bgColor=#aaaaaa height=1><IMG height=1
+            src="images/spacer.gif"
+            width=1 border=0></TD>
+                            </TR>
+                          </TBODY>
+                        </TABLE>
+                        <br>
+                      </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+
+          </TD>
+          <TD width=1 bgColor=black rowSpan=2></TD>
+        </TR>
+        <TR>
+          <td valign=center bgcolor=#006633 height=29>
+            <p align=right><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="2"><i>Specializing
+              in developing web enabled applications that provide benefit to business
+              and consumers.&nbsp;&nbsp;&nbsp;</i></font></p>
+          </td>
+        </TR>
+        </TBODY>
+      </TABLE>
+      <p class="leftnav2">&nbsp;</p></TD>
+  </TR>
+  </TBODY>
+</TABLE>
+<MAP
+  name=ImageMap3>
+  <AREA shape=RECT target=_self
+  coords=4,3,184,80 href="index.html" alt="Home" title="Home">
+</MAP>
+</BODY></HTML><!--  -->

@@ -1,0 +1,146 @@
+status: 200
+content-length: 5514
+content-location: http://www.bielatech.com/webs/bielatech.com/index.html
+x-powered-by: ASP.NET
+accept-ranges: bytes
+-varied-accept-encoding: gzip, deflate
+vary: Accept-Encoding
+server: Microsoft-IIS/6.0
+last-modified: Thu, 25 Apr 2013 02:34:01 GMT
+-content-encoding: gzip
+etag: "803254585d41ce1:394"
+date: Fri, 09 Sep 2016 08:11:12 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BielaTech Inc. - Offshore Software Development, Outsourcing, Custom Programming</title>
+
+	<meta name="keywords" content="offshore development,offshore software development, offshore development center, software outsourcing,outsourcing software development, offshore software outsourcing,software services outsourcing, software outsourcing company,solutions from Russia, offshore software Russia, custom programming,custom web programming, custom programming services, remote development Russia, low cost software outsourcing, IT company, software development,software custom, web company, outsourcing offshore, IT outsourcing,Custom software development, software development bespoke, web application development, web development company, Software events, software dating,software matchmaking, Oscommerce, open source, offshore programming,ecommerce, e-commerce, ebusiness, e-business, information technology,remote programming">
+	<meta name="Description" content="Offshore software development and Outsourcing firm ByelaTech provides high-quality low-cost custom software development, E-commerce solutions, website design, legacy system conversion, client-server systems development, development for PDA. Our firm specializes in full software lifecycle management, specification generation, and core application development, ByelaTech provides a smooth transition to the compelling economics of offshore development and outsourcing.">
+	<meta name="title" content="BielaTech Inc. - Offshore Software Development, Outsourcing, Custom Programming">
+	<meta name="distribution" content="Global">
+	<meta name="rating" content="General">
+	<meta name="subject" content="Computers/Software">
+	<meta name="page-type" content="Computers/Software">
+	<meta name="site-created" content="01-01-2013">
+	<meta name="revisit" content="7 days">
+	<meta name="revisit-after" content="7 days">
+	<meta name="content-language" content="english">
+	<meta name="resource-type" content="document">
+	<meta name="audience" content="all">
+	<meta name="robots" content="index,all">
+	<meta name="copyright" content="(c) 2013 BielaTech Inc.">
+	<meta name="owner" content="BielaTech Inc., Software Development, Website Design and IT Outsourcing Company">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/menu.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40419644-1', 'bielatech.com');
+      ga('send', 'pageview');
+    </script>
+
+</head>
+
+<body onload="init()">
+    <div id="wrapper">
+
+		<!--HEADER-->
+        <div id="headerwrap">
+	        <div id="header" class="color">
+	            <p><span>BielaTech Inc.</span></p>
+	        </div>
+        </div>
+
+        <div id="navigationwrap">
+	        <div id="navigation" class="color">
+				<nav>
+				<ul id="menu-bar" style="float:right">
+					<li id="menu-item-home" class="current"><a href="home">Home</a></li>
+					<li><a href="home">Products</a></li>
+					<li><a href="home">Services</a></li>
+					<li><a href="aboutus">About</a></li>
+					<li><a href="home">Contact Us</a></li>
+				</ul>
+				</nav>
+	        </div>
+        </div>
+
+
+       	<div id="contentliquid">
+			<div id="contentwrap">
+				<div id="content" class="blank">
+		        </div>
+			</div>
+		</div>
+
+        <div id="leftcolumnwrap">
+	        <div id="leftcolumn" class="color">
+	            <!-- <p><span></span></p> -->
+	        </div>
+        </div>
+
+		<div id="rightcolumnwrap">
+	        <div id="rightcolumn" class="color">
+	            <!-- <p><span></span></p> -->
+	        </div>
+        </div>
+
+        <!--FOOTER-->
+        <div id="footerwrap">
+	        <div id="footer" class="color">
+				<p><span>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> BielaTech Inc. All Rights Reserved.</span></p>
+	        </div>
+		</div>
+
+    </div> <!-- END OF WRAPPER -->
+
+</body>
+
+	<script>
+		var newHash = '';
+		var $mainContent = $('#content');
+		var $newItem = $('#menu-item-home');
+		
+		$('nav').delegate('a', 'click', function() {
+			window.location.hash = $(this).attr('href');
+			$newItem.removeClass('current');
+			$newItem = $(this).parent();
+			$newItem.addClass('current');
+			return false;
+		});
+		
+		$(window).bind('hashchange', function() {
+			newHash = window.location.hash.substr(1);
+
+			$.get(newHash+".html", function(data) {
+				var content = $(data).filter("#content").html();
+				$mainContent.html(content);
+
+				document.title = $(data).filter("title").html();
+			});
+		});
+
+		function init() {
+			$.get("home.html", function(data) {
+				var content = $(data).filter("#content").html();
+				$mainContent.html(content);
+
+				document.title = $(data).filter("title").html();
+			});
+		}
+	</script>
+
+</html>

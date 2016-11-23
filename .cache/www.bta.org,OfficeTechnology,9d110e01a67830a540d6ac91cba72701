@@ -1,0 +1,650 @@
+status: 200
+content-length: 70163
+content-location: http://www.bta.org/?OfficeTechnology
+x-powered-by: ASP.NET
+set-cookie: ASPSession=Owner=C;
+ path=/, ASPSESSIONIDSSTDQQDC=MOCPKJEDMHKGCOGKCJAAAIAB; path=/, apvc=saas301;
+ Path=/
+connection: Keep-alive
+cache-control: private
+date: Thu, 06 Oct 2016 18:16:29 GMT
+x-frame-options: SAMEORIGIN
+content-type: text/html; Charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">	
+	<head>
+		<!--@@TELERIK_RAD_CODE_BLOCK_START@@-->
+		
+
+        <!-- Important: include as high up as possible, but after sensitive tags such as X-UA-Compatible -->
+        <script type="text/javascript">
+    window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) { function r(n) { if (!e[n]) { var o = e[n] = { exports: {} }; t[n][0].call(o.exports, function (e) { var o = t[n][1][e]; return r(o || e) }, o, o.exports) } return e[n].exports } if ("function" == typeof __nr_require) return __nr_require; for (var o = 0; o < n.length; o++) r(n[o]); return r }({ 1: [function (t, e, n) { function r(t) { try { s.console && console.log(t) } catch (e) { } } var o, i = t("ee"), a = t(15), s = {}; try { o = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (s.console = !0, o.indexOf("dev") !== -1 && (s.dev = !0), o.indexOf("nr_dev") !== -1 && (s.nrDev = !0)) } catch (c) { } s.nrDev && i.on("internal-error", function (t) { r(t.stack) }), s.dev && i.on("fn-err", function (t, e, n) { r(n.stack) }), s.dev && (r("NR AGENT IN DEVELOPMENT MODE"), r("flags: " + a(s, function (t, e) { return t }).join(", "))) }, {}], 2: [function (t, e, n) { function r(t, e, n, r, o) { try { d ? d -= 1 : i("err", [o || new UncaughtException(t, e, n)]) } catch (s) { try { i("ierr", [s, (new Date).getTime(), !0]) } catch (c) { } } return "function" == typeof f && f.apply(this, a(arguments)) } function UncaughtException(t, e, n) { this.message = t || "Uncaught error with no additional information", this.sourceURL = e, this.line = n } function o(t) { i("err", [t, (new Date).getTime()]) } var i = t("handle"), a = t(16), s = t("ee"), c = t("loader"), f = window.onerror, u = !1, d = 0; c.features.err = !0, t(1), window.onerror = r; try { throw new Error } catch (l) { "stack" in l && (t(8), t(7), "addEventListener" in window && t(5), c.xhrWrappable && t(9), u = !0) } s.on("fn-start", function (t, e, n) { u && (d += 1) }), s.on("fn-err", function (t, e, n) { u && (this.thrown = !0, o(n)) }), s.on("fn-end", function () { u && !this.thrown && d > 0 && (d -= 1) }), s.on("internal-error", function (t) { i("ierr", [t, (new Date).getTime(), !0]) }) }, {}], 3: [function (t, e, n) { t("loader").features.ins = !0 }, {}], 4: [function (t, e, n) { function r(t) { } if (window.performance && window.performance.timing && window.performance.getEntriesByType) { var o = t("ee"), i = t("handle"), a = t(8), s = t(7), c = "learResourceTimings", f = "addEventListener", u = "resourcetimingbufferfull", d = "bstResource", l = "resource", p = "-start", h = "-end", m = "fn" + p, w = "fn" + h, v = "bstTimer", y = "pushState"; t("loader").features.stn = !0, t(6); var g = NREUM.o.EV; o.on(m, function (t, e) { var n = t[0]; n instanceof g && (this.bstStart = Date.now()) }), o.on(w, function (t, e) { var n = t[0]; n instanceof g && i("bst", [n, e, this.bstStart, Date.now()]) }), a.on(m, function (t, e, n) { this.bstStart = Date.now(), this.bstType = n }), a.on(w, function (t, e) { i(v, [e, this.bstStart, Date.now(), this.bstType]) }), s.on(m, function () { this.bstStart = Date.now() }), s.on(w, function (t, e) { i(v, [e, this.bstStart, Date.now(), "requestAnimationFrame"]) }), o.on(y + p, function (t) { this.time = Date.now(), this.startPath = location.pathname + location.hash }), o.on(y + h, function (t) { i("bstHist", [location.pathname + location.hash, this.startPath, this.time]) }), f in window.performance && (window.performance["c" + c] ? window.performance[f](u, function (t) { i(d, [window.performance.getEntriesByType(l)]), window.performance["c" + c]() }, !1) : window.performance[f]("webkit" + u, function (t) { i(d, [window.performance.getEntriesByType(l)]), window.performance["webkitC" + c]() }, !1)), document[f]("scroll", r, !1), document[f]("keypress", r, !1), document[f]("click", r, !1) } }, {}], 5: [function (t, e, n) { function r(t) { for (var e = t; e && !e.hasOwnProperty(u) ;) e = Object.getPrototypeOf(e); e && o(e) } function o(t) { s.inPlace(t, [u, d], "-", i) } function i(t, e) { return t[1] } var a = t("ee").get("events"), s = t(17)(a), c = t("gos"), f = XMLHttpRequest, u = "addEventListener", d = "removeEventListener"; e.exports = a, "getPrototypeOf" in Object ? (r(document), r(window), r(f.prototype)) : f.prototype.hasOwnProperty(u) && (o(window), o(f.prototype)), a.on(u + "-start", function (t, e) { if (t[1]) { var n = t[1]; if ("function" == typeof n) { var r = c(n, "nr@wrapped", function () { return s(n, "fn-", null, n.name || "anonymous") }); this.wrapped = t[1] = r } else "function" == typeof n.handleEvent && s.inPlace(n, ["handleEvent"], "fn-") } }), a.on(d + "-start", function (t) { var e = this.wrapped; e && (t[1] = e) }) }, {}], 6: [function (t, e, n) { var r = t("ee").get("history"), o = t(17)(r); e.exports = r, o.inPlace(window.history, ["pushState", "replaceState"], "-") }, {}], 7: [function (t, e, n) { var r = t("ee").get("raf"), o = t(17)(r), i = "equestAnimationFrame"; e.exports = r, o.inPlace(window, ["r" + i, "mozR" + i, "webkitR" + i, "msR" + i], "raf-"), r.on("raf-start", function (t) { t[0] = o(t[0], "fn-") }) }, {}], 8: [function (t, e, n) { function r(t, e, n) { t[0] = a(t[0], "fn-", null, n) } function o(t, e, n) { this.method = n, this.timerDuration = "number" == typeof t[1] ? t[1] : 0, t[0] = a(t[0], "fn-", this, n) } var i = t("ee").get("timer"), a = t(17)(i), s = "setTimeout", c = "setInterval", f = "clearTimeout", u = "-start", d = "-"; e.exports = i, a.inPlace(window, [s, "setImmediate"], s + d), a.inPlace(window, [c], c + d), a.inPlace(window, [f, "clearImmediate"], f + d), i.on(c + u, r), i.on(s + u, o) }, {}], 9: [function (t, e, n) { function r(t, e) { d.inPlace(e, ["onreadystatechange"], "fn-", s) } function o() { var t = this, e = u.context(t); t.readyState > 3 && !e.resolved && (e.resolved = !0, u.emit("xhr-resolved", [], t)), d.inPlace(t, w, "fn-", s) } function i(t) { v.push(t), h && (g = -g, b.data = g) } function a() { for (var t = 0; t < v.length; t++) r([], v[t]); v.length && (v = []) } function s(t, e) { return e } function c(t, e) { for (var n in t) e[n] = t[n]; return e } t(5); var f = t("ee"), u = f.get("xhr"), d = t(17)(u), l = NREUM.o, p = l.XHR, h = l.MO, m = "readystatechange", w = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"], v = []; e.exports = u; var y = window.XMLHttpRequest = function (t) { var e = new p(t); try { u.emit("new-xhr", [e], e), e.addEventListener(m, o, !1) } catch (n) { try { u.emit("internal-error", [n]) } catch (r) { } } return e }; if (c(p, y), y.prototype = p.prototype, d.inPlace(y.prototype, ["open", "send"], "-xhr-", s), u.on("send-xhr-start", function (t, e) { r(t, e), i(e) }), u.on("open-xhr-start", r), h) { var g = 1, b = document.createTextNode(g); new h(a).observe(b, { characterData: !0 }) } else f.on("fn-end", function (t) { t[0] && t[0].type === m || a() }) }, {}], 10: [function (t, e, n) { function r(t) { var e = this.params, n = this.metrics; if (!this.ended) { this.ended = !0; for (var r = 0; r < d; r++) t.removeEventListener(u[r], this.listener, !1); if (!e.aborted) { if (n.duration = (new Date).getTime() - this.startTime, 4 === t.readyState) { e.status = t.status; var i = o(t, this.lastSize); if (i && (n.rxSize = i), this.sameOrigin) { var a = t.getResponseHeader("X-NewRelic-App-Data"); a && (e.cat = a.split(", ").pop()) } } else e.status = 0; n.cbTime = this.cbTime, f.emit("xhr-done", [t], t), s("xhr", [e, n, this.startTime]) } } } function o(t, e) { var n = t.responseType; if ("json" === n && null !== e) return e; var r = "arraybuffer" === n || "blob" === n || "json" === n ? t.response : t.responseText; return h(r) } function i(t, e) { var n = c(e), r = t.params; r.host = n.hostname + ":" + n.port, r.pathname = n.pathname, t.sameOrigin = n.sameOrigin } var a = t("loader"); if (a.xhrWrappable) { var s = t("handle"), c = t(11), f = t("ee"), u = ["load", "error", "abort", "timeout"], d = u.length, l = t("id"), p = t(14), h = t(13), m = window.XMLHttpRequest; a.features.xhr = !0, t(9), f.on("new-xhr", function (t) { var e = this; e.totalCbs = 0, e.called = 0, e.cbTime = 0, e.end = r, e.ended = !1, e.xhrGuids = {}, e.lastSize = null, p && (p > 34 || p < 10) || window.opera || t.addEventListener("progress", function (t) { e.lastSize = t.loaded }, !1) }), f.on("open-xhr-start", function (t) { this.params = { method: t[0] }, i(this, t[1]), this.metrics = {} }), f.on("open-xhr-end", function (t, e) { "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && e.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid) }), f.on("send-xhr-start", function (t, e) { var n = this.metrics, r = t[0], o = this; if (n && r) { var i = h(r); i && (n.txSize = i) } this.startTime = (new Date).getTime(), this.listener = function (t) { try { "abort" === t.type && (o.params.aborted = !0), ("load" !== t.type || o.called === o.totalCbs && (o.onloadCalled || "function" != typeof e.onload)) && o.end(e) } catch (n) { try { f.emit("internal-error", [n]) } catch (r) { } } }; for (var a = 0; a < d; a++) e.addEventListener(u[a], this.listener, !1) }), f.on("xhr-cb-time", function (t, e, n) { this.cbTime += t, e ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof n.onload || this.end(n) }), f.on("xhr-load-added", function (t, e) { var n = "" + l(t) + !!e; this.xhrGuids && !this.xhrGuids[n] && (this.xhrGuids[n] = !0, this.totalCbs += 1) }), f.on("xhr-load-removed", function (t, e) { var n = "" + l(t) + !!e; this.xhrGuids && this.xhrGuids[n] && (delete this.xhrGuids[n], this.totalCbs -= 1) }), f.on("addEventListener-end", function (t, e) { e instanceof m && "load" === t[0] && f.emit("xhr-load-added", [t[1], t[2]], e) }), f.on("removeEventListener-end", function (t, e) { e instanceof m && "load" === t[0] && f.emit("xhr-load-removed", [t[1], t[2]], e) }), f.on("fn-start", function (t, e, n) { e instanceof m && ("onload" === n && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = (new Date).getTime())) }), f.on("fn-end", function (t, e) { this.xhrCbStart && f.emit("xhr-cb-time", [(new Date).getTime() - this.xhrCbStart, this.onload, e], e) }) } }, {}], 11: [function (t, e, n) { e.exports = function (t) { var e = document.createElement("a"), n = window.location, r = {}; e.href = t, r.port = e.port; var o = e.href.split("://"); !r.port && o[1] && (r.port = o[1].split("/")[0].split("@").pop().split(":")[1]), r.port && "0" !== r.port || (r.port = "https" === o[0] ? "443" : "80"), r.hostname = e.hostname || n.hostname, r.pathname = e.pathname, r.protocol = o[0], "/" !== r.pathname.charAt(0) && (r.pathname = "/" + r.pathname); var i = !e.protocol || ":" === e.protocol || e.protocol === n.protocol, a = e.hostname === document.domain && e.port === n.port; return r.sameOrigin = i && (!e.hostname || a), r } }, {}], 12: [function (t, e, n) { function r() { } function o(t, e, n) { return function () { return i(t, [(new Date).getTime()].concat(s(arguments)), e ? null : this, n), e ? void 0 : this } } var i = t("handle"), a = t(15), s = t(16), c = t("ee").get("tracer"), f = NREUM; "undefined" == typeof window.newrelic && (newrelic = f); var u = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit"], d = "api-", l = d + "ixn-"; a(u, function (t, e) { f[e] = o(d + e, !0, "api") }), f.addPageAction = o(d + "addPageAction", !0), e.exports = newrelic, f.interaction = function () { return (new r).get() }; var p = r.prototype = { createTracer: function (t, e) { var n = {}, r = this, o = "function" == typeof e; return i(l + "tracer", [Date.now(), t, n], r), function () { if (c.emit((o ? "" : "no-") + "fn-start", [Date.now(), r, o], n), o) try { return e.apply(this, arguments) } finally { c.emit("fn-end", [Date.now()], n) } } } }; a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (t, e) { p[e] = o(l + e) }), newrelic.noticeError = function (t) { "string" == typeof t && (t = new Error(t)), i("err", [t, (new Date).getTime()]) } }, {}], 13: [function (t, e, n) { e.exports = function (t) { if ("string" == typeof t && t.length) return t.length; if ("object" == typeof t) { if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength; if ("undefined" != typeof Blob && t instanceof Blob && t.size) return t.size; if (!("undefined" != typeof FormData && t instanceof FormData)) try { return JSON.stringify(t).length } catch (e) { return } } } }, {}], 14: [function (t, e, n) { var r = 0, o = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/); o && (r = +o[1]), e.exports = r }, {}], 15: [function (t, e, n) { function r(t, e) { var n = [], r = "", i = 0; for (r in t) o.call(t, r) && (n[i] = e(r, t[r]), i += 1); return n } var o = Object.prototype.hasOwnProperty; e.exports = r }, {}], 16: [function (t, e, n) { function r(t, e, n) { e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0); for (var r = -1, o = n - e || 0, i = Array(o < 0 ? 0 : o) ; ++r < o;) i[r] = t[e + r]; return i } e.exports = r }, {}], 17: [function (t, e, n) { function r(t) { return !(t && "function" == typeof t && t.apply && !t[a]) } var o = t("ee"), i = t(16), a = "nr@original", s = Object.prototype.hasOwnProperty, c = !1; e.exports = function (t) { function e(t, e, n, o) { function nrWrapper() { var r, a, s, c; try { a = this, r = i(arguments), s = "function" == typeof n ? n(r, a) : n || {} } catch (u) { d([u, "", [r, a, o], s]) } f(e + "start", [r, a, o], s); try { return c = t.apply(a, r) } catch (l) { throw f(e + "err", [r, a, l], s), l } finally { f(e + "end", [r, a, c], s) } } return r(t) ? t : (e || (e = ""), nrWrapper[a] = t, u(t, nrWrapper), nrWrapper) } function n(t, n, o, i) { o || (o = ""); var a, s, c, f = "-" === o.charAt(0); for (c = 0; c < n.length; c++) s = n[c], a = t[s], r(a) || (t[s] = e(a, f ? s + o : o, i, s)) } function f(e, n, r) { if (!c) { c = !0; try { t.emit(e, n, r) } catch (o) { d([o, e, n, r]) } c = !1 } } function u(t, e) { if (Object.defineProperty && Object.keys) try { var n = Object.keys(t); return n.forEach(function (n) { Object.defineProperty(e, n, { get: function () { return t[n] }, set: function (e) { return t[n] = e, e } }) }), e } catch (r) { d([r]) } for (var o in t) s.call(t, o) && (e[o] = t[o]); return e } function d(e) { try { t.emit("internal-error", e) } catch (n) { } } return t || (t = o), e.inPlace = n, e.flag = a, e } }, {}], ee: [function (t, e, n) { function r() { } function o(t) { function e(t) { return t && t instanceof r ? t : t ? s(t, a, i) : i() } function n(n, r, o) { t && t(n, r, o); for (var i = e(o), a = l(n), s = a.length, c = 0; c < s; c++) a[c].apply(i, r); var u = f[w[n]]; return u && u.push([v, n, r, i]), i } function d(t, e) { m[t] = l(t).concat(e) } function l(t) { return m[t] || [] } function p(t) { return u[t] = u[t] || o(n) } function h(t, e) { c(t, function (t, n) { e = e || "feature", w[n] = e, e in f || (f[e] = []) }) } var m = {}, w = {}, v = { on: d, emit: n, get: p, listeners: l, context: e, buffer: h }; return v } function i() { return new r } var a = "nr@context", s = t("gos"), c = t(15), f = {}, u = {}, d = e.exports = o(); d.backlog = f }, {}], gos: [function (t, e, n) { function r(t, e, n) { if (o.call(t, e)) return t[e]; var r = n(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(t, e, { value: r, writable: !0, enumerable: !1 }), r } catch (i) { } return t[e] = r, r } var o = Object.prototype.hasOwnProperty; e.exports = r }, {}], handle: [function (t, e, n) { function r(t, e, n, r) { o.buffer([t], r), o.emit(t, e, n) } var o = t("ee").get("handle"); e.exports = r, r.ee = o }, {}], id: [function (t, e, n) { function r(t) { var e = typeof t; return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, i, function () { return o++ }) } var o = 1, i = "nr@id", a = t("gos"); e.exports = r }, {}], loader: [function (t, e, n) { function r() { if (!g++) { var t = y.info = NREUM.info, e = u.getElementsByTagName("script")[0]; if (t && t.licenseKey && t.applicationID && e) { c(w, function (e, n) { t[e] || (t[e] = n) }); var n = "https" === m.split(":")[0] || t.sslForHttp; y.proto = n ? "https://" : "http://", s("mark", ["onload", a()], null, "api"); var r = u.createElement("script"); r.src = y.proto + t.agent, e.parentNode.insertBefore(r, e) } } } function o() { "complete" === u.readyState && i() } function i() { s("mark", ["domContent", a()], null, "api") } function a() { return (new Date).getTime() } var s = t("handle"), c = t(15), f = window, u = f.document, d = "addEventListener", l = "attachEvent", p = f.XMLHttpRequest, h = p && p.prototype; NREUM.o = { ST: setTimeout, CT: clearTimeout, XHR: p, REQ: f.Request, EV: f.Event, PR: f.Promise, MO: f.MutationObserver }, t(12); var m = "" + location, w = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-974.min.js" }, v = p && h && h[d] && !/CriOS/.test(navigator.userAgent), y = e.exports = { offset: a(), origin: m, features: {}, xhrWrappable: v }; u[d] ? (u[d]("DOMContentLoaded", i, !1), f[d]("load", r, !1)) : (u[l]("onreadystatechange", o), f[l]("onload", r)), s("mark", ["firstbyte", a()], null, "api"); var g = 0 }, {}] }, {}, ["loader", 2, 10, 4, 3]);
+    ; NREUM.info = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", licenseKey: "fbe52127be", applicationID: "22507853", sa: 1 }
+</script><title>Office Technology Magazine - Business Technology Association</title>
+
+		<link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-TC-01/combined.css?_v=1.77.103.180&context=sp"/>
+		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/assets/skins/sam/container.css">
+		<link rel="stylesheet" type="text/css" href="/global_graphics/skins/MemberCustomPageMenu/yuimenu.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-TC-01/ie.css">
+		<style type="text/css">
+			#CustomPageBody,
+			div.ContributedContent {
+				padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 17 : 0); }
+		</style><![endif]-->
+		
+		<!--@@DG_PRINT_BASE_URL@@
+			IMPORTANT! DO NOT MOVE OR MODIFY -->
+
+		
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/dragdrop/dragdrop-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/container-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/menu/menu-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/json/json-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/combined.js?context=sp&_v=1.58"></script>
+		<script type='text/javascript'>
+			var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-15870104-1'], ['_setDomainName', 'none'], ['_setAllowLinker', true], ['_trackPageview']);_gaq.push(['YM._setAccount', 'UA-2449742-47'], ['YM._setDomainName', 'none'], ['YM._setAllowLinker', true], ['YM._trackPageview']);
+			(function() {
+		        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+			</script>
+	
+		<script type="text/javascript">
+			addEventHandler_OnLoad(function(){CheckMultipartForms(true)});
+		
+			var m_pulse = new Pulse('');
+			m_pulse.Start();
+		</script>
+	
+		
+		<!--@@TELERIK_RAD_CODE_BLOCK_END@@-->
+	</head>
+
+
+	<body id="PageBody"
+		onunload="try{if(m_blnDoBodyUnload) Body_OnUnload();}catch(e){}" xmlns="http://www.w3.org/1999/xhtml">
+		
+		<div id="LeaderContentArea">
+			<!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+		
+		<table id="PageContainer" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td id="Head">
+				<script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Open Sans' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+<div id="headerContainer">
+<div id="headerContainer">
+<a href="/" target="_parent"><img src="/graphics/logo.png" /></a><div id="custom-menu"><a href="/?page=AboutUs">About Us</a><a href="/?page=JoinRenew">Join/Renew</a><a href="/events/event_list.asp">Calendar</a></div></div>
+</div>
+
+
+<style type="text/css">
+      #Head
+      {
+          background-image: url('/graphics/bg_top.gif');
+      }
+  </style></td>
+		</tr>
+		<tr>
+			<td id="Toolbar_bg"><div id="Toolbar">
+					<a id="PrintPage" href="#" onclick="return false;" title="Print view will be available once the page has finished loading."><img src="/global_graphics/icons/print_bw.gif" border="0" height="16" width="16" style="margin:5px 5px 0 0;valign:bottom;" />Print Page</a><script type='text/javascript'>function PrintPageClickHandler(){this.handleEvent = createPrintPagePopup }PrintPage_OnClick = new PrintPageClickHandler(); addEventHandler_OnLoad(function(){ var element = document.getElementById("PrintPage"); if(element) { element.onclick = PrintPage_OnClick.handleEvent; element.title = "Print Page";} });</script> &nbsp; | &nbsp; <a href='/general/?type=CONTACT'>Contact Us</a> &nbsp; | &nbsp; <a href='/login.aspx'>Sign In</a> &nbsp; | &nbsp; <a href='/general/register_start.asp'>Register</a>
+			</div></td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td id="LeftRail1"><div id="LeftRail2">
+					
+						<div id="QuickSearch">
+							<div id="QuickSearchHead">
+								Site Search</div>
+							<form id="QuickSearchForm" name="QuickSearchForm" action="/search/all.asp">
+		<div id="QuickSearchFormInner1" class="ui-widget">
+			<input id="QuickSearchForm_bst" name="bst" maxlength='50' value='Enter search criteria...'@"onfocus='QuickSearchForm_OnFocus();'/>
+		</div>
+		<div id='QuickSearchFormInner2'><a href='#' id='QuickSearchSubmit' onclick='return QuickSearchForm_DoSubmit();'>Search&nbsp;&raquo;</a></div>
+</form><script type="text/javascript">
+function QuickSearchForm_DoSubmit()
+{
+		var QuickSearchForm = document.QuickSearchForm;
+     if(QuickSearchForm)
+     {
+			ClearDefaultValue(QuickSearchForm.bst);
+         QuickSearchForm.submit();
+     }
+		return false;
+}
+$(document).ready(function ()
+{
+		$("#QuickSearchForm_bst").click(function()
+		{
+			if ($("#QuickSearchForm_bst").val() == "Enter search criteria...")
+				$("#QuickSearchForm_bst").val('');
+			});
+			$("#QuickSearchForm_bst").blur(function ()
+			{
+				if ($("#QuickSearchForm_bst").val() == '')
+					$("#QuickSearchForm_bst").val('Enter search criteria...');
+				});
+				$("#QuickSearchForm_bst").autocomplete({
+					minLength: 3,
+					delay: 1000,
+					source: function (request, response)
+					{
+						$.ajax({
+						url: url = '/general/CategorySearchReciever.aspx?SearchTerm=' + $("#QuickSearchForm_bst").val() + "&cb=" + getCurrentTime(),
+						dataType: "json",
+						data: {
+						featureClass: "P",
+						style: "full",
+						maxRows: 20,
+						name_startsWith: request.term
+					},
+					success: function (data)
+					{
+						response($.map(data.CatalogSearchSuggestions, function (item)
+						{
+							return item;
+						}));
+					}
+				});
+			},
+			focus: function (event, ui)
+			{
+				return false;
+			},
+			select: function (event, ui)
+			{				document.location.href = ui.item.url;
+				return false;
+			},
+			open: function ()
+			{
+				$(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+			},
+			close: function ()
+			{
+				$(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+			}
+         }).data("autocomplete")._renderItem = function (ul, item)
+         {
+				var linkText = "";
+             var index = parseInt(item.index);
+				if (item.category != "")
+				{
+					linkText = item.category + ": ";
+				}
+				linkText += item.desc;
+             if (index > 0)
+             {
+					return $("<li>").data("item.autocomplete", item).append("<a href=" + item.url + ">" + linkText + "</a>").appendTo(ul);
+             }
+				else
+             {
+                 return $("<li class=\"FirstAutoCompleteItem\">").data("item.autocomplete", item).append(linkText).appendTo(ul)
+             }
+         }
+	});
+</script></div>
+
+						<table border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td id="LeftRailNav">
+								<div id="FrontendMainMenu" class="radmenu RadMenu_YMPublic ">
+	<!-- 4.3.2 --><script type="text/javascript" src="/global_inc/RadControls/Menu/Scripts/4_3_2/RadMenu.js"></script><span id="FrontendMainMenuStyleSheetHolder" style="display:none;"></span><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css');</script><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Skins/YMPublic/styles.css');</script><ul class="vertical rootGroup">
+		<li class="item first"><a href="/" id="FrontendMainMenu_m0" class="link"><span class="text">Home</span></a></li><li class="item"><a href="/?page=ContactUs" id="FrontendMainMenu_m1" class="link"><span class="text">Contact Us</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/general/?type=CONTACT" id="FrontendMainMenu_m1_m0" class="link"><span class="text">Contact Form</span></a></li><li class="item"><a href="/?page=BTAStaff" id="FrontendMainMenu_m1_m1" class="link"><span class="text">BTA Headquarters Staff</span></a></li><li class="item"><a href="/?page=BoardofDirectors" id="FrontendMainMenu_m1_m2" class="link"><span class="text">BTA Board of Directors</span></a></li><li class="item last"><a href="/?page=DistrictContacts" id="FrontendMainMenu_m1_m3" class="link"><span class="text">BTA District Contacts</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=BTAEastOfficers" id="FrontendMainMenu_m1_m3_m0" class="link"><span class="text">East District Officers</span></a></li><li class="item"><a href="/?page=BTAMidAmOfficers" id="FrontendMainMenu_m1_m3_m1" class="link"><span class="text">Mid-America District Officers</span></a></li><li class="item"><a href="/?page=BTASoutheastOfficers" id="FrontendMainMenu_m1_m3_m2" class="link"><span class="text">Southeast District Officers</span></a></li><li class="item last"><a href="/?page=BTAWestOfficers" id="FrontendMainMenu_m1_m3_m3" class="link"><span class="text">West District Officers</span></a></li>
+					</ul>
+				</div></li>
+			</ul>
+		</div></li><li class="item"><a href="#" id="FrontendMainMenu_m2" class="link"><span class="text">Membership</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=JoinRenew" id="FrontendMainMenu_m2_m0" class="link"><span class="text">Join/Renew</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/general/register_member_type.asp?" id="FrontendMainMenu_m2_m0_m0" class="link"><span class="text">Join Online</span></a></li><li class="item"><a href="/resource/resmgr/Docs/BTAMemberApplication.pdf" id="FrontendMainMenu_m2_m0_m1" class="link"><span class="text">Download a Membership Application</span></a></li><li class="item"><a href="/?page=Renew" id="FrontendMainMenu_m2_m0_m2" class="link"><span class="text">Renew Your Membership</span></a></li><li class="item last"><a href="/?page=PaymentPlan" id="FrontendMainMenu_m2_m0_m3" class="link"><span class="text">Automatic Payment Plan</span></a></li>
+					</ul>
+				</div></li><li class="item last"><a href="#" id="FrontendMainMenu_m2_m1" class="link"><span class="text">Membership Classifications</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?MembershipGlance" id="FrontendMainMenu_m2_m1_m0" class="link"><span class="text">Dealer Membership</span></a><div class="slide">
+							<ul class="vertical group level3">
+								<li class="item first"><a href="/?MembershipGlance" id="FrontendMainMenu_m2_m1_m0_m0" class="link"><span class="text">Dealer Benefits Overview</span></a></li><li class="item last"><a href="/?page=Navigator" id="FrontendMainMenu_m2_m1_m0_m1" class="link"><span class="text">BTA Navigator Program</span></a></li>
+							</ul>
+						</div></li><li class="item"><a href="/?page=VendorAssociates" id="FrontendMainMenu_m2_m1_m1" class="link"><span class="text">Vendor Associates</span></a><div class="slide">
+							<ul class="vertical group level3">
+								<li class="item first"><a href="/?page=VendorAssociates" id="FrontendMainMenu_m2_m1_m1_m0" class="link"><span class="text">Vendor Benefits Overview</span></a></li><li class="item last"><a href="/?page=VendorAssociateList" id="FrontendMainMenu_m2_m1_m1_m1" class="link"><span class="text">Vendor Associate List</span></a></li>
+							</ul>
+						</div></li><li class="item"><a href="/?page=ServiceAssociates" id="FrontendMainMenu_m2_m1_m2" class="link"><span class="text">Service Associates</span></a><div class="slide">
+							<ul class="vertical group level3">
+								<li class="item first"><a href="/?page=ServiceAssociates" id="FrontendMainMenu_m2_m1_m2_m0" class="link"><span class="text">Service Benefits Overview</span></a></li><li class="item last"><a href="/?page=ServiceAssociateList" id="FrontendMainMenu_m2_m1_m2_m1" class="link"><span class="text">Service Associate List</span></a></li>
+							</ul>
+						</div></li><li class="item last"><a href="/page/PublishingAssociates" id="FrontendMainMenu_m2_m1_m3" class="link"><span class="text">Publishing Associates</span></a><div class="slide">
+							<ul class="vertical group level3">
+								<li class="item first last"><a href="/?page=PubAssociateList" id="FrontendMainMenu_m2_m1_m3_m0" class="link"><span class="text">Publishing Associate List</span></a></li>
+							</ul>
+						</div></li>
+					</ul>
+				</div></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=MemberBenefits" id="FrontendMainMenu_m3" class="link"><span class="text">Member Benefits</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?BenefitoftheMonth" id="FrontendMainMenu_m3_m0" class="link"><span class="text">Benefit of the Month</span></a></li><li class="item"><a href="/?page=Legal" id="FrontendMainMenu_m3_m1" class="link"><span class="text">Legal Services</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=Legal" id="FrontendMainMenu_m3_m1_m0" class="link"><span class="text">Contract Reviews</span></a></li><li class="item"><a href="/?DataSecurity" id="FrontendMainMenu_m3_m1_m1" class="link"><span class="text">Data Security</span></a></li><li class="item"><a href="/?page=FraudTelemarketing" id="FrontendMainMenu_m3_m1_m2" class="link"><span class="text">Fraudulent Telemarketing</span></a></li><li class="item"><a href="/?page=Legal" id="FrontendMainMenu_m3_m1_m3" class="link"><span class="text">Industry Advice & Guidance</span></a></li><li class="item"><a href="/?LeaseRecommendations" id="FrontendMainMenu_m3_m1_m4" class="link"><span class="text">Leasing Relations</span></a></li><li class="item"><a href="/?PatentTrolls" id="FrontendMainMenu_m3_m1_m5" class="link"><span class="text">Patent Trolls</span></a></li><li class="item"><a href="/?page=LegalDocuments" id="FrontendMainMenu_m3_m1_m6" class="link"><span class="text">Sample Legal Agreements & Contracts</span></a></li><li class="item last"><a href="/?GoldbergTestimonials" id="FrontendMainMenu_m3_m1_m7" class="link"><span class="text">Testimonials</span></a></li>
+					</ul>
+				</div></li><li class="item"><a href="/?page=Publications" id="FrontendMainMenu_m3_m2" class="link"><span class="text">Publications/Online Resources</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=SocialNetworking" id="FrontendMainMenu_m3_m2_m0" class="link"><span class="text">BTA on Social Media</span></a></li><li class="item"><a href="/news/" id="FrontendMainMenu_m3_m2_m1" class="link"><span class="text">BTA Hotline</span></a></li><li class="item last"><a href="/?page=OfficeTechnology" id="FrontendMainMenu_m3_m2_m2" class="link"><span class="text">Office Technology Magazine</span></a></li>
+					</ul>
+				</div></li><li class="item"><a href="/?page=Research" id="FrontendMainMenu_m3_m3" class="link"><span class="text">Channel Trends & Statistics</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=BenchmarkingReports" id="FrontendMainMenu_m3_m3_m0" class="link"><span class="text">Benchmarking Series Reports</span></a><div class="slide">
+							<ul class="vertical group level3">
+								<li class="item first"><a href="/?page=BenchmarkingReports" id="FrontendMainMenu_m3_m3_m0_m0" class="link"><span class="text">Compensation Report</span></a></li><li class="item"><a href="/?page=BenchmarkingReports" id="FrontendMainMenu_m3_m3_m0_m1" class="link"><span class="text">Finance Report</span></a></li><li class="item last"><a href="/?page=BenchmarkingReports" id="FrontendMainMenu_m3_m3_m0_m2" class="link"><span class="text">Service Report</span></a></li>
+							</ul>
+						</div></li><li class="item"><a href="/?page=BEQI" id="FrontendMainMenu_m3_m3_m1" class="link"><span class="text">Business Equipment Quota Index (BEQI)</span></a></li><li class="item"><a href="/?BuyersLab" id="FrontendMainMenu_m3_m3_m2" class="link"><span class="text">Buyers Lab Industry Intelligence</span></a></li><li class="item"><a href="/?page=ChannelsChoice" id="FrontendMainMenu_m3_m3_m3" class="link"><span class="text">Channel's Choice Report</span></a></li><li class="item"><a href="/?InfoTrendsDVMOA" id="FrontendMainMenu_m3_m3_m4" class="link"><span class="text">InfoTrends Dealer Vertical Market Opportunity</span></a></li><li class="item last"><a href="/?InfoTrends" id="FrontendMainMenu_m3_m3_m5" class="link"><span class="text">InfoTrends Reports</span></a></li>
+					</ul>
+				</div></li><li class="item"><a href="#" id="FrontendMainMenu_m3_m4" class="link"><span class="text">Business Support Services</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=AsktheAnalyst" id="FrontendMainMenu_m3_m4_m0" class="link"><span class="text">Ask the Analyst</span></a></li><li class="item"><a href="/?AssocBackground" id="FrontendMainMenu_m3_m4_m1" class="link"><span class="text">Background Checks</span></a></li><li class="item"><a href="/?page=BusinessValuation" id="FrontendMainMenu_m3_m4_m2" class="link"><span class="text">Business Valuation Services</span></a></li><li class="item"><a href="/?page=CollectionServices" id="FrontendMainMenu_m3_m4_m3" class="link"><span class="text">Collection Services</span></a></li><li class="item"><a href="/page/CompPlans" id="FrontendMainMenu_m3_m4_m4" class="link"><span class="text">Compensation Plans</span></a></li><li class="item"><a href="/?page=CCProcessing" id="FrontendMainMenu_m3_m4_m5" class="link"><span class="text">Credit Card Processing</span></a></li><li class="item"><a href="/?page=CreditReports" id="FrontendMainMenu_m3_m4_m6" class="link"><span class="text">Credit Report & Business Information Services</span></a></li><li class="item"><a href="/?page=EmployeeAssessment" id="FrontendMainMenu_m3_m4_m7" class="link"><span class="text">Employee Assessment Tools</span></a></li><li class="item"><a href="/?AMullen" id="FrontendMainMenu_m3_m4_m8" class="link"><span class="text">ERP Optimization, Migration & Integration</span></a></li><li class="item"><a href="/?page=JobDescriptions" id="FrontendMainMenu_m3_m4_m9" class="link"><span class="text">Job Descriptions</span></a></li><li class="item"><a href="/?IANewRepTraining" id="FrontendMainMenu_m3_m4_m10" class="link"><span class="text">New Sales Rep Training</span></a></li><li class="item"><a href="/?page=InfoChip" id="FrontendMainMenu_m3_m4_m11" class="link"><span class="text">On-Hold Messaging Service</span></a></li><li class="item"><a href="/?page=BizSupplies" id="FrontendMainMenu_m3_m4_m12" class="link"><span class="text">Online Office Supplies Shopping Cart</span></a></li><li class="item"><a href="/?page=Paychex" id="FrontendMainMenu_m3_m4_m13" class="link"><span class="text">Payroll Processing</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m3_m4_m14" class="link"><span class="text">Peer Collaboration Groups</span></a><div class="slide">
+							<ul class="vertical group level3">
+								<li class="item first"><a href="/?PRODealer" id="FrontendMainMenu_m3_m4_m14_m0" class="link"><span class="text">PRO Dealer Group</span></a></li><li class="item last"><a href="/page/SDGMain/?" id="FrontendMainMenu_m3_m4_m14_m1" class="link"><span class="text">Select Dealer Group</span></a></li>
+							</ul>
+						</div></li><li class="item"><a href="/?page=RecruitmentServices" id="FrontendMainMenu_m3_m4_m15" class="link"><span class="text">Recruitment Services</span></a></li><li class="item"><a href="/?MarketMentorOnline" id="FrontendMainMenu_m3_m4_m16" class="link"><span class="text">Relationship Management/CRM</span></a></li><li class="item last"><a href="/?MarketMentorOnline" id="FrontendMainMenu_m3_m4_m17" class="link"><span class="text">Telemarketing/Lead Generation</span></a></li>
+					</ul>
+				</div></li><li class="item"><a href="#" id="FrontendMainMenu_m3_m5" class="link"><span class="text">Discount Programs</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=BTAMarketplace" id="FrontendMainMenu_m3_m5_m0" class="link"><span class="text">BTA Marketplace Discounts</span></a></li><li class="item"><a href="/?MemberRewards" id="FrontendMainMenu_m3_m5_m1" class="link"><span class="text">BTA Member Rewards Program</span></a></li><li class="item"><a href="/?page=CarRental" id="FrontendMainMenu_m3_m5_m2" class="link"><span class="text">Car Rental Discounts</span></a></li><li class="item"><a href="/?page=IA" id="FrontendMainMenu_m3_m5_m3" class="link"><span class="text">Competitive Sales Tool & MFP Reliability Widget</span></a></li><li class="item"><a href="/?GAFleetView" id="FrontendMainMenu_m3_m5_m4" class="link"><span class="text">Device Monitoring & Management</span></a></li><li class="item"><a href="/?page=HytecHDSolutions" id="FrontendMainMenu_m3_m5_m5" class="link"><span class="text">Hard Drive Security Solutions</span></a></li><li class="item"><a href="/?page=EvolvedOffice" id="FrontendMainMenu_m3_m5_m6" class="link"><span class="text">Marketing Solutions</span></a></li><li class="item"><a href="/?MobileDiscounts" id="FrontendMainMenu_m3_m5_m7" class="link"><span class="text">Mobile Discount Programs</span></a></li><li class="item"><a href="/?page=WirthConsulting" id="FrontendMainMenu_m3_m5_m8" class="link"><span class="text">Product Evaluations</span></a></li><li class="item"><a href="/?Beacon" id="FrontendMainMenu_m3_m5_m9" class="link"><span class="text">Promotional Products Discounts</span></a></li><li class="item last"><a href="/?page=ShippingFreight" id="FrontendMainMenu_m3_m5_m10" class="link"><span class="text">Shipping & Freight Discounts</span></a></li>
+					</ul>
+				</div></li><li class="item"><a href="/?page=Education" id="FrontendMainMenu_m3_m6" class="link"><span class="text">Education</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=Education" id="FrontendMainMenu_m3_m6_m0" class="link"><span class="text">$400 or $950 in Educational Discounts</span></a></li><li class="item"><a href="/?page=Education" id="FrontendMainMenu_m3_m6_m1" class="link"><span class="text">BTA Events & Workshops</span></a></li><li class="item"><a href="/?page=BuildingMyBusiness" id="FrontendMainMenu_m3_m6_m2" class="link"><span class="text">Building My Business Webinars</span></a></li><li class="item"><a href="/?CompTIADiscounts" id="FrontendMainMenu_m3_m6_m3" class="link"><span class="text">CompTIA Exam Voucher Discounts</span></a></li><li class="item"><a href="/?ITUniversity" id="FrontendMainMenu_m3_m6_m4" class="link"><span class="text">Online IT Training</span></a></li><li class="item last"><a href="/?page=LogicalOperations" id="FrontendMainMenu_m3_m6_m5" class="link"><span class="text">User Productivity Courseware</span></a></li>
+					</ul>
+				</div></li><li class="item"><a href="/?page=Insurance" id="FrontendMainMenu_m3_m7" class="link"><span class="text">Insurance Programs</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=Insurance" id="FrontendMainMenu_m3_m7_m0" class="link"><span class="text">Business Executive Life</span></a></li><li class="item"><a href="/?page=Insurance" id="FrontendMainMenu_m3_m7_m1" class="link"><span class="text">Business Liability</span></a></li><li class="item"><a href="/page/DataCompromise" id="FrontendMainMenu_m3_m7_m2" class="link"><span class="text">Data Compromise Coverage</span></a></li><li class="item"><a href="/?page=Insurance" id="FrontendMainMenu_m3_m7_m3" class="link"><span class="text">Disability, Long- & Short-Term</span></a></li><li class="item"><a href="/?page=Insurance" id="FrontendMainMenu_m3_m7_m4" class="link"><span class="text">Medical, Life, Health, Dental & Vision Plans</span></a></li><li class="item"><a href="/?page=Insurance" id="FrontendMainMenu_m3_m7_m5" class="link"><span class="text">Retirement Programs</span></a></li><li class="item"><a href="/?page=Insurance" id="FrontendMainMenu_m3_m7_m6" class="link"><span class="text">Section 125 Cafeteria Plans</span></a></li><li class="item"><a href="/?page=Insurance" id="FrontendMainMenu_m3_m7_m7" class="link"><span class="text">Term Life</span></a></li><li class="item"><a href="/?WellCard" id="FrontendMainMenu_m3_m7_m8" class="link"><span class="text">WellCard Health Discount Card</span></a></li><li class="item last"><a href="/?page=Insurance" id="FrontendMainMenu_m3_m7_m9" class="link"><span class="text">Workers' Compensation</span></a></li>
+					</ul>
+				</div></li><li class="item"><a href="/?page=Scholarships" id="FrontendMainMenu_m3_m8" class="link"><span class="text">BTA Scholarships</span></a></li><li class="item"><a href="/?page=Navigator" id="FrontendMainMenu_m3_m9" class="link"><span class="text">BTA Navigator Program</span></a></li><li class="item last"><a href="#" id="FrontendMainMenu_m3_m10" class="link"><span class="text">Volume Purchasing Agreements</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first last"><a href="/?page=EnergySavings" id="FrontendMainMenu_m3_m10_m0" class="link"><span class="text">Gas & Electricity</span></a></li>
+					</ul>
+				</div></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=Education" id="FrontendMainMenu_m4" class="link"><span class="text">Education</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=DistrictEvents" id="FrontendMainMenu_m4_m0" class="link"><span class="text">BTA Events</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?SESpring16" id="FrontendMainMenu_m4_m0_m0" class="link"><span class="text">Spring Break</span></a></li><li class="item"><a href="/?MA16" id="FrontendMainMenu_m4_m0_m1" class="link"><span class="text">2016 BTA National Conference</span></a></li><li class="item"><a href="/page/BTA90" id="FrontendMainMenu_m4_m0_m2" class="link"><span class="text">BTA at 90: A Celebration</span></a></li><li class="item"><a href="/?West16" id="FrontendMainMenu_m4_m0_m3" class="link"><span class="text">Capture the Magic</span></a></li><li class="item"><a href="/?East16" id="FrontendMainMenu_m4_m0_m4" class="link"><span class="text">Grand Slam</span></a></li><li class="item last"><a href="/?SEFall16" id="FrontendMainMenu_m4_m0_m5" class="link"><span class="text">Fall Colors Retreat</span></a></li>
+					</ul>
+				</div></li><li class="item"><a href="/?page=Education" id="FrontendMainMenu_m4_m1" class="link"><span class="text">Classroom Workshops</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/page/AnnBarr" id="FrontendMainMenu_m4_m1_m0" class="link"><span class="text">Ann Barr Sales Training Workshop</span></a></li><li class="item"><a href="/?page=MS" id="FrontendMainMenu_m4_m1_m1" class="link"><span class="text">BTA Managed Services Workshop</span></a></li><li class="item"><a href="/page/SalesMgt" id="FrontendMainMenu_m4_m1_m2" class="link"><span class="text">BTA Sales Management Workshop</span></a></li><li class="item"><a href="/?page=FIX" id="FrontendMainMenu_m4_m1_m3" class="link"><span class="text">FIX: Cost Management for Service 2.0</span></a></li><li class="item last"><a href="/?page=ProFinance" id="FrontendMainMenu_m4_m1_m4" class="link"><span class="text">ProFinance 2.0</span></a></li>
+					</ul>
+				</div></li><li class="item"><a href="/?page=Education" id="FrontendMainMenu_m4_m2" class="link"><span class="text">Webinars/e-Workshops</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=MPSClientEngagement" id="FrontendMainMenu_m4_m2_m0" class="link"><span class="text">BTA MPS Client Engagement Training Series</span></a></li><li class="item"><a href="/?page=BuildingMyBusiness" id="FrontendMainMenu_m4_m2_m1" class="link"><span class="text">Building My Business Webinars</span></a></li><li class="item"><a href="/?IANewRepTraining" id="FrontendMainMenu_m4_m2_m2" class="link"><span class="text">Industry Analysts' New Sales Rep Training</span></a></li><li class="item last"><a href="/page/TelesalesTraining" id="FrontendMainMenu_m4_m2_m3" class="link"><span class="text">One-to-One Telesales Training & Coaching</span></a></li>
+					</ul>
+				</div></li><li class="item last"><a href="/?page=Education" id="FrontendMainMenu_m4_m3" class="link"><span class="text">Certification Study/Vouchers</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?CompTIADiscounts" id="FrontendMainMenu_m4_m3_m0" class="link"><span class="text">CompTIA Exam Voucher Discounts</span></a></li><li class="item"><a href="/?ITUniversity" id="FrontendMainMenu_m4_m3_m1" class="link"><span class="text">IT University Online Courses</span></a></li><li class="item last"><a href="/?page=LogicalOperations" id="FrontendMainMenu_m4_m3_m2" class="link"><span class="text">User Productivity Courseware</span></a></li>
+					</ul>
+				</div></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=DistrictEvents" id="FrontendMainMenu_m5" class="link"><span class="text">BTA Events</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=DistrictEvents" id="FrontendMainMenu_m5_m0" class="link"><span class="text">2016 Events</span></a></li><li class="item"><a href="/?SESpring16" id="FrontendMainMenu_m5_m1" class="link"><span class="text">Spring Break</span></a></li><li class="item"><a href="/?MA16" id="FrontendMainMenu_m5_m2" class="link"><span class="text">2016 BTA National Conference</span></a></li><li class="item"><a href="/page/BTA90" id="FrontendMainMenu_m5_m3" class="link"><span class="text">BTA at 90: A Celebration</span></a></li><li class="item"><a href="/?West16" id="FrontendMainMenu_m5_m4" class="link"><span class="text">Capture the Magic</span></a></li><li class="item"><a href="/?East16" id="FrontendMainMenu_m5_m5" class="link"><span class="text">Grand Slam</span></a></li><li class="item last"><a href="/?SEFall16" id="FrontendMainMenu_m5_m6" class="link"><span class="text">Fall Colors Retreat</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=Publications" id="FrontendMainMenu_m6" class="link"><span class="text">Industry News</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=Advertise" id="FrontendMainMenu_m6_m0" class="link"><span class="text">Advertise</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=HotlineSponsorship" id="FrontendMainMenu_m6_m0_m0" class="link"><span class="text">BTA Hotline Sponsorships</span></a></li><li class="item"><a href="/resource/resmgr/MediaKit/2015Rates.pdf" id="FrontendMainMenu_m6_m0_m1" class="link"><span class="text">Office Technology Advertising</span></a></li><li class="item last"><a href="/?page=BannerAds" id="FrontendMainMenu_m6_m0_m2" class="link"><span class="text">Website Banners</span></a></li>
+					</ul>
+				</div></li><li class="item"><a href="/news/" id="FrontendMainMenu_m6_m1" class="link"><span class="text">BTA Hotline</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first last"><a href="/mpage/HotlineHTML" id="FrontendMainMenu_m6_m1_m0" class="link"><span class="text">HTML Hotline</span></a></li>
+					</ul>
+				</div></li><li class="item last"><a href="/?page=OfficeTechnology" id="FrontendMainMenu_m6_m2" class="link"><span class="text">Office Technology Magazine</span></a><div class="slide">
+					<ul class="vertical group level2">
+						<li class="item first"><a href="/?page=OTArchives" id="FrontendMainMenu_m6_m2_m0" class="link"><span class="text">Archives</span></a></li><li class="item last"><a href="/page/OTOct16" id="FrontendMainMenu_m6_m2_m1" class="link"><span class="text">Current Issue</span></a></li>
+					</ul>
+				</div></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=Legal" id="FrontendMainMenu_m7" class="link"><span class="text">Legal Services</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=Legal" id="FrontendMainMenu_m7_m0" class="link"><span class="text">Contract Reviews</span></a></li><li class="item"><a href="/?DataSecurity" id="FrontendMainMenu_m7_m1" class="link"><span class="text">Data Security</span></a></li><li class="item"><a href="/?page=FraudTelemarketing" id="FrontendMainMenu_m7_m2" class="link"><span class="text">Fraudulent Telemarketing</span></a></li><li class="item"><a href="/?page=Legal" id="FrontendMainMenu_m7_m3" class="link"><span class="text">Industry Advice & Guidance</span></a></li><li class="item"><a href="/?LeaseRecommendations" id="FrontendMainMenu_m7_m4" class="link"><span class="text">Leasing Relations</span></a></li><li class="item"><a href="/?PatentTrolls" id="FrontendMainMenu_m7_m5" class="link"><span class="text">Patent Trolls</span></a></li><li class="item"><a href="/?page=LegalDocuments" id="FrontendMainMenu_m7_m6" class="link"><span class="text">Sample Legal Agreements & Contracts</span></a></li><li class="item last"><a href="/?GoldbergTestimonials" id="FrontendMainMenu_m7_m7" class="link"><span class="text">Testimonials</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=Research" id="FrontendMainMenu_m8" class="link"><span class="text">Research</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=BenchmarkingReports" id="FrontendMainMenu_m8_m0" class="link"><span class="text">Benchmarking Series Reports</span></a></li><li class="item"><a href="/?page=BEQI" id="FrontendMainMenu_m8_m1" class="link"><span class="text">Business Equipment Quota Index (BEQI)</span></a></li><li class="item"><a href="/?page=ChannelsChoice" id="FrontendMainMenu_m8_m2" class="link"><span class="text">Channel's Choice Reports</span></a></li><li class="item last"><a href="/?InfoTrendsDVMOA" id="FrontendMainMenu_m8_m3" class="link"><span class="text">InfoTrends Dealer Vertical Market Opportunity</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?PeerGroups" id="FrontendMainMenu_m9" class="link"><span class="text">Peer Groups</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?PRODealer" id="FrontendMainMenu_m9_m0" class="link"><span class="text">PRO Dealer Group</span></a></li><li class="item last"><a href="/mpage/SDGMain" id="FrontendMainMenu_m9_m1" class="link"><span class="text">Select Dealer Group</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=Scholarships" id="FrontendMainMenu_m10" class="link"><span class="text">Scholarship Foundation</span></a></li><li class="item"><a href="/page/VideoArchives" id="FrontendMainMenu_m11" class="link"><span class="text">Video Archives</span></a></li><li class="item last"><a href="/store/default.asp" id="FrontendMainMenu_m12" class="link"><span class="text">Online Store</span></a></li>
+	</ul><input type="hidden" id="FrontendMainMenu_Hidden" name="FrontendMainMenu" /><script type="text/javascript">window["FrontendMainMenu"] = RadMenu.Create("FrontendMainMenu");window["FrontendMainMenu"].Initialize({"EnableAutoScroll":true,"Skin":"YMPublic","Flow":0,"Enabled":true},{"FrontendMainMenu_m2":{"NavigateAfterClick":false},"FrontendMainMenu_m2_m1":{"NavigateAfterClick":false},"FrontendMainMenu_m3_m4":{"NavigateAfterClick":false},"FrontendMainMenu_m3_m4_m14":{"NavigateAfterClick":false},"FrontendMainMenu_m3_m5":{"NavigateAfterClick":false},"FrontendMainMenu_m3_m10":{"NavigateAfterClick":false}});</script>
+</div><link rel="stylesheet" type="text/css" href="/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css"/><link rel="stylesheet" type="text/css" href="/global_inc/RadControls/Menu/Skins/YMPublic/styles.css"/></td>
+						</tr>
+						</table>
+						
+						<div id="LeftRailContentArea">
+							<!--YMPSTITLE=TgBBAA==/YMPSTITLE--><div id="social-icons"><a href="https://www.facebook.com/pages/Business-Technology-Association/89600864580 " target="_blank"><img src="/graphics/fb.png"></a><a href="https://www.linkedin.com/company/business-technology-association?trk=biz-companies-cym " target="_blank"><img src="/graphics/li.png"></a><a href="https://plus.google.com/u/1/116382733918210515272/posts" target="_blank"><img src="/graphics/gp.png"></a><a href="https://twitter.com/BTA_ORG " target="_blank"><img src="/graphics/tw.png"></a><a href="https://www.youtube.com/channel/UCBSsarYTnpYafmHxiMDGQWw" target="_blank"><img src="/graphics/yt.png"></a></div><br><div align="center"><span style="font-family: Arial; font-size: 8pt; font-weight: bold;"><a href="http://bta.site-ym.com/?page=VendorAssociateList">Vendor Associate Members</a></span><br><a href="http://bta.site-ym.com/?page=VendorAssociateList"><img src="/resource/resmgr/VendorLogos/VendorLogosAnimated.gif"></a><br><br><span style="font-family: Arial; font-size: 8pt; font-weight: bold;"><a href="http://bta.site-ym.com/?page=ServiceAssociateList">Service Associate Members</a></span><br><a href="http://bta.site-ym.com/?page=ServiceAssociateList"><img src="/resource/resmgr/ServiceLogos/ServiceLogosAnimated.gif"></a><br><br><span style="font-family: Arial; font-size: 8pt; font-weight: bold;"><a href="https://bta.site-ym.com/?page=PubAssociateList">Publishing Associate Members</a></span><br><a href="https://bta.site-ym.com/?page=PubAssociateList"><img src="/resource/resmgr/PublishingLogos/PublishingLogosAnimated.gif"></a></div></div>
+					</div></td>
+					<td id="CenterColumn"><div id="SpMain">
+					<!--@@DG_PRINT_PAGE_BEGIN@@
+						IMPORTANT! DO NOT MOVE OR MODIFY -->
+							
+
+  <script type="text/javascript">var blnUseEngagement = false; </script> 
+  
+<script type="text/javascript" src="/global_inc/js/favorite.js"></script>
+
+
+<style type="text/css">
+	#tat_table {
+		z-index:99;
+	}
+	#FavoriteEditorTitle {
+		margin: 0;
+	}
+</style>
+<div class="yui-skin-sam">
+<div id="FavoriteOptsPanel" style="visibility:hidden;">
+	<div id="FavoriteOptsPanelBody" class="bd">
+		<div id="FormErrors" style="display:none">
+			<div class="infobox">
+				<ul id="FormErrorList" class="redalert"></ul>
+			</div><br>
+		</div>
+			<form id="FavoriteEditor" name="FavoriteEditor" onsubmit="return FavoriteEditor_Submit(this)" style="display:none; margin: 0 10px 0 10px;">
+			<input type="hidden" id="FavoriteID" name="FavoriteID" value="">
+			<input type="hidden" id="strFavoriteTypeID_FK" name="strFavoriteTypeID_FK" value="">
+			<input type="hidden" id="strFavoriteParameters" name="strFavoriteParameters" value="">
+			<input type="hidden" name="strCommand" value="">
+			<input type="hidden" id="blnFavoriteReload" value="">
+			<table border="0" cellspacing="12" cellpadding="0">
+				<tr>
+					<td align="center">
+            
+               <img src="/global_graphics/icons/star_32x32.gif" border="0" width="32" height="32">
+            
+              </td>
+					<td><h2 id="FavoriteEditorTitle">
+            
+               Edit This Favorite
+            
+              </h2></td>
+				</tr>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" id="strTitle" name="strTitle" value="" size="40" maxlength="100" />
+					<INPUT TYPE="hidden" NAME="ERR_strTitle" VALUE="strTitle|Name|20|1||100">
+					</td>
+				</tr>
+				<tr>
+					<td>Category:</td>
+					<td>
+						<input type="text" id="strCategory" name="strCategory" value="" size="40" autocomplete="off" maxlength="100" />
+						<INPUT TYPE="hidden" NAME="ERR_strCategory" VALUE="strCategory|Category|20|0||100">
+					</td>
+				</tr>
+				<tr>
+					<td>Share:</td>
+					<td>
+						<input id="blnIsPrivate0" type="radio" value="0" name="blnIsPrivate"/><label for="blnIsPrivate0">Yes</label>
+						<input id="blnIsPrivate1" type="radio" value="1" name="blnIsPrivate"/><label for="blnIsPrivate1">No, Keep Private</label>
+						<INPUT TYPE="hidden" NAME="ERR_blnIsPrivate" VALUE="blnIsPrivate|Share -- Yes/No, Keep Private|20|1||0">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" style="padding-top:10px;">
+						<input type="submit" id="FavoriteEditor_btnSubmit" value="Submit" class="formbutton"
+							onclick="return FavoriteEditor_btnSubmit_OnClick(this);">
+						<input type="button" value="Cancel" class="formbutton" 
+							onclick="YAHOO.container.FavoriteOpts.hide();">
+						<input type="submit" id="FavoriteEditor_btnDelete" value="Delete" class="formbutton" style="display:none;"
+							onclick="return FavoriteEditor_btnDelete_OnClick(this);">
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="__ASPVIEWSTATE" value="82c4c987c4f65bf599c7c4dde5535d34559fd2f6d0bac36bb1b2d87c2cc5a9a21de80d1afc91795520c6227d8293f61c3f958f025fa4f36c2a12fb6ce3e1e64d9065c2530db742a3e647175da7bf5151ce31189c7c96f9c6b5d5ea78aebc87e7a4106270a5d88d4803dcc6dd96e75cf0955057e5204b08409c9cb04417e00fa4db">
+			</form>
+	</div>
+</div></div>
+
+
+
+<script type="text/javascript" src="/global_inc/js/hit_highlighter.js"></script>
+<script type="text/javascript">
+	function Window_OnLoad() {
+		highlightDtSearchTerms('CustomPageBody');
+		highlightDtSearchTerms('ResourceCollection');
+	}
+
+	addEventHandler_OnLoad(Window_OnLoad);
+</script>
+
+<style type="text/css">
+
+.ScoreControl
+{
+	display:block;
+	float:left;
+}
+</style>
+
+<table id="SpSubHead" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpTitleBar">
+Office Technology Magazine
+	</td>
+</tr>
+
+<tr>
+	<td id="SpNavBar">
+		<form name="CustomPageJump">
+			<select onchange="CustomPageJump_OnChange(this);">
+				<option>More in this Section...</option>
+
+				<option value="MemberBenefits">Member Benefits</option>
+
+				<option value="MemberBenefitsList">Member Benefits List</option>
+
+				<option value="OTArchives">Office Technology Magazine Archives</option>
+
+				<option value="Publications">Publications</option>
+
+		</select></form>
+		
+		<script language="JavaScript">
+			function CustomPageJump_OnChange(sender) {
+				if (sender.selectedIndex != 0)
+					location.href = '/page/' + sender.options[sender.selectedIndex].value;
+			}
+
+			document.CustomPageJump.reset();
+		</script>
+	</td>
+</tr>
+
+
+</table>
+
+<table id="SpContent" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpContent_Container">
+
+		<script type="text/javascript" src="/global_inc/js/ContentScores.js"></script>
+	
+	<div id="CustomPageBody"><span style="font-family: Arial; font-size: 10pt;"><img alt="" src="/resource/resmgr/Logos/OTLogoGreen.gif" /><br />
+<br />
+Office Technology is published monthly by the Business Technology Association. Subscriptions are included with BTA membership.<br />
+<br />
+Annual rates for non-members are:</span><br />
+<ul>
+    <li><span style="font-family: Arial; font-size: 10pt;">Domestic - $100</span></li>
+    <li><span style="font-family: Arial; font-size: 10pt;">Other Countries - $115</span></li>
+</ul>
+<span style="font-family: Arial; font-size: 12pt; font-weight: bold;"><a href="/page/OTOct16">Current Issue</a></span><br />
+<span style="font-family: Arial; font-size: 10pt;">Click here for the October issue of Office Technology.</span><br />
+<br />
+<span style="font-family: Arial; font-size: 12pt; font-weight: bold;"><a href="/?page=OTArchives">Archive Issues</a></span><br />
+<span style="font-family: Arial; font-size: 10pt;">Click here for previous issues of Office Technology.</span><br />
+<br />
+<span style="font-family: Arial; font-size: 12pt; font-weight: bold;"><a href="/store/view_product.asp?id=807858">Subscription Form</a></span><br />
+<span style="font-family: Arial; font-size: 10pt;">Click here to fill out a subscription form.</span><br />
+<br />
+<span style="font-family: Arial; font-size: 12pt; font-weight: bold;">Media Kit</span><br />
+<span style="font-family: Arial; font-size: 10pt;">Click the links below to download the Office Technology media kit: </span>
+<ul>
+    <li><a href="/resource/resmgr/MediaKit/2016OTMediaKit.pdf"><span style="font-family: Arial; font-size: 10pt;">Full Media Kit</span></a></li>
+    <li><a href="/resource/resmgr/mediakit/2016OTRates.pdf"><span style="font-family: Arial; font-size: 10pt;">Advertising Rates</span></a></li>
+    <li><a href="/resource/resmgr/MediaKit/2016OTSpecs.pdf"><span style="font-family: Arial; font-size: 10pt;">Advertising Specifications</span></a></li>
+    <li><a href="/resource/resmgr/MediaKit/2016OTEditorialCalendar.pdf"><span style="font-family: Arial; font-size: 10pt;">Editorial Calendar</span></a></li>
+    <li><a href="/resource/resmgr/MediaKit/2016OTComments.pdf"><span style="font-family: Arial; font-size: 10pt;">Statistics &amp; Comments </span></a></li>
+</ul>
+<span style="font-family: Arial; font-size: 10pt;"></span></div>
+
+	<div id="ResourceCollection">
+		
+	
+	<script type="text/javascript">
+	function LaunchThis(sender, strURL)
+	{
+		window.open (strURL);	
+		return false;
+	}
+	
+	function NewCollection(Collection)
+	{
+		window.location = "/members/resource_collection_item_edit.asp?id=" + Collection + "&groupID=";
+		return false;
+	}
+	
+	function ModifyThis(Collection, ItemID)
+	{
+		window.location = "/members/resource_collection_item_edit.asp?id=" + Collection + "&groupID=&itemID=" + ItemID;
+		return false;
+	}
+	</script>
+
+	</div></td>
+</tr>
+</table><!--END SpContent-->
+
+
+<div id="PageBase_RaiseAlert" class="yui-skin-sam"></div>
+
+
+<div class="yui-skin-sam">
+<div id="ContextualHelp" style="visibility:hidden">
+	<div id="ContextualHelpHead" class="hd"></div>
+	<div id="ContextualHelpBody" class="bd"></div>
+</div>
+<div id="SpNavBarSub" style="visibility:hidden">
+	<div id="SpNavBarSubBody" class="bd"></div>
+</div></div>
+
+
+					<!--@@DG_PRINT_PAGE_END@@
+						IMPORTANT! DO NOT MOVE OR MODIFY -->
+						
+					</div></td>
+					<td id="RightRail1"><div id="RightRail2">
+
+						
+						<div id="LoginFormOrProfileNav" class="ContentPanel_Style1">
+							<div class="ContentPanelHead">
+								Sign In</div>
+							<div class="ContentPanelText">
+								<script language="javascript" type="text/javascript" src="/global_inc/js/jquery.data.js"></script><script language="javascript" type="text/javascript" src="/global_inc/js/jquery.watermark.min.js"></script><script type="text/javascript">
+                             $(document).ready(function () {
+                             $('.loginuser').watermark('Username');
+                             $('.loginpass').watermark('Password');});</script><form id='LoginForm' action='https://bta.site-ym.com/Login.aspx?returl=' method='post'><INPUT TYPE='hidden' NAME='ERR_u' VALUE='u|Username|20|1||0'><INPUT TYPE='hidden' NAME='ERR_p' VALUE='p|Password|20|1||0'><p><div id="LoginUserName"><input class="small loginuser" type="text" name="u" size="20" maxlength="255" value=""/></div><div id="LoginPassword"> <br/>
+                        <input class="small loginpass" type="password" name="p" size="20" maxlength="64" autocomplete="off"></div></p>
+                        <p id="RememberMe"><input id="FrontendControls_RememberMe"
+                            type="checkbox" name="rememberme" value="true" checked><label
+                            for="FrontendControls_RememberMe">Remember Me</label></p>
+                        <p id="LoginSubmit"><input type="submit" name="btn_submitLogin" value="Sign In" class="formbutton">
+							<img class="securesubmit" src="/global_graphics/icons/securesubmit.png" title="Secured with SSL encryption." /></p></form><p id="LoginForgot"><a href='/general/email_pass.asp'>Forgot your password?</a></p><p id="LoginRegister"><a href='/general/register_start.asp'>Haven't registered yet?</a></p></div>
+						</div>
+
+						<table id="LatestNews" border="0" cellpadding="0" cellspacing="0"
+							style="display:; width:100%">
+						<tbody class="ContentPanel_Style2">
+						<tr>
+							<td class="ContentPanelHead">
+								<div class="MoreLink">
+									<a href="/news/">more</a></div>
+								BTA Hotline</td>
+						</tr>
+						<tr>
+							<td><div class="ContentPanelText">
+									<p id='NewsPnl_310622'><span class="LatestNewsItemDate">  10/4/2016</span><a href="/news/310622/BTAs-FIX-Cost-Management-for-Service-2.0-Scheduled-for-Nov.-14.htm">BTA's FIX: Cost Management for Service 2.0 Scheduled for Nov. 14</a></p><p id='NewsPnl_310603'><span class="LatestNewsItemDate">  10/4/2016</span><a href="/news/310603/BTA-Welcomes-Seven-New-Members.htm">BTA Welcomes Seven New Members</a></p><p id='NewsPnl_310585'><span class="LatestNewsItemDate">  10/4/2016</span><a href="/news/310585/Canon-Congratulates-Ray-Morgan-Company-on-60-Years-of-Business.htm">Canon Congratulates Ray Morgan Company on 60 Years of Business</a></p></div></td>
+						</tr>
+						</table>
+
+	  <div class="spacer_1h"></div>
+	  
+		<table id="Surveys" border="0" cellpadding="0" cellspacing="0" style="display:none; width:100%">
+			<tbody class="ContentPanel_Style4">
+				<tr>
+					<td class="ContentPanelHead">Online Surveys</td>
+				</tr>
+				<tr>
+					<td><div class="ContentPanelText"></div></td>
+				</tr>
+			</tbody>
+		</table>
+	
+						<div id="RightRailContentArea">
+							<!--YMPSTITLE=TgBBAA==/YMPSTITLE-->            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/BTA_ORG" data-widget-id="690642994840506369">Tweets by @BTA_ORG</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+          </div>
+					</div></td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td id="Foot">
+				<!--footer --></td>
+		</tr>
+		</table>
+		
+		<div id="FooterContentArea">
+			<!--YMPSTITLE=TgBBAA==/YMPSTITLE--><p style="text-align: center;">&nbsp;</p></div>
+		
+		<div id="Copyright">
+			 Powered by <a href='http://www.yourmembership.com/'>YourMembership.com<span style='font-size:11px'>&reg;</span></a> &nbsp;::&nbsp; <a href='/ams/legal-privacy.htm'>Legal</a><!-- Copyright (c) 1998-2016 YourMembership.com Inc. All Rights Reserved. Copyright: Certain elements of this website are: Copyright (c) 1998-2016, YourMembership.com, Incorporated. YourMembership.com, Incorporated provides a limited license to use its Copyrights to the entity from whose web page you are viewing. Certain elements of this website may also be copyrighted by that entity; please see its Terms of Use or contact the organization for more information. General information about copyright laws can be found at: http://www.copyright.gov/. For more specific information, please consult an attorney. --></div>
+		
+		
+		
+	</body>
+
+
+
+</html>
+<!--END_OF_FILE-->

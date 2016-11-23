@@ -1,0 +1,362 @@
+status: 200
+content-length: 15084
+content-location: http://www.qti.com
+x-powered-by: ASP.NET, PHP/5.3.16
+server: Microsoft-IIS/6.0
+date: Wed, 21 Sep 2016 08:44:26 GMT
+content-type: text/html
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quick Technologies provides affordable state-of-the-art marketing and event services to a variety of industries.">
+    <title>QTI | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="js/vendor/modernizr.js"></script>
+    
+  </head>
+  <body>
+  <header>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200italic,200,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<!--<link rel="shortcut icon" href="http://sageworld.com/img/favicon.ico" />-->
+<script src="js/vendor/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+	// hide #back-top first
+	$(".backtotop").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 200) {
+				$('.backtotop').fadeIn();
+			} else {
+				$('.backtotop').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('.backtotop a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+
+//$(document)
+//.on('open.fndtn.offcanvas', '[data-offcanvas]', function() {
+//
+//  $('.left-off-canvas-menu li.has-submenu a').css('top', $(window).scrollTop());
+//
+//})
+
+$(function(){
+   $('.left a').each(function (index) {
+    if (this.href.trim() == window.location) {
+        var classSelected = 'active';
+
+        $(this).addClass(classSelected).closest('li').addClass(classSelected);
+		
+		
+	}
+	});
+});
+$(function(){
+   $('.right a').each(function (index) {
+    if (this.href.trim() == window.location) {
+        var classSelected = 'active';
+
+        $(this).addClass(classSelected).closest('li').addClass(classSelected);
+		
+		
+	}
+	});
+});
+$(function() {
+	$('.right a').each(function (index) {
+		if (this.href.trim() == window.location) {
+			var classSelected = 'active';
+			
+			$(this).addClass(classSelected).closest('.has-dropdown').addClass(classSelected);
+		}
+	});
+});
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35268614-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</header> 
+	<div class="off-canvas-wrap" data-offcanvas>
+   		 <div class="inner-wrap">
+		<a name="target"></a><p class="nomargin nopadding" data-magellan-destination="target"></p>
+		<!-- OFF CANVAS MENU BAR -->
+        <nav class="tab-bar hide-for-large-up">
+ 
+            <section class="left-small">
+                <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+            </section>
+ 
+            <section class="right tab-bar-section">
+                <a href="index.php"><img src="img/quick-technologies-mobile.png" alt="Quick Technologies Inc."></a>
+            </section>
+ 
+        </nav> <!-- END NAV.TAB-BAR HIDE-FOR-LARGE-UP -->
+        <aside class="left-off-canvas-menu">
+        	<ul class="off-canvas-list">
+            	<li><label>Navigation</label></li>
+                <li>
+                	<a href="index.php">Home</a>
+                </li>
+                <!--PRODUCTS-->
+            	<li class="has-submenu"><a class="title" href="">Products</a>
+                <ul class="left-submenu">
+                	<li class="back"><a href="#">Back</a></li>
+                    <li><a href="artwork-services.php">Artwork Services</a></li>
+                    <li><a href="custom-programming.php">Custom Programming</a></li>
+                    <li><a href="domain-registration.php">Domain Registration</a></li>
+                    <li><a href="payment-processing.php">Payment Processing</a></li>
+                    <li><a href="printing-services.php">Printing Services</a></li>
+                    <li><a href="sage.php">SAGE</a></li>
+                    <li><a href="web-hosting.php">Web Hosting</a></li>
+                    <li><a href="websites.php">Websites</a></li>                    
+                    <li class="has-submenu"><a href="">Tradeshow Services</a>
+                    	<ul class="left-submenu">
+                        	<li class="back"><a href="#">Back</a></li>
+                            <li><a href="event-registration.php">Event Registration</a></li>
+                            <li><a href="lead-retrieval.php">Lead Retrieval</a></li>
+                        </ul>
+                    </li>
+	            </ul>
+    			</li>
+                <li><a href="support.php">Support</a></li>
+                <li><a href="company.php">Company</a></li>
+                <li><a href="http://sagemember.com" target="_blank">Login</a></li>
+            </ul>                            
+         </aside>
+                
+               
+<!-- LARGE SCREEN TOP BAR MENU -->
+<div id="navbar-container">
+	<div class="row">
+  		<div class="large-12 columns">
+        	<!--Top Bar initialization-->
+    		<nav class="top-bar hide-for-medium-down" data-topbar>
+  				<ul class="title-area">
+    				<li class="name"></li>
+    				<li class="toggle-topbar"><a href="#"><span><i class="fi-list"></i></span></a></li>
+  				</ul><!--/end ul.title-area-->
+ 
+                <!-- TOP BAR MENU ELEMENTS -->
+                <section class="top-bar-section">
+                	<ul class="left">
+                    	<div class="spacer8"></div>
+                    	<a href="index.php"><img src="img/quick-technologies.png" alt="Quick Technologies Inc."></a>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="index.php">Home</a></li>
+                        <li class="has-dropdown">
+                            <a href="artwork-services.php">Products</a>
+                            <ul class="dropdown">
+                                <li><a id="first-dropdown" href="artwork-services.php">Artwork Services</a></li>
+                                <li><a href="custom-programming.php">Custom Programming</a></li>
+                                <li><a href="domain-registration.php">Domain Registration</a></li>
+                                <li><a href="payment-processing.php">Payment Processing</a></li>
+                                <li><a href="printing-services.php">Printing Services</a></li>
+                                <li><a href="sage.php">SAGE</a></li>
+                                <li><a href="web-hosting.php">Web Hosting</a></li>
+                                <li><a href="websites.php">Websites</a></li>                                
+                                <li class="has-dropdown">
+                                	<a href="event-registration.php">Tradeshow Services&nbsp;</a>
+                                	<ul class="dropdown">
+                                    	<li><div class="spacer8"></div><a href="event-registration.php">Event Registration</a></li>
+                                        <li><a href="lead-retrieval.php">Lead Retrieval</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="support.php">Support</a></li>
+                        <li><a href="company.php">Company</a></li>
+                        <li class="login">
+                        	<div class="ih-item square effect3 bottom_to_top"><a href="http://sagemember.com" target="_blank">
+                                <div class="s-info">
+                                  <p class="text">LOGIN</p>
+                                </div>
+                                <div class="img"><img src="img/login.png" alt="Login"></div>
+                                </a>
+                            </div>
+                       </li>
+                    </ul>
+                </section> <!-- END SECTION.TOP-BAR-SECTION -->
+            </nav> <!-- END NAV.TOP-BAR -->
+ 
+        </div> <!-- END 12 COLUMNS -->
+    </div> <!-- END ROW -->
+</div>
+							
+			<a class="exit-off-canvas" href="#"></a>
+            
+            
+            
+        
+          
+  <div class="home-slider">
+  	<ul class="bxslider">
+      <li>
+      	<div class="hide-for-small"><img src="img/slide1.jpg"/></div>
+        <div class="show-for-small-only"><img src="img/slide1-mobile.jpg"></div>
+        <section class="row">
+          <div class="large-8 medium-11 columns">
+              <h1 class="lg-title">Put Our Creative Geniuses<br>To Work For You</h1>
+              <p>ArtworkZone<sup>™</sup> is a comprehensive artwork services solution offering professional-quality design and storage services at ultra-competitive rates.  </p>
+              <a class="btn" href="artwork-services.php">Learn More &nbsp;></a>
+          </div>
+      </section>
+      </li>
+      <li>
+      	<div class="hide-for-small"><img src="img/slide2.jpg"/></div>
+        <div class="show-for-small-only"><img src="img/slide2-mobile.jpg"></div>
+        <section class="row">
+          <div class="large-10 medium-11 columns">
+              <h1 class="lg-title">Need A Sign Printed?<br>Or A Tradeshow Booth Created?</h1>
+              <p>Our exceptional printing department offers personal customer service to be sure your needs are met.</p>
+              <a class="btn" href="printing-services.php">Learn More &nbsp;></a>
+          </div>
+      </section>
+     </li>
+      <li>
+      	<div class="hide-for-small"><img src="img/slide3.jpg"/></div>
+        <div class="show-for-small-only"><img src="img/slide3-mobile.jpg"></div>
+        <section class="row">
+          <div class="large-8 medium-11 columns">
+              <h1 class="lg-title">Accept Payments<br>Anytime, Anywhere</h1>
+              <p>QTI Payment Processing<sup>™</sup> allows you to quickly process credit and debit cards from the convenience of any computer with web access.</p>
+              <a class="btn" href="payment-processing.php">Learn More &nbsp;></a>
+          </div>
+      </section>
+     </li>
+     <li>
+      	<div class="hide-for-small"><img src="img/slide4.jpg"/></div>
+        <div class="show-for-small-only"><img src="img/slide4-mobile.jpg"></div>
+        <section class="row">
+          <div class="large-8 medium-11 columns">
+              <h1 class="lg-title">Streamline Your Event Registration</h1>
+              <p>Our advanced online and onsite registration technology takes some of the grunt work out of planning your event and eliminates lines at registration.</p>
+              <a class="btn" href="event-registration.php">Learn More &nbsp;></a>
+          </div>
+      </section>
+     </li>
+    </ul>
+    <section class="row">
+    	<div class="bx-pager bx-default-pager"></div>
+    </section>
+  </div>
+    
+   <!--<div class="home-slider">
+	    <ul class="example-orbit" data-orbit>
+			<li>
+				<img src="img/slide1.jpg" alt="slide 1" />
+			    <div class="orbit-caption">
+                	<section class="row">
+	                	<div class="large-8 medium-9 columns">
+		      				<h1 class="lg-title">Put Our Creative Geniuses To Work For You</h1>
+    		                <p>ArtworkZone<sup>™</sup> is a comprehensive artwork services solution offering professional-quality design and storage services at ultra-competitive rates. </p>
+                            <a class="btn">Learn More &nbsp;></a>
+						</div>
+  					</section>
+                </div>
+            </li>
+			<li class="active">
+				<img src="img/slide1.jpg" alt="slide 2" />
+				<div class="orbit-caption">
+				    <section class="row">
+	                	<div class="large-8 medium-9 columns">
+		      				<h1 class="lg-title">Put Our Creative Geniuses To Work For You</h1>
+    		                <p>ArtworkZone<sup>™</sup> is a comprehensive artwork services solution offering professional-quality design and storage services at ultra-competitive rates. </p>
+                            <a class="btn">Learn More &nbsp;></a>
+						</div>
+  					</section>
+			    </div>
+  			</li>
+		</ul>
+    </div>-->
+     <div class="backtotop">
+	 <dd data-magellan-arrival="target"><a href="#target"><img src="img/scroll-top.png"></a></dd>
+</div>
+<footer>
+	<div class="container">
+    	<section class="row">
+        	<div class="spacer5"></div>
+        	<article class="large-3 medium-3 columns">
+            	<h5>CONTACT US</h5>
+                <hr>
+                <p>Quick Technologies Inc.<br>
+                16301 Quorum Drive Ste. 200A<br>
+                Addison, TX 75001<br>
+                Phone: 214.631.6000<br>
+                Fax: 214.631.2323</p>
+            </article>
+            <article class="large-5 medium-5 columns">
+            	<h5>ABOUT QUICK TECHNOLOGIES INC.</h5>
+                <hr>
+                <p>Quick Technologies, Inc. was founded in 1992 to provide state-of-the-art information and marketing services at affordable prices to a variety of industries. Since that time, we have remained committed to that goal and continue to grow and develop our products to fit the needs of our customers.</p>
+            </article>
+            <article class="large-4 medium-4 columns">
+            	<h5>&nbsp;</h5>
+                <hr>
+                <img src="img/footer-logo.png" alt="Quick Technologies Inc."><br>
+            </article>
+        </section>
+        <div class="spacer10"></div>
+        <section>
+        	<div id="footer-banner">
+            	<div class="spacer70"></div>
+            </div>
+        </section>
+        <section class="row">
+        <div class="spacer10"></div>
+            <div class="text-center">
+	            <small>Copyright &copy; 2015 Quick Technologies Inc. All Rights Reserved</small>
+    		</div>
+            <div class="spacer5 nopaddingB"></div>
+        </section>
+    </div>
+</footer>
+	</div>
+</div>
+<!--/off canvas-->    
+    <script src="js/foundation.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script>
+      $(document).foundation({
+		  orbit: {
+    		animation: 'vertical-slide'
+		  }
+	  });
+	  $("#footer-banner").backstretch("img/footer-bg.jpg");
+	  $('.bxslider').bxSlider({
+		  mode: 'vertical',
+		  slideMargin: 0,
+		  pause:10000,
+		  captions: true,
+		  adaptiveHeight: true,
+		  auto: true
+		});
+		$('a.left-off-canvas-toggle').on('click',function(){
+			//Don't need to put anything here
+		});
+    </script>
+  </body>
+</html>

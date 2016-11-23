@@ -1,0 +1,113 @@
+status: 200
+content-length: 2886
+content-location: http://www.iapc.net/
+accept-ranges: bytes
+server: Apache/1.3.12 (Unix) FrontPage/4.0.0.7 PHP/3.0.15
+last-modified: Mon, 14 Aug 2006 03:17:41 GMT
+etag: "182cc-b46-44dfeb55"
+x-pad: avoid browser bug
+date: Fri, 30 Sep 2016 03:07:31 GMT
+content-type: text/html
+
+<HTML><HEAD>
+<TITLE>Internet Access Point Corp. Houston</TITLE></HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+
+
+<!-- Baseline text scroller for Navigator
+
+/* Hide Script -->
+<!--
+*/
+
+function scroll_text(seed)
+{
+   var m1  = "Welcome to Internet Access Point";
+   var m2  = " . . . Houston's Quality Internet Connection.";
+   var msg=m1+m2;
+   var out = " ";
+   var c   = 1;
+
+   if (seed > 100) {
+      seed--;
+      var cmd="scroll_text(" + seed + ")";
+      timerTwo=window.setTimeout(cmd,100);
+
+/* Hide Script -->
+<!--
+*/
+
+   }
+   else if (seed <= 100 && seed > 0) {
+      for (c=0 ; c < seed ; c++) {
+         out+=" ";
+      }
+      out+=msg;
+      seed--;
+      var cmd="scroll_text(" + seed + ")";
+      window.status=out;
+      timerTwo=window.setTimeout(cmd,100);
+
+/* Hide Script -->
+<!--
+*/
+
+   }
+   else if (seed <= 0) {
+      if (-seed < msg.length) {
+         out+=msg.substring(-seed,msg.length);
+         seed--;
+         var cmd="scroll_text(" + seed + ")";
+         window.status=out;
+         timerTwo=window.setTimeout(cmd,100);
+      }
+      else {
+         window.status=" ";
+         timerTwo=window.setTimeout("scroll_text(100)",75);
+      }
+   }
+}
+// End of Script -->
+</SCRIPT>
+
+<!--#exec cgi="/cgi-bin/counter"-->
+
+<body bgcolor="#ffffff" vlink="#006633" onLoad="timerONE=window.setTimeout('scroll_text(100)',500);">
+<A HREF="iapc/iapcmain.map"><IMG ISMAP BORDER=0 SRC="iapc/images/iapctopmain.gif"></A> 
+
+<P>
+<P>
+<IMG SRC="iapc/images/spacer.gif" BORDER=0 ALIGN=LEFT WIDTH=44><BLOCKQUOTE>
+<font size=+1>
+  
+This website is the home of Houston's Quality Internet Connection. <p>We appreciate your stopping by to see us and encourage you to create a bookmark here.<p>
+
+<A HREF="http://home.netscape.com/comprod/mirror/index.html"><IMG SRC="iapc/images/now8.gif" ALIGN=RIGHT BORDER=1></A>
+Also, these pages have been designed to be, and look best when, viewed by
+<A HREF="http://www.netscape.com">Netscape</A>.  If you are
+viewing this page with some other browser you can download it <A HREF="http://home.netscape.com/comprod/mirror">here</A>.
+<P>
+
+<A HREF="iapc/guest-book.html"><IMG SRC="iapc/images/orangeguestbook.gif" BORDER=0 HSPACE=20 ALIGN=LEFT></A>
+If you are a visitor, please take a moment to sign our <A HREF="iapc/guest-book.html">guestbook</A>. As we grow, we would like to keep you up to date with everything that is happening here.
+<BR CLEAR=ALL>
+</font>
+</BLOCKQUOTE></BLOCKQUOTE>
+<HR>
+<P>
+<center>
+<A HREF="iapc/menubar.map"><IMG ISMAP BORDER=0 SRC="iapc/images/menubar.gif"></A><p>
+	<a href="iapc/management.html">Management</a> |
+	<a href="iapc/directory.html">Directory</a> |
+	<a href="iapc/download.html">Downloads</a> |
+	<a href="iapc/explore.html">Search Engines</a>
+</center>
+<P>
+<HR>
+<P>
+<Center>
+<H7>COPYRIGHT &COPY 1995 INTERNET ACCESS POINT CORPORATION<br>
+HOUSTON, TEXAS USA  (281) 242-1001 ALL RIGHTS RESERVED.
+</center>
+</BODY> 
+</HTML>

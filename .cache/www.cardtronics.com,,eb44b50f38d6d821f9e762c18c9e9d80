@@ -1,0 +1,2416 @@
+status: 200
+content-length: 51211
+content-location: http://www.cardtronics.com
+x-powered-by: ASP.NET
+set-cookie: ASPSESSIONIDAQDTAATC=JMPHKDPCFIBOAGPANKGIGNEK; path=/
+vary: Accept-Encoding
+server: Microsoft-IIS/7.5
+-content-encoding: gzip
+cache-control: private
+date: Fri, 30 Sep 2016 04:17:52 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<!--[if IE 8 ]> 
+<html lang="en" class="ie8"> 
+<![endif]-->
+<!--[if (gt IE 8)]>
+<!--> 
+<html lang="en"> 
+<!--<![endif]-->
+ 
+	<head>
+
+		<title>ATM | Cardtronics - Worldwide ATM & Financial Kiosk Services for Financial Institutions and Merchants</title>
+
+		<meta charset="utf-8">
+		
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		
+		<meta name="google-site-verification" content="-7G6x10CtUYbOV8B8pw0ElWq8yw-pGPZhAymfWP6R18" />
+
+		<meta NAME="DESCRIPTION" content="Cardtronics, the world's largest non-bank ATM operator, is a leading provider of fully integrated ATM and financial kiosk products and services. Cardtronics places ATMs with merchants of all sizes throughout the United States, the United Kingdom and Mexico. Cardtronics’ financial customers, including many of the largest banks and credit unions, leverage Cardtronics’ surcharge-free ATM branding and Allpoint surcharge-free network offerings to better serve their customers. Cardtronics provides ATM processing, ATM cash management, ATM sales, turnkey ATM programs, merchant-owned ATM programs and ATM managed services, working with ATMs from all major manufactures – NCR, Diebold, Triton, Nautilus Hyosung and others.">
+		
+		<meta NAME="KEYWORDS" content="Cardtronics, Cardtronicsatm, ATM, automated teller machine, ATM cards, debit cards, Cash machine, Money machine, Bank machine, ATM provider, ATM repair, ATM service, Diebold provider, Triton provider, NCR provider, Cross provider, Tidel provider, Tidel,">
+
+		<meta NAME="ROBOTS" CONTENT="all">
+		
+		<meta NAME="REVISIT-AFTER" CONTENT="7 days">
+	
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		
+		<meta content="yes" name="apple-mobile-web-app-capable">
+	
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="javascripts/PIE.js"></script>
+		<![endif]-->
+	
+		<link href="favicon.ico" rel="shortcut icon">  
+    
+ 		
+  <link href="/_css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/_css/responsive.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/_css/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+  <!--<link href="/_css/font-awesome-all.css" media="screen" rel="stylesheet" type="text/css" />-->
+  <link href="/_css/fancybox.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/_css/theme.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/_css/fonts.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/_css/cardtronics.css" media="screen" rel="stylesheet" type="text/css" />
+	
+		
+  
+		<style>
+
+			body {
+				margin:0px;
+				padding:0px;
+			}
+				
+  		</style>
+	
+		<!--[if lte IE 8 ]> 
+		
+			<style>
+			#carousel .slides .flex-caption-div {
+				background-color:#000;
+			}
+			</style>
+		<![endif]-->
+	
+		<script>
+		
+			function round2(strStockPrice) {
+				var roundPrice;
+			
+				roundPrice = Math.round(strStockPrice * 100) / 100;
+			
+				return roundPrice;
+			}
+		
+			function getFirstGroup(strParse, strParseBy) {
+				var mySplit = strParse.split(strParseBy);
+			
+				return mySplit;
+			}
+
+			function convertHours(strHour) {
+			
+				if (strHour == 0){
+					strHour = 12;
+				} else {
+					if (strHour > 12) {
+						strHour = strHour - 12;
+						
+					}
+				}
+			
+				return strHour
+			}
+		
+			function getAmPm(strHour) {
+				if (strHour < 12) {
+					return ' AM';	
+				} else {
+					return ' PM';
+				}			
+			}
+		
+			function zeroNeeded(strMinute) {
+				if (strMinute < 10) {
+					return '0' + strMinute;	
+				} else {
+					return strMinute;	
+				}
+			}
+		
+			function currMonth(strMonth) {
+				var setCurrMonth = ""; 
+			
+				switch(strMonth) {
+					case 0:
+					setCurrMonth = "Jan";
+					break;
+				
+					case 1:
+					setCurrMonth = "Feb";
+					break;
+				
+					case 2:
+					setCurrMonth = "Mar";
+					break;
+				
+					case 3:
+					setCurrMonth = "Apr";
+					break;
+				
+					case 4:
+					setCurrMonth = "May";
+					break;
+				
+					case 5:
+					setCurrMonth = "June";
+					break;
+				
+					case 6:
+					setCurrMonth = "July";
+					break;
+				
+					case 7:
+					setCurrMonth = "Aug";
+					break;
+				
+					case 8:
+					setCurrMonth = "Sep";
+					break;
+				
+					case 9:
+					setCurrMonth = "Oct";
+					break;
+				
+					case 10:
+					setCurrMonth = "Nov";
+					break;
+							
+					case 11:
+					setCurrMonth = "Dec";
+				
+				}
+			
+				return setCurrMonth;
+			}
+				
+		</script>
+
+			<script src="//assets.adobedtm.com/c876840ac68fc41c08a580a3fb1869c51ca83380/satelliteLib-d709e6dfa3351fed56306e71bdae4e4b2350cfc2.js"></script>
+	
+	<script src="/_js/eloqua.js" type="text/javascript"></script>
+	
+	<script>
+		
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-2123306-2', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+	
+
+	</head>
+
+	<body class="fullwidth" >
+
+		<div class="wrapper">
+  
+			<header id="masthead">
+	
+	<nav class="navbar navbar-static-top">
+	
+		<div id="topNav" class="hidden-phone">
+			
+			<div class="container">
+				
+				<div class="row-fluid">
+					
+					<div class="pull-left" style="margin-left:2em;" >
+					
+						<i class="icon-phone"></i> 
+						
+						Customer Care: (800) 786-9666
+					
+					</div>
+					
+					SERVICES FOR: 
+					
+					<a href="/financial/">
+					
+						Financial Institutions
+					
+					</a> 
+					
+					<a href="/large_merchants/default.asp">
+					
+						Large Merchants
+					
+					</a> 
+					
+					<a href="/small_merchants/default.asp">
+					
+						Small Merchants
+					
+					</a> 
+					
+					<a href="/distributors/default.asp">
+					
+						Distributors
+					
+					</a>
+					
+					<a href="/consumers/default.asp">
+					
+						Consumers
+					
+					</a> 
+					
+					<a href="http://ir.cardtronics.com/">
+					
+						Investors
+					
+					</a> 
+					
+					<span style="padding-right:1em;" class="hidden-tablet ">&nbsp;</span> 
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		
+		<div class="navbar-inner">
+
+			<div class="container"> 
+
+				<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"> 
+					
+					<span class="icon-bar"></span> 
+					
+					<span class="icon-bar"></span> 
+					
+					<span class="icon-bar"></span> 
+				
+				</a> 
+				
+				<a href="/" class="brand" style="margin:0px; padding:0px;">
+				
+					<img src="/_images/catmLogo.png" alt="Cardtronics">
+				
+				</a>
+				
+				<div class="nav-collapse collapse">
+
+					<ul class="nav pull-left">
+
+						
+						<li class="dropdown border-left visible-phone"> 
+							
+							<a href="/about/atm-locator.asp">
+								
+								<ul class="icons-ul navLineHeight">
+									
+									<li style="margin-left:-.6em;" class="line-height-sm">
+										
+										<i class="icon-li icon-map-marker"></i> 
+										
+										ATM Locator
+									
+									</li>
+								
+								</ul>
+							
+							</a>
+						
+						</li>
+					
+						
+						<li class="dropdown border-left"> 
+							
+							<a class="dropdown-toggle line-height-sm" href="/about/default.asp">
+							
+								About Cardtronics 
+							
+							</a>
+							
+							<ul class="dropdown-menu">
+								
+								<li>
+									
+									<div id="navAbout" class="ctSubNavSec">
+										
+										<div class="span2" style="margin:0; padding:0; width:150px;">
+											
+											<h4>
+											
+												About Cardtronics
+											
+											</h4>
+											
+											<ul class="unstyled">
+												
+												<li>
+												
+													<a href="/about/">
+												
+														Cardtronics Overview
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/about/allpoint.asp">
+												
+														Allpoint Network
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/about/atmnetwork.asp">
+												
+														ATM Network
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/about/idesign.asp">
+												
+														i-design
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/about/atm-locator.asp">
+												
+														ATM Locator
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/about/top-customers.asp">
+												
+														Top Customers
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/contact/">
+												
+														Contact Us
+												
+													</a>
+												
+												</li>
+
+												<li>
+												
+													<a href="/blog/">
+												
+														Cardtronics Blog
+												
+													</a>
+												
+												</li>
+											
+											</ul>
+										
+										</div>										
+																				
+										<div class="span2" style="margin:0; padding:0; width:150px;">
+											
+											<h4>
+											
+												International
+											
+											</h4>
+											
+											<ul  class="unstyled">
+												
+												<li>
+												
+													<a href="/about/international.asp">
+												
+														International Overview
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/about/canada.asp">
+												
+														Cardtronics Canada
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/about/mexico.asp">
+												
+														Cardtronics Mexico
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/about/europe.asp">
+												
+														Cardtronics Europe
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/about/poland.asp">
+												
+														Cardtronics Poland
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/about/puerto-rico.asp">
+												
+														Cardtronics Puerto Rico
+												
+													</a>
+												
+												</li>												
+											
+											</ul>
+										
+										</div>
+										
+										<div class="span2" style="margin:0; padding:0; width:150px;">
+											
+											<h4>
+											
+												Investor Relations
+											
+											</h4>
+											
+											<ul class="unstyled">
+												
+												<li>
+												
+													<a href="http://ir.cardtronics.com/">
+												
+														Investors Overview
+												
+													</a>
+
+												</li>
+												
+												<li>
+												
+													<a href="http://ir.cardtronics.com/newsroom.cfm">
+												
+														News
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="http://ir.cardtronics.com/management.cfm">
+												
+														Management
+												
+													</a>
+												
+												</li>
+											
+											</ul>
+										
+										</div>
+										
+										<div class="span2" style="margin:0; padding:0; width:150px;">
+											
+											<h4>
+											
+												Careers
+											
+											</h4>
+											
+											<ul class="unstyled">
+											
+												<li>
+												
+													<a href="/careers/">
+												
+														Careers Overview
+												
+													</a>
+												
+												</li>
+											
+											</ul>
+										
+										</div>
+									
+									</div>
+
+								</li>
+							
+							</ul>
+						
+						</li>
+						
+						
+						<li class="dropdown border-left"> 
+							
+							<a class="dropdown-toggle line-height-sm" href="/prodsvcs/default.asp">
+							
+								Products & Services
+							
+							</a>
+							
+							<ul class="dropdown-menu">
+								
+								<li>
+									
+									<div id="navProdSvcs" class="ctSubNavSec">
+										
+										<div class="span2" style="margin-left:0;" >
+											
+											<h4>
+											
+												Financial Services
+											
+											</h4>
+											
+											<ul class="unstyled">
+																								
+												<li>
+			
+													<a href="/financial/default.asp">
+												
+														Bank &amp; Credit Union Services			
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/financial/financial-atm-as-a-service.asp">
+												
+														ATM-as-a-Service 
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/financial/financial-atm-branding-program.asp">
+												
+														ATM Branding
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/financial/financial-surcharge-free.asp">
+												
+														Allpoint Network
+												
+													</a>
+															
+												</li>
+												
+												<li>
+												
+													<a href="/financial/locatorsearch.asp">
+												
+														Location Services
+												
+													</a>
+												
+												</li>
+												
+												
+												<li>
+												
+													<a href="/financial/financial-why-cardtronics.asp">
+												
+														Why Cardtronics
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/financial/financial-top-customers.asp">
+												
+														Top Customers
+												
+													</a>
+												
+												</li>
+			
+											</ul>
+										
+										</div>
+										
+										<div class="span2">
+
+											<h4>
+											
+												Large Merchant Services
+											
+											</h4>
+
+											<ul class="unstyled">
+												
+												<li>
+												
+													<a href="/large_merchants/default.asp">
+												
+														Large Merchants Services
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/large_merchants/large-merchants-why-cardtronics.asp">
+												
+														Why Cardtronics?
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/large_merchants/large-merchants-atm-management-processing.asp">
+												
+														ATM Management &amp; Processing
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/large_merchants/large-merchants-turnkey.asp">
+												
+														Turnkey ATM Programs
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/large_merchants/large-merchants-traffic.asp">
+												
+														Traffic-Generating Programs												
+												
+													</a>
+												
+												</li>
+											
+											</ul>
+										
+										</div>
+										
+										<div class="span2" >
+											
+											<h4>
+											
+												Small Merchant Services
+											
+											</h4>
+											
+											<ul class="unstyled">
+												
+												<li>
+												
+													<a href="/small_merchants/default.asp">
+												
+														Small Merchants Services
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/small_merchants/small-merchants-traffic.asp">
+												
+														Traffic-Generating Programs
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/small_merchants/small-merchants-top-customers.asp">
+												
+														Top Customers
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="http://www.atmnetwork.com" target="_blank">
+												
+														Buy ATMs @ ATM Network
+												
+													</a>
+												
+												</li>
+											
+											</ul>
+										
+										</div>
+										
+										<div class="span2" >
+											
+											<h4>
+											
+												Distributors
+											
+											</h4>
+											
+											<ul class="unstyled">
+												
+												<li>
+												
+													<a href="/distributors/">
+												
+														Distributor Services
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/distributors/distributors-why-cardtronics.asp">
+												
+														Why Cardtronics
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/distributors/distributors-allpoint.asp">
+												
+														Allpoint for Distributors
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/distributors/distributors-processing.asp">
+												
+														EFT Processing
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/distributors/distributors-tools.asp">
+												
+														Online Tools
+												
+													</a>
+												
+												</li>
+												
+												<li>
+												
+													<a href="/distributors/distributors-support.asp">
+												
+														Distributor Support
+												
+													</a>
+												
+												</li>
+											
+											</ul>
+										
+										</div>
+									
+									</div>
+								
+								</li>
+							
+							</ul>
+						
+						</li>
+						
+						
+						<li class="dropdown border-left"> 
+							
+							<a class="dropdown-toggle line-height-sm" href="/customer_care/">
+								
+								Customer Care
+							
+							</a>
+							
+							<ul class="dropdown-menu">
+								
+								<li>
+									
+									<div id="navCustomerCare" class="ctSubNavSec">
+										
+										<h4>
+										
+											Customer Care
+										
+										</h4>
+										
+										<ul class="unstyled">
+											
+											<li>
+											
+												<a href="/customer_care/default.asp">
+											
+													Customer Care Overview
+											
+												</a>
+											
+											</li>
+											
+											<li>
+											
+												<a href="/customer_care/merchant-compliance-procedures.asp">
+											
+													Merchant Compliance
+											
+												</a>
+											
+											</li>
+											
+											<li>
+											
+												<a href="/customer_care/online-merchant-reporting.asp">
+											
+													Online Merchant Reporting
+											
+												</a>
+											
+											</li>
+										
+										</ul>
+									
+									</div>
+								
+								</li>
+							
+							</ul>
+						
+						</li>					
+						
+										
+						<li class="dropdown border-left visible-phone"> 
+				
+							<a class="dropdown-toggle line-height-sm" href="http://ir.cardtronics.com/">
+				
+								Investor Relations
+				
+							</a>
+						
+						</li>						
+						
+						
+						<li class="dropdown  border-left"> 
+
+							<a class="dropdown-toggle line-height-sm" href="/about/international.asp">
+								
+								<ul class="icons-ul">
+									
+									<li style="margin-left:-.6em;" class="line-height-sm">
+										
+										<i class="icon-li icon-globe"></i>  
+									
+										Global Sites
+									
+									</li>
+								
+								</ul>
+								
+							</a>
+							
+							<ul class="dropdown-menu">
+								
+								<li>
+									
+									<div id="navGlobalSites" class="ctSubNavSec">
+										
+										<h4>
+										
+											International
+										
+										</h4>
+										
+										<ul class="unstyled">
+											
+											<li>
+											
+												<a href="http://www.cardtronics.com/ca/en/default.asp" target="_blank">
+											
+													Cardtronics Canada
+											
+												</a>
+											
+											</li>
+											
+											<li>
+											
+												<a href="http://www.cardtronics.com/mx/en/default.asp" target="_blank">
+											
+													Cardtronics Mexico
+											
+												</a>
+											
+											</li>
+											
+											<li>
+											
+												<a href="http://www.cardtronics.com/pr/en/default.asp" target="_blank">
+											
+													Cardtronics Puerto Rico
+											
+												</a>
+											
+											</li>
+										
+										</ul>
+										
+										<hr style="border:.1em solid #eee; margin-right:.5em; margin-top:.2em; margin-bottom:.2em;" />
+																													
+										<ul class="unstyled">
+											
+											<li>
+											
+												<a href="/about/europe.asp">
+											
+													Cardtronics Europe
+											
+												</a>
+											
+											</li>
+											
+											<li>
+											
+												<a href="/about/united-kingdom.asp">
+											
+													Cardtronics United Kingdom
+											
+												</a>
+											
+											</li>
+											
+											<li>
+											
+												<a href="/about/germany.asp">
+											
+													Cardtronics Germany
+											
+												</a>
+											
+											</li>
+
+											<li>
+											
+												<a href="/about/poland.asp">
+											
+													Cardtronics Poland
+											
+												</a>
+											
+											</li>
+										
+										</ul>
+									
+									</div>
+								
+								</li>
+							
+							</ul>
+						
+						</li>
+						
+						
+						<li class="dropdown border-left"> 
+							
+							<a class="dropdown-toggle line-height-sm" href="/blog/">
+								
+								Cardtronics Blog
+							
+							</a>					
+						
+						</li>
+						
+						
+						<li class="dropdown border-left hidden-phone"> 
+							
+							<a href="/about/atm-locator.asp">
+								
+								<ul class="icons-ul navLineHeight">
+									
+									<li style="margin-left:-.6em;" class="line-height-sm">
+										
+										<i class="icon-li icon-map-marker"></i> 
+										
+										ATM Locator
+									
+									</li>
+								
+								</ul>
+							
+							</a>
+						
+						</li>
+					
+					</ul>
+					
+					<ul class="nav pull-right">
+						
+						<li class="dropdown border-left border-right">
+							
+							<a id="navContact" href="/contact/default.asp">
+								
+								Contact 
+								
+								<i class="icon-play"></i>
+							
+							</a>
+						
+						</li>
+					
+					</ul>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</nav>
+
+</header>
+
+			<div id="content" role="main">
+	
+				<section id="carousel" class="section section-alt hidden-phone">
+	
+	<div  id="mainCarousel">
+	
+		<div class="flexslider" data-flex-animation="slide" data-flex-controlsalign="center" data-flex-controlsposition="inside" data-flex-directions="show" data-flex-speed="15000" id="intro">
+		
+			<ul class="slides">
+			
+				<!-- <li>
+				
+					<div class="super-hero-unit carouselImg0" >
+			
+						<figure>							
+			
+							<!-- <figcaption class="flex-caption">
+
+									<div class="flex-caption-div">
+			
+										<div>
+			
+											<h1>
+											
+												Connecting Financial Institutions, 
+												Merchants and their customers.
+
+											</h1>
+			
+											<br />
+			
+											<a href="/about/" class="btn btn-large btn-danger">
+											
+												Learn More >
+
+											</a>
+			
+										</div>
+			
+									</div>
+
+			
+							</figcaption> ->
+			
+						</figure>
+			
+					</div>
+			
+				
+				</li> -->
+		
+				<li>
+                                
+                	<div class="super-hero-unit carouselImg8">
+			
+						<figure>
+			
+							<figcaption class="flex-caption">
+			
+								<div class="flex-caption-div flex-caption-div-right">
+			
+									<h1>
+									
+										The ATM Business is NOT Your Core Business…It’s Ours
+
+									</h1>
+			
+									<br />
+			
+									<a href="/financial/financial-atm-as-a-service.asp" class="btn btn-large btn-danger">
+									
+										Learn More About ATMaaS >
+
+									</a>
+
+								</div>
+			
+							</figcaption>
+			
+						</figure>
+			
+					</div>
+                                    
+				</li>
+				
+				<li>
+				
+					<div class="super-hero-unit carouselImg1" >
+			
+						<figure>							
+			
+							<figcaption class="flex-caption">
+									<!-- Previous Code - Marked out for testing
+									<div class="flex-caption-div">
+                                    -->
+			<div class="flex-caption-div flex-caption-div-right">
+										<div>
+			
+											<h1>
+											
+												Connecting Financial Institutions, 
+												Merchants and their customers.
+
+											</h1>
+			
+											<br />
+			
+											<a href="/about/" class="btn btn-large btn-danger">
+											
+												Learn More >
+
+											</a>
+			
+										</div>
+			
+									</div>
+
+			
+							</figcaption>
+			
+						</figure>
+			
+					</div>
+			
+				</li>
+								
+				<li>
+		
+					<div class="super-hero-unit carouselImg2">
+		
+						<figure>
+		
+							<figcaption class="flex-caption">		
+		
+								<div class="flex-caption-div flex-caption-div-right">
+		
+									<h1>
+									
+										Extending your ATM footprint, 
+										where your customers travel.
+
+									</h1>
+		
+									<br />
+		
+									<a href="/financial/" class="btn btn-large btn-danger">
+									
+										Learn More >
+
+									</a>
+
+								</div>
+		
+							</figcaption>
+		
+						</figure>
+		
+					</div>
+		
+				</li>
+				
+				<li>
+
+					<div class="super-hero-unit carouselImg3 " >
+		
+						<figure>							
+		
+							<figcaption class="flex-caption">
+
+									<div class="flex-caption-div flex-caption-div-right">
+							
+										<div>
+							
+											<h1>
+											
+												Comprehensive ATM and financial 
+												kiosk management across the 
+												largest portfolios.
+
+											</h1>
+							
+											<br />
+							
+											<a href="/large_merchants/" class="btn btn-large btn-danger">
+											
+												Learn More >
+
+											</a>
+							
+										</div>
+							
+									</div>
+
+							</figcaption>
+		
+						</figure>
+		
+					</div>
+				
+				</li>
+				
+				<li>
+                                
+                	<div class="super-hero-unit carouselImg4">
+			
+						<figure>
+			
+							<figcaption class="flex-caption">
+			
+								<div class="flex-caption-div flex-caption-div-right">
+			
+									<h1>
+									
+										Expanding ATM services for 
+										your customers, increasing 
+										traffic for your store.
+
+									</h1>
+			
+									<br />
+			
+									<a href="/small_merchants/" class="btn btn-large btn-danger">
+									
+										Learn More >
+
+									</a>
+
+								</div>
+			
+							</figcaption>
+			
+						</figure>
+			
+					</div>
+                                    
+				</li>
+				
+			</ul>
+
+		</div>
+
+	</div>
+
+</section>
+				<section class="section">
+
+					<div class="container-fluid">
+
+						<div class="row-fluid">
+
+							<ul id="columns" class="unstyled row-fluid">
+				
+								<li class="span3 column">
+									
+									<a href="/financial/" class="color-catm-red">
+									
+										<img alt="some image" src="_images/home/callouts/fi.jpg">
+									
+									</a>
+									
+									<h3>
+									
+										Financial Institutions
+									
+									</h3>
+									
+									<p>
+										
+										<ul class="icons-ul margin-left">
+											
+											<li style="line-height:12pt;">
+												
+												<i class="icon-li icon-play icon-small color-catm-red font-small"></i>
+												
+												<a href="/financial/" class="color-catm-red"> 
+												
+													ATM services for banks and credit unions.
+												
+												</a>
+											
+											</li>
+										
+										</ul>
+									
+									</p>
+								
+								</li>
+				  
+								<li class="span3 column">
+								
+									<a href="/large_merchants/" class="color-catm-red" > 
+									
+										<img alt="some image" src="_images/home/callouts/largeMerch.jpg">
+									
+									</a>
+								
+									<h3>
+									
+										Large Merchants
+									
+									</h3>
+
+									<p>
+										<ul class="icons-ul margin-left">
+											
+											<li style="line-height:12pt;">
+											
+												<i class="icon-li icon-play icon-small color-catm-red font-small"></i>
+											
+												<a href="/large_merchants/" class="color-catm-red"> 
+												
+													Turnkey ATM placement and management programs.
+												
+												</a>
+					 						
+											</li>
+										
+										</ul>
+									
+									</p>
+								
+								</li>
+				  
+								<li class="span3 column">
+							
+									<a href="/small_merchants/" class="color-catm-red">
+							
+										<img alt="some image" src="_images/home/callouts/smMedMerch.jpg">
+							
+									</a>
+							
+									<h3>
+									
+										Small Merchants
+									
+									</h3>
+								
+									<p>
+
+										<ul class="icons-ul margin-left">
+										
+											<li style="line-height:12pt;">
+										
+												<i class="icon-li icon-play icon-small color-catm-red font-small"></i>
+										
+												<a href="/small_merchants/" class="color-catm-red"> 
+											
+													BUY ATMs NOW!
+											
+												</a>
+										
+											</li>
+									
+										</ul>
+								
+									</p>
+					  
+								</li>
+				  
+								<li class="span3 column">
+				  	
+								<a href="/about/international.asp">
+							
+									<img alt="some image" src="_images/home/callouts/buy-atm-callout3.jpg">
+							
+								</a>
+					
+								<h3 class="color-catm-red">
+							
+									International
+							
+								</h3>
+					  
+									<p>
+				  		
+										<ul class="icons-ul margin-left">
+							
+											<li style="line-height:12pt;">
+								
+												<i class="icon-li icon-play icon-small color-catm-red font-small"></i>
+								
+												<a href="/about/international.asp"> 
+										
+													Find out more about our international growth.
+										
+												</a>
+							
+											</li>
+					  	
+										</ul>
+						
+									</p>
+					  
+								</li>
+				  
+							</ul>
+			
+						</div>
+			
+					</div>
+			
+				</section>
+					 
+					
+				<section class="section section-alt hidden-phone">
+			
+					<div class="container-fluid">
+				
+						<div class="row-fluid">
+					
+							<div id="home_BuyTheNumbers" class="span6">
+						
+								<div class="flexslider" data-flex-directions="hide" data-flex-speed="10000" id="work">
+							
+									<h2>
+								
+										<small class="light">
+										
+											BY THE NUMBERS
+										
+										</small>
+							
+									</h2>
+
+									<ul class="slides">
+
+										<li>
+																	
+											<img src="/_images/home/byNumbers/Slide_1.png" alt="1.65 Billion Total Cardtronics Transcations (2015), +46% vs 2015">
+								
+										</li>
+
+										<li>
+
+											<img src="/_images/home/byNumbers/Slide_2.png" alt="Cardtronics dispensed almost $100 Billion cash in 2015">
+
+										</li>
+
+										<!--<li>
+
+											<img alt="some image" src="/_images/home/byNumbers/Slide_4.png" alt="">
+
+										</li>-->
+
+										<li>
+
+											<img src="/_images/home/byNumbers/Slide_5.png" alt="8 of 10 Top US Retailers with Retail ATM Programs. Over 2,300 Financial Institution Relationships">
+
+										</li>
+
+										<li>
+
+											<img src="/_images/home/byNumbers/Slide_6.png" alt="#1 Non-bank deployer of ATMS in the world">
+
+										</li>
+
+									</ul>
+
+								</div>
+
+							</div>
+				
+							<!--<div id="home_StockTick" class="span3" style="padding:0; margin:0;">
+
+								<h2 style="padding:0;margin:0;">
+
+									<small class="light">
+									
+										STOCK QUOTE
+									
+									</small>
+
+								</h2>							
+
+								<script type="text/javascript" src="http://apps.shareholder.com/irxml/irxml.aspx?COMPANYID=CATM&PIN=881960920&FUNCTION=StockQuote&OUTPUT=js2&TICKER=CATM"></script>
+
+								<script src="http://apps.shareholder.com/irxml/js/irxml.functions.js" type="text/javascript"></script>
+
+								<script type="text/javascript">
+									var stockTicker = '';
+									var stockLastPrice = '';
+									var stockChange = '';
+									var stockPctChange = '';
+									var stockLastDate = '';
+									var stockChangeStyle = '';
+									var stockUpPlus = '';
+									var stockShowDate = '';
+							
+									if (typeof irxmlstockquote != 'undefined' && irxmlstockquote.length > 0) {
+
+										for (var i = 0; i < irxmlstockquote.length; i++) {
+									
+											var downloadUrl = '&nbsp;', stockquote = irxmlstockquote[i];
+									
+											if (eval(i) <= eval(2)) {
+																		
+												stockDate = stockquote.lastdatetime
+																				
+												stockTicker = stockquote.ticker;
+										
+												stockLastPrice = round2(stockquote.lastprice);
+										
+												stockChange = stockquote.change;
+										
+												stockPctChange = stockquote.pchange;
+										
+												stockChangeStyle = new String (stockChange)
+										
+												//document.write(stockChangeStyle.charAt(0));
+										
+												if (stockChangeStyle.charAt(0) == '-') {
+													stockChangeStyle = 'color-catm-red';
+													stockUpPlus = ''
+												} else if(stockChangeStyle.charAt(0) == '+') {
+													stockChangeStyle = 'color-catm-green';
+													stockUpPlus = '+ '
+												} else {
+													stockChangeStyle = 'color-catm-gray';
+													stockUpPlus = ''	
+												}
+										
+												//stockShowDate = stockDate.toDateString() + ' at ';
+												stockShowDate = currMonth(stockDate.getMonth()) + ' ' + stockDate.getDate() + ', ' + stockDate.getFullYear() + ' at ';
+												stockShowDate = stockShowDate + convertHours(stockDate.getHours()) + ':';
+												stockShowDate = stockShowDate + zeroNeeded(stockDate.getMinutes()) 
+												stockShowDate = stockShowDate + getAmPm(stockDate.getHours()) + ' ET';
+										
+										
+												//Convert central hour to eastern hour
+										
+																				
+												//alert( + ' - ' + stockDate.getHours() + ':' + stockDate.getMinutes() );
+										
+												//document.write(stockChangeStyle);
+										
+												document.write('<div class="home-stock-price">');
+			
+												document.write('<div class="color-catm-black font-small-med ">NASDAQ: <strong>' + stockTicker + '</strong></div>');
+											
+												document.write('<div class="color-catm-black font-small-med "><h3 style="margin:0;padding:0; clear;none;">$'  + stockLastPrice +  ' </h3><h3 class="' + stockChangeStyle +'" style="margin:0;padding:0; clear:none;">' + stockUpPlus + stockChange + ' (' + stockPctChange + '%) </h3></div>');
+											
+												document.write('<div class="color-catm-black font-small-med " style="width:150px; margin-top:1em;"><div style="font-size:7pt; color:#999;">Stock quote from:</div>  ' + stockShowDate + '</div>');
+														
+												document.write('</div>');
+											}
+										}
+								
+								
+									} else {
+										document.write('Recent news releases are not available at this time.');
+									}
+								</script>
+
+								<div>
+
+									<i class="icon-li icon-play icon-small color-catm-red font-small"></i>
+
+									<a href="http://ir.cardtronics.com/newsroom.cfm">
+									
+										More investor information
+
+									</a>
+
+								</div>	
+													
+							</div>-->
+					
+							<div id="home_NewsRoom" class="span6" style="padding:0 0 1em 0; margin:0;">
+
+								<h2 style="padding:0;margin:0;">
+
+									<small class="light">
+									
+										FROM THE NEWSROOM
+									
+									</small>
+
+								</h2>
+						
+								<script type="text/javascript" src="http://apps.shareholder.com/irxml/irxml.aspx?COMPANYID=CATM&amp;PIN=dcd3b5d63c6a0019d9aa3f86e2d9cbd1&amp;FUNCTION=NewsReleases&amp;OUTPUT=js2&amp;NUMBERPERPAGE=4&amp;RELEASETYPE=General+Releases"></script>
+
+								<script src="http://apps.shareholder.com/irxml/js/irxml.functions.js" type="text/javascript"></script>
+
+								<script type="text/javascript">
+									if (typeof irxmlnewsreleases != 'undefined' && irxmlnewsreleases.length > 0)
+									{
+										for (var i = 0; i < irxmlnewsreleases.length; i++)
+										{
+											var downloadUrl = '&nbsp;', newsrelease = irxmlnewsreleases[i];
+											if (eval(i) <= eval(2))
+											{
+												if (newsrelease.attachmentfileid) 
+												{
+													document.write('<div class="home-news-room">');
+			
+														document.write('<div class="color-catm-red font-small-med font-small-med-lineHeight" style="margin-top:5px;" >' + irxmlfunctions.formatDate(newsrelease.releasedate, 'M/dd/yyyy') + '</div>' + ' <a target="_blank" class="color-catm-black font-small-med font-small-med-lineHeight" style="line-height:1pt;" href="http://ir.cardtronics.com/releasedetail.cfm?ReleaseID=' + newsrelease.releaseid + '">' + newsrelease.title + '</a>');
+					;
+													//document.write('<font color=#cc0000>' + irxmlfunctions.formatDate(newsrelease.releasedate, 'M/dd/yyyy') + '</font><br>' + ' <a target="_blank" class="newslinkright" href="http://ir.cardtronics.com/releasedetail.cfm?ReleaseID=' + newsrelease.releaseid + '">' + newsrelease.title + '</a>' + ' <br><br>');
+													document.write('</div>');
+												}
+											}
+										}
+									}
+									else 
+									{
+										document.write('Recent news releases are not available at this time.');
+									}
+								</script>
+						
+								<div>
+
+									<i class="icon-li icon-play icon-small color-catm-red font-small"></i>
+
+									<a href="http://ir.cardtronics.com/newsroom.cfm">
+									
+										All News Releases
+									
+									</a>
+
+								</div>
+
+								<div class="margin-top">
+
+									<i class="icon-li icon-play icon-small color-catm-red font-small"></i>
+
+									<a href="http://ir.cardtronics.com/newsroom.cfm">
+									
+										More investor information
+
+									</a>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>     
+	      
+  				
+
+				<section class="section  hidden-phone">
+
+					<div class="container-fluid">
+
+						<div id="home_TopCustomers-heading" class="section-header no-margin">
+
+							<h2 class="no-margin line-height-xsm padding-top-sm"  >
+
+								<small class="light">
+							
+									TOP CUSTOMERS
+							
+								</small>
+
+							</h2>
+
+						</div>
+
+						<div id="home_TopCustomers-slides" class="flexslider fadein-links" data-flex-animation="slide" data-flex-controls="hide" data-flex-directions-position="outside" data-flex-directions-type="fancy" data-flex-itemwidth="230" data-flex-slideshow="false">
+
+							<ul class="slides">
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp" >
+
+										<img alt="client" src="/_images/home/topCustomers/client1.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client2.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client3.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client4.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client5.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client6.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client7.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client8.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client9.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client10.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client11.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/large_merchants/large-merchants-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client12.png">
+
+									</a>
+
+								</li>
+
+								<!--<li>
+
+									<a href="/financial/financial-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client13.png">
+
+									</a>
+
+								</li>-->
+
+								<li>
+
+									<a href="/financial/financial-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client14.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/financial/financial-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client15.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/financial/financial-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client16.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/financial/financial-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client17.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/financial/financial-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client18.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/financial/financial-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client19.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/financial/financial-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client20.png">
+
+									</a>
+
+								</li>
+
+								<li>
+
+									<a href="/financial/financial-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client21.png">
+
+									</a>
+
+								</li>
+
+								<!--<li>
+
+									<a href="/financial/financial-top-customers.asp">
+
+										<img alt="client" src="/_images/home/topCustomers/client22.png">
+
+									</a>
+
+								</li>-->
+
+							</ul>
+
+						</div>
+
+					</div>
+
+				</section>
+    
+			</div>
+	
+		</div>
+
+		
+  <section class="section section-dark" id="bottomRow" name="bottomRow">
+  
+	<div class="container-fluid">
+	
+		<div id="bottomCols" class="row-fluid">
+
+			<ul class="unstyled">
+			
+			  <li class="span3" style="width:150px;">
+				
+				<h5>
+				
+				  Products &amp; Services
+				
+				</h5>
+				
+				<ul class="unstyled ul-footer-no-margin ul-footer-no-padding">
+					
+					<li>
+					
+						<a href="/financial/financial-atm-as-a-service.asp">
+												
+							ATM-as-a-Service 
+					
+						</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="/financial/financial-atm-branding-program.asp">
+					
+							ATM Branding
+
+						</a>
+
+					</li>
+										
+					<li>
+					
+						<a href="/financial/financial-surcharge-free.asp">
+					
+							Allpoint Surcharge-Free
+
+						</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="/large_merchants/large-merchants-atm-management-processing.asp">
+					
+							ATM Management
+
+						</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="/large_merchants/large-merchants-turnkey.asp">
+					
+							Turnkey ATM Programs
+
+						</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="/large_merchants/large-merchants-traffic.asp">
+					
+							Traffic-generating Programs
+
+						</a>
+
+					</li>
+					
+					
+				
+				</ul>
+			  
+			  </li>
+			  
+			  <li class="span2">
+				
+				<h5>&nbsp;</h5>
+				
+				<ul class="unstyled">
+					
+					<li>
+					
+						<a href="/customer_care/online-merchant-reporting.asp">Online Merchant Reporting</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="/financial/locatorsearch.asp">Location Services</a>
+
+					</li>
+					
+					
+					
+					<li>
+					
+						<a href="/about/atm-locator.asp">ATM Locator</a>
+
+					</li>
+					
+					
+				
+				</ul>
+			  
+			  </li>
+			  
+			  <li class="span2">
+				
+				<h5>
+				
+					COMPANY
+				
+				</h5>
+				
+				<ul class="unstyled">
+					
+					<li>
+					
+						<a href="/about/">
+						
+							Why Cardtronics?
+
+						</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="/contact/">
+						
+							Contact Us
+
+						</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="/customer_care/">
+						
+							Customer Care
+
+						</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="/careers/">
+						
+							Careers
+
+						</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="http://ir.cardtronics.com" target="_blank">
+						
+							Investors
+
+						</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="/about/allpoint.asp">
+						
+							Allpoint Network
+
+						</a>
+
+					</li>
+					
+					<li>
+					
+						<a href="/about/atmnetwork.asp">
+						
+							ATM Network
+
+						</a>
+
+					</li>
+				
+				</ul>
+			  
+			  </li>
+			  
+			  <li class="span3">
+				
+				<h5>
+				
+					GLOBAL SITES
+				
+				</h5>
+				
+					<ul class="unstyled">
+						
+						<li>
+						
+							<a href="/about/">
+							
+								Cardtronics United States
+
+							</a>
+
+						</li>
+						
+						<li>
+						
+							<a href="/about/canada.asp">
+							
+								Cardtronics Canada
+
+							</a>
+
+						</li>
+						
+						<li>
+						
+							<a href="/about/mexico.asp">
+							
+								Cardtronics Mexico
+
+							</a>
+
+						</li>
+						
+						<li>
+						
+							<a href="/about/puerto-rico.asp">
+							
+								Cardtronics Puerto Rico
+
+							</a>
+
+						</li>
+						
+						<li>
+						
+							<hr style="padding:0;margin:7px 0px; width:150px;" />
+
+						</li>
+						
+						<li>
+						
+							<a href="/about/europe.asp">
+							
+								Cardtronics Europe
+
+							</a>
+
+						</li>
+						
+						<li>
+						
+							<a href="/about/united-kingdom.asp">
+							
+								Cardtronics United Kingdom
+
+							</a>
+
+						</li>
+						
+						<li>
+						
+							<a href="/about/germany.asp">
+							
+								Cardtronics Germany
+
+							</a>
+
+						</li>
+					
+					
+				
+				</ul>
+			 
+			  </li>
+			  
+			  <li class="span1" style="width:150px;">
+				
+				<h5>
+				
+					PRIVACY
+				
+				</h5>
+				
+				<ul class="unstyled">
+					
+					<li>
+					
+						<a href="/about/sitemap.asp">
+						
+							Site Map
+						
+						</a>
+					
+					</li>
+					
+					<li>
+					
+						<a href="/about/terms.asp">
+						
+							Terms of Use
+						
+						</a>
+					
+					</li>
+					
+					<li>
+					
+						<a href="/about/privacy.asp">
+						
+							Privacy Policy
+						
+						</a>
+					
+					</li>
+					
+					<li>
+					
+						<a href="/about/legal.asp">
+						
+							Legal Notices
+						
+						</a>
+					
+					</li>
+				
+				</ul>
+			  
+			  </li>
+			  
+			  <li class="span1">
+			
+				<a href="#">
+				
+					<span class="icon-angle-up" style="font-size:48px; text-decoration:none;"></span>
+				
+				</a>
+			 
+			  </li>
+			
+			</ul>
+		
+	  </div>
+	
+	</div>
+
+  </section>
+  
+  
+	<footer>
+		
+		<div>
+		
+			&copy; 2016 Cardtronics. All rights reserved.
+		
+		</div>
+
+		<script type="text/javascript">_satellite.pageBottom();</script>
+	
+	</footer>	<script src="/_js/jquery.min.js" type="text/javascript"></script>
+	<script src="/_js/bootstrap.js" type="text/javascript"></script>
+	<script src="/_js/jquery.flexslider-min.js" type="text/javascript"></script>
+<!--	<script src="/_js/jquery.tweet.js" type="text/javascript"></script>-->
+	<script src="/_js/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script src="/_js/jquery.fancybox-media.js" type="text/javascript"></script>
+	<script src="/_js/script.js" type="text/javascript"></script>
+	
+
+	
+	</body>
+
+</html>

@@ -1,0 +1,840 @@
+status: 200
+content-length: 42747
+content-location: https://www.astutesolutions.com/
+cache-control: private
+date: Wed, 21 Sep 2016 04:09:41 GMT
+content-type: text/html; charset=utf-8
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+<title>Best CRM and Smartest Solutions for Consumer Engagement</title>
+<meta name="description" content="Astute Solutions: World&#39;s Smartest Consumer Engagement Software">
+<meta name="keywords" content="">
+
+
+<meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" href="/favicon.png" />
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Astute">
+	<meta name="google-site-verification" content="q86vE_xEDRKgBQxfZgs4aAvSBWpe58jzLzcVMz6KBiI" />
+
+<link rel="stylesheet" href="/_fonts/style.css"> <!-- icomoon font -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:500,700,300|Roboto:100,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/master.css" type="text/css" media="screen, print">
+<link rel="stylesheet" href="/css/rte.css" type="text/css" media="screen, print">
+
+<script type="text/javascript" src="/Scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/Scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/Scripts/jquery.easing.compatibility.js"></script>
+<script type="text/javascript" src="/Scripts/is-mobile.js"></script>
+<script type="text/javascript" src="/Scripts/alert.js"></script>
+
+
+<script type="text/javascript">
+	
+	var menuScroll = null;
+	var lastScroll = null;
+	var menuDir = 0;
+
+	$(document).ready(function() {
+		/*
+		$('#ask-field').focus(function() {
+			if($(this).val()=='Ask Astute'){
+				$(this).val('')
+				$(this).addClass('ask-focused')					
+			}
+			$('#search-results').slideDown(500,'easeOutExpo')
+			$('#search-icon').css('color','#1595d3')
+		}).blur(function(){
+			if($(this).val()==''){
+				$(this).val('Ask Astute')
+				$(this).removeClass('ask-focused')	
+			}
+			$('#search-results').slideUp(500,'easeOutExpo')
+			$('#search-icon').css('color','#cccccc')
+		})
+		*/
+
+		
+		$('#main-products').mouseenter(function() {
+			$('#products-drop').stop().slideDown(500, 'easeOutExpo');
+			
+		}).mouseleave(function(){
+			$('#products-drop').stop().hide();
+			
+		})
+		
+		/* mobile menu */
+		$('#menu-open').click(function(){
+			$('.mobile-nav').show();
+			$('#menu-close').show();
+			$(this).hide();	
+		});
+		
+		$('#menu-close').click(function(){
+			$('.mobile-nav').hide();
+			$('#menu-open').show();
+			$(this).hide();	
+		});
+	})
+	
+	$(window).resize(function() {
+		if($(window).width() > 715){
+			$('#menu-close').trigger('click');
+			//$('#menu-open, .mobile-nav').hide();			
+		}
+	})
+	
+	$(window).scroll(function() {
+		lastScroll = menuScroll;
+		menuScroll = $(window).scrollTop();
+		
+		if(!isMobile && $(window).width() > 715){
+			if(menuScroll > 50){
+				$('#my-header').css('position','fixed')
+				$('#my-header').css('top','-50px')
+				/*
+				$('#my-header').stop().animate({
+					top: -50
+				},150,'easeOutExpo');
+				*/
+
+			} else {
+				$('#my-header').css('position','absolute')
+				$('#my-header').css('top','0')
+			}
+			
+			if(lastScroll > menuScroll){
+				/*
+				$('#my-header').css('top','0');
+				$('#my-header').stop().animate({
+					top: 0
+				},150,'easeOutExpo');
+				*/
+			}
+			
+		} else {
+			$('#my-header').css('top','0')	
+		}
+
+		
+
+ 	})
+	
+		
+
+
+</script>
+	
+ <!-- Start of Google Analytics Code -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-59396668-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+	setTimeout("ga('send','event','Time On Site','Time on site 1 minute')",60000);
+	setTimeout("ga('send','event','Time On Site','Time on site 2 minutes')",120000);
+
+</script>
+<!-- End of Google Analytics Code -->
+	
+<!--Start Munchkin Tracking Code-->
+<script type="text/javascript">
+$.ajax({
+  url: '//munchkin.marketo.net/munchkin.js',
+  dataType: 'script',
+  cache: true,
+  success: function() {
+    Munchkin.init('116-HUQ-234');
+  }
+});
+</script>
+
+<!-- End Munchkin Tracking Code-->
+
+
+
+	
+	<!-- flexslider -->
+	<link rel="stylesheet" type="text/css" href="/scripts/flexslider.css">  
+	<script type="text/javascript" src="/scripts/jquery.flexslider-min.js"></script>
+
+    <link rel="stylesheet" href="/scripts/magnific-popup.css">
+    <script type="text/javascript" src="/scripts/jquery.magnific-popup.min.js"></script>
+	
+	<script type="text/javascript">
+		var scrollPos;
+		var flexOn = false;
+		var roleContent = null;
+		
+		function gotoSlide(num){
+			var slider = $('#home-solutions-content .holder').data('flexslider');
+			
+			$('#home-solutions').find('.active').removeClass('active');
+			$('#home-solutions').find('li:nth-child('+(num+1)+')').addClass('active');
+			
+			slider.flexAnimate(num, true, true)	
+		}
+
+		function openCard(id) {
+		    var card = $("#" + id);
+
+		    if ($(window).width() <= 715) {
+		        card.css('display', '');
+		        $.magnificPopup.open({
+		            items: {
+		                src: "#" + id, // can be a HTML string, jQuery object, or CSS selector
+		                type: 'inline'
+		            }
+		        });
+		    }
+		    else {
+		        card.fadeIn()
+		    }
+		}
+	  
+	  $(document).ready(function() {
+		  
+		  roleContent = $('#home-solutions-content .holder').html();
+	
+		 /* if($(window).width() > 715){
+			  
+			  $('#home-feature .button, #home-feature .button-outline').click(function(){
+				  $('body, html').animate({
+					 scrollTop: 1600
+				  }, 750, 'easeOutExpo');
+			  });
+
+		  }*/
+
+		  $('.video-link').magnificPopup({
+		      disableOn: 700,
+		      type: 'iframe',
+		      mainClass: 'mfp-fade',
+		      removalDelay: 160,
+		      preloader: false,
+		      fixedContentPos: true
+		  });
+
+
+
+		  $(".grid-detail .fa-times").click(function () {
+		      $(".grid-detail-wrapper").fadeOut();
+		  });
+		  
+		  $(window).resize();
+		  
+		  
+	
+	  });
+	
+	  $(window).resize(function() {
+		   //
+		   if($(window).width() > 715){
+			  
+			 /* $('#home-feature .button, #home-feature .button-outline').click(function(){
+				  $('body, html').animate({
+					 scrollTop: 1600
+				  }, 750, 'easeOutExpo');
+			  });*/
+			  
+			  // attaches flexslider for desktop ONLY
+				  if(!flexOn){
+					$('#home-solutions-content .holder').remove();
+					$('#home-solutions-content').append('<div class="holder"></div>');
+			   	  	$('#home-solutions-content .holder').html(roleContent)
+						
+					$('#home-solutions-content .holder').flexslider({
+							animation: 'slide',
+							animationLoop: false,
+							slideshow: false,
+							keyboard: false,
+							directionNav: false,
+							touch: true,
+							after: function(slider){
+								gotoSlide(slider.currentSlide)
+							}
+					});
+				  
+
+				
+					$('#home-solutions li').each(function(){
+						$(this).click(function(){
+							gotoSlide($(this).index());
+						
+						})
+					});
+			  
+			  		// sets first item
+					$('#home-solutions').find('.active').removeClass('active');
+		 	  		$('#home-solutions').find('li:nth-child(1)').addClass('active');
+					  
+					// sets boolean
+					flexOn = true;
+				  }
+			   
+		   } else {
+			   if(flexOn){
+			   	  $('#home-solutions-content .holder').remove();
+				  $('#home-solutions-content').append('<div class="holder"></div>');
+			   	  $('#home-solutions-content .holder').html(roleContent)
+				  flexOn = false;
+			   }
+		   }
+
+		   $("#home-grid li").height($("#home-grid li").width());
+		  
+	
+	  });  
+	  
+	  $(window).load(function() {
+		  $(window).scroll(); 
+	  })
+	  
+	  $(window).scroll(function() {
+		  
+		  scrollPos = $(window).scrollTop();
+			  
+			// animation
+			if(scrollPos > 1300){
+				$('.feature-list li').each(function(index){
+					var clip = $(this);
+					clip.addClass('active');
+					  
+				});
+			}
+
+	  })
+	  
+	</script>
+
+<!--[if ie 9]>
+    <style>
+     #home-products .product {
+        width:25%;
+     }
+    </style>
+<![endif]-->
+
+		
+
+
+    <script src="//astutesolutions.com/widgets/adapter.js"></script>
+   <!-- <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>-->
+    <script src="//ajax.aspnetcdn.com/ajax/signalr/jquery.signalR-2.1.1.min.js"></script>
+    <script src="//astutesolutions.com/widgets/sos.min.js"></script>
+    <link rel="stylesheet" href="//astutesolutions.com/widgets/sos.css" />
+
+</head>
+
+<body>
+
+    <div id="RDcontainer" class="slide-out-div" src="https://va.astuteknowledge.com/w/astutepublic/"></div>
+    <script type="text/javascript" src="https://va.astuteknowledge.com/static/RDWebWidget/js/rdwidget.js"></script>
+<div id="my-wrapper">
+	<!-- header -->
+  	<div id="scrollPos">0</div>
+<header id="my-header">
+	<div id="header-top">
+    	<div class="inside">
+        	<!--
+        	<div id="sos-bug"><img src="/_img/button_call_sos.png" alt="Click to Call" /></div>
+            -->
+            <!--
+        	<div id="search-icon"><span class="fa fa-search"></span></div>
+            <input id="ask-field" typ="text" value="Ask Astute" />
+            -->
+            <ul class="third-nav">
+            	<li><a href="/request-a-demo" id="nav-request">Request a Demo</a></li>
+                <li><a href="/company" id="nav-company">Company</a></li>
+                <li><a href="/careers" id="nav-careers">Careers</a></li>
+                <li><a href="/events" id="nav-events">Events &amp; Webinars</a></li>
+                <li><a href="/contact" id="nav-contact">Contact</a></li>
+                <li><a onclick="ga('send', 'event', 'Outgoing Link', 'Customer Support Login', {'nonInteraction': 1});" href="http://support.astutesolutions.com/" target="_blank" id="nav-login">Customer Login</a></li>
+                <div class="clearfix"></div>
+            </ul>
+            <!--
+            <div id="search-results">
+            	<ul>
+                	<li>Consumer relations </li>
+                    <li>Consumer profile</li>
+                    <li>Consumer data points</li>
+                  	<a href="#" id="all">SEE ALL RESULTS</a>                   
+                </ul>
+            </div>
+            -->
+            
+        </div>
+    </div>
+    <div id="header-nav">
+        <div class="inside">
+            <div id="logo"><a href="/"><img src="/_img/logo_astute.png" alt="Astute Solutions" /></a></div>            
+            <ul class="main-nav">
+            	<li id="main-products">Products <span class="fa fa-caret-down"></span>
+                    <ul id="products-drop">
+                        <li>
+                        	<a href="/products/epowercenter">
+                                <img src="/_img/icon_epower_114x114.png" alt="Navigation - ePowerCenter" />
+                                <div class="text">
+                                    <h4>ePowerCenter&trade;</h4>
+                                    Consumer Engagement CRM
+                                </div>
+                            </a>
+                        </li>            
+                        <li>
+                            <a href="/products/astute-social">
+                                <img src="/_img/icon_social_114x114.png" alt="Navigation - Astute Social" />
+                                <div class="text">
+                                    <h4>Astute Social&trade;</h4>
+                                    Social Media Management
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/products/astute-knowledge">
+                            	<img src="/_img/icon_knowledge_114x114.png" alt="Navigation - Astute Knowledge" />
+                                <div class="text">                                    
+                                    <h4>Astute Knowledge&trade;</h4>
+                                    Web & Mobile Self Service
+                                </div>
+                            </a>
+                        </li>            
+                        <li>
+                            <a href="/products/astute-sos">
+                            	<img src="/_img/icon_sos_114x114.png" alt="Navigation - Astute SOS" />
+                                <div class="text">                                    
+                                    <h4>Astute SOS&trade;</h4>
+                                    Click to Voice & Video
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/services" id="nav-services" class="main-link">Services</a></li>
+                <li><a href="/resources" id="nav-resources" class="main-link">Resources</a></li>
+				<li><a href="/blog" id="nav-blog" class="main-link">Blog</a></li>
+
+                <div class="clearfix"></div>
+            </ul>
+            
+        </div>
+        
+         <!-- MOBILE MENU -->
+        <div id="mobile-menu">
+            <div id="menu-open"><span class="icon-Astute_icon_menu"></span></div>
+            <div id="menu-close"><span class="icon-Astute_icon_close"></span></div>
+        </div>
+            
+        <div class="mobile-nav">        	
+            <ul id="products-mobile">
+                <li>
+                    <a href="/products/epowercenter">
+                        <img src="/_img/icon_epower_114x114.png" alt="Navigation - ePowerCenter" />
+                        <div class="text">
+                            <h4>ePowerCenter&trade;</h4>
+                            Consumer Engagement CRM
+                        </div>
+                    </a>
+                </li>            
+                <li>
+                    <a href="/products/astute-social">
+                        <img src="/_img/icon_social_114x114.png" alt="Navigation - Astute Social" />
+                        <div class="text">
+                            <h4>Astute Social&trade;</h4>
+                            Social Media Management
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/products/astute-knowledge">
+                        <img src="/_img/icon_knowledge_114x114.png" alt="Navigation - Astute Knowledge" />
+                        <div class="text">                                    
+                            <h4>Astute Knowledge&trade;</h4>
+                            Web & Mobile Self Service
+                        </div>
+                    </a>
+                </li>            
+                <li>
+                    <a href="/products/astute-sos">
+                        <img src="/_img/icon_sos_114x114.png" alt="Navigation - Astute SOS" />
+                        <div class="text">                                    
+                            <h4>Astute SOS&trade;</h4>
+                            Click to Voice & Video
+                        </div>
+                    </a>
+                </li>
+                <li><a href="/services"><h4>Services</h4></a></li>
+                <li><a href="/resources"><h4>Resources</h4></a></li>
+                <li><a href="/blog"><h4>Blog</h4></a></li>
+                <li><a href="/request-a-demo"><h4>Request a Demo</h4></a></li>
+                <li><a href="/company"><h4>Company</h4></a></li>
+                <li><a href="/events"><h4>Events</h4></a></li>
+                <li><a href="/contact"><h4>Contact</h4></a></li>
+                <li><a onclick="ga('send', 'event', 'Outgoing Link', 'Customer Support Login', {'nonInteraction': 1});" href="http://support.astutesolutions.com/" target="_blank"><h4>Client Login</h4></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+</header>    
+    <!-- content -->
+    
+	<div id="contentWrapper">
+	
+                <div id="pageAlert">
+                    <div class="inside">
+                        <p>
+                            Customers no longer want to call you for help. Join us Thursday, September 29 at 1:00 PM ET to learn how to serve your customers via chat.
+                            <a target="_blank" href="https://attendee.gotowebinar.com/register/833457678335804673">Register for the webinar.</a>
+                        </p>
+                    </div>
+                    
+                    <div id="closeAlert">x</div>
+                </div>
+        
+
+
+
+    <div id="home-feature">
+    	<div id="home-video">
+            <video autoplay loop id="full-video" muted>
+              <source src="_img/astute_home_video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="inside">
+            <p>Drive loyalty throughout the customer journey with the world&#39;s smartest consumer engagement software.</p>
+            <h1><span>Be more loved. </span><span>Get Astute.</span></h1>
+            <!--<a href="#" class="button">Watch a 2-Minute Intro to Astute</a>-->
+            <a id="home-button" href="https://player.vimeo.com/video/172596396" class="button video-link"><span class="text">Watch a 2-Minute Intro to Astute</span><span class="play"><img src="/_img/videobutton.png" alt="play"/></span></a>
+            <!--<a id="home-button-mobile" href="/contact" class="button">Contact Us to Learn More</a>-->
+        </div>
+    </div>
+    
+    <div id="home-brands">
+    	<div class="inside">
+        	<h4>Brands Seeing Success with Astute Solutions</h4>
+            <div class="client-logos">
+					<img src="/media/1005/logo_mcdonalds.png" alt="Logo - McDonalds" />
+					<img src="/media/1011/logo_britishairways.png" alt="Logo - British Airways" />
+					<img src="/media/1001/logo_dunkindonuts.png" alt="Logo - Dunkin&#39; Donuts" />
+					<img src="/media/1009/logo_dominos.png" alt="Logo - Domino&#39;s" />
+					<img src="/media/1003/logo_loreal.png" alt="Logo - L&#39;OREAL" />
+					<img src="/media/1075/michelinlogo.png" alt="Logo - Michelin" />
+					<img src="/media/1008/logo_scotts.png" alt="Logo - Scotts" />
+					<img src="/media/1004/logo_mondelez.png" alt="Logo - Mondelez International" />
+            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="home-content">
+    <div class="inside">
+        <h2>We know how to help you win</h2>
+        <p>Consumers want to talk to their favorite brands like they talk to their friends, instead of being forced to communicate through strictly structured interfaces. Astute Solutions&#39; blend of leading edge technologies makes this possible, eliminating friction during every customer interaction.</p>
+    </div>
+</div>
+
+<div id="home-grid">
+    <ul>
+            <li onclick="openCard('ArtificialNarrowIntelligence')">
+                <div class="bgImage" style="background-image:url(/media/20259/artificial-narrow-intelligence.jpg?anchor=center&amp;mode=crop&amp;width=360&amp;height=360&amp;rnd=131123641640000000);"></div>
+                <div>
+                    <h4>Artificial Narrow Intelligence</h4>
+                    <p>Automation of repetitive tasks provides consistency and efficiency.</p>
+                </div>
+            </li>
+            <li onclick="openCard('NaturalLanguageProcessing')">
+                <div class="bgImage" style="background-image:url(/media/20260/natural-language-processing.jpg?center=0.39175257731958762,0.7425&amp;mode=crop&amp;width=360&amp;height=360&amp;rnd=131123642960000000);"></div>
+                <div>
+                    <h4>Natural Language Processing</h4>
+                    <p>Interpretation of human requests to determine the best path to assistance.</p>
+                </div>
+            </li>
+            <li onclick="openCard('DeepLearning')">
+                <div class="bgImage" style="background-image:url(/media/20261/deep-learning.jpg?center=0.46391752577319589,0.7575&amp;mode=crop&amp;width=360&amp;height=360&amp;rnd=131153945670000000);"></div>
+                <div>
+                    <h4>Deep Learning</h4>
+                    <p>Self-teaching technology for continuous improvement.</p>
+                </div>
+            </li>
+            <li onclick="openCard('Omni-ChannelEngagement')">
+                <div class="bgImage" style="background-image:url(/media/20262/omnichannel-communication.jpg?anchor=center&amp;mode=crop&amp;width=360&amp;height=360&amp;rnd=131165079280000000);"></div>
+                <div>
+                    <h4>Omni-Channel Engagement</h4>
+                    <p>Customers can communicate seamlessly when and where they want.</p>
+                </div>
+            </li>
+            <li onclick="openCard('AgentGuidance')">
+                <div class="bgImage" style="background-image:url(/media/20263/agent-guidance.jpg?center=0.43814432989690721,0.6525&amp;mode=crop&amp;width=360&amp;height=360&amp;rnd=131153947870000000);"></div>
+                <div>
+                    <h4>Agent Guidance</h4>
+                    <p>In context, never scripted guidance for customer service agents.</p>
+                </div>
+            </li>
+            <li onclick="openCard('ContextualInformation')">
+                <div class="bgImage" style="background-image:url(/media/20264/contextual-information.jpg?center=0.38144329896907214,0.63&amp;mode=crop&amp;width=360&amp;height=360&amp;rnd=131153947370000000);"></div>
+                <div>
+                    <h4>Contextual Information</h4>
+                    <p>Personalized service without forcing consumers to repeat themselves.</p>
+                </div>
+            </li>
+            <li onclick="openCard('UnifiedCustomerView')">
+                <div class="bgImage" style="background-image:url(/media/20265/unified-customer-view.jpg?anchor=center&amp;mode=crop&amp;width=360&amp;height=360&amp;rnd=131153947690000000);"></div>
+                <div>
+                    <h4>Unified Customer View</h4>
+                    <p>Our CRM hub provides a single, complete source of customer truth.</p>
+                </div>
+            </li>
+            <li onclick="openCard('ActionableInsights')">
+                <div class="bgImage" style="background-image:url(/media/20266/actionable-insights.jpg?center=0.47422680412371132,0.1725&amp;mode=crop&amp;width=360&amp;height=360&amp;rnd=131153948250000000);"></div>
+                <div>
+                    <h4>Actionable Insights</h4>
+                    <p>Track trends and consumer behavior with reports and real-time analytics.</p>
+                </div>
+            </li>
+       
+    </ul>
+    <div class="detail-items">
+            <div id="ArtificialNarrowIntelligence" class="grid-detail-wrapper">
+                <div class="grid-detail-background" style="background-image:url(/media/20259/artificial-narrow-intelligence.jpg?anchor=center&amp;mode=crop&amp;width=1400&amp;height=680&amp;rnd=131123641640000000)">
+                    <div class="grid-detail">
+                        <i class="fa fa-times"></i>
+                        <div>
+                            <h2>Artificial Narrow Intelligence</h2>
+                            <p>When a computer program is able to do one particular task extremely well, it is known as <a href="/ani/artificial-narrow-intelligence">artificial narrow intelligence</a> (ANI). Astute Solutions uses ANI-powered technology to automate repetitive service tasks, such as looking up shipping information, return policies, product details...or any number of customer requests. ANI provides a consistent customer experience while making your service organization more efficient. For example, let's say a customer messages your company to ask when his order will be delivered. A bot can use information about his identity and purchase history to provide an accurate and tailored answer to his question, and in such a natural way that he would never know he's not talking to a human. By having bots handle the bulk of incoming customer requests, your human agents are freed up to engage customers in more meaningful conversations.</p>
+                                <a class="button fill" href="https://www.astutesolutions.com/ani/artificial-narrow-intelligence">Learn More About ANI</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="NaturalLanguageProcessing" class="grid-detail-wrapper">
+                <div class="grid-detail-background" style="background-image:url(/media/20260/natural-language-processing.jpg?center=0.39175257731958762,0.7425&amp;mode=crop&amp;width=1400&amp;height=680&amp;rnd=131123642960000000)">
+                    <div class="grid-detail">
+                        <i class="fa fa-times"></i>
+                        <div>
+                            <h2>Natural Language Processing</h2>
+                            <p>No matter the channel, your customers want to talk to you the same way they'd talk to any person: using natural, conversational language. They're sick of filling out forms, memorizing passwords, remembering their maternal grandmother's maiden name, and so on. They just want to ask questions in their own way, receive natural-sounding responses, and participate in a two-way dialog. Translating human speech into actionable software commands is called <a href="/blog/articles/what-cx-pros-need-to-know-about-natural-language-processing">natural language processing</a> (NLP), and Astute's patented approach delivers accurate interpretations regardless of slang, nuances, or other complexities of human speech -- in dozens of different languages and counting.</p>
+<p>Imagine that one of your customers just ordered several pairs of jeans from your website, but realizes that she accidentally indicated the wrong size for one of them. She clicks the button to open a web chat and explains her mistake. Using NLP, a bot is able to understand her predicament, and asks her which size she would like instead. The bot then uses her response to adjust her order in the system, and lets her know the change has been made. Compare this to what most customers would experience in a similar situation: a lengthy online form and a long wait for an email response; or worse, having to call the company and navigate the rigid, un-personalized menus of an IVR system. Service powered by NLP allows you to communicate with customers on their terms, making for a more satisfying, friction-less experience.</p>
+                                <a class="button fill" href="https://www.astutesolutions.com/blog/articles/what-cx-pros-need-to-know-about-natural-language-processing">Learn More about NLP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="DeepLearning" class="grid-detail-wrapper">
+                <div class="grid-detail-background" style="background-image:url(/media/20261/deep-learning.jpg?center=0.46391752577319589,0.7575&amp;mode=crop&amp;width=1400&amp;height=680&amp;rnd=131153945670000000)">
+                    <div class="grid-detail">
+                        <i class="fa fa-times"></i>
+                        <div>
+                            <h2>Deep Learning</h2>
+                            <p>Sometimes referred to as "machine learning," deep learning is when technology is able to draw on past experiences to inform present action. Essentially, software can teach itself to be better. For instance, a knowledgebase can monitor all the questions being asked and look for patterns, identifying missing or incomplete content and potentially discovering product issues. Let's say that one hundred people over the past week asked about the Bluetooth in their car. Deep learning allows the knowledgebase to pick up on the trend and alert you to it. At the very least, more content about the Bluetooth feature should be added to the knowledgebase. And given the high volume of questions, the matter probably warrants further investigation. Deep learning empowers brands to continuously improve their communication with customers, creating experiences that build loyalty over time.</p>
+                                <a class="button fill" href="https://www.astutesolutions.com/knowledge-base/knowledge-management-system">Learn More about Knowledgebases</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Omni-ChannelEngagement" class="grid-detail-wrapper">
+                <div class="grid-detail-background" style="background-image:url(/media/20262/omnichannel-communication.jpg?anchor=center&amp;mode=crop&amp;width=1400&amp;height=680&amp;rnd=131165079280000000)">
+                    <div class="grid-detail">
+                        <i class="fa fa-times"></i>
+                        <div>
+                            <h2>Omni-Channel Engagement</h2>
+                            <p>Customers want to interact with you when and where they prefer. Whether it's social media, email, web chat, or a phone call, customers want to be able to begin a conversation with your company in any channel -- and move seamlessly through multiple channels without ever having to repeat themselves. For example, suppose a customer asks a question using web chat or Facebook Messenger, and in the course of the ensuing conversation, the customer decides she would prefer to continue on the phone. With one click, she can escalate her question and immediately pick up where she left off with a live agent. True omni-channel service provides a consistent brand experience and improves customer satisfaction.</p>
+                                <a class="button fill" href="https://www.astutesolutions.com/cxm/customer-engagement-software">Learn More about Omni-Channel Engagement</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="AgentGuidance" class="grid-detail-wrapper">
+                <div class="grid-detail-background" style="background-image:url(/media/20263/agent-guidance.jpg?center=0.43814432989690721,0.6525&amp;mode=crop&amp;width=1400&amp;height=680&amp;rnd=131153947870000000)">
+                    <div class="grid-detail">
+                        <i class="fa fa-times"></i>
+                        <div>
+                            <h2>Agent Guidance</h2>
+                            <p>Regardless of their tenure with your company, every agent can be empowered to provide customers with the right answers. Features in Astute's CRM like ESP and Agent Assist provide agents with information about customers, products, retail locations, and potential resolutions based on case data such as reason codes. For example, if a call center agent is working with a customer on a product return, she might see the nearest stores where he can return his item dynamically populate in the sidebar of her CRM interface. Guidance within the CRM interface has been proven to shorten agent training time and improve response accuracy.</p>
+                                <a class="button fill" href="https://www.astutesolutions.com/crm/customer-relationship-management">Learn More about Smart CRM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ContextualInformation" class="grid-detail-wrapper">
+                <div class="grid-detail-background" style="background-image:url(/media/20264/contextual-information.jpg?center=0.38144329896907214,0.63&amp;mode=crop&amp;width=1400&amp;height=680&amp;rnd=131153947370000000)">
+                    <div class="grid-detail">
+                        <i class="fa fa-times"></i>
+                        <div>
+                            <h2>Contextual Information</h2>
+                            <p>In-context customer details provided to agents in the moment allows them to provide personalized service without asking customers to repeat their story over and over. For instance, a customer emails support with a question about her son's upcoming plane travel, and the responding agent can see all her previous interactions and related accounts. He can also see that she is an authorized user on her son's account, so he can bypass verification questions and get right to providing an answer. Relevant, contextual information makes it easier for your agents to care for customers in a more personalized way.</p>
+                                <a class="button fill" href="https://www.astutesolutions.com/blog/articles/digital-self-service-30-personalization-is-about-to-get-a-whole-lot-easier">Learn More about Personalization</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="UnifiedCustomerView" class="grid-detail-wrapper">
+                <div class="grid-detail-background" style="background-image:url(/media/20265/unified-customer-view.jpg?anchor=center&amp;mode=crop&amp;width=1400&amp;height=680&amp;rnd=131153947690000000)">
+                    <div class="grid-detail">
+                        <i class="fa fa-times"></i>
+                        <div>
+                            <h2>Unified Customer View</h2>
+                            <p>When customer information is stored in a single CRM hub, you benefit from one source of customer truth. No matter how customers prefer to communicate with your brand, agents use one CRM interface to engage with them. One software suite helps you manage customer relationships, knowledge, and social media, ensuring a consistent customer experience and continuity throughout all touchpoints. A single source of customer data also allows you to glean reliable insights from your customer base.</p>
+                                <a class="button fill" href="https://www.astutesolutions.com/crm/customer-relationship-management">Learn More about Smart CRM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ActionableInsights" class="grid-detail-wrapper">
+                <div class="grid-detail-background" style="background-image:url(/media/20266/actionable-insights.jpg?center=0.47422680412371132,0.1725&amp;mode=crop&amp;width=1400&amp;height=680&amp;rnd=131153948250000000)">
+                    <div class="grid-detail">
+                        <i class="fa fa-times"></i>
+                        <div>
+                            <h2>Actionable Insights</h2>
+                            <p>Make data-driven decisions using reports and real-time analytics about customer behavior. Social media management software shows you customer trends as they're happening and keeps you informed on what your competitors are doing. Knowledgebase reports spotlight gaps in your knowledge content, allowing you to better address customer questions and empower them to help themselves. Customer service analytics provide insights into agent performance and the voice of the customer -- what they are thinking, feeling, and asking. Such data can inform decisions about service strategy, marketing messaging, product improvements and new launches. For example, say you release a new product. Within a week, you see an uptick in negative sentiment on social media, a dramatic increase in related questions via self-service, and a surge of complaints to the customer service staff. On their own, each piece of data might not be enough to indicate an issue; but when combined, they paint a clear picture of how your new product is being received. Having a finger on the pulse of the market and of your customers helps you make smarter strategic decisions.</p>
+                                <a class="button fill" href="https://www.astutesolutions.com/social-media/social-listening">Learn More about Social Listening</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div id="home-products">
+    <div class="inside">
+        <h2>Meet the smartest customer engagement product suite</h2>
+        <div class="product-container">
+                <div class="product">
+                    <img src="/media/20268/icon_epowercenter.png" />
+                    <h5>Astute</h5>
+                    <h4>ePowerCenter</h4>
+                    <h6>CRM</h6>
+                    <a href="/products/epowercenter/" class="button">Learn More</a>
+                </div>
+                <div class="product">
+                    <img src="/media/20269/icon_knowledge.png" />
+                    <h5>Astute</h5>
+                    <h4>Knowledge</h4>
+                    <h6>Self-Service</h6>
+                    <a href="/products/astute-knowledge/" class="button">Learn More</a>
+                </div>
+                <div class="product">
+                    <img src="/media/20267/icon_sos.png" />
+                    <h5>Astute</h5>
+                    <h4>SOS</h4>
+                    <h6>Chat, Voice and Video</h6>
+                    <a href="/products/astute-sos/" class="button">Learn More</a>
+                </div>
+                <div class="product">
+                    <img src="/media/20270/icon_social.png" />
+                    <h5>Astute</h5>
+                    <h4>Social</h4>
+                    <h6>Social Management</h6>
+                    <a href="/products/astute-social/" class="button">Learn More</a>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div id="home-infographic" style="background-image:url(/media/20272/bg_orange_pattern.jpg">
+    <div class="inside">
+        <img src="/media/20271/gear.png" />
+        <div>
+            <h2>Whitepaper: Using Bots for Smart Self-Service and Intelligent Escalation</h2>
+            <p class="large">Learn how chatbots can deliver the one right answer that will drive customers to take desired actions and increase loyalty.</p>
+            <a target="_blank" href="http://crm.astutesolutions.com/Bots-for-Self-Service-Whitepaper.html" class="button gray">Read the Whitepaper</a><a href="/resources">Check out more of our valuable resources</a>
+        </div>
+    </div>
+</div>
+<div id="home-demo">
+    <div class="inside">
+        <h4>See how Astute works!</h4>
+        <script src="//app-sj11.marketo.com/js/forms2/js/forms2.min.js"></script>
+        <form id="mktoForm_1399"></form>
+        <script>MktoForms2.loadForm("//app-sj11.marketo.com", "116-HUQ-234", 1399);</script>
+    </div>
+</div>
+    </div>        
+        
+        
+    
+    
+
+    
+     
+    <!-- footer -->
+    <!-- footer -->
+    <footer id="my-footer">
+        <div class="footer-top">
+            <div class="inside">
+                <div class="footer-left">
+                    <div>
+                        <h5>Sign up for our monthly newsletter</h5>
+                        <script src="//app-sj11.marketo.com/js/forms2/js/forms2.min.js"></script>
+                        <form id="mktoForm_1398"></form>
+                        <script>
+MktoForms2.loadForm("//app-sj11.marketo.com", "116-HUQ-234", 1398, function (form) {
+    form.onSuccess(function (values, followUpUrl) {
+        form.getFormElem().parent().html("<h4 class='thanks'>Thanks for signing up!</h4><p>Please check your inbox for a confirmation email</p>");
+        return false;
+    });
+});</script>
+
+                    </div>
+                    <div id="footer-social">
+                        <!--<a href="#" class="fa fa-pinterest-p"></a>-->
+                        <a onclick="ga('send', 'event', 'Outgoing Link', 'Facebook');" href="https://www.facebook.com/AstuteSolutions" target="_blank" class="fa fa-facebook"></a>
+                        <a onclick="ga('send', 'event', 'Outgoing Link', 'Twitter');" href="https://twitter.com/astutesolutions/" target="_blank" class="fa fa-twitter"></a>
+                        <a onclick="ga('send', 'event', 'Outgoing Link', 'LinkedIn');" href="https://www.linkedin.com/company/astute-solutions" target="_blank" class="fa fa-linkedin"></a>
+                        <!--<a href="#" class="fa fa-reddit"></a>
+                        <a href="#" class="fa fa-youtube-play"></a>
+                        -->
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <ul id="footer-nav">
+                        <li><a href="/request-a-demo">Request a Demo</a></li>
+                        <li><a href="/company">Company</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/events">Events &amp; Webinars</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a target="_blank" href="http://support.astutesolutions.com">Customer Login</a></li>
+                    </ul>
+                    <div class="disclaimer">
+                        <p>
+                            All product names and logos are trademarks or registered trademarks of their respective owners. ©2010-
+                            <script type="text/javascript">var d = new Date();document.write(d.getFullYear());</script> Astute Solutions. All Rights Reserved.<br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="inside">
+                <a href="/">Home</a>&nbsp; | &nbsp;<a href="/privacy-policy">Privacy Policy</a>&nbsp; | &nbsp;<a href="/terms-conditions">Terms & Conditions</a><!--&nbsp; | &nbsp;<a href="#">Sitemap</a>--><br />
+                <a class="bbbLink" href="http://www.bbb.org/centralohio/business-reviews/computers-hardware-software-and-services/astute-inc-in-columbus-oh-11005233/#bbbonlineclick" target="_blank" rel="nofollow"><img src="https://seal-centralohio.bbb.org/seals/blue-seal-120-61-bbb-11005233.png" style="border: 0;" alt="Astute, Inc. BBB Business Review"></a>
+            </div>
+        </div>
+    </footer>   
+	</div>
+    
+</div>
+		
+<!-- Clicky stats -->
+<!--<a title="Web Statistics" href="http://clicky.com/100875652"><img alt="Web Statistics" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>-->
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100875652); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100875652ns.gif" /></p></noscript>
+								
+
+</body>
+</html>

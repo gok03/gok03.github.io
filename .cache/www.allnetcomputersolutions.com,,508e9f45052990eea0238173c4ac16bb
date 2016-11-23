@@ -1,0 +1,292 @@
+status: 200
+content-length: 13350
+content-location: http://www.allnetcomputersolutions.com
+accept-ranges: bytes
+server: Apache/2.2.3 (CentOS)
+last-modified: Fri, 25 Jan 2013 17:30:02 GMT
+connection: close
+etag: "ce84e2-3426-46fefa80"
+date: Tue, 13 Sep 2016 10:36:00 GMT
+content-type: text/html; charset=ISO-8859-1
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>All-Net Computer Solutions</title>
+<meta name="description" content="All-Net Computer Solutions is your "one stop" center for all your business and home computer issues.">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.v1.4.2.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+<!--  ACTIVATE CUFON TEXT REPLACEMENT IF ENABLED IN THEME OPTIONS  -->
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/liberation_sans.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+Cufon.replace('h1, h2, h3, h4, h5, h6', { hover: true });
+
+$(function(){
+    $('#slideshow').cycle({
+        fx:     'fade',
+        speed:  'slow',
+        timeout: 5000,
+        pager:  '#slider_nav',
+        pagerAnchorBuilder: function(idx, slide) {
+            // return sel string for existing anchor
+            return '#slider_nav li:eq(' + (idx) + ') a';
+        }
+    });
+});
+// ]]>
+</script>
+
+<script type="text/javascript">
+
+/***********************************************
+* ProHTML Ticker script- © Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var tickspeed=6000 //ticker speed in miliseconds (2000=2 seconds)
+var enablesubject=0 //enable scroller subject? Set to 0 to hide
+
+if (document.getElementById){
+document.write('<style type="text/css">\n')
+document.write('.dropcontent{display:none;}\n')
+document.write('</style>\n')
+}
+
+var selectedDiv=0
+var totalDivs=0
+
+function contractall(){
+var inc=0
+while (document.getElementById("dropmsg"+inc)){
+document.getElementById("dropmsg"+inc).style.display="none"
+inc++
+}
+}
+
+
+function expandone(){
+var selectedDivObj=document.getElementById("dropmsg"+selectedDiv)
+contractall()
+document.getElementById("dropcontentsubject").innerHTML=selectedDivObj.getAttribute("subject")
+selectedDivObj.style.display="block"
+selectedDiv=(selectedDiv<totalDivs-1)? selectedDiv+1 : 0
+setTimeout("expandone()",tickspeed)
+}
+
+function startscroller(){
+while (document.getElementById("dropmsg"+totalDivs)!=null)
+totalDivs++
+expandone()
+if (!enablesubject)
+document.getElementById("dropcontentsubject").style.display="none"
+}
+
+if (window.addEventListener)
+window.addEventListener("load", startscroller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", startscroller)
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31858145-1']);
+  _gaq.push(['_setDomainName', 'plginc.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<div class="main">
+
+<div class="header_resize">
+  <div class="header">
+   <div class="logo_2"><a href=" index.html"><img src="images/all_net.jpg" width="946" height="108" border="0" alt="all-net" /><a href=" index.html"></a></div>
+   <div class="clr"></div>
+   
+  </div>
+  <div class="header_resize"></div>
+  <div class="header_blog">
+    <div id="slider">
+      <!-- start slideshow -->
+      <div id="slideshow">
+        <div class="slider-item"><img src="images/simple_img_1.jpg" alt="home computer services" width="936" height="180" border="0" usemap="#Map3"  />
+          <map name="Map3" id="Map3">
+            <area shape="rect" coords="18,143,117,170" href="residential.html" />
+          </map>
+        </div>
+<div class="slider-item"><img src="images/simple_img_2.jpg" alt="networking" width="936" height="180" border="0" usemap="#Map2" />
+  <map name="Map2" id="Map2">
+    <area shape="rect" coords="20,141,117,168" href="business.html" />
+  </map>
+</div>
+ <div class="slider-item"><img src="images/simple_img_3.jpg" alt="business services" width="936" height="180" border="0" usemap="#Map"  />
+   <map name="Map" id="Map">
+     <area shape="rect" coords="18,140,116,169" href="business.html" />
+   </map>
+ </div>
+      </div>
+      <div class="clr"></div>
+      <!-- end #slideshow -->
+      <div class="controls-center">
+        <div id="slider_controls">
+          <ul id="slider_nav">
+            <!-- Slide 1 -->
+            <li></li>
+            <!-- Slide 2 -->
+            <!-- Slide 3 -->
+          </ul>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="FBG_resize">
+    <div class="FBG">
+      <div class="bloga">
+        <h2><a href="residential.html">Home/Home Office</a></h2>
+        
+    
+      </div>
+      <div class="bloga">
+        <h2><a href="business.html">Business IT Services</a></h2>
+        
+        
+      </div>
+      <div class="bloga">
+        <h2><a href="sales_service.html">Computer Sales</a></h2>
+       
+        
+      </div>
+      <div class="bloga">
+        <h2><a href="about.html">About Us</a></h2>
+        </div>
+      <div class="bloga">
+      
+        <h2><a href="contact.html">Contact Us</a></h2>
+ 
+     
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="body">
+    <div class="left">
+      <h2> IT Services<br />
+      <span>Solutions for all your computer problems.</span></h2>
+      <h3>Business IT Services</h3>
+      <p><strong><a href="networking.html">Network Design & Maintenance</a></strong><br />
+        <strong><a href="nas.html">Network Attached Storage (NAS)</a></strong><br />
+        <strong><a href="backup_disaster_recovery.html">Backup/Disaster Recovery</a></strong><br />
+        <strong><a href="sales_service.html">Server Sales & Installation</a></strong><br />
+        <strong><a href="web_design.html">Web Design</a></strong><br />
+        <strong><a href="custom_app_dev.html">Custom Application Development</a></strong><br />
+        <strong><a href="isp_services.html">ISP Services</a></strong><br  />
+      </p>
+<div class="clr"></div>
+     <h3> Home/Home Office Computing</h3>    
+      <p><strong><a href="anti_virus_anti_spyware.html">Anti-Virus/Anti-Spyware</a></strong><br />
+         <strong><a href="wireless_internet.html">Home Networks</a></strong><br />
+        <strong><a href="web_security.html">Child Safe Internet</a></strong><br />
+	  <strong><a href="pc_tune_up_upgrades.html">Tune-Ups &amp; Upgrades</a></strong><br />
+        <strong><a href="pc_tune_up_upgrades.html">PC Tune Ups</a></strong><br />
+        <strong><a href="sales_service.html">PC Sales</a></strong></p>
+       
+  <div class="FB">
+   <h3> Connect with us </h3> 
+    <div class="fb-like-box" data-href="http://www.facebook.com/AllNetComputerSolutions?ref=ts&amp;fref=ts" data-width="200" data-height="150" data-show-faces="true" data-stream="true" data-header="true"></div>
+  </div> 
+  
+    </div>
+    <div class="right">
+      <h2>Welcome to  All-Net<br />
+        <span>Computer Solutions</span></h2>
+      <img src="images/computer.jpg" alt="computer systems" width="187" height="124" class="floated"/>
+      <p><strong>All-Net is a "One Stop" Computer  Center </strong><br /><br />
+        
+        
+     All-Net Computer Solutions has been in business since 1986, and was incorporated in 1993. We are based in Westboro, Massachusetts. We have grown by adding service techniciasn, and has a long standing affiliations with local hardware and software suppliers.</p>
+     <p>We have access to over 200 years of combined computer experience. Our technician can deal with any problem that might occur. Our menu of services includes everything from a simple software installs to complex web designs. We have the ability to service our customer from start to finish. This means that we can stay with you from an opening quote all the way through custom software design, network and computer installation, setup, staff training and "on-going" on-site maintenance. Our technicians have extensive network, software and hardware experience.</p>
+     
+     <p>Our goal is simple to keep our customer satisfied. We are accredited member of the Better Business Bureau and have been for years, with any complaints. </p>
+     <a href="http://www.servicemagic.com/biz/plgenterprises?m=sealofapproval&amp;entry_point_id=5761960"><img src="images/service_magic.jpg" width="120" height="76" alt="service magic" /></a> 
+     
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="body_blog">
+
+    <div class="testimonial">
+      <h2> What clients say...</h2>
+      <div id="dropcontentsubject"></div>
+<div id="dropmsg0" class="dropcontent" > 
+<em>&quot;I just wanted to say that I think your staff is excellent. If I have a stupid question or if they need to come in, they are always knowledgeable and professional. They have a great attitude and a friendly manner. Very few people in life mention a job well done, they just like to complain about the bad things. I just wanted to let you know that I've been happy with All-Net Computer Solutions and all the employees.&quot; </em><strong>Jana - Westboro, MA</strong></em>
+</div>
+
+<div id="dropmsg1" class="dropcontent" >
+<em>&quot;I run a successful Chiropractic Practice in Wellsely Hills, MA. All-Net Computer solutions has been my computer service and hardware vendor since 1990. We have moved 3 times since then and the Staff at All-Net has installed the network and supported our practice management software every step of the say. In fact my practice is as successful as it is because Paul took the time to evaluate all the top shelf Chiropractic management software to see what would be the best for my skill set, and how I work. Paul has been a patient of mine since 1977 he was very familiar with my computer skills. The software that he evaluated and we now use, has made my workday very different. We are more efficient now than we have ever been. All of our treatment rooms are networked to our server. My scheduling, follow up and practice notes are very easy to do for myself and my staff. Because of this my patients get better service. Thanks All-Net Computer Solutions for all the great service.&quot;<strong> <br />
+Stewart - Wellsely Hills, MA</strong></em>
+</div>
+
+<div id="dropmsg2" class="dropcontent" >
+<em>&quot;The technicians at All- Net Computer Solutions have been outstanding. We have been clients since 1986 and they have networked us through 2 locations, and designed our inventory management system. When it came time to move to an industry standard application they helped the competitor's company move our data so that we never missed beat. They have since supported us in every way possible. We would not be successful today if it was not for their help and support. They also host our web site and mail. All of the All-Net staff are competent and knowledgeable.&quot;</em><strong> Steve - Douglas, MA </strong></em>
+   
+    </div>
+   
+   
+ <div id="dropmsg2" class="dropcontent" >
+<em>&quot;The technicians at All- Net Computer Solutions have been outstanding. We have been clients since 1986 and they have networked us through 2 locations, and designed our inventory management system. When it came time to move to an industry standard application they helped the competitor's company move our data so that we never missed beat. They have since supported us in every way possible. We would not be successful today if it was not for their help and support. They also host our web site and mail. All of the All-Net staff are competent and knowledgeable.&quot;</em><strong> Steve - Douglas, MA </strong></em>
+   
+    </div>  
+    
+ <div id="dropmsg3" class="dropcontent" >
+<em>&quot;Thank you so much for taking care of our computer dilemma. A VERY BIG THANK YOU for my keyboard and mouse.  They are AMAZINGLY better than what I had.  Just the perfect choice.  You are the best!&quot;</em><strong> Pam - Northboro, MA </strong></em></div>
+
+  </div>
+  <div class="clr"></div>
+  
+  <div class="footer1">
+     <div class="footer_resize1">
+   <p class="leftt1">&copy; Copyright All-Net Computer Solutions. All Rights Reserved<br />
+      <a href="index.html"> Home </a> | <a href="contact.html"> Contact </a>
+    
+      <div class="clr"></div>
+    </div>
+
+      <div class="clr"></div>
+    </div>
+    
+    <div class="clr"></div>
+  </div>
+</div>
+</div>
+</body>
+</html>

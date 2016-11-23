@@ -1,0 +1,281 @@
+status: 200
+content-length: 24165
+via: 1.1 varnish-v4
+surrogate-key: DEgCQ4nYtI3h4jaVjOBrRzcLtCitxg88AxQpSBgZu1U=
+ G0UQybdj6trxSC3SDjUXE+5jsOYj08zuwCgtnzA0GHU=
+vary: Accept-Encoding, Cookie, Cookie
+x-styx-version: StyxGo
+x-styx-req-id: styx-5662413c43d9053ee7c4006e016f1463
+content-language: en
+x-pantheon-styx-hostname: styx2dc46933
+etag: W/"1476722325-0"
+cache-control: public, max-age=900
+x-varnish: 84630449
+accept-ranges: bytes
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+last-modified: Mon, 17 Oct 2016 16:38:45 GMT
+-content-encoding: gzip
+link: </node/78>; rel="shortlink",</careers>; rel="canonical"
+date: Mon, 17 Oct 2016 16:38:46 GMT
+content-location: https://www.aerosim.com/careers
+x-drupal-cache: MISS
+x-content-type-options: nosniff
+age: 0
+server: nginx
+connection: keep-alive
+xkey: DEgCQ4nYtI3h4jaVjOBrRzcLtCitxg88AxQpSBgZu1U=
+ G0UQybdj6trxSC3SDjUXE+5jsOYj08zuwCgtnzA0GHU=
+x-frame-options: SAMEORIGIN
+content-type: text/html; charset=utf-8
+x-pantheon-endpoint: fef13efd-01da-4798-897c-9f6ec9d426e2
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="apple-touch-icon" sizes="57x57" href="/sites/default/files/favicons/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="60x60" href="/sites/default/files/favicons/apple-touch-icon-60x60.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="/sites/default/files/favicons/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="/sites/default/files/favicons/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="/sites/default/files/favicons/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="/sites/default/files/favicons/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="/sites/default/files/favicons/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="/sites/default/files/favicons/apple-touch-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/sites/default/files/favicons/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/png" href="/sites/default/files/favicons/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/sites/default/files/favicons/favicon-194x194.png" sizes="194x194"/>
+<link rel="icon" type="image/png" href="/sites/default/files/favicons/favicon-96x96.png" sizes="96x96"/>
+<link rel="icon" type="image/png" href="/sites/default/files/favicons/android-chrome-192x192.png" sizes="192x192"/>
+<link rel="icon" type="image/png" href="/sites/default/files/favicons/favicon-16x16.png" sizes="16x16"/>
+<link rel="manifest" href="/sites/default/files/favicons/manifest.json"/>
+<link rel="mask-icon" href="/sites/default/files/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
+<meta name="msapplication-TileColor" content="#da532c"/>
+<meta name="msapplication-TileImage" content="/sites/default/files/favicons/mstile-144x144.png"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="shortlink" href="/node/78" />
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0050/7898.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script><link rel="canonical" href="/careers" />
+<meta name="description" content="If you are excited about aviation, simulation and a challenge to innovate, Aerosim may be the place for you." />
+<title>Careers & Job Openings | Aerosim Technologies</title>
+<link rel="stylesheet" href="https://www.aerosim.com/sites/default/files/css/css_Ox_I-jGoU2vl7kcOQsSgTAyMQ3SczFb1U4CyYvJgEMA.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+<script src="https://www.aerosim.com/sites/default/files/js/js_Pay7z6jtRJgZplSzF4zQm51WJ_uO3T9Ra1xLVGL4Ddo.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
+<script src="https://www.aerosim.com/sites/default/files/js/js_6szY0ifKq4IAB2MdbmRONYdJwS3JzGW4DhFE94brtDw.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-60078324-1", {"cookieDomain":"auto"});ga("send", "pageview");</script>
+<script src="https://www.aerosim.com/sites/default/files/js/js_7Nzc4bZdftgFyGNiZMwbC5CTcj3hTd5o5mXNpGM8gMA.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"aero","theme_token":"lqKcJ0FtmTodmwlfzta9rBZEXPt7PmUTVq9zIND8cvg","js":{"sites\/all\/themes\/fett\/libraries\/foundation\/js\/foundation\/foundation.js":1,"sites\/all\/themes\/fett\/libraries\/foundation\/js\/foundation\/foundation.equalizer.js":1,"sites\/all\/themes\/fett\/libraries\/foundation\/js\/foundation\/foundation.offcanvas.js":1,"sites\/all\/themes\/fett\/libraries\/foundation\/js\/foundation\/foundation.tab.js":1,"0":1,"\/\/cdnjs.cloudflare.com\/ajax\/libs\/modernizr\/2.7.1\/modernizr.min.js":1,"sites\/all\/themes\/fett\/libraries\/fastclick\/fastclick.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.10.2\/jquery.min.js":1,"1":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/fett\/assets\/js\/fett.core.js":1,"sites\/all\/themes\/fett\/assets\/js\/fett.megamenu.js":1,"sites\/all\/themes\/fett\/assets\/js\/fett.offcanvas.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/stockholmsyndrome\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/themes\/aero\/assets\/js\/aero.js":1},"css":{"sites\/all\/modules\/contrib\/colorbox\/styles\/stockholmsyndrome\/colorbox_style.css":1,"sites\/default\/files\/sonar\/aero\/sonar-aero-Q6sw3h0dRj31Q3cU7AmERyYXKLYdqv.css":1,"sites\/default\/files\/sonar\/aero\/sonar-aero-DFSiaaotjxZH1afyV0Mcj3eZkqfhnv.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":false,"mobiledevicewidth":"480px"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/search\/node":true}});</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-page" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page" class="page oc-wrapper" >
+<div id="oc-block-main-nav" class="oc-block oc-effect-1 oc-direction-left"><nav  id="main-nav-oc-offcanvas" class="megamenu mp-menu"><div class="mp-level mp-level-open mp-level-base"><div class="mp-back-icon"><i class="fa fa-chevron-left"></i></div><h2>Site Navigation</h2><ul class="mm-1"><li class="mp-nest"><a href="/pilot-products">Pilot Products</a><div class="mp-level"><div class="mp-back-icon"><i class="fa fa-chevron-left"></i></div><a class="mp-back" href="#">back</a><ul class="mm-2"><li><a href="/pilot-products">Pilot Products</a></li>
+<li><a href="/systems-knowledge">Systems Knowledge</a></li>
+<li><a href="/procedure-training">Procedure Training</a></li>
+<li><a href="/jet-transition">Jet Transition</a></li>
+<li><a href="/products/government-military" title="">Government &amp; Military</a></li>
+</ul></div></li>
+<li class="mp-nest"><a href="/maintenance-products">Maintenance Products</a><div class="mp-level"><div class="mp-back-icon"><i class="fa fa-chevron-left"></i></div><a class="mp-back" href="#">back</a><ul class="mm-2"><li><a href="/maintenance-products">Maintenance Products</a></li>
+<li><a href="/products/virtual-maintenance-trainer" title="">Virtual Maintenance Trainer</a></li>
+<li><a href="/products/government-military" title="">Government &amp; Military</a></li>
+</ul></div></li>
+<li class="mp-nest"><a href="/flight-training-programs">Flight Training Programs</a><div class="mp-level"><div class="mp-back-icon"><i class="fa fa-chevron-left"></i></div><a class="mp-back" href="#">back</a><ul class="mm-2"><li><a href="/flight-training-programs">Flight Training Programs</a></li>
+<li><a href="/products/training/atpctp">Airline Transport Pilot Certification</a></li>
+<li><a href="/products/training/type-rating">Type Rating</a></li>
+<li><a href="/training-centers" title="">Training Centers</a></li>
+<li><a href="/products/first-officer-development" title="">First Officer Development</a></li>
+<li><a href="/primary-flight-certification">Primary Flight Certification</a></li>
+</ul></div></li>
+<li><a href="/online-shop">Online Shop</a></li>
+<li><a href="/contact-us">Contact Us</a></li>
+</ul></div></nav><a class="oc-close" href="#"></a></div><div class="oc-push"><div class="oc-content window"><div class="oc-content-inner document">
+  <header id="header" class="main-header">
+
+    <div class="row">
+      <div class="columns small-12">
+                  <a href="/" rel="home" title="Aerosim Home" id="logo"><img class="logo" typeof="foaf:Image" src="https://www.aerosim.com/sites/all/themes/aero/logo.png" alt="Aerosim logo" title="Aerosim Home" /></a>        
+        <div class="headerRight">
+                      <form class="search-form" action="/search/node" method="post" id="search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item textfield">
+  <label for="edit-keys">Enter your keywords </label>
+ <input type="text" id="edit-keys" name="keys" value="" size="40" maxlength="255" class="form-text" />
+</div>
+<button id="edit-submit" name="op" value="Search" type="submit" class="form-submit button">Search</button>
+</div><input type="hidden" name="form_build_id" value="form-iUmxyZXGJ6cYY7kNKQDiHClCR5X4BDwFylAVWh4OwLA" />
+<input type="hidden" name="form_id" value="search_form" />
+</div></form>          
+          <!-- region.secondary-nav.start -->
+                      <h2 class="element-invisible">Secondary menu</h2><nav id="secondary-nav"><ul><li><a href="/customer-support">Customer Support</a></li>
+<li><a href="https://training.aerosim.com/" title="" target="_blank">Training Login</a></li>
+</ul></nav>                    <!-- region.main-nav.end -->
+        </div>
+
+              </div>
+    </div>
+
+    <div class="mainNavigation">
+      <div class="row">
+        <div class="menuContainer small-12 columns">
+          <!-- region.main-nav.start -->
+          <span  id="oc-link-main-nav" data-oc-effect="1" data-oc-id="main-nav" data-oc-direction="left" class="oc-link hide-for-medium-up"><a href="#"><i class="fa fa-bars"></i> Menu</a></span>                      <h2 class="element-invisible">Main menu</h2><nav  id="main-nav" class="megamenu show-for-medium-up"><ul class="mm-1"><li class="drop"><a href="/pilot-products">Pilot Products</a><ul class="mm-2"><li class=""><a href="/systems-knowledge">Systems Knowledge</a></li>
+<li class=""><a href="/procedure-training">Procedure Training</a></li>
+<li class=""><a href="/jet-transition">Jet Transition</a></li>
+<li class=""><a href="/products/government-military" title="">Government &amp; Military</a></li>
+</ul></li>
+<li class="drop"><a href="/maintenance-products">Maintenance Products</a><ul class="mm-2"><li class=""><a href="/products/virtual-maintenance-trainer" title="">Virtual Maintenance Trainer</a></li>
+<li class=""><a href="/products/government-military" title="">Government &amp; Military</a></li>
+</ul></li>
+<li class="drop"><a href="/flight-training-programs">Flight Training Programs</a><ul class="mm-2"><li class=""><a href="/products/training/atpctp">Airline Transport Pilot Certification</a></li>
+<li class=""><a href="/products/training/type-rating">Type Rating</a></li>
+<li class=""><a href="/training-centers" title="">Training Centers</a></li>
+<li class=""><a href="/products/first-officer-development" title="">First Officer Development</a></li>
+<li class=""><a href="/primary-flight-certification">Primary Flight Certification</a></li>
+</ul></li>
+<li class=""><a href="/online-shop">Online Shop</a></li>
+<li class=""><a href="/contact-us">Contact Us</a></li>
+</ul></nav>                    <!-- region.main-nav.end -->
+        </div>
+      </div>
+    </div>
+  </header><!-- /#header -->
+
+
+  
+  
+  
+  
+  <div id="content">
+    <a id="main-content"></a>
+
+    <!-- <div class="row"> -->
+
+      <main id="main" class="">
+                                          <!-- region.content.start -->
+  <!-- block.system-main.start -->
+<div class="block system id-main">
+      
+      <article id="node-78" class="node page full clearfix" about="/careers" typeof="sioc:Item foaf:Document">
+
+  <!-- Page title / Hero title / Hero Content -->
+  <div class="hero" style="background-image: url('https://www.aerosim.com/sites/default/files/styles/content_full/public/images/591-675-careers.png?itok=XNmKRkFW')">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>Careers</h1>
+        <div class="introTxt"></div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="content">
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="field body"><p>At Aerosim, we realize it takes a team of dedicated employees with a variety of skills to create a truly great company. Thanks to the team we’ve developed over the years, Aerosim is considered by our most important critics – our customers – to be an innovative company backed by excellent products with reliable and effective customer support. As a growing company, Aerosim offers a world of opportunity for those who are ready to excel. If you are excited about aviation, simulation and a challenge to innovate, Aerosim may be the place for you. Check back often for a current list of our permanent, contract and internship opportunities. </p>
+<h4><br /><br />
+Current Job Openings - Aerosim Technologies<br /><br />
+ </h4>
+<h3>AVIATION COURSEWARE DEVELOPER</h3>
+<p><strong>Job Description </strong></p>
+<p>Aerosim Technologies is planning for tomorrow. Our team of dedicated individuals are turning imaginative ideas into leading products and services that provide elegant solutions for some of the toughest challenges in aviation training. Aerosim is seeking qualified, energetic, self-starting Aviation Courseware Developer to build engaging training content for the civil and military aviation markets. The Aviation Courseware Developer will be designing, developing, building and testing interactive content for aircraft systems and procedures using graphical and video development tools as well as proprietary simulation based editors.</p>
+<p><strong>Job Responsibilities</strong></p>
+<ul><li>Work as a member of a highly-creative, highly-collaborative and fast-paced e-learning design and development team</li>
+<li>Design and implement computer based training (CBT) for pilots, maintenance technicians and cabin crew in the general, commercial and military aviation industries</li>
+<li>Develop and execute project plans to ensure timely delivery of learning modules</li>
+</ul><p><strong>Training will be provided for:</strong></p>
+<ul><li>Proprietary Lesson Plan Editing tools to develop simulation based courseware</li>
+<li>Adobe Graphics Suite, including Photoshop and Illustrator, for the development of graphical components</li>
+<li>Adobe Flash, including basic Action Script to integrate the graphical, animation, audio, and simulation components into comprehensive interactive scenario based courseware</li>
+</ul><p><strong>Education and Experience</strong></p>
+<p><strong>Required:</strong></p>
+<ul><li>Private Pilot License</li>
+<li>1-4+ years’ experience in an aviation related environment</li>
+<li><span style="font-family:inherit; font-size:1.0625rem; line-height:1.4">Understand basic principles of aircraft systems and procedures (Hydraulics, Electrical, Navigation, FMS, CRM etc.)</span></li>
+<li><span style="font-family:inherit; font-size:1.0625rem; line-height:1.4">Proficiency in the use of Microsoft Office and Adobe Graphics Suites</span></li>
+</ul><p><strong>Preferred:</strong>​</p>
+<ul><li>Experience in graphic development using the Adobe Graphics Suite (including Photoshop, Illustrator and Flash) for use in interactive training programs</li>
+<li>Proficiency in development of interactive multimedia online instruction</li>
+</ul><p><strong>For consideration, please submit cover letter and resume.</strong></p>
+<p><a class="button" href="apply-today" target="_blank">Apply Today</a><br /><br />
+ </p>
+<h3> </h3>
+</div>      </div>
+    </div>
+  </div>
+
+  
+  
+</article>
+  </div>
+<!-- block.system-main.end -->
+  <!-- region.content.end -->
+      </main>
+
+      
+          <!-- </div> -->  <!-- /.row  -->
+  </div><!-- /#content -->
+
+  <footer class="site-footer">
+    <div class="row">
+      <div class="columns small-12">
+        <div class="socialFooter"><a href="https://twitter.com/Aerosim" title="Visit us on Twitter"><i class="fa fa-twitter"></i><span class="fa-l"> Twitter</span></a><a href="https://www.youtube.com/channel/UC9glecYBNrbAJgdbSrby7BA" title="Visit us on YouTube"><i class="fa fa-youtube"></i><span class="fa-l"> YouTube</span></a></div>
+                  <ul id="footer-menu" class="footer-menu inline clearfix"><li><a href="/about-us">About Us</a></li>
+<li><a href="/careers" class="active-trail active">Careers</a></li>
+<li><a href="/media-center">Media Center</a></li>
+<li><a href="/news" title="">News</a></li>
+<li><a href="/terms-conditions">Terms &amp; Conditions</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/customer-support" title="">Customer Support</a></li>
+<li><a href="https://training.aerosim.com/" title="" target="_blank">Training Login</a></li>
+</ul>        
+                <div class="copyright">&copy; 2016 Aerosim. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+
+</div></div></div></div>
+  
+<!--[if lt IE 9]>
+<script type="text/javascript" src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://www.aerosim.com/sites/all/themes/fett/libraries/rem/rem.min.js"></script>
+<![endif]-->
+<script src="https://www.aerosim.com/sites/default/files/js/js_JexBy42LOqjNWVnaD2kPuWhFW533KYCLq_Mhm0EmgLc.js"></script>
+<script>(function ($, Drupal, window, document, undefined) { $(document).foundation(); })(jQuery, Drupal, this, this.document);</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"432e62efcd","applicationID":"16718296","transactionName":"YFMANUJTV0ECVEVdC1kZIwJEW1ZcTFleUAFoRgMGVW1PWwZA","queueTime":0,"applicationTime":444,"atts":"TBQDQwpJRE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+  <script type="text/javascript">
+    var _tvr = 1;
+    var _powt = 'zLaikhjtUUmRuN7ZhU9usW8AcgBnAGYAZQA0AGEAOABkAGIAYQA=';
+    (function () {
+	  var s = document.createElement('script');
+	  s.type = 'text/javascript';
+	  s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cloud.crm.powerobjects.net/powerwebtraffic/powt.js.aspx';
+	  var hs = document.getElementsByTagName('script')[0];
+ 	  hs.parentNode.insertBefore(s, hs);
+    })();
+  </script>
+
+</html>

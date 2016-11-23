@@ -1,0 +1,2063 @@
+status: 200
+content-length: 143579
+content-location: http://www.jsmtechnologies.com
+x-aspnet-version: 4.0.30319
+set-cookie: X-Mapping-jojhhpii=366338C7891D03A4FA674383E531BCD6;
+ path=/, ASP.NET_SessionId=5ttgkgbvbfu1xt145fhcn4e5; path=/; HttpOnly
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+-content-encoding: gzip
+cache-control: private
+date: Mon, 17 Oct 2016 11:30:26 GMT
+x-powered-by: ASP.NET
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1"><link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet" type="text/css" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css" /><link rel="stylesheet" href="css/main-style.css" type="text/css" /><link href="css/allinone_contentSlider.css" rel="stylesheet" type="text/css" /><link media="ALL" rel="stylesheet" type="text/css" href="css/menu.css" /><link media="ALL" rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" /><link href="css/jquery.mmenu.css" rel="stylesheet" type="text/css" />
+    <!--veerendra prasad -->
+    
+    <!--veerendra prasad -->
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery.tabSlideOut.v1.31.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var $jquery = jQuery.noConflict();
+        (function ($) {
+            $(function () {
+                $('.handle2').click(function () {
+                    $('.sliderforms').css('display', 'none');
+                    var elmid = $(this).attr('id');
+                    var formid = elmid + '_form';
+                    $('#' + formid).css('display', '');
+                    return false;
+                });
+
+                /*$('#formelm2').click(function(){
+                if($('#slide-out-div2').hasClass('open'))
+                {
+		
+                }
+                else
+                {
+                $('#formelm1').trigger('click');
+                $('.sliderforms').css('display','none');
+                $('#formelm1_form').css('display','none')
+                $('#formelm2_form').css('display','')
+                }
+                return false;
+                });*/
+                $('.slide-out-div2').tabSlideOut1({
+                    tabHandle: '.handle2',                    //class of the element that will become your tab
+                    //pathToTabImage: 'images/right-panel.jpg', //path to the image for the tab //Optionally can be set using css
+                    //imageHeight: '241px',                     //height of tab image //Optionally can be set using css
+                    //imageWidth: '62px',                       //width of tab image  //Optionally can be set using css
+                    tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
+                    speed: 200,                               //speed of animation
+                    action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+                    topPos: '30%',                          //position from the top/ use if tabLocation is left or right
+                    leftPos: '85px',                          //position from left/ use if tabLocation is bottom or top
+                    fixedPosition: true                       //options: true makes it stick(fixed position) on scroll
+                });
+            });
+        })(jQuery);
+    </script>
+    <script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+    <script src="js/allinone_contentSlider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('#allinone_contentSlider_common').allinone_contentSlider({
+                skin: 'common',
+                width: 1920,
+                height: 634,
+                width100Proc: false,
+                responsive: true,
+                autoHideBottomNav: false,
+                showPreviewThumbs: false,
+                autoHideNavArrows: false,
+                showNavArrows: 1
+            });
+        });
+    </script>
+    <script src="js/respond.js" type="text/javascript"></script>
+   
+    <script type="text/javascript" src="../js/jquery.mmenu.js"></script> 
+<script type="text/javascript" src="../js/menu-mob.js"></script> 
+
+
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        // hide #back-top first
+        $("#back-top").hide();
+
+        // fade in #back-top
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#back-top').fadeIn();
+                } else {
+                    $('#back-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-top a').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+
+    });
+</script>
+
+<style type="text/css">
+body {
+font: .88em/150% Arial, Helvetica, sans-serif;
+margin: 30px auto;
+}
+#pagewrap {
+margin: 0 auto;
+width: 600px;
+padding-left: 150px;
+position: relative;
+}
+/*Back to top button*/
+#back-top {
+position: fixed;
+bottom: 30px;
+margin-left: -150px;
+}
+#back-top a {
+width: 108px;
+display: block;
+text-align: center;
+font: 11px/100% Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+text-decoration: none;
+color: #bbb;
+/* background color transition */
+-webkit-transition: 1s;
+-moz-transition: 1s;
+transition: 1s;
+}
+#back-top a:hover {
+color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+width: 108px;
+height: 108px;
+display: block;
+margin-bottom: 7px;
+background: #ddd url(images/top.png) no-repeat center center;
+/* rounded corners */
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+/* background color transition */
+-webkit-transition: 1s;
+-moz-transition: 1s;
+transition: 1s;
+}
+#back-top a:hover span {
+background-color: #777;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <meta name="subject" content="Human Resources Software, HRIS Software, HRIS Software India, HR software, Payroll Software, HRIS, HRMS, Payroll package, Timesheet Software, Time Sheet Software, hr package, HR Software 
+
+India, Payroll Software India, HR Information System,Web Based HR and Payroll Software,online payroll and hr software, India, HR System, Human Resources,
+
+Intranet,self service,Payroll Software for India, Nigeria, Africa, HR Software for India, Nigeria and Africa,Indian Central Govt Payroll,Payroll Software 
+
+with VI & VII Pay Commission requirements,HRMS, HR, Policies, Procedures, HR Intranet,Expense Management System,Expense Reimbursement System, Expense Management Software, Expense Reimbursement Software, Expense Claims System, Expense Claims Software, Expense Claims Reimbursement System, Expense Claims Reimbursement Software,
+
+Bangalore, Chennai, Mumbai,Pune, New Delhi,Hyderabad, Kolkata , On Premises Software, On Premises HR and Payroll Software"/>
+
+
+
+<meta name="CATEGORY" content=
+
+"HR Software, HR Software India, HRIS Software, Human Resources Software, Payroll Software, Payroll Software India, , HR Payroll Software, Timesheet Software, Time Sheet Software,
+
+payroll package, salary package, hr package, HR Software Nigeria, Payroll Software Nigeria, Human Resources Software India,
+
+HRIS,Training,Recruitment,Personnel, Indian central Govt Payroll Software, HR Software India, Payroll Software India, 
+
+salary package, salary software,Expense Management System,Expense Reimbursement System, Expense Management Software, Expense Reimbursement Software, Expense Claims System, Expense Claims Software, Expense Claims Reimbursement System, Expense Claims Reimbursement Software, Bangalore, Chennai, Mumbai, Pune,New Delhi,Hyderabad, Kolkata, On Premises Software, On Premises HR and Payroll Software"/>
+
+ 
+
+<meta name="revisit-after" content="4 days"/>
+
+ <meta name="Description" content="Excellence in HR Software, Payroll Software, Employee Self Service Software, PMS Software, Central Government Payroll Software, Timesheet Software for India, Asia, Africa and Middle East."/>
+
+<meta name="Keywords" content="Human resources Software,hr software,payroll software, hr management software, hr software companies, Timesheet Software, 
+
+Time Sheet Software, Time sheet Managment Software,hr software solutions, hr software india,  Payroll Software India, Human Resources Software India, 
+
+best payroll software, payroll software nigeria, payroll software india, hris software, best hris software, central govt payroll sofwtare,
+
+VI & VII Pay Commission payroll software, HRIS Software, HRMS Software, Employee self service software,Expense Management System,Expense Reimbursement System, Expense Management Software, Expense Reimbursement Software, Expense Claims System, Expense Claims Software, Expense Claims Reimbursement System, Expense Claims Reimbursement Software, Bangalore, Chennai, Mumbai,Pune, New Delhi,Hyderabad, Kolkata, On Premises Software, On Premises HR and Payroll Software"/>
+
+ 
+
+<meta name="robots" content="all, index, follow"/>
+
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="css/main-style.css" type="text/css" />
+<link href="css/allinone_contentSlider.css" rel="stylesheet" type="text/css" />
+<link media="ALL" rel="stylesheet" type="text/css" href="css/menu.css"/>
+
+
+
+
+
+
+<link media="ALL" rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"/>
+<link href="css/jquery.mmenu.css" rel="stylesheet" type="text/css" />
+
+
+<!--veerendra prasad -->
+ 
+
+<!--veerendra prasad -->
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<script src="js/jquery.tabSlideOut.v1.31.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var $jquery = jQuery.noConflict();
+    (function ($) {
+        $(function () {
+            $('.handle2').click(function () {
+                $('.sliderforms').css('display', 'none');
+                var elmid = $(this).attr('id');
+                var formid = elmid + '_form';
+                $('#' + formid).css('display', '');
+                return false;
+            });
+
+         
+            $('.slide-out-div2').tabSlideOut1({
+                tabHandle: '.handle2',                    //class of the element that will become your tab
+                //pathToTabImage: 'images/right-panel.jpg', //path to the image for the tab //Optionally can be set using css
+                //imageHeight: '241px',                     //height of tab image //Optionally can be set using css
+                //imageWidth: '62px',                       //width of tab image  //Optionally can be set using css
+                tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
+                speed: 200,                               //speed of animation
+                action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+                topPos: '30%',                          //position from the top/ use if tabLocation is left or right
+                leftPos: '85px',                          //position from left/ use if tabLocation is bottom or top
+                fixedPosition: true                       //options: true makes it stick(fixed position) on scroll
+            });
+        });
+    })(jQuery);
+</script>
+
+
+<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+<script src="js/allinone_contentSlider.js" type="text/javascript"></script>
+
+<script src="js/respond.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="../js/jquery.mmenu.js"></script> 
+<script type="text/javascript" src="../js/menu-mob.js"></script> 
+
+<title>
+	16 Years of Excellence in HR Software, Payroll Software,ESS Software,Timesheet Software
+</title></head>
+<body>
+    <form method="post" action="./" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1MmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFDGN0bDAwJGltZ2J0bqQ8CPjqiGoKgKYr2wCj5+OEUNFzGrTm87iB/6m2kneL" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8D0E13E6" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAIqtg9LosehzStNUKrqxItyrUtF7TvUlA0NCIDlO/coFGK83wWqmzEomflGnJjA/DTy3mqNTN5DK48ulY6oFcXs" />
+    <div id="overlay">
+    </div>
+    <div class="container-main">
+        
+        
+        <!-- 	<div class="fixedContainer">
+		<a href="#"><img src="images/call-me.jpg" alt="" title="" /></a>
+		<a href="#"><img src="images/post-your-query.jpg" alt="" title="" /></a>
+		<a href="#"><img src="images/schedule-demo.jpg" alt="" title="" /></a>
+		<a href="#"><img src="images/social-media.jpg" alt="" title="" /></a>
+	</div> -->
+        <div class="container">
+            <div id="template" class="t01">
+                <div class="container clearfix">
+                    <div class="main-wrap">
+                        <div class="top-panel clearfix">
+                            <div class="logo clearfix">
+                                <div class="main-logo">
+                                    <a href="#">
+                                        <img src="images/jsm-technology.jpg" alt="JSM Technologies-Excellence in Human Resource Management Software" title="JSM Technologies-Excellence in Human Resource Management Software" /></a>
+                                </div>
+                                <div class="sub-logo">
+                                    <a href="#">
+                                        <img src="images/JSM 16 Years.jpg" alt="16 Years of HR Software, Payroll Software & ESS" title="16 Years of HR Software, Payroll Software & ESS Software" /></a></div>
+                            </div>
+                            <div class="extra-panel">
+                                <div class="top-extra clearfix">
+                                    <div class="top-navi">
+                                        <ul>
+                                            <li><a href="home.aspx">
+                                                <img src="images/home-icon.gif" alt="JSM Technologies Pvt Ltd Home Page" title="JSM Technologies Pvt Ltd Home Page" /></a></li>
+                                            <li><a href="Communities/communities.aspx">Communities</a></li>
+                                            <li><a href="Careers/careers.aspx">Careers</a></li>
+                                            <li><a href="ContactUs/contactus.aspx">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-box-main">
+                                        <div class="search-box">
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="header">
+                                    <div class="right">
+                                        <a id="mobileNav" href="#" class="menu mobile-only"><span>Menu</span></a> <a id="mobileNav-back"
+                                            href="#" class="mobile-only">Back</a>
+                                           
+     
+
+                                        <div id="primaryNav">
+                                            <ul class="primaryNav clearfix">
+                                                <li style="padding-left:12px;"><a id="ctl11_ppHeader_lvPrimaryNavigation_ctrl0_hlNavigationLink" href="Products/products.aspx">Products
+                                                </a>
+                                                    <div class="dropdown">
+                                                        <div class="clearfix">
+                                                            <div class="left clearfix" style="width: 35%;">
+                                                                <p class="overview gradient-magenta">
+                                                                    JSM has the Most Comprehensive Human Capital Management Software. Learn how JSM
+                                                                    products can meet your specific needs.
+                                                                </p>
+                                                            </div>
+                                                            <div class="right clearfix" style="width: 65%;">
+                                                                <div class="column clearfix">
+                                                                    <h4>
+                                                                        <a href="Products/businessintelligencesoftware.aspx">Business Intelligence Software</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM HR BI Software</a></li>
+                                                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM Payroll BI Software</a></li>
+                                                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM Leave and Attendance Software
+                                                                            BI</a></li>
+                                                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM PMS BI Software</a></li>
+                                                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM Expense Management BI Software</a></li>
+                                                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM Sales BI Software</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Products/centralgovtpayrollsoftware.aspx">Central Government / Public Sector
+                                                                            / Autonomous Institutes</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/centralgovtpayrollsoftware.aspx">JSM Central Government Payroll
+                                                                            Software</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Products/expensemanagementsoftware.aspx">Expenses Management</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/expensemanagementsoftware.aspx">JSM Expense Management Software</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Products/timesheetmanagementsoftware.aspx">Projects and Time Sheets</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/timesheetmanagementsoftware.aspx">JSM Timesheet Management
+                                                                            Software</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="column clearfix">
+                                                                    <h4>
+                                                                        <a href="Products/products.aspx">Human Capital Management</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/hrsoftware.aspx">JSM HR Software - Core HR</a></li>
+                                                                        <li><a href="Products/employeeselfservicesoftware.aspx">JSM Employee Self Service
+                                                                            Software</a></li>
+                                                                        <li><a href="Products/leaveandattendancesoftware.aspx">JSM Leave and Attendance Management
+                                                                            Software</a></li>
+                                                                        <li><a href="Products/trainingmanagementsoftware.aspx">JSM Training Management Software</a></li>
+                                                                        <li><a href="Products/performancemanagementsoftware.aspx">JSM Performance Appraisal Management
+                                                                            Software</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Products/payrollandcompliancesoftware.aspx">Payroll and Compliances</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/compliancesmanagementsoftware.aspx">JSM Compliances Management Software</a></li>
+                                                                        <li><a href="Products/payrollsoftware.aspx">JSM Payroll Software</a></li>
+                                                                        <li><a href="Products/reimbursementmanagementsoftware.aspx">JSM Reimbursements Management
+                                                                            Software </a></li>
+                                                                            <li><a href="Products/flexibenefitssoftware.aspx">JSM  Flexi Benefits Software</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Products/travelmanagementsoftware.aspx">Travel</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/travelmanagementsoftware.aspx">JSM Travel Management Software
+                                                                            </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="column clearfix">
+                                                                    <h4>
+                                                                        <a href="Products/rreturnsmanagementsoftware.aspx">Factoring Organizations</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/rreturnsmanagementsoftware.aspx">JSM R Returns Software (RBI
+                                                                            Reporting for Factoring Companies)</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Products/golfclubsoftware.aspx">Golf Clubs</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/golfclubmembershipsoftware.aspx">JSM Golf Club Memberships
+                                                                            Management Software</a></li>
+                                                                        <li><a href="Products/teetimingmanagementsoftware.aspx">JSM Tee Timings Management
+                                                                            Software</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Products/leadmanagementsoftware.aspx">Sales</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/leadmanagementsoftware.aspx">JSM Lead Management Software</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Products/servicecentermanagementsoftware.aspx">Service Centres</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/servicecentermanagementsoftware.aspx">JSM Service Centre Management
+                                                                            Software</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Products/timesharemanagementsoftware.aspx">Time Shares Industry</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Products/timesharemanagementsoftware.aspx">JSM Time Shares Management
+                                                                            Software</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="calls-to-action0 clearfix">
+                                                            <li>
+                                                                <img src="images/drop-down/HR-Software-Brochure-mouse-rollover.jpg" alt="" title="" />
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Products/hrsoftware.aspx">JSM HRIS Software</a></h3>
+                                                                    <p>
+                                                                        16 Years old JSM HRIS Software is the most comprehensive HR and Payroll Software
+                                                                        for leading Global Companies
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <img src="images/jsm-travel.jpg" alt="" title="" />
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Products/travelmanagementsoftware.aspx">JSM Travel and Expense Management
+                                                                            Software</a></h3>
+                                                                    <p>
+                                                                        JSM Expenses Management Software helps you manage with ease the process of Employee
+                                                                        Claims submission, approval,set policies and limits and finally reimbursements.</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li  style="padding-left:12px;"><a id="ctl11_ppHeader_lvPrimaryNavigation_ctrl0_hlNavigationLink" href="Solutions/solutions.aspx">
+                                                    Solutions</a>
+                                                    <div class="dropdown">
+                                                        <div class="clearfix">
+                                                            <div class="left clearfix" style="width: 35%;">
+                                                                <p class="overview gradient-green">
+                                                                    JSM Human Capital Management Solutions help you tackle the real challenges HR and
+                                                                    Payroll team and employees face daily.
+                                                                </p>
+                                                            </div>
+                                                            <div class="right clearfix" style="width: 65%;">
+                                                                <div class="column clearfix">
+                                                                    <h4>
+                                                                        <a href="Solutions/solutions.aspx">Human Capital Management Solutions</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Solutions/businessintelligencemanagement.aspx">Business Intelligence / Analytics
+                                                                        </a></li>
+                                                                        <li><a href="Solutions/corehrmanagement.aspx">Core HR</a></li>
+                                                                        <li><a href="Solutions/compliancesmanagement.aspx">Compliances / Statutory - for Employees</a></li>
+                                                                        <li><a href="Solutions/expensemanagement.aspx">Expense Management</a></li>
+                                                                        <li><a href="Solutions/employeeselfservicemanagement.aspx">Employee Self Service</a></li>
+                                                                        <li><a href="Solutions/reimbursementmanagement.aspx">Employee Reimbursements</a></li>
+                                                                        <li><a href="Solutions/flexibenefitsmanagement.aspx">Flexi Benefits for Employees </a></li>
+                                                                        <li><a href="Solutions/leaveandattendancemanagement.aspx">Leave and Attendance Management
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="column clearfix">
+                                                                    <h4>
+                                                                        <a href="Solutions/solutions.aspx">Human Capital Management Solutions</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Solutions/payrollmanagement.aspx">Payroll Management</a></li>
+                                                                        <li><a href="Solutions/performancemanagement.aspx">Performance Management / Appraisal
+                                                                        </a></li>
+                                                                        <li><a href="Solutions/timesheetmanagement.aspx">Project and Time sheet Management </a></li>
+                                                                        <li><a href="Solutions/centralgovtpayrollmanagement.aspx">VI & VII Pay Commission Payroll /
+                                                                            Central Govt Payroll </a></li>
+                                                                        <li><a href="Solutions/timesheetmanagement.aspx">Time Sheet Management </a></li>
+                                                                        <li><a href="Solutions/trainingmanagement.aspx">Training Management </a>
+                                                                        </li>
+                                                                        <li><a href="Solutions/travelmanagement.aspx">Travel Management </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="column clearfix">
+                                                                    <h4>
+                                                                        <a href="Solutions/solutions.aspx">Business Management Solutions</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Solutions/golfclubmembershipmanagement.aspx">Golf Club Memberships Management </a></li>
+                                                                             <li><a href="Solutions/teetimingmanagement.aspx">Golf Club Tee Timings Management </a></li>
+                                                                        <li><a href="Solutions/leadmanagement.aspx">Lead Management </a></li>
+                                                                        <li><a href="Solutions/rreturnsmanagement.aspx">R Returns (RBI Reporting for
+                                                                            Factoring Companies) </a></li>
+                                                                        <li><a href="Solutions/servicecentremanagement.aspx">Service Centre Management </a>
+                                                                        </li>
+                                                                        <li><a href="Solutions/timesharemanagement.aspx">Time Shares Management </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="calls-to-action0 clearfix">
+                                                            <li><a href="#">
+                                                                <img src="images/drop-down/Time-Sheet-software-mouse-rollover.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Solutions/timesheetmanagement.aspx">Project and Time Sheet Management</a></h3>
+                                                                    <p>
+                                                                        JSM provides innovative solutions for Employee Time Sheet Management</p>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <img src="images/drop-down/ESS-Software-mouse-rollover.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Solutions/employeeselfservicemanagement.aspx">Employee Self Service</a></h3>
+                                                                    <p>
+                                                                        JSM was one of the first company in India to launch an ESS Software and is today
+                                                                        the most comprehensive ESS Software covering a wide range of employee lifecycle
+                                                                        activities</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li  style="padding-left:12px;"><a id="ctl11_ppHeader_lvPrimaryNavigation_ctrl0_hlNavigationLink" href="Industries/industries.aspx">
+                                                    Industries</a>
+                                                    <div class="dropdown">
+                                                        <div class="clearfix">
+                                                            <div class="left clearfix" style="width: 35%;">
+                                                                <p class="overview gradient-blue">
+                                                                    JSM Technologies Provides Human Capital Management Solutions to a wide range of
+                                                                    Industries. JSM Software products can be customized to meet the specific needs of
+                                                                    your industry.</p>
+                                                            </div>
+                                                            <div class="right clearfix" style="width: 65%;">
+                                                                <div class="column-new2 clearfix">
+                                                                    <h4>
+                                                                        <a href="Industries/Industries.aspx">Industries Solutions</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Industries/industries.aspx">Automotive</a></li>
+                                                                        <li><a href="Industries/industries.aspx">Communications </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Energy </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Education </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Engineering and Construction </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Financial Services</a></li>
+                                                                        <li><a href="Industries/industries.aspx">Healthcare </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Hospitality </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Life Sciences and Pharma </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Manufacturing </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Media and Entertainment </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Non Profit / NGO </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Professional Services </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Public Sector </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Technology </a></li>
+                                                                        <li><a href="Industries/industries.aspx">Travel and Transportation </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="column-right-new2 clearfix">
+                                                                    <ul class="calls-to-action2 clearfix">
+                                                                        <li><a href="Industries/hrissoftwarepublicsector.aspx">
+                                                                            <img src="images/industries-menu-img03.jpg" alt="" title="" /></a>
+                                                                            <div class="content">
+                                                                                <h3>
+                                                                                    <a href="Industries/hrissoftwarepublicsector.aspx">JSM HRIS Software for the Public
+                                                                                        Sector</a></h3>
+                                                                                <p>
+                                                                                    JSM has specific HR and Payroll Software solutions for the public sector organizations
+                                                                                    - Central Govt, State Govt as well as Autonomous bodies.</p>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li><a href="Industries/jsmtimesheetprojectbased.aspx">
+                                                                            <img src="images/industries-menu-img04.jpg" alt="" title="" /></a>
+                                                                            <div class="content">
+                                                                                <h3>
+                                                                                    <a href="Industries/jsmtimesheetprojectbased.aspx">JSM Timesheet Software for Project
+                                                                                        Based Companies</a></h3>
+                                                                                <p>
+                                                                                    JSM has specific Timesheet Software solutions for companies where majority of employees
+                                                                                    work on Projects. IT and Engineering companies would benefit with the deep expertise
+                                                                                    JSM has in Timesheet Management.</p>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="calls-to-action0 clearfix">
+                                                            <li><a href="Industries/hrissoftwareeducationsector.aspx">
+                                                                <img src="images/industries-menu-img01.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Industries/hrissoftwareeducationsector.aspx">JSM HR and Payroll Software
+                                                                            for the Education sector</a></h3>
+                                                                    <p>
+                                                                        JSM has proven expertise in understanding the unique and complex requirements of
+                                                                        the higher education sector and providing right solutions to meet their challenging
+                                                                        needs.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="Industries/hrissoftwaremanufacturing.aspx">
+                                                                <img src="images/industries-menu-img02.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Industries/hrissoftwaremanufacturing.aspx">JSM HRIS Software for the Manufacturing
+                                                                            industry</a></h3>
+                                                                    <p>
+                                                                        JSM has over the last 16 Years gained tremendous domain knowledge in the Manufacturing
+                                                                        industry and can customize its software to meet your specific requirements.</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li  style="padding-left:12px;"><a id="ctl11_ppHeader_lvPrimaryNavigation_ctrl0_hlNavigationLink"
+                                                 href="Services/services.aspx">
+                                                    Services</a>
+
+                                                    <div class="dropdown">
+                                                        <div class="clearfix">
+                                                            <div class="left clearfix" style="width: 35%;">
+                                                                <p class="overview gradient-pink">
+                                                                    JSM provides a wide range of services to help you get the most of your Technology
+                                                                    Investment. JSM helps you in getting the software working right from the start and
+                                                                    to use the software to its full potential.</p>
+                                                            </div>
+                                                            <div class="right clearfix" style="width: 65%;">
+                                                              
+                                                                 <div class="column clearfix">
+                                                                    <h4>
+                                                                        <a href="Services/implementation.aspx">
+                                                                        Implementation Services</a></h4>
+                                                                      <ul>
+                                                                        <li><a href="Services/implementation.aspx">
+                                                                        Employee Data Porting </a></li>
+                                                                        <li><a href="Services/implementation.aspx">
+                                                                       Organization Setup </a></li>
+                                                                        <li><a href="Services/implementation.aspx">
+                                                                       Policies Setup </a></li>
+                                                                        <li><a href="Services/implementation.aspx">
+                                                                       Salary Procesing Support
+                                                                        </a></li>
+                                                                         <li><a href="Services/implementation.aspx">
+                                                                      Go Live Support
+                                                                        </a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Services/trainingservices.aspx">Training Services</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Services/trainingoptions.aspx">
+                                                                        Training Options </a></li>
+                                                                        <li><a href="Services/certifications.aspx">
+                                                                        Certifications </a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Services/consultingservice.aspx">
+                                                                        Consulting Services</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Services/consultingservice.aspx">
+                                                                       Consulting Services</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Services/customersupport.aspx">Support</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Services/customersupport.aspx">Customer Support</a></li>
+                                                                    </ul>
+                                                                    <h4>
+                                                                        <a href="Services/howwework.aspx">How We Work</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Services/engagementmodel.aspx">Engagement Model</a> </li>
+                                                                        <li><a href="Services/innovation.aspx">Innovation</a> </li>
+                                                                    </ul>
+                                                                </div>                                                            
+                                                                    <div class="column clearfix">
+                                                                           
+                                                                                    <h4>
+                                                                                        <a href="Products/products.aspx"> Our Expertise<br />
+                                                                                            <br />
+                                                                                           Human Capital Management Services</a></h4>
+                                                                                    <ul>
+                                                                                       <li><a href="Products/businessIntelligenceSoftware.aspx"> Business Intelligence / Analytics </a></li>
+																<li><a href="Products/hrsoftware.aspx"> Core HR </a></li>
+																<li><a href="Products/expensemanagementsoftware.aspx"> Employee Expense Management </a></li>
+																<li><a href="Products/employeeselfservicesoftware.aspx"> Employee Self Service </a></li>
+																<li><a href="Products/reimbursementmanagementsoftware.aspx"> Employee Reimbursements </a></li>
+																<li><a href="Products/reimbursementmanagementsoftware.aspx"> Flexi Benefits for Employees </a></li>
+																<li><a href="Products/leaveandattendancesoftware.aspx"> Leave and Attendance Management </a></li>
+																<li><a href="Products/payrollsoftware.aspx"> Payroll </a></li>
+																<li><a href="Products/performancemanagementsoftware.aspx"> Performance Management / Appraisal </a></li>
+																<li><a href="Products/compliancesmanagementsoftware.aspx"> Compliances / Statutory - for Employees </a></li>
+																<li><a href="Products/centralgovtpayrollSoftware.aspx"> VI & VII Pay Commission Payroll / Central Govt Payroll </a></li>
+																<li><a href="Products/timesheetmanagementsoftware.aspx"> Time Sheet Management </a></li>
+																<li><a href="Products/trainingmanagementsoftware.aspx"> Training Management </a></li>
+																<li><a href="Products/travelmanagementsoftware.aspx"> Travel Management </a></li>
+                                                                                    </ul>
+                                                                             </div>
+                                                                              
+                                                                                <div class="column clearfix">
+                                                                                    <h4>
+                                                                                        <a href="Products/products.aspx"> Our Expertise<br />
+                                                                                            <br />
+                                                                                          Business Management Services</a></h4>
+                                                                                    <ul>
+                                                                                       <li><a href="Products/golfclubmembershipsoftware.aspx"> Golf Club Memberships  Management </a></li>
+															                    	<li><a href="Products/teetimingmanagementsoftware.aspx"> Golf Club Tee Timings Management </a></li>
+																<li><a href="Products/leadManagementSoftware.aspx"> Lead Management </a></li>
+																<li><a href="Products/rreturnsmanagementsoftware.aspx"> R Returns (RBI Reporting for Factoring Companies) </a></li>
+																<li><a href="Products/servicecentermanagementsoftware.aspx"> Service Centre Management </a></li>
+																<li><a href="Products/timesharemanagementsoftware.aspx"> Time Shares Management </a></li>
+                                                                                    </ul>
+                                                                           
+                                                                        </div>
+                                                                   
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <ul class="calls-to-action0 clearfix">
+                                                            <li><a href="#">
+                                                                <img src="images/drop-down/Training-drop-down.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Services/trainingservices.aspx">World Class Training</a></h3>
+                                                                    <p>
+                                                                        JSM provides world class Onsite training by experts in their fields and continuous
+                                                                        year round online trainings.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <img src="images/services-menu-img02.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Services/implementation.aspx">Complex Legacy Employee data import during Implementation</a></h3>
+                                                                    <p>
+                                                                        JSM has exceptional skills in importing legacy employee data during project implementation.</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        </div>
+
+
+                                                </li>
+                                                <li  style="padding-left:12px;"><a id="ctl11_ppHeader_lvPrimaryNavigation_ctrl0_hlNavigationLink" href="#">Resources</a>
+                                                    <div class="dropdown">
+                                                        <div class="clearfix">
+                                                            <div class="left clearfix" style="width: 35%;">
+                                                                <p class="overview gradient-darkblue">
+                                                                    JSM provides you access to a wide range of resources to help you know more about
+                                                                    JSM Products and Services. Download JSM Software products brochures and presentations.</p>
+                                                            </div>
+                                                            <div class="right clearfix" style="width: 65%;">
+                                                                <div class="column resources-column1 clearfix">
+                                                                    <h4>
+                                                                        <a href="Resources/productbrochures.aspx">Customer Resources</a></h4>
+                                                                    <ul>
+                                                                       
+                                                                        <li><a href="Resources/productbrochures.aspx">Product Brochures</a></li>
+                                                                        <li><a href="Resources/productspresentations.aspx">Products Presentations</a></li>
+                                                                      <li><a href="Resources/RequestPersonal.aspx">Request Personal Demo</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="column column2 resources-column2 clearfix">
+                                                                    <div class="box2">
+                                                                        <div class="resources-grp1">
+                                                                            <h4>
+                                                                                I am a ...<br />
+                                                                                    <br />
+                                                                                    C- Level Executive</h4>
+                                                                            <ul>
+                                                                                <li><span>CMD</span></li>
+                                                                                <li><span>Director</span></li>
+                                                                                <li><span>Chief Executive Officer - CEO</span></li>
+                                                                                <li><span>Chief Human Resources Officer - CHRO</span></li>
+                                                                                <li><span>Chief Financial Officer - CFO</span></li>
+                                                                                <li><span>Chief Information Officer - CIO</span></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="resources-grp2">
+                                                                            <div class="menu-txt">
+                                                                                <a href="Resources/requestpersonal1to1.aspx">Request a personal 1 to 1 meeting with JSM CEO</a> Share your HRIS Challenges
+                                                                                and Requirements. Explore how JSM can be your long term Technology Partner.</div>
+                                                                            <div class="menu-img">
+                                                                                <img src="images/services-menu-img01.jpg" alt="" title="" /></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="calls-to-action0 clearfix">
+                                                            <li><a href="#">
+                                                                <img src="images/drop-down/HR-Software-Brochure-mouse-rollover.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Resources/productbrochures.aspx">JSM HR Software Brochure </a>
+                                                                    </h3>
+                                                                    <p>
+                                                                        Download JSM HR Software Brochure
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <img src="images/drop-down/Payroll-Software-Brochure-mouse-rollover.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Resources/productbrochures.aspx">JSM Payroll Software Brochure </a>
+                                                                    </h3>
+                                                                    <p>
+                                                                        Download JSM Payroll Software Brochure
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li  style="padding-left:12px;"><a id="ctl11_ppHeader_lvPrimaryNavigation_ctrl0_hlNavigationLink" href="#">Customers</a>
+                                                    <div class="dropdown">
+                                                        <div class="clearfix">
+                                                            <div class="left clearfix" style="width: 35%;">
+                                                                <p class="overview gradient-lightgreen">
+                                                                    Leading global companies depend upon JSM HRIS Software for their Human Capital Management
+                                                                    needs. JSM HR and Payroll Software powers key human resource functions in leading
+                                                                    companies.</p>
+                                                            </div>
+                                                            <div class="right clearfix" style="width: 65%;">
+                                                                <div class="column-new clearfix">
+                                                                    <h4>
+                                                                        <a href="Customers/testimonials.aspx">Customer Stories</a></h4>
+                                                                    <ul>
+                                                                      
+                                                                        <li><a href="Customers/featuredcustomer.aspx">Featured Customers </a></li>
+                                                                        <li><a href="Customers/testimonials.aspx">Testimonials </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="column-right-new clearfix">
+                                                                    <div class="column-right-grp">
+                                                                        <div class="column-right-col1">
+                                                                            <img src="images/logo1.jpg" alt="" title="" /></div>
+                                                                        <div class="column-right-col2">
+                                                                            <img src="images/image01.jpg" alt="" title="" /></div>
+                                                                        <div class="column-right-col3">
+                                                                            <h3>
+                                                                                JSM Implements Expense Management System at CP Seeds India</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="column-right-grp">
+                                                                        <div class="column-right-col1">
+                                                                            <img src="images/logo2.jpg" alt="" title="" /></div>
+                                                                        <div class="column-right-col2">
+                                                                            <img src="images/drop-down/Time-Sheet-software-mouse-rollover.jpg" alt="" title="" /></div>
+                                                                        <div class="column-right-col3">
+                                                                            <h3>
+                                                                                JSM Implements Timesheet Software for TSMG</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="column-right-grp">
+                                                                        <div class="column-right-col1">
+                                                                            <img src="images/logo3.jpg" alt="" title="" /></div>
+                                                                        <div class="column-right-col2">
+                                                                            <img src="images/drop-down/Central-Govt-Payroll-Software-mouse-rollover.jpg" alt="" title="" /></div>
+                                                                        <div class="column-right-col3">
+                                                                            <h3>
+                                                                                JSM Implements Payroll Software for IGIDR</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="calls-to-action0 clearfix">
+                                                            <li><a href="#">
+                                                                <img src="images/testimonial1.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Customers/testimonials.aspx">JSM Client Testimonial</a></h3>
+                                                                    <p>
+                                                                        "We've been using HRMS from JSM Technologies for years and we're really impressed
+                                                                        with the simplicity of the product and make a huge difference in our office"</p>
+                                                                    <p class="cust-name">
+                                                                        <span>Sarawut Pathomphatthaphan</span><br />
+                                                                        HR &amp; Admin Department<br />
+                                                                        Charoen Pokphand Seeds (India) Pvt. Ltd.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <img src="images/testimonial2.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Customers/testimonials.aspx">JSM Client Testimonial</a></h3>
+                                                                    <p>
+                                                                        "We would not able to reach at this level of Success without committed partner like
+                                                                        JSM. The Skill sets and Delivery Capability of their people are excellent and set
+                                                                        them apart from others. We are glad to choose JSM for payroll software"</p>
+                                                                    <p class="cust-name">
+                                                                        <span>Dinesh Juneja</span><br />
+                                                                        Deputy Registrar (Finance &amp; Accounts)<br />
+                                                                        Department of Finance and Accounts<br />
+                                                                        Punjab Technical University</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li  style="padding-left:12px;"><a id="ctl11_ppHeader_lvPrimaryNavigation_ctrl0_hlNavigationLink" href="#">Company</a>
+                                                    <div class="dropdown">
+                                                        <div class="clearfix">
+                                                            <div class="left clearfix" style="width: 35%;">
+                                                                <p class="overview gradient-orange">
+                                                                    JSM Technologies is a 16 Years old technology company that is in the business of
+                                                                    making the Human Capital thrive. JSM has the most comprehensive Human Capital Management
+                                                                    Systems software products.</p>
+                                                            </div>
+                                                            <div class="right clearfix" style="width: 65%;">
+                                                                <div class="column clearfix">
+                                                                    <h4>
+                                                                        <a href="Company/aboutus.aspx">Our Company</a></h4>
+                                                                    <ul>
+                                                                        <li><a href="Company/aboutus.aspx">About Us</a></li>
+                                                                        <li><a href="Company/messagefromchairman.aspx">Message from the Chairman</a></li>
+                                                                        <li><a href="Company/leadershipteam.aspx">Leadership Team</a></li>
+                                                                        <li><a href="Company/missionvision.aspx">JSM's Vision and Mission</a></li>
+                                                                        <li><a href="Company/whyjsm.aspx">Why JSM</a></li>
+                                                                        <li><a href="Company/history.aspx">Company History</a></li>
+                                                                        <li><a href="Company/news.aspx">News</a></li>
+                                                                        <li><a href="Company/WhatsNew.aspx">What's New</a></li>
+                                                                        <li><a href="Company/jsmcorporatelogo.aspx">JSM Corporate Logo</a></li>
+                                                                          <li><a href="Company/jsmhrislogo.aspx">JSM HRIS Software Logo</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="column2 clearfix">
+                                                                    <div class="box">
+                                                                        <h3>
+                                                                            Vision Statement</h3>
+                                                                        <p>
+                                                                            Our vision is to be a Leader of the "Human Resources Processes" automation segment.
+                                                                            Being a Leader means we will achieve Product Excellence, Implementation Excellence,
+                                                                            Operational Excellence and superior customer satisfaction</p>
+                                                                        <h3>
+                                                                            Mission Statement</h3>
+                                                                        <p>
+                                                                            JSM is committed to Design and development of software products setting the highest
+                                                                            standards in Quality and Value. Our purpose is to constantly innovate and bring
+                                                                            industry leading software products thereby enriching life of all employees.</p>
+                                                                        <p>
+                                                                            <a href="Company/missionvision.aspx">Read More</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="calls-to-action0 clearfix">
+                                                            <li><a href="#">
+                                                                <img src="images/drop-down/16-years-logo.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Company/aboutus.aspx">16 Years of Excellence</a></h3>
+                                                                    <p>
+                                                                        JSM Celebrates 16 Years of excellence in Human Resource Software solutions and beyond!
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <img src="images/drop-down/Innovaion-drop-down.jpg" alt="" title="" /></a>
+                                                                <div class="content">
+                                                                    <h3>
+                                                                        <a href="Services/innovation.aspx">The HRMS Innovation Leader</a></h3>
+                                                                    <p>
+                                                                        JSM is the innovation leader in Human Resource Software Solutions providing world
+                                                                        class HR Software and Payroll Software solutions to Global Companies
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="mobile-menu">
+                                        <div id="header-mob">
+                                            <a href="#menu">Menu</a></div>
+                                        <nav id="menu">
+									<ul>
+										<li><a href="Products/Products.aspx">Products</a>
+											<ul>
+												<li><a href="Products/BusinessIntelligenceSoftware.aspx">Business Intelligence</a>
+													<ul>
+														<li><a href="Products/businessintelligencesoftware.aspx">JSM HR BI</a></li>
+
+														<li><a href="Products/businessintelligencesoftware.aspx">JSM Payroll BI</a></li>
+														<li><a href="Products/businessintelligencesoftware.aspx">JSM Leave and Attendance BI</a></li>
+														<li><a href="Products/businessintelligencesoftware.aspx">JSM PMS BI</a></li>
+														<li><a href="Products/businessintelligencesoftware.aspx">JSM Expense Management BI</a></li>
+														<li><a href="Products/businessintelligencesoftware.aspx">JSM Sales BI</a></li>
+													</ul>
+
+												</li>
+												<li> <a href="Products/centralgovtpayrollsoftware.aspx">Central Government / Public Sector / Autonomous Institutes </a>
+													<ul>
+														<li><a href="Products/centralgovtpayrollsoftware.aspx">JSM Central Government Payroll Software</a></li>
+													</ul>
+												</li>
+												<li><a href="Products/expensemanagementsoftware.aspx">Expenses Management</a>
+
+													<ul>
+														<li><a href="Products/expensemanagementsoftware.aspx">JSM Expense Management System</a></li>
+													</ul>
+												</li>
+												<li><a href="Products/timesheetmanagementsoftware.aspx">Projects and Time Sheets</a>
+													<ul>
+														<li><a href="Products/timesheetmanagementsoftware.aspx">JSM Timesheet Management Software with Projects</a></li>
+
+													</ul>
+												</li>
+											
+												<li><a href="Products/products.aspx">Human Capital Management</a>
+													<ul>
+														<li><a href="Products/hrSoftware.aspx">JSM HR Software - Core HR</a></li>
+														<li><a href="Products/employeeselfservicesoftware.aspx">JSM Employee Self Service Software</a></li>
+														<li><a href="Products/leaveandattendancesoftware.aspx">JSM Leave and Attendance Management System</a></li>
+
+														<li><a href="Products/trainingmanagementsoftware.aspx">JSM Training Management</a></li>
+														<li><a href="Products/performancemanagementsoftware.aspx">JSM Performance Appraisal Management Software</a></li>
+													</ul>
+												</li>
+												<li><a href="Products/payrollandcompliancesoftware.aspx">Payroll and Compliances</a>
+													<ul>
+														<li><a href="Products/compliancesmanagementsoftware.aspx">JSM Compliances Management System</a></li>
+
+														<li><a href="Products/payrollsoftware.aspx">JSM Payroll Software</a></li>
+														<li><a href="Products/reimbursementmanagementsoftware.aspx">JSM  Reimbursements Management System </a></li>
+													 <li><a href="Products/flexibenefitssoftware.aspx">JSM  Flexi Benefits for Employees</a></li>
+                                                    </ul>
+												</li>
+												<li><a href="Products/travelmanagementsoftware.aspx">Travel</a>
+													<ul>
+														<li><a href="Products/travelmanagementsoftware.aspx">JSM Travel Management Software For Employees</a></li>
+
+													</ul> 
+												</li>
+												<li><a href="Products/rreturnsmanagementsoftware.aspx">Factoring Organizations</a>
+													<ul>
+														<li><a href="Products/rreturnsmanagementsoftware.aspx">JSM R Returns Software (RBI Reporting for Factoring Companies)</a></li>
+													</ul>
+												</li>
+												<li><a href="Products/golfclubsoftware.aspx">Golf Clubs</a>
+
+													<ul>
+														<li><a href="Products/golfclubmembershipsoftware.aspx">JSM Golf Club Memberships Management System</a></li>
+														<li><a href="Products/teetimingmanagementsoftware.aspx">JSM Tee Timings Management System</a></li>
+													</ul>
+												</li>
+												<li><a href="Products/leadManagementSoftware.aspx">Sales</a>
+													<ul>
+
+														<li><a href="Products/leadManagementSoftware.aspx">JSM Lead Management Software</a></li>
+													</ul>
+												</li>
+												<li><a href="Products/servicecentermanagementsoftware.aspx">Service Centres</a>
+													<ul>
+														<li><a href="Products/servicecentermanagementsoftware.aspx">JSM Service Centre Management Software</a></li>
+													</ul>
+
+												</li>
+												<li><a href="Products/timesharemanagementsoftware.aspx">Time Shares Industry</a>
+													<ul>
+														<li><a href="Products/timesharemanagementsoftware.aspx">JSM Time Shares Management Software</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li> 
+										<li><a href="Solutions/solutions.aspx">Solutions</a>
+
+											<ul>
+												<li><a href="Solutions/solutions.aspx">Human Capital Management Solutions</a>
+													<ul>
+														<li><a href="Solutions/businessintelligencemanagement.aspx">Business Intelligence / Analytics </a></li>
+														<li><a href="Solutions/corehrmanagement.aspx"> Core HR</a></li>
+														<li><a href="Solutions/compliancesmanagement.aspx"> Compliances / Statutory - for Employees</a></li>
+
+														<li><a href="Solutions/expensemanagement.aspx"> Expense Management</a></li>
+														<li><a href="Solutions/employeeselfservicemanagement.aspx"> Employee Self Service</a></li>
+														<li><a href="Solutions/reimbursementmanagement.aspx"> Employee Reimbursements</a></li>
+														<li><a href="Solutions/flexibenefitsmanagement.aspx"> Flexi Benefits for Employees </a></li>
+														<li><a href="Solutions/leaveandattendancemanagement.aspx"> Leave and Attendance Management </a></li>
+
+													</ul> 
+												</li>
+												<li><a href="Solutions/solutions.aspx">Human Capital Management Solutions</a>
+													<ul>
+														<li><a href="Solutions/payrollmanagement.aspx">Payroll Management</a></li>
+														<li><a href="Solutions/performancemanagement.aspx">Performance Management / Appraisal </a></li>
+														<li><a href="Solutions/timesheetmanagement.aspx">Project and Time sheet Management </a></li>
+
+														<li><a href="Solutions/centralgovtpayrollmanagement.aspx">VI & VII Pay Commission Payroll /  Central Govt Payroll </a></li>
+														<li><a href="Solutions/timesheetmanagement.aspx">Time Sheet Management </a></li>
+														<li><a href="Solutions/trainingmanagement.aspx">Training Management </a></li>
+														<li><a href="Solutions/travelmanagement.aspx">Travel Management </a></li>
+													</ul>
+												</li>
+												<li><a href="Solutions/solutions.aspx">Business Management Solutions</a>
+
+													<ul>
+														<li><a href="Solutions/golfclubmembershipmanagement.aspx"> Golf Club Memberships </a></li>
+														<li><a href="Solutions/teetimingmanagement.aspx"> Tee Timings Management </a></li>
+                                                        <li><a href="Solutions/leadmanagement.aspx"> Lead Management </a></li>
+														<li><a href="Solutions/rreturnsmanagement.aspx"> R Returns (RBI Reporting for Factoring Companies) </a></li>
+														<li><a href="Solutions/servicecentremanagement.aspx"> Service Centre Management </a></li>
+
+														<li><a href="Solutions/timesharemanagement.aspx"> Time Shares Management </a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><a href="Industries/Industries.aspx">Industries Solutions</a>
+											<ul>
+
+												<li><a href="Industries/industries.aspx">Automotive</a></li>
+												<li><a href="Industries/industries.aspx">Communications </a></li>
+												<li><a href="Industries/industries.aspx">Energy </a></li>
+												<li><a href="Industries/industries.aspx">Education </a></li>
+												<li><a href="Industries/industries.aspx">Engineering and Construction </a></li>
+												<li><a href="Industries/industries.aspx">Financial Services </a></li>
+
+												<li><a href="Industries/industries.aspx">Healthcare </a></li>
+												<li><a href="Industries/industries.aspx">Hospitality </a></li> 
+												<li><a href="Industries/industries.aspx">Life Sciences and Pharma </a></li>
+												<li><a href="Industries/industries.aspx">Manufacturing </a></li>
+												<li><a href="Industries/industries.aspx">Media and Entertainment </a></li>
+												<li><a href="Industries/industries.aspx">Non Profit / NGO </a></li>
+
+												<li><a href="Industries/industries.aspx">Professional Services  </a></li>
+												<li><a href="Industries/industries.aspx">Public Sector </a></li>
+												<li><a href="Industries/industries.aspx">Technology </a></li>
+												<li><a href="Industries/industries.aspx">Travel and Transportation </a></li>
+											</ul>
+										</li>
+										<li><a href="Services/services.aspx">Services</a>
+
+											<ul>
+												<li><a href="Services/implementation.aspx">Implementation</a>
+													<ul>
+														<li><a href="Services/implementation.aspx"> Employee Data Porting </a></li>
+														<li><a href="Services/implementation.aspx">Organization Setup</a></li>
+														<li><a href="Services/implementation.aspx"> Policies Setup </a></li>
+
+														<li><a href="Services/implementation.aspx">Salary Procesing Support</a></li>
+                                                         <li><a href="../Services/implementation.aspx">Go Live Support</a></li>
+													</ul>
+												</li>
+												<li><a href="Services/trainingservices.aspx">Training</a>
+													<ul>
+														<li><a href="Services/trainingoptions.aspx">Training Options </a></li>
+														<li><a href="Services/certifications.aspx"> Certifications </a></li> 
+													</ul>
+
+												</li>
+												<li><a href="Services/consultingservice.aspx">Consulting</a>
+													<ul>
+														<li><a href="Services/consultingservice.aspx">Consulting Services</a></li>
+													</ul>
+												</li>
+												<li><a href="Services/customersupport.aspx">Support</a>
+
+													<ul>
+														<li><a href="Services/customersupport.aspx">Customer Support</a></li>
+													</ul>
+												</li>
+												<li>Our Expertise
+													<ul><li>Human Capital Management
+														<ul>
+
+															<li> Business Intelligence / Analytics </li>
+															<li> Core HR </li>
+															<li> Employee Expense Management </li>
+															<li> Employee Self Service </li>
+															<li> Employee Reimbursements </li>
+
+															<li> Flexi Benefits for Employees </li>
+															<li> Leave and Attendance Management </li>
+															<li> Payroll </li>
+															<li> Performance Management / Appraisal </li>
+															<li> Compliances / Statutory - for Employees </li>
+
+															<li> VI & VII Pay Commission Payroll / Central Govt Payroll </li>
+															<li> Time Sheet Management </li>
+															<li> Training Management </li>
+															<li> Travel Management </li>
+														</ul>
+
+													</li></ul>
+												</li>
+												<li>Our Expertise
+												<ul><li>Business Management
+													<ul>
+														<li> Golf Club Memberships Timings Management </li>
+														<li> Golf Club Tee Timings Management </li>
+
+														<li> Lead Management </li>
+														<li> R Returns (RBI Reporting for Factoring Companies) </li>
+														<li> Service Centre Management </li>
+														<li> Time Shares Management </li>
+													</ul>
+
+													</li></ul>
+												</li>
+												
+											</ul>
+										</li> 
+										<li><a href="Resources/articles.aspx">Resources</a>
+											<ul>
+											<li><a href="Resources/articles.aspx">Customer Resources</a>
+												<ul>
+													<li><a href="Resources/articles.aspx">Articles</a></li>
+
+													<li><a href="Resources/faq.aspx">FAQ</a></li>
+													<li><a href="Resources/productbrochures.aspx">Product Brochures</a></li>
+													<li><a href="Resources/productspresentations.aspx">Products Presentations</a></li>
+													<li><a href="Resources/RequestPersonal.aspx">Request Personal Demo</a></li>
+												</ul> 
+											</li>
+											<li><a href="#">C- Level Executive</a>
+
+												<ul>
+													<li><a href="#"> CMD </a></li>
+													<li><a href="#"> Director </a></li>
+													<li><a href="#"> Chief Executive Officer - CEO </a></li>
+													<li><a href="#"> Chief Human Resources Officer - CHRO </a></li>
+
+													<li><a href="#"> Chief Financial Officer - CFO </a></li>
+													<li><a href="#"> Chief Information Officer - CIO </a></li> 
+												</ul>
+											</li>
+											</ul>
+										</li>
+										<li><a href="#">Customers</a>
+
+											<ul>
+												<li><a href="#">Customer Stories</a>
+													<ul>
+														
+														<li><a href="#"> Featured Customers </a></li> 
+														<li><a href="#"> Testimonials </a></li>
+
+													</ul> 
+												</li>
+											</ul>
+										</li>
+										<li><a href="Company/aboutus.aspx">Our Company</a>
+											<ul>
+												<li><a href="Company/aboutus.aspx"> About Us </a></li>
+												<li><a href="Company/messagefromchairman.aspx"> Message from the Chairman </a></li>
+
+												<li><a href="Company/leadershipteam.aspx"> Leadership Team </a></li>
+												<li><a href="Company/missionvision.aspx"> JSM's Vision and Mission </a></li>
+												<li><a href="Company/whyjsm.aspx"> Why JSM </a></li>
+												<li><a href="Company/history.aspx"> Company History </a></li>
+												<li><a href="Company/news.aspx">News</a></li>
+                                                <li><a href="Company/WhatsNew.aspx">What's New</a></li>
+                                                <li><a href="Company/jsmcorporatelogo.aspx">JSM Corporate Logo</a></li>
+                                                                          <li><a href="Company/jsmhrislogo.aspx">JSM HRIS Software Logo</a></li>
+
+											</ul>
+										</li>
+									</ul>
+								  </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            
+    <div class="header"> 
+		<div id="allinone_contentSlider_common">
+			<!-- CONTENT -->
+			<ul class="allinone_contentSlider_list">
+				<li data-text-id="#allinone_contentSlider_photoText0"></li>
+				<li data-text-id="#allinone_contentSlider_photoText1"></li>
+
+				<li data-text-id="#allinone_contentSlider_photoText2"></li>
+				<li data-text-id="#allinone_contentSlider_photoText3"></li>
+				<li data-text-id="#allinone_contentSlider_photoText4"></li>
+				<li data-text-id="#allinone_contentSlider_photoText5"></li>
+			</ul>    
+		</div>
+		<!-- TEXTS -->
+		<div id="allinone_contentSlider_photoText0" class="allinone_contentSlider_texts">
+			<div  class="allinone_bannerRotator_text_line textElement52_classic" data-initial-left="-200" data-initial-top="58" data-final-left="1030" data-final-top="60" data-duration="0.5" data-fade-start="0" data-delay="0">
+
+				<div class="main-wrap">  
+					<div class="blue-patch">
+						<div class="slider-title"> 16 Years OF EXCELENCE IN HUMAN RESOURCE SOFTWARE SOLUTIONS AND BEYOND! </div>
+						<p class="slider-text"> JSM is committed to providing Global Companies with World Class Human Capital Management Software Products, Well Defined Implementation Methodology and Excellent Support Systems.</p>
+						<div class="read"><a href="Products/hrsoftware.aspx">Read more</a></div>  
+						<div class="patch-list">
+							<ul>
+
+								<li> 16 Years of continuous HRIS Software Product Innovations </li>
+								<li> Deep Industry and Functional Knowledge </li>
+							</ul>
+						</div>
+					</div>  
+				</div>
+			</div>
+
+		</div>
+		<div id="allinone_contentSlider_photoText1" class="allinone_contentSlider_texts">
+			<div  class="allinone_bannerRotator_text_line textElement52_classic" data-initial-left="-200" data-initial-top="58" data-final-left="1030" data-final-top="60" data-duration="0.5" data-fade-start="0" data-delay="0">
+				<div class="main-wrap">  
+					<div class="blue-patch">
+						<div class="slider-title">JSM EMPLOYEE SELF SERVICE AND MANAGER SELF SERVICE SOFTWARE</div>
+						<p class="slider-text"> JSM was one of the First companies in India to launch an ESS Software more than 16 Years back.</p>
+						<div class="read"><a href="Products/employeeselfservicesoftware.aspx">Read more</a></div>  
+						<div class="patch-list">
+
+							<ul>
+								<li>More than 20 robust ESS workflows</li>
+								<li>Covering entire employee lifecycle requests from entry to exit.</li>
+								<li>AD Integration</li>
+							</ul>
+						</div>
+					</div>  
+				</div>
+
+			</div>
+		</div>
+		<div id="allinone_contentSlider_photoText2" class="allinone_contentSlider_texts">
+			<div  class="allinone_bannerRotator_text_line textElement52_classic" data-initial-left="-200" data-initial-top="58" data-final-left="1030" data-final-top="60" data-duration="0.5" data-fade-start="0" data-delay="0">
+				<div class="main-wrap">  
+					<div class="blue-patch demo01">
+						<div class="slider-title">JSM PAYROLL SOFTWARE - 16 Years OLD FLEXIBLE, COMPREHENSIVE AND ADVANCED PAYROLL SOFTWARE </div>
+						<p class="slider-text">JSM Payroll Software helps you manage Payroll, Reimbursements, Full n Final Settlements and Compliances with ease.</p>
+
+						<div class="read"><a href="Products/payrollsoftware.aspx">Read more</a></div>  
+						<div class="patch-list">
+							<ul>
+								<li>Powerful Policies section which allows you to define your own Payroll Logic.</li>
+								<li>More than 500 standard reports and a powerful Report Builder too.</li>
+								<li>Advanced Payroll Business Intelligence.</li>
+							</ul>
+
+						</div>
+					</div>  
+				</div>
+			</div>
+		</div>
+		<div id="allinone_contentSlider_photoText3" class="allinone_contentSlider_texts">
+			<div  class="allinone_bannerRotator_text_line textElement52_classic" data-initial-left="-200" data-initial-top="58" data-final-left="1030" data-final-top="60" data-duration="0.5" data-fade-start="0" data-delay="0">
+				<div class="main-wrap">  
+					<div class="blue-patch">
+						<div class="slider-title">JSM EXPENSE MANAGEMENT SOFTWARE </div>
+
+						<p class="slider-text">Automates Expense Claims Submission, Approvals and Reimbursements. Set your own Expense policies on limits and entitlements as well as exception policies.</p>
+						<div class="read"><a href="Products/expensemanagementsoftware.aspx">Read more</a></div>  
+						<div class="patch-list">
+							<ul>
+								<li>SAP Integration for Posting Expenses</li>
+								<li>AD Integration. </li>
+							</ul>
+
+						</div>
+					</div>  
+				</div>
+			</div>
+		</div>
+		<div id="allinone_contentSlider_photoText4" class="allinone_contentSlider_texts">
+			<div  class="allinone_bannerRotator_text_line textElement52_classic" data-initial-left="-200" data-initial-top="58" data-final-left="1030" data-final-top="60" data-duration="0.5" data-fade-start="0" data-delay="0">
+				<div class="main-wrap">  
+					<div class="blue-patch">
+						<div class="slider-title">JSM TIME SHEET SOFTWARE </div>
+
+						<p class="slider-text">Timesheet Software for recording Employee Time on 4 Key Parameters - Client, Project, KRA, Activity. Automates Timesheet Submission and Approvals. Generate reports on the above 4 Key Parameters on Daily, Weekly, Fortnightly, Monthly, Quarterly, Half Yearly. Yearly and Period wise.</p>
+						<div class="read"><a href="Products/timesheetmanagementsoftware.aspx">Read more</a></div>  
+						<div class="patch-list">
+							<ul>
+								<li>Powerful Timesheet BI for Top Management </li>
+								<li>AD Integration.</li>
+							</ul>
+
+						</div>
+					</div>  
+				</div>
+			</div>
+		</div>
+		<div id="allinone_contentSlider_photoText5" class="allinone_contentSlider_texts">
+			<div  class="allinone_bannerRotator_text_line textElement52_classic" data-initial-left="-200" data-initial-top="58" data-final-left="1030" data-final-top="60" data-duration="0.5" data-fade-start="0" data-delay="0">
+				<div class="main-wrap">  
+					<div class="blue-patch">
+						<div class="slider-title">JSM BUSINESS INTELLIGENCE SOFTWARE</div>
+
+						<p class="slider-text">Business Intelligence Software for Top Management to make sense of the immense HR, Payroll, Leave, Sales, Timesheet and other business data. JSM BI Software helps management to analyse data from key angles, better understand their business and take informed decision to run the business better.</p>
+						<div class="read"><a href="Products/businessintelligencesoftware.aspx">Read more</a></div>  
+						<div class="patch-list">
+							<ul>
+								<li>More than 200 key BI metrics</li>
+								<li>Helps you monitor trends in key business areas.</li>
+								<li>Helps you identify potential problem areas before they turn into bigger issues.</li>
+
+							</ul>
+						</div>
+					</div>  
+				</div>
+			</div>
+		</div>
+	</div>
+ <div class="container">
+	<div class="main-wrap">
+
+		
+        <br />
+			<div class="pro-title">Products</div>
+			<div class="pro-text">JSM Technologies is committed to bringing you World class Human Resource Software and Business 
+			Application Software products. JSM brings with it deep Industry and Functional Knowledge gained over the last 16 plus 
+			years. Proven implementation methodologies and well defined and efficient support systems back up every JSM software 
+			product.</div>
+			<div class="pro-box">
+			 <div class="pro-box-in clearfix">
+				<div class="pro-box1">
+				<div class="pro-img-box">
+					<img src="images/content-imgs/HR-Software-content.jpg" alt="" title="JSM HR Software Core HR" />
+
+					<div class="box-title">JSM HR Software <br/>Core HR</div>
+					<div class="box-text">JSM HR Software is an advanced 16 Years old Human Resources Software that captures entire 
+					Employee data from entry till exit. </div>
+					<div><a href="Products/hrsoftware.aspx" class="read-more">Read more</a></div>
+				 </div>
+				</div>
+				<div class="pro-box1">
+				<div class="pro-img-box">
+
+					<img src="images/pro-box2.jpg" alt="" title="JSM Employee Self Service Manager Self Service" />
+					<div class="box-title">JSM Employee Self Service Manager Self Service</div>
+					<div class="box-text"> JSM ESS and MSS Software allows employees to view company &#8211; wide information, submit 
+					requests and get approvals. </div>
+				   <div><a href="Products/employeeselfservicesoftware.aspx" class="read-more">Read more</a></div>
+				 </div>
+				</div>
+				<div class="pro-box1">
+
+				<div class="pro-img-box">
+					<img src="images/content-imgs/Payroll-software-content.jpg" alt="" title="JSM Payroll Software Compliance & Reimbursement" />
+					<div class="box-title">JSM Payroll Software <br/>Compliance & Reimbursement</div>
+					<div class="box-text">JSM Payroll Software is an advanced 16 Years old software automating Payroll, Reimbursements,
+					 Full n Final Settlements and Compliances.</div>
+				   <div><a href="Products/payrollsoftware.aspx" class="read-more">Read more</a></div>
+				 </div>
+				</div>
+
+				<div class="pro-box2">
+				<div class="pro-img-box">
+					<img src="images/pro-box4.jpg" alt="" title="JSM Central Govt Payroll Software VI & VII Pay Commission Payroll" />
+					<div class="box-title">JSM Central Govt Payroll Software VI & VII Pay Commission Payroll</div>
+					<div class="box-text">Payroll Software meeting VIth Pay Commission recommendation. Customizable and also meet 7th Pay Commission recommendation.</div>
+				   <div><a href="Products/centralgovtpayrollsoftware.aspx" class="read-more">Read more</a></div>
+				 </div>
+
+				</div>
+			</div>
+			 <div class="pro-box-in clearfix">
+				<div class="pro-box1">
+				<div class="pro-img-box">
+					<img src="images/pro-box5.jpg" alt="" title="JSM Leave and Attendance Management Software" />
+					<div class="box-title">JSM Leave and Attendance Management Software</div>
+					<div class="box-text">Manage Leaves, Attendance, Out Door Duty, Comp Off, Work From Home and Over Time.</div>
+
+					<div><a href="Products/leaveandattendancesoftware.aspx" class="read-more">Read more</a></div>
+				 </div>
+				</div>
+				<div class="pro-box1">
+				<div class="pro-img-box">
+					<img src="images/Content-imgs/Timesheet-software-content.jpg" alt="" title="JSM Time Sheet Software With Project Management" />
+					<div class="box-title">JSM Time Sheet Software <br/>With Project Management</div>
+
+					<div class="box-text">Time sheet and Project Management Software. Flexible, customizable to meet your requirements. </div>
+				   <div><a href="Products/timesheetmanagementsoftware.aspx" class="read-more">Read more</a></div>
+				 </div>
+				</div>
+				<div class="pro-box1">
+				<div class="pro-img-box">
+					<img src="images/pro-box7.jpg" alt="" title="JSM Performance Appraisal Management Software - PMS" />
+					<div class="box-title">JSM Performance Appraisal Management Software - PMS</div>
+
+					<div class="box-text">Flexible, Totally customizable PMS Software. User defined Appraisal components and weightage as per client policy. </div>
+				   <div><a href="Products/performancemanagementsoftware.aspx" class="read-more">Read more</a></div>
+				 </div>
+				</div>
+				<div class="pro-box2">
+				<div class="pro-img-box">
+					<img src="images/pro-box8.jpg" alt="" title="JSM Expense Management Software" />
+					<div class="box-title">JSM Expense Management Software</div>
+
+					<div class="box-text">Automate employee expense claims submission and approvals. Integrated with SAP. Backed by powerful BI Software. </div>
+				   <div><a href="Products/expensemanagementsoftware.aspx" class="read-more">Read more</a></div>
+				 </div>
+				</div>
+			</div>
+			</div>
+			<div class="view"><a href="Products/Products.aspx" class="view-entire">View Entire Product Range</a></div>
+            <br />
+		
+	</div>
+</div>
+ <div class="green-panel">
+	<div class="main-wrap">
+		<div class="green-in">
+			<div class="green-title"> Do you have a failed HRIS Implementation in the past or Do you have requirements which are too complex? </div>
+			<div class="green-box clearfix">
+
+			  <div class="green-lt">
+				<div class="photo-box">
+					<img src="images/green-box1.jpg" alt="" title="" />
+					<div class="green-box-title">Did your past HRIS Implementation ended in a failure due to these or similar reasons?</div>
+				</div>
+				<ul class="green-list">
+					<li>Requirements were too complex</li>
+					<li>Vendor could not correctly understand your complex requirement</li>
+
+					<li>Vendor failed in customizing his software as per your requirements</li>
+					<li>Vendor failed in implementation due to incorrect mapping of requirements.</li>
+					<li>Vendor product was incapable of handling the many policy complexities in your organization.</li>
+					<li>Vendor team was not functionally and technically competent</li>
+					<li>Vendor product was not mature enough (Less than 10 years)</li>
+				</ul>
+
+			  </div>
+			  <div class="green-rt">
+				<div class="photo-box">
+					<img src="images/green-box2.jpg" alt="" title="" />
+					<div class="green-box-title">If you are facing any of these challenges  call JSM ! JSM has proven expertise in -</div>
+				</div>
+				<ul class="green-list">
+						<li>Understanding correctly even the most complex of Functional requirements </li>
+
+						<li>Successfully customising JSM Software to meet your complex Functional Requirements and Policies. </li>
+						<li>Successfully implementing JSM Software, correctly mapping your requirements in JSM Software and helping you go live. </li>
+					</ul>
+				<p class="para-green">
+				   JSM HRIS Software is a Parameter and Policy driven software. JSM HRIS Software has evolved over the past 16 Years and we have 
+				   incorporated tremendous flexibility in our software to meet even the most complex requirement without any customization or with 
+				   minimal customization.
+			   </p>
+			  </div>
+			</div>
+
+		</div>
+	</div>
+</div>
+ <div class="grey-panel">
+	<div class="main-wrap">
+		<div class="grey-in clearfix">
+			<div class="about">
+				<div class="grey-title">About JSM Technologies</div>
+				<div class="about-text">
+
+					<p> JSM Technologies was incorporated as a Pvt. Ltd. company in New Delhi, India in May 2000. JSM Technologies is a technology 
+					company specialising in Human Capital Management Software products including HR Software, Payroll Software, Employee Self 
+					Service Software, Central Government Payroll Software, Expense Claims Reimbursement  Software, Timesheet Software and 
+					Business Intelligence Software. JSM Global Development and Support centre headquarters is in Bangalore, India and it 
+					has clients All India & overseas too. </p>
+					<p> JSM is known for its continuous product innovations, comprehensive software, Business Intelligence capabilities, 
+					proven implementation methodologies, excellent team and exceptional standards of its customer service. </p>
+				</div>
+				<div><a href="Company/aboutus.aspx" class="more">Read more</a></div>
+			</div>
+			<div class="why-us">
+
+				<div class="grey-title">Why Us</div>
+				<ul class="why-list">
+					<li class="pro-icon"> Continuous Product Innovation </li> 
+					<li class="proven-icon"> Proven Implementation Methodology which ensures Project Success </li>
+					<li class="exc-icon"> Excellent and Efficient Support Systems </li>
+					<li class="inte-icon"> The JSM Business Intelligence (BI) Advantage </li>
+
+					<li class="team-icon"> The JSM Team Advantage </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="jsm-soft">
+	<div class="main-wrap">
+		<div class="jsm-soft-in clearfix">
+
+			<div class="jsm-soft-left">
+				<div class="map-img1"><img src="images/map.gif" alt="" /></div>
+				<div class="map-img"><img src="images/map-mobile.jpg" alt=""/></div>
+			</div>
+			<div class="jsm-soft-right">
+				<div class="jsm-soft-title">JSM HRIS Software for Africa</div>
+				<div class="jsm-soft-text">
+					<p>HR Software and Payroll Software for Nigeria, Ghana, Tanzania, Ethiopia, Uganda, Kenya, Congo and other African Countries.</p>
+
+					<p>JSM Technologies brings to Africa more than 16 Years of HR and Payroll Domain expertise gained through its interaction with global clients of varied industries and sizes. Over the past 16 Years JSM has developed specialised expertise in HRIS Software Design, Development, Implementation and Support. Clients in Africa shall benefit immensely from the vast and deep experience and expertise JSM has in HRMS Software.</p>
+				</div>
+				<div><a href="Products/hrissoftwareforafrica.aspx" class="jsmmore">Read more</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="news-panel">
+	<div class="main-wrap">
+
+		<div class="news-in clearfix">
+			<div class="what-box">
+			  <div class="news-title">What&#8217;s New</div>
+
+               <div class="news-text-box clearfix">
+				<div class="date">Sep 02 2016 </div>
+				<div class="news-text">Powerful new reports added to JSM Central Govt Payroll Software.
+
+				<a href="Company/WhatsNew.aspx"><img src="images/right-arrow.gif" alt="" title="" /></a></div>
+			  </div>
+
+                      <div class="news-text-box clearfix">
+				<div class="date">Aug 26 2016 </div>
+				<div class="news-text">Complete Service Book Automation for Government Clients.
+
+				<a href="Company/WhatsNew.aspx"><img src="images/right-arrow.gif" alt="" title="" /></a></div>
+			  </div>
+
+              <div class="news-text-box clearfix">
+				<div class="date">Jul 10 2016 </div>
+				<div class="news-text">JSM Central Govt Payroll Software Ver 16.01 launched by JSM with new functionalities and workflows.
+
+				<a href="Company/WhatsNew.aspx"><img src="images/right-arrow.gif" alt="" title="" /></a></div>
+			  </div>
+
+              <div class="news-text-box clearfix">
+				<div class="date">Jul 05 2016 </div>
+				<div class="news-text">JSM launches ver 16.01 of JSM Travel Management Software with many new features and enhancements.
+
+				<a href="Company/WhatsNew.aspx"><img src="images/right-arrow.gif" alt="" title="" /></a></div>
+			  </div>
+
+             
+
+           
+
+    
+			
+
+
+
+			
+			</div>
+			<div class="news-box">
+				<div class="news-title">News</div>
+
+                <div class="news-text-box clearfix">
+				<div class="date">Oct 06 2016</div>
+				<div class="news-text">Latest amendments in ESI Act.  Vide ESI Gazette Notification number G.S.R 957 (E), dated the 06th Oct 2016.
+				<a href="Company/news.aspx"><img src="images/right-arrow.gif" alt="" title="" /></a></div>
+			  </div>
+
+                 <div class="news-text-box clearfix">
+				<div class="date">Sep 20 2016</div>
+				<div class="news-text">Central Institute of Road Transport (CIRT) Pune partners with JSM to automate Payroll processes and Employee Self Service. JSM shall implement VII Pay Commission recommendations at CIRT. 
+				<a href="Company/news.aspx"><img src="images/right-arrow.gif" alt="" title="" /></a></div>
+			  </div>
+
+                <div class="news-text-box clearfix">
+				<div class="date">Aug 16 2016</div>
+				<div class="news-text">7th Central Pay Commission recommendations automation by JSM Technologies. 
+				<a href="Company/news.aspx"><img src="images/right-arrow.gif" alt="" title="" /></a></div>
+			  </div>
+
+                <div class="news-text-box clearfix">
+				<div class="date">Jul 22 2016</div>
+				<div class="news-text">JSM PMS Software to power Performance Appraisal process of CAN-PACK India. 
+				<a href="Company/news.aspx"><img src="images/right-arrow.gif" alt="" title="" /></a></div>
+			  </div>
+
+
+               
+
+             
+
+             
+
+               
+
+        
+
+             
+
+                
+
+             
+
+             
+
+             
+
+
+			</div>
+		</div>
+	</div>
+ </div>  
+ <div class="orange-panel">
+	<div class="main-wrap">
+		<div class="orange-in">
+
+			<img src="images/demo-icon.png" alt="" title="" />
+			<div class="org-title">Register for a Live Demo</div>
+			<div class="org-text">Let JSM Functional and Technical <span>Super Experts</span> take you through our journey over the past 16 Years, 
+			explain how our products have evolved, show you how our software is helping leading organizations solve their business issues and how 
+			JSM can help you. As our CEO says &#8211; <span>&#8220;It&#8217;s not a demo, it&#8217;s a Learning Session&#8221;!</span> You are guaranteed to take away from this 
+			session at least 10 new things!</div>
+			<div><a href="Resources/requestpersonal.aspx" class="demo">Schedule A Demo</a></div>
+
+		</div>
+	</div>
+ </div> 
+  <div class="story-panel">
+	<div class="main-wrap">
+		<div class="story-in">
+			<div class="story-title">Our Customer Stories</div>
+			<ul class="bxslider">
+			  <li>
+
+			   <div class="user"><img src="images/big-thumb/user01.png" alt="" title="" /></div>
+			   <div class="user-text">
+				<p>We've been using HRMS from JSM Technologies for years and we're really impressed with the simplicity of the product and make a huge difference in our office. Having had no online HR system before, it has provided us with a place to store all of our electronic HR data and given us the ability to stay on top of information as well as create valued analytic report.</p>
+				<p><span>Sarawut Pathomphatthaphan <br />HR & Admin Department, <br />Charoen Pokphand Seeds (India) Pvt.,Ltd.</span></p>
+			   </div>
+			   <div class="user-rt"><img src="images/build-people.jpg" alt="" title="" /></div>
+
+			   <div class="clear"></div>
+			  </li>
+			  <li>
+			   <div class="user"><img src="images/big-thumb/user02.png" alt="" title="" /></div>
+			   <div class="user-text">
+				<p> "JSM was chosen to design Tata Strategic's Timesheet and Leave Management system. After going through proposals from multiple vendors, JSM was selected based on their impressive past credentials and personal involvement of their senior management.  Right from day one, the JSM team was very professional in their approach. They displayed a sound understanding of software design and development principles along with good project management skills which helped in delivering a quality product on time. Most importantly, they understood our requirements well and were willing to go the extra mile in customizing their solution to our needs. We would definitely recommend JSM to other prospective clients." </p>
+				<p><span>Anjali Naidu, <br />Officer - Services, <br />TATA Strategic Management Group</span></p>
+
+			   </div>
+			   <div class="user-rt"><img src="images/tata.jpg" alt="" title="" /></div>
+			   <div class="clear"></div>
+			  </li>
+			  <li>
+			   <div class="user"><img src="images/big-thumb/user03.png" alt="" title="" /></div>
+			   <div class="user-text">
+				<p>We would not able to reach at this level of Success without committed partner like JSM. The Skill sets and Delivery Capability of their people are excellent and set them apart from others. We are glad to choose JSM for payroll software. The end result of their collaborative approach is year on year basis reduce time and implementation cost.</p>
+
+				<p>Our overall experience with JSM IS really good. Whole team is very Co-operative. Some of the members of their team are always available to deal with any kind of query. In case we face any kind of inconvenience they are always ready to solve it at short span of time.</p>
+				<p><span>Dinesh Juneja <br />Deputy Registrar (Finance &amp; Accounts)<br />Punjab Technical University</span></p>
+			   </div>
+			   <div class="user-rt"><img src="images/stories-company-logo-3.jpg" alt="" title="" /></div>
+			   <div class="clear"></div>
+			  </li>
+              
+
+			</ul>
+			<div id="bx-pager">
+			  <a data-slide-index="0" href=""><img src="images/small-thumb/user01.png" alt="" title="" /></a>
+			  <a data-slide-index="1" href=""><img src="images/small-thumb/user02.png" alt="" title="" /></a>
+			  <a data-slide-index="2" href=""><img src="images/small-thumb/user03.png" alt="" title="" /></a>
+             
+			</div>
+		</div>
+	</div>
+ </div>  
+
+
+ 
+<script src="js/respond.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery('.bxslider').bxSlider({
+            pagerCustom: '#bx-pager'
+        });
+    });
+</script> 
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.js"></script> 
+<script type="text/javascript" src="js/menu-mob.js"></script>
+
+
+
+        </div>
+        <div class="foot-top">
+            <div class="row">
+                <div class="main-wrap">
+                    <div class="foot-box clearfix">
+                        <div class="foot-con1">
+                            <div class="list-title">
+                                Products</div>
+                            <ul class="foot-list">
+                                <li><a href="Products/BusinessIntelligenceSoftware.aspx">Business Intelligence</a>
+                                    <ul>
+                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM HR BI Software</a></li>
+                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM Payroll BI Software</a></li>
+                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM Leave and Attendance
+                                            BI Software</a></li>
+                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM PMS BI Software</a></li>
+                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM Expense Management BI Software</a></li>
+                                        <li><a href="Products/businessintelligencesoftware.aspx">JSM Sales BI Software</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/centralgovtpayrollsoftware.aspx">Central Government / Public
+                                    Sector / Autonomous Institutes </a>
+                                    <ul>
+                                        <li><a href="Products/centralgovtpayrollsoftware.aspx">JSM Central Government Payroll
+                                            Software</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/expensemanagementsoftware.aspx">Expenses Management</a>
+                                    <ul>
+                                        <li><a href="Products/expensemanagementsoftware.aspx">JSM Expense Management Software</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/timesheetmanagementsoftware.aspx">Projects and Time Sheets</a>
+                                    <ul>
+                                        <li><a href="Products/timesheetmanagementsoftware.aspx">JSM Timesheet Management
+                                            Software</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/products.aspx">Human Capital Management</a>
+                                    <ul>
+                                        <li><a href="Products/hrSoftware.aspx">JSM HR Software - Core HR</a></li>
+                                        <li><a href="Products/employeeselfservicesoftware.aspx">JSM Employee Self Service
+                                            Software</a></li>
+                                        <li><a href="Products/leaveandattendancesoftware.aspx">JSM Leave and Attendance Management
+                                            Software</a></li>
+                                        <li><a href="Products/trainingmanagementsoftware.aspx">JSM Training Management Software</a></li>
+                                        <li><a href="Products/performancemanagementsoftware.aspx">JSM Performance Appraisal Management
+                                            Software</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/payrollandcompliancesoftware.aspx">Payroll and Compliances</a>
+                                    <ul>
+                                        <li><a href="Products/compliancesmanagementsoftware.aspx">JSM Compliances Management Software</a></li>
+                                        <li><a href="Products/payrollsoftware.aspx">JSM Payroll Software</a></li>
+                                        <li><a href="Products/reimbursementmanagementsoftware.aspx">JSM Reimbursements Management
+                                            Software </a></li>
+                                             <li><a href="../Products/flexibenefitsforemployeesoftware.aspx">JSM  Flexi Benefits Software</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/travelmanagementsoftware.aspx">Travel</a>
+                                    <ul>
+                                        <li><a href="Products/travelmanagementsoftware.aspx">JSM Travel Management Software
+                                            </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/rreturnsmanagementsoftware.aspx">Factoring Organizations</a>
+                                    <ul>
+                                        <li><a href="Products/rreturnsmanagementsoftware.aspx">JSM R Returns Software (RBI
+                                            Reporting for Factoring Companies)</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/golfclubsoftware.aspx">Golf Clubs</a>
+                                    <ul>
+                                        <li><a href="Products/golfclubmembershipsoftware.aspx">JSM Golf Club Memberships
+                                            Management Software</a></li>
+                                        <li><a href="Products/teetimingmanagementsoftware.aspx">JSM Tee Timings Management
+                                            Software</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/leadManagementSoftware.aspx">Sales</a>
+                                    <ul>
+                                        <li><a href="Products/leadManagementSoftware.aspx">JSM Lead Management Software</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/servicecentermanagementsoftware.aspx">Service Centres</a>
+                                    <ul>
+                                        <li><a href="Products/servicecentermanagementsoftware.aspx">JSM Service Centre Management
+                                            Software</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Products/timesharemanagementsoftware.aspx">Time Shares Industry</a>
+                                    <ul>
+                                        <li><a href="Products/timesharemanagementsoftware.aspx">JSM Time Shares Management
+                                            Software</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-con2">
+                            <div class="list-title">
+                                Solutions</div>
+                            <ul class="foot-list">
+                                <li><a href="Solutions/solutions.aspx">Human Capital Management Solutions</a>
+                                    <ul>
+                                        <li><a href="Solutions/BusinessIntelligencemanagement.aspx">Business Intelligence / Analytics
+                                        </a></li>
+                                        <li><a href="Solutions/corehrmanagement.aspx">Core HR</a></li>
+                                        <li><a href="Solutions/compliancesmanagement.aspx">Compliances / Statutory - for Employees</a></li>
+                                        <li><a href="Solutions/expensemanagement.aspx">Expense Management</a></li>
+                                        <li><a href="Solutions/employeeselfservicemanagement.aspx">Employee Self Service</a></li>
+                                        <li><a href="Solutions/reimbursementmanagement.aspx">Employee Reimbursements</a></li>
+                                        <li><a href="Solutions/flexibenefitsmanagement.aspx">Flexi Benefits for Employees </a></li>
+                                        <li><a href="Solutions/leaveandattendancemanagement.aspx">Leave and Attendance Management
+                                        </a></li>
+                                        <li><a href="Solutions/payrollmanagement.aspx">Payroll Management</a></li>
+                                        <li><a href="Solutions/performancemanagement.aspx">Performance Management / Appraisal
+                                        </a></li>
+                                        <li><a href="Solutions/timesheetmanagement.aspx">Project and Time sheet Management
+                                        </a></li>
+                                        <li><a href="Solutions/centralgovtpayrollmanagement.aspx">VI & VII Pay Commission Payroll /
+                                            Central Govt Payroll </a></li>
+                                        <li><a href="Solutions/timesheetmanagement.aspx">Time Sheet Management </a></li>
+                                        <li><a href="Solutions/trainingmanagement.aspx">Training Management </a>
+                                        </li>
+                                        <li><a href="Solutions/travelmanagement.aspx">Travel Management </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Solutions/solutions.aspx">Business Management Solutions</a>
+                                    <ul>
+                                        <li><a href="Solutions/golfclubmembershipmanagement.aspx">Golf Club Memberships Management </a></li>
+                                            <li><a href="Solutions/teetimingmanagement.aspx">Golf Club Tee Timings Management </a></li>
+                                        <li><a href="Solutions/leadmanagement.aspx">Lead Management </a></li>
+                                        <li><a href="Solutions/rreturnsmanagement.aspx">R Returns (RBI Reporting for
+                                            Factoring Companies) </a></li>
+                                        <li><a href="Solutions/servicecentremanagement.aspx">Service Centre Management </a>
+                                        </li>
+                                        <li><a href="Solutions/timesharemanagement.aspx">Time Share Management </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-con3">
+                            <div class="list-title">
+                                Resources</div>
+                            <ul class="foot-list normal">
+                                
+                               
+                                <li><a href="Resources/productbrochures.aspx">Product Brochures</a></li>
+                                <li><a href="Resources/productspresentations.aspx">Product Presentations</a></li>
+                                <li><a href="Resources/RequestPersonal.aspx">Request Personal Demo</a></li>
+                                
+                            </ul>
+                            <div class="list-title">
+                                Customers</div>
+                            <ul class="foot-list">
+                                <li><a href="Customers/testimonials.aspx">Customer Stories</a>
+                                    <ul>
+                                        
+                                        <li><a href="Customers/featuredcustomer.aspx">Featured Customers </a></li>
+                                        <li><a href="Customers/testimonials.aspx">Testimonials </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="list-title">
+                                Careers</div>
+                            <ul class="foot-list normal">
+                                <li><a href="Careers/internshipopportunities.aspx">Internship Opportunities</a></li>
+                                <li><a href="Careers/openpositionsatjsm.aspx">Open Positions at JSM </a></li>
+                            </ul>
+                            <div class="list-title">
+                                Communities</div>
+                            <ul class="foot-list normal">
+                                <li><a href="Communities/jsmblogs.aspx">JSM Blogs </a></li>
+                                <li><a href="Communities/communities.aspx">Social Media </a></li>
+                            </ul>
+                        </div>
+                        <div class="foot-con4">
+                            <div class="list-title">
+                                Company</div>
+                            <ul class="foot-list normal">
+                                <li><a href="Company/aboutus.aspx">About Us </a></li>
+                                <li><a href="Company/messagefromchairman.aspx">Message from the Chairman </a>
+                                </li>
+                                <li><a href="Company/leadershipteam.aspx">Leadership Team </a></li>
+                                <li><a href="Company/missionvision.aspx">JSM's Vision and Mission </a></li>
+                                <li><a href="Company/whyjsm.aspx">Why JSM </a></li>
+                                <li><a href="Company/history.aspx">Company History </a></li>
+                                <li><a href="Company/news.aspx">News</a></li>
+                                <li><a href="Company/WhatsNew.aspx">What's New</a></li>
+                                  <li><a href="Company/jsmcorporatelogo.aspx">JSM Corporate Logo</a></li>
+                                                                          <li><a href="Company/jsmhrislogo.aspx">JSM HRIS Software Logo</a></li>
+                            </ul>
+                            <div class="list-title">
+                                Contact Us</div>
+                            <ul class="foot-list normal">
+                                <li><a href="ContactUs/contactus.aspx">Contact JSM </a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seo-panel">
+                <div class="main-wrap clearfix">
+                    <p>
+                        HR Software India, HR Software Bangalore, HR Software Chennai, HR Software Mumbai,
+                        HR Software Kolkata, HR Software New Delhi, HR Software Pune, HR Software Hyderabad.
+                        Payroll Software India, Payroll Software Bangalore, Payroll Software Chennai, Payroll
+                        Software Mumbai, Payroll Software Kolkata, Payroll Software New Delhi, Payroll Software
+                        Pune, Payroll Software Hyderabad. 6th Pay Commission Central Govt Payroll Software,
+                        7th Pay Commission Central Govt Payroll Software. HRIS Software India, HRIS Software Bangalore,
+                        HRIS Software Chennai, HRIS Software Mumbai, HRIS Software Kolkata, HRIS Software
+                        New Delhi, HRIS Software Pune, HRIS Software Hyderabad. HR Payroll Software India.
+                        HR Software and Payroll Software India. HRMS Software India. HRIS Software Africa.
+                         On Premises Software. On Premises HR and Payroll Software.  Performance Appraisal Management Software.</p>
+                </div>
+            </div>
+            <div class="copy-panel">
+                <div class="main-wrap clearfix">
+                    <div class="copy-text">
+                        © Copyright 2016, JSM Technologies Pvt. Ltd.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CIN: U72900DL2000PTC105966</div>
+                     <div class="social-links">
+                        <span>Follow Us</span> <a href="https://facebook.com/JSMtechnologies" target="_blank">
+                            <img src="images/facebook-icon.png" alt="Facebook" title="Facebook" /></a>
+                        <a href="https://twitter.com/JSMHRISSoftware" target="_blank">
+                            <img src="images/twitter-icon.png" alt="Twitter" title="twitter" /></a> 
+                            <a href="https://plus.google.com/+jsmtechnologiespvtltdbangalore/posts" target="_blank">
+                                <img src="images/google-icon.png" alt="Google+" title="Google+" /></a>
+                        <a href="https://linkedin.com/company/jsm-technologies-p-ltd" target="_blank">
+                            <img src="images/in-icon.png" alt="Linked In" title="Linked In" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div style="position: fixed; right: 15px; text-align: right; bottom: 5px; z-index: 2147483647;"><input type="image" name="ctl00$imgbtn" id="imgbtn" src="images/top.png" border="0" src="" onclick="javascript:window.scrollTo(0,0);" />  </div>
+   
+    </form>
+</body>
+</html>

@@ -1,0 +1,583 @@
+status: 200
+content-length: 22652
+content-location: http://www.cyber-swift.com/career.html
+vary: Accept-Encoding
+server: Apache
+-content-encoding: gzip
+date: Wed, 21 Sep 2016 04:06:05 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html>
+        <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+        <meta name="p:domain_verify" content="f42ddd041911dded277dbb890d55520f"/>
+		
+		
+
+        <!--STYLESHEETS--pp--->
+        <link rel="stylesheet" type="text/css" href="http://www.cyber-swift.com/css/main-stylesheet-new.css"> 
+        <link rel="stylesheet" type="text/css" href="http://www.cyber-swift.com/css/inner_page.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/responsive-new.css">--->
+		
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+		
+        <link rel="shortcut icon" href="http://www.cyber-swift.com/images/favicon.png">
+        <!--nav-->
+        <link href="http://www.cyber-swift.com/css/nav-demo-new.css" rel="stylesheet">
+		<link href="http://www.cyber-swift.com/css/responsive-new.css" rel="stylesheet">
+        <!--nav-->
+
+
+        <!--[if lt IE 9]>
+		    <script src="components/dist/html5shiv.js"></script>
+		<![endif]-->
+
+        <!--For menu and slider -->
+        <script src="http://www.cyber-swift.com/lib/jquery-1.10.1.min.js"></script>
+        <script src="http://www.cyber-swift.com/layerslider/jQuery/jquery.js" type="text/javascript"></script>
+        <script src="http://www.cyber-swift.com/layerslider/jQuery/jquery-easing-1.3.js" type="text/javascript"></script>
+        <script src="http://www.cyber-swift.com/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+
+	 <!-- suggest script Sphider search -->
+	<style type="text/css">@import url("include/js_suggest/SuggestFramework.css");</style>
+	<script type="text/javascript" src="include/js_suggest/SuggestFramework.js"></script>
+	<script type="text/javascript">window.onload = initializeSuggestFramework;</script>
+  <!-- /suggest script Sphider search  -->
+		
+		<!-- portfolio  -->
+		<link rel="stylesheet" type="text/css" href="http://www.cyber-swift.com/css/layout.css">
+		
+		
+		<!-- portfolio  -->
+
+
+        <script type="text/javascript">
+			$(document).ready(function(){
+				$('#layerslider').layerSlider({
+					skinsPath : 'layerslider/skins/',
+					skin : 'fullwidth',
+					thumbnailNavigation : 'hover',
+					hoverPrevNext : false,
+					responsive : true,
+					responsiveUnder : 1000,
+					sublayerContainer : 900,
+				});
+			});
+
+
+
+			<!--  // building select nav for mobile width only -->
+			$(function(){
+				// building select menu
+				$('<select />').appendTo('nav');
+
+				// building an option for select menu
+				$('<option />', {
+					'selected': 'selected',
+					'value' : '',
+					'text': 'Menu'
+				}).appendTo('nav select');
+
+				$('nav ul li a').each(function(){
+					var target = $(this);
+
+					$('<option />', {
+						'value' : target.attr('href'),
+						'text': target.text()
+					}).appendTo('nav select');
+
+				});
+
+				// on clicking on link
+				$('nav select').on('change',function(){
+					window.location = $(this).find('option:selected').val();
+				});
+			});
+
+			// show and hide sub menu
+			$(function(){
+				$('nav ul li').hover(
+					function () {
+						//show its submenu
+						$('ul', this).slideDown(150);
+					}, 
+					function () {
+						//hide its submenu
+						$('ul', this).slideUp(150);			
+					}
+				);
+			});
+			//end
+
+
+			<!--
+			//* placeholder support javascript
+			-->
+			var _debug = false;
+			var _placeholderSupport = function() {
+			    var t = document.createElement("input");
+			    t.type = "text";
+			    return (typeof t.placeholder !== "undefined");
+			}();
+
+			window.onload = function() {
+			    var arrInputs = document.getElementsByTagName("input");
+			    for (var i = 0; i < arrInputs.length; i++) {
+			        var curInput = arrInputs[i];
+			        if (!curInput.type || curInput.type == "" || curInput.type == "text")
+			            HandlePlaceholder(curInput);
+			        else if (curInput.type == "password")
+			            ReplaceWithText(curInput);
+			    }
+
+			    if (!_placeholderSupport) {
+			        for (var i = 0; i < document.forms.length; i++) {
+			            var oForm = document.forms[i];
+			            if (oForm.attachEvent) {
+			                oForm.attachEvent("onsubmit", function() {
+			                    PlaceholderFormSubmit(oForm);
+			                });
+			            }
+			            else if (oForm.addEventListener)
+			                oForm.addEventListener("submit", function() {
+			                    PlaceholderFormSubmit(oForm);
+			                }, false);
+			        }
+			    }
+			};
+
+			function PlaceholderFormSubmit(oForm) {    
+			    for (var i = 0; i < oForm.elements.length; i++) {
+			        var curElement = oForm.elements[i];
+			        HandlePlaceholderItemSubmit(curElement);
+			    }
+			}
+
+			function HandlePlaceholderItemSubmit(element) {
+			    if (element.name) {
+			        var curPlaceholder = element.getAttribute("placeholder");
+			        if (curPlaceholder && curPlaceholder.length > 0 && element.value === curPlaceholder) {
+			            element.value = "";
+			            window.setTimeout(function() {
+			                element.value = curPlaceholder;
+			            }, 100);
+			        }
+			    }
+			}
+
+			function ReplaceWithText(oPasswordTextbox) {
+			    if (_placeholderSupport)
+			        return;
+			    var oTextbox = document.createElement("input");
+			    oTextbox.type = "text";
+			    oTextbox.id = oPasswordTextbox.id;
+			    oTextbox.name = oPasswordTextbox.name;
+			    //oTextbox.style = oPasswordTextbox.style;
+			    oTextbox.className = oPasswordTextbox.className;
+			    for (var i = 0; i < oPasswordTextbox.attributes.length; i++) {
+			        var curName = oPasswordTextbox.attributes.item(i).nodeName;
+			        var curValue = oPasswordTextbox.attributes.item(i).nodeValue;
+			        if (curName !== "type" && curName !== "name") {
+			            oTextbox.setAttribute(curName, curValue);
+			        }
+			    }
+			    oTextbox.originalTextbox = oPasswordTextbox;
+			    oPasswordTextbox.parentNode.replaceChild(oTextbox, oPasswordTextbox);
+			    HandlePlaceholder(oTextbox);
+			    if (!_placeholderSupport) {
+			        oPasswordTextbox.onblur = function() {
+			            if (this.dummyTextbox && this.value.length === 0) {
+			                this.parentNode.replaceChild(this.dummyTextbox, this);
+			            }
+			        };
+			    }
+			}
+
+			function HandlePlaceholder(oTextbox) {
+			    if (!_placeholderSupport) {
+			        var curPlaceholder = oTextbox.getAttribute("placeholder");
+			        if (curPlaceholder && curPlaceholder.length > 0) {
+			            Debug("Placeholder found for input box '" + oTextbox.name + "': " + curPlaceholder);
+			            oTextbox.value = curPlaceholder;
+			            oTextbox.setAttribute("old_color", oTextbox.style.color);
+			            oTextbox.style.color = "#c0c0c0";
+			            oTextbox.onfocus = function() {
+			                var _this = this;
+			                if (this.originalTextbox) {
+			                    _this = this.originalTextbox;
+			                    _this.dummyTextbox = this;
+			                    this.parentNode.replaceChild(this.originalTextbox, this);
+			                    _this.focus();
+			                }
+			                Debug("input box '" + _this.name + "' focus");
+			                _this.style.color = _this.getAttribute("old_color");
+			                if (_this.value === curPlaceholder)
+			                    _this.value = "";
+			            };
+			            oTextbox.onblur = function() {
+			                var _this = this;
+			                Debug("input box '" + _this.name + "' blur");
+			                if (_this.value === "") {
+			                    _this.style.color = "#c0c0c0";
+			                    _this.value = curPlaceholder;
+			                }
+			            };
+			        }
+			        else {
+			            Debug("input box '" + oTextbox.name + "' does not have placeholder attribute");
+			        }
+			    }
+			    else {
+			        Debug("browser has native support for placeholder");
+			    }
+			}
+
+			function Debug(msg) {
+			    if (typeof _debug !== "undefined" && _debug) {
+			        var oConsole = document.getElementById("Console");
+			        if (!oConsole) {
+			            oConsole = document.createElement("div");
+			            oConsole.id = "Console";
+			            document.body.appendChild(oConsole);
+			        }
+			        oConsole.innerHTML += msg + "<br />";
+			    }
+			}
+
+			jQuery(function(){
+					jQuery('.customSearch').focus(function(){
+						if(this.value == 'Search Pedestal') {this.value = '';}	
+					});
+					jQuery('.customSearch').blur(function(){
+						if (this.value == '') {this.value = 'Search Pedestal';}	
+					});
+			});
+			<!--
+			//* placeholder support javascript
+			-->
+		</script>
+        <script type="text/javascript">
+	jQuery(function($) {
+
+	$("a.topopup").click(function() {
+			loading(); // loading
+			setTimeout(function(){ // then show popup, deley in .5 second
+				loadPopup(); // function show popup
+			}, 500); // .5 second
+	return false;
+	});
+
+	/* event for close the popup */
+	$("div.close").hover(
+					function() {
+						$('span.ecs_tooltip').show();
+					},
+					function () {
+    					$('span.ecs_tooltip').hide();
+  					}
+				);
+
+	$("div.close").click(function() {
+		disablePopup();  // function close pop up
+	});
+
+	$(this).keyup(function(event) {
+		if (event.which == 27) { // 27 is 'Ecs' in the keyboard
+			disablePopup();  // function close pop up
+		}
+	});
+
+        $("div#backgroundPopup").click(function() {
+		disablePopup();  // function close pop up
+	});
+
+	$('a.livebox').click(function() {
+		alert('Hello World!');
+	return false;
+	});
+
+	 /************** start: functions. **************/
+	function loading() {
+		$("div.loader").show();
+		$('#success').html("");
+		$("#mycontactform").find("input[type=text], textarea").val("");
+	}
+	function closeloading() {
+		$("div.loader").fadeOut('normal');
+	}
+
+	var popupStatus = 0; // set value
+
+	function loadPopup() {
+		if(popupStatus == 0) { // if value is 0, show popup
+			closeloading(); // fadeout loading
+			$("#toPopup").fadeIn(0500); // fadein popup div
+			$("#backgroundPopup").css("opacity", "0.7"); // css opacity, supports IE7, IE8
+			$("#backgroundPopup").fadeIn(0001);
+			popupStatus = 1; // and set value to 1
+		}
+	}
+
+	function disablePopup() {
+		if(popupStatus == 1) { // if value is 1, close popup
+			$("#toPopup").fadeOut("normal");
+			$("#backgroundPopup").fadeOut("normal");
+			popupStatus = 0;  // and set value to 0
+		}
+	}
+	
+	$('#submit').click(function(){
+ 
+ //alert(BASE_URL);
+ 
+	$.post("/send.php", $("#mycontactform").serialize(),  function(response) {
+	$('#success').html(response);
+
+	//$('#success').fadeOut(5000);
+
+	});
+	return false;
+	 
+	});
+	/************** end: functions. **************/
+}); // jQuery End
+
+</script>
+        <link rel="stylesheet" href="http://www.cyber-swift.com/layerslider/css/layerslider.css" type="text/css">
+        <style type="text/css" media="screen">
+.l1-s1 {
+	height: 80px;
+	color: black;
+	background: white;
+	opacity: .9;
+	width: 650px;
+	text-align: center;
+}
+.l2-s1 {
+	height: 40px;
+	color: white;
+	background: black;
+	opacity: .65;
+	white-space: nowrap;
+}
+.l3-s1 {
+	height: 40px;
+	color: black;
+	background: white;
+	opacity: .9;
+	white-space: nowrap;
+}
+</style>
+ 
+        <!--Placed it here to test -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47321251-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<title>Jobs at CyberSWIFT</title>
+<meta name="description" content="CyberSWIFT welcomes skilful and sincere people to join the organization and provides them an opportunity to grow in dot net, php, ios, android and GIS">
+<meta name="keywords" content="jobs, cyberswift, Columbus, Ohio, Kolkata, career, gis, dot net, php, ios , android">
+<script type="text/javascript"> 
+    $(document).ready(function(){
+        $("#careerTopic_1").click(function(){
+            if ( $("#careerPage_1").is(":visible") ) { 
+                $("#careerPage_1").slideUp("slow",function(){});
+              } else if ( $("#careerPage_1").is(":hidden") ) { 
+                $("#careerPage_1").slideDown("slow",function(){});
+              }
+        });
+        $("#careerTopic_2").click(function(){
+            if ( $("#careerPage_2").is(":visible") ) { 
+                $("#careerPage_2").slideUp("slow",function(){});
+              } else if ( $("#careerPage_2").is(":hidden") ) { 
+                $("#careerPage_2").slideDown("slow",function(){});
+              }
+        });
+        $("#careerTopic_3").click(function(){
+            if ( $("#careerPage_3").is(":visible") ) { 
+                $("#careerPage_3").slideUp("slow",function(){});
+              } else if ( $("#careerPage_3").is(":hidden") ) { 
+                $("#careerPage_3").slideDown("slow",function(){});
+              }
+        });
+        $("#careerTopic_4").click(function(){
+            if ( $("#careerPage_4").is(":visible") ) { 
+                $("#careerPage_4").slideUp("slow",function(){});
+              } else if ( $("#careerPage_4").is(":hidden") ) { 
+                $("#careerPage_4").slideDown("slow",function(){});
+              }
+        });
+        $("#careerTopic_5").click(function(){
+            if ( $("#careerPage_5").is(":visible") ) { 
+                $("#careerPage_5").slideUp("slow",function(){});
+              } else if ( $("#careerPage_5").is(":hidden") ) { 
+                $("#careerPage_5").slideDown("slow",function(){});
+              }
+        });
+      
+    });
+    </script>
+</head>
+<body>
+<div id="maindiv">
+  
+
+
+<header>
+  <div class="wrapdiv-menu">
+  
+  
+    <div class="topmenu">
+   <!-- <div class="search_section"><input type="text" class="search_home"> <a href="#"><img alt="" src="images/search.png"></a></div>
+-->
+<div class="search_section">
+
+<!--<center>
+<table cellpadding="5" cellspacing="1" class="searchBox">
+<tr>
+	<td align="center">
+
+	<form action="search.php" method="get">
+
+<table><tr><td>
+	<div align="left"> 
+<input type="text" name="query" id="query" size="40" value="" action="include/js_suggest/suggest.php" columns="2" autocomplete="off" delay="1500">	
+</div> 
+<td>
+<input type="submit" value="Search">
+</td></tr></table> -->
+<style> 
+    .search_section br{display:none;}
+</style>
+
+<form action="http://www.cyber-swift.com/search.php" method="get"> 
+
+<div class="search_section">
+<input class="search_home" type="text" name="query" id="query" size="40" value="" action="include/js_suggest/suggest.php" columns="2" autocomplete="off" delay="1500">	
+
+<input type="submit" value="Search">
+</div>
+
+	   
+
+
+	
+	<input type="hidden" name="search" value="1"> 
+	</form>
+			   
+	<!--</td>
+
+</tr>
+</table>
+</center>-->
+
+
+
+	<!-- category selection -->
+	
+<div id="powered_by">
+<!--If you want to remove this, please donate to the project--> 
+ 
+</div>
+
+
+</div>
+      <div class="cs-logo"> <a href="http://www.cyber-swift.com/index.html"><img src="http://www.cyber-swift.com/images/cs-logo.png" alt="cyberswift logo" title="cyberswift" class="logo" /></a> </div>
+    
+    
+      <div class="mainmenu">
+        <!-- Nav -->
+        <div class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"> <a href="http://www.cyber-swift.com/about.html">About</a>
+              <ul class="nav-submenu">
+                <li class="nav-submenu-item"> <a href="http://www.cyber-swift.com/about/media-coverage.html">Media</a> </li>
+                <li class="nav-submenu-item"> <a href="http://www.cyber-swift.com/about/partner.php">Partner</a> </li>
+              </ul>
+            </li>
+            <li class="nav-item"> <a href="http://www.cyber-swift.com/services.html">Services</a>
+              <ul class="nav-submenu">
+                <li class="nav-submenu-item"> <a href="http://www.cyber-swift.com/services/software-development-services.html">Software Development</a> 
+                	<ul class="submenu-nav-submenu">
+                    <li><a href="http://www.cyber-swift.com/services/software-development/php-development.html">PHP Development</a></li>
+                    <li><a href="http://www.cyber-swift.com/services/software-development/dot-net-development.html">Dot Net Development</a></li>
+                   
+                  </ul>
+                </li>
+                <li class="nav-submenu-item"> <a href="http://www.cyber-swift.com/services/mobile-apps-development-services.html">Mobile Apps Development</a> </li>
+                <li class="nav-submenu-item"> <a href="http://www.cyber-swift.com/services/gis-geospatial-services.html">Geospatial</a> </li>
+                <!--<li class="nav-submenu-item"> <a href="http://www.cyber-swift.com/services/cloud-services.php">Cloud Service</a> </li>-->
+              </ul>
+            </li>
+            <li class="nav-item"> <a href="http://www.cyber-swift.com/products.html">Products</a>
+              <ul class="nav-submenu">
+                <li class="nav-submenu-item"> <a href="http://www.cyber-swift.com/products/lams-product.html">Land Acquisition Management</a> </li>
+                <li class="nav-submenu-item"> <a href="http://www.cyber-swift.com/products/csr-product.html">Corporate Social Responsibility</a> </li>
+                <li class="nav-submenu-item"> <a href="http://www.cyber-swift.com/services/mobile-apps-development/iPhone-application-development/data-entry-app.html">Build My Form</a> </li>
+				<li class="nav-submenu-item"> <a href="http://www.cyber-swift.com/products/swiftanalytix.html">SwiftAnalytix</a> </li>
+                
+              </ul>
+            </li>
+			<li class="nav-item"> <a href="http://www.cyber-swift.com/projects.html">Projects</a>
+            <li class="nav-item"> <a href="http://www.cyber-swift.com/industries.html">Industries</a> </li>
+            
+            <li class="nav-item last"> <a href="http://www.cyber-swift.com/contact.html">Contact</a> </li>
+            
+           
+            <li class="clear"></li>
+          </ul>
+          
+          
+          
+          
+        </div>
+        <!-- /Nav -->
+      </div>
+      
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+
+    <div class="wrapdiv">
+      <div class="inrPageSectionHdr">
+                    <h3>Career</h3>
+                </div>
+      
+      <div class="career_wrap">
+      	<div class="career_block">
+        	<div class="job_opening"><a href="it.php"><img src="images/job.png" alt="job in kolkata"></a><!--dotnet job--></div>
+        	<div class="career_title"><h4><a href="it.php">IT</a></h4></div>
+            <p><a href="it.php">Dot Net, PHP, Iphone, Web Designer</a></p>
+        </div>
+        <div class="career_block">
+        <div class="job_opening"><a href="marketing.php"><img src="images/job.png" alt="jobs hiring in columbus ohio"></a><!--php job--></div>
+        	<div class="career_title"><h4><a href="marketing.php">Marketing</a></h4></div>
+            <p><a href="marketing.php">BDE, IT Coordinator, Online Marketing, Online Bidder</a></p>
+        </div>
+        <div class="career_block">
+        <div class="job_opening"><a href="gis.php"><img src="images/job.png" alt="gis jobs"></a><!--ios job--></div>
+        	<div class="career_title"><h4><a href="gis.php">GIS</a></h4></div>
+            <p><a href="gis.php">GIS Associate, GIS PM, Field Supervisor, Surveyor, Data Entry Operator, Digitized</a><!--android job--></p>
+        </div>
+        <div class="career_block last">
+        <div class="job_opening"><a href="admin.php"><img src="images/job.png" alt="vacancy in kolkata"></a></div>
+        	<div class="career_title"><h4><a href="admin.php">Admin</a></h4></div>
+            <p><a href="admin.php">HR, HR Manager, Accounts Executives, System Admin, Office Associate, Office Manager, Admin Officer, Office Peon </a><!--gis job--></p>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <footer>	 <ul class="sc-media">	 			<li id="socialIcon"><a href="javascript:void(0);" class="facebook"><img src="../images/share.png"></a></li>			<div class="socialIconGroup" style="display:none;">				<li><a target="_blank" href="http://www.facebook.com/meetcyberswift" class="facebook">Facebook</a></li>				<li><a target="_blank" href="http://www.twitter.com/meetcyberswift" class="twitter">Twitter</a></li>				<li><a target="_blank" href="http://www.linkedin.com/company/458173?trk=pro_other_cmpy" class="linkedin">Linkedin</a></li>				<li><a target="_blank" href="https://plus.google.com/102590373484633832432/" class="google">Google+</a></li>				<li><a target="_blank" href="http://www.pinterest.com/meetcyberswift" class="pinterest">Pinterest  </a></li>				<li class="responsive_email_link"><a href=" " class="email_link topopup">E-Mail  </a></li>            </div>                                                                     </ul>                       <div class="copyright">    <div class="wraper">      <div class="footer-links">        <ul>          <li><a href="http://www.cyber-swift.com/hire-our-resources.html">Hire Resources</a></li>          <li>|</li>          <li><a href="http://www.cyber-swift.com/clients.html">Clients</a></li>                    <li>|</li>                    <li><a href="http://www.cyber-swift.com/career.html">Career</a></li>           <li>|</li>                     <li><a href="http://www.cyber-swift.com/project/">Project Login</a></li>           <li>|</li>           <li><a href="http://admin.cswift.in">Employee Login</a></li>           <li>|</li>           <li><a href="http://webmail.cyber-swift.com">Email Login</a></li>           <li>|</li>           <li><a href="http://www.cyber-swift.com/sitemap.php">Site Map</a></li>         </ul>        <p>Copyright &copy; 1997-2016. CyberSWIFT LLC</p>        <div class="clear"></div>             </div>      </div>    </div></footer><script src="http://www.cyber-swift.com/js/flaunt.js"></script><script>	$(document).ready(function(){				$('#socialIcon').click(function(){			$('.socialIconGroup').slideToggle();		});			});</script></body>
+</html>

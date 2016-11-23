@@ -1,0 +1,558 @@
+status: 200
+content-length: 29071
+via: 1.1 varnish
+vary: Accept-Encoding
+x-varnish-count: 0
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+etag: "cedc5d877287b042cec0e40627af6b79"
+cache-control: public, max-age=0
+x-varnish-hitmiss: MISS
+x-varnish: 2109168238
+set-cookie: PLAY_SESSION=64b52d737742efd8915b81b2c8be9e108ac89435-v=1;
+ Max-Age=32400; Expires=Thu, 29 Sep 2016 20:53:15 GMT; Path=/; Secure; HTTPOnly
+accept-ranges: bytes
+expires: Thu, 29 Sep 2016 11:53:15 GMT
+last-modified: Thu, 29 Sep 2016 11:53:15 GMT
+-content-encoding: gzip
+date: Thu, 29 Sep 2016 11:53:15 GMT
+content-location: https://www.firstbank.com/about/join-our-team
+age: 0
+strict-transport-security: max-age=16070400
+connection: keep-alive
+x-varnish-ttl: -1.000
+x-frame-options: SAMEORIGIN
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Join Our Team › First Bank & Trust Company</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-title" content="First Bank & Trust Company">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script type="text/javascript">
+
+        (function () {
+          "use strict";
+          //$.support.cors=true;
+
+          // once cached, the css file is stored on the client forever unless
+          // the URL below is changed. Any change will invalidate the cache
+          var css_href = '/assets/css/fonts.css?v=11242014';
+          // a simple event handler wrapper
+          function on(el, ev, callback) {
+            if (el.addEventListener) {
+              el.addEventListener(ev, callback, false);
+            } else if (el.attachEvent) {
+              el.attachEvent("on" + ev, callback);
+            }
+          }
+          
+          // if we have the fonts in localStorage or if we've cached them using the native batrowser cache
+          if ((window.localStorage && localStorage.font_css_cache) || document.cookie.indexOf('font_css_cache') > -1){
+            // just use the cached version
+            injectFontsStylesheet();
+          } else {
+           // otherwise, don't block the loading of the page; wait until it's done.
+            on(window, "load", injectFontsStylesheet);
+          }
+          
+          // quick way to determine whether a css file has been cached locally
+          function fileIsCached(href) {
+            return window.localStorage && localStorage.font_css_cache && (localStorage.font_css_cache_file === href);
+          }
+
+          // time to get the actual css file
+          function injectFontsStylesheet() {
+           // if this is an older browser
+            if (!window.localStorage || !window.XMLHttpRequest) {
+              var stylesheet = document.createElement('link');
+              stylesheet.href = css_href;
+              stylesheet.rel = 'stylesheet';
+              stylesheet.type = 'text/css';
+              document.getElementsByTagName('head')[0].appendChild(stylesheet);
+              // just use the native browser cache
+              // this requires a good expires header on the server
+              document.cookie = "font_css_cache";
+            
+            // if this isn't an old browser
+            } else {
+
+                // use the cached version if we already have it
+              if (fileIsCached(css_href)) {
+                
+                injectRawStyle(localStorage.font_css_cache);
+                // otherwise, load it with ajax
+              } else {
+                var request = createCORSRequest("GET", css_href);
+                if (request){
+                    request.onreadystatechange = function () {
+                      if (request.readyState === 4) {
+                        // once we have the content, quickly inject the css rules
+                        injectRawStyle(request.responseText);
+                        // and cache the text content for further use
+                        // notice that this overwrites anything that might have already been previously cached
+                        localStorage.font_css_cache = request.responseText;
+                        localStorage.font_css_cache_file = css_href;
+                      }
+                    };
+                    request.send();
+                }
+              }
+            }
+          }
+
+          function createCORSRequest(method, url){
+              var xhr = new XMLHttpRequest();
+              // Check if the XMLHttpRequest object has a "withCredentials" property.
+              // "withCredentials" only exists on XMLHTTPRequest2 objects.
+              if ("withCredentials" in xhr){
+                  xhr.open(method, url, true);
+              // Otherwise, check if XDomainRequest.
+              // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+              } else if (typeof XDomainRequest != "undefined"){
+                  xhr = new XDomainRequest();
+                  xhr.open(method, url);
+              } else {
+                  // Otherwise, CORS is not supported by the browser.
+                  xhr = null;
+              }
+              return xhr;
+          }
+
+
+          // this is the simple utitily that injects the cached or loaded css text
+          function injectRawStyle(text) {
+            var style = document.createElement('style');
+            // cater for IE8 which doesn't support style.innerHTML
+            style.setAttribute("type", "text/css");
+            if (style.styleSheet) {
+                style.styleSheet.cssText = text;
+            } else {
+                style.innerHTML = text;
+            }
+            document.getElementsByTagName('head')[0].appendChild(style);
+          }
+
+        }());
+    </script><!--[if lt IE 9]> <script src="/assets/js/html5shiv.min.js"></script> <![endif]-->
+
+    
+  </head>
+
+  <body class="subpage About">
+    <a href="#main" class="visuallyhidden">Skip Navigation</a>
+    
+    <div class="navbar-fixed-top">
+  <div class="container">
+    
+    <a href="/" class="logo pull-left" title="First Bank and Trust Company, VA" itemprop="url" itemscope="" itemtype="http://schema.org/BankOrCreditUnion">
+      <div class="logotype" itemprop="logo">
+        <h1 class="visuallyhidden">First Bank and Trust Company</h1>
+      </div>
+    </a>
+    <nav class="navbar pull-right" role="navigation">
+      <div class="navbar-inner">
+        <div class="container">
+            <div class="nav-container pull-left">
+                <ul role="menubar" class="banno-menu menu-573868b0-b624-11e4-9272-005056a30020">
+                       <li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">Personal</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-internal">
+        <a href="/personal/checking-and-savings">Checking & Savings</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/personal/convenience-services">Convenience Services</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/personal/lending">Lending</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/investments/personal">Financial Planning</a>
+        
+      </li>
+          </ul>
+      </li><li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">Business</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-internal">
+        <a href="/business/checking-and-savings">Checking & Savings</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/business/cash-managememnt">Cash Management</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/business/lending">Lending</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/investments/business">Business Planning & Insurance</a>
+        
+      </li>
+          </ul>
+      </li><li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">Mortgage</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-internal">
+        <a href="/mortgage/purchase-or-refinance">Purchase or Refinance</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/mortgage/home-equity">Home Equity</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/mortgage/construction-and-renovation">Construction and Renovation</a>
+        
+      </li>
+          </ul>
+      </li><li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">Investments</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-internal">
+        <a href="/investments/personal">Personal</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/investments/business">Business</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/investments/meet-our-advisors">Meet Our Advisors</a>
+        
+      </li>
+          </ul>
+      </li><li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">Online</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-external">
+        <a href="https://jha.loanspq.com/Consumer/login/default.aspx?enc2=CjDDGQgp6ViDEpMSQAmj1IpCuNbtmn_0H1MmEdMKY5S0-RhRcIetU2TjwkzZPGperKfgTvergBKBeW8OShuKy9TwJ_bwh3RrMxJadpk3pzrG-4Qz9uNql7PcTU33grig" target="_blank">FirstWallet</a>
+        
+      </li><li role="menuitem" class="menu-external">
+        <a href="https://7117949387.mortgage-application.net/Default.aspx" target="_blank">Mortgage Application</a>
+        
+      </li><li role="menuitem" class="menu-external">
+        <a href="https://7117949387.mortgage-application.net/Default.aspx" target="_blank">Home Equity LOC Application</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/online/mobile-banking-apps">Mobile Banking Resources</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/enroll-in-online-banking-billpay">Enroll in Online Banking</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/online-bill-pay">Online Bill Pay </a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/online/clickswitch">ClickSWITCH - Online Account Switch Tool </a>
+        
+      </li>
+          </ul>
+      </li><li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">About</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-internal">
+        <a href="/about/who-we-are">Who We Are</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/about/locations-and-hours">Locations & Hours</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/about/join-our-team">Join Our Team</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/about/customer-support">Customer Support</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/about/video-library">Video Library</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/about/get-in-touch">Get In Touch</a>
+        
+      </li>
+          </ul>
+      </li>
+                     </ul>
+            </div>
+
+            <a href="javascript:;" class="btn btn-menu pull-left"><span>Menu</span><i class="hide icon-close-white"></i></a>
+            <a href="#search" data-backdrop="static" data-keyboard="false" data-toggle="modal" class="pull-left btn btn-search" id="search-btn"><i class="icon-search"></i><i class="hide icon-close-white"></i></a>
+            <a href="#olb" data-backdrop="static" data-keyboard="false" id="login" data-toggle="modal" class="btn btn-primary pull-left"><span>Login</span> <i class="hide icon-modal-close"></i></a>
+        </div>
+      </div>
+    </nav> 
+  </div>
+</div>
+    
+    <div class="hero">
+      <div class="img" data-content-block="hero1" data-content="content" data-editable="editable">
+           <img src="/assets/content/nU39HzA8/2015/04/02/business_partners.jpg" image-id="zIWSA97b"> 
+      </div>
+      <a href="#main" id="scroll" class="hidden-phone"></a>
+    </div>
+
+    <div id="main" role="main">
+      <div class="inner-v-xlg">
+        <div class="container">
+          <div class="row">
+            <article class="span8">
+              <h1 class="title">Join Our Team</h1>
+
+              <div class="content" data-content-block="bodyCopy1" data-content="content" data-editable="editable">
+                   <p><b>First Bank & Trust Company values excellent customer service, first and foremost. </b> We offer excellent employee benefits and are always seeking talented individuals who recognize the importance of teamwork and customer care. The below career opportunities are currently available.</p><p><br></p><div style="margin: 0px 0px 7.5pt;"><font face="Times New Roman,serif" size="2"><span style="font-size: 10.5pt;"><font color="#b23432" face="Helvetica,sans-serif" size="3"><span lang="en" style="font-size: 12pt;">Full-Time Teller - Fairlawn, VA – Volunteer Parkway- Bristol, TN – Wise, VA</span></font></span></font></div><div style="margin: 0px 0px 7.5pt;"><font face="Times New Roman,serif" size="2"><span style="font-size: 10.5pt;"><font color="#656565" face="Helvetica,sans-serif"><span lang="en">First Bank and Trust Company is seeking a Full-Time Teller for the Fairlawn, VA Branch, the Volunteer Parkway Branch Bristol, TN and Wise, VA Branch, and the West Bristol, VA Branch. This position is responsible for providing professional, efficient and accurate financial transaction processing. The candidate should be detail oriented and provide superior customer service. The Teller will be responsible for identifying and promoting the Bank's products and services.</span></font></span></font></div><div style="margin: 0px 0px 7.5pt;"><font face="Times New Roman,serif" size="2"><span style="font-size: 10.5pt;"><font color="#656565" face="Helvetica,sans-serif"><span lang="en">High school diploma or equivalent is required. Prior banking experience is preferred but not required. The candidate must possess strong oral and written communication skills and must be self-motivated and able to work in a team environment. The candidate must be well organized and have basic computer skills. EOE/AA/M/F/Disabled/Veteran.</span></font></span></font></div><div style="margin: 0px 0px 7.5pt;"><font face="Times New Roman,serif" size="2"><span style="font-size: 10.5pt;"><font color="#656565" face="Helvetica,sans-serif"><span lang="en">Please send a cover letter and resume to Monica Anderson, Human Resource Officer </span></font><a href="https://webmail.firstbank.com/owa/redir.aspx?SURL=KthJAxqccZdD_QFjToBw_fJZjMIBPvSXkRkzUd0bmrFj8BIwHebTCG0AYQBpAGwAdABvADoAdwB3AHcALgBtAGEAbgBkAGUAcgBzAG8AbgBAAGYAaQByAHMAdABiAGEAbgBrAC4AYwBvAG0A&URL=mailto%3awww.manderson%40firstbank.com" target="_blank"><font face="Helvetica,sans-serif"><span lang="en"><font color="#8d221d" face="inherit,serif">manderson@firstbank.com</font></span></font></a><font color="#656565" face="Helvetica,sans-serif"><span lang="en"> , or The First Bank and Trust Company, Attn: Monica Anderson P.O. Box 1000, Abingdon, VA 24212.</span></font></span></font></div><div style="margin: 0px 0px 7.5pt;"><font face="Times New Roman,serif" size="2"><span style="font-size: 10.5pt;"><font color="#656565" face="Helvetica,sans-serif"><span lang="en"> </span></font></span></font></div><div style="margin: 0px 0px 7.5pt;"><font face="Times New Roman,serif" size="2"><span style="font-size: 10.5pt;"><font color="#b23432" face="Helvetica,sans-serif" size="3"><span lang="en" style="font-size: 12pt;">Part-Time Teller – Abingdon, VA </span></font></span></font></div><div style="margin: 0px 0px 7.5pt;"><font face="Times New Roman,serif" size="2"><span style="font-size: 10.5pt;"><font color="#656565" face="Helvetica,sans-serif"><span lang="en">First Bank and Trust Company is seeking a Part-Time Time Teller to work Tuesday, Wednesday and Thursday at the West Abingdon Branch. This position is responsible for providing professional, efficient and accurate financial transaction processing. The candidate should be detail oriented and provide superior customer service. The Teller will be responsible for identifying and promoting the Bank's products and services.</span></font></span></font></div><div style="margin: 0px 0px 7.5pt;"><font face="Times New Roman,serif" size="2"><span style="font-size: 10.5pt;"><font color="#656565" face="Helvetica,sans-serif"><span lang="en">High school diploma or equivalent is required. Prior banking experience is preferred but not required. The candidate must possess strong oral and written communication skills and must be self-motivated and able to work in a team environment. The candidate must be well organized and have basic computer skills. EOE/AA/M/F/Disabled/Veteran.</span></font></span></font></div><div style="margin: 0px 0px 7.5pt;"><font face="Times New Roman,serif" size="2"><span style="font-size: 10.5pt;"><font color="#656565" face="Helvetica,sans-serif"><span lang="en">Please send a cover letter and resume to Monica Anderson, Human Resource Officer </span></font><a href="https://webmail.firstbank.com/owa/redir.aspx?SURL=KthJAxqccZdD_QFjToBw_fJZjMIBPvSXkRkzUd0bmrFj8BIwHebTCG0AYQBpAGwAdABvADoAdwB3AHcALgBtAGEAbgBkAGUAcgBzAG8AbgBAAGYAaQByAHMAdABiAGEAbgBrAC4AYwBvAG0A&URL=mailto%3awww.manderson%40firstbank.com" target="_blank"><font face="Helvetica,sans-serif"><span lang="en"><font color="#8d221d" face="inherit,serif">manderson@firstbank.com</font></span></font></a><font color="#656565" face="Helvetica,sans-serif"><span lang="en"> , or The First Bank and Trust Company, Attn: Monica Anderson P.O. Box 1000, Abingdon, VA 24212.</span></font></span></font></div> 
+              </div>
+            </article>
+            <aside class="span4">
+              <div class="content hidden-content subimg" data-content-block="bodyCopy2" data-content="content" data-editable="editable">
+                   <img src="/assets/content/cF6TJo7V/2015/04/09/sub_2014_performance.jpg" image-id="4usid54f"> 
+              </div>
+              <div class="bordered-left">
+                <div class="content hidden-content" data-content-block="bodyCopy3" data-content="content" data-editable="editable">
+                     <h2 style="text-align: center;"> FIRST BANK & TRUST COMPANY'S 2014 YEAR-END PERFORMANCE SUMMARY <br> <br></h2><p style="text-align: center;"> <a class="btn btn-primary" href="/about/video-library" target="_self" data-disclaimer-id="null" data-link-type-id="page" data-link-id="/about/video-library">WATCH OUR VIDEO</a></p> 
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div id="top">
+        <i class="icon-top"></i>
+      </div>
+    </div>
+    
+    <footer role="contentinfo">
+<div class="container">
+  
+    
+      <nav role="navigation">
+      
+        <ul role="menubar" class="banno-menu menu-57397a21-b624-11e4-9272-005056a30020">
+                       <li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">Personal</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-internal">
+        <a href="/personal/checking-and-savings">Checking & Savings</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/personal/convenience-services">Convenience Services</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/personal/lending">Lending</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/investments/personal">Financial Planning</a>
+        
+      </li>
+          </ul>
+      </li><li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">Business</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-internal">
+        <a href="/business/checking-and-savings">Checking & Savings</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/business/cash-managememnt">Cash Management</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/business/lending">Lending</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/investments/business">Business Planning & Insurance</a>
+        
+      </li>
+          </ul>
+      </li><li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">Mortgage</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-internal">
+        <a href="/mortgage/purchase-or-refinance">Purchase or Refinance</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/mortgage/home-equity">Home Equity</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/mortgage/construction-and-renovation">Construction and Renovation</a>
+        
+      </li>
+          </ul>
+      </li><li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">Investments</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-internal">
+        <a href="/investments/personal">Personal</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/investments/business">Business</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/investments/meet-our-advisors">Meet Our Advisors</a>
+        
+      </li>
+          </ul>
+      </li><li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">Online</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-external">
+        <a href="https://jha.loanspq.com/Consumer/login/default.aspx?enc2=CjDDGQgp6ViDEpMSQAmj1IpCuNbtmn_0H1MmEdMKY5S0-RhRcIetU2TjwkzZPGperKfgTvergBKBeW8OShuKy9TwJ_bwh3RrMxJadpk3pzrG-4Qz9uNql7PcTU33grig">FirstWallet</a>
+        
+      </li><li role="menuitem" class="menu-external">
+        <a href="https://7117949387.mortgage-application.net/Default.aspx" target="_blank">Mortgage Application</a>
+        
+      </li><li role="menuitem" class="menu-external">
+        <a href="https://7117949387.mortgage-application.net/Default.aspx" target="_blank">Home Equity LOC Application</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/online/mobile-banking-apps">Mobile Banking Resources</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/enroll-in-online-banking-billpay">Enroll in Online Banking</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/online-bill-pay">Online Bill Pay </a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/online/clickswitch">ClickSWITCH - Online Account Switch Tool </a>
+        
+      </li>
+          </ul>
+      </li><li role="menuitem" class="dropdown menu-category">
+        <span class="category-item" tabindex="0" role="button" aria-haspopup="true">About</span>
+        <ul role="menu" class="dropdown-menu">
+            <li role="menuitem" class="menu-internal">
+        <a href="/about/who-we-are">Who We Are</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/about/locations-and-hours">Locations & Hours</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/about/join-our-team">Join Our Team</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/about/customer-support">Customer Support</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/about/video-library">Video Library</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/about/get-in-touch">Get In Touch</a>
+        
+      </li>
+          </ul>
+      </li>
+                     </ul>
+
+       <div class="footer-menu-actions visible-phone">
+         <a href="javascript:;" id="footer-menu-text">VIEW FULL SITEMAP</a>
+         <a href="javascript:;" id="footer-menu-btn" class="btn btn-inverse hide"><i class="icon-modal-close"></i> CLOSE</a>
+       </div>
+      </nav>
+    
+  
+</div>
+</footer>
+<div class="sub-foot" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="span11 span12-tablet">
+        <nav>
+          <ul role="menubar" class="banno-menu menu-b8408062-cea8-11e4-9413-005056a30020">
+                       <li role="menuitem" class="menu-internal">
+        <a href="/privacy-policy">Privacy Policy</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/security">Security</a>
+        
+      </li><li role="menuitem" class="menu-internal">
+        <a href="/terms-of-service">Terms of Service</a>
+        
+      </li>
+                     </ul>
+        </nav>
+
+        <div class="compliance">
+          <a href="http://portal.hud.gov/hudportal/HUD?src=/program_offices/fair_housing_equal_opp">Equal Housing Lender <img class="ehl" alt="EHL" src="/assets/img/ehl.png" srcset="/assets/img/ehl.png 1x, /assets/img/ehl@2x.png 2x"></a> <a href="https://www.fdic.gov/">Member FDIC</a>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+    <div id="olb" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <i class="icon-lock pull-right"></i>
+    <h3 id="myModalLabel">Secure Logins</h3>
+  </div>
+  <div class="modal-body">
+    <form action="https://cm.netteller.com/login2008/Authentication/Views/Login.aspx?fi=firstbank&bn=2f8d9c07487f1f7b&burlid=30c88309f99ea1dc" method="post">
+      <div class="control-group">
+        <label for="online-banking" class="visuallyhidden">Online Banking</label>
+        <div class="select-container">
+          <select name="" id="online-banking">
+            <option value="">Online Banking</option>
+            <option value="Trust Customers">Trust Customers</option>
+            <option value="First Teller">First Teller</option>
+            <option value="Merchant Services">Merchant Services</option>
+          </select>
+        </div>
+
+      </div>
+      <div class="control-group form-inputs">
+        <label for="userId" class="visuallyhidden">User ID</label>
+        <input type="text" id="userid" name="id" placeholder="User ID" required="">
+        <input type="hidden" name="pin" value="">
+      </div>
+
+
+      <button class="btn btn-primary" type="submit">Login</button>
+      <a href="" class="btn btn-primary hide login-link" itemprop="url">Login</a>
+    </form>
+
+    <a href="/enroll-in-online-banking" itemprop="url" title="Enroll in Online Banking" id="enroll-link">Enroll in Online Banking</a>
+  </div>
+</div>
+
+
+    <div id="search" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-body">
+    <form action="/search" method="get" class="form-inline">
+      <div class="input-prepend">
+        <span class="add-on"></span>
+        <label for="search-input" class="visuallyhidden">Search</label>
+        <input type="text" id="search-input" name="q" placeholder="What can we help you find?">
+      </div>
+      
+
+      <button class="btn btn-primary" type="submit">Search</button>
+
+    </form>
+
+    <a href="/about/get-in-touch" itemprop="url" title="Need further assistance? Contact us today!">Need further assistance? Contact us today!</a>
+  </div>
+</div>
+
+
+    <script src="/assets/js/jquery-1.10.1.min.js"></script>
+<script defer="" src="/assets/js/script.min.js"></script>
+
+<script async="" src="https://i.simpli.fi/dpx.js?cid=44458&action=100&segment=FirstBank%26Trust&m=1&sifi_tuid=22264"></script><!-- Google Tag Manager -->
+
+    
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TMXM6X" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TMXM6X');</script><!-- End Google Tag Manager -->
+
+
+  
+<script type="text/javascript" src="/assets/target/disclaimers.js" defer="defer"></script></body></html>

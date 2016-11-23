@@ -1,0 +1,126 @@
+status: 200
+content-length: 4328
+content-location: http://www.parkbenchdigital.com
+x-powered-by: PleskLin
+accept-ranges: bytes
+-varied-accept-encoding: gzip, deflate
+vary: Accept-Encoding
+server: Apache
+last-modified: Fri, 12 Feb 2016 12:15:39 GMT
+connection: close
+-content-encoding: gzip
+date: Wed, 21 Sep 2016 03:39:50 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ics">
+<title>Park Bench Digital</title>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,100,300,500,700,800,900' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/component.css">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<script type="text/javascript" src="js/respond.min.js"></script>
+<![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-24011535-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body class="home">
+<div class="main_wrapper">
+  <header>
+    <div class="header_inner">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" title="Park Bench Digital" alt="Logo"></a></div>
+      <div class="box1"> <img src="images/home_top_img.png" title="" alt=""/></div>
+      <div class="menu">
+        <nav class="sildeMenu slideMenu-vertical cbp-spmenu-right" id="navigation">
+          <div class="box3">
+            <p><a href="#" class="close_button"><i class="fa fa-times-circle-o "></i></a></p>
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="box4">
+            <p><b>LET'S TALK</b></p>
+            <p> 614-551-0368</p>
+            <p><a href="mailto:hello@parkbenchdigital.com">hello@parkbenchdigital.com</a></p>
+            <p>&copy; 2016 Park Bench Digital</p>
+          </div>
+        </nav>
+        <button id="openNavigation" class="triggerNavigation"><i class="fa fa-bars"></i><br>
+        MENU</button>
+      </div>
+    </div>
+  </header>
+  <div class="content_part">
+    <div class="left">
+      <h2>combining <br>strategy, design
+        and<br>advanced technology</h2>
+      <!--<p>We purpose to make our clients succeed in the digital era.</p>-->
+      <hr>
+      <div class="arrow"><a href="work.html"><span>View recent projects</span> <span class="nav_right"><i class="fa fa-chevron-right"></i></span></a></div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="right">
+      <div class="box2"><img src="images/mobile.png" title="" alt="" class="roll"><img src="images/screen1.png" title="" alt="" class="roll_1"><img src="images/screen2.png" title="" alt="" class="roll_2"></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <footer></footer>
+</div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/modernizr.js"></script> 
+<!--Side Menu--> 
+<script type="text/javascript" src="js/classie.js"></script> 
+<script type="text/javascript">
+
+	var menuRight = document.getElementById( 'navigation' ),
+	showRight = document.getElementById( 'openNavigation' ),
+	body = document.body;
+	showRight.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( menuRight, 'cbp-spmenu-open' );
+		disableOther( 'showRight' );
+	};
+	
+	function disableOther( button ) {
+		if( button !== 'showRight' ) {
+			classie.toggle( showRight, 'disabled' );
+		}
+	}
+	
+	$(document).ready(function(){
+		$(".close_button").click(function(){
+			$(".sildeMenu").removeClass("cbp-spmenu-open");
+			$("#openNavigation").show();
+		});
+		
+		$("#openNavigation").click(function(){
+			$("#openNavigation").hide();
+		});
+	});
+
+</script>
+</body>
+</html>

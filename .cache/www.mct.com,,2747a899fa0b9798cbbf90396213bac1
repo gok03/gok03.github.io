@@ -1,0 +1,495 @@
+status: 200
+content-length: 19660
+content-location: http://www.mct.com
+x-powered-by: ASP.NET
+set-cookie: ASP.NET_SessionId=w2zcbh45iikrza552loluavr; path=/; HttpOnly
+x-aspnet-version: 2.0.50727
+server: Microsoft-IIS/6.0
+cache-control: private
+date: Mon, 17 Oct 2016 15:58:13 GMT
+content-type: text/html; charset=utf-8
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	Home
+</title><link rel="stylesheet" type="text/css" href="/Include/mct_style.css" /><link rel="stylesheet" type="text/css" href="/Include/shadowbox.css" />
+	<script src="/Include/AC_RunActiveContent.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/Include/shadowbox.js"></script>
+	<script type="text/javascript">
+		Shadowbox.init({
+		language: 'en',
+				players:  ['html', 'iframe', 'swf', 'flv'],
+				displayNav:         true
+		  
+		});
+
+		window.onload = function()
+		{
+				var qsParm = new Array();
+				if(window.location.search.length > 1 ){
+						var query = window.location.search.substring(1);
+						if( query.length != 0 ){
+								var parms = query.split('&');
+								for (var i=0; i<parms.length; i++){
+										var pos = parms[i].indexOf('=');
+										if (pos > 0) 
+										{
+										var key = parms[i].substring(0,pos);
+										var val = parms[i].substring(pos+1);
+										qsParm[key] = val;
+										}
+								}
+						}
+				}
+		    
+				if( qsParm["ty"] != null )
+				{
+					// open a welcome message as soon as the window loads
+					Shadowbox.open({
+							content:    qsParm["ty"],
+							player:     "iframe",
+							height:     800,
+							width:      820
+					});
+				}
+				
+				var i = 0;
+        var imageArray = new Array();
+        var images = '/Images/home_on.gif,/Images/home_off.gif,/Images/about_on.gif,/Images/about_off.gif,/Images/products_on.gif,/Images/products_off.gif,/Images/resources_on.gif,/Images/resources_off.gif,/Images/support_on.gif,/Images/support_off.gif,/Images/news_on.gif,/Images/news_off.gif,/Images/contact_on.gif,/Images/contact_off.gif,/Images/admin_on.gif,/Images/admin_off.gif';
+        imageArray = images.split(',');
+        var imageObj = new Image();
+        for(i=0; i<=imageArray.length-1; i++) {
+            //document.write('<img src="' + imageArray[i] + '" />');// Write to page (uncomment to check images)
+            imageObj.src=images[i];
+        }
+		};
+		
+		function ClearAllControls()
+		{
+			for (i=0; i<document.forms[0].length; i++)
+			{
+						doc = document.forms[0].elements[i];
+						switch (doc.type)
+						{
+								case "text" :
+												doc.value = "";
+												break;
+									case "checkbox" :
+												doc.checked = false;
+												break;   
+									case "radio" :
+												doc.checked = false;
+												break;               
+									case "textarea" :
+												doc.value = "";
+												break;				
+									case "select-one" :
+												//doc.options[doc.selectedIndex].selected = false;
+												doc.selectedIndex = 0;
+												break;                     
+									case "select-multiple" :
+												while (doc.selectedIndex != -1)
+												{
+															indx = doc.selectedIndex;
+															doc.options[indx].selected = false;
+												}
+												doc.selected = false;
+												break;
+		                       
+									default :
+												break;
+						}
+			}
+		}		
+	</script>
+  
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script>
+		$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1500)
+			    .next()
+			    .fadeIn(1500)
+			    .end()
+			    .appendTo('#slideshow');
+			},  5000);
+			
+		});
+	</script>
+<style >
+/* Home Page Columns */
+#columnLeft  
+{
+	min-height:400px;
+	width:250px;  
+	float:left; 
+	padding:0px 0px 0px 10px;
+	margin:0px 0px 0px 0px;
+	height:auto;
+	border:solid 0px black;
+}
+#columnMain  
+{
+	width:700px; 
+	float:left;
+	padding:0px 0px 0px 0px;
+	border:solid 0px black;
+	background-repeat :no-repeat;
+	 vertical-align:top;
+	 border:solid 0px black;
+}
+#columnHomeMiddle  
+{
+	width:430px; 
+	float:left; 
+	margin-right:0px; 
+	margin-left:0px; 
+	margin-top:0px; 
+	margin-bottom:0px;  
+	padding: 0px 0px 0px 15px;
+	min-height:400px;	
+	height:auto;
+	border:solid 0px black;
+}	
+#columnHomeRight  
+{
+	width:230px; 
+	min-height:400px;
+	float:right; 
+	margin-right:0px; 
+	margin-left:0px; 
+	margin-top:0px; 
+	margin-bottom:0px;  
+	padding:0px 0px 0px 10px;
+	height:auto;
+	border:solid 0px black;
+}	
+#columnHomeRightSub
+{
+	padding: 0px 0px 0px 20px;
+}
+#slideshow {
+    margin: 0px auto;
+    position: relative;
+    width: 981px;
+    height: 325px;
+    padding: 0px;
+}
+#slideshow > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+</style>
+
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-23585744-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+  
+</head>
+<body >
+
+<form name="aspnetForm" method="post" action="home.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTY1OTQyMzI1D2QWAmYPZBYCAgMPZBYIAgEPFgIeBFRleHRlZAIHDw8WBB4LTmF2aWdhdGVVcmwFDH4vTG9naW4uYXNweB8ABQZMb2cgSW5kZAIJDw9kFgIeBXN0eWxlBStiYWNrZ3JvdW5kLWltYWdlOnVybCgnL0ltYWdlcy9Ib21lX29uLmdpZicpZAInD2QWAgIBDw9kFgIfAgUNZGlzcGxheTpub25lO2Rk2+gR8+xDDC8u0ixnsrpMCt+SH3U=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8D0E13E6" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="U7X0SOhh66QC__yhhDbvVyZrU7QTCkhu4dU3I_z3K_Um1gA-lA4hCySbyx-LEg_PLAAo_3I4QB7mWv6OTFe0ak0YzLg1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCAKvup+TDgL6pIDMBALCzfWSCAKC8dmBCAKR5pCPDQLw1b3JBQK+0oT+CwLU8Y3CDMJr50LN5pk0rya2qfwadwalNeo4" />
+<div class="background">
+  <!-- Start Header -->
+	<div class="bodyHolder">
+		<div class="headerHolder">
+			<div class="loginHolder">
+			&nbsp;&nbsp;
+			&nbsp;&nbsp;
+			&nbsp;&nbsp;
+			<a id="SiteMaster_lnkLogin" href="Login.aspx">Log In</a><img src="/images/login_arrow_down.jpg" alt=""  border="0" /><br />
+			</div>
+
+			<div class="topNav"><img src="/Images/mct_logo_top.jpg" alt="" border="0" align="left" style="padding: 0px 0px 0px 0px;" />
+				<ul id="cssdropdown">
+				<li class="headlink" style="width:65px;"><a id="SiteMaster_lnkHome" class="hoverHome" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;SiteMaster$lnkHome&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Home.aspx&quot;, false, true))" style="background-image:url('/Images/Home_on.gif')"></a></li>
+				<li class="headlink" style="width:94px;"><a id="SiteMaster_lnkAbout" class="hoverAbout" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;SiteMaster$lnkAbout&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Company.aspx&quot;, false, true))"></a>
+				 <div id="SiteMaster_pnlAbout">
+	
+					<ul>
+						<li><a href="Company.aspx">About the Company</a></li>
+						<li><a href="/Principals.aspx">About The Principals</a></li>
+						<!-- <li><a href="Benchmarks.aspx">Benchmarks</a></li> -->
+						<li><a href="/WhyFirst.aspx">Why We Are #1</a></li>
+						<li><a href="/Corporate_Governance.aspx">Corporate Governance</a></li>
+<li><a href="/Corporate_Responsibility.aspx">Corporate Responsibility</a></li>
+<li><a href="/Community_Involvement.aspx">Community Involvement</a></li>
+<li><a href="/Sustainability_Statement.aspx">Sustainability Statement</a></li>
+<li><a href="/Products.aspx">Products</a></li>
+<li><a href="/Customers.aspx">Customers</a></li>
+<li><a href="/Environment.aspx">Environment</a></li>
+					
+</div>
+				</li>
+				<li class="headlink" style="width:93px;"><a id="SiteMaster_lnkProducts" class="hoverProducts" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;SiteMaster$lnkProducts&quot;, &quot;&quot;, false, &quot;&quot;, &quot;ReducingCost.aspx&quot;, false, true))"></a>
+				 <div id="SiteMaster_pnlProducts">
+	
+					<ul>
+						<li><a href="/ReducingCost.aspx">Reducing the Cost of Test</a></li>
+						<li><a href="/SH5000_Overview.aspx">SH-5000 Strip Handler</a></li>
+						<li><a href="/FH1200_Overview.aspx">FH-1200 Film Frame Handler</a></li>
+						<li><a href="/MH3000_Overview.aspx">MH-3000 Mark Handler</a></li>
+					</ul>
+					
+</div>
+				</li>
+				<li class="headlink" style="width:100px;"><a id="SiteMaster_lnkResources" class="hoverResources" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;SiteMaster$lnkResources&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Resources.aspx&quot;, false, true))"></a>	
+				 <div id="SiteMaster_pnlResources">
+	
+					<ul>
+						<!-- <li><a href="Resources.aspx#whitepapers">White Papers</a></li> -->
+						<li><a href="/Resources.aspx#videos">Videos</a></li>
+						<li><a href="/Resources.aspx#podcasts">Podcasts</a></li>
+						<!-- <li><a href="Resources.aspx#manuals">Manuals</a></li> -->
+					</ul>
+					
+</div>
+				</li>
+				<li class="headlink" style="width:86px;"><a id="SiteMaster_lnkSupport" class="hoverSupport" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;SiteMaster$lnkSupport&quot;, &quot;&quot;, false, &quot;&quot;, &quot;FAQ.aspx&quot;, false, true))"></a>
+				 <div id="SiteMaster_pnlSupport">
+	
+					<ul>
+						<li><a href="/FAQ.aspx">FAQ</a></li>
+						<li><a href="/Support.aspx">Customer Support</a></li>
+					</ul>
+					
+</div>
+				</li>
+				<li class="headlink" style="width:126px;"><a id="SiteMaster_lnkNews" class="hoverNews" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;SiteMaster$lnkNews&quot;, &quot;&quot;, false, &quot;&quot;, &quot;News_TacklingRisingCost.aspx&quot;, false, true))"></a>
+				 <div id="SiteMaster_pnlNews">
+	
+					<ul>
+						<li><a href="/News_TacklingRisingCost.aspx">Tackling Rising Cost of Test</a></li>
+						<li><a href="/News_FinalTestReport.aspx">Final Test Report</a></li>
+						<li><a href="/News_21QStripTesting.aspx">Questions about Strip Testing</a></li>
+						<li><a href="/News_BECCI.aspx">BECCI and the FH-1200</a></li>
+						<li><a href="/News_Cost_Comparison.aspx">Strip vs Gravity Cost</a></li>
+						<li><a href="/Testing_QFN_DFN.aspx">Testing QFN DFN Devices</a></li>
+					</ul>
+					
+</div>
+				</li>
+				<li class="headlink" style="width:90px;"><a id="SiteMaster_lnkContact" class="hoverContact" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;SiteMaster$lnkContact&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Contact.aspx&quot;, false, true))"></a>
+				 <div id="SiteMaster_pnlContact">
+	
+					<ul>
+						<li><a href="/Contact.aspx">Contact Information</a></li>
+						<li><a href="/Representatives.aspx">Representatives</a></li>
+						<li><a href="/Recruiting.aspx">Recruiting</a></li>
+					</ul>
+					
+</div>
+				</li>
+				<li class="headlink" style="width:110px;">
+				
+				</li>
+			</ul>
+			</div>
+			</div>
+    <div class="hdrImgHolder">
+	    <img id="SiteMaster_imgHeader" src="" border="0" style="display:none;" />
+ 			
+
+	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td>	<div id="slideshow">
+ <div><a href="ReducingCost.aspx"><img src="images/Tab1.png"></a> </div>
+ <div><a href="http://www.mct.com/SH5000_Overview.aspx"><img src="images/Tab2.png"></a> </div>
+ <div><a href="http://www.mct.com/FH1200_Overview.aspx"><img src="images/Tab3.png"></a> </div>
+ <div><a href="http://www.mct.com/MH3000_Overview.aspx"><img src="images/Tab4.png"></a> </div>
+ <div><a href="http://www.mct.com/Support.aspx"><img src="images/Tab5.png"></a> </div>
+ </div>
+     </td>
+    </tr>
+  </tbody>
+</table>
+
+
+   </div>
+    <!-- End Header -->
+    <!-- Content -->
+    <div class="content" >
+			<div id="columnLeft">
+				<!-- Left Nav -->
+				<div id="Subnav">
+					
+					
+					
+					
+					
+					
+					
+				</div>
+				<!-- End Left Nav -->
+				
+	<div>
+  <a rel="shadowbox[];width=640;height=360;player=flv;" href='Videos/MTC-intro720-405.flv'>
+  <img src="Images/video-on.jpg" alt="" border="0" onmouseover="javascript:src='Images/video-over.jpg';" onmouseout="javascript:src='Images/video-on.jpg';"></a>
+  <h1>MEDIA</h1>
+  <h4><i>Creativity & Tech Solutions Radio (WTBQ)</i></h4> 
+  MCT CEO John Moon interview. 
+	  <a rel="shadowbox[];width=640;height=360;player=flv;" href='/Podcasts/HP-Garage_Rules-POD1.flv'>Listen
+	  now</a>
+    <br /><br />
+	<h4><i>Creativity & Tech Solutions Radio (WTBQ)</i></h4> 
+	Interviews with MCT Executive Dick Sidell and Semiconductor Analyst Jan Vardaman. 
+		<a rel="shadowbox[];width=640;height=360;player=flv;" href='/Podcasts/technology_for Business-POD2.flv'>Listen
+		now</a>
+    <br /><br />
+	<h4><i>Creativity & Tech Solutions Radio (WTBQ)</i></h4> 
+	Interviews MCT Executive Ken Ramsey. 
+		<a rel="shadowbox[];width=640;height=360;player=flv;" href='/Podcasts/Ken_Ramsey_Interview-POD3.flv'>Listen
+		now</a>
+	</div>
+
+			</div>
+			
+			<div id="columnMain">
+        
+				
+<div class="divider"><img src="Images/column_right_border.gif" alt="" height="490px" width="3px" border="0px" /></div>
+	<div id="columnHomeMiddle">
+		<h3> Important New Data on Strip Test vs. Gravity Test Cost</h3>
+	  <p>While it is true that the strip test handler is capable of volumes as large
+	    as 20M/week (based on the customer’s lead frame design and test times),
+	    this study showed that the strip handler, running at a utilization rate
+	    of only 2.2% is still capable of producing the lowest test cost per unit
+	    once the volume exceeded 440K/week. It should also be noted that the
+	    volume crossover point will change depending upon the specific requirements
+	    of the test, including the test time.  <a href="News_Cost_Comparison.aspx">Read
+	    more</a> </p>
+    <br />
+		<a href="News_Cost_Comparison.aspx"><img src="Images/chart-for-home.jpg" alt="" border="0"></a>
+	</div>
+  <div id="columnHomeRight">
+	<div class="divider"><img src="Images/column_right_border.gif" alt="" height="490px" width="3px" border="0px" /></div>	
+	<a id="SiteMaster_pageContent_lnkKeepInformed" href="KeepMeInformed.aspx"><img src="Images/keep_me-informed.png" alt="" onmouseover="javascript:src='Images/keep_me-informed-OVER.png';" onmouseout="javascript:src='Images/keep_me-informed.png';" border="0" /></a><br />
+	<div id="columnHomeRightSub">Receive product updates and news.<br />
+	  <br /></div>
+	<a id="SiteMaster_pageContent_lnkRegister" href="Register.aspx"><img src="Images/Register_now.png" alt="" onmouseover="javascript:src='Images/Register_now-OVER.png';" onmouseout="javascript:src='Images/Register_now.png';" border="0" /></a><br />
+	<div id="columnHomeRightSub">Registered users have access to more areas on the site. If you are not currently registered click on the button above.
+		<h1>NEWS</h1>
+      
+        <h4>The Rebirth of a Legendary Test Handler Company</h4>
+      MCT takes back the leadership position in strip test handlers in this recent
+article in Test, Assembly & Packaging TIMES. <a href="#" onclick="javascript:openModal('http://flash-pub.com/pub/ebooks/ccffaf062c/view_book.html',1200,900);return false;">Read&nbsp;more</a><br />
+      <br />
+       <h4>Testing QFN DFN Devices </h4>
+      How to test a QFN/DFN Device of Any Size Without Ever Buying A Change Kit. <a href="Testing_QFN_DFN.aspx">Read&nbsp;more</a><br />
+	</div>
+	</div>
+
+
+			</div>
+			<div >
+				
+				
+			</div>
+		</div>
+    <!-- End Content -->
+	<!-- Footer -->
+	<div class="footerHolder">
+		<table cellpadding="0" cellspacing="10">
+		<tr><td colspan="7"><img src="/images/resources_divider.png" alt="" width="900" border="0"></td></tr>
+			<tr valign="top">
+				<td width="130">
+					<h4>About Us</h4>
+					<a href="/Company.aspx" id="footerlink">About the Company</a><br />
+					<a href="/Principals.aspx" id="footerlink">About The Principals</a><br />
+					<!-- <a href="Benchmarks.aspx" id="footerlink">Benchmarks</a><br />  -->
+					<a href="/WhyFirst.aspx" id="footerlink">Why We Are #1</a><br />
+					<a href="/Corporate_Governance.aspx" id="footerlink">Corp. Governance</a><br />
+<a href="/Corporate_Responsibility.aspx" id="footerlink">Corp. Responsibility</a><br />
+<a href="/Community_Involvement.aspx" id="footerlink">Involvement</a><br />
+<a href="/Sustainability_Statement.aspx" id="footerlink">Sustainability</a><br />
+<a href="/Products.aspx" id="footerlink">Products</a><br />
+<a href="/Customers.aspx" id="footerlink">Customers</a><br />
+<a href="/Environment.aspx" id="footerlink">Environment</a><br />
+				</td>
+				<td width="180">
+					<h4>Products</h4>
+					<a href="/ReducingCost.aspx" id="footerlink">Reducing the Cost of Test</a><br />
+					<a href="/SH5000_Overview.aspx" id="footerlink">SH-5000 Strip Handler</a><br />
+					<a href="/FH1200_Overview.aspx" id="footerlink">FH-1200 Film Frame Handler</a><br />
+					<a href="/MH3000_Overview.aspx" id="footerlink">MH-3000 Mark Handler</a><br />
+				</td>
+				<td width="100">
+					<h4>Resources</h4>
+					<!--<a href="Resources.aspx#whitepapers" id="footerlink">White Papers</a><br /> -->
+					<a href="/Resources.aspx#videos" id="footerlink">Videos</a><br />
+					<a href="/Resources.aspx#podcasts" id="footerlink">Podcasts</a><br />
+					<!--<a href="Resources.aspx#manuals" id="footerlink">Manuals</a><br /> -->
+				</td>
+				<td width="120">
+					<h4>Support</h4>
+					<a href="FAQ.aspx" id="footerlink">FAQ</a><br />
+					<a href="Support.aspx" id="footerlink">Customer Support</a><br />
+				</td>
+				<td width="220">
+					<h4>News & Events</h4>
+					<a href="/News_TacklingRisingCost.aspx" id="footerlink">Tackling Rising Cost of Test</a><br />
+					<a href="/News_FinalTestReport.aspx" id="footerlink">Final Test Report</a><br />
+					<a href="/News_21QStripTesting.aspx" id="footerlink">21 Key Questions about Strip Testing</a><br />
+					<a href="/News_BECCI.aspx" id="footerlink">BECCI and the FH-1200</a><br />
+					<a href="/News_Cost_Comparison.aspx" id="footerlink">Strip vs Gravity Cost</a><br />
+					<a href="/Testing_QFN_DFN.aspx" id="footerlink">Testing QFN DFN Devices</a><br />
+				</td>
+				<td width="120">
+					<h4>Contact Us</h4>
+					<a href="/Contact.aspx" id="footerlink">Contact Information</a><br />
+					<a href="/Representatives.aspx" id="footerlink">Representatives</a><br />
+					<a href="/Recruiting.aspx" id="footerlink">Recruiting</a><br />
+				</td>
+				<td width="150">
+					<img src="/Images/mct_logo_bottom.jpg" />
+				</td>
+			</tr>
+		</table>
+		<table border="0" cellspacing="0" cellpadding="0" height="50" class="footer">
+		<tr>
+		<!--
+			<td width="80" align="left"><a href="" id="footerlink"><img src="/images/icon_facebook.png" alt="" hspace="0" border="0" align="top">&nbsp;&nbsp;Facebook</a></td>
+			<td width="70" align="left"><a href="" id="footerlink"><img src="/images/icon_twitter.png" alt="" hspace="4" border="0" align="top">Twitter</a></td>
+			<td width="75" align="left"><a href="" id="footerlink"><img src="/images/icon_linkedin.png" alt="" hspace="4" border="0" align="top">Linkedin</a></td>
+			<td width="150" align="left"><a href="" id="footerlink"><img src="/images/icon_digg.png" hspace="4" alt="" border="0" align="top">Digg</a></td>
+			-->
+			<td align="center">Copyright &copy; 2013 MCT Worldwide</td>
+		</tr>
+		</table>
+	</div>
+	</div>  
+	<!-- End Footer -->
+</div>    
+</form>
+
+</body>
+</html>

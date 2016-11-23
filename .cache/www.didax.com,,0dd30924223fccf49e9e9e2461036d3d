@@ -1,0 +1,1416 @@
+status: 200
+content-location: http://www.didax.com
+x-powered-by: ASP.NET
+set-cookie: JSESSIONID=8430a8022b80d4f8cb776a19371f79265f35;path=/
+server: Microsoft-IIS/7.0
+date: Tue, 13 Sep 2016 11:31:58 GMT
+content-type: text/html; charset=ISO-8859-1
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html>
+<head>
+<title>Didax Educational Resources</title>
+<meta name="description" Content="Didax is dedicated to providing innovative and effective learning resources to students, teachers and parents. We publish and distribute books, manipulatives and software for Math, Reading, Science and Art for Grades Pre-K to 12.">
+<meta name="keywords" Content="Didax, Unifix, Assessing Math Concepts, Kathy Richardson, Math Perspectives, GeoFix, Invicta, Taskmaster, Smartkids, School Phonics">
+<link rel="canonical" href="http://www.didax.com" />
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="http://www.didax.com/style.css" type="text/css">
+<link rel="stylesheet" href="http://www.didax.com/style_new.css" type="text/css">
+<link rel="stylesheet" href="http://www.didax.com/menucool/CSSmenu/menu.css" type="text/css">
+
+
+<link rel="shortcut icon" href="http://www.didax.com/favicon.ico" type="image/x-icon" />
+
+
+<script language="JavaScript">
+<!--
+var newWin = null;
+function popUp(strURL, strType, strHeight, strWidth) {  
+	if (newWin != null && !newWin.closed) newWin.close();  
+	var strOptions="";
+	if (strType=="console")strOptions="scrollbars,height="+strHeight+",width="+strWidth;
+	if (strType=="fixed")strOptions="height="+strHeight+",width="+strWidth;
+	if (strType=="elastic")strOptions="status,toolbar,menubar,scrollbars,resizable,location,height="+strHeight+",width="+strWidth;
+	if (strType=="stretch")strOptions="scrollbars,resizable,height="+strHeight+",width="+strWidth;
+	window.name = "WindowOpener";
+	newWin = window.open(strURL, 'newWin', strOptions);
+	newWin.focus();}
+//-->
+</script>
+
+
+<script type="text/javascript" language="JavaScript" src="http://www.didax.com/lib/qforms.js"></script>
+<script language="JavaScript">
+<!--//
+// set the path to the qForms directory
+qFormAPI.setLibraryPath("http://www.didax.com/lib/compressed/");
+// this loads all the default libraries
+qFormAPI.include("*");
+//-->
+</script>
+
+
+<base href="http://www.didax.com/">
+
+
+<script language="JavaScript" src="https://seal.networksolutions.com/siteseal/javascript/siteseal.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12566147-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script> 
+	<script>!window.jQuery && document.write('<script src="http://www.didax.com/jquery-1.4.2.min.js" type="text/javascript"><\/script>')</script>
+	
+
+
+
+<link rel="stylesheet" href="http://www.didax.com/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<script src="http://www.didax.com/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+<script type="text/javascript">
+
+function checkEmail(str) {
+	var at="@"
+	var dot="."
+	var lat=str.indexOf(at)
+	var lstr=str.length
+	var ldot=str.indexOf(dot)
+	
+	if (str.indexOf(at)==-1){
+	   return false
+	}
+	if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+	   return false
+	}
+	if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+	   return false
+	}
+	if (str.indexOf(at,(lat+1))!=-1){
+	   return false
+	}
+	if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+	   return false
+	}
+	if (str.indexOf(dot,(lat+2))==-1){
+	   return false
+	}
+	if (str.indexOf(" ")!=-1){
+	   return false
+	}
+	return true					
+}
+
+function validateData() {
+ if (document.getElementById('ETEmail').value == 'Email Address' || document.getElementById('ETEmail').value == '') {
+  alert('Please enter a valid email address');
+  return false;
+ }
+ if (!checkEmail(document.getElementById('ETEmail').value)) {
+  alert('Please enter a valid email address');
+  return false;
+ }
+ return true;
+}
+
+function openPrettyWindow() {
+
+	var URL = 'http://www.didax.com/exacttarget/signup.cfm?iframe=true&width=500&height=500'
+
+// Save the email address first
+	saveEmail();
+
+// Then open the form in PrettyPhoto
+	jQuery.prettyPhoto.open(URL);
+}
+
+function closePrettyPhoto() {
+ 
+    jQuery.prettyPhoto.close();
+
+}
+
+var xmlHttp;
+
+function saveEmail() {
+
+	xmlHttp=GetXmlHttpObject()
+
+	if (xmlHttp==null) {
+//		alert ("Your browser does not support AJAX!");
+		return;
+	}
+
+	var url="http://www.didax.com/exacttarget/SaveEmail.cfm";
+	url=url+"?ETEmail=" + document.getElementById('ETEmail').value;
+
+	xmlHttp.onreadystatechange=stateChangedSaveEmail;
+	xmlHttp.open("GET",url,true);
+	xmlHttp.send(null);
+}
+
+function stateChangedSaveEmail() {
+
+	if (xmlHttp.readyState==4) {
+		    // Do nothing
+  			
+			// Remove comments from next two lines to popup response from SaveEmail page
+			// var strResponse = xmlHttp.responseText;
+  			// alert(strResponse);
+
+	}
+}
+
+function GetXmlHttpObject() {
+var xmlHttp=null;
+
+	try {
+		// Firefox, Opera 8.0+, Safari
+		xmlHttp=new XMLHttpRequest();
+	}
+	catch (e) {
+		// Internet Explorer
+		try {
+			xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+		}
+		catch (e) {
+			xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+	}
+	return xmlHttp;
+}
+
+</script>
+
+
+<script type="text/javascript" language="javascript">
+
+var funcTimer;  // Variable to clear the windows timer
+ 
+function startPopupTimer(secs) {
+ 	
+	// Start the window timer
+	funcTimer = window.setInterval('openPopup()', secs*1000);
+
+}
+ 
+function openPopup() {
+ 
+	// Clear the window timer first
+	window.clearInterval(funcTimer);
+ 
+	// Call function to open the pretty window here
+	openPrtyWindow();
+ 
+}
+
+function openPrtyWindow() {
+ 
+	var URL = 'http://www.didax.com/exacttarget/signup2.cfm?iframe=true&width=500&height=300'
+
+	// Then open the form in PrettyPhoto
+	jQuery.prettyPhoto.open(URL);
+}
+
+</script>
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1843602189202919');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1843602189202919&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+<link href="menucool/thumbnailSlider/slider.css" rel="stylesheet" type="text/css" />
+<script src="menucool/thumbnailSlider/thumbnail-slider.js" language="JavaScript" type="text/javascript"></script>
+
+<link href="touchcarousel/touchcarouselhome.css" rel="stylesheet" type="text/css" />
+<link href="touchcarousel/grey-blue-skin-home.css" rel="stylesheet" type="text/css" />
+<script src="touchcarousel/jquery.touchcarousel-1.1.min.js" language="JavaScript" type="text/javascript"></script>
+
+<style type="text/css">
+
+.ContentWrapper {
+	display: inline-block;
+	width: 740px;
+	padding: 0;
+	margin: 0 10px 30px 10px;
+}
+
+.ContentWrapper2 {
+	display: inline-block;
+	width: 720px;
+	padding: 0;
+	margin: 0 20px 30px 20px;
+}
+
+.ContentTitle {
+	display: inline-block;
+	width: 718px;
+	height: 28px;
+	line-height: 28px;
+	margin: 0 10px 15px 10px;
+	padding: 0 10px;
+	border: 1px solid #ccccff;
+	background-color: #e1e1ff;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #3b73b9;
+}
+
+.ContentTile {
+	float: left;
+	width: 360px;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+.ContentTileSm {
+	float: left;
+	display: block;
+	width: 132px;
+	height: 132px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.ContentTileSeparator1 {
+	float: left;
+	width: 1px;
+	height: 120px;
+	margin: 0 7px 0 7px;
+	padding: 0;
+	background-color: #ccc;
+}
+
+.ContentTileSeparator10 {
+	float: left;
+	width: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+.ContentTileSeparator20 {
+	float: left;
+	width: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.ContentTileSeparator25 {
+	float: left;
+	width: 25px;
+	margin: 0;
+	padding: 0;
+}
+
+.ContentTileTitle {
+	float: left;
+	width: 338px;
+	height: 28px;
+	line-height: 28px;
+	margin: 0 0 15px 0;
+	padding: 0 10px;
+	border: 1px solid #ccccff;
+	background-color: #e1e1FF; /* ccccff; */
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #3b73b9; /* 5859e6; 7b7bff; 797acc; 663399; */
+}
+
+.ContentTileImg {
+	float: left;
+	width: 80px;
+	margin: 0 20px 0 10px;
+}
+
+.ContentTileTextBx {
+	float: left;
+	width: 240px;
+	margin: 0 10px 0 0;
+	vertical-align: top;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #4f5153;
+}
+
+.ContentTileTextBx p.title {
+	font-size: 18px;
+	padding: 0;
+	margin: 0 0 5px 0;
+	color: #797acc;
+}
+
+.ContentTileTextBx p {
+	font-size: 12px;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+.TextLinkSymbol {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #444;
+}
+
+.TextLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #444;
+	text-decoration: underline;
+}
+
+.TextLink:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.TextLinksmSymbol {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #3b73b9; /* 444; */
+}
+
+.TextLinksm {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #3b73b9; /* 444; */
+	text-decoration: underline;
+}
+
+.TextLinksm:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.FeaturedImg {
+		display: block;
+		width: 132px;
+		margin: 0 0 5px 0;
+}
+
+.FeaturedTextLink {
+		display: block;
+		width: 122px;
+		margin: 0 0 0 5px;
+		font: 12px Verdana, Arial, Helvetica, sans-serif;
+		color: #4f5153;
+}
+
+.FeaturedTextLink:hover {	
+		text-decoration: underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div id="container">
+<div id="subcontainer1">
+<div id="headcontainer">
+  	<div style="text-align: center; height: 60px; padding: 11px 10px 5px 10px; margin: 0px; position: absolute;">
+		<a href="http://www.didax.com/"><img src="http://www.didax.com/images/header/didaxlogo.png" width="100" height="60" alt="Didax Education" border="0"></a>
+	</div>
+  	<div style="height: 24px; width: 760px; background-color: #EDEDED; padding: 0px 10px; text-align: right;">
+		<div style="line-height: 16px; padding-top: 4px;">
+			
+			<script type="text/javascript">var lhnAccountN = "21115-1"; var lhnButtonN = 0; var lhnChatPosition = 'default'; var lhnInviteEnabled = 1; var lhnWindowN = 0; var lhnDepartmentN = 0;</script><script src="//www.livehelpnow.net/lhn/widgets/chatbutton/lhnchatbutton-current.min.js" type="text/javascript" id="lhnscript"></script>
+			<div class="headbar" style="padding-right: 10px; margin-right: 10px; border-right: 1px solid #CCC;"><a href="http://www.didax.com/signup/" class="headbar">Join Our Email List</a></div>
+			<div class="headbar" style="padding-right: 10px; margin-right: 10px; border-right: 1px solid #CCC;"><a onclick="javascript:OpenLHNChat();return false;" href="#" class="headbar">Live Help</a></div>
+			<div class="headbar">800.458.0024</div>
+		</div>
+	</div>
+	<div style="height: 1px; width: 780px; background-color: #CCCCCC;">&nbsp;</div>
+	<div style="height: 56px; width: 760px; background-color: #FFF; padding: 0px 10px;">
+		<div style="float: left; width: 540px; height: 56px;">
+			<div style="height: 32px; width: 400px; margin: 12px 20px 12px 120px;">
+				<form method="POST" action="/index.cfm" name="navSearch">
+				<input type="Hidden" name="SearchSubmitted">
+				<div class="SearchBox2">
+				  <div class="SearchBoxForm2">
+					<input type="text" name="SearchText" maxlength="100" value="Search by Keyword or Item Number" onfocus="if (this.value == 'Search by Keyword or Item Number') this.value = '';" onblur="if (this.value == '') this.value = 'Search by Keyword or Item Number';" class="textbox2" />
+					<img id="SearchBoxButton2" name="go" src="http://www.didax.com/images/magnifying_glass.png" border="0" alt="Product Search" onclick="document.navSearch.submit();" />
+				  </div>
+				</div>
+				</form>
+			</div>
+		</div>
+		<div style="float: right; width: 220px; height: 56px;">
+			<a href="http://www.didax.com/storecart.cfm" class="shopping_cart" onmouseover="JavaScript:showBeeperBox();">
+				<span style="float: left; width: 176px;">0 Items&nbsp;&nbsp;$0.00</span>
+				<span style="float: right; width: 32px;"><img src="http://www.didax.com/images/header/cart.png" width="32" height="30" border="0" alt="" /></span>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div style="clear: both;"></div>
+
+<div> 
+<ul class="menuTemplate2 decor2_1" license="2c0d5">
+
+	
+	
+	<li>
+		<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/3.cfm" style="width: 98px; text-align: center;">New</a>
+        <div class="drop decor2_2 new" style="width: 748px;">
+            <div class="left" style="width: 207px;">
+                <div>
+                	
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/3/SubjectID/2.cfm">Language Arts</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/3/SubjectID/3.cfm">Math</a><br />
+					
+                </div>
+				<div style="clear: both;"></div>
+				<div style="display: block; width: 207px; margin: 5px 0 0 0;"><a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/3.cfm" class="shopall">Shop All New</a> <span class="LinkSymbol">&rsaquo;</span></div>
+            </div>
+            <div class="right" style="width: 520px; border: 0px solid #000;">
+				<table border="0" cellpadding="0" cellspacing="0" style="width: 520px;">
+				<tbody>
+					<tr>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 0px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211753.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/211753.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+											<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211753.cfm" style="text-decoration: none;"><div class="ribbon-wrapper-image"><img src="http://www.didax.com/images/shop/corner_new.png" width="45" height="45" border="0" /></div></a>
+										
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 0px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211760.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/211760.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+											<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211760.cfm" style="text-decoration: none;"><div class="ribbon-wrapper-image"><img src="http://www.didax.com/images/shop/corner_new.png" width="45" height="45" border="0" /></div></a>
+										
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 0px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211767.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/211767.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+											<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211767.cfm" style="text-decoration: none;"><div class="ribbon-wrapper-image"><img src="http://www.didax.com/images/shop/corner_new.png" width="45" height="45" border="0" /></div></a>
+										
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 0px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211770.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/211770.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+											<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211770.cfm" style="text-decoration: none;"><div class="ribbon-wrapper-image"><img src="http://www.didax.com/images/shop/corner_new.png" width="45" height="45" border="0" /></div></a>
+										
+								</div>
+								
+							</td>
+						
+					</tr>
+				</tbody>
+				</table>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </li>
+	
+	<li class="separator"></li>
+    
+	<li>
+    	<a href="http://www.didax.com/kathyrichardson" style="width: 160px; text-align: center;">Kathy Richardson</a>
+		<div class="drop decor2_2 dropToRight2 kathy" style="width: 748px;">
+            <div class="left" style="width: 337px;">
+                <div>
+                	<a href="http://www.didax.com/kathyrichardson/HCLNC">How Children Learn Number Concepts</a><br />
+                    <a href="http://www.didax.com/kathyrichardson/AMC">Assessing Math Concepts</a><br />
+                    <a href="http://www.didax.com/kathyrichardson/AMCanywhere">AMC Anywhere &reg;</a><br />
+                    <a href="http://www.didax.com/kathyrichardson/DNC">Developing Number Concepts</a><br />
+                    <a href="http://www.didax.com/kathyrichardson/DMCPK">Developing Math Concepts Pre-K</a><br />
+					<a href="http://www.didax.com/kathyrichardson/UN">Understanding Numbers</a><br />
+					<a href="http://www.didax.com/kathyrichardson/UG">Understanding Geometry</a><br />
+					<a href="http://www.didax.com/kathyrichardson/MT">Professional Development Resources</a><br />
+                </div>
+				<div style="clear: both;"></div>
+				<div style="display: block; width: 337px; margin: 5px 0 0 0;"><a href="http://www.didax.com/shop/searchresults.cfm/AuthorID/2/Sort/Item/Order/Asc/ShowAll/Yes.cfm" class="shopall">Shop All Kathy Richardson</a> <span class="LinkSymbol">&rsaquo;</span></div>
+            </div>
+            <div class="right" style="width: 390px; border: 0px solid #000;">
+				<table border="0" cellpadding="0" cellspacing="0" style="width: 390px;">
+				<tbody>
+					<tr>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211348.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/211348.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/2-180.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/2-180.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/9-00584.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/9-00584.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+					</tr>
+				</tbody>
+				</table>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </li>
+	
+    <li class="separator"></li>
+	
+	
+	
+	<li>
+		<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3.cfm" style="width: 98px; text-align: center;">Math</a>
+        <div class="drop decor2_2 dropToRight3 math" style="width: 748px;">
+			<div class="left" style="width: 467px;">
+                <div style="width: 156px; float:left;">
+                	
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/25.cfm">Algebra</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/70.cfm">Assessment</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/27.cfm">Counting</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/29.cfm">Fractions & Decimals</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/30.cfm">Games</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/31.cfm">Geometry</a><br />
+					
+                </div>
+				<div style="width: 156px; float:left;">
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/32.cfm">Graphing</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/74.cfm">Manipulative Kits</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/33.cfm">Math & Literature</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/34.cfm">Measurement</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/36.cfm">Money</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/37.cfm">Operations</a><br />
+					
+                </div>
+				<div style="width: 155px; float:left;">
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/38.cfm">Place Value</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/39.cfm">Probability</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/40.cfm">Problem Solving</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/61.cfm">Reference</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/42.cfm">Time</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3/TopicID/71.cfm">Vocabulary</a><br />
+					
+                </div>
+				<div style="clear: both;"></div>
+				<div style="display: block; width: 467px; margin: 5px 0 0 0;"><a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3.cfm" class="shopall">Shop All Math</a> <span class="LinkSymbol">&rsaquo;</span></div>
+            </div>
+            <div class="right" style="width: 260px; border: 0px solid #000;">
+				<table border="0" cellpadding="0" cellspacing="0" style="width: 260px;">
+				<tbody>
+					<tr>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/2-25.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/2-25.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211420.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/211420.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+					</tr>
+				</tbody>
+				</table>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </li>
+	
+    <li class="separator"></li>
+	
+	
+	
+	<li>
+		<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2.cfm" style="width: 150px; text-align: center;">Language Arts</a>
+		<div class="drop decor2_2 dropToLeft language" style="width: 748px;">
+            <div class="left" style="width: 467px;">
+                <div style="width: 156px; float:left;">
+                	
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/3.cfm">Alphabet</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/7.cfm">Comprehension</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/12.cfm">Games</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/13.cfm">Grammar</a><br />
+					
+                </div>
+				<div style="width: 156px; float:left;">
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/66.cfm">Handwriting</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/16.cfm">Phonics</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/18.cfm">Reading</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/79.cfm">Sight Words</a><br />
+					
+                </div>
+				<div style="width: 155px; float:left;">
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/19.cfm">Spelling</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/22.cfm">Vocabulary</a><br />
+					
+	                    <a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2/TopicID/24.cfm">Writing</a><br />
+					
+                </div>
+				<div style="clear: both;"></div>
+				<div style="display: block; width: 467px; margin: 5px 0 0 0;"><a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2.cfm" class="shopall">Shop All Language Arts</a> <span class="LinkSymbol">&rsaquo;</span></div>
+            </div>
+            <div class="right" style="width: 260px; border: 0px solid #000;">
+				<table border="0" cellpadding="0" cellspacing="0" style="width: 260px;">
+				<tbody>
+					<tr>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/195-15.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/195-15.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/2-608.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/2-608.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+					</tr>
+				</tbody>
+				</table>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </li>
+	
+    <li class="separator"></li>
+	
+	
+	
+	<li>
+		<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/10.cfm" style="width: 140px; text-align: center;">Character Ed</a>
+		<div class="drop decor2_2 dropToLeft2 chared" style="width: 748px;">
+            <div class="left" style="width: 207px;">
+                <div>
+                	
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/10/TopicID/63.cfm">Bullying</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/10/TopicID/73.cfm">Character Education</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/10/TopicID/69.cfm">Health</a><br />
+					
+                </div>
+				<div style="clear: both;"></div>
+				<div style="display: block; width: 207px; margin: 5px 0 0 0;"><a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/10.cfm" class="shopall">Shop All Character Ed</a> <span class="LinkSymbol">&rsaquo;</span></div>
+            </div>
+            <div class="right" style="width: 520px; border: 0px solid #000;">
+				<table border="0" cellpadding="0" cellspacing="0" style="width: 520px;">
+				<tbody>
+					<tr>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/500042.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/500042.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/2-166.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/2-166.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211338.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/211338.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 10px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/500063.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/500063.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+								</div>
+								
+							</td>
+						
+					</tr>
+				</tbody>
+				</table>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </li>
+	
+    <li class="separator"></li>
+	
+	
+	
+	<li>
+		<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/1.cfm" style="width: 116px; text-align: center;">Clearance</a>
+        <div class="drop decor2_2 dropToLeft3 clearance" style="width: 748px;">
+            <div class="left" style="width: 207px;">
+                <div>
+                	
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/1/SubjectID/1.cfm">Art and Music</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/1/SubjectID/10.cfm">Character Education</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/1/SubjectID/2.cfm">Language Arts</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/1/SubjectID/3.cfm">Math</a><br />
+					
+                    	<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/1/SubjectID/4.cfm">Science</a><br />
+					
+				</div>
+				<div style="clear: both;"></div>
+				<div style="display: block; width: 207px; margin: 5px 0 0 0;"><a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/1.cfm" class="shopall">Shop All Clearance</a> <span class="LinkSymbol">&rsaquo;</span></div>
+            </div>
+            <div class="right" style="width: 520px; border: 0px solid #000;">
+				<table border="0" cellpadding="0" cellspacing="0" style="width: 520px;">
+				<tbody>
+					<tr>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 0px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/2-846.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/2-846.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+											<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/2-846.cfm" style="text-decoration: none;"><div class="ribbon-wrapper-image"><img src="http://www.didax.com/images/shop/corner_sale.png" width="45" height="45" border="0" /></div></a>
+										
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 0px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+											<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/.cfm" style="text-decoration: none;"><div class="ribbon-wrapper-image"><img src="http://www.didax.com/images/shop/corner_sale.png" width="45" height="45" border="0" /></div></a>
+										
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 0px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/2-861.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/2-861.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+											<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/2-861.cfm" style="text-decoration: none;"><div class="ribbon-wrapper-image"><img src="http://www.didax.com/images/shop/corner_sale.png" width="45" height="45" border="0" /></div></a>
+										
+								</div>
+								
+							</td>
+						
+							<td width="120" align="left" valign="top" style="padding-right: 10px; padding-bottom: 0px; border-collapse: collapse;">
+								<div style="display: table;	position: relative; border: 1px solid #ccc; cursor: pointer;">
+									<div style="display: table-cell; border: 0px; margin: 0px; text-decoration: none; border: 0px;">
+									<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/210904.cfm" style="display: table-cell; background-color: #FFF; width: 118px; height: 118px; line-height: 118px; text-align: center; vertical-align: middle; text-decoration: none;">
+										<img src="http://www.didax.com/images/img_120/210904.jpg" width="100" height="100" border="0" alt="" />
+									</a>
+									</div>
+									
+											<a href="http://www.didax.com/shop/productdetails.cfm/ItemNo/210904.cfm" style="text-decoration: none;"><div class="ribbon-wrapper-image"><img src="http://www.didax.com/images/shop/corner_sale.png" width="45" height="45" border="0" /></div></a>
+										
+								</div>
+								
+							</td>
+						
+					</tr>
+				</tbody>
+				</table>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </li>
+
+</ul>  
+</div>
+
+<div style="clear: both;"></div>
+<div id="subcontainer2"> 
+
+<div style="height: 15px; background-color: #FFFFFF;"></div>
+
+
+	<a href="http://www.didax.com/popups/free_shipping_details.cfm?iframe=true&width=500&height=300" rel="prettyPhoto[FreeShipping]" class="freeshippingmessage2" style="margin-bottom: 15px; display: block;">
+		
+			<span><span style="font-size: 18px; color: #ff4136; font-weight: bold;">Everyday Free Shipping</span> on web orders over <span style="font-size: 18px;">$99*</span></span>
+		
+	</a>
+
+
+<div class="PageContainer">
+
+	
+	
+
+	<div id="mcts1">
+		
+		
+			<div class="each">
+				<a href="http://www.didax.com/VP/" style="display: block;">
+		            <img src="http://www.didax.com/images/home/slider/Math-Manipulatives-2.jpg" style="width: 680px; height: 250px;" />
+				</a>
+			</div>
+		
+			<div class="each">
+				<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/1.cfm" style="display: block;">
+		            <img src="http://www.didax.com/images/home/slider/clearance-sale-3.jpg" style="width: 680px; height: 250px;" />
+				</a>
+			</div>
+		
+		
+		
+		
+	</div>
+	
+	<div class="ContentWrapper">
+		
+		<a href="http://eurekamath.didax.com" target="_blank" class="ContentTile">
+			<span class="ContentTileTitle">Eureka Math</span>
+			<span class="ContentTileImg"><img src="images/home/features/eureka.png" width="80" height="80" border="0" alt=""></span>
+			<span class="ContentTileTextBx">
+				<p>The one and only kits from the writers of Eureka Math, brought to you by Didax.</p>
+				<span class="TextLinksm">Shop Now</span> <span class="TextLinksmSymbol">&rsaquo;</span>
+			</span>
+		</a>
+		
+		<span class="ContentTileSeparator20">&nbsp;</span>
+		
+		<a href="http://www.didax.com/VP" class="ContentTile">
+			<span class="ContentTileTitle">Save on Math Manipulatives!</span>
+			<span class="ContentTileImg"><img src="images/home/features/vp-2.png" width="80" height="80" border="0" alt=""></span>
+			<span class="ContentTileTextBx">
+				<p>Over 135 manipulatives such as Unifix cubes, base ten and more at the lowest prices around.</p>
+				<span class="TextLinksm">Shop Now</span> <span class="TextLinksmSymbol">&rsaquo;</span>
+			</span>
+		</a>
+		
+	</div>
+	
+	<div class="ContentTitle">
+		<div style="float: left; width: 100px; text-align: right; font-size: 14px; line-height: 28px;">&nbsp;</div>
+		<div style="float: left; width: 518px; text-align: center; font-size: 16px; font-weight: bold; line-height: 28px;">Over 250 New Products for 2016</div>
+		<div style="float: right; width: 100px; text-align: right; font-size: 14px; line-height: 28px;"><a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/3.cfm" title="See all" class="TextLink">See all</a> <span class="TextLinkSymbol">&rsaquo;</span></div>
+	</div>
+	
+	<div id="carousel-image-and-text" class="touchcarousel grey-blue">
+	<ul class="touchcarousel-container">
+  		
+				<li class="touchcarousel-item" style="position: relative;">
+					<a class="item-block" href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211772.cfm">
+						<p><img src="images/img_120/211772.jpg" width="100" height="100" border="0" alt="1-10 Number Paths, Gr. Prek-K"></p>
+					    <h4>1-10 Number Paths, Gr. Prek-K</h4>
+					</a>
+				</li>
+			
+				<li class="touchcarousel-item" style="position: relative;">
+					<a class="item-block" href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211753.cfm">
+						<p><img src="images/img_120/211753.jpg" width="100" height="100" border="0" alt="The Algebra Game: Linear Graphs"></p>
+					    <h4>The Algebra Game: Linear Graphs</h4>
+					</a>
+				</li>
+			
+				<li class="touchcarousel-item" style="position: relative;">
+					<a class="item-block" href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211777.cfm">
+						<p><img src="images/img_120/211777.jpg" width="100" height="100" border="0" alt="20 Bead Magnetic Demonstration Rekenrek"></p>
+					    <h4>20 Bead Magnetic Demonstration Rekenrek</h4>
+					</a>
+				</li>
+			
+				<li class="touchcarousel-item" style="position: relative;">
+					<a class="item-block" href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211793.cfm">
+						<p><img src="images/img_120/211793.jpg" width="100" height="100" border="0" alt="Clock Set"></p>
+					    <h4>Clock Set</h4>
+					</a>
+				</li>
+			
+				<li class="touchcarousel-item" style="position: relative;">
+					<a class="item-block" href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211791.cfm">
+						<p><img src="images/img_120/211791.jpg" width="100" height="100" border="0" alt="Fraction Number Line Flip Book"></p>
+					    <h4>Fraction Number Line Flip Book</h4>
+					</a>
+				</li>
+			
+				<li class="touchcarousel-item" style="position: relative;">
+					<a class="item-block" href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211771.cfm">
+						<p><img src="images/img_120/211771.jpg" width="100" height="100" border="0" alt="Unifix Cubes Hundred Base"></p>
+					    <h4>Unifix Cubes Hundred Base</h4>
+					</a>
+				</li>
+			
+				<li class="touchcarousel-item" style="position: relative;">
+					<a class="item-block" href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211760.cfm">
+						<p><img src="images/img_120/211760.jpg" width="100" height="100" border="0" alt="Fractions Made Easy, Gr 3"></p>
+					    <h4>Fractions Made Easy, Gr 3</h4>
+					</a>
+				</li>
+			
+				<li class="touchcarousel-item" style="position: relative;">
+					<a class="item-block" href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211767.cfm">
+						<p><img src="images/img_120/211767.jpg" width="100" height="100" border="0" alt="SmartFlash Cards - Multiplication"></p>
+					    <h4>SmartFlash Cards - Multiplication</h4>
+					</a>
+				</li>
+			
+				<li class="touchcarousel-item" style="position: relative;">
+					<a class="item-block" href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211770.cfm">
+						<p><img src="images/img_120/211770.jpg" width="100" height="100" border="0" alt="Common Core Collaborative Cards - Geometry, Gr 6-8"></p>
+					    <h4>Common Core Collaborative Cards - Geometry, Gr 6-8</h4>
+					</a>
+				</li>
+			
+				<li class="touchcarousel-item" style="position: relative;">
+					<a class="item-block" href="http://www.didax.com/shop/productdetails.cfm/ItemNo/211774.cfm">
+						<p><img src="images/img_120/211774.jpg" width="100" height="100" border="0" alt="1-20 Number Paths, Gr. 1-2"></p>
+					    <h4>1-20 Number Paths, Gr. 1-2</h4>
+					</a>
+				</li>
+			
+	</ul> 
+	</div>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$("#carousel-image-and-text").touchCarousel({					
+				pagingNav: false,
+				snapToItems: false,
+				itemsPerMove: 5,
+				autoplay: false,
+				autoplayDelay: 3000,	
+				scrollToLast: false,
+				loopItems: false,
+				scrollbar: false,
+		    });	
+		});
+	</script>
+	
+	<div class="ContentWrapper">
+	
+		<span class="ContentTile">
+			<span class="ContentTileTitle">Common Core Resources</span>
+			<span class="ContentTileImg"><img src="images/home/features/ccss-2.png" width="80" height="80" border="0" alt=""></span>
+			<span class="ContentTileTextBx">
+				<p>Check out the latest and greatest products to support Common Core math and reading.</p>
+				<a href="http://www.didax.com/common-core-math" class="TextLinksm">CCSS Math</a> <span class="TextLinksmSymbol">&rsaquo;</span> <span style="font-size: 12px;">|</span> <a href="http://www.didax.com/common-core-language-arts" class="TextLinksm">CCSS Reading</a> <span class="TextLinksmSymbol">&rsaquo;</span>
+			</span>
+		</span>
+		
+		<span class="ContentTileSeparator20">&nbsp;</span>
+		
+		<a href="http://www.didax.com/shop/searchresults.cfm/CategoryID/1.cfm" class="ContentTile">
+			<span class="ContentTileTitle">Clearance Sale</span>
+			<span class="ContentTileImg"><img src="images/home/features/clearance-3.png" width="80" height="80" border="0" alt=""></span>
+			<span class="ContentTileTextBx">
+				<p>Stock up on these great products at discounts up to 80% off!</p>
+				<span class="TextLinksm">Shop Now</span> <span class="TextLinksmSymbol">&rsaquo;</span>
+			</span>
+		</a>
+		
+	</div>
+	
+	<div class="ContentTitle">
+		<div style="float: left; width: 100px; text-align: right; font-size: 14px; line-height: 28px;">&nbsp;</div>
+		<div style="float: left; width: 518px; text-align: center; font-size: 16px; font-weight: bold; line-height: 28px;">Math</div>
+		<div style="float: right; width: 100px; text-align: right; font-size: 14px; line-height: 28px;"><a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/3.cfm" title="See all" class="TextLink">See all</a> <span class="TextLinkSymbol">&rsaquo;</span></div>
+	</div>
+	
+	<div class="ContentWrapper2">
+	
+		<a href="http://www.didax.com/place-value-disks/" class="ContentTileSm">
+			<span class="FeaturedImg"><img src="images/img_120/532648.jpg" width="100" height="100" border="0" alt="Place Value Disks"></span>
+			<span class="FeaturedTextLink">Place Value Disks</span>
+		</a>
+		
+		<span class="ContentTileSeparator1">&nbsp;</span>
+		
+		<a href="http://www.didax.com/kits/" class="ContentTileSm">
+			<span class="FeaturedImg"><img src="images/img_120/211523.jpg" width="100" height="100" border="0" alt="Manipulative Kits"></span>
+			<span class="FeaturedTextLink">Manipulative Kits</span>
+		</a>
+		
+		<span class="ContentTileSeparator1">&nbsp;</span>
+		
+		<a href="http://www.didax.com/base-ten-frames/" class="ContentTileSm">
+			<span class="FeaturedImg"><img src="images/img_120/211038.jpg" width="100" height="100" border="0" alt="Base Ten Frames"></span>
+			<span class="FeaturedTextLink">Base Ten Frames</span>
+		</a>
+		
+		<span class="ContentTileSeparator1">&nbsp;</span>
+		
+		<a href="http://www.didax.com/write-on-wipe-off/" class="ContentTileSm">
+			<span class="FeaturedImg"><img src="images/img_120/211441.jpg" width="100" height="100" border="0" alt="Write-On/Wipe-Off"></span>
+			<span class="FeaturedTextLink">Write-On/Wipe-Off</span>
+		</a>
+		
+		<span class="ContentTileSeparator1">&nbsp;</span>
+		
+		<a href="http://www.didax.com/math-and-literature/" class="ContentTileSm">
+			<span class="FeaturedImg"><img src="images/img_120/127428.jpg" width="100" height="100" border="0" alt="Math & Literature"></span>
+			<span class="FeaturedTextLink">Math & Literature</span>
+		</a>
+		
+	</div>
+	
+	<div class="ContentTitle">
+		<div style="float: left; width: 100px; text-align: right; font-size: 14px; line-height: 28px;">&nbsp;</div>
+		<div style="float: left; width: 518px; text-align: center; font-size: 16px; font-weight: bold; line-height: 28px;">Language Arts</div>
+		<div style="float: right; width: 100px; text-align: right; font-size: 14px; line-height: 28px;"><a href="http://www.didax.com/shop/searchresults.cfm/SubjectID/2.cfm" title="See all" class="TextLink">See all</a> <span class="TextLinkSymbol">&rsaquo;</span></div>
+	</div>
+	
+	<div class="ContentWrapper2">
+		
+		<a href="http://www.didax.com/informational-text/" class="ContentTileSm">
+			<span class="FeaturedImg"><img src="images/img_120/244181.jpg" width="100" height="100" border="0" alt="Informational Text"></span>
+			<span class="FeaturedTextLink">Informational Text</span>
+		</a>
+		
+		<span class="ContentTileSeparator1">&nbsp;</span>
+		
+		<a href="http://www.didax.com/basicskills/" class="ContentTileSm">
+			<span class="FeaturedImg"><img src="images/img_120/2-608.jpg" width="100" height="100" border="0" alt="Basic Skills Puzzles"></span>
+			<span class="FeaturedTextLink">Basic Skills Puzzles</span>
+		</a>
+		
+		<span class="ContentTileSeparator1">&nbsp;</span>
+		
+		<a href="http://www.didax.com/unifix-cubes-reading/" class="ContentTileSm">
+			<span class="FeaturedImg"><img src="images/img_120/2-810.jpg" width="100" height="100" border="0" alt="Unfix Letter Cubes"></span>
+			<span class="FeaturedTextLink">Unfix Letter Cubes</span>
+		</a>
+		
+		<span class="ContentTileSeparator1">&nbsp;</span>
+		
+		<a href="http://www.didax.com/writing-skills/" class="ContentTileSm">
+			<span class="FeaturedImg"><img src="images/img_120/700916.jpg" width="100" height="100" border="0" alt="Writing"></span>
+			<span class="FeaturedTextLink">Writing</span>
+		</a>
+		
+		<span class="ContentTileSeparator1">&nbsp;</span>
+		
+		<a href="http://www.didax.com/literacy-poster-sets/" class="ContentTileSm">
+			<span class="FeaturedImg"><img src="images/img_120/790220.jpg" width="100" height="100" border="0" alt="Poster Sets"></span>
+			<span class="FeaturedTextLink">Poster Sets</span>
+		</a>
+		
+	</div>
+				
+	
+	
+
+</div>
+
+
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="760" height="10" colspan="5" bgcolor="#FFFFFF">
+	<div>
+	  <div style="height: 10px;"></div>
+	  <div class="EmailSignup">
+	    <div class="EmailSignupContent">
+	      <p><span style="font-weight: bold;">Sign up to receive special offers and promotions!</span></p>
+	    </div>
+	    <div class="EmailSignupForm">
+			<input type="text" name="ETEmail" id="ETEmail" value="Email Address" onfocus="value=''" class="textbox" />
+			<image id="EmailSignupButton" name="go" src="http://www.didax.com/images/footer/signup_button.gif" border="0" alt="Email Signup" onclick="if (validateData()) openPrettyWindow();" />
+	    </div>
+	  </div>
+	  <div style="height: 10px;"></div>
+	</div>    
+	</td>
+  </tr>  
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF">
+	  <table width="760" border="0" cellspacing="10" cellpadding="0">
+	    <tr>
+		  <td width="140" valign="top">
+		    <table width="140" border="0" cellspacing="0" cellpadding="0">
+			  <tr><td class="foot foothead">Free Resources</td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/newsletter/archive.cfm/">Didax Newsletter</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/articles/">Articles</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/freeworksheets/">Free Worksheets</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/miniposters/">Free Mini-Posters</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/manipulatives/">Math Manipulative Center</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/mathdictionary/">Math Dictionary</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/phonicshandbook/">Phonics Handbook</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/standards/">Educational Standards</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/netschool/">Netschool</a></td></tr>
+			</table>
+		  </td>
+		  <td width="140" valign="top">
+		    <table width="140" border="0" cellspacing="0" cellpadding="0">
+			  <tr><td class="foot foothead">Order Info</td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/ordertracking/">Track Your Order</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/quickorder.cfm/">Catalog Quick Order</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/orderform/">Printable Order Form</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/shipping/">Shipping Info</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/salestax/">Sales Tax Info</a></td></tr>
+			</table>
+		  </td>
+		  <td width="140" valign="top">
+		    <table width="140" border="0" cellspacing="0" cellpadding="0">
+			  <tr><td class="foot foothead">Customer Service</td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/catalog/">View or Request Catalog</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/stores/">Find a Retail Store</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/privacy/">Privacy & Security</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/terms/">Terms & Conditions</a></td></tr>
+			  
+			</table>
+		  </td>
+		  <td width="140" valign="top">
+		    <table width="140" border="0" cellspacing="0" cellpadding="0">
+			  <tr><td class="foot foothead">Company Info</td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/aboutus/">About Us</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/contactus/">Contact Us</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/pressroom/">Press Room</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/conferences/">Conference Schedule</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/safety/">Product Safety</a></td></tr>
+			  
+			  <tr><td class="foot footbody"><a href="http://www.didax.com/dealer/">Dealer Information</a></td></tr>
+			</table>
+		  </td>
+		  <td width="140" valign="top">
+		    <table width="140" border="0" cellspacing="0" cellpadding="0">
+			  <tr><td class="foot foothead">Follow us on...</td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.facebook.com/Didax" target="_blank">Facebook</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://twitter.com/DidaxEducation" target="_blank">Twitter</a></td></tr>
+			  <tr><td class="foot footbody"><a href="http://www.youtube.com/DidaxEducation" target="_blank">YouTube</a></td></tr>
+			</table>
+		  </td>	  
+		</tr>
+	  </table>
+	</td>	  
+  </tr>
+</table>
+</div>
+</div>
+</div>
+<div id="pageshadow"></div>
+<div id="copyright">
+  <div class="copyright">Copyright &copy; 1996-2016 Didax, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;|&nbsp;&nbsp;Didax, Inc. 395 Main Street, Rowley, MA 01969</div>
+  <div class="copyright">Phone: 800.458.0024&nbsp;&nbsp;|&nbsp;&nbsp;Fax: 800.350.2345&nbsp;&nbsp;|&nbsp;&nbsp;Email: <script language=javascript> var username = "info"; var hostname = "didax"; var ext = "com"; var linktext = username + "@" + hostname + "." + ext; document.write(username + "@" + hostname + "." + ext) </script></div>
+</div>
+
+
+
+
+<!-- Google Code for Remarketing Tag -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1070635077;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1070635077/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+	jQuery(document).ready(function(){
+		jQuery("a[rel^='prettyPhoto']").prettyPhoto({
+			theme:'pp_default', // pp_default / light_rounded / dark_rounded / light_square / dark_square / facebook
+			counter_separator_label: '/',
+			social_tools: false,
+			overlay_gallery: false,
+			deeplinking: false,
+			keyboard_shortcuts: false,
+			allow_resize: false,
+			modal: false
+			});
+	});
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.didax.com/clickheat/js/clickheat.js"></script><noscript><p><a href="http://www.labsmedia.com/index.html">Free marketing tools</a></p></noscript><script type="text/javascript"><!--
+clickHeatSite = '';clickHeatGroup = 'Home Page';clickHeatServer = 'https://www.didax.com/clickheat/click.php';initClickHeat(); //-->
+</script>
+				 
+</body>
+</html>

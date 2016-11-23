@@ -1,0 +1,841 @@
+status: 200
+content-length: 39376
+content-location: https://www.astutesolutions.com/careers
+cache-control: private
+date: Wed, 21 Sep 2016 04:09:47 GMT
+content-type: text/html; charset=utf-8
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+<title>Careers | Astute Solutions</title>
+<meta name="description" content="Find out why Astute Solutions is a great place to work.">
+<meta name="keywords" content="">
+
+
+<meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" href="/favicon.png" />
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Astute">
+	<meta name="google-site-verification" content="q86vE_xEDRKgBQxfZgs4aAvSBWpe58jzLzcVMz6KBiI" />
+
+<link rel="stylesheet" href="/_fonts/style.css"> <!-- icomoon font -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:500,700,300|Roboto:100,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/master.css" type="text/css" media="screen, print">
+<link rel="stylesheet" href="/css/rte.css" type="text/css" media="screen, print">
+
+<script type="text/javascript" src="/Scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/Scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/Scripts/jquery.easing.compatibility.js"></script>
+<script type="text/javascript" src="/Scripts/is-mobile.js"></script>
+<script type="text/javascript" src="/Scripts/alert.js"></script>
+
+
+<script type="text/javascript">
+	
+	var menuScroll = null;
+	var lastScroll = null;
+	var menuDir = 0;
+
+	$(document).ready(function() {
+		/*
+		$('#ask-field').focus(function() {
+			if($(this).val()=='Ask Astute'){
+				$(this).val('')
+				$(this).addClass('ask-focused')					
+			}
+			$('#search-results').slideDown(500,'easeOutExpo')
+			$('#search-icon').css('color','#1595d3')
+		}).blur(function(){
+			if($(this).val()==''){
+				$(this).val('Ask Astute')
+				$(this).removeClass('ask-focused')	
+			}
+			$('#search-results').slideUp(500,'easeOutExpo')
+			$('#search-icon').css('color','#cccccc')
+		})
+		*/
+
+		
+		$('#main-products').mouseenter(function() {
+			$('#products-drop').stop().slideDown(500, 'easeOutExpo');
+			
+		}).mouseleave(function(){
+			$('#products-drop').stop().hide();
+			
+		})
+		
+		/* mobile menu */
+		$('#menu-open').click(function(){
+			$('.mobile-nav').show();
+			$('#menu-close').show();
+			$(this).hide();	
+		});
+		
+		$('#menu-close').click(function(){
+			$('.mobile-nav').hide();
+			$('#menu-open').show();
+			$(this).hide();	
+		});
+	})
+	
+	$(window).resize(function() {
+		if($(window).width() > 715){
+			$('#menu-close').trigger('click');
+			//$('#menu-open, .mobile-nav').hide();			
+		}
+	})
+	
+	$(window).scroll(function() {
+		lastScroll = menuScroll;
+		menuScroll = $(window).scrollTop();
+		
+		if(!isMobile && $(window).width() > 715){
+			if(menuScroll > 50){
+				$('#my-header').css('position','fixed')
+				$('#my-header').css('top','-50px')
+				/*
+				$('#my-header').stop().animate({
+					top: -50
+				},150,'easeOutExpo');
+				*/
+
+			} else {
+				$('#my-header').css('position','absolute')
+				$('#my-header').css('top','0')
+			}
+			
+			if(lastScroll > menuScroll){
+				/*
+				$('#my-header').css('top','0');
+				$('#my-header').stop().animate({
+					top: 0
+				},150,'easeOutExpo');
+				*/
+			}
+			
+		} else {
+			$('#my-header').css('top','0')	
+		}
+
+		
+
+ 	})
+	
+		
+
+
+</script>
+	
+ <!-- Start of Google Analytics Code -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-59396668-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+	setTimeout("ga('send','event','Time On Site','Time on site 1 minute')",60000);
+	setTimeout("ga('send','event','Time On Site','Time on site 2 minutes')",120000);
+
+</script>
+<!-- End of Google Analytics Code -->
+	
+<!--Start Munchkin Tracking Code-->
+<script type="text/javascript">
+$.ajax({
+  url: '//munchkin.marketo.net/munchkin.js',
+  dataType: 'script',
+  cache: true,
+  success: function() {
+    Munchkin.init('116-HUQ-234');
+  }
+});
+</script>
+
+<!-- End Munchkin Tracking Code-->
+
+
+
+    <!-- flexslider -->
+<link rel="stylesheet" type="text/css" href="/scripts/flexslider.css">
+<script type="text/javascript" src="/scripts/jquery.flexslider-min.js"></script>
+
+<script type="text/javascript">
+
+		var isIE;
+
+		function GetIEVersion() {
+		  var sAgent = window.navigator.userAgent;
+		  var Idx = sAgent.indexOf("MSIE");
+
+		  // If IE, return version number.
+		  if (Idx > 0)
+			return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+
+		  // If IE 11 then look for Updated user agent string.
+		  else if (!!navigator.userAgent.match(/Trident\/7\./))
+			return 11;
+
+		  else
+			return 0; //It is not IE
+		}
+
+		if (GetIEVersion() > 0) {
+		   //alert("This is IE " + GetIEVersion());
+			isIE = true;
+		} else {
+		   //alert("This is not IE.");
+			isIE = false;
+		}
+
+
+		$(document).ready(function () {
+
+		    $('#nav-careers').addClass('selected');
+
+
+		  $('#careers-top5 .holder').flexslider({
+					animation: 'slide',
+					animationLoop: false,
+					slideshow: false,
+					keyboard: true,
+					directionNav: false,
+					controlNav: false,
+					touch: true,
+					start: function(slider){
+						var totalSlides = slider.count;
+
+						$('#top5-next').click(function(){
+							if(slider.currentSlide < totalSlides-1) {
+								slider.flexAnimate(slider.currentSlide+1, true, true)
+							} else {
+								slider.flexAnimate(0, true, true)
+							}
+						})
+
+
+						$('#top5-prev').click(function(){
+							if(slider.currentSlide > 0) {
+								slider.flexAnimate(slider.currentSlide-1, true, true)
+							}
+						})
+					}
+			});
+
+		  $('#careers-whylove .card').click(function(){
+			  if(!isIE){
+				  if($(window).width() > 715){
+
+					// test if video exists
+					var video = $('.flipped video').get(0)
+					if(video){
+						video.pause();
+						video.currentTime = 0;
+					}
+
+					if($(this).hasClass('flipped')){
+						$(this).removeClass('flipped');
+					} else {
+						$('.flipped').removeClass('flipped');
+						$(this).addClass('flipped');
+						$(this).find('video').get(0).play();
+					}
+				  }
+			  }
+		  })
+
+		if(isIE){
+			$('.dogear').each(function(){
+				$(this).hide();
+			})
+		}
+
+
+	  });
+
+
+</script>
+ 
+
+    <script src="//astutesolutions.com/widgets/adapter.js"></script>
+   <!-- <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>-->
+    <script src="//ajax.aspnetcdn.com/ajax/signalr/jquery.signalR-2.1.1.min.js"></script>
+    <script src="//astutesolutions.com/widgets/sos.min.js"></script>
+    <link rel="stylesheet" href="//astutesolutions.com/widgets/sos.css" />
+
+</head>
+
+<body>
+
+    <div id="RDcontainer" class="slide-out-div" src="https://va.astuteknowledge.com/w/astutepublic/"></div>
+    <script type="text/javascript" src="https://va.astuteknowledge.com/static/RDWebWidget/js/rdwidget.js"></script>
+<div id="my-wrapper">
+	<!-- header -->
+  	<div id="scrollPos">0</div>
+<header id="my-header">
+	<div id="header-top">
+    	<div class="inside">
+        	<!--
+        	<div id="sos-bug"><img src="/_img/button_call_sos.png" alt="Click to Call" /></div>
+            -->
+            <!--
+        	<div id="search-icon"><span class="fa fa-search"></span></div>
+            <input id="ask-field" typ="text" value="Ask Astute" />
+            -->
+            <ul class="third-nav">
+            	<li><a href="/request-a-demo" id="nav-request">Request a Demo</a></li>
+                <li><a href="/company" id="nav-company">Company</a></li>
+                <li><a href="/careers" id="nav-careers">Careers</a></li>
+                <li><a href="/events" id="nav-events">Events &amp; Webinars</a></li>
+                <li><a href="/contact" id="nav-contact">Contact</a></li>
+                <li><a onclick="ga('send', 'event', 'Outgoing Link', 'Customer Support Login', {'nonInteraction': 1});" href="http://support.astutesolutions.com/" target="_blank" id="nav-login">Customer Login</a></li>
+                <div class="clearfix"></div>
+            </ul>
+            <!--
+            <div id="search-results">
+            	<ul>
+                	<li>Consumer relations </li>
+                    <li>Consumer profile</li>
+                    <li>Consumer data points</li>
+                  	<a href="#" id="all">SEE ALL RESULTS</a>                   
+                </ul>
+            </div>
+            -->
+            
+        </div>
+    </div>
+    <div id="header-nav">
+        <div class="inside">
+            <div id="logo"><a href="/"><img src="/_img/logo_astute.png" alt="Astute Solutions" /></a></div>            
+            <ul class="main-nav">
+            	<li id="main-products">Products <span class="fa fa-caret-down"></span>
+                    <ul id="products-drop">
+                        <li>
+                        	<a href="/products/epowercenter">
+                                <img src="/_img/icon_epower_114x114.png" alt="Navigation - ePowerCenter" />
+                                <div class="text">
+                                    <h4>ePowerCenter&trade;</h4>
+                                    Consumer Engagement CRM
+                                </div>
+                            </a>
+                        </li>            
+                        <li>
+                            <a href="/products/astute-social">
+                                <img src="/_img/icon_social_114x114.png" alt="Navigation - Astute Social" />
+                                <div class="text">
+                                    <h4>Astute Social&trade;</h4>
+                                    Social Media Management
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/products/astute-knowledge">
+                            	<img src="/_img/icon_knowledge_114x114.png" alt="Navigation - Astute Knowledge" />
+                                <div class="text">                                    
+                                    <h4>Astute Knowledge&trade;</h4>
+                                    Web & Mobile Self Service
+                                </div>
+                            </a>
+                        </li>            
+                        <li>
+                            <a href="/products/astute-sos">
+                            	<img src="/_img/icon_sos_114x114.png" alt="Navigation - Astute SOS" />
+                                <div class="text">                                    
+                                    <h4>Astute SOS&trade;</h4>
+                                    Click to Voice & Video
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/services" id="nav-services" class="main-link">Services</a></li>
+                <li><a href="/resources" id="nav-resources" class="main-link">Resources</a></li>
+				<li><a href="/blog" id="nav-blog" class="main-link">Blog</a></li>
+
+                <div class="clearfix"></div>
+            </ul>
+            
+        </div>
+        
+         <!-- MOBILE MENU -->
+        <div id="mobile-menu">
+            <div id="menu-open"><span class="icon-Astute_icon_menu"></span></div>
+            <div id="menu-close"><span class="icon-Astute_icon_close"></span></div>
+        </div>
+            
+        <div class="mobile-nav">        	
+            <ul id="products-mobile">
+                <li>
+                    <a href="/products/epowercenter">
+                        <img src="/_img/icon_epower_114x114.png" alt="Navigation - ePowerCenter" />
+                        <div class="text">
+                            <h4>ePowerCenter&trade;</h4>
+                            Consumer Engagement CRM
+                        </div>
+                    </a>
+                </li>            
+                <li>
+                    <a href="/products/astute-social">
+                        <img src="/_img/icon_social_114x114.png" alt="Navigation - Astute Social" />
+                        <div class="text">
+                            <h4>Astute Social&trade;</h4>
+                            Social Media Management
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/products/astute-knowledge">
+                        <img src="/_img/icon_knowledge_114x114.png" alt="Navigation - Astute Knowledge" />
+                        <div class="text">                                    
+                            <h4>Astute Knowledge&trade;</h4>
+                            Web & Mobile Self Service
+                        </div>
+                    </a>
+                </li>            
+                <li>
+                    <a href="/products/astute-sos">
+                        <img src="/_img/icon_sos_114x114.png" alt="Navigation - Astute SOS" />
+                        <div class="text">                                    
+                            <h4>Astute SOS&trade;</h4>
+                            Click to Voice & Video
+                        </div>
+                    </a>
+                </li>
+                <li><a href="/services"><h4>Services</h4></a></li>
+                <li><a href="/resources"><h4>Resources</h4></a></li>
+                <li><a href="/blog"><h4>Blog</h4></a></li>
+                <li><a href="/request-a-demo"><h4>Request a Demo</h4></a></li>
+                <li><a href="/company"><h4>Company</h4></a></li>
+                <li><a href="/events"><h4>Events</h4></a></li>
+                <li><a href="/contact"><h4>Contact</h4></a></li>
+                <li><a onclick="ga('send', 'event', 'Outgoing Link', 'Customer Support Login', {'nonInteraction': 1});" href="http://support.astutesolutions.com/" target="_blank"><h4>Client Login</h4></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+</header>    
+    <!-- content -->
+    
+	<div id="contentWrapper">
+	
+                <div id="pageAlert">
+                    <div class="inside">
+                        <p>
+                            Customers no longer want to call you for help. Join us Thursday, September 29 at 1:00 PM ET to learn how to serve your customers via chat.
+                            <a target="_blank" href="https://attendee.gotowebinar.com/register/833457678335804673">Register for the webinar.</a>
+                        </p>
+                    </div>
+                    
+                    <div id="closeAlert">x</div>
+                </div>
+        
+
+
+<div id="careers">
+    <div id="my-content">
+        <div id="company-careers" class="box-feature">
+            <div class="inside">
+                <h3>CAREERS AT ASTUTE</h3>
+                <h2>Be part of something big!</h2>
+                <p><span class="large">Astute Solutions works with the world's smartest consumer brands to deliver amazing customer experiences. We use cutting-edge tech like artificial intelligence and natural language processing to connect, analyze, and enhance experiences throughout the customer journey.</span></p>
+<p><span class="large">Our vision is to make every customer interaction smarter, increasing brand loyalty and ensuring long-term success for the companies we serve. And we'd love you to be a part of that vision.</span></p>
+                <a href="https://astutesolutions.silkroad.com/astuteext/EmploymentListings/jobs1.html" target="_blank" class="button gray">Explore Open Positions at Astute</a>
+            </div>
+        </div>
+
+        <div id="careers-top5">
+            <h3>The Top Five Reasons to Work at Astute:</h3>
+            <div id="top5-prev"><span class="fa fa-arrow-left"></span></div>
+            <div id="top5-next"><span class="fa fa-arrow-right"></span></div>
+            <div class="holder">
+                <ul class="slides">
+                        <li class="slide-orange">
+                            <div class="bg" style="background-image:url('/media/20277/01mcd.png');"></div>
+                            <div class="inside">
+                                <div class="num">1</div>
+                                <h2>We work with the smartest brands on the planet.</h2>
+                                <p class="large">Experience the thrill of working with some of the biggest consumer brands in the world, companies that lead their respective fields in innovation, creativity, and revenue.</p>
+                                <a href="https://astutesolutions.silkroad.com/astuteext/EmploymentListings/jobs1.html" target="_blank" class="button fill">Explore Open Positions at Astute</a>
+                            </div>
+                        </li>
+                        <li class="slide-blue">
+                            <div class="bg" style="background-image:url('/media/20273/02astutesocial.png');"></div>
+                            <div class="inside">
+                                <div class="num">2</div>
+                                <h2>We build award-winning innovative software.</h2>
+                                <p class="large">Living on the cutting edge of consumer engagement software brings exciting opportunities and challenges.</p>
+                                <a href="https://astutesolutions.silkroad.com/astuteext/EmploymentListings/jobs1.html" target="_blank" class="button fill">Explore Open Positions at Astute</a>
+                            </div>
+                        </li>
+                        <li class="slide-orange">
+                            <div class="bg" style="background-image:url('/media/20275/03huddle.png');"></div>
+                            <div class="inside">
+                                <div class="num">3</div>
+                                <h2>We empower you to embrace your inner entrepreneur.</h2>
+                                <p class="large">Have an idea about how to make Astute better? Get after it. We&#39;ll support you.</p>
+                                <a href="https://astutesolutions.silkroad.com/astuteext/EmploymentListings/jobs1.html" target="_blank" class="button fill">Explore Open Positions at Astute</a>
+                            </div>
+                        </li>
+                        <li class="slide-blue">
+                            <div class="bg" style="background-image:url('/media/20276/04smiling.png');"></div>
+                            <div class="inside">
+                                <div class="num">4</div>
+                                <h2>We believe in a collaborative communicative culture where nobody whispers in dark corners.</h2>
+                                <p class="large">Open communication is crucial to our success, so speak up — your voice is welcome.</p>
+                                <a href="https://astutesolutions.silkroad.com/astuteext/EmploymentListings/jobs1.html" target="_blank" class="button fill">Explore Open Positions at Astute</a>
+                            </div>
+                        </li>
+                        <li class="slide-orange">
+                            <div class="bg" style="background-image:url('/media/20274/05fun.png');"></div>
+                            <div class="inside">
+                                <div class="num">5</div>
+                                <h2>We want you to enjoy life, both in and out of the office.</h2>
+                                <p class="large">At Astute, we believe in working hard not because we feel obligated to, but because we are engaged by and proud of our work.</p>
+                                <a href="https://astutesolutions.silkroad.com/astuteext/EmploymentListings/jobs1.html" target="_blank" class="button fill">Explore Open Positions at Astute</a>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="careers-whylove" class="box-feature">
+            <h3></h3>
+            <ul>
+                    <li>
+                        <div class="card">
+                            <div class="front">
+                                <div class="dogear"></div>
+                                <h4>Vision</h4>
+                                <span class="hear">Hear it from Robbie →</span>
+                                <p>"Astute has a unique vision for the future of customer engagement, and it&#39;s exciting to be a part of it!"</p>
+                                <span class="byline">&mdash; Robbie, Enablement</span>
+                            </div>
+                            <div class="back">
+                                <div class="name">
+                                    <h4>Robbie</h4>
+                                    Enablement
+                                </div>
+                                <video width="100%">
+                                    <source src="/media/20287/careers_robbie.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="front">
+                                <div class="dogear"></div>
+                                <h4>Opportunity</h4>
+                                <span class="hear">Hear it from Nancy →</span>
+                                <p>"Working at Astute has given me constant opportunities for professional development. There&#39;s always a new challenge to tackle!"</p>
+                                <span class="byline">&mdash; Nancy, Marketing</span>
+                            </div>
+                            <div class="back">
+                                <div class="name">
+                                    <h4>Nancy</h4>
+                                    Marketing
+                                </div>
+                                <video width="100%">
+                                    <source src="/media/20286/careers_nancy.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="front">
+                                <div class="dogear"></div>
+                                <h4>Teamwork</h4>
+                                <span class="hear">Hear it from Erin →</span>
+                                <p>"We all have our individual talents, but I love that we accomplish even more as a team."</p>
+                                <span class="byline">&mdash; Erin, SaaS Operations</span>
+                            </div>
+                            <div class="back">
+                                <div class="name">
+                                    <h4>Erin</h4>
+                                    SaaS Operations
+                                </div>
+                                <video width="100%">
+                                    <source src="/media/20283/careers_erin.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="front">
+                                <div class="dogear"></div>
+                                <h4>Innovation</h4>
+                                <span class="hear">Hear it from Jonathan →</span>
+                                <p>"Our software is pushing the limits of what technology can do."</p>
+                                <span class="byline">&mdash; Jonathan, Product</span>
+                            </div>
+                            <div class="back">
+                                <div class="name">
+                                    <h4>Jonathan</h4>
+                                    Product
+                                </div>
+                                <video width="100%">
+                                    <source src="/media/20284/careers_jonathan.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="front">
+                                <div class="dogear"></div>
+                                <h4>Recognition</h4>
+                                <span class="hear">Hear it from Joe →</span>
+                                <p>"People here believe in recognizing each other for good work."</p>
+                                <span class="byline">&mdash; Joe, Finance</span>
+                            </div>
+                            <div class="back">
+                                <div class="name">
+                                    <h4>Joe</h4>
+                                    Finance
+                                </div>
+                                <video width="100%">
+                                    <source src="/media/20280/careers_joe.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="front">
+                                <div class="dogear"></div>
+                                <h4>Creativity</h4>
+                                <span class="hear">Hear it from Chuck →</span>
+                                <p>"I love having the opportunity to be a creative problem-solver every day."</p>
+                                <span class="byline">&mdash; Chuck, SaaS Operations</span>
+                            </div>
+                            <div class="back">
+                                <div class="name">
+                                    <h4>Chuck</h4>
+                                    SaaS Operations
+                                </div>
+                                <video width="100%">
+                                    <source src="/media/20281/careers_chuck.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="front">
+                                <div class="dogear"></div>
+                                <h4>Results</h4>
+                                <span class="hear">Hear it from Tony →</span>
+                                <p>"What we do matters because our work makes a difference for our customers, enabling them to better serve their customers."</p>
+                                <span class="byline">&mdash; Tony, Professional Service</span>
+                            </div>
+                            <div class="back">
+                                <div class="name">
+                                    <h4>Tony</h4>
+                                    Professional Service
+                                </div>
+                                <video width="100%">
+                                    <source src="/media/20279/careers_tony.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="front">
+                                <div class="dogear"></div>
+                                <h4>Growth</h4>
+                                <span class="hear">Hear it from Craig →</span>
+                                <p>"At Astute, I&#39;ve grown professionally and personally, developing new skills and also great relationships."</p>
+                                <span class="byline">&mdash; Craig, Professional Service</span>
+                            </div>
+                            <div class="back">
+                                <div class="name">
+                                    <h4>Craig</h4>
+                                    Professional Service
+                                </div>
+                                <video width="100%">
+                                    <source src="/media/20282/careers_craig.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="front">
+                                <div class="dogear"></div>
+                                <h4>Engagement</h4>
+                                <span class="hear">Hear it from Ashley →</span>
+                                <p>"Our work is all about helping companies engage customers, so engaging employees is a top priority, too."</p>
+                                <span class="byline">&mdash; Ashley, Professional Service</span>
+                            </div>
+                            <div class="back">
+                                <div class="name">
+                                    <h4>Ashley</h4>
+                                    Professional Service
+                                </div>
+                                <video width="100%">
+                                    <source src="/media/20285/careers_ashley-2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="front">
+                                <div class="dogear"></div>
+                                <h4>Flexibility</h4>
+                                <span class="hear">Hear it from Jeremy →</span>
+                                <p>"One of the things I love about Astute is the flexibility that allows me to balance my work life and my home life."</p>
+                                <span class="byline">&mdash; Jeremy, Development</span>
+                            </div>
+                            <div class="back">
+                                <div class="name">
+                                    <h4>Jeremy</h4>
+                                    Development
+                                </div>
+                                <video width="100%">
+                                    <source src="/media/20278/careers_jeremy.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </li>
+
+                <li class="double">
+                    <div class="inside">
+                        <h3>Join Us</h3>
+                        <a href="https://astutesolutions.silkroad.com/astuteext/EmploymentListings/jobs1.html" target="_blank" class="button fill">Explore Open Positions at Astute</a>
+                    </div>
+                </li>
+  
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+
+        <div id="careers-hardwork" class="box-feature">
+            <div class="inside">
+                <h3>Hard work deserves to be rewarded.</h3>
+                <div class="left">
+                    <p class="large"><span class="large">We deliver innovative solutions through our people, so we recognize the value of providing a flexible and comprehensive benefits package as part of our competitive compensation plan. We offer health, dental, vision and life insurance, as well as prescription coverage, flexible spending plans and a health reimbursement account to help satisfy the diverse needs of our team. </span><span class="med large">Astute values work/life balance, so vacation, sick time and paid holidays are offered.</span></p>
+<p class="large"><span class="large">To ensure Astute’s continued success, we actively reward and continuously develop talent. We also use Catalytic Coaching throughout the organization, a more proactive and participatory form of the annual review, which recognizes your efforts and moves your professional development forward.</span></p>
+
+
+                </div>
+                <div class="right">
+                    <ul class="career-benefits">
+                            <li><span class="fa fa-check-square"></span>Health Insurance</li>
+                            <li><span class="fa fa-check-square"></span>Dental Insurance</li>
+                            <li><span class="fa fa-check-square"></span>Vision Insurance</li>
+                            <li><span class="fa fa-check-square"></span>Life Insurance</li>
+                            <li><span class="fa fa-check-square"></span>Prescription Coverage</li>
+                            <li><span class="fa fa-check-square"></span>FSA &amp; HRA</li>
+                            <li><span class="fa fa-check-square"></span>Competitive Salaries</li>
+                            <li><span class="fa fa-check-square"></span>Catalytic Coaching</li>
+                            <li><span class="fa fa-check-square"></span>Emloyee Assistance Program</li>
+                       <!-- <li><span class="fa fa-check-square"></span>Health Insurance</li>
+                        <li><span class="fa fa-check-square"></span>Dental Insurance</li>
+                        <li><span class="fa fa-check-square"></span>Vision Insurance</li>
+                        <li><span class="fa fa-check-square"></span>Life Insurance</li>
+                        <li><span class="fa fa-check-square"></span>Prescription Coverage</li>
+                        <li><span class="fa fa-check-square"></span>FSA & HSA</li>
+                        <li><span class="fa fa-check-square"></span>Competitive Salaries</li>
+                        <li><span class="fa fa-check-square"></span>Catalytic Coaching</li>
+                        <li><span class="fa fa-check-square"></span>Employee Assistance Program</li>-->
+                    </ul>
+                    <a href="https://astutesolutions.silkroad.com/astuteext/EmploymentListings/jobs1.html" target="_blank" class="button white">Explore Open Positions at Astute</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>        
+        
+        
+    
+    
+
+    
+     
+    <!-- footer -->
+    <!-- footer -->
+    <footer id="my-footer">
+        <div class="footer-top">
+            <div class="inside">
+                <div class="footer-left">
+                    <div>
+                        <h5>Sign up for our monthly newsletter</h5>
+                        <script src="//app-sj11.marketo.com/js/forms2/js/forms2.min.js"></script>
+                        <form id="mktoForm_1398"></form>
+                        <script>
+MktoForms2.loadForm("//app-sj11.marketo.com", "116-HUQ-234", 1398, function (form) {
+    form.onSuccess(function (values, followUpUrl) {
+        form.getFormElem().parent().html("<h4 class='thanks'>Thanks for signing up!</h4><p>Please check your inbox for a confirmation email</p>");
+        return false;
+    });
+});</script>
+
+                    </div>
+                    <div id="footer-social">
+                        <!--<a href="#" class="fa fa-pinterest-p"></a>-->
+                        <a onclick="ga('send', 'event', 'Outgoing Link', 'Facebook');" href="https://www.facebook.com/AstuteSolutions" target="_blank" class="fa fa-facebook"></a>
+                        <a onclick="ga('send', 'event', 'Outgoing Link', 'Twitter');" href="https://twitter.com/astutesolutions/" target="_blank" class="fa fa-twitter"></a>
+                        <a onclick="ga('send', 'event', 'Outgoing Link', 'LinkedIn');" href="https://www.linkedin.com/company/astute-solutions" target="_blank" class="fa fa-linkedin"></a>
+                        <!--<a href="#" class="fa fa-reddit"></a>
+                        <a href="#" class="fa fa-youtube-play"></a>
+                        -->
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <ul id="footer-nav">
+                        <li><a href="/request-a-demo">Request a Demo</a></li>
+                        <li><a href="/company">Company</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/events">Events &amp; Webinars</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a target="_blank" href="http://support.astutesolutions.com">Customer Login</a></li>
+                    </ul>
+                    <div class="disclaimer">
+                        <p>
+                            All product names and logos are trademarks or registered trademarks of their respective owners. ©2010-
+                            <script type="text/javascript">var d = new Date();document.write(d.getFullYear());</script> Astute Solutions. All Rights Reserved.<br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="inside">
+                <a href="/">Home</a>&nbsp; | &nbsp;<a href="/privacy-policy">Privacy Policy</a>&nbsp; | &nbsp;<a href="/terms-conditions">Terms & Conditions</a><!--&nbsp; | &nbsp;<a href="#">Sitemap</a>--><br />
+                <a class="bbbLink" href="http://www.bbb.org/centralohio/business-reviews/computers-hardware-software-and-services/astute-inc-in-columbus-oh-11005233/#bbbonlineclick" target="_blank" rel="nofollow"><img src="https://seal-centralohio.bbb.org/seals/blue-seal-120-61-bbb-11005233.png" style="border: 0;" alt="Astute, Inc. BBB Business Review"></a>
+            </div>
+        </div>
+    </footer>   
+	</div>
+    
+</div>
+		
+<!-- Clicky stats -->
+<!--<a title="Web Statistics" href="http://clicky.com/100875652"><img alt="Web Statistics" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>-->
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100875652); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100875652ns.gif" /></p></noscript>
+								
+
+</body>
+</html>

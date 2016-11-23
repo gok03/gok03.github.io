@@ -1,0 +1,1264 @@
+status: 200
+content-length: 67607
+content-location: https://www.telogis.com/industries/construction-heavy-equipment
+expires: Sun, 11 Sep 2016 10:23:42 GMT
+vary: Accept-Encoding
+server: nginx/1.6.2
+last-modified: Fri, 09 Sep 2016 01:37:20 GMT
+connection: keep-alive
+-content-encoding: gzip
+cache-control: max-age=30
+date: Sun, 11 Sep 2016 10:23:12 GMT
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:24,ee:"QJf3ax"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:24,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"ce8163632e",applicationID:"11598455",sa:1,agent:"js-agent.newrelic.com/nr-768.min.js"}
+</script>
+
+    <script src="//cdn.optimizely.com/js/2035430014.js"></script>
+
+
+    <meta charset="utf-8">
+
+    <link type="image/x-icon" href="/favicon.ico" rel="icon">
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57-33827215.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60-cd29b849.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72-213f1827.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76-0b331bec.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114-b4b0d39d.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120-ac5df0df.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144-2c9be7ea.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152-82afc913.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon-180x180-f8ac65e2.png">
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32-b3622f23.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/images/favicons/android-chrome-192x192-8bfd5338.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96-7df8f276.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16-71a9c8ff.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144-4ba0a81c.png">
+<meta name="theme-color" content="#ffffff">
+
+
+    <meta name="description" content="Improve the ROI of your construction fleet as well as the security, lifespan, visibility, productivity, fuel economy and resale value of your heavy equipment" />
+<meta name="robots" content="noodp,noydir" />
+<link rel="canonical" href="http://www.telogis.com/industries/construction-heavy-equipment" />
+<link rel="alternate" hreflang="en-au" href="http://www.telogis.com.au/industries/construction-heavy-equipment" />
+<link rel="alternate" hreflang="en-gb" href="http://www.telogis.co.uk/industries/construction-heavy-equipment" />
+<link rel="alternate" hreflang="en-us" href="http://www.telogis.com/industries/construction-heavy-equipment" />
+
+    <title>Manage Construction Fleets & GPS Track Heavy Equipment | Telogis</title>
+
+    <script src="/assets/javascripts/application-6165acdf.js"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/assets/stylesheets/layouts/main-4a495548.css" rel="stylesheet" />
+<link href="/assets/stylesheets/layouts/article-29921591.css" rel="stylesheet" />
+<link href="/assets/stylesheets/layouts/industries-1149394b.css" rel="stylesheet" />
+<link href="/assets/stylesheets/pages/industries/construction-heavy-equipment-9b54db80.css" rel="stylesheet" />
+
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script src="/assets/javascripts/vendor/selectivizr.min-b4726178.js"></script>
+    <![endif]-->
+
+    <script src="/assets/javascripts/layouts/main-8e002ae2.js"></script>
+<script src="/assets/javascripts/layouts/article-bf02dc20.js"></script>
+<script src="/assets/javascripts/layouts/industries-a6dce624.js"></script>
+
+    <script type="text/javascript" src="//use.typekit.net/shv3tjn.js"></script>
+<script>
+  try {
+    Typekit.load({
+      loading:  function () { $(document).trigger('TypekitLoading' ); },
+      active:   function () { $(document).trigger('TypekitActive'  ); },
+      inactive: function () { $(document).trigger('TypekitInactive'); },
+      async: true
+    });
+  }
+  catch (e) {}
+</script>
+
+
+      <!--
+    <PageMap>
+      <DataObject type="frontmatter">
+          <Attribute name="title">Construction & Heavy Equipment</Attribute>
+          <Attribute name="tags">industries</Attribute>
+      </DataObject>
+    </PageMap>
+  -->
+
+
+    <!-- Hotjar Tracking Code for https://www.telogis.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:212228,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  
+
+
+
+  </head>
+  <body class="en_US industries">
+
+    <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-P6BBGN"
+height="0" width="0" style="display:none; visibility:hidden"></iframe>
+</noscript>
+
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6BBGN');
+</script>
+    
+
+    <!--[if IE 8]><div class="ie-8"><![endif]-->
+    <!--[if IE 9]><div class="ie-9"><![endif]-->
+
+    
+  <svg style="display: none">
+  <symbol id="search-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linecap="round">
+    <circle stroke-width="7" cx="30" cy="30" r="24"></circle>
+    <line stroke-width="9" x1="48" y1="48" x2="57" y2="57"></line>
+  </symbol>
+  <symbol id="close-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round">
+    <line x1="8" y1="8" x2="56" y2="56"></line>
+    <line x1="56" y1="8" x2="8" y2="56"></line>
+  </symbol>
+</svg>
+<nav class="site-nav tablet-up-only">
+  <div class="site-nav_navbar">
+    <div class="content-wrapper">
+<a class="site-nav_home" href="/">        <img alt="Telogis" src="/assets/images/logo-telogis-small-5fea6a3a.svg" />
+</a>      <div class="site-nav_modal-content">
+<form action="/search-results" accept-charset="UTF-8" class="search-widget" method="get">            <svg class="site-nav_search-icon"><use xlink:href="#search-icon"></use></svg>
+            <input type="search" name="q" class="search-widget_search-box" placeholder="Search" autocomplete="off" />
+            <button class="search-widget_search-button" type="submit">Go</button>
+</form>        <div class="site-nav_main-menu">
+          <ul class="site-nav_navbar-entries">
+                <li class="site-nav_solutions">
+  <a data-site-nav-select=".site-nav_solutions" class="site-nav_link-simple" href="/solutions">Solutions</a>
+</li>
+
+
+
+                <li class="site-nav_benefits">
+  <a data-site-nav-select=".site-nav_benefits" class="site-nav_link-simple" href="/benefits">Benefits</a>
+</li>
+
+
+                <li class="site-nav_industries">
+  <a data-site-nav-select=".site-nav_industries" class="site-nav_link-simple" href="/industries">Industries</a>
+</li>
+
+
+                <li class="site-nav_company">
+  <a data-site-nav-select=".site-nav_company" class="site-nav_link-simple" href="/company">Company</a>
+</li>
+
+
+                <li class="site-nav_contact">
+  <a data-site-nav-select=".site-nav_contact" class="site-nav_link-simple" href="/contact-telogis">Contact</a>
+</li>
+
+
+
+          </ul>
+          <a class="site-nav_link-simple -highlight" href="/demo">Get a demo</a>
+          <a class="site-nav_link-button" href="https://login.telogis.com">Login</a>
+        </div>
+      </div>
+      <a class="site-nav_toggle-search" data-site-nav-toggle-search>
+        <svg class="site-nav_search-icon"><use xlink:href="#search-icon"></use></svg>
+        <svg class="site-nav_close-icon"><use xlink:href="#close-icon"></use></svg>
+      </a>
+    </div>
+  </div>
+  <div class="site-nav_drawer">
+    <div class="site-nav_drawer-upper site-nav_animate-height-change">
+      <div class="content-wrapper">
+          <div class="site-nav_hide-unless-selected site-nav_solutions">
+    <a class="site-nav_link-button" href="/solutions">The Telogis Platform</a>
+<a class="site-nav_play-video-button wistia-popover[height=450,playerColor=7b796a,width=800]" href="//fast.wistia.net/embed/iframe/zdgw907gs8?popover=true">        90 second overview
+</a>  </div>
+  <div class="site-nav_hide-unless-selected site-nav_contact">
+    <a onclick="SnapEngage.startLink()" class="site-nav_link-button site-nav_decoration-chat-online site-nav_chat-online-only" href="javascript:void()">Chat with us live</a>
+    <a class="site-nav_link-button site-nav_chat-offline-only" href="/contact-telogis">Contact Telogis</a>
+    <div class="site-nav_tel-no">
+      Toll free <em><a data-invoca="mw" href="tel:18002667883">1-866-TELOGIS</a></em>
+    </div>
+  </div>
+
+      </div>
+    </div>
+    <div class="site-nav_drawer-lower site-nav_animate-height-change">
+      <div class="content-wrapper">
+          <div class="site-nav_drawer-container site-nav_hide-unless-selected site-nav_solutions">
+    <ul class="site-nav_solutions-products">
+        <li class="site-nav_drawer-item site-nav_solution -fleet">
+          <a href="/solutions/fleet"><p class="site-nav_link-title">Telogis Fleet</p><p class="site-nav_link-description">Telematics & driver behavior</p></a>
+        </li>
+        <li class="site-nav_drawer-item site-nav_solution -response">
+          <a href="/solutions/dynamic-response"><p class="site-nav_link-title">Telogis Response</p><p class="site-nav_link-description">Real-time job & worker dispatch</p></a>
+        </li>
+        <li class="site-nav_drawer-item site-nav_solution -route">
+          <a href="/solutions/route"><p class="site-nav_link-title">Telogis Route</p><p class="site-nav_link-description">Planning, scheduling & route optimization</p></a>
+        </li>
+        <li class="site-nav_drawer-item site-nav_solution -mobile">
+          <a href="/solutions/mobile"><p class="site-nav_link-title">Telogis Mobile</p><p class="site-nav_link-description">HOS, DVIR, route navigation and work order management</p></a>
+        </li>
+        <li class="site-nav_drawer-item site-nav_solution -integration">
+          <a href="/solutions/integration"><p class="site-nav_link-title">Telogis Integration</p><p class="site-nav_link-description">Tools to extend the Telogis Platform</p></a>
+        </li>
+        <li class="site-nav_drawer-item site-nav_solution -geobase">
+          <a href="/solutions/geobase"><p class="site-nav_link-title">Telogis GeoBase</p><p class="site-nav_link-description">Geospatial SDK</p></a>
+        </li>
+    </ul>
+      <div class="site-nav_solutions-services">
+        <p class="site-nav_drawer-title">Enterprise Services</p>
+        <ul>
+            <li><a href="/services/certification">Certification</a></li>
+            <li><a href="/services/implementation">Implementation</a></li>
+            <li><a href="/services/support">Premier support</a></li>
+            <li><a href="/services/training">Training</a></li>
+        </ul>
+      </div>
+  </div>
+  <ul class="site-nav_drawer-container site-nav_hide-unless-selected site-nav_benefits">
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/business-transformation"><p class="site-nav_link-title">Business Transformation</p><p class="site-nav_link-description">End-to-end solution for company-wide improvements</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/factory-fit-telematics-oem"><p class="site-nav_link-title">Rapid Deployment</p><p class="site-nav_link-description">OEM built-in hardware for a fast roll&#8209;out</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/reduced-fuel-expense"><p class="site-nav_link-title">Fuel Savings</p><p class="site-nav_link-description">Tools to measure, manage &amp; minimize fuel spend</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/improve-driver-safety-and-asset-security"><p class="site-nav_link-title">Driver Safety</p><p class="site-nav_link-description">Real-time coaching to help drivers self-correct</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/improved-productivity"><p class="site-nav_link-title">Better Productivity</p><p class="site-nav_link-description">Uncover the hidden potential of existing resources</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/regulations-compliance"><p class="site-nav_link-title">Automated Compliance</p><p class="site-nav_link-description">Minimize the compliance burden &amp; reduce downtime</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/your-roi"><p class="site-nav_link-title">Improved Profitability</p><p class="site-nav_link-description">See real savings and better returns across your entire fleet</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/reduced-unauthorized-usage"><p class="site-nav_link-title">Asset Security</p><p class="site-nav_link-description">Get the best possible return on all assets</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/social-responsibility"><p class="site-nav_link-title">Social Responsibility</p><p class="site-nav_link-description">Boost your brand with safer driving &amp; a greener fleet</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/hardware"><p class="site-nav_link-title">Flexible Hardware</p><p class="site-nav_link-description">Choose the hardware that fits your business best</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/benefits/save-on-insurance"><p class="site-nav_link-title">Reduced Insurance</p><p class="site-nav_link-description">Improved safety &amp; fewer claims reduces premiums</p></a>
+      </li>
+  </ul>
+  <ul class="site-nav_drawer-container site-nav_hide-unless-selected site-nav_industries">
+      <li class="site-nav_drawer-item">
+        <a href="/industries/cable-telecom"><p class="site-nav_link-title">Cable &amp; Telecom</p><p class="site-nav_link-description">Work order tools for faster job turnaround and better productivity</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/industries/construction-heavy-equipment"><p class="site-nav_link-title">Construction &amp; Heavy Equipment</p><p class="site-nav_link-description">Improve asset security, visibility, job productivity &amp; worksite safety</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/industries/distribution"><p class="site-nav_link-title">Distribution</p><p class="site-nav_link-description">Make more deliveries faster, with less drivers traveling fewer miles</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/industries/food-beverage"><p class="site-nav_link-title">Food &amp; Beverage</p><p class="site-nav_link-description">Reduce shrinkage, meet tough delivery SLAs &amp; improve utilization</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/industries/government-public-safety"><p class="site-nav_link-title">Government &amp; Public Safety</p><p class="site-nav_link-description">Manage driver safety &amp; efficiency using real-time alerts</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/industries/oil-gas-mining"><p class="site-nav_link-title">Oil, Gas and Mining</p><p class="site-nav_link-description">Telogis for oil, gas, &amp; mining focuses on better driver safety &amp; compliance</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/industries/services"><p class="site-nav_link-title">Services</p><p class="site-nav_link-description">Improve service levels, route optimization &amp; reduce per-mile costs</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/industries/transportation"><p class="site-nav_link-title">Transportation</p><p class="site-nav_link-description">Software to improve navigation, maintenance &amp; DOT compliance</p></a>
+      </li>
+      <li class="site-nav_drawer-item">
+        <a href="/industries/utilities"><p class="site-nav_link-title">Utilities</p><p class="site-nav_link-description">Reduce outage times with better routing, navigation &amp; storm response</p></a>
+      </li>
+  </ul>
+  <div class="site-nav_drawer-container site-nav_hide-unless-selected site-nav_company">
+    <div class="site-nav_company-profile">
+      <p class="site-nav_drawer-title">About Telogis</p>
+      <ul>
+          <li class="site-nav_drawer-item">
+            <a href="/company"><p class="site-nav_link-title">About Telogis</p><p class="site-nav_link-description">Get background information on one of the fastest-growing connected intelligence software companies</p></a>
+          </li>
+          <li class="site-nav_drawer-item">
+            <a href="/company/why-telogis"><p class="site-nav_link-title">Why Telogis?</p><p class="site-nav_link-description">What makes Telogis the preferred choice for mobile workforce solutions?</p></a>
+          </li>
+          <li class="site-nav_drawer-item">
+            <a href="/company/leadership"><p class="site-nav_link-title">Leadership</p><p class="site-nav_link-description">Read more about the leadership team at Telogis</p></a>
+          </li>
+      </ul>
+    </div>
+    <div class="site-nav_company-resources">
+      <p class="site-nav_drawer-title">Company resources</p>
+      <ul>
+          <li class="site-nav_drawer-item">
+            <a href="/press-releases"><p class="site-nav_link-title">Press center</p><p class="site-nav_link-description">Browse current or archived press releases from Telogis</p></a>
+          </li>
+          <li class="site-nav_drawer-item">
+            <a href="/news/awards"><p class="site-nav_link-title">Awards and recognition</p><p class="site-nav_link-description">Read what industry experts are saying about Telogis</p></a>
+          </li>
+          <li class="site-nav_drawer-item">
+            <a href="http://www.telogis.com/blog"><p class="site-nav_link-title">Blog</p><p class="site-nav_link-description">Discover good reads on industry-related topics</p></a>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-nav_drawer-container site-nav_hide-unless-selected site-nav_contact">
+    <div class="site-nav_contact-details">
+      <ul>
+          <li class="site-nav_drawer-item">
+            <a href="/contact-telogis"><p class="site-nav_link-title">Contact details</p><p class="site-nav_link-description">Offices in North America, United Kingdom, Latin America and Asia Pacific</p></a>
+          </li>
+          <li class="site-nav_drawer-item">
+            <a href="/contact-telogis?#support"><p class="site-nav_link-title">Support</p><p class="site-nav_link-description">Our highly trained staff are here to solve your problems</p></a>
+          </li>
+          <li class="site-nav_drawer-item">
+            <a href="/demo"><p class="site-nav_link-title">Request a demo</p><p class="site-nav_link-description">See what our platform can do for your business specifically</p></a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <nav class="site-nav mobile-only">
+  <div class="site-nav_mobile-navbar">
+    <div class="content-wrapper">
+<a class="site-nav_home" href="/">        <img alt="Telogis" src="/assets/images/logo-telogis-small-5fea6a3a.svg" />
+</a>      <a class="site-nav_login" href="https://login.telogis.com">Login</a>
+      <svg class="site-nav_menu-button" viewbox="0 0 100 100" data-site-nav-toggle=".site-nav_mobile-drawer">
+        <path d="M10,24 l96,0 M10,51 l96,0 M10,78 l96,0" stroke="currentColor" stroke-width="9" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="site-nav_animate-height-change">
+    <div class="site-nav_mobile-drawer">
+      <div class="site-nav_subbar">
+        <div class="content-wrapper">
+            <a href="tel:18007872337" class="site-nav_tel-no" data-invoca="mw">1-800-787-2337</a>
+          <a class="site-nav_link-button" href="/demo">Get a demo</a>
+        </div>
+      </div>
+      <ul class="site-nav_menu">
+            <li class="site-nav_solutions">
+  <a href="#" class="site-nav_menu-category" data-site-nav-toggle=".site-nav_solutions">Solutions</a>
+  <ul class="site-nav_submenu site-nav_solutions-products">
+    <li><a class="site-nav_solution -fleet" href="/solutions/fleet">Telogis Fleet</a></li>
+    <li><a class="site-nav_solution -response" href="/solutions/dynamic-response">Telogis Response</a></li>
+    <li><a class="site-nav_solution -route" href="/solutions/route">Telogis Route</a></li>
+    <li><a class="site-nav_solution -mobile" href="/solutions/mobile">Telogis Mobile</a></li>
+    <li><a class="site-nav_solution -integration" href="/solutions/integration">Telogis Integration</a></li>
+    <li><a class="site-nav_solution -geobase" href="/solutions/geobase">Telogis GeoBase</a></li>
+  </ul>
+    <ul class="site-nav_submenu site-nav_solutions-services">
+      <li class="site-nav_submenu-title">Enterprise Services</li>
+        <li><a href="/services/certification">- Certification</a></li>
+        <li><a href="/services/implementation">- Implementation</a></li>
+        <li><a href="/services/support">- Premier support</a></li>
+        <li><a href="/services/training">- Training</a></li>
+    </ul>
+</li>
+
+            <li class="site-nav_benefits">
+  <a href="#" class="site-nav_menu-category" data-site-nav-toggle=".site-nav_benefits">Benefits</a>
+  <ul class="site-nav_submenu">
+      <li><a href="/benefits/business-transformation">Business Transformation</a></li>
+      <li><a href="/benefits/factory-fit-telematics-oem">Rapid Deployment</a></li>
+      <li><a href="/benefits/reduced-fuel-expense">Fuel Savings</a></li>
+      <li><a href="/benefits/improve-driver-safety-and-asset-security">Driver Safety</a></li>
+      <li><a href="/benefits/improved-productivity">Better Productivity</a></li>
+      <li><a href="/benefits/regulations-compliance">Automated Compliance</a></li>
+      <li><a href="/benefits/your-roi">Improved Profitability</a></li>
+      <li><a href="/benefits/reduced-unauthorized-usage">Asset Security</a></li>
+      <li><a href="/benefits/social-responsibility">Social Responsibility</a></li>
+      <li><a href="/benefits/hardware">Flexible Hardware</a></li>
+      <li><a href="/benefits/save-on-insurance">Reduced Insurance</a></li>
+  </ul>
+</li>
+
+            <li class="site-nav_industries">
+  <a href="#" class="site-nav_menu-category" data-site-nav-toggle=".site-nav_industries">Industries</a>
+  <ul class="site-nav_submenu">
+      <li><a href="/industries/cable-telecom">Cable &amp; Telecom</a></li>
+      <li><a href="/industries/construction-heavy-equipment">Construction &amp; Heavy Equipment</a></li>
+      <li><a href="/industries/distribution">Distribution</a></li>
+      <li><a href="/industries/food-beverage">Food &amp; Beverage</a></li>
+      <li><a href="/industries/government-public-safety">Government &amp; Public Safety</a></li>
+      <li><a href="/industries/oil-gas-mining">Oil, Gas and Mining</a></li>
+      <li><a href="/industries/services">Services</a></li>
+      <li><a href="/industries/transportation">Transportation</a></li>
+      <li><a href="/industries/utilities">Utilities</a></li>
+  </ul>
+</li>
+
+            <li class="site-nav_company">
+  <a href="#" class="site-nav_menu-category" data-site-nav-toggle=".site-nav_company">Company</a>
+  <ul class="site-nav_submenu">
+      <li><a href="/company">About Telogis</a></li>
+      <li><a href="/company/why-telogis">Why Telogis?</a></li>
+      <li><a href="/company/leadership">Leadership</a></li>
+      <li><a href="/press-releases">Press center</a></li>
+      <li><a href="/news/awards">Awards and recognition</a></li>
+      <li><a href="http://www.telogis.com/blog">Blog</a></li>
+  </ul>
+</li>
+
+            <li class="site-nav_contact">
+  <a href="#" class="site-nav_menu-category" data-site-nav-toggle=".site-nav_contact">Contact</a>
+  <ul class="site-nav_submenu">
+      <li><a href="/contact-telogis">Contact details</a></li>
+      <li><a href="/contact-telogis?#support">Support</a></li>
+      <li><a href="/demo">Request a demo</a></li>
+  </ul>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <main>
+    
+  <header class="article_header">
+      <div class="content-wrapper">
+    <div class="industries_hero">
+      <div class="industries_pre-title">Industries</div>
+      <div class="industries_title">Construction and<br class="tablet-up-only"> heavy equipment</div>
+        <a id="case-study-popover" class="industries_button -play-icon wistia-popover[height=450,playerColor=7b796a,width=800]" href="//fast.wistia.net/embed/iframe/yeebvqp11c?popover=true">    Watch case study
+</a>
+    </div>
+  </div>
+
+    <div class="article_navbar-footprint" data-navbar-footprint>
+      <nav class="article_navbar" data-navbar>
+        <div class="content-wrapper">
+          <div class="breadcrumb_trail">
+            <ul><li><a href="/">Home</a></li>
+<li><a href="/industries">Industries</a></li>
+<li><a href="/industries/construction-heavy-equipment">Construction & Heavy Equipment</a></li>
+</ul>
+          </div>
+          <a class="article_button tablet-up-only" href="/demo">Get a demo</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <article id="article" class="theme-dark-on-light">
+      <div class="content-wrapper magazine-layout">
+    <div class="magazine-main-content">
+      
+
+<h1>Keep workers safe and productive</h1>
+
+<p class="article_lead">
+  When you’re managing mobile crews, multiple work sites and a lot of equipment it's easy
+  to lose track of what’s happening. <abbr title="Global Positioning System">GPS</abbr>
+  location puts you back in control, improving productivity, minimizing downtime and making
+  your assets and work sites more secure.
+</p>
+
+<hr>
+
+<h3>Strategic planning</h3>
+<p>
+  Strategic and tactical planning is made easier when you know exactly what assets you have,
+  where they’re based and what jobs need to be done. Telogis can provide a <a href="/solutions/route">smart decision engine</a>
+  that allows you to know who to assign to a job, the most economical route to take and the
+  most profitable workflow.
+</p>
+
+<p><a class="caret-link" href="/solutions/route">Learn more</a></p>
+
+<hr>
+
+<h3>Heavy equipment tracking for better ROI</h3>
+
+<p>
+  Whether it's bulldozers, diggers, forklifts, loaders, graders or crawlers, your
+  construction equipment represents a huge investment in your business. Maximize that
+  investment by adding Telogis Heavy Equipment tracking
+  supported by robust IP67 GPS hardware, all tracking on a single system that integrates
+  with AEM/AEMP and deliver real-time reports on engine hours, idle time, theft,
+  unauthorized use or maintenance alerts.
+</p>
+
+<p>
+  And because it's web-based, you have instant access to your entire fleet's operations using
+  a simple internet connection &ndash; no software to install, no upgrades, no problem!
+</p>
+
+<hr>
+
+<blockquote class="article_pull-quote">
+  “We’ve extended the life of our vehicles by at least an extra 50,000 miles (more than 30%), which means they’re more than paid for, and it’s just money in the bank.”
+  <cite>Equipment Superintendent, Atkinson Construction</cite>
+</blockquote>
+<p>
+  <iframe src="//fast.wistia.net/embed/iframe/f18uz78our?videoFoam=true"
+        allowtransparency="true"
+        frameborder="0"
+        scrolling="no"
+        class="wistia_embed"
+        name="wistia_embed"
+        allowfullscreen
+        mozallowfullscreen
+        webkitallowfullscreen
+        oallowfullscreen
+        msallowfullscreen
+        width="800"
+        height="450">
+</iframe>
+
+</p>
+
+
+<hr>
+
+<h3>Your eyes and ears, 24/7</h3>
+
+<ul class="article_short-list">
+  <li>
+    <h5>Asset utilization</h5>
+    <p>
+      Better visibility on how much, and where, your equipment is being used. Redeploy, relocate or realize unused assets.
+    </p>
+  </li>
+  <li>
+    <h5>Maintenance scheduling</h5>
+    <p>
+      Monitor engine hours and diagnostics more accurately to avoid over or under-maintaining equipment.
+    </p>
+  </li>
+  <li>
+    <h5>Unauthorized use</h5>
+    <p>
+      Monitor all use to cut down on unchargeable time, moonlighting or theft.
+    </p>
+  </li>
+  <li>
+    <h5>Warranty recovery</h5>
+    <p>
+      With accurate usage records you'll make better use of your warranty entitlements.
+    </p>
+  </li>
+  <li>
+    <h5>Accurate billing &amp; contract bidding</h5>
+    <p>
+      With verified GPS data, see exactly how much time is spent on a job, both equipment and personnel. Use accurate data to bid on new work more profitably.
+    </p>
+  </li>
+  <li>
+    <h5>Operator behavior</h5>
+    <p>
+      Use advanced diagnostic sensors to monitor usage that can shorten the life of your equipment.
+    </p>
+  </li>
+</ul>
+
+<hr>
+
+<h3>AEMP. All your equipment on one screen.</h3>
+
+<p>
+  You likely run different brands of equipment. You likely have to log in to different
+  systems for equipment reports. <a target="_blank" href="http://www.aemp.org/aemaemp-telematics-standard/">AEMP</a>
+  is a common standard for reporting supported by several manufacturers including
+  Caterpillar, Komatsu, John Deere and Volvo. It means you can monitor, manage and
+  report across a mixed equipment fleet with just one login, all on the Telogis platform.
+</p>
+
+
+
+    </div>
+    <div class="magazine-side-content sidebar tablet-up-only">
+        <div class="industries_clear">
+      <h3 class="mobile-only">Industry expert</h3>
+<div class="industries_industry-expert">
+  <div class="industries_graphic">
+    <div class="industries_headshot -jeff-cohen"></div>
+    <div class="industries_name">Jeff Cohen</div>
+    <div class="industries_position">VP of Asset &amp; Security Solutions at Telogis</div>
+  </div>
+  <div class="industries_text">
+    <h3 class="tablet-up-only">We know construction & heavy equipment</h3>
+    <p>
+        <span class="industries_name">Jeff Cohen</span> is VP of Asset &amp; Security Solutions at
+  Telogis. He is focused on driving adoption of off-road telematics across a number of
+  industries.
+
+    </p>
+  </div>
+</div>
+
+  </div>
+        <div class="sidebar_cta -quote">
+    <img alt="DeSilva Gates Construction" class="sidebar_cta-logo" src="/assets/images/case-studies/desilvagates-f77a5e43.jpg" />
+    <q>Telogis has allowed us to accurately pinpoint where an asset is and not wander around looking for it.</q>
+    <a class="default-button -full-width -outline" href="/news/case-studies/desilvagates">Watch Case Study</a>
+  </div>
+  <div class="sidebar_cta">
+    <h3>8 Benefits of Telematics</h3>
+    <p>
+      Construction fleets are making good use of telematics to improve the efficiency, safety and profitability of their operations. Learn the eight specific ways that telematics can help your construction business.
+    </p>
+    <a class="default-button -full-width -outline" href="/smarter-fleets/telematics-benefits-for-construction">Free ebook download</a>
+  </div>
+
+
+    </div>
+  </div>
+  <aside class="industries_aside-callouts sidebar mobile-only">
+    <div class="content-wrapper">
+        <div class="industries_clear">
+      <h3 class="mobile-only">Industry expert</h3>
+<div class="industries_industry-expert">
+  <div class="industries_graphic">
+    <div class="industries_headshot -jeff-cohen"></div>
+    <div class="industries_name">Jeff Cohen</div>
+    <div class="industries_position">VP of Asset &amp; Security Solutions at Telogis</div>
+  </div>
+  <div class="industries_text">
+    <h3 class="tablet-up-only">We know construction & heavy equipment</h3>
+    <p>
+        <span class="industries_name">Jeff Cohen</span> is VP of Asset &amp; Security Solutions at
+  Telogis. He is focused on driving adoption of off-road telematics across a number of
+  industries.
+
+    </p>
+  </div>
+</div>
+
+  </div>
+        <div class="sidebar_cta -quote">
+    <img alt="DeSilva Gates Construction" class="sidebar_cta-logo" src="/assets/images/case-studies/desilvagates-f77a5e43.jpg" />
+    <q>Telogis has allowed us to accurately pinpoint where an asset is and not wander around looking for it.</q>
+    <a class="default-button -full-width -outline" href="/news/case-studies/desilvagates">Watch Case Study</a>
+  </div>
+  <div class="sidebar_cta">
+    <h3>8 Benefits of Telematics</h3>
+    <p>
+      Construction fleets are making good use of telematics to improve the efficiency, safety and profitability of their operations. Learn the eight specific ways that telematics can help your construction business.
+    </p>
+    <a class="default-button -full-width -outline" href="/smarter-fleets/telematics-benefits-for-construction">Free ebook download</a>
+  </div>
+
+
+    </div>
+  </aside>
+
+  
+  <div class="content-wrapper industries_feature-table">
+    <ul>
+      <li class="icon-clipboard-game-plan">
+      <h4>Improve asset utilization</h4>
+      <p>
+        Know what assets you have, where they are and how effectively they're being used. Reassign assets or sell to release funds.
+      </p>
+    </li>
+
+      <li class="icon-oil-can">
+      <h4>Maintenance scheduling</h4>
+      <p>
+        Track vehicle maintenance to easily generate alerts for your own service department or local dealer. Improve the accuracy of your PM program to reduce costs.
+      </p>
+    </li>
+
+      <li class="icon-stopwatch">
+      <h4>Time on site</h4>
+      <p>
+        Measure actual time spent at a worksite. Improve the accuracy of job costing, productivity benchmarking and planning resource requirements.
+      </p>
+    </li>
+
+          <li class="icon-device-calculator">
+      <h4>Job costing tools</h4>
+      <p>
+        Factor in all associated costs when calculating routes – fixed and per-mile, labor, overtime, even accommodation for overnight trips.
+      </p>
+    </li>
+
+      <li class="icon-seatbelt">
+      <h4>Safe driving features</h4>
+      <p>
+        Telogis covers every aspect of driver safety from basic HOS compliance and vehicle maintenance to real-time coaching and speeding alerts.
+      </p>
+    </li>
+
+
+          <li class="icon-clipboard-survey">
+      <h4>Custom mobile forms</h4>
+      <p>
+        Build your own digital forms (DVIR, work orders etc.) that can be completed using a mobile device and replace hard-copy paper forms.
+      </p>
+    </li>
+
+          <li class="icon-device-sms">
+      <h4>Real-time alerts</h4>
+      <p>
+        Choose the condition that triggers the alert (speeding, idling, harsh braking, engine on, geofence violation etc.) and who receives it.
+      </p>
+    </li>
+
+           <li class="icon-chip">
+      <h4>Built-in OEM available</h4>
+      <p>
+         Available fully integrated with selected manufacturers. Get richer data with no aftermarket installation needed. Simply activate online.
+      </p>
+    </li>
+
+           <li class="icon-device-laptop">
+      <h4>AEMP compatible</h4>
+      <p>
+        Monitor, manage and report across a mixed equipment fleet with just one login. Includes manufacturers such as Caterpillar, John Deere, Komatsu and Volvo.
+      </p>
+    </li>
+
+           <li class="icon-calendar-stopwatch">
+      <h4>Accurate usage reports</h4>
+      <p>
+        Verified location data means you'll know exactly how much time is spent on a job, both equipment and personnel, which helps you bid on new work more profitably.
+      </p>
+    </li>
+
+    </ul>
+  </div>
+
+  <div class="content-wrapper industries_cta">
+    <h3>8 Benefits of telematics for equipment owners</h3>
+    <p>See how you can improve asset utilization by at least 10%. Also includes an introduction to AEMP. </p>
+    <a class="industries_button" href="/smarter-fleets/asset-tracking-ebook">Download free eBook</a>
+  </div>
+
+  <div class="content-wrapper two-column-layout">
+    <div class="column">
+      <h3>Improve worksite compliance</h3>
+      <p>
+        On any construction site there’ll be compliance issues you need to observe &ndash; restricted
+        access areas, noise ordinances and hours of operation. How can you make sure all your crews
+        are complying with work site policies, avoiding infringements, shut downs or the ire of the
+        neighbors? With Telogis you can easily monitor start and stop times, worker activity or
+        equipment use and receive instant alerts for any exceptions.
+      </p>
+    </div>
+    <div class="column">
+      <h3>Improve safety and productivity</h3>
+      <p>
+        Crews are often more productive, and more likely to follow safety procedures, when supervisors are on-site. With the Co-Location report
+        you’ll be able to monitor how much time supervisors are spending at the worksite, as
+        well as keeping an eye on excessive congregating.
+      </p>
+    </div>
+  </div>
+
+  <div class="content-wrapper two-column-layout">
+    <div class="column">
+      <h3>Secure sites and equipment</h3>
+      <p>
+        Worksites are always popular targets for thieves. With <abbr title="Global Positioning System">GPS</abbr>
+        asset location you can monitor any exceptions in real-time, whether it’s unauthorized use,
+        restricted access or a stolen asset. It doesn’t matter whether your equipment is old or
+        new, non-powered or even outside the cellular network, asset tracking can prevent misuse
+        and, in the event of theft, assets can be recovered faster, saving you downtime and
+        insurance costs.
+      </p>
+    </div>
+    <div class="column">
+      <div class="construction_article-photo-block">
+      </div>
+    </div>
+  </div>
+
+
+  <aside class="closing-cta">
+  <div class="content-wrapper">
+    <div class="closing-cta_graphic">
+      <div class="closing-cta_graphic-overlay">
+      </div>
+<a class="closing-cta_icon-play wistia-popover[height=450,playerColor=7b796a,width=800]" href="//fast.wistia.net/embed/iframe/zdgw907gs8?popover=true">        Play video
+</a>    </div>
+    <h1>Get started with a free demo</h1>
+    <p class="article_lead">and see how you can achieve positive ROI within 120 days</p>
+    <a class="default-button -large" href="/demo">Get my free demo</a>
+  </div>
+</aside>
+
+
+  </article>
+
+  
+
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="content-wrapper">
+<a class="site-footer_home" href="/">      <img alt="Telogis" src="/assets/images/logo-telogis-reversed-small-174cd841.svg" />
+</a>    <hr>
+  </div>
+  <div class="content-wrapper">
+
+    <div class="site-footer_blog-feed tablet-up-only">
+      <strong><a href="http://www.telogis.com/blog">From the blog</a></strong>
+      <ul>
+        <li>
+          <a class="site-footer_blog-article" target="_blank" href="http://www.telogis.com/blog/is-gps-fleet-tracking-enough/">Is a GPS fleet tracking solution enough to stay competitive?</a>
+        </li>
+
+        <li>
+          <a class="site-footer_blog-article" target="_blank" href="http://www.telogis.com/blog/5-ways-fleet-safety-profitable">5 ways to make your fleet safety program profitable</a>
+        </li>
+
+        <li>
+          <a class="site-footer_blog-article" target="_blank" href="http://www.telogis.com/blog/eld-final-rule-has-finally-arrived">ELD is now law: Electronic logging solutions</a>
+        </li>
+
+        <li>
+          <a class="site-footer_blog-article" target="_blank" href="http://www.telogis.com/blog/gps-tracking-report-speeding/">How does GPS tracking report on speeding?</a>
+        </li>
+
+      </ul>
+
+      <span class="site-footer_social-links">
+        Telogis on:
+        <a href="//facebook.com/telogis" target="_blank">Facebook</a>
+        <a href="//twitter.com/telogis" target="_blank">Twitter</a>
+        <a href="//www.linkedin.com/company/telogis" target="_blank">LinkedIn</a>
+        <a href="//plus.google.com/+Telogistelematics" target="_blank">Google+</a>
+      </span>
+    </div>
+    <div class="site-footer_contact">
+      <strong>Contact</strong>
+      <ul>
+        <li><a href="/contact-telogis">General inquiries</a></li>
+        <li><a href="/contact-telogis#support">Support</a></li>
+        <li><a href="http://careers.telogis.com">Careers</a></li>
+        <li class="tablet-up-only"><a href="https://payments.tprosecure.com/Telogis/Login.aspx">Payment portal</a></li>
+      </ul>
+      <a href="tel:18007872337" class="site-footer_tel-no" data-invoca="mw">1-800-787-2337</a>
+    </div>
+    <div class="site-footer_change-region">
+      <strong>Change region</strong>
+      <ul>
+        <li><a href="http://www.telogis.com.au" class="site-footer_au">Australia</a></li>
+        <li><a href="http://www.telogis.com.br" class="site-footer_br">Brazil</a></li>
+        <li><a href="http://www.telogis.mx" class="site-footer_mx">Mexico</a></li>
+        <li><a href="http://www.telogis.co.uk" class="site-footer_uk">United Kingdom</a></li>
+        <li><a href="//www.telogis.com" class="site-footer_us">United States</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-wrapper">
+    <hr>
+    <div class="site-footer_built-in">
+      <strong class="mobile-only">Telogis built-in</strong>
+      <strong class="tablet-up-only">Telogis comes built-in. <a href="/benefits/factory-fit-telematics-oem">Read more.</a></strong>
+      <ul class="site-footer_oem-logos">
+        <li>
+          <a class="site-footer_oem-ford" href="/ford">Ford</a>
+        </li>
+        <li>
+          <a class="site-footer_oem-gm" href="/gm">GM</a>
+        </li>
+        <li>
+          <a class="site-footer_oem-hino" href="/hino">Hino</a>
+        </li>
+        <li>
+          <a class="site-footer_oem-mack" href="/mack">Mack</a>
+        </li>
+        <li>
+          <a class="site-footer_oem-volvo" href="/volvo">Volvo</a>
+        </li>
+        <li>
+          <a class="site-footer_oem-freightliner" href="/press-releases/freightliner-trucks-to-offer-pre-wire-option-for-telogis-telematics-platform">Freightliner</a>
+        </li>
+        <li>
+          <a class="site-footer_oem-manitowoc" href="/press-releases/manitowoc-and-telogis-form-exclusive-global-partnership-to-launch-cranestar-express-powered-by-telogis-oem-telematics-platform">Manitowoc</a>
+        </li>
+        <li>
+          <a class="site-footer_oem-isuzu" href="/press-releases/isuzu-collaborate-develop-connected-vehicle-products-services">Isuzu</a>
+        </li>
+      </ul>
+      <div class="site-footer_social-links mobile-only">
+        <a href="//facebook.com/telogis" target="_blank">Facebook</a>
+        <a href="//twitter.com/telogis" target="_blank">Twitter</a>
+        <a href="//www.linkedin.com/company/telogis" target="_blank">LinkedIn</a>
+        <a href="//plus.google.com/+Telogistelematics" target="_blank">Google+</a>
+      </div>
+    </div>
+    <p class="site-footer_small-print">
+      Copyright &copy; 2016. All rights reserved.
+      <a href="/privacy-policy">Privacy policy</a>.<br>
+      <small>Telogis is a registered trademark of Telogis, Inc. All other registered
+        trademarks are the property of their respective owners.</small>
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+    <!--[if IE 8]></div><![endif]-->
+    <!--[if IE 9]></div><![endif]-->
+
+    <!-- Begin Call Tracking Code -->
+<script type="text/javascript" src="//pnapi0.invoca.net/0/pnapi_integration.js"></script>
+<script src="/assets/javascripts/vendor/invoca-solutions.min-cc26e934.js"></script>
+<script type="text/javascript">
+  (function (numberSelector) {
+    if ($(numberSelector).length >= 1) {
+
+      // Finds 'mcid' in the cookie if not in the query string
+      var findMcid = function() {
+        var invoca_session = InvocaSolutions.PNAPI.readCookie("invoca_session");
+        var invoca_mcid = null;
+        if (invoca_session) {
+          var json = JSON.parse(decodeURIComponent(invoca_session));
+          invoca_mcid = json.mcid || null;
+        }
+        return invoca_mcid;
+      }
+
+      // This is where we capture the referrer and current page
+      // It will attribute the media channel by "utm_source" or "orgd" if no source is found
+      var invocaParams = {
+        referrer    : document.referrer || "Direct",
+        currentPage : window.location.href,
+        utm_source  : InvocaSolutions.PNAPI.readUrl("utm_source") || "orgd",
+        mcid        : InvocaSolutions.PNAPI.readUrl("utm_source") || findMcid() || "orgd"
+      };
+
+      InvocaSolutions.PNAPI.integration({
+        networkId               : 938,
+        numberSelector          : numberSelector,
+        numberFormat            : 1,
+        campaignIdOverrideParam : "cid",
+        poolParams              : invocaParams,
+        params                  : ["utm_source", "utm_medium", "utm_term", "utm_campaign", "network", "device", "gclid", "referrer", "currentPage"]
+      });
+    }
+  })('[data-invoca]');
+</script>
+<!-- End Call Tracking Code -->
+
+    
+    <script type="text/javascript">
+  $(document).ready(function() {
+    var insertChat = function() {
+      var se = document.createElement('script');
+      se.type = 'text/javascript';
+      se.async = true;
+      se.src = '//commondatastorage.googleapis.com/code.snapengage.com/js/502e5259-5ba6-4d2f-b2e4-b1a9929bbb4d.js';
+
+      var done = false;
+
+      se.onload = se.onreadystatechange = function() {
+        if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')) {
+          done = true;
+
+          if(typeof(snapEngageLoaded) !== 'undefined') {
+            snapEngageLoaded.resolve();
+          }
+        }
+      };
+
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+    };
+
+    var EVENTS = $(document);
+
+    EVENTS.on("visitorInformation:country", function(event, country, client_ip) {
+      var enabledCountries = ["IE","GB",false,"SE","DK","IS","FI","FR","DE","AT","CH","IT","ES","PT","AE","QA","SA","ZA","NL","LU","BE","US","CA","BR","MX","CL","BO","CO","AU","NZ","PH"];
+      var blocked_ips = ["71.41.18.162","64.58.161.50"]
+
+      if((!country || blocked_ips.indexOf(client_ip) || enabledCountries.indexOf(country) >= 0) && !Cookies.get("customer")) {
+        insertChat();
+      }
+    });
+
+    var scheme = document.location.protocol;
+    var ipEndpoint = scheme + "//telogis-postmaster.herokuapp.com/visitor.json?callback=?";
+
+    $.ajax({ url: ipEndpoint, dataType: "jsonp" })
+      .done(function(response) {
+        EVENTS.trigger("visitorInformation:country", response.country, response.client_ip);
+      })
+      .fail(function() {
+        EVENTS.trigger("visitorInformation:country", null, null);
+      });
+  });
+</script>
+
+    <script>
+analytics.initialize({
+  "Google Analytics": {
+    trackingId: "UA-3470755-16",
+    enhancedLinkAttribution: true,
+    includeSearch: true
+  },
+  "Bing Ads": {
+    tagId: "4026058"
+  }
+});
+TelogisAnalytics.initialize();
+</script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+
+  (function() {
+    var hostname = window.location.hostname;
+    var domainFragment = hostname.substr(hostname.indexOf('.telogis')); // Should be, e.g., '.telogis.com' on the US site
+
+    _gaq.push(['_setAccount', 'UA-3470755-1']);
+    _gaq.push(['_setDomainName', domainFragment]);
+    _gaq.push(['_setAllowLinker', true]);
+
+    var trackPageview = function() {
+      _gaq.push(['_trackPageview']);
+    }
+
+    if(typeof deferredAnalytics !== "undefined") {
+      deferredAnalytics.promise().always(trackPageview);
+
+      // Resolve the deferred object once GA initializes
+      _gaq.push(function() {
+        deferredAnalytics.resolve();
+      });
+    } else {
+      trackPageview();
+    }
+
+    // Load the alternative ga.js script -- identical, but includes extra demographic information
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+    <script type="text/javascript">
+  var google_conversion_id = 1072590120,
+      google_custom_params = window.google_tag_params,
+      google_remarketing_only = true,
+      google_conversion_format = 3;
+</script>
+
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1072590120/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+<style type="text/css">
+  img[src*="//googleads.g.doubleclick.net/"] { position: fixed; }
+</style>
+
+    <script type="text/javascript">
+  piAId = '33192';
+  piCId = '1050';
+
+  (function() {
+    function async_load(){
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+      var c = document.getElementsByTagName('script')[0];
+      c.parentNode.insertBefore(s, c);
+    }
+
+    if(window.attachEvent) {
+      window.attachEvent('onload', async_load);
+    } else {
+      window.addEventListener('load', async_load, false);
+    }
+  })();
+</script>
+    <script type="text/javascript" language="javascript">llactid=14474</script>
+<script type="text/javascript">
+  (function() {
+    var httpURL = "http://t1.trackalyzer.com/trackalyze-nodoc.js",
+        httpsURL = "https://trackalyzer.com/trackalyze-secure-nodoc.js",
+        script = document.createElement('script'),
+        firstScript = document.getElementsByTagName('script')[0];
+
+    script.type = 'text/javascript';
+    script.src = ('https:' == document.location.protocol ? httpsURL : httpURL);
+    script.async = true;
+    firstScript.parentNode.insertBefore(script, firstScript);
+  })();
+</script>
+<style type="text/css">
+  img[src*="//t1.trackalyzer.com/"] { position: fixed; }
+</style>
+
+    <script src="//fast.wistia.com/assets/external/embed_shepherd-v1.js"></script>
+<script>
+  wistiaEmbeds.onFind(function(video){
+    var buckets, percentWatched, pushEvent, triggerPercent, _fn, _i, _len, _ref;
+    options = {};
+    buckets = [];
+    percentWatched = function() {
+      var bucket, watched, _i, _len;
+      watched = 0;
+      for (_i = 0, _len = buckets.length; _i < _len; _i++) {
+        bucket = buckets[_i];
+        if (bucket) {
+          watched += 1;
+        }
+      }
+      return watched / buckets.length;
+    };
+    video.ready(function() {
+      var i, s, _i, _j, _ref, _ref1, _results;
+      for (i = _i = 0, _ref = Math.floor(video.duration()); 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
+        buckets.push(false);
+      }
+      buckets[0] = true;
+      if (video.state() === 'playing') {
+        _results = [];
+        for (s = _j = 0, _ref1 = Math.floor(video.time()); 0 <= _ref1 ? _j <= _ref1 : _j >= _ref1; s = 0 <= _ref1 ? ++_j : --_j) {
+          _results.push(buckets[s] = true);
+        }
+        return _results;
+      }
+    });
+    video.bind("secondchange", function(s) {
+      return buckets[s] = true;
+    });
+    pushEvent = function(name, val) {
+      Visitor.trackEvent('Video', name, val);
+    };
+    _ref = [.25, .5, .75, 1];
+    _fn = function(triggerPercent) {
+      return video.bind("secondchange", function(s) {
+        var percent;
+        percent = percentWatched();
+        if (buckets.length > 0 && percent >= triggerPercent) {
+          pushEvent("" + (Math.round(triggerPercent * 100)) + " Watched", video.name());
+          video.trigger("pushedtogoogleanalytics", "percentwatched", triggerPercent);
+          return this.unbind;
+        }
+      });
+    };
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      triggerPercent = _ref[_i];
+      _fn(triggerPercent);
+    }
+    video.bind("secondchange", function(s) {
+      if (buckets.length > 0) {
+        return video.trigger("percentwatched", percentWatched());
+      } else {
+        return video.trigger("percentwatched", 0);
+      }
+    });
+    video.bind("play", function() {
+      pushEvent("Play", video.name());
+      video.trigger("pushedtogoogleanalytics", "play");
+      return this.unbind;
+    });
+    video.bind("conversion", function() {
+      pushEvent("Conversion", video.name());
+      video.trigger("pushedtogoogleanalytics", "conversion");
+      return this.unbind;
+    });
+    return {
+      buckets: buckets,
+      percentWatched: percentWatched,
+      pushEvent: pushEvent
+    };
+  });
+</script>
+
+    <script src="//fast.wistia.net/assets/external/E-v1.js"></script><script src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+
+    <script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "WebSite",
+  "name" : "Telogis",
+  "url" : "http://www.telogis.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "http://www.telogis.com/",
+          "name": "Home"
+        }
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "http://www.telogis.com/industries",
+          "name": "Industries"
+        }
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "http://www.telogis.com/industries/construction-heavy-equipment",
+          "name": "Construction & Heavy Equipment"
+        }
+      }
+  ]
+}
+</script>
+
+
+  </body>
+</html>

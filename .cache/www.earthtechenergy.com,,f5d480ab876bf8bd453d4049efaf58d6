@@ -1,0 +1,79 @@
+status: 200
+content-length: 1765
+content-location: http://www.earthtechenergy.com
+x-powered-by: PleskLin
+accept-ranges: bytes
+server: Apache
+last-modified: Sat, 16 Feb 2013 16:23:05 GMT
+connection: close
+etag: "662272-6e5-4d5d9e814402f"
+date: Mon, 17 Oct 2016 15:51:58 GMT
+content-type: text/html
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Earthtech Energy</title>
+
+<link href="ETE-large.css" rel="stylesheet" type="text/css">
+<link href="lightbox.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript" src="lightbox.js"></script>
+
+
+<script type="text/javascript" src="jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="bgstretcher.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+//  Initialize Backgound Stretcher
+$('BODY').bgStretcher({
+images: ['earthTech-bg-bales.jpg', 'earthTech-bg-cells.jpg', 'earthTech-bg-corn.jpg', 'earthTech-bg-wood.jpg'], imageWidth: 2000, imageHeight: 1390
+});
+});
+</script>
+
+<script type="text/javascript">
+if (document.images) {
+    img1 = new Image();
+    img1.src = "earthTech-bg-bales.jpg";
+	img2 = new Image();
+    img2.src = "earthTech-bg-cells.jpg";
+		img3 = new Image();
+    img3.src = "earthTech-bg-corn.jpg";
+		img4 = new Image();
+    img4.src = "earthTech-bg-wood.jpg";
+}
+// -->
+</script>
+
+
+
+</head>
+
+<body>
+
+<div id="header"><img src="images/EarthtechLogoBanner-Large.png" width="300" height="175"></div>
+
+<div id="about"> 
+<a href="images/ETE-about-list.png" rel="lightbox"><img src="images/ETE-about.png" width="300" height="25"></a>
+</div>
+
+<div id="content"><img src="images/ETE-taglinet.png" width="300" height="150"></div>
+
+<div id="services"> 
+<a href="images/ETE-services-list.png" rel="lightbox"><img src="images/ETE-services.png" width="300" height="25"></a>
+</div>
+
+<div id="contact">
+<a href="mailto:gregg_mast@earthtechenergy.com">
+<img src="images/ETE-contactpng.png" width="300" height="25"> </a> 
+</div>
+
+<div id="footer"><img src="images/ETE-footer.png"></div>
+
+</body>
+</html>

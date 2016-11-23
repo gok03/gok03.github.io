@@ -1,0 +1,798 @@
+status: 200
+content-length: 95063
+content-location: http://logisolve.com/positions.aspx
+x-powered-by: ASP.NET
+set-cookie: ASP.NET_SessionId=oi0wkaswlrxywzpyrdme313n; path=/; HttpOnly
+x-aspnet-version: 4.0.30319
+server: Microsoft-IIS/7.5
+cache-control: private
+date: Mon, 17 Oct 2016 16:49:27 GMT
+content-type: text/html; charset=utf-8
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	LogiSolve | IT Consulting | ePrescription | St. Paul, MN
+</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+	<meta name="verify-v1" content="OiyHkzFwWME0kKUliwVBUBlY5O+foB7b4EsJRuf/LD8=" /><meta name="Owner" content="LogiSolve" /><meta name="Location" content="Minneapolis, Minnesota" /><meta name="Description" content="IT Consulting and ePrescription. Experienced and Senior Project Managers, Business Analysts, and Microsoft .NET / J2EE Developers and Architects." /><meta name="Keywords" content="IT Consulting, Project Management, Business Analysis, Business Intelligence, Microsoft .NET Development, J2EE/Java Development, Testing, Quality Assurance, ePrescription, Healthcare Consulting" /><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><link href="Styles/logisolve.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/scripts/jquery/jquery.cycle.all.js"></script>
+    <script type="text/javascript" src="~/scripts/jquery/jquery.1.4.4.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js" type="text/javascript"></script>
+
+    <!-- GOOGLE ANALYTICS-->
+    <script type="text/javascript">
+        /*var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));*/
+    </script>
+    <script type="text/javascript">
+        /*try {
+        var pageTracker = _gat._getTracker("UA-7416449-1");
+        pageTracker._trackPageview();
+        } catch (err) { }*/
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-27420872-1', 'logisolve.com');
+        ga('send', 'pageview');
+
+</script>
+
+    <!--------------------->
+
+    <script type="text/javascript">
+        var timeout = 500;
+        var closetimer = 0;
+        var ddmenuitem = 0;
+
+        function jsddm_open() {
+            jsddm_canceltimer();
+            jsddm_close();
+            ddmenuitem = $(this).find('ul').css('visibility', 'visible');
+        }
+
+        function jsddm_close()
+        { if (ddmenuitem) ddmenuitem.css('visibility', 'hidden'); }
+
+        function jsddm_timer()
+        { closetimer = window.setTimeout(jsddm_close, timeout); }
+
+        function jsddm_canceltimer() {
+            if (closetimer) {
+                window.clearTimeout(closetimer);
+                closetimer = null;
+            }
+        }
+
+        $(document).ready(function () {
+            $('#homeMenu > li').bind('mouseover', jsddm_open)
+            $('#homeMenu > li').bind('mouseout', jsddm_timer)
+        });
+
+        $(document).ready(function () {
+            $('#companyMenu > li').bind('mouseover', jsddm_open)
+            $('#companyMenu > li').bind('mouseout', jsddm_timer)
+        });
+
+        $(document).ready(function () {
+            $('#practicesMenu > li').bind('mouseover', jsddm_open)
+            $('#practicesMenu > li').bind('mouseout', jsddm_timer)
+        });
+
+        $(document).ready(function () {
+            $('#industriesMenu > li').bind('mouseover', jsddm_open)
+            $('#industriesMenu > li').bind('mouseout', jsddm_timer)
+        });
+
+        $(document).ready(function () {
+            $('#clientsMenu > li').bind('mouseover', jsddm_open)
+            $('#clientsMenu > li').bind('mouseout', jsddm_timer)
+        });
+
+        $(document).ready(function () {
+            $('#newsMenu > li').bind('mouseover', jsddm_open)
+            $('#newsMenu > li').bind('mouseout', jsddm_timer)
+        });
+
+        $(document).ready(function () {
+            $('#careersMenu > li').bind('mouseover', jsddm_open)
+            $('#careersMenu > li').bind('mouseout', jsddm_timer)
+        });
+
+        document.onclick = jsddm_close;
+</script>
+
+    
+</head>
+<body onload="fixform();">
+    <form method="post" action="./positions.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg5OTM3OTE0Nw9kFgJmD2QWAgIDD2QWBGYPZBYEZg9kFgICCw9kFgICAQ8PFgQeCENzc0NsYXNzBQ9tZW51SXRlbTIwMTVfb24eBF8hU0ICAmRkAgIPZBYCAgsPZBYCZg8PFgIeCEltYWdlVXJsBRxpbWFnZXMvaW52X3RyaWFuZ2xlX2JsdWUuZ2lmZGQCAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCEBYgZg9kFhoCAQ8PFgQeC05hdmlnYXRlVXJsBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTI2MR4EVGV4dAUTRnJvbnQtZW5kIERldmVsb3BlcmRkAgIPFQEKMTEvMDcvMjAxNmQCAw8PFgIfBQURR29sZGVuIFZhbGxleSwgTU5kZAIFDw8WAh8EBRFBcHBseS5hc3B4P0lEPTI2MWRkAgcPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjYxZGQCCQ8PFgIfBQX0A0xvZ2lTb2x2ZSBpcyBpbiBuZWVkIG9mIGEgRnJvbnQtZW5kIERldmVsb3BlciBmb3Igb3VyIE1hcmtldGluZyBjbGllbnQgaW4gR29sZGVuIFZhbGxleSwgTU4uIFRoZSBpbml0aWFsIGNvbnRyYWN0IGlzIDYgbW9udGhzLiBUaGUgaWRlYWwgY2FuZGlkYXRlIHdpbGwgaGF2ZSBleHBlcmllbmNlIHdpdGggaG93IHRvIHN0cnVjdHVyZSBDU1MzIGFuZCBob3cgdG8gc2V0dXAvc3RydWN0dXJlIFNBU1MgaW4gYW4gYXBwLiAgSW4gYWRkaXRpb24sICBoYXZlIGEgc3Ryb25nIHVuZGVyc3RhbmRpbmcgb2YgQm9vdHN0cmFwIChib3RoIHRoZSBHcmlkIGFuZCB0aGUgd2lkZ2V0cykgYW5kIGhvdyB0aGF0IGFwcGxpZXMgdG8gcmVzcG9uc2l2ZSBkZXNpZ24uIE11c3QgYmUgbG9jYWwgdG8gTU4sIG9uIG91ciBXMiwgYW5kIG9wZW4gdG8gY29udHJhY3QgdG8gaGlyZS4gIE5vIHRoaXJkIHBhcnRpZXMgcGxlYXNlLg0KDQpTa2lsbHMgRGVzaXJlZDoNCg0KUGhvdG9zaG9wDQpDU1MzDQpCb290ZGQCCw8PFgIfBAUaUG9zaXRpb25EZXRhaWwuYXNweD9JRD0yNjFkZAINDw8WAh8FBQYxMDAyNjFkZAIPDw8WAh8FBQpDb25zdWx0aW5nZGQCEQ8PFgIfBQUQV2ViIFRlY2hub2xvZ2llc2RkAhMPZBYCAgEPDxYCHwUFCTYrIG1vbnRoc2RkAhUPZBYCAgEPDxYCHwUFCU1hcmtldGluZ2RkAhcPDxYCHwUFAzI2MWRkAgEPZBYaAgEPDxYEHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjYwHwUFDlFBLUFuYWx5c3QvU1FMZGQCAg8VAQoxMC8zMS8yMDE2ZAIDDw8WAh8FBRFHb2xkZW4gVmFsbGV5LCBNTmRkAgUPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjYwZGQCBw8PFgIfBAURQXBwbHkuYXNweD9JRD0yNjBkZAIJDw8WAh8FBfQDTG9naVNvbHZlIGlzIGluIG5lZWQgb2YgYSBTci4gUUEgQW5hbHlzdCBmb3IgYSA2KyBtb250aCBjb250cmFjdCB3aXRoIG91ciBJbnN1cmFuY2UgY2xpZW50IGluIEdvbGRlbiBWYWxsZXksIE1OLiBNdXN0IGhhdmUgZXhwZXJpZW5jZSBpbiB3cml0aW5nIFNRTCBRdWVyaWVzIGFuZCB3b3JraW5nIHdpdGggU1FMIFNlcnZlciBhbmQgRGF0YSBXYXJlaG91c2VzLiBJbiBhZGRpdGlvbiwgNSsgeWVhcnM6IFNETEMgKHdhdGVyZmFsbCBhbmQvb3IgYWdpbGUpIGFuZCBUZXN0aW5nIE1ldGhvZG9sb2dpZXM7IFFBIG1ldGhvZG9sb2dpZXMgZm9yIGF1dGhvcmluZyBhbmQgZXhlY3V0aW5nIHRlc3Qgc3VpdGVzIGZyb20gYnVzaW5lc3MgYW5kIGZ1bmN0aW9uYWwgcmVxdWlyZW1lbnRzLiBBcyB3ZWxsIGFzLCA0LTUgeWVhcnMgb2YgZXhwZXJpZW5jZSBwcmVmZXJyZWQ6IFF1YWxpdHkgQ2VudGVyLCBRVFAgJiBSYXRpb25hbCBzdWl0ZS4gIE11c3QgYmUgbG9jYWwgdG8gTU4gdG8gYmUgY29kZAILDw8WAh8EBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTI2MGRkAg0PDxYCHwUFBjEwMDI2MGRkAg8PDxYCHwUFCkNvbnN1bHRpbmdkZAIRDw8WAh8FBRtRdWFsaXR5IEFzc3VyYW5jZSAmIFRlc3RpbmdkZAITD2QWAgIBDw8WAh8FBQk2KyBtb250aHNkZAIVD2QWAgIBDw8WAh8FBQlJbnN1cmFuY2VkZAIXDw8WAh8FBQMyNjBkZAICD2QWGgIBDw8WBB8EBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTI1OR8FBRpUZWNobmljYWwgQnVzaW5lc3MgQW5hbHlzdGRkAgIPFQEKMTAvMjQvMjAxNmQCAw8PFgIfBQURR29sZGVuIFZhbGxleSwgTU5kZAIFDw8WAh8EBRFBcHBseS5hc3B4P0lEPTI1OWRkAgcPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjU5ZGQCCQ8PFgIfBQX0A0xvZ2lTb2x2ZSBpcyBpbiBuZWVkIG9mIGEgVGVjaG5pY2FsIEJ1c2luZXNzIEFuYWx5c3QgZm9yIGEgNisgbW9udGggY29udHJhY3QgYXQgb3VyIEluc3VyYW5jZSBjbGllbnQgaW4gR29sZGVuIFZhbGxleSwgTU4uICBUaGUgaWRlYWwgY2FuZGlkYXRlIHdpbGwgaGF2ZSA4KyB5ZWFycyBvZiBUZWNobmljYWwgQnVzaW5lc3MgQW5hbHlzdCBleHBlcmllbmNlIHdvcmtpbmcgd2l0aCBJbmZvcm1hdGlvbiBUZWNobm9sb2d5IGRlcGFydG1lbnRzLiBJbiBhZGRpdGlvbjoNCg0KKiBNdXN0IGJlIHdlbGwgdmVyc2VkIGluIE9mZmljZSBzb2Z0d2FyZSBpbmNsdWRpbmcgTWljcm9zb2Z0IFByb2plY3QgYW5kIFZpc2lvDQoNCiogTXVzdCBwb3NzZXNzIHBsYW5uaW5nIGFuZCBwcm9qZWN0IG1hbmFnZW1lbnQgc2tpbGxzIHJlcXVpcmVkIHRvIGRldmVsb3AgZGVsaXZlcnkgcGxhbiBhbmQgZXhlY3V0aW9uIHNjaGVkdWxlDQoNCiogTXVzdCBwb3NzZXNzIGV4cGVyaWVuY2UgaWRlbnRpZnlpZGQCCw8PFgIfBAUaUG9zaXRpb25EZXRhaWwuYXNweD9JRD0yNTlkZAINDw8WAh8FBQYxMDAyNTlkZAIPDw8WAh8FBQpDb25zdWx0aW5nZGQCEQ8PFgIfBQURQnVzaW5lc3MgQW5hbHlzaXNkZAITD2QWAgIBDw8WAh8FBQk2KyBtb250aHNkZAIVD2QWAgIBDw8WAh8FBQlJbnN1cmFuY2VkZAIXDw8WAh8FBQMyNTlkZAIDD2QWGgIBDw8WBB8EBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTI1OB8FBRRKci4gQnVzaW5lc3MgQW5hbHlzdGRkAgIPFQEKMTAvMjQvMjAxNmQCAw8PFgIfBQUMU3QuIFBhdWwsIE1OZGQCBQ8PFgIfBAURQXBwbHkuYXNweD9JRD0yNThkZAIHDw8WAh8EBRFBcHBseS5hc3B4P0lEPTI1OGRkAgkPDxYCHwUF6ANMb2dpU29sdmUgaXMgaW4gbmVlZCBvZiBhIGludGVybWVkaWF0ZSBCdXNpbmVzcyBBbmFseXN0IGZvciBhIDYrIG1vbnRoIGNvbnRyYWN0IHRvIGhpcmUgd2l0aCBvdXIgRmluYW5jaWFsIGNsaWVudCBpbiBTdC4gUGF1bCwgTU4uIFRoZSBpZGVhbCBjYW5kaWRhdGUgd2lsbCBoYXZlIDMtNSsgeWVhcnMgb2YgQnVzaW5lc3MgQW5hbHlzdCBleHBlcmllbmNlLiBNdXN0IGhhdmUgZXhwZXJpZW5jZSB3aXRoIGxlYWRpbmcgYW5kIGVuY291cmFnaW5nIG91ciBpbnRlcm5hbCBhbmQgZXh0ZXJuYWwgcGFydG5lcnMgdG8gZGVmaW5lIHJlcXVpcmVtZW50cyBhbmQgc29sdXRpb25zIHRoYXQgd2lsbCBpbXByb3ZlIHByb2R1Y3Rpdml0eSwgYWNjdXJhY3ksIGFuZCB0aGUgY2xpZW50L2N1c3RvbWVyIGV4cGVyaWVuY2UgKGkuZS4gY3JlYXRpdmUgdGhpbmtpbmcgYmV5b25kIHRoZSBzdGF0dXMgcXVvKS4gTXVzdCBiZSBsb2NhbCB0byBNTiB0byBiZSBjb25zaWRlcmVkLmRkAgsPDxYCHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjU4ZGQCDQ8PFgIfBQUGMTAwMjU4ZGQCDw8PFgIfBQUKQ29uc3VsdGluZ2RkAhEPDxYCHwUFEUJ1c2luZXNzIEFuYWx5c2lzZGQCEw9kFgICAQ8PFgIfBQUKMTIrIG1vbnRoc2RkAhUPZBYCAgEPDxYCHwUFCUZpbmFuY2lhbGRkAhcPDxYCHwUFAzI1OGRkAgQPZBYaAgEPDxYEHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjU3HwUFFVNBUyBBbmFseXN0L0RldmVsb3BlcmRkAgIPFQEKMTAvMjQvMjAxNmQCAw8PFgIfBQUJRWFnYW4sIE1OZGQCBQ8PFgIfBAURQXBwbHkuYXNweD9JRD0yNTdkZAIHDw8WAh8EBRFBcHBseS5hc3B4P0lEPTI1N2RkAgkPDxYCHwUF9ANMb2dpU29sdmUgaXMgaW4gbmVlZCBvZiBhIFNBUyBBbmFseXN0L0RldmVsb3BlciBmb3IgYSAzKyBtb250aCBjb250cmFjdCB3aXRoIG91ciBIZWFsdGhjYXJlIGNsaWVudCBpbiBFYWdhbiwgTU4uIE91ciBjbGllbnQgaXMgbG9va2luZyBmb3IgYSBTZW5pb3IgQnVzaW5lc3MgU3lzdGVtcyBIZWFsdGhjYXJlIEFuYWx5c3Qgd2l0aCBTQVMgZXhwZXJpZW5jZS5UaGlzIHJlc291cmNlIHdpbGwgYmUgd29ya2luZyB3aXRoaW4gdGhlIEhlYWx0aCBFY29ub21pY3MgYW5kIEFuYWx5c2lzIG9mIGNvc3Qgb2YgY2FyZSBkZXBhcnRtZW50LiAgVGhpcyByZXNvdXJjZSBzaG91bGQgaGF2ZSBoZWFsdGhjYXJlIGV4cGVyaWVuY2UgKHBheWVyIHNpZGUuLi5pbiB0aGlzIGNhc2UsIHNwZWNpZmljYWxseSBwcm92aWRlciBleHBlcmllbmNlIGlzIGlkZWFsKS4NCg0KSWRlYWwgcmVzb3VyY2UgaXMgaGlnaGx5IGFuYWx5dGljYWwsIGNhbiBhc2sgZ29vZCBxdWVzdGlvbnMsIGFudGljaXBhdGUgbmRkAgsPDxYCHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjU3ZGQCDQ8PFgIfBQUGMTAwMjU3ZGQCDw8PFgIfBQUKQ29uc3VsdGluZ2RkAhEPDxYCHwUFJ0RhdGEgTWFuYWdlbWVudCAmIEJ1c2luZXNzIEludGVsbGlnZW5jZWRkAhMPZBYCAgEPDxYCHwUFCTMrIG1vbnRoc2RkAhUPZBYCAgEPDxYCHwUFCUhlYXRoY2FyZWRkAhcPDxYCHwUFAzI1N2RkAgUPZBYaAgEPDxYEHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjQ1HwUFHUFwcGxpY2F0aW9uIFN5c3RlbXMgQXJjaGl0ZWN0ZGQCAg8VAQoxMC8wMS8yMDE3ZAIDDw8WAh8FBQxQbHltb3V0aCwgTU5kZAIFDw8WAh8EBRFBcHBseS5hc3B4P0lEPTI0NWRkAgcPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjQ1ZGQCCQ8PFgIfBQWdA0xvZ2lTb2x2ZSAgaXMgaW4gbmVlZCBvZiBhIEFwcGxpY2F0aW9uIFN5c3RlbXMgQXJjaGl0ZWN0IGZvciBhIDEyKyBtb250aCBjb250cmFjdCB0byBoaXJlIHBvc2l0aW9uIHdpdGggIG91ciBGaW5hbmNlIGNsaWVudCBpbiBQbHltb3V0aCwgTU4uIFRoZSBpZGVhbCBjYW5kaWRhdGUgd2lsbCBoYXZlICBFbnRlcnByaXNlIGFuZCBPcmFjbGUgcGxhdGZvcm0gZXhwZXJpZW5jZS4gIFJlc3BvbnNpYmxlIGZvciB0cmFuc2xhdGluZyBidXNpbmVzcyBuZWVkcyBpbnRvIHRlY2huaWNhbCBzb2x1dGlvbnMsIGFuZCBkZWZpbmluZyBzb2x1dGlvbnMgdG8gcHJvYmxlbXMgdGhyb3VnaCByZWFzb25lZCBhcHBsaWNhdGlvbiBvZiBpbmZvcm1hdGlvbiB0ZWNobm9sb2d5LiAgTXVzdCBiZSBsb2NhbCB0byBNTiB0byBiZSBjb25zaWRlcmVkZGQCCw8PFgIfBAUaUG9zaXRpb25EZXRhaWwuYXNweD9JRD0yNDVkZAINDw8WAh8FBQYxMDAyNDVkZAIPDw8WAh8FBQpDb25zdWx0aW5nZGQCEQ8PFgIfBQUFT3RoZXJkZAITD2QWAgIBDw8WAh8FBQoxMisgbW9udGhzZGQCFQ9kFgICAQ8PFgIfBQUHRmluYW5jZWRkAhcPDxYCHwUFAzI0NWRkAgYPZBYaAgEPDxYEHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjQyHwUFE0lUIFNvdXJjaW5nIEFuYWx5c3RkZAICDxUBCjEwLzAxLzIwMTdkAgMPDxYCHwUFDFN0LiBQYXVsLCBNTmRkAgUPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjQyZGQCBw8PFgIfBAURQXBwbHkuYXNweD9JRD0yNDJkZAIJDw8WAh8FBfwDTG9naVNvbHZlIGlzIGluIG5lZWQgb2YgYSBJVCBTb3VyY2luZyBBbmFseXN0IGZvciBhIDEyKyBtb250aCBjb250cmFjdCB3aXRoIG91ciBNYW51ZmFjdHVyaW5nIGNsaWVudCBpbiBTdC4gUGF1bCwgTU4uICBUaGUgaWRlYWwgY2FuZGlkYXRlIHdpbGwgaGF2ZSBleHBlcmllbmNlIHdpdGggbWFuYWdpbmcgSVQgY29udHJhY3RzLVN0cm9uZyBhYmlsaXR5IHRvIG5lZ290aWF0ZSwgZHJhZnQsIGFuZCBlZGl0LiBNdXN0IGhhdmUgbGVhZGVyc2hpcCBxdWFsaXRpZXMsIFBNIGNhcGFiaWxpdGllcyBhbmQgZm9yd2FyZCB0aGlua2luZy9iaWcgcGljdHVyZSBtaW5kc2V0Lg0KDQogSW4gYWRkaXRpb246DQrigKIgQWJpbGl0eSB0byBkZXZlbG9wIGNvbW1vZGl0eSBzdHJhdGVnaWVzDQrigKIgTWFuYWdlbWVudCBvZiBjb21wZXRpdGl2ZSBJVCBzb3VyY2luZyBwcmFjdGljZXMgKGUuZy4gUkZQ4oCZcykNCuKAoiBBYmlsaXR5IHRvIGNvbW11bmljYXRlIGFuZCBjb2xsYWJvcmF0ZSBhY3Jvc3MgYWxsIGRkAgsPDxYCHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjQyZGQCDQ8PFgIfBQUGMTAwMjQyZGQCDw8PFgIfBQUKQ29uc3VsdGluZ2RkAhEPDxYCHwUFEUJ1c2luZXNzIEFuYWx5c2lzZGQCEw9kFgICAQ8PFgIfBQUKMTIrIG1vbnRoc2RkAhUPZBYCAgEPDxYCHwUFDU1hbnVmYWN0dXJpbmdkZAIXDw8WAh8FBQMyNDJkZAIHD2QWGgIBDw8WBB8EBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTI0MR8FBSxQcmluY2lwYWwgT3JhY2xlIEFnaWxlIFBMTSBTdXBwb3J0L0RldmVsb3BlcmRkAgIPFQEKMTAvMDEvMjAxN2QCAw8PFgIfBQUPTW91bmRzIFZpZXcsIE1OZGQCBQ8PFgIfBAURQXBwbHkuYXNweD9JRD0yNDFkZAIHDw8WAh8EBRFBcHBseS5hc3B4P0lEPTI0MWRkAgkPDxYCHwUF4AFMb2dpU29sdmUgaXMgaW4gbmVlZCBvZiBhIE9yYWNsZSBBZ2lsZSBQTE0gU3VwcG9ydC9EZXZlbG9wZXIgZm9yIGEgMTIrIG1vbnRoIGNvbnRyYWN0IHdpdGggb3VyIE1lZGljYWwgRGV2aWNlIGNvbXBhbnkgaW4gTW91bmRzIFZpZXcsIE1OLiAgQ2FuZGlkYXRlcyBjYW4gYmUgbG9jYWwgb3Igbm9uLWxvY2FsIHRvIE1OLiAgTXVzdCBiZSBXMiBhbmQgb3BlbiB0byBjb250cmFjdCB0byBoaXJlLmRkAgsPDxYCHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjQxZGQCDQ8PFgIfBQUGMTAwMjQxZGQCDw8PFgIfBQUKQ29uc3VsdGluZ2RkAhEPDxYCHwUFBU90aGVyZGQCEw9kFgICAQ8PFgIfBQUKMTIrIG1vbnRoc2RkAhUPZBYCAgEPDxYCHwUFDk1lZGljYWwgRGV2aWNlZGQCFw8PFgIfBQUDMjQxZGQCCA9kFhoCAQ8PFgQfBAUaUG9zaXRpb25EZXRhaWwuYXNweD9JRD0yMzgfBQUUSnIuIEJ1c2luZXNzIEFuYWx5c3RkZAICDxUBCjEwLzAxLzIwMTdkAgMPDxYCHwUFD01pbm5lYXBvbGlzLCBNTmRkAgUPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjM4ZGQCBw8PFgIfBAURQXBwbHkuYXNweD9JRD0yMzhkZAIJDw8WAh8FBfQDTG9naVNvbHZlIGlzIGluIG5lZWQgb2YgYSBKci4gQnVzaW5lc3MgQW5hbHlzdCBmb3IgYSAxMisgbW9udGggY29udHJhY3Qgb3Bwb3J0dW5pdHkgd2l0aCBvdXIgTGFyZ2UgSGVhbHRoY2FyZSBjbGllbnQgaW4gTWlubmVhcG9saXMsIE1OLiAgVGhlIGlkZWFsIGNhbmRpZGF0ZSB3aWxsIGhhdmUgMS0zIHllYXJzIG9mIEJ1c2luZXNzIEFuYWx5c3QgZXhwZXJpZW5jZS4gTXVzdCBiZSBsb2NhbCB0byBNTiB0byBiZSBjb25zaWRlcmVkLiAgR3JlYXQgb3Bwb3J0dW5pdHkgZm9yIGEgQ29sbGVnZSBncmFkdWF0ZSBPUiBzb21lb25lIGxvb2tpbmcgdG8gZW5oYW5jZSB0aGVpciBCdXNpbmVzcyBBbmFseXN0IHNraWxscyENCg0KQWRkaXRpb25hbCBEZXRhaWxzOg0KDQpNdXN0IGhhdmUgc3Ryb25nIGN1c3RvbWVyIHNlcnZpY2UsIGxlYWRlcnNoaXAsIGZhY2lsaXRhdGlvbiwgb3JnYW5pemF0aW9uLCBwcmlvcml0aXphdGlvbiwgYW5hbHl0aWNhbCwgYW5kIGNvbW11bmljYXRpb24gc2tkZAILDw8WAh8EBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTIzOGRkAg0PDxYCHwUFBjEwMDIzOGRkAg8PDxYCHwUFCkNvbnN1bHRpbmdkZAIRDw8WAh8FBRFCdXNpbmVzcyBBbmFseXNpc2RkAhMPZBYCAgEPDxYCHwUFCjEyKyBtb250aHNkZAIVD2QWAgIBDw8WAh8FBQpIZWFsdGhjYXJlZGQCFw8PFgIfBQUDMjM4ZGQCCQ9kFhoCAQ8PFgQfBAUaUG9zaXRpb25EZXRhaWwuYXNweD9JRD0yMzcfBQUUU2VydmljZW5vdyBEZXZlbG9wZXJkZAICDxUBCjA5LzAxLzIwMTdkAgMPDxYCHwUFD01vdW5kcyBWaWV3LCBNTmRkAgUPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjM3ZGQCBw8PFgIfBAURQXBwbHkuYXNweD9JRD0yMzdkZAIJDw8WAh8FBfYDTG9naVNvbHZlIGlzIGxvb2tpbmcgZm9yIGEgU2VydmljZU5vdyBEZXZlbG9wZXIgZm9yIGEgMTIrIG1vbnRoIGNvbnRyYWN0IHdpdGggb3VyIE1lZGljYWwgRGV2aWNlIGNvbXBhbnkgaW4gTW91bmRzIFZpZXcsIE1OLiBUaGUgaWRlYWwgY2FuZGlkYXRlIHdpbGwgaGF2ZSA2KyB5ZWFycyBvZiBleHBlcmllbmNlIHdpdGggU2VydmljZU5vdyBhcHBsaWNhdGlvbiBleHBlcmllbmNlLWFkbWluIGV4cGVyaWVuY2UvZGV2ZWxvcGVyIGV4cGVyaWVuY2UuIE9wZW4gdG8gTG9jYWwgY2FuZGlkYXRlIHRvIE1OIG9yIG5vbi1sb2NhbC4gDQoNCg0KUG9zaXRpb24gRGV0YWlsczoNCuKAoglFeHBlcmllbmNlIGluIGltcGxlbWVudGluZy8gYWRtaW5pc3RlcmluZyBvbmUgb2YgdGhlIGZvbGxvd2luZyBUb29sczogDQpvCVNlcnZpY2UgTm93LUlUU00gYW5kIGV4cGVyaWVuY2Ugd2l0aCBhdCBsZWFzdCBvbmUgb3IgbW9yZSBNb2R1bGVzOiBIUiwgU2VydmljZSBDYXRhbG9nLCBBc3NldCBNYW5hZ2RkAgsPDxYCHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjM3ZGQCDQ8PFgIfBQUGMTAwMjM3ZGQCDw8PFgIfBQUKQ29uc3VsdGluZ2RkAhEPDxYCHwUFBU90aGVyZGQCEw9kFgICAQ8PFgIfBQUKMTIrIG1vbnRoc2RkAhUPZBYCAgEPDxYCHwUFDk1lZGljYWwgRGV2aWNlZGQCFw8PFgIfBQUDMjM3ZGQCCg9kFhoCAQ8PFgQfBAUaUG9zaXRpb25EZXRhaWwuYXNweD9JRD0yMzYfBQURU2VjdXJpdHkgRW5naW5lZXJkZAICDxUBCjA5LzAxLzIwMTdkAgMPDxYCHwUFD01pbm5lYXBvbGlzLCBNTmRkAgUPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjM2ZGQCBw8PFgIfBAURQXBwbHkuYXNweD9JRD0yMzZkZAIJDw8WAh8FBfcDTG9naVNvbHZlIGlzIGluIG5lZWQgb2YgYSBTci4gU2VjdXJpdHkgRW5naW5lZXIgZm9yIGEgMysgbW9udGggY29udHJhY3QgdG8gaGlyZSBvcHBvcnR1bml0eSB3aXRoIG91ciBIZWFsdGhjYXJlIGNsaWVudCBpbiBNaW5uZWFwb2xpcywgTU4uIFRoZSBpZGVhbCBjYW5kaWRhdGUgd2lsbCBoYXZlOg0KDQrCtyAgICAxMCsgeWVhcnMgZXhwZXJpZW5jZSBpbnN0YWxsaW5nLCBtb25pdG9yaW5nIGFuZCBtYWludGFpbmluZyBpbmZvcm1hdGlvbiBzZWN1cml0eSBzb2x1dGlvbnMgaW5jbHVkaW5nIHBvbGljeSBkZXNpZ24gYW5kIGltcGxlbWVudGF0aW9uLiANCsK3ICAgIDcrIHllYXJzIGV4cGVyaWVuY2UgZXZhbHVhdGluZyBhbmQgZGVzaWduaW5nIHNlY3VyaXR5IHNvbHV0aW9ucyBmb3IgdGVjaG5vbG9neSBwcm9qZWN0cy4NCsK3ICAgIERlbW9uc3RyYXRlZCB1bmRlcnN0YW5kaW5nIG9mIHNlY3VyaXR5IHJlbGF0ZWQgdGVjaG5vbG9naWVzIGFuZCBwcmFjdGljZXMsIGluY2x1ZGluZzpkZAILDw8WAh8EBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTIzNmRkAg0PDxYCHwUFBjEwMDIzNmRkAg8PDxYCHwUFCkNvbnN1bHRpbmdkZAIRDw8WAh8FBQhTZWN1cml0eWRkAhMPZBYCAgEPDxYCHwUFCTMrIG1vbnRoc2RkAhUPZBYCAgEPDxYCHwUFCkhlYWx0aGNhcmVkZAIXDw8WAh8FBQMyMzZkZAILD2QWGgIBDw8WBB8EBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTIzNR8FBRtCdXNpbmVzcyBBbmFseXN0LVNlcnZpY2Vub3dkZAICDxUBCjA5LzAxLzIwMTdkAgMPDxYCHwUFD01pbm5lYXBvbGlzLCBNTmRkAgUPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjM1ZGQCBw8PFgIfBAURQXBwbHkuYXNweD9JRD0yMzVkZAIJDw8WAh8FBfQDTG9naVNvbHZlIGlzIGluIG5lZWQgb2YgYSBCdXNpbmVzcyBBbmFseXN0IHdpdGggU2VydmljZW5vdyBleHBlcmllbmNlLiBUaGlzIGlzIGZvciBhIDEyKyBtb250aCBjb250cmFjdCB3aXRoIG91ciBIZWFsdGhjYXJlIGNsaWVudCBpbiBNTi4gIFRoZSBpZGVhbCBjYW5kaWRhdGUgd2lsbCBiZSBsb2NhbCB0byBNTi4gDQoNCg0KTXVzdCBoYXZlIGV4cGVydCBrbm93bGVkZ2Ugb2YgZGVza3RvcCBQQyBhbmQgcGVyaXBoZXJhbHMgc3VwcG9ydCwgc2NyaXB0aW5nIGV4cGVyaWVuY2UuICBJbiBhZGRpdGlvbiwgIDUgeWVhcnMgb2YgZGVtb25zdHJhdGVkIGV4cGVyaWVuY2UgaW4gYnVzaW5lc3MgYW5kIGZ1bmN0aW9uYWwgcmVxdWlyZW1lbnRzIGVsaWNpdGF0aW9uLCB0cmFuc2xhdGlvbiBhbmQgZG9jdW1lbnRhdGlvbi4gSWRlYWxseSwgIDMgeWVhcnMgb2YgZGVtb25zdHJhdGVkIGV4cGVyaWVuY2UgaW4gYnVpbGRpbmcgcmVxdWlyZW1lbnRzIGZvciB0aGUgU2VydmljZU5vdyBwbGFkZAILDw8WAh8EBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTIzNWRkAg0PDxYCHwUFBjEwMDIzNWRkAg8PDxYCHwUFCkNvbnN1bHRpbmdkZAIRDw8WAh8FBRFCdXNpbmVzcyBBbmFseXNpc2RkAhMPZBYCAgEPDxYCHwUFCjEyKyBtb250aHNkZAIVD2QWAgIBDw8WAh8FBQpIZWFsdGhjYXJlZGQCFw8PFgIfBQUDMjM1ZGQCDA9kFhoCAQ8PFgQfBAUaUG9zaXRpb25EZXRhaWwuYXNweD9JRD0yMzMfBQUdUHJvamVjdCBDb29yZGluYXRvci1UZWNobmljYWxkZAICDxUBCjEwLzAxLzIwMTdkAgMPDxYCHwUFCUVhZ2FuLCBNTmRkAgUPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjMzZGQCBw8PFgIfBAURQXBwbHkuYXNweD9JRD0yMzNkZAIJDw8WAh8FBdoDTG9naVNvbHZlIGlzIG5lZWQgb2YgYSBUZWNobmljYWwgUHJvamVjdCBDb29yZGluYXRvciBmb3Igb3VyIEhlYWx0aGNhcmUgY2xpZW50IGluIEVhZ2FuLCBNTi4gIFRoaXMgaXMgZm9yIGEgMTIrIG1vbnRoIGNvbnRyYWN0LiBUaGUgaWRlYWwgcGVyc29uIHdpbGwgaGF2ZSBsYXJnZS1zY2FsZSBwcm9ncmFtIGV4cGVyaWVuY2UuICBJbiBhZGRpdGlvbiwgc2hvdWxkIGJlIHJlYXNvbmFibGUgdGVjaG5pY2FsIHNvIHRoZXkgY2FuIHNwZWFrIHByb2Zlc3Npb25hbGx5IHdpdGggZW5kIHVzZXJzLgpUaGUgcGVyc29uIHdpbGwgYmUgd29ya2luZyB3aXRoIHNlY3VyaXR5IGZpcnN0IHRpbWUgbG9nIGluIHNlc3Npb24gY29vcmRpbmF0aW9uLCBhbmQgZmFjaWxpdGF0aW9uIHdpdGggZW5kIHVzZXJzLCBhbmQgYmFzaWMgbWVldGluZyBzY2hlZHVsaW5nLiAgTXVzdCBiZSBhYmxlIHRvIHdvcmsgaW4gYSBmYXN0LXBhY2UgZW52aXJvbm1lbnQuZGQCCw8PFgIfBAUaUG9zaXRpb25EZXRhaWwuYXNweD9JRD0yMzNkZAINDw8WAh8FBQYxMDAyMzNkZAIPDw8WAh8FBQpDb25zdWx0aW5nZGQCEQ8PFgIfBQUUUHJvamVjdCBDb29yZGluYXRpb25kZAITD2QWAgIBDw8WAh8FBQoxMisgbW9udGhzZGQCFQ9kFgICAQ8PFgIfBQUKSGVhbHRoY2FyZWRkAhcPDxYCHwUFAzIzM2RkAg0PZBYaAgEPDxYEHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjMyHwUFE1Byb2plY3QgQ29vcmRpbmF0b3JkZAICDxUBCjA5LzAxLzIwMTdkAgMPDxYCHwUFCUVhZ2FuLCBNTmRkAgUPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjMyZGQCBw8PFgIfBAURQXBwbHkuYXNweD9JRD0yMzJkZAIJDw8WAh8FBYIDTG9naVNvbHZlIGlzIGluIG5lZWQgb2YgYSBTci4gUHJvamVjdCBDb29yZGluYXRvciBmb3Igb3VyIEhlYWx0aGNhcmUgY2xpZW50IGluIEVhZ2FuLCBNTi4gIFRoZSBpZGVhbCBjYW5kaWRhdGUgd2lsbCBoYXZlIGV4cGVyaWVuY2Ugd2l0aCBBc3Npc3RpbmcgUHJvamVjdCBNYW5hZ2VycyB3aXRoIGFkbWluaXN0cmF0aXZlIHRhc2tzIGluY2x1ZGluZyBzZXR1cCBhbmQgbWFpbnRlbmFuY2Ugb2YgcHJvamVjdCBzY2hlZHVsZXMsIHN0YXR1cyByZXBvcnRpbmcsIHJlc291cmNlIGFzc2lnbm1lbnRzLCBtYW5hZ2luZyBwcm9qZWN0IGlzc3Vlcy9yaXNrcyBhbmQgYWRoZXJlbmNlIHRvIHByb2plY3QgdGltZWxpbmVzLg0KDQpUaGlzIGlzIGZvciBhIDEyKyBtb250aCBjb250cmFjdC5kZAILDw8WAh8EBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTIzMmRkAg0PDxYCHwUFBjEwMDIzMmRkAg8PDxYCHwUFCkNvbnN1bHRpbmdkZAIRDw8WAh8FBRRQcm9qZWN0IENvb3JkaW5hdGlvbmRkAhMPZBYCAgEPDxYCHwUFCjEyKyBtb250aHNkZAIVD2QWAgIBDw8WAh8FBQpIZWFsdGhjYXJlZGQCFw8PFgIfBQUDMjMyZGQCDg9kFhoCAQ8PFgQfBAUaUG9zaXRpb25EZXRhaWwuYXNweD9JRD0yMjMfBQUsUHJpbmNpcGFsIE9yYWNsZSBBZ2lsZSBQTE0gU3VwcG9ydC9EZXZlbG9wZXJkZAICDxUBCjExLzAxLzIwMTZkAgMPDxYCHwUFD01vdW5kcyBWaWV3LCBNTmRkAgUPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjIzZGQCBw8PFgIfBAURQXBwbHkuYXNweD9JRD0yMjNkZAIJDw8WAh8FBfQDTG9naVNvbHZlIGlzIGluIG5lZWQgb2YgYSBQcmluY2lwYWwgT3JhY2xlIEFnaWxlIChQTE0pIFN1cHBvcnQvRGV2ZWxvcGVyIGZvciBhIDEyKyBtb250aCBjb250cmFjdCBvcHBvcnR1bml0eSB3aXRoIG91ciBNZWRpY2FsIERldmljZSBjb21wYW55IGluIE1vdW5kcyBWaWV3LCBNTi4gVGhpcyBpcyBhIHBvdGVudGlhbCBjb250cmFjdCB0byBoaXJlIHBvc2l0aW9uLiBUaGUgaWRlYWwgY2FuZGlkYXRlIHdpbGwgaGF2ZSBleHBlcmllbmNlIHdpdGggdGhlIGZvbGxvd2luZzoKCkNvbmZpZ3VyZSwgc3VwcG9ydCwgYWRtaW5pc3RlciBhbmQgZXh0ZW5kIE9yYWNsZS1BZ2lsZSBQTE0gcGxhdGZvcm0KKiBFeHBlcmllbmNlIGluIHN1cHBvcnRpbmcgV2ViTG9naWMgYmFzZWQgYXBwbGljYXRpb25zCiogTXVzdCBiZSBhIEphdmEgcHJvZ3JhbW1lciB3aG8gYWxzbyBoYXMgQWdpbGUgOS4gMy40KyBleHBlcmllbmNlCiogR29vZCB3aXRoIENsaWVudCBhZ2lsZSB0b29scy4KCk91ciBjbGlkZAILDw8WAh8EBRpQb3NpdGlvbkRldGFpbC5hc3B4P0lEPTIyM2RkAg0PDxYCHwUFBjEwMDIyM2RkAg8PDxYCHwUFCkNvbnN1bHRpbmdkZAIRDw8WAh8FBQVPdGhlcmRkAhMPZBYCAgEPDxYCHwUFCjEyKyBtb250aHNkZAIVD2QWAgIBDw8WAh8FBQ5NZWRpY2FsIERldmljZWRkAhcPDxYCHwUFAzIyM2RkAg8PZBYaAgEPDxYEHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjE3HwUFEFRlY2huaWNhbCBXcml0ZXJkZAICDxUBCjA5LzAxLzIwMTdkAgMPDxYCHwUFDFN0LiBQYXVsLCBNTmRkAgUPDxYCHwQFEUFwcGx5LmFzcHg/SUQ9MjE3ZGQCBw8PFgIfBAURQXBwbHkuYXNweD9JRD0yMTdkZAIJDw8WAh8FBasDTG9naVNvbHZlIGlzIGluIG5lZWQgb2YgYSBTci4gVGVjaG5pY2FsIHdyaXRlciBmb3IgYSAxMisgbW9udGggY29udHJhY3Qgd2l0aCBvdXIgR292ZXJubWVudCBjbGllbnQgaW4gU3QuIFBhdWwsIE1OLiAgUXVhbGlmaWVkIGNhbmRpZGF0ZXMgbXVzdCBiZSBsb2NhbCB0byBNTi4gIFRoZSBpZGVhbCBjYW5kaWRhdGUgd2lsbCBoYXZlIGEgQmFjaGVsb3JzIGRlZ3JlZSBhbmQgNSB5ZWFycyBvZiBleHBlcmllbmNlIGFzIGEgSVQgdGVjaG5pY2FsIHdyaXRlci4gSW4gYWRkaXRpb24sIFRocmVlICgzKSB5ZWFycyBkb2N1bWVudGVkIGV4cGVyaWVuY2UgaW4gbGFyZ2UgY29tcGxleCBzZXJ2ZXIgYmFzZWQgc3lzdGVtIGVudmlyb25tZW50cyBhcyBhIGxlYWQgVGVjaG5pY2FsIFdyaXRlci4gVGhpcyBpcyBhIGdyZWF0IG9wcG9ydHVuaXR5IQ0KDQoNCg0KIGRkAgsPDxYCHwQFGlBvc2l0aW9uRGV0YWlsLmFzcHg/SUQ9MjE3ZGQCDQ8PFgIfBQUGMTAwMjE3ZGQCDw8PFgIfBQUKQ29uc3VsdGluZ2RkAhEPDxYCHwUFBU90aGVyZGQCEw9kFgICAQ8PFgIfBQUKMTIrIG1vbnRoc2RkAhUPZBYCAgEPDxYCHwUFCkdvdmVybm1lbnRkZAIXDw8WAh8FBQMyMTdkZGRZlfk6O8ark2A0lrioDKwgjF0jQA==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F62F1DCF" />
+        <div class="pageContainer2015">
+            <div class="wrapper2015">
+
+                <div class="ballWatermark2015"><img src="images/left_margin.png" /></div>
+                <div class="contentAreaContainer2015">
+                    <div><img src="images/blue_banner_strip.gif" /></div>
+                    <div class="bannerLogo2015"><a href="Default.aspx"><img src="images/Logisolve_Logo_300w.gif" border="0" /></a></div>
+                    <div class="bannerSocialMedia2015">
+                        <span class="bannerText2015"><a href="contact.aspx"><b>contact us</b></a> | connect with us:</span>
+                        &nbsp;&nbsp;&nbsp;<a href="http://www.twitter.com/@logisolvellc" target="_social" ><img src="images/twitter_16.png" border="0" alt="twitter"/></a>
+                        <!--&nbsp;&nbsp;<a href="http://www.facebook.com/pages/LogiSolve/166903206689364" target="_social"><img src="images/facebook_16.png"  alt="facebook" border="0"/></a>-->
+                        &nbsp;&nbsp;<a href="http://www.linkedin.com/company/logisolve" target="_social"><img src="images/linkedin_16.png" border="0" alt="linked in"/></a>
+                    </div>
+                    <div style="clear:left;"></div>
+
+                    <div class="bannerMenu2015">                        
+                        <table id="ctl00_tblMenu" cellspacing="0" cellpadding="0" border="0">
+	<tr id="ctl00_menuRow1">
+		<td id="ctl00_TableCell3" class="menuItem2015">&nbsp;</td><td id="ctl00_row1Company">
+                                    <ul id="companyMenu" class="jsddm">
+                                        <li><span id="ctl00_lblCompany" class="menuItem2015"><a id="ctl00_hypCompany" href="company.aspx">COMPANY</a></span>
+                                            <ul>
+                                                <li><a href="company.aspx">about</a></li>
+                                                <li><a href="leadership.aspx">leadership team</a></li>
+                                                <li><a href="Awards.aspx">awards</a></li>
+                                                <li><a href="community.aspx">community involvement</a></li>
+                                                <li><a href="contact.aspx">contact us</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>                                    
+                                </td><td id="ctl00_row1PracticesSpacer" class="menuItem2015">|</td><td id="ctl00_row1Practices">
+                                    <ul id="practicesMenu" class="jsddm">
+                                        <li><span id="ctl00_lblPractices" class="menuItem2015"><a id="ctl00_hypPractices" href="Practices.aspx">PRACTICES</a></span>
+                                            <ul>
+                                                <li><a href="practices.aspx">overview</a></li>
+                                                <li><a href="ProjectManagement.aspx">project management</a></li>
+                                                <li><a href="BusinessAnalysis.aspx">business analysis</a></li>
+                                                <li><a href="DataManagement.aspx">business intelligence & data management</a></li>
+                                                <li><a href="MicrosoftArch.aspx">microsoft .NET architecture & development</a></li>
+                                                <li><a href="JavaArch.aspx">java technologies architecture & development</a></li>
+                                                <li><a href="Mobile.aspx">mobile computing</a></li>
+                                                <li><a href="Testing.aspx">quality assurance & testing</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td><td id="ctl00_row1IndustriesSpacer" class="menuItem2015">|</td><td id="ctl00_row1Industries">
+                                    <ul id="industriesMenu" class="jsddm">
+                                        <li><span id="ctl00_lblIndustries" class="menuItem2015"><a id="ctl00_hypIndustries" href="healthcare.aspx">INDUSTRIES</a></span>
+                                            <ul>
+                                                <li><a href="healthcare.aspx">healthcare</a></li>
+                                                <li style="font-size:.9em;"><a href="eprescription.aspx"> -- ePrescription</a></li>
+                                                <li style="font-size:.9em;"><a href="gateway.aspx"> -- ePrescribing gateway module</a></li>
+                                                <li style="font-size:.9em;"><a href="clinicalmessaging.aspx"> -- clinical messaging</a></li>
+                                                <li style="font-size:.9em;"><a href="cashreconciliation.aspx"> -- cash management & reconciliation</a></li>
+                                                <li><a href="govtservices.aspx">government services</a></li>                                                
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td><td id="ctl00_row1ClientsSpacer" class="menuItem2015">|</td><td id="ctl00_row1Clients">
+                                    <ul id="clientsMenu" class="jsddm">
+                                        <li><span id="ctl00_lblClients" class="menuItem2015"><a id="ctl00_hypClients" href="clients.aspx">CLIENTS</a></span>
+                                            <ul>
+                                                <li><a href="clients.aspx">client list</a></li>
+                                                <li><a href="casestudies.aspx">case studies</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td><td id="ctl00_row1NewsSpacer" class="menuItem2015">|</td><td id="ctl00_row1News">
+                                    <ul id="newsMenu" class="jsddm">
+                                        <li><span id="ctl00_lblNews" class="menuItem2015"><a id="ctl00_hypNews" href="news.aspx">NEWS & EVENTS</a></span></li>
+                                    </ul>   
+                                </td><td id="ctl00_row1CareersSpacer" class="menuItem2015">|</td><td id="ctl00_row1Careers">
+                                    <ul id="careersMenu" class="jsddm">
+                                        <li><span id="ctl00_lblCareers" class="menuItem2015_on"><a id="ctl00_hypCareers" href="positions.aspx">CAREERS</a></span>
+                                            <ul>
+                                                <li><a href="positions.aspx">open positions</a></li>
+                                                <li><a href="careers.aspx">careers & benefits</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td><td id="ctl00_TableCell1"></td>
+	</tr><tr id="ctl00_menuRow2">
+		<td id="ctl00_row2Cell" colspan="13"><img src="images/spacer.gif" height="1" width="1" /></td>
+	</tr><tr id="ctl00_menuRow3">
+		<td id="ctl00_TableCell4"></td><td id="ctl00_row3Company" align="center"><img id="ctl00_imgArrowCompany" src="images/spacer.gif" /></td><td id="ctl00_row3PracticesSpacer"><img src="images/spacer.gif" height="1" width="1" /></td><td id="ctl00_row3Practices" align="center"><img id="ctl00_imgArrowPractices" src="images/spacer.gif" /></td><td id="ctl00_row3IndustriesSpacer"><img src="images/spacer.gif" height="1" width="1" /></td><td id="ctl00_row3Industries" align="center"><img id="ctl00_imgArrowIndustries" src="images/spacer.gif" /></td><td id="ctl00_row3ClientsSpacer"><img src="images/spacer.gif" height="1" width="1" /></td><td id="ctl00_row3Clients" align="center"><img id="ctl00_imgArrowClients" src="images/spacer.gif" /></td><td id="ctl00_row3NewsSpacer"><img src="images/spacer.gif" height="1" width="1" /></td><td id="ctl00_row3News" align="center"><img id="ctl00_imgArrowNews" src="images/spacer.gif" /></td><td id="ctl00_row3CareersSpacer"><img src="images/spacer.gif" height="1" width="1" /></td><td id="ctl00_row3Careers" align="center"><img id="ctl00_imgArrowCareers" src="images/inv_triangle_blue.gif" /></td><td id="ctl00_TableCell2" align="center"></td>
+	</tr>
+</table>
+                    </div>  
+
+                    <div class="bodyWrapper2015">
+                        <table cellpadding="0" cellspacing="0" border="0">            
+                            <tr>
+                                <td valign="top" rowspan="2" bgcolor="#FFFFFF" >
+                                    
+
+
+<div class="detail_body">
+    <div class="pageHeading">careers</div>
+    <div class="pageSubHeading">&rarr;&nbsp;open positions</div>
+    <!--<div class="pageImageHeading"><img src="images/positions1_banner.gif" width="700px" /></div>-->
+    <div class="pageImageHeading"><img src="images/meeting4_banner.gif" width="700px" /></div>
+    <div class="detailContents">
+        <div class="pageTitle">Open Positions</div>
+        <p>Listed below are the positions, both consulting and internal to LogiSolve, that we currently have open.  We are flexible in our employment arrangements for consulting opportunities and will consider independent contractors and full-time or hourly employees.  If you are interested in a specific position, please click the Apply Now button next to the position description and someone will contact you shortly regarding your interest in the position.</p>
+        <div style="margin-top:16px;"></div>
+        
+        
+                <div class="positionListRowContainer">
+                   <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_hypTitle" href="PositionDetail.aspx?ID=261"><b>Front-end Developer</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 11/07/2016</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_lblLocation"><b><font color="#888888">Golden Valley, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_hypApply1" href="Apply.aspx?ID=261"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_hypApply2" href="Apply.aspx?ID=261"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_lblSummary">LogiSolve is in need of a Front-end Developer for our Marketing client in Golden Valley, MN. The initial contract is 6 months. The ideal candidate will have experience with how to structure CSS3 and how to setup/structure SASS in an app.  In addition,  have a strong understanding of Bootstrap (both the Grid and the widgets) and how that applies to responsive design. Must be local to MN, on our W2, and open to contract to hire.  No third parties please.
+
+Skills Desired:
+
+Photoshop
+CSS3
+Boot</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_hypMore" href="PositionDetail.aspx?ID=261">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_lblReferenceNumber"><b><font color="#888888">100261</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_lblJobCategory"><b><font color="#888888">Web Technologies</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_lblDuration"><b><font color="#888888">6+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl00_lblClientExternal"><b><font color="#888888">Marketing</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainerAlt">
+                    <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_hypTitle" href="PositionDetail.aspx?ID=260"><b>QA-Analyst/SQL</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 10/31/2016</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_lblLocation"><b><font color="#888888">Golden Valley, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_hypApply1" href="Apply.aspx?ID=260"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_hypApply2" href="Apply.aspx?ID=260"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_lblSummary">LogiSolve is in need of a Sr. QA Analyst for a 6+ month contract with our Insurance client in Golden Valley, MN. Must have experience in writing SQL Queries and working with SQL Server and Data Warehouses. In addition, 5+ years: SDLC (waterfall and/or agile) and Testing Methodologies; QA methodologies for authoring and executing test suites from business and functional requirements. As well as, 4-5 years of experience preferred: Quality Center, QTP & Rational suite.  Must be local to MN to be co</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_hypMore" href="PositionDetail.aspx?ID=260">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_lblReferenceNumber"><b><font color="#888888">100260</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_lblJobCategory"><b><font color="#888888">Quality Assurance & Testing</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_lblDuration"><b><font color="#888888">6+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl01_lblClientExternal"><b><font color="#888888">Insurance</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainer">
+                   <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_hypTitle" href="PositionDetail.aspx?ID=259"><b>Technical Business Analyst</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 10/24/2016</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_lblLocation"><b><font color="#888888">Golden Valley, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_hypApply1" href="Apply.aspx?ID=259"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_hypApply2" href="Apply.aspx?ID=259"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_lblSummary">LogiSolve is in need of a Technical Business Analyst for a 6+ month contract at our Insurance client in Golden Valley, MN.  The ideal candidate will have 8+ years of Technical Business Analyst experience working with Information Technology departments. In addition:
+
+* Must be well versed in Office software including Microsoft Project and Visio
+
+* Must possess planning and project management skills required to develop delivery plan and execution schedule
+
+* Must possess experience identifyi</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_hypMore" href="PositionDetail.aspx?ID=259">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_lblReferenceNumber"><b><font color="#888888">100259</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_lblJobCategory"><b><font color="#888888">Business Analysis</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_lblDuration"><b><font color="#888888">6+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl02_lblClientExternal"><b><font color="#888888">Insurance</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainerAlt">
+                    <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_hypTitle" href="PositionDetail.aspx?ID=258"><b>Jr. Business Analyst</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 10/24/2016</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_lblLocation"><b><font color="#888888">St. Paul, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_hypApply1" href="Apply.aspx?ID=258"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_hypApply2" href="Apply.aspx?ID=258"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_lblSummary">LogiSolve is in need of a intermediate Business Analyst for a 6+ month contract to hire with our Financial client in St. Paul, MN. The ideal candidate will have 3-5+ years of Business Analyst experience. Must have experience with leading and encouraging our internal and external partners to define requirements and solutions that will improve productivity, accuracy, and the client/customer experience (i.e. creative thinking beyond the status quo). Must be local to MN to be considered.</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_hypMore" href="PositionDetail.aspx?ID=258">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_lblReferenceNumber"><b><font color="#888888">100258</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_lblJobCategory"><b><font color="#888888">Business Analysis</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl03_lblClientExternal"><b><font color="#888888">Financial</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainer">
+                   <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_hypTitle" href="PositionDetail.aspx?ID=257"><b>SAS Analyst/Developer</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 10/24/2016</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_lblLocation"><b><font color="#888888">Eagan, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_hypApply1" href="Apply.aspx?ID=257"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_hypApply2" href="Apply.aspx?ID=257"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_lblSummary">LogiSolve is in need of a SAS Analyst/Developer for a 3+ month contract with our Healthcare client in Eagan, MN. Our client is looking for a Senior Business Systems Healthcare Analyst with SAS experience.This resource will be working within the Health Economics and Analysis of cost of care department.  This resource should have healthcare experience (payer side...in this case, specifically provider experience is ideal).
+
+Ideal resource is highly analytical, can ask good questions, anticipate n</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_hypMore" href="PositionDetail.aspx?ID=257">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_lblReferenceNumber"><b><font color="#888888">100257</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_lblJobCategory"><b><font color="#888888">Data Management & Business Intelligence</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_lblDuration"><b><font color="#888888">3+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl04_lblClientExternal"><b><font color="#888888">Heathcare</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainerAlt">
+                    <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_hypTitle" href="PositionDetail.aspx?ID=245"><b>Application Systems Architect</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 10/01/2017</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_lblLocation"><b><font color="#888888">Plymouth, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_hypApply1" href="Apply.aspx?ID=245"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_hypApply2" href="Apply.aspx?ID=245"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_lblSummary">LogiSolve  is in need of a Application Systems Architect for a 12+ month contract to hire position with  our Finance client in Plymouth, MN. The ideal candidate will have  Enterprise and Oracle platform experience.  Responsible for translating business needs into technical solutions, and defining solutions to problems through reasoned application of information technology.  Must be local to MN to be considered</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_hypMore" href="PositionDetail.aspx?ID=245">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_lblReferenceNumber"><b><font color="#888888">100245</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_lblJobCategory"><b><font color="#888888">Other</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl05_lblClientExternal"><b><font color="#888888">Finance</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainer">
+                   <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_hypTitle" href="PositionDetail.aspx?ID=242"><b>IT Sourcing Analyst</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 10/01/2017</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_lblLocation"><b><font color="#888888">St. Paul, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_hypApply1" href="Apply.aspx?ID=242"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_hypApply2" href="Apply.aspx?ID=242"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_lblSummary">LogiSolve is in need of a IT Sourcing Analyst for a 12+ month contract with our Manufacturing client in St. Paul, MN.  The ideal candidate will have experience with managing IT contracts-Strong ability to negotiate, draft, and edit. Must have leadership qualities, PM capabilities and forward thinking/big picture mindset.
+
+ In addition:
+• Ability to develop commodity strategies
+• Management of competitive IT sourcing practices (e.g. RFP’s)
+• Ability to communicate and collaborate across all </span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_hypMore" href="PositionDetail.aspx?ID=242">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_lblReferenceNumber"><b><font color="#888888">100242</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_lblJobCategory"><b><font color="#888888">Business Analysis</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl06_lblClientExternal"><b><font color="#888888">Manufacturing</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainerAlt">
+                    <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_hypTitle" href="PositionDetail.aspx?ID=241"><b>Principal Oracle Agile PLM Support/Developer</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 10/01/2017</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_lblLocation"><b><font color="#888888">Mounds View, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_hypApply1" href="Apply.aspx?ID=241"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_hypApply2" href="Apply.aspx?ID=241"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_lblSummary">LogiSolve is in need of a Oracle Agile PLM Support/Developer for a 12+ month contract with our Medical Device company in Mounds View, MN.  Candidates can be local or non-local to MN.  Must be W2 and open to contract to hire.</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_hypMore" href="PositionDetail.aspx?ID=241">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_lblReferenceNumber"><b><font color="#888888">100241</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_lblJobCategory"><b><font color="#888888">Other</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl07_lblClientExternal"><b><font color="#888888">Medical Device</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainer">
+                   <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_hypTitle" href="PositionDetail.aspx?ID=238"><b>Jr. Business Analyst</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 10/01/2017</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_lblLocation"><b><font color="#888888">Minneapolis, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_hypApply1" href="Apply.aspx?ID=238"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_hypApply2" href="Apply.aspx?ID=238"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_lblSummary">LogiSolve is in need of a Jr. Business Analyst for a 12+ month contract opportunity with our Large Healthcare client in Minneapolis, MN.  The ideal candidate will have 1-3 years of Business Analyst experience. Must be local to MN to be considered.  Great opportunity for a College graduate OR someone looking to enhance their Business Analyst skills!
+
+Additional Details:
+
+Must have strong customer service, leadership, facilitation, organization, prioritization, analytical, and communication sk</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_hypMore" href="PositionDetail.aspx?ID=238">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_lblReferenceNumber"><b><font color="#888888">100238</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_lblJobCategory"><b><font color="#888888">Business Analysis</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl08_lblClientExternal"><b><font color="#888888">Healthcare</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainerAlt">
+                    <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_hypTitle" href="PositionDetail.aspx?ID=237"><b>Servicenow Developer</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 09/01/2017</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_lblLocation"><b><font color="#888888">Mounds View, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_hypApply1" href="Apply.aspx?ID=237"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_hypApply2" href="Apply.aspx?ID=237"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_lblSummary">LogiSolve is looking for a ServiceNow Developer for a 12+ month contract with our Medical Device company in Mounds View, MN. The ideal candidate will have 6+ years of experience with ServiceNow application experience-admin experience/developer experience. Open to Local candidate to MN or non-local. 
+
+
+Position Details:
+•	Experience in implementing/ administering one of the following Tools: 
+o	Service Now-ITSM and experience with at least one or more Modules: HR, Service Catalog, Asset Manag</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_hypMore" href="PositionDetail.aspx?ID=237">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_lblReferenceNumber"><b><font color="#888888">100237</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_lblJobCategory"><b><font color="#888888">Other</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl09_lblClientExternal"><b><font color="#888888">Medical Device</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainer">
+                   <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_hypTitle" href="PositionDetail.aspx?ID=236"><b>Security Engineer</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 09/01/2017</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_lblLocation"><b><font color="#888888">Minneapolis, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_hypApply1" href="Apply.aspx?ID=236"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_hypApply2" href="Apply.aspx?ID=236"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_lblSummary">LogiSolve is in need of a Sr. Security Engineer for a 3+ month contract to hire opportunity with our Healthcare client in Minneapolis, MN. The ideal candidate will have:
+
+·    10+ years experience installing, monitoring and maintaining information security solutions including policy design and implementation. 
+·    7+ years experience evaluating and designing security solutions for technology projects.
+·    Demonstrated understanding of security related technologies and practices, including:</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_hypMore" href="PositionDetail.aspx?ID=236">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_lblReferenceNumber"><b><font color="#888888">100236</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_lblJobCategory"><b><font color="#888888">Security</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_lblDuration"><b><font color="#888888">3+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl10_lblClientExternal"><b><font color="#888888">Healthcare</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainerAlt">
+                    <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_hypTitle" href="PositionDetail.aspx?ID=235"><b>Business Analyst-Servicenow</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 09/01/2017</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_lblLocation"><b><font color="#888888">Minneapolis, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_hypApply1" href="Apply.aspx?ID=235"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_hypApply2" href="Apply.aspx?ID=235"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_lblSummary">LogiSolve is in need of a Business Analyst with Servicenow experience. This is for a 12+ month contract with our Healthcare client in MN.  The ideal candidate will be local to MN. 
+
+
+Must have expert knowledge of desktop PC and peripherals support, scripting experience.  In addition,  5 years of demonstrated experience in business and functional requirements elicitation, translation and documentation. Ideally,  3 years of demonstrated experience in building requirements for the ServiceNow pla</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_hypMore" href="PositionDetail.aspx?ID=235">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_lblReferenceNumber"><b><font color="#888888">100235</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_lblJobCategory"><b><font color="#888888">Business Analysis</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl11_lblClientExternal"><b><font color="#888888">Healthcare</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainer">
+                   <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_hypTitle" href="PositionDetail.aspx?ID=233"><b>Project Coordinator-Technical</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 10/01/2017</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_lblLocation"><b><font color="#888888">Eagan, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_hypApply1" href="Apply.aspx?ID=233"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_hypApply2" href="Apply.aspx?ID=233"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_lblSummary">LogiSolve is need of a Technical Project Coordinator for our Healthcare client in Eagan, MN.  This is for a 12+ month contract. The ideal person will have large-scale program experience.  In addition, should be reasonable technical so they can speak professionally with end users.
+The person will be working with security first time log in session coordination, and facilitation with end users, and basic meeting scheduling.  Must be able to work in a fast-pace environment.</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_hypMore" href="PositionDetail.aspx?ID=233">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_lblReferenceNumber"><b><font color="#888888">100233</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_lblJobCategory"><b><font color="#888888">Project Coordination</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl12_lblClientExternal"><b><font color="#888888">Healthcare</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainerAlt">
+                    <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_hypTitle" href="PositionDetail.aspx?ID=232"><b>Project Coordinator</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 09/01/2017</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_lblLocation"><b><font color="#888888">Eagan, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_hypApply1" href="Apply.aspx?ID=232"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_hypApply2" href="Apply.aspx?ID=232"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_lblSummary">LogiSolve is in need of a Sr. Project Coordinator for our Healthcare client in Eagan, MN.  The ideal candidate will have experience with Assisting Project Managers with administrative tasks including setup and maintenance of project schedules, status reporting, resource assignments, managing project issues/risks and adherence to project timelines.
+
+This is for a 12+ month contract.</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_hypMore" href="PositionDetail.aspx?ID=232">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_lblReferenceNumber"><b><font color="#888888">100232</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_lblJobCategory"><b><font color="#888888">Project Coordination</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl13_lblClientExternal"><b><font color="#888888">Healthcare</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainer">
+                   <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_hypTitle" href="PositionDetail.aspx?ID=223"><b>Principal Oracle Agile PLM Support/Developer</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 11/01/2016</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_lblLocation"><b><font color="#888888">Mounds View, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_hypApply1" href="Apply.aspx?ID=223"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_hypApply2" href="Apply.aspx?ID=223"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_lblSummary">LogiSolve is in need of a Principal Oracle Agile (PLM) Support/Developer for a 12+ month contract opportunity with our Medical Device company in Mounds View, MN. This is a potential contract to hire position. The ideal candidate will have experience with the following:
+
+Configure, support, administer and extend Oracle-Agile PLM platform
+* Experience in supporting WebLogic based applications
+* Must be a Java programmer who also has Agile 9. 3.4+ experience
+* Good with Client agile tools.
+
+Our cli</span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_hypMore" href="PositionDetail.aspx?ID=223">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_lblReferenceNumber"><b><font color="#888888">100223</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_lblJobCategory"><b><font color="#888888">Other</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl14_lblClientExternal"><b><font color="#888888">Medical Device</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="positionListRowContainerAlt">
+                    <div class="positionListTitleRow">
+                        <div class="positionListTitle">
+                            <a id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_hypTitle" href="PositionDetail.aspx?ID=217"><b>Technical Writer</b></a>
+                        </div>
+                        <div class="positionListExpireDate"><i><font style="color:#999999;">active until:</font> 09/01/2017</i></div>
+                        <div style="clear:both"></div>
+                    </div>  
+                    <div class="positionListDetailsContainer">   
+                        <div class="positionListLocation">
+                            <font style="color:#999999;">LOCATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_lblLocation"><b><font color="#888888">St. Paul, MN</font></b></span>
+                        </div>                        
+                        <div class="positionListApplyNow">
+                            <div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_hypApply1" href="Apply.aspx?ID=217"><img src="images/icon_bluearrow.png" border="0" /></a>&nbsp;</div><div style="float:left;vertical-align:middle;text-align:right;"><a id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_hypApply2" href="Apply.aspx?ID=217"><b>Apply Now</b></a></div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <div class="positionListSummaryRow"">
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_lblSummary">LogiSolve is in need of a Sr. Technical writer for a 12+ month contract with our Government client in St. Paul, MN.  Qualified candidates must be local to MN.  The ideal candidate will have a Bachelors degree and 5 years of experience as a IT technical writer. In addition, Three (3) years documented experience in large complex server based system environments as a lead Technical Writer. This is a great opportunity!
+
+
+
+ </span>&nbsp;<a id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_hypMore" href="PositionDetail.aspx?ID=217">... full description</a>
+                        </div>
+                        <div class="positionListAttributesRow">
+                            <font style="color:#999999;">JOB #:&nbsp;</font><span id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_lblReferenceNumber"><b><font color="#888888">100217</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">JOB TYPE:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_lblJobType"><b><font color="#888888">Consulting</font></b></span>
+                            &nbsp;|&nbsp;<font style="color:#999999;">CATEGORY:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_lblJobCategory"><b><font color="#888888">Other</font></b></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_pnlDuration">&nbsp;|&nbsp;<font style="color:#999999;">DURATION:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_lblDuration"><b><font color="#888888">12+ months</font></b></span></span>
+                            <span id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_pnlClient">&nbsp;|&nbsp;<font style="color:#999999;">CLIENT:</font>&nbsp;<span id="ctl00_ContentPlaceHolder1_rptPositions_ctl15_lblClientExternal"><b><font color="#888888">Government</font></b></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+            
+        <div style="margin-right:40px;margin-left:10px;margin-top:40px;font-size:.85em;font-style:italic;color:#999999;">
+            LogiSolve, LLC is an <b>Equal Opportunity Employer</b> and prohibits discrimination and harassment of any kind: LogiSolve, LLC is committed to the principle of equal employment opportunity for all employees and to providing employees with a work environment free of discrimination and harassment. All employment decisions at LogiSolve, LLC are based on business needs, job requirements and individual qualifications, without regard to race, color, religion or belief, national, social or ethnic origin, sex (including pregnancy), age, physical, mental or sensory disability, sexual orientation, gender identity and/or expression, marital, civil union or domestic partnership status, past or present military service, family medical history or genetic information, family or parental status, or any other status protected by the laws or regulations in the locations where we operate. LogiSolve, LLC will not tolerate discrimination or harassment based on any of these characteristics. LogiSolve, LLC encourages applicants of all ages.
+        </div>
+    </div>
+    
+</div>
+
+<div class="detail_navColumn">
+    <div class="shadowDividerTop"></div>
+    <div class="shadowDividerMiddle">
+        <div class="detail_navMenuContainer">
+            <div class="navMenuItemSelected" style="border-top:1px dotted #E8E8E8;"><a href="positions.aspx">open positions</a></div>
+            <div class="navMenuItem"><a href="careers.aspx">careers & benefits</a></div>
+        </div>
+    </div>
+    <div class="shadowDividerBottom"></div>
+</div> 
+<div class="clear"></div>
+                 
+                                </td>
+                            </tr>
+                            
+                            
+                        </table>
+                        <div class="footerDivider"></div>
+                        <div class="footer2015">
+                            © 2016 LogiSolve, LLC. All Rights Reserved. Equal Opportunity Employer | <a href="privacy.aspx" >Privacy Policy</a> | <a href="contact.aspx" >Contact</a><br />
+                            LogiSolve, LLC. | 600 Inwood Ave N | Suite #275 | Oakdale, MN  55128 | Tel: 763.383.1000 | Fax: 651.207.5067 | info@logisolve.com<br />
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+status: 200
+content-length: 741
+content-location: http://www.ensoftinc.com
+-content-encoding: gzip
+accept-ranges: bytes
+vary: Accept-Encoding,User-Agent
+server: Apache/2.4.23
+last-modified: Thu, 05 Jun 2014 07:00:00 GMT
+etag: "ae4006a-2e5-4fb114b1c3c00-gzip"
+date: Fri, 09 Sep 2016 09:36:04 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.9.2 (gzip)
+
+<html>
+<head>
+<title>Ensoft, Inc. - Engineering Software</title>
+
+<script language="javascript">
+var fname="main";     //MAIN CONTENT AREA FRAME **NAME**
+
+window.onload=function(){
+var d=document.location.search;
+if(d!='')top.frames[fname].document.location.href=d.substring(d.lastIndexOf('?')+1,d.length);
+}
+</script>
+
+</head>
+
+<frameset cols="170,*">
+  <frame src="main/menu.html" name="menu" marginwidth="4" frameborder="0" border="0">
+  <frame src="main/main.html" name="main"  frameborder="0" border="0">
+</frameset>
+
+<noframes>
+<P>This web site requires a browser that is capable of displaying frames. Please upgrade your
+browser to the latest version in order to display pages from this web site pages properly.
+</noframes>
+
+</html>
+

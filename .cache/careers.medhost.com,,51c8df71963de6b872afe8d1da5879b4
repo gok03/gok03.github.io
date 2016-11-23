@@ -1,0 +1,915 @@
+status: 200
+content-location: http://careers.medhost.com
+x-powered-by: PHP/5.3.3
+set-cookie: find_login_domain=login1.akken.com;
+ expires=Thu, 21-Sep-2017 09:26:09 GMT; path=/;
+ domain=.akken.com, find_admin_domain=admin1.akken.com;
+ expires=Thu, 21-Sep-2017 09:26:09 GMT; path=/;
+ domain=.akken.com, find_api_domain=http%3A%2F%2Fapi.akken.com%2F;
+ expires=Thu, 21-Sep-2017 09:26:09 GMT; path=/;
+ domain=.akken.com, AC_POSID=deleted; expires=Tue, 22-Sep-2015 09:26:08 GMT;
+ path=/
+server: Apache/2.2.15 (CentOS)
+connection: close
+date: Wed, 21 Sep 2016 09:26:09 GMT
+p3p: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+content-type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MEDHOST</title>
+	<title>MEDHOST | Search Jobs - Search Jobs</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://careers.medhost.com/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="http://careers.medhost.com/css/responsive.css" type="text/css" />
+<link rel="stylesheet" href="http://careers.medhost.com/css/acjb-styles.css" type="text/css" />
+<link rel="stylesheet" href="http://careers.medhost.com/css/jquery.dataTables.css" type="text/css" />
+<link rel="stylesheet" href="http://careers.medhost.com/aob/css/jquery-ui.css" type="text/css" />
+<script type="text/javascript" language="javascript">
+
+var ac_host = 'http://careers.medhost.com/';
+
+</script>
+
+	<script type="text/javascript" language="javascript" src="http://careers.medhost.com/scripts/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="http://careers.medhost.com/scripts/jquery.dataTables.js"></script>
+<script type="text/javascript" language="javascript">
+	var bPaginate = true;
+	var pageLength = 10;
+	var hideGridColoumns = [2];
+
+$(document).ready(function(){
+    $('#joblist').dataTable({ "bPaginate": bPaginate, "pageLength": pageLength, "order": [[ 3, "desc" ]],"columnDefs": [{"targets": hideGridColoumns,"visible": false}] });       
+});
+
+</script>
+
+<script type="text/javascript" language="javascript" src="http://careers.medhost.com/scripts/ACJobBoard.js"></script>
+
+
+<script type="text/javascript" language="javascript" src="http://careers.medhost.com/scripts/common.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function()
+{
+	$('.acjb-mainDivArea').acjbWidgetSettings(
+	{
+		"sidenavAlign": "left",
+		"sidenavWithCheckbox": "true",
+		"mainNavButtonsAlign": "right",
+		"showElements" :
+
+["sidenav","headNavButtons","bottomNavButtons","sidesocialnav"],
+		"themeTextColor": "", 
+		"themeBackgroundColor": "",
+         "sidenavBackground":"",
+		"sidenavtitleBackground":"#0D4C92",
+		"sidenavtitleBorderBackground":"#0D4C92",
+        "themeNavButtonsBackground" : ["#0D4C92"], 
+        "themeNavButtonsBackgroundHover" :["#0D4C92"],
+	});
+});
+</script>
+<script src="http://careers.medhost.com/aob/scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" language="javascript">
+
+//<![CDATA[ 
+function ACTalentfluidDialog() {	
+    var $visible = $(".ui-dialog:visible");
+    // each open dialog
+    $visible.each(function () {
+        var $this = $(this);
+        var dialog = $this.find(".ui-dialog-content").data("ui-dialog");
+        // if fluid option == true
+        if (dialog.options.fluid) {
+            var wWidth = $(window).width();
+            // check window width against dialog width
+            if (wWidth < (parseInt(dialog.options.maxWidth) + 50))  {
+                // keep dialog from filling entire screen
+                $this.css("max-width", "96%");
+            } else {
+                // fix maxWidth bug
+                $this.css("max-width", dialog.options.maxWidth + "px");
+            }
+            //reposition dialog
+            dialog.option("position", dialog.options.position);	
+			$this.css("width", "96%");			
+			var width = $(window).width() > 340 ? 340 : 'auto';
+			$this.find("iframe").css("width", width);
+        }
+    });
+}
+
+$(function () { 
+    $("a#acTalentPoolWidget").on("click", function (e) {
+			e.preventDefault();
+			var iframe = $('<iframe frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>');
+			var dialog = $("<div></div>").append(iframe).appendTo("body").dialog({
+							autoOpen: false,
+							modal: true,
+							resizable: false,
+							width: $(window).width() > 350 ? 350 : 'auto',
+							maxWidth: 350,
+							height: "auto",	
+							fluid: true,	
+							close: function () {
+								iframe.attr("src", "");			
+							}		
+							});
+			var src = $(this).attr("href");
+			var title = $(this).attr("data-title");
+			//var width = $(this).attr("data-width");
+			var width = $(window).width() > 340 ? 340 : 'auto';
+			var height = $(this).attr("data-height");
+			iframe.attr({
+				width: +width,
+				height: +height,
+				src: src
+			});
+			// on window resize run function
+	$(window).resize(function () {		
+		ACTalentfluidDialog();
+	});
+		
+        dialog.dialog("option", "title", title).dialog("open");
+		$('.ui-dialog').tpCustomization();
+		
+    });	
+	
+		$.fn.extend({
+			talentPoolWidgetSettings: function(p)
+			{
+				if( 'tpDialogueBackground' in p && p["tpDialogueBackground"] != ''){$('.ui-widget-content').css('background',p["tpDialogueBackground"])}
+				if( 'tpTitleBackground' in p && p["tpTitleBackground"] != ''){$('.ui-widget-header').css('background',p["tpTitleBackground"])}
+				if( 'tpTitleFont' in p && p["tpTitleFont"] != ''){$('.ui-widget-header').css('color',p["tpTitleFont"])}	
+				if( 'tpTitleBorder' in p && p["tpTitleBorder"] != ''){$('.ui-widget-header').css('border',p["tpTitleBorder"])}	
+				if( 'tpFormFont' in p && p["tpFormFont"] != ''){$('.actalentpoolformM, .actalentpoolformM label').css('color',p["tpFormFont"])}	
+				if( 'tpJoinBtnBg' in p && p["tpJoinBtnBg"] != ''){$('.acjbtpbtn').css('background',p["tpJoinBtnBg"])}
+				if( 'tpClosebtnBg' in p && p["tpClosebtnBg"] != ''){$('.ui-icon ').css('backgroundColor',p["tpClosebtnBg"])}			
+				if( 'tpOverlay' in p && p["tpOverlay"] != ''){$('.ui-widget-overlay').css('background',p["tpOverlay"])}
+				if( 'tpCloseBorder' in p && p["tpCloseBorder"] != ''){$('.ui-state-hover').css('background',p["tpCloseBorder"])}	
+			}
+			});
+});
+//]]> 
+
+</script> 
+<style>
+
+.ui-dialog .ui-dialog-content{ padding:2px !important; }
+@media screen and (max-width: 340px){
+   .ui-dialog .ui-dialog-content iframe{ width:98% !important;       
+    }
+}
+
+</style>
+	<meta name="description" content="With a full portfolio of enterprise and departmental solutions, MEDHOST provides software and services to about 1,000 healthcare facilities nationwide!" />
+	<meta charset="utf-8/" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible/" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+	
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="/PublishingImages/Medhost/images/favicon.ico" />-->
+	<!--Load CSS-->
+	<link rel="stylesheet" type="text/css" href="http://www.medhost.com/_layouts/15/1033/styles/Themable/corev15.css?rev=KPEIHgmY2VtCs0qAXq1p%2BA%3D%3D"/>
+	<link rel="canonical" href="http://www.medhost.com:80/" />
+	<link rel="shortcut icon" href="http://www.medhost.com/PublishingImages/Medhost/images/favicon.ico" type="image/vnd.microsoft.icon" id="favicon" />
+	<link rel="stylesheet" href="http://www.medhost.com/Style Library/stylesheets/RemoveWhiteSpace.css" />
+	<link rel="stylesheet" href="http://www.medhost.com/Style Library/stylesheets/combo.min.css" />
+	<link rel="stylesheet" href="http://www.medhost.com/Style Library/javascripts/royalslider/skins/minimal-white/rs-combined.min.css" />
+	<link rel="stylesheet" href="http://www.medhost.com/Style Library/stylesheets/app.css" />
+	<link rel="stylesheet" href="http://www.medhost.com/Style Library/stylesheets/Castor.css" />
+	
+	<!--Modernizer to enable older browser HTML5 compatability-->
+	<script src="http://www.medhost.com/Style Library/javascripts/modernizr.custom.63728.js"></script>
+	<!-- Load JQUERY -->
+	<!-- <script src="http://www.medhost.com/Style Library/javascripts/jquery.min.js"></script> -->
+	<!-- Royal Slider Script -->
+	<script class="rs-file" src="http://www.medhost.com/Style Library/javascripts/royalslider/jquery.royalslider.min.js"></script> 
+	<!-- Settings for Pushdown Nav, Mega Menu, Colorbox popups and Social Media Tabs --> 
+    <script type="text/javascript" src="http://www.medhost.com/Style Library/javascripts/custom-script-settings.js"></script> 
+	<!--load arrow on click Menu Item-->
+	<!--End of load arrow on click Menu Item-->
+	
+	<style type="text/css">
+		
+			.s4-skipribbonshortcut {
+				display: none;
+			}
+		
+	</style>
+	
+	<style>
+			
+			
+			.acjb-mainDivArea *{	
+				font-family: "Merriweather Sans",sans-serif !important;
+				color: #4e4e4e !important;
+				font-size: 14px !important;
+			}
+			.acjb-mainDivArea .acjb-mainHeadContentDiv ul.menu li a {
+				font-family: "Merriweather Sans",sans-serif !important;
+			}
+			.acjb-btn, .paginate_button {
+				background:#0d4c92  !important;
+			}
+			.dataTables_wrapper .dataTables_paginate .paginate_button {
+				border: medium none !important;
+				background:#0d4c92  !important;
+			}
+			.acjb-mainDivArea .dataTables_wrapper .dataTables_paginate .paginate_button:hover, .acjb-btn .acjb-btn-primary:hover {
+				background: #245682  !important;
+			}
+			.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+				background: none !important;
+				color: #666666; !important;
+			}
+			.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+				background: none !important;
+				color: #666666; !important;
+			}
+			.acjb-mainDivArea .acjb-btn:hover, .acjb-mainDivArea button:hover, .btn .btn-primary:hover, .acjb-btn-primary:hover {
+				background: #245682 !important;
+				color: #ffffff; !important;
+			}
+			.acjb-mainDivArea input[type="submit"] {
+				background:#0d4c92  !important;
+				color: #fff !important;
+			}
+			.acjb-mainDivArea input[type="submit"]:hover {
+				background: #245682 !important;
+				color: #fff; !important;
+			}
+			.acjb-mainDivArea input[type="button"] {
+				color: #fff !important;
+			}
+			.acjb-mainDivArea #jobdetailspage h1, .acjb-hed, .acjb-mainDivArea legend, .acjbLongFormM .acjbappm, .acjbLongFormM, .acjbLongFormM .acjbLongFormHedM, .acjb-mainDivArea .acjb-mainContentLeftDiv .acSinupM {
+				color: #003ca6  !important;
+				font-weight: bold !important;
+				font-family: "Merriweather Sans",sans-serif !important;
+			}
+			
+			.acjb-mainDivArea #jobdetailspage h1, .acjb-hed, .acjb-mainDivArea legend, .acjbLongFormM .acjbappm{ 
+				color: #003ca6 !important;
+			}
+			
+			.acjbLongFormM .acjbLongForminn input[type="vf"] {
+				color: #fff !important;
+				padding: 8px !important;
+				box-shadow:none;
+			}
+			.acjb-mainDivArea a:link, .acjb-mainDivArea a:visited {
+				color: #003ca6 !important;
+			}
+			.acjb-mainDivArea .acjb-mainHeadContentDiv ul.menu li a:hover, .acjb-mainDivArea a:hover {
+				color:#015ba7 !important;
+			}
+			
+			.acjb-mainDivArea a{ text-decoration:underline !important; }
+			.acjb-mainDivArea a:hover{ text-decoration:underline !important; }
+			
+			.acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv form, .acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv label {
+				font-weight: normal !important; 
+			}
+			.acjb-mainDivArea .acjb-btn, .acjb-mainDivArea button, .acjb-mainDivArea input[type="submit"] {
+				background:#0d4c92  !important; 
+				color: #fff !important;
+			}
+			
+			.acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv .acMarginSearch{ height:inherit}
+			.acjb-mainDivArea .search-wrap{ margin:5px 0px;}				
+
+			@media screen and (max-width:1030px){		 
+				.acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv .spanJobTitlewidth{ width:41%; }	
+			}
+			
+			@media screen and (max-width: 1024px) {
+				.acjb-mainDivArea table.dataTable thead th, table.dataTable thead td {font-size: 12px !important}
+				.acjbLongForminn #capthacode input[type="text"]{
+					width: 45% !important;
+				}
+			}
+			
+			@media screen and (max-width:900px){
+				.acjbLongFormM .acjbLongForminn input[type="text"], .acjbLongFormM .acjbLongForminn select, .acjbLongFormM .acjbLongForminn textarea{ width:96% !important}
+				.acjbLongFormM .acjbLongForminn input[type"check"]{ width:inherit !important }	
+				.newtopfixed{ top:0px;}
+				.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{ width:inherit}
+				.acjb-mainDivArea legend {
+					font-size: 14px !important;
+				}
+			}
+
+			@media screen and (max-width:650px){			
+				.acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv .spanJobTitlewidth{ width:41%;}
+				.dataTables_wrapper .dataTables_paginate{ margin-bottom:10px;}
+				.acjb-mainDivArea .search-wrap{ padding:2%;}
+				.acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv .spanButtonwidth{ margin-left:0% !important;}
+				
+				.acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv .spanJobTitlewidth:first-child, .acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv .spanJobTitlewidth{ 
+					width:100% !important; margin:4px !important
+				}	
+				.acjb-mainDivArea form#application {
+					width: auto !important;
+				}				
+			}
+			
+			@media screen and (max-width:380px){
+				.acjb-mainDivArea form#application{ margin:0px; padding:10px 8px !important;}	
+				.acjb-mainDivArea form div.span12{ margin-bottom:10px;}	
+				
+				.acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv, .acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv, .acSinupM{ 		
+					width:100% !important;
+				}
+				.acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv .spanJobTitlewidth:first-child, .acjb-mainDivArea .acjb-mainContentDiv .acjb-mainContentLeftDiv .spanJobTitlewidth{ 
+					width:100% !important;
+				}
+				.acjbLongFormM .acjbLongForminn input[type="file"]{
+					width: 96%;
+				}
+				.acjb-mainDivArea form#application  input[type="file"]{
+					width: 98%;
+				}
+			} 
+
+			.form-horizontal .form-group{ margin:0px;}
+			.input-group-addon{ background:none; border:none; width:auto }
+			.input-group{ display:inherit}
+			.checkbox-inline input[type="checkbox"]{ margin:0px; position:inherit; }
+			.checkbox-inline{padding-left:0px;}
+
+			legend {
+				color: #045faf !important;
+			}
+			
+			.acjbLongFormM .acjbLongForminn label{ display:block}
+			.acjbLongFormM .acjbLongForminn input, .acjbLongFormM .acjbLongForminn select{ color:#333 !important}
+			#capthacode label.span12{ clear:both; margin:5px 0px;}
+			.acjbLongFormM .acjbLongForminn [type="submit"]{ color:#FFF !important}
+
+			.acjb-mainContentRightDiv {
+				float: left !important;
+			}
+			
+			.acjb-mainDivArea .acjbapplyindeed .indeed-apply-button-label{
+				color : #ffffff !important;
+			}
+			
+			input, textarea {
+				border-radius: 3px !important;
+				border-width: 1px !important;
+			}
+			
+			.acjbLongFormM .acjbLongForminn em {
+				font-style: italic !important;
+			}
+			
+			select, input[type="file"] {
+				height: inherit !important;
+			}
+			
+			a.button, a.comment-reply-link, #commentform #submit, .submit, input[type="submit"], input.button, button.button, #wrapper .woo-sc-button {
+				text-transform: none !important;		
+			}
+
+			.acjbLongFormM .acjbLongForminn .acjbcomwidth {
+				width: 71px !important;
+			}
+
+			.acjb-mainDivArea img {
+				display: block !important;
+			}
+			
+			.acjb-mainDivArea .span12 .input-group-addon a{
+				padding: inherit !important;
+			}
+
+			input.error {
+				color: #480000;		
+			}
+
+			input[type="file"].error {
+				background: #ffebef url("/images/icon-fail.png") no-repeat scroll right center !important;
+				color: #480000;
+			}
+
+			.acjbLongFormM .acjbLongForminn input, .acjbLongFormM .acjbLongForminn select{
+				font-weight : inherit !important;
+			}
+
+			span.form-error.help-block {
+				color: #ff0000 !important;
+			}
+
+			.acjb-mainDivArea .acjb-mainHeaderInnerDiv .acjb-inner .menu a, .dataTables_wrapper .dataTables_paginate .paginate_button {
+				text-decoration:none !important;
+				font-size: 13px !important;			
+			}
+			
+			.acjb-mainDivArea .acjb-mainHeaderInnerDiv .acjb-inner .menu a:hover{
+				text-decoration:none !important;			
+			}
+
+			li {
+				margin-left: inherit !important;
+			}
+
+			.icon-cog::before {
+				content: none !important;
+			}
+			
+			.acjb-mainDivArea #jobdetailspage h1{
+				font-size: 18px !important;
+			}
+			
+			.acjb-mainDivArea .acjb-btn, .acjb-mainDivArea button, .acjb-mainDivArea input[type="submit"] {
+				font-weight: normal !important;
+			}
+			
+			#indeed-ia-1467623576626-0, #indeed-ia-1467623576626-0 *, #indeed-ia-1467623576626-0 *::before, #indeed-ia-1467623576626-0 *::after {
+				font-weight: bold !important;
+			}
+			
+			fieldset legend {
+				background: inherit !important;
+			}
+			
+			fieldset {
+				border: inherit !important;
+			}
+			
+			.error input, input.error, .error textarea, textarea.error, .error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus {
+				background-color: #ffffff !important;			
+			}
+			
+			.dataTables_wrapper .dataTables_paginate .paginate_button {
+				padding: 0.9em 1em !important;
+			}
+			
+			.acjb-inner .input-group-addon, .acjb-mainDivArea fieldset a:link span, .acjb-mainDivArea fieldset a:visited span, .acjb-mainDivArea fieldset a:link, .acjb-mainDivArea fieldset a:visited {
+				float: left !important;
+				margin-top: 3px !important;
+				padding: inherit !important;
+			}
+			
+			
+			a.toggle-nav.open {
+				transform: none !important;
+			}
+			
+			#pushbutton a{ text-decoration:none !important; color:#636466 !important; }
+			#pushbutton a:hover{ text-decoration:none !important; color:#636466 !important; }
+			#pushbutton { cursor: default !important; }
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+       /* Safari 5+ ONLY */
+    ::i-block-chrome, .acjb-mainDivArea #jobdetailspage h1 {
+     font-family:arial !important;
+    }
+}
+			
+		
+	</style>
+	
+	
+</head>
+<body style="overflow: scroll" class="home">
+	<div id="imgPrefetch" style="display:none">
+		<img src="http://www.medhost.com/PublishingImages/Medhost/images/favicon.ico?rev=23" />
+	</div>
+		<div>
+		</div>
+		<div style="display:none">	</div>
+		<div id="s4-workspaced">
+			<div id="s4-bodyContainer">
+			<!--pushnav-->
+				<section>
+					<div style="display:none">
+						<div class="row">
+							<div class="four columns">
+								<p>
+									<a href="https://community.medhost.com/Pages/Login.aspx" target="_blank" class="button grey radius full">MEDHOST Community<br />
+										<span>(Formerly HMS Community)</span>
+									</a>
+								</p>
+							</div>
+							<div class="four columns">
+								<p>
+									<a href="http://intranet.medhost.com" target="_blank" class="button grey radius full">Employee Intranet<br />
+										<span>(Login for MEDHOST Employees)</span>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<!--pushnav button-->
+					<div class="row">
+						<div class="twelve columns">
+							<div id="pushbutton">
+								<a href="https://community.medhost.com/Pages/login.aspx" target="_blank">Login </a>
+								<a href="https://community.medhost.com/Pages/login.aspx" target="_blank" class="toggle-nav"></a>
+							</div>
+						</div>
+					</div>
+					<!--end pushnav button-->
+				</section>
+				<!--end pushnav-->
+				
+				<!-- ===================== Header and Nav ===================== -->
+				<header>
+					<div class="row logo-container">
+						<div class="six columns">
+							<div id="main-logo">
+								<a href="/"><img alt="MedHost" src="http://www.medhost.com/PublishingImages/Medhost/images/medhost-logo.png" /></a>
+							</div>
+						</div>
+					</div>
+					<!--end row .logo-container-->
+					<div class="contain-to-grid sticky">
+						<nav class="row">
+							<div class="twelve columns">
+								<div class="megamenu_container megamenu_dark_bar megamenu_light">
+									<!-- Begin MEGA Menu Container -->
+									<ul class="megamenu">
+										<!-- Begin Mega Menu -->
+										<li class="megamenu_button"><a href="#">Menu</a></li>
+										<!--button for small screens-->
+										<li><a class="megamenu_drop" href="http://www.medhost.com/about-us">About Us</a>
+											<!-- Begin Item -->
+											<div class="dropdown_4columns dropdown_container">
+												<!-- Begin Item Container -->
+												<div class="col_12">
+													<ul class="mega-page-links">
+														<li><a href="http://www.medhost.com/about-us/executive-team">Executive Team</a></li>
+														<li><a href="http://www.medhost.com/about-us/our-partners">Our Partners</a></li>
+														<li><a href="http://www.medhost.com/about-us/medhost-experience">The MEDHOST Experience</a></li>
+														<li><a href="http://www.medhost.com/about-us/meaningful-use">Meaningful Use</a></li>
+														<li><a href="http://www.medhost.com/about-us/revenue-enhancement">Revenue Enhancement</a></li>
+														<li><a href="http://www.medhost.com/about-us/medhost-implementation">MEDHOST Implementation</a></li>
+														<li><a href="http://www.medhost.com/about-us/medhost-support">MEDHOST Support</a></li>
+														<li><a href="http://careers.medhost.com" target="_blank">Careers</a></li>
+													</ul>
+												</div>
+												<!-- End Item Container -->
+											</div>											
+											<!-- End Item -->
+										</li>
+										<li>
+											<a class="megamenu_drop" href="http://www.medhost.com/offerings">
+											Offerings</a>
+											<!-- Begin Item -->
+											<div class="dropdown_10columns dropdown_container">
+												<!-- Begin Item Container -->
+												<div class="col_4">
+													<h3><a href="http://www.medhost.com/offerings/edis">Emergency Department Information System</a></h3>
+													<h3><a href="http://www.medhost.com/offerings/patientflow-hd">PatientFlow HD</a></h3>
+													<h3><a href="http://www.medhost.com/offerings/advanced-perioperative">Perioperative Information Management System</a></h3>
+													<h3><a href="http://www.yourcareuniverse.com" target="_blank">YourCareUniverse</a></h3>
+													<h3><a href="http://www.medhost.com/offerings/business-intelligence">Business Intelligence</a></h3>
+												</div>
+												<div class="col_4">
+													<h3><a href="http://www.medhost.com/offerings/clinical-information-solutions">Clinical Information Solutions</a></h3>
+													<h3><a href="http://www.medhost.com/offerings/revenue-solutions">Revenue Solutions</a></h3>
+													<ul class="mega-page-links">
+														<li><a href="http://www.medhost.com/offerings/revenue-solutions/revenue-cycle">Revenue Cycle</a></li>
+														<li><a href="http://www.medhost.com/offerings/revenue-solutions/financials">Financials</a></li>
+														<li><a href="http://www.medhost.com/offerings/revenue-solutions/patient-access">Patient Access</a></li>
+													</ul>
+												</div>
+												<div class="col_4">
+													<h3><a href="http://www.medhost.com/offerings/hosted-and-managed-services">Hosted and Managed Services</a></h3>
+													<ul class="mega-page-links">
+														<li><a href="http://www.medhost.com/offerings/hosted-and-managed-services/medhost-direct">MEDHOST Direct</a></li>
+														<li><a href="http://www.medhost.com/offerings/hosted-and-managed-services/managed-it-services">Managed IT Services</a></li>
+													</ul>
+													<h3><a href="http://www.medhost.com/offerings/professional-services">Professional Services</a></h3>
+													<ul class="mega-page-links">
+														<li><a href="http://www.medhost.com/offerings/professional-services/outsourced-services">Outsourced Services</a></li>
+														<li><a href="http://www.medhost.com/offerings/professional-services/medhost-consulting-group">MEDHOST Consulting Group</a></li>
+														<li><a href="http://www.medhost.com/offerings/professional-services/COMPASS">COMPASS</a></li>
+														<!-- <LI>
+																<A href="/offerings/professional-services/optimization-services">Optimization Services</A>
+															</LI>-->
+													</ul>
+												</div>
+												<!-- End Item Container -->
+											</div>
+											<!-- End Item -->
+										</li>
+										<li>
+											<a class="megamenu_drop" href="http://www.medhost.com/markets-served">Markets Served</a>
+											<!-- Begin Item -->
+											<div class="dropdown_4columns dropdown_container">
+												<!-- Begin Item Container -->
+												<div class="col_12">
+													<ul class="mega-page-links">
+														<li><a href="http://www.medhost.com/markets-served/general-acute-care">General Acute Care</a></li>
+														<li><a href="http://www.medhost.com/markets-served/multi-facility-hospital-systems">Multi-Facility Hospital Systems</a></li>
+														<li><a href="http://www.medhost.com/markets-served/behavioral-health">Behavioral Health</a></li>
+														<li><a href="http://www.medhost.com/markets-served/post-acute-care">Post Acute Care</a></li>
+														<li><a href="http://www.medhost.com/markets-served/specialty-surgical-hospitals">Specialty Surgical Hospitals</a></li>
+														<li><a href="http://www.medhost.com/markets-served/rural-health">Rural Health</a></li>
+													</ul>
+												</div>
+											</div>
+											<!-- End Item Container -->
+										</li>
+										<!-- End Item -->
+										<li>
+											<a class="megamenu_drop" href="http://www.medhost.com/news-and-events">News & Events</a>
+											<!-- Begin Item -->
+											<div class="dropdown_4columns dropdown_container">
+												<!-- Begin Item Container -->
+												<div class="col_12">
+													<ul class="mega-page-links">
+														<li><a href="http://www.medhost.com/news-and-events/press-releases">News Releases</a></li>
+														<li><a href="http://www.medhost.com/news-and-events/events">Events</a></li>
+														<li><a href="http://www.medhost.com/news-and-events/resources">Resources</a></li>
+														<!--<LI>
+																<A href="/news-and-events/medhost-minute-blog">MEDHOSTMinute Blog</A>
+															</LI>-->
+													</ul>
+												</div>
+											</div>
+											<!-- End Item Container -->
+										</li>
+										<li><a href="http://www.medhost.com/medhost-blog">MEDHOST Minute Blog</a></li><!-- End Item -->
+										<li><a href="http://www.medhost.com/contact-us">Contact Us</a></li>
+									</ul>
+									<!-- End Mega Menu -->
+								</div>
+								<!-- end MegaMenu container-->
+							</div>
+							<!--end twelve columns-->
+						</nav>
+					</div>
+					<!--end contain-to-grid -->
+				</header>
+				<!--Main Content-->
+				<div data-name="ContentPlaceHolderMain">
+					<span id="DeltaPlaceHolderMain">
+						<section id="secondary-page-header-container">
+							<div class="row">
+								<div id="jobboardcontent" class="jobboardcontent">
+  <div cl ass="jobboard-wrapper">
+    <div class="acjbMpad" st yle="width:600px; margin:0px auto" >
+      <div class='acjb-mainDivArea '>
+        <div class='acjb-mainHeadContentDiv row-fluid'>
+          <div class='acjb-mainHeaderInnerDiv'>
+            <div><div id="acjb-mainNav">
+	<div class="acjb-inner" >
+		<ul id="menu-custom-menu-1" class="menu" style='padding:10px;'>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://careers.medhost.com/talentpool_signup" data-title="SIGN UP for new Job Alerts!!" data-width="360" data-height="750" id="acTalentPoolWidget"><i class="icon-envelope"></i>SIGN UP for new Job Alerts!!</a></li>
+					
+							
+		
+		
+		
+		
+		
+		
+		
+		
+		        
+				
+				</ul>
+	</div>
+</div>
+</div>
+          </div>
+        </div>
+        <div class='acjb-mainContentDiv row-fluid'>
+                     <div class='acjb-mainContentRightDiv'><div id="acjb-sidebar">
+  <div class="acLeftNavTop">
+    <ul class="acjb-widgets">
+      <li class="acjb-widget widget-nav"> 
+        <div id="seofilters">
+          <div id="browseby" class="tabbed_section">
+            <div class="contents">
+			 <div class="acNavContentT">
+              <p class="top acjbtitlebg" ><a id="a_job_type_list" class="a_job_type_list accordionIcon" href="javascript:void(0)">+</a>  Job Type </p>
+              <ul class="job_type_list">
+                <li class="page_item"><a href="http://careers.medhost.com/">All Jobs</a></li>
+                                <li class="page_item"><a href="http://careers.medhost.com/jobtype/direct">Direct</a></li>
+                                <li class="page_item"><a href="http://careers.medhost.com/jobtype/internal-direct">Internal Direct</a></li>
+                                <li class="page_item"><a href="http://careers.medhost.com/jobtype/internal-temp-contract">Internal Temp/Contract</a></li>
+                                <li class="page_item"><a href="http://careers.medhost.com/jobtype/temp-contract">Temp/Contract</a></li>
+                                <li class="page_item"><a href="http://careers.medhost.com/jobtype/temp-contract-to-direct">Temp/Contract to Direct</a></li>
+                				
+              </ul>
+                <div style="clear:both"></div>
+			  </div>			  
+			  			   <div class="acNavContentB">
+              <p class="top acjbtitlebg"><a id="a_job_industry_list" class="a_job_industry_list accordionIcon" href="javascript:void(0)">+</a> Job Industry </p>
+              <ul class="job_industry_list">
+                <li class="page_item"><a href="http://careers.medhost.com/">All Jobs</a></li>
+                                <li class="page_item"><a href="http://careers.medhost.com/jobindustry/computer-software">Computer Software</a></li>
+                              </ul>
+                <div style="clear:both"></div>
+			  </div>			  
+			  			   <div class="acNavContentB">
+              <p class="top acjbtitlebg"><a id="a_job_category_list" class="a_job_category_list accordionIcon" href="javascript:void(0)">+</a> Job Category </p>
+              <ul class="job_category_list">
+                <li class="page_item"><a href="http://careers.medhost.com/">All Jobs</a></li>
+                                <li class="page_item"><a href="http://careers.medhost.com/jobcategory/computers-software">Computers-Software</a></li>
+                                <li class="page_item"><a href="http://careers.medhost.com/jobcategory/customer-support">Customer Support</a></li>
+                                <li class="page_item"><a href="http://careers.medhost.com/jobcategory/unassigned">Unassigned</a></li>
+                              </ul>
+                <div style="clear:both"></div>
+			  </div>			 
+            </div>
+          </div>
+        </div>
+        <div id="chkfilters" style="display:none">
+          <div id="browseby" class="tabbed_section">
+            <div class="acNavContentT">
+              <p class="top" ><a id="a_job_type_list" class="a_job_type_list accordionIcon" href="javascript:void(0)">+</a> Job Type </p>
+              <ul class="job_type_list">
+                <li class="page_item">
+                  <input id="all_job_type" class="jobtype" type=checkbox name="jobtype" value="all" onClick=javascript:filterJobs('all','all_job_type')>
+                  All</li>
+                                <li class="page_item">
+                  <input class="jobtype" type=checkbox name="jobtype"  value="56" onClick=javascript:filterJobs(56,'job_type')>
+                  Direct</li>
+                                <li class="page_item">
+                  <input class="jobtype" type=checkbox name="jobtype"  value="59" onClick=javascript:filterJobs(59,'job_type')>
+                  Internal Direct</li>
+                                <li class="page_item">
+                  <input class="jobtype" type=checkbox name="jobtype"  value="58" onClick=javascript:filterJobs(58,'job_type')>
+                  Internal Temp/Contract</li>
+                                <li class="page_item">
+                  <input class="jobtype" type=checkbox name="jobtype"  value="55" onClick=javascript:filterJobs(55,'job_type')>
+                  Temp/Contract</li>
+                                <li class="page_item">
+                  <input class="jobtype" type=checkbox name="jobtype"  value="57" onClick=javascript:filterJobs(57,'job_type')>
+                  Temp/Contract to Direct</li>
+                              </ul>
+              <div style="clear:both"></div>
+            </div>
+						<div class="acNavContentB">
+              <p class="top"><a id="a_job_industry_list" class="a_job_industry_list accordionIcon" href="javascript:void(0)">+</a> Job Industry </p>
+              <ul class="job_industry_list">
+                <li class="page_item">
+                  <input id="all_job_industry" class="jobindustry" type=checkbox name="jobindustry" value="all" onClick=javascript:filterJobs('all','all_job_industry')>
+                  All</li>
+                                <li class="page_item">
+                  <input class="jobindustry" type=checkbox  name="jobindustry" value="284" onClick=javascript:filterJobs(284,'industry')>
+                  Computer Software</li>
+                              </ul>
+              <div style="clear:both"></div>
+            </div>
+						
+            <div class="acNavContentB">
+              <p class="top"><a id="a_job_category_list" class="a_job_category_list accordionIcon" href="javascript:void(0)">+</a> Job Category </p>
+              <ul class="job_category_list">
+                <li class="page_item">
+                  <input id="all_job_category" class="jobcategory" type=checkbox name="jobcategory" value="all" onClick=javascript:filterJobs('all','all_job_category')>
+                  All</li>
+                                <li class="page_item">
+                  <input class="jobcategory" type=checkbox  name="jobcategory" value="87" onClick=javascript:filterJobs(87,'category')>
+                  Computers-Software</li>
+                                <li class="page_item">
+                  <input class="jobcategory" type=checkbox  name="jobcategory" value="353" onClick=javascript:filterJobs(353,'category')>
+                  Customer Support</li>
+                                <li class="page_item">
+                  <input class="jobcategory" type=checkbox  name="jobcategory" value="362" onClick=javascript:filterJobs(362,'category')>
+                  Unassigned</li>
+                              </ul>
+              <div style="clear:both"></div>
+            </div>			 
+          </div>
+        </div>
+		</li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript" language="javascript">
+
+$(document).ready(function(){
+    filterJobs();   
+});
+
+</script>
+        
+</div>
+		   <div class='acjb-mainUserRightDiv'> </div>                   
+                              <div class='acjb-mainContentLeftDiv '>
+            <div id="acjb-section">               <div id="acjb-content">
+	<div class="acjb-inner">
+
+				<form action="http://careers.medhost.com/" method="get" id="acjb-searchform">
+		<div class="search-wrap span12">	
+			<span class='span5 spanJobTitlewidth'><input type="text" id="ac_keyword" title="" name="keyword" class="text acMarginSearch" placeholder="Jobtitle, Skills, etc..." value="" /></span>
+			<span class='span5 spanJobTitlewidth'><input type="text" id="ac_location" title="Location" name="location" class="text acMarginSearch" placeholder="Location" value="" /></span>
+			<span class="span2 spanButtonwidth">
+			<label for="search"><button type="submit" title="Go" class="acjb-btn acjb-btn-primary submit " id="acjbbtnactiv">Search</button></label>
+			</span>
+		</div>
+		</form>
+		
+		<div class="acjb-clear"></div>
+		<table id="joblist" class="dataTable table-striped table-bordered table-condensed" cellspacing="0" width="100%">
+		<thead>
+		<tr>
+			<th>Job Title</th>
+			<th>Location</th>
+			<th> Job Type </th>
+			<th>Date Posted</th>
+		</tr>
+		</thead>
+
+		<tbody>
+				<tr>
+			<td><a href=http://careers.medhost.com/jobdetails/staff-accountant/23>Staff Accountant</a></td>
+			<td></td>
+			<td>Internal Direct</td>
+			<td>09/19/2016</td>
+		</tr>
+				<tr>
+			<td><a href=http://careers.medhost.com/jobdetails/accounts-receivable-assistant/nashville-tn/16>Accounts Receivable Assistant</a></td>
+			<td>Nashville, TN</td>
+			<td>Internal Direct</td>
+			<td>07/27/2016</td>
+		</tr>
+				<tr>
+			<td><a href=http://careers.medhost.com/jobdetails/open-systems-engineer-redhat-linux/nashville-tn/8>Open Systems Engineer --RedHat Linux</a></td>
+			<td>Nashville, TN</td>
+			<td>Internal Direct</td>
+			<td>07/05/2016</td>
+		</tr>
+				</tbody>
+		</table>
+
+	</div>
+</div>
+<script>
+var isDisplayavigationDivCheck = true;
+</script>
+
+               </div>
+          </div>
+        </div>
+        <div style='clear:both;'></div>
+        <div class='acjb-mainHeadContentDiv'>
+          <div class='acjb-mainHeaderInnerDiv'>
+            <div><div id="acjb-mainNav">
+	<div class="acjb-inner" >
+		<ul id="menu-custom-menu-1" class="menu" style='padding:10px;'>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://careers.medhost.com/talentpool_signup" data-title="SIGN UP for new Job Alerts!!" data-width="360" data-height="750" id="acTalentPoolWidget"><i class="icon-envelope"></i>SIGN UP for new Job Alerts!!</a></li>
+					
+							
+		
+		
+		
+		
+		
+		
+		
+		
+		        
+				
+				</ul>
+	</div>
+</div>
+</div>
+          </div>
+        </div>
+	        <div class='acjb-mainFooterDiv acPowerBy'><div>Powered by <a href=http://www.akkencloud.com/ target=_blank><img src="http://careers.medhost.com/images/poweredbylogo.png" alt="AkkenCloud" border="0" title="AkkenCloud"/></a></div>
+</div>
+	      </div>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+</div>
+
+							</div>
+						</section>
+					<!--end bottom block-->
+					</span>
+				</div>
+				<!--end Main Content-->
+				<!-- Footer -->
+				<footer class="footer-content">
+					<div class="row">
+						<div class="twelve columns">
+							<p>
+								<a title="About Us" href="http://www.medhost.com/about-us">About Us</a> | <a title="Offerings" href="http://www.medhost.com/offerings">Offerings</a> 
+								| <a title="News & Events" href="http://www.medhost.com/news-and-events">News &Events</a> 
+								| <a title="Careers" href="http://careers.medhost.com" target="_blank">Careers</a> 
+								| <a title="Contact Us" href="http://www.medhost.com/contact-us">Contact Us</a> 
+								| <a title="Disclaimer" href="http://www.medhost.com/disclaimer">Disclaimer</a> 
+								| <a title="Privacy Policy" href="http://www.medhost.com/privacy-policy">Privacy Policy</a>
+							</p>
+							<p>
+								©2013 MEDHOST, Inc. All rights reserved.
+							</p>
+						</div>
+					</div>
+				</footer>
+				<script src="http://www.medhost.com/Style Library/javascripts/combined-scripts.min.js"></script>
+			</div>
+		</div>
+</body>
+</html>

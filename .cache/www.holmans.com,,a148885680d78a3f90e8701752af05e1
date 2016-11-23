@@ -1,0 +1,402 @@
+status: 200
+content-length: 39229
+content-location: http://www.holmans.com
+x-aspnet-version: 4.0.30319
+set-cookie: ASP.NET_SessionId=bqiypgfulnl40b0t4looslgp; path=/; HttpOnly
+vary: Accept-Encoding
+server: Microsoft-IIS/7.5
+-content-encoding: gzip
+x-ua-compatible: IE=9
+cache-control: private
+date: Fri, 09 Sep 2016 06:06:30 GMT
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+
+
+		
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml"><head id="cmsHead"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"14ecb6b7fc","applicationID":"24821594","transactionName":"NVRaYUdVVhECUkFaVgweeWZlG1wHBVBAX01MUEtFTQ==","queueTime":0,"applicationTime":296,"ttGuid":"35ADB676329A5677","agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><title>
+	default
+</title><meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=1;" /><link rel="Stylesheet" type="text/css" href="css/MainStyleSheet.css" /><link rel="Stylesheet" type="text/css" href="css/Global.css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css" /><meta name="description" /><meta name="keywords" /><link id="menu2GlobalCSS" href="http://realcmscore.holmans.sks.com/css/Menu/Menu.css" rel="stylesheet" type="text/css" /><link id="hlnkNavCssTop1" href="css/Menu.Top1.css" rel="stylesheet" type="text/css" /><link id="hlnkNavCssTop2" href="css/Menu.Top2.css" rel="stylesheet" type="text/css" /><link href="/WebResource.axd?d=VUQRtN1sVqeeDri6_Md3OZfXyby3zzGD2ud1KDUr3TBbM7YlEzJumOLqKhqNA1--B8Fx_vKZKse8BltsDu8ZX2G6JfukHfOKlnkjQGLdJzsCD6GZJa41Foktij06ajD-KcMC94njYrss6_DPGtw_6w2&amp;t=635313677981060942" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head><body><form method="post" action="./" id="cmsForm">
+<input type="hidden" name="_TSM_HiddenField_" id="_TSM_HiddenField_" value="waLRj7BAFGHZZsNrhVsBe3mej2rWHPs3CfbGDuGkLok1" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTc4MjIwOTc2OQ9kFgICAw9kFggCBQ9kFgICAQ8PFgIeBlBhZ2VJZAUBMBYCHgVzdHlsZQUdb3ZlcmZsb3c6IHZpc2libGUgIWltcG9ydGFudDsWAgIBD2QWAmYPFCsAAhQrAAIPFgIeF0VuYWJsZUFqYXhTa2luUmVuZGVyaW5naGQQFgVmAgECAgIDAgQWBRQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZA8WBWZmZmZmFgEFdFRlbGVyaWsuV2ViLlVJLlJhZE1lbnVJdGVtLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDEzLjMuMTAxNS40MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0ZGQCBg9kFgICAQ8PFgIfAAUBMBYCHwEFHW92ZXJmbG93OiB2aXNpYmxlICFpbXBvcnRhbnQ7FgICAQ9kFgJmDxQrAAIUKwACDxYCHwJoZBAWB2YCAQICAgMCBAIFAgYWBxQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZA8WB2ZmZmZmZmYWAQV0VGVsZXJpay5XZWIuVUkuUmFkTWVudUl0ZW0sIFRlbGVyaWsuV2ViLlVJLCBWZXJzaW9uPTIwMTMuMy4xMDE1LjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDRkZAIQDw8WCB4JUXVldWVTaXplAhQeEWNlX09uUmVxdWVzdFN0YXJ0BR1ydHNfY21zX2FqYXhtYW5nX3JlcXVlc3RzdGFydB4QY2VfT25SZXNwb25zZUVuZAUbcnRzX2Ntc19hamF4bWFuZ19yZXF1ZXN0ZW5kHgRfZGxwBSBSdHNfQ21zX0Jhc2VQYWdlX1JhZExvYWRpbmdQYW5lbGRkAhEPDxYCHwJoZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFUkhlYWRlcjIkXzUxNWZkOTNkODYwNjQ3ODZiNDNkZGY3ZGY1OTI0MTM2JHJhZE1lbnVfNTE1ZmQ5M2Q4NjA2NDc4NmI0M2RkZjdkZjU5MjQxMzYFV2dsb2JhbEZvb3RlciRfNGYyYjY0Yzc2NzY1NDRmYThlZjRiNTc5MDM3NTIxZDkkcmFkTWVudV80ZjJiNjRjNzY3NjU0NGZhOGVmNGI1NzkwMzc1MjFkOaHj1mZkqsWBCxvshJdlg6ba2YKEW0f3aJddKdNPsjrn" />
+
+
+<script src="/scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="/scripts/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/scripts/jquery.tools.min.js" type="text/javascript"></script>
+<script src="/scripts/Main.js" type="text/javascript"></script>
+<script src="/scripts/menu.js" type="text/javascript"></script>
+<script src="/scripts/rts.js" type="text/javascript"></script><script type="text/javascript" src="http://realcmscore.holmans.sks.com/scripts/Main.js"></script><script src="/js/rts.js" type="text/javascript"></script><script src="/js/rtsJqueryRefresh.js" type="text/javascript"></script><script src="js/jquery.queryloader2.min.js" type="text/javascript"></script><script src="js/imagesloaded.js" type="text/javascript"></script><script src="js/skrollr.js" type="text/javascript"></script><script src="js/corner.js" type="text/javascript"></script><script src="js/_main.js" type="text/javascript"></script><script src="js/home.js" type="text/javascript"></script><script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');    ga('create', 'UA-54626513-1', 'auto'); ga('require', 'displayfeatures');  ga('send', 'pageview');
+</script>
+<script src="/ScriptResource.axd?d=Vw1g0KWlfVecWQ5ZOTQbKOpw1wA8qszAKut5Isd1unXWZQj02REQsfTFDvUzi8FoTUy9ClgBH-Cmx-KBKM8Qs7Y5H_OtU8JAjDCFxrMf4UP10sm7uAChxtd0oyFK5mFV0&amp;t=ffffffffafdfa956" type="text/javascript"></script>
+<script src="/default.aspx?_TSM_CombinedScripts_=True&amp;v=waLRj7BAFGHZZsNrhVsBe3mej2rWHPs3CfbGDuGkLok1&amp;_TSM_Bundles_=" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dKJsvXSFHx4YDuXz1ei5fza-Hnq67GlOu6-w2bTxqedEFA_QZUA7Aeg_MtKxfD5DRYT6vhbp5a4jsnF85SlNUpEGbTsNBA7-EFRL3qxZvyPUsdIsqxomrTOsFPW7YM5J6Z9dortNab64qLme6YFTQA2&amp;t=ffffffffafdfa956" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mY4Dx_hPdOeKDj5g785fDDg_0SLPHafhZZaF_pv3yVO3IRDYRZbQZR85CniT21IlUhRR7vCNWD64SFZVTrz1dFbsIB4Eur3N3r2ajlWrt6Gu6T0ftHy0MdhifadnTH_Nxhl1803dQHiXCThRRWDyoQ2&amp;t=ffffffffafdfa956" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=RP2AGdoo7yrSqRSAlD4VGd7m6eSJUFXp1wvx_-9MehXMDZXzYHXv2wERL1IIOyBoo1yzSR6FJbeVTrYguRWLWhv6rXC5jrJ4-RfENC3gLeqffpg9fPSYJ_5Gu-0st1hBqDpLtdd72Zw4wT7DAiIViMPuEjh09FwGyZFBNnhNFoQ1&amp;t=ffffffffb48170fd" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=XK6fIypxZ42O7al5DqF8T_0fleBA1cj9pdXvJdidwctM02oUZZbD5T_PC0y1lt-lIlDnpcwblzkhspo9m8qf3bSoQooBttlQkPBtyKoe2mzaqR7Z7AE_U4QAGiWfEqZUDUc3LAA6pfp_DweuRyjL3g2&amp;t=ffffffffbdfdfe1e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LHlVTjCuSjeN-RYNvGENyoD1G-kqeGxESUnvYzonC9x1Bscyr8dHtQP8TN2nH7oYpd_GGx1gQRS4l-cUYhm19vlhrbn5j7js0B3HT9vGAHB6k-KGB_VQ01W-EcL_UI7r0frFR8YCiGv_Kqp6WOX3-g2&amp;t=ffffffffbdfdfe1e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Wmi_hxJhC1cDuv5zZwnZKVaDenH-v61eMLjsfCuNMXX8IscMdw31imZZzCGaNu8jVpfljLnLiBNsilR0NmNHA_zPHGmQzpVeEm4cmRLzt-5E-SyS2fAHEZ1xvmzpVeYf0VQ6Nu19E6p9aCH6gQt3_w2&amp;t=ffffffffbdfdfe1e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=QmOP-n-qSlKxh_Ym--a6eqPEd_j4CwZFQE_vXAvtsYhA-xi9KT_MJDAMq0XWvgbzurK99RKS28vvWNCJAPyPT_QXkD8EceIc9SgZtnuGe904QUMRsML0x_HNm2wrwNyPAxGXoQcMhaxqzqFfzeGKVgj3TRk-t1iOsqVdp1KZYsA1&amp;t=ffffffffbdfdfe1e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=WI8eSoh0iBXdmkDRMYSNVhqwXs1RsluXuV5AvQU9aqiwaWjJcJ5wsQmHS1cG2R4iIuB8Le11Cw1rkz1XOIdZey-swFqb-carsPiX_SQmF1LkUtq1tjg0vA_xDXtMjt_2xoG6WUAjJXkvf2-HHLUNDxKEpXlC3ZLxgCGHlUUkGM41&amp;t=ffffffffbdfdfe1e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=4wnbS6B8L11Pfs6Bx5r2w2vP6U4zYmNVylzKUUQLe3Pk8mia85Rcx_NPaUvkYVIMtui_4WMVWV2c8qsFaf7q_e5Z0T4DYW_k8U6rAQT5hmhlVONyVg6EjdJ-gN_pej96vhxoclCcax649feaEUBbCLlrnsVgCJWZZm8dqxwKIdY1&amp;t=ffffffffbdfdfe1e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=hgrnmmAlZkToQzfPxD8v-242wVnYyT3O7aJQbr3AdO5UHEy35gxfyHByKJfrzWV-GVkr0pqceOq-nusn_GkrIpvoZ0FIkO2YQSXJC06P91p5pkrgzr0OA6NuQc1wQFwW1yqeUAfbdU1WHiJF5Q5Bn51LBSLNOnlMyRZWQNxtr3s1&amp;t=ffffffffbdfdfe1e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=nAQwSbv3CZEBqom_lJFTJdKLHbCjZfe1a60xKR9pj7iiEEVqBHo4SJgYmQHH4YBOFpH69GW-EqFhazU__h8um3J_3MsJ4rrfMRq-0bsKQCgmZQglTsPkBywggM2AoMA4nKpyvG1ntfO4MsizsAEaFQ2&amp;t=ffffffffbdfdfe1e" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=SjRIS93W3WCc97EuFJHEheG-UbhPxId3n7LpqrlI-RgLG6Ul-b0Pz4z9wx7nWOMTxbs4UCwCJwalZYjvoZGPiE0ZIPa1WBS06X0H9y9DICALSDLv4UIvDTtJxOT4a9uXHCJscvBElyOGzv1UzJnzmw2&amp;t=ffffffffbdfdfe1e" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAOWrC25qJDh4Nax4TcthVerE1VQJqSM8JeK9E5glzWHvUoOrheExQyMySPWz6DZcPjFBZjmQys8mN9fzHUeg8qp+P/iCvRHmMa+9ajrjaZ5mA==" />
+
+
+<div>
+<div id="regionAdminHeader" class="rts_cms_data_region">
+	
+<div id="_adminHeader">
+
+	</div>
+
+</div>
+</div>
+
+         
+<div class="headerContainer">
+    <div class="logoContainer">
+        <a href="/"><img src="images/logo.png" title="Holman's USA" /></a>
+    </div>
+    <div class="mainNavContainer">
+        <div id="Header2__d8eefc7604c743b499e3a5336ce6aace" class="rts_cms_data_region" style="overflow: visible !important;">
+	
+            <div id="Header2__515fd93d86064786b43ddf7df5924136" class="navigationControl">
+		<div id="Header2__515fd93d86064786b43ddf7df5924136_radMenu_515fd93d86064786b43ddf7df5924136" class="RadMenu RadMenu_Top1 Main Navigation">
+			<!-- 2013.3.1015.40 --><ul class="rmRootGroup rmHorizontal">
+				<li class="rmItem rmFirst"><a class="rmLink rmRootLink" href="/about-us.aspx"><span class="rmText">Celebrating 60 Years in Business</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/Computing/default.aspx"><span class="rmText">Computing</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/Measurement/default.aspx"><span class="rmText">Measurement</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="http://shop.holmansusa.com/"><span class="rmText">Retail</span></a></li><li class="rmItem rmLast"><a class="rmLink rmRootLink" href="/Foundation/default.aspx"><span class="rmText">Autism</span></a></li>
+			</ul><input id="Header2__515fd93d86064786b43ddf7df5924136_radMenu_515fd93d86064786b43ddf7df5924136_ClientState" name="Header2__515fd93d86064786b43ddf7df5924136_radMenu_515fd93d86064786b43ddf7df5924136_ClientState" type="hidden" />
+		</div>
+	</div>
+        
+</div>
+    </div>
+    <div class="mobileNav">
+        <a href="#">
+            <img src="images/mobileNav2.png" /></a>
+    </div>
+    <div class="clearBoth">
+    </div>
+</div>
+
+    
+    <!--
+    <div style="position: fixed; top: 60px; left; 0; width: 100%; z-index: 9998;">
+        <div style="background: #000; padding: 10px; float: right; color:#fff; margin-right: 10px;">
+        <span style="display:inline-block; padding-right: 10px;">Contact Us: (800) 545-0932</span>
+        <div class="contactIcons">
+            <a href="javascript:void(0);" onclick="URLRedirect();"><img src="/images/iconContact001.png" /></a>
+            <a href="/Contact-Us.aspx"><img src="/images/iconContact002.png" /></a>
+            <a href="/Contact-Us.aspx" class="locationLnk"><img src="/images/iconContact003.png" /></a>
+            <a href="/Contact-Us.aspx#ContactForm"><img src="/images/iconContact004.png" /></a>
+        </div>
+        </div>
+        <div class="clearBoth"></div>
+    </div>-->
+    
+    
+    <div class="megaSubMenu">
+        <div class="megaPadding">
+            <div class="mobileMegaDD">
+                <a href="/">Holman's Home</a>
+                <a href="/measurement">Measurement</a>
+                <a href="/Computing">Computing</a>
+                <a href="http://shop.holmansusa.com">Retail</a>
+                <a href="/foundation">Autism</a>
+            </div>
+            <div class="container1200">        
+                <div class="floatLeft width25 subMenuContainer">
+                    <h3>
+                        Measurement</h3>
+                    <p class="txtWhite">
+                        The Holman’s brand built on nearly six decades of experience is well recognized
+                        nationally for providing professional product training, high level technical support,
+                        and industry leading service for our customers.</p>
+                    <a href="/measurement" class="subMenuLnk">Learn More</a>
+                </div>
+                <div class="floatLeft width25 subMenuContainer">
+                    <h3>
+                        Computing</h3>
+                    <p class="txtWhite">
+                        Holman’s has been a leading provider of IT product solutions for government and
+                        business for over 40 years.</p>
+                    <a href="/computing" class="subMenuLnk">Learn More</a>
+                </div>
+                <div class="floatLeft width25 subMenuContainer">
+                    <h3>
+                        Retail</h3>
+                    <p class="txtWhite">
+                        We strive to provide creative and unexplored ideas that solve our customer's issues,
+                        hence creating value for our customers.
+                    </p>
+                    <a href="http://shop.holmans.com" class="subMenuLnk">Learn More</a>
+                </div>
+                <div class="floatLeft width25 subMenuContainer">
+                    <h3>
+                        Autism</h3>
+                    <p class="txtWhite">
+                        Technology for Autism, founded in 2011 by Anthony D. Trujillo, is designed to place
+                        technology where it’s needed most, in public school special needs classrooms.</p>
+                    <a href="/foundation" class="subMenuLnk">Learn More</a>
+                </div>
+                <div class="clearBoth"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="footerContainer">        
+        <div class="footerNavContainer">            
+            <div id="globalFooter__7ca5dbfa485b4ec4a8e1f0c4e4c84381" class="rts_cms_data_region" style="overflow: visible !important;">
+	
+            <div id="globalFooter__4f2b64c7676544fa8ef4b579037521d9" class="navigationControl">
+		<div id="globalFooter__4f2b64c7676544fa8ef4b579037521d9_radMenu_4f2b64c7676544fa8ef4b579037521d9" class="RadMenu RadMenu_Top2 Bottom Navigation">
+			<ul class="rmRootGroup rmHorizontal">
+				<li class="rmItem rmFirst"><a class="rmLink rmRootLink activePage rpSelected" href="/default.aspx"><span class="rmText">Home</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/about-us.aspx"><span class="rmText">About Us</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/foundation-news.aspx"><span class="rmText">News</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/contact-us.aspx"><span class="rmText">Contact Us</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" target="_blank" href="/capabilities-statement-updated-3_11_2015.pdf"><span class="rmText">Capabilities</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/careers.aspx"><span class="rmText">Careers</span></a></li><li class="rmItem rmLast"><a class="rmLink rmRootLink" href="http://shop.holmansusa.com"><span class="rmText">SHOP HOLMANS RETAIL</span></a></li>
+			</ul><input id="globalFooter__4f2b64c7676544fa8ef4b579037521d9_radMenu_4f2b64c7676544fa8ef4b579037521d9_ClientState" name="globalFooter__4f2b64c7676544fa8ef4b579037521d9_radMenu_4f2b64c7676544fa8ef4b579037521d9_ClientState" type="hidden" />
+		</div>
+	</div>
+            
+</div>
+        </div>
+        <div class="contactIcons">
+            <a href="javascript:void(0);" onclick="URLRedirect();"><img src="/images/iconContact001.png" /></a>
+            <a href="/Contact-Us.aspx"><img src="/images/iconContact002.png" /></a>
+            <a href="/Contact-Us.aspx" class="locationLnk"><img src="/images/iconContact003.png" /></a>
+            <a href="/Contact-Us.aspx#ContactForm"><img src="/images/iconContact004.png" /></a>
+        </div>
+    </div> 
+    
+    <div class="mobileFooterContainer">
+        <div class="contactIcons">            
+            <a href="tel:800-545-0932"><img src="/images/iconContact002.png" /></a>
+            <a href="https://mapsengine.google.com/map/edit?mid=zD5HXvSEPpi4.kqqWgzbpXA3c" target="_blank" class="locationLnk"><img src="/images/iconContact003.png" /></a>
+            <a href="mailto:sales@holmans.com"><img src="/images/iconContact004.png" /></a>
+        </div>
+    </div>  
+    
+
+    <script type="text/javascript">
+        function URLRedirect() {
+            var winName
+            var popupWindow
+            winName = 'ChatDown';
+            popupWindow = null;
+            url = "http://www.holmans.com/CheckChatStatus.aspx?checkWeb=True"
+            popupWindow = window.open(url, winName, 'width=525,height=400, resizable=yes')
+        }
+
+        /*
+        $(".locationLnk").click(function () {
+        $("#modal").show();
+        });*/
+
+    </script>
+          
+          <div id="pageNavigationContainer">
+              <ul class="pageNavigation">
+                  <li><a href="#" class="link001"><span>Introduction</span><span class="pageNavNumber">&#8593;</span></a></li>
+                  <li><a href="#" class="link002"><span>Enterprise Computing</span><span class="pageNavNumber">01.</span></a></li>
+                  <li><a href="#" class="link003"><span>Precision Measurement</span><span class="pageNavNumber">02.</span></a></li>
+                  <!--<li><a href="#" class="link004"><span>Retail Store</span><span class="pageNavNumber">03.</span></a></li>  -->
+					<li><a href="http://shop.holmansusa.com/"><span>Retail Store</span><span class="pageNavNumber">03.</span></a></li> 
+                  <li><a href="#" class="link005"><span>Technology for Autism</span><span class="pageNavNumber">04.</span></a></li>            
+              </ul>
+          </div>
+
+          <div id="skrollr-body">
+<div class="mobileContent">
+              <div class="mobileContentPadding">
+                  <div class="mobileHome001" onclick="location.href='/computing';">Computing</div>
+                  <div class="mobileHome002" onclick="location.href='/measurement';">Measurement</div>
+                  <div class="mobileHome003" onclick="location.href='http://shop.holmansusa.com';" >Retail</div>
+                  <div class="mobileHome004" onclick="location.href='/foundation';">Autism</div>
+              </div>
+          </div>
+              <div id="parallax001" class="mainParallaxWindow2">        
+                  <div class="homeIntroSlide">
+                      <div class="homePanel001"></div>
+                      <div class="homePanel002"></div>
+                      <div class="homePanel003"></div>
+                      <div class="homePanel004"></div>
+                      <div class="darkPattern"></div>
+                      <div class="homePanelText001 homePanel">
+                          <div class="link002 homePanelTextContainer">                        
+                              <div class="homePanelTextText">Enterprise Computing</div>                        
+                          </div>
+                      </div>
+                      <div class="homePanelText002 homePanel">
+                          <div class="link003 homePanelTextContainer">                        
+                              <div class="homePanelTextText">Measurement</div>                        
+                          </div>
+                      </div>
+                      <div class="homePanelText003 homePanel">
+                          <div class="homePanelTextContainer"   onclick="location.href='http://shop.holmansusa.com';">                        
+                              <div class="homePanelTextText">Retail</div>                        
+                          </div>
+                      </div>
+                      <div class="homePanelText004 homePanel">
+                          <div class="link005 homePanelTextContainer">                        
+                              <div class="homePanelTextText">Autism</div>                        
+                          </div>
+                      </div>
+                
+                      <div style="position: absolute; width: 100%; height: 100%; z-index: 99998; background: #000;" class="blackBGHome">
+                          <div class="sliderLogoContainer" style="position: relative; top: 50%; text-align: center; margin-top: -40px; margin: 0 auto;">
+                              <div class="sliderLogo">
+                                  <img src="images/logoBig.png" style="width: 100%; height: auto;" />
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="sliderLogoContainer" style="position: relative; top: 50%; text-align: center; margin-top: -40px; margin: 0 auto;">
+                          <div class="sliderLogo">
+                              <img src="images/logoBig.png" style="width: 100%; height: auto;" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div id="parallax002" class="mainParallaxWindow2" data-anchor-target="#parallax002"
+                  data-bottom-top="background-position: 0px -50px;" data--2400-top="background-position: 0px 50px;">
+              </div>
+              <div id="parallax003" class="mainParallaxWindow2" data-anchor-target="#parallax003"
+                  data-bottom-top="background-position: 0px -50px;" data--2400-top="background-position: 0px 50px;">
+              </div>
+              <!--<div id="parallax004" class="mainParallaxWindow2">
+              </div>-->
+              <div id="parallax005" class="mainParallaxWindow2" data-anchor-target="#parallax005"
+                  data-bottom-top="background-position: 0px -50px;" data--2400-top="background-position: 0px 50px;">
+              </div>
+          </div>
+          
+          <!--Enterprise Computing -->
+          <div class="binaryContainer" data-anchor-target="#parallax002" data-401-top="display:none;" data-400-top="opacity: 0; display:block" data-300-top="opacity: 1;" data--1200-top="opacity: 1;" data--1600-top="opacity: 0; display:block;" data--1601-top="display:none;">
+            <div data-anchor-target="#parallax002" data-bottom-top="background-position: -900px 5px; opacity: .2;" data--2400-top="background-position: 0px 5px;" class="binary"></div>
+            <div data-anchor-target="#parallax002" data-bottom-top="background-position: 900px 5px;  opacity: .4;" data--2400-top="background-position: 0px 5px;" class="binary"></div>
+            <div data-anchor-target="#parallax002" data-bottom-top="background-position: 300px 5px; opacity: .6;" data--2400-top="background-position: 0px 5px;" class="binary"></div>
+            <div data-anchor-target="#parallax002" data-bottom-top="background-position: -500px 5px;  opacity: .8;" data--2400-top="background-position: 0px 5px;" class="binary"></div>
+            <div data-anchor-target="#parallax002" data-bottom-top="background-position: -100px 5px; opacity: 1;" data--2400-top="background-position: 0px 5px;" class="binary"></div>
+            <div data-anchor-target="#parallax002" data-bottom-top="background-position: 700px 5px; opacity: .8;" data--2400-top="background-position: 0px 5px;" class="binary"></div>
+            <div data-anchor-target="#parallax002" data-bottom-top="background-position: -900px 5px; opacity: .6;" data--2400-top="background-position: 0px 5px;" class="binary"></div>
+            <div data-anchor-target="#parallax002" data-bottom-top="background-position: 900px 5px; opacity: .4;" data--2400-top="background-position: 0px 5px;" class="binary"></div>
+            <div data-anchor-target="#parallax002" data-bottom-top="background-position: 300px 5px; opacity: .2;" data--2400-top="background-position: 0px 5px;" class="binary"></div>
+          </div>
+          <div class="sectionContainer" data-anchor-target="#parallax002" data-101-top="display:none;" data-100-top="display:block;" data-0-top="left: -100%;" data-2-top="left: 10%;" data--100-top="opacity:0; display:block;" data--300-top="opacity: 1; left: 10%;" data--1200-top="opacity: 1; left: 10%;" data--1500-top="opacity: 0; left: -100%;"><div class="sectionTitle"><span class="computingTitle">Computing</span></div><div class="sectionContent" data-anchor-target="#parallax002" data--300-top="margin-top: 800px; display:block;" data--700-top="margin-top: -70px;"><div class="compSectionPadding">
+                <div id="_dd7bfacafada4d4aadacc5a9eeba22c8" class="hidden rts_cms_data_region">
+	  <div id="_5e757d41268a4356a13e8700df7936a9">
+		<div id="_5e757d41268a4356a13e8700df7936a9_pnldd7bfacafada4d4aadacc5a9eeba22c8Content">
+			<H2>Holman’s has been a leading provider of IT product solutions for government and business for over 40 years.</H2>
+<P>Holman’s focuses on building strong relationships with knowledgeable sales and support staff, along with market leading technology manufacturers.</P>
+<P>Holman’s customers receive best-in-class services such as: national sales and service centers, dedicated inventory, customized eCommerce solutions, assets management and many other services.&nbsp;<SPAN style="LINE-HEIGHT: 1.6em">Holman’s strives to to achieve the highest level of customer satisfaction by delivering exceptional service and support.</SPAN></P>
+		</div>
+	</div> 
+                
+</div>
+                </div></div>
+            <div class="relative">
+              <div data-anchor-target="#parallax002" data--500-top="left: -100%;" data--700-top="left: 0;" class="compBox">
+                <a href="/computing/solutions.aspx">
+                  <span>View Our</span>Solutions
+                </a>
+              </div>
+              <div data-anchor-target="#parallax002" data--600-top="left: -100%;" data--800-top="left: 25%;" class="compBox">
+                <a href="/computing/sectors.aspx">
+                  <span>View Our</span>Sectors
+                </a>
+              </div>
+              <div data-anchor-target="#parallax002" data--700-top="left: -100%;" data--900-top="left: 50%;" class="compBox">
+                <a href="/computing/partners.aspx">
+                  <span>View Our</span>Partners
+                </a>
+              </div>
+              <div data-anchor-target="#parallax002" data--800-top="left: -100%;" data--1000-top="left: 75%;" class="compBox">
+                <a href="/computing/capabilities.aspx">
+                  <span>View Our</span>Capabilites
+                </a>
+              </div>
+              <div class="clearBoth"></div>
+            </div>
+            </div>
+          <!--Measurement-->
+          <div class="rulerContainer" data-anchor-target="#parallax003" data-100-top="display:none;" data-99-top="display:block;" data-98-top="opacity: 0;" data--98-top="opacity: .7;" data--1400-top="opacity: .7;" data--1700-top="opacity: 0; display:block;" data--1701-top="display:none;">
+            <div data-anchor-target="#parallax003" data-0-top="background-position: 0 200px; opacity: .8;" data--2400-top="background-position: 0px -400px;" class="rulerLeft"></div>
+            <div data-anchor-target="#parallax003" data-0-top="background-position: 0 200px; opacity: .8;" data--2400-top="background-position: 0px -400px;" class="rulerRight"></div>
+          </div>
+          <div class="surveyorContent" data-anchor-target="#parallax003" data-301-top="display:none;" data-300-top="right: -50%; bottom: 0; display:block;" data--200-top="opacity: 1; right: 0; bottom: 0;" data--1100-top="right: 0%; bottom: 0; opacity: 1;" data--1400-top="right: -50%; bottom: 0; opacity: 0;"><div class="rotateMeasurementContainer"><div class="rotateMeasurement"><img src="images/measurement.png" class="compass" data-anchor-target="#parallax003" data-300-top="-moz-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); -o-transform:rotate(-45deg); -ms-transform:rotate(-45deg);" data-bottom="-moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); -o-transform:rotate(45deg); -ms-transform:rotate(45deg);" /><div class="surveyorContentContainer"><div class="centerSurveyContent"><div><div class="tagTitle">Your Friend in the</div><div class="tagTitle2">Field</div></div><div class="clearBoth"></div><div class="surveyorContent2">
+                      <div id="_19c2ae41faa64497ab87bc8842a476d1" class="hidden rts_cms_data_region">
+	  <div id="_5e73eb41d26d46f38cdd609b9a22e23e">
+		<div id="_5e73eb41d26d46f38cdd609b9a22e23e_pnl19c2ae41faa64497ab87bc8842a476d1Content">
+			<P style="TEXT-ALIGN: center">We offer our commercial and government customers a national repair center, professional product training, high-level technical support, and knowledgeable sales staff to provide you with the necessary resources to keep your business or agency productive and working.</P>
+<P style="TEXT-ALIGN: center"><A href="/measurement">Learn More</A></P>
+		</div>
+	</div> 
+                      
+</div>
+                      </div></div></div></div></div></div>
+          <div class="surveyor" data-anchor-target="#parallax003"  data-301-top="display:none;" data-300-top="left: -50%; bottom: 0; display:block;" data--200-top="left: 0; bottom: 0;" data--1100-top="left: 0%; bottom: 0; opacity: 1;" data--1400-top="left: -50%; bottom: 0; opacity: 0;">
+            <img src="images/surveyor.png" />
+          </div>
+          <!--
+          <div data-anchor-target="#parallax004" data-400-top="display:none;" data-398-top="display:block; opacity: 0; background-position: -1000px 0px;" data-100-top="opacity: 1;" data--2400-top="background-position: 1000px 0; opacity: 0;" class="lines"></div><div data-anchor-target="#parallax004" data-400-top="display:none;" data-398-top="display:block;" data-bottom-top="background-position: 2400px 0px;" data--2400-top="background-position: -2000px 0;" class="lines"></div><div data-anchor-target="#parallax004" data-bottom-top="top: 100%; right: 0%;" data--500-top="top: 15%; right: 0%;" data--1600-top="opacity: 1;" data--2000-top="opacity: 0;" data--2001-top="left: 0;" data--2002-top="left: -100%;" class="sectorContainer"><div class="retailContent" style="width: 60%; margin: 0 auto; max-width: 1600px; min-width: 800px;"><div class="paddingBot40"><div class="sectionTitle txtWhite">Retail</div></div><div data-anchor-target="#parallax004" data--500-top="opacity: 0; -webkit-transform: scale(.1); -moz-transform: scale(.1); -o-transform: scale(.1); -ms-transform: scale(.1); transform: scale(.1);" data--1000-top="opacity: 1; -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1); transform: scale(1);"><div class="paddingBot20 retailContentGallery">
+                      <div id="_b23df0f6ddb5448c86de48e8aa4da9fc" class="hidden rts_cms_data_region">
+	
+                      
+</div>
+                      </div><div class="txtCenter"><a href="http://shop.holmans.com" class="viewProducts">Want to see more? Click here to visit our webstore.</a></div></div></div></div>-->
+          <div class="autismContent" data-anchor-target="#parallax005"  data-0-top="top: -50%;" data--1-top="top: 20%;">
+            <div class="sectionTitle" data-anchor-target="#parallax005"  data-0-top="right: 100%; opacity: 0;" data--800-top="opacity: 1; right: 0%;">
+              <span class="communityTitle">We Use</span>
+            </div>
+            <div class="sectionTitle" data-anchor-target="#parallax005" data--100-top="right: 100%; opacity: 0;" data--900-top="opacity: 1; right: 0%;">
+              <span class="communityTitle">Technology</span>
+            </div>
+            <div class="sectionTitle" data-anchor-target="#parallax005" data--200-top="right: 100%; opacity: 0;" data--1000-top="opacity: 1; right: 0%;">
+              <span class="communityTitle">to change</span>
+            </div>
+            <div class="sectionTitle" data-anchor-target="#parallax005" data--300-top="right: 100%; opacity: 0;" data--1100-top="opacity: 1; right: 0%;">
+              <span class="communityTitle">Lives</span>
+            </div>
+            <div class="sectionTitle" data-anchor-target="#parallax005" data--400-top="right: 100%; opacity: 0;"
+                data--1200-top="opacity: 1; right: 0%;">
+                <span class="communityTitle"><a href="/foundation">Learn How</a></span>
+            </div>
+          </div>
+          
+<div id="regionPageControl" class="rts_cms_data_region">
+	
+<div id="_pageControl">
+		<input type="hidden" name="_pageControl$pageName" id="_pageControl_pageName" value="default" /><input type="hidden" name="_pageControl$topParentName" id="_pageControl_topParentName" />
+	</div>
+
+</div>
+
+<div id="editor" style="position:fixed; top:0; left:0; width:100%;  z-index:9999999; display: none"></div>
+<div id="AjaxManagerSU">
+	<span id="AjaxManager" style="display:none;"></span>
+</div><div id="Rts_Cms_BasePage_RadLoadingPanel" style="display:none;background-color:none;">
+	<img src="images/loading.gif" alt="Loading..." style="display:inline;" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_skin":"Top1","clientStateFieldID":"Header2__515fd93d86064786b43ddf7df5924136_radMenu_515fd93d86064786b43ddf7df5924136_ClientState","collapseAnimation":"{\"type\":1,\"duration\":450}","expandAnimation":"{\"type\":1,\"duration\":450}","itemData":[{"navigateUrl":"/about-us.aspx"},{"navigateUrl":"/Computing/default.aspx"},{"navigateUrl":"/Measurement/default.aspx"},{"navigateUrl":"http://shop.holmansusa.com/"},{"navigateUrl":"/Foundation/default.aspx"}]}, null, null, $get("Header2__515fd93d86064786b43ddf7df5924136_radMenu_515fd93d86064786b43ddf7df5924136"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_skin":"Top2","clientStateFieldID":"globalFooter__4f2b64c7676544fa8ef4b579037521d9_radMenu_4f2b64c7676544fa8ef4b579037521d9_ClientState","collapseAnimation":"{\"type\":1,\"duration\":450}","expandAnimation":"{\"type\":1,\"duration\":450}","itemData":[{"navigateUrl":"/default.aspx","cssClass":"activePage rpSelected"},{"navigateUrl":"/about-us.aspx"},{"navigateUrl":"/foundation-news.aspx"},{"navigateUrl":"/contact-us.aspx"},{"navigateUrl":"/capabilities-statement-updated-3_11_2015.pdf","target":"_blank"},{"navigateUrl":"/careers.aspx"},{"navigateUrl":"http://shop.holmansusa.com"}]}, null, null, $get("globalFooter__4f2b64c7676544fa8ef4b579037521d9_radMenu_4f2b64c7676544fa8ef4b579037521d9"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[],"clientEvents":{OnRequestStart:"rts_cms_ajaxmang_requeststart",OnResponseEnd:"rts_cms_ajaxmang_requestend"},"defaultLoadingPanelID":"Rts_Cms_BasePage_RadLoadingPanel","enableAJAX":true,"enableHistory":false,"links":[],"requestQueueSize":20,"styles":[],"uniqueID":"AjaxManager","updatePanelsRenderMode":0}, null, null, $get("AjaxManager"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":true,"minDisplayTime":0,"skin":"","uniqueID":"Rts_Cms_BasePage_RadLoadingPanel","zIndex":90000}, null, null, $get("Rts_Cms_BasePage_RadLoadingPanel"));
+});
+//]]>
+</script>
+</form></body></html>

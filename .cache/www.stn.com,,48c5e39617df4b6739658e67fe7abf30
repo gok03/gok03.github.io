@@ -1,0 +1,149 @@
+status: 200
+content-length: 7273
+content-location: http://www.stn.com
+accept-ranges: bytes
+server: Apache/1.3.26 (Unix) mod_ssl/2.8.10 OpenSSL/0.9.6c
+last-modified: Wed, 29 Feb 2012 20:30:55 GMT
+etag: "2402c-1c69-4f4e8aff"
+date: Sun, 11 Sep 2016 09:40:31 GMT
+content-type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Welcome to STN, Inc.</title>
+<script>
+if (document.images) 
+{
+   imga = new Image();
+   imgb = new Image();
+   img1 = new Image();
+   img2 = new Image();
+   img3 = new Image();
+   img4 = new Image();
+   img5 = new Image();
+   img6 = new Image();
+   img7 = new Image();
+   img8 = new Image();
+   img9 = new Image();
+   img10 = new Image();
+   img11 = new Image();
+   img12 = new Image();
+   imga.src = "images/stnlogo.jpg";
+   imgb.src = "images/staff3.jpg";
+   img1.src = "images/home2.gif";
+   img2.src = "images/services.gif";
+   img3.src = "images/support.gif";
+   img4.src = "images/products.gif";
+   img5.src = "images/filepro.gif";
+   img6.src = "images/about.gif";
+   img7.src = "images/contact.gif";
+   img8.src = "images/modmap.jpg";
+   img9.src = "images/Richardson_Bldg2s.jpg";
+   img10.src = "images/helpdesk2.jpg";
+   img11.src = "images/train_sml.jpg";
+   img12.src = "images/helpdesk_sml.jpg";
+ }
+var whichp = 'index';
+var currimg = '';
+function domouseover(butelemi) {
+ butelemi.style.backgroundColor = '#adadc1'; }
+function domouseout(butelemo) {
+ butelemo.style.backgroundColor = '#70708d'; }
+function dofocus(tdelemidi) {
+ document.getElementById(tdelemidi).style.borderColor = '#ffffff'; }
+ function doblur(tdelemido) {
+ document.getElementById(tdelemido).style.borderColor = '#adadc1'; }
+ 
+function applyImageTransition (obj, imgsrc)
+{
+    obj.filters(0).Apply();
+    obj.src=imgsrc;
+    obj.filters(0).Play();
+}
+function fftest(imggid,spcamnt) {
+var shouldbe = 'images/' + imggid;
+var newwid = spcamnt + 'px';
+if((navigator.appName == "Microsoft Internet Explorer") && ((currimg != imggid) && (currimg != ''))) { myimg.style.filter='progid:DXImageTransform.Microsoft.Slide(duration=0.3,slidestyle=push)'; applyImageTransition(myimg,shouldbe); } 
+else {document.getElementById('myimg').src = shouldbe; }
+currimg = imggid;
+document.getElementById('spacertd').style.width = newwid; 
+}
+function PrintTheFrame() { 
+thefr.focus(); 
+thefr.print(); 
+}
+
+</script>
+<style>
+.stnbody { background-color:#405075; }
+.titleborder { border-color:#161660;border-style:solid;border-width:4px; }
+.stopbdr { border-width:0px; }
+.stnbg2 { background-color:#7884ac;border-left:4px solid #161660; }
+.butcl { width:106px;border-width:0px;border-style:solid;background-color:#70708d;color:#ffffff;font-family:verdana;
+ font-size:12px;font-weight:bold;cursor:pointer;height:20px; }
+.buttd { border-width:2px;border-style:solid;border-color:#adadc1; }
+.tnyfnt { font-family:arial;font-size:12px;color:#bbbbdd;text-decoration:underline;cursor:pointer; }
+.discl { font-family:arial;font-size:12px;color:#aeaecf; }
+.pipefnt { font-family:arial;font-size:13px;color:#777799;font-weight:bold; }
+</style>
+</head>
+<body id=mybody class=stnbody>
+<script>
+if(navigator.appName == "Microsoft Internet Explorer") {
+document.write("<br style='line-height:16px'>"); }
+else { document.write("<br style='line-height:3px'>"); }
+if(document.body.clientHeight >= 740) {
+document.write("<br style='line-height:36px'>"); }
+</script>
+<table width=760 align=center border=0 cellpadding=0 cellspacing=0>
+ <tr><td width=100% border=0><table width=100% border=1 class=titleborder cellpadding=0 cellspacing=0>
+      <tr><td width=100% border=0 class=stopbdr><table width=100% border=0 cellpadding=0 cellspacing=0>
+           <tr><td width=234 border=0><img src="images/stnlogo.jpg" style="padding:0px"></td>
+               <td width=524 id=tdslide class=stnbg2 border=0 style="width:524px;background-color:#77884ac">
+							 <img id="myimg" src="images/home.gif" width=480 height=107></td></tr>
+					</table></td></tr>
+      <tr><td border=0 class=stopbdr style="border-top:4px solid #161660"><table border=0 width=100% cellpadding=0 cellspacing=0>
+           <tr><td class=buttd id=td01><input type=button id=but1 class=butcl value="STN Home"
+							  onMouseOver="domouseover(this)" onMouseOut="domouseout(this)" 
+								onFocus="dofocus('td01')" onBlur="doblur('td01')" onClick="document.getElementById('thefr').src = 'stnnews.htm'"></td> 
+					 		 <td class=buttd id=td02><input type=button id=but1 class=butcl value="Services"
+							  onMouseOver="domouseover(this)" onMouseOut="domouseout(this)" 
+								onFocus="dofocus('td02')" onBlur="doblur('td02')" onClick="document.getElementById('thefr').src = 'services.htm'"></td> 
+							 <td class=buttd id=td03><input type=button id=but1 class=butcl value="Support"  style='width:102px'
+							  onMouseOver="domouseover(this)" onMouseOut="domouseout(this)" 
+								onFocus="dofocus('td03')" onBlur="doblur('td03')" onClick="document.getElementById('thefr').src = 'support.htm'"></td> 
+							 <td class=buttd id=td04><input type=button id=but1 class=butcl value="Products"  style='width:103px'
+							  onMouseOver="domouseover(this)" onMouseOut="domouseout(this)" 
+								onFocus="dofocus('td04')" onBlur="doblur('td04')" onClick="document.getElementById('thefr').src = 'products.htm'"></td> 
+							 <td class=buttd id=td05><input type=button id=but1 class=butcl value="filePro&#174;"  style='width:102px'
+							  onMouseOver="domouseover(this)" onMouseOut="domouseout(this)" 
+								onFocus="dofocus('td05')" onBlur="doblur('td05')" onClick="document.getElementById('thefr').src = 'filepro.htm'"></td> 
+							 <td class=buttd id=td06><input type=button id=but1 class=butcl style='width:113px' value="Our Company"
+							  onMouseOver="domouseover(this)" onMouseOut="domouseout(this)" 
+								onFocus="dofocus('td06')" onBlur="doblur('td06')" onClick="document.getElementById('thefr').src = 'about.htm'"></td> 
+							 <td class=buttd id=td07><input type=button id=but1 class=butcl value="Contact STN"
+							  onMouseOver="domouseover(this)" onMouseOut="domouseout(this)" 
+								onFocus="dofocus('td07')" onBlur="doblur('td07')" onClick="document.getElementById('thefr').src = 'contact.htm'"></td> 
+					 </tr>
+					</table></td></tr>
+			<tr><td border=0 class=stopbdr style="height:8px;background-color:#7884ac;border-top:3px solid #161660" width=100%>
+			<table width=100% border=0 cellpadding=0 cellspacing=0><tr><td id=spacertd style='width:50px'></td>
+			<td><img src='images/curpg.gif'></td></tr></table></td></tr>
+			<tr><td border=0 class=stopbdr style="border-top:3px solid #161660">
+<script language="javascript" type="text/javascript"> 
+ if(navigator.appName == "Microsoft Internet Explorer") {
+document.write("<iframe src='stnnews.htm'  name='thefr' id='thefr' width=766 scrolling=yes vspace=0 hspace=0 marginheight=0 marginwidth=0 border=0 frameborder=0 framespacing=0 height=400>"); }  
+else { document.write("<iframe src='stnnews.htm' name='thefr' id='thefr' width=766 scrolling=yes vspace=0 hspace=0 marginheight=0 marginwidth=0 border=0 frameborder=0 framespacing=0 height=412>"); }  
+</script>
+</iframe></td>
+			</tr>
+			</table></td></tr><tr><td><table width=100% border=0 cellpadding=0 cellspacing=0>
+			<tr><td width=50% style="padding-left:6px">
+			<font class=discl>&#169;2012 STN, Inc.&nbsp;&nbsp;All rights reserved.</font></td>
+			<td width=50% align=right style="padding-right:6px">
+			<font class=discl>filePro is a registered trademark of fP Technologies, Inc.</font></td>
+		</tr></table></td></tr>
+</table>
+</body>
+</html>

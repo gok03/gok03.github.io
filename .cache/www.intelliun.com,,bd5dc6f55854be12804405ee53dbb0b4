@@ -1,0 +1,537 @@
+status: 200
+content-location: http://www.intelliun.com
+set-cookie: JSESSIONID=7E171F83F0988948E1ED7F94E065F23E; Path=/
+server: Apache-Coyote/1.1
+date: Wed, 21 Sep 2016 08:24:50 GMT
+content-type: text/html
+
+<!DOCTYPE html><html xmlns:og='http://ogp.me/ns#'><head><meta name='description' content='Intelliun introduces a new cloud platform for social networking, collaboration and automation, geared towards both consumers and organizations'/>
+<meta name='keywords' content='Social Networking, Collaboration, Automation, Cloud Computing, Cloud Platform, Smart Apps, Socialize, Collaborate, Automate'/>
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="thumbnail" content="https://s3.amazonaws.com/iume-pub/www/res/images/iume-mobile-beta.jpg"/><meta property="og:image" content="https://s3.amazonaws.com/iume-pub/www/res/images/iume-mobile-beta.jpg"/><title>Intelliun Corporation</title><link rel="image_src" href="https://s3.amazonaws.com/iume-pub/www/res/images/iume-mobile-beta.jpg" /><link rel="image_src" href="https://s3.amazonaws.com/iume-pub/www/res/images/iume-mobile-beta.jpg" /><link rel="stylesheet" href="templates/site/stylesheets/style.css"><link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><SCRIPT src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</SCRIPT><SCRIPT src="templates/site/js/navigation.js">
+</SCRIPT><SCRIPT src="templates/site/js/site.js">
+</SCRIPT><SCRIPT src="templates/site/js/jquery.countdown.min.js">
+</SCRIPT><link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,300italic,100italic' rel='stylesheet' type='text/css'><link rel="apple-touch-icon" sizes="57x57" href="templates/site/images/favicons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="114x114" href="templates/site/images/favicons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="72x72" href="templates/site/images/favicons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="60x60" href="templates/site/images/favicons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="120x120" href="templates/site/images/favicons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="76x76" href="templates/site/images/favicons/apple-touch-icon-76x76.png"><link rel="shortcut icon" href="templates/site/images/favicons/favicon.ico"><link rel="icon" type="image/png" href="templates/site/images/favicons/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/png" href="templates/site/images/favicons/favicon-16x16.png" sizes="16x16"><link rel="icon" type="image/png" href="templates/site/images/favicons/favicon-32x32.png" sizes="32x32"><meta name="msapplication-TileColor" content="#e0e0e0"><meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+<STYLE>
+
+    body table.portal-page {
+    width: 100%;
+    margin: 0px;
+    }
+
+</STYLE>
+<SCRIPT>
+function iu_register_subscriber( elem, url )
+{
+var $email = $( "input", $( elem ).parent() );
+var $msg = $( 'p.subscribeMsg', $email.closest( "div.subscribeBox" ) );
+url += "mailchimp/MailChimpService/subscribe.v?emailId=" + escape( $email.val() );
+
+$.ajax( {
+type: "GET",
+url: url,
+dataType: "json",
+cache: false,
+} ).done( function( r ) {
+$msg.html( r.status == "error" ? r.error : "Thank you for subscribing. Please check your email and confirm your subscription." );
+} );
+}
+
+</SCRIPT><link href="res/styles/userportal.css" rel="stylesheet" type="text/css"/><SCRIPT>
+var PORTLET_PARAMS = new Object();
+
+</SCRIPT><SCRIPT>
+var allDependencyActivationStatus = {};
+var runningAllDependencyFlag = false;
+
+var WebOS = {
+objects: new Object(),
+currentObject: null,
+
+Object: function( objName, oid, content )
+{
+this.__objName = objName;
+this.__oid = oid;
+
+if( content )
+this.init( content );
+},
+
+register: function( objName, obj )
+{
+return this.objects[ objName ] = obj;
+},
+
+getObject: function( objName )
+{
+return objName == null ? this.currentObject : this.objects[ objName ];
+},
+
+setObject: function( obj )
+{
+this.currentObject = obj;
+},
+
+acquireObject: function( objName, initializer )
+{
+var obj = this.getObject( objName );
+
+if( obj == null )
+{
+this.register( objName, obj = new WebOS.Object( objName ) );
+
+if( initializer )
+initializer( obj );
+}
+
+return obj;
+},
+
+Client: {
+fieldsByAccessName: {},
+fields: [],
+
+registerFieldDependency: function( toid, topic, accessName, name, label, dependency, serverValue )
+{
+var field = this.getField( accessName );
+
+if( field == null )
+{
+field = new WebOS.Client.Field( toid, topic, accessName, name, label, dependency, serverValue );
+this.fieldsByAccessName[ accessName ] = field;
+this.fields[ this.fields.length ] = field;
+}
+else
+{
+field.addTopic( topic );
+field.addToid( toid );
+}
+},
+
+getField: function( accessName )
+{
+return this.fieldsByAccessName[ accessName ];
+},
+
+setPageSubject: function( objOid )
+{
+var obj = WebOS.acquireObject( "PageSubject" );
+obj.__oid = objOid;
+WebOS.setObject( obj );
+this.activateDependencies();
+this.applyDependencies();
+},
+
+activateDependencies: function()
+{
+var field;
+
+for( var i = 0; i < this.fields.length; i++ )
+if( ( field = this.fields[ i ] ) != null && field.dependency.length > 0 )
+{
+for( var j = 0; j < field.dependency.length; j++ )
+{
+var dependency = field.dependency[ j ];
+dependency.field = field;
+dependency.anotherField = this.getField( field.dependency[ j ].another );
+dependency.controller = new WebOS.Client.FieldDependencyController( dependency );
+/*dependency.isSatisfied = new Function( "return this.getAnotherFieldValue() " + dependency.operator + " this.value" );
+dependency.getAnotherFieldValue = function()
+{
+return this.anotherField ? this.anotherField.getValue() : null;
+}*/
+
+var topics = dependency.anotherField ? dependency.anotherField.topics : null;
+
+if( topics )
+for( var k = 0; k < topics.length; k++ )
+{
+if( typeof( topics[ k ] ) == "string" )
+topics[ k ] = getTopic( topics[ k ] );
+
+topics[ k ].addDependent( field );
+}
+}
+}
+},
+
+applyDependencies: function()
+{
+var field;
+
+runningAllDependencyFlag = true;
+for( var i = 0; i < this.fields.length; i++ )
+if( ( field = this.fields[ i ] ) != null )
+field.update( null );
+runningAllDependencyFlag = false;
+},
+
+Field: function( toid, topic, accessName, name, label, dependency, serverValue )
+{
+this.toid = toid;
+this.tname = toid + "__" + name;
+this.rtname = toid + "___" + name;
+this.topics = [ topic ];
+this.accessName = accessName;
+this.name = name;
+this.label = label;
+this.dependency = dependency;
+this.serverValue = serverValue;
+this.tnames = new Object();
+
+this.addTopic = function( newTopic )
+{
+for( var i = 0; i < this.topics.length; i++ )
+if( this.topics[ i ] == newTopic )
+return;
+
+this.topics[ this.topics.length ] = newTopic;
+}
+
+this.addToid = function( newToid )
+{
+var tname = newToid + "__" + this.name;
+var tname2 = newToid + "___" + this.name;
+this.tnames[ tname ] = tname;
+this.tnames[ tname2 ] = tname2;
+}
+
+this.hasTName = function( tname )
+{
+return this.tnames[ tname ] != null;
+}
+
+this.update = function( id, param )
+{
+var d, temp;
+
+if( this.dependency )
+for( var i = 0; i < this.dependency.length; i++ )
+if( ( d = this.dependency[ i ] ).anotherField && ( id == null || this.dependency[ i ].anotherField.hasTName( id ) ) )
+{
+var xmlElements = this.getAllXMLElements();
+var isTrue = d.controller.isSatisfied();
+if( allDependencyActivationStatus[this.dependency[ i ].anotherField.accessName] === false ) // parent field is also a dependent and not satisfied
+isTrue = false;
+allDependencyActivationStatus[this.dependency[ i ].field.accessName] = isTrue;
+
+if( d.type == "Accessible" )
+this.applyStyle( xmlElements, isTrue ? "wosfield_on" : "wosfield_off" );
+else if( d.type == "Read Only" )
+{
+roTname = $(this).attr("tname");
+roRTname = $(this).attr("rtname");
+this.applyStyle( xmlElements, isTrue ? "wosfield_readOnly" : "wosfield_on" );
+
+//var children_value_ = $.grep(xmlElements, function( e ){ return e.id.substring( 0, 6 ) === "value_"});
+var children_value_ = $("#value" + roTname);
+
+if(isTrue) { // disable input, grey
+$(children_value_).find("input, select, textarea").attr("disabled", "true");
+$(children_value_).find("a[class='icon_selector'], div[id^=display_default]").hide();  // hide selector icon and default help string
+}else{
+$(children_value_).find("input, select, textarea").removeAttr("disabled");
+$(children_value_).find("a[class='icon_selector']").show();
+
+if($("#display_"+roRTname).length > 0 && $("#display_"+roRTname).html().length > 0)
+$("#display_default_"+roRTname).hide(); // hide default help string if ref field has value and readonly is false
+
+}
+
+}
+else if( d.type == "Required" )
+{
+this.applyStyle( xmlElements, isTrue ? "wosfield_required" : "wosfield_optional" );
+var append = isTrue;
+
+for( var j = 0; j < ve_requiredFields.length ; j++ )
+if( ve_requiredFields[ j ].id == this.tname )
+{
+if( append )
+append = false;
+else
+ve_requiredFields = ve_requiredFields.slice( 0, j ).concat( ve_requiredFields.slice( j + 1 ) );
+
+break;
+}
+
+if( append )
+ve_addRequiredField( this.tname, this.label );
+}
+}
+
+if( !runningAllDependencyFlag ) // TODO: redo to be more efficient
+{
+WebOS.Client.applyDependencies(); // refresh all dependencies to update potential child dependencies
+}
+}
+
+this.getAllXMLElements = function()
+{
+var elem;
+var elems = new Array();
+
+for( var e in this.tnames )
+{
+if( ( elem = getTag( e ) ) != null )
+elems[ elems.length ] = elem;
+
+if( ( elem = getTag( "label" + e ) ) != null )
+elems[ elems.length ] = elem;
+
+if( ( elem = getTag( "value" + e ) ) != null )
+elems[ elems.length ] = elem;
+}
+
+return elems;
+}
+
+this.applyStyle = function( elems, newClassName )
+{
+for( var i = 0; i < elems.length; i++ )
+{
+var elem = elems[ i ];
+var className = elem.className;
+
+if( className )
+{
+var s = className.indexOf( "wosfield_" );
+var e = s == -1 ? -1 : className.indexOf( " ", s + 1 );
+
+if( s != -1 )
+className = className.substring( 0, s ) + ( e == -1 ? "" : className.substring( e ) );
+}
+
+elem.className = className + " " + newClassName;
+}
+}
+
+this.getValue = function()
+{
+var sep = "<=@W_>";
+var elem = document.getElementById( this.tname );
+
+if( elem && elem.id )
+return elem.value == undefined ? elem.innerHTML : elem.value;
+else if( ( elem = document.getElementById( "ds_" + this.rtname ) ) != null ) // reference/list value
+return elem.value == String.fromCharCode( 13 ) || elem.value == '' ? null : (elem.value.indexOf(sep) > 0 ? elem.value.split(sep) : elem.value);
+else if( ( elem = document.getElementById( this.rtname ) ) != null )
+return elem.value == String.fromCharCode( 13 ) || elem.value == '' ? null : elem.value;
+else // try for radio buttons
+{
+elem = document.getElementsByName( this.tname );
+
+if( elem )
+for( var i = 0; i < elem.length; i++ )
+if( elem[i].value != null && elem[i].checked )
+return elem[i].value;
+}
+
+return this.serverValue.indexOf(sep) > 0 ? this.serverValue.split(sep) : this.serverValue;
+}
+
+this.addToid( toid );
+},
+
+FieldDependencyController: function( dependency )
+{
+this.dependency = dependency;
+
+var value = "this.dependency.value";
+
+if( dependency.value == "[Null]" )
+value = "null";
+else if( dependency.value == "[Empty]" )
+value = "''";
+
+this.isSatisfied = new Function( "var testValue = this.getAnotherFieldValue();" +
+"if( testValue == null ) { return false; }" +
+"if( testValue instanceof Array ) { return " + (dependency.operator == "!=" ? "!" : "") + "inArray(" + value + ", testValue); }" +
+"else if(" + (dependency.operator == "<=") + ") { return " + value + ".indexOf(testValue) >= 0 ;}" +
+"else if(" + (dependency.operator == ">=") + ") { return testValue.indexOf(" + value +") >= 0 ;}" +
+"else { return testValue " + dependency.operator + " " + value + "; }" );
+//this.isSatisfied = new Function( "return this.getAnotherFieldValue() " + dependency.operator + " " + value );
+
+this.getAnotherFieldValue = function()
+{
+return this.dependency.anotherField ? this.dependency.anotherField.getValue() : null;
+}
+}
+}
+};
+
+WebOS.Object.prototype = {
+content: [],
+
+init: function( content )
+{
+for( prop in content )
+if( prop.length > 2 && prop.substring( 0, 2 ) == "__" )
+this[ prop ] = content[ prop ];
+else
+this.content[ prop ] = content[ prop ];
+},
+
+get: function( name )
+{
+},
+
+set: function( name, value )
+{
+},
+
+invoke: function( op, params, mode )
+{
+},
+
+evaluate: function( exp, mode )
+{
+},
+
+fetch: function( member )
+{
+ve_fetch( this.__oid, member );
+},
+
+getOID: function()
+{
+return this.__oid;
+},
+
+getMetaObject: function()
+{
+return this.__metaObject;
+}
+};
+
+function inArray(needle, haystack)
+{
+var length = haystack.length;
+for(var i = 0; i < length; i++)
+{
+if(haystack[i] == needle) return true;
+}
+return false;
+}
+
+
+</SCRIPT><SCRIPT>
+
+</SCRIPT><!-- portal page modifcations --><!-- portal page modifcations --><SCRIPT>
+function userportal_addContent( oid, column )
+{
+ve_dialogexec( oid, "addContent", null, "order=" + column, "Select Attribute", 've_exec( oid, "refresh" )', false, 400, 330, true, false, false );
+}
+
+</SCRIPT><!-- portal page modifcations --><SCRIPT>
+function portlet_calcParams( paramNames )
+{
+var params = "";
+
+for( var i = 0; i < paramNames.length; i++ )
+{
+var pname = paramNames[ i ];
+var pvalue = PORTLET_PARAMS[ pname ];
+params += ( i > 0 ? "&" : "" ) + escape( pname ) + "=" ;
+
+if( pvalue )
+params += escape( pvalue );
+}
+
+return params;
+}
+
+
+function portalPageArea_refresh()
+{
+ve_exec( null, "userportal/PortalPage/refresh" );
+}
+
+</SCRIPT>
+<STYLE>
+
+.portal-page-area .tnb {
+ border: 1px solid #999;
+}
+
+  .portal-page-area .tnb div {
+   padding: 2px;
+  }
+
+  .portal-page-area .tnb .portlet-area-title {
+   background: #CCC;
+   border-bottom: 1px solid #999;
+  }
+
+  .portal-page-area .tnb .portlet-area-title h3 {
+   border: 0px;
+   margin: 0px;
+   color: #1E2ABD;
+  }
+
+
+.portlet {width: 100%;}
+
+</STYLE>
+<script>
+</script>
+</head><body><!--NAV START--><div class="navC"><header class="navigation"><div class="navigation-wrapper"><a href="/" class="logo"><img src="//s3.amazonaws.com/intelliuncom/res/images/intelliun_logo.png " alt="Logo Image"></a><!-- begin top nav --><div id='navigation'><ul><li class=''><a href='Home'>Home</a></li><li class=''><a href='#low'>Technology</a></li><li class=' hasSub'><a href='Company'>Company</a><ul><li class=''><a href='Company/Overview'>Overview</a></li><li class=''><a href='Company/ManagementTeam'>Management Team</a></li><li class=''><a href='Company/Contact-Us'>Contact Us</a></li></ul></li><li class=' hasSub'><a href='Media'>Media</a><ul><li class=''><a href='Media/Overview'>Overview</a></li><li class=''><a href='Media/Videos'>Videos</a></li><li class=''><a href='Media/Press-Releases'>Press Releases</a></li><li class=''><a href='Media/Blogs'>Blogs</a></li></ul></li><li class=''><a href='FAQ'>FAQ</a></li></ul></div><button type="button" class="js-menu-trigger sliding-menu-button"><img src="/photos/menu.png" alt="Menu Icon"></button><nav class="js-menu sliding-menu-content"><ul><li><a href='Home'>Home</a></li><li><a href='#low'>Technology</a></li><li><a href='Company'>Company</a></li><li><a href='Media'>Media</a></li><li><a href='FAQ'>FAQ</a></li></ul></veif></veblock></nav><div class="js-menu-screen sliding-menu-fade-screen"></div><!-- end top nav --></div></header></div><div class="navSpace"></div><!--NAV END--><SCRIPT>
+$(document).ready(function () {
+$('.js-menu-trigger,.js-menu-screen').on('click touchstart', function (e) {
+$('.js-menu,.js-menu-screen').toggleClass('is-visible');
+e.preventDefault();
+});
+});
+
+</SCRIPT><!--HERO START--><section id="hero"><article><div class="heroInner"><div class="flex-boxes"><div class="flex-box flex-box"><div class="heroText"><!--
+                            <p>Introducing</p>
+                            <img src='http://s3.amazonaws.com/intelliuncom/res/images/iume-logo-white.png' style='opacity: 1.0; margin: 30px  0 20px 130px'/>
+                            <p><span>Your Cloud Platform to</span></p>
+                            <h3>Socialize | Collaborate | Automate</h3>--><img src="https://s3.amazonaws.com/iume-pub/templates/register/images/iu.me_beta_logo.png" alt="IU.me Kickstarter Campaign begins April 8"><div class="cta icons"><a href="https://www.facebook.com/intelliun" target="_aboutBlank"><img src="templates/site/images/facebook7.png" alt="facebook"></a><a href="https://plus.google.com/u/0/+Intelliun/posts" target="_aboutBlank"><img src="templates/site/images/social92.png" alt="goolge plus"></a><a href="https://twitter.com/intelliun" target="_aboutBlank"><img src="templates/site/images/social71.png" alt="twitter"></a><a href="https://www.linkedin.com/company/intelliun-corporation" target="_aboutBlank"><img src="templates/site/images/linkedIn.png" alt="Linked In"></a><div><a class='register' href='https://www.iu.me/'>Register</a></div></div></div></div><div class="flex-box"><div class="modal"><label for="modal-1"><div class="playButton" onclick=""><p>Learn More</p></div></label><input class="modal-state" id="modal-1" type="checkbox"/><div class="modal-window"><div class="modal-inner"><label class="modal-close" for="modal-1"></label><div class="vid"><iframe id="tube" src="http://www.youtube.com/embed/KbJiVJkvOPs" frameborder="0" allowfullscreen></iframe></div></div></div></div></div></div></div></article></section><!--HERO END--><!--- WEBOS PORTAL_PAGE BEGIN --><table class='portal-page layout-1Column' border='0' cellpadding='0' cellspacing='0' width='100%'><tr><td valign='top' class='wide-col page-colA' colName='A'><div class='wos-column-body'><div id='portlet_A01' class='portal-page-area' style='' wosOID='100'><!--<table width="100%" cellspacing="0" cellpadding="0" border="0" class="hn portlet-margins">
+        <veif criteria='ifEmpty( portlet.instructions, null ) != null )'>
+        <tr>
+          <td class='portlet-area-instructions'><%=portlet.instructions%></td>
+        </tr>
+        </veif>
+        <tr>
+          <td class="portlet"><vetemplate section='portlet-body' /></td>
+        </tr>
+      </table>--><div class="hn portlet-margins"><div class="portlet"><!--<script>WOSPortlet.setTopic( "<%=portlet.order%>", "<%=topic%>" );</script>--><!--<veinclude src="ve/widgets/web/core/dependentArea.vhtml">
+          <vesection name="body">--><div id="low"><div class="grid-items"><a href="Technology/Usage-Scenarios/Everyday-Life" class="grid-item life"><img src="templates/site/images/house158.png" alt=""><h1>Everyday Life</h1></a><a href="Technology/Usage-Scenarios/Work-Business" class="grid-item business"><img src="templates/site/images/building78.png" alt=""><h1>Work & Business</h1></a><a href="Technology/Usage-Scenarios/Smart-Apps" class="grid-item smartapps"><img src="templates/site/images/office20.png" alt=""><h1>Smart Apps</h1></a></div><div class="grid-items b"><div class="grid-item b"><p>Take Social Networking to the next level, where you can collaborate with family members and friends on tasks and events, and share information beyond status updates, photos and videos.</p></div><div class="grid-item b"><p>Work smarter not harder with a platform that puts you in the driver's seat and provides you with Smart Apps to collaborate and automate your work activities.</p></div><div class="grid-item b"><p>Turn your ideas and domain expertise into Smart Apps. With just a browser and no programming background, you can build applications for your own use or share on the AppStore.</p></div></div></div><!--<low content START>--><section id="lowR"><article><div class="lowerC"><h1 class="headerL">What's New</h1><div class="lower a"><a href='Media/Press-Releases/5101/IUme-Mobile-App-is-Now-Available-on-the-Apple-AppStore-and-Google-Play' ><div class='comment '><div class='comment-content'><h1>IU.me Mobile App is Now Available on the Apple AppStore and Google Play</h1><p>Intelliun Releases IU.me for the iPhone and Android Users Bringing Social Collaboration to Everyday Activities</p><span class="comment-date">7/18/16</span><div class="darkenT"></div></div></div></a><a href='Media/Press-Releases/5001/Intelliun-Announces-the-Beta-Release-of-IUME' ><div class='comment '><div class='comment-content'><h1>Intelliun Announces the Beta Release of IU.ME</h1><p>IU.ME is a Cloud-Platform to Socialize, Collaborate, Organize and Automate</p><span class="comment-date">11/16/15</span><div class="darkenT"></div></div></div></a><a href='Media/Press-Releases/4901/Intelliun-Firms-Up-its-IUme-Summer-2015-Launch-Plans' ><div class='comment '><div class='comment-content'><h1>Intelliun Firms Up its IU.me Summer 2015 Launch Plans </h1><p>Despite of its Kickstarter Campaign Outcome, IU.me is on Track for Summer 2015 Launch</p><span class="comment-date">5/11/15</span><div class="darkenT"></div></div></div></a></div><div class="lower b"><a class="twitter-timeline" href="https://twitter.com/intelliun" data-widget-id="550930862825828352" height="535px">Tweets by @intelliun</a><SCRIPT>
+! function (d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0],
+p = /^http:/.test(d.location) ? 'http' : 'https';
+if (!d.getElementById(id)) {
+js = d.createElement(s);
+js.id = id;
+js.src = p + "://platform.twitter.com/widgets.js";
+fjs.parentNode.insertBefore(js, fjs);
+}
+}(document, "script", "twitter-wjs");
+
+</SCRIPT></div></div></div><!--</vesection>
+        </veinclude>--></div></div></div></div></td></tr></table><!--- WEBOS PORTAL_PAGE END --></article></section><!--<low content END>--><div class="footerBG"><footer class="footer"><div class="footer-logo"><a href=""><img src="templates/site/images/intelliun_logo.png" alt="Logo image"></a></div><p>Copyright &copy; 2015 Intelliun Corporation. All Rights Reserved.</p></footer></div><SCRIPT>
+$( function() {
+var $cta = $( ".cta" );
+
+if( $cta.length == 1 )
+$( ".innerCBG" ).each( function() {
+$( this ).append( $cta.clone( true ) );
+} );
+} );
+
+</SCRIPT><!-- Google Analytics --><SCRIPT>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1764317-1', 'auto');
+ga('send', 'pageview');
+
+</SCRIPT><!-- End Google Analytics --><SCRIPT>
+$( function() { $(".modal-close").click(function () {
+$("#tube").attr( "src", $("#tube").attr( "src" ) );
+} ); } );
+
+</SCRIPT></body></html>

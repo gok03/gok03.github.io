@@ -1,0 +1,187 @@
+status: 200
+content-length: 8178
+content-location: http://www.1backbay.com
+x-powered-by: ASP.NET
+set-cookie: ASPSESSIONIDCCSDADDC=HLCOPABBLOGNMNMINGEAFHHE; path=/
+server: Microsoft-IIS/6.0
+cache-control: private
+date: Fri, 09 Sep 2016 04:01:15 GMT
+content-type: text/html
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<title>BackBay</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="7 days">
+<link rel="stylesheet" href="/includes/styles2.css?x=0.4331781" type="text/css">
+<link rel="stylesheet" href="/includes/styles.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Numans|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<script language="JavaScript" type="text/javascript" src="/js/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://assets.snapcms.com/js/SnapOMSGlobalFunctions.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24150345-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body onLoad="preloadImages();fixPNG();">
+
+<div id="Header">
+	<div id="HeaderInner">
+		<div id="Logo"><a href="/index.asp"><img src="/images/logo.png" alt="" border="0"/></a></div>
+		<div id="TopNavigation">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="center" onmouseover="changeWhiteColor(1);" onmouseout="changeOriginalColor(1);"><a href="/section.asp?pageid=19994" class="MainNav">accounting<br/> <span id="TopMenu1" class="TopMenuLargeText">software</span></a></td>
+					<td align="center" onmouseover="changeWhiteColor(2);" onmouseout="changeOriginalColor(2);"><a href="/section.asp?pageid=20026" class="MainNav">consulting<br/> <span id="TopMenu2" class="TopMenuLargeText">services</span></a></td>
+					<td align="center" onmouseover="changeWhiteColor(3);" onmouseout="changeOriginalColor(3);"><a href="/section.asp?pageid=20030" class="MainNav">accounting<br/> <span id="TopMenu3" class="TopMenuLargeText">health check</span></a></td>
+					<td align="center" onmouseover="changeWhiteColor(4);" onmouseout="changeOriginalColor(4);"><a href="/section.asp?pageid=20033" class="MainNav">client<br/> <span id="TopMenu4" class="TopMenuLargeText">testimonials</span></a></td>															
+				</tr>
+			</table>
+		</div>
+		<div id="TopLink">
+			<div id="PhoneNumber">518.348.1144</div>
+			<ul id="ULYellowTop">
+				<li><a href="/index.asp">Home</a></li>
+				<li><a href="/section.asp?pageid=19989">About Us</a></li>
+				<li><a href="/section.asp?pageid=19990">Contact Us</a></li>
+			</ul>														
+		</div>
+	</div>
+</div>
+
+<div id="Bannerarea"><div id="Banner">
+	<ul id="SlideShow">
+		<li><img src="/upload/home-banners/05.jpg" width=966 height=340 alt="" border="0"></li>
+		<li><img src="/upload/home-banners/01.jpg" width=966 height=340 alt="" border="0"></li>
+		<li><img src="/upload/home-banners/02.jpg" width=966 height=340 alt="" border="0"></li>
+		<li><img src="/upload/home-banners/04.jpg" width=966 height=340 alt="" border="0"></li>
+		<li><img src="/upload/home-banners/06.jpg" width=966 height=340 alt="" border="0"></li>
+		<li><img src="/upload/home-banners/03.jpg" width=966 height=340 alt="" border="0"></li>
+	</ul>
+	<div id="BannerBullets"></div>
+</div>
+
+<script>
+	totalImages = $("ul#SlideShow li").length;
+	currentImage = 0;
+
+	strBullets = "";
+	for (i=0;i<totalImages;i++){
+		strBullets += "<div class=\"BannerBullet\"></div>";
+	}
+	$("#BannerBullets").html(strBullets);
+	
+	$("ul#SlideShow li").css("opacity","0").css("display","inline");
+	$("ul#SlideShow li:first").css("opacity","1");
+	$("#BannerBullets div:first").css("backgroundPosition","0px 0px");
+	
+	bannerTimer = window.setInterval(changeImage, 4000);
+	
+	function changeImage() {
+		if(!$("ul#SlideShow li:eq("+currentImage+")").is(":animated")){
+			$("ul#SlideShow li:eq("+currentImage+")").animate({opacity:"0"},400);
+			$("#BannerBullets div:eq("+currentImage+")").css("backgroundPosition","-32px 0px");
+			
+			currentImage += 1;
+			if(currentImage >= totalImages) {
+				currentImage = 0;
+			}
+			
+			$("ul#SlideShow li:eq("+currentImage+")").animate({opacity:"1"},400);
+			$("#BannerBullets div:eq("+currentImage+")").css("backgroundPosition","0px 0px");
+		}
+	}
+	
+	$(".BannerBullet").click(function(){
+		if(!$("ul#SlideShow li:eq("+currentImage+")").is(":animated")){
+			window.clearInterval(bannerTimer);
+			
+			$("ul#SlideShow li:eq("+currentImage+")").animate({opacity:"0"},400);
+			$("#BannerBullets div:eq("+currentImage+")").css("backgroundPosition","-32px 0px");
+			
+			currentImage = $(this).index();
+			
+			$("ul#SlideShow li:eq("+currentImage+")").animate({opacity:"1"},400);
+			$("#BannerBullets div:eq("+currentImage+")").css("backgroundPosition","0px 0px");
+			
+			bannerTimer = window.setInterval(changeImage, 4000);
+		}
+	});
+</script>
+</div>
+
+<div id="ContentHome">
+	<div id="ContentInnerHome">
+		<div id="ContentInnerHomeLeft"><P class=HeadingHome>Accounting Software Solutions for any Size Business</P>
+<P class=MainBodyHome>We are the Northeast’s leading advisor and advocate of accounting software solutions for businesses operating in distribution, manufacturing, retail and professional service environments. Whether your business has 1 or 1,000 employees, our mission is to effectively understand your business and its unique needs and advise, implement and support an accounting solution that adds unparalleled value to your business.</P>
+<P class=MainBodyHome>No matter the size of your organization or the complexity of the environment in which you work, we can help you find the solution that adds that 360 degree view you need in a challenging and competitive economy. We offer a unique, honest prospective of software choices for your industry, guiding you to a comprehensive solution that goes beyond traditional accounting.</P></div>
+		<div id="ContentInnerHomeRight"><table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td style="padding-bottom: 6px">
+			<a href="/section.asp?pageid=20034"><img src="/images/cta_free_consultation.png" alt="" border="0"/></a>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-bottom: 6px"><a href="/section.asp?pageid=19990"><img src="/images/cta_contactus.png" alt="" border="0"/></a></td>
+	</tr>
+	<tr>
+		<td style="padding-bottom: 13px"><a href="/index.asp"><img src="/images/cta-home.png" alt="" border="0"/></a></td>
+	</tr>
+
+	<tr>
+		<td align="right"><img src="/images/intuit_sage.gif" alt="" border="0"/></td>
+	</tr>
+
+
+</table></div>
+	</div>
+</div>
+
+<div id="FooterLine"></div>
+<div id="Footer">
+	<div id="FooterInner">
+		
+		<div id="FooterSiteMap">
+			<ul class="FooterColumn">
+				<li><a href="/section.asp?pageid=19994">accounting software</a></li>
+				<li><a href="/section.asp?pageid=20026">consulting services</a></li>
+				<li><a href="/section.asp?pageid=20030">accounting health check</a></li>
+				<li><a href="/section.asp?pageid=20033">client testimonials</a></li>
+				<li><a href="/section.asp?pageid=19989">about us</a></li>
+				<li style="background: none"><a href="/section.asp?pageid=19990">contact us</a></li>								
+			</ul>										
+		</div>
+		
+		<div id="FooterInfo">
+
+			<p>&nbsp;</p>				
+			<p><img src="/images/icon_phone.png" alt="" border="0" align="top"/>&nbsp;<span id="FooterPhoneNumber">(518) 348-1144</span><br/>
+			Back Bay Accounting Software Consultants, Inc.<br>
+			6 Chelsea Place, Suite 200<br>
+			Clifton Park, NY 12065</p>			
+			<p>&copy;&nbsp;2016&nbsp;Back Bay</p>
+			<!-- *****Removed by Flavio on july 12, 2013 *****
+			<p> and <a href="http://www.snaptech.com/internet-marketing-services.asp" target="_blank" name="marketing and seo by snaptech" style="color:#ccc;">Internet Marketing</a> by Snaptech</p> -->
+		</div>		
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+status: 200
+content-length: 4460
+content-location: http://www.silverweave.com
+accept-ranges: bytes
+server: Apache
+last-modified: Mon, 25 Jul 2016 15:22:46 GMT
+etag: "58deb06-116c-538775b374c19"
+date: Tue, 13 Sep 2016 12:46:32 GMT
+content-type: text/html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silverweave</title>
+    <!--[if ie]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <![endif]-->
+    <link media="all" href="css/base.css" type="text/css" rel="stylesheet" />
+    <!--[if lte ie 8]>
+    <link media="all" href="css/ie.css" type="text/css" rel="stylesheet" />
+    <![endif]-->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+<body id="home">
+<div id="page-container">    
+<div id="header-container">
+    <header>
+        <h1><a href="index.html">Silverweave</a></h1>
+        <div id="accent"></div>
+    </header>
+</div>
+<div id="main-container">   
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="consulting.html">Consulting</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="highlight-container">
+    <div id="highlight">
+    <section id="photo-container">
+        <img src="images/home2.jpg" alt="Silverweave Discussion">
+    </section>
+    <aside>
+        <div id="quote-container">
+        <h2>Feedback from Our Programs</h2>
+        <div id="rotating-container">
+        <p class="rotating-item">
+            "Your team has done a fantastic job of creating the perfect mix of information, networking and socializing..."
+        </p>
+        <p class="rotating-item">
+        "...great opportunity to get to know people and build relationships"</p>
+        <p class="rotating-item">
+            "...small size, quality of attendees, ample time for one-on-one discussions"</p>
+        <p class="rotating-item">
+        "...interactive, insightful, impactful and intimate"
+        </p>
+        </div>
+       
+        </div>
+    </aside>
+    </div>
+    </div>
+    <article>
+    <h3>Premier executive gatherings</h3>
+    <p>Founded in 1994, Silverweave delivers program
+    management services for venture firms, non-profit institutions and
+    corporations.&nbsp; We provide a full service of program execution including
+    participant management, venue logistics, agenda coordination and marketing
+    and promotion.</p>
+    <p>Through our subsidiary, Future Forward Events, we have
+    hosted programs on Nantucket, Martha's Vineyard, Newport, Boston, New York
+    City, San Francisco and London.&nbsp; These programs are consistently
+    recognized among the premier gatherings for life sciences and technology
+    executives and investors.</p>
+        
+    </article>
+    <footer>
+        <div id="left">Contact us (t) 617.437.1400&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="mailto:info@silverweave.com">info@silverweave.com</a></div>
+        <div id="right">Copyright &copy; 2016 Silverweave</div>
+    </footer>
+</div>
+</div>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+<!--
+
+    
+      
+$(document).ready(function() {
+     var InfiniteRotator =
+    {
+        init: function()
+        {
+            //initial fade-in time (in milliseconds)
+            var initialFadeIn = 1500;
+ 
+            //interval between items (in milliseconds)
+            var itemInterval = 4000;
+ 
+            //cross-fade time (in milliseconds)
+            var fadeTime = 1000;
+ 
+            //count number of items
+            var numberOfItems = $('.rotating-item').length;
+ 
+            //set current item
+            var currentItem = 0;
+            
+            $('.rotating-item').css('filter', 'alpha(opacity=99)');
+            
+            //show first item
+            $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
+ 
+            //loop through the items
+            var infiniteLoop = setInterval(function(){
+                $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
+ 
+                if(currentItem == numberOfItems -1){
+                    currentItem = 0;
+                }else{
+                    currentItem++;
+                }
+                $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
+ 
+            }, itemInterval);
+        }
+    };
+ 
+    InfiniteRotator.init();
+});
+
+$(window).load(function() {
+var viewportHeight = window.innerHeight ? window.innerHeight : $(window).height();
+if (viewportHeight > $("#page-container").height() ) {
+ $("footer").height( $("body").height() - $("#page-container").height() );
+}
+});
+//-->
+</script>
+</body>
+</html>

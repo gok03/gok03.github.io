@@ -1,0 +1,55 @@
+status: 301
+content-length: 178
+strict-transport-security: max-age=31536000
+x-content-security-policy-report-only: default-src 'self';
+ frame-ancestors 'self';
+ plugin-types application/pdf application/x-shockwave-flash;
+ block-all-mixed-content; upgrade-insecure-requests; media-src 'none';
+ object-src 'none';
+ img-src 'self' assets.securityinnovation.com *.g.doubleclick.net
+ sniff.visistat.com track.hubspot.com www.google-analytics.com www.google.com;
+ script-src 'self' script.crazyegg.com js.hs-analytics.net
+ www.googleadservices.com www.google-analytics.com www.googletagmanager.com
+ cdn.optimizely.com forms.hubspot.com js.hsforms.net ajax.googleapis.com
+ sniff.visistat.com 'unsafe-inline' 'unsafe-eval';
+ font-src fonts.gstatic.com 'self';
+ frame-src www.youtube.com securityinnovation.channeltivity.com;
+ style-src fonts.googleapis.com 'self' 'unsafe-inline';
+ report-uri https://ppjefhb522.execute-api.us-east-1.amazonaws.com/csp; 
+x-content-type-options: nosniff
+public-key-pins-report-only: pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI=";
+ pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I=";
+ pin-sha256="krfZyrM6t2dPSB5xYIA8X4iLzftWcYpTXrSAqsNYOH0=";
+ report-uri="https://xbisyyhaol.execute-api.us-east-1.amazonaws.com/hpkp";
+ max-age=10
+server: nginx
+content-security-policy-report-only: default-src 'self'; frame-ancestors 'self';
+ plugin-types application/pdf
+ application/x-shockwave-flash; block-all-mixed-content;
+ upgrade-insecure-requests; media-src 'none'; object-src 'none';
+ img-src 'self' assets.securityinnovation.com *.g.doubleclick.net
+ sniff.visistat.com track.hubspot.com www.google-analytics.com www.google.com;
+ script-src 'self' script.crazyegg.com js.hs-analytics.net
+ www.googleadservices.com www.google-analytics.com www.googletagmanager.com
+ cdn.optimizely.com forms.hubspot.com js.hsforms.net ajax.googleapis.com
+ sniff.visistat.com 'unsafe-inline' 'unsafe-eval';
+ font-src fonts.gstatic.com 'self';
+ frame-src www.youtube.com securityinnovation.channeltivity.com;
+ style-src fonts.googleapis.com 'self' 'unsafe-inline';
+ report-uri https://ppjefhb522.execute-api.us-east-1.amazonaws.com/csp; 
+connection: keep-alive
+x-xss-protection: 1; mode=block
+location: https://www.securityinnovation.com/
+date: Tue, 13 Sep 2016 07:52:29 GMT
+x-frame-options: SAMEORIGIN
+content-type: text/html
+-x-permanent-redirect-url: https://www.securityinnovation.com/
+content-location: http://www.securityinnovation.com/
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

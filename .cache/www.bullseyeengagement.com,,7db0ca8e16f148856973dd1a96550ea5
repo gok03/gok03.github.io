@@ -1,0 +1,970 @@
+status: 200
+content-length: 52722
+content-location: http://www.bullseyeengagement.com/
+x-aspnet-version: 2.0.50727
+set-cookie: ASP.NET_SessionId=4lwzghqhfly42onbuiqjrx55; path=/; HttpOnly
+vary: Accept-Encoding
+server: Microsoft-IIS/7.0
+-content-encoding: gzip
+cache-control: private
+date: Fri, 30 Sep 2016 04:04:10 GMT
+x-powered-by: ASP.NET
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8" /><title>
+	Performance and Talent Management Software | Succession Planning Software
+</title><meta name="google-site-verification" content="hxX5Bvs5d6vgg7e6ukJGvt9rILatxz6xyRtH7u2Dvtw" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="y_key" content="baf48d9b97437cd7" /><meta name="msvalidate.01" content="403EF8BA7EE5F8E8737FAF25E2E3F6EA" /><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta name="ROBOTS" content="NOYDIR" /><meta name="ROBOTS" content="NOODP" /><link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /><link rel="stylesheet" type="text/css" href="css/StyleSheet.css" /><link rel="stylesheet" media="all" href="css/lessgrid.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.js"></script>
+    <!--dropdown-->
+    <script type="text/javascript" src="js/dropit.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#language').dropit();
+        });
+        function Restrict(event) {
+            if (document.all)
+                return ((event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode == 0 || event.keyCode == 8 || event.keyCode == 13 || event.keyCode == 9))
+            else
+                return ((event.which >= 48 && event.which <= 57) || (event.which == 0 || event.which == 8 || event.which == 13 || event.which == 9))
+        }
+        function RestrictPrice(event) {
+            if (document.all)
+                return ((event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode == 0 || event.keyCode == 8 || event.keyCode == 13 || event.keyCode == 9 || event.keyCode == 46))
+            else
+                return ((event.which >= 48 && event.which <= 57) || (event.which == 0 || event.which == 8 || event.which == 13 || event.which == 9 || event.which == 46))
+        }   
+    </script>
+
+    <!--End dropdown-->
+
+    <script>
+        $(document).ready(function() {
+            // hide #back-top first
+            $("#back-top").hide();
+
+            // fade in #back-top
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('#back-top a').click(function() {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var pageTitle = document.title; //HTML page title
+            var pageUrl = location.href; //Location of the page
+
+            //user hovers on the share button  
+            $('#share-wrapper li').hover(function() {
+                var hoverEl = $(this); //get element
+
+                //browsers with width > 699 get button slide effect
+                if ($(window).width() > 699) {
+                    if (hoverEl.hasClass('visible')) {
+                        hoverEl.animate({ "margin-left": "-148px" }, "fast").removeClass('visible');
+                    } else {
+                        hoverEl.animate({ "margin-left": "0px" }, "fast").addClass('visible');
+                    }
+                }
+            });
+
+            //user clicks on a share button
+            $('.button-wrap').click(function(event) {
+                var shareName = $(this).attr('class').split(' ')[0]; //get the first class name of clicked element
+
+                switch (shareName) //switch to different links based on different social name
+                {
+                    case 'facebook':
+                        var openLink = 'https://www.facebook.com/BullseyeEvaluationSoftware';
+                        break;
+                    case 'twitter':
+                        var openLink = 'https://twitter.com/bullseyepm';
+                        break;
+                    case 'linkedin':
+                        var openLink = 'http://www.linkedin.com/companies/bullseyeevaluation';
+                        break;
+
+
+                    case 'google':
+                        var openLink = 'https://plus.google.com/+GraceAtkinsbullseyeengagement/posts';
+                        break;
+
+                    case 'youtubeleft':
+                        var openLink = 'https://www.youtube.com/bullseyeperformance';
+                        break;
+
+                    case 'email':
+                        var openLink = 'mailto:mgr@bepms.com?subject=' + pageTitle + '&body=Found this useful link for you : ' + pageUrl;
+                        window.location.href = openLink;
+                        return false;
+                        break;
+                }
+
+                //Parameters for the Popup window
+                winWidth = 650;
+                winHeight = 450;
+                winLeft = ($(window).width() - winWidth) / 2,
+                winTop = ($(window).height() - winHeight) / 2,
+                winOptions = 'width=' + winWidth + ',height=' + winHeight + ',top=' + winTop + ',left=' + winLeft;
+
+                //open Popup window and redirect user to share website.
+                window.open(openLink, 'Share This Link', winOptions);
+                return false;
+            });
+        });
+    </script>
+     <script type="text/javascript">
+         function validateSId(txt, e) {
+
+             if (e.keyCode == 13) {
+                 if (txt.val() == "") {
+                     alert("Please enter some text for search...");
+                     e.preventDefault();
+                     return;
+                 }
+                 var str = txt.val();
+                 var address = '/search.aspx';
+                window.location = address + "?search=" + str;
+                e.preventDefault();
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            var session = 'en-US';
+            if (session == "fr-FR") {
+                $(".footer-email").append('<a href="mailto:befrance@bepms.com">mgr@bepms.com</a>');
+                $(".head-email").append('<a href="mailto:befrance@bepms.com">mgr@bepms.com</a>');
+                $("#liIQ").hide();
+                $("#liABC").hide();
+            }
+            else if (session == "es-ES")
+            {
+                $(".footer-email").append('<a href="mailto:bemexico@bepms.com">mgr@bepms.com</a>');
+                $(".head-email").append('<a href="mailto:bemexico@bepms.com">mgr@bepms.com</a>');
+
+            }
+            else {
+                $(".head-email").append('<a href="mailto:mgr@bepms.com">mgr@bepms.com</a>');
+                $(".footer-email").append('<a href="mailto:mgr@bepms.com">mgr@bepms.com</a>');
+            }
+        });
+    </script>
+	
+	
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		
+    
+	
+    <meta name="description" content="BullseyeEngagement offers web based performance management, talent management, compensation management and succession planning software solutions that enable organizations to track employee performance and boost productivity." />
+    <meta name="keywords" content="Performance Management Software, Talent Management Software" />
+    
+    <style type="text/css">
+        .nav a.home
+        {
+            background-color: #f6f6f6;
+        }
+    </style>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/gfeedfetcher.js"></script>
+</head>
+<body>
+
+    <style>
+        #google_translate_element { background: #f8f8f8; border-bottom:1px solid #ccc; text-align: right;}
+        font {}
+
+    </style>
+    <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, multilanguagePage: true}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+
+    <form name="aspnetForm" method="post" action="default.aspx" id="aspnetForm" target="_parent">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTA4NDc3MTExD2QWAmYPZBYCAgMPZBYEAgEPEGRkFgFmZAImDxYCHgNzcmMFNmh0dHA6Ly93d3cuYnVsbHNleWVlbmdhZ2VtZW50LmNvbS9Db250YWN0VXNNYXN0ZXIuYXNweGRkpH07TVpQDO48gN4beuT2tV4zbxo=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwKYmrboCQKa6O39CgKu3/72CAKu34qeDQLE3Jr0BAKD0p7QAgKI1aGACCBTV875T9r8FrEHs4xyert977nr" />
+    <input type="hidden" name="ctl00$hfSession" id="ctl00_hfSession" />
+    <div id="share-wrapper">
+        <ul class="share-inner-wrp">
+		<div class="addthis">
+        <!-- AddToAny BEGIN -->
+       
+		<!--<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>-->
+            <!-- Facebook -->
+            <li class="facebook button-wrap"><a href="#" target="_blank" title="facebook">Facebook</a></li>
+            <!-- Twitter -->
+            <li class="twitter button-wrap"><a href="#" target="_blank" title="twitter">Twitter</a></li>
+            <!-- linkedin -->
+            <li class="linkedin button-wrap a2a_kit a2a_kit_size_32 a2a_default_style" style="cursor:pointer"><a class="a2a_button_linkedin">Linkedin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            <!-- Google -->
+            <li class="google button-wrap"><a href="#" target="_blank" title="google">Google+</a></li>
+            <!-- Youtube -->
+            <li class="youtubeleft button-wrap"><a href="#" title="Youtube"  target="_blank" >Youtube</a></li>
+            <!-- Email -->
+            <li class="email button-wrap"><a href="#" title="Email">Email Us</a></li>
+        </ul>
+    </div>
+    <p id="back-top">
+        <a href="#top" title="back to top"><span></span>Back to Top</a></p>
+    <div class="page-header">
+        <div class="masterwrapper relative-me">
+            <div class="head-right-cont">
+               <div class="fright">
+                <select name="ctl00$ddCultureChange" id="ctl00_ddCultureChange" class="select-st">
+	<option selected="selected" value="en-US">English</option>
+	<option value="es-ES">Spanish</option>
+	<option value="fr-FR">French</option>
+	<option value="ru-RU">Russian</option>
+
+</select>                    
+                </div>
+                <div class="searchbox">
+                    <input name="ctl00$searcht" type="text" id="ctl00_searcht" placeholder="Search..." onkeypress="validateSId($(this),(event))" />
+                </div>
+            </div>
+            <div class="clr-right">
+            </div>
+            <div class="phone-no">
+                <div class="small-text">
+                    <p>
+                        &nbsp;</p>
+                </div>
+                <div class="notext">
+                    	877-988-9808
+				</div>
+               <p class="head-email"></p>
+            </div>
+            <a title="bullseyeengagement" href="http://www.bullseyeengagement.com"><img id="ctl00_Img1" class="logo" src="images/logo.png" alt="BullseyeEngagement" border="0" /></a>
+            <div class="clr">
+            </div>
+        </div>
+    </div>
+    <div class="masterwrapper relative-me">
+        <div class="clr">
+        </div>
+        <a id="ctl00_HyperLink12" class="free-demo" title="demo" href="demo.aspx"><strong>Free Live Demo</strong></a>
+		<ul class="gallery clearfix">
+        <a  Class="watchvideo-btn" href="https://www.youtube.com/watch?v=kTIsZ1XpfhU" rel="prettyPhoto"><strong>Watch the Video</strong></a>
+		</ul>
+		
+        <a class="toggleMenu" href="#" title="menu">Menu</a>
+        <ul class="nav">
+            <li>
+                <a id="ctl00_HyperLink0" class="home" title="bullseyeengagement" href="http://www.bullseyeengagement.com">Home<span>Get Started</span></a></li>
+            <li>
+                <a id="ctl00_HyperLink1" class="about-us" title="about us" href="about-us.aspx">About Us<span>Company Info</span></a>
+                <ul>
+                    <li>
+                        <a id="ctl00_HyperLink2" title="advisors" href="about-us/advisors.aspx">Advisors</a></li>
+                    <li>
+                        <a title="be client" href="about-us/be-client.aspx">Clients</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink8" title="strategic partners" href="about-us/strategic-partners.aspx">Strategic Partners</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink13" title="technology partners" href="about-us/technology-partners.aspx">Technology Partners</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink9" title="consultants" href="about-us/consultants.aspx">Our Consultants </a></li>
+                </ul>
+            </li>
+            <li>
+                <a id="ctl00_HyperLink4" class="solutions" title="solutions" href="solutions.aspx">Solutions<span>Awesome Stuff</span></a>
+                <ul>
+                    <li>
+                            <a id="ctl00_HyperLink26" title="employee evaluation" href="solutions/employee-performance-evaluation.aspx">Employee Performance Evaluation</a>
+
+                    </li>
+                    <li>
+
+                        <a id="ctl00_HyperLink14" title="employee performance management system" href="solutions/employee-performance-management-system.aspx">Bullseye Performance</a>
+                        <ul >
+                            <li>
+                                <a id="ctl00_HyperLink18" title="organization performance management system" href="solutions/organization-performance-management-system.aspx">Bullseye OPS - Organizational Performance</a></li>
+                            <li>
+                                <a id="ctl00_HyperLink25" title="healthcare performance anagement system" href="solutions/healthcare-performance-management-system.aspx">Bullseye MD - Healthcare</a></li>                            
+                            <li id="liIQ">
+                                <a id="ctl00_HyperLink17" title="higher education performance management system" href="solutions/higher-education-performance-management-system.aspx">Bullseye IQ - Higher Education</a></li>
+                            <li id="liABC">
+                                <a id="ctl00_HyperLink16" title="school performance management system" href="solutions/school-performance-management-system.aspx">Bullseye ABC - School Accountability</a></li>                            
+                        </ul>
+                    </li>
+					
+					
+					   <li><a title="talent management software" href="solutions/talent-management-software.aspx">Talent Management</a></li>
+					    <li><a title="compensation planning" href="solutions/compensation-plan.aspx">Compensation Planning</a></li>
+					<li>
+                        <a id="ctl00_HyperLink19" title="customer survey systems" href="solutions/customer-survey-systems.aspx">Bullseye Surveys</a></li>
+					
+                    <li>
+                        <a id="ctl00_HyperLink15" title="KPI dashboards" href="solutions/KPI-dashboards.aspx">Bullseye KPI Dashboards</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a id="ctl00_HyperLink3" class="services" title="services" href="services.aspx">Services<span>What We Do</span></a></li>
+            <li>
+                <a id="ctl00_HyperLink5" class="resources" title="resources" href="resources.aspx">Resources<span>Awesome Stuff</span></a>
+                <ul>
+                    <li>
+                        <a id="ctl00_HyperLink20" title="our testimonial" href="resources/our-testimonial.aspx">Testimonials</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink22" title="videos" href="resources/videos.aspx">Videos</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink21" title="press" href="resources/press.aspx">Press Releases</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink23" title="career opportunites" href="resources/career-opportunites.aspx">Employment & Career Opportunities</a></li>
+                    <li>
+                        <a id="ctl00_HyperLink24" title="articles" href="resources/articles.aspx">Articles</a></li>
+                </ul>
+            </li>
+            <li>
+                <a id="ctl00_HyperLink7" title="bullseyeengagement blog" href="http://blog.bullseyeengagement.com" target="_blank">BLOG<span>Write Message</span></a>
+            </li>
+            <li>
+                <a id="ctl00_HyperLink6" class="contact-us" title="contact" href="contact.aspx">Contact Us
+<span>Write Message</span></a>
+            </li>
+        </ul>
+
+        <script type="text/javascript" src="js/menu.js"></script>
+
+        <div class="clr">
+        </div>
+    </div>
+    
+
+<div id="ctl00_ContentPlaceHolder1_tbl_search">
+    <div class="page-banner-holder home-banner-fix">
+        <div class="masterwrapper relative-me">
+            <div class="page-banner cycle-slideshow"
+                data-cycle-fx="scrollHorz"
+                data-cycle-slides="> div"
+                data-cycle-pause-on-hover="true"
+                data-cycle-timeout="5000"
+                data-cycle-pager=".pb-dot">
+                <div class="page-banner-box">
+                    <div class="banner-img">
+                        <img src="images/apps.jpg" alt="Goals Management" />
+                    	
+                    </div>
+                    <div class="banner-text  relative-me">
+                        <h2>BEPMS Login App</h2>
+                        <p>Access Bullseye Performance Management System through your mobile devices</p>
+                        <div class="apps-holder"><a href="https://play.google.com/store/search?q=bepms" target="_blank" class="appgoogle"><img src="images/appgoogle.png" alt="" class="zoomer" /></a>
+                          <a href="https://itunes.apple.com/us/app/bepms/id1038396438?mt=8" target="_blank" class="appiphone"><img src="images/appiphone.png" alt="" class="zoomer" /></a></div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="page-banner-box">
+                    <div class="banner-img relative-me">
+                        <img src="images/tree.png" alt="Next Level of Excellence">
+                        <a href="solutions/compensation-plan.aspx" title="compensation plan" class="tree-item tree-compensation zoomer"><span>Compensation</span></a>
+                        <a href="solutions/business-management-softwares.aspx#competencies"  rel="canonical" title="competencies" class="tree-item tree-competencies zoomer"><span>Competencies</span></a>
+                        <a href="solutions/business-management-softwares.aspx#succession" rel="canonical" title="succession" class="tree-item tree-succession zoomer"><span>Succession</span></a>
+                        <a href="solutions/talent-management-software.aspx" title="talent management software" class="tree-item tree-talent zoomer"><span style="line-height: 1.3em;">
+                            <br>
+                            Talent Management<br></span></a>
+                        <a href="solutions/business-management-softwares.aspx#surveys" rel="canonical" title="surveys" class="tree-item tree-surveys zoomer"><span style="line-height: 4em;">Surveys</span></a>
+                        <a href="solutions/business-management-softwares.aspx#goals" rel="canonical" title="goals" class="tree-item tree-goals zoomer"><span style="line-height: 4em;">Goals</span></a>
+                        <a href="solutions/business-management-softwares.aspx#trainings" rel="canonical" title="trainings" class="tree-item tree-trainings zoomer"><span>Training</span></a>
+                        <a href="solutions/business-management-softwares.aspx#reviews" rel="canonical" title="reviews" class="tree-item tree-reviews zoomer"><span style="line-height: 4em;">Reviews</span></a>
+                        <a href="solutions/employee-performance-management-system.aspx" title="employee performance management system" class="tree-item tree-personal zoomer"><span style="line-height: 1.3em;">
+                            <br>
+                            Performance Management
+<br></span></a>
+                        <a href="solutions/business-management-softwares.aspx#employee" rel="canonical" title="employee" class="tree-item tree-employee zoomer"><span style="line-height: 1.3em;">
+                            <br>
+                            Employee Engagement
+<br></span></a>
+
+                    </div>
+                    <div class="banner-text">
+                        <h2>Next Level of Excellence</h2>
+                        <p> Manage Employee Performance
+with Bullseye Performance Management Solutions</p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="page-banner-box">
+                    <div class="banner-img">
+                        <img src="images/GoalsManagement.jpg" alt="Goals Management" />
+                    </div>
+                    <div class="banner-text">
+                        <h2>Goals management</h2>
+                        <p>Helps to establish, track and achieve results with employee goals</p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="page-banner-box">
+                    <div class="banner-img">
+                        <img src="images/Succession-Management-Tools.jpg" alt="Succession Management Tools" />
+                    </div>
+                    <div class="banner-text">
+                        <h2>Succession Management Tools</h2>
+
+                        <p>Keeping you ahead
+</p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+
+                <div class="page-banner-box">
+                    <div class="banner-img">
+                        <img src="images/TrainingManagement.jpg" alt="Training Management" />
+                    </div>
+                    <div class="banner-text">
+                        <h2>Training Management
+</h2>
+
+                        <p>The answer to the Future</p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="page-banner-box">
+                    <div class="banner-img">
+                        <img src="images/Employee-Assessment.jpg" alt="Employee Assessment" />
+                    </div>
+                    <div class="banner-text">
+                        <h2>Employee Assessment</h2>
+
+                        <p>Why do Employee Assessments scare you?
+</p>                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="page-banner-box">
+                    <div class="banner-img">
+                        <img src="images/CompetencyManagement.jpg" alt="Competency Management" />
+                    </div>
+                    <div class="banner-text">
+                        <h2>Competency Management</h2>
+                        <p>To organize and assemble your firm
+</p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </div>
+            <div class="pb-pager">
+                <div class="pb-dot"></div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+    <div class="masterwrapper">
+        <div class="home-page-container">
+        <div itemscope itemtype="http://schema.org/Product" class="center padding-bottom-3p">
+        <div onclick="location.href='solutions/employee-performance-management-system.aspx';" title="employee performance management system" class="home-icon hover-me">
+        <span><img alt="Bullseye Performance" itemprop="image" src="images/Bullseye-Performance-icon.png"></span>
+        	<span class="text" itemprop="name">Bullseye Performance</span>
+        </div>
+        <div onclick="location.href='solutions/talent-management-software.aspx';" title="talent management software" class="home-icon hover-me">
+        <span><img alt="Talent Management" itemprop="image" src="images/Talent-Management-icon.png"></span>
+        	<span class="text" itemprop="name">Talent Management</span>
+        </div>
+        <div onclick="location.href='solutions/compensation-plan.aspx';" title="compensation plan" class="home-icon hover-me">
+        <span><img alt="Compensation Planning" itemprop="image" src="images/Compensation-Planning-icon.png"></span>
+        	<span class="text" itemprop="name">Compensation Planning</span>
+        </div>
+        <div onclick="location.href='solutions/customer-survey-systems.aspx';" title="customer survey systems" class="home-icon hover-me">
+        <span><img alt="Bullseye Surveys" itemprop="image" src="images/Bullseye-Surveys-icon.png"></span>
+        	<span class="text" itemprop="name">Bullseye Surveys</span>
+        </div>
+        <div onclick="location.href='solutions/KPI-dashboards.aspx';" title="KPI dashboards" class="home-icon hover-me">
+        <span><img alt="Bullseye KPI Dashboards" itemprop="image" src="images/Bullseye-KPI-Dashboards-icon.png"></span>
+        	<span class="text" itemprop="name">Bullseye KPI Dashboards</span>
+        </div>
+        </div>
+        <div class="clr"></div>
+<h2 class="hilight-green center">Explore our Simple Integrated Solutions</h2>
+          <div class="center">
+            <p>&nbsp;</p>
+            <p ><strong>Bullseye provides trend setting, non-form based solutions for human capital and operational performance management. Our employee performance solutions improve engagement by facilitating frequent communication and incorporating social feedback. </strong></p>
+            <p>&nbsp;</p>
+            <p><strong>Bullseye’s business intelligence solutions display real time information through innovative KPI dashboards. This enables a process of management by exception with the ability to drill down, understand underlying trends, and take appropriate remedial actions.</strong></p>
+             
+          </div>
+        </div>   
+        </div>        
+        <div class="grey-tab-holder">
+        <div class="masterwrapper">
+            <div class="padding-top-3p">
+                <h1 class="center"><a href="resources/articles/importance-of-employee-engagement.aspx" title="importance of employee engagement">Employee Engagement Delivers
+</a></h1>
+                <div class="clr"></div>
+                <div class="engagement">
+                    <div class="engagementlist-box">
+                        <ul class="engagementlist left">
+                            <li>41% Fewer Patient Safety Incidents</li>
+                            <li>41% Fewer Quality Incidents (defects)</li>
+                            <li>10% Higher Customer Metrics</li>
+                            <li>21% Higher Productivity
+</li>
+                            <li>22% Higher Profitability</li>
+                        </ul>
+                    </div>
+                    <div class="img-holder"><a href="resources/articles/importance-of-employee-engagement.aspx" title="importance of employee engagement">
+                        <img src="images/engagement-chart.jpg" alt="Gallup" /></a></div>
+                    <div class="engagementlist-box">
+                        <ul class="engagementlist">
+                            <li>37% Lower Absenteeism</li>
+                            <li>25% Lower Turnover (in high-turnover organizations)</li>
+                            <li>65% Lower Turnover (in low-turnover organizations)</li>
+                            <li>28% Less Shrinkage</li>
+                            <li>48% Fewer Safety Incidents</li>
+                        </ul>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </div>
+        </div>
+    </div>      
+    <div class="masterwrapper">
+        <div class="padding-top-3p">
+               <div class="testimonials">
+                    <h2>Testimonials</h2>
+                    <p>&nbsp;</p>
+                    <div class="vertical-dash">
+                  <div class="testimonials-slide-holder cycle-slideshow" itemscope itemtype="http://schema.org/VideoObject" data-cycle-prev="#tleft" data-cycle-next="#tright"
+                            data-cycle-fx="scrollHorz"
+                            data-cycle-slides="> div"
+                            data-cycle-random="true"
+                            data-cycle-timeout="0">
+                            <div class="testimonials-slide-box">
+                                <div class="testimonials-slide">
+                                    <div class="testimonials-video">
+                                         <div itemprop="embedUrl" class="youtube" id="5JsghVjTj-Y" style="width: 100%; height: 150px;"></div>
+                                    </div>
+                                    <div class="testimonials-info">
+                                        <h3 itemprop="name">Brian Dickens, SPHR</h3>
+                                        <p class="hilight-green">Executive Director Officer of Human Resources </p>
+                                        <p>Texas Southern University </p>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                            <div class="testimonials-slide-box">
+                                <div class="testimonials-slide">
+                                    <div class="testimonials-video">
+                                        <div itemprop="embedUrl" class="youtube" id="WWFD-2NWDYE" style="width: 100%; height: 150px;"></div>
+                                    </div>
+                                    <div class="testimonials-info">
+                                        <h3 itemprop="name">Michael Jalbert</h3>
+                                        <p class="hilight-green">President</p>
+                                        <p>New Directions, Inc.</p>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                            <div class="testimonials-slide-box">
+                                <div class="testimonials-slide">
+                                    <div class="testimonials-video">
+                                        <div itemprop="embedUrl" class="youtube" id="oiaJzFhopGg" style="width: 100%; height: 150px;"></div>
+                                    </div>
+                                    <div class="testimonials-info">
+                                        <h3 itemprop="name">Paul Daoust</h3>
+                                        <p class="hilight-green">Non-Executive Chairman</p>
+                                        <p>High Roads, Inc.</p>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                            <div class="testimonials-slide-box">
+                                <div class="testimonials-slide">
+                                    <div class="testimonials-video">
+                                        <div itemprop="embedUrl" class="youtube" id="hzvex9rKARI" style="width: 100%; height: 150px;"></div>
+                                    </div>
+                                    <div class="testimonials-info">
+                                        <h3 itemprop="name">Rolf Kleiner</h3>
+                                        <p class="hilight-green">SVP and Chief Innovation Officer </p>
+                                        <p>Kelly Services</p>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                            <div class="testimonials-slide-box">
+                                <div class="testimonials-slide">
+                                    <div class="testimonials-video">
+                                        <div itemprop="embedUrl" class="youtube" id="ItlgrAReeUA" style="width: 100%; height: 150px;"></div>
+                                    </div>
+                                    <div class="testimonials-info">
+                                        <h3 itemprop="name">Nathaniel C. Stoddard</h3>
+                                        <p class="hilight-green">Chairman</p>
+                                        <p>Crenshaw Associates</p>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                            <div class="testimonials-slide-box">
+                                <div class="testimonials-slide">
+                                    <div class="testimonials-video">
+                                          <div itemprop="embedUrl" class="youtube" id="ZenEEcngN_Q" style="width: 100%; height: 150px;"></div>
+                                    </div>
+                                    <div class="testimonials-info">
+                                        <h3 itemprop="name">Irene Helsinger</h3>
+                                        <p class="hilight-green">Partner</p>
+                                        <p>Newport Board Group</p>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                            <div class="testimonials-slide-box">
+                                <div class="testimonials-slide">
+                                    <div class="testimonials-video">
+                                        <div itemprop="embedUrl" class="youtube" id="fI8natAZ5k4" style="width: 100%; height: 150px;"></div>
+                                        <script src="js/youtube.js"></script>
+                                    </div>
+                                    <div class="testimonials-info">
+                                        <h3 itemprop="name">Robert Remy</h3>
+                                        <p>Bullseye Reduces Legal Risks</p>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-holder"><a href="#" class="arrow-left" id="tleft">&lt;</a><a href="#" class="arrow-right" id="tright">&gt;</a></div>
+                    <div class="center"><a href="resources/videos.aspx" title="videos">view more</a></div>
+                </div>
+                <div class="blog">
+                    <h2>Recent Blogs</h2>
+                    <p>&nbsp;</p>
+                    <script type="text/javascript">
+                        $(function () {
+                            $(".titlefield a").attr("target", "_blank");
+                        });
+                    </script>
+                    <div class="blog-list-holder" data-cycle-prev="#bleft" data-cycle-next="#bright"
+                        data-cycle-fx="scrollHorz"
+                        data-cycle-slides="> div"
+                        data-cycle-timeout="0">
+                        <div class="blog-list">
+                            <script type="text/javascript">
+                                var cssfeed = new gfeedfetcher("example1", "blog-list", "")
+                                cssfeed.addFeed("CSS Drive", "http://feeds.feedburner.com/bullseyeevaluation/EmployeeEngagementBlog?format=xml")
+                                cssfeed.displayoptions("date") 
+                                cssfeed.setentrycontainer("li")
+                                cssfeed.filterfeed(4, "date")
+                                cssfeed.init()
+                            </script>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="clr"></div>
+            </div>
+    </div>    
+<div class="clr"></div>    
+<div class="masterwrapper">
+        <div class="padding-both center">
+            <h2>Selected<span class="hilight-green"> Clients </span></h2>
+            <div class="clients-slider-holder  cycle-slideshow" data-cycle-prev="#cleft" data-cycle-next="#cright"
+                data-cycle-fx="flipHorz"
+                data-cycle-slides="> div"
+                data-cycle-timeout="5000">
+                <div class="clients-slider">
+                    <div>                       
+                        <img src="images/clients/andersonhospital1.jpg" alt="anderson hospital" class="nocolor" />
+                        <img src="images/clients/andersonhospital.jpg" alt="anderson hospital" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/bakerbotts-logo1.jpg" alt="BC Technical" class="nocolor" />
+                        <img src="images/clients/bakerbotts-logo.jpg" alt="BC Technical" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/BC-Technical1.jpg" alt="BC Technical" class="nocolor" />
+                        <img src="images/clients/BC-Technical.jpg" alt="BC Technical" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/Bizjet1.jpg" alt="Bizjet" class="nocolor" />
+                        <img src="images/clients/Bizjet.jpg" alt="Bizjet" class="color" />
+              </div>
+             		<div>
+                        <img src="images/clients/boarshead1-logo.jpg" alt="" class="nocolor" />
+                        <img src="images/clients/boarshead-logo.jpg" alt="" class="color" />
+                    </div>
+                </div>
+                <div class="clients-slider">
+                    <div>
+                        <img src="images/clients/caterpillar1.jpg" alt="caterpillar" class="nocolor" />
+                        <img src="images/clients/caterpillar.jpg" alt="caterpillar" class="color" />
+                    </div>
+                   	<div>
+                        <img src="images/clients/Captrust1.jpg" alt="allied" class="nocolor" />
+                        <img src="images/clients/Captrust.jpg" alt="allied" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/City-National-Bank1.jpg" alt="City National Bank" class="nocolor" />
+                        <img src="images/clients/City-National-Bank.jpg" alt="City National Bank" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/communitytrust1.jpg" alt="communitytrust" class="nocolor" />
+                        <img src="images/clients/communitytrust.jpg" alt="communitytrust" class="color" />
+                    </div>
+                	<div>
+                        <img src="images/clients/Dayton1.jpg" alt="Dayton" class="nocolor" />
+                        <img src="images/clients/Dayton.jpg" alt="Dayton" class="color" />
+                    </div>
+                </div>
+                <div class="clients-slider">
+                    <div>
+                        <img src="images/clients/DMS1.jpg" alt="DMS" class="nocolor" />
+                        <img src="images/clients/DMS.jpg" alt="DMS" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/fabco1.jpg" alt="fabco" class="nocolor" />
+                        <img src="images/clients/fabco.jpg" alt="fabco" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/FutureSense1.jpg" alt="fabco" class="nocolor" />
+                        <img src="images/clients/FutureSense.jpg" alt="fabco" class="color" />
+                    </div>
+                    
+                    <div>
+                    <img src="images/clients/hogarthww1-logo.jpg" alt="hogarthww" class="nocolor" />
+                    <img src="images/clients/hogarthww-logo.jpg" alt="hogarthww" class="color" /> 
+                    </div>
+                    
+                    <div>
+                        <img src="images/clients/jackson1.jpg" alt="jackson" class="nocolor" />
+                         <img src="images/clients/jackson.jpg" alt="jackson" class="color" />
+                    </div>
+
+                </div>
+                <div class="clients-slider">
+                    <div>
+                        <img src="images/clients/KellyOCG1.jpg" alt="KellyOCG" class="nocolor" />
+                        <img src="images/clients/KellyOCG.jpg" alt="KellyOCG" class="color" />                        
+                    </div>                
+                                        <div>
+                        <img src="images/clients/Memry-Corp1.jpg" alt="Mustang" class="nocolor" />
+                        <img src="images/clients/Memry-Corp.jpg" alt="Mustang" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/Mustang1.jpg" alt="Mustang" class="nocolor" />
+                        <img src="images/clients/Mustang.jpg" alt="Mustang" class="color" />
+                    </div>
+                    <div> <img src="images/clients/MVE-Architects1.jpg" alt="MVE" class="nocolor" /> <img src="images/clients/MVE-Architects.jpg" alt="MVE" class="color" /> </div>
+                    <div>
+                        <img src="images/clients/noosa1.jpg" alt="nyct" class="nocolor" />
+                        <img src="images/clients/noosa.jpg" alt="nyct" class="color" />
+                    </div>
+ 
+                </div>
+                <div class="clients-slider">
+                     <div>
+                        <img src="images/clients/nyct1.jpg" alt="nyct" class="nocolor" />
+                        <img src="images/clients/nyct.jpg" alt="nyct" class="color" />
+                    </div> 
+                	 <div> <img src="images/clients/Partners1.jpg" alt="Partners" class="nocolor" /> <img src="images/clients/Partners.jpg" alt="Partners" class="color" />
+                    </div>             
+                    <div>
+                        <img src="images/clients/Port-Royal1.jpg" alt="Port Royal" class="nocolor" />
+                        <img src="images/clients/Port-Royal.jpg" alt="Port Royal" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/rgh1.jpg" alt="Rand" class="nocolor" />
+                        <img src="images/clients/rgh.jpg" alt="Rand" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/seta1.jpg" alt="halliburton" class="nocolor" />
+                        <img src="images/clients/seta.jpg" alt="halliburton" class="color" />
+                    </div>
+                   
+                    </div> 
+                <div class="clients-slider">
+                     <div>
+                        <img src="images/clients/ssjid1.jpg" alt="ssjid" class="nocolor" />
+                        <img src="images/clients/ssjid.jpg" alt="ssjid" class="color" />
+                    </div>
+                    <div>
+                        <img src="images/clients/TSU1.jpg" alt="ssjid" class="nocolor" />
+                        <img src="images/clients/TSU.jpg" alt="ssjid" class="color" />
+                    </div>
+                     <div>
+                        <img src="images/clients/wittkieffer1.jpg"alt="ssjid" class="nocolor" />
+                        <img src="images/clients/wittkieffer.jpg" alt="ssjid" class="color" />
+                    </div>                   
+                </div>
+            </div>
+            <script type='text/javascript'>
+                $(document).ready(function () {
+                    $('.clients-slider div').hover(
+                       function () {
+                           $(this)
+                           .find('img.nocolor')
+                           .stop()
+                           .animate({ 'opacity': '0' }, 500);
+                       },
+                       function () {
+                           $(this)
+                           .find('img.nocolor')
+                           .stop()
+                           .animate({ 'opacity': '1' }, 500);
+                       });
+
+                });
+
+            </script>
+            <div class="arrow-holder"><a href="#" class="arrow-left" id="cleft">&lt;</a><a href="#" class="arrow-right" id="cright">&gt;</a></div>
+            <div class="center" style="padding-bottom: 15px;"><a id="ctl00_ContentPlaceHolder1_HyperLink1" href="about-us/be-client.aspx">Some of our clients</a></div>
+        </div>
+    </div>
+<script type="text/javascript">    
+    function valid() {
+        if ('False' == true || 'False'.toLowerCase() == 'true') {
+            alert('Please try later. The email server is down at the moment.');
+            '';
+            }
+        }
+        valid();
+</script>
+</div>
+
+    <div class="clr">
+    </div>
+    <div class="page-footer">
+        <div class="masterwrapper">
+            <div class="footer-align">
+                <div class="resources-box">
+                    <h2>
+                        More Resources</h2>
+                    <p>
+                        &nbsp;</p>
+                    <ul class="arrow-list">
+                        <li>
+                            <a title="our testimonial" href="resources/our-testimonial.aspx">Testimonials</a></li>
+                        <li>
+                            <a title="videos" href="resources/videos.aspx">Videos</a></li>
+                        <li>
+                            <a title="press" href="resources/press.aspx">Press Releases</a></li>
+                        <li>
+                            <a title="career opportunites" href="resources/career-opportunites.aspx">Employment & Career Opportunities</a></li>
+                        <li>
+                            <a title="articles" href="resources/articles.aspx">Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-form-box">
+                    <p>
+                        <iframe id="ctl00_frmContactUsMaster" width="300" height="280" style="overflow: hidden; border: 0;" src="http://www.bullseyeengagement.com/ContactUsMaster.aspx"></iframe>
+                    </p>
+                </div>
+                <div class="footer-address">
+                    <h2>
+                        Contact Us
+</h2>
+                    <div class="footer-home-address">
+                        <p itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">6161 Savoy Drive, Suite 837</span><br />
+                            <span itemprop="addressLocality">Houston</span>, <span itemprop="addressRegion">Texas</span> <span itemprop="postalCode">77036</span>
+                        </p>
+                    </div>
+                    <div class="footer-tel-no">
+                        877-988-9808</div>
+                    <div class="footer-email">
+                        </div>
+                </div>
+                <div class="clr">
+                </div>
+            </div>
+            <div class="social-box-holder">
+                <h2>
+                    Get in touch and stay updated</h2>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/BullseyeEvaluationSoftware" class="fb" title="facebook">
+                        fb</a> <a target="_blank" href="http://www.twitter.com/bullseyepm" class="twitter" title="twitter">twitter</a>
+                    <a target="_blank" href="http://www.linkedin.com/companies/bullseyeevaluation" class="linkedin" title="linkedin">
+                        linkedin</a> <a href="https://plus.google.com/+GraceAtkinsbullseyeengagement/posts"
+                            target="_blank" class="googleplus" title="googleplus">googleplus</a> <a target="_blank" href="http://www.youtube.com/bullseyeperformance"
+                                class="youttube" title="youttube">youttube</a>
+                </div>
+                <p>
+                    &nbsp;</p>
+            </div>
+        </div>
+        <div class="page-bottom">
+            <div class="masterwrapper page-bottom-align">
+                <p>
+
+                    <script type="text/javascript">
+                        copyright = new Date();
+                        update = copyright.getFullYear();
+                        document.write("Copyright &copy; " + update + " BullseyeEngagement. All Rights Reserved.");
+                    </script>
+
+                    <span class="padding-lf-20">
+                        <a title="sitemap" href="sitemap.aspx">Sitemap</a>
+                        |
+                        <a id="ctl00_HyperLink10" title="legal" href="legal.aspx">Legal</a>
+                        |
+                        <a id="ctl00_HyperLink11" title="privacy policy" href="privacy-policy.aspx">Privacy Policy</a>
+                    </span>
+                </p>
+                <a href="http://www.houston.org" title="ghp" target="_blank" class="seal-ghp">seal-ghp</a>
+                <a id="ctl00_HyperLink1451" class="seal-tcpn" title="tcpn" href="tcpn.aspx">seal-tcpn</a>
+            </div>
+        </div>
+        <div class="clr">
+        </div>
+    </div>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-10011808-1', 'bullseyeengagement.com');
+        ga('send', 'pageview');
+
+    </script>
+    </form>
+	
+<!--Start of Tawk.to Script
+<script type="text/javascript">
+var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/558796591245226f4cafc9ff/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+Tawk.to Script-->
+
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$(".gallery a[rel^='prettyPhoto']").prettyPhoto({theme:'facebook', default_width: 800,
+    		default_height: 600});
+    		
+		});
+		</script>
+</body>
+</html>

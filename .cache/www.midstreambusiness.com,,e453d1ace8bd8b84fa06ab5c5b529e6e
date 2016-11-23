@@ -1,0 +1,1121 @@
+status: 200
+x-ah-environment: prod
+via: 1.1 varnish
+vary: Cookie,Accept-Encoding
+content-length: 64694
+x-request-id: v-9021c5f0-86bf-11e6-a4a5-1231381d545c
+content-language: en
+etag: "1475205442-0"
+x-cache-hits: 3
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: public, max-age=900
+x-varnish: 755899997 755858553
+x-cache: HIT
+accept-ranges: bytes
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+last-modified: Fri, 30 Sep 2016 03:17:22 GMT
+-content-encoding: gzip
+date: Fri, 30 Sep 2016 03:42:59 GMT
+content-location: http://www.midstreambusiness.com
+x-drupal-cache: HIT
+x-content-type-options: nosniff
+age: 179
+server: nginx
+connection: keep-alive
+x-frame-options: SameOrigin
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+<head>
+
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="http://www.midstreambusiness.com/profiles/hart_energy/themes/msb/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="alternate" type="application/rss+xml" title="Midstream Business RSS" href="http://www.midstreambusiness.com/rss.xml" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <title>Midstream Business</title>
+ 
+<!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+  <link rel="stylesheet" href="http://www.midstreambusiness.com/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link rel="stylesheet" href="http://www.midstreambusiness.com/sites/default/files/css/css_FGvlMg7bnQXPni4hmIZstrGn9ezaq6F7OF7_OLooavY.css" media="all" />
+<link rel="stylesheet" href="http://www.midstreambusiness.com/sites/default/files/css/css_vZ_wrMQ9Og-YPPxa1q4us3N7DsZMJa-14jShHgRoRNo.css" media="screen" />
+<link rel="stylesheet" href="http://www.midstreambusiness.com/sites/default/files/css/css_UTDJqLMkRUGKP04OHCaSjZnRxCe6qSoCuYGXxYhXOoI.css" media="all" />
+<link rel="stylesheet" href="http://www.midstreambusiness.com/sites/default/files/css/css_Ztf59WFREHP9t3nW00TwNynhAWa9Fm4BubGj5b_XlHc.css" media="all" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600" media="all" />
+<link rel="stylesheet" href="http://www.midstreambusiness.com/sites/default/files/css/css_Ozz70-o-bVV-fqTe0QJatFLbOlAcnilHGZOu1gU9NcU.css" media="all" />
+<link rel="stylesheet" href="http://www.midstreambusiness.com/sites/default/files/css/css_OTwyIPYRjWK-BdscXB8Vme08gR_HtFx2sqU5JIJK7qc.css" media="all" />
+<link rel="stylesheet" href="http://www.midstreambusiness.com/sites/default/files/css/css_2E6F4--u7Tqeezy6GXpwEe3ovVeR9tAa3HrjiHk62Qk.css" media="print" />
+  
+<!-- START DFP Ads -->
+
+<script type='text/javascript'>
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.defineSlot('/75410381/MidstreamLatExpander', [300, 250], 'div-gpt-ad-1410363531545-0').addService(googletag.pubads());
+googletag.defineSlot('/75410381/990x90', [600, 90], 'div-gpt-ad-1405956571770-0').addService(googletag.pubads());
+googletag.defineSlot('/75410381/MSB_Expandable_970x160', [[970, 40], [1170, 90]], 'div-gpt-ad-1424904571845-0').addService(googletag.pubads());
+googletag.defineSlot('/75410381/MSB_Position_1_MediumRectangle_300x250', [300, 250], 'div-gpt-ad-1393538218890-0').addService(googletag.pubads());
+googletag.defineSlot('/75410381/MSB_Position_1_SmallRectangle_300x125', [300, 125], 'div-gpt-ad-1393539651037-0').addService(googletag.pubads());
+googletag.defineSlot('/75410381/MSB_Position_2_MediumRectangle_300x250', [300, 250], 'div-gpt-ad-1393538040954-0').addService(googletag.pubads());
+googletag.defineSlot('/75410381/MSB_Position_2_SmallRectangle_300x125', [300, 125], 'div-gpt-ad-1393539713179-0').addService(googletag.pubads());
+googletag.defineSlot('/75410381/MSB_PopUp_1x1', [1, 1], 'div-gpt-ad-1436285780202-0').addService(googletag.pubads());
+googletag.defineSlot('/75410381/MSB_FloatingFooter', [1, 1], 'div-gpt-ad-1466786015935-0').addService(googletag.pubads());
+googletag.pubads().enableSyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+</script>
+
+<script src="http://www.midstreambusiness.com/profiles/hart_energy/modules/contrib/respondjs/lib/respond.min.js?oear01"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+window.jQuery || document.write("<script src='/profiles/hart_energy/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")
+</script>
+<script src="http://www.midstreambusiness.com/sites/default/files/js/js_8cJo9fmWVC49uBRTecCFykMJTbRM51DX7zFn4ykMg3U.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script>
+window.jQuery.ui || document.write("<script src='/profiles/hart_energy/modules/contrib/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+</script>
+<script src="http://www.midstreambusiness.com/sites/default/files/js/js_obFUyTbqtcoGQtszVI46l1_oD927PzlDtlr_ilpYBqE.js"></script>
+<script>
+document.createElement( "picture" );
+</script>
+<script src="http://www.midstreambusiness.com/sites/default/files/js/js_ibizGXV2KoPobQxqvIXnqFu308CwcswKXKaQKlClcTQ.js"></script>
+<script src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script src="http://www.midstreambusiness.com/sites/default/files/js/js_60h3eZvOhbvKCxd8jQNYNXAVl8d7FydceZPPQ2y2EgU.js"></script>
+<script src="http://www.midstreambusiness.com/sites/default/files/js/js_ejXlBP119uWCn6vdPmJIcE3J0CY92Qozj35SS_CEz5U.js"></script>
+<script>
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"msb","theme_token":"6wB1G8_HmPGr7kWo32r7U_kX6m64wxDvQwpTVv0m0jU","js":{"profiles\/hart_energy\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"profiles\/hart_energy\/modules\/contrib\/picture\/picture.min.js":1,"profiles\/hart_energy\/modules\/contrib\/respondjs\/lib\/respond.min.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.10.2\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/hart_energy\/modules\/contrib\/jquery_dollar\/jquery_dollar.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"1":1,"profiles\/hart_energy\/modules\/contrib\/views_slideshow\/js\/views_slideshow.js":1,"2":1,"profiles\/hart_energy\/modules\/contrib\/apachesolr_sort\/apachesolr_sort.js":1,"profiles\/hart_energy\/modules\/features\/platform\/hart_log\/js\/log.js":1,"profiles\/hart_energy\/modules\/custom\/hart_share\/js\/hart_share.js":1,"http:\/\/admin.brightcove.com\/js\/BrightcoveExperiences.js":1,"profiles\/hart_energy\/modules\/contrib\/brightcove\/brightcove_field\/js\/events.js":1,"profiles\/hart_energy\/modules\/contrib\/simple_dialog\/js\/simple_dialog.js":1,"profiles\/hart_energy\/modules\/contrib\/custom_search\/js\/custom_search.js":1,"profiles\/hart_energy\/libraries\/flexslider\/jquery.flexslider-min.js":1,"profiles\/hart_energy\/modules\/contrib\/flexslider_views_slideshow\/js\/flexslider_views_slideshow.js":1,"profiles\/hart_energy\/themes\/hart_base\/js\/bootstrap.min.js":1,"profiles\/hart_energy\/themes\/hart_base\/js\/scripts.js":1,"profiles\/hart_energy\/themes\/hart_base\/js\/hart_applications.js":1,"profiles\/hart_energy\/themes\/hart_base\/js\/pagination.js":1,"profiles\/hart_energy\/themes\/hart_base\/js\/popover.js":1,"profiles\/hart_energy\/themes\/msb\/js\/applications.js":1},"css":{"modules\/system\/system.base.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"profiles\/hart_energy\/modules\/contrib\/views_slideshow\/views_slideshow.css":1,"profiles\/hart_energy\/modules\/custom\/ascii_import\/css\/ai_style.css":1,"profiles\/hart_energy\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/hart_energy\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"profiles\/hart_energy\/modules\/custom\/hart_excelread\/css\/hart_excelread.css":1,"profiles\/hart_energy\/modules\/custom\/hart_ugc_operator\/css\/huc_style.css":1,"profiles\/hart_energy\/modules\/contrib\/mollom\/mollom.css":1,"profiles\/hart_energy\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"profiles\/hart_energy\/modules\/contrib\/views\/css\/views.css":1,"profiles\/hart_energy\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/hart_energy\/modules\/contrib\/panels\/css\/panels.css":1,"profiles\/hart_energy\/modules\/contrib\/simple_dialog\/css\/simple_dialog.css":1,"profiles\/hart_energy\/modules\/Patched\/forward\/forward.css":1,"profiles\/hart_energy\/modules\/contrib\/custom_search\/custom_search.css":1,"http:\/\/fonts.googleapis.com\/css?family=Open+Sans:400,700,300,600":1,"profiles\/hart_energy\/modules\/contrib\/flexslider\/assets\/css\/flexslider_img.css":1,"profiles\/hart_energy\/libraries\/flexslider\/flexslider.css":1,"profiles\/hart_energy\/themes\/hart_base\/css\/font-awesome.min.css":1,"profiles\/hart_energy\/themes\/hart_base\/css\/global.css":1,"profiles\/hart_energy\/themes\/hart_base\/css\/main-menu.css":1,"profiles\/hart_energy\/themes\/hart_base\/css\/responsive-base.css":1,"profiles\/hart_energy\/themes\/msb\/css\/bootstrap.min.css":1,"profiles\/hart_energy\/themes\/msb\/css\/styles.css":1,"profiles\/hart_energy\/themes\/msb\/css\/responsive.css":1,"profiles\/hart_energy\/themes\/msb\/css\/print.css":1}},"simpleDialog":{"classes":"","defaults":"width:300;height:auto;position:[center,60]","selector":"content","title":""},"custom_search":{"form_target":"_self","solr":1},"picture":{"mappings":[["more_stories_featured","more_stories_featured"],["exclusives_thumbnails","exclusives_thumbnails"],["exclusives_featured","exclusives_featured"],["center","center"],["events","events"],["article","article"],["Not Set","not_set"]],"label":"Image size (required)"},"urlIsAjaxTrusted":{"\/":true},"viewsSlideshow":{"msb_home-msb_slideshow":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow"],"pause":["viewsSlideshowControls","flexsliderViewsSlideshow"],"play":["viewsSlideshowControls","flexsliderViewsSlideshow"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"flexslider_views_slideshow":{"#flexslider_views_slideshow_main_msb_home-msb_slideshow":{"num_divs":4,"id_prefix":"#flexslider_views_slideshow_main_","vss_id":"msb_home-msb_slideshow","namespace":"flex-","selector":".slides \u003E li","easing":"swing","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":600,"initDelay":0,"useCSS":true,"touch":true,"video":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":0,"controlsContainer":".flex-control-nav-container","sync":"","asNavFor":"","itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"animation":"fade","slideshow":true,"slideshowSpeed":7000,"directionNav":true,"controlNav":true,"prevText":"\u003Ci class=\u0022fa fa-angle-left\u0022\u003E\u003C\/i\u003E","nextText":"\u003Ci class=\u0022fa fa-angle-right\u0022\u003E\u003C\/i\u003E","pausePlay":false,"pauseText":"Pause","playText":"Play","randomize":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"animationLoop":true,"pauseOnAction":true,"pauseOnHover":false,"manualControls":"","colorboxEnabled":false,"colorboxImageStyle":"article"}},"better_exposed_filters":{"views":{"msb_home":{"displays":{"msb_slideshow":{"filters":[]},"msb_home_whatsnew":{"filters":[]},"msb_exclusives_bottom":{"filters":[]},"msb_home_gathering":{"filters":[]},"msb_home_finance":{"filters":[]},"msb_home_transport":{"filters":[]}}},"msb_sidebar":{"displays":{"msb_magazine_latest_issue":{"filters":[]}}}}}});
+</script>
+
+<!--Leaderboard Tags -->
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+
+<!-- END DFP Ads -->  
+  </head>
+
+<body class="html front not-logged-in no-sidebars page-node domain-mb" >
+
+
+    <div id="page-wrapper">
+  <div id="header-wrapper">
+
+
+    <header id="header">
+    
+      <div id="topNav" class="hidden-print hidden-xs">
+        <div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+    <ul id="sitePages" class="list-inline">
+      <li id="home"><a href="/">Home</a></li>
+      <!--<li id="about"><a href="/about-us">About Midstream Business</a></li>-->
+      <li id="magazine"><a href="/msb-magazine">Midstream Business Magazine</a></li>
+      <li id="newsletter"><a href="/midstream-monitor">Midstream Monitor</a></li>
+      <li id="RSS"><a href="/msb-feeds.xml"><i class="fa fa-rss"></i> RSS</a></li>
+    </ul>
+    </div>
+    <div class="col-sm-4" id="topNav-login">
+             <ul class="list-inline pull-right">
+		  <li class="topnNav-user-login"><a href="/user?destination=node#signin">Log In</a></li>
+          <li class="topnNavuser-reg"><a class="btn btn-sm btn-default" href="/subscribe-172991">Become a member</a></li>
+  </ul>
+            </div>
+  </div>
+</div>
+      </div>
+    	
+      <div class="container clearfix">
+        <div class="row header-row">
+	<div class="col-xs-5 col-sm-12 col-md-4 col-lg-5 brand">
+				     <a href="/" title="Home" rel="home" id="logo" >
+		     <img src="http://www.midstreambusiness.com/profiles/hart_energy/themes/msb/logo.png" class="img-responsive" alt="Home" />
+		  </a>
+			</div>
+			
+	<div class="hidden-xs col-sm-12 col-md-8 col-lg-7 msb-top-banner">
+        <!-- 600x90 Midstream -->
+		<div id='div-gpt-ad-1405956571770-0' style='width:600px; height:90px;'>
+		<script type='text/javascript'>
+		googletag.display('div-gpt-ad-1405956571770-0');
+		</script>
+		</div>         
+	</div>	
+     
+    <!-- Start Mobile Menu Bar -->
+    <div class="col-xs-2 header-user-login visible-xs hidden-print">
+    	<a href="/user">
+	    	<span class="fa-stack">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+			</span>
+    	</a>
+    </div>
+     <div class="col-xs-3 header-nav-toggle visible-xs hidden-print">
+    	<a data-toggle="collapse" data-parent="#header" href=".header-nav-collapse">Menu <i class="fa fa-angle-down"></i></a>
+    </div>
+    <div class="col-xs-2 header-search visible-xs hidden-print">
+    	<a href="/search">
+    		<i class="fa fa-search"></i>
+    	</a>
+    </div>
+    <!-- End Mobile Menu Bar -->
+    
+    
+</div>
+
+<div class="row">
+<div class="header-nav-collapse collapse hidden-print">
+          <ul class="dropdown nav header-nav">
+          	<li><a href="/">Home</a></li>
+           <li class="dropdown">
+              <a href="MSB-Prices" class="dropdown-toggle" data-toggle="dropdown">Prices <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+	            <li><a href="/Prices-news">News</a></li>
+	            <li><a href="/Prices-exclusives">Exclusives</a></li>
+	            <li><a href="/Prices-frac-spread">Frac Spread</a></li>
+	            <li><a href="/Prices-natural-gas">Natural Gas</a></li>
+	            <li><a href="/Prices-natural-gas-liquids">Natural Gas Liquids</a></li>
+	            <li><a href="/stock-prices-104976">Stocks</a></li>
+              </ul>
+            </li>
+           <li class="dropdown">
+              <a href="MSB-Finance" class="dropdown-toggle" data-toggle="dropdown">Finance <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+	            <li><a href="/Finance-News">News</a></li>
+	            <li><a href="/Finance-Exclusives">Exclusives</a></li>
+	            <li><a href="/Finance-Acquisitions-Divestitures">A&amp;D</a></li>
+	            <li><a href="/Finance-Debt-Equity">Debt &amp; Equity</a></li>
+              </ul>
+            </li>
+            <li><a href="/Gathering-Processing">Gathering &amp; Processing</a>
+            </li>
+           <li class="dropdown">
+              <a href="MSB-Transport" class="dropdown-toggle" data-toggle="dropdown">Transport <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+	            <li><a href="/Transport-News">News</a></li>
+	            <li><a href="/Transport-Exclusives">Exclusives</a></li>
+	            <li><a href="/Transport-LNG">LNG</a></li>
+	            <li><a href="/Transport-Pipelines">Pipelines</a></li>
+	            <li><a href="/Transport-Truck-Rails">Trucks &amp; Rails</a></li>
+              </ul>
+            </li>
+            <li><a href="/Storage">Storage</a>
+            </li>
+           <li class="dropdown">
+              <a href="MSB-Construction" class="dropdown-toggle" data-toggle="dropdown">Construction <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/Construction-News">News</a></li>
+	            <li><a href="/Construction-Exclusives">Exclusives</a></li>
+	            <li><a href="/Construction-Project-Updates">Project Updates</a></li>
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="MSB-Technology" class="dropdown-toggle" data-toggle="dropdown">Technology <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/Technology-News">News</a></li>
+                <li><a href="/Technology-Exclusives">Exclusives</a></li>
+                <li><a href="/Technology-Automation">Automation</a></li>
+                <li><a href="/Technology-Compression">Compression</a></li>
+                <li><a href="/Technology-Corrosion">Corrosion</a></li>
+                <li><a href="/Technology-Leak-Detection">Leak Detection</a></li>
+                <li><a href="/Technology-New-Equipment">New Equipment</a></li>
+                <li><a href="/Technology-SCADA">SCADA</a></li>
+              </ul>
+            </li>
+            <li><a href="/Regulation">Regulation</a></li>
+            <li><a href="/msb-magazine">Magazine</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+          
+        </div><!--/.nav-collapse -->
+</div>      </div>
+    </header>
+      </div>
+	<div id="main-menu-wrapper">
+			<nav id="main-menu" role="navigation" class="mainmenu hidden-xs" data-spy="affix" data-offset-top="163" data-offset-bottom="200">
+		<div class="container">
+			<div class="navbar navbar-default">
+		        <div class="navbar-header">
+		       
+		        	<div class="visible-sm clearfix pull-left">
+		        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+			        	<h3>Menu</h3>
+			          
+		        	</div>
+		        	
+		        	
+		        </div>
+		        
+		
+        <div class="navbar-collapse collapse">
+          <ul class="show-on-hover dropdown nav navbar-nav">
+           <li class="dropdown">
+              <a href="msb-prices">Prices <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+	            <li><a href="/prices-news">News</a></li>
+	            <li><a href="/prices-exclusives">Exclusives</a></li>
+	            <li><a href="/prices-crude-oil">Crude Oil</a></li>
+	            <li><a href="/prices-frac-spread">Frac Spread</a></li>
+	            <li><a href="/prices-natural-gas">Natural Gas</a></li>
+	            <li><a href="/prices-natural-gas-liquids">Natural Gas Liquids</a></li>
+	            <li><a href="/prices-petrochemical">Petro Chemical</a></li>
+	            <li><a href="/stock-prices-104976">Stocks</a></li>
+              </ul>
+            </li>
+           <li class="dropdown">
+              <a href="msb-finance">Finance <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+	            <li><a href="/finance-news">News</a></li>
+	            <li><a href="/finance-exclusives">Exclusives</a></li>
+	            <li><a href="/finance-acquisitions-divestitures">A&amp;D</a></li>
+	            <li><a href="/finance-debt-equity">Debt &amp; Equity</a></li>
+	            <li><a href="/secured-files/historical-transaction-line-784581">Transactions</a></li>
+              </ul>
+            </li>
+            <li><a href="/gathering-processing">Gathering &amp; Processing</a>
+            </li>
+           <li class="dropdown">
+              <a href="msb-transport">Transport <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+	            <li><a href="/transport-news">News</a></li>
+	            <li><a href="/transport-exclusives">Exclusives</a></li>
+	            <li><a href="/transport-lng">LNG</a></li>
+	            <li><a href="/transport-pipelines">Pipelines</a></li>
+	            <li><a href="/transport-truck-rails">Trucks &amp; Rails</a></li>
+              </ul>
+            </li>
+            <li><a href="/storage">Storage</a>
+            </li>
+           <li class="dropdown">
+              <a href="msb-construction">Construction <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/construction-news">News</a></li>
+	            <li><a href="/construction-exclusives">Exclusives</a></li>
+	            <li><a href="/construction-project-updates">Project Updates</a></li>
+              </ul>
+            </li>
+           <li class="dropdown">
+              <a href="/msb-technology" class="dropdown-toggle" data-toggle="dropdown">Technology <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/technology-news">News</a></li>
+                <li><a href="/technology-exclusives">Exclusives</a></li>
+                <li><a href="/technology-automation">Automation</a></li>
+                <li><a href="/technology-compression">Compression</a></li>
+                <li><a href="/technology-corrosion">Corrosion</a></li>
+                <li><a href="/technology-leak-detection">Leak Detection</a></li>
+                <li><a href="/technology-new-equipment">New Equipment</a></li>
+                <li><a href="/technology-scada">SCADA</a></li>
+              </ul>
+            </li>
+            <li><a href="/regulation">Regulation</a></li>
+            <!--<li><a href="/msb-magazine">Magazine</a></li>
+            <li><a href="#">Newsletter</a></li>-->
+          </ul>
+          <div class="col-sm-2 navbar-right hidden-xs hidden-sm hidden-print">
+		        <form class="search-form" role="search" action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="form-item form-type-searchfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search this site </label>
+ <input title="Enter the terms you wish to search for." class="custom-search-box form-text form-search" placeholder="Search" type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input alt="" class="custom-search-button form-submit" type="image" id="edit-submit" name="op" src="http://www.midstreambusiness.com/profiles/hart_energy/themes/hart_base/images/search.png" /></div><input class="custom-search-selector custom-search-types" type="hidden" name="custom_search_types" value="c-article" />
+<input type="hidden" name="form_build_id" value="form-_R82M5iFunsD_AShBGW0n2sGm8ccdEAiBgSA6SoERKs" />
+<input type="hidden" name="form_id" value="search_block_form" />
+
+</div></form>		    </div>
+        
+        </div><!--/.nav-collapse -->
+        
+      </div>
+</nav>  	</div><!-- #main-menu -->     
+
+<div id="expandable">
+	<div class="container">
+		<!-- MSB_Expandable_970x160 -->
+		<div id='div-gpt-ad-1424904571845-0'>
+		<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1424904571845-0'); });
+		</script>
+		</div>
+	</div>
+</div>
+  <div id="main-wrapper">
+    <div id="main" class="front-page container clearfix">
+
+         
+	<div class="row">
+      <div class="left-web col-md-8 col-lg-9">
+        
+                <div class="tabs">
+                  </div>
+                
+        <div id="content_1" class="row">
+        
+        	<div class="col-sm-8">
+        	 
+              <div id="featured_articles">
+                <div class="view view-msb-home view-id-msb_home view-display-id-msb_slideshow view-dom-id-8604e8b63bb41ca780fe064d45e05db0">
+                                    <div class="view-content">
+            
+  <div class="skin-default">
+    
+    <div id="flexslider_views_slideshow_main_msb_home-msb_slideshow" class="flexslider_views_slideshow_main views_slideshow_main"><div class="flex-nav-container">
+  <div class="flexslider">
+    <ul id="flexslider_views_slideshow_msb_home-msb_slideshow" class="flexslider-views-slideshow-main-frame slides">
+        <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-1 views-row-odd">
+      
+          <div class="slide-image"><a href="/frac-spread-ngl-winter-discontent-approaches-1366686"><img src="http://www.midstreambusiness.com/sites/default/files/styles/msb-home-slideshow/public/article-images/2016/09/winter%20pm.jpg?itok=iXj7JEt6" /></a></div>    
+          <div class="feature-media-inner">
+<div class="feature-title-cont">
+<h2 class="feature-header"><a href="/frac-spread-ngl-winter-discontent-approaches-1366686">Frac Spread: NGL Up But Winter Of Discontent Approaches</a></h2>
+<p class="feature-meta"><a href="/frac-spread-ngl-winter-discontent-approaches-1366686">Read More <i class="fa fa-arrow-circle-right"></i></a></p>
+</div>
+</div>    </li>
+  <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even">
+      
+          <div class="slide-image"><a href="/opec-agrees-stop-bleeding-325-mmbbld-1366391"><img src="http://www.midstreambusiness.com/sites/default/files/styles/msb-home-slideshow/public/article-images/2016/09/OPEC%20Output%20Deal%20Algeria.jpg?itok=Q5Yh_p5i" alt="OPEC, output deal, oil production, oil prices, Hart Energy, KeyBanc, Reuters, Andrew Fletcher, analyst, Saudi Arabia, Algeria, Iran, Iraq, Russia" /></a></div>    
+          <div class="feature-media-inner">
+<div class="feature-title-cont">
+<h2 class="feature-header"><a href="/opec-agrees-stop-bleeding-325-mmbbld-1366391">OPEC Agrees To Stop The Bleeding At 32.5 MMbbl/d</a></h2>
+<p class="feature-meta"><a href="/opec-agrees-stop-bleeding-325-mmbbld-1366391">Read More <i class="fa fa-arrow-circle-right"></i></a></p>
+</div>
+</div>    </li>
+  <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd">
+      
+          <div class="slide-image"><a href="/midstream-ad-pipes-48-hours-38-billion-deals-1366386"><img src="http://www.midstreambusiness.com/sites/default/files/styles/msb-home-slideshow/public/article-images/2016/09/shutterstock_365482400.jpg?itok=BY_iL2Ky" /></a></div>    
+          <div class="feature-media-inner">
+<div class="feature-title-cont">
+<h2 class="feature-header"><a href="/midstream-ad-pipes-48-hours-38-billion-deals-1366386">Midstream A&amp;D Pipes Up: 48 Hours, $3.8 Billion In Deals </a></h2>
+<p class="feature-meta"><a href="/midstream-ad-pipes-48-hours-38-billion-deals-1366386">Read More <i class="fa fa-arrow-circle-right"></i></a></p>
+</div>
+</div>    </li>
+  <li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-even">
+      
+          <div class="slide-image"><a href="/delays-choke-needed-pipeline-takeaway-northeast-1366346"><img src="http://www.midstreambusiness.com/sites/default/files/styles/msb-home-slideshow/public/article-images/2016/09/ne%20pm.jpg?itok=_ukz3KGL" alt="The Northeast region of the U.S." title="The Northeast region of the U.S." /></a></div>    
+          <div class="feature-media-inner">
+<div class="feature-title-cont">
+<h2 class="feature-header"><a href="/delays-choke-needed-pipeline-takeaway-northeast-1366346">Delays Choke Needed Pipeline Takeaway From Northeast</a></h2>
+<p class="feature-meta"><a href="/delays-choke-needed-pipeline-takeaway-northeast-1366346">Read More <i class="fa fa-arrow-circle-right"></i></a></p>
+</div>
+</div>    </li>
+    </ul>
+  </div>
+</div></div>
+      </div>
+        </div>
+                        </div>
+ 
+              </div>     
+        	 
+        	</div>
+			<div class="col-sm-4 whatsNew">
+				<h4 class="section-title">Today's News</h4>
+					<div class="view view-msb-home view-id-msb_home view-display-id-msb_home_whatsnew view-dom-id-a63f72985f043c5cae5d2d869bac3226">
+                                    <div class="view-content">
+              <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="meta-date">        <span>4:48 pm</span>  </div>  
+          <h3 class="whats-new-title"><a href="/enbridge-agrees-sell-south-prairie-assets-814m-1366806">Enbridge Agrees To Sell South Prairie Assets For $814M</a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="meta-date">        <span>3:14 pm</span>  </div>  
+          <h3 class="whats-new-title"><a href="/key-north-american-hub-prices-sept-29-2016-1366786">Key North American Hub Prices: Sept. 29, 2016</a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last">
+      
+  <div class="meta-date">        <span>10:01 am</span>  </div>  
+          <h3 class="whats-new-title"><a href="/dtes-equity-offering-proceeds-will-purchase-midstream-assets-1366676">DTE’s Equity Offering Proceeds Will Purchase Midstream Assets</a></h3>    
+          <span class="label label-default"></span>    </div>
+        </div>
+                        </div>
+				<a id="more-whatsNew" href="/msb-recent-news">More News</a>
+			</div>
+			
+			
+			
+        </div>
+
+
+      	<div id="content_2" class="row">
+      		<div class="col-sm-12 excl">
+      			<div class="row">
+      				<div class="col-sm-6 col-lg-5">
+      						<div id="emr">
+								<!-- MidstreamLatExpander -->
+								<div id='div-gpt-ad-1410363531545-0' style='width:600px; height:250px;position:relative;z-index:0;'>
+								<script type='text/javascript'>
+								googletag.cmd.push(function() { googletag.display('div-gpt-ad-1410363531545-0'); });
+								</script>
+								</div>
+							</div>
+      				</div>
+                 
+      				<div class="col-xs-12 col-sm-6 col-lg-7">
+                    						  <style>
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+iframe[name='google_conversion_frame'] { 
+    height: 0 !important;
+    width: 0 !important; 
+    line-height: 0 !important; 
+    font-size: 0 !important;
+    margin-top: -13px;
+    float: left;
+
+}
+body {height: auto;}
+div.message {text-align: center;font-family: 'Open Sans', Verdana, Helvetica, sans-serif;}
+div.message h4 {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	padding: 15px 0;
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+}
+div.message .pitch {
+	font-size: 14px;
+}
+div.message .topics {
+	font-weight: bold;
+	font-size: 12px;
+}
+div.message .btn {
+	width: 100%;
+	background: #379adc;
+	color: #fff;
+	text-shadow: none;
+	padding: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	box-shadow: none;
+	margin-top: 30px;
+	display: block;
+	font-size: 22px;
+	text-decoration: none;
+	border-radius: 3px;
+}
+div.message .small {
+	font-size: 10px;
+	font-style: italic;
+	margin-bottom: 0;
+}
+div.message .btn:hover,
+div.message .btn:focus {
+	background: #2980b9;
+	text-decoration: none;
+}
+form[name='optin-form'] input.form-control {
+
+}
+div.message .alert-danger{
+	text-align: left !important;
+}
+div.newsltr-form {
+    width:100%;
+    margin-bottom:1em;
+}
+div.newsltr-form-right {
+    width:90%;
+    margin:1em;
+}
+.roadblock-container-main {
+	padding: 30px 30px 0;
+    margin-bottom: 1em;
+	background: #18282f url("http://www.hartenergy.com/resources/images/ads/roadblock/optin-bgWD.jpg") no-repeat scroll 0 0;
+	
+}
+.roadblock-container-main .title {
+	margin-bottom: 20px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #8fb6ce;
+}
+.roadblock-container-main .title .big {
+	font-size: 18px;
+	line-height: 1.1em;
+	font-weight: bold;
+	margin-bottom: 4px;
+	text-transform: uppercase;
+}
+.roadblock-container-main .title .med {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.roadblock-container-main .bl {
+	color: #008cba;
+}
+.rb-content {
+	padding: 0px 0 7px 111px;
+	margin-top: -10px;
+	background: transparent url("http://www.hartenergy.com/resources/images/ads/roadblock/ogi-graphicSM.png") no-repeat scroll -3px -22px;
+}
+.rb-content-ogia {
+	padding: 33px 0 15px 183px;
+	margin-top: -33px;
+	background: transparent url("http://www.hartenergy.com/resources/images/ads/roadblock/ogia-roadblock-graphic.png") no-repeat scroll -3px top;
+}
+.rb-content-ugc {
+	padding: 33px 0 15px 110px;
+	margin-top: -33px;
+	background: transparent url("http://www.hartenergy.com/resources/images/ads/roadblock/ugc-graphicSM.png") no-repeat scroll -3px top;
+}
+.rb-content-epm {
+	padding: 0px 0 10px 111px;
+	margin-top: -10px;
+	background: transparent url("http://www.hartenergy.com/resources/images/ads/roadblock/ep-rb-graphicSM.png") no-repeat scroll -1px 1px;
+}
+.rb-content-msb {
+	padding: 0px 0 10px 111px;
+	margin-top: -10px;
+	background: transparent url("http://www.hartenergy.com/resources/images/ads/roadblock/msb-graphicSM.png") no-repeat scroll -3px -9px;
+}
+
+.rb-content .btn-danger,
+.rb-content-ogia .btn-danger,
+.rb-content-ugc .btn-danger,
+.rb-content-epm .btn-danger {
+	background-color: #BD0D1D;
+	border-color: #BD0D1D;
+}
+</style>
+<div class="container-narrow roadblock-container-main">
+<div class="message"></div>
+<div class="title">
+      <div class="big"><span class="bl">MONTHLY NEWSLETTER</span></div>
+      <div class="med">Register below to begin receiving Midstream Connect.</div>
+</div>
+           <div>                        
+            <div class="rb-content-msb">
+              <form name="myForm" class="clearfix" method="get" target="my-iframe" action="http://accounts.hartenergy.com/opt-in/midstreamconnect/" name="optin-form" role="form">
+                <div class="form-group">
+                  <input type="text" class="form-control input-sm" name="fname" placeholder="First Name *">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control input-sm" name="lname" placeholder="Last Name *">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control input-sm" name="email" placeholder="Email *">
+                </div>
+                  <input type="hidden" name="package_code" value="midstreamconnect"> 
+                <input type="submit" value="SIGN UP" class="btn btn-danger btn-block btn-sm" name="btnSignUp" id="btnSignUp" data-target="#myModal"/>
+            </div>
+          </div>
+                        
+                    
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <iframe id="iframeresult" name="my-iframe" src="" style="zoom:0.60;overflow:hidden;width:100%" height="570" width="100%" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!--newsletter opt-in code-->
+<script type="text/javascript">
+  $(document).ready(function($) {
+    $('#btnSignUp').click(function(){
+      $('#myModal').on('show', function () {
+        $('#iframeresult').attr("src", "http://accounts.hartenergy.com/opt-in/midstreamconnect");
+      });
+      $('#myModal').modal({show:true})
+    });
+  });
+</script>                                      </div>
+      			</div>
+			  		<div class="exclBottom">
+			  		<div class="section-header clearfix">
+							<h4 class="section-title">Exclusives</h4>
+				      	</div>
+			  		<div class="view view-msb-home view-id-msb_home view-display-id-msb_exclusives_bottom view-dom-id-e7fd9bdb00b241cc1ed246f50263ef8c">
+                                    <div class="view-content">
+              <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+          <div class="exclusives-bottom-image"><a href="/midstream-texas-calls-vigilance-cost-control-1366336"><picture  title="Nozo Nagai of Tokyo Gas Ltd. speaks at Hart Energy’s Midstream Texas conference in San Antonio. Source: Hart Energy">
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_desktop/public/article-images/2016/09/Nagai%20pm.jpg?itok=QKa1h0wS&amp;timestamp=1475075819 1x" media="(min-width: 1200px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_laptop/public/article-images/2016/09/Nagai%20pm.jpg?itok=ymV-A_Bw&amp;timestamp=1475075819 1x" media="(min-width: 992px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_tablet/public/article-images/2016/09/Nagai%20pm.jpg?itok=cLBSm_uN&amp;timestamp=1475075819 1x" media="(min-width: 768px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_mobile/public/article-images/2016/09/Nagai%20pm.jpg?itok=jrjQbCXs&amp;timestamp=1475075819 1x" media="(min-width: 0px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="http://www.midstreambusiness.com/sites/default/files/styles/article_mobile/public/article-images/2016/09/Nagai%20pm.jpg?itok=jrjQbCXs&amp;timestamp=1475075819" alt="Nozo Nagai of Tokyo Gas Ltd. speaks at Hart Energy’s Midstream Texas conference in San Antonio. Source: Hart Energy" title="Nozo Nagai of Tokyo Gas Ltd. speaks at Hart Energy’s Midstream Texas conference in San Antonio. Source: Hart Energy" />
+</picture></a></div>    
+          <div class="exclusives-bottom-title"><a href="/midstream-texas-calls-vigilance-cost-control-1366336">Midstream Texas: Calls For Vigilance On Cost Control</a></div>    
+  <p class="callout">        <span>
+  Midstream Texas panel cites need to mimic upstream sector’s success in innovation and project efficiency.</span>  </p>  
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+          <div class="exclusives-bottom-image"><a href="/vitol-bucks-trend-backs-out-permian-1366011"><picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_desktop/public/article-images/2016/09/vitol%20chart%20pm.jpg?itok=WOU_by3G&amp;timestamp=1475003370 1x" media="(min-width: 1200px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_laptop/public/article-images/2016/09/vitol%20chart%20pm.jpg?itok=RBbCxRsB&amp;timestamp=1475003370 1x" media="(min-width: 992px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_tablet/public/article-images/2016/09/vitol%20chart%20pm.jpg?itok=koZzdn7l&amp;timestamp=1475003370 1x" media="(min-width: 768px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_mobile/public/article-images/2016/09/vitol%20chart%20pm.jpg?itok=UaynARTW&amp;timestamp=1475003370 1x" media="(min-width: 0px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="http://www.midstreambusiness.com/sites/default/files/styles/article_mobile/public/article-images/2016/09/vitol%20chart%20pm.jpg?itok=UaynARTW&amp;timestamp=1475003370" alt="" title="" />
+</picture></a></div>    
+          <div class="exclusives-bottom-title"><a href="/vitol-bucks-trend-backs-out-permian-1366011">Vitol Bucks Trend, Backs Out Of Permian</a></div>    
+  <p class="callout">        <span>
+  Sunoco Logistics purchases Vitol’s Permian crude system for $760 million.</span>  </p>  
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+          <div class="exclusives-bottom-image"><a href="/traversing-tough-times-texas-1364931"><picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_desktop/public/article-images/2016/09/Andrew%20Deck.jpg?itok=dCRy_8tr&amp;timestamp=1474914507 1x" media="(min-width: 1200px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_laptop/public/article-images/2016/09/Andrew%20Deck.jpg?itok=AtYuMj9I&amp;timestamp=1474914507 1x" media="(min-width: 992px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_tablet/public/article-images/2016/09/Andrew%20Deck.jpg?itok=R9KRO5dq&amp;timestamp=1474914507 1x" media="(min-width: 768px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_mobile/public/article-images/2016/09/Andrew%20Deck.jpg?itok=INi_kxAi&amp;timestamp=1474914507 1x" media="(min-width: 0px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="http://www.midstreambusiness.com/sites/default/files/styles/article_mobile/public/article-images/2016/09/Andrew%20Deck.jpg?itok=INi_kxAi&amp;timestamp=1474914507" alt="" title="" />
+</picture></a></div>    
+          <div class="exclusives-bottom-title"><a href="/traversing-tough-times-texas-1364931">Traversing Tough Times In Texas</a></div>    
+  <p class="callout">        <span>
+  Work in the Delaware Basin has provided several midstream companies opportunities to make money, acquire assets and even build out during the downturn.</span>  </p>  
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+      
+          <div class="exclusives-bottom-image"><a href="/gpa-midstream-adds-regulatory-focus-1364896"><picture  title="Mark Sutton, president and CEO of GPA Midstream. Source: Hart Energy">
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_desktop/public/article-images/2016/09/Sutton%20pm.jpg?itok=QAVSLL2R&amp;timestamp=1474901439 1x" media="(min-width: 1200px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_laptop/public/article-images/2016/09/Sutton%20pm.jpg?itok=7CGsSBuJ&amp;timestamp=1474901439 1x" media="(min-width: 992px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_tablet/public/article-images/2016/09/Sutton%20pm.jpg?itok=toOiNRRj&amp;timestamp=1474901439 1x" media="(min-width: 768px)" />
+<source srcset="http://www.midstreambusiness.com/sites/default/files/styles/article_mobile/public/article-images/2016/09/Sutton%20pm.jpg?itok=YX_QNoRC&amp;timestamp=1474901439 1x" media="(min-width: 0px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="http://www.midstreambusiness.com/sites/default/files/styles/article_mobile/public/article-images/2016/09/Sutton%20pm.jpg?itok=YX_QNoRC&amp;timestamp=1474901439" alt="Mark Sutton, president and CEO of GPA Midstream. Source: Hart Energy" title="Mark Sutton, president and CEO of GPA Midstream. Source: Hart Energy" />
+</picture></a></div>    
+          <div class="exclusives-bottom-title"><a href="/gpa-midstream-adds-regulatory-focus-1364896">GPA Midstream Adds Regulatory Focus</a></div>    
+  <p class="callout">        <span>
+  Advocacy group speaks for midstream sector’s interests at federal and state levels.</span>  </p>  
+          <span class="label label-default"></span>    </div>
+        </div>
+                        </div>
+			  		<div class="text-center">
+		              <div class="more"><a href="/msb-exclusives">View More Stories</a></div>
+		            </div>
+			  		</div>
+      		</div>
+      	</div>
+      	
+      
+      	
+      	
+      	<div id="content_3">
+      	    <div  class="row">
+      	    <div class="col-sm-4 gath-pro">
+				<h4 class="section-title">Gathering &amp; Processing</h4>
+					<div class="view view-msb-home view-id-msb_home view-display-id-msb_home_gathering view-dom-id-62c1498327c284ba5a86e3034be79f1e">
+                                    <div class="view-content">
+              <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+          <h3><a href="/midstream-texas-five-takeaways-and-one-wordplastics-1358531">Midstream Texas: Five Takeaways And One Word—Plastics</a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+          <h3><a href="/marketed-anadarkos-utah-gas-development-midstream-assets-1354701">Marketed: Anadarko’s Utah Gas Development, Midstream Assets</a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+          <h3><a href="/navigator-will-provide-crude-gathering-services-surge-energy-permian-1351166">Navigator Will Provide Crude Gathering Services To Surge Energy In Permian</a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+      
+          <h3><a href="/rangeland-energy-forms-rangeland-midstream-canada-subsidiary-1350286">Rangeland Energy Forms Rangeland Midstream Canada Subsidiary</a></h3>    
+          <span class="label label-default"></span>    </div>
+        </div>
+                        </div>
+			</div>
+
+
+      		<div class="col-sm-4 finance">
+				<h4 class="section-title">Finance</h4>
+					<div class="view view-msb-home view-id-msb_home view-display-id-msb_home_finance view-dom-id-0c9f9a3eb5e4c11a57e3b287bb98afce">
+                                    <div class="view-content">
+              <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+          <h3><a href="/blackrock-will-offer-infrastructure-funds-through-independent-advisers-1366671">BlackRock Will Offer Infrastructure Funds Through Independent Advisers</a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+          <h3><a href="/sempras-ienova-completes-acquisition-pemex-stake-mexico-pipeline-jv-1366326">Sempra’s IEnova Completes Acquisition Of Pemex Stake In Mexico Pipeline JV</a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+          <h3><a href="/shell-midstream-acquires-interests-gom-assets-350-million-1366231">Shell Midstream Acquires Interests In GoM Assets For $350 Million</a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+      
+          <h3><a href="/sunoco-will-purchase-vitols-permian-basin-assets-1364981">Sunoco Will Purchase Vitol&#039;s Permian Basin Assets</a></h3>    
+          <span class="label label-default"></span>    </div>
+        </div>
+                        </div>
+			</div>
+
+      	<div class="col-sm-4 transport">
+				  <h4 class="section-title">Transport</h4>
+					<div class="view view-msb-home view-id-msb_home view-display-id-msb_home_transport view-dom-id-1ea01f18ea90b9d60633e5cafad6986a">
+                                    <div class="view-content">
+              <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+          <h3><a href="/key-north-american-hub-prices-sept-28-2016-1366531">Key North American Hub Prices: Sept. 28, 2016</a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+          <h3><a href="/canada-must-decide-whether-double-trans-mountain-pipeline-capacity-1366381">Canada Must Decide Whether To Double Trans Mountain Pipeline Capacity </a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+          <h3><a href="/whitings-volker-tribal-service-deals-could-help-dakota-access-impasse-1366226">Whiting&#039;s Volker: Tribal Service Deals Could Help Dakota Access Impasse</a></h3>    
+          <span class="label label-default"></span>    </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+      
+          <h3><a href="/key-north-american-hub-prices-sept-27-2016-1366166">Key North American Hub Prices: Sept. 27, 2016</a></h3>    
+          <span class="label label-default"></span>    </div>
+        </div>
+                        </div>
+			 </div>
+      </div>
+			 <!-- <div class="row">
+				<div class="col-sm-4 gath-pro">
+				  <h4 class="section-title">Blogs</h4> -->
+										<!-- <a id="more-whatsNew" href="/msb-blogs">More Blogs</a>
+				</div>
+			</div> -->
+       </div>
+              
+
+      </div>
+      <div class="right-web col-md-4 col-lg-3" role="complementary">
+        <div class="section">
+    <div class="advert text-center">
+	<div id="div-gpt-ad-1393538218890-0">
+		<script type="text/javascript">
+			googletag.display('div-gpt-ad-1393538218890-0');
+		</script>
+	</div>
+</div>
+
+
+
+<script language="javascript" src="http://www.tickertech.com/hart/customsnap.mpl"></script>
+<script language="javascript">document.write('</div>');</script>
+
+<div class="block text-center">
+	<a href="/lng-rescue-219216"> 
+		<img src="/profiles/hart_energy/themes/msb/images/nglExportApp.jpg" alt="U.S. LNG Export Application Status" style="margin: 0 auto;" class="img-responsive"> 
+	</a>
+</div>
+
+<script language="javascript">
+	// client ID
+	var AT1_clientId = "hart";
+	// code for actives
+	var AT1_activesCode = "HART4";
+	// color for table bkg
+	var AT1_TableColor = "FFFFFF";
+	// color for off tabs
+	var AT1_OffTabColor = "EEEEEE";
+	// color behind table
+	var AT1_TableBkgColor = "FFFFFF";
+	// table width
+	var AT1_TableWidth = 320;
+	// names displayed on tabs
+	var AT1_DisplayNames = new Array("Most active", "Gainers", "Losers");
+	// width of table tabs
+	var AT1_TabWidth = 85;
+	// height of table tabs
+	var AT1_TabHeight = 19;
+	// height of table rows
+	var AT1_RowHeight = 20;
+	// smooth fonts "yes"/"no"
+	var AT1_TabSmoothFonts = "yes";
+	// font face
+	var AT1_TabFontFace = "Arial";
+	// font size
+	var AT1_TabFontSize = 3;
+	// font color
+	var AT1_TabStdColor = "000000";
+	// link color
+	var AT1_TabLinkColor = "000000";
+	// link rollover color
+	var AT1_TabRollColor = "000000";
+	// bg color for alternating table rows
+	var AT1_bg1 = "FFFFFF";
+	// 2nd bg color for alternating table rows
+	var AT1_bg2 = "C9E2FD";
+	// color to use for positive change value
+	var AT1_upColor = "067700";
+	// color to use for negative change value
+	var AT1_dnColor = "D60000";
+	// "name" or "symbol" to show on most actives
+	var AT1_nameSym = "lowername2";
+	// show most actives by exchange choices
+	var AT1_exchangeChoices = "no";
+	// show most actives by industry choices
+	var AT1_industryChoices = "no";
+	// links to detailed quotes "yes"/"no"
+	var AT1_quoteLinks = "no";
+	// base url for links
+	var AT1_quoteBase = ""; 
+</script>
+<script language="javascript" src="http://www.tickertech.com/hart/actives.mpl?head=1&n=1"></script>
+<style type="text/css">
+	a:link { text-decoration: none;}
+	a:hover { text-decoration: none;}
+</style>
+<div style="margin-top:15px;">
+	<script language="javascript">
+		ShowAT1Table();
+	</script>
+</div>
+
+
+<div class="row">
+  <div class="currentIssue col-sm-6 col-md-12">
+    <div id="magBlock">
+      <div class="magBlock-inner">
+        <div id="magHead">
+          <h4>The Magazine</h4>
+        </div>
+        <h3 class="CurrIss">Current Issue</h3>
+          <div class="view view-msb-sidebar view-id-msb_sidebar view-display-id-msb_magazine_latest_issue view-dom-id-b0f63c8de8177f128208246ccbed1bfe">
+                                    <div class="view-content">
+              <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div>        <h3 class="latest-issue-title"><a href="/msb-magazine/2016-08">July/August 2016</a></h3>  </div>  
+  <div>        <div class="latest-issue-image"><a href="/msb-magazine/2016-08"><img src="http://www.midstreambusiness.com/sites/default/files/magazine/2016/08/MB1.JPG" /></a></div>  </div>  </div>
+        </div>
+                        </div>
+        <div class="divider"></div>
+        <a href="/msb-exclusives/interactive" id="intFeature" class="btn btn-block btn-default">Interactive Feature</a>
+                  <a id="ogiDE" class="btn" href="/subscribe-172991">Subscribe Now</a>
+              </div>
+    </div>
+  </div>
+</div>
+
+
+	<div class="mostList block">
+		<h2 class="most-title">
+		  Most popular	    </h2>
+		  <ul class="links"><li class="0 first"><a href="/vitol-bucks-trend-backs-out-permian-1366011">Vitol Bucks Trend, Backs Out Of Permian</a></li>
+<li class="1"><a href="/whitings-volker-tribal-service-deals-could-help-dakota-access-impasse-1366226">Whiting&#039;s Volker: Tribal Service Deals Could Help Dakota Access Impasse</a></li>
+<li class="2"><a href="/midstream-ad-pipes-48-hours-38-billion-deals-1366386">Midstream A&amp;D Pipes Up: 48 Hours, $3.8 Billion In Deals </a></li>
+<li class="3"><a href="/kingfisher-midstream-lincoln-crude-gas-plant-stack-play-begins-operations-1018671">Kingfisher Midstream Lincoln Crude, Gas Plant In Stack Play Begins Operations</a></li>
+<li class="4 last"><a href="/canada-must-decide-whether-double-trans-mountain-pipeline-capacity-1366381">Canada Must Decide Whether To Double Trans Mountain Pipeline Capacity </a></li>
+</ul>	</div>
+
+
+
+<div class="advert text-center">
+	<div id="div-gpt-ad-1393538040954-0">
+		<script type="text/javascript">
+			googletag.display('div-gpt-ad-1393538040954-0');
+		</script>
+	</div>
+</div>
+
+
+
+<div class="advert text-center">
+	<a href="/midstream-companies-consolidating-their-positions-756516" target="_self"> 
+		<img src="/sites/default/files/secured-files/midstreambusiness_rankings_0.jpg"> 
+	</a>
+</div>
+
+
+
+<div class="eventsList block">
+  <h2 class="event-title">Upcoming Events</h2>
+  <ul>
+
+  <li>
+    <a href="http://www.dugmidcontinent.com/" target="_blank">
+      <div class="date">10/26/16</div>
+      <div class="eventcont"><strong>Conference: DUG Midcontinent</strong> </div>
+      <div style="clear:both;"></div>
+    </a>
+  </li>
+  <li>
+    <a href="http://www.executiveoilconference.com/" target="_blank">
+      <div class="date">11/7/16</div>
+      <div class="eventcont"><strong>Conference: Executive Oil Conference </strong></div>
+      <div style="clear:both;"></div>
+    </a>
+  </li>
+   
+  <li>
+    <a href="http://www.marcellusmidstream.com/" target="_blank">
+      <div class="date">1/24/16</div>
+      <div class="eventcont"><strong>Conference: Marcellus-Utica Midstream</strong> </div>
+      <div style="clear:both;"></div>
+    </a>
+  </li>
+  
+</ul>
+</div>
+
+
+
+<div class="advert text-center">
+	<div id="div-gpt-ad-1393539651037-0">
+		<script type="text/javascript">
+			googletag.display('div-gpt-ad-1393539651037-0');
+		</script>
+	</div>
+</div>
+
+
+
+<div class="advert text-center">
+	<div id="div-gpt-ad-1393539713179-0">
+		<script type="text/javascript">
+			googletag.display('div-gpt-ad-1393539713179-0');
+		</script>
+	</div>
+        </div>
+      </div>
+      <!-- right-web -->
+		 </div>
+    </div><!-- /main -->
+  </div><!-- /main-wrapper -->
+  <div id="footer-wrapper" class="clearfix">
+    <footer id="footer" role="contentinfo">
+	    <div class="section container clearfix">
+		    <div class="row">
+	<div class="col-sm-4">
+			    <a href="http://www.hartenergy.com/"><img src="/profiles/hart_energy/themes/msb/images/hartlogo-rw.png" width="161" height="16" alt="HART ENERGY" style="display:block;margin-bottom:15px;"></a>
+	      1616 S. Voss, Suite 1000, Houston, Texas 77057-2627<br>
+	      Tel: +1.713.260.6400; Fax: +1.713.840.8585
+	
+	          
+	</div>
+	        
+	<div class="col-sm-8 text-right">
+		  				<ul class="list-inline">
+		  					<li><a href="/about-us-104906">About Us</a></li>
+		  					<li><a href="/advertise-104911">Advertise</a></li>
+		  					<li><a href="/subscribe-172991">Subscribe</a></li>
+		  					<li><a href="/legal-notice-104916">Legal Notice</a></li>
+		  				</ul>
+	</div>
+</div>
+
+<div class="row">
+	<div class="copyright col-sm-12">
+		Copyright &copy; 2016  <a title="Hart Eenergy" href="http://www.hartenergy.com/" target="_blank">Hart Energy</a>. All rights reserved. Reproduction in whole or in part, in any form or medium without express written permission is prohibited.
+	</div>
+</div>
+
+<!-- /75410381/MSB_PopUp_1x1 -->
+<div id='div-gpt-ad-1436285780202-0' style='height:1px; width:1px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1436285780202-0'); });
+</script>
+</div>
+
+      
+	    </div>
+    </footer>
+  </div><!-- /footer-wrapper-->
+</div><!--/page || Page-Wrapper -->
+<!-- <div id="signup-sticky">
+
+    <div id="signup-header">
+    <div class="container">
+      <div class="signup-tagline">
+        <img src="profiles/hart_energy/themes/msb/images/msb-sticky-logo.png"/>
+      </div>
+      <div id="signup-headline">
+        <h3>Get Full Access to Midstream Business Premium and Save 50% </h3>
+      </div>
+
+      <div id="signup-expand" class="pull-right">
+        <a href="#" class="btn btn-danger collapsed" data-toggle="collapse" data-target="#signup-body"><span class="sz-expand">Expand <i class="fa fa-angle-up"></i></span><span class="sz-close">Close <i class="fa fa-angle-down"></i></span></a>
+      </div>
+    </div>
+    </div>
+
+    <div id="signup-body" class="collapse">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+          <br/><br/><br/>
+            <h2>Your Midstream Business Premium Subscription Includes:</h2>
+            <ul>
+              <li><span>Full access to MidstreamBusiness.com – equity and debt issues, A&D transactions, stock prices of midstream companies, prices & markets in the midstream sector (crude oil, natural gas hubs, NGL prices, fractional spread and petrochemical prices) and original analysis</span></li>
+              <li><span>One year subscription to <strong><i>Midstream Monitor</i></strong> – breaking news and analysis of what’s happening in the midstream sector, delivered to your inbox every week</span></li>
+              <li><span>6 issues of the <strong><i>Midstream Business magazine</i></strong></span></li>
+              
+            </ul>
+          </div>
+
+          <div id="graphic" class="col-md-6 text-center">
+            <a href="http://www.midstreambusiness.com/order/DPG/?code=W49DMB"><img src="profiles/hart_energy/themes/msb/images/msb_Expfooter_550x282_black.png" class="img-responsive"/></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+ -->
+<!-- /75410381/MSB_FloatingFooter -->
+<div id='div-gpt-ad-1466786015935-0' style='height:1px; width:1px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1466786015935-0'); });
+</script>
+</div>  <script src="http://www.midstreambusiness.com/sites/default/files/js/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js"></script>
+  
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TMWNLR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TMWNLR');</script>
+<!-- End Google Tag Manager -->
+
+<!--<style type='text/css'>@import url('http://getbarometer.s3.amazonaws.com/assets/barometer/css/barometer.css');</style>
+<script src='http://getbarometer.s3.amazonaws.com/assets/barometer/javascripts/barometer.js' type='text/javascript'></script>
+<script type="text/javascript" charset="utf-8">
+  BAROMETER.load('CZTOjFFxFFwM8fXydKXW2');
+</script>-->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ba50da6102","applicationID":"12759198","transactionName":"MgNRZUIDVhBZURdZXQtJZkNZTVENXFcbHkINFg==","queueTime":0,"applicationTime":49,"atts":"HkRSEwoZRR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

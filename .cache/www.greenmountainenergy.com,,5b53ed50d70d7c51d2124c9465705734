@@ -1,0 +1,616 @@
+status: 200
+x-cache-key: httpGETwww.greenmountainenergy.com/
+content-length: 82852
+content-location: http://www.greenmountainenergy.com
+x-cache: HIT
+x-cache-skip: 0
+x-powered-by: PHP/5.5.9-1ubuntu4.19
+vary: Accept-Encoding
+keep-alive: timeout=5
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+link: <http://blog.cirroenergy.com/wp-json/>; rel="https://api.w.org/"
+date: Fri, 09 Sep 2016 09:38:17 GMT
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQIHVVBWDhACVVRbBAkGUg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;c<s;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",w[n]=e,e in f||(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);</script>
+<title>Cirro Energy - The Official Blog of Texas Electricity Company Cirro EnergyCirro Energy | The Official Blog of Texas Electricity Company Cirro Energy</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://blog.cirroenergy.com/wp-content/themes/cirroenergy/style.css" />
+<link rel="pingback" href="http://blog.cirroenergy.com/xmlrpc.php" />
+
+<!-- This site is optimized with the Yoast SEO plugin v3.0.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="The Official Blog of Texas Electricity Company Cirro Energy"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://blog.cirroenergy.com" />
+<link rel="next" href="http://blog.cirroenergy.com/page/2/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Cirro Energy - The Official Blog of Texas Electricity Company Cirro Energy" />
+<meta property="og:description" content="The Official Blog of Texas Electricity Company Cirro Energy" />
+<meta property="og:url" content="http://blog.cirroenergy.com" />
+<meta property="og:site_name" content="Cirro Energy" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="The Official Blog of Texas Electricity Company Cirro Energy"/>
+<meta name="twitter:title" content="Cirro Energy - The Official Blog of Texas Electricity Company Cirro Energy"/>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/blog.cirroenergy.com\/","name":"Cirro Energy","potentialAction":{"@type":"SearchAction","target":"http:\/\/blog.cirroenergy.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Cirro Energy &raquo; Feed" href="http://blog.cirroenergy.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Cirro Energy &raquo; Comments Feed" href="http://blog.cirroenergy.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/blog.cirroenergy.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.5"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='https://api.w.org/' href='http://blog.cirroenergy.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.cirroenergy.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.cirroenergy.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.5" />
+<meta name="google-site-verification" content="UjjkOshIbruNKgj4uKV7sJEX4aMj8XqPTwvS8Duc5oM" />
+</head>
+
+<body class="home blog">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5JK33C"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JK33C');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+				
+
+										<img src="http://blog.cirroenergy.com/wp-content/uploads/2016/02/394137_Cirro-Social-Media_Blog_v02.jpg" width="940" height="175" alt="" />
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu"><ul><li class="current_page_item"><a href="http://blog.cirroenergy.com/">Home</a></li><li class="page_item page-item-20"><a href="http://blog.cirroenergy.com/about-cirro-energy/">About Cirro Energy</a></li><li class="page_item page-item-322 page_item_has_children"><a href="http://blog.cirroenergy.com/dallas-electric-company/">Free Quote</a><ul class='children'><li class="page_item page-item-1254"><a href="http://blog.cirroenergy.com/dallas-electric-company/free-quote-thank-you/">Free Quote Thank You</a></li></ul></li><li class="page_item page-item-1006"><a href="http://blog.cirroenergy.com/cirro-energy-contest/">Rake Up Savings With Cirro</a></li><li class="page_item page-item-2"><a href="http://blog.cirroenergy.com/sample-page/">Sample Page</a></li><li class="page_item page-item-732"><a href="http://blog.cirroenergy.com/waterpark-contests/">Splash Into Summer Contest</a></li><li class="page_item page-item-140"><a href="http://blog.cirroenergy.com/cirro-energy-videos-2/">Cirro Energy Videos</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+<div class="breadcrumb">
+</div>
+		<div id="container">
+			<div id="content" role="main">
+
+			
+	<div id="nav-above" class="navigation">
+		<div class="nav-previous"><a href="http://blog.cirroenergy.com/page/2/" ><span class="meta-nav">&larr;</span> Older posts</a></div>
+		<div class="nav-next"></div>
+	</div><!-- #nav-above -->
+
+
+
+
+			<div id="post-2794" class="post-2794 post type-post status-publish format-standard hentry category-uncategorized tag-energy tag-productivity">
+			<h2 class="entry-title"><a href="http://blog.cirroenergy.com/uncategorized/six-ways-to-boost-your-productivity-in-the-morning/" title="Permalink to Six Ways to Boost Your Productivity in the Morning" rel="bookmark">Six Ways to Boost Your Productivity in the Morning</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.cirroenergy.com/uncategorized/six-ways-to-boost-your-productivity-in-the-morning/" title="2:42 pm" rel="bookmark"><span class="entry-date">February 23, 2016</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.cirroenergy.com/author/stephen/" title="View all posts by Cirro Energy">Cirro Energy</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-content">
+				<p><img class="aligncenter wp-image-2798 size-large" src="http://blog.cirroenergy.com/wp-content/uploads/2016/02/Cirro-Blog_Productivity-1024x536.jpg" alt="Cirro-Blog_Productivity" width="640" height="335" srcset="http://blog.cirroenergy.com/wp-content/uploads/2016/02/Cirro-Blog_Productivity-300x157.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2016/02/Cirro-Blog_Productivity-768x402.jpg 768w, http://blog.cirroenergy.com/wp-content/uploads/2016/02/Cirro-Blog_Productivity-1024x536.jpg 1024w, http://blog.cirroenergy.com/wp-content/uploads/2016/02/Cirro-Blog_Productivity.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+<p>A few positive habits can make a big difference in your life. Check out six easy tips for upping your productivity in the morning.</p>
+<ol>
+<li><strong>Rise and shine with sunshine. </strong>Increasing your productivity in the morning starts with a good night’s sleep. <a href="http://www.huffingtonpost.ca/2014/08/12/sunshine-health_n_5671537.html">Studies</a> have shown that exposure to natural light can improve sleep quality and provide health benefits. Enjoy a more restful night by avoiding artificial light and sleeping near natural sunlight. Sunlight can also help you wake up naturally in the morning time.</li>
+</ol>
+<ol start="2">
+<li><strong>Start your day early. </strong>Start your day your way, before heading to the office and diving into e-mails, phone calls and meetings. Wake up early and use that extra time for reading, journaling, meditating, enjoying your family or working on a passion project. Early morning hours will be under your control, helping you focus on things you’re passionate about.</li>
+</ol>
+<ol start="3">
+<li><strong>Jot down things you’re grateful for. </strong>Focusing on gratitude first thing in the morning can give you a positive outlook for the rest of your day. Jot down a list of some of the people, places and experiences you’re thankful for. Then consider future things you’re excited about. Having a grateful attitude can make you a happier and more productive person.</li>
+</ol>
+<ol start="4">
+<li><strong>Make your bed. </strong>This daily habit may seem like it wouldn’t make a difference in your day, but <a href="http://www.lifehack.org/articles/lifestyle/how-making-your-bed-every-morning-can-improve-your-life.html">making your bed</a> every morning can help improve your productivity. It gives you a sense of achievement, which leads to more good habits. And before you know it, this small task will result in checking task after task off of your to-do list.</li>
+</ol>
+<ol start="5">
+<li><strong>Wake up and work out. </strong>Begin your day with a pre-breakfast workout. <a href="http://www.huffingtonpost.com/2013/09/27/when-to-exercise_n_3982906.html">Working out</a> can increase productivity while releasing endorphins and reducing your stress level. Try Pilates, jogging outside or going for a quick bike ride. Looking to stay fit inside? Go online and choose a free workout video that suits your fitness personality.</li>
+</ol>
+<ol start="6">
+<li><strong>Plan ahead. </strong>Use the morning to think ahead. Plan out your week or month and think of strategies for getting those tasks done. It’s a great way to improve your time-management skills, plus you’ll be able to better handle tasks once you get to them.</li>
+</ol>
+							</div><!-- .entry-content -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blog.cirroenergy.com/category/uncategorized/" rel="category tag">Uncategorized</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blog.cirroenergy.com/tag/energy/" rel="tag">Energy</a>, <a href="http://blog.cirroenergy.com/tag/productivity/" rel="tag">Productivity</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><span>Comments Off<span class="screen-reader-text"> on Six Ways to Boost Your Productivity in the Morning</span></span></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+
+			<div id="post-2775" class="post-2775 post type-post status-publish format-standard hentry category-events category-uncategorized tag-valentines-day">
+			<h2 class="entry-title"><a href="http://blog.cirroenergy.com/uncategorized/creative-ways-to-share-the-love-this-valentines-day/" title="Permalink to Creative Ways to Share the Love this Valentine’s Day" rel="bookmark">Creative Ways to Share the Love this Valentine’s Day</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.cirroenergy.com/uncategorized/creative-ways-to-share-the-love-this-valentines-day/" title="10:45 pm" rel="bookmark"><span class="entry-date">February 9, 2016</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.cirroenergy.com/author/stephen/" title="View all posts by Cirro Energy">Cirro Energy</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-content">
+				<p>Valentine’s Day is the perfect time to show love toward the people who make a difference in your life. Or, opt for a nontraditional holiday by sharing your heart with your local community. Check out three ways to share the love this Valentine’s Day.</p>
+<p><img class="aligncenter wp-image-2776 size-full" src="http://blog.cirroenergy.com/wp-content/uploads/2016/02/385571-Valentines-Day-Blog_Header-Image.jpg" alt="385571-Valentines Day Blog_Header Image" width="640" height="335" srcset="http://blog.cirroenergy.com/wp-content/uploads/2016/02/385571-Valentines-Day-Blog_Header-Image-300x157.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2016/02/385571-Valentines-Day-Blog_Header-Image.jpg 640w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+<p><strong>Create a memory jar for your significant other</strong><strong>                                                                </strong></p>
+<p>Enjoy making a unique gift for your valentine that will take them on a journey through your favorite memories together. Below are directions for a memory jar, our favorite easy to-make gift.</p>
+<p><strong>What you’ll need</strong></p>
+<ul>
+<li>4&#215;4&#8243; square printed photos of you and your valentine<img class="wp-image-2778 size-thumbnail alignright" src="http://blog.cirroenergy.com/wp-content/uploads/2016/02/385571-Valentines-Day-Blog_Jar-1-150x150.jpg" alt="" width="150" height="150" srcset="http://blog.cirroenergy.com/wp-content/uploads/2016/02/385571-Valentines-Day-Blog_Jar-1-150x150.jpg 150w, http://blog.cirroenergy.com/wp-content/uploads/2016/02/385571-Valentines-Day-Blog_Jar-1-300x300.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2016/02/385571-Valentines-Day-Blog_Jar-1.jpg 640w" sizes="(max-width: 150px) 100vw, 150px" /></li>
+<li>Acid-free photo marker (our favorite is a Slick Writer marker)</li>
+<li>Large clear mason jar with lid</li>
+<li>Thin red-and-white striped cotton string</li>
+<li>White elastic craft string, red cardstock, scissors and hole punch</li>
+<li>Thick burlap ribbon, red acrylic paint pen, newspaper and super glue</li>
+</ul>
+<p><strong>How to make it</strong></p>
+<ol>
+<li>Flip each photo over and write a related memory on the back of each. Allow the ink time to dry.</li>
+<li>Place all photos in the mason jar.</li>
+<li>Tie the red-and-white striped cotton string around top of jar, creating a large bow.</li>
+<li>Cut out a heart shape from the cardstock and punch a hole in the top center area. Run elastic craft string through the hole; tie string around top of jar.</li>
+<li>Place thick burlap ribbon on several sheets of newspaper. Paint a heart shape onto ribbon using red acrylic paint pen. Allow the paint time to dry. To decrease drying time, use a small fan. Once dry, wrap ribbon around center of jar and use a small amount of super glue to bind the ends of the ribbon.</li>
+</ol>
+<p><strong>Bake sweet treats for your friends and family</strong></p>
+<p><img class="wp-image-2782 size-thumbnail alignright" src="http://blog.cirroenergy.com/wp-content/uploads/2016/02/valentinesrecipe-150x150.jpg" alt="valentinesrecipe" width="150" height="150" />Bake some sweet treats for your friends and family to let them know you appreciate them. Wrap each dessert in cellophane, add a stylish fabric bow and your gifts are ready to be enjoyed. Below is our favorite easy-to-make, delicious Valentine’s Day treat.</p>
+<p><strong>XOXO Chocolate Chunk Cookies</strong></p>
+<p><strong>Ingredients</strong></p>
+<ul>
+<li><strong>1 package</strong> Pillsbury™ Ready to Bake!™ refrigerated chocolate chunk &amp; chip cookies</li>
+<li><strong>½ cup </strong>chocolate chips</li>
+<li><strong>3 tablespoons</strong> valentine nonpareils for decoration</li>
+</ul>
+<p><strong>Directions</strong></p>
+<ol>
+<li>Preheat oven to 350°F.</li>
+<li>Break apart 1 package of chocolate chunk &amp; chip cookies. Place on ungreased cookie sheet, spacing cookies 2 inches apart.</li>
+<li>Place cookies in oven and bake 9 to 11 minutes or until done. Remove from cookie sheet and set on a wire rack or plate to cool for 5 minutes.</li>
+<li>Microwave the chocolate chips in a microwave-safe bowl, stirring every 30 seconds, until chips are melted and can be stirred easily.</li>
+<li>Using a spoon, drizzle the chocolate onto the cookies. Immediately sprinkle with valentine nonpareils.</li>
+</ol>
+<p>Image and recipe from <a href="http://www.pillsbury.com/recipes/easy-valentine-cookies/0a2238c7-f232-42da-a6cf-c2a337a5879c">pillsbury.com </a></p>
+<p><strong>Give back to your community</strong></p>
+<p>Share the love by going out into your community and volunteering. It’s a great way to make a positive difference while supporting a cause that you’re passionate about. You can give back at your local food bank, animal shelter, youth center or homeless shelter. Valentine’s Day is the perfect opportunity to make others feel special.</p>
+<p><img class="aligncenter wp-image-2784 size-full" src="http://blog.cirroenergy.com/wp-content/uploads/2016/02/385571-Valentines-Day-Blog_Community.jpg" alt="385571-Valentines Day Blog_Community" width="640" height="335" srcset="http://blog.cirroenergy.com/wp-content/uploads/2016/02/385571-Valentines-Day-Blog_Community-300x157.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2016/02/385571-Valentines-Day-Blog_Community.jpg 640w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+<p>Find a cause that you love <a href="http://www.volunteermatch.org"><strong>here</strong></a>.</p>
+<p>&nbsp;</p>
+							</div><!-- .entry-content -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blog.cirroenergy.com/category/events/" rel="category tag">Events</a>, <a href="http://blog.cirroenergy.com/category/uncategorized/" rel="category tag">Uncategorized</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blog.cirroenergy.com/tag/valentines-day/" rel="tag">Valentine's Day</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><span>Comments Off<span class="screen-reader-text"> on Creative Ways to Share the Love this Valentine’s Day</span></span></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+
+			<div id="post-2341" class="post-2341 post type-post status-publish format-standard hentry category-holiday-recipes tag-game-day-recipes tag-recipes">
+			<h2 class="entry-title"><a href="http://blog.cirroenergy.com/holiday-recipes/cirro-energy-win-big-with-these-easy-game-day-recipes/" title="Permalink to Cirro Energy | Win Big with these Easy Game-Day Recipes" rel="bookmark">Cirro Energy | Win Big with these Easy Game-Day Recipes</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.cirroenergy.com/holiday-recipes/cirro-energy-win-big-with-these-easy-game-day-recipes/" title="10:50 pm" rel="bookmark"><span class="entry-date">February 2, 2016</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.cirroenergy.com/author/stephen/" title="View all posts by Cirro Energy">Cirro Energy</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-content">
+				<p>The game of the year is almost here. Whether you’re hosting a watch party or joining the guest list, these three recipes are guaranteed to make you the MVP of the night.</p>
+<p><strong>Guac-a-dog</strong></p>
+<p><img class="alignnone size-medium wp-image-2343" src="http://blog.cirroenergy.com/wp-content/uploads/2016/02/guaca-252x300.jpg" alt="guaca" width="252" height="300" srcset="http://blog.cirroenergy.com/wp-content/uploads/2016/02/guaca-252x300.jpg 252w, http://blog.cirroenergy.com/wp-content/uploads/2016/02/guaca.jpg 300w" sizes="(max-width: 252px) 100vw, 252px" /></p>
+<p><strong>These hot dogs with a twist are sure to be a game-day favorite.  </strong></p>
+<p><strong>Ingredients</strong></p>
+<ul>
+<li><strong>4 </strong>hot dogs</li>
+<li><strong>1 </strong>avocado, peeled and pitted</li>
+<li><strong>1 </strong>tablespoon fresh lime juice</li>
+<li>kosher salt and black pepper</li>
+<li><strong>4 </strong>hot dog buns, split</li>
+<li><strong>4 </strong>small romaine lettuce leaves</li>
+<li><strong>¼ </strong>small red onion, chopped</li>
+<li>hot sauce for drizzling</li>
+</ul>
+<p><strong>Directions</strong></p>
+<ol>
+<li>Prepare the hot dogs following package instructions.</li>
+<li>In a bowl, mash the avocado and combine it with the lime juice. Sprinkle with ¼ teaspoon each of salt and black pepper.</li>
+<li>Set the hot dog buns on a serving dish, and place a hot dog in each.</li>
+<li>Top each hot dog with the lettuce, avocado mixture and onion. For an extra kick, sprinkle with hot sauce.</li>
+</ol>
+<p><strong>Image and recipe from </strong><a href="http://www.realsimple.com/food-recipes/browse-all-recipes/guacamole-hot-dog"><strong>realsimple.com</strong></a></p>
+<p><strong> </strong></p>
+<p><strong>Kickin’ chicken wings</strong></p>
+<p><strong><img class="alignnone size-medium wp-image-2342" src="http://blog.cirroenergy.com/wp-content/uploads/2016/02/chik-252x300.jpg" alt="chik" width="252" height="300" srcset="http://blog.cirroenergy.com/wp-content/uploads/2016/02/chik-252x300.jpg 252w, http://blog.cirroenergy.com/wp-content/uploads/2016/02/chik.jpg 300w" sizes="(max-width: 252px) 100vw, 252px" /></strong></p>
+<p><strong>F</strong><strong>ull of flavor and grilled, these wings are ready to make their watch-party debut. </strong></p>
+<p><strong>Ingredients</strong></p>
+<ul>
+<li><strong>8 </strong>chicken wings (about 1 ½ pounds), halved through the joint</li>
+<li><strong>1 </strong>teaspoon olive oil</li>
+<li><strong>2 </strong>teaspoons seafood seasoning</li>
+<li><strong>3 </strong>tablespoons unsalted butter, melted</li>
+<li>ranch dressing, for dipping</li>
+</ul>
+<p><strong>Directions</strong></p>
+<ol>
+<li>Heat grill until it reaches a medium heat setting. In a bowl, combine and toss the wings, olive oil and 1 teaspoon of seasoning. Grill the wings uncovered, and turn over to cook the other side. Grill for 15 to 20 minutes until cooked through.</li>
+<li>In another bowl, mix the last teaspoon of seafood seasoning with the butter. Add the wings to the mixture and toss. Serve with ranch dressing.</li>
+</ol>
+<p><strong>Image and recipe from </strong><a href="http://www.realsimple.com/food-recipes/browse-all-recipes/grilled-spiced-chicken-wings"><strong>realsimple.com</strong></a></p>
+<p><strong> </strong></p>
+<p><strong>Guiltless Baked Sweet Potato</strong></p>
+<p><strong> <img class="alignnone size-medium wp-image-2344" src="http://blog.cirroenergy.com/wp-content/uploads/2016/02/potato-252x300.jpg" alt="potato" width="252" height="300" /></strong></p>
+<p><strong>This flavorful option is sure to satisfy the vegetarians of the bunch. </strong></p>
+<p><strong>Ingredients</strong></p>
+<ul>
+<li><strong>4 </strong>large sweet potatoes</li>
+<li><strong>2 </strong>tablespoons canola oil</li>
+<li>kosher salt and black pepper</li>
+<li><strong>2 </strong>tablespoons olive oil</li>
+<li><strong>1 </strong>avocado, sliced</li>
+<li><strong>¼ </strong>cup chopped pecans, toasted</li>
+<li><strong>¼ </strong>cup chopped fresh flat-leaf parsley leaves</li>
+<li><strong>4 </strong>ounces fresh goat cheese, crumbled (about 1 cup)</li>
+<li>green salad, for serving</li>
+</ul>
+<p><strong>Directions</strong></p>
+<ol>
+<li>Heat oven until it reaches 400° F. Brush sweet potatoes using canola oil, and add ¼ teaspoon of salt. Using a rimmed baking sheet, bake for 40 to 50 minutes until tender.</li>
+<li>Split each potato open, and sprinkle with olive oil. Add ½ teaspoon of salt and pepper.</li>
+<li>Complete the loaded sweet potatoes by adding avocado, pecans, parsley and goat cheese on top.</li>
+<li>Dress the dish with a salad.</li>
+</ol>
+<p><strong>Image and recipe from </strong><a href="http://www.realsimple.com/food-recipes/browse-all-recipes/loaded-baked-sweet-potato"><strong>realsimple.com</strong></a></p>
+							</div><!-- .entry-content -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blog.cirroenergy.com/category/holiday-recipes/" rel="category tag">Seasonal Recipes</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blog.cirroenergy.com/tag/game-day-recipes/" rel="tag">Game-day recipes</a>, <a href="http://blog.cirroenergy.com/tag/recipes/" rel="tag">recipes</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><a href="http://blog.cirroenergy.com/holiday-recipes/cirro-energy-win-big-with-these-easy-game-day-recipes/#respond">Leave a comment</a></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+
+			<div id="post-1892" class="post-1892 post type-post status-publish format-standard hentry category-energy-saving-tips tag-cirro-energy tag-energy-saving-tips-2 tag-winter">
+			<h2 class="entry-title"><a href="http://blog.cirroenergy.com/energy-saving-tips/winter/" title="Permalink to Cirro Energy | Winter Energy Saving Tips" rel="bookmark">Cirro Energy | Winter Energy Saving Tips</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.cirroenergy.com/energy-saving-tips/winter/" title="10:06 pm" rel="bookmark"><span class="entry-date">January 21, 2016</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.cirroenergy.com/author/stephen/" title="View all posts by Cirro Energy">Cirro Energy</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-content">
+				<p>Homeowners can <a href="http://blog.cirroenergy.com/energy-saving-tips/affordable-appliances/" target="_blank">save money</a> and energy during the winter months without sacrificing warmth. Check out these energy saving tips from Cirro Energy so you can stay cozy without breaking the bank.</p>
+<p><img class="alignnone wp-image-2338 size-large" src="http://blog.cirroenergy.com/wp-content/uploads/2016/01/ce-1024x536.jpg" alt="ce" width="640" height="335" srcset="http://blog.cirroenergy.com/wp-content/uploads/2016/01/ce-300x157.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2016/01/ce-768x402.jpg 768w, http://blog.cirroenergy.com/wp-content/uploads/2016/01/ce-1024x536.jpg 1024w, http://blog.cirroenergy.com/wp-content/uploads/2016/01/ce.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+<ol>
+<li><strong>Lower the thermostat. </strong>Follow the U.S. Department of Energy’s recommendations, which state that you can save about 10% on your heating bill by lowering your thermostat 10-15 degrees when you’re out of the house or at night time.*</li>
+<li><strong>Let the sunshine in. </strong>We have a natural heater in nature. Why not use it? Use the sun as a heating source for your home. Let the sunlight in through your south-facing windows during the day for a free source of heat.</li>
+<li><strong>Leaks be gone! </strong>Energy leaks through your home, often through poorly installed or installed windows and doors. Check your home for potential leaks and seal them to save more.</li>
+<li><strong>Love your winter accessories. </strong>One of the best parts of winter is the accessories that go along with the season. So celebrate the arrival of the cool weather with cozy blankets, warm mittens and comfy sweaters, and save yourself a bundle in heating costs at home.</li>
+<li><strong>Look over your heating systems.</strong> Maintenance is essential for heating systems that work properly. Be sure to follow up with maintenance checks on your water heater and central heating systems to ensure that they are as energy efficient as possible.</li>
+</ol>
+<p>Winter is a time for fun and family. Following these energy saving tips for winter will enable you enjoy this season without the burden of high energy costs.</p>
+<p>If you&#8217;re looking to save money on your electricity plan, now is the time to look into it. Visit <a href="https://www.cirroenergy.com/" target="_blank" rel="no follow">Cirro Energy&#8217;s website</a> for more information on low-cost energy plans, and join Cirro&#8217;s social media communities on <a href="https://www.facebook.com/CirroEnergy/" target="_blank" rel="no follow">Facebook </a>and <a href="https://twitter.com/cirroenergytx" target="_blank" rel="no follow">Twitter</a>.</p>
+<p>*Source: <a href="http://energy.gov/energysaver/fall-and-winter-energy-saving-tips" target="_blank" rel="no follow">http://energy.gov/energysaver/fall-and-winter-energy-saving-tips</a></p>
+							</div><!-- .entry-content -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blog.cirroenergy.com/category/energy-saving-tips/" rel="category tag">Energy Saving Tips</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blog.cirroenergy.com/tag/cirro-energy/" rel="tag">Cirro Energy</a>, <a href="http://blog.cirroenergy.com/tag/energy-saving-tips-2/" rel="tag">energy saving tips</a>, <a href="http://blog.cirroenergy.com/tag/winter/" rel="tag">winter</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><a href="http://blog.cirroenergy.com/energy-saving-tips/winter/#respond">Leave a comment</a></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+
+			<div id="post-1887" class="post-1887 post type-post status-publish format-standard hentry category-cirro-energy tag-cirro-energy tag-exercise-tips tag-health-goals tag-winter-workout">
+			<h2 class="entry-title"><a href="http://blog.cirroenergy.com/cirro-energy/indoor-exercise-tips/" title="Permalink to Cirro Energy | Exercise Tips for Staying Fit Indoors" rel="bookmark">Cirro Energy | Exercise Tips for Staying Fit Indoors</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.cirroenergy.com/cirro-energy/indoor-exercise-tips/" title="9:41 pm" rel="bookmark"><span class="entry-date">January 12, 2016</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.cirroenergy.com/author/stephen/" title="View all posts by Cirro Energy">Cirro Energy</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-content">
+				<p>When the weather outside is frightful, the thought of exercise can be a bit daunting as well. After all, the last thing anyone wants to do in the bitter cold of winter is <a href="http://blog.cirroenergy.com/cirro-energy/how-to-keep-new-years-resolution/" target="_blank">stick to a fitness regimen</a>.</p>
+<p><a href="http://blog.cirroenergy.com/" target="_blank"><img class="aligncenter wp-image-1888 size-full" src="http://blog.cirroenergy.com/files/2016/01/staying-fit-indoors.jpg" alt="Exercising in the winter can be difficult. Stay focused on your health goals this winter with these indoor exercise tips from Cirro Energy." width="1200" height="628" srcset="http://blog.cirroenergy.com/wp-content/uploads/2016/01/staying-fit-indoors-300x157.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2016/01/staying-fit-indoors-768x402.jpg 768w, http://blog.cirroenergy.com/wp-content/uploads/2016/01/staying-fit-indoors-1024x536.jpg 1024w, http://blog.cirroenergy.com/wp-content/uploads/2016/01/staying-fit-indoors.jpg 1200w" sizes="(max-width: 1200px) 100vw, 1200px" /></a></p>
+<p>Thankfully, there are ways in which you can stay focused on your health goals while avoiding freezing cold temperatures. Don&#8217;t let the cold weather stand in the way of your health. Check out these easy exercise tips as alternatives to outdoor exercise to work on your fitness and avoid the winter blues.</p>
+<ul>
+<li><strong>Planks, squats and jumping jacks.</strong> These tried and true exercise moves can be done in the comfort of your living room. However, those aren&#8217;t the only exercises you can include. Build strength, endurance and good cardiovascular health with everything from dumbbells to jump ropes, all of which can be used indoors.</li>
+<li><strong>Spinning classes. </strong>Nothing says workout like a good old fashioned spinning class. Indoor cycling burns calories, works out tons of muscles in your body, and keeps your exercise routine fun.</li>
+<li><strong>Online videos.</strong> A couple of decades ago, we had fitness videos on tape. These days, find your fitness videos online! Check out YouTube and look up exercise routines to try indoors. You&#8217;ll be surprised how much variety you find right at home.</li>
+<li><strong>Dancing. </strong>Dancing is a great way to exercise while having fun. When the cool temperatures lead to chilly feet, what better time to put on your dancing shoes?</li>
+<li><strong>Yoga.</strong> For a relaxing way to stay fit, look no further than yoga. With both mental and physical benefits, yoga is the ideal indoor fitness regimen to get you in the spirit of the season.</li>
+<li><strong>Cleaning! </strong>That&#8217;s right! When all else fails, rest assured that a good cleaning session around the house is a way of getting your exercise during the winter, without having to go outside.</li>
+</ul>
+<p>Winter doesn&#8217;t have to be a hindrance on your exercise routine. Finding the right indoor regimen for you is all about getting creative and sticking to your goals. Cirro Energy is committed to helping you and your family enjoy wintertime by helping you save money on your electric plan! Visit <a href="https://www.cirroenergy.com/" target="_blank" rel="nofollow">Cirro Energy&#8217;s website</a> for more information on low fixed-price plans, and tune in to Cirro&#8217;s social media communities on <a href="https://www.facebook.com/CirroEnergy/" target="_blank" rel="nofollow">Facebook </a>and <a href="https://twitter.com/cirroenergytx" target="_blank" rel="nofollow">Twitter</a>.</p>
+							</div><!-- .entry-content -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blog.cirroenergy.com/category/cirro-energy/" rel="category tag">Cirro Energy</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blog.cirroenergy.com/tag/cirro-energy/" rel="tag">Cirro Energy</a>, <a href="http://blog.cirroenergy.com/tag/exercise-tips/" rel="tag">exercise tips</a>, <a href="http://blog.cirroenergy.com/tag/health-goals/" rel="tag">health goals</a>, <a href="http://blog.cirroenergy.com/tag/winter-workout/" rel="tag">winter workout</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><a href="http://blog.cirroenergy.com/cirro-energy/indoor-exercise-tips/#respond">Leave a comment</a></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+
+			<div id="post-1879" class="post-1879 post type-post status-publish format-standard hentry category-cirro-energy tag-cirro-energy tag-fitness tag-new-years tag-resolution">
+			<h2 class="entry-title"><a href="http://blog.cirroenergy.com/cirro-energy/how-to-keep-new-years-resolution/" title="Permalink to Cirro Energy | How to Keep your New Year’s Resolution" rel="bookmark">Cirro Energy | How to Keep your New Year’s Resolution</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.cirroenergy.com/cirro-energy/how-to-keep-new-years-resolution/" title="10:56 pm" rel="bookmark"><span class="entry-date">January 5, 2016</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.cirroenergy.com/author/stephen/" title="View all posts by Cirro Energy">Cirro Energy</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-content">
+				<p>Do you find yourself making a huge <a href="http://blog.cirroenergy.com/electrical-safety/electrical-safety-tips-new-year-cirro-energy/" target="_blank">New Year</a>’s resolution every January, only to give up on it after a few weeks? Not following through with New Year’s resolutions, whether they have to do with fitness or developing healthy eating habits, is a common occurrence, but it doesn&#8217;t have to be that way. Here are some tips to help you stick to your guns and be successful in keeping your New Year’s resolution this time around.</p>
+<p><a href="http://blog.cirroenergy.com/" target="_blank"><img class="aligncenter wp-image-1880 size-full" src="http://blog.cirroenergy.com/files/2016/01/New-Years-Resolutions.jpg" alt="Ready to tackle your New Year’s resolution but not sure if you'll make it? Cirro Energy shares tips on how to make your resolutions stick." width="1200" height="628" srcset="http://blog.cirroenergy.com/wp-content/uploads/2016/01/New-Years-Resolutions-300x157.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2016/01/New-Years-Resolutions-768x402.jpg 768w, http://blog.cirroenergy.com/wp-content/uploads/2016/01/New-Years-Resolutions-1024x536.jpg 1024w, http://blog.cirroenergy.com/wp-content/uploads/2016/01/New-Years-Resolutions.jpg 1200w" sizes="(max-width: 1200px) 100vw, 1200px" /></a></p>
+<ol>
+<li><strong>Have a plan. </strong>Whether your resolution is simple or intricate, having a plan of action in place will help you stay on track and give you a greater shot and successfully carrying out your resolution.</li>
+<li><strong>Tackle one resolution at a time. </strong>Having more than one New Year’s resolution can be a recipe for disaster if you overwhelm yourself trying to accomplish them all at once. That&#8217;s why, for a maximum chance of success, the best thing to do is tackle one resolution at a time. It will allow you to focus on one thing and it will enable you to completely achieve a goal before moving on to a next one.</li>
+<li><strong>Stay in good spirits. </strong>A great attitude and a great mood can each be essential to keeping resolutions. So load up on your favorite comedies, surround yourself with positivity, and you will have a better chance of achieving your objectives.</li>
+<li><strong>Break up large resolutions into smaller, more manageable goals. </strong>If you have a larger resolution to get through, break it up into smaller goals so that you can slowly but surely achieve success. For example, if your goal is to work on your fitness goals, rather than saying that you will become a triathlete by the end of the year, start out by deciding on days that you will work out at the gym, and slowly add goals from there.</li>
+<li><strong>Create a list of reasons why your resolution is important to you. </strong>When you find yourself discouraged or on the verge of giving up, having a list of reasons why your resolution is important to you can be a great way to bring yourself back into the game.</li>
+<li><strong>Don&#8217;t have a &#8220;plan B&#8221;. </strong>Having a backup plan makes it too easy to give up on your original plan. Don&#8217;t give yourself an easy way out. Make an actual plan &#8212; just one &#8212; and stick to it.</li>
+</ol>
+<p>If one of your resolutions is to save money, Cirro Energy can help you save on your electricity plan. Visit <a href="https://www.cirroenergy.com/" target="_blank" rel="nofollow">Cirro Energy&#8217;s website</a> for more information on low-cost energy plans, and join Cirro&#8217;s social media communities on <a href="https://www.facebook.com/CirroEnergy/" target="_blank" rel="nofollow">Facebook </a>and <a href="https://twitter.com/cirroenergytx" target="_blank" rel="nofollow">Twitter</a>.</p>
+							</div><!-- .entry-content -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blog.cirroenergy.com/category/cirro-energy/" rel="category tag">Cirro Energy</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blog.cirroenergy.com/tag/cirro-energy/" rel="tag">Cirro Energy</a>, <a href="http://blog.cirroenergy.com/tag/fitness/" rel="tag">fitness</a>, <a href="http://blog.cirroenergy.com/tag/new-years/" rel="tag">new year's</a>, <a href="http://blog.cirroenergy.com/tag/resolution/" rel="tag">resolution</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><a href="http://blog.cirroenergy.com/cirro-energy/how-to-keep-new-years-resolution/#respond">Leave a comment</a></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+
+			<div id="post-1871" class="post-1871 post type-post status-publish format-standard hentry category-home-owners tag-holiday-decor tag-safety-tips">
+			<h2 class="entry-title"><a href="http://blog.cirroenergy.com/home-owners/storing-holiday-decor/" title="Permalink to Cirro Energy | Storing Holiday Decor" rel="bookmark">Cirro Energy | Storing Holiday Decor</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.cirroenergy.com/home-owners/storing-holiday-decor/" title="5:25 pm" rel="bookmark"><span class="entry-date">December 29, 2015</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.cirroenergy.com/author/stephen/" title="View all posts by Cirro Energy">Cirro Energy</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-content">
+				<p>If you&#8217;re like many homeowners, the joy that <a href="http://blog.cirroenergy.com/safety-tips/holiday-light-safety-and-decor/" target="_blank">holiday decor</a> brings during the season slowly fades away when it comes time to take it down. However, rushing through the process of putting the lights and decorations away can lead to a costly and possibly dangerous mess.</p>
+<p><a href="http://blog.cirroenergy.com/" target="_blank"><img class="aligncenter wp-image-1872 size-full" src="http://blog.cirroenergy.com/files/2015/12/Storing-Holiday-Decor.jpg" alt="Keep your holiday decor in safe and usable condition for next year with these safety tips from Cirro Energy." width="1200" height="628" srcset="http://blog.cirroenergy.com/wp-content/uploads/2015/12/Storing-Holiday-Decor-300x157.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Storing-Holiday-Decor-768x402.jpg 768w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Storing-Holiday-Decor-1024x536.jpg 1024w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Storing-Holiday-Decor.jpg 1200w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>The key to storing your holiday decor is being careful, patient and aware. Here are some safety tips to ensure your family can enjoy cherished decor for years to come.</p>
+<ul>
+<li><strong>Be nice to your ornaments.</strong> When taking down ornaments from your beautiful Christmas tree, it&#8217;s important to be as gentle with the process of taking them down as you were when you first put them up. To store ornaments, wrap them in tissue or bubble wrap, and place them in a storage bin with cardboard separators. An ornament storage chest is a great buy for those who have lots of delicate ornaments they use year after year.</li>
+<li><strong>Keep the lights strung. </strong>It&#8217;s tempting to simply take holiday lights down, bunch them up and stick them in a box somewhere until next year. Resist the temptation! Improper storage of the lights can cause damage to the wiring, which can be dangerous when you hang up the lights again next year. Be sure to string the lights to avoid tangling, and store them carefully in a storage container by themselves to avoid other things breaking the bulbs.</li>
+<li><strong>Tag team the tree.</strong> When it comes time to put away holiday decor and take the tree to the curb, many hands make lighter (and safer) work. Sweeping up the stray needles goes by in a flash with two people, too!</li>
+<li><strong>Label and store until next year. </strong>There&#8217;s little doubt you&#8217;ll likely end up with many boxes once you’ve put up all the holiday decor. Be sure to label each box, carefully and clearly identifying fragile items. Store your decor in a safe, cool place, away from heavy foot traffic.</li>
+</ul>
+<p>Storing your holiday decor safely will ensure that decorating your home for the holiday season is joyous year after year. For additional holiday safety and energy saving tips visit the <a href="http://blog.cirroenergy.com/" target="_blank" rel="nofollow">Cirro Energy blog</a>, and find out how you can save on your electricity bill check out <a href="https://www.cirroenergy.com/" target="_blank" rel="nofollow">Cirro Energy&#8217;s low fixed-priced plans</a>. You can also follow Cirro Energy on <a href="https://www.facebook.com/CirroEnergy/" target="_blank" rel="nofollow">Facebook </a>and <a href="https://twitter.com/cirroenergytx" target="_blank" rel="nofollow">Twitter</a>.</p>
+							</div><!-- .entry-content -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blog.cirroenergy.com/category/home-owners/" rel="category tag">Homeowners</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blog.cirroenergy.com/tag/holiday-decor/" rel="tag">holiday decor</a>, <a href="http://blog.cirroenergy.com/tag/safety-tips/" rel="tag">safety tips</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><a href="http://blog.cirroenergy.com/home-owners/storing-holiday-decor/#respond">Leave a comment</a></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+
+			<div id="post-1864" class="post-1864 post type-post status-publish format-standard hentry category-events tag-christmas-lights tag-holiday-lights tag-texas">
+			<h2 class="entry-title"><a href="http://blog.cirroenergy.com/events/best-holiday-lights-in-texas/" title="Permalink to Cirro Energy | Best Holiday Lights in Texas" rel="bookmark">Cirro Energy | Best Holiday Lights in Texas</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.cirroenergy.com/events/best-holiday-lights-in-texas/" title="10:16 pm" rel="bookmark"><span class="entry-date">December 15, 2015</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.cirroenergy.com/author/stephen/" title="View all posts by Cirro Energy">Cirro Energy</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-content">
+				<p>One of the joys of the <a href="http://blog.cirroenergy.com/home-owners/preparing-your-home-for-holiday-vacations/" target="_blank">holiday season</a> is taking the family on an epic search for holiday light displays around the neighborhood. This year, why not go beyond your surroundings and expand the holiday lights search? Let Cirro Energy give you a rundown of the best holiday light displays in Texas.</p>
+<p><a href="http://blog.cirroenergy.com/" target="_blank"><img class="aligncenter wp-image-1865 size-full" src="http://blog.cirroenergy.com/files/2015/12/Texas-Holiday-Lights.jpg" alt="Cirro Energy helps you find the best holiday lights in Texas this season." width="1200" height="628" srcset="http://blog.cirroenergy.com/wp-content/uploads/2015/12/Texas-Holiday-Lights-300x157.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Texas-Holiday-Lights-768x402.jpg 768w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Texas-Holiday-Lights-1024x536.jpg 1024w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Texas-Holiday-Lights.jpg 1200w" sizes="(max-width: 1200px) 100vw, 1200px" /></a></p>
+<ul>
+<li><strong><a href="http://www.vitruvianpark.com/events/event/vitruvian-lights-a-magical-night-of-lights-6/" target="_blank" rel="nofollow">Vitruvian Lights</a></strong> in Addison features over 500 trees wrapped in 9 different bright colored lights. Enjoy live music, food trucks, and free pictures with Santa every Friday at 6:00pm!</li>
+<li><strong><a href="http://www.grapevinetexasusa.com/christmas-capital-of-texas/" target="_blank" rel="nofollow">The Christmas Capital of Texas</a></strong> in Grapevine has everything your family needs this holiday season and more. Experience Christmas on Main Street, ride the North Pole Express, marvel at the Paradise of Lights, and enjoy the Twinkle Twinkle Boat Parade.</li>
+<li><strong><a href="http://www.marshalltexas.net/public/warrants/wonderland-of-lights" target="_blank" rel="nofollow">The Wonderland of Lights</a></strong> in Marshall is made aglow by over ten million lights colorfully shining in the town&#8217;s historic district. Enjoy outdoor skating, visit Santa&#8217;s workshop, ride a carriage through the area, take a candlelight tour of historic landmarks, and experience a beautifully lighted Christmas parade.</li>
+<li><strong><a href="http://railoflights.com/" target="_blank" rel="nofollow">Rail of Lights</a> </strong>in Jefferson is one of the most exciting holiday lights displays in East Texas. Enjoy lighted vignettes, a trip through the Piney Woods and a fireworks show from the comfort of the Historic Jefferson Railway.</li>
+<li><strong><a href="http://www.tmsgiftoflights.com/" target="_blank" rel="nofollow">The Annual Gift of Lights</a></strong> in Fort Worth is a drive-thru display at the Texas Motor Speedway. Enjoy this spectacular display of lights surrounding Santa&#8217;s Village, where you can enjoy some hot cocoa and popcorn with the family.</li>
+<li><strong><a href="http://365thingsaustin.com/2010/12/18/352-37th-street-christmas-lights/" target="_blank" rel="nofollow">37th Street Lights</a> </strong>in Austin is a holiday light display along Guadalupe Street and West 37<sup>th</sup>, featuring millions of strands put up by the community.</li>
+<li><strong><a href="http://www.magicalwinterlights.com/about-magical-winter-lights/" target="_blank" rel="nofollow">Magical Winter Lights</a></strong> in Houston are a modern twist on the traditional holiday light show. These Chinese lantern-inspired structures imitate well-known landmarks from all around the world!</li>
+</ul>
+<p>Fortunately, holiday lights at your home don’t have to mean a high electricity bill! Visit <a href="https://www.cirroenergy.com/" target="_blank" rel="nofollow">Cirro Energy&#8217;s website</a> for more information on our affordable low fixed-price plans, and join Cirro&#8217;s social media communities on <a href="https://www.facebook.com/CirroEnergy/" target="_blank" rel="nofollow">Facebook </a>and <a href="https://twitter.com/cirroenergytx" target="_blank" rel="nofollow">Twitter</a>.</p>
+							</div><!-- .entry-content -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blog.cirroenergy.com/category/events/" rel="category tag">Events</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blog.cirroenergy.com/tag/christmas-lights/" rel="tag">Christmas lights</a>, <a href="http://blog.cirroenergy.com/tag/holiday-lights/" rel="tag">holiday lights</a>, <a href="http://blog.cirroenergy.com/tag/texas/" rel="tag">Texas</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><a href="http://blog.cirroenergy.com/events/best-holiday-lights-in-texas/#respond">Leave a comment</a></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+
+			<div id="post-1859" class="post-1859 post type-post status-publish format-standard hentry category-safety-tips tag-cirro-energy tag-driving tag-icy-roads tag-safety-tips">
+			<h2 class="entry-title"><a href="http://blog.cirroenergy.com/safety-tips/cirro-energy-icy-road-safety-for-holiday-travelers/" title="Permalink to Cirro Energy | Icy Road Safety for Holiday Travelers" rel="bookmark">Cirro Energy | Icy Road Safety for Holiday Travelers</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.cirroenergy.com/safety-tips/cirro-energy-icy-road-safety-for-holiday-travelers/" title="11:57 pm" rel="bookmark"><span class="entry-date">December 8, 2015</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.cirroenergy.com/author/stephen/" title="View all posts by Cirro Energy">Cirro Energy</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-content">
+				<p>Are you and your family planning on taking a road trip this <a href="http://blog.cirroenergy.com/safety-tips/holiday-light-safety-and-decor/" target="_blank">holiday season</a>? Although wintertime provides the perfect opportunity for families to spend quality time together, it can also be a dangerous time to do some long-distance traveling, especially for drivers who are not used to icy road conditions. Icy road safety is essential for winter traveling, so be sure to follow these tips and keep yourself and your family safe this season.</p>
+<p><a href="http://blog.cirroenergy.com/" target="_blank"><img class="aligncenter wp-image-1860 size-full" src="http://blog.cirroenergy.com/files/2015/12/Driving-On-Icy-Roads.jpg" alt="Cirro Energy shares driving tips for icy road safety during the holiday season." width="1200" height="628" srcset="http://blog.cirroenergy.com/wp-content/uploads/2015/12/Driving-On-Icy-Roads-300x157.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Driving-On-Icy-Roads-768x402.jpg 768w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Driving-On-Icy-Roads-1024x536.jpg 1024w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Driving-On-Icy-Roads.jpg 1200w" sizes="(max-width: 1200px) 100vw, 1200px" /></a></p>
+<p><strong>Plan ahead. </strong>Icy roads are not conducive to spontaneous driving, so when planning your holiday excursions, be sure to plan your routes well in advance.</p>
+<ul>
+<li>Consider the weather forecast for that day, and plan your route around that. Map out the main route as well as alternate routes in case you&#8217;re caught in bad weather.</li>
+<li>Plan stops and hotel stays along the way and be flexible with your time.</li>
+<li>Remember to take your time as you navigate icy, dangerous roads. If the weather is expected to be too icy, consider postponing for another time.</li>
+<li>Have jumper cables, a flashlight, a gas can, scrapers, a shovel, flares and some blankets in the car, as well as a first aid kit and food, water and extra clothing in the car.</li>
+</ul>
+<p><strong>On the Road. </strong>Once on the road, the key is to be fully engaged and to pay attention to your surroundings. Some important tips to keep in mind while traveling:</p>
+<ul>
+<li>Always wear your seatbelt!</li>
+<li>Maintain steady speeds! Avoid accelerating too quickly or braking abruptly.</li>
+<li>Maintain longer stopping/following distances to prevent accidents.</li>
+<li>Avoid driving while tired. Stop if you feel like you&#8217;re falling asleep.</li>
+<li>Avoid areas with very wet or slippery conditions, and avoid driving up hills.</li>
+</ul>
+<p>Cirro Energy is committed to your safety this holiday season, whether you&#8217;re planning to stay local or heading to see family in another state. That&#8217;s why we offer low-cost, budget-friendly electric plans for every household&#8217;s needs &#8212; one less thing to think about so you can plan for the family trip of a lifetime. Check out our electric plans online on <a href="https://www.cirroenergy.com/" target="_blank" rel="nofollow">our website</a>, and join our online community of <a href="https://www.facebook.com/CirroEnergy/" target="_blank" rel="nofollow">Facebook</a> and <a href="https://twitter.com/" target="_blank" rel="nofollow">Twitter</a>.</p>
+							</div><!-- .entry-content -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blog.cirroenergy.com/category/safety-tips/" rel="category tag">Safety Tips</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blog.cirroenergy.com/tag/cirro-energy/" rel="tag">Cirro Energy</a>, <a href="http://blog.cirroenergy.com/tag/driving/" rel="tag">driving</a>, <a href="http://blog.cirroenergy.com/tag/icy-roads/" rel="tag">icy roads</a>, <a href="http://blog.cirroenergy.com/tag/safety-tips/" rel="tag">safety tips</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><a href="http://blog.cirroenergy.com/safety-tips/cirro-energy-icy-road-safety-for-holiday-travelers/#respond">Leave a comment</a></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+
+			<div id="post-1854" class="post-1854 post type-post status-publish format-standard hentry category-safety-tips tag-christmas-light-safety tag-christmas-lights tag-decor-tips tag-holiday-light-safety">
+			<h2 class="entry-title"><a href="http://blog.cirroenergy.com/safety-tips/holiday-light-safety-and-decor/" title="Permalink to Cirro Energy | Holiday Light Safety and Decor" rel="bookmark">Cirro Energy | Holiday Light Safety and Decor</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.cirroenergy.com/safety-tips/holiday-light-safety-and-decor/" title="11:56 pm" rel="bookmark"><span class="entry-date">December 3, 2015</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.cirroenergy.com/author/stephen/" title="View all posts by Cirro Energy">Cirro Energy</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-content">
+				<p>Is <a href="http://blog.cirroenergy.com/home-owners/5-diy-outdoor-holiday-decorations/" target="_blank">holiday decorating</a> one of your favorite parts of the holiday season? If so, you&#8217;re not alone! For many, getting into the seasonal spirit means putting up bright, beautiful lights and decorations. While this is an exciting part of celebrating the holidays, it&#8217;s important to remember some simple holiday light safety tips so you can celebrate with your loved ones without injury.</p>
+<p><a href="http://blog.cirroenergy.com/" target="_blank"><img class="aligncenter wp-image-1855 size-full" src="http://blog.cirroenergy.com/files/2015/12/Christmas-Light-Safety.jpg" alt="Cirro Energy discusses holiday light safety and decor tips for your home." width="1200" height="628" srcset="http://blog.cirroenergy.com/wp-content/uploads/2015/12/Christmas-Light-Safety-300x157.jpg 300w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Christmas-Light-Safety-768x402.jpg 768w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Christmas-Light-Safety-1024x536.jpg 1024w, http://blog.cirroenergy.com/wp-content/uploads/2015/12/Christmas-Light-Safety.jpg 1200w" sizes="(max-width: 1200px) 100vw, 1200px" /></a></p>
+<ul>
+<li>Plan your design before you start hanging lights around your home. This will allow you to create a beautiful, cohesive design and, more importantly, it will enable you to map out where all of the electrical outlets are, what areas will be safest to hang lights from, and which parts of your perimeter you should steer clear.</li>
+<li>Make sure you have the right lights before you hang them. Look for a &#8220;UL&#8221; or &#8220;ETL&#8221; stamp on the packaging; this indicates that the lights have been certified safe by experts. If your strands have large bulbs, consider switching to strands that have smaller lights. Check your old lights for damage to the cord or frayed cords, as they can be a huge fire hazard. And whatever strands you use, be sure to look for a fuse at the end of the light plugs.</li>
+<li>Don&#8217;t use indoor lights outside. Outdoor lights are specially made to withstand outdoor conditions, so using the wrong type of strand outside can spell trouble. Outdoor lights are marked as such on the packaging.</li>
+<li>Don&#8217;t be shy about using extension cords. They are an indispensable part of holiday decorating, particularly if you&#8217;re doing anything outside. Just be sure not to overload them &#8211;that is, make sure not to plug too many things in one extension cord, as they do have a tendency to overheat when loaded past capacity.</li>
+<li>Be sure to steer clear of tacks or nails when hanging your lights outside, as they can puncture or damage the cords and create a potential hazard. Use insulated holders instead, which are specifically created for outdoor hanging jobs.</li>
+<li>Once the lights are hung and looking fabulous, be mindful of maintenance. Check strands and extension cords regularly, replace or take down damaged or burnt out lights promptly, and save on energy by turning off your lights when you are not home or before going to bed.</li>
+<li>Utilize a timer to ensure that your lights don’t stay on any longer than necessary. This simple investment can result in energy savings for years to come!</li>
+</ul>
+<p>Need some decor tips for your home? When designing your display, consider things like:</p>
+<ol>
+<li><strong>Where will the eye go first? </strong>Choose a focal point or centerpiece for your display and start there. Not sure what that will be? Perhaps a structural feature in your home or a tree in your front yard. Remember to use ladders safely when hanging lights, and get creative with your centerpiece.</li>
+<li><strong>How many lights will I need? </strong>Consider sticking to the norm &#8212; 100 lights per 1 1/2 feet, and remember not to overload circuits. Evenly placed lights mean a clean, beautiful look, but they also mean properly loaded extension cords. Measuring the outside of your home is a great place to start.</li>
+<li><strong>What elements will make my display stand out? </strong>To make your display pop, consider incorporating special lighting elements such as animated lighting and glitter spheres. For easy shrubbery or bush coverage, net lighting is an interesting and convenient alternative to single lighting strands. Whatever you decide, be sure to use waterproof lighting to prevent hazards.</li>
+</ol>
+<p>Cirro Energy wants you to decorate and celebrate with your loved ones this holiday season, without worrying about your electrical plan. That&#8217;s why we offer budget-friendly plans for every family need. Check out our online community on <a href="https://www.facebook.com/CirroEnergy/" target="_blank" rel="nofollow">Facebook</a> and <a href="https://twitter.com/CirroEnergyTX" target="_blank" rel="nofollow">Twitter</a>, and learn more about our low-cost electrical plans at the <a href="https://www.cirroenergy.com/" target="_blank" rel="nofollow">Cirro Energy website</a>.</p>
+							</div><!-- .entry-content -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blog.cirroenergy.com/category/safety-tips/" rel="category tag">Safety Tips</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blog.cirroenergy.com/tag/christmas-light-safety/" rel="tag">Christmas light safety</a>, <a href="http://blog.cirroenergy.com/tag/christmas-lights/" rel="tag">Christmas lights</a>, <a href="http://blog.cirroenergy.com/tag/decor-tips/" rel="tag">decor tips</a>, <a href="http://blog.cirroenergy.com/tag/holiday-light-safety/" rel="tag">holiday light safety</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><a href="http://blog.cirroenergy.com/safety-tips/holiday-light-safety-and-decor/#respond">Leave a comment</a></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://blog.cirroenergy.com/page/2/" ><span class="meta-nav">&larr;</span> Older posts</a></div>
+					<div class="nav-next"></div>
+				</div><!-- #nav-below -->
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="text-3" class="widget-container widget_text">			<div class="textwidget"><a href="https://www.facebook.com/cirroenergy"><img src="/wp-content/uploads/2014/01/icon-facebook.png"></a>
+<a href="https://www.twitter.com/cirroenergytx"><img src="/wp-content/uploads/2014/01/icon-twitter.png"></a>
+<a href="https://www.youtube.com/cirroenergytx"><img src="/wp-content/uploads/2014/01/icon-youtube.png"></a></div>
+		</li><li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://blog.cirroenergy.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			
+
+		</div><!-- #colophon -->
+<div align="center"><a href="http://splashmedia.com"><img src="/img/powered-by.png" style="margin: 0 auto;"></a></div>
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<script type='text/javascript' src='http://blog.cirroenergy.com/wp-includes/js/wp-embed.min.js?ver=4.4.5'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"28a3534381","applicationID":"21593814","transactionName":"NFBUbEYHWUdUAEZeXw0ad1tAD1haGgpcU1Ub","queueTime":0,"applicationTime":407,"atts":"GBdXGg4dSkk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

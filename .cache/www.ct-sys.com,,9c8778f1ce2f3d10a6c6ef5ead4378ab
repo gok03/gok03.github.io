@@ -1,0 +1,43 @@
+status: 200
+content-length: 1114
+content-location: http://www.ct-sys.com
+accept-ranges: bytes
+server: Apache/2.2.31
+last-modified: Tue, 10 May 2016 14:38:29 GMT
+etag: "f89fbc3-45a-5327de0e5a340"
+date: Tue, 13 Sep 2016 11:05:39 GMT
+content-type: text/html
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+</head>
+<body>
+
+<div><img src="pic/pic1.png" alt="pic1" /><p id="msg1" style="margin-top : -40px; margin-left : 13px; font-family: sans-serif; font-size : 12px;"></p></div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var nowTime = new Date();
+
+    var nowYear = nowTime.getYear() + 1900;
+    var nowMonth = nowTime.getMonth() + 1;
+    var nowDate = nowTime.getDate();
+    var nowHour = nowTime.getHours();
+    var nowMin = nowTime.getMinutes();
+    var nowSec = nowTime.getSeconds();
+
+    if(nowMonth < 10) { nowMonth = "0" + nowMonth; }
+    if(nowDate < 10) { nowDate = "0" + nowDate; }
+    if(nowHour < 10) { nowHour = "0" + nowHour; }
+    if(nowMin < 10) { nowMin = "0" + nowMin; }
+    if(nowSec < 10) { nowSec = "0" + nowSec; }
+
+    var msg = nowYear + "/" + nowMonth + "/" + nowDate + " " +  nowHour + ":" + nowMin + ":" + nowSec;
+    $('#msg1').text(msg);
+
+});
+</script>
+</body>
+</html>

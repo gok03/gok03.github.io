@@ -1,0 +1,663 @@
+status: 200
+content-location: http://www.ascent.com
+x-powered-by: PHP/5.3.29-pl0-gentoo
+server: Apache
+date: Tue, 13 Sep 2016 10:36:03 GMT
+content-type: text/html
+
+
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="r7UnBHnl9-eFdpaNzzuzl2YtCGbygcoPaWQ4qI-iDr4" />
+
+<title>Ascent Technology Inc | Resource allocation & optimization solutions</title>
+<meta name="description" content="Control costs and operate more efficiently with Ascent Technology resource 
+allocation & workforce optimization & management solutions for airlines, 
+airports, casinos, hospitals, hotels & security" />
+<meta name="keywords" content="ascent, ascent technology, ascent technologies, SmartAirline, SmartAirline operations 
+center, SmartAirport, SmartAirport operations center, Ascent WorkZone workforce 
+management system, resource allocation, resource optimization, resource management, 
+workforce optimization, workforce scheduling, workforce management, employee scheduling, 
+labor planning, labor optimization, shift scheduling, airline, airport, casino, hospital, 
+hotel, restaurant, resort, retail store, security, gate management, gate manager, gate, 
+stand, checkin counter, check-in counter, security checkpoint, mohegan sun, scheduling" />
+
+<!-- Internet Explorer HTML5 enabling code: -->
+<!--[if IE]><script src="js/html5.js"></script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css" /> 
+<!--<link href="css/mobile.css" rel="stylesheet" type="text/css" media="handheld" />--><script language="javascript" type="text/javascript" src="js/email.js"></script>
+<script language="javascript" type="text/javascript" src="js/show-hide.js"></script>
+
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	//Current menu highlight
+	var loc=window.location.href;
+	
+	$("#navbar li a").each(function(){
+		if(this.href==loc){
+			$(this).addClass('menuHighlight');
+		}
+	});
+
+});
+
+</script><script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.cycle.all.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	
+	//hide the address
+   if (screen.height < 970) {     
+		$(".footer-index").hide();     
+	}     else {          
+		$(".footer-index").show();     
+	} 
+	
+	
+	//CYCLE BANNERS
+    $('#sec_banners ul').cycle({
+		fx: 'scrollDown', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		speed:   300, 
+    	timeout: 9000,
+    	pause:   1,
+		cleartype: true, 
+		cleartypeNoBg: true
+	});
+
+   //BLUE BOXES
+   $('.show_hide').showHide({			 
+		speed: 500,  // speed you want the toggle to happen	
+		easing: ''  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+		//changeText: 0, // if you dont want the button text to change, set this to 0
+		//showText: 'View',// the button text to show when a div is closed
+		//hideText: 'Close' // the button text to show when a div is open					 
+	}); 
+	
+	//CLOSE BUTTON
+	$('.buttonClose').showHide({			 
+		speed: 500, 
+		easing: ''
+		//changeText: 0, 
+		//showText: 'View',
+		//hideText: 'Close' 				 
+	}); 
+	
+	//CT: show the ascent address
+	$('.buttonClose').click(function() {
+  		$('.footer-index').show();	
+	});
+	 
+	
+
+});
+
+</script>
+<script type="text/javascript">
+	$(function($) {
+		var open = false;
+		$('#footerSlideButton').click(function () {
+			if(open === false) {
+				$('#footerSlideContent').animate({ height: '200px' });
+				$(this).css('backgroundPosition', 'bottom left');
+				open = true;
+			} else {
+				$('#footerSlideContent').animate({ height: '0px' });
+				$(this).css('backgroundPosition', 'top left');
+				open = false;
+			}
+		});		
+	});
+</script>
+
+
+<script type="text/javascript">
+///////////////////////////////////////////////////
+// ShowHide plugin                               
+// Author: Ashley Ford 
+// Demo: Tutorial - 
+// Built: 19th August 2011                                     
+///////////////////////////////////////////////////
+
+(function ($) {
+    $.fn.showHide = function (options) {
+
+		//default vars for the plugin
+        var defaults = {
+            speed: 50,
+			easing: ''
+			//changeText: 0,
+			//showText: 'Show',
+			//hideText: 'Hide'
+			
+        };
+        var options = $.extend(defaults, options);
+
+        $(this).click(function () {		   
+             $('.toggleDiv').slideUp(options.speed, options.easing);
+			 
+			 //CT: hide the ascent address
+			 $('.footer-index').hide();	
+			 	
+			 // this var stores which button you've clicked				 			 
+             var toggleClick = $(this);			 
+		     // this reads the rel attribute of the button to determine which div id to toggle
+		     var toggleDiv = $(this).attr('rel');
+		     // here we toggle show/hide the correct div at the right speed and using which easing effect
+		     $(toggleDiv).slideToggle(options.speed, options.easing, function() {
+		     // this only fires once the animation is completed
+			 //if(options.changeText==1){
+		     //$(toggleDiv).is(":visible") ? toggleClick.text(options.hideText) : toggleClick.text(options.showText);
+			  //$(toggleSpace).is(":visible") ? toggleClick.text(options.hideText) : toggleClick.text(options.showText);
+			 //}
+              });
+		  return false;
+		   	   
+        });
+
+    };
+})(jQuery);
+</script>
+
+
+<script type="text/javascript">
+//menu for IE6
+//http://www.alistapart.com/articles/horizdropdowns/
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("feature_wrap");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i];
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+  				}
+  				node.onmouseout=function() {
+  					this.className=this.className.replace(" over", "");
+   				}
+   			}
+  		}
+ 	}
+}
+window.onload=startList;
+
+</script>
+
+
+
+
+</head>
+<body>
+
+
+<div id="bodyWrap">
+
+
+	<header id="headerHome">
+    	<div id="logo"><a href="index.html"><img src="images/logo/ascent.png" alt="Ascent Technology, Inc." /></a></div>
+        
+
+
+<div class="menu-wrap">
+	<ul id="navbar">
+	<!-- The strange spacing herein prevents an IE6 whitespace bug. -->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about-ascent.html">About</a>
+			<ul>
+				<li><a href="about-events.html">Events &nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="about-visit.html">Visiting Ascent</a></li>
+                <li><a href="about-partners.html">Partners &nbsp;&nbsp;&nbsp;</a></li>
+			</ul>   
+        </li>
+		<li><a href="products.html">Products</a>
+			<ul>
+				<li><a href="resource-management-airlines.html">SmartAirline</a></li>
+                <li><a href="resource-management-airports.html">SmartAirport</a></li>
+                <li><a href="workforce-management-overview.html">WorkZone</a></li>
+			</ul>
+		</li>
+		<li><a href="services.html">Services</a>
+			<ul>
+				<li><a href="services-implementation.html">Implementation</a></li>
+				<li><a href="services-training.html">Training &nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="services-support.html">Support</a></li>
+			</ul>   
+        </li>
+		<li><a href="brochures.html">Brochures</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+	</ul>
+</div>
+  
+    </header>	
+    
+    
+
+<!-- _____________________ Banner _____________________ -->
+
+<section id="sec_banners">
+	<ul> 
+		<li class="banner"><img class="banner_img" src="images/banner/home1.png" width="915" height="285px" alt="Optimize your resources to greatest advantage"/></li>
+		<li class="banner textOnly"><div class="banner_txt_wrap">
+<h1 class="banner_text1">
+Ascent Technology gives you the power to control your costs, increase your operating margins, and use your human and 
+physical resources to fullest advantage.
+</h1>
+<br />
+<h2 class="banner_text2">
+Ascent Technology provides powerful software solutions that determine the kinds of resources you need, how many you need, 
+when you need them, and where you need them, so you have the right resources in the right places at the right times 
+at the right cost to operate efficiently and effectively. 
+
+<br /><br />
+Automatically.
+
+</h2>
+</div></li>
+       	<li class="banner"><img class="banner_img" src="images/banner/home2.png" width="915" height="285px" alt="Optimize, Plan, Schedule, Manage"/></li>
+	</ul>
+</section>	
+
+
+<ul id="showcase_wrap" class="section">	 
+	<!-- _____________________ Airlines _____________________ -->
+    <div id="slidingDiv" class="toggleDiv" style="background:#fff url(images/illust/sal.png) no-repeat right bottom;">       
+    	<h2 class="title">The SmartAirline<sup>&reg;</sup> Operations Center<sup>&#8482;</sup> solution </h2>
+<h3 class="subTitle">Deploy your human and physical resources to greatest advantage 
+<br/>on the ground and in the air
+</h3>
+
+<p>
+With Ascent Technology's SmartAirline Operations Center solution, you can forecast, 
+schedule, and manage your resources so you can handle your flights, operate your stations, 
+and accommodate your passengers efficiently and cost-effectively.
+</p>
+
+<p>
+The SmartAirline Operations center solution plans lines of flight for seasonal schedules, 
+assigns aircraft to routes, and tracks aircraft in real time.  It supports the short-term 
+planning and real-time management of key station resources, such as gates, stands, remote 
+parking positions, check-in counters, baggage belts, equipment, and departure lounges. The 
+solution manages a broad range of day-of-operation activities, from determining when departing 
+aircraft meet security guidelines to managing queues at check-in counters and security checkpoints. 
+It provides intelligent real-time schedule-recovery support when operations do not go 
+according to plan. 
+</p>
+
+<p>
+The SmartAirline Operations Center solution contains a version of the Ascent WorkZone 
+workforce management system, customized for the air transportation environment, that plans, 
+schedules, and manages the station workforce. 
+</p>
+ 
+<p>
+Airlines around the world rely on Ascent Technology's From Touchdown to Takeoff&reg; solutions to 
+optimize, plan, schedule, and manage costly resources around the clock, day in and day out.
+</p>        <a href="resource-management-airlines.html"><div class="go"></div></a>     
+        <div class="buttonClose"></div>
+    </div>
+	<!-- _____________________ Airports _____________________ -->
+	<div id="slidingDiv_2" class="toggleDiv" style="background:#fff url(images/illust/sap.png) no-repeat right bottom;">       
+		<h2 class="title">The SmartAirport Operations Center<sup>&reg;</sup> solution </h2>
+<h3 class="subTitle">Deploy your ground resources to greatest advantage 
+</h3>
+
+<p>
+With Ascent Technology's SmartAirport Operations Center solution, you can forecast, 
+schedule, and manage your resources so you can operate your airport, handle your flights, 
+and accommodate your customers efficiently and cost-effectively.
+</p>
+
+<p>
+The SmartAirport Operations center solution supports the short-term planning and real-time 
+management of key airport resources, such as gates, stands, remote parking positions, check-in 
+counters, baggage belts, equipment, and departure lounges. It manages a broad range of day-of-operation 
+activities, from determining when departing aircraft meet security guidelines to managing queues 
+at check-in counters and security checkpoints. The solution provides intelligent real-time 
+schedule-recovery support when operations do not go according to plan. 
+</p>
+
+<p>
+The SmartAirport Operations Center solution contains a version of the Ascent WorkZone workforce 
+management system, customized for the air transportation environment, that plans, schedules, and 
+manages the airport workforce. 
+</p>
+ 
+<p>
+Airports around the world rely on Ascent Technology's From Touchdown to Takeoff&reg; solutions to 
+optimize, plan, schedule, and manage costly resources around the clock, day in and day out.
+</p>    
+        <a href="resource-management-airports.html"><div class="go"></div></a>    
+        <div class="buttonClose"></div>
+	</div>
+	<!-- _____________________ WorkZone _____________________ -->
+	<div id="slidingDiv_3" class="toggleDiv" style="background:#fff url(images/illust/wz.png) no-repeat right bottom;">       
+		<h2 class="title">The Ascent WorkZone<sup>&reg;</sup> workforce management system</h2>
+
+<h3 class="subTitle"> Simply the best workforce optimization and management solution for 
+mission critical and labor intensive environments</h3>
+
+<p>
+The Ascent WorkZone workforce management system optimizes, plans, schedules, and 
+deploys your workforce for maximum efficiency and lowest cost.  When you use the 
+innovative Ascent WorkZone workforce management system to optimize your workforce, 
+you can be sure the right workers are in the right places at the right times to handle 
+your workload efficiently and at the lowest possible cost.
+</p>
+
+<p>
+The Ascent WorkZone workforce management system controls costs and helps mission critical 
+and labor intensive organizations, such as airlines, airports, casinos, defense, hospitals, hotels, 
+resorts, retail stores, and security, use human and physical resources to greatest advantage.
+</p>       
+        <a href="workforce-management-overview.html"><div class="go"></div></a>  
+		<div class="buttonClose"></div>
+	</div>
+	<!-- _____________________ Services _____________________ -->
+	<div id="slidingDiv_4" class="toggleDiv" style="background:#fff url(images/illust/services.png) no-repeat right bottom;">       
+		<h2 class="title">Ascent Technology helps you get started quickly and keeps you working 
+  productively
+</h2>
+<p>
+Ascent Technology provides powerful solutions that determine which resources you need, 
+when you need them, and where you need them, so you have the right resources in the 
+right places at the right times at the right cost to operate efficiently and 
+effectively.
+</p>
+<p>
+We surround the Ascent Resource Information System&reg; solutions with comprehensive services that 
+will you get started quickly, so you can optimize your human and physical resources, operate 
+efficiently, and control your costs without delay.
+</p>
+
+<p>
+We are passionate about helping you to optimize your operations, and we are 
+dedicated to ensuring your success.
+</p>     
+        <a href="services.html"><div class="go"></div></a>               
+		<div class="buttonClose"></div>
+	</div>
+	<!-- _____________________ About _____________________ -->
+	<div id="slidingDiv_5" class="toggleDiv" style="background:#fff url(images/illust/about.png) no-repeat right bottom;">
+		<h2 class="title"> Ascent Technology delivers powerful resource allocation, <br />
+workforce optimization, and workforce management solutions
+</h2>
+<p>
+Ascent Technology develops and markets software solutions that solve complex resource 
+optimization, scheduling, management, and deployment problems for mission critical 
+and labor intensive environments, such as airlines, airports, casinos, defense, 
+hospitals, hotels, resorts, restaurants, retail stores, and security.
+</p>
+<p>
+Since our founding 30 years ago by members of the Artificial Intelligence 
+Laboratory of the Massachusetts Institute of Technology, Ascent Technology has helped 
+organizations deploy costly human and physical resources as efficiently, effectively, 
+and economically as possible.
+</p>
+<p>
+We are passionate about helping our customers increase the efficiency of their operations, 
+and we are dedicated to ensuring the success of our customers and our business partners.  
+You can rely on Ascent Technology to deliver solutions you can trust 100% of the time.
+</p>      
+        <a href="about-ascent.html"><div class="go"></div></a>      
+		<div class="buttonClose"></div>
+	</div>
+	<!-- _____________________ Spotlight _____________________ -->
+	<div id="slidingDiv_6" class="toggleDiv" style="background:#fff url(images/illust/wz.png) no-repeat right bottom;">
+		<h2 class="title">Ascent works like magic at Mohegan Sun</h2>
+<h3 class="subTitle">Mohegan Sun trusts the Ascent WorkZone workforce management system 
+<br/>to schedule 8,000 workers </h3>
+
+<div class="grid_wrap">
+	<div>
+		<div class="grid grid_img">
+        	<img src="images/logo/Time to Shine Logo.jpg" alt="Mohegan Sun logo"/>
+        </div>
+		<div>
+        	
+
+<p>
+Learn how Mohegan Sun, one of the largest Indian casinos in the United States, dramatically reduced the 
+costs and labor involved in scheduling its 8,000 strong hourly workforce.  
+</p>
+<br />
+<p><a href="pdf/customerStoryMoheganSun.pdf">Click to download the story (PDF)</a></p>
+
+<br />
+<p>
+The Ascent WorkZone workforce management system can help you optimize your human and 
+physical resources to greatest advantage, too.  
+</p>
+
+
+
+		</div>
+	</div>
+</div>          
+		<div class="buttonClose"></div>   
+		<div class="buttonClose"></div>
+	</div>
+		
+	<br />
+
+	<li class="feature">
+		<a class="show_hide" href="#" rel="#slidingDiv">    
+			<div class="caption">
+                 <img src="images/box/sal.png" alt="The SmartAirline Operations Center solution"><br />
+                 <p>forecasts, plans, and manages airline resources</p>
+            </div>
+		</a>
+	</li>
+	<li class="feature">
+		<a class="show_hide" href="#" rel="#slidingDiv_2">     
+			<div class="caption">
+                 <img src="images/box/sap.png" alt="The SmartAirport Operations Center solution"><br /><p>plans and manages airport resources and activities</p>
+			</div>
+		</a>
+	</li>
+	<li class="feature last_feature">
+		<a class="show_hide" href="#" rel="#slidingDiv_3">    
+			<div class="caption">
+                 <img src="images/box/wz.png" alt="The Ascent WorkZone workforce management system">
+                <p>increases workplace efficiency</p>
+			</div>
+		</a>
+	</li>      
+	<li class="feature">
+		<a class="show_hide" href="#" rel="#slidingDiv_4">    
+			<div class="caption">
+                 <img src="images/box/services.png" alt="Ascent Technology helps you get started quickly and keeps you working productively">
+                <p>Services</p>
+			</div>
+		</a>
+	</li>
+	<li class="feature">
+		<a class="show_hide" href="#" rel="#slidingDiv_5">    
+			<div class="caption">
+                 <img src="images/box/about.png" alt="Ascent Technology delivers powerful resource allocation, workforce optimization, and workforce management solutions ">
+                <p>About Ascent Technology</p>
+			</div>
+		</a>  
+	</li>
+	<li class="feature last_feature">
+		<a class="show_hide" href="#" rel="#slidingDiv_6" id="test1">   
+			<div class="caption">
+                 <img src="images/box/spotlight.png" alt="Ascent works like magic at Mohegan Sun">
+                <p>Customer spotlight</p>
+			</div>
+		</a>  
+	</li> 
+</ul>
+
+
+<!-- fix for i9 compatibility view -->
+<div class="ie9_compatibility">
+
+	<!--<div class="footer-index-wrapper">-->
+	<div class="footer-index">
+		Ascent Technology, Inc.
+		&nbsp; &#8226; &nbsp; 
+		Building 200, Suite B2402, One Kendall Square, Cambridge, MA 02139-1589 USA
+		&nbsp; &#8226; &nbsp; 
+		+1.617.395.4800 
+		&nbsp; &#8226; &nbsp; 
+		<a href="mailto:sales[pb]ascent.com"><font color="#696c72">sales@ascent.com</font></a>
+	</div>
+	<!--</div>-->
+ 
+ 
+	<!-- _____________________ Footer _____________________ -->
+	<div id="footerSlideContainer">
+		<div id="footerSlideButton"></div>
+		<div id="footerSlideContent">
+			<div id="footerSlideText">
+        		<br /><br />
+				<p>Ascent Technology, Inc.</p>
+				<p>Building 200, Fourth Floor, Suite B2402, One Kendall Square, Cambridge, Massachusetts 02139-1589 USA</p>
+            	<p>Telephone +1.617.395.4800. Email <a href="mailto:sales[pb]ascent.com"><span style="color:#cecccd !important;">sales@ascent.com</span></a></p>
+           	 	<p>Copyright © 2016 Ascent Technology, Inc. All rights reserved. Unauthorized distribution prohibited. </p>
+            	<br />
+				<p>
+            		<a href="privacy.html">Privacy</a>
+           	 		&nbsp;&nbsp;&nbsp; 
+            		<a href="patents.html">Legal notice</a>
+            		&nbsp;&nbsp;&nbsp; 
+            		<a href="contact.html">Contact</a> 
+           	 		&nbsp;&nbsp;&nbsp;  
+            		<a href="sitemap.html">Sitemap</a> 
+            	</p>
+			</div>
+		</div>
+	</div>
+
+<!-- end ie9_compatibility-->
+</div>
+
+
+
+
+
+<!-- _____________________ SmartPhone _____________________ -->
+<div id="menu-wrap-phone">
+	<div class="phone-row">
+    	<div class="phone-cell"><a href="about-ascent.php">About</a></div>
+        <div class="phone-gap"></div>
+		<div class="phone-cell"><a href="about-events.html">Events</a></div>
+    </div>
+    
+    <div class="phone-gap"></div>
+    
+	<div class="phone-row">
+    	<div class="phone-cell"><a href="about-visit.html">Visiting Ascent</a></div>
+        <div class="phone-gap"></div>
+		<div class="phone-cell"><a href="about-partners.html">Partners</a></div>
+    </div>
+    
+    <div class="phone-gap"></div>
+    
+	<div class="phone-row">
+    	<div class="phone-cell"><a href="products.html">Products overview</a></div>
+        <div class="phone-gap"></div>
+    	<div class="phone-cell"><a href="resource-management-airlines.html">The SmartAirline® Operations Center™ solution</a></div>
+    </div>
+    
+    <div class="phone-gap"></div>
+    
+	<div class="phone-row">
+		<div class="phone-cell"><a href="resource-management-airports.html">The SmartAirport Operations Center® solution</a></div>
+        <div class="phone-gap"></div>
+		<div class="phone-cell"><a href="workforce-management-overview.html">The Ascent WorkZone® workforce management system</a></div>
+    </div>
+    
+	<div class="phone-gap"></div>
+    
+	<div class="phone-row">
+    	<div class="phone-cell"><a href="services.html">Services</a></div>
+        <div class="phone-gap"></div>
+		<div class="phone-cell"><a href="services-implementation.html">Implementation</a></div>
+    </div>
+    
+    <div class="phone-gap"></div>
+    
+	<div class="phone-row">
+    	<div class="phone-cell"><a href="services-training.html">Training</a></div>
+        <div class="phone-gap"></div>
+		<div class="phone-cell"><a href="services-support.html">Support</a></div>
+    </div>
+    
+    <div class="phone-gap"></div>
+    
+	<div class="phone-row">
+    	<div class="phone-cell"><a href="brochures.html">Brochures</a></div>
+    	<div class="phone-gap"></div>
+		<div class="phone-cell"><a href="contact.html">Contact</a></div>
+    </div>
+    
+    <div class="phone-gap"></div>
+    
+	<div class="phone-row">
+    	<div class="phone-cell"><a href="privacy.html">Privacy</a></div>
+        <div class="phone-gap"></div>
+		<div class="phone-cell"><a href="patents.html">Legal notice</a></div>
+    </div>
+    
+    		
+</div>
+<!-- end body wrap -->
+
+<div class="phone-footer">	
+		Ascent Technology, Inc.
+		&nbsp; &#8226; &nbsp; 
+		Building 200, Suite B2402, One Kendall Square, Cambridge, MA 02139-1589 USA
+		&nbsp; &#8226; &nbsp; 
+		+1.617.395.4800 
+		&nbsp; &#8226; &nbsp; 
+		<a href="mailto:sales[pb]ascent.com"><span color="#fff">sales@ascent.com</span></a>
+        <br /><br />
+        Copyright © 2016 Ascent Technology, Inc. All rights reserved. Unauthorized distribution prohibited.
+</div>
+
+
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+	sc_project=3714769; 
+	sc_invisible=1; 
+	sc_partition=44; 
+	sc_security="a0b7ea9c"; 
+</script>
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+
+<noscript>
+	<div class="statcounter">
+		<a href="http://www.statcounter.com/" target="_blank"><img 
+		class="statcounter" src="http://c45.statcounter.com/3714769/0/a0b7ea9c/1/" alt="hit counter code" /></a>
+	</div>
+</noscript>
+
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10910828-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!--email-->
+<script language="javascript" type="text/javascript" src="js/email.js"></script>
+		
+  </body>
+</html>

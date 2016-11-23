@@ -1,0 +1,457 @@
+status: 200
+content-length: 17713
+x-xss-protection: 1; mode=block
+content-location: http://www.ispforum.com/careers/
+vary: Accept-Encoding,User-Agent
+server: Apache
+-content-encoding: gzip
+link: <http://www.ispforum.com/?p=98>; rel=shortlink
+date: Fri, 30 Sep 2016 04:07:03 GMT
+x-frame-options: SAMEORIGIN
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.9.2 (gzip)
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>ISP | Careers</title>
+    
+    <!-- Normalize (before wphead) -->
+    <link href="http://www.ispforum.com/wp-content/themes/gysen/assets/css/libs/normalize.css" rel="stylesheet" />
+    
+    <!-- WP Head -->
+    		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.ispforum.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='download-attachments-frontend-css'  href='http://www.ispforum.com/wp-content/plugins/download-attachments/css/frontend.css?ver=4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://www.ispforum.com/wp-content/plugins/revslider/rs-plugin/css/settings.css?ver=4.6.93' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<script type='text/javascript' src='http://www.ispforum.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='http://www.ispforum.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.ispforum.com/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?ver=4.6.93'></script>
+<script type='text/javascript' src='http://www.ispforum.com/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.6.93'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ispforum.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ispforum.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3" />
+<link rel='canonical' href='http://www.ispforum.com/careers/' />
+<link rel='shortlink' href='http://www.ispforum.com/?p=98' />
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				var ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = '0464020918';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"http://www.ispforum.com/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<link rel="icon" href="http://www.ispforum.com/wp-content/uploads/2016/08/path5374-150x150.png" sizes="32x32" />
+<link rel="icon" href="http://www.ispforum.com/wp-content/uploads/2016/08/path5374-300x266.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.ispforum.com/wp-content/uploads/2016/08/path5374-300x266.png">
+<meta name="msapplication-TileImage" content="http://www.ispforum.com/wp-content/uploads/2016/08/path5374-300x266.png">
+ 
+    
+    <!-- Fonts / Icons -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" />
+    
+    <!-- Bootstrap -->
+    <link href="http://www.ispforum.com/wp-content/themes/gysen/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="http://www.ispforum.com/wp-content/themes/gysen/assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- Slicknav -->
+    <link href="http://www.ispforum.com/wp-content/themes/gysen/assets/slicknav/slicknav.min.css" rel="stylesheet" />
+    <script src="http://www.ispforum.com/wp-content/themes/gysen/assets/slicknav/jquery.slicknav.min.js"></script>
+    
+    <!-- Site -->
+    <link href="http://www.ispforum.com/wp-content/themes/gysen/assets/css/theme.css" rel="stylesheet" />
+    <script src="http://www.ispforum.com/wp-content/themes/gysen/assets/js/libs/jquery.sticky-kit.min.js"></script>
+    <script src="http://www.ispforum.com/wp-content/themes/gysen/assets/js/libs/jquery.zoho-validator.js"></script>
+    <script src="http://www.ispforum.com/wp-content/themes/gysen/assets/js/site.js"></script>
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+               
+</head>
+
+<body class="page page-id-98 page-template-default more-whitespace">
+
+<div id="body-wrap">
+
+	<div id="colourbar"></div>
+
+	<!-- Navbar -->
+	<div id="navbar">
+		<div class="max-width"><div class="body-pad">
+			<a href="http://www.ispforum.com"> 
+				<img id="navbar-img" src="http://www.ispforum.com/wp-content/themes/gysen/assets/img/logo.png" width =87px height=45px alt="logo"/>
+				<div id="navbar-tagline"><span class="hidden-xs">Where The Answer Matters!</span></div>
+			</a>
+			
+			
+			<div class="clearfix"></div>
+		</div></div>
+	</div>
+	
+	<!-- Subnav -->
+	<div id="subnav">
+		<div class="max-width non-relative"><div class="body-pad non-relative">
+			<div class="menu-primary-menu-container"><ul id="primary-menu" class="menu"><li class="has-dropdown">
+	<a href="http://www.ispforum.com/products">Products<span class="icon ion-chevron-down"></span></a>
+	<div class="dropdown-menu-container">
+		<div class="max-width"><div class="body-pad text-style">
+			<!--<h4>Products</h4>-->
+			
+						
+				<div class="row text-style">	
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/products/plato/">PLATO</a></li>
+	
+								
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/products/plato-dts/">PLATO DTS</a></li>
+	
+								
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/products/plato-at/">PLATO AT</a></li>
+	
+								
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/products/ariane/">ARIANE</a></li>
+	
+								
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/products/sp2s-2/">SP<sup>2</sup>S</a></li>
+	
+								
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/products/resolver/">RESOLVER</a></li>
+	
+								
+							</ul>
+						</div>
+						
+									</div>
+				
+						
+			
+		</div></div>
+	</div>
+</li>
+<li class="has-dropdown">
+	<a href="http://www.ispforum.com/services">Services<span class="icon ion-chevron-down"></span></a>
+	<div class="dropdown-menu-container">
+		<div class="max-width"><div class="body-pad text-style">
+						
+				<div class="row text-style">	
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/services/interpretation/">Interpretation</a></li>
+	
+
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/services/simulation/">Simulation</a></li>
+	
+
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/services/training/">Training</a></li>
+	
+
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/services/consulting/">Consulting</a></li>
+	
+
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/services/data-processing/">Data Processing</a></li>
+	
+
+							</ul>
+						</div>
+						
+									</div>
+				
+					</div></div>
+	</div>
+</li>
+<li class="has-dropdown">
+	<a href="http://www.ispforum.com/solutions">Solutions<span class="icon ion-chevron-down"></span></a>
+	<div class="dropdown-menu-container">
+		<div class="max-width"><div class="body-pad text-style">
+						
+				<div class="row text-style">	
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/solutions/production-logging/">Production Logging</a></li>
+	
+								
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/solutions/horizontal-well/">Horizontal Well</a></li>
+	
+								
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/solutions/temperature-modeling/">Temperature Modeling</a></li>
+	
+								
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/solutions/formation-evaluation/">Formation Evaluation</a></li>
+	
+								
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/solutions/dfo-monitoring/">DFO Monitoring</a></li>
+	
+								
+							</ul>
+						</div>
+						
+											<div class="col-sm-2">
+							<ul class="menu-list">
+								<li class="menu-list-heading"><a href="http://www.ispforum.com/solutions/data-extraction/">Data Extraction</a></li>
+	
+								
+							</ul>
+						</div>
+						
+									</div>
+				
+					</div></div>
+	</div>
+</li>
+
+
+</a>
+<li id="menu-item-259" class="menu-item menu-item-type-post_type_archive menu-item-object-library menu-item-259"><a href="http://www.ispforum.com/library/">Library</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="http://www.ispforum.com/support/">Support</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="http://www.ispforum.com/company/">Company</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-98 current_page_item menu-item-99"><a href="http://www.ispforum.com/careers/">Careers</a></li>
+<li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="http://www.ispforum.com/contacts/">Contacts</a></li>
+</ul></div>			
+			<div class="search-container desktop-search">
+				<form role="search" method="get" id="searchform" class="searchform" action="http://www.ispforum.com/">
+	<div>
+		<input autocomplete="off" placeholder="Search ISP.." class="" type="text" value="" name="s" id="s" />
+		<input class="hidden" type="submit" id="searchsubmit" value="Search" />
+	</div>
+</form>			</div>
+			
+			<div class="clear-float"></div>
+		</div></div>
+		
+		<div class="search-container mobile-search">
+			<form role="search" method="get" id="searchform" class="searchform" action="http://www.ispforum.com/">
+	<div>
+		<input autocomplete="off" placeholder="Search ISP.." class="" type="text" value="" name="s" id="s" />
+		<input class="hidden" type="submit" id="searchsubmit" value="Search" />
+	</div>
+</form>		</div>
+		
+	</div>
+		
+	<!-- Content -->
+	<div id="content">
+				
+		<div class="max-width"><div class="body-pad">
+			<div class="col1">
+				<div class="col-inner">									
+										
+					
+<ol class="breadcrumb">
+  <li><a href="http://www.ispforum.com">Home</a></li>  
+  
+    
+		  		  
+		    
+		  		  	<li class="active">Careers</li>
+		  		  
+		  		  
+		  
+		  
+		  
+	</ol>					
+																				<h1 class="page-title">Careers</h1>										
+															<div class="spacer10 hidden-xs"></div>					
+					<div class="hidden-xs title-hr"></div>					
+										
+										
+					
+					
+<div class="text-style">
+	<p>In order to continue to support the company strategy and meet the demands of the industry, ISP is currently recruiting top quality talent in a variety of roles to join our team.</p>
+<p>&nbsp;</p>
+<p>Careers within ISP are varied and dynamic, offering the opportunity to explore a variety of operational divisions.</p>
+<p>&nbsp;</p>
+<p>Deep scientific knowledge and unparalleled understanding within the production and exploration domains are critical, together with excellent interpersonal skills and a spark of passion and inspiration that sets you apart from the rest of the crowd. If you embrace new technologies and are proactive in seeking out new skills and techniques to continually improve product offerings, we would love to hear from you.</p>
+<p>&nbsp;</p>
+<p>We have typically recruited candidates with the following backgrounds/experience:</p>
+<p>&nbsp;</p>
+<ul>
+<li>Degree in geosciences/maths related disciplines (masters degree beneficial but not essential)</li>
+<li>Oil and gas upstream domain experience</li>
+<li>High level of understanding and knowledge of upstream domain tools and software</li>
+<li>High level of understanding of modern upstream domain workflows</li>
+<li>C++ development expertise</li>
+<li>Knowledge / understanding / expertise of using C#, Javascript, PHP, python&#8230;</li>
+<li>Previous experience working within an operator / service company / software consultancy</li>
+</ul>
+<p>&nbsp;</p>
+<p>To apply or request more information, please contact <strong><a href="mailto:info@ispforum.com">info@ispforum.com</a></strong>.</p>
+</div>
+
+			</div></div><!-- End .inner and .col1 -->			
+							<div id="sidebar" class="col2">
+					<div class="col-inner">
+						<div class="txt-style">
+		
+		
+		
+		
+	
+</div>					</div>
+				</div><div class="clear-float"></div><!-- End .col2 (#sidebar) -->						
+				
+		</div></div>
+
+	</div>
+	<!-- #content -->
+<div id="body-wrap">
+	<div class = "max-width"><div class = "body-pad">
+					</div>
+		</div>
+	</div></div>
+</div>
+	
+	<div id="footer-header">
+		<div class="max-width"><div class="body-pad">
+			<div class="footer-meta"><strong>ISP</strong> | Copyright  &copy; Interpretive Software Products  2016</div>
+			<div class="clearfix"></div>
+		</div></div>
+	</div>
+</div>
+<!-- #body-wrap -->
+
+ 
+</body>
+</html>

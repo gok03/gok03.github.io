@@ -1,0 +1,261 @@
+status: 200
+content-length: 12886
+content-location: http://www.lasercycle.com/index.html
+microsoftofficewebserver: 5.0_Pub
+accept-ranges: bytes
+x-powered-by: ASP.NET
+server: Microsoft-IIS/6.0
+last-modified: Fri, 19 Jun 2015 04:37:16 GMT
+etag: "daf2839e49aad01:1829"
+date: Thu, 06 Oct 2016 18:15:24 GMT
+content-type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="includes/lasercycle.css"/>
+<title>LaserCycle Home</title>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script src="/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script>
+	function submitform() {
+		document.search_form.submit() ;
+	}
+	function OpenPopup (c) {
+		window.open(c,'window', 'width=1024,height=659,scrollbars=no,status=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no');
+	}	
+</script>
+</head>
+
+<body>
+<!-- Begin of Epages Links -->
+<script type="text/javascript">
+$(document).ready(function (){
+	/*alert("jQuery running!");*/
+	$("div#LoginForm")
+	$("#a_login").click(function(){
+		$("div#LoginForm").toggleClass("noshow");
+		return false;
+	});
+	$("#logfrmclose").click(function(){
+		$("div#LoginForm").toggleClass("noshow");
+		return false;
+	});
+});
+</script>
+
+<div id="login"><a href="#" class="navlinks" id="a_login">Log In</a></div>
+<div id="contact"><a href="/ContactUs.html">Contact Us</a></div>
+<div id="product">Product Search</div>
+<SCRIPT LANGUAGE="JavaScript">
+ 
+// <!-- Begin
+            function ignoreSpaces(string) {
+		var temp = "";
+		string = '' + string;
+		splitstring = string.split(" ");
+		for(i=0;i<splitstring.length;i++)
+		  temp += splitstring[i] + '*';
+		temp = temp.substr(0,temp.length -1)
+		return temp;
+		}
+	    function CaptureEnter(ctl){
+		var key  = window.event.keyCode; 
+			// window.alert ("Control Name: " + ctl + "  KeyCode: " +  key);
+			// window.alert (this.value)
+			if (key!=13)
+		        return ignoreSpaces(ctl);
+			else 
+			return(ctl)
+		}
+ 
+// --> End                       
+ </SCRIPT> 
+            <div class="ContextBox">
+              <div class="BoxContainer">
+                <div class="ContextBoxHead">
+                  </div>
+                <form id="form1" action="https://webstore.lasercycle.com/epages/Store.sf/?ObjectPath=/Shops/LaserCycle&amp;ViewAction=DetailSearchProducts" method="post">
+                  <div class="ContextBoxBody">
+                    <input type="hidden" name="Search" value="SF-Allstrings" />
+                    <input type="hidden" name="ErrorAction" value="View" />
+                    <input type="hidden" name="ErrorObjectID" value="3339" />
+                    <input type="hidden" name="NavBarSearch" value="1" />
+                    <div class="Entry">
+                      <div class="InputField SearchForm">
+                        <input class="Search" id="SearhString" name="SearchString" 
+value="" onBlur="this.value=ignoreSpaces(this.value);" onkeydown="this.value=CaptureEnter(this.value)"  />
+                        <input  id="search_button" type="image" src="https://webstore.lasercycle.com/WebRoot/Store/SF/Icon/SimpleSymbols/ico_s_search.gif" title="Start Search"/>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+			
+			<div class="noshow" id="LoginForm">
+<form id="logform" action="https://webstore.lasercycle.com/epages/Store.sf/?ObjectPath=/Shops/LaserCycle" method="post">
+    
+      <div class="ContextBoxBody">
+        <input type="hidden" name="ChangeAction" value="SaveLoginForm" />
+        <input type="hidden" name="RegistrationObjectID" value="3339" />
+        <input type="hidden" name="ErrorAction" value="View" />
+        <input type="hidden" name="ErrorObjectID" value="3339" />
+        <div class="Entry ">
+          <div class="InputLabelling">User Name</div>
+          <div class="InputField">
+            <input class="Login" name="Login" value="" />
+          </div>
+        </div>
+        <div class="Entry ">
+          <div class="InputLabelling">Password</div>
+          <div class="InputField">
+            <input class="Login" name="Password" type="password" value="" />
+          </div>
+        </div>
+      </div>
+      <div class="ContextBoxBody">
+        <input type="submit" value="Sign in" /><br />
+      </div>
+<br/>
+	<div class="ContextBoxBody">
+        <a href="#" class="navlinks" id="logfrmclose" alt="close login box">close</a><br />
+      </div>
+</form>
+
+</div>
+			<!-- End of Epages Links -->
+<div id="container">
+    <!-- SOCIAL MEDIA -->
+    <div id="social_media">
+        <div id="follow_us">Follow Us</div>
+        <div id="facebook"><a href="http://www.facebook.com/LaserCycle" target="_blank"><img src="images/facebook.png" width="24" height="23" /></a></div>
+        <div id="twitter"><a href="https://twitter.com/lasercycle" target="_blank"><img src="images/twitter.png" width="24" height="23" /></a></div>
+    </div>
+    <!-- END SOCIAL MEDIA -->
+    <!-- TOP BANNER -->
+    <div id="banner">
+        <div id="laser_cycle_logo"><a href="/index.html"><img src="images/laser_cycle_logo.png" width="365" height="81" /></a></div>
+        <div id="menu_area">
+                <div id="menu">
+                        <ul>
+                            <li class="double_line"><a href="/products.html">Products &<br />Services</a></li>
+                            <li><a href="/environmental.html">Environmental</a></li>
+                            <li class="double_line"><a href="/print_management.html">Print<br />Management</a></li>
+                            <li class="double_line"><a href="/document_management.html">Document<br />Management</a></li>
+                            <li><a href="/about_us.html">About Us</a></li>
+						</ul>
+
+			</div>				
+        
+        </div><br><br><br>
+		<div align="right" id="hp-supplies-medallion"><a href="/index.html"><img src="images/hp-supplies-medallion.gif" width="130" height="50" /></a></div>
+           
+        </div>
+    <div id="black_line"></div>
+  <!-- END TOP BANNER -->
+    <!-- MOVIE -->
+    <div id="movie_area">
+      <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1024" height="290">
+        <param name="movie" value="movie/LC-home_banner_FINAL3.swf" />
+        <param name="quality" value="high" />
+        <param name="wmode" value="opaque" />
+        <param name="swfversion" value="6.0.65.0" />
+        <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+        <param name="expressinstall" value="Scripts/expressInstall.swf" />
+        <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+        <!--[if !IE]>-->
+        <object type="application/x-shockwave-flash" data="movie/LC-home_banner_FINAL3.swf" width="1024" height="290">
+          <!--<![endif]-->
+          <param name="quality" value="high" />
+          <param name="wmode" value="opaque" />
+          <param name="swfversion" value="6.0.65.0" />
+          <param name="expressinstall" value="Scripts/expressInstall.swf" />
+          <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+          <div>
+            <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+            <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+          </div>
+          <!--[if !IE]>-->
+        </object>
+        <!--<![endif]-->
+      </object>
+</div>
+    <div id="black_line"></div>    
+    <!-- END MOVIE -->
+    <!-- NEWS BAR -->
+<!--	
+<div id="news_bar">LaserCycle earns <a href="http://www.epa.gov/epawaste/partnerships/wastewise/about.htm" target="_blank">2011 EPA WasteWise Partnership Certificate</a></div>
+-->
+<div id="news_bar">Click <a href="/questionnaire.html">Here</a> to discover the health of your printing devices.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/referral.html">Spread the Word!</a></div>
+    <div class="rollover_button" id="order_now"><a href="/products.html">Order from LaserCycle NOW!</a></div>
+    <!-- END NEWS BAR -->
+<!-- HOME PAGE CONTENT -->
+    <div id="top_full_separator"></div>
+    <div id="home_content"><a href="environmental.html"><img src="images/grenk.jpg" width="334" height="229" /></a><img src="images/home_left_vertical_separator.jpg" width="42" height="229" /><a href="print_management.html"><img src="images/print_management.jpg" width="293" height="229" /></a><img src="images/home_right_vertical_separator.jpg" width="43" height="229" /><a href="document_management.html"><img src="images/document_management.jpg" width="312" height="229" /></a>
+    </div>
+<div id="home_bottom_separator"></div>
+    <!-- END HOME PAGE CONTENT -->
+    <!-- LINKS AREA -->
+<div id="links">
+        <div id="links_content">
+  
+         <div id="links_bar">
+                <h1><a href="/products.html">Products</a></h1>
+                <h3><a href="https://webstore.lasercycle.com/epages/Store.sf/?ObjectPath=/Shops/LaserCycle/Categories/Pages/Ink">Ink Cartridges</a></h3>        
+                <h3><a href="https://webstore.lasercycle.com/epages/Store.sf/?ObjectPath=/Shops/LaserCycle/Categories/Pages/Toner">Toner Cartridges</a></h3>        
+                <h3><a href="https://webstore.lasercycle.com/epages/Store.sf/?ObjectPath=/Shops/LaserCycle/Categories/Pages/Other">Ribbon/Labels</a></h3>        
+                <h3><a href="https://webstore.lasercycle.com/epages/Store.sf/?ObjectPath=/Shops/LaserCycle/Categories/GRENK">Eco-Friendly Ink & Toner</a></h3>        
+                <h3><a href="https://webstore.lasercycle.com/epages/Store.sf/?ObjectPath=/Shops/LaserCycle/Categories/Printers">Equipment</a></h3>        
+            </div>
+            <div id="links_bar">
+                <h1><a href="/services.html">Services</a></h1>
+                <h3><a href="https://webstore.lasercycle.com/epages/Store.sf/?ObjectPath=/Shops/LaserCycle/Categories/Pages/ServRequest">Printer Repair/Maintenance</a></h3>        
+                <h3><a href="http://webstore.lasercycle.com/images/rma.pdf">Return Authorization</a></h3>        
+                <h3><a href="/GeneralFAQs.html">FAQ</a></h3>        
+                <h3><a href="/terms.html">Terms &amp; Conditions</a></h3>        
+                <h3><a href="https://webstore.lasercycle.com/epages/Store.sf/?ObjectPath=/Shops/LaserCycle/Categories/Pages/RecyclingEmpties">Recycle Empties</a></h3>        
+                <h3><a href="/Disposal.html">Equipment Disposal</a></h3>        
+            </div>
+            <div id="links_bar">
+                <h1><a href="/environmental.html">Environmental</a></h1>
+                <h3><a href="/AboutGrenk.html">About grenk&#x2122;</a></h3>        
+                <h3><a href="/Reporting.html">Reporting</a></h3>        
+                <h3><a href="/CaseStudies.html">Case Studies</a></h3>        
+                <h3><a href="/Partners.html">Partners</a></h3>        
+                <h3><a href="/Green.html">Green Initiatives</a></h3>        
+            </div>
+            <div id="links_bar">
+                <h1><a href="/print_management.html">Print Management</a></h1>
+                <h3><a href="/PMFAQ.html">FAQ</a></h3>        
+                <h3><a href="/Monitoring.html">Monitoring Systems</a></h3>        
+                <h3><a href="/TPP.html">Toner Plus Program</a></h3>        
+            </div>
+            <div id="links_bar">
+                <h1><a href="/document_management.html">Document Management</a></h1>
+                <h3><a href="http://square-9.com/casestudies.html" target="_blank">Case Studies</a></h3>
+				<h3><a href="/DMPartners.html">Partners</a></h3>
+				<h3><a href="http://www.youtube.com/watch?v=t8oHIDjfQdQ" target="_blank">YouTube Demo</a></h3>				
+            </div>
+            <div id="links_bar">
+                <h1><a href="/about_us.html">About Us</a></h1>
+                <h3><a href="/Directions.html">Directions</a></h3>        
+                <h3><a href="/Testimonials.html">Testimonials</a></h3>        
+                <h3><a href="/Openings.html">Job Openings</a></h3>        
+                <h3><a href="/ContactUs.html">Contact Us</a></h3>        
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div id="bella_designs">
+            <a href="http://www.belladesignskc.com"><img src="images/bella_designs_kc.png" /></a>
+        </div>
+    </div>
+    <!-- END LINKS AREA -->
+</div>
+<script type="text/javascript">
+</script>
+</body>
+</html>

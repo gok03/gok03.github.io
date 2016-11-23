@@ -1,0 +1,522 @@
+status: 200
+content-length: 22556
+content-location: http://www.aitcinc.com
+x-powered-by: PHP/5.4.45
+vary: Accept-Encoding,User-Agent
+server: Apache/2.4.23
+-content-encoding: gzip
+date: Thu, 20 Oct 2016 15:59:04 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.9.2 (gzip)
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>IT Services, Systems, IT Company, Winter Springs FL, Orlando Florida</title>
+
+<meta name="description" content="AITC, Inc. offers IT services and support, IT systems integration, staff augmentation, cloud computing, data center support, voice, video, data, mobility systems implementation, network infrastructure optimization,  in Winter Springs Florida, Orlando" />
+
+<meta name="keywords" content="it, systems, system, support, company, services, network, equipment, servers, cloud, computing, storage, desktop, laptop, printer, security, firewall, data, voice, wireless, consulting, information, technology, data, training, certification, optimization, integration, provisioning, cyber, data center, courseware, development, logistics, optical, installation, hardware, low, voltage, cable" />
+    
+
+		
+	
+	<!-- Favorites icon -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	
+	<!-- Style sheets -->
+	<link rel="stylesheet" type="text/css" href="css/reset.min.css" />
+ 
+	<link rel="stylesheet" type="text/css" href="css/menu.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fancybox.css" />
+	<link rel="stylesheet" type="text/css" href="css/tooltip.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link href="news_ticker/styles/ticker-style.css" rel="stylesheet" type="text/css" />
+ 
+	
+	<!-- jQuery framework and utilities -->
+	<script type="text/javascript" src="js/jquery-1.4.min.js"></script>
+ 
+	<script type="text/javascript" src="js/jquery-ui-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+	<script type="text/javascript" src="js/hoverIntent.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bgiframe.min.js"></script>
+   
+	<!-- Drop down menus -->
+	<script type="text/javascript" src="js/superfish.min.js"></script>
+	<script type="text/javascript" src="js/supersubs.min.js"></script>
+	<!-- Tooltips -->
+	<script type="text/javascript" src="js/jquery.cluetip.min.js"></script>
+	<!-- Input labels -->
+	<script type="text/javascript" src="js/jquery.overlabel.min.js"></script>
+	<!-- Anchor tag scrolling effects -->
+	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+	<script type="text/javascript" src="js/jquery.localscroll-min.js"></script>
+	<!-- Inline popups/modal windows -->
+	<script type="text/javascript" src="js/jquery.fancybox-1.2.6.pack.js"></script>
+    
+   
+
+
+ 	
+ 
+		
+		
+	
+    
+	
+	<!-- Slide shows -->
+		<!-- Cycle 	(default) -->
+		<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+		<script type="text/javascript">
+			// initialize slideshow (Cycle)
+			var firstCycle = true;
+			$(document).ready(function($) {
+				if ($('#Slides').length > 0) {
+					$('#Slides').cycle({ 
+						fx: 'scrollHorz',
+						speed: 750,
+						timeout: 6000, 
+						randomizeEffects: false, 
+						easing: 'easeOutCubic',
+						next:   '.slideNext', 
+						prev:   '.slidePrev',
+						pager:  '#slidePager',
+						cleartypeNoBg: true,
+						after: function(curr, next, opts) {
+							// reset the overlay for the next slide
+							jQuery('#SlideRepeat').css('cursor','default').unbind('click');
+							// get the link and apply it to the overlay
+							toGet = (firstCycle) ?  $('#Slides').children(':eq(0)') : next;
+							var linkURL = jQuery(toGet).attr('href') || jQuery(toGet).children('a').attr('href') || false;
+							if (linkURL) {
+								jQuery('#SlideRepeat').css('cursor','pointer').click( function() {
+									document.location.href = linkURL;
+								});
+							} 
+							firstCycle = false;
+						}
+					});
+				}
+			});
+		</script>
+        
+        
+		
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script> 
+    
+    <!-- LIGHTBOX -->
+	<script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
+ 		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+    
+		     <script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("area[rel^='prettyPhoto']").prettyPhoto();
+				
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+		
+				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+					changepicturecallback: function(){ initialize(); }
+				});
+
+				$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+					custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+					changepicturecallback: function(){ _bsap.exec(); }
+				});
+			});
+			</script>
+            <!-- LIGHTBOX END -->
+	<script src="news_ticker/includes/jquery.ticker.js" type="text/javascript"></script>
+	<script src="news_ticker/includes/site.js" type="text/javascript"></script>
+        
+	<!-- Font replacement (cufón) -->
+	<script src="js/cufon-yui.js" type="text/javascript"></script>
+	<script src="js/LiberationSans.font.js" type="text/javascript"></script>
+
+ 
+           
+            
+	<!-- IE only includes (PNG Fix and other things for sucky browsers -->
+	
+	<!--[if lt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie-only.css">
+		<script type="text/javascript" src="js/pngFix.min.js"></script>
+		<script type="text/javascript"> 
+			$(document).ready(function(){ 
+				$(document.body).supersleight();
+			}); 
+		</script> 
+	<![endif]-->
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie-only-all-versions.css"><![endif]-->
+
+	
+	
+	<!-- BEGIN: For Demo Only -->
+		<!--			
+		These entries are only needed for demo features, such as the real-time skin changer.
+		They can be deleted for production installs without effecting the theme's design or 
+		any of the funcionality.
+		-->
+		<script type="text/javascript" src="js/demo.js"></script>	
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<style type="text/css">
+		body {
+	background-image: url(images/footerBg-verticalRule.gif);
+}
+        </style>
+	<!-- END: For Demo Only -->
+	
+	
+
+	<!-- Functions to initialize after page load -->
+	<script type="text/javascript" src="js/source/onLoad.js"></script>
+<!-- START: Google Analytics -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53643692-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- END: Google Analytics -->
+</head>
+<body>
+
+
+
+<!-- Site Container -->
+<div id="Wrapper">
+	<div id="PageWrapper">
+	  <div class="pageTop"></div>
+		<div id="Header">
+		
+			<!-- Main Menu -->
+			<div id="MenuWrapper">
+				<div id="MainMenu">
+					<div id="MmLeft"></div>
+					<div id="MmBody">
+						
+						<!-- Main Menu Links -->
+                        
+                        
+                        <ul class="sf-menu">
+					<li class="current"><a href="index.html">Home</a></li> 
+					<li><a href="#">About</a> 
+						<ul class="sub-menu"> 
+							<li><a href="company.html">Company</a></li>
+									<li><a href="mission.html">Mission</a></li>
+									<li><a href="meet-our-team.html">Meet Our Team</a></li>
+                                    <li><a href="executive-leadership.html">Executive Leadership</a></li>
+                                    <li><a href="contracts-and-teams.html">Contracts and Teams</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="industry-expertise.html">Industry Expertise</a></li></ul> <li><a href="#">Products & Services</a>
+						<ul class="sub-menu"> 
+							<li><a href="products.html">Products</a></li> 
+							<li><a href="assessment-design-and-Implementation-services.html">Assessment, Design and Implementation Services</a></li> 
+							<li><a href="consulting-services.html">Consulting Services</a></li>
+                            <li><a href="brands.html">Brands</a></li> <li><a href="logistics.html">Logistics</a></li> </ul>
+					</li> 
+					 <!--<li><a href="#">News</a></li>-->
+					<li><a href="http://aitcnews.com">News and Blog</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+					 
+				</ul>
+                        
+					
+						
+					
+						
+					</div>
+					<div id="MmRight"></div>
+				</div>
+			</div>
+			
+			 
+			
+			<!-- Logo -->
+			<div id="Logo">
+				<a href="index.html"></a>
+			</div>
+			
+			<!-- End of Content -->
+			<div class="clear"></div>
+		
+		</div>
+
+		<!-- Slide show: jQuery Cycle (default) -->
+		<div id="Slideshow">
+			<div id="SlideTop"></div>
+			<div id="SlideRepeat"></div>
+			<div id="SlideBottom"></div>
+			<div id="Slides">
+				 <img src="images/slideshow/slide-1.png" width="948" height="341" alt="IT Company" /> 
+				<img src="images/slideshow/slide-2.png" width="948" height="341" alt="IT Services" />
+				 <img src="images/slideshow/slide-3.png" width="948" height="341" alt="Orlando Florida" /> 
+				<img src="images/slideshow/slide-4.png" width="948" height="341" alt="IT Consulting" />
+                <img src="images/slideshow/slide-5.png" width="948" height="341" alt="IT Support" />
+			 
+			</div>
+			<a href="#" class="slidePrev"></a>
+			<a href="#" class="slideNext"></a>
+			<div id="slidePager"></div>
+		</div>
+		
+		<div class="pageMain">
+		
+			<!-- Showcase Content 
+			<div id="Showcase">
+			
+				<div class="two-thirds">
+					<img src="images/icons/monitor-skins.png" width="85" height="75" alt="computer monitor" style="float:left; margin: -2px 30px 0 15px;" /> 
+					<h1 class="title">
+						5 Skins in 1 Theme
+						<span>Use a preset color or create your own custom skin in minutes</span>
+					</h1>
+					 
+				</div>
+				
+				<div class="one-third">
+					<img src="images/icons/projector.png" width="96" height="75" alt="digital projector" style="float:right; margin: 0 8px 0 0;" /> 
+					<h1 class="title">
+						3 Slide Shows
+						<span>A style for every layout</span>
+					</h1>
+				</div>
+				
+				
+				
+			</div>-->
+			
+			<!-- Page Content -->
+			<div class="contentArea">
+			
+            <!-- NEWS TICKER -->
+            <ul id="js-news" class="js-hidden">
+                <li><a href="http://aitcnews.com/archives/36">US Army Awards AITC $70M Contract for Medical Simulation Support Services as Prime Contractor to Support Medical Simulation-Based Training</a></li><li><a href="http://aitcnews.com/archives/30">AITC Pres. Gabriel Ruiz, is among 25 distinguished community leaders to be honored at OBJ&rsquo;s annual Veterans of Influence Awards Luncheon</a></li><li>AITC is proud to announce that we have been authorized as a Crestron Dealer.</li><li>AITC receives new TO under ARCTIC contract to procure mobile generators for the Mobile Production Center.</li><li>AITC is Awared extension to Transport Medical Training Laboratory (TMTL) contract.</li><li>AITC is Awarded contract to support PEO STRI G4 Storage Facility.</li><li>AITC is Awarded contract to support the Center of Excellence Battle Lab at Fort Gordon.</li><li>AITC Receives a Professional Services contract to support the Department of Interior (DOI) in Sierra Vista, AZ.</li><li>AITC to provide high-end IT solutions to the Air Force&rsquo;s 1st Special Operations Squadron, Hurlburt Field, FL. </li><li>US Army FT Buchanan awards AITC a multi-year Professional Services contract to support the Department of Public Works (DPW).</li><li>The US Army Information Systems Engineering Command (ISEC) awards AITC a 4-year $3.4-Million contract for IT and A/V engineering services.  </li><li>AITC receives 5-year Professional IT Services contract to support the Air Force Agency for Modeling and Simulation (AFAMS) in Orlando FL.</li><li>AITC's awarded a $45-Million Army contract to procure, deliver, install and test Information Technology systems to modernize training ranges. </li>  	<!--
+    <li><a href="http://aitcinc.com/news/">AITC receives contract for Haivision video encoders/decoders for US Special Operations Cmd, 2nd Special Operations Squadron, Hurlburt Field, FL</a></li>
+	<li><a href="http://aitcinc.com/news/">US Army Europe Vehicle Registry awards AITC the second contract for Brocade gear to be able to connect the 2nd floor to their existing VLAN</a></li>
+	<li><a href="http://aitcinc.com/news/">AITC is pleased to announce a partnership with Kaspersky Lab, a leading manufacturer of Antivirus and Internet Security software products and software appliances</a></li>
+	<li><a href="http://aitcinc.com/news/">AITC selected as the “39th Fastest Growing Company” in the state of Florida by the Florida Business Journal!</a></li>
+	<li><a href="http://aitcinc.com/news/">Gabriel Ruiz, AITC owner, was nominated by FSBDC at UCF as SBA Small Business Person of the Year!</a></li>
+	<li><a href="http://aitcinc.com/news/">AITC technical personnel have completed the Brocade Certified Network Professional examination!</a></li>
+	<li><a href="http://aitcinc.com/news/">AITC Receives a one-year contract from the Veterans Administration (VA) to provide staging and logistics support for the Veterans Health Administration (VHA) Program</a></li>
+	<li><a href="http://aitcinc.com/news/">AITC Receives a one-year Air Force contract to procure, implement and support deployable wireless systems for the Joint Task Force Civil Support (JTF- CS)</a></li>
+    //-->
+ 		</ul>
+				<div class="two-thirds">
+					
+					
+		 
+
+
+ 
+
+<div class="ribbon">
+						<div class="wrapAround"></div>
+						<div class="tab">
+							<span>Advanced IT Concepts - AITC Inc. Makes IT Happen</span>
+						</div>
+					</div>
+
+
+					<p class="impact">Performance is driven by technology.  Organizations implementing the latest, innovative and cost effective IT solutions perform more efficiently and achieve success more often and much faster. Let AITC help you succeed!</p>
+					 
+
+<p>Let AITC partner with you to increase your organization’s productivity and efficiency by designing and delivering proven and reliable IT solutions – fast! 
+<br />
+<strong>We Offer:
+  </strong> 
+
+<ul class="bullet-check2">
+
+
+	<li>Full IT Systems Integration, End-To-End provisioning</li>
+<li>Value-Added-Reselling and support of over 1,200 partner brands</li>
+<li>Professional Services, Staff Augmentation, Project Implementation</li>
+<li>IT Infrastructure Connectivity, Managed Services, Cloud Computing, Data Center support</li>
+<li>Voice, Video, Data & Mobility Systems implementation and support</li>
+<li>Network and Infrastructure Optimization</li>
+<li>IT and Cyber Security Protection Services</li>
+<li>Training and Certification, Courseware Development</li>
+<li>Full Logistics Support (Receiving, Inspecting, Storing, Staging, Distributing)</li>
+
+
+
+
+
+
+
+</ul></p>
+
+
+
+
+    
+	
+    
+    
+    
+    
+    
+				  <div class="featuredContent">
+                    
+                    <div class="ribbon">
+						<div class="wrapAround"></div>
+						<div class="tab">
+							<span>Products and Services </span>
+						</div>
+					</div>
+						
+                        
+                        <!-- Featured Item -->
+						<div class="featuredItem"> <a href="products.html"><img src="images/products.png" alt="20 years of expertise" usemap="#Map" />
+                            <map name="Map" id="Map">
+                            <area shape="rect" coords="2,8,111,149" href="advisory-services.html?iframe=true&amp;width=800&amp;height=600" rel="prettyPhoto[iframe]" alt="Advisory Services" />
+                            <area shape="rect" coords="120,4,227,144" href="strategic-planning.html?iframe=true&amp;width=800&amp;height=600" rel="prettyPhoto[iframe]" alt="Strategic Planning" />
+                            
+                            <area shape="rect" coords="238,4,345,144" href="program-management.html?iframe=true&amp;width=800&amp;height=600" rel="prettyPhoto[iframe]" alt="Program Management" />
+                            <area shape="rect" coords="354,3,461,143" href="engineering-support.html?iframe=true&amp;width=800&amp;height=600" rel="prettyPhoto[iframe]" alt="Engineering Support" />
+                            <area shape="rect" coords="467,2,574,142" href="equipment-sourcing.html?iframe=true&amp;width=800&amp;height=600" rel="prettyPhoto[iframe]" alt="Equipment Sourcing" />
+                            <area shape="rect" coords="4,153,111,293" href="system-integration.html?iframe=true&amp;width=800&amp;height=600" rel="prettyPhoto[iframe]" alt="System Integration" />
+                            <area shape="rect" coords="118,154,225,294" href="technology-insertion.html?iframe=true&amp;width=800&amp;height=600" rel="prettyPhoto[iframe]" alt="Technology Insertion" />
+                            <area shape="rect" coords="234,151,341,291" href="systems-development.html?iframe=true&amp;width=800&amp;height=600" rel="prettyPhoto[iframe]" alt="Systems Deployment" />
+                            <area shape="rect" coords="352,153,459,293" href="training-development.html?iframe=true&amp;width=800&amp;height=600" rel="prettyPhoto[iframe]" alt="Training Development" />
+                             <area shape="rect" coords="465,152,572,292" href="logistic-support.html?iframe=true&amp;width=800&amp;height=600" rel="prettyPhoto[iframe]" alt="Logistic Support" />
+                            </map>
+						</a> 
+                        
+ 
+	 
+		
+                             
+                
+                  </div>
+					
+                    
+                    <div class="hr2"></div>
+                    
+                    
+				 
+					 
+					
+                  </div>
+					
+				</div>
+				
+				<div class="one-third">
+				 
+ 	 <h1 class="title">
+						Newsletter
+						<span>Sign Up For Our Newsletter</span>
+					</h1>
+					
+					<script type="text/javascript" src="http://www.formstack.com/forms/js.php?1306408-oNGhAv7W5b-v3&jsonp"></script><noscript><a href="http://www.formstack.com/forms/?1306408-oNGhAv7W5b" title="Online Form">Online Form - Constant Contact List Signup</a></noscript><div style="text-align:right; font-size:x-small;"><a href="http://www.formstack.com/try-formstack?utm_source=h&utm_medium=jsembed&utm_campaign=fa&fa=h,1306408" title="Web Form Creator"> </a></div>
+					 
+					
+		 
+				 
+                    
+                    
+                    
+                  
+	  
+                    
+                    <!-- Testimonial/Quote -->
+					<div class="quote">
+						<div class="quoteBox-1">
+							<div class="quoteBox-2">
+								<p>“As expected, the implementation was flawless, but AITC went above and beyond the required contract. They installed, at no additional cost, 100% redundant cable drops, a savings of over $7,000. They also installed, free of charge, patch panels and other components required for the installation but not provided by the government.”</p>
+							</div>
+						</div>
+					</div>
+					<div class="quoteAuthor">
+						<p class="name"><a href="testimonials.html">Read More Testimonials</a></p>
+						 
+				  </div>
+				 
+	
+				</div>
+				
+				<!-- End of Content -->
+				<div class="clear"></div>
+			
+			</div>
+			
+		</div>
+		
+		<!-- Footer -->
+		<div id="Footer">
+			<div id="FooterTop"></div>
+			<div id="FooterContent">
+			
+				<div class="contentArea">
+				
+					<!-- Column 1 -->
+                    <div class="one-third">
+						<h3>Stay Connected</h3>
+						<ul class="horizList">
+							<li><a href="https://www.facebook.com/pages/AITC-Inc/233130543455480?ref=hl"><img src="images/icons/social/facebook.png" width="40" height="40" alt="Facebook" /></a></li>
+							<li><a href="https://twitter.com/aitcinc"><img src="images/icons/social/twitter.png" width="40" height="40" alt="Twitter" /></a></li>
+							<li><a href="http://www.linkedin.com/company/advanced-it-concepts?trk=top_nav_home"><img src="images/icons/social/linkedin.png" width="40" height="40" alt="LinkedIn" /></a></li></ul>
+						<p>Keep track of AITC on all your favorite social networks.</p>
+					</div>
+                    
+
+					
+
+					<!-- Column 3 -->
+                    
+					<div class="one-third"><h3>Contact Information</h3>
+						 <div class="contactMark"></div>
+						 407.914.2484<br />
+							<a href="mailto:info@aitcinc.com">Email Us</a><br />
+							<a href="#">www.aitcinc.com</a><br /> 
+                            
+                            <a href="http://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-498AA&contractorName=ADVANCED+IT+CONCEPTS%2C+INC.&executeQuery=YES" ><div class="gsa"></div></a>
+                            </div>
+                           
+                            
+                            
+                            <!-- Column 3 -->
+					<div class="one-third last"><h3>Affiliations</h3>
+						 <div class="affiliations"></div>
+				  </div>
+                   
+                  <!-- End of Content -->
+					<div class="clear"></div>
+                   
+	
+			  </div>
+					
+			</div>
+			<div id="FooterBottom"></div>
+			
+		</div>
+        
+         <div><img src="images/logos.png" alt="IT Service" /></div>
+		
+	  <!-- Copyright/legal text -->
+		<div id="Copyright">
+			<p>Copyright &copy; 2012 - 2016 <a href="http://2020mediainc.com" onclick="window.open(this.href); return false;">20/20 Media, Inc.</a> - All rights reserved.</p><br /><br />
+		</div>
+		
+	</div>
+</div>
+
+<!-- Activate Font Replacement (cufón) -->
+<script type="text/javascript"> Cufon.now(); </script>
+
+
+
+	
+                 
+<script src="http://cdn.wibiya.com/Toolbars/dir_1282/Toolbar_1282071/Loader_1282071.js" type="text/javascript"></script><noscript><a href="http://www.wibiya.com/">Web Toolbar by Wibiya</a></noscript> </body>
+</html>

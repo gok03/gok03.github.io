@@ -1,0 +1,261 @@
+status: 200
+content-length: 9384
+content-location: http://www.goldtech2000.com/careers.htm
+-content-encoding: gzip
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Apache/2.4.7 (Ubuntu)
+last-modified: Thu, 18 Aug 2016 17:44:19 GMT
+etag: "24a8-53a5c219ea2c0-gzip"
+date: Wed, 21 Sep 2016 04:12:44 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<title>Goldtech 2000</title>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta content="" name=description>
+<meta content="Job, Job search, Jobs, Online jobs, Online recruitment, Career, Careers, Career Opportunities, Employment, Employees, Employers, Employment Openings, Outsourcing, Recruit, Recruiter, Recruiter, Recruiters, Recruiting, Recruitment, Consultant, Consulting, Contractor, Contractors, Placement, Placement services, Resume, Resumes, Unemployment"
+                        name=keywords>
+<meta name="robots" content="all">
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- ｩ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="designengineering.htm">Design/Engineering</a>'
+menu1[1]='<a href="networkservices.htm">Network/Managed Services</a>'
+menu1[2]='<a href="securityconsulting.htm">Security Consulting</a>'
+menu1[3]='<a href="hardwaresales.htm">Hardware Sales/Services</a>'
+menu1[4]='<a href="partnershipstaffing.htm">Partnership Staffing</a>'
+menu1[5]='<a href="commodities.htm">Commodities</a>'
+
+//Contents for menu 2, and so on
+var menu2=new Array()
+menu2[0]='<a href="http://cnn.com">CNN</a>'
+menu2[1]='<a href="http://msnbc.com">MSNBC</a>'
+menu2[2]='<a href="http://news.bbc.co.uk">BBC News</a>'
+		
+var menuwidth='165px' //default menu width
+var menubgcolor='purple'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+/*if (ie4||ns6) return false
+else return true*/
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+<link href="goldtech2.css" rel="stylesheet" type="text/css">
+</head>
+        <body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td colspan="3" bgcolor="#550055" height="10"></td>
+</tr>
+<tr>
+<td bgcolor="#550055" valign="top" width="11%" height="72"><br /></td>
+<td align="center" bgcolor="#550055" valign="top" width="78%"><img src="index_r1_c1a.gif" width="650" height="50" /><br /> 
+<table class="menubar" bgcolor="#550055" border="0" width="650">
+<tbody>
+<tr>
+<td id="dropmenudiv1"><a href="index.html">Home</a></td>
+<td id="dropmenudiv1"><a href="aboutus.htm">About Us</a></td>
+<td id="dropmenudiv1"><a href="practices.htm" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, menu1, '150px')" onmouseout="delayhidemenu()">Practices</a></td>
+<td id="dropmenudiv1"><a href="careers.htm">Careers</a></td>
+<td id="dropmenudiv1"><a href="clients.htm">Clients</a></td>
+<td id="dropmenudiv1"><a href="contactus.htm">Contact Us</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td bgcolor="#550055" width="11%" height="72"></td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="11%"></td>
+<td align="center" valign="top" width="170"><br /> <br /> <img src="images/image016.jpg" width="166" height="170" /> <br /> <br /> 
+<table class="menubar1" border="0">
+<tbody>
+<tr>
+<td align="left"><a href="expertise.htm">Our Expertise</a></td>
+</tr>
+<tr>
+<td align="left"><a href="executiveteam.htm">Executive Team</a></td>
+</tr>
+<tr>
+<td align="left"><a href="governmentsector.htm">Government Sector</a></td>
+</tr>
+<tr>
+<td align="left"><a href="advisoryboard.htm">Advisory Board</a></td>
+</tr>
+<tr>
+<td align="left"><a href="detailedbenefits.htm">Detailed Benefits</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td align="justify"><br />
+<p class="header" align="center"><b>GoldTech</b><br /> <br />Your Technology Source</p>
+<p>Thank you for your interest in a career with GoldTech. <br /> <br /> GoldTech believes our employees and associates are our number one resource. 
+		The level of professionalism found in our employees makes us a leader 
+		in our industry. <br /> <br />GoldTech's tremendous growth rate creates exciting
+                employment opportunities with unlimited potential. We back our employees
+                110% and expect the same loyalty in return. <br /> <br /> GoldTech offers excellent compensation and <a href="detailedbenefits.htm" class="menubar"><span style="text-decoration: underline;">benefits 
+		packages</span></a> to its contract and full-time team members, that include 
+		education and training, and an enthusiastic, challenging work environment. 
+			Come join our exceptional team if you are accustomed to a winning team. Please click 
+		on the link to the left of the page for detailed benefits offered to full time 
+		employees.<br /><br /> <a href="openpositions.htm" class="menubar"><span style="text-decoration: underline;">Click here to see open positions</span></a> <br /><br />How to Apply:<br /> <br />Please mail to: <br /><br />GoldTech Human Resources <br /><br />2545 Hilliard-Rome Road <br /><br />Hilliard,
+                Ohio 43026 <br /> <br />Please fax resume &amp; cover letter to: 267.276.0914<br /> <br /> Please e-mail resume to: <a href="mailto:careers@goldtech2000.com" class="menubar">careers@goldtech2000.com</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<span class="bodytext">
+<p>&nbsp;</p>
+</span></td>
+<td width="11%"></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2" align="center">
+<p class="privacy"><a href="privacy.htm" class="menubar"><span style="text-decoration: underline;">Legal Statement</span></a> ｩ 
+					1999 - 2009 Goldtech2000.
+                          All rights reserved. | <a href="privacy.htm" class="menubar"><span style="text-decoration: underline;">Privacy Policy</span></a></p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</body>
+                  </html>

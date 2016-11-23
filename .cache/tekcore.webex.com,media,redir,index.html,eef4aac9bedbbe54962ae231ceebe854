@@ -1,0 +1,42 @@
+status: 200
+content-length: 843
+content-location: https://tekcore.webex.com/media/redir/index.html
+accept-ranges: bytes
+strict-transport-security: max-age=31536000; includeSubDomains;preload
+server: Apache
+last-modified: Wed, 25 Apr 2012 04:28:08 GMT
+etag: "2d31a59-34b-4be794c6444ae"
+date: Sun, 11 Sep 2016 10:00:24 GMT
+content-type: text/html
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide from old browsers
+
+        var CurrPage = new String(location.href);
+
+        var idx    = CurrPage.indexOf("//");
+        var remlen = CurrPage.length - ( idx + 1 );
+        var remstr = CurrPage.substr(idx+2, remlen);  // remove the httpd
+
+        idx = remstr.indexOf(".");
+        var site = remstr.substr(0, idx);  // extract the site id
+
+
+        // Add the sites id that requires disclaimer page
+        //
+        //For Redirection
+        if ( site == "vcnet" )
+        {
+            location.replace("https://vc-net.webex.com");
+
+        }
+        else if ( site == "conocophillips" )
+        {
+            location.replace("https://econocophillips.webex.com");
+        }
+        else
+        {
+            self.location = "https://" + site + ".webex.com/" + site;
+        }
+// -->
+</SCRIPT>

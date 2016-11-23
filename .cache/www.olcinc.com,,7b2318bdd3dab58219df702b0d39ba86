@@ -1,0 +1,359 @@
+status: 200
+content-length: 19440
+content-location: http://www.olcinc.com
+x-powered-by: PHP/5.2.8
+vary: Accept-Encoding
+server: Apache/2.2.3 (CentOS)
+connection: close
+-content-encoding: gzip
+date: Wed, 19 Oct 2016 17:52:31 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd"> 
+<html>
+	<head>
+		<title>Online Computing, Inc. :: Home</title>
+		
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="ERP Software MasterTools">
+		<meta name="description" content="Home of ERP Software MasterTools, Online Computing Inc.">
+
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection">
+        
+
+		<script language="javascript" src="javascript/jquery-1.5.2.min.js"></script>
+        
+		<script type="text/javascript" src="jquery-lightbox-0.5/js/jquery.lightbox-0.5.pack.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery-lightbox-0.5/css/jquery.lightbox-0.5.css" media="screen" />
+		<script type="text/javascript">
+			$(function() {
+				$('a[rel="lightbox"]').lightBox({
+					imageLoading:			'jquery-lightbox-0.5/images/lightbox-ico-loading.gif',
+					imageBtnPrev:			'jquery-lightbox-0.5/images/lightbox-btn-prev.gif',
+					imageBtnNext:			'jquery-lightbox-0.5/images/lightbox-btn-next.gif',
+					imageBtnClose:			'jquery-lightbox-0.5/images/lightbox-btn-close.gif',
+					imageBlank:				'jquery-lightbox-0.5/images/lightbox-blank.gif'
+				});
+			});
+        </script>
+        
+		<script language="javascript" type="text/javascript">
+        $(document).ready(function(){
+            var i1 = new Image(); i1.src = "images/btn_home.png";
+            var i2 = new Image(); i2.src = "images/btn_products.png";
+            var i3 = new Image(); i3.src = "images/btn_company.png";
+            var i4 = new Image(); i4.src = "images/btn_customers.png";
+            var i5 = new Image(); i5.src = "images/btn_contact.png";
+            var i1b = new Image(); i1b.src = "images/btn_home_on.png";
+            var i2b = new Image(); i2b.src = "images/btn_products_on.png";
+            var i3b = new Image(); i3b.src = "images/btn_company_on.png";
+            var i4b = new Image(); i4b.src = "images/btn_customers_on.png";
+            var i5b = new Image(); i5b.src = "images/btn_contact_on.png";
+			
+			var i6 = new Image(); i6.src = "images/mst_btn_0.png";
+			var i7 = new Image(); i7.src = "images/mst_btn_1.png";
+			var i8 = new Image(); i8.src = "images/mst_btn_2.png";
+			var i9 = new Image(); i9.src = "images/mst_btn_3.png";
+			var i6b = new Image(); i6b.src = "images/mst_btn_0_on.png";
+			var i7b = new Image(); i7b.src = "images/mst_btn_1_on.png";
+			var i8b = new Image(); i8b.src = "images/mst_btn_2_on.png";
+			var i9b = new Image(); i9b.src = "images/mst_btn_3_on.png";
+			
+			var i01 = new Image(); i01.src = "images/com_acct_0.png";
+			var i02 = new Image(); i02.src = "images/com_ecomm_1.png";
+			var i03 = new Image(); i03.src = "images/com_manuf_2.png";
+			var i04 = new Image(); i04.src = "images/com_prjmgmt_3.png";
+			var i05 = new Image(); i05.src = "images/com_serv_4.png";
+			var i06 = new Image(); i06.src = "images/com_supply_5.png";
+			var i01b = new Image(); i01b.src = "images/com_acct_0_on.png";
+			var i02b = new Image(); i02b.src = "images/com_ecomm_1_on.png";
+			var i03b = new Image(); i03b.src = "images/com_manuf_2_on.png";
+			var i04b = new Image(); i04b.src = "images/com_prjmgmt_3_on.png";
+			var i05b = new Image(); i05b.src = "images/com_serv_4_on.png";
+			var i06b = new Image(); i06b.src = "images/com_supply_5_on.png";
+			
+			$(".mast_btn0").mouseover(function(){ clearMastClasses(); $(".mast_btn0").addClass("mast_btn0_hover"); showPhoto("images/mst_photo_0.jpg"); });
+			$(".mast_btn1").mouseover(function(){ clearMastClasses(); $(".mast_btn1").addClass("mast_btn1_hover"); showPhoto("images/mst_photo_3.jpg"); });
+			$(".mast_btn2").mouseover(function(){ clearMastClasses(); $(".mast_btn2").addClass("mast_btn2_hover"); showPhoto("images/mst_photo_4.jpg"); });
+			$(".mast_btn3").mouseover(function(){ clearMastClasses(); $(".mast_btn3").addClass("mast_btn3_hover"); showPhoto("images/mst_photo_5.jpg"); });
+			$("#btn_products").mouseover(function(){
+				os = $(this).offset(); _top = os.top+2; _left = os.left-8;
+				$("#subnav_products_tab")
+					.css("top", _top+"px").css("left", _left+"px")
+					.show(function(){ 
+						$("#subnav_products")
+							.css("top", (_top+21)+"px").css("left", (_left-82)+"px")
+							.slideDown();
+					});
+			});
+			$("#subnav_products").mouseleave(function(){
+				$("#subnav_products").slideUp(function(){ $("#subnav_products_tab").hide();});
+			});
+			$("#subnav_products_tab").click(function(){ window.location.href="services.php"; });
+			
+        });
+		
+		function showPhoto(u){
+			$("#mast_photo img").attr("src",u);
+		}
+		
+		function clearMastClasses(){
+			
+			$(".mast_btn0").removeClass("mast_btn0_hover");
+			$(".mast_btn1").removeClass("mast_btn1_hover"); 
+			$(".mast_btn2").removeClass("mast_btn2_hover"); 
+			$(".mast_btn3").removeClass("mast_btn3_hover");
+			
+		}
+        </script>
+
+        
+        
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-53638078-1']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['b._setAccount', 'UA-25009326-1']);
+  _gaq.push(['b._trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</head>
+	<body>
+     
+<div id="head" class="pagecenter">
+	<a id="logo" href="index.php"><img src="images/logo.png" /></a>
+    <a id="head_linkedin" href="http://www.linkedin.com/company/online-computing-mastertools-software"><img src="images/linkedin_logo.png" /></a>
+    <img id="head_phone" src="images/head_phone.png" />
+    <a id="btn_home" href="index.php"></a>
+    <a id="btn_products" href="services.php"></a>
+    <a id="btn_company" href="About-Us.php"></a>
+    <a id="btn_customers" href="Case-Studies.php"></a>
+    <a id="btn_contact" href="Contact-Us.php"></a>
+</div>
+
+<div id="subnav_products_tab"></div>
+<div id="subnav_products">
+	<div id="sub1">
+    	<a href="services.php">Our Products and Services</a>
+    </div>
+	<div id="sub2">
+    	<a href="ERP-Software.php">Enterprise Resource Planning</a><br />
+    	<a href="Business-Intelligence.php">Business Intelligence</a><br />
+    	<a href="E-Commerce.php">Fully Integrated E-Commerce</a><br />
+    	<a href="Hosting-Models.php">Traditional Server &amp; Hosted</a>
+    </div>
+	<div id="sub3">
+    	<a href="Accounting.php">Accounting</a><br />
+    	<a href="Supply-Chain.php">Supply Chain</a><br />
+    	<a href="manufacturing.php">Manufacturing</a><br />
+    	<a href="Project-Management.php">Project Management</a><br />
+    	<a href="Service-Repair.php">Service &amp; Repair</a>
+    </div>
+</div>
+ 
+<div id="mast" class="pagecenter">
+	<a class="mast_btn0" href="ERP-Software.php"></a>
+	<a class="mast_btn1" href="Business-Intelligence.php"></a>
+	<a class="mast_btn2" href="E-Commerce.php"></a>
+	<a class="mast_btn3" href="Hosting-Models.php"></a>
+	<div id="mast_photo"><img src="images/mst_photo_0.jpg" /></div>
+</div>
+
+<div id="content" class="pagecenter">
+	<div id="content_page">
+    	<div id="col1">
+        	
+            <img src="images/l_mt_logo.png" alt="MasterTools, Growing Businesses." title="MasterTools, Growing Businesses." />
+            
+            <a href="Case-Studies.php"><img src="images/photos/stock/photo_looking.jpg" alt="MasterTools ERP Customers" title="MasterTools ERP Customers" /></a>
+            
+            <p>Online Computing customers run their businesses successfully with MasterTools software in many industries. <a href="Case-Studies.php">Read more...</a></p>
+            
+	    	<img src="images/lhead_our_clients.jpg" alt="Online Computing Clients" title="Online Computing Clients" />
+            
+            <p>Online’s customers have taken the Master Tools platform to many industries and enjoyed success due in part to the breadth and flexibility of the software.</p>
+            
+            <table cellpadding="0" cellspacing="0" border="0">
+            <tr><td>
+            	<ul>
+                <li>Automotive</li>
+                <li>Communication</li>
+                <li>Electronics</li>
+                <li>Electronic Media</li>
+                <li>Food Processing</li>
+                <li>Furniture</li>
+                <li>Industrial Equipment</li>
+                <li>Home Furnishings/Gifts</li>
+                <li>Lumber & Construction</li>
+                <li>Marine</li>
+                <li>Metal Fabrication</li>
+                </ul>
+            </td><td>
+            	<ul>
+                <li>Nonprofit</li>
+                <li>Office Supplies</li>
+                <li>Paperboard</li>
+                <li>Petroleum</li>
+                <li>Plastics & Rubber</li>
+                <li>Plumbing</li>
+                <li>Recreational & Sporting Goods</li>
+                <li>Restaurant Supply</li>
+                <li>Vending</li>
+                <li>Other Discrete Manufacturers</li>
+                </ul>
+            </td></tr>
+            </table>
+            
+                <div class="callout">
+        <a href="Contact-Us.php"><img src="images/callout_contact.jpg" alt="Contact us about MasterTools ERP Software" title="Contact us about MasterTools ERP Software" /></a>
+    </div>
+    
+        </div>
+    	<div id="col0" class="homepage_col0">
+        	
+            <h1><img src="images/txt_ent_soft_works.png" alt="Enterprise Software that Works" title="Enterprise Software that Works" /></h1>
+            
+            <p>Imagine accessing all of the knowledge you need to move your company ahead, right at your fingertips. That’s what we had in mind when we designed MasterTools software, which combines all aspects of production planning, project management, shop floor control, e-commerce, inventory control, and financial analysis into a single system.  </p>
+            
+            <table class="com_table" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+            <td><a href="Accounting.php"><img src="images/com_acct.png" id="img_com_acct" /></a></td>
+            <td class="com_col2"><a href="Project-Management.php"><img src="images/com_prjmgmt.png" id="img_com_prjmgmt" /></a></td>
+            </tr>
+            <tr>
+            <td><a href="Supply-Chain.php"><img src="images/com_supply.png" id="img_com_supply" /></a></td>
+            <td class="com_col2"><a href="Service-Repair.php"><img src="images/com_serv.png" id="img_com_serv" /></a></td>
+            </tr>
+            <tr>
+            <td><a href="manufacturing.php"><img src="images/com_manuf.png" id="img_com_manuf" /></a></td>
+            <td class="com_col2"><a href="E-Commerce.php"><img src="images/com_ecomm.png" id="img_com_ecomm" /></a></td>
+            </tr>
+            </table>
+            
+            <script language="javascript" type="text/javascript">
+				$("#img_com_acct").mouseover(function(){$(this).attr("src","images/com_acct_on.png");}).mouseout(function(){$(this).attr("src","images/com_acct.png");});
+				$("#img_com_prjmgmt").mouseover(function(){$(this).attr("src","images/com_prjmgmt_on.png");}).mouseout(function(){$(this).attr("src","images/com_prjmgmt.png");});
+				$("#img_com_supply").mouseover(function(){$(this).attr("src","images/com_supply_on.png");}).mouseout(function(){$(this).attr("src","images/com_supply.png");});
+				$("#img_com_ecomm").mouseover(function(){$(this).attr("src","images/com_ecomm_on.png");}).mouseout(function(){$(this).attr("src","images/com_ecomm.png");});
+				$("#img_com_manuf").mouseover(function(){$(this).attr("src","images/com_manuf_on.png");}).mouseout(function(){$(this).attr("src","images/com_manuf.png");});
+				$("#img_com_serv").mouseover(function(){$(this).attr("src","images/com_serv_on.png");}).mouseout(function(){$(this).attr("src","images/com_serv.png");});
+				
+				var ij01 = new Image(); ij01.src = "images/com_acct.png";
+				var ij02 = new Image(); ij02.src = "images/com_prjmgmt.png";
+				var ij03 = new Image(); ij03.src = "images/com_supply.png";
+				var ij04 = new Image(); ij04.src = "images/com_ecomm.png";
+				var ij05 = new Image(); ij05.src = "images/com_manuf.png";
+				var ij06 = new Image(); ij06.src = "images/com_serv.png";
+				
+				var ij01b = new Image(); ij01b.src = "images/com_acct_on.png";
+				var ij02b = new Image(); ij02b.src = "images/com_prjmgmt_on.png";
+				var ij03b = new Image(); ij03b.src = "images/com_supply_on.png";
+				var ij04b = new Image(); ij04b.src = "images/com_ecomm_on.png";
+				var ij05b = new Image(); ij05b.src = "images/com_manuf_on.png";
+				var ij06b = new Image(); ij06b.src = "images/com_serv_on.png";
+			</script>
+			
+            <p>Utilizing a relational database allows you access to information and eliminates redundant data entry which increases accuracy throughout your organization. Most features of the software provide you with a customized software package without the cost of customization, and as your business needs change, you can add additional features custom to your growth.</p>
+            
+            
+        	<h2><img src="images/txt_outgrown_qb.png" alt="Has Your Company Outgrown Quickbooks?" title="Has Your Company Outgrown Quickbooks?" /></h2>
+            
+			<p><img src="images/photos/stock/fixedassets.jpg" height="100" align="right" alt="Next Step from QuickBooks" title="Next Step from QuickBooks" />Is QuickBooks hindering your company's ability to track, monitor, and analyze your growth? QuickBooks has helped manage your customer accounts and business finances, create company forms, and store your vendors and other contacts. However, there does come a point when businesses outgrow QuickBooks and need new accounting software to assist with their growing needs.  <br />
+            <br />
+            <a href="Outgrown-Quickboooks.php">Outgrowing Quickbooks or Peachtree? Get to know MasterTools.</a>            </p>
+            
+            
+            
+            
+        	<h2><img src="images/txt_comprehensive.png" alt="MasterTools is Comprehensive, Integrated, Scalable" title="MasterTools is Comprehensive, Integrated, Scalable" /></h2>
+            
+            <p>Comprehensive, Integrated, Scalable. Three words that pinpoint MasterTools software. ONLINE Computing thought of the customer when designing, programming and implementing its MasterTools software. </p>
+            
+            <p><strong>Comprehensive</strong> = A complete set of modules from accounting, to supply chain to manufacturing. In addition, MasterTools includes modules for product configuration, serial# / warranty tracking, service and repair, project management, electronic data interchange (EDI), warehouse/shop floor control, bar-coding and e-commerce. MasterTools addresses the needs of small, to medium, to large diverse enterprises in a variety of industries.</p>
+
+            <p><strong>Integrated</strong> = All modules, are totally integrated meaning that data, where applicable, is passed and updated from one module to another automatically. Integration is transparent to the user in other words, users do not have to reenter one transaction in multiple systems for different functions. For example, when an invoice is entered, it updates accounts receivable, general ledger, sales analysis, inventory, sales order or job. </p>
+            
+            <p><strong>Scalable</strong> = From 5 to 2500 users on one machine. You will not outgrow MasterTools because of database and software architecture. Our software is scalable to your company’s needs and growth.</p>
+
+            
+        </div>
+        <div class="br"></div>
+    </div>
+</div>
+
+
+<div id="links" class="pagecenter">
+	<div id="links_t"></div>
+    <div id="links_m">
+    	<h3><strong>MasterTools</strong> Components</h3>
+        <hr />
+            <table cellpadding="0" cellspacing="0" border="0">
+            <tr>
+            <td class="l">
+            	<a href="Accounts-Payable.php">&bull; Accounts Payable</a>
+            	<a href="Accounts-Receivable.php">&bull; Accounts Receivable</a>
+            	<a href="Cash-Management.php">&bull; Cash Management</a>
+            	<a href="Credit-Cards.php">&bull; Credit Card Processing</a>
+            	<a href="crm.php">&bull; Customer Relationship Management</a>
+            	<a href="E-Commerce.php">&bull; E-Commerce</a>
+            	<a href="Interchange-EDI.php">&bull; Electronic Data Interchange (EDI)</a>
+            	<a href="Estimates-Quoting.php">&bull; Estimating</a>
+            	<!--<a href="Fedex-ShipManager.php">&bull; Fedex Ship Manager</a>-->
+            	<a href="Fixed-Assets.php">&bull; Fixed Assets</a>
+            </td>
+            <td class="m">
+            	<a href="General-Ledger.php">&bull; General Ledger</a>
+            	<a href="Human-Resources.php">&bull; Human Resources</a>
+            	<a href="Inventory-Control.php">&bull; Inventory Control</a>
+            	<a href="order-entry.php">&bull; Order Entry / Invoicing</a>
+            	<!--<a href="Portable-Wireless-Terminals.php">&bull; Portable Wireless Terminals</a>-->
+            	<a href="Product-Configurator.php">&bull; Product Configurator</a>
+            	<a href="Production-Control.php">&bull; Production Control</a>
+            	<a href="Production-Planning.php">&bull; Production Planning</a>
+            	<a href="Project-Management.php">&bull; Project Management</a>
+            	<a href="Purchasing-Receiving.php">&bull; Purchasing / Receiving</a>
+            </td>
+            <td class="r">
+            	<a href="Quality-Assurance.php">&bull; Quality Assurance</a>
+            	<!--<a href="Report-Manager.php">&bull; Report Manager</a>-->
+            	<a href="Sales-Analysis.php">&bull; Sales Analysis</a>
+            	<!--<a href="CCH-ZIPsales.php">&bull; Sales Tax Database</a>-->
+            	<a href="Service-Repair.php">&bull; Service and Repair</a>
+            	<a href="shipping.php">&bull; Shipping</a>
+            	<a href="Shop-Floor-Control.php">&bull; Shop Floor Control</a>
+            	<a href="Time-Attendance.php">&bull; Time and Attendance</a>
+            	<!--<a href="UPS-Worldship.php">&bull; UPS Worldship</a>-->
+            	<a href="Warehouse-Control-Management.php">&bull; Warehouse Management</a>
+            	<a href="Warranty-Tracking.php">&bull; Serial # / Warranty Tracking</a>
+            </td>
+            </tr>
+            </table>
+    </div>
+    <div id="links_b"></div>
+</div>
+  
+<div id="foot" class="pagecenter">
+    <div id="foot_copy">&copy; 2014, Online Computing, Inc. All rights reserved.</div>
+	<div id="foot_links">
+    	<a href="index.php">Home</a> | 
+        <a href="About-Us.php">About Online Computing, Inc.</a> | 
+        800-476-2629 | 
+        <a href="clients/index.php">Clients</a> | 
+        <a href="demo/index.php">Demo</a> | 
+        <a href="Sitemap.php">Sitemap</a> | 
+        <a href="Contact-Us.php">Contact Us</a>
+    </div>
+</div>
+  
+	</body>
+</html>

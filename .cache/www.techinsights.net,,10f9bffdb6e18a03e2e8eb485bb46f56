@@ -1,0 +1,93 @@
+status: 200
+content-length: 3287
+content-location: http://www.techinsights.net
+x-powered-by: ASP.NET
+accept-ranges: bytes
+-varied-accept-encoding: gzip, deflate
+vary: Accept-Encoding
+server: Microsoft-IIS/8.0
+last-modified: Wed, 22 Sep 2010 18:13:31 GMT
+-content-encoding: gzip
+etag: "204c12dd815acb1:0"
+date: Wed, 21 Sep 2016 04:01:41 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<html>
+<head>
+<title>intro</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<style type="text/css" media="screen"><!--
+a { color: #fefeff; font-size: 11px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; text-decoration: none; text-align: center; }
+--></style>
+		<csscriptdict>
+			<script type="text/javascript"><!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+
+function changeImagesArray(array) {
+	if (preloadFlag == true) {
+		var d = document; var img;
+		for (var i=0; i<array.length; i+=2) {
+			img = null; var n = array[i];
+			if (d.images) {img = d.images[n];}
+			if (!img && d.getElementById) {img = d.getElementById(n);}
+			if (img) {img.src = array[i+1];}
+		}
+	}
+}
+
+
+function changeImages() {
+	changeImagesArray(changeImages.arguments);
+}
+
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script type="text/javascript"><!--
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		pre_index_over_07 = newImage('images/images/index_over_07.jpg');
+		preloadFlag = true;
+	}
+}
+
+// --></script>
+		</csactiondict>
+	</head>
+<body onload="preloadImages();" bgcolor="#e03304" leftmargin="0" topmargin="30" marginwidth="0" marginheight="30">
+		<div align="center">
+			<!-- ImageReady Slices (intro.psd) -->
+			<div id="Table_01" style="position:relative;width:801px;height:539px;-adbe-g:m;">
+				<div style="position:absolute;top:0px;left:0px;width:800px;height:37px;">
+					<img src="images/index_01.jpg" width="800" height="37" alt=""></div>
+				<div style="position:absolute;top:37px;left:0px;width:21px;height:501px;">
+					<img src="images/index_02.jpg" width="21" height="501" alt=""></div>
+				<div style="position:absolute;top:37px;left:21px;width:758px;height:28px;">
+					<img src="images/index_03.gif" width="758" height="28" alt=""></div>
+				<div style="position:absolute;top:37px;left:779px;width:21px;height:501px;">
+					<img src="images/index_04.jpg" width="21" height="501" alt=""></div>
+				<div style="position:absolute;top:65px;left:21px;width:758px;height:97px;">
+					<img src="images/index_05.jpg" width="758" height="97" alt=""></div>
+				<div style="position:absolute;top:162px;left:21px;width:206px;height:376px;">
+					<img src="images/index_06.jpg" width="206" height="376" alt=""></div>
+				<div style="position:absolute;top:162px;left:227px;width:533px;height:276px;">
+					<a onmousedown="changeImages('index_07','images/images/index_over_07.jpg');return true" onmouseup="changeImages('index_07','images/index_07.jpg');return true" onmouseout="changeImages('index_07','images/index_07.jpg');return true" href="learnmore.html" target="_top"><img id="index_07" src="images/index_07.jpg" name="index_07" width="533" height="276" alt="" usemap="#index_07fe1922" border="0"></a></div>
+				<div style="position:absolute;top:162px;left:760px;width:19px;height:376px;">
+					<img src="images/index_08.jpg" width="19" height="376" alt=""></div>
+				<div style="position:absolute;top:438px;left:227px;width:533px;height:100px;">
+					<img src="images/index_09.jpg" width="533" height="100" alt=""></div>
+			</div>
+		</div>
+	</body>
+</html>

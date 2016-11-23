@@ -1,0 +1,430 @@
+status: 200
+content-length: 14600
+content-location: http://www.bluechipdata.com
+accept-ranges: bytes
+vary: Accept-Encoding
+server: nginx/1.10.1
+last-modified: Tue, 17 Sep 2013 12:09:06 GMT
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 18 Sep 2016 08:30:51 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content=
+"text/html; charset=us-ascii" />
+
+<title>Company</title>
+<link rel="stylesheet" type="text/css" href="css/swglobal.css" />
+<link rel="stylesheet" type="text/css" href=
+"css/swDefault.css" />
+<script type="text/javascript">
+//<![CDATA[
+  function MHGetRef(str)
+  {
+    if(document.all)
+      return document.all[str];
+    else
+      return document.getElementById(str);
+  }
+
+  function MHSwitchImage(strID, strFileName)
+  {
+    var obj = MHGetRef(strID);
+    if(obj == null || obj + "" == "undefined") return;
+    obj.src = strFileName;
+  }
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+  function SDSGetRef(str) { return document.all ? document.all[str] : document.getElementById(str); }
+
+  function SDSSetClass(strID, strClass)
+  {
+    var obj = SDSGetRef(strID);
+    if(obj != null && typeof(obj) + "" != "undefined")
+      obj.className = strClass;
+  }
+  function SDSScroller()
+  {
+    this.GetRef = function(str) { return document.all ? document.all[str] : document.getElementById(str); }
+
+    this.SetImageSrc = function(strID, strSrc)
+    {
+      var obj = this.GetRef(strID);
+      if(obj != null && typeof(obj) + "" != "undefined")
+        obj.src = strSrc;
+    }
+
+    this.Init = function(strName, strContentId, nScreenHeight, strBtnUp, strBtnDown)
+    {
+      this.strName      = strName;
+      this.strContentId   = strContentId;
+      this.nScreenHeight    = nScreenHeight;
+      this.strBtnUp     = strBtnUp;
+      this.strBtnDown     = strBtnDown;
+      this.Refresh();
+    }
+
+    this.Refresh = function()
+    {
+      this.nTargetY     = 0;
+      this.MoveTarget     = 0;
+      this.nCurY        = 0;
+      this.SetY(this.nCurY);
+      var obj = this.GetRef(this.strContentId);
+      if(obj == null) return;
+      this.nTotalHeight = parseInt(obj.offsetHeight);
+      if(this.nTotalHeight <= this.nScreenHeight) { // Hide buttons...
+        this.SetImageSrc(this.strName + "_Up", "img/swspace.gif");
+        this.SetImageSrc(this.strName + "_Down", "img/swspace.gif");
+      } else {
+        this.SetImageSrc(this.strName + "_Up", this.strBtnUp);
+        this.SetImageSrc(this.strName + "_Down", this.strBtnDown);
+      }
+      this.TimeOutID      = setTimeout(this.strName + ".TimerFunc()", 30);
+    }
+
+    this.SetY = function(nY)
+    {
+      if(isNaN(nY) || isNaN(this.nTotalHeight)) return;
+
+      if(nY < 0) {
+        nY = -nY;
+        nY = this.nTotalHeight - nY % this.nTotalHeight;
+      } else
+        nY = nY % this.nTotalHeight;
+      if(isNaN(nY)) return;
+
+      this.GetRef(this.strContentId).style.top = (-nY) + "px";
+      if(navigator.appVersion.indexOf("Mac") != -1) {
+        SDSSetClass(this.strContentId, ""); // To solve the Mac-bug. (Makes Explorer bug on win98...)
+      }
+    }
+
+    this.ScrollUp = function()    { this.MoveTarget = -1; return; }
+    this.ScrollDown = function()  { this.MoveTarget = 1; return; }
+    this.Stop = function()      { this.MoveTarget = 0; return; }
+
+    this.TimerFunc = function()
+    {
+      if(this.nTotalHeight < this.nScreenHeight) return;  
+    
+      this.nTargetY += 10 * this.MoveTarget;
+      if(this.nTargetY > this.nTotalHeight - this.nScreenHeight) this.nTargetY = this.nTotalHeight - this.nScreenHeight;
+      if(this.nTargetY <= 0) this.nTargetY = 0;
+
+      var bStop = false;
+      if(this.MoveTarget == -1) {
+        if(this.nCurY <= 0) {
+          this.nCurY = 0;
+          bStop = true;
+        }
+      }
+
+      if(this.MoveTarget == 1) {
+        if(this.nCurY > this.nTotalHeight - this.nScreenHeight) {
+          this.nCurY = this.nTotalHeight - this.nScreenHeight;
+          bStop = true;
+        }
+      }
+
+      if(bStop) {
+        this.SetY(this.nCurY);
+        this.nTargetY = this.nCurY;
+        this.MoveTarget = 0;
+      } else {
+        var ndy = this.nTargetY - this.nCurY;
+        var ndy2 = parseInt(ndy / 2);
+        if(ndy != 0 && ndy2 == 0) {
+          if(ndy < 0) {
+            ndy2 = -1;
+          } else {
+            ndy2 = 1;
+          }
+        }
+        
+        this.nCurY += ndy2;
+        if(Math.abs(ndy) <= 1) this.nCurY = this.nTargetY;
+      
+        this.SetY(this.nCurY);
+      }
+
+      this.TimeOutID = setTimeout(this.strName + ".TimerFunc()", 30);
+    }
+  }
+  ID39EAB920CBB241AEB21B933727BD1BB3_scroller = new SDSScroller();
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+  function SitooOnLoad() {
+ID39EAB920CBB241AEB21B933727BD1BB3_scroller.Init("ID39EAB920CBB241AEB21B933727BD1BB3_scroller", "ID39EAB920CBB241AEB21B933727BD1BB3_content", 270, "img/gre/Scroll-Up.png", "img/gre/Scroll-Down.png");
+
+  }
+//]]>
+</script>
+</head>
+<body onload="SitooOnLoad();">
+<div style=
+"background-color:#ffffff;border:1px solid #666666;margin:0 auto;padding:3px;text-align:left;width:767px;">
+<div style=
+"background-image:url(img/gre/Layout-Top.png);background-position:left top;background-repeat:repeat-x;text-align:left;width:767px;">
+<table cellpadding="0" cellspacing="0" border="0" style=
+"width:100%;margin:0;padding:0;border:0 solid none;">
+<tbody>
+<tr>
+<td style="vertical-align:top;">
+<div><img alt="" src=
+"img/gre/Logo-BLUE-CHIP-DATA.png" /><img title=" " style=
+"border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;"
+alt=" " src="img/gre/Logo-2-.png" /></div>
+</td>
+<td style=
+"height:102px;width:1px;margin:0;padding:0;border:0 solid none;">
+<div style=
+"height:102px;width:1px;margin:0;padding:0;border:0 solid none;">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style=
+"margin:3px 0 0;padding:0;text-align:left;width:767px;">
+<div id="swc_MenuHorizontal_ID94AD07568CA84FD8B65F6DA2329687C3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr style=
+"background-image:url(img/gre/Menu-Filler.png);background-position:left top;background-repeat:repeat-x;">
+<td id="MH1_0"><img id="MH1_0_img" src=
+"img/gre/Menu-Button-Company_2.png" alt="Company" style=
+"border:none;display:block;" /></td>
+<td id="MH1_1"><a href="Support.htm" onmouseover=
+"MHSwitchImage(&#39;MH1_1_img&#39;, &#39;img/gre/Menu-Button-Support_3.png&#39;);"
+onmouseout=
+"MHSwitchImage(&#39;MH1_1_img&#39;, &#39;img/gre/Menu-Button-Support.png&#39;);">
+<img id="MH1_1_img" src="img/gre/Menu-Button-Support.png" alt=
+"Support" style="border:none;display:block;" /></a></td>
+<td id="MH1_2"><a href="About-Us.htm" onmouseover=
+"MHSwitchImage(&#39;MH1_2_img&#39;, &#39;img/gre/Menu-Button-About-Us_3.png&#39;);"
+onmouseout=
+"MHSwitchImage(&#39;MH1_2_img&#39;, &#39;img/gre/Menu-Button-About-Us.png&#39;);">
+<img id="MH1_2_img" src="img/gre/Menu-Button-About-Us.png" alt=
+"About Us" style="border:none;display:block;" /></a></td>
+<td id="MH1_3"><a href="News.htm" onmouseover=
+"MHSwitchImage(&#39;MH1_3_img&#39;, &#39;img/gre/Menu-Button-News_3.png&#39;);"
+onmouseout=
+"MHSwitchImage(&#39;MH1_3_img&#39;, &#39;img/gre/Menu-Button-News.png&#39;);">
+<img id="MH1_3_img" src="img/gre/Menu-Button-News.png" alt="News"
+style="border:none;display:block;" /></a></td>
+<td id="MH1_4"><a href="Contact.htm" onmouseover=
+"MHSwitchImage(&#39;MH1_4_img&#39;, &#39;img/gre/Menu-Button-Contact_3.png&#39;);"
+onmouseout=
+"MHSwitchImage(&#39;MH1_4_img&#39;, &#39;img/gre/Menu-Button-Contact.png&#39;);">
+<img id="MH1_4_img" src="img/gre/Menu-Button-Contact.png" alt=
+"Contact" style="border:none;display:block;" /></a></td>
+<td style="width:100%;"><img src="img/swspace.gif" width="1"
+height="1" style="border:none;display:block;" alt="" /></td>
+<td><img src="img/gre/Menu-Filler.png" height="30" width="10"
+style="border:none;display:block;" alt="" /></td>
+</tr>
+</table>
+</div>
+</div>
+<div style="margin:3px 0;padding:0;text-align:left;width:767px;">
+<div id="swc_MenuHorizontal_IDEC50B55EB7EE48C5B57A496DE4ECBBE5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr style=
+"background-image:url(img/gre/Menu-2-Filler.png);background-position:left top;background-repeat:repeat-x;">
+<td><img src="img/gre/Menu-2-Filler.png" height="24" width="10"
+style="border:none;display:block;" alt="" /></td>
+<td id="MH2_0"><a href="Services.htm" onmouseover=
+"MHSwitchImage(&#39;MH2_0_img&#39;, &#39;img/gre/Menu-2-Button-Services_3.png&#39;);"
+onmouseout=
+"MHSwitchImage(&#39;MH2_0_img&#39;, &#39;img/gre/Menu-2-Button-Services.png&#39;);">
+<img id="MH2_0_img" src="img/gre/Menu-2-Button-Services.png" alt=
+"Services" style="border:none;display:block;" /></a></td>
+<td id="MH2_1"><a href="Products.htm" onmouseover=
+"MHSwitchImage(&#39;MH2_1_img&#39;, &#39;img/gre/Menu-2-Button-Products_3.png&#39;);"
+onmouseout=
+"MHSwitchImage(&#39;MH2_1_img&#39;, &#39;img/gre/Menu-2-Button-Products.png&#39;);">
+<img id="MH2_1_img" src="img/gre/Menu-2-Button-Products.png" alt=
+"Products" style="border:none;display:block;" /></a></td>
+<td id="MH2_2"><a href="Networking.htm" onmouseover=
+"MHSwitchImage(&#39;MH2_2_img&#39;, &#39;img/gre/Menu-2-Button-Networking_3.png&#39;);"
+onmouseout=
+"MHSwitchImage(&#39;MH2_2_img&#39;, &#39;img/gre/Menu-2-Button-Networking.png&#39;);">
+<img id="MH2_2_img" src="img/gre/Menu-2-Button-Networking.png"
+alt="Networking" style="border:none;display:block;" /></a></td>
+<td style="width:100%;"><img src="img/swspace.gif" width="1"
+height="1" style="border:none;display:block;" alt="" /></td>
+<td><img src="img/gre/Menu-2-Filler.png" height="24" width="10"
+style="border:none;display:block;" alt="" /></td>
+</tr>
+</table>
+</div>
+</div>
+<div style=
+"height:308px;margin:0;padding:0;text-align:left;width:767px;">
+<table style="border-style:none;" cellspacing="0" cellpadding="0"
+width="100%">
+<tbody>
+<tr>
+<td style=
+"padding-right:0px;padding-left:15px;padding-bottom:0px;vertical-align:top;width:449px;padding-top:15px;">
+<div id=
+"swc_sys_doctext_scroller_ID39EAB920CBB241AEB21B933727BD1BB3">
+<table border="0" cellpadding="0" cellspacing="0" width="415">
+<tr>
+<td colspan="4"><img src="img/swspace.gif" width="1" height="5"
+alt="" /></td>
+</tr>
+<tr>
+<td><img src="img/swspace.gif" width="5" height="1" alt=
+"" /></td>
+<td style="width:100%" valign="top">
+<div id="SDS_container" style=
+"border:solid 0px;position:relative;top:0;left:0;width:391px;height:270px;z-index:0;clip: rect(0px 391px 270px 0px);overflow:hidden;">
+<div id="ID39EAB920CBB241AEB21B933727BD1BB3_content" style=
+"position:relative;left:0;top:0;z-index:1;">
+<table style="width:100%;" cellspacing="0" cellpadding="0"
+border="0">
+<tbody>
+<tr>
+<td>
+<div id=
+"swca_sys_doctext_scroller_ID39EAB920CBB241AEB21B933727BD1BB3_">
+<div>
+<h1 class="h1">Computer Consulting and Networking</h1>
+<p>At Blue Chip Data our mission is to deliver hardware, software
+and services that save our customers valuable time and money! We offer the best prices on cutting
+edge computers, printers, peripherals and software. Our clients
+receive personalized services including: software installation
+and updates, web design and hosting, networking and e-mail
+implementation. Our systems, support and services are designed to
+let users get down to business and avoid all the technical
+aspects of computers, software and networking. <a href=
+"Support.htm">Read more</a></p>
+<p>&#8203;</p>
+<p><span style="font-size:17pt;"><strong><span style=
+"color:#000066;">Call (513) 703-8356
+Today</span></strong></span></p>
+<p>&#8203;</p>
+<table border="0" cellpadding="0" cellspacing="0" style=
+"width:100%;">
+<tbody>
+<tr>
+<td style="width:50%;"><span style="font-size:7.9pt;">Tech
+Support</span></td>
+<td><span style="font-size:7.9pt;">Networking &amp;
+Wireless</span></td>
+</tr>
+<tr>
+<td><span style="font-size:7.9pt;">Virus/Spyware
+Removal</span></td>
+<td><span style="font-size:7.9pt;">Data Backup &amp;
+Recovery</span></td>
+</tr>
+<tr>
+<td><span style="font-size:7.9pt;">Speed Up Your
+Computer</span></td>
+<td>
+<p><span style="font-size:7.9pt;">Office&nbsp;PC Access from
+Home</span></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size:7.9pt;">Transfer Files to a New
+PC</span></td>
+<td><span style="font-size:7.9pt;">Web Site
+Design/Hosting</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</td>
+<td valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" width="14">
+<tr>
+<td><a href="javascript:void(0);"><img id=
+"ID39EAB920CBB241AEB21B933727BD1BB3_scroller_Up" src=
+"img/swspace.gif" width="14" height="10" alt="" style=
+"border:none;" onmousedown=
+"ID39EAB920CBB241AEB21B933727BD1BB3_scroller.ScrollUp();"
+onmouseup="ID39EAB920CBB241AEB21B933727BD1BB3_scroller.Stop();"
+onmouseout=
+"ID39EAB920CBB241AEB21B933727BD1BB3_scroller.Stop();" /></a></td>
+</tr>
+<tr>
+<td style="height:250px"><img src="img/swspace.gif" width="1"
+height="250" alt="" /></td>
+</tr>
+<tr>
+<td><a href="javascript:void(0);"><img id=
+"ID39EAB920CBB241AEB21B933727BD1BB3_scroller_Down" src=
+"img/swspace.gif" width="14" height="10" alt="" style=
+"border:none;" onmousedown=
+"ID39EAB920CBB241AEB21B933727BD1BB3_scroller.ScrollDown();"
+onmouseup="ID39EAB920CBB241AEB21B933727BD1BB3_scroller.Stop();"
+onmouseout=
+"ID39EAB920CBB241AEB21B933727BD1BB3_scroller.Stop();" /></a></td>
+</tr>
+</table>
+</td>
+<td><img src="img/swspace.gif" width="5" height="1" alt=
+"" /></td>
+</tr>
+<tr>
+<td colspan="4"><img src="img/swspace.gif" width="1" height="5"
+alt="" /></td>
+</tr>
+</table>
+</div>
+</td>
+<td style="vertical-align:top;width:318px;"><img title="" style=
+"border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;display:block;"
+alt="" src="img/gre/Page-Image-Primary-Icon-.png" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style=
+"background-image:url(img/gre/Layout-Bottom.png);background-position:left top;background-repeat:repeat-x;margin:3px 0 0;padding:0;text-align:right;width:767px;">
+<table cellpadding="0" cellspacing="0" border="0" style=
+"width:100%;margin:0;padding:0;border:0 solid none;">
+<tbody>
+<tr>
+<td style="vertical-align:top;">
+<div><img title="Copyright 2010 Your Company" alt=
+"Copyright 2010 Your Company" src=
+"img/gre/Copyright-Text-Copyright-2011-BLUE-CHIP-DATA.png" style=
+"border-style:none;border-width:medium;" /></div>
+</td>
+<td style=
+"height:85px;width:1px;margin:0;padding:0;border:0 solid none;">
+<div style=
+"height:85px;width:1px;margin:0;padding:0;border:0 solid none;">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,925 @@
+status: 200
+content-length: 42984
+content-location: http://www.nexhorizon.net
+x-powered-by: ASP.NET
+set-cookie: ASPSESSIONIDQSQATQQD=EGFDNNGAMBJMBIAONICGGFIG; path=/
+server: Microsoft-IIS/6.0
+cache-control: private
+date: Thu, 20 Oct 2016 15:32:08 GMT
+content-type: text/html
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="We are an Orlando web design company specializing in SEO, web hosting, programming and internet marketing. Expand your online presence." />
+<meta name="keywords" content="web design, orlando web design, seo, web hosting, social media marketing, search engine optimization, networking, app development, IT support, programming, internet marketing" />
+<link rel="author" href="https://plus.google.com/104824421141558688294/">
+<meta name="geo.placename" content="Sanford, Orlando">
+<meta name="geo.region" content="US-FL" />
+<meta name="geo.position" content="28.811406;-81.277273" />
+    <title>Orlando Web Design | Internet Marketing | Web Hosting &amp; Computer Networking</title>
+    
+    
+    
+    
+<link rel="author" href="https://plus.google.com/100380621203084736750/">
+<meta name="author" content=" Next Horizon dba Y2k Service Inc ,  info@nexhorizon.net " />
+<meta http-equiv="Reply-to" content="webdesign@nexhorizon.net" />
+<meta name="Content-language" content="en-US" />
+<meta name="distribution" content="Global" />
+<meta name="ROBOTS" content="all" />
+<meta name="GOOGLEBOT" content="all" />
+<meta name="REVISIT-AFTER" content="20 days" />
+<meta property="og:title" content="Orlando Web Design | Computer Networking and Repair | SEO and Internet Marketing" /><meta property="og:type" content="website" /> <meta property="og:url" content="http://www.nexhorizon.net/" /> <meta property="og:image" content="http://www.nexhorizon.net/images/nh-fbIcon.png"/><meta property="og:description" content="Next Horizon is your source for Orlando Web Design and Web Hosting in Florida. We also provide Computer Networking solutions and repair from Orlando to Lake Mary." />
+
+<meta property="og:site_name" content="Next Horizon an Orlando Web Design and IT Service Agency" /> 
+<meta property="fb:admins" content="100000882427913" />
+
+
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cabin:700italic' rel='stylesheet' type='text/css'>
+<link rel="apple-touch-icon" sizes="57x57" href="NH_Mobile_Icon.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon.png">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+
+<!--[if IE 7]>
+    <link href="css/ie7.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if lt IE 7]>
+    <script src="js/DD_belatedPNG.js"></script>
+    <script>
+      DD_belatedPNG.fix('img, a, #nh-slideIMG-WD, #nh-slideIMG-CC, #nh-slideIMG-CF, #nh-abtWD, #nh-abtNP, #nh-abtIM, #nh-fb p, #twitter_update_list');
+    </script>
+<![endif]-->
+
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/jquery.hoverIntent.js" type="text/javascript"></script>
+<!-- jQuery SLIDERS   -->
+<script src="js/jquery.bxSlider.min.js" type="text/javascript"></script>
+<script src="js/jquery.flexslider.js"></script>
+<!-- jQuery TWEETS   -->
+<!--<script src="js/jquery.tweet.js"></script>-->
+<script type="text/javascript" src="twitter/jquery.tweet.js"></script>
+<!-- jQuery FORM VALIDATION   -->
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<!-- jQuery PORTFOLIO   -->
+<script type="text/javascript" src="js/jquery.themepunch.megafolio.js"></script>		
+<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>		
+<script type="text/javascript" src="flowplayer_plugins/flowplayer-3.2.6.min.js"></script>
+<!-- jQuery jSCROLL   -->
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<!-- jQuery FANCYBOX   -->
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="js/formvalidation.js"></script>
+<script type="text/javascript">
+function formvalidation(thisform){
+	with (thisform){
+		if (emptyvalidation(name,"Please enter your name.")==false) {return false;};
+		if (emptyvalidation(company,"Please enter your company name.")==false) {return false;};
+		if (emailvalidation(email,"Please enter a valid email address.")==false) {return false;};
+	}
+}
+</script>
+<script type="text/javascript">
+
+jQuery(function($){
+$("#ticker").tweet({
+username: "NextHorizonWeb",
+page: 1,
+avatar_size: 40,
+count: 20,
+loading_text: "loading ..."
+})
+});
+
+$(document).ready(function () {
+	
+	$("a.fancybox").fancybox();
+	
+	$("#nh-topNav ul li a span.nh-topNavRO").css("opacity","0");
+	$("#nh-contactFormSmall #divToUpdate").css("opacity","0");
+	$("#nh-contactForm #divToUpdate").css("opacity","0");
+	
+	// megamenu hover
+	function addMega(){
+		$(this).addClass("hovering");
+		$(this).find("span.nh-topNavRO").stop().animate({
+			opacity: 1
+		}, 250);
+	};
+	function removeMega(){
+		$(this).removeClass("hovering");
+		$(this).find("span.nh-topNavRO").stop().animate({
+			opacity: 0
+		}, 250);
+	};
+	
+	// megamenu settings
+	var megaConfig = {
+	 interval: 0,
+	 sensitivity: 4,
+	 over: addMega,
+	 timeout: 0,
+	 out: removeMega
+	 };
+	 
+	 // megamenu call
+	 $("#menu > li").hoverIntent(megaConfig);
+	 
+	 // spotlight slider
+	 $('#nh-spotlightSlider').flexslider({
+		slideshow: false,
+		animation: "fade",
+		slideshowSpeed: 7000,
+		animationDuration: 1200,
+		randomize: false,
+		startAt: 2,
+		controlNav: false,
+		pauseOnHover: true
+	  });
+	 
+	 //procorner blog feed
+	 $.ajax({
+		type: "GET",
+		url: "http://www.nexhorizon.net/procorner/index.php/category/featured/feed/",
+		dataType: "xml",
+		success: function(xml) {
+			$(xml).find('item').each(function(i){
+				if (i < 3) {
+					var id = $(this).attr('dc:creator');
+					var title = $(this).find('title').text();
+					var url = $(this).find('link').text();
+					var brief = $(this).find('description').text();
+					$('<div class="latestBlog"></div>').html('<h3><a href="'+url+'" title="'+title+'">'+title+'</a></h3><p><span class="blogSummary"><span style="color:#333;">'+brief+'</span>...</span></p>').prependTo('#nh-proCorner');
+					//$fC = $(".blogSummary span");
+					//$fC.html($fC.html().substring(0,120));
+				}
+			});
+		}
+	});
+	 
+	
+	// homepage testimonials slider
+	var slider = $('#nh-testimonialSlider').bxSlider({
+		controls: false
+	});
+	
+		$('.nh-smlPrev').click(function(){
+			slider.goToPreviousSlide();
+			return false;
+		});
+		
+		$('.nh-smlNext').click(function(){
+			slider.goToNextSlide();
+			return false;
+		});
+	
+	// testimonials slider
+	var slider2 = $('#nh-testimonialsSliderSmall').bxSlider({
+		controls: false
+	});
+	
+		$('.nh-smlPrev2').click(function(){
+			slider2.goToPreviousSlide();
+			return false;
+		});
+		
+		$('.nh-smlNext2').click(function(){
+			slider2.goToNextSlide();
+			return false;
+		});
+	
+	// client slider
+	var slider3 = $('#nh-clientSlider').bxSlider({
+		controls: false
+	});
+	
+		$('.nh-smlPrev3').click(function(){
+			slider3.goToPreviousSlide();
+			return false;
+		});
+		
+		$('.nh-smlNext3').click(function(){
+			slider3.goToNextSlide();
+			return false;
+		});
+		
+	// company slider
+	var slider4 = $('#nh-teamSlider').bxSlider({
+		controls: false
+	});
+	
+		$('.nh-teamMemberPrev').click(function(){
+			slider4.goToPreviousSlide();
+			return false;
+		});
+		
+		$('.nh-teamMemberNext').click(function(){
+			slider4.goToNextSlide();
+			return false;
+		});
+	
+	// animated rollover for service icons
+	$('ul.nh-servicesNav li').hover(function(){
+		$(this).find('img').animate({top:'-20px'},{queue:false,duration:100});
+		$(this).find('img').css("z-index","999");
+	}, function(){
+		$(this).find('img').animate({top:'0px'},{queue:false,duration:300});
+		$(this).find('img').css("z-index","1");
+	});
+	
+	$('ul.hover_block li').hover(function(){
+		$(this).find('img').animate({top:'-20px'},{queue:false,duration:100});
+		$(this).find('img').css("z-index","999");
+	}, function(){
+		$(this).find('img').animate({top:'0px'},{queue:false,duration:300});
+		$(this).find('img').css("z-index","1");
+	});
+	
+	// animated rollover for top timeline info
+	$('.nh-top .nh-frame').hover(function(){
+		$(this).find('.nh-info').animate({top:'0px'},{queue:false,duration:300});
+	}, function(){
+		$(this).find('.nh-info').animate({top:'130px'},{queue:false,duration:300});
+	});
+	
+	// animated rollover for bottom timeline info
+	$('.nh-btm .nh-frame').hover(function(){
+		$(this).find('.nh-info').animate({bottom:'0px'},{queue:false,duration:300});
+	}, function(){
+		$(this).find('.nh-info').animate({bottom:'130px'},{queue:false,duration:300});
+	});
+	
+	var ul = $(this).find(".tweet_list");
+	var ticker = function() {
+	setTimeout(function() {
+	var top = ul.position().top;
+	var h = ul.height();
+	var incr = (h / ul.children().length);
+	var newTop = top - incr;
+	if (h + newTop <= 0) newTop = 0;
+	ul.animate( {top: newTop}, 0 );
+	ticker();
+	}, 5000);
+	};
+	ticker();
+	$('.hjtweet a').attr('target','_blank');
+	
+	// Small Contact Form on Service Pages 
+    var options = {
+        url: 'doAction/doAction.asp',
+		type: 'post',
+        success: function () {
+            //$('#divToUpdate').text('Thanks! Your message has been sent');
+			$("#nh-contactFormSmall #nh-contactFormSmallFields").css("display","none");
+			$('#nh-contactFormSmall').find("#divToUpdate").stop().animate({
+			opacity: 1
+			}, 2000);
+			$('#nh-contactFormSmall').find('#divToUpdate').animate({top:'0px'},{queue:false,duration:1000});
+        }
+    };
+    $("#nh-contactFormSmall").validate({
+        rules: {
+            strName: {
+                required: true,
+                minlength: 2
+            },
+            strEmail: {
+                required: true,
+                email: true
+            },
+			strInterest: {
+                required: true
+            }
+        },
+        messages: {
+            strName: {
+                required: "Please enter a name",
+                minlength: "Your name must consist of at least 2 characters"
+            },
+            strEmail: "Please enter a valid email address",
+			strInterest: "Select an Option"
+        }
+    });
+	
+    $('#nh-contactFormSmall').ajaxForm(options);
+	
+	// Contact Page Form
+    var options2 = {
+        url: 'doAction/doActionFull.asp',
+		type: 'post',
+        success: function () {
+            //$('#divToUpdate').text('Thanks! Your message has been sent');
+			$("#nh-contactForm #nh-contactFormFields").css("display","none");
+			$('#nh-contactForm').find("#divToUpdate").stop().animate({
+			opacity: 1
+			}, 2000);
+			$('#nh-contactForm').find('#divToUpdate').animate({top:'290px'},{queue:false,duration:1000});
+        }
+    };
+    $("#nh-contactForm").validate({
+        rules: {
+            strName: {
+                required: true,
+                minlength: 2
+            },
+            strEmail: {
+                required: true,
+                email: true
+            },
+			strPhone: {
+                required: true
+            },
+			strProject: {
+                required: true,
+                minlength: 10
+            }
+        },
+        messages: {
+            strName: {
+                required: "Please enter a name",
+                minlength: "Your name must consist of at least 2 characters"
+            },
+            strEmail: "Please enter a valid email address",
+			strPhone: "Please enter a phone number",
+			strProject: {
+                required: "Please enter some details",
+                minlength: "You must enter at least 10 characters"
+            }
+        }
+    });
+
+    $('#nh-contactForm').ajaxForm(options2);
+	
+	
+	// facebook character limit
+	$('span.feed-message').each(function() {
+		var $this = $(this);
+		$this.text( $this.text().slice(0,65) );
+	});
+	
+	$('a.feed-link').attr('target', '_blank');
+	
+	// show tweet count
+	var username = 'NextHorizonWeb';
+	$.ajax({
+		url: 'https://api.twitter.com/1/users/show.json?screen_name=' + username + '&include_entities=false',
+		dataType: 'jsonp',
+		success: function(data){
+			$('#statuses_count').html(data.statuses_count);
+		}                
+	});
+	
+	$('.scroll-pane').jScrollPane({showArrows: true});
+	
+	//faq toggle
+	$(".nh-answer").hide();
+	$(".nh-question").click(function(){
+		$(this).next(".nh-answer").slideToggle(200);
+	});
+	
+	if ($.fn.cssOriginal!=undefined)
+		$.fn.css = $.fn.cssOriginal;
+
+		$('#products').portfolio({	
+		 
+			<!-- GRID SETTINGS -->
+			gridOffset:90,				<!-- Manual Right Padding Offset for 100% Width -->
+			cellWidth:176,						<!-- The Width of one CELL in PX-->						
+			cellHeight:176,						<!-- The Height of one CELL in PX-->
+			cellPadding:10,						<!-- Spaces Between the CELLS -->
+			entryProPage:16,					<!-- The Max. Amount of the Entries per Page, Rest made by Pagination -->
+			captionOpacity:100,					<!-- Opacity of Caption -->
+			captionPosition:"bottom",
+			captionYOffset:-20,
+			
+			<!-- FILTERING -->
+			filterList:"#portfolio-filter",		<!-- Which Filter is used for the Filtering / Pagination -->
+			title:"#selected-filter-title",		<!-- Which Div should be used for showing the Selected Title of the Filter -->												
+			
+			<!-- Page x from All Pages -->
+			pageOfFormat:"Page #n of #m",		<!-- The #n will be replaced with the actual Item Nr., #m will be replaced with the amount of all items in the filtered Gallery-->						
+			
+			<!-- Social Settings-->
+			showGoogle:"yes",					<!-- Show The Social Buttons ...-->
+			showFB:"yes",
+			showTwitter:"yes",
+				
+			showEmail:"yes",																<!-- ADD EMAIL TO LINK ALSO TO THE LIGHTBOX  -->
+			emailLinkText:"Email to Friend",
+			emailBody:"mailto:email@echoecho.com?body=I found some great File here #url",	<!-- The #url will be replaced with the url of the image -->
+			emailUrlCustomPrefix:"http://www.themepunch.com/",								<!-- Use this if you wish a Custom Prefix to Link Path -->						
+			emailUrlCustomSuffix:"?ref=...",												<!-- Use This if you wish to use a Custtom Suffix for Link Path -->
+			
+			urlDivider:"?",						<!-- What is the Divider in the Url to add the Variables, Filter and Image ID . Impotant for WordPress i.e. Social will share this link with this divider -->
+			
+			<!-- BACKGROUND -->
+			backgroundHolder:"#main-background",
+			backgroundSlideshow:0
+			
+		})
+	 
+}); 
+
+
+//$(window).load(function() {
+//	$('.jspHorizontalBar').wrap('<div class="jspHorizontalBarContainer"></div>');
+//});
+	 
+</script>
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//cdn.zopim.com/?w5QmZ514aTpMyuE7khDasc2pNUJO9Cyf';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script-->
+    
+    <header><!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16971340-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- GooGhywoiu9839t543j0s7543uw1.  Please add thegrovecounselingcenternh@gmail.com to GA account UA-16971340 with â€œManage Users and Editâ€ permissions - date 12/15/15.-->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1036632539756928');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1036632539756928&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+</head>
+<body>
+
+<div id="nh-topNavContainer">
+
+	<div id="nh-topNav">
+	
+			<a href=""><img src="/images/nh-logo.png"></a>
+
+			<!-- <a href="<//%=parentpath%>" id="nh-logo"></a> -->
+
+	<nav>
+		<ul id="menu">
+			<li class="mega"><h2><a href="company/services.asp" title="Orlando Web Design and Internet Marketing Services">Services<br /><span>Our Expertise</span><span class="nh-topNavRO">Services<br /><span>Our Expertise</span></span></a>
+				<div>
+					<ul class="menuLevelTwo">
+						<li><a href="webdesign/">Web Design</a></li>
+						<li><a href="webhosting/">Web Hosting</a></li>
+						<li><a href="networking">Networking</a></li>
+						<li><a href="programming">Programming</a></li>
+						<li><a href="ecommerce">Ecommerce</a></li>
+						<li><a href="computer-forensics">Computer Forensics</a></li>
+						<li><a href="broadband-services">Internet/Voice Access</a></li>
+					</ul>
+					<ul class="menuLevelTwo">
+						<li><a href="internet-marketing/">Internet Marketing</a></li>
+						<li><a href="internet-marketing/default.asp#seo">Search Engine Optimization</a></li>
+						<li><a href="internet-marketing/default.asp#ppc">Pay Per Click</a></li>
+						<li><a href="internet-marketing/default.asp#social">Social Media</a></li>
+						<li><a href="mobile-webdesign/">Mobile Web Design</a></li>
+						<li><a href="cloud-computing">Cloud Computing</a></li>
+					</ul>
+				</div>
+			</h2></li>
+			<li><h2><a href="webdesign/portfolio.asp">Portfolio<br /><span>Our Work</span><span class="nh-topNavRO">Portfolio<br /><span>Our Work</span></span></a></h2></li>
+			<li class="mega"><h2><a href="company/">Company<br /><span>Our Resume</span><span class="nh-topNavRO">Company<br /><span>Our Resume</span></span></a>
+				<div>
+					<ul class="menuLevelTwo">
+						<li><a href="company/">About Us</a></li>
+						<li><a href="company/next-horizon-testimonials.asp">Testimonials</a></li>
+						<li><a href="company/history.asp">History</a></li>
+						<li><a href="company/copyright.asp">Copyright Policy</a></li>
+					</ul>
+					<ul class="menuLevelTwo">
+						<li><a href="company/faqs.asp">FAQ</a></li>
+						<li><a href="http://www.nexhorizon.net/procorner/">ProCorner</a></li>
+						<li><a href="http://www.nexhorizon.net/ProductCart/pc/home.asp">NextCart</a></li>
+					</ul>
+				</div>
+			</h2></li>
+			<li><h2><a href="company/contact.asp" title="Contact Orlando Web Design and Internet Marketing">Contact<br /><span>Our Business Card</span><span class="nh-topNavRO">Contact<br /><span>Our Business Card</span></span></a></h2></li>
+		</ul>
+    </nav>
+	
+	</div><!-- end top nav -->
+	
+</div><!-- end top nav container --></header>
+    
+    <div class="flexslider" id="nh-spotlightSlider">
+        <ul class="slides">
+        
+            <li id="nh-slideBG-WD" class="slide right">
+                <div>
+                    <span class="makingsense">Making Sense of...<br /><span>Web Design</span></span>
+                    <p>Your website is your "virtual home" and should make a<br />great first impression once a visitor "opens the front door."</p>
+                    <a href="webdesign/portfolio.asp"></a>
+                </div>
+            </li>
+      
+            <li id="nh-slideBG-CC" class="slide">
+                <div>
+                    <span class="makingsense">Making Sense of...<br /><span>Cloud Computing</span></span>
+                    <p>We can help you save up to 40%<br />on your IT capital costs.</p>
+                    <a href="cloud-computing/"></a>
+                </div>
+            </li>
+            
+            <li id="nh-slideBG-MB" class="slide right">
+                <div>
+                    <span class="makingsense">Making Sense of...<br /><span>Mobile Web Design</span></span>
+                    <p>20% of Americans browse the web daily on mobile<br />devices. Let us build a strong mobile presence for you.</p>
+                    <a href="mobile-webdesign/"></a>
+                </div>
+            </li>
+            
+            <li id="nh-slideBG-CF" class="slide right">
+                <div>
+                    <span class="makingsense">Making Sense of...<br /><span>Computer Forensics</span></span>
+                    <p>We can help you retrieve and evaluate electronic data that<br />has been lost, moved or hidden, whether accidentally or on purpose.</p>
+                    <a href="computer-forensics/"></a>
+                </div>
+            </li>
+            
+            <li id="nh-slideBG-WH" class="slide">
+                <div>
+                    <span class="makingsense">Making Sense of...<br /><span>Web Hosting</span></span>
+                    <p>We offers hosting that is fully equipped and secure<br />to handle the traffic that is delivered to you.</p>
+                    <a href="webhosting/"></a>
+                </div>
+            </li>
+            
+            <li id="nh-slideBG-EC" class="slide right">
+                <div>
+                    <span class="makingsense">Making Sense of...<br /><span>Ecommerce</span></span>
+                    <p>User-friendly ecommerce websites that produce<br />results, and those results are increased SALES.</p>
+                    <a href="ecommerce/"></a>
+                </div>
+            </li>
+            
+            <li id="nh-slideBG-IM" class="slide right">
+                <div>
+                    <span class="makingsense">Making Sense of...<br /><span>Internet Marketing</span></span>
+                    <p>Incorporating SEO, Pay-Per Click, Social Media &amp; more<br />for prominence and placement on the Internet.</p>
+                    <a href="internet-marketing/" title="Internet Marketing"></a>
+                </div>
+            </li>
+            
+            <li id="nh-slideBG-PG" class="slide">
+                <div>
+                    <span class="makingsense">Making Sense of...<br /><span>Programming</span></span>
+                    <p>We offer customized solutions to get the most for your money<br />and effort when it comes to Custom Web Programming.</p>
+                    <a href="programming/"></a>
+                </div>
+            </li>
+            
+            <li id="nh-slideBG-NW" class="slide">
+                <div>
+                    <span class="makingsense">Making Sense of...<br /><span>Networking</span></span>
+                    <p>On average, 3.4 percent of a companyâ€™s profits are lost<br />due to IT failures. Let us help!</p>
+                    <a href="networking/"></a>
+                </div>
+            </li>
+    
+            <li id="nh-slideBG-IA" class="slide">
+                <div>
+                    <span class="makingsense">Making Sense of...<br /><span>Voice Over IP</span></span>
+                    <p>We offer the voice and data<br />solutions your company needs to compete.</p>
+                    <a href="broadband-services/"></a>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+    
+<article>
+    <div id="nh-aboutContainer">
+    
+        <div id="nh-about">
+        
+            <h1>
+            <em><span class="nh-txtGreen">Next Horizon:</span> an Orlando Web Design and Internet Marketing agency</em></h1>
+            
+            <div>
+                <img src="/images/nh-designIconHeader.png">
+                <h3>Web Design &amp; Hosting</h3>
+                <p>We are an Orlando web design company dedicated in providing web solutions to businesses across Central Florida. Established in 1996, we have progressively gained knowledge in many web technologies, including <a href="/webhosting/" title="Web Hosting">reliable web hosting</a> and <a href="#" title="responsive web design">responsive web design</a>, that we want to pass onto you. <br /><span><a href="webdesign/" title="Web Design Services">Find Out More</a></span></p>
+            </div>
+            
+            <div>
+                <img src="/images/nh-networkingIconHeader.png">
+                <h3>Networking &amp; Programming</h3>
+                <p>Not only do we focus on the visual appeal and functionality of a website, we also pay close attention to the behind-the-scenes <a href="/programming/" title="programming">programming</a> that's involved in many web services. We also oversee and consult with many small-to-medium to large-sized companies' IT systems. <br /><span><a href="networking/" title="Networking and Programming Services">Find Out More</a></span></p>
+            </div>
+            
+            <div class="last">
+                <img src="/images/nh-marketingIconHeader.png">
+                <h3>Internet Marketing</h3>
+                <p>Having an awesome website is only half the battle; the next step in expanding your web presence is to be easily found by your potential followers and customers. Next Horizon can provide you with up-to-date <a href="/internet-marketing/default.asp#seo" title="SEO">search engine optimization</a> and effective <a href="/internet-marketing/default.asp#ppc" title="PPC">pay-per-click (PPC)</a> campaigns to help your site gain traffic.  <br /><span><a href="internet-marketing/" title="internet marketing">Find Out More</a></span></p>
+            </div>
+        
+        </div><!-- end about -->
+        
+    </div><!-- end about container -->
+</article>
+    
+    
+<article>
+    <div id="nh-testimonialsContainer">
+    
+        <div id="nh-testimonials" class="nh-content">
+        
+            <h2><span class="nh-hdrSmallTxt">The only thing that speaks louder than our work</span><br />
+            Are Our Customers</h2>
+            
+            <div class="nh-sliderControls">
+                <a href="" class="nh-smlNext">Next Slide</a>
+                <a href="" class="nh-smlPrev">Previous Slide</a>
+                <div class="clear"></div>
+                <p><a href="company/next-horizon-testimonials.asp"><strong>View All Testimonials</strong></a></p>
+            </div>
+            
+            <div class="clear"></div>
+            
+            <div id="nh-testimonialSlider">
+                    <div>
+                        <div class="nh-testimonialCopy">
+                            <h3>Night Lite Pediatrics</h3>
+                            <p>Next Horizon has gone above and beyond the call of duty and provides excellent customer support at every level; from sales, support, and industry knowledge .  What we appreciate most is the time they take to really understand our business and how to best use that information to grow our results and customers, but most importantly to give consumers the information they really need. This resulted in a great website that is easy to use, efficient and user friendly. Not to mention the positive feedback from our patients about how great it looks! The one-on-one training and ongoing support is second to none. Thank you Next Horizon for being such a valuable part of helping our business grow. </p>
+                            <p class="nh-textimonialTitle">- Melissa Brzezinski, Orlando, FL.</p>
+                            <p><strong><a href="http://www.nightlitepediatrics.com" target="_blank">http://www.nightlitepediatrics.com</a></strong></p>
+                        </div>
+                        <img src="images/nh-clientLogosNightLite.png" alt="" title="" />
+                    </div>
+                    <div>
+                        <div class="nh-testimonialCopy">
+                            <h3>Lake Mary Eye Care</h3>
+                            <p>Next Horizon has been serving our business needs for about a decade.  Prior to Next Horizon, when we had a computer issue it could be days before the issue was resolved.  Time is money and the money lost during these days was getting to be excessive.  Once we switched to Next Horizon, the problems we were having keeping our computers up and running began to disappear and when we did have computer problems they were resolved timely. Our IT cost did go up but the money saved from being up and running 99.9% offset the cost significantly.  Do your company a favor and make the switch to Next Horizon for prompt, competent expertise in computer stuff. </p>
+                            <p class="nh-textimonialTitle">- Dr. Robert Love, Lake Mary, FL.</p>
+                            <p><strong><a href="http://www.lakemaryeyecare.com" target="_blank">http://www.lakemaryeyecare.com</a></strong></p>
+                        </div>
+                        <img src="images/nh-clientLogosLMEC.png" alt="" title="" />
+                    </div>
+                    <div>
+                        <div class="nh-testimonialCopy">
+                            <h3>Florida Unlimited Incentives</h3>
+                            <p>Iâ€™d like to thank you for all your hard work. You took my vision and made it a reality and then some! <strong>The design is fabulous!</strong> Your creativity and flexibility are really appreciated. I know you had to think outside of your comfort zone at times and you managed beautifully. You definitely have made this experience enjoyable instead of the daunting task I thought it would be. Again, thank you so much!</p>
+                            <p class="nh-textimonialTitle">- Rita Fenner, Orlando, FL.</p>
+                            <p><strong><a href="http://www.floridaunlimitedincentives.com" target="_blank">http://www.floridaunlimitedincentives.com</a></strong></p>
+                        </div>
+                        <img src="images/nh-clientLogosFUI.png" alt="" title="" />
+                    </div>
+                    
+                    <div>
+                        <div class="nh-testimonialCopy">
+                            <h3>RL Haines General Contractors</h3>
+                            <p>We're excited to partner with Next Horizon on the re-brand of our web site, not only due to their <strong>outstanding service and experience</strong>, but also due in part to the fact that they are an outstanding supporter of the local community, which means a lot to us. As strong supporters of Making the Difference Outreach, as well as other Seminole County non-profits, reputations played a large part for us in selecting a partner and we're proud to do so with Next Horizon.</p>
+                            <p class="nh-textimonialTitle">- Richard Haines, Oviedo, FL.</p>
+                            <p><strong><a href="http://www.rlhaines.com" target="_blank">http://www.rlhaines.com</a></strong></p>
+                        </div>
+                        <img src="images/nh-clientLogosRLH.png" alt="" title="" />
+                    </div>
+                    
+                    <div>
+                        <div class="nh-testimonialCopy">
+                            <h3>Hospetaility Travel Club</h3>
+                            <p>Next Horizon, in my opinion, are the best value. Their design team is the most creative I have ever encountered. When you consider all they bring to the table-their strong customer service, <strong>high degree of technology and a level of creativity</strong> that makes your site stand out-they are remarkably reasonably priced. You could spend a lot more and get a lot less.</p>
+                            <p class="nh-textimonialTitle">- Heather Eisenstadt, Orlando, FL.</p>
+                        </div>
+                        <img src="images/nh-clientLogosHTC.png" alt="" title="" />
+                    </div>
+                    
+                    <div>
+                        <div class="nh-testimonialCopy">
+                            <h3>Neometrix Technologies, Inc.</h3>
+                            <p>Prior to working with Next Horizon, we had a website, but we were unsatisfied with the amount of traffic to our site, and the number of sales leads that it actually generated. The design needed some serious help and the site required optimization for search engines. Since the redesign by Next Horizon and the implementation of <strong>Search Engine Optimization, we now receive several hundred new visitors per month</strong> and receive new sales leads via e-mail daily.</p>
+                            <p class="nh-textimonialTitle">- Dan Perreault, Lake Mary, FL.</p>
+                            <p><strong><a href="http://www.3dscanningservices.net/" target="_blank">http://www.3dscanningservices.net/</a></strong></p>
+                        </div>
+                        <img src="images/nh-clientLogosNEO.png" alt="" title="" />
+                    </div>
+                                
+            </div><!--  end testimonial slider -->	
+            
+        </div><!-- end testimonials -->
+        
+    </div><!-- end testimonials container -->
+</article>
+    
+<article>
+    <div id="nh-socialContainer">
+    
+        <div id="nh-social" class="nh-content">
+        
+            <h2><span class="nh-hdrSmallTxt">We tend to have a lot on our mind</span><br />
+            Take a Peek</h2>
+            
+            <div class="clear"></div>
+            
+            <div id="nh-proCorner">
+            	<p><strong><a href="procorner/">Check Out ProCorner</a></strong></p>
+            </div><!-- end procorner -->
+            
+            <div id="nh-fb">
+            
+                <a href="https://www.facebook.com/OrlandoWebDesignITService" id="nh-fbLogo" target="_blank">Follow us on Facebook</a>
+                
+                <ul><li><span class='feed-message'>We are happy to announce that Petrotech Southeast has released their new website redesign. We enjoyed designing and developing their new site as one of the top environmental clean up and recycling businesses in the southeast. 
+http://www.petrotechse.com/</span><a class='feed-link' href='http://tinyurl.com/hod8kds'>http://tinyurl.com/hod8kds</a></li><li><span class='feed-message'>We are monitoring the weather & keeping an eye on what the national weather center advises on precautions to take in preparing for Hurricane Matthew.  We understand that some of you will be working from home. Next Horizon as of 11:28 am will be fully operational Thursday 10/5/2016 Friday 10/6/2016 as of the current forecasted path we will be physical closed. However, no physical service calls on Thursday 10/5/2016 will be performed so that we may prepare our facilities for Matthew.
+
+As the storm continues to progress our Network Operations Personal will be monitoring all of Next Horizon’s Cloud equipment and Hosting environments. In the unlikelihood of damage to our facility all replicated physical sites are fully synced with cloud customer data in the event that our facility was damaged. In the unlikelihood of a network outage or failure our staff and their family’s safety will be priority. Please note as soon as possible, safety permitting, we will address any outages and service requests and they will be prioritized based on total number of users affected. We encourage those customers with physical hardware that is not generator protected or enclosed in a server room capable of handling wind gusts of 100+ miles per hour to shut down all equipment, take your local backup devices home, and disconnect all electronic devices near windows and doors.
+
+Stay Safe please contact support@nexhorizon.net for any questions.</span><a class='feed-link' href='http://tinyurl.com/gme2vnf'>http://tinyurl.com/gme2vnf</a></li><li><span class='feed-message'>Our full service IT department can make business easier with our cloud services! We provide infrastructure, applications, and storage space at an affordable rate.
+
+http://www.nexhorizon.net/</span><a class='feed-link' href='http://tinyurl.com/jzozuug'>http://tinyurl.com/jzozuug</a></li><li><span class='feed-message'>People spend 2.8 hours on their mobile devices a day, and if your website isn’t mobile friendly 79% of people will find another website. Don’t miss out! A new mobile friendly website will pull people in! 
+
+http://www.nexhorizon.net/</span><a class='feed-link' href='http://tinyurl.com/zfth7ky'>http://tinyurl.com/zfth7ky</a></li></ul>
+                
+            </div><!-- end facebook feed -->
+            
+            <div id="nh-tw">
+            
+                <a href="http://twitter.com/#!/NextHorizonWeb" id="nh-twLogo" target="_blank">Follow Us on Twitter</a>
+                
+                <div class="tweet-wrapper">
+                	<div id="ticker"></div> 
+                </div>
+                
+            </div><!-- end tweet feed -->	
+            
+            <div class="clear"></div>
+            
+        </div><!-- end social -->
+        
+    </div><!-- end social container -->
+</article>
+    
+    <footer><div id="nh-footerContainer">
+	<div id="nh-footer">
+	
+		<div id="nh-footerServices">
+			<h3>Services</h3>
+		
+			<ul>
+				<li><a href="webdesign/">Web Design</a></li>
+				<li><a href="internet-marketing/">Internet Marketing</a></li>
+				<li><a href="webhosting/">Web Hosting</a></li>
+				<li><a href="mobile-webdesign/">Mobile Web Design</a></li>
+				<li><a href="networking/">Networking</a></li>
+				<li><a href="cloud-computing/">Cloud Computing</a></li>
+				<li><a href="programming/">Programming</a></li>
+				<li><a href="computer-forensics/">Computer Forensics</a></li>
+				<li><a href="ecommerce/">Ecommerce</a></li>
+				<li><a href="broadband-services/" title="Internet and Voice Access">VoIP</a></li>
+			</ul>
+			
+		</div><!-- end services -->
+		
+		<div id="nh-footerCompany">
+			<h3>Company</h3>
+		
+			<ul>
+				<li><a href="company/">About Us</a></li>
+				<li><a href="webdesign/portfolio.asp">Portfolio</a></li>
+				<li><a href="company/faqs.asp">FAQ</a></li>
+				<li><a href="company/next-horizon-testimonials.asp">Testimonials</a></li>
+				<li><a href="procorner/" title="Our Blog">ProCorner</a></li>
+				<li><a href="company/history.asp">History</a></li>
+				<li><a href="ProductCart/pc/">NextCart</a></li>
+				<li><a href="http://nexhorizon.net/m/default.asp?staynormal=0">View Mobile</a></li>
+				<!--<li><h2><a href="company/copyright.asp" title="Orlando Web Design Company Copyright Policy">Copyright Policy</a></h2></li>-->
+				<li><a href="remote/remote.exe">Remote Support</a></li>
+				<li><a href="remote/installer.exe">Remote Installer</a></li>
+			</ul>
+			
+		</div><!-- end company -->
+		
+		<div id="nh-footerContact">
+			<h3>Contact</h3>
+		
+			<p>915 West First Street<br />Sanford, FL 32771</p>
+			<p><strong>Phone:</strong> (407) 328-9228</p>
+			<p><strong>Fax:</strong> (407) 330-3240</p>
+			<p><a href="mailto:Info@NexHorizon.net">Info@NexHorizon.net</a></p>
+			<p><a href="http://mail.nexhorizon.net" target="_blank">Web Mail</a></p>
+			
+		</div><!-- end contact -->
+		
+		<div id="nh-footerFollow">
+			<h3>Follow</h3>
+		
+			<ul>
+				<li><h2><a href="https://plus.google.com/104824421141558688294/" id="nh-icnGP" target="_blank">Follow us on Google +</a></h2></li>
+				<li><h2><a href="https://www.facebook.com/OrlandoWebDesignITService" id="nh-icnFB" target="_blank">Follow us on Facebook</a></h2></li>
+				<li><h2><a href="http://twitter.com/#!/NextHorizonWeb" title="Twitter" id="nh-icnTW" target="_blank">Follow us on Twitter</a></h2></li>
+				<li><h2><a href="http://www.linkedin.com/company/next-horizon-networking-and-technology/" id="nh-icnLI" target="_blank">Follow us on LinkedIn</a></h2></li>
+			</ul>
+			
+		</div><!-- end section class -->
+		
+		<div class="clear"></div>
+		
+		<div id="nh-footerStats">
+			<h3>Currently on our Horizon</h3>
+			
+			<div id="franky"><a class="design"><small>Hello World</small></a></div>
+		
+			<ul>
+				<li><span class="nh-txtGreen">451</span><br />Clients</li>
+				<li><span class="nh-txtGreen" id="statuses_count">781</span><br />Tweets</li>
+				<li><span class="nh-txtGreen">303</span><br />Likes</li>
+				<li><span class="nh-txtGreen">32</span><br />Pet Fish</li>
+				<li class="last"><span class="nh-txtGreen">1,436,298</span><br />High Score on Angry Birds</li>
+			</ul>
+			
+			<div class="clear"></div>
+			
+		</div><!-- end stats -->
+		
+		<a href="" id="nh-footerLogo"></a>
+		
+		<p id="nh-copyright">Copyright 2016 &copy; All rights reserved.<br /><span>Fueled by frozen burritos and stale coffee.</span></p>
+		
+		<div class="clear"></div>
+		
+	
+	</div><!-- end footer -->
+</div><!-- end footer container -->
+<script>
+/**
+* Function that tracks a click on an outbound link in Google Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label.
+*/
+var trackOutboundLink = function(outbound,url) {
+    ga('send', 'event', outbound, 'click', url, {'hitCallback':
+      function () {
+      document.location = url;
+      }
+    });
+}
+</script> 
+
+<!-- old google analytics
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16971340-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>-->
+
+
+<!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1071465990;
+var google_conversion_label = "DmUMCNqhrwQQhoz1_gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1071465990/?value=0&amp;label=DmUMCNqhrwQQhoz1_gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+</body>
+</html></footer>
+

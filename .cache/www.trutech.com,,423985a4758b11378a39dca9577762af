@@ -1,0 +1,667 @@
+status: 200
+content-length: 46513
+content-location: http://www.trutech.com/
+x-cache-varnish: HIT
+set-cookie: PHPSESSID=u7dru0upnl88gsoai9nqnj4hb1; path=/
+accept-ranges: bytes
+vary: Accept-Encoding
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+link: <http://www.trutech.com/wp-json/>;
+ rel="https://api.w.org/", <http://www.trutech.com/>; rel=shortlink
+date: Tue, 04 Oct 2016 09:01:13 GMT
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" dir="ltr" lang="en-US" >
+<head>
+<title>World Class IT Support Services - Call TruTechnology today!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+<script type="text/javascript">
+	var subTract=10
+</script>
+
+<!-- <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/widgets.css" /> -->
+<!-- <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/style.css" /> -->
+<!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/style_ie7.css" />
+<![endif]-->
+<!--<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/iterations/theme03_styleA.css" /> -->
+  <!-- <link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/clients/itsupportjax/css/itsupportjax.css" /> -->
+
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/widgets.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/style.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/css/iterations/theme03_styleA.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/clients/itsupportjax/css/itsupportjax.css" />
+
+<!-- <link type="text/css" rel="stylesheet" media="print" href="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/print.css" /> -->
+
+<!-- All in One SEO Pack 2.3.8 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<meta name="description" itemprop="description" content="Is your business ready to use IT as an enabler for growth and productivity?  TruTech provides Flat Rate IT services that produce results for your business." />
+
+<meta name="keywords" itemprop="keywords" content="TruTechnology, Enterprise Integration, Antisyn, Brightlink, iVenture, iVentures, Integrity, IT Consulting, ICX, IT support service, IT support service in Jacksonville, IT support service in North Florida, IT support, service in Florida, IT support services, IT support services in Jacksonville, IT support services in North Florida, IT support services in Florida, IT Company, IT Company in Jacksonville, IT Company in Jacksonville FL, IT Company in North Florida, IT Company in Florida, IT Companies in Jacksonville, IT Companies in Jacksonville FL, IT Companies in North Florida, IT Companies in Florida, IT Help Jacksonville, Jacksonville IT Company, Jacksonville FL IT company, North Florida IT Company, IT services company in Jacksonville, IT service company in Jacksonville Beach, IT support service in Jacksonville Beach, Jacksonville beach IT support service, Managed Services Jacksonville, Information Technology Jacksonville, Computer help Jacksonville, Server help Jacksonville, Computer issues Jacksonville, IT tech support, MSP Providers, Information technology support services, Managed Service Providers" />
+
+<link rel="alternate" type="application/rss+xml" title="%blog_title% Blog" href="/feed/"; />
+
+<meta name="google-site-verification" content="UgyT261fyipmYJA9S8KpMkpds-oJEcFEHdIFECSoOv0" />
+
+
+<!-- BEGIN LivePerson Monitor. --> 
+<script type="text/javascript"> 
+window.lpTag={site:'89540201', lpSrv:'server.iad.liveperson.net', _v:'1.0',protocol:location.protocol,events:{bind:function(app,ev,fn){lpTag.defer(function(){lpTag.events.bind(app,ev,fn)})},trigger:function(app,ev,json){lpTag.defer(function(){lpTag.events.trigger(app,ev,json)})}},defer:function(fn){this._defL=this._defL||[];this._defL.push(fn)},load:function(src,chr,id){if(!src){src=this.protocol+'//'+((this.ovr&&this.ovr.domain)?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site}var s=document.createElement('script');s.setAttribute('charset',chr?chr:'UTF-8');if(id){s.setAttribute('id',id)}s.setAttribute('src',src);document.getElementsByTagName('head').item(0).appendChild(s)},init:function(){this._timing=this._timing||{};this._timing.start=(new Date()).getTime();var that=this;if(window.attachEvent){window.attachEvent('onload',function(){that._domReady('domReady')})}else{window.addEventListener('DOMContentLoaded',function(){that._domReady('contReady')},false);window.addEventListener('load',function(){that._domReady('domReady')},false)}if(typeof(_lptStop)=='undefined'){this.load()}},_domReady:function(n){this.isDom=true;this._timing[n]=(new Date()).getTime();this.events.trigger('LPT','DOM_READY')}};lpTag.init(); 
+</script> 
+<!-- END LivePerson Monitor. -->
+
+<script type="text/javascript"> 
+document.write(unescape("%3Cscript src='" + document.location.protocol + 
+"//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E")); 
+</script> 
+<script>Munchkin.init("614-OVO-168");</script>
+
+<!-- Start of Async HubSpot Analytics Code --> 
+<script type="text/javascript"> 
+(function(d,s,i) { 
+if (d.getElementById(i)){return;} 
+var n = d.createElement(s),e = document.getElementsByTagName(s)[0]; 
+n.id=i;n.src = "//js.hubspot.com/analytics/176288.js"; 
+e.parentNode.insertBefore(n, e); 
+})(document, "script", "hs-analytics"); 
+</script> 
+<!-- End of Async Hubspot Analytics Code -->
+
+<script type="text/javascript"> 
+setTimeout(function(){var a=document.createElement("script"); 
+var b=document.getElementsByTagName("script")[0]; 
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/4108.js?"+Math.floor(new Date().getTime()/3600000); 
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1); 
+</script>
+<link rel="canonical" href="http://www.trutech.com/" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//www.trutech.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.trutech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='pronto_facebook_frontend-css'  href='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/pronto-facebook-comments/pronto-facebook-comments-front.css?ver=4.6.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js?ver=3.32'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/jquery.cycle.all.2.72.js?ver=4.6.1'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/default.js?ver=4.6.1'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.4.8'></script>
+<link rel='https://api.w.org/' href='http://www.trutech.com/wp-json/' />
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel='shortlink' href='http://www.trutech.com/' />
+<link rel="alternate" type="application/json+oembed" href="http://www.trutech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.trutech.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.trutech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.trutech.com%2F&#038;format=xml" />
+<script src='http://prontopreview.com/?dm=8c5c56f01f9f0b4f5be9d1e5dfb3d164&amp;action=load&amp;blogid=1556&amp;siteid=1&amp;t=160248972&amp;back=http%3A%2F%2Fwww.trutech.com%2F' type='text/javascript'></script><link rel="stylesheet" type="text/css" href="https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/cforms/styling/cforms.css" />
+<script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/cforms/js/cforms.js"></script>
+<meta property="og:image" content="http://www.trutech.com/files/TruTech_Logo_300.png"/><meta property="og:url" content="http://www.trutech.com/"/><meta property="og:type" content="website" /><meta property="og:title" content="World Class IT Support Services - Call TruTechnology today!" /><link rel="shortcut icon" href="https://ddodupf0i60zw.cloudfront.net/favicon/itsupportjax.ico" type="image/x-icon" /><!-- Favi -->
+<link rel='dns-prefetch' href='//v0.wordpress.com'>
+<link rel="icon" href="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/2016/02/cropped-TruTech_Graphic_Online-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/2016/02/cropped-TruTech_Graphic_Online-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/2016/02/cropped-TruTech_Graphic_Online-180x180.png" />
+<meta name="msapplication-TileImage" content="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/2016/02/cropped-TruTech_Graphic_Online-270x270.png" />
+<!-- Google Analytics Tracking by Google Analyticator 6.4.8: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = [''];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-7782449-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+			<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://www.trutech.com/?custom-css=1&#038;csblog=1556&#038;cscache=6&#038;csrev=40" />
+			<!-- <script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-includes/js/jquery/jquery.js?ver=1.2.6"></script> -->
+<!-- <script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/jquery.cycle.all.2.72.js"></script> -->
+<!-- <script type="text/javascript" src="https://ddodupf0i60zw.cloudfront.net/wp-content/themes/core/js/default.js"></script> -->
+</head>
+<body id="homepage" class="level1">
+	<div class="wrapper">
+		<div id="header">
+			<div id="headerInside">
+			<div id="logo"><a href="/"><img src="/files/TruTech_Logo_300.png" alt=" - TruTechnology Managed IT Services" border="0" /></a></div>
+			<div id="header_widgets" class="widgetarea"><div id="search-3" class="headerwidget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://www.trutech.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div><div id="icon-multi-2" class="headerwidget icon_multi"><div class="icon-wid"><a href="/about-us/contact-us/" ><img src="/files/icon/phone-blue.png" alt="it support" /></a></div>
+    <div class="icon-text">
+      <div class="text ">
+                  <h3><a href="/about-us/contact-us/" >866-324-3324</a></h3>
+            <div class="description"><a href="/about-us/contact-us/" ></a></div>
+      </div>
+    </div></div><div id="text-17" class="headerwidget widget_text">			<div class="textwidget"><!-- ClickTale Top part --> 
+<script type="text/javascript"> 
+var WRInitTime=(new Date()).getTime(); 
+</script> 
+<!-- ClickTale end of Top part --></div>
+		</div></div>
+			</div>
+		</div>
+		<div id="navigation_widgets"><div id="navigation_widgets_inside">
+<ul class="sf-menu">
+                <li class="page-item  current_page_item">
+          <a href="http://www.trutech.com/" ><span>Home</span></a>
+          </li>
+                <li class="page-item ">
+          <a href="http://www.buildingitc.com/services-solutions/products-and-services/" ><span>Services & Solutions</span></a>
+              <ul id="l2-products-and-services">		
+			
+			<li class="page-item"><a href="http://www.trutech.com/services-solutions/products-and-services/" ><span>Products and Services</span></a>
+										<ul id="l3-products-and-services">
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/products-and-services/backup-and-disaster-recovery/" ><span>Backup and Disaster Recovery</span></a></li>
+													<li class="page-item"><a href="/services-solutions/the-plumbing/network-performance-monitoring/monitoring/" ><span>Network Performance Monitoring</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/products-and-services/managed-security-services/" ><span>Managed Security Services</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/products-and-services/email-spam-protection/" ><span>Email &amp; Spam Protection</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/products-and-services/endpoint-security/" ><span>Endpoint Security</span></a></li>
+							
+						</ul>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/services-solutions/fixed-cost-managed-it-services/" ><span>Fixed Cost Managed IT Services</span></a>
+										<ul id="l3-fixed-cost-managed-it-services">
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/fixed-cost-managed-it-services/proactive-technology-management/" ><span>Proactive Technology Management</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/fixed-cost-managed-it-services/network-administration/" ><span>Network Administration</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/fixed-cost-managed-it-services/technology-consulting/" ><span>Technology Consulting</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/services-solutions/fixed-cost-managed-it-services/professional-services/" ><span>Professional Services</span></a></li>
+							
+						</ul>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/services-solutions/co-managed-it-service/" ><span>Co-Managed IT Service</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/services-solutions/the-end-result/" ><span>The End Result</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.trutech.com/our-methodology/" ><span>Our Methodology</span></a>
+              <ul id="l2-our-methodology">		
+			
+			<li class="page-item"><a href="http://www.trutech.com/our-methodology/reactive-support-services/" ><span>Pillar 1: Reactive Support Services</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/our-methodology/standardized-technology-management/" ><span>Pillar 2: Standardized Technology Management</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/our-methodology/network-auditing-and-alignment/" ><span>Pillar 3: Network Auditing and Alignment</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/our-methodology/technology-consulting/" ><span>Pillar 4: Technology Consulting</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/our-methodology/project-implementation/" ><span>Pillar 5: Project Implementation</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.trutech.com/resources/" ><span>Resources</span></a>
+              <ul id="l2-resources">		
+			
+			<li class="page-item"><a href="http://www.trutech.com/resources/white-papers/" ><span>White Papers</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.trutech.com/support-center/" ><span>Support Center</span></a>
+          </li>
+                <li class="page-item ">
+          <a href="http://www.trutech.com/about-us/" ><span>About Us</span></a>
+              <ul id="l2-about-us">		
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/why-trutech/" ><span>Why TruTech</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/referral-program/" ><span>You Refer, We Donate</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/contact-us/" ><span>Contact Us</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/careers/" ><span>Careers</span></a>
+										<ul id="l3-careers">
+													<li class="page-item"><a href="http://www.trutech.com/about-us/careers/network-administrator/" ><span>Network Administrator</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/about-us/careers/project-engineer/" ><span>Project Engineer</span></a></li>
+													<li class="page-item"><a href="http://www.trutech.com/about-us/careers/support-engineer/" ><span>Support Engineer</span></a></li>
+							
+						</ul>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/blog/" ><span>Our Blog</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/press-releases/" ><span>Press Releases</span></a>
+							</li>
+			
+			<li class="page-item"><a href="http://www.trutech.com/about-us/partners-certifications/" ><span>Partners & Certifications</span></a>
+							</li>
+				</ul>
+         </li>
+                <li class="page-item ">
+          <a href="http://www.trutech.com/connectwithus/" ><span>Connect with us!</span></a>
+          </li>
+  </ul>
+</div>
+</div>
+		<!-- Homepage: Marquee widget area-->
+		<div id="hp_marquee_widgets" class="widgetarea">
+			<div id="hp_marquee_widgets_outside">
+				<div id="hp_marquee_widgets_inside">
+				
+          <div id="rotate_banner_content-multi-2" class="hp_marquee_widget rotate_banner_content_multi">
+                <div class="hp_marquee_widget_content">
+              <h3></h3>
+
+<div id="rtc-2" class="rotate-banner-content" style="width:960px;height:375px">
+
+					<div id="frame1-2">
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/widgets/2/vp-banner.jpg" width="960" height="375"  />
+									</div>
+					<div id="frame2-2">
+										<a href="/services-solutions/the-plumbing/backup-and-disaster-recovery/" >
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/widgets/2/bannerR2_02.jpg" width="960" height="375"  />
+										</a>
+									</div>
+					<div id="frame3-2">
+										<a href="/services-solutions/the-plumbing/managed-security-services/" >
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/widgets/2/bannerR2_03.jpg" width="960" height="375"  />
+										</a>
+									</div>
+					<div id="frame4-2">
+										<a href="/services-solutions/the-plumbing/network-performance-monitoring/monitoring/" >
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/widgets/2/bannerR2_04.jpg" width="960" height="375"  />
+										</a>
+									</div>
+					<div id="frame5-2">
+										<a href="/services-solutions/flat-rate-it-support/" >
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/widgets/2/bannerR1_01.jpg" width="960" height="375"  />
+										</a>
+									</div>
+	</div>
+		 
+	<a id="prev" title="Previous" href="#"><span>Prev</span></a> 
+	<a id="next" title="Next" href="#"><span>Next</span></a>
+ 
+<div class="nav"><a id="start"></a><a id="stop"></a><div class="nav-inside"><ul id="rtc-nav-2"></ul></div></div>
+<script type="text/javascript">
+( function(jQuery) {
+jQuery(document).ready(function() {
+		jQuery('#rtc-2').cycle({ 
+			fx:'scrollLeft',
+			timeout:5000,
+			speed:720,
+			pager:      '#rtc-nav-2',
+						prev:    '#prev',
+			next:    '#next',
+			pagerAnchorBuilder: pagerFactory,
+						pause: true,
+			pauseOnPagerHover: true
+
+		});
+				
+		function pagerFactory(idx, slide) {
+			var s = idx > 6 ? ' style="display:none"' : '';
+			return '<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
+		};
+		
+		jQuery('#start').click(function() {
+			jQuery('#rtc-2').cycle('resume');
+			jQuery('#start').css({"display":"none"});
+			jQuery('#stop').css({"display":"block"});
+		});
+				
+		 jQuery('#stop').click(function() {
+			jQuery('#rtc-2').cycle('pause');
+			jQuery('#start').css({"display":"block"});
+			jQuery('#stop').css({"display":"none"});
+		});
+						
+		
+		jQuery('#prev').click(function() {
+			jQuery('#rtc-2').cycle('resume');
+			jQuery('#start').css({"display":"none"});
+			jQuery('#stop').css({"display":"block"});
+		});
+		
+ 		jQuery('#next').click(function() {
+			jQuery('#rtc-2').cycle('resume');
+			jQuery('#start').css({"display":"none"});
+			jQuery('#stop').css({"display":"block"});
+		});
+	
+		
+});
+} ) ( jQuery );
+</script>
+
+                </div>
+          </div>
+             				</div>
+			</div>
+		</div> 
+		<!--/Homepage: Marquee widget area-->
+		<script type="text/javascript">
+				
+			//Float Left when more than widgets on hp marquee
+			if( jQuery("#hp_marquee_widgets .hp_marquee_widget").length>1){
+				jQuery("#hp_marquee_widgets .hp_marquee_widget").css("float","left");
+			}
+			
+			jQuery('#hp_marquee_widgets .hp_marquee_widget_content .rotate-banner-content .div').css({"background-color":"transparent"});
+			// Add Width for wrapper, IE7.0 relied on this
+						jQuery('#hp_marquee_widgets .rotate_banner_content_multi').css("width",960);
+					</script>
+			<div id="contentWrapper">
+				<div id="contentWrapperInside">
+					<!--Homepage: Primary widget area-->
+					<div id="hp_primary_widgets" class="widgetarea">
+						<div id="hp_primary_widgets_inside">
+							<div id="text-35" class='hp_primary_widgets widget_text'><div class='hp_primary_widgets_content'>			<div class="textwidget"><a href="http://www.trutech.com/connectwithus/"><img src="http://www.buildingitc.com/files/2014/02/home-banner2.png" style="margin-top: 23px;" /></a></div>
+		</div></div>						</div>
+					</div>
+					<script type="text/javascript">
+						jQuery(".hp_primary_widgets:first-child").addClass('first');
+					</script>
+					<div class="mainarea">
+						<!--/Homepage: Primary widget area-->
+		
+						<div id="content" class="content"> 	
+							<h1 id="toc-consistent-technology-support-services--on-time-on-contract-and-on-budget" style="font-size: 26px; font-weight: normal;">Consistent technology support services – on time, on contract and on budget.</h1>
+<p>TruTechnology has been serving the technology needs of our clients since 2002. Our technology support services are designed for businesses and nonprofit organizations with 20 to 200 technology users throughout the state of Florida. TruTech’s Flat-rate Managed Services and Co-Managed IT Services help you harness the power of your networks so you can reliably and securely focus on operations.</p>
+<p><strong>With TruTech as your trusted partner for technology solutions, you can:</strong></p>
+<p><strong>Increase Productivity</strong>–<em>an efficient network means more uptime and greater productivity.</em><br />
+<strong>Safeguard your business</strong>–<em>a secure network means your data is protected from threats.</em><br />
+<strong>Experience peace of mind</strong>–<em>a reliable network means you leave technology worries behind.</em></p>
+<p>TruTech is a leading provider of technology and consultancy services. <strong>You will find that our services provide the transparency and flexibility to help you take your business to the next level.</strong>  Contact us to schedule a no cost consultation to learn how technology can be an enabling force that grows your business rather than a necessary evil that holds it back.</p>
+<h3 id="toc-want-to-learn-more-click-here" style="text-align: center; font-weight: bold; font-style: italic;"><a href="/about-us/contact-us/">Want to learn more? Click here!</a></h3>
+<div class="areascovered">
+<h5 id="toc-areas-covered">Areas Covered</h5>
+<p>We provide a range of Technology Support, Managed Services and IT Consulting in Northeast Florida including Duval County, Clay County, and St. Johns County.  Jacksonville, Jacksonville Beach, Atlantic Beach, Mayport, Baldwin, St. Augustine, St. Augustine Beach, Ponte Vedra, Ponte Vedra Beach, Fruit Cove, Palm Valley, Orange Park, Middleburg, and Green Cove Springs.
+</p></div>
+						</div>
+						<!-- Homepage: Secondary widget area-->
+						<div id="hp_secondary_widgets" class="widgetarea">
+							<div id="hp_secondary_widgets_inside">
+							
+          <div id="text-23" class="hp_secondary_widgets widget_text">
+             <div class="hp_secondary_top"></div>
+             <div class="hp_secondary_content_wrapper">
+                <div class="hp_secondary_content">
+              <h3>Flat-Rate IT Support</h3>			<div class="textwidget">True Managed Services is the transfer of IT risk from the customer to the provider for a fixed, all-included fee. In this arrangement, the provider is on the hook to fix things but can’t come back and demand additional hourly fees.
+<br />
+<a href=" http://www.buildingitc.com/getstarted/"><span style="color:#0076E0; font-size:14px; text-decoration: underline;">Get a Free Confidential Analysis</span></a></div>
+		
+                </div>
+             </div>
+             <div class="hp_secondary_bottom"></div>
+          </div>
+             
+          <div id="text-24" class="hp_secondary_widgets widget_text">
+             <div class="hp_secondary_top"></div>
+             <div class="hp_secondary_content_wrapper">
+                <div class="hp_secondary_content">
+              <h3>Co-Managed IT Service</h3>			<div class="textwidget">We frequently meet companies that have existing internal IT staff that are not delivering to the level the organization requires to transition their IT investment from a necessary evil to a competitive advantage.
+<br />
+<a href="http://www.buildingitc.com/services-solutions/co-managed-it-service/"><span style="color:#0076E0;font-size:14px;text-decoration: underline">Get a Free Confidential Analysis</span></a></div>
+		
+                </div>
+             </div>
+             <div class="hp_secondary_bottom"></div>
+          </div>
+             
+          <div id="feed_updates-multi-2" class="hp_secondary_widgets feed_updates_multi">
+             <div class="hp_secondary_top"></div>
+             <div class="hp_secondary_content_wrapper">
+                <div class="hp_secondary_content">
+              
+
+  <div class="feedupdates">
+  
+		<h3><a href="/blog/" >Latest News & Tips</a></h3>
+	
+    <div class="text">
+      <div>
+	<ul class="feedupdates_ul">
+	  	  	    	    <li><a href="http://www.trutech.com/2016/10/big-data-gives-a-big-help-to-hospitals/"><b>Healthcare:</b> Big data gives a big help to hospitals</a></li>
+	    	  	    	    <li><a href="http://www.trutech.com/2016/09/grow-your-business-with-virtual-reality/"><b>Business:</b> Grow your business with virtual reality</a></li>
+	    	  	    	    <li><a href="http://www.trutech.com/2016/09/ipad-price-drops-with-more-storage/"><b>Apple:</b> iPad price drops with more storage</a></li>
+	    	  	    	    <li><a href="http://www.trutech.com/2016/09/virtual-networks-the-future-of-security/"><b>Virtualization:</b> Virtual networks: the future of security</a></li>
+	    	  	    	    <li><a href="http://www.trutech.com/2016/09/windows-10-tailoring-your-notifications/"><b>Windows:</b> Windows 10: tailoring your notifications</a></li>
+	    	  		</ul>
+      </div>
+    </div>
+  </div>
+
+                </div>
+             </div>
+             <div class="hp_secondary_bottom"></div>
+          </div>
+             
+          <div id="text-25" class="hp_secondary_widgets widget_text">
+             <div class="hp_secondary_top"></div>
+             <div class="hp_secondary_content_wrapper">
+                <div class="hp_secondary_content">
+              			<div class="textwidget"><p style="text-align:center"><img src="/files/2009/07/inc500-5000_tagline.jpg"></p>
+<p style="text-align:center"><img src="/files/2013/06/cta_50BusinessJournal.png"><img src="/files/2009/07/largest-technology-services-company.jpg" style="margin:0 0 0 20px;"/></p></div>
+		
+                </div>
+             </div>
+             <div class="hp_secondary_bottom"></div>
+          </div>
+             
+          <div id="rotate_banner_content-multi-3" class="hp_secondary_widgets rotate_banner_content_multi">
+             <div class="hp_secondary_top"></div>
+             <div class="hp_secondary_content_wrapper">
+                <div class="hp_secondary_content">
+              <h3>Partners & Certifications</h3>
+
+<div id="rtc-3" class="rotate-banner-content" style="width:347px;height:80px">
+
+					<div id="frame1-3">
+										<a href="/partners-certifications/" >
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/widgets/3/buildingitc-01.jpg" width="347" height="80" alt="it support Jacksonville, FL" />
+										</a>
+									</div>
+					<div id="frame2-3">
+										<a href="/partners-certifications/" >
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/widgets/3/partners-certifications-3 copy.jpg" width="347" height="80" alt="it support Jacksonville, FL" />
+										</a>
+									</div>
+					<div id="frame3-3">
+										<a href="/partners-certifications/" >
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/widgets/3/partners-certifications-4.jpg" width="347" height="80" alt="it support Jacksonville, FL" />
+										</a>
+									</div>
+					<div id="frame4-3">
+										<a href="/partners-certifications/" >
+																	<img src="https://ddodupf0i60zw.cloudfront.net/wp-content/blogs.dir/1556/files/widgets/3/partners-certifications-2.jpeg" width="347" height="80" alt="it support Jacksonville, FL" />
+										</a>
+									</div>
+	</div>
+<script type="text/javascript">
+( function(jQuery) {
+jQuery(document).ready(function() {
+		jQuery('#rtc-3').cycle({ 
+			fx:'scrollDown',
+			timeout:5000,
+			speed:3000,
+			pager:      '#rtc-nav-3',
+						pause: true,
+			pauseOnPagerHover: true
+
+		});
+		
+});
+} ) ( jQuery );
+</script>
+
+                </div>
+             </div>
+             <div class="hp_secondary_bottom"></div>
+          </div>
+             							</div>
+						</div>
+						<!-- /Homepage: Secondary widget area-->
+					</div>
+				</div>	
+			</div>
+
+		<div id="footer">	
+			<!-- Global Footer Widgets Area-->		
+			<div id="footer_widgets" class="widgetarea">				
+				<div id="text-26" class='footerwidget widget_text'><h3>Support</h3>			<div class="textwidget"><div class="footerwidget navigation_multi first" id="navigation-multi-4" style="width: 230px; height: 457px;">
+<div class="navigation">
+<div class="text">
+    <ul>
+<li><a href="#">Partnership Support</a></li>
+<li class="page_item page-item-513"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/">Flat-Rate IT Support</a>
+	<ul><li class="page_item page-item-1180"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/proactive-technology-management/">Proactive Technology Management</a></li>
+<li class="page_item page-item-1192"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/reactive-support-services/">Reactive Support Services</a></li>
+<li class="page_item page-item-1204"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/network-administration/">Network Administration</a></li>
+<li class="page_item page-item-1212"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/technology-consulting/">Technology Consulting</a></li>
+<li class="page_item page-item-1220"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/professional-services/">Professional Services</a></li>
+<li class="page_item page-item-1228"><a href="http://www.buildingitc.com/services-solutions/flat-rate-it-support/the-end-result/">The End Result</a></li>
+	</ul>
+</li>
+<li><a href="http://www.buildingitc.com/support-center/">Support Center</a></li>
+</li>
+    </ul>
+  </div>
+</div>
+</div></div>
+		</div><div id="navigation-multi-2" class='footerwidget navigation_multi'>
+<div class="navigation">
+     <h3><a href="/products-and-services/" >Products / Services</a></h3>
+  <div class="text">
+    <ul>
+      <li class="page_item page-item-1244"><a href="http://www.trutech.com/services-solutions/products-and-services/backup-and-disaster-recovery/">Backup and Disaster Recovery</a></li>
+<li class="page_item page-item-1004"><a href="/services-solutions/the-plumbing/network-performance-monitoring/monitoring/">Network Performance Monitoring</a></li>
+<li class="page_item page-item-1044"><a href="http://www.trutech.com/services-solutions/products-and-services/managed-security-services/">Managed Security Services</a></li>
+<li class="page_item page-item-1056"><a href="http://www.trutech.com/services-solutions/products-and-services/email-spam-protection/">Email &amp; Spam Protection</a></li>
+<li class="page_item page-item-1068"><a href="http://www.trutech.com/services-solutions/products-and-services/endpoint-security/">Endpoint Security</a></li>
+    </ul>
+  </div>
+</div>
+</div><div id="text-27" class='footerwidget widget_text'><h3>Information</h3>			<div class="textwidget"><div class="footerwidget navigation_multi" id="navigation-multi-5" style="width: 220px; height: 531px;">
+<div class="navigation">
+  <div class="text">
+    <ul>
+	<li class="page_item page-item-26"><a href="http://www.buildingitc.com/resources/white-papers/">White Papers</a></li>
+	<li class="page_item page-item-25"><a href="http://www.buildingitc.com/resources/newsletter-archive/">Newsletter Archive</a></li>
+	<li class="page_item page-item-8"><a href="http://www.buildingitc.com/about-us/why-trutech/">Why TruTech</a></li>
+     <li class="page_item page-item-579"><a href="http://www.buildingitc.com/getstarted/">Get Started</a></li>
+<li class="page_item page-item-2908"><a href="http://www.buildingitc.com/about-us/partners-certifications/">Partners &amp; Certifications</a></li>
+<li class="page_item page-item-2568"><a href="http://www.buildingitc.com/about-us/press-releases/">Press Releases</a></li>
+	<li><a href="#">Latest News & Tips</a></li>
+<li class="page_item page-item-30"><a href="http://www.buildingitc.com/about-us/contact-us/">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<!-- Start of Woopra Code -->
+<script>
+(function(){
+    var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+})("woopra");
+
+woopra.config({
+    domain: 'buildingitc.com'
+});
+woopra.track();
+</script>
+<!-- End of Woopra Code --></div>
+		</div><div id="vcard-multi-2" class='footerwidget vcard_multi'><h3><a href="/about-us/contact-us/" >TruTechnology</a></h3>
+<div class="vcard">			
+	<span class="fn org"><strong>Main Office</strong></span>		
+	<div class="adr">
+		<span class="street-address">841 Prudential Dr</span> 12th Floor<br />	<span class="locality">Jacksonville</span>, <span class="region">FL</span> <span class="postal-code">32207</span>	
+	</div>
+		<p class="tel"><strong>Toll-Free:</strong> <span class="value">(866) 324-3324</span></p>
+				</div>
+<div class="vcard-htmltext"><h4 style="margin-top: 15px ! important; color: white; margin-bottom: 0px; font-size: 16px;">Network Operations Center</h4>
+<p style="margin-bottom: 0px;">4800 Spring Park Rd<br>
+Suite 221<br>
+Jacksonville, FL 32207</p>
+<strong style="font-size: 12px;">Toll-Free: </strong>(866) 324-3324</p>
+
+<table>
+<tbody>
+<tr>
+<td><img src="/files/2013/07/cta_footer_crn.png" /></td>
+<td><img src="/files/2013/07/cta_footer_jax.png"></td>
+
+</tr>
+</tbody>
+</table>
+
+</div></div><div id="text-4" class='footerwidget widget_text'>			<div class="textwidget">&copy;2016 TruTechnology
+<!-- ClickTale Bottom part --> 
+<div id="ClickTaleDiv"></div> 
+ <script>
+if(document.location.protocol!='https:') 
+document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRc9.js'%20type='text/javascript'%3E%3C/script%3E")); 
+ 
+ 
+if(typeof ClickTale=='function') ClickTale(23630,0.6,"www02"); 
+ 
+</script>
+<!-- ClickTale end of Bottom part -->
+
+
+<p>
+<a href="http://www.linkedin.com/in/douglowenthal" target="_blank"><img src="https://ddodupf0i60zw.cloudfront.net/pageimages/widget/socialnetwork/linkedin.png" alt="LinkedIn" border="0" /></a>
+<a href="https://www.facebook.com/TruTechnology-265111883688695/" target="_blank"><img src="https://ddodupf0i60zw.cloudfront.net/pageimages/widget/socialnetwork/facebook.png" alt="Facebook" border="0" /></a>
+<a href="https://twitter.com/TruTechnology" target="_blank"><img src="https://ddodupf0i60zw.cloudfront.net/pageimages/widget/socialnetwork/twitter.png" alt="Twitter" border="0" /></a>
+<a href="/feed" target="_blank"><img src="https://ddodupf0i60zw.cloudfront.net/pageimages/widget/socialnetwork/rss.png" alt="RSS" border="0" /></a></p></div>
+		</div><div id="navigation_one_level-multi-3" class='footerwidget navigation_one_level_multi'> <div class="navigation_one_level">
+  <h3></h3>
+    <ul>
+						<li class="first"><a href="/privacy-policy/" title="Privacy Policy" >Privacy Policy</a></li>
+		    </ul>
+</div>
+</div>			</div>
+			<!--/Global Footer Widgets Area-->
+		</div>
+	</div>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-content/plugins/pronto-stats/js/pronto-stats.js?ver=20150224'></script>
+<script type='text/javascript' src='https://ddodupf0i60zw.cloudfront.net/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+
+<!-- Start Of Script Generated By cforms v14.6 [Oliver Seidel | www.deliciousdays.com] -->
+<!-- End Of Script Generated By cforms -->
+
+<script type="text/javascript">HummingbirdTracker.track();</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"04e5824458","applicationID":"6280564","transactionName":"Yl1SYBZWC0dYAUVdDlsXcVcQXgpaFg5UQgRZCQ==","queueTime":0,"applicationTime":187,"atts":"ThpRFl5MGEk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

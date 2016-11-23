@@ -1,0 +1,608 @@
+status: 200
+content-length: 57411
+x-drupal-cache: HIT
+content-language: en
+x-content-type-options: nosniff
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+vary: Cookie
+keep-alive: timeout=20
+server: nginx/1.11.3
+last-modified: Thu, 29 Sep 2016 11:39:01 GMT
+connection: keep-alive
+etag: W/"1475149141-0"
+link: <https://www.intelligrated.com/software/voice-solutions>;
+ rel="canonical",<https://www.intelligrated.com/node/2716>; rel="shortlink"
+cache-control: public, max-age=900
+date: Thu, 29 Sep 2016 11:52:28 GMT
+content-type: text/html; charset=utf-8
+-content-encoding: gzip
+content-location: https://www.intelligrated.com/software/voice-solutions
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]><html class="ie ie6 no-js" dir="ltr" lang="en-US"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7 no-js" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 no-js" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 no-js" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" dir="ltr" lang="en-US"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <title>Voice Solutions | Intelligrated</title>
+        <meta name="google-site-verification" content="v6mAse3mq-ZIgqL0n808XM6HguZVtJ0WzrcF8wSqoFA">
+		<meta name="google-site-verification" content="DYbuxHUOYGD0ao26LI5rd_3T2598TE_kfGXwnguIFlc" />
+        <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
+                <link rel="alternate" type="application/rss+xml" title="Intelligrated RSS" href="http://feeds.feedburner.com/intelligrated" />
+        <link rel="stylesheet" href="/sites/all/themes/intelligrated/css/stylesheets/screen.css?201692816185">
+        <link rel="shortcut icon" href="/favicons/favicon.ico?v=2" />
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/favicons/favicon-64x64.png" sizes="64x64" />
+<link rel="icon" type="image/png" href="/favicons/favicon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicons/favicon-24x24.png" sizes="24x24" />
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/favicons/favicon-128x128.png" sizes="128x128" />
+<meta name="msapplication-square70x70logo" content="/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/favicons/mstile-310x310.png" />
+<meta name="application-name" content="Intelligrated"/>
+<meta name="msapplication-TileColor" content="#ffffff"/>
+<meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=http://feeds.feedburner.com/Intelligrated&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=http://feeds.feedburner.com/Intelligrated&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=http://feeds.feedburner.com/Intelligrated&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=http://feeds.feedburner.com/Intelligrated&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=http://feeds.feedburner.com/Intelligrated&amp;id=5;cycle=1" />
+        <link rel="alternate" hreflang="x-default" href="https://www.intelligrated.com/software/voice-solutions" />
+<link rel="alternate" hreflang="zh-hans" href="https://www.intelligrated.com/cn/%E8%AF%AD%E9%9F%B3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" />
+<link rel="alternate" hreflang="fr" href="https://www.intelligrated.com/fr/solutions-%C3%A0-commande-vocale" />
+<link rel="alternate" hreflang="pt" href="https://www.intelligrated.com/pt/solu%C3%A7%C3%B5es-por-voz" />
+<link rel="alternate" hreflang="es" href="https://www.intelligrated.com/es/soluciones-por-voz" />
+        <!--[if lt IE 9]><script src="/sites/all/themes/intelligrated/js/plugin/html5shiv.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="/sites/all/themes/intelligrated/js/plugin/mediaqueries.js"></script><![endif]-->
+        <!--[if lt IE 7]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script><![endif]-->
+        <meta name="description" content="Voice solutions from Intelligrated provide hands-free order fulfillment and leverages advanced speech recognition technology to facilitate fast, accurate communication." />
+<meta property="og:title" content="Voice Solutions" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:title" content="Voice Solutions" />
+<link rel="canonical" href="https://www.intelligrated.com/software/voice-solutions" />
+<link rel="shortlink" href="https://www.intelligrated.com/node/2716" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Intelligrated" />
+<meta property="og:url" content="https://www.intelligrated.com/software/voice-solutions" />
+<meta property="twitter:url" content="https://www.intelligrated.com/software/voice-solutions" />
+        <script type="text/javascript">
+    var _gaq = _gaq || [];
+        var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+        _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-12992150-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<script>
+    _int = {};
+    _int.isMobile = false;
+    try {
+        if (window.matchMedia("screen and (max-device-width: 540px)").matches) {
+            _int.isMobile = true;
+        }
+    } catch(e) {}
+            _int.nid = 2716;
+        _int.language = "";
+</script>
+<script>document.write(unescape("%3Cscript src='//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E")); </script> <script>Munchkin.init('669-GGZ-114');</script>    </head>
+    <body class="mobile-on i18n-en">
+        <div itemscope itemtype="http://schema.org/Corporation">
+    <meta itemprop="url" content="https://www.intelligrated.com"/>
+    <meta itemprop="logo" content="http://intelligrated.s3.amazonaws.com/int-logo.jpg" />
+    <meta itemprop="location" content="7901 Innovation Way Mason, Ohio 45040" />
+    <div class="top-banner">
+        <div class="right">
+                
+            <div class="language-select">
+                <p><a>English <b></b></a></p>
+                <ul>
+                                                                                            
+                        
+                                                                                            
+                                                    <li><a href="/pt/soluções-por-voz">Português</a></li>
+                        
+                                                                                            
+                                                    <li><a href="/cn/语音解决方案">简体中文</a></li>
+                        
+                                                                                            
+                                                    <li><a href="/fr/solutions-à-commande-vocale">Français</a></li>
+                        
+                                                                                            
+                                                    <li><a href="/es/soluciones-por-voz">Español</a></li>
+                        
+                                    </ul>
+            </div>
+                    <a class="top-rss" href="http://feeds.feedburner.com/Intelligrated" target="_blank" rel="nofllow">RSS</a>
+            <a class="top-linkedin" href="https://www.linkedin.com/companies/intelligrated" target="_blank" rel="nofllow">LinkedIn</a>
+                            <a class="top-googleplus" href="https://plus.google.com/112110218375272143389/about" target="_blank" rel="publisher">Google+</a>
+                <a class="top-facebook" href="https://www.facebook.com/pages/Intelligrated/154027751275774" target="_blank" rel="nofllow">Facebook</a>
+                <a class="top-youtube" href="https://www.youtube.com/user/IntelligratedInc" target="_blank" rel="nofllow">YouTube</a>
+                <a class="top-twitter" href="https://twitter.com/intelligrated" target="_blank" rel="nofllow">Twitter</a>
+                    </div>
+        <div class="left">
+            <a class="dashboard" target="_blank" onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'Dashboard Login']);" href="https://dashboard.intelligrated.com/Default.aspx">Dashboard Login</a>
+            <a class="ontimeparts" target="_blank" onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'OnTimeParts']);" href="https://www.ontimeparts.com ">OnTimeParts</a>
+            <a class="honeywell" target="_blank" onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'Honeywell AIDC']);" href="https://www.honeywellaidc.com">Honeywell AIDC</a>
+            <span class="support">24X7 Support 1 877.315.3400</span>
+        </div>
+        <div class="clb"></div>
+    </div>
+    <header id="hd" class="hd">
+        <div class="wrap">
+            <h3 itemprop="legalName" class="logo software"><a href="/software-solutions">Intelligrated</a></h3>
+            <nav class="navigation">
+                <ul>
+                    <li class="n-search">
+                        <div class="search">
+                            <form class="search-form" action="/search" type="GET">
+                                <input type="text" class="text" id="term" name="term" placeholder="Search&hellip;"></input>
+                                <input type="submit" class="submit" value="Submit">
+                            </form>
+                        </div>
+                    </li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'Contact Us']);" href="/contact-us">Contact</a></li>
+                                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'Blog']);" href="/intelligrated-insights">Blog</a></li>
+                                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'Working at Intelligrated']);" href="/working-at-intelligrated">Working at Intelligrated</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'Information Center']);" href="/information-center">Information Center</a></li>
+                    <li class="about"><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'About Us']);" href="/about-us">About Us</a></li>
+                </ul>
+            </nav>
+            <div id="mobile-menu" class="mobile-menu"></div>
+            <div id="mobile-search" class="mobile-search"><span></span></div>
+        </div>
+    </header>
+</div>
+<div id="banner" class="banner" data-bg="/sites/all/themes/intelligrated/img/banner/banner.jpg"><div class="tagline solutions">software intelligence that <em>delivers</em><sup>&trade;</sup></div><div class="angle-bar"></div></div><div id="bd-page" class="bd">
+    
+    <div class="wrap">
+        <div class="main">
+            <div class="article-header">
+                <h1 class="article-title">Voice Solutions</h1>
+                <ul class="breadcrumbs"><li><a href="/">Intelligrated Home</a></li><li><a href="/software-solutions">Software Solutions</a></li><li>Voice solutions</li></ul><div class="clb"></div>            </div>
+            <div class="article-body">
+                                <p>Intelligrated Voice solutions enable automated, hands-free <a href="/sites/default/files/INT-1454_Order-fulfillment-systems-brochure_print-3-15-16-LR.pdf">order fulfillment</a> to drive increased throughput and accuracy in e-commerce, retail in-store replenishment, 3PL and omnichannel fulfillment operations. Utilizing the industry’s most advanced speech recognition technology, Intelligrated Voice transforms fulfillment operations by automating a wide range of worker-to-goods tasks. Voice is as quick to deploy as it is easy to use, allowing for fast return on investment through rapid end user acceptance and <a href="/case-studies/wyoming-liquor-division">unprecedented productivity improvements</a>. So if you’re ready for more than 99.9 percent accuracy and up to a 45 percent increase in productivity compared to manual operations and legacy automation systems, unleash the power of Intelligrated Voice.</p>
+<p>Intelligrated Voice delivers automated efficiencies to fulfillment operations:</p>
+<ul><li>Enables automated, hands-free and eyes-up, worker-to-goods picking and putting tasks</li>
+<li>Supports simple to complex order picking workflows</li>
+<li>Adapts to differing product priorities, from slow- to fast-moving items and variances in quantities</li>
+<li>Performs a wide range of mobile work tasks beyond the four walls of the DC, such as: receiving, put-away, replenishment, inventory cycle counting, packing/loading and order traceability</li>
+<li>Accelerates training and facilitates live remote coaching</li>
+<li>Enables labor flexibility via quick ramp-up of part-time and temporary employees</li>
+<li>Integrates with modern enterprise systems, such as WES, WMS or Intelligrated <a href="/intelligrated-warehouse-execution-system-wes">WES</a></li>
+</ul><p><strong>Intelligrated Voice benefits</strong></p>
+<p>Compared to manual processes and legacy automation systems, Intelligrated Voice delivers transformative benefits to warehouse operations:</p>
+<ul><li><a href="/white-papers/the-roi-of-voice-picking">99.9% order accuracy</a></li>
+<li>Up to a 45% improvement in productivity</li>
+<li>Avoids "lock-ins" of proprietary mobile devices or speech capabilities</li>
+<li>Drops into existing processes without disruptions</li>
+<li>Adapts to ever-changing fulfillment requirements</li>
+<li>Rapid end user acceptance and site adoption</li>
+<li>Blends with other automation technologies</li>
+<li>Automates highly complex mobile tasks and workflows</li>
+</ul><p>Links:</p>
+                    <ul id="detail-anchors">
+                    <li><a href="#advanced-speech-recognition-platform">Advanced Speech Recognition Platform</a></li>
+                    <li><a href="#rapid-training-and-user-acceptance">Rapid Training and User Acceptance</a></li>
+                    <li><a href="#picking-and-putting-workflows">Picking and Putting Workflows</a></li>
+                    <li><a href="#scalable-architecture">Scalable Architecture</a></li>
+                    <li><a href="#realtime-business-intelligence-">Real-Time Business Intelligence </a></li>
+            </ul>
+                                            </div>
+
+        </div>
+        <div class="sidebar">
+    <div id="browse-nav" class="browse-nav ">
+    <span>Browse Intelligrated</span>
+    <nav class="main-nav">
+    <ul>
+        <li class="mobile-nav">
+            <div class="drop">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'About Us']);" href="/about-us">About Us</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'Information Center']);" href="/information-center">Information Center</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'Working at Intelligrated']);" href="/working-at-intelligrated">Working at Intelligrated</a></li>
+                                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'Blog']);" href="/intelligrated-insights">Blog</a></li>
+                                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'TopNav', 'Contact Us']);" href="/contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="solutions">
+            <a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Solutions']);" href="/solutions">Solutions</a>
+            <div class="drop drop-double">
+                <div class="left">
+                    <h3>Solutions by Product</h3>
+                    <ul>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Sortation Systems']);" href="/solutions/sortation-systems">Sortation Systems</a></li>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Case, Tote & Polybag Conveyor']);" href="/solutions/case-tote-polybag-conveyor">Case, Tote &amp; Polybag Conveyor</a></li>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Pallet Conveyor']);" href="/solutions/pallet-conveyor-systems">Pallet Conveyor</a></li>
+                                                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Vertical Conveyor']);" href="/uss/vertical-conveyor-and-sortation">Vertical Conveyor</a></li>
+                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Tote Stacking & Destacking']);" href="/uss/tote-stacking-destacking">Tote Stacking & Destacking</a></li>
+                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Palletizers & Depalletizers']);" href="/solutions/palletizers-depalletizers">Palletizers &amp; Depalletizers</a></li>
+                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Robotics']);" href="/solutions/robotic-solutions">Robotics</a></li>
+                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'AS/RS Solutions']);" href="/solutions/asrs-solutions">AS/RS Solutions</a></li>
+                                            </ul>
+                </div>
+                <div class="right">
+                    <h3>Solutions by Industry</h3>
+                    <ul>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Retail']);" href="/solutions/retail">Retail</a></li>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'E-commerce']);" href="/solutions/e-commerce">E-commerce</a></li>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Wholesale']);" href="/solutions/wholesale">Wholesale</a></li>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Food']);" href="/solutions/food">Food</a></li>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Beverage']);" href="/solutions/beverage">Beverage</a></li>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Consumer Packaged Goods']);" href="/solutions/consumer-packaged-goods">Consumer Packaged Goods</a></li>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Pharmaceutical and Medical Supply']);" href="/solutions/pharmaceutical-and-medical-supply">Pharmaceutical and Medical Supply</a></li>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Third Party Logistics']);" href="/solutions/third-party-logistics">Third Party Logistics</a></li>
+                        <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Post and Parcel']);" href="/solutions/postal-and-parcel">Post and Parcel</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Software Solutions']);"  href="/software-solutions">Software</a>
+            <div class="drop">
+                <h3>Software</h3>
+                <ul>
+                    <li class="mobile-links"><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Vision WMS']);" href="/software-solutions">Software</a></li>
+                                                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Warehouse execution systems']);" href="/software/intelligrated-warehouse-execution-system-wes">Warehouse execution systems</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Fulfillment technologies']);" href="/software/fulfillment-technologies">Fulfillment technologies</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Labor management software']);" href="/software/labor-management-software">Labor management software</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Voice solutions']);" href="/software/voice-solutions">Voice solutions</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Store solutions']);" href="/software/store-solutions">Store solutions</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Mobility and wireless']);" href="/software/mobility-and-wireless">Mobility and wireless</a></li>
+                                    </ul>
+            </div>
+        </li>
+        <li class="lss">
+            <a href="/lifecycle-management">Lifecycle Management</a>
+            <div class="drop">
+                <h3>Lifecycle Management</h3>
+                <ul>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Lifecycle Services']);" href="/lifecycle-management">Lifecycle Management</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Customer Service & Support']);" href="/lifecycle-services/lifecycle-support-services">Lifecycle Support Services</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', '24X7 Technical Support']);" href="/lifecycle-services/lifecycle-support-services/2/technical-support">24X7 Technical Support</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'OnTimeParts']);" href="/lifecycle-services/lifecycle-support-services/2/ontimeparts-1">OnTimeParts</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Field Services']);" href="/lifecycle-services/lifecycle-support-services/2/field-services">Field Services</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Training']);" href="/lifecycle-services/lifecycle-support-services/2/training">Training</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Operational Support Services']);" href="/lifecycle-services/operations-and-solutions-development">Operational Support Services</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Systems Integration']);" href="/lifecycle-services/systems-integration">Systems Integration</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Solutions Development']);" href="/lifecycle-services/operations-and-solutions-development">Solutions Development</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a class="single" onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Our Approach']);" href="/our-approach">Our Approach</a>
+        </li>
+        <li>
+            <a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Contact Us']);" href="/contact-us">Contact Us</a>
+            <div class="drop">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Request Information']);" href="/contact-us">Request Information</a></li>
+                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'MegaNav', 'Find a Location']);" href="/locations">Find a Location</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>
+</div>
+<div class="browse-nav-spacer"></div>                
+        <div class="section featured-content featured-video">
+
+            
+                <h3>Featured Video</h3>
+                <a class="video-link" data-id="brKqvYallH0">
+
+                    Merrill Corporation: Watch video
+                    <img src="https://www.intelligrated.com/sites/default/files/styles/large/public/Merrill-corporation.png?itok=Bm0zrWcZ">
+
+                    <span class="icon"><b></b></span>
+                </a>
+
+            
+        </div>
+                <div class="section related-content section-list">
+        <h3>Related Content</h3>
+        <ul>
+						
+                                            
+                    
+                    <li class="related-casestudy wyoming-liquor-division">
+                        <a data-nid="947" data-resource="Wyoming Liquor Division" class="protected" href="/case-studies/wyoming-liquor-division" >
+                                                            <div class="type">Case Study</div>
+                                                                                    Wyoming Liquor Division                                                            <img src="https://www.intelligrated.com/sites/default/files/styles/related/public/Cheyenne-distribution-center_0.png?itok=nZ6iJR7X">
+                                                    </a>
+                    </li>
+                                                            
+                    
+                    <li class="related-brochure order-fulfillment-systems">
+                        <a data-nid="628" data-resource="Order Fulfillment Systems" class="" href="https://www.intelligrated.com/sites/default/files/INT-1454_Order-fulfillment-systems-brochure_print-3-15-16-LR.pdf" target="_blank">
+                                                            <div class="type">Brochure</div>
+                                                                                    Order Fulfillment Systems                                                            <img src="https://www.intelligrated.com/sites/default/files/styles/related/public/OFS_brochure.png?itok=huRKs0EW">
+                                                    </a>
+                    </li>
+                                                            
+                    
+                    <li class="related-whitepaper the-roi-of-voice-picking">
+                        <a data-nid="2035" data-resource="The ROI of Voice Picking" class="protected" href="/white-papers/the-roi-of-voice-picking" >
+                                                            <div class="type">White Paper</div>
+                                                                                    The ROI of Voice Picking                                                            <img src="https://www.intelligrated.com/sites/default/files/styles/related/public/voice-picking-wyoming-liquor.jpg?itok=A9Nq2gmZ">
+                                                    </a>
+                    </li>
+                                    </ul>
+    </div>
+                                    </div>        <div class="clb"></div>
+                    <div class="details">
+                                    <div class="detail">
+                                                                                    <img src="https://www.intelligrated.com/sites/default/files/styles/detail/public/Voice-320x200-Banner.jpg?itok=BFc6L5Xf" alt="Advanced Speech Recognition Platform">
+                                                                                                        <h3>Advanced Speech Recognition Platform</h3>
+                                                <p>Intelligrated Voice is built on the industry’s most advanced speech recognition platform. This technology represents a new era of hands-free, <a href="/information-center/videos#wyoming-liquor-division">voice-directed warehouse productivity</a>, accuracy and economic viability. </p>
+<ul><li>Architecture relies on powerful servers and advanced algorithms, rather than limited computing power of a mobile device</li>
+<li>Avoids the high cost of proprietary devices and hardware lock-in; choose from the industry’s leading rugged smartphones and wireless headsets</li>
+<li>Supports multicultural workforce with recognition of more than 70 of the world’s leading languages and dialects, including colloquialisms</li>
+<li>Adapts to experience level of workers with varying levels of quality validation, even combining multiple data points in a single response for expert workers</li>
+</ul>                                                <div class="clb"></div>
+                        <div class="detail-anchor" id="advanced-speech-recognition-platform"></div>
+                    </div>
+                                    <div class="detail">
+                                                                                    <img src="https://www.intelligrated.com/sites/default/files/styles/detail/public/Rapid%20training%20and%20user%20acceptance.jpg?itok=LIyUEoMu" alt="Rapid Training and User Acceptance">
+                                                                                                        <h3>Rapid Training and User Acceptance</h3>
+                                                <p>End user acceptance is accelerated through advanced, easy-to-use speech recognition technology and unique training and role-modeling capabilities.</p>
+<ul><li>Advanced speech recognition technology eliminates the need to train the system to recognize new employees’ voices.</li>
+<li>Rapid user acceptance via training that pairs novice and experienced workers on the same tasks; new workers can be up and running in less than one hour, and become highly productive in less than half a day.</li>
+<li>Supervisors can continue to support new or experienced workers with remote, real-time coaching, allowing workers to pause an active task to initiate help from a shift supervisor or a remote help desk.</li>
+<li>Audio logging captures Voice sessions for each end user to drive process and performance excellence; allows a supervisor to determine if there are any process or behavioral issues and optimally coach the worker to success.</li>
+<li>Once the Voice system infrastructure is in place, the business case for adding new workers or new automation flows becomes even more feasible. Affordable, non-proprietary and lightweight devices minimize capital expenditures and <a href="/white-papers/the-roi-of-voice-picking">enable fast ROI</a>, even for a low number of users.</li>
+</ul>                                                <div class="clb"></div>
+                        <div class="detail-anchor" id="rapid-training-and-user-acceptance"></div>
+                    </div>
+                                    <div class="detail">
+                                                                                    <img src="https://www.intelligrated.com/sites/default/files/styles/detail/public/Picking%20and%20putting%20workflow.jpg?itok=mgry4UvH" alt="Picking and Putting Workflows">
+                                                                                                        <h3>Picking and Putting Workflows</h3>
+                                                <p>Intelligrated Voice replaces outdated or manual processes with voice-directed automation. Intuitive <a href="/case-studies/wyoming-liquor-division">picking and putting workflows</a> make it easy for workers to quickly exploit.</p>
+<ul><li>Automates core <a href="/white-papers/order-fulfillment-optimization">order fulfillment</a> picking and putting for cases, pallets, layers, break-pack or piece units</li>
+<li>Extensible to additional mobile workflows, including replenishment, receiving, put-away, inventory cycle counting, cross-docking, flow-through, storage moves, returns, inspections, packing and load building</li>
+<li>Automates advanced picking and putting methods, including: discrete picking, cluster (batch) picking, zone picking, put-to-containers, bucket brigade across container trains with pick-and-pass and task interleaving</li>
+<li>Provides a robust set of attribute collection, including: production batch, serial number, catch weight, PTI voice code, lot number and order status </li>
+<li>Enables exception handling for shortages due to damaged items, wrong items in location, container size, insufficient container space and pending replenishment</li>
+<li>Supports advanced features, such as: container management on the fly, reverse flow, skip pick management and multiple levels of expert user interface</li>
+<li>Provides multimodal data collection, including: voice, scanning, display/keyboard and lights</li>
+</ul>                                                <div class="clb"></div>
+                        <div class="detail-anchor" id="picking-and-putting-workflows"></div>
+                    </div>
+                                    <div class="detail">
+                                                                                    <img src="https://www.intelligrated.com/sites/default/files/styles/detail/public/Scalable%20architecture.jpg?itok=tJq0Bcpz" alt="Scalable Architecture">
+                                                                                                        <h3>Scalable Architecture</h3>
+                                                <p>DC managers need automation systems that not only drop right into their existing operations, but also blend and adapt with best available automation technologies. Intelligrated Voice is designed with a scalable architecture that makes an immediate impact while enabling the flexibility to evolve as your requirements change. </p>
+<ul><li>Integrates with leading enterprise systems (existing WM/WES or Intelligrated <a href="/intelligrated-warehouse-execution-system-wes">WES</a>)</li>
+<li>Extends to automation tasks beyond the four walls of the DC, including: dock and yard management, transportation, delivery, field maintenance and retail in-store automation</li>
+<li>Blends with a multimodal suite of automation technologies, such as lights, RF scanning, robotics and location-based services</li>
+<li>Expands to an unlimited number of locations and end users with centralized management that provides both local and enterprise business intelligence  </li>
+<li>Evolves as your processes change via configuration flexibility</li>
+</ul>                                                <div class="clb"></div>
+                        <div class="detail-anchor" id="scalable-architecture"></div>
+                    </div>
+                                    <div class="detail">
+                                                                                    <img src="https://www.intelligrated.com/sites/default/files/styles/detail/public/Real-time%20business%20intelligence.jpg?itok=ij-fa4KA" alt="Real-Time Business Intelligence ">
+                                                                                                        <h3>Real-Time Business Intelligence </h3>
+                                                <p>Intelligrated Voice enables real-time business intelligence and integrates seamlessly with our advanced <a href="/software/labor-management-software">GoalPost® LMS</a> to maximize labor productivity. </p>
+<ul><li>Gain real-time visibility to throughput and productivity levels</li>
+<li>Access current and historical data to better manage seasonal peaks in demand</li>
+<li>Make staffing decisions on the fly based on real-time throughput requirements</li>
+<li>Incentivize worker performance, streamline labor management and drive process compliance  </li>
+<li>Improve in-store fulfillment through visibility to receiving, shelf replenishment and e-commerce <a href="/white-papers/order-fulfillment-optimization">order fulfillment</a></li>
+</ul>                                                <div class="clb"></div>
+                        <div class="detail-anchor" id="realtime-business-intelligence-"></div>
+                    </div>
+                            </div>
+                            <div class="postscript postscript-no-ad">
+    <div class="request-information">
+    <a href="/contact-us">
+        <span class="request-information-content-wrap">
+            <h3>Request Information</h3>
+            <p>For more information about Intelligrated solutions and services call 1.866.936.7300 to speak to a sales representative or click on the link</p>
+            <span class="learn-more">Contact us</span>
+        </span>
+    </a>
+</div>
+    </div>    </div>
+</div>
+<div id="video-modal"></div>
+<script type="text/html" id="video-template">
+    <iframe class="video-embed" src="//www.youtube.com/embed/<%= id %>?rel=0" width="<%= width %>" height="<%= height %>" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</script>
+<div itemscope itemtype="https://schema.org/Corporation">
+    <footer id="ft" class="ft">
+        <div class="socials">
+            <div class="wrap">
+                <div itemprop="telephone" class="tel">
+                    <b></b>
+                                            1.866.936.7300
+                                    </div>
+                <div class="email">
+                    <a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Contact']);" href="/contact-us">Contact Us</a>
+                </div>
+                <span class="foot-socials">
+                    <a class="foot-social foot-rss" href="http://feeds.feedburner.com/Intelligrated" target="_blank" rel="nofllow">RSS</a>
+                    <a class="foot-social foot-linkedin" href="https://www.linkedin.com/companies/intelligrated" target="_blank" rel="nofllow">LinkedIn</a>
+                                            <a class="foot-social foot-googleplus" href="https://plus.google.com/112110218375272143389/about" target="_blank" rel="publisher">Google+</a>
+                        <a class="foot-social foot-facebook" href="https://www.facebook.com/pages/Intelligrated/154027751275774" target="_blank" rel="nofllow">Facebook</a>
+                        <a class="foot-social foot-youtube" href="https://www.youtube.com/user/IntelligratedInc" target="_blank" rel="nofllow">YouTube</a>
+                        <a class="foot-social foot-twitter" href="https://twitter.com/intelligrated" target="_blank" rel="nofllow">Twitter</a>
+                                    </span>
+                <div class="clb"></div>
+            </div>
+            <div class="angle-bar"></div>
+        </div>
+	    <div class="navigation">
+	        <div class="wrap">
+	            <div class="left">
+	                <div class="cols cols3">
+	                    <div class="col col1">
+	                        <h3>Quick Links</h3>
+	                        <ul>
+	                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Home']);" href="/">Home</a></li>
+	                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'About Us']);" href="/about-us">About Us</a></li>
+	                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Information Center']);" href="/information-center">Information Center</a></li>
+	                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Latest News']);" href="/information-center/news">Latest News</a></li>
+	                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Privacy & Legal']);" href="/privacy-policy">Privacy &amp; Legal</a></li>
+	                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Associate Login']);" href="http://hr.intelligrated.com" target="_blank">Associate Login</a></li>
+	                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Careers']);" target="_blank" href="https://itlrecruit.taleo.net/careersection/ex/jobsearch.ftl?lang=en">Careers</a></li>
+	                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Supplier']);" href="/supplier">Supplier</a></li>
+	                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Integrator']);" href="/about-us/integrators">Integrator</a></li>
+	                            <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Sitemap']);" href="/sitemap">Sitemap</a></li>
+	                        </ul>
+                        </div>
+                        <div class="col col2">
+                            <h3>Solutions by Product</h3>
+                            <ul>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Sortation Systems']);" href="/solutions/sortation-systems">Sortation Systems</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Case, Tote & Polybag Conveyor']);" href="/solutions/case-tote-polybag-conveyor">Case, Tote &amp; Polybag Conveyor</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Pallet Conveyor']);" href="/solutions/pallet-conveyor-systems">Pallet Conveyor</a></li>
+                                                                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Vertical Conveyor']);" href="/uss/vertical-conveyor-and-sortation">Vertical Conveyor</a></li>
+                                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Tote Stacking & Destacking']);" href="/uss/tote-stacking-destacking">Tote Stacking & Destacking</a></li>
+                                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Palletizers & Depalletizers']);" href="/solutions/palletizers-depalletizers">Palletizers &amp; Depalletizers</a></li>
+                                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Robotics']);" href="/solutions/robotic-solutions">Robotics</a></li>
+                                    <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'AS/RS Solutions']);" href="/solutions/asrs-solutions">AS/RS Solutions</a></li>
+                                                            </ul>
+                        </div>
+                        <div class="col col3">
+                            <h3>Solutions by Industry</h3>
+                            <ul>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Retail']);" href="/solutions/retail">Retail</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'E-commerce']);" href="/solutions/e-commerce">E-commerce</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Wholesale']);" href="/solutions/wholesale">Wholesale</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Food']);" href="/solutions/food">Food</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Beverage']);" href="/solutions/beverage">Beverage</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Consumer Packaged Goods']);" href="/solutions/consumer-packaged-goods">Consumer Packaged Goods</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Pharmaceutical and Medical Supply']);" href="/solutions/pharmaceutical-and-medical-supply">Pharmaceutical and Medical Supply</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Third Party Logistics']);" href="/solutions/third-party-logistics">Third Party Logistics</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Post and Parcel']);" href="/solutions/postal-and-parcel">Post and Parcel</a></li>
+                            </ul>
+                        </div>
+                        <div class="clb"></div>
+
+                    </div>
+
+                    <div class="cols cols3">
+                        <div class="col col1">
+                            <h3>Lifecycle Management</h3>
+                            <ul>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Lifecycle Services']);" href="/lifecycle-management">Lifecycle Management</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Customer Service &amp; Support']);" href="/lifecycle-services/lifecycle-support-services">Lifecycle Support Services</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', '24X7 Technical Support']);" href="/lifecycle-services/lifecycle-support-services/2/technical-support">24X7 Technical Support</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'OnTimeParts']);" href="/lifecycle-services/lifecycle-support-services/2/ontimeparts-1">OnTimeParts</a></li>
+                                
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Field Services']);" href="/lifecycle-services/lifecycle-support-services/2/field-services">Field Services</a></li>
+                                
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Training']);" href="/lifecycle-services/lifecycle-support-services/2/training">Training</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Operational Support Services']);" href="/lifecycle-services/operations-and-solutions-development">Operational Support Services</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Systems Integration']);" href="/lifecycle-services/systems-integration">Systems Integration</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Solutions Development']);" href="/lifecycle-services/operations-and-solutions-development">Solutions Development</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col2">
+                            <h3>Software</h3>
+                            <ul>
+                                                                                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Warehouse execution systems']);" href="/software/intelligrated-warehouse-execution-system-wes">Warehouse execution systems</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Fulfillment technologies']);" href="/software/fulfillment-technologies">Fulfillment technologies</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Labor management software']);" href="/software/labor-management-software">Labor management software</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Voice solutions']);" href="/software/voice-solutions">Voice solutions</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Store solutions']);" href="/software/store-solutions">Store solutions</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Mobility and wireless']);" href="/software/mobility-and-wireless">Mobility and wireless</a></li>
+                                                            </ul>
+                        </div>
+                        <div class="col col3">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Request Information']);" href="/contact-us">Request Information</a></li>
+                                <li><a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Find a Location']);" href="/locations">Find a Location</a></li>
+                            </ul>
+                        </div>
+                        <div class="clb"></div>
+
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="sign-up">
+                        <h3>Sign up for News</h3>
+                        <form method="get" action="/news-signup">
+                            <input type="text" class="text" id="newsletter" name="email" placeholder="Enter email address">
+                            <input type="submit" class="submit" value="Submit">
+                        </form>
+
+                    </div>
+                    <div class="support">
+                        <a onClick="_gaq.push(['_trackEvent', 'EN_Clicks', 'FooterNav', 'Technical Support']);" href="/lifecycle-services/lifecycle-support-services/2/technical-support">
+                            <span class="twenty-four-seven">24X7 Support</span>
+                            <strong class="tel">1 877.315.3400</strong>
+                            <span class="learn-more">Learn More</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="clb"></div>
+            </div>
+        </div>
+        <div class="legal">
+            <div itemprop="legalName" class="wrap">
+                ©2016 Intelligrated
+            </div>
+        </div>
+    </footer>
+</div>                    <script src="/sites/all/themes/intelligrated/js/app.min.js?201692816185"></script>
+                <script src="//app-ab09.marketo.com/js/forms2/js/forms2.min.js"></script>
+<div id="resource-download-modal" data-language="_" class="marketo" data-form-id="1027">
+    <div class="marketo-wrap">
+        <form id="mktoForm_1027"></form>
+        <hr>
+        <div class="privacy-information">
+
+    <h4>Privacy Information</h4>
+
+    
+        <p>The information you provide is solely used by Intelligrated. Intelligrated will not distribute email addresses to third party organizations. For more information, please read our <a target="_blank" href="/privacy-policy">Privacy Information</a>.</p>
+
+    </div>
+    </div>
+</div>
+
+<div id="webinar-access-modal" data-language="_" class="marketo" data-form-id="1152">
+    <div class="marketo-wrap">
+        <form id="mktoForm_1152"></form>
+        <hr>
+        <div class="privacy-information">
+
+    <h4>Privacy Information</h4>
+
+    
+        <p>The information you provide is solely used by Intelligrated. Intelligrated will not distribute email addresses to third party organizations. For more information, please read our <a target="_blank" href="/privacy-policy">Privacy Information</a>.</p>
+
+    </div>
+    </div>
+</div>        
+                    <div class="request-info-toolbar">
+    <ul>
+        <li><a target="_blank" class="request" href="/contact-us">Request Information</a></li>
+        <li><a class="facebook" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.intelligrated.com%2Fsoftware%2Fvoice-solutions" target="_blank" rel="nofllow">Facebook</a></li>
+        <li><a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.intelligrated.com%2Fsoftware%2Fvoice-solutions&title=Voice%20Solutions%20%7C%20Intelligrated" target="_blank" rel="nofllow">LinkedIn</a></li>
+        <li><a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwww.intelligrated.com%2Fsoftware%2Fvoice-solutionsn&source=tweetbutton&text=Voice%20Solutions%20%7C%20Intelligrated%20https%3A%2F%2Fwww.intelligrated.com%2Fsoftware%2Fvoice-solutions" target="_blank" rel="nofllow">Twitter</a></li>
+        <li><a class="email" href="mailto:?subject=Voice%20Solutions%20%7C%20Intelligrated&body=https%3A%2F%2Fwww.intelligrated.com%2Fsoftware%2Fvoice-solutions">Email</a></li>
+    </ul>
+</div>
+            <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5b0205e523","applicationID":"2862807","transactionName":"ZlxbYkBQChdYAhBYWV8WbERbHg0KXQQcH0ZZSQ==","queueTime":0,"applicationTime":16,"atts":"ShtYFAhKGRk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

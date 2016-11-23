@@ -1,0 +1,368 @@
+status: 200
+content-length: 25074
+content-location: http://www.microbluesoftware.com
+set-cookie: SessionID=6DC84493563F5AF7F57D67B52F035E5A0AE44E36; path=/;
+ HttpOnly
+expires: -1
+server: Lotus-Domino
+-content-encoding: gzip
+date: Thu, 29 Sep 2016 11:12:35 GMT
+content-type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<script type="text/javascript">if(!navigator.cookieEnabled)window.location.href="http://www.microbluesoftware.com/microbluesoftwarewebsite.nsf/HomePage.xsp?SessionID=6DC84493563F5AF7F57D67B52F035E5A0AE44E36";</script>
+<title>MicroBlue Home</title>
+<script type="text/javascript">var dojoConfig = {locale: 'en-us', parseOnLoad: true};</script>
+<script type="text/javascript" src="/xsp/.ibmxspres/dojoroot-1.9.7/dojo/dojo.js"></script>
+<script type="text/javascript" src="/xsp/.ibmxspres/dojoroot-1.9.7/ibm/xsp/widget/layout/layers/xspClientDojo.js"></script>
+<script type="text/javascript" src="/xsp/.ibmxspres/dojoroot-1.9.7/ibm/xsp/widget/layout/layers/xspClientDojoUI.js"></script>
+<script type="text/javascript">dojo.require("dojo.parser")</script>
+<link rel="stylesheet" type="text/css" href="/xsp/.ibmxspres/dojoroot-1.9.7/dijit/themes/tundra/tundra.css">
+<link rel="stylesheet" type="text/css" href="/xsp/.ibmxspres/dojoroot-1.9.7/ibm/domino/widget/layout/css/domino-default.css">
+<link rel="stylesheet" type="text/css" href="/oneuiv2/base/core.css">
+<link rel="stylesheet" type="text/css" href="/oneuiv2/goldTheme/goldTheme.css">
+<link rel="stylesheet" type="text/css" href="/microbluesoftwarewebsite.nsf/custom.css">
+<script type="text/javascript">dojo.require("dijit.Dialog")</script>
+<script type="text/javascript">dojo.require("dijit.form.TextBox")</script>
+<script type="text/javascript">dojo.require("dijit.form.CheckBox")</script>
+<script type="text/javascript">dojo.require("dijit.form.Button")</script>
+<link rel="stylesheet" type="text/css" href="/microbluesoftwarewebsite.nsf/c_login.css">
+<script type="text/javascript">dojo.require("dojo.cookie")</script>
+</head>
+<body class="tundra lotusui lotusSpritesOn">
+<form id="view:_id1" method="post" action="/microbluesoftwarewebsite.nsf/HomePage.xsp" enctype="multipart/form-data">
+<div class="lotusFrame"><div class="lotusBanner"><div class="lotusRightCorner"><div class="lotusInner"><a accesskey="S" class="lotusAccess" href="#mainContent" id="lotusAccessLinkMainContent"><img alt="Skip to main content link. Accesskey S" src="blank.gif"></a><a accesskey="1" class="lotusAccess" href="#tabNavigation" id="lotusAccessLinkTabNavigation"><img alt="Skip to tab navigation link. Accesskey 1" src="blank.gif"></a><a accesskey="2" class="lotusAccess" href="#subNavigation" id="lotusAccessLinkSubNavigation"><img alt="Skip to sub navigation. Accesskey 2" src="blank.gif"></a><ul class="lotusInlinelist lotusUtility lotusNowrap" id="ul1"><li class="lotusFirst"><span id="view:_id1:_id2:_id4:_id11:labelWelcome">Welcome </span><span id="view:_id1:_id2:_id4:_id11:cfUserName">Anonymous</span></li><li><a href="javascript:;"></a><a id="view:_id1:_id2:_id4:_id11:linkHelp" href="#" class="lotusAction">Help</a></li><li><script type="text/javascript">
+/* You may (should) safely remove this if you are using Dojo 1.6 or higher, this fixes IE9 not displaying dialogs in Dojo < 1.6*/
+
+dijit._frames = new function(){
+        var queue = [];
+        this.pop = function(){
+                var iframe;
+                if(queue.length){
+                        iframe = queue.pop();
+                        iframe.style.display="";
+                }else{
+                        iframe = dojo.create("iframe");
+                        iframe.src = 'javascript:""';
+                        iframe.className = "dijitBackgroundIframe";
+                        dojo.style(iframe, "opacity", 0.1);
+                        iframe.tabIndex = -1; // Magic to prevent iframe from getting focus on tab keypress - as style didn't work.
+                        dijit.setWaiRole(iframe,"presentation");
+               }
+               return iframe;
+        };
+       this.push = function(iframe){
+                iframe.style.display="none";
+                queue.push(iframe);
+        }
+}();
+
+</script>
+<div class="tundra" dojoType="dijit.Dialog" execute="login(arguments[0]);" id="dialogLogin" style="display:none" title="Logon to MicroBlueSoftware.com..."><table id="view:_id1:_id2:_id4:_id11:_id17:tableLogin" role="presentation"><tr><td colspan="4"><div style="text-align:center">
+<img id="view:_id1:_id2:_id4:_id11:_id17:_id20:image1" src="/microbluesoftwarewebsite.nsf/MUBlueLogo.jpg" alt=""></div>
+<br id="view:_id1:_id2:_id4:_id11:_id17:br1">
+<span id="view:_id1:_id2:_id4:_id11:_id17:lblLoginMessage">Please enter your username and password</span><br id="view:_id1:_id2:_id4:_id11:_id17:br2">
+<div id="divLoginMessage" name="divLoginMessage"><span id="view:_id1:_id2:_id4:_id11:_id17:computedField1"></span></div><br id="view:_id1:_id2:_id4:_id11:_id17:br3">
+</td>
+</tr>
+<tr><td><span id="view:_id1:_id2:_id4:_id11:_id17:lblName" class="label">Username:</span></td>
+<td><input type="text" id="view:_id1:_id2:_id4:_id11:_id17:username" name="view:_id1:_id2:_id4:_id11:_id17:username"></td>
+<td><span id="view:_id1:_id2:_id4:_id11:_id17:lblPassword" class="label">Password:</span></td>
+<td><input id="view:_id1:_id2:_id4:_id11:_id17:password" type="password" name="view:_id1:_id2:_id4:_id11:_id17:password" value=""></td>
+</tr>
+<tr><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td colspan="4"></td>
+</tr>
+<tr><td colspan="2" class="lotusButton"><button class="btnLogin" type="button" name="view:_id1:_id2:_id4:_id11:_id17:loginButton" dojoType="dijit.form.Button" id="view:_id1:_id2:_id4:_id11:_id17:loginButton">Sign in</button></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td colspan="4"></td>
+</tr>
+</table>
+</div><script type="text/javascript">
+function login(data){
+		var loginurl = '/names.nsf'; 
+		var expireCookie = '90';		
+		// disable loginbutton when trying to log in
+		dojo.byId('view:_id1:_id2:_id4:_id11:_id17:loginButton').disabled=true;		
+		loginurl = loginurl.split('.nsf')[0] + '.nsf?Login';		 
+        dojo.xhrPost({ 
+                url: loginurl,
+                handleAs: "text",
+                content: {
+					"username" : dojo.byId('view:_id1:_id2:_id4:_id11:_id17:username').value,
+					"password" : dojo.byId('view:_id1:_id2:_id4:_id11:_id17:password').value
+					},
+				load : function(response, data) {
+						var responseLogin = response;
+						responseLogin.toLowerCase();				
+                        if ( dojo.cookie('DomAuthSessId') != null || dojo.cookie('LtpaToken') != null ) {
+                        	// we are logged in, but do we have access to the next url?
+                        	// response could be to the same url, this code contains the same code 
+                        	dojo.xhrGet({
+							        url: "/", 
+							        preventCache: true,
+							        handleAs: "text",
+							        load: function(response){
+										var responseCheckURL = response;										
+			                     		// response could be to the same url, this code contains the same code 
+							            if (responseCheckURL.toLowerCase().indexOf('input name' + '=\"reasontype\"')==-1) { 
+							            	// ok, we have access, now continue							                                  
+			                               	dojo.byId("divLoginMessage").display="block";
+			                              	dojo.byId("divLoginMessage").style.color="green";
+											dojo.byId("divLoginMessage").style.backgroundColor="transparent";
+			                                dojo.byId("divLoginMessage").innerHTML = 'Login successful, redirecting...';											
+											if (dojo.byId('view:_id1:_id2:_id4:_id11:_id17:checkRememberMe') == null) {
+												dojo.cookie('username', null, { expires: -1, domain: 'homebrew.microbluesoftware.com' });											}else{
+												if (dojo.byId('view:_id1:_id2:_id4:_id11:_id17:checkRememberMe').checked == true) {
+												    // before version 1.4.2 password was stored in plain text, dojo does not a allow a default value for a password textinput
+													dojo.cookie('username', dojo.byId('view:_id1:_id2:_id4:_id11:_id17:username').value, { expires: parseFloat(expireCookie), domain: 'homebrew.microbluesoftware.com' });
+												}else{
+													dojo.cookie('username', null, { expires: -1, domain: 'homebrew.microbluesoftware.com' });
+												};
+											}			
+			  								window.location.href = "/";							            
+							            }else{
+							            	// no, user does not have access!
+								            dojo.byId("divLoginMessage").display="block";
+			                              	dojo.byId("divLoginMessage").style.color="red";
+											dojo.byId("divLoginMessage").style.backgroundColor="transparent";			                               
+			                             	var reasonFail = responseCheckURL.toLowerCase().substring(responseCheckURL.toLowerCase().indexOf('input name' +  '=\"reasontype\"'), (responseCheckURL.toLowerCase().indexOf('input name' +  '=\"reasontype\"') + 80));
+			                              	var reasonNr = reasonFail.substring(reasonFail.indexOf('value') + 7, (reasonFail.indexOf('value') + 8)) ; //last character will be the error
+									        if ( reasonNr == "1") {
+			                                 	dojo.byId("divLoginMessage").innerHTML = 'You are not authorized to access this website.';
+			                        		}else{
+			                       			 	dojo.byId("divLoginMessage").innerHTML = "You are logged in, but do not have access (unknown reasonType " + reasonNr +  " )...";
+			                        		};							            
+							            };
+							            dijit.byId('view:_id1:_id2:_id4:_id11:_id17:loginButton').attr("disabled", true);
+							        }
+							  });
+                           } else {
+                                dojo.byId("divLoginMessage").display="block";
+                              	dojo.byId("divLoginMessage").style.color="red";
+								dojo.byId("divLoginMessage").style.backgroundColor="transparent";                               
+                               	if (responseLogin.toLowerCase().indexOf('input name' + '=\"reasontype\"')==-1) { 
+                               		// response does not have a 'reasonType' field, display default FailMessage;
+                               	    dojo.byId("divLoginMessage").innerHTML = 'Username / password incorrect, please try again';
+                               	}else{
+                               		var reasonFail = responseLogin.toLowerCase().substring(responseLogin.toLowerCase().indexOf('input name' + '=\"reasontype\"'), (responseLogin.toLowerCase().indexOf('input name' + '=\"reasontype\"') + 80));
+                               		var reasonNr = reasonFail.substring(reasonFail.indexOf('value') + 7, (reasonFail.indexOf('value') + 8)) ; //last character will be the error
+                               	    if ( reasonNr == "2") {
+                                     	    dojo.byId("divLoginMessage").innerHTML = 'Username / password incorrect, please try again.';
+                               		}
+                               		if ( reasonNr == "3") {
+                                     	    dojo.byId("divLoginMessage").innerHTML = 'Session has expired. You must log in again.';
+                               		}
+									if ( reasonNr == "4") {
+                                     	    dojo.byId("divLoginMessage").innerHTML = 'Session out of sync, server clocks may be out of sync.';
+                               		}
+                               		if ( reasonNr == "5") {
+                                     	    dojo.byId("divLoginMessage").innerHTML = 'Your account has been locked out.';
+                               		}
+                               	}
+                               	// bug in 1.5.2, signin button was still disabled after a login fail 
+                                dijit.byId('view:_id1:_id2:_id4:_id11:_id17:loginButton').attr("disabled", false);
+                               }                         }, 
+                error: function (error) {
+                		alert(error);
+                        } 
+                });              
+};
+function returnCookieVal(cookiename){
+	var cookieval = dojo.cookie(cookiename);
+	if (cookieval != undefined) {
+		return cookieval;
+	}else{
+		return "";
+	}
+};
+</script>
+<a id="view:_id1:_id2:_id4:_id11:_id17:lnkLogin" href="#" class="lotusAction">Login</a></li></ul><ul class="lotusInlinelist lotusLinks"></ul></div></div></div><a id="lotusMainContent" name="lotusMainContent"></a><div class="lotusTitleBar"><div class="lotusRightCorner"><div class="lotusInner"><ul class="lotusTabs"><li class="lotusSelected"><a href="/microbluesoftwarewebsite.nsf/HomePage.xsp" title="MicroBlue Home">MicroBlue Home</a></li><li><a href="/microbluesoftwarewebsite.nsf/RadopsHomePage.xsp" title="Radops of El Jebel">Radops of El Jebel</a></li><li><a href="/microbluesoftwarewebsite.nsf/NOAAPage.xsp" title="External Links">External Links</a></li></ul></div></div></div><div class="lotusPlaceBar" id="lotusPlaceBar"><div class="lotusRightCorner"><div class="lotusInner"><h2><a id="view:_id1:_id2:_id59:_id63" href="http://homebrew.microbluesoftware.com/__872578900068E4F7.nsf?OpenDatabase" title="MicroBlue Software LLC Web Site">MicroBlue Software LLC Web Site</a></h2><div class="lotusBtnContainer"></div></div></div></div><div class="lotusMain" id="lotusMain"><div class="lotusColLeft" id="lotusColLeft"><div id="lotusNavBarContainer"><div style="text-align:center"><img id="view:_id1:_id2:_id66:image1" src="/microbluesoftwarewebsite.nsf/troops.jpg" alt="" style="text-align:center"></div>
+<br>
+<div class="lotusMenu"><div class="lotusBottomCorner"><div class="lotusInner"><div class="lotusMenuSeparator"></div><ul id="lotusNavBar"><li class="lotusSelected"><a href="/microbluesoftwarewebsite.nsf/HomePage.xsp" title="Home">Home</a></li><li><a href="/microbluesoftwarewebsite.nsf/projectsPage.xsp" title="Software Projects">Software Projects</a></li><li><a href="/microbluesoftwarewebsite.nsf/hardwarePage.xsp" title="Computers">Computers</a></li><li><a href="/microbluesoftwarewebsite.nsf/printingPage.xsp" title="Documents & Printing">Documents & Printing</a></li><li><a href="/microbluesoftwarewebsite.nsf/privacyPage.xsp" title="Privacy Notice">Privacy Notice</a></li><li><a href="/microbluesoftwarewebsite.nsf/CopyrightPage.xsp" title="Copyrights">Copyrights</a></li><li><a href="/microbluesoftwarewebsite.nsf/purchasePage.xsp" title="Computer Purchase">Computer Purchase</a></li></ul></div></div></div></div></div><div class="lotusContent lotusForm" id="lotusContent"><div id="view:_id1:_id2:BreadCrumbControl">
+<div role="navigation" class="lotusBreadcrumbs"><span class="lotusBreadcrumbsLabel" title="You are in: ">You are in: </span>MicroBlue Software
+</div></div>
+<br>
+<div style="font-size:8pt;padding-top:0.0px">
+<div class="lotusLimit" id="contentArea"><div class="lotusHeader"><h1><div style="text-align:center;font-family:Copperplate Gothic Bold;font-size:14pt;color:rgb(0,0,255)"><span style="font-family:Copperplate Gothic Bold;font-size:18pt;color:rgb(5,62,209)">MicroBlue Software, LLC</span>
+<span style="font-family:Copperplate Gothic Bold;font-size:16pt;color:rgb(0,128,255)"></span>
+</div>
+<div style="text-align:center;font-family:Copperplate Gothic Bold;font-size:14pt;color:rgb(0,0,255)"><img id="view:_id1:_id2:_id78:image1" src="/microbluesoftwarewebsite.nsf/MUBlueLogo.jpg" alt="MicroBlue Logo" style="width:76.0px;height:19.0px"></div>
+<div style="text-align:center;font-family:Copperplate Gothic Bold;font-size:14pt;color:rgb(0,0,255)"></div>
+<span style="font-family:Arial;font-size:12pt" class="lotusText"></span>
+<span style="font-family:Arial;font-size:12pt;padding-top:0.0px" class="lotusText"></span>
+<table role="presentation" class="lotusTable"><tr><td style="border-color:rgb(255,255,255)"><div style="text-align:left"><span style="font-family:Arial;font-size:12pt;padding-top:0.0px" class="lotusText"></span>
+<span style="font-family:Arial;font-size:16pt;padding-top:0.0px;font-weight:bold" class="lotusText"></span>
+<span style="font-family:Arial;font-size:16pt;font-weight:bold" class="lotusText"></span>
+<span style="font-family:Arial;font-size:12pt;padding-top:0.0px" class="lotusText"></span>
+<span style="font-family:Arial;font-size:12pt;padding-top:0.0px;color:rgb(5,62,209)" class="lotusText"></span>
+<span style="font-family:Arial;font-size:12pt;padding-top:0.0px;color:rgb(5,62,209);font-weight:bold" class="lotusText">MicroBlue Software, LLC</span>
+<span style="font-family:Arial;font-size:12pt;padding-top:0.0px" class="lotusText">develops
+									IBM Notes/Domino applications for
+									use both on the web and native IBM
+									Notes, document publishing, and
+									custom built turnkey computers.</span>
+</div>
+</td>
+</tr>
+<tr><td style="height:30px;border-color:rgb(255,255,255)"></td>
+</tr>
+<tr><td style="border-color:rgb(255,255,255)"><span style="font-family:Arial;font-size:12pt;font-weight:bold"></span>
+<span style="font-family:Arial;font-size:10pt"></span>
+<span style="font-family:Arial;font-size:12pt;font-weight:bold">Areas of expertise:</span>
+<span style="font-family:Arial;font-size:12pt;font-weight:bold;padding-top:0.0px"></span>
+<span style="font-family:Arial;font-size:12pt;font-weight:bold"></span>
+<div style="margin-left:24px;font-family:Arial;font-size:10pt"><span style="font-family:Arial;font-size:10pt"><li style="font-family:Arial;font-size:10pt"><span style="font-family:Arial;font-size:10pt">Web site design and
+										implementation</span>
+</li></span>
+</div>
+<div style="margin-left:24px;font-family:Arial;font-size:10pt"><span style="font-family:Arial;font-size:10pt"><li style="font-family:Arial;font-size:10pt">Relational database design and
+										deployment</li></span>
+</div>
+<div style="margin-left:24px;font-family:Arial;font-size:10pt"><span style="font-family:Arial;font-size:10pt"><li style="font-family:Arial;font-size:10pt">IBM Notes/Domino application
+										design, development, and
+										deployment for both web and
+										Notes client</li></span>
+</div>
+<div style="margin-left:24px;font-family:Arial;font-size:10pt"><span style="font-family:Arial;font-size:10pt"><li style="font-family:Arial;font-size:10pt">IBM Notes/Domino workflow and
+										approval applications IBM
+										Notes/Domino user/client surveys</li></span>
+</div>
+<div style="margin-left:24px;font-family:Arial;font-size:10pt"><span style="font-family:Arial;font-size:10pt"><li style="font-family:Arial;font-size:10pt">IBM Notes/Domino applications
+										with relational database data
+										access</li></span>
+</div>
+<div style="margin-left:24px;font-family:Arial;font-size:10pt"><span style="font-family:Arial;font-size:10pt"><li style="font-family:Arial;font-size:10pt">Portal design and deployment
+										offering a customized and
+										adaptive interface for users to
+										discover, track and interact
+										with other users, applications
+										and content</li></span>
+</div>
+<div style="margin-left:24px;font-family:Arial;font-size:10pt"><span style="font-family:Arial;font-size:10pt"><li style="font-family:Arial;font-size:10pt">Document publishing in both
+										color and black/white</li></span>
+</div>
+<div style="margin-left:24px;font-family:Arial;font-size:10pt"><span style="font-family:Arial;font-size:10pt"><li style="font-family:Arial;font-size:10pt">Document preparation for
+										commercial printing</li></span>
+</div>
+<div style="margin-left:24px"><span style="font-family:Arial;font-size:12pt"><li style="font-family:Arial;font-size:10pt">Custom built turnkey desktop and
+										laptop computers<br style="font-family:Arial;font-size:10pt">
+</li></span>
+<span style="font-family:Arial;font-size:12pt"></span>
+</div>
+</td>
+</tr>
+<tr><td align="center" style="height:1px;background-color:rgb(0,128,255)" valign="middle"></td>
+</tr>
+<tr><td style="height:40px;border-color:rgb(255,255,255)"><span style="font-family:Arial;font-size:12pt"></span>
+<span style="font-family:Arial;font-size:10pt"></span>
+<span style="font-family:Arial;font-size:10pt;border-color:rgb(255,255,255)"></span>
+<span style="font-family:Arial;font-size:10pt"></span>
+<span style="font-family:Arial;font-size:12pt"></span>
+<span style="font-style:italic;font-weight:bold;font-family:Arial;font-size:10pt"></span>
+<span style="font-family:Arial;font-size:10pt">This site was implemented using  IBM
+								Domino xPages by Ken Behrens, IBM Certified
+								Advanced Application Developer.</span>
+<span style="font-family:Arial;font-size:10pt;border-color:rgb(255,255,255)"></span>
+</td>
+</tr>
+<tr><td style="border-color:rgb(255,255,255)"></td>
+</tr>
+</table>
+<div style="text-align:center">&nbsp;&nbsp;<img id="view:_id1:_id2:_id78:image2" src="/microbluesoftwarewebsite.nsf/IBM-CertificationMark.jpg" alt="IBM Certification Mark" style="width:121.0px;height:45.0px;margin-left:24px">&nbsp;&nbsp;<img id="view:_id1:_id2:_id78:image3" src="/microbluesoftwarewebsite.nsf/PoweredbyLDtrans.gif" alt="Powered by IBM Domino" style="text-align:center">&nbsp;</div>
+<div style="text-align:center"></div>
+<div style="text-align:center"><span style="font-family:Arial;font-size:12pt"></span>
+</div>
+</h1></div></div></div>
+</div></div></div><div style="text-align:center" class="text-align:center">
+<div class="lotusFooter" style="text-align:center"><div class="lotusCenter">
+<table align="center" cellspacing="0" role="presentation" style="text-align:center"><tr style="text-align:center"><td><div><a id="view:_id1:_id2:_id173:link1" href="#" class="lotusAction" title="About this database" target="_self">About this database</a></div>
+</td><td><div><a id="view:_id1:_id2:_id173:link2" href="#" class="lotusAction" title="Using this database">Using this database</a></div>
+</td><td class="lotusLast" style="text-align:center"><div style="text-align:center"><a id="view:_id1:_id2:_id173:link3" href="/microbluesoftwarewebsite.nsf/contactPage.xsp" class="lotusAction" title="Contact Us">Contact Us</a></div>
+</td></tr></table></div>
+</div></div>
+
+<input type="hidden" name="$$viewid" id="view:_id1__VUID" value="!1c3uijv2678mg4vfvetuyxfz7!">
+<input type="hidden" name="$$xspsubmitid">
+<input type="hidden" name="$$xspexecid">
+<input type="hidden" name="$$xspsubmitvalue">
+<input type="hidden" name="$$xspsubmitscroll">
+<input type="hidden" name="view:_id1" value="view:_id1"></form>
+<script type="text/javascript">
+
+function view__id1__id2__id4__id11__id17_eventHandler1_clientSide_onkeyup(thisEvent) {
+
+					if (thisEvent.keyCode == 13) {
+						login();
+						return true
+					}
+
+}
+
+function view__id1__id2__id4__id11__id17_eventHandler2_clientSide_onkeyup(thisEvent) {
+if (thisEvent.keyCode == 13) {
+	login();
+	return true
+}
+
+}
+
+function view__id1__id2__id4__id11__id17_eventHandler3_clientSide_onclick(thisEvent) {
+login();
+
+}
+
+function view__id1__id2__id4__id11__id17__id45_clientSide_onclick(thisEvent) {
+dijit.byId('dialogLogin').show();
+if ('false' == 'true') {
+	dojo.byId('view:_id1:_id2:_id4:_id11:_id17:username').setAttribute("value", returnCookieVal('username'));
+}else{
+	dojo.cookie('username', null, { expires: -1, domain: 'homebrew.microbluesoftware.com' });
+}
+
+}
+
+function view__id1__id2__id4__id11__id17__id46_clientSide_onClientLoad(thisEvent) {
+// from version 1.5.1
+// the use of a url parameter to invoke the login dialog is not required, you may leave the parameter empty
+
+if ('Anonymous' == 'Anonymous')
+{
+	var result = "";  
+	
+	if (result == "true") {
+		dijit.byId('dialogLogin').show();
+		dojo.byId('view:_id1:_id2:_id4:_id11:_id17:username').setAttribute("value", returnCookieVal('username'));
+	}
+}
+
+}
+
+XSP.addOnLoad(function() {
+XSP.attachEvent("view:_id1:_id2:_id4:_id11:_id15", "view:_id1:_id2:_id4:_id11:linkHelp", "onclick", null, true, 0);
+XSP.attachEvent("view:_id1:_id2:_id4:_id11:_id17:eventHandler1", "view:_id1:_id2:_id4:_id11:_id17:username", "onkeyup", view__id1__id2__id4__id11__id17_eventHandler1_clientSide_onkeyup, false, 2);
+XSP.attachEvent("view:_id1:_id2:_id4:_id11:_id17:eventHandler2", "view:_id1:_id2:_id4:_id11:_id17:password", "onkeyup", view__id1__id2__id4__id11__id17_eventHandler2_clientSide_onkeyup, false, 2);
+XSP.attachEvent("view:_id1:_id2:_id4:_id11:_id17:eventHandler3", "view:_id1:_id2:_id4:_id11:_id17:loginButton", "onclick", view__id1__id2__id4__id11__id17_eventHandler3_clientSide_onclick, false, 2);
+XSP.attachEvent("view:_id1:_id2:_id4:_id11:_id17:_id45", "view:_id1:_id2:_id4:_id11:_id17:lnkLogin", "onclick", view__id1__id2__id4__id11__id17__id45_clientSide_onclick, false, 2);
+XSP.attachEvent("view:_id1:_id2:_id4:_id11:_id17:_id46", "view:_id1:_id2:_id4:_id11:_id17", "onClientLoad", view__id1__id2__id4__id11__id17__id46_clientSide_onClientLoad, false, 2);
+XSP.attachEvent("view:_id1:_id2:_id173:_id180", "view:_id1:_id2:_id173:link1", "onclick", null, true, 0);
+XSP.attachEvent("view:_id1:_id2:_id173:_id183", "view:_id1:_id2:_id173:link2", "onclick", null, true, 0);
+XSP.attachEvent("view:_id1:_id2:_id173:_id186", "view:_id1:_id2:_id173:link3", "onclick", null, true, 0);
+}); 
+
+</script>
+</body>
+</html>

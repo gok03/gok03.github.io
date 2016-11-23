@@ -1,0 +1,939 @@
+status: 200
+content-length: 61566
+content-location: http://www.plexon.com
+set-cookie: SESS1ef7255224864cde13a1bec09bdf7e29=fp1pct5s4goa5u4fqcgspqie40;
+ expires=Fri, 14-Oct-2016 13:01:47 GMT; path=/; domain=.plexon.com
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+vary: Accept-Encoding
+server: Apache/2.2.22 (Ubuntu)
+last-modified: Wed, 21 Sep 2016 09:28:27 GMT
+-content-encoding: gzip
+cache-control: store, no-cache, must-revalidate, post-check=0, pre-check=0
+date: Wed, 21 Sep 2016 09:28:27 GMT
+x-powered-by: PHP/5.3.10-1ubuntu3.24
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Home | Plexon</title>
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/plexon/css/plexon.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/libraries/superfish/css/superfish.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/libraries/superfish/css/superfish-navbar.css?y" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/plexon/css/print.css?y" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?1474450108"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js?1474450108"></script>
+<script type="text/javascript" src="/sites/all/themes/plexon/_behaviors/jquery.als-1.3.min.js?1474450108"></script>
+<script type="text/javascript" src="/sites/all/themes/plexon/_behaviors/jquery.cycle.all.js?1474450108"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-11883497-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+      jQuery(function($){
+		if (typeof(_gaq) !== 'undefined') // Check if Google Analytics is Loaded
+		{
+			$('a.filedownload').click(function(e){
+				_gaq.push(['_trackEvent', 'File Download Link', $(this).attr('title'), location.href]);
+			});
+		}
+	  });
+    </script>
+    <script type="text/javascript">
+        if (typeof jQuery != 'undefined') {
+            jQuery(document).ready(function($) {
+                var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+                var baseHref = '';
+                if (jQuery('base').attr('href') != undefined)
+                    baseHref = jQuery('base').attr('href');
+                jQuery('a').each(function() {
+                    var href = jQuery(this).attr('href');
+                    if (href && (href.match(/^https?\:/i)) && (!href.match(document.domain))) {
+                        jQuery(this).click(function() {
+                            var extLink = href.replace(/^https?\:\/\//i, '');
+                            _gaq.push(['_trackEvent', 'External', 'Click', extLink]);
+                            if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+                                setTimeout(function() { location.href = href; }, 200);
+                                return false;
+                            }
+                        });
+                    }
+                    else if (href && href.match(/^mailto\:/i)) {
+                        jQuery(this).click(function() {
+                            var mailLink = href.replace(/^mailto\:/i, '');
+                            _gaq.push(['_trackEvent', 'Email', 'Click', mailLink]);
+                        });
+                    }
+                    else if (href && href.match(filetypes)) {
+                        jQuery(this).click(function() {
+                            var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+                            var filePath = href;
+                            _gaq.push(['_trackEvent', 'Download', 'Click-' + extension, filePath]);
+                            if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+                                setTimeout(function() { location.href = baseHref + href; }, 200);
+                                return false;
+                            }
+                        });
+                    }
+                });
+            });
+        }
+    </script>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+</head>
+
+    <body>
+        <!-- Header -->
+        <!-- Admin Tabs -->
+
+<div id="header">
+    <div class="centerarea">
+        <div class="neuro">Neurotechnology Research Systems</div>
+        <!--
+        <ul>
+        <li><a href="#">User Login</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Publications</a></li>
+        </ul>
+        -->
+        <div class="search">
+            <form method="POST" action="/search" onsubmit="return $('#searchText').val() != '';">
+                <div class="input"><input id="searchText" type="text" name="search" value="Enter Your Search..." onfocus="javascript:this.value=''" style="border:none;" /></div>
+                <input type="submit" value="Search" />
+            </form>
+        </div>
+    </div>
+</div>
+        <!-- Navigation -->
+        <div id="nav">
+    <div class="centerarea">
+        <div class="logo"><a href="/">Plexon</a></div>
+        <ul id="superfish-1" class="sf-menu sf-primary-links sf-horizontal sf-style-none sf-total-items-6 sf-parent-items-6 sf-single-items-0"><li id="menu-296-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/about-plexon-inc" class="sf-depth-1 menuparent">About Us</a><ul><li id="menu-306-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/harvey-wiggins" class="sf-depth-2">Our Founder</a></li><li id="menu-298-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/our-customers" class="sf-depth-2">Our Customers</a></li><li id="menu-307-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/corporate-awards" class="sf-depth-2">Corporate Awards</a></li><li id="menu-3407-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/mobile-app" class="sf-depth-2">Mobile Application</a></li><li id="menu-317-1" class="last odd sf-item-5 sf-depth-2 sf-no-children"><a href="/careers-plexon" class="sf-depth-2">Careers</a></li></ul></li><li id="menu-433-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-6 sf-parent-children-0 sf-single-children-6 menuparent"><a href="/products" class="sf-depth-1 menuparent">Products</a><ul><li id="menu-435-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/products/plexon-solutions-neuroscience-research" class="sf-depth-2">Research Solutions</a></li><li id="menu-436-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/products/plexon-systems" class="sf-depth-2">Systems</a></li><li id="menu-437-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/products/software" class="sf-depth-2">Software</a></li><li id="menu-438-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/products/plexon-accessory-products" class="sf-depth-2">Accessories</a></li><li id="menu-439-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/products/plexon-electrodes-probes-and-arrays" class="sf-depth-2">Electrodes</a></li><li id="menu-637-1" class="last even sf-item-6 sf-depth-2 sf-no-children"><a href="/products/products-name" class="sf-depth-2">Products by Name</a></li></ul></li><li id="menu-327-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/technical-support" class="sf-depth-1 menuparent">Support</a><ul><li id="menu-482-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/software-downloads" class="sf-depth-2">Software Downloads</a></li><li id="menu-483-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/documentation" class="sf-depth-2">Documentation</a></li><li id="menu-484-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/plexon-warranty-and-returns-policy" class="sf-depth-2">Warranty</a></li><li id="menu-485-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="/gotoassist-instructions" class="sf-depth-2"><b>GoTo</b>Assist</a></li></ul></li><li id="menu-326-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-7 sf-parent-children-0 sf-single-children-7 menuparent"><a href="/workshops" class="sf-depth-1 menuparent">Workshops</a><ul><li id="menu-3430-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/4th-annual-plexon-china-regional-neurophysiology-workshop" class="sf-depth-2">2016 Annual China Workshop</a></li><li id="menu-3275-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/7th-annual-plexon-neurophysiology-and-behavior-workshop" class="sf-depth-2">2016 Annual Workshop</a></li><li id="menu-2850-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/6th-annual-plexon-neurophysiology-and-behavior-workshop" class="sf-depth-2">2015 Annual Workshop</a></li><li id="menu-3266-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/3rd-annual-plexon-china-regional-neurophysiology-workshop" class="sf-depth-2">2015 Annual China Workshop</a></li><li id="menu-783-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/2014-Annual-Workshop" class="sf-depth-2">2014 Annual Workshop</a></li><li id="menu-2863-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/2nd-annual-plexon-china-regional-neurophysiology-workshop" class="sf-depth-2">2014 Annual China Workshop</a></li><li id="menu-721-1" class="last odd sf-item-7 sf-depth-2 sf-no-children"><a href="/2013-Annual-Workshop" class="sf-depth-2">2013 Annual Workshop</a></li></ul></li><li id="menu-328-1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/newsroom" class="sf-depth-1 menuparent">News &amp; Events</a><ul><li id="menu-336-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/news-releases" class="sf-depth-2">News Releases</a></li><li id="menu-341-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/events" class="sf-depth-2">Events</a></li><li id="menu-354-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/plexon-newsletters" class="sf-depth-2">Newsletters</a></li><li id="menu-2797-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="/t-shirts-research-articles" class="sf-depth-2">T-Shirts for Research Articles</a></li></ul></li><li id="menu-375-1" class="last even sf-item-6 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/contact" class="sf-depth-1 menuparent">Contact Us</a><ul><li id="menu-387-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/plexon-sales-support" class="sf-depth-2">Sales Support</a></li><li id="menu-386-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/plexon-technical-support" class="sf-depth-2">Technical Support</a></li><li id="menu-389-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/authorized-distributors" class="sf-depth-2">Authorized Distributors</a></li><li id="menu-400-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="/place-order-plexon" class="sf-depth-2">Place an Order</a></li></ul></li></ul>            </div>
+</div>
+        <!-- Banner Area -->
+        <div id="homebanner">
+        	<div id="homepage_rotator">
+	        		        	<div class="slide">
+		            <div class="pic"><img src="/sites/default/files/homebanner1.png" alt="" /></div>
+		            <div class="text">
+		                <div class="box">
+		                    <div class="title">Customized Solutions</div>
+		                    <p>Plexon is a pioneer and leading innovator of custom, high performance solutions for data acquisition, behavioral research and advanced analysis specifically designed for neuroscience research.</p>		                    <p class="button"><a href=""><span>Learn More</span></a></p>
+		                </div>
+		            </div>
+		        </div>
+	                        </div>
+            <div class="ticker">
+            	<ul id="rotator_nav">
+            		<li><a href="#">Slide 1</a></li>
+            		<li class="on"><a href="#">Slide 2</a></li>
+            		<li><a href="#">Slide 3</a></li>
+            		<li><a href="#">Slide 4</a></li>
+            		<li><a href="#">Slide 5</a></li>
+            	</ul>
+            </div>
+        </div>
+
+        <!-- Callout Text -->
+        <div id="callout">
+            <div class="trileft"></div>
+            <div class="triright"></div>
+           <div class="callout-text-center"> Your trusted research partner for more than 30 years! </div>
+        </div>
+
+        <!-- Body Area -->
+        <div id="homebody" class="home clearfix">
+
+            <!-- Left Side -->
+            <div class="left">
+                                
+                <a href="http://www.plexon.com/products/omniplex-d-neural-data-acquisition-system-1" class="cta-link"><img src="/sites/default/files/callouts_DHS Processor and Digital HST.png" /></a><a href="http://www.plexon.com/mobile-app" class="cta-link"><img src="/sites/default/files/callouts_Mobile App 2015.jpg" /></a><a href="http://www.plexon.com/products/plexbright-compatible-commutators" class="cta-link"><img src="/sites/default/files/callouts_NEW Carousel.jpg" /></a><a href="http://www.plexon.com/products/plexbright-led-modules" class="cta-link"><img src="/sites/default/files/callouts_working file_PLEXBRIGHT_LIME.jpg" /></a>            </div> <!-- End "left" -->
+
+            <!-- Right Side -->
+            <div class="right">
+				<div class="events">
+    				<div class="title">Recent News <a href="/newsroom">See all News »</a></div>
+    				<div class="als-container" id="my-als-list">
+    				<div class="als-viewport">
+    				<ul class="als-wrapper clearfix">
+	                <li class="als-item"><h3><a href="http://www.plexon.com/products/omniplex-d-neural-data-acquisition-system-1"><span style="font-size: large;">OmniPlex 1.15 Available</span></a></h3>
+<p>Download the new software today to get support for new 8 and 16 channel digital headstages, additional DHP data integrity protection, and new triggered recording and display options&nbsp;and more!</p>
+</li><li class="als-item"><h3><span style="font-size: large;"><a href="/mobile-app">Download the&nbsp;Plexon Mobile App</a></span><a href="/mobile-app"><br /></a></h3>
+<p><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML />
+  <o:AllowPNG />
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML />
+  <o:AllowPNG />
+ </o:OfficeDocumentSettings>
+</xml><![endif]--></p>
+<p><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves />
+  <w:TrackFormatting />
+  <w:PunctuationKerning />
+  <w:ValidateAgainstSchemas />
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF />
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables />
+   <w:SnapToGridInCell />
+   <w:WrapTextWithPunct />
+   <w:UseAsianBreakRules />
+   <w:DontGrowAutofit />
+   <w:SplitPgBreakAndParaMark />
+   <w:EnableOpenTypeKerning />
+   <w:DontFlipMirrorIndents />
+   <w:OverrideTableStyleHps />
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math" />
+   <m:brkBin m:val="before" />
+   <m:brkBinSub m:val="&#45;-" />
+   <m:smallFrac m:val="off" />
+   <m:dispDef />
+   <m:lMargin m:val="0" />
+   <m:rMargin m:val="0" />
+   <m:defJc m:val="centerGroup" />
+   <m:wrapIndent m:val="1440" />
+   <m:intLim m:val="subSup" />
+   <m:naryLim m:val="undOvr" />
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves />
+  <w:TrackFormatting />
+  <w:PunctuationKerning />
+  <w:ValidateAgainstSchemas />
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF />
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables />
+   <w:SnapToGridInCell />
+   <w:WrapTextWithPunct />
+   <w:UseAsianBreakRules />
+   <w:DontGrowAutofit />
+   <w:SplitPgBreakAndParaMark />
+   <w:EnableOpenTypeKerning />
+   <w:DontFlipMirrorIndents />
+   <w:OverrideTableStyleHps />
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math" />
+   <m:brkBin m:val="before" />
+   <m:brkBinSub m:val="&#45;-" />
+   <m:smallFrac m:val="off" />
+   <m:dispDef />
+   <m:lMargin m:val="0" />
+   <m:rMargin m:val="0" />
+   <m:defJc m:val="centerGroup" />
+   <m:wrapIndent m:val="1440" />
+   <m:intLim m:val="subSup" />
+   <m:naryLim m:val="undOvr" />
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 1" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 2" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 3" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 4" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 5" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 6" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 7" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 8" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 9" />
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title" />
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid" />
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 1" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 2" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 3" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 4" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 5" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 6" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 7" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 8" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 9" />
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title" />
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid" />
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--></p><p><span style="font-family: Arial;"><span style="font-size: large;"><span style="line-height: 115%; color: black;">New software, firmware and hardware release alerts to keep products current, secure and at peak performance. In the Google Play and iTunes stores.</span></span></span><span style="font-size:11.0pt;line-height:115%;<br />
+font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:<br />
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;<br />
+color:black;mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:<br />
+AR-SA"><br /></span></p>
+</li><li class="als-item"><h3><a href="http://www.plexon.com/products/plexbright-compatible-commutators"><span style="font-size: large;">Carousel&trade; Commutator Now Available</span></a></h3>
+<p><span style="font-size: large;">Supporting up to 64 channels of neural recording with digital headstages and/or two PlexBright LED Modules</span></p>
+</li><li class="als-item"><h3><a href="http://www.plexon.com/plexon-inc-launches-new-plexbright%C2%AE-lime-led-modules-impressive-power-and-broad-opsin-activation-spe"><span style="font-size: large;">New PlexBright 550nm Lime LED Modules</span></a></h3>
+<p><a href="http://www.plexon.com/plexon-inc-launches-new-plexbright%C2%AE-lime-led-modules-impressive-power-and-broad-opsin-activation-spe"><span style="color: rgb(0, 0, 0);"><span style="font-size: large;">Impressive power and broad opsin activation spectrum</span></span></a></p>
+</li><li class="als-item"><h3><a href="http://www.plexon.com/products/plexstim-electrical-stimulator-2-system"><span style="font-size: large;">New <em>PyPlexStim Technical Guide</em> Now Posted </span></a></h3>
+<p><span style="font-size: large;"><span style="font-family: Arial;"><span style="line-height: 115%;">Python package for controlling the Plexon</span><span style="line-height: 115%; color: black;"> </span><span style="line-height: 115%;">PlexStim&trade; Electrical Stimulator</span></span></span></p>
+</li><li class="als-item"><!--<h3><a href="http://www.plexon.com/plexons-hands-workshops/4th-annual-plexon-china-regional-neurophysiology-workshop"><span style="font-size: large;">SAVE THE DATE - China Workshop</span></a></h3><p><span style="color: rgb(0, 0, 0);"><span style="font-size: large;">The 4th Annual China Neurophysiology Workshop will be held July 18-20,2016 in Beijing China. &nbsp;</span></span></p>--><!--<h3><a href="http://www.plexon.com/plexons-hands-workshops/4th-annual-plexon-china-regional-neurophysiology-workshop"><span style="font-size: large;">SAVE THE DATE - China Workshop</span></a></h3><p><span style="color: rgb(0, 0, 0);"><span style="font-size: large;">The 4th Annual China Neurophysiology Workshop will be held July 18-20,2016 in Beijing China. &nbsp;</span></span></p>--><h3><span style="font-size: large;"><a href="http://www.plexon.com/events">SAVE THE DATE &ndash; Society for Neuroscience 2016 </a></span></h3>
+<p><span style="color: rgb(0, 0, 0);"><span style="font-size: large;">We look forward to seeing you at booth #1201 at the Society for Neuroscience 2016 annual meeting which takes place November 12-16 at the San Diego Convention Center &nbsp;</span></span></p>
+</li><li class="als-item"><h3><a href="http://www.plexon.com/careers-plexon"><span style="font-size: large;">Plexon is Hiring!</span><br /></a></h3>
+<p><a href="http://www.plexon.com/6th-annual-plexon-neurophysiology-and-behavior-workshop"><span style="color: rgb(0, 0, 0);"><span style="font-size: large;">Several open positions. Check them out!</span></span></a></p>
+</li><li class="als-item"><h3><b style="color: rgb(2, 43, 140); font-size: 16px; line-height: 22px;"><font size="4"><a href="http://www.plexon.com/products/plexbright-4-channel-optogenetic-controller-radiant-v2">Radiant 2.1 Now Available</a></font></b></h3>
+<div style="font-size: 14px; line-height: 22px; color: rgb(32, 32, 32); margin: 10px 0px;"><span style="color: rgb(0, 0, 0);"><span style="font-size: large;">Download the latest software now!</span></span>&nbsp;</div>
+</li>	                </ul>
+	                </div>
+	                </div>
+				</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="clearfix">
+    <ul class="home">
+        <li class="title"><a href="/">Home</a></li>
+    </ul>
+                    <ul>
+                    <li class="title"><a href="/about-plexon-inc">About Us</a></li>
+                                                    <li><a href="/harvey-wiggins">Our Founder</a></li>
+                                                            <li><a href="/our-customers">Our Customers</a></li>
+                                                            <li><a href="/corporate-awards">Corporate Awards</a></li>
+                                                            <li><a href="/mobile-app">Mobile Application</a></li>
+                                                            <li><a href="/careers-plexon">Careers</a></li>
+                                            </ul>
+                            <ul>
+                    <li class="title"><a href="/products">Products</a></li>
+                                                    <li><a href="/products/plexon-solutions-neuroscience-research">Research Solutions</a></li>
+                                                            <li><a href="/products/plexon-systems">Systems</a></li>
+                                                            <li><a href="/products/software">Software</a></li>
+                                                            <li><a href="/products/plexon-accessory-products">Accessories</a></li>
+                                                            <li><a href="/products/plexon-electrodes-probes-and-arrays">Electrodes</a></li>
+                                                            <li><a href="/products/products-name">Products by Name</a></li>
+                                            </ul>
+                            <ul>
+                    <li class="title"><a href="/technical-support">Support</a></li>
+                                                    <li><a href="/software-downloads">Software Downloads</a></li>
+                                                            <li><a href="/documentation">Documentation</a></li>
+                                                            <li><a href="/plexon-warranty-and-returns-policy">Warranty</a></li>
+                                                            <li><a href="/gotoassist-instructions"><b>GoTo</b>Assist</a></li>
+                                            </ul>
+                            <ul>
+                    <li class="title"><a href="/workshops">Workshops</a></li>
+                                                    <li><a href="/4th-annual-plexon-china-regional-neurophysiology-workshop">2016 Annual China Workshop</a></li>
+                                                            <li><a href="/7th-annual-plexon-neurophysiology-and-behavior-workshop">2016 Annual Workshop</a></li>
+                                                            <li><a href="/6th-annual-plexon-neurophysiology-and-behavior-workshop">2015 Annual Workshop</a></li>
+                                                            <li><a href="/3rd-annual-plexon-china-regional-neurophysiology-workshop">2015 Annual China Workshop</a></li>
+                                                            <li><a href="/2014-Annual-Workshop">2014 Annual Workshop</a></li>
+                                                            <li><a href="/2nd-annual-plexon-china-regional-neurophysiology-workshop">2014 Annual China Workshop</a></li>
+                                                            <li><a href="/2013-Annual-Workshop">2013 Annual Workshop</a></li>
+                                            </ul>
+                            <ul>
+                    <li class="title"><a href="/newsroom">News & Events</a></li>
+                                                    <li><a href="/news-releases">News Releases</a></li>
+                                                            <li><a href="/events">Events</a></li>
+                                                            <li><a href="/plexon-newsletters">Newsletters</a></li>
+                                                            <li><a href="/t-shirts-research-articles">T-Shirts for Research Articles</a></li>
+                                            </ul>
+                            <ul>
+                    <li class="title"><a href="/contact">Contact Us</a></li>
+                                                    <li><a href="/plexon-sales-support">Sales Support</a></li>
+                                                            <li><a href="/plexon-technical-support">Technical Support</a></li>
+                                                            <li><a href="/authorized-distributors">Authorized Distributors</a></li>
+                                                            <li><a href="/place-order-plexon">Place an Order</a></li>
+                                            </ul>
+                <!--
+    <div class="join">
+        <div class="input"><input type="text" name="join" value="Join Our Email List" onFocus="javascript:this.value=''" /></div>
+        <a href="#">Join</a>
+    </div>
+    -->
+</div>
+
+<div id="copyright" class="clearfix">
+    <div class="plexon">&copy; 2016 All Rights Reserved. Plexon Inc | <a href="/sitemap">Sitemap</a></div>
+    <!--<div class="hck2">Website Design &amp; Development by: <a href="http://www.hck2.com">hck2</a></div>-->
+</div>        <script type="text/javascript">
+			$(document).ready(function(){
+				
+				$("#my-als-list").als({
+					visible_items: 6,
+					orientation: "vertical",
+					circular: "yes",
+					autoscroll: "yes"
+				});
+				
+				$('#homepage_rotator').cycle({ 
+				    timeout: 5000, 
+				    pager:  '#rotator_nav', 
+				    pagerAnchorBuilder: function(idx, slide) { 
+				        // return selector string for existing anchor 
+				        return '#rotator_nav li:eq(' + idx + ') a'; 
+				    } 
+				});
+				var wraper_callout_height;
+				var wraper_callout_text_height;
+				var textpaddshoud;
+				wraper_callout_height=$("#callout").height()-11;
+				wraper_callout_text_height=$(".callout-text-center").height();
+				textpaddshoud=(wraper_callout_height-wraper_callout_text_height)/2;
+				$(".callout-text-center").css("padding-top",textpaddshoud);
+
+			});	
+		</script>
+    </body>
+</html>

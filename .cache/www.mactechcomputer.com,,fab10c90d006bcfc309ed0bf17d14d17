@@ -1,0 +1,380 @@
+status: 200
+content-length: 15785
+content-location: http://www.mactechcomputer.com
+accept-ranges: bytes
+server: Apache
+last-modified: Fri, 01 May 2015 17:13:26 GMT
+date: Sun, 18 Sep 2016 06:55:34 GMT
+content-type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="We specialize in Mac & PC computer repair, service, consulting and sales. We've been in this business since 1984, the year the original Mac 128K was introduced. We BUY, FIX and SELL older legacy Macs and parts. Have a pesky PC virus issue? We fix that too, we're here for you; offering free phone support, even late hours. We have the BEST rates anywhere!">
+<meta name="keywords" content="apple computer, raleigh, nc, wake wounty, 27616, buying used macs, sell computers, buy, sell, purchase, used, apple computers, apple products, apple accessories, mac repair, PC repair, iPhone, iPad, MacTech Computer Services, MacTech Computer, MacTech, PC, DELL">
+<title>Mactech Computer Services | Charlotte, NC | Specializing in Mac &amp; PC computer repair, service, consulting and sales.</title>
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/mactech_bg.jpg);
+	background-repeat: repeat-x;
+	margin-top: 0px;
+	margin-bottom: 4px;
+}
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+.style2 {color: #307DC1}
+.style3 {
+	color: #307DC1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+.style4 {color: #FFFFFF}
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+a:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.style7 {font-size: 9pt}
+.style8 {font-family: Arial, Helvetica, sans-serif}
+-->
+</style>
+
+<script type="text/javascript">
+      
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+ 
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["images/2ndimage.png", "", ""] //
+fadeimages[1]=["images/1stimage_2.png", "", ""] //
+fadeimages[2]=["images/image1.jpg", "", ""] //
+fadeimages[3]=["images/image2.jpg", "", ""] //
+fadeimages[4]=["images/image3.jpg", "", ""] //
+fadeimages[5]=["images/image4.jpg", "", ""] //
+fadeimages[6]=["images/image5.jpg", "", ""] //
+
+
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+ 
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=0
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+ 
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+ 
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+ 
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+ 
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+ 
+ 
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+
+
+
+
+
+</head>
+
+<body>
+<div align="center">
+<table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1000" colspan="2"><img src="images/header3.jpg" alt="MacTech Computer Services " width="1000" height="126" border="0" usemap="#Map" /></td>
+  </tr>
+  <tr>
+    <td width="331" bgcolor="#FFFFFF" background="images/leftsidebg.jpg" style="padding-left: 0px; padding-top:7px" align="left" valign="top"><p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DG4LGTYJQMFFC" target="_blank">
+	<img src="images/payment.png" alt="make payment" width="145" height="34" align="left" border="0" /></a><br />
+        <br />
+        <br>
+        <img src="images/Greetings.png" alt="Greetings" width="128" height="35" /><br>
+        <span class="style1">We're located at <strong>1001 East W.T. Harris Blvd, Suite N, Charlotte, NC 28213</strong> and we  specialize in </span><span class="style1">Mac &amp; PC computer repair, service, consulting and sales. <br />
+        <br />
+        We've been in this business since 1984, the year the original Mac 128K was  introduced. <br />
+        <br />
+        We BUY, FIX and SELL older legacy Macs and parts. <strong>Have a pesky PC virus issue?</strong> We fix that too, we're here for you; offering free phone support, even late hours. We have the BEST rates anywhere!</span></p>
+      </td>
+    <td width="669" bgcolor="#FFFFFF">
+	<script type="text/javascript"> 
+    //new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+	new fadeshow(fadeimages, 669, 341, 0, 3750, 0) 
+    </script>
+    
+    </td>
+  </tr>
+  <tr>
+    <td width="1000" colspan="2">
+	<img border="0" src="images/mac_div.jpg" width="1000" height="22"></td>
+  </tr>
+  <tr>
+    <td width="1000" colspan="2" bgcolor="#FFFFFF">
+	<div align="center">
+		<table border="0" width="998" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="640" style="padding-top: 5px; padding-left: 0px" valign="top"><table width="596" border="0">
+                    <tr>
+                      <td><img src="images/angry.jpg" alt="MacTech Computer Services" width="596" height="94" /><br /></td>
+                  </tr>
+                    <tr>
+                      <td valign="top" class="style1"><p align="center"><strong>Dont Worry, Look at What We Offer:</strong><br />
+                          <br />
+                        FREE ESTIMATES<br />
+                        * Mac &amp; PC Password Recovery, *
+                        Data Recovery from Crashes, <br />
+                        * 
+                        Data Migration form one machine to another - <br />
+                        including programs, email, contacts, photos, music, etc...<br />
+                        <br />
+                        * Support for: Lion, iCloud, iPad, iPhone, MobileMe, Video, Audio, Boot Camp, Parallels <br />
+                        * OnSite Support for the Greater Raleigh Area and beyond, * Networking, *
+                        Remote Support,<br />
+                        * Diagnostic &amp; Training via Screen Sharing technology from the comfort of your home or office</p>
+                      </td>
+                  </tr>
+                  </table>
+				  <p><img src="images/sendus.jpg" width="596" height="94" border="0"><br />
+			      </p>
+				  <form id="form2" name="form2" method="post" action="message.php">
+				    <table width="596" border="0" cellpadding="4" cellspacing="5" style="background:#ececec">
+<tr align="left">
+<td width="105" bgcolor="#FFFFFF" class="style1 style2">*Name:</td>
+<td width="439" bgcolor="#FFFFFF"><input type="text" size="30" name="name"></td></tr>
+<tr align="left">
+  <td bgcolor="#FFFFFF" class="style3">*Email:</td>
+  <td bgcolor="#FFFFFF"><input type="text" size="30" name="email"></td></tr>
+<tr align="left">
+  <td valign="top" bgcolor="#FFFFFF" class="style3">Phone:</td>
+  <td bgcolor="#FFFFFF"><input type="text" size="30" name="phone" id="phone" /></td></tr>
+<tr align="left">
+  <td bgcolor="#FFFFFF"><span class="style3">*Comments:</span></td>
+  <td bgcolor="#FFFFFF"><textarea name="comments" rows="6" cols="30"></textarea></td>
+</tr>
+<tr align="left"><td>&nbsp;</td><td><input type="submit" value="Send"></td></tr>
+</table>
+                    <div align="center"><br />
+                      <table width="596" border="0" align="left">
+                        <tr>
+                          <td><div align="center"></div></td>
+                        </tr>
+                      </table>
+                      <br />
+                    </div>
+				  </form>				  </td>
+			  <td background="images/latest_news_bg.jpg" valign="top" style="padding-top: 18px; padding-left:10px; padding-right:10px">
+				<div align="center">
+				<table width="98%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+						<td width="319" valign="top"><form id="form1" name="form1" method="post" action="signup.php">
+						  <img border="0" src="images/newspaper.png" width="129" height="77" align="right"><img src="images/signup.png" width="174" height="27" border="0" align="left" /><br />
+						  <br />
+						  <div align="left">
+						    <p style="margin-top: 4px; margin-bottom: 4px">
+						    <input type="text" name="email" id="email" size="21" />
+						    <br />
+						    <input type="submit" name="Sign Me Up" id="Sign Me Up" value="Sign Me Up" /><br /></div>
+                          </form>
+						<p align="left">
+						  <font size="2" face="Arial">Receive coupons, 
+						discounts, news about computers for sale etc. Cancel at 
+					  any time, we will not SPAM you.</font><br /></td>
+				  </tr>
+<tr>
+  <td align="center" valign="top"><div align="center">
+    <img src="images/dashes.png" width="244" height="8" /><br>
+    <br /><script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 312,
+  height: 500,
+  theme: {
+    shell: {
+      background: '#2f7dbd',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#e0e0e0',
+      color: '#000000',
+      links: '#2f7dbd'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('mactechcomp').start();
+</script>
+  </div>
+    <a href="http://www.teamviewer.com/link/?url=842558&amp;id=1192950996"><br />
+    </a><br /></td>
+  </tr>
+				</table>
+			  	</div>
+			  </td>
+			</tr>
+		</table>
+	    </div>
+	</td>
+  </tr>
+  <tr>
+    <td width="1000" colspan="2" background="images/footer_bg.jpg" bgcolor="135a9a" style="padding-top: 5px; padding-bottom: 5px"><div align="center" class="style4"><span class="style7">&nbsp;<span class="style8">Copyright 2013 MacTech Computer Services <br />
+            <strong>Site designed by:</strong> <a href="http://wpStan.com" target="_blank">WordPress Stan</a> and <strong>Powered by:</strong> Naz-Sect Media Group</span></span></div></td>
+  </tr>
+</table>
+</div>
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="760,94,782,110" href="http://www.teamviewer.com/download/TeamViewerQS_en.exe" alt="Download Teamviewer Now" />
+  <area shape="rect" coords="97,78,127,108" href="http://twitter.com/#!/mactechcomp" target="_blank" alt="MacTech Twitter" />
+<area shape="rect" coords="131,78,163,110" href="http://www.facebook.com/MactechComputer" target="_blank" alt="MacTech FaceBook" />
+<area shape="rect" coords="688,94,724,110" href="http://www.teamviewer.com/download/version_6x/TeamViewerQS.dmg" alt="Download Teamviewer Now" />
+</map>
+</body>
+</html>

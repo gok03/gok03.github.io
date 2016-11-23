@@ -1,0 +1,298 @@
+status: 200
+content-length: 16676
+via: 1.1 varnish
+vary: Accept-Encoding
+x-backend: hiringhookwebs
+p3p: CP="CAO PSA OUR"
+cache-control: private
+x-varnish: 1517378628
+x-cache: MISS
+x-aspnet-version: 4.0.30319
+set-cookie: ASP.NET_SessionId=lwlkuuayewopbw0r2nbbxiel; path=/; HttpOnly, hook=;
+ expires=Sun, 11-Sep-2016 11:09:51 GMT; path=/
+accept-ranges: bytes
+x-backendhost: hiringhookweb3
+-content-encoding: gzip
+date: Sun, 11 Sep 2016 10:09:51 GMT
+x-client-ip: 104.236.64.140
+content-location: http://jobs.kingfishtechnology.com/jobseeker/Search.aspx
+age: 0
+x-powered-by: ASP.NET
+server: Microsoft-IIS/7.5
+connection: keep-alive
+x-real-ip: 
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><title>
+	Search Jobs
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><meta name="viewport" content="maximum-scale=2.0, width=1200, user-scalable=yes" /><link rel="shortcut icon" href="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/img/favicon.ico" /><link rel="apple-touch-icon" sizes="60x60" href="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/img/apple-touch-icon-60x60.png" /><link rel="apple-touch-icon" sizes="76x76" href="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/img/apple-touch-icon-76x76.png" /><link rel="apple-touch-icon" sizes="120x120" href="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/img/apple-touch-icon-120x120.png" /><link rel="apple-touch-icon" href="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/img/apple-touch-icon.png" /><link href="/HHStyles.css" rel="Stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic" rel="stylesheet" type="text/css" /><link rel="stylesheet" href="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/css/normalize.min.css" /><link rel="stylesheet" href="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/css/superfish.css" media="screen" /><link rel="stylesheet" href="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/style.css" />
+	<script src="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/js/modernizr-2.6.2.min.js"></script>
+
+	<link href="/HHStylesCustom.css" rel="Stylesheet" type="text/css" />
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/ie-8.css" />
+	<![endif]-->
+	
+	<script type="text/javascript" src="/js/html5.js"></script>
+	
+
+    
+	<script src="../js/jquery.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.replaceholder.js" type="text/javascript"></script>
+	<script src="../js/jquery-force-numeric.js" type="text/javascript"></script>
+	<script src="../js/DefaultButton.js" type="text/javascript"></script>
+    <script src="../js/jquery.formatCurrency.js" type="text/javascript"></script>
+
+    <script language="javascript" type="text/javascript">
+
+        var ua = navigator.userAgent.toLowerCase();
+        var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+
+        $(document).ready(function () {
+            $.fn.replaceholder();
+
+            if (!isAndroid) {
+                $(".locationMileage").ForceNumericOnly();
+                $("#ContentPlaceHolder1_txtCompensationStart").ForceNumericOnly();
+                $("#ContentPlaceHolder1_txtCompensationEnd").ForceNumericOnly();
+            }
+        });
+
+        var index = 1;
+
+        function addLocation() {
+            index++;
+
+            var retval = "within <input type=\"text\" class=\"locationMileage\" name=\"locationMileage_" + index + "\" id=\"locationMileage_" + index + "\" placeholder='Miles' />  of <input type=\"text\" id=\"txtLocation_" + index + "\" name=\"txtLocation_" + index + "\" class=\"txtLocation\" placeholder='City and State, or Zip Code' /> <a href=\"javascript:void(0);\" onclick=\"addLocation();\">Add Another Location</a><br />";
+
+            $("#dvLocationBox").append(retval);
+            if (!isAndroid) {
+                $(".locationMileage").ForceNumericOnly();
+            }
+
+        }
+
+        function formatcurrency(object) {
+            $(object).formatCurrency();
+        }
+    	
+    </script>
+
+</head>
+<body class="page page-id-17 page-parent page-template-default">
+
+
+    <div id="wrapper">
+
+		<header id="header" role="header">
+			<div class="container">
+				<div id="header-logo"><a href="http://www.kingfishtechnology.com/" title="Kingfish Technology">Kingfish Technology</a></div>
+
+		<nav id="nav" role="navigation">
+			<ul class="sf-menu sf-navbar sf-js-enabled">
+				<li class="page_item page-item-7"><a href="http://www.kingfishtechnology.com/fill-position/"><span class="rule_highlight">Fill a Position</span></a></li>
+				<li class="page_item page-item-9"><a href="http://www.kingfishtechnology.com/find-position/"><span class="rule_highlight">Find a Position</span></a></li>
+				<li class="page_item page-item-11"><a href="http://www.kingfishtechnology.com/who/#" class="sf-with-ul"><span class="rule_highlight">Who We Are</span></a><ul id="nav-menu-3" class="sub-menu" style="display: none;">
+					<li><a href="http://www.kingfishtechnology.com/who/#who-we-are" class="scrollto">Who We Are</a></li>
+					<li><a href="http://www.kingfishtechnology.com/who/#approach" class="scrollto">Our Approach</a></li>
+					<li><a href="http://www.kingfishtechnology.com/who/#leadership" class="scrollto">Kingfish Leadership</a></li>
+					<li><a href="http://www.kingfishtechnology.com/who/#team" class="scrollto">Meet the Team</a></li>
+				</ul></li>
+				<li class="page_item page-item-13"><a href="http://www.kingfishtechnology.com/what/#" class="sf-with-ul"><span class="rule_highlight">What We Do</span></a><ul id="nav-menu-4" class="sub-menu" style="display: none;">
+					<li><a href="http://www.kingfishtechnology.com/what/#contingent-search" class="scrollto">Contingent Search</a></li>
+					<li><a href="http://www.kingfishtechnology.com/what/#retained-search" class="scrollto">Retained Search</a></li>
+					<li><a href="http://www.kingfishtechnology.com/what/#contractor-placement" class="scrollto">Contractor Placement</a></li>
+					<li><a href="http://www.kingfishtechnology.com/what/#where-we-work" class="scrollto">Where We Work</a></li>
+				</ul></li>
+				<li class="page_item page-item-15"><a href="http://www.kingfishtechnology.com/resources/"><span class="rule_highlight">Resource Center</span></a></li>
+				<li class="page_item page-item-17"><a href="http://www.kingfishtechnology.com/contact/"><span class="rule_highlight">Contact</span></a></li>
+			</ul>
+		</nav>
+
+			</div>
+		</header>
+		
+
+<div id="wrapper-inner">
+<div class="row clearfix row_header" style="height:300px;background:#cfd665;">	<div class="container"><div style="margin-top:60px;"><div id="pageHeader">the right job <br />for the right person</div>
+</div></div>
+</div>
+
+<div class="row clearfix">
+	<div class="container top_space clearfix">	
+		<form method="post" action="./Search.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyODcwNjU4OTkPZBYCZg9kFgICAw9kFgICAQ9kFgwCAw8PFgIeBFRleHRlZGQCBQ8PZBYCHgtwbGFjZWhvbGRlcgUba2V5d29yZCwgdGl0bGUsIHNraWxsLCBldGMuZAIHDw9kFgIfAQUFTWlsZXNkAgkPD2QWAh8BBRtDaXR5IGFuZCBTdGF0ZSwgb3IgWmlwIENvZGVkAgsPD2QWAh8BBQEkZAINDw9kFgIfAQUBJGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgYFI2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkcmRvSG91cmx5BSNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHJkb0hvdXJseQUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRyZG9ZZWFybHkFJmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkY2hrSW5jbHVzaXZlBSdjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNoa0RpcmVjdEhpcmUFJWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkY2hrQ29udHJhY3QE14/j4EauL2Um1jkuzCdgSJjlHg==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7720A4CF" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAB1LwbYAikHETN1R7V6lAGoWdeZlA+rFmpjMOdacFNtJI/Y5BY5RFAen4OqsaPOKR+FFYDJp9BDJykjAJCJu0Bwc/2G3vwLB4deCE705PMoeQ3x4ssT93zMzkOTV5Hlfhn6UX4oi76i4bcuF1EzwrAsCSr3OO52MfIx1BM+XwVpJ8V/py3j04Q06gqZHLpTiNB001KHGtV7SMLWLTns4fJkpxJEJOrV/5ndC6FG0Arpy+JlQxHWk6A6muaD3VyEigzN6uHVRgwgPb/pdHv0lMRwBj8xrARu9pNtI88Nn/O/NFxqUCQbsmgQ2dG0QmVXgKI1R2+LIeC77JRHqQs+B4YLpMoRjop8ZSoSeSa+R+u9fOm4FN991q0qCXLjgboETGkPWq42azGqRV+Y8Wros250V/5Goyr0PwFCBpFzM6bbqbHbWeV5oNca+MES/O5X3GTtq/rfz0CLSxwf/G2dQ6L1bRssc22BK4SB7C7sbf5kXo8cyKvXOspVE9UYokLhDxiEDtJjsr8bikoIu+1YszyCc/cXdwDkTgFH78syL0MG4vT0Qyu0+IY1IK8zN5TT7rEOYyrnbDkOuiRUFoTXW8HmdjkxbpcxoWPNP2dR2wiSei9cRSMQtLnQamm149U61FR+O5DSg" />
+			<div id="dvHookCntr">
+				<div class="pad">
+					
+
+<div class="dvSearch">
+
+	
+
+	<div style="margin-bottom:20px;">
+		<div class="title">Advanced Search</div>
+        <span id="ContentPlaceHolder1_lblError" class="error"></span>
+	</div>
+    
+
+	<div id="dv_search">
+    <div id="dv_search_keywords">
+		<span class="search_keywords">Keywords</span><br />
+		<input name="ctl00$ContentPlaceHolder1$txtKeyword" type="text" id="ContentPlaceHolder1_txtKeyword" class="txtKeyword" placeholder="keyword, title, skill, etc." />
+	</div>
+
+	<div id="dv_search_location">
+		<span class="search_location">Location</span><br />
+		<div id="dvLocationBox">
+			within <input name="ctl00$ContentPlaceHolder1$txtLocationMileage" type="text" id="ContentPlaceHolder1_txtLocationMileage" class="locationMileage" placeholder="Miles" /> miles of <input name="ctl00$ContentPlaceHolder1$txtLocation" type="text" id="ContentPlaceHolder1_txtLocation" class="txtLocation" placeholder="City and State, or Zip Code" /> 
+		</div>
+	</div>
+
+	<div id="dv_search_compensation">
+		<span class="search_compensation">Compensation</span><br />
+		at least <input name="ctl00$ContentPlaceHolder1$txtCompensationStart" type="text" id="ContentPlaceHolder1_txtCompensationStart" class="txtCompensationStart" onblur="javascript:formatcurrency(this);" placeholder="$" /><div style="display:none"> and <input name="ctl00$ContentPlaceHolder1$txtCompensationEnd" type="text" id="ContentPlaceHolder1_txtCompensationEnd" class="txtCompensationEnd" onblur="javascript:formatcurrency(this);" placeholder="$" /></div><br />
+		<div class="rdoHourly">
+			<input id="ContentPlaceHolder1_rdoHourly" type="radio" name="ctl00$ContentPlaceHolder1$PayType" value="rdoHourly" /><label for="ContentPlaceHolder1_rdoHourly"> Per Hour</label><br />
+		</div>
+		<div class="rdoYearly">
+			<input id="ContentPlaceHolder1_rdoYearly" type="radio" name="ctl00$ContentPlaceHolder1$PayType" value="rdoYearly" checked="checked" /><label for="ContentPlaceHolder1_rdoYearly"> Per Year</label>
+		</div>
+	</div>
+        
+      
+	<div id="dv_search_degree">
+		<span class="search_degree">Degree</span><br />
+		<select name="ctl00$ContentPlaceHolder1$ddlDegree" id="ContentPlaceHolder1_ddlDegree" class="ddlDegree">
+	<option value=""></option>
+	<option value="E">Equivalent Experience</option>
+	<option value="C">Certificate</option>
+	<option value="A">Associate</option>
+	<option value="AS">Associate of Science</option>
+	<option value="LP">Licensed Practitioner</option>
+	<option value="B">Bachelor</option>
+	<option value="BA">Bachelor of Arts</option>
+	<option value="BS">Bachelor of Science</option>
+	<option value="M">Masters</option>
+	<option value="MA">Master of Arts</option>
+	<option value="MS">Master of Science</option>
+	<option value="D">Doctorate</option>
+	<option value="JD">Juris Doctorate</option>
+	<option value="PhD">Doctor of Philosophy</option>
+	<option value="MD">Medical Doctor</option>
+	<option value="DO">Doctor of Osteopathy</option>
+
+</select><br />
+		<div class="chkInclusive">
+		<input id="ContentPlaceHolder1_chkInclusive" type="checkbox" name="ctl00$ContentPlaceHolder1$chkInclusive" /><label for="ContentPlaceHolder1_chkInclusive">  Include jobs requiring less than the selected degree.</label>
+		</div>
+	</div>    
+
+	<div id="dv_search_jobtype">
+		<span class="search_jobtype">Job Type</span><br />
+		<span class="chkDirectHire"><input id="ContentPlaceHolder1_chkDirectHire" type="checkbox" name="ctl00$ContentPlaceHolder1$chkDirectHire" /><label for="ContentPlaceHolder1_chkDirectHire">Direct Hire</label></span><br />
+		<span class="chkContract"><input id="ContentPlaceHolder1_chkContract" type="checkbox" name="ctl00$ContentPlaceHolder1$chkContract" /><label for="ContentPlaceHolder1_chkContract">Contract</label></span>
+	</div>
+
+</div>
+
+       
+        <div class="dvButton">
+                <a id="ContentPlaceHolder1_btnSearch" class="form_submit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnSearch&#39;,&#39;&#39;)">Run Search</a>
+        </div>
+		<div class="lnkBackToJobsList">
+			
+		</div>
+</div>
+    
+
+				</div>
+			</div>
+	    </form>
+	</div>
+</div>
+
+</div>
+
+		<footer id="footer">
+			<div class="container clearfix">
+				<div class="column first">
+					<h6>About Kingfish Technology</h6>
+					<p>We are a technical recruiting firm located just outside of Washington,&nbsp;DC. We bring a focused, responsive approach to hiring key staff to help technology your business grow and&nbsp;evolve.</p>
+				</div>
+				<div class="column">
+					<h6>Get In Touch</h6>
+					<p>27 Upshur Avenue<br>Annapolis, Maryland 21403</p>
+					<p><strong>P</strong>&nbsp;&nbsp; 410.263.6292<br><strong>E</strong>&nbsp;&nbsp; <a href="mailto:info@kingfishtechnology.com">info@kingfishtechnology.com</a></p>
+				</div>
+				<div class="column">
+					<h6>Join Our Email List</h6>
+					<div id="footer-subscribe"><div class="wpcf7" id="wpcf7-f187-o2" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="http://www.kingfishtechnology.com/contact/#wpcf7-f187-o2" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="187">
+<input type="hidden" name="_wpcf7_version" value="3.9">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f187-o2">
+<input type="hidden" name="_wpnonce" value="3702a3f4dd">
+</div>
+<p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span><input type="submit" value="GO" class="wpcf7-form-control wpcf7-submit"><img class="ajax-loader" src="http://www.kingfishtechnology.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;"></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div>
+					<p>© 2014 Kingfish Technology, LLC<br><a href="/site-map/">Site Map</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="/privacy/">Privacy Policy</a>
+				</p></div>
+				<div class="column last">
+					<h6>Connect With Us</h6>
+					<div class="clearfix">
+						<a href="http://www.linkedin.com/company/kingfish-technology" target="_blank" class="footer-social-icon footer-icon-social-linkedin" title="Kingfish on LinkedIn">Kingfish on LinkedIn</a>
+						<a href="http://twitter.com/Kingfish_Tech" target="_blank" class="footer-social-icon footer-icon-social-twitter" title="Kingfish on Twitter">Kingfish on Twitter</a>
+						<a href="javascript:void(0)" target="_blank" class="footer-social-icon footer-icon-social-google" title="Kingfish on Google+">Kingfish on Google+</a>
+						<a href="http://www.facebook.com/pages/Kingfish-Technology/237495499645923" target="_blank" class="footer-social-icon footer-icon-social-facebook" title="Kingfish on Facebook">Kingfish on Facebook</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+    <script type="text/javascript">
+	if(typeof jQuery == 'undefined'){
+	        document.write('<script type="text/javascript" src="/js/jquery.min.js"></'+'script>');
+	}
+
+	var url = location.href.toLowerCase();
+	if (url.indexOf("searchresults.aspx") > -1){
+		jQuery("#pageHeader").text((url.indexOf("featured") > -1) ? "featured positions" : "discover new opportunities")
+	}
+	else if (url.indexOf("profile_quick.aspx") > -1){
+		jQuery("#pageHeader").text("be considered")
+	}
+
+	</script>
+
+	<script type="text/javascript" src="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/js/superfish.min.js"></script>
+	<script type="text/javascript" src="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/js/hoverIntent.js"></script>
+	<script> var kf_fixedScrollOffset = 110; </script>	<script src="http://www.kingfishtechnology.com/wp-content/themes/kingfish-wp/js/functions.js"></script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53bae4fd0911cace"></script>
+
+
+	
+</body>
+</html>

@@ -1,0 +1,404 @@
+status: 200
+content-length: 19523
+content-location: http://jobs.centextech.com/
+x-powered-by: ASP.NET
+x-aspnetmvc-version: 4.0
+x-aspnet-version: 4.0.30319
+server: Microsoft-IIS/7.0
+cache-control: private
+date: Wed, 21 Sep 2016 09:01:19 GMT
+content-type: text/html; charset=utf-8
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title">
+<title>Home | Centex Technologies</title>
+<!-- CSS styles -->
+<link rel="stylesheet" href="/jobs.centextech.com/Content/Frontend/css/base.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" /> 
+    <link href="/jobs.centextech.com/favicon.png" rel="shortcut icon" type="image/x-icon" />
+<link href="/jobs.centextech.com/Content/Frontend/css/vendors/theme.default.css" rel="stylesheet">
+<!-- /CSS styles -->
+<link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<script src="/jobs.centextech.com/Content/Frontend/js/footable.js" type="text/javascript"></script>
+    <script src="/jobs.centextech.com/Scripts/custom-validate.js"></script> 
+
+
+<script type="text/javascript">
+    $(function () {
+        $('table').footable();
+    });
+    $(document).ready(function () {
+        try
+        {
+            var path = 'http://jobs.centextech.com/jobs.centextech.com';
+            $("#tags").autocomplete({
+                source: function(request,response) {
+                    $.ajax({
+                        url: path+"/ContentOuter/SearchJob",
+                        type: "POST",
+                        dataType: "json",
+                        data: { term: request.term },
+                        success: function (data) {
+                            response($.map(data, function (item) {
+                                
+                                return { label: item.NameTxt, value: item.NameTxt };
+                            }))
+
+                        }
+                    })
+                },
+                messages: {
+                    noResults: "", results: ""
+                }
+            });
+        }
+        catch (e) {
+            alert(e);
+        }
+    })
+  
+</script>
+
+</head>
+<body>
+
+<header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <a title="Pet Supplies" href='/'><img src="/jobs.centextech.com/Content/Frontend/images/logo.png" alt="Pet Supplies" border="0" /></a>
+            </div>
+			<div class="top-right">
+			<div class="top-add">
+Centex Technologies			</div>
+			
+
+        </div>
+    </header>
+    
+
+<section id="middle">
+    <article>
+        <div class="list-heading">
+            <div class="container">
+                <h1 class="page-title">
+Current Job Opening                </h1>
+                <div class="job-search">
+                    <input id="tags" name="tags" onblur="this.placeholder = &#39;Search Job&#39;" onfocus="this.placeholder = &#39;&#39;" placeholder="Search Job" type="text" value="" />
+
+                    <input type="submit" name="" class="search-btn" value="search" id="btnSearch">
+                    <input type="hidden" id="hfsearchurl" name="hfsearchurl" value="http://jobs.centextech.com/Search" />
+                    <script type="text/javascript">
+
+                        $('#btnSearch').click(function () {
+                            if ($('#tags').val() != "") {
+                                window.location = $('#hfsearchurl').val() + ($('#tags').val() != "" ? '?s=' + $('#tags').val() : "");
+                            }
+                            else {
+                                $('#tags').attr("placeholder", "You can type here..");
+                            }
+                            return false;
+                        });
+
+                    </script>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container margin-btm">
+            <div class="select-design">
+                <select id="JobCategoryID" name="JobCategoryID" onchange="bindbyvalue();"><option value="">-- Select Job Category --</option>
+<option value="23">Internet Marketing</option>
+<option value="21">Network Administration</option>
+<option value="24">Sales and Marketing</option>
+<option value="10">Test Job</option>
+<option value="22">Web/App Development</option>
+</select>
+
+            </div>
+            <div class="select-design">
+                <select id="CityID" name="CityID" onchange="bindbyvalue();"><option value="">-- Select City --</option>
+<option value="11">Atlanta</option>
+<option value="12">Austin</option>
+<option value="10">Dallas</option>
+<option value="9">Killeen</option>
+<option value="6">Test city</option>
+</select>
+
+            </div>
+
+        </div>
+            <div class="container mid-border">
+                <div class="job-listing">
+                    <table class="footable tablesorter" data-filter="#filter">
+                        <thead>
+                            <tr>
+                                <th data-class="expand" class="col70 sort-hide">
+                                    <div class="green-heading">
+                                        <i class="fa fa-briefcase"></i>Job Title
+                                    </div>
+                                </th>
+                                <th data-hide="phone,tablet" class="col15 sortdesc">
+                                    <div class="green-heading">
+                                        <i class="fa fa-calendar-check-o"></i><a href="/?sort=categoryasc" style="color:#FFF">Categories</a>
+                                    </div>
+                                </th>
+                                <th data-hide="phone,tablet" class="col15 nosort">
+                                    <div class="green-heading">
+                                        <i class="fa fa-map-marker"></i><a href="/?sort=locationasc" style="color:#FFF">Locations</a>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="list-margin">
+                                            <div class="table-left">
+                                                <div class="list-head">
+                                                    Application Support
+                                                </div>
+                                                <p>
+                                                    The successful candidate will be responsible for supporting a vital records application and making sure application runs smoothly without interruptions. This includes ensuring all data feeds have successfully run per schedule and routed to the appropriate system or partner, performing quality assurance on data, communicating with users for requests for ad-hoc reports and developing, testing and delivering reports from SQL Server Database.
+                                                </p>
+
+
+                                                                <div class="full-time"
+                                                                     >
+
+
+                                                                    Temporary/Contract
+                                                                </div>
+
+
+                                            </div>
+                                            <div class="table-right">
+                                                <span class="post-date">Posted On : 20 Jul 2016</span>
+                                                <a id="ankReadMore" href="http://jobs.centextech.com/AppSupport" class="read-more">View And Apply</a>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Web/App Development</td>
+                                    <td>Atlanta, Georgia</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="list-margin">
+                                            <div class="table-left">
+                                                <div class="list-head">
+                                                    Developer Analyst 2 – GIS Programmer
+                                                </div>
+                                                <p>
+                                                    The GIS programmer will complete oil & gas functions and tools as a part of a transformation process of GIS systems used for permitting and regulatory actions. The remaining applications and scripts dependent on RBA/CFP functionality will be remediated to avoid work stoppages on existing functions, including data subscriptions. Complete system documentation related to deployed functions will be required to enable timely maintenance by future staff.
+                                                </p>
+
+
+                                                                <div class="full-time"
+                                                                     >
+
+
+                                                                    Temporary/Contract
+                                                                </div>
+
+
+                                            </div>
+                                            <div class="table-right">
+                                                <span class="post-date">Posted On : 12 Aug 2016</span>
+                                                <a id="ankReadMore" href="http://jobs.centextech.com/DevAnalyst2GIS" class="read-more">View And Apply</a>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Web/App Development</td>
+                                    <td>Austin, Texas</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="list-margin">
+                                            <div class="table-left">
+                                                <div class="list-head">
+                                                    Exchange Engineer
+                                                </div>
+                                                <p>
+                                                    The Exchange Engineer will have experience in designing Exchange 2016. 
+The Engineer will collaborate with email support teams, develop technical documentation, prepare and lead trainings, and conduct knowledge transfers.
+                                                </p>
+
+
+                                                                <div class="full-time"
+                                                                     >
+
+
+                                                                    Temporary/Contract
+                                                                </div>
+
+
+                                            </div>
+                                            <div class="table-right">
+                                                <span class="post-date">Posted On : 12 Aug 2016</span>
+                                                <a id="ankReadMore" href="http://jobs.centextech.com/ExchangeEngineer" class="read-more">View And Apply</a>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Web/App Development</td>
+                                    <td>Dallas, Texas</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="list-margin">
+                                            <div class="table-left">
+                                                <div class="list-head">
+                                                    Sr. Program Analyst/MDM Developer
+                                                </div>
+                                                <p>
+                                                    The Sr. MDM Developer will implement and support a platform for achieving breakthrough growth by implementing state-of-the-art technology solutions. This implementation will improve data capture and presentation, increase ease of use, reduce administrative time by enabling easier access to data, and enable better forecasting and systematically support the optimized selling processes that lead to improved business results.
+                                                </p>
+
+
+                                                                <div class="full-time"
+                                                                     >
+
+
+                                                                    Temporary/Contract
+                                                                </div>
+
+
+                                            </div>
+                                            <div class="table-right">
+                                                <span class="post-date">Posted On : 26 Jul 2016</span>
+                                                <a id="ankReadMore" href="http://jobs.centextech.com/MDM" class="read-more">View And Apply</a>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Web/App Development</td>
+                                    <td>Atlanta, Georgia</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="list-margin">
+                                            <div class="table-left">
+                                                <div class="list-head">
+                                                    Business Development Associate
+                                                </div>
+                                                <p>
+                                                    Builds market position by locating, developing, defining, negotiating, and closing business relationships.
+                                                </p>
+
+
+                                                                <div class="full-time"
+                                                                     >
+
+
+                                                                    Full-time
+                                                                </div>
+
+
+                                            </div>
+                                            <div class="table-right">
+                                                <span class="post-date">Posted On : 21 Jul 2016</span>
+                                                <a id="ankReadMore" href="http://jobs.centextech.com/BusinessDevelopment" class="read-more">View And Apply</a>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Sales and Marketing</td>
+                                    <td>Killeen, Texas</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="list-margin">
+                                            <div class="table-left">
+                                                <div class="list-head">
+                                                    Technical Architect
+                                                </div>
+                                                <p>
+                                                    Capacity planning server infrastructure in AIC. 
+                                                </p>
+
+
+                                                                <div class="full-time"
+                                                                     >
+
+
+                                                                    Temporary/Contract
+                                                                </div>
+
+
+                                            </div>
+                                            <div class="table-right">
+                                                <span class="post-date">Posted On : 15 Aug 2016</span>
+                                                <a id="ankReadMore" href="http://jobs.centextech.com/TechArchitect" class="read-more">View And Apply</a>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Network Administration</td>
+                                    <td>Dallas, Texas</td>
+                                </tr>
+                            </tbody>
+
+
+                    </table>
+
+                </div>
+
+            </div>
+            <div class="view-more">
+                
+            </div>
+    </article>
+</section>
+<script type="text/javascript">
+    var alertmessage = '';
+    if (alertmessage)
+        alert(alertmessage);
+    //Function to bind the list based on selected dropdon values
+    function bindbyvalue() {
+        try {
+            var CityID = document.getElementById("CityID").value;
+            var JobCategoryID = document.getElementById("JobCategoryID").value;
+            if (CityID != '' && JobCategoryID == '')
+                location.href = '/?cityid=' + CityID;
+            else if (JobCategoryID != '' && CityID == '')
+                location.href = '/?JobCategoryID=' + JobCategoryID;
+            else if (JobCategoryID != '' && CityID != '')
+                location.href = '/?cityid=' + CityID + '&JobCategoryID=' + JobCategoryID;
+            else if (JobCategoryID == '' && CityID == '')
+                location.href = '/';
+        }
+        catch (e) {
+            alert(e);
+        }
+    }
+</script>
+
+<footer id="footer">
+        &copy; Copyright 2016 Centex Technologies Career Portal <sub>®</sub>. Developed by <a target="_blank" style="color:#988c80;" href="https://centextech.com/">Centex Technologies</a>.  
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,519 @@
+status: 200
+content-length: 36630
+content-language: en
+x-content-type-options: nosniff, nosniff
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+vary: Accept-Encoding
+server: Apache/2.4.10 (Ubuntu)
+content-location: http://www.adsenv.com/content/accusonic
+-content-encoding: gzip
+link: <http://www.adsenv.com/node/270>;
+ rel="shortlink",<http://www.adsenv.com/content/accusonic>; rel="canonical"
+cache-control: no-cache, must-revalidate, post-check=0, pre-check=0
+date: Tue, 13 Sep 2016 10:42:16 GMT
+x-powered-by: PHP/5.5.12-2ubuntu4.6
+content-type: text/html; charset=utf-8
+x-generator: Drupal 7 (http://drupal.org)
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="iebrowser no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="iebrowser no-js lt-ie9 lt-ie8" lang="en"> 
+
+<![endif]-->
+
+<!--[if IE 8]>    <html class="iebrowser no-js lt-ie9" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+  <!--[if lt IE 9]> <meta http-equiv="X-UA-Compatible" content="IE=8" /><![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="http://dev.adsenv.com/sites/adsenv.com/files/ADS_Favicon.png" type="image/png" />
+<link rel="shortlink" href="http://www.adsenv.com/node/270" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://www.adsenv.com/content/accusonic" />
+    <title>ACCUSONIC | ADS Environmental</title>
+	
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'> 
+    <link type="text/css" rel="stylesheet" href="http://www.adsenv.com/sites/adsenv.com/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.adsenv.com/sites/adsenv.com/files/css/css_5zZpQjVuiuiAHsGQ_zA9FnxS5b6r9_EK5wR0uR7gAaA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.adsenv.com/sites/adsenv.com/files/css/css_3HYJVWlCQL35-3leYxmIUGLB2cr5EU8hJxkfYoI8AGw.css" media="all" />
+	<style>
+	.i18n-en .chinese  {display:none;}
+.i18n-zh-hans .english  {display:none;}	
+.region-selector {
+    float: right;
+    margin-right: 15px;
+    text-align: right;
+    width: 200px;
+}
+  .us-icon, .china-icon {width:36px; height:auto; padding:0px 4px;}
+
+.region-selector img {padding:0px 4px; border:1px solid #474747;}
+.i18n-en .us-icon {background:gray;}
+.i18n-zh-hans .china-icon {background:gray;}
+.region-selecter img:hover {background:gray;} 
+
+
+
+
+@media all and (max-width: 450px) and (min-width: 100px) {
+  .us-icon, .china-icon {width:36px; height:auto;}
+    .region-selector {margin-top: -25px;}
+  .region-selector img {padding:0px 0px; border:0px;}
+  .i18n-en .us-icon {background:transparent;}
+.i18n-zh-hans .china-icon {background:transparent;}
+.region-selecter img:hover {background:transparent;} 
+}
+
+@media all and (max-width: 768px) and (min-width: 451px) {
+  .region-selector { margin-top: -40px;}
+}
+</style>
+    <script type="text/javascript" src="http://www.adsenv.com/sites/adsenv.com/files/js/js_UWQINlriydSoeSiGQxToOUdv493zEa7dpsXC1OtYlZU.js"></script>
+<script type="text/javascript" src="http://www.adsenv.com/sites/adsenv.com/files/js/js_I8yX6RYPZb7AtMcDUA3QKDZqVkvEn35ED11_1i7vVpc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-12454872-2", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.adsenv.com/sites/adsenv.com/files/js/js_n9BL2ijZ-JQr_XKyxdXMgqUZZonaeJHIXYQpPbN1wkU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"touchm","theme_token":"g_ZvRxmEmXyxqGGazOJdNn9HpMnM97x5ni8Qk8ji-o8","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/adsenv.com\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/adsenv.com\/themes\/touchm\/javascripts\/foundation.min.js":1,"sites\/adsenv.com\/themes\/touchm\/javascripts\/modernizr.foundation.js":1,"sites\/adsenv.com\/themes\/touchm\/plugins\/slider-revolution\/jquery.themepunch.plugins.min.js":1,"sites\/adsenv.com\/themes\/touchm\/plugins\/slider-revolution\/jquery.themepunch.revolution.min.js":1,"sites\/adsenv.com\/themes\/touchm\/plugins\/flexislider\/jquery.flexslider.js":1,"sites\/adsenv.com\/themes\/touchm\/javascripts\/jquery.tipsy.js":1,"sites\/adsenv.com\/themes\/touchm\/javascripts\/jquery.carouFredSel-6.0.3-packed.js":1,"sites\/adsenv.com\/themes\/touchm\/javascripts\/jquery.touchSwipe.min.js":1,"sites\/adsenv.com\/themes\/touchm\/plugins\/titan\/js\/prettify.js":1,"sites\/adsenv.com\/themes\/touchm\/plugins\/titan\/js\/jquery.titanlighbox.js":1,"sites\/adsenv.com\/themes\/touchm\/javascripts\/jquery.isotope.min.js":1,"sites\/adsenv.com\/themes\/touchm\/javascripts\/app-head.js":1,"sites\/adsenv.com\/themes\/touchm\/javascripts\/app.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/youtube\/css\/youtube.css":1,"sites\/adsenv.com\/modules\/views\/css\/views.css":1,"sites\/adsenv.com\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/adsenv.com\/modules\/ctools\/css\/ctools.css":1,"public:\/\/css\/menu_icons.css":1,"sites\/all\/modules\/openlayers_proximity\/openlayers_proximity.css":1,"sites\/adsenv.com\/themes\/touchm\/stylesheets\/foundation.min.css":1,"sites\/adsenv.com\/themes\/touchm\/stylesheets\/style1.css":1,"sites\/adsenv.com\/themes\/touchm\/stylesheets\/color1.css":1,"sites\/adsenv.com\/themes\/touchm\/plugins\/titan\/css\/jquery.titanlighbox.css":1,"sites\/adsenv.com\/themes\/touchm\/stylesheets\/touchm.css":1,"sites\/adsenv.com\/themes\/touchm\/stylesheets\/idexmss.css":1,"sites\/adsenv.com\/themes\/touchm\/stylesheets\/adschn.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/content\/accusonic":true}});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]>
+
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	  <script type="text/javascript">
+function removeBehavior()
+{
+  if((screen.deviceXDPI / screen.logicalXDPI) != '1')
+  {
+    $("*").each(function(){
+      $(this).css("behavior", "none");
+    });
+  }
+}
+removeBehavior();
+window.onresize = removeBehavior;
+</script>
+
+	  
+    <![endif]-->
+  </head>
+  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-270 node-type-alternator i18n-en" >
+	<div id="page-wrap">
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+        
+<div class="container region1wrap ">  
+
+  <!-- Top Header -->
+  <div class="ads_menubar ierounder clearfix">
+  <div class="row ads_header">
+
+     <div class="six columns top_logo"> 
+ 
+      <a class="english ads_logo" href="http://www.adsenv.com/" title="Home">
+	  	  <img typeof="foaf:Image" src="http://www.adsenv.com/sites/adsenv.com/files/styles/main_logo_retina/public/images/HeaderNav/ads_logo.png?itok=TVy4pzma" alt="" />	  </a>
+	  <a class="chinese ads_logo" href="http://www.adsenv.com/" title="首页">
+	  <img typeof="foaf:Image" src="http://www.adsenv.com/sites/adsenv.com/files/styles/main_logo_retina/public/images/HeaderNav/ads_logo.png?itok=TVy4pzma" alt="" />	  </a>
+    </div>
+
+    <div class="six columns">
+      
+	
+				<div class="statictopmenu english"><a href="/contact/client-support">Client Support</a><div class="whackwhack">//</div><a href="/about/careers">Careers</a><div class="whackwhack">//</div><a href="http://store.adsenv.com/" target="blank">Storefront</a><div class="whackwhack">//</div><a href="/sales">Sales Contacts</a> </div>
+			 <!-- /.menubar -->
+	 
+				<div class="statictopmenu chinese"><a href="/联络/客户支持">客户支持</a><div class="whackwhack">//</div><a href="/联系方式/销售联系人">销售联系人</a></div>
+				<div style="clear:both;"></div>
+				
+				 <!-- UNCOMMENT THE BELOW DIVS WHEN READY TO GO LIVE WITH TRANSLATED CONTENT -->
+				
+				<div class="region-selector english"><a href="http://www.adsenv.com"><img src="/sites/all/modules/languageicons/flags/en.png" class="us-icon" alt="USA" title="USA"></a>&nbsp;&nbsp;<a href="http://china.adsenv.com"><img src="/sites/all/modules/languageicons/flags/zh-hans.png" class="china-icon" alt="CHINA" title="CHINA"></a></div>
+				
+				<div class="region-selector chinese"><a href="http://www.adsenv.com"><img src="/sites/all/modules/languageicons/flags/en.png" class="us-icon" alt="美国" title="美国"></a>&nbsp;&nbsp;<a href="http://china.adsenv.com"><img src="/sites/all/modules/languageicons/flags/zh-hans.png" class="china-icon" alt="中国" title="中国"></a></div>
+
+    </div>
+	<div class="clearfix"></div>
+	</div>
+  <div class=" under_header clearfix">
+      <!-- Main Navigation -->
+
+    <div class="nine columns NavWidth">
+
+      <nav class="top-bar">
+
+        <ul>
+          <!-- Toggle Button Mobile -->
+          <li class="name">
+            <h1><a href="#"> Please Select Your Page</a></h1>
+          </li>
+          <li class="toggle-topbar"><a href="#"></a></li>
+          <!-- End Toggle Button Mobile -->
+        </ul>
+
+
+                  <div><!-- Nav Section -->
+
+            <ul class="left nav_simple sf-menu main-menu sf-horizontal sf-style-none sf-total-items-6 sf-parent-items-6 sf-single-items-0"><li id="menu-363-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-7 sf-parent-children-0 sf-single-children-7 menuparent has-dropdown"><a href="http://www.adsenv.com/about" title="" class="sf-depth-1  menuparent has-dropdown">About</a><ul class="dropdown"><li id="menu-618-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/about/company-overview" class="menu_icon menu-618 sf-depth-2">Company Overview</a></li><li id="menu-756-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/about/history" class="menu_icon menu-756 sf-depth-2">History</a></li><li id="menu-1253-1" class="active-trail middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/content/accusonic" class="menu_icon menu-1253 sf-depth-2 active">Accusonic</a></li><li id="menu-620-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/about/idex-corporation" class="menu_icon menu-620 sf-depth-2">IDEX Corporation</a></li><li id="menu-621-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/about/careers" class="menu_icon menu-621 sf-depth-2">Careers</a></li><li id="menu-622-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/about/quality" class="menu_icon menu-622 sf-depth-2">Quality</a></li><li id="menu-623-1" class="last odd sf-item-7 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/about/underground-intelligence" class="menu_icon menu-623 sf-depth-2">Underground Intelligence</a></li></ul></li><li id="menu-364-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent has-dropdown"><a href="http://www.adsenv.com/products" title="" class="sf-depth-1  menuparent has-dropdown">Products</a><ul class="dropdown"><li id="menu-579-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/products/flow-monitors" title="" class="menu_icon menu-579 sf-depth-2">Flow Monitors</a></li><li id="menu-582-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/products/level-monitors" title="" class="menu_icon menu-582 sf-depth-2">Level Monitors</a></li><li id="menu-581-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/products/rainfall-monitoring" title="" class="menu_icon menu-581 sf-depth-2">Rainfall Monitors</a></li><li id="menu-583-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/products/software" title="" class="menu_icon menu-583 sf-depth-2">Software</a></li></ul></li><li id="menu-365-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent has-dropdown"><a href="http://www.adsenv.com/services" title="" class="sf-depth-1  menuparent has-dropdown">Services</a><ul class="dropdown"><li id="menu-1261-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/content/d-site-level-only-measurement-solutions" class="menu_icon menu-1261 sf-depth-2">D-Site</a></li><li id="menu-584-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/services/flow-monitoring" title="" class="menu_icon menu-584 sf-depth-2">Flow Monitoring</a></li><li id="menu-585-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/services/sses-and-condition-assessment" title="" class="menu_icon menu-585 sf-depth-2">SSES &amp; Condition Assessment</a></li><li id="menu-586-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/services/online-data-delivery" title="" class="menu_icon menu-586 sf-depth-2">Online Data Delivery</a></li><li id="menu-1251-1" class="last odd sf-item-5 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/content/water-distribution" class="menu_icon menu-1251 sf-depth-2">Water Distribution</a></li></ul></li><li id="menu-366-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-10 sf-parent-children-0 sf-single-children-10 menuparent has-dropdown"><a href="http://www.adsenv.com/applications" title="" class="sf-depth-1  menuparent has-dropdown">Applications</a><ul class="dropdown"><li id="menu-624-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/applications/cso-flow-monitoring" class="menu_icon menu-624 sf-depth-2">CSO and SSO Flow Monitoring</a></li><li id="menu-626-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/applications/capacity-analysis" class="menu_icon menu-626 sf-depth-2">Capacity Analysis</a></li><li id="menu-628-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/applications/real-time-observations-and-alarming" class="menu_icon menu-628 sf-depth-2">Real-time Observations &amp; Alarming</a></li><li id="menu-629-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/applications/billing-networks" class="menu_icon menu-629 sf-depth-2">Billing Networks</a></li><li id="menu-630-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/applications/sewer-modeling" class="menu_icon menu-630 sf-depth-2">Sewer Modeling</a></li><li id="menu-1258-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/content/hydro-power-0" class="menu_icon menu-1258 sf-depth-2">Hydro Power Metering</a></li><li id="menu-1256-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/content/thermal-power-metering" class="menu_icon menu-1256 sf-depth-2">Thermal Power Metering</a></li><li id="menu-1259-1" class="middle even sf-item-8 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/content/wastewater-treatment" class="menu_icon menu-1259 sf-depth-2">Wastewater Treatment and Collection System Flows</a></li><li id="menu-1257-1" class="middle odd sf-item-9 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/content/water-transport-treatment-distribution" class="menu_icon menu-1257 sf-depth-2">Water Transport, Treatment, and Distribution</a></li><li id="menu-1260-1" class="last even sf-item-10 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/content/irrigation-and-waterway-metering" class="menu_icon menu-1260 sf-depth-2">Irrigation and Waterway Metering</a></li></ul></li><li id="menu-367-1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-9 sf-parent-children-0 sf-single-children-9 menuparent has-dropdown"><a href="http://www.adsenv.com/resources" title="" class="sf-depth-1  menuparent has-dropdown">Resources</a><ul class="dropdown"><li id="menu-1398-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/videos/ads-instructional-videos" class="menu_icon menu-1398 sf-depth-2">ADS Instructional Videos</a></li><li id="menu-631-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/ads-storefront" class="menu_icon menu-631 sf-depth-2">ADS Storefront</a></li><li id="menu-755-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/resources/literature" class="menu_icon menu-755 sf-depth-2">Literature</a></li><li id="menu-633-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/resources/product-manuals" class="menu_icon menu-633 sf-depth-2">Product Manuals</a></li><li id="menu-634-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/scattergraphs" class="menu_icon menu-634 sf-depth-2" title="">Scattergraph Principles</a></li><li id="menu-635-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/sewer-sociology" class="menu_icon menu-635 sf-depth-2" title="">Sewer Sociology</a></li><li id="menu-636-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/resources/white-papers" class="menu_icon menu-636 sf-depth-2">White Papers</a></li><li id="menu-638-1" class="middle even sf-item-8 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/latestnews" class="menu_icon menu-638 sf-depth-2" title="">News and Events</a></li><li id="menu-1252-1" class="last odd sf-item-9 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/content/software-downloads" title="Download ADS Software, Utilities, or Firmware" class="menu_icon menu-1252 sf-depth-2">Software Downloads</a></li></ul></li><li id="menu-368-1" class="last even sf-item-6 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent has-dropdown"><a href="http://www.adsenv.com/contact" title="" class="sf-depth-1  menuparent has-dropdown">Contact</a><ul class="dropdown"><li id="menu-575-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/content/client-support" class="menu_icon menu-575 sf-depth-2">Client Support</a></li><li id="menu-576-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/sales" title="" class="menu_icon menu-576 sf-depth-2">Sales Contacts</a></li><li id="menu-1125-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/contact/request-information" class="menu_icon menu-1125 sf-depth-2">Request Information</a></li><li id="menu-680-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="http://www.adsenv.com/sales" title="" class="menu_icon menu-680 sf-depth-2">Locations</a></li></ul></li></ul>          </div><!-- End Nav Section -->
+
+        </nav>            
+          </div>
+
+    <!-- End Main Navigation --> 
+	
+	<div class="three columns">
+      
+					<div id="searcher" class="searcher">
+				  <div class="region region-searcher">
+    <div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form action="/content/accusonic" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="Search site here..." size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input alt="Search Button" type="image" id="edit-submit" name="submit" src="http://www.adsenv.com/sites/adsenv.com/files/images/HeaderNav/search_btn.png" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-2xFLCuECPv1ccpkSH9OdyQ2yCs2AHdDu337-12eBEhM" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+  </div>
+			</div> <!-- /.menubar -->
+		
+    </div>
+</div>
+<div class="clearfix"></div>
+  <!-- End Top Header -->
+
+</div>
+	
+  <!-- End ADS Menubar -->
+  
+
+</div>
+
+<!-- End Region 1 Wrap -->
+
+
+
+
+
+
+<!-- Region 4 Wrap -->
+
+
+     
+
+    
+      
+            <div class="headerZone">
+              <h1 class="pageHeader productPageTitle">ACCUSONIC</h1>
+			  										
+										<div class="carouselh3 breadcrumbArea">  <div class="region region-breadcrumbly">
+    <div id="block-easy-breadcrumb-easy-breadcrumb" class="block block-easy-breadcrumb">
+
+    
+  <div class="content">
+    <div class="easy-breadcrumb"><a href="http://www.adsenv.com/" class="easy-breadcrumb_segment easy-breadcrumb_segment-front">Home</a><span class="easy-breadcrumb_segment-separator"> &gt;&gt; </span><span class="easy-breadcrumb_segment easy-breadcrumb_segment-1">Content</span><span class="easy-breadcrumb_segment-separator"> &gt;&gt; </span><span class="easy-breadcrumb_segment easy-breadcrumb_segment-title">ACCUSONIC</span></div>  </div>
+</div>
+  </div>
+</div>
+									
+			  			  
+            </div>
+         
+     
+ 
+    
+<div class="container region4wrap">
+
+  <div class="row maincontent">
+
+
+
+	
+    <!-- Main Content ( Middle Content) -->
+        <div class="clearfix"></div>
+    <div id="content" class="main-content">
+                        	    <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    
+<div id="node-270" class="node node-alternator node-alternator clearfix" about="http://www.adsenv.com/content/accusonic" typeof="sioc:Item foaf:Document">
+
+
+<div class="alternator node node-alternator node-alternator clearfix">
+
+<div class="White AlternatorLeft clearfix">
+<div class="zoneImageContent four columns">
+<div class="zoneMakerImage">
+<img typeof="foaf:Image" src="http://www.adsenv.com/sites/adsenv.com/files/styles/alternator_left/public/AccusonicLandingPage.jpg?itok=lYMm8DRm" alt="" />
+</div>
+</div>
+<div class="zoneBodyContent eight columns">
+<div class="AlternatorTitleContent">
+<div class="AlternatorZoneTitle"><h2>
+ACCUSONIC High Performance Flow Measurement Systems</h2></div>
+<div class="AlternatorZoneContent">
+<p>Accusonic is a leading supplier of high performance flowmeter systems used in the water, wastewater, and power generation markets.&nbsp; Our systems employ the multi-path transit-time principle to measure flowrate in applications ranging from large diameter pipelines and tunnels, to open and closed channels, rivers, and canals.&nbsp;</p>
+
+<p>Accusonic flowmeters are well known throughout the industry for their high accuracy, long-term reliability, and versatility in the most difficult applications. Our products and services help organizations earn additional revenue, meet strict safety and environmental requirements, and increase plant efficiencies, thus reducing operating costs and improving profitability.</p>
+
+<p>Since 1967, Accusonic has installed thousands of flowmeter systems worldwide.&nbsp; We offer a full range of services including installation and startup, system verification, turbine performance testing services, and field training.</p>
+</div>
+</div>
+</div></div>
+<div class="Grey AlternatorRight clearfix">
+<div class="zoneBodyContent six columns">
+<div class="AlternatorTitleContent">
+<div class="AlternatorZoneTitle"><h2>
+For Additional Information, Please Click on the Links Below...</h2></div>
+<div class="AlternatorZoneContent">
+<p><a href="http://www.adsenv.com/products/accusonic-8510" target="_blank">Product Information</a><br />
+Industry Information<br />
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.adsenv.com/content/hydro-power-0" target="_blank">Hydro Power Metering</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.adsenv.com/content/thermal-power-metering" target="_blank">Thermal Power Metering</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.adsenv.com/content/wastewater-treatment" target="_blank">Wastewater Treatment Metering</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.adsenv.com/content/water-transport-treatment-distribution" target="_blank">Water Transport, Treatment, and Distribution</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.adsenv.com/content/irrigation-and-waterway-metering" target="_blank">Irrigation and Waterway Metering</a><br />
+<a href="http://www.adsenv.com/resources/literature" target="_blank">Product Literature</a><br />
+<a href="http://www.adsenv.com/resources/product-manuals" target="_blank">Product Manuals</a><br />
+<a href="http://www.adsenv.com/content/client-support" target="_blank">Client Support Services</a><br />
+<a href="http://www.adsenv.com/contact/request-information" target="_blank">Request Information</a></p>
+</div>
+</div>
+</div>
+<div class="zoneImageContent six columns">
+<div class="zoneMakerImage">
+<img typeof="foaf:Image" src="http://www.adsenv.com/sites/adsenv.com/files/styles/alternator_right/public/AccusonicLandingPage2_1.png?itok=SYuiDn1p" alt="" />
+</div>
+</div></div>
+</div>
+</div>
+
+
+  </div>
+</div>
+  </div>
+	  
+    </div>
+
+    
+    
+    <!-- End Main Content ( Middle Content) -->
+
+  </div>
+   
+</div>
+
+
+<!-- End Region 4 Wrap -->
+
+<!-- Region 9 Wrap -->
+
+<div class="container region9wrap">
+
+  
+
+      <!-- Footer -->  
+    <div class="row footer">
+
+      <!-- // // // // // // // // // // -->
+
+      <div class="three columns">
+          <div class="region region-footer-firstcolumn">
+    
+<div id="block-block-1" class="block block-block">
+
+      
+  <div class="content">
+    <img typeof="foaf:Image" src="http://www.adsenv.com/sites/adsenv.com/files/styles/footer_logo_retina/public/images/Footer/footer_logo.jpg?itok=P9C36UT-" alt="" /><p>
+340 The Bridge Street, Suite 204<br>
+Huntsville, AL 35806<br>
+Phone: 256.430.3366<br>
+Toll Free: 800.633.7246<br>
+Fax: 256.430.6633<br>
+</p>  </div>
+</div>
+
+  </div>
+      </div>
+
+      <!-- // // // // // // // // // // -->
+
+      <div class="two columns">
+          <div class="region region-footer-secondcolumn">
+    
+<div id="block-menu-menu-footer-menu-1" class="block block-menu">
+
+  
+  
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://www.adsenv.com/about" title="">About</a></li>
+<li class="leaf"><a href="http://www.adsenv.com/products" title="">Products</a></li>
+<li class="leaf"><a href="http://www.adsenv.com/services" title="">Services</a></li>
+<li class="leaf"><a href="http://www.adsenv.com/applications" title="">Applications</a></li>
+<li class="leaf"><a href="http://www.adsenv.com/resources" title="">Resources</a></li>
+<li class="last leaf"><a href="http://www.adsenv.com/contact" title="">Contact</a></li>
+</ul>  </div>
+</div>
+
+  </div>
+
+      </div>
+
+      <!-- // // // // // // // // // // -->
+
+      <div class="two columns">
+
+          <div class="region region-footer-thirdcolumn">
+    
+<div id="block-menu-menu-key-products" class="block block-menu">
+
+      
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://www.adsenv.com/products/triton" title="">TRITON+</a></li>
+<li class="leaf"><a href="http://www.adsenv.com/products/flowshark-pulse-closed-pipes" title="">Flowshark Pulse</a></li>
+<li class="leaf"><a href="http://www.adsenv.com/products/accusonic-8510" title="">Accusonic</a></li>
+<li class="last leaf"><a href="http://www.adsenv.com/products/rainalert-iii" title="">Rain Alert III</a></li>
+</ul>  </div>
+</div>
+
+  </div>
+
+      </div>
+	  
+      <!-- // // // // // // // // // // -->
+
+      <div class="two columns">
+
+          <div class="region region-footer-fourthcolumn">
+    
+<div id="block-menu-menu-key-software" class="block block-menu">
+
+      
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://www.adsenv.com/content/flowview-operations" title="">FlowView Operations</a></li>
+<li class="leaf"><a href="http://www.adsenv.com/products/software/flowview-portal" title="">Flowview Portal</a></li>
+<li class="leaf"><a href="http://www.adsenv.com/products/software/profile" title="">Profile</a></li>
+<li class="leaf"><a href="http://www.adsenv.com/products/software/qstart" title="">Qstart</a></li>
+<li class="last leaf"><a href="http://www.adsenv.com/products/software/sliicercom" title="">Sliicer.com</a></li>
+</ul>  </div>
+</div>
+
+  </div>
+
+      </div>
+	  
+      <!-- // // // // // // // // // // -->
+
+      <div class="three columns">
+
+          <div class="region region-footer-fifthcolumn">
+    <div id="block-block-2" class="block block-block">
+
+    
+  <div class="content">
+    <div class="socialicons">
+<a href="http://www.linkedin.com/company/ads-environmental-services" target="blank"><img typeof="foaf:Image" src="http://www.adsenv.com/sites/adsenv.com/files/styles/social_icons/public/images/Footer/social_in.jpg?itok=y8UK-Zyc" width="28" height="28" alt="" /></a> 
+<a href="http://www.youtube.com/user/ADSENVSVCS" target="blank"><img typeof="foaf:Image" src="http://www.adsenv.com/sites/adsenv.com/files/styles/social_icons/public/images/Footer/social_tube.jpg?itok=A92KEIaf" width="28" height="28" alt="" /></a>
+<a href="https://www.facebook.com/ADSENV" target="blank"><img typeof="foaf:Image" src="http://www.adsenv.com/sites/adsenv.com/files/styles/social_icons/public/images/Footer/social_fb.jpg?itok=InXg53Xq" width="28" height="28" alt="" /></a>
+<a href="http://www.twitter.com/ADSENV" target="blank"><img typeof="foaf:Image" src="http://www.adsenv.com/sites/adsenv.com/files/styles/social_icons/public/images/Footer/twitter.jpg?itok=_7k8hTeH" width="28" height="28" alt="" /></a>
+</div> 
+
+<div class="idexline CopyrightLine footerStuff">
+       <a class="idex-image" href="http://www.idexcorp.com" target="blank"><img typeof="foaf:Image" src="http://www.adsenv.com/sites/adsenv.com/files/styles/subfooter_idex_logo/public/images/Footer/footer_logo_fmt.png?itok=V3lFdTai" alt="" /></a>
+       <span class="idex-text">An IDEX Water Services &amp; Technology Business<br>
+       Copyright © 2016 ADS Environmental Services<br>
+       <a href="http://www.adsenv.com/content/legal-notices">LEGAL NOTICES</a> | <a href="http://www.adsenv.com/content/legal-notices#privacy">YOUR PRIVACY RIGHTS</a><br>
+       <a href="http://www.adsenv.com/sites/adsenv.com/files/Equipment_Terms_Conditions.pdf">ADS EQUIPMENT SALE TERMS & CONDITIONS</a>
+</span>
+</div>
+
+  </div>
+</div>
+  </div>
+
+      </div>
+
+      <!-- // // // // // // // // // // -->
+
+    </div>
+    <!-- End Footer -->
+  
+</div>
+
+<!-- End Region 9 Wrap -->
+
+<!-- Region 10 Wrap -->
+
+<div class="container region10wrap">
+
+  <div class="row footer_bottom">
+
+    <!-- Bottom -->
+
+    <!-- // // // // // // // // // // -->
+
+    <div class="six columns">
+	    </div>
+
+    <!-- // // // // // // // // // // -->
+
+    <div class="four columns">
+	    </div>
+
+    <!-- // // // // // // // // // // -->
+	
+    <div class="two columns">
+	    </div>
+
+    <!-- // // // // // // // // // // -->
+
+    <!-- Bottom -->
+
+  </div>
+</div>
+
+<!-- End Region 10 Wrap -->
+
+
+
+<!-- Back To Top -->
+<a href="#" class="scrollup">Scroll</a>
+<!-- End Back To Top -->
+
+<!-- Reveal Modal --> 
+<div id="Login" class="reveal-modal login-modal">
+
+  <h2>Login</h2>
+  <p>Please login using your credentials recived by email when you register.</p>
+  <form>
+    <label>Username</label>  
+    <input type="text" />
+
+    <label>Password</label>
+    <input type="text" />
+
+ 
+  </form>
+
+  <a class="close-reveal-modal">&#215;</a>
+
+</div>   
+<!-- End Reveal Modal -->
+    	
+	</div>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8240528fd5","applicationID":"8165072","transactionName":"ZwdSbUFTCxcFWkxbCV5NcVpHWwoKS1dXVgNvElFeVm0TDQFO","queueTime":0,"applicationTime":306,"atts":"S0BRGwlJGBk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

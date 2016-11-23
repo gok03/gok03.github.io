@@ -1,0 +1,384 @@
+status: 200
+content-length: 20131
+content-location: http://evolvewebdev.com
+-content-encoding: gzip
+accept-ranges: bytes
+vary: Accept-Encoding,User-Agent
+server: Apache/2.4.23
+last-modified: Wed, 10 Aug 2016 16:14:53 GMT
+etag: "b10193b-4ea3-539b9f31a3221-gzip"
+date: Sun, 11 Sep 2016 09:21:37 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.9.2 (gzip)
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Template_Index2.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<LINK REL="SHORTCUT ICON" HREF="images/favicon.ico">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="Maryland-based web site design and internet marketing firm dedicated to providing high-quality products at affordable prices. Women-owned and operated. EXPECT EXCELLENCE!">
+
+<meta name="keywords" content="evolve, Baltimore, Baltimore MD, Maryland, web, DBE, African American, web site development, city of baltimore M/Wbe,design, Baltimore County, Black web firms, black owned web design, minority owned web design, evolve web design, domain names, web hosting, evolve web development, Baltimore web design, women owned web design, web design, woman/minority, internet marketing, web development, internet, website design, web designer, freelance web design, black web designer, female web designers, woman owned businesses, Maryland small businesses, women owned business in Maryland, Randallstown, Black owned small businesses, Maryland web design, Maryland small business, MBE, MBE web design company, website, websites, webmaster, website designers in Maryland, website designers in Baltimore, Maryland Black owned businesses, Maryland Web design firms, Baltimore web design, web development, internet marketing, email marketing">
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>EVOLVE WEB DEVELOPMENT - "Home"</title>
+<!-- InstanceEndEditable -->
+<link href="Evolve_Styles2.css" rel="stylesheet" type="text/css" />
+<link href="portfolio_dropdown4.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="Evolve_JavaScript09.js"></script>
+
+<style type="text/css">
+<!--
+html { 
+scrollbar-base-color:#ff6600; 
+} 
+-->
+</style>
+
+<script language="JavaScript1.2" type="text/javascript" src="mm_css_menu.js"></script>
+<script language="javascript"><!--
+function click(){
+if(event.button==2){
+alert("Evolve Web Development --- EXPECT EXCELLENCE!")
+}
+}
+document.onmousedown=click
+//-->
+</script>
+
+<script>
+<!--
+// ==============================
+// Set the following variables...
+// ==============================
+
+// Set the slideshow speed (in milliseconds)
+var SlideShowSpeed = 4000;
+
+// Set the duration of crossfade (in seconds)
+var CrossFadeDuration = 4;
+
+var Picture = new Array(); // don't change this
+var Caption = new Array(); // don't change this
+
+// Specify the image files...
+
+Picture[1]  = 'images/webshots/webshot_GrannysRestaurant.gif'
+Picture[2]  = 'images/webshots/webshot_RamblingRose.gif'
+Picture[3]  = 'images/webshots/webshot_StarSpangledBrands.gif'
+Picture[4]  = 'images/webshots/webshot_GraceBeyondWalls.gif'
+Picture[5]  = 'images/webshots/webshot_GlobalOutcomes.gif'
+Picture[6]  = 'images/webshots/webshot_RoboticsGateway.gif'
+Picture[7]  = 'images/webshots/webshot_ParadiseIronworks.gif'
+Picture[8]  = 'images/webshots/webshot_TheSiteToWrite2.gif'
+Picture[9]  = 'images/webshots/webshot_ComputerMania.gif'   
+Picture[10]  = 'images/webshots/webshot_QuisineQueen.gif'
+Picture[11]  = 'images/webshots/webshot_Jeanetiks.gif'
+Picture[12]  = 'images/webshots/webshot_RosaPryorMusic.gif'
+Picture[13]  = 'images/webshots/webshot_AshmonGroup.gif'
+Picture[14]  = 'images/webshots/webshot_CandA.gif'
+Picture[15]  = 'images/webshots/webshot_HarrisJewelers.gif'
+Picture[16]  = 'images/webshots/webshot_RedLane.gif'
+Picture[17]  = 'images/webshots/webshot_DarkerImages.gif'
+Picture[18]  = 'images/webshots/webshot_OttoHome.gif'
+Picture[19]  = 'images/webshots/webshot_JCUnity.gif'
+Picture[20]  = 'images/webshots/webshot_TMach.gif'
+			  
+// =====================================
+// Do not edit anything below this line!
+// =====================================
+
+var tss;
+var iss;
+var jss = 1;
+var pss = Picture.length-1;
+
+var preLoad = new Array();
+for (iss = 1; iss < pss+1; iss++){
+preLoad[iss] = new Image();
+preLoad[iss].src = Picture[iss];}
+
+function runSlideShow(){
+if (document.all){
+document.images.PictureBox.style.filter="blendTrans(duration=2)";
+document.images.PictureBox.style.filter="blendTrans(duration=CrossFadeDuration)";
+document.images.PictureBox.filters.blendTrans.Apply();}
+document.images.PictureBox.src = preLoad[jss].src;
+if (document.getElementById) document.getElementById("CaptionBox").innerHTML= Caption[jss];
+if (document.all) document.images.PictureBox.filters.blendTrans.Play();
+jss = jss + 1;
+if (jss > (pss)) jss=1;
+tss = setTimeout('runSlideShow()', SlideShowSpeed);
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body onLoad="runSlideShow();MM_preloadImages('images/home_down.jpg','images/about_down.jpg','images/services_down.jpg','images/contact_down.jpg')">
+<!--begin wrapper div-->
+<div id="wrapper" align="center">
+
+<!--begin banner div-->
+		<div id="banner"><img src="images/HeadBanner16.gif" width="1100" height="170" alt="Evolve Web Development" title="Evolve Web Development"/></div>
+		<!--end banner div-->
+	
+		
+<!--begin topnav div-->
+		<div id="topnav">
+			<div id="pagetitles">
+				  <div style="float:left;"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','images/home_down.jpg',1)"><img src="images/home_up.jpg" alt="Home" name="Home" width="107" height="29" border="0" id="Home" /></a></div> 
+				  <div style="float:left; margin-left:5px;"><a href="aboutus.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('about','','images/about_down.jpg',1)"><img src="images/about_up.jpg" alt="About Us" name="about" width="107" height="29" border="0" id="about" /></a></div> 
+				  <div style="float:left; margin-left:5px;"><a href="services.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('services','','images/services_down.jpg',1)"><img src="images/services_up.jpg" alt="Services" name="services" width="107" height="29" border="0" id="services" /></a></div> 
+				  <div style="float:left; margin-left:5px;">
+				    <div id="FWTableContainer7445715"> <a href="javascript:;" onmouseout="MM_menuStartTimeout(1000);" onmouseover="MM_menuShowMenu('MMMenuContainer0111124833_0', 'MMMenu0111124833_0',23,34,'portfolio_dropdown4');"><img src="portfolio_dropdown4.jpg" alt="" name="portfolio_dropdown4" width="107" height="29" border="0" id="portfolio_dropdown4" /></a>
+				        <div id="MMMenuContainer0111124833_0">
+                          <div id="MMMenu0111124833_0" onmouseout="MM_menuStartTimeout(1000);" onmouseover="MM_menuResetTimeout();"> <a href="websites.html" id="MMMenu0111124833_0_Item_0" class="MMMIFVStyleMMMenu0111124833_0" onmouseover="MM_menuOverMenuItem('MMMenu0111124833_0');"> WEB&nbsp;SITES </a> <a href="logos.html" id="MMMenu0111124833_0_Item_1" class="MMMIVStyleMMMenu0111124833_0" onmouseover="MM_menuOverMenuItem('MMMenu0111124833_0');"> LOGOS </a> </div>
+			          </div>
+			        </div>
+				  </div> 
+				  <div style="float:left; margin-left:5px;"><a href="contactus.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contact','','images/contact_down.jpg',1)"><img src="images/contact_up.jpg" alt="Contact Us" name="contact" width="107" height="29" border="0" id="contact" /></a></div> 
+	      </div>	
+			 <!--end pagetitles div-->
+			 
+			 <!-- begin facebook twitter div-->
+			 <div id="facebooktwitter" style="float:left;">
+			 	<div style="float:left; margin-left:10px; padding-top:3px;"><a href="http://www.facebook.com/pages/Evolve-Web-Development/127489327292061" target="_blank"><img src="images/orangefacebook_30x30.jpg" alt="Like us on FaceBook" title="Like us on FaceBook" border="0" /></a></div>
+			
+				<div style="float:left; margin-left:10px; padding-top:3px;"><a href="http://twitter.com/#!/WebQueen2012" target="_blank"><img src="images/orangetwitter_30x30.jpg" alt="Follow us on Twitter" title="Follow us on Twitter" border="0" /></a></div>
+			</div>
+			<!-- end facebook twitter div-->	 
+			 
+			<!--begin loginpayments div-->
+		  <div id="loginpayments">	
+		  
+				<div style="float:left; width:105px; text-align:center;">
+		  	    <a href="https://sso.secureserver.net/?ci=&app=www&path=sso%2freturn%3fplid%3d415035&plid=415035&prog_id=415035" target="_blank"><img src="images/login.jpg" alt="Log In" width="95" border="0" height="25" /></a>
+                </div>
+                
+
+			  	<div style="float:left; margin-left:10px; margin-right:5px; text-align:center;">
+				  	  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="4342627">
+				  	  <input type="image" src="images/makeapayment.jpg" border="0" name="submit" />
+				  	  </form>	</div>
+				
+				
+		  </div>
+			<!--end loginpayments div-->
+		
+		</div>
+		<!--end topnav div-->
+		
+		<!--begin tophalf div-->
+		<div id="tophalf">			
+				<!--begin tophalffloater div-->
+				<!--div id="tophalf_floater"-->														
+	   				<!--begin tophalf_left div-->	  
+    				<div id="tophalf_left">
+	  					<div id="leftnavtop">&nbsp;</div>
+						<!--begin leftnav middle-->
+						<div id="leftnavmiddle">
+							<div id="dropdownleftnav">
+								<ul class="menu">
+									<li class="webdevelopment"><a href="#" class="dropdown">WEB DESIGN</a>
+										<ul>
+											<li style="padding-left:5px;"><a href="customwebdesign.html" class="WebDesignSub">Custom Web Design</a></li>
+											<li style="padding-left:5px;"><a href="http://www.securepaynet.net/hosting/website-builder.aspx?ci=1806&amp;prog_id=415035" class="WebDesignSub">Website Tonite</a></li>
+				 				 		</ul>
+									</li>
+			  					</ul>
+							</div>
+							<!--end dropdownleftnav div-->
+						
+							<div class="leftnavtext2"><a href="logodesign.html" class="dropdown">LOGO DESIGN</a></div>
+							<div class="leftnavtext1"><a href="http://www.secureserver.net/?prog_id=415035" class="dropdown" target="_blank">DOMAIN NAMES</a></div>     
+       						 <div class="leftnavtext2_nomargin"><a href="http://www.secureserver.net/hosting/web-hosting_4.aspx?ci=83725&prog_id=415035&pl_id=415035" class="dropdown" target="_blank">WEB HOSTING</a></div>
+		</div>
+        
+        
+        <!--end leftnav middle div-->
+		<div id="leftnavbottom">
+&nbsp; </div>
+
+
+
+        <div class="BlackArial16" style="text-align:left;">
+
+	<p align="left"><strong><span class="OrangeArial18_Bold">Your Time is Valuable</span></strong><br />
+	  <span style="font-size:16px; color:#000000;">Allowing us to develop your company's web presence lets you focus on your business and concentrate on what you do best.</span></p>
+
+</div>	
+
+    </div>  
+	  <!--end top half left div-->
+	  
+	  <!--begin tophalf_middle div-->
+      <div id="tophalf_middle">
+	  
+	  <!--begin tophalf_slideshow-->
+		  <div id="tophalf_slideshow">
+		    <table border="0" align="center" cellpadding="0" cellspacing="0" >
+              <tr>
+                <!--
+    The next table cell holds the images.
+    Set cell and image width and height the same.
+    The img src must have name=PictureBox in its
+    tag.  Usually the first image in the Picture
+    array in the script is used here.
+    //-->
+                <td bgcolor="#FFFFFF"><img src="images/webshots/webshot_GrannysRestaurant.gif" name="PictureBox" width="400" height="400" id="PictureBox" /></td>
+              </tr>
+			  <tr>
+        <!-- 
+    The next table cell holds the captions.
+    This table cell must have id=CaptionBox and
+    class=Caption in its tag. 
+    //-->
+        <td height="5" align="center" class="CaptionWhite" id="CaptionBox">&nbsp;</td>
+      </tr>
+            </table>
+		  </div>
+		  <!--end tophalf_slideshow-->
+					
+		  </div>
+					<!--end tophalf_middle div-->
+	  
+	  <!--begin tophalf_right div-->
+		<div id="tophalf_right">
+			
+			<div class="BlackArial16" style="text-align:left; margin-bottom:10px;">
+				<span class="OrangeArial18_Bold">Our Committment To You </span><br />
+	  <span style="font-size:16px; color:#000000;">We insist on exceptional customer service in all aspects of our operations --- always keeping you, the customer in mind.</span>
+			</div>
+			
+			<div id="rightnavtop">&nbsp;</div>
+			
+			<div id="rightnavmiddle">
+				<div class="rightnavtext1"><a href="testimonials.html" class="dropdown">TESTIMONIALS</a></div>
+				<div class="rightnavtext2"><a href="faqs.html" class="dropdown">FAQS</a></div>
+				<div class="rightnavtext1_nomargin" style="padding-top:5px;"><a href="resources.html" class="dropdown">RESOURCES</a></div>		
+			</div>
+			
+			<div id="rightnavbottom">&nbsp;</div>
+		<div align="center" style="margin-top:15px;"><strong><a href="contactus.html" class="ArialBlack16">CONTACT US TODAY<br />
+FOR YOUR FREE CONSULTATION</a></strong></div>	
+		</div>  
+		
+	  <!--end tophalf_right div-->
+	 <!--</div-->
+		  <!--end tophalf_floater-->	
+	<div style="background-color:#000000; clear:both;"><img src="images/wrapper_bottom.gif" /></div>    
+</div>
+	<!--end top half div-->
+	
+	<!--begin bottomhalf div-->
+  <div id="bottomhalf">	
+			
+			<!--begin bottomhalf_floater div-->
+				<div id="bottomhalf_floater">
+				
+					<!--begin bottomhalf_left div-->
+					<div id="bottomhalf_left">					
+						<div><img src="images/blackgold_top.gif" /></div>
+						<div class="WhiteArial16" style="padding-left:20px; padding-right:20px; margin-top:0px;">
+	                      <span class="OrangeArial18" style="text-align:center;"><strong>WEB ACCESSIBILITY</strong></span>
+	<p>The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. It is essential that the Web be accessible in order to provide equal access and equal opportunity to people with disabilities.</p>	
+	<p class="OrangeArial18"><strong>What is Web Accessibility?</strong></p>	
+	<p>Web accessibility means that people with disabilities can use the Web. More specifically, Web accessibility means that people with disabilities can perceive, understand, navigate, and interact with the Web, and that they can contribute to the Web. Web accessibility also benefits others, including older people with changing abilities due to aging.</p>
+<p>Web accessibility encompasses all disabilities that affect access to the Web, including visual, auditory, physical, speech, cognitive, and neurological disabilities. The document "How People with Disabilities Use the Web" describes how different disabilities affect Web use and includes scenarios of people with disabilities using the Web. </p>
+<p class="OrangeArial18"><strong>Why Web Accessibility is Important</strong></p>
+<p>The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. It is essential that the Web be accessible in order to provide equal access and equal opportunity to people with disabilities. An accessible Web can also help people with disabilities more actively participate in society.<br/>
+  <br/>
+  <span class="WhiteArial14"><em>Source: </em>www.w3.org</span></p>
+
+	 <ul id="ul_bottom1_left">		
+    	<li><a href="http://fae.cita.uiuc.edu/" class="ArialGold16" target="_blank">Test Your Web Site's Accessibility</a></li>
+		<li><a href="http://www.w3.org/TR/WCAG10/checkpoint-list.html" class="ArialGold16" target="_blank">Get the Federal Government 508 Standards Checklist</a></li>
+	  </ul>
+			</div>
+
+<div style="margin-bottom:0px; height:35px;"><img src="images/blackgold_bottom.gif" /></div>
+
+					</div>
+					<!--end bottomhalf_left div-->
+					
+					<!--begin bottomhalf_right div-->
+					<div id="bottomhalf_right">				
+						
+						<!--begin orange computer-->
+						<div align="center">						    
+						    <img src="images/orangelaptop_imagemap.jpg" border="0" usemap="#Map" />
+						        <map name="Map" id="Map">
+						          <area shape="rect" coords="65,24,245,41" href="http://www.webpagesthatsuck.com/" target="_blank" />
+						          <area shape="rect" coords="66,56,244,73" href="http://www.coolsiteoftheday.com/cgi-bin/stillcool.pl" target="_blank" />
+						          <area shape="rect" coords="68,88,247,106" href="http://www.time.com/time/specials/packages/0,28757,2087815,00.html" target="_blank" />
+						          <area shape="rect" coords="67,120,253,139" href="http://www.webaward.org/winners_result.asp" target="_blank" />
+						  </map>
+					  </div>
+						<!--end orange computer-->
+	
+		<div align="center" style="margin-top:30px;"><a href="file:///F|/EVOLVE/NewSite2012/internetfacts.html"><img src="images/InternetFacts3.jpg" border="0" alt="Interesting Internet Facts" title="Interesting Internet Facts"/></a></div>
+	
+		<!-- begin Webopedia -->
+			<div align="center" style="margin-top:30px; margin-bottom:30px;">
+			<a href="http://www.webopedia.com/totd.asp" target="blank"><img src="images/webopedia2.gif" width="150" height="60" border="0" /></a>
+			</div>			  
+		  <!-- end Webopedia -->	
+		 
+		    
+	  <div style="text-align:center; width:200px; padding:6px; margin-left:auto; margin-right:auto; background-color:#FF6600; border:solid 1px #ffffff;">
+	  	<div style="border:solid 1px #ffffff; padding:5px;"><span class="BlackArial16" style="font-weight:bold;"><strong>Many a small thing<br/>has been made<br/>large by the right<br/>kind of advertising.</strong></span><br/>
+      	<span class="BlackArial14 style2">Mark Twain</span></div>
+	  </div>
+	
+			</div>
+			<!--end bottomhalf_right div-->
+					
+				</div>
+				<!--end bottomhalf_floater div-->
+						
+		
+
+	
+	<!--begin bottomnav div-->
+		<div id="bottomnav">
+			[ <a href="index.html" class="bottomnav">Home</a> ]&nbsp; &nbsp;[ <a href="aboutus.html" class="bottomnav">About Us</a> ] &nbsp;&nbsp;[ <a href="services.html" class="bottomnav">Services</a> ]&nbsp;&nbsp; [ <a href="portfolio.html" class="bottomnav">Portfolio</a> ] &nbsp;&nbsp;[ <a href="testimonials.html" class="bottomnav">Testimonials</a> ]&nbsp;&nbsp; [ <a href="contactus.html" class="bottomnav">Contact Us</a> ] &nbsp;&nbsp;[ <a href="webdesign.html" class="bottomnav">Web Design</a> ] &nbsp;&nbsp;[ <a href="logodesign.html" class="bottomnav">Logo Design</a> ]&nbsp;&nbsp; [ <a href="https://www.securepaynet.net/domains/search.aspx?prog%5Fid=415035" class="bottomnav" target="_blank">Domain Names</a> ]&nbsp;&nbsp; [ <a href="https://www.securepaynet.net/default.aspx?prog_id=415035" class="bottomnav" target="_blank">Web Hosting</a> ]
+		</div>
+		<!--end bottomnav div-->
+	
+		
+  </div>
+		<!--end bottomhalf div-->
+		
+</div>
+<!--end wrapper div-->
+</body>
+<!-- InstanceEnd --></html>

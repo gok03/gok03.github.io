@@ -1,0 +1,93 @@
+status: 200
+content-length: 2690
+content-location: https://www.e-scicom.com/support/login.aspx
+x-aspnet-version: 4.0.30319
+set-cookie: SessionID=!UDKoopx6ba7zUThPns0yHM6ARQiRghaA1PtxuITxnF9fEm4MIogDlF0DBw0avH4snhQ4idkh/ApqVQ==;
+ path=/
+x-powered-by: ASP.NET
+server: Microsoft-IIS/7.5
+cache-control: private
+date: Mon, 17 Oct 2016 16:13:03 GMT
+content-type: text/html; charset=utf-8
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Venture - Custom Variable Data Document Solutions</title><meta name="keywords" content="Venture Solutions"/><meta name="description" content="Venture Solutions"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="Login.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+  function show() {
+	  var content=document.getElementById("content");
+		content.style.zIndex="500";
+	}
+	function hide() {
+	  var content=document.getElementById("content");
+		content.style.zIndex="-9999";
+	}
+	function validateLogin() {
+		if (!document.clientLogin.vchusername.value || !document.clientLogin.vchpassword.value) {
+			alert('Please enter your User Name and Password');
+			return false;
+		}
+		return true;
+	}
+
+	function setFocus(ele) {
+		ele.focus();
+		return true;
+	}
+</script>
+</head>
+
+<body onload="setFocus(document.getElementById('vchusername'))">
+<div id="wrapper">
+    <div id="top_header"> 
+        <img alt="Venture Access" border="0" src="images/Ventureaccess_logo_cm.jpg" />  
+    </div>
+  <div id="content">
+    <div id="content_right">
+        <div id="content_login">
+        <form action="/support/login.aspx" method="post" name="clientLogin">
+        <div id="login_header">
+          CLIENT LOGIN
+        </div>
+        <br />
+        <div id="user_name">
+          <div id="username_text">
+            username:&nbsp;
+          </div>
+          <div id="username_input">
+            &nbsp;<input type="text" name="vchusername" id="vchusername" style="width:120px;" />
+          </div>
+        </div>
+        <div id="password">
+          <div id="password_text">
+            password:&nbsp;
+          </div>
+          <div id="password_input">
+            &nbsp;<input type="password" id="vchpassword" name="vchpassword" style="width:120px;" />
+          </div>
+        </div>
+                <br />
+        <div id="login_btn">
+          <input type="image" name="submit" src="images/login_btn.jpg" onclick="return validateLogin();" />
+        </div>
+        </form>
+      </div>  
+      <div id="login-footer">
+        <span class="footer-powered-by">Powered by:</span>
+        <span id="venture-logo"><img alt="Venture Solutions" border="0" src="images/Venture_logo_sm.jpg" /></span>
+        <span class="footer-powered-by">1170 Grey Fox Road, Arden Hills, MN 55112</span>
+
+    </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

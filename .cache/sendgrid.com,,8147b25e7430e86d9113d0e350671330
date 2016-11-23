@@ -1,0 +1,541 @@
+status: 200
+content-length: 31872
+x-varnish: 435490717 430219169
+content-location: http://sendgrid.com/
+-content-encoding: gzip
+x-pantheon-styx-hostname: styxa28fb950
+age: 131
+vary: Accept-Encoding, Cookie
+x-pantheon-endpoint: 4205d86a-6eaf-4e21-bdb0-9af8bd233a1c
+x-styx-version: StyxGo
+server: nginx
+connection: keep-alive
+via: 1.1 varnish-v4
+link: <https://sendgrid.com/wp-json/>;
+ rel="https://api.w.org/", <https://sendgrid.com/>; rel=shortlink
+cache-control: public, max-age=600
+date: Thu, 29 Sep 2016 11:48:13 GMT
+x-styx-req-id: styx-a4dd3f46ee448cb7609000fd7c26cb2f
+content-type: text/html; charset=UTF-8
+accept-ranges: bytes
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+  <head>
+
+    <!-- PAGE TITLE -->
+    
+
+    <!-- MANIFEST -->
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0, width=device-width">
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="" />
+    
+    <!-- FAVICON -->
+    
+
+<link rel="shortcut icon" type="image/x-icon" href="/brand/favicons/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/brand/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/brand/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/brand/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/brand/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/brand/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/brand/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/brand/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/brand/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/brand/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/brand/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/brand/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/brand/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/brand/favicons/favicon-16x16.png">
+<link rel="manifest" href=" /brand/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff"}
+<meta name="msapplication-TileImage" content="/brand/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+    <!-- OPTIMIZELY -->
+    <script src="//cdn.optimizely.com/js/72168671.js" type="text/javascript"></script>
+
+    <!-- GOOGLE, APPLE -->
+    <meta name="google-site-verification" content="kssxJZBR0lPVnGp9sKd01rNxX-Q6r0ajAu06gARSnt8">
+    <meta name="previous-site-verification" content="zaJx-XREH5AaDRD3etsAX4Fg88xgHCw5xE-kA7MThPo">
+    <meta name="appstores-site-verification" content="5f2136324014e1ff30d89ed232628ebf">
+
+    <!-- GOOGLE Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:700,700italic,600,600italic,400,400italic,300,300italic" id="opensans-css">
+
+    
+<!-- This site is optimized with the Yoast SEO plugin v3.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Marketing &amp; Transactional Email Service | SendGrid</title>
+<meta name="description" content="Delivering your transactional and marketing email through one reliable platform."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://sendgrid.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Marketing &amp; Transactional Email Service | SendGrid" />
+<meta property="og:description" content="Delivering your transactional and marketing email through one reliable platform." />
+<meta property="og:url" content="https://sendgrid.com/" />
+<meta property="og:site_name" content="SendGrid" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/sendgrid.com\/","name":"SendGrid","potentialAction":{"@type":"SearchAction","target":"https:\/\/sendgrid.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//sendgrid.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//js.hs-scripts.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/sendgrid.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='sgdotcom-global-styles-css'  href='https://sendgrid.com/wp-content/themes/sgdotcom/grid/global.css?ver=1475070886' type='text/css' media='all' />
+<link rel='stylesheet' id='sgdotcom-styles-css'  href='https://sendgrid.com/wp-content/themes/sgdotcom/style.css?ver=1475070887' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://sendgrid.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='A2A_SHARE_SAVE-css'  href='https://sendgrid.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.12' type='text/css' media='all' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script type='text/javascript' src='https://sendgrid.com/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cssTarget = "img.";
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://sendgrid.com/wp-content/plugins/svg-support/js/min/svg-inline-min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js?ver=0.6.0'></script>
+<script type='text/javascript' src='https://sendgrid.com/wp-content/themes/sgdotcom/grid/scripts/foundation.js?ver=1475070886'></script>
+<link rel='https://api.w.org/' href='https://sendgrid.com/wp-json/' />
+
+<link rel='shortlink' href='https://sendgrid.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://sendgrid.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsendgrid.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://sendgrid.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsendgrid.com%2F&#038;format=xml" />
+
+<script type="text/javascript">
+var a2a_config=a2a_config||{};a2a_config.callbacks=a2a_config.callbacks||[];a2a_config.templates=a2a_config.templates||{};
+</script>
+<script type="text/javascript" src="https://static.addtoany.com/menu/page.js" async="async"></script>
+<style type="text/css">
+.sfs-subscriber-count, .sfs-count, .sfs-count span, .sfs-stats { -webkit-box-sizing: initial; -moz-box-sizing: initial; box-sizing: initial; }
+.sfs-subscriber-count { width: 88px; overflow: hidden; height: 26px; color: #424242; font: 9px Verdana, Geneva, sans-serif; letter-spacing: 1px; }
+.sfs-count { width: 86px; height: 17px; line-height: 17px; margin: 0 auto; background: #ccc; border: 1px solid #909090; border-top-color: #fff; border-left-color: #fff; }
+.sfs-count span { display: inline-block; height: 11px; line-height: 12px; margin: 2px 1px 2px 2px; padding: 0 2px 0 3px; background: #e4e4e4; border: 1px solid #a2a2a2; border-bottom-color: #fff; border-right-color: #fff; }
+.sfs-stats { font-size: 6px; line-height: 6px; margin: 1px 0 0 1px; word-spacing: 2px; text-align: center; text-transform: uppercase; }
+</style>
+<link rel="icon" href="https://sendgrid.com/wp-content/uploads/2015/10/2015_SG_2nd_Small_RGB.png" sizes="32x32" />
+<link rel="icon" href="https://sendgrid.com/wp-content/uploads/2015/10/2015_SG_2nd_Small_RGB.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://sendgrid.com/wp-content/uploads/2015/10/2015_SG_2nd_Small_RGB.png" />
+<meta name="msapplication-TileImage" content="https://sendgrid.com/wp-content/uploads/2015/10/2015_SG_2nd_Small_RGB.png" />
+
+  </head>
+
+<body class="home page page-id-11813 page-template-default era-bce brand-switched singular five1 ten6 twenty2 alt-none depth-0 section- page- ">
+
+  
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PQC59L"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PQC59L');</script>
+	<!-- End Google Tag Manager -->
+    <!-- CONTENT --><div class="plane"><div class="points"><div itemscope itemtype='https://schema.org/Brand'>
+<meta content='SendGrid' itemprop='name'>
+<link href='https://www.freebase.com/m/0wr97kd' itemprop='sameAs'>
+</div>
+
+<header class='page-header' id='header'>
+
+	<nav class='secondary'>
+
+	<div class='constrain-xl gutter-self'>
+
+		<ul>
+			<li class='link-to-blog'><a href="/blog/" id="header-blog">Blog</a></li>
+			<li class='link-to-support'><a href="https://support.sendgrid.com/" id="header-support">Support</a></li>
+			<li class='link-to-signup'><a href="/pricing" id="header-signup">Sign Up</a></li>
+			<li class='account-overview'>
+				<a href='//sendgrid.com/account/overview' id='header-account-overview'>
+					<span class='icon-user'></span>
+					<span class='topmast-name'></span>
+					<span class='topmast-down-arrow'>▾</span>
+				</a>
+				<ul class='account-options'>
+					<div class='arrow-up'></div>
+					<li class='header-account-overview-li'><a href="https://app.sendgrid.com/">Dashboard</a></li>
+					<li class='link-to-logout'><a href="https://app.sendgrid.com/logout">Sign Out</a></li>
+				</ul>
+			</li>
+			<li class='link-to-login'><a href="https://sendgrid.com/login" id="sign-in">Log In</a></li>
+		</ul>
+
+	</div>
+
+	</nav>
+
+	<nav class='primary'>
+
+		<div class='constrain-xl gutter-self'>
+
+			<button id='nav-toggle'>
+				<span class='menu'></span>
+			</button>
+
+			<ul class='flex-row'>
+
+				<li class='logo flex-box flex-grow-2'>
+					<a href='/'></a>
+				</li>
+
+				<li class='link-to-pricing link-to-section flex-box' data-page='pricing' data-section='pricing'>
+					<a href='/pricing' id='nav-pricing'>Pricing</a>
+				</li>
+
+				<li class='link-to-solutions link-to-section flex-box' data-page='email-solutions' data-section='solutions'>
+					<a href='/solutions' id='nav-solutions'>Solutions<span class="sub-pointer"></span></a>
+
+				<ul class='sub'>
+					<div class='enclosure use-case-row'>
+						<div class='control-row use-case-column use-case-small-12 use-case-large-7'>
+							<span class='section-title use-cases-a--show use-cases-b--show h5'>Solutions</span>
+							<hr class='use-cases-a--show use-cases-b--show show-for-large'>
+							<li class='control-column use-cases--hide' data-page='email-solutions' data-section='solutions'>
+								<a href='/solutions'>
+									<span class='title'>Overview</span>
+									<span class='tease show-for-large'>One platform for all your email needs.</span>
+								</a>
+							</li>
+							<li class='control-column' data-page='transactional-email' data-section='solutions'>
+								<a href='/solutions/transactional-email'>
+									<span class='title use-cases--hide'>Transactional Email</span>
+									<span class='title use-cases-a--show use-cases-b--show'>SendGrid API</span>
+									<span class='tease use-cases--hide show-for-large'>Ensure delivery of your most important emails.</span>
+									<span class='tease use-cases-a--show use-cases-b--show show-for-large'>Integrate via our <strong>email API</strong> to ensure delivery of your most important emails.</span>
+								</a>
+							</li>
+							<li class='control-column' data-page='email-marketing' data-section='solutions'>
+								<a href='/solutions/email-marketing'>
+									<span class='title use-cases--hide'>Email Marketing</span>
+									<span class='title use-cases-a--show'>SendGrid Marketing Campaigns</span>
+									<span class='title use-cases-b--show'>SendGrid Campaigns</span>
+									<span class='tease use-cases--hide show-for-large'>Build beautiful, engaging marketing campaigns.</span>
+									<span class='tease use-cases-a--show use-cases-b--show show-for-large'>Build beautiful, engaging <strong>email marketing</strong> campaigns.</span>
+								</a>
+							</li>
+							<li class='control-column' data-page='expert-services' data-section='solutions'>
+								<a href='/solutions/expert-services'>
+									<span class='title'>Expert Services</span>
+									<span class='tease show-for-large'>Learn directly from our email experts.</span>
+								</a>
+							</li>
+						</div>
+						<div class="use-case-column use-case-small-12 use-case-large-5">
+							<div class='space-1 use-cases-a--show use-cases-b--show hide-for-large'></div>
+							<span class='section-title use-cases-a--show use-cases-b--show h5'>Use Cases</span>
+							<hr class='use-cases-a--show use-cases-b--show show-for-large'>
+							<li class='use-cases-a--show use-cases-b--show' data-page='transactional-email' data-section='use-cases'>
+								<a href='/use-cases/transactional-email'>
+									<span class='title'>Transactional Email</span>
+								</a>
+							</li>
+							<li class='use-cases-a--show use-cases-b--show' data-page='email-marketing' data-section='use-cases'>
+								<a href='/use-cases/email-marketing'>
+									<span class='title'>Email Marketing</span>
+								</a>
+							</li>
+							<div class='space-3 use-cases-a--show use-cases-b--show show-for-large'></div>
+							<hr class='use-cases-a--show use-cases-b--show show-for-large'>
+							<li class='use-cases-a--show use-cases-b--show overview-cta show-for-large' data-page='solutions' data-section='solutions'>
+								<a href='/solutions/'>
+									<span class='tease'>Over <strong>120,000 customers</strong> use SendGrid to reliably deliver nearly <strong>30 billion emails</strong> every month.</span>
+									<span class='link'>Learn Why ›</span>
+								</a>
+							</li>
+						</div>
+					</div>
+				</ul>
+
+		</li>
+
+		<li class='link-to-resources link-to-section flex-box' data-page='resources' data-section='resources'>
+
+			<a href='/resources'>Resources<span class="sub-pointer"></span></a>
+
+			<ul class='sub'>
+				<div class='enclosure row small-up-1 large-up-3'>
+					<li class='column small-12 large-4' data-page='resources' data-section='resources'>
+						<a href='/resources'>
+							<span class='title'>Overview</span>
+							<span class='tease show-for-large'>Expert advice to enhance your email program.</span>
+						</a>
+					</li>
+					<li class='column small-12 large-4' data-page='success_stories' data-section='resources'>
+						<a href='/resources/cases'>
+							<span class='title'>Case Studies</span>
+							<span class='tease show-for-large'>How SendGrid has helped companies like you.</span>
+						</a>
+					</li>
+					<li class='column small-12 large-4' data-page='best-practice-guides' data-section='resources'>
+						<a href='/resources/guides'>
+							<span class='title'>Best Practice Guides</span>
+							<span class='tease show-for-large'>Top tips on email sending practices.</span>
+						</a>
+					</li>
+					<li class='column small-12 large-4' data-page='webcasts' data-section='resources'>
+						<a href='/resources/webcasts'>
+							<span class='title'>Webcasts</span>
+							<span class='tease show-for-large'>Email how-tos hosted by industry experts.</span>
+						</a>
+					</li>
+					<li class='column small-12 large-4' data-page='videos' data-section='resources'>
+						<a href='/resources/videos'>
+							<span class='title'>Videos</span>
+							<span class='tease show-for-large'>Quick tips on improving your email program.</span>
+						</a>
+					</li>
+				</div>
+			</ul>
+
+		</li>
+
+		<li class='link-to-docs link-to-section flex-box' data-section='docs'>
+
+			<a data-section='docs' href='https://sendgrid.com/docs'>Documentation<span class="sub-pointer"></span></a>
+
+			<ul class='sub'>
+				<div class='enclosure row small-up-1 large-up-6 align-center'>
+					<li class="column"><a href="https://sendgrid.com/docs"><span class='title'>Overview</span></a></li>
+					<li class="column"><a href="https://sendgrid.com/docs/API_Reference/Web_API/"><span class='title'>Web API</span></a></li>
+					<li class="column"><a href="https://sendgrid.com/docs/API_Reference/SMTP_API/"><span class='title'>SMTP API</span></a></li>
+					<li class="column"><a href="https://sendgrid.com/docs/API_Reference/Webhooks/"><span class='title'>Webhooks</span></a></li>
+					<li class="column"><a href="https://sendgrid.com/docs/Integrate/libraries.html"><span class='title'>API Libraries</span></a></li>
+				</div>
+			</ul>
+
+		</li>
+
+		<li class='link-to-blog link-to-section flex-box only-lt-lg'>
+			<a class='nav-item' href='/blog'>Blog</a>
+		</li>
+
+		<li class='link-to-login link-to-section flex-box only-lt-lg'>
+			<a class='nav-item' href='https://www.sendgrid.com/login'>Login</a>
+		</li>
+
+		<li class='contact-us flex-box flex-grow-2'>
+			<a href="/contact" class="btn btn-secondary btn-small" data-gtm-event-type="cta" data-gtm-track="true">Contact Us</a>
+		</li>
+
+	</ul>
+	</div>
+	</nav>
+
+</header>
+
+<div class='modal hide fade' id='contact_form'>
+<div class='modal-header'>
+<button class='close' data-dismiss='modal' type='button'>
+<span class='icon-remove'></span>
+</button>
+<h3>Contact Us</h3>
+</div>
+<div class='modal-body'>
+<p>Fill out the form below and a sales representative will be in touch with you shortly:</p>
+<div class='modal-form marketo_form_container'></div>
+</div>
+</div>
+<div class="grid"><!-- Begin Template Content -->
+<main class="home">
+  <div class="row pad-ends text-align-center">
+    <div class="small-12 columns">
+      <header>
+        <h1 class="headline m-0">Delivering your transactional and marketing email through one reliable platform.</h1>
+      </header>
+      <div class="space-4"></div>
+      <div class="btn-list">
+        <a id="home-pricing-cta" class="btn btn-primary" href="/pricing" data-gtm-track="true" data-gtm-event-type="cta">
+          Get Started
+        </a>
+        <a id="home-free-cta" class="btn btn-secondary" href="https://app.sendgrid.com/signup?id=8b9ae93b-ce8a-11e4-b4e5-5fcde71ee009" data-gtm-track="true" data-gtm-event-type="cta">
+          Try for Free
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row expanded constrain-xl pad-bottom">
+
+    <div class="small-12 medium-6 columns">
+      <a href="/solutions/transactional-email" id="home-transactional-cta">
+        <div class="persona-box transactional">
+          <div class="box-wrapper">
+            <div class="white-box text-align-center">
+              <h3 class="m-0 mantis-underline">Transactional Email</h3>
+              <div class="space-1"></div>
+              <p class="m-0">Easily integrate via API to ensure your most important emails reach the inbox.</p>
+              <div class="space-2 show-for-medium"></div>
+              <div class="btn btn-secondary btn-small hidden-lt-sm show-for-medium">
+                Learn More
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="small-12 medium-6 columns">
+      <a href="/solutions/email-marketing" id="home-marketing-cta">
+        <div class="persona-box marketing">
+          <div class="box-wrapper">
+            <div class="white-box text-align-center">
+              <h3 class="m-0 seafoam-underline">Email Marketing</h3>
+              <div class="space-1"></div>
+              <p class="m-0">Build beautiful, engaging email marketing campaigns that deliver powerful results.</p>
+              <div class="space-2 show-for-medium"></div>
+              <div class="btn btn-secondary btn-small show-for-medium">
+                Learn More
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="gray-bg">
+    <div class="space-4"></div>
+<div class="row text-align-center">
+  <div class="small-12 medium-expand columns">
+    <img src="https://sendgrid.com/wp-content/themes/sgdotcom/grid/images/customer-logo-bar/uber-logo.svg">
+    <div class="space-3"></div>
+  </div>
+  <div class="small-12 medium-expand columns">
+    <img src="https://sendgrid.com/wp-content/themes/sgdotcom/grid/images/customer-logo-bar/spotify-logo.svg">
+    <div class="space-3"></div>
+  </div>
+  <div class="small-12 medium-expand columns">
+    <img src="https://sendgrid.com/wp-content/themes/sgdotcom/grid/images/customer-logo-bar/glassdoor-logo.svg">
+    <div class="space-3"></div>
+  </div>
+  <div class="small-12 medium-expand columns">
+    <img src="https://sendgrid.com/wp-content/themes/sgdotcom/grid/images/customer-logo-bar/airbnb-logo.svg">
+    <div class="space-3"></div>
+  </div>
+  <div class="small-12 medium-expand columns">
+    <img src="https://sendgrid.com/wp-content/themes/sgdotcom/grid/images/customer-logo-bar/yelp-logo.svg">
+    <div class="space-4"></div>
+</div>
+  </div>
+
+</main>
+
+		
+				</div><!-- End Template Content -->
+
+				<script type='text/javascript'>
+/* <![CDATA[ */
+var leadin_wordpress = {"userRole":"visitor","pageType":"home","leadinPluginVersion":"5.5.3"};
+/* ]]> */
+</script>
+<script type='text/javascript' async defer src='//js.hs-scripts.com/1554310.js?ver=4.6.1'></script>
+<script type='text/javascript' src='https://sendgrid.com/wp-content/themes/sgdotcom/grid/scripts/header.js?ver=1475070886'></script>
+<script type='text/javascript' src='https://sendgrid.com/wp-content/themes/sgdotcom/grid/scripts/footer.js?ver=1475070886'></script>
+<script type='text/javascript' src='https://sendgrid.com/wp-content/themes/sgdotcom/grid/scripts/scripts.js?ver=1475070886'></script>
+<script type='text/javascript' src='https://sendgrid.com/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+
+				<footer class="page-footer">
+  
+  <div class="constrain-lg">
+  
+		<nav class="footer-links row">
+		
+			<dl class="solutions column small-6 medium-4 large-expand">
+	<dt>Solutions</dt>
+	<dd class="transactional-email"><a href=/solutions/transactional-email class="title">Transactional Email</a></dd>
+	<dd class="email-marketing"><a href=/solutions/email-marketing class="title">Email Marketing</a></dd>
+	<dd class="expert-services"><a href=https://sendgrid.com/solutions/expert-services/ class="title">Expert Services</a></dd>
+</dl>
+<dl class="sales column small-6 medium-4 large-expand">
+	<dt>Sales</dt>
+	<dd class="contact-us"><a href=https://sendgrid.com/contact/ class="title">Contact Us</a></dd>
+	<dd class="pricing"><a href=https://sendgrid.com/pricing/ class="title">Pricing</a></dd>
+	<dd class="partners"><a href=https://sendgrid.com/partners/ class="title">Partners</a></dd>
+	<dd class="solutions-providers"><a href=https://sendgrid.com/partners/solutions-providers/ class="title">Solutions Providers</a></dd>
+</dl>
+<dl class="support column small-6 medium-4 large-expand">
+	<dt>Support</dt>
+	<dd class="contact-support"><a href=https://support.sendgrid.com/ class="title">Contact Support</a></dd>
+	<dd class="documentation"><a href=https://sendgrid.com/docs class="title">Documentation</a></dd>
+	<dd class="report-spam"><a href=https://sendgrid.com/report_spam/ class="title">Report Spam</a></dd>
+</dl>
+<dl class="community column small-6 medium-4 large-expand">
+	<dt>Community</dt>
+	<dd class="blog"><a href=https://sendgrid.com/blog/ class="title">Blog</a></dd>
+	<dd class="github"><a href=http://github.com/sendgrid class="title">Github</a></dd>
+</dl>
+<dl class="company column small-6 medium-4 large-expand">
+	<dt>Company</dt>
+	<dd class="about"><a href=https://sendgrid.com/about/ class="title">About</a></dd>
+	<dd class="our-team"><a href=https://sendgrid.com/team/ class="title">Our Team</a></dd>
+	<dd class="careers"><a href=https://sendgrid.com/careers/ class="title">Careers</a></dd>
+	<dd class="contact-us"><a href=/contact class="title">Contact Us</a></dd>
+	<dd class="newsroom"><a href=https://sendgrid.com/news/ class="title">Newsroom</a></dd>
+	<dd class="sendgrid-labs"><a href=http://labs.sendgrid.com/ class="title">SendGrid Labs</a></dd>
+</dl>			
+			<dl class="signature column small-6 medium-4 large-expand">
+				<dd>
+					<img class="logo" src="/brand/sg-logo-white.png" />
+					<small class="column medium-12 legal">
+						<span class='footer-copyright'>©2016 SendGrid</span>
+						<span class="slash"> / </span>
+						<span><a href="/policies" id="footer-tos">Legal and Security</a></span>
+					</small>
+				</dd>
+			</dl>
+			
+    </div>
+		
+		</nav>
+				
+		<div class="footer-bottom">
+		
+		<ul class="social">
+        <li><a href="http://twitter.com/sendgrid"><span class="icon-twitter"></span><span class="show-for-sr">Twitter</span></a></li>
+        <li><a href="http://us.linkedin.com/company/sendgrid"><span class="icon-linkedin"></span><span class="show-for-sr">Linked In</span></a></li>
+        <li><a href="http://facebook.com/SendGrid"><span class="icon-facebook"></span><span class="show-for-sr">Facebook</span></a></li>
+        <li><a href="http://plus.google.com/114253033480473803566"><span class="icon-googleplus"></span><span class="show-for-sr">Google Plus</span></a></li>
+        <li><a href="https://sendgrid.com/blog/feed/"><span class="icon-rss"></span><span class="show-for-sr">RSS Feed</span></a></li>
+    </ul> 
+    
+		</div>
+	
+  </div>
+
+</footer>
+			</div>
+
+		</div>
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"890671fdeb","applicationID":"16721192","transactionName":"MlNRZ0FZWUpUBRJQXQsZclBHUVhXGhYHXlc=","queueTime":0,"applicationTime":287,"atts":"HhRSEQlDSkQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>

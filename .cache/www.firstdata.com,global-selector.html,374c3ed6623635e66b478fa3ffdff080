@@ -1,0 +1,299 @@
+status: 200
+content-length: 17652
+content-location: https://www.firstdata.com/global-selector.html
+accept-ranges: bytes
+-varied-accept-encoding: gzip, deflate
+vary: Accept-Encoding
+server: Apache
+last-modified: Wed, 28 Sep 2016 22:28:03 GMT
+-content-encoding: gzip
+date: Thu, 29 Sep 2016 11:05:00 GMT
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie lt-ie9"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" charset="ISO-8859-1" type="text/javascript"></script>
+    <script>
+        window.geoLocation = {}
+        //Language redirect
+        function getCookie(name) {
+            var dc = document.cookie;
+            var prefix = name + "=";
+            var begin = dc.indexOf("; " + prefix);
+            if (begin == -1) {
+                begin = dc.indexOf(prefix);
+                if (begin != 0) return null;
+            } else {
+                begin += 2;
+            }
+            var end = document.cookie.indexOf(";", begin);
+            if (end == -1) {
+                end = dc.length;
+            }
+            return unescape(dc.substring(begin + prefix.length, end));
+        }
+        function geoipRedirect(location) {
+            try {
+                window.geoLocation.iso_code = location.country.iso_code;
+            } catch (err) {}
+        }
+        if (typeof CQ === 'undefined' || CQ.WCM.isPreviewMode(true)) {
+            geoip2.country(geoipRedirect);
+            var redirectPath = "";
+            var source = document.referrer;
+            var cookieVal = getCookie("Lang");
+            var re = new RegExp("^[a-zA-Z]{2}_[a-zA-Z]{2}$");
+            if (re.test(cookieVal)) {
+                redirectPath = document.URL.substr(0, document.URL.lastIndexOf('/')) + "/" + cookieVal + "/home.html";
+                window.location.href = redirectPath;
+            }
+        }
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="title" content="Global Selector | First Data"/>
+    <title>Global Selector | First Data</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+<link rel="stylesheet" href="/etc/designs/cs/cs_commons/vendor/bootstrap/2.1.0.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/cs/firstdatacom-responsive/components/page/globalselector.css" type="text/css">
+<script type="text/javascript" src="/etc/designs/cs/cs_commons/vendor/jquery/core/jquery-1_11_3.js"></script>
+<script type="text/javascript" src="/etc/designs/cs/firstdatacom-responsive/components/page/globalselector.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta charset="utf-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<meta http-equiv="imagetoolbar" content="no" >
+
+<meta name="google-site-verification" content="QW9Nyxg5Qu1BfFmfUaZkiQDdYkgB28JVl2k0bCqi3-0" />
+<script>
+        $(window).load(function() {
+            try {
+                if($("li[data-iso='"+window.geoLocation.iso_code+"']").length > 0 && window.location.hash !== "#change") {
+                    redirectPath = document.URL.substr(0, document.URL.lastIndexOf('/')) + "/en_" + window.geoLocation.iso_code.toLowerCase() + "/home.html";
+                    window.location.href = redirectPath;
+                }
+            } catch (err) {};
+            $("body").show();
+        });
+    </script>
+</head>
+
+<body class="global" style="display:none;">
+<div id="full_body">
+    <div class="cqcomponent c210-PageHeader-GlobalSelector">
+        <div class="header-body backstretch" data-image="/etc/designs/cs/firstdatacom-responsive/components/page/globalselector/img/globalLanding/header-bg.png">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="header-holder span12">
+                        <div class="header-bg "></div>
+                        <h1 class="logo"></h1>
+                        <h2>Around the world, 2,300 times every second, First Data simplifies the connections that make commerce possible for merchants, financial institutions and their customers.</h2><div class="region-select">
+                            <ul class="nolist clearfix">
+                                <li>Choose a region:</li>
+                                <li><a href="#americas">The Americas</a></li>
+                                <li><a href="#europe">Europe</a></li>
+                                <li><a href="#middle_east_africa">Middle East &amp; Africa</a></li>
+                                <li><a href="#asia_pacific">Asia Pacific</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="show-ie7"><br><br><br></div>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <div class="body-wrap clearfix">
+            <div class="cqcomponent c050-CountrySelector">
+                <div class="container-fluid">
+                    <div class="row-fluid country-group">
+                        <div class="span4">
+                            <a name="americas"></a><span class="country-name">The Americas</span>
+                            <a href="#top" class="backtop hidden-phone">Back to Top</a>
+                        </div>
+                        <div class="span8">
+                            <ul class="countries nolist">
+                                <li data-iso="AR">Argentina<span class="language"><a href="/en_ar/home.html">English</a></span></li>
+                                <li data-iso="BZ">Belize<span class="language"><a href="/en_bz/home.html">English</a></span></li>
+                                <li data-iso="BO">Bolivia<span class="language"><a href="/en_bo/home.html">English</a></span></li>
+                                <li data-iso="BR">Brazil<span class="language"><a href="/pt_br/home.html">Portugu&ecirc;s</a>
+<a href="/en_br/home.html">English</a></span></li>
+                                <li data-iso="CA">Canada<span class="language"><a href="/en_ca/home.html">English</a></span></li>
+                                <li data-iso="CB">Caribbean<span class="language"><a href="/en_cb/home.html">English</a></span></li>
+                                <li data-iso="CL">Chile<span class="language"><a href="/en_cl/home.html">English</a></span></li>
+                                <li data-iso="CO">Colombia<span class="language"><a href="/en_co/home.html">English</a></span></li>
+                                <li data-iso="CR">Costa Rica<span class="language"><a href="/en_cr/home.html">English</a> </span></li>
+                                <li data-iso="DO">Dominican Republic<span class="language"><a href="/en_do/home.html">English</a></span></li>
+                                <li data-iso="SV">El Salvador<span class="language"><a href="/en_sv/home.html">English</a></span></li>
+                            </ul>
+                            <ul class="countries nolist right">
+                                <li data-iso="GT">Guatemala<span class="language"><a href="/en_gt/home.html">English</a></span></li>
+                                <li data-iso="HN">Honduras<span class="language"><a href="/en_hn/home.html">English</a></span></li>
+                                <li data-iso="MX">Mexico<span class="language"><a href="/es_mx/home.html">Espa&ntilde;ol</a>
+<a href="/en_mx/home.html">English</a></span></li>
+                                <li data-iso="NI">Nicaragua<span class="language"><a href="/en_ni/home.html">English</a></span></li>
+                                <li data-iso="PA">Panama<span class="language"><a href="/en_pa/home.html">English</a></span></li>
+                                <li data-iso="PY">Paraguay<span class="language"><a href="/en_py/home.html">English</a></span></li>
+                                <li data-iso="PE">Peru<span class="language"><a href="/en_pe/home.html">English</a></span></li>
+                                <li data-iso="PR">Puerto Rico<span class="language"><a href="/en_pr/home.html">English</a></span></li>
+                                <li data-iso="UY">Uruguay<span class="language"><a href="/en_uy/home.html">English</a></span></li>
+                                <li data-iso="US">USA<span class="language"><a href="/en_us/home.html">English</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid country-group">
+                        <div class="span4">
+                            <a name="europe"></a><span class="country-name">Europe</span>
+                            <a href="#top" class="backtop hidden-phone">Back to Top</a>
+
+                        </div>
+                        <div class="span8">
+                            <ul class="countries nolist">
+                                <li data-iso="AT">Austria<span class="language"><a href="/de_at/home.html">Deutsch</a>
+<a href="/en_at/home.html">English</a></span></li>
+                                <li data-iso="BA">Bosnia and Herzegovina<span class="language"><a href="/en_ba/home.html">English</a></span></li>
+                                <li data-iso="BG">Bulgaria<span class="language"><a href="/bg_bg/home.html">&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;</a>
+<a href="/en_bg/home.html">English</a></span></li>
+                                <li data-iso="HR">Croatia<span class="language"><a href="/en_hr/home.html">English</a></span></li>
+                                <li data-iso="CZ">Czech Republic<span class="language"><a href="/en_cz/home.html">English</a></span></li>
+                                <li data-iso="EE">Estonia<span class="language"><a href="/en_ee/home" class="">English</a></span></li>
+                                <li data-iso="FI">Finland<span class="language"><a href="/en_fi/home.html">English</a></span></li>
+                                <li data-iso="FR">France<span class="language"><a href="/en_fr/home.html">English</a></span></li>
+                                <li data-iso="MK">FYROM<span class="language"><a href="/en_mk/home.html">English</a></span></li>
+                                <li data-iso="DE">Germany<span class="language"><a href="/en_de/home" class="">English</a></span></li>
+                                <li data-iso="GR">Greece<span class="language"><a href="/en_gr/home.html">English</a></span></li>
+                                <li data-iso="HU">Hungary<span class="language"><a href="/en_hu/home.html">English</a></span></li>
+                                <li data-iso="IE">Ireland<span class="language"><a href="/en_ie/home.html">English</a></span></li>
+                                <li data-iso="IT">Italy<span class="language"><a href="/en_it/home.html">English</a></span></li>
+                            </ul>
+                            <ul class="countries nolist right">
+                                <li data-iso="LV">Latvia<span class="language"><a href="/en_lv/home.html">English</a></span></li>
+                                <li data-iso="LT">Lithuania<span class="language"><a href="/en_lt/home.html">English</a></span></li>
+                                <li data-iso="NL">Netherlands<span class="language"><a href="/en_nl/home.html">English</a></span></li>
+                                <li data-iso="NO">Norway<span class="language"><a href="/en_no/home.html">English</a></span></li>
+                                <li data-iso="PL">Poland<span class="language"><a href="/pl_pl/home.html">Polski</a>
+<a href="/en_pl/home.html">English</a></span></li>
+                                <li data-iso="PT">Portugal<span class="language"><a href="/en_pt/home.html">English</a></span></li>
+                                <li data-iso="RO">Romania<span class="language"><a href="/en_ro/home.html">English</a> </span></li>
+                                <li data-iso="RU">Russia<span class="language"><a href="/en_ru/home.html">English</a></span></li>
+                                <li data-iso="RS">Serbia<span class="language"><a href="/en_rs/home.html">English</a></span></li>
+                                <li data-iso="SK">Slovakia<span class="language"><a href="/en_sk/home.html">English</a></span></li>
+                                <li data-iso="ES">Spain<span class="language"><a href="/en_es/home.html">English</a></span></li>
+                                <li data-iso="CH">Switzerland<span class="language"><a href="/en_ch/home.html">English</a> </span></li>
+                                <li data-iso="GB">UK<span class="language"><a href="/en_gb/home.html">English</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid country-group">
+                        <div class="span4">
+                            <a name="middle_east_africa"></a><span class="country-name">Middle East &amp; Africa</span>
+                            <a href="#top" class="backtop hidden-phone">Back to Top</a>
+
+                        </div>
+                        <div class="span8">
+                            <ul class="countries nolist">
+                                <li data-iso="BH">Bahrain<span class="language"><a href="/en_bh/home.html">English</a></span></li>
+                                <li data-iso="EG">Egypt<span class="language"><a href="/en_eg/home.html">English</a></span></li>
+                                <li data-iso="KW">Kuwait<span class="language"><a href="/en_kw/home.html">English</a></span></li>
+                                <li data-iso="QA">Qatar<span class="language"><a href="/en_qa/home.html">English</a></span></li>
+                            </ul>
+                            <ul class="countries nolist right">
+                                <li data-iso="SA">Saudi Arabia<span class="language"><a href="/en_sa/home.html">English</a></span></li>
+                                <li data-iso="ZA">South Africa<span class="language"><a href="/en_za/home.html">English</a></span></li>
+                                <li data-iso="AE">UAE<span class="language"><a href="/en_ae/home.html">English</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid country-group">
+                        <div class="span4">
+                            <a name="asia_pacific"></a><span class="country-name">Asia Pacific</span>
+                            <a href="#top" class="backtop hidden-phone">Back to Top</a>
+
+
+                        </div>
+                        <div class="span8">
+                            <ul class="countries nolist">
+                                <li data-iso="AU">Australia<span class="language"><a href="/en_au/home.html">English</a></span></li>
+                                <li data-iso="CN">China<span class="language"><a href="/en_cn/home.html">English</a></span></li>
+                                <li data-iso="IN">India<span class="language"><a href="/en_in/home.html">English</a></span></li>
+
+                            </ul>
+                            <ul class="countries nolist right">
+                                <li data-iso="NZ">New Zealand<span class="language"><a href="/en_nz/home.html">English</a></span></li>
+                                <li data-iso="SG">Singapore<span class="language"><a href="/en_sg/home.html">English</a></span></li>
+                                <li data-iso="KR">South Korea<span class="language"><a href="/ko_kr/home.html">&#54620;&#44397;&#47568;</a>
+<a href="/en_kr/home.html">English</a></span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row-fluid fdms-promo">
+                        <div class="cqcomponent c316-GlobalLandingPromo clearfix">
+                            <div class="span5">
+                                <h1>Looking for First Data Merchant Solutions?</h1>
+                            </div>
+                            <div class="span7">
+                                <p>First Data sells a range of innovative merchant solutions direct in select countries outside the U.S. to make payments easier, safer, smarter and more rewarding.
+                                    <a href="https://firstdatams.com" class="arrow">Visit First Data Merchant Solutions<span></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cqcomponent c022-Footer-GlobalLanding">
+        <footer>
+            <div class="footer-menu clearfix  container-fluid">
+                <div class="footer-menu-inner">
+                    <ul class="footer-left nolist">
+                        <li><a href="/en_gb/privacy.html">Privacy &amp; Cookie Policy</a></li>
+                    </ul>
+                    <ul class="footer-right nolist">
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom  container-fluid">
+                <div class="footer-logo"></div>
+                <div class="copyright">&copy; 2009&mdash;2016 First Data Corporation. All rights reserved.</div>
+            </div>
+        </footer>
+    </div>
+
+
+    </body>
+</html>
+
+
+

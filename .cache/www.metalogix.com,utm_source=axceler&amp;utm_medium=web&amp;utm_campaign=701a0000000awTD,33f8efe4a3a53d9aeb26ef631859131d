@@ -1,0 +1,1837 @@
+status: 200
+content-length: 87944
+content-location: http://www.metalogix.com?utm_source=axceler&amp;
+ utm_medium=web&amp; utm_campaign=701a0000000awTD
+x-content-type-options: nosniff
+x-aspnet-version: 4.0.30319
+x-powered-by: ASP.NET
+server: Microsoft-IIS/8.5
+cache-control: private
+date: Tue, 13 Sep 2016 10:36:18 GMT
+content-type: text/html; charset=utf-8
+
+
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="content-type" charset="UTF-8" /><meta http-equiv="x-ua-compatible" content="IE=EmulateIE9" /><meta HTTP-EQUIV="Pragma" content="no-cache" /><title>
+	Metalogix Content Lifecycle solutions for SharePoint, Exchange and Cloud
+</title>
+
+
+
+    <script src="/Js/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+    
+    <script src="//cdn.optimizely.com/js/2107750089.js"></script>
+    
+   
+    <script>
+        var mactest = (navigator.userAgent.indexOf("Mac") != -1);
+        if (mactest) {
+            document.write('<link rel="stylesheet" type="text/css" href="/App_Themes/MacFixesV42/MacFixesV42.css" />');
+        }
+    </script>
+
+<link href="/stylesheets/banner-rotatorV46.css" rel="stylesheet" type="text/css" >
+<link rel="alternate" hreflang="de" href="http://www.metalogix.com/German" />
+<link href="App_Themes/GlobalHdrFtrNavV61/GlobalHdrFtrNavV61.css" type="text/css" rel="stylesheet" /><script type="text/javascript">(function(doc, src, tagName){
+var t = doc.createElement(tagName);t.setAttribute("data-cfasync","false")
+t.src = src+"&r="+encodeURIComponent(doc.referrer);
+var h = doc.getElementsByTagName('head')[0];h.appendChild(t);
+})(document, '//p0.tribl.io/h.js?orgId=6qMRGn1XXRiL9GQJjoq1', 'script');</script><script type="text/javascript">/* Smooth scrolling
+   Changes links that link to other parts of this page to scroll
+   smoothly to those links rather than jump to them directly, which
+   can be a little disorienting.
+   
+   sil, http://www.kryogenix.org/
+   
+   v1.0 2003-11-11
+   v1.1 2005-06-16 wrap it up in an object
+*/
+
+var ss = {
+  fixAllLinks: function() {
+    // Get a list of all links in the page
+    var allLinks = document.getElementsByTagName('a');
+    // Walk through the list
+    for (var i=0;i<allLinks.length;i++) {
+      var lnk = allLinks[i];
+      if ((lnk.href && lnk.href.indexOf('#') != -1) && 
+          ( (lnk.pathname == location.pathname) ||
+	    ('/'+lnk.pathname == location.pathname) ) && 
+          (lnk.search == location.search)) {
+        // If the link is internal to the page (begins in #)
+        // then attach the smoothScroll function as an onclick
+        // event handler
+        ss.addEvent(lnk,'click',ss.smoothScroll);
+      }
+    }
+  },
+
+  smoothScroll: function(e) {
+    // This is an event handler; get the clicked on element,
+    // in a cross-browser fashion
+    if (window.event) {
+      target = window.event.srcElement;
+    } else if (e) {
+      target = e.target;
+    } else return;
+
+    // Make sure that the target is an element, not a text node
+    // within an element
+    if (target.nodeName.toLowerCase() != 'a') {
+      target = target.parentNode;
+    }
+  
+    // Paranoia; check this is an A tag
+    if (target.nodeName.toLowerCase() != 'a') return;
+  
+    // Find the <a name> tag corresponding to this href
+    // First strip off the hash (first character)
+    anchor = target.hash.substr(1);
+    // Now loop all A tags until we find one with that name
+    var allLinks = document.getElementsByTagName('a');
+    var destinationLink = null;
+    for (var i=0;i<allLinks.length;i++) {
+      var lnk = allLinks[i];
+      if (lnk.name && (lnk.name == anchor)) {
+        destinationLink = lnk;
+        break;
+      }
+    }
+    if (!destinationLink) destinationLink = document.getElementById(anchor);
+
+    // If we didn't find a destination, give up and let the browser do
+    // its thing
+    if (!destinationLink) return true;
+  
+    // Find the destination's position
+    var destx = destinationLink.offsetLeft; 
+    var desty = destinationLink.offsetTop;
+    var thisNode = destinationLink;
+    while (thisNode.offsetParent && 
+          (thisNode.offsetParent != document.body)) {
+      thisNode = thisNode.offsetParent;
+      destx += thisNode.offsetLeft;
+      desty += thisNode.offsetTop;
+    }
+  
+    // Stop any current scrolling
+    clearInterval(ss.INTERVAL);
+  
+    cypos = ss.getCurrentYPos();
+  
+    ss_stepsize = parseInt((desty-cypos)/ss.STEPS);
+    ss.INTERVAL =
+setInterval('ss.scrollWindow('+ss_stepsize+','+desty+',"'+anchor+'")',10);
+  
+    // And stop the actual click happening
+    if (window.event) {
+      window.event.cancelBubble = true;
+      window.event.returnValue = false;
+    }
+    if (e && e.preventDefault && e.stopPropagation) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  },
+
+  scrollWindow: function(scramount,dest,anchor) {
+    wascypos = ss.getCurrentYPos();
+    isAbove = (wascypos < dest);
+    window.scrollTo(0,wascypos + scramount);
+    iscypos = ss.getCurrentYPos();
+    isAboveNow = (iscypos < dest);
+    if ((isAbove != isAboveNow) || (wascypos == iscypos)) {
+      // if we've just scrolled past the destination, or
+      // we haven't moved from the last scroll (i.e., we're at the
+      // bottom of the page) then scroll exactly to the link
+      window.scrollTo(0,dest);
+      // cancel the repeating timer
+      clearInterval(ss.INTERVAL);
+      // and jump to the link directly so the URL's right
+      location.hash = anchor;
+    }
+  },
+
+  getCurrentYPos: function() {
+    if (document.body && document.body.scrollTop)
+      return document.body.scrollTop;
+    if (document.documentElement && document.documentElement.scrollTop)
+      return document.documentElement.scrollTop;
+    if (window.pageYOffset)
+      return window.pageYOffset;
+    return 0;
+  },
+
+  addEvent: function(elm, evType, fn, useCapture) {
+    // addEvent and removeEvent
+    // cross-browser event handling for IE5+,  NS6 and Mozilla
+    // By Scott Andrew
+    if (elm.addEventListener){
+      elm.addEventListener(evType, fn, useCapture);
+      return true;
+    } else if (elm.attachEvent){
+      var r = elm.attachEvent("on"+evType, fn);
+      return r;
+    } else {
+      alert("Handler could not be removed");
+    }
+  } 
+}
+
+ss.STEPS = 25;
+
+ss.addEvent(window,"load",ss.fixAllLinks);</script><script type="text/javascript" src="/Js/isotope.pkgd.js"></script><script type="text/javascript">$(document).ready( function() {
+  
+  $('.grid').isotope({
+    itemSelector: '.grid-item',
+    masonry: {
+      columnWidth: 195
+    }
+  });
+
+});</script><meta name="Generator" content="Sitefinity 7.0.5100.0 PU" /><link rel="canonical" href="http://www.metalogix.com" /><link href="/Telerik.Web.UI.WebResource.axd?compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c+Version%3d2014.1.403.40%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen%3afe717150-da5c-4560-8705-07b356b5226f%3aed2942d4%3a580b2269%3aeb8d8a8e" type="text/css" rel="stylesheet" /><link href="/App_Themes/HomePgV56/HomePgV56.css" type="text/css" rel="stylesheet" media="all" /><link href="/stylesheets/SP2016-isotope.css" type="text/css" rel="stylesheet" media="all" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" type="text/css" rel="stylesheet" media="all" /><style type="text/css" media="all">.roadshowdiv
+{
+	height: auto;
+	left: 355px;
+	top: 230px;  
+	width: auto;	
+}
+.view-cities {
+    background: rgba(0, 0, 0, 0) url(/images/default-source/v36-home-page/roadshow-2016-buttons.png) no-repeat scroll 0 0px;
+    display: inline-block;
+    height: 51px;
+    width: 209px;
+}
+.view-cities:hover {
+    background-position: 0 -61px;
+}
+.learnmore
+{
+    background: url(/images/default-source/v36-home-page/icon-learn-more-buttons.png) 0 0 no-repeat;
+    display: inline-block;
+    height: 51px;
+    width: 209px;
+}
+.learnmore:hover
+{
+    background-position: 0px -61px;
+}
+.sensitivecontentdiv
+{
+  left: 27px;
+  top: 255px;
+}
+.sensitivedemo
+{
+  background: url(/images/default-source/v36-home-page/sensitivedemobuttons.png) no-repeat 0 0px;
+  display: block;
+  height: 55px;
+  width: 226px;
+}
+.sensitivedemo:hover
+{
+  background-position: 0 -65px;
+}
+.eugdprdiv
+{
+	height: auto;
+	left: 50px;
+	top: 160px;  
+	width: auto;	
+}
+.eugdprebook
+{
+    background: url(/images/default-source/v36-home-page/eu-gdpr-buttons.png) 0 0 no-repeat;
+    display: inline-block;
+    height: 43px;
+    width: 211px;
+}
+.eugdprebook:hover
+{
+    background-position: 0px -53px;
+}
+.incteam
+{
+    background: url(/images/default-source/v36-home-page/inc-5000-buttons.png) 0 -61px no-repeat;
+    display: inline-block;
+    height: 51px;
+    width: 250px;
+}
+.incteam:hover
+{
+    background-position: 0px -183px;
+}
+.previewdiv
+{
+	height: auto;
+	left: 5px;
+	top: 200px;  
+	width: auto;	
+}
+
+
+.LearnMoreandDownload
+{
+    background: url(/images/default-source/v36-home-page/learn-more-and-download.png) 0 0 no-repeat;
+    display: inline-block;
+    height: 50px;
+    width: 331px;
+}
+.LearnMoreandDownload:hover
+{
+    background-position: -331px 0;
+}
+   
+    .ContactusButton:hover
+    {
+    background-color: white;
+    color: black!important;
+    text-decoration:none;
+    border:1px solid #000000;
+    }
+    .buttonForPages
+    {
+    width:100px;
+    height:25px;
+    background-color:#90AC47;
+    color: white!important;
+    border-radius: 3px;
+    text-decoration :none;
+    font-family: "Open Sans","Lucida Grande",sans-serif;
+    font-size: 14px;
+    color:#000000;
+    border:1px solid #ffffff;
+    padding-top:1px;
+    text-decoration:none;
+    display:block;
+    margin-left:106px;
+    margin-top:20px;
+    }
+
+
+
+
+    .applying1
+    {
+    background:url(/images/default-source/v35-resources-graphics/sharepoint2016/applying1.jpg) no-repeat;
+    width:314px;
+    height: 239px;
+    }
+p.links
+    {
+font-size: 12px !important;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+  padding: 0px !important;
+    margin: 0px !important;
+}
+p.german-flag
+    {
+    margin-top: 0px !important;
+}
+ 
+.Headline
+    {
+    font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande", sans-serif;
+    font-size: 44px !important;
+    line-height: 50px;
+    color: #4d4d4d;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+
+}
+
+ h2.solution
+    {
+    font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande", sans-serif;
+    font-size: 16px !important;
+    line-height: 22px;
+    color: #4d4d4d;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	margin-bottom:15px;
+	margin-top:15px;
+
+}
+
+.hp-solution-container p
+    {
+    font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande", sans-serif;
+    font-size: 14px !important;
+    line-height: 20px;
+    color: #4d4d4d;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	margin-bottom:15px;
+	margin-top:15px;
+
+}
+.hp-environment-container p
+    {
+    font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande", sans-serif;
+    font-size: 14px !important;
+    line-height: 20px;
+    color: #4d4d4d;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	margin-bottom:15px;
+	margin-top:15px;
+
+}
+.hp-client-container p
+    {
+    font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande", sans-serif;
+    font-size: 14px !important;
+    line-height: 20px;
+    color: #4d4d4d;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	margin-bottom:15px;
+	margin-top:15px;
+
+}
+ 
+
+    .hp-cta-container {
+    width:100%;
+	  margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:#007FC3 !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center !important;
+  overflow: auto !important;
+    }
+	
+	    .hp-ctas
+    {
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#007FC3;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    text-align: center !important;
+  width:750px;
+    height: 150px;
+    display:block;
+    margin: auto;
+
+    }
+    .hp-box {
+    width:240px;
+    display:block;
+    float:left;
+    margin-right:10px;
+	padding-bottom:30px;
+	padding-top:30px;
+    }
+	
+	    .hp-quote-container {
+    width:100%;
+	  margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:#FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center !important;
+  overflow: auto !important;
+    }
+	
+		    .hp-quote
+    {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    text-align: center !important;
+  width:900px;
+    display:block;
+    margin: auto;
+	border-top:1px solid #CCCCCC;
+    }
+	
+	.quoteslide {
+	font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande", sans-serif;
+    font-size: 28px !important;
+    line-height: 38px;
+    color: #999999;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 100;
+	padding:40px 0px 0px 0px;
+	text-align:center;
+	display: block;
+	width:900px;
+	float:left;
+	}
+		   #quotes:before
+    {
+    content: "";
+    display: inline-block;
+    background: url("/images/default-source/homepage-short/quote-open.png") no-repeat;
+	background-size: 35px 30px;
+    width: 35px;
+    height: 30px;
+    margin: 0 8px 0 0;
+    }
+	   #quotes:after
+    {
+    content: "";
+    display: inline-block;
+    background: url("/images/default-source/homepage-short/quote-close.png") no-repeat;
+	background-size: 35px 30px;
+    width: 35px;
+    height: 30px;
+    margin: 0 0 0 8px;
+    }
+	.author {
+	font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande", sans-serif;
+    font-size: 18px !important;
+    line-height: 20px;
+    color: #CCCCCC;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	padding-top:15px;
+	text-align:center;
+	}
+	    .hp-environment-container {
+    width:100%;
+	  margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:#FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center !important;
+  overflow: auto !important;
+    }
+	
+	    .hp-environment
+    {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center !important;
+  width:840px;
+    display:block;
+    margin: auto;
+
+    }
+    .hp-environment-box {
+    width:280px;
+    display:block;
+    float:left;
+	padding-bottom:10px;
+	padding-top:30px;
+	padding-right:10px;
+	padding-left:10px;
+    }
+	a.hp-environment-link {
+    display:block;
+    border: 1px solid #F7F7F7;
+    border-radius:5px;
+    align-content:center;
+    text-decoration:none;
+    width:260px;
+    padding:20px;
+    align-items:center;
+    color:#006AB5;
+    text-transform:uppercase;
+    font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande",sans-serif;
+    font-size: 12px;
+    }
+		a.hp-environment-link:hover {
+    display:block;
+    border: 1px solid #CCCCCC;
+    border-radius:5px;
+	text-decoration:none !important;
+  
+    }
+		    .hp-client-container {
+    width:100%;
+	  margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center !important;
+  overflow: auto !important;
+    }
+	
+	    .hp-clients
+    {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    text-align: center !important;
+  width:960px;
+    display:block;
+
+
+    }
+    .hp-client-box {
+    width:200px;
+    display:block;
+    float:left;
+	padding-bottom:10px;
+	padding-top:30px;
+	padding-right:10px;
+	padding-left:10px;
+    }
+	    .hp-solution-container {
+    width:900px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:#FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 85px;
+    text-align: center !important;
+ 
+    }
+	
+    a.solutions-box {
+    display:block;
+	padding-bottom:0px;
+	padding-top:0px;
+	padding-right:20px;
+	padding-left:20px;
+	text-decoration :none !important;
+    }
+	a.solutions-box h2{
+	padding-top:65px;
+	text-align:center;
+    text-decoration :none !important;
+    font-family: "Open Sans","Lucida Grande",sans-serif;
+    font-size: 16px;
+    font-weight:100;
+	color:#000000;
+    }
+	a.solutions-box h2:hover{
+	color:#007FC3;
+    }
+	#migrate {
+		background-image:url(/images/default-source/homepage-short/migrate-icon2.png);
+		background-repeat:no-repeat;
+		background-size:63px 120px;
+		background-position: top center;
+		text-decoration:none !important;
+		height:60px;
+	}
+	#migrate:hover {
+			background-position:bottom center;
+	}
+	#secure {
+		background-image:url(/images/default-source/homepage-short/security-icon2.png);
+		background-repeat:no-repeat;
+		background-size:63px 120px;
+		background-position: top center;
+		text-decoration:none !important;
+		height:60px;
+	}
+	#secure:hover {
+			background-position:bottom center;
+	}
+	
+	#analyze {
+		background-image:url(/images/default-source/homepage-short/research-icon2.png);
+		background-repeat:no-repeat;
+		background-size:63px 120px;
+		background-position: top center;
+		text-decoration:none !important;
+		height:60px;
+	}
+	#analyze:hover {
+			background-position:bottom center;
+	}
+	
+	#perform {
+		background-image:url(/images/default-source/homepage-short/continuity-icon2.png);
+		background-repeat:no-repeat;
+		background-size:63px 120px;
+		background-position: top center;
+		text-decoration:none !important;
+		height:60px;
+	}
+	#perform:hover {
+			background-position:bottom center;
+	}
+	
+	#store {
+		background-image:url(/images/default-source/homepage-short/storage-icon2.png);
+		background-repeat:no-repeat;
+		background-size:63px 120px;
+		background-position: top center;
+		text-decoration:none !important;
+		height:60px;
+	}
+	#store:hover {
+			background-position:bottom center;
+	}
+		
+	#first {
+	border-right:1px solid #0066cc;
+    }
+	#last {
+	border-left:1px solid #0066cc;
+	margin-right: 0px !important;
+    }
+    .hp-box a{
+    text-decoration:none;
+    align-items:center;
+    color:#FFFFFF;
+    text-transform:uppercase;
+    font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande",sans-serif;
+    font-size: 16px;
+    }
+	
+.hp-resource-container{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top: 75px;
+    padding-bottom: 100px !important;
+
+}
+
+  
+    a.ContactusBlue
+    {
+    background-color:#007FC3;
+    width: 300px;
+    text-transform:uppercase;
+    color: white!important;
+    border-radius: 7px;
+    border: 1px solid #FFF;
+    text-decoration :none;
+    font-family: "Open Sans","Lucida Grande",sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+    color:#FFFFFF;
+    padding:15px;
+    display:block;
+    text-align:center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:30px;
+    margin-bottom: 50px;
+    }
+    a.ContactusBlue:hover
+    {
+    background-color: #074573;
+    color: #FFFFFF !important;
+    text-decoration:none;
+    }
+a.viewnews {
+	background: url(/images/default-source/homepage-short/arrow-down.png) no-repeat;
+	background-position:bottom center;
+	background-size:17px 10px;
+	border:1px solid #FFF;
+	border-radius:12px;
+	background-color:#FFFFFF;
+	font-family: "Open Sans","Lucida Grande",sans-serif;
+    font-size: 10px;
+	display:block;
+	text-align:center;
+	width:120px;
+	text-transform:uppercase;
+	text-decoration:none !important;
+	color:#0E6AB4 !important;
+	margin:auto;
+	margin-top:80px;
+	padding:10px 5px 15px 5px;
+
+}
+ a.viewnews:hover
+    {
+    color: #000000 !important;
+    text-decoration:none;
+    }
+    #extlink:after;
+    {
+    content: url('/images/default-source/v35-resources-graphics/sharepoint2016/external-link.png');
+    padding-left: 5px;
+    }
+
+
+
+#slider-wrapper {
+  width: 960px;
+  height: 150px;
+  margin: 50px auto;
+  position: relative;
+  margin-bottom: 0px;
+
+  overflow: hidden;
+}
+
+#s1 {
+  padding: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -36px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s2 {
+  padding: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -12px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s3 {
+  padding: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: 12px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s1:hover,
+#s2:hover,
+#s3:hover {
+  opacity: .50;
+}
+
+
+#slider-wrapper-quote {
+  width: 900px;
+  height: 250px;
+  margin: 50px auto;
+  position: relative;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  background: none;
+  overflow: hidden;
+}
+
+#s1-quote {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -36px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s2-quote {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -12px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s3-quote {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: 12px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+
+
+#s1-quote:hover,
+#s2-quote:hover,
+#s3-quote:hover {
+  opacity: .50;
+}
+
+.inner-wrapper {
+  width: 960px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+.inner-wrapper-quote {
+  width: 900px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+.control {
+  display: none;
+}
+
+#Slide1-quote:checked ~ .overflow-wrapper {
+  margin-left: 0%;
+}
+
+#Slide2-quote:checked ~ .overflow-wrapper {
+  margin-left: -100%;
+}
+
+#Slide3-quote:checked ~ .overflow-wrapper {
+  margin-left: -200%;
+}
+
+#Slide4-quote:checked ~ .overflow-wrapper {
+  margin-left: -300%;
+}
+
+#Slide1-quote:checked + #s1-quote {
+  opacity: 1;
+}
+
+#Slide2-quote:checked + #s2-quote {
+  opacity: 1;
+}
+
+#Slide3-quote:checked + #s3-quote {
+  opacity: 1;
+}
+
+#Slide4-quote:checked + #s4-quote {
+  opacity: 1;
+}
+
+
+#Slide1:checked ~ .overflow-wrapper {
+  margin-left: 0%;
+}
+
+#Slide2:checked ~ .overflow-wrapper {
+  margin-left: -100%;
+}
+
+#Slide3:checked ~ .overflow-wrapper {
+  margin-left: -200%;
+}
+
+#Slide4:checked ~ .overflow-wrapper {
+  margin-left: -300%;
+}
+
+#Slide1:checked + #s1 {
+  opacity: 1;
+}
+
+#Slide2:checked + #s2 {
+  opacity: 1;
+}
+
+#Slide3:checked + #s3 {
+  opacity: 1;
+}
+
+#Slide4:checked + #s4 {
+  opacity: 1;
+}
+
+.overflow-wrapper {
+  width: 400%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.slide img {
+  width: 25%;
+  float: left;
+}
+
+.slidequote  {
+  width: 100%;
+  float: left;
+}
+
+  /* ============================================================
+  PARALLAX HEADER
+============================================================ */
+h1.hero{
+	font-size:54px;
+	font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande", sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	line-height:58px;
+	color: #FFF;
+	font-weight: 100;
+	text-align:center;
+	margin:auto;
+	vertical-align:middle;
+	padding-top:100px;
+}
+
+h2.subhero {
+	font-family: "Open Sans", "OpenSans-Semibold","Lucida Grande", sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	color: #FFF;
+	font-weight: 100;
+	font-size:24px;
+	color:#FFF;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:30px;
+	margin-top:10px;
+	text-transform:uppercase;
+
+}
+	
+a.herocta {
+	    font-family: "Open Sans","Lucida Grande",sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+	padding:15px;
+	border:1px solid #FFF;
+	border-radius:7px;
+	display:block;
+	text-align:center;
+	margin-top:20px;
+	width:300px;
+	text-transform:uppercase;
+	text-decoration:none !important;
+	color:#FFF !important;
+	margin:auto;
+}
+a.herocta:hover {
+	text-decoration:none !important;
+	background: rgba(255, 255, 255, 0.5); 
+}
+
+.herowrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+heromain {
+  display: block;
+  background-color: #fff;
+}
+
+.herocontainer {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+  section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 450px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+}
+
+section.module.parallax-1 {
+	background-image:url(/images/default-source/homepage-short/meta-homepage-hero.png);
+}
+
+
+section.module.parallax-2 {
+	background-image:url(/images/default-source/homepage-short/meta-homepage-section.png);
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+section.module.parallax-1 {
+	background-image:url(/images/default-source/homepage-short/meta-homepage-hero-tablet.png);
+    }
+}</style><style type="text/css" media="all">#footer #FooterLeft
+{
+  padding: 0;
+  display:none;
+}
+#footer #FooterRight
+{
+  display:none;
+}
+
+.gartnerRoll
+    {
+    background: rgba(0, 0, 0, 0) url("/images/default-source/v36-home-page/gartner-homepage-roll.png") no-repeat scroll 0 0;
+    display: block;
+    height: 51px;
+    width: 49px;
+    }
+    .gartnerRoll:hover {
+    background-position: -49px 0;
+    }
+  
+   .inc5000Roll
+    {
+    background: rgba(0, 0, 0, 0) url("/images/default-source/v36-home-page/inc5000-homepage-roll.png") no-repeat scroll 0 0;
+    display: block;
+    height: 47px;
+    width: 145px;
+    }
+    .inc5000Roll:hover {
+    background-position: -145px 0;
+    }
+
+
+   .NorthfaceRoll
+    {
+    background: rgba(0, 0, 0, 0) url("/images/default-source/v36-home-page/northface-homepage-roll.png") no-repeat scroll 0 0;
+    display: block;
+    height: 51px;
+    width: 157px;
+    }
+
+    .NorthfaceRoll:hover {
+    background-position: -157px 0;
+    }</style><meta name="description" content="Metalogix has developed the industry&#39;s most trusted management tools for SharePoint migration, Exchange email archiving and Office 365 migration." /><meta name="keywords" content="microsoft sharepoint, sharepoint software, exchange software, sharepoint tools, sharepoint database, sharepoint solutions, microsoft exchange, office 365, onedrive for business" /></head>
+<body id="OneCol">
+    
+    <script type='text/javascript'>
+        var _mTrack = _mTrack || [];
+        _mTrack.push(['trackPage']);
+
+        (function () {
+            var mClientId = '589i8d51780';
+            var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+            var mHost = 'tracker.marinsm.com';
+
+            var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
+            var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
+        })();
+    </script>
+    <noscript>
+    <img width="1" height="1" src="https://tracker.marinsm.com/tp?act=1&cid=589i8d51780&script=no" />
+    </noscript>
+    
+    
+    <form method="post" action="./?utm_source=axceler&amp;amp%3butm_medium=web&amp;amp%3butm_campaign=701a0000000awTD" id="form1">
+<input type="hidden" name="ctl07_TSSM" id="ctl07_TSSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc3NzUyMzAyNg9kFgICAQ9kFgICAw9kFgQCBQ9kFgICAQ9kFgJmD2QWAmYPZBYCZg9kFgICAw8PFgIeBFRleHRlZGQCCQ9kFgICAQ9kFgICAQ9kFgICAQ8UKwACFCsAAg8WAh4SUmVzb2x2ZWRSZW5kZXJNb2RlCylyVGVsZXJpay5XZWIuVUkuUmVuZGVyTW9kZSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAxNC4xLjQwMy40MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0AWQQFglmAgECAgIDAgQCBQIGAgcCCBYJFCsAAmQQFgFmFgEUKwACZGQPFgFmFgEFc1RlbGVyaWsuV2ViLlVJLlJhZE1lbnVJdGVtLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDE0LjEuNDAzLjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQUKwACZBAWAWYWARQrAAJkZA8WAWYWAQVzVGVsZXJpay5XZWIuVUkuUmFkTWVudUl0ZW0sIFRlbGVyaWsuV2ViLlVJLCBWZXJzaW9uPTIwMTQuMS40MDMuNDAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49MTIxZmFlNzgxNjViYTNkNBQrAAJkEBYBZhYBFCsAAmRkDxYBZhYBBXNUZWxlcmlrLldlYi5VSS5SYWRNZW51SXRlbSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAxNC4xLjQwMy40MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0FCsAAmQQFgFmFgEUKwACZGQPFgFmFgEFc1RlbGVyaWsuV2ViLlVJLlJhZE1lbnVJdGVtLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDE0LjEuNDAzLjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQUKwACZBAWAWYWARQrAAJkZA8WAWYWAQVzVGVsZXJpay5XZWIuVUkuUmFkTWVudUl0ZW0sIFRlbGVyaWsuV2ViLlVJLCBWZXJzaW9uPTIwMTQuMS40MDMuNDAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49MTIxZmFlNzgxNjViYTNkNBQrAAJkEBYBZhYBFCsAAmRkDxYBZhYBBXNUZWxlcmlrLldlYi5VSS5SYWRNZW51SXRlbSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAxNC4xLjQwMy40MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0FCsAAmQQFgFmFgEUKwACZGQPFgFmFgEFc1RlbGVyaWsuV2ViLlVJLlJhZE1lbnVJdGVtLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDE0LjEuNDAzLjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQUKwACZBAWAWYWARQrAAJkZA8WAWYWAQVzVGVsZXJpay5XZWIuVUkuUmFkTWVudUl0ZW0sIFRlbGVyaWsuV2ViLlVJLCBWZXJzaW9uPTIwMTQuMS40MDMuNDAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49MTIxZmFlNzgxNjViYTNkNBQrAAJkZA8WCWZmZmZmZmZmZhYBBXNUZWxlcmlrLldlYi5VSS5SYWRNZW51SXRlbSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAxNC4xLjQwMy40MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0ZBYIAgQPZBYCZg9kFgICAQ8UKwACFCsAAg8WAh8BCysEAWQQFgVmAgECAgIDAgQWBRQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZA8WBWZmZmZmFgEFdlRlbGVyaWsuV2ViLlVJLlJhZFNpdGVNYXBOb2RlLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDE0LjEuNDAzLjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDRkZAIFD2QWAmYPZBYCAgEPFCsAAhQrAAIPFgIfAQsrBAFkEBYFZgIBAgICAwIEFgUUKwACZGQUKwACZGQUKwACZGQUKwACZGQUKwACZGQPFgVmZmZmZhYBBXZUZWxlcmlrLldlYi5VSS5SYWRTaXRlTWFwTm9kZSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAxNC4xLjQwMy40MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0ZGQCBg9kFgJmD2QWAgIBDxQrAAIUKwACDxYCHwELKwQBZBAWB2YCAQICAgMCBAIFAgYWBxQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZBQrAAJkZA8WB2ZmZmZmZmYWAQV2VGVsZXJpay5XZWIuVUkuUmFkU2l0ZU1hcE5vZGUsIFRlbGVyaWsuV2ViLlVJLCBWZXJzaW9uPTIwMTQuMS40MDMuNDAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49MTIxZmFlNzgxNjViYTNkNGRkAgcPZBYCZg9kFgICAQ8UKwACFCsAAg8WAh8BCysEAWQQFgdmAgECAgIDAgQCBQIGFgcUKwACZGQUKwACZGQUKwACZGQUKwACZGQUKwACZGQUKwACZGQUKwACZGQPFgdmZmZmZmZmFgEFdlRlbGVyaWsuV2ViLlVJLlJhZFNpdGVNYXBOb2RlLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDE0LjEuNDAzLjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDRkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WBQUdY3RsMDAkU2l0ZU1lbnUkY3RsMDAkUmFkTWVudTIFL2N0bDAwJFNpdGVNZW51JGN0bDAwJFJhZE1lbnUyJGk0JGkwJFJhZFNpdGVNYXAyBS9jdGwwMCRTaXRlTWVudSRjdGwwMCRSYWRNZW51MiRpNSRpMCRSYWRTaXRlTWFwMQUvY3RsMDAkU2l0ZU1lbnUkY3RsMDAkUmFkTWVudTIkaTYkaTAkUmFkU2l0ZU1hcDQFL2N0bDAwJFNpdGVNZW51JGN0bDAwJFJhZE1lbnUyJGk3JGkwJFJhZFNpdGVNYXA1S1x7Bh9vawOCSTXZKymdagMFUxIYXiNhgJhs6kqaggA=" />
+
+
+<script src="/ScriptResource.axd?d=Y9r3aiT-xQndwqvM0-V_wVXPyYU8FpDRL0rHw0j5hldYu6i3BYcF28LcbvK-cnjBXcS9p7xgllG6ROdrmTS2p3YszBkLl9h2THPyOZz1xmg19P44CWw3hb7SNWYM2El8AtgCkZvPoRqxVyM1obObcCnBMeYDSdK6koTKYvrzBNe6wO4RVqYRi4QGgwbert_P0&amp;t=72e85ccd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=bzT8RWA-XgKvGTiObz1Dk_-6mnJMRJ8p-RbXxbPRn_9iZkF91TuoVFWtiwJV5ez-ZOvgv83YlQbLxPp3KTL0NbYo0qC1ET3Vn4ZMT9X6_OeLaRoq13Xu7pyZqG-jUQjsuH8Cb37KH2MKA6xWMsYfKCTlrVIKzE7t2T58sDsuZ9Y1&amp;t=4b0a43a7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=onw7mlNX6Kd0UM6IhB_QSPix-9gPm6zYEUygrzgnOaKvoJ1gTtB1Bi3uwGoLelOeCDBKiFmP45_2tpUEK1io3ryJnbwTBfY3w3YKEj-Ui46C99nz72J9fGjFZjfgzus64LNECNLyR3liC-iB_c7FM-GTo6dN6NmWn2N_CLWW6FBaJlxRvlQ5xryS6HtEKv-t1b2HGJz4f5ePGFBKsW2lww2&amp;t=ffffffffad952ded" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=WKvk5zkSGHpz-IfvLag49MePMld6aARUMJPpoPFckJP1Kh_yXEtE0YiIQ3xq7rlxHJg-jCRapOihIlWvBJ20eIQDF0QBhbJ1Rj5a6k_XOQyCCUmPb9LLd6FSbLC3SV3fnb_xmjiRCTRTq2rPq-CHAA2&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ItzMeonRB04mAKGlJ7v88Vin79PVyWtYER8oW7tL8zEaI1L0hSIZfF7bOAYTtzoc9h7mERAGeCoEEhvj0FbsJ6hVhGxNFmZXGb51DGz3aF6YYR8lpDbqQzR2qmWM1Bo4Q5eTYZMV7M6B5-dWgy-7Zg2&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=oAUAlziQKG2RzWqLZV6s8IneaRQV6tSsf-pQ6smbc1oKhLYkxzyKV0HJdFsCOS_l8BEv_ARfCEbjDMolg-yQXuakY1Clx_008Mq0ejZ_yHPy16Os4yQMs-yIkZYgTB481xliVnh0tcI6AvQuLL6R6Q2&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ZwYz3yRRN5Nb30Gz_y6PDLwGaI8pGtHwz92Tj7nv0nmRnz_yAYeNge2tnbA314Y-Ts3cJYuBt-0HE9OvdItuFvSgHdeEo-USpMQM_fkDeV01MGB41IiO36cjRVG9AnDumHO-JisG-ByQm9UOKxFQrmD-BFcEieCl_OrF39GgWBM1&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=yYYVbCiRQif6pb60J17EZQHOHBo3B3rZIgTqy2xfhMJM1nsCgw4DwXCFYO1Xv0viPMggGBibDwyN631kD4ndJ7IQZPQfJLS5dgceuFPArh0Yf0Wb6cJmvs9xgpkv7LPUo1wWd2N50plu0PFId12mekoP_NVrUcwHdVlFk0Hvg3A1&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=KQ64UasRqwLQaMz-8HhCM_MvF_RKsTt0X7u7ExdYW4wI_5YMJbAfbgf_0-77Yi1XILga6wQ86DVtX-OI9MbpZHQoyNnUuxhJ5CXHqrXjVvaLJK-OBPcknVKRqESKcx9fL0k-XIVcc77NJIVfbeHIKY3WxJtq4r71aVI-oyYno1xCgCMXG-rKSNlR4xsPunnj0&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mUcWc6cYymvlM4ZXQlPImkJskOFQEIJdi1S7LSD07kKWj6_GFb6_X90Mq1sEgaJJ5IvZY3iCXToZVnfGjAWOlmwOh0iO_zqpxArLzorVUocBWF9uP83b3ze3aL2vb8Vkx5lBlUCYCxeb6DmQhitz0_3a7LBEg2L7bCR3yi7SyVg1&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=JMF5NsjBvt10aN6_gVnzd6K7Ee6XKLi8oV13UsIfk6MSHZ65x0UekdxfAa0xnioso7tj8sgTNLW72kRCK0SDscUtVeZ9C3Ld9KLKtdHxLRGZp5g-aeDpo32WZUVJtyrPHUIRAYxfsFT547LQ6OGBiBxRN1o5eiJRWy8S4qCurR41&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=o545O-Vr0RfNcHaZ7VPY1c7BDCo_C_yu9ISbkAWq-fylxs6y4mHt88H9gC4Sn6nRSd6opuGILK0rexmHR1Vq0nRdoWZq9k9BJKrTcgW1uVCrOG3kh0p0XPs3cbqf7m9dVN3NrSU1SIrffoIB8hSHUg2&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=N01p6fItDGldztBzXosENDZHEsNX65Nymew0pl9wVIFK1SSAEM8KBAfj0HSqvQ-rFxhBgr8Cf0GNHSbBjDb29vOHJ7ZYevFtlJUuNX_y1vSmR4QUSJihPIk5tk98eoOXJmqVbLFuOc22s49mJam4mrQVlFhI92eCKS350qGzLWk1&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dqtL7BJUE3zH5YS6iY2Y8YM903SCPuNzrFE7ve3CK4FTcpX2i4TZWCy2zpeODl5tuFLc40CIPl6GTPU7VmQavupzVzC1WLzCDT7aMeZ3FrKfh5zyx0eDE77fuGnNM7FkkWqeMofi8z8ha9M35UwXEfSdCwY6pYwnTPNqiXebLio1&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=UhrFylZUibNtIaCkhx4-JHQMmpwO4q79fKYhDgelurAG5GWI6AA0dedDYPgFGv3L-jH_o0iw8t9sK9aotdpVpKm2Z3bzjxsLrdg6SNmK0UMOyqcyYG1tf4s3VKmF1yCIMMj0ivjsQEKT4S6syZo88Q2&amp;t=ffffffffcac6c499" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="552ECE95" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAPi8ByLYs+hB+l0+5lFbsmoP6zti++1v6PVwTIV48HhPoOe/VsoUJrrLuYUH6MGSbWm9s8xccJ4CvcVUm1sfWjkqyqd19BUGO8gNbFoZebwKQ==" />
+        
+
+        <div id="outerwrapper">
+            <div id="wrapper">
+                <div id="header">
+                    <div id="hdrtop">
+                        <div id="search-contact">
+                            
+<div class='sfContentBlock topquicklinks'><div id="topquicklinkicons"> <p class="german-flag" style="margin: 5px 0px 0px;"><a href="/German"><img alt="" src="/images/default-source/german-pages/german-flag.png" /></a></p> <p class="links"> <a href="/Blog.aspx">Blog</a> | <a href="/About/News.aspx/2016">News</a> <span class="hdrsocialbuttons"> <a href="http://www.facebook.com/Metalogix" class="facebookicon" target="_blank"><span>Facebook</span></a> <a href="http://twitter.com/metalogix" class="twittericon" target="_blank"><span>Twitter</span></a> <a href="http://www.linkedin.com/company/239787" class="linkedinicon" target="_blank"><span>Linked in</span></a> <a href="https://www.youtube.com/channel/UCyN1q3bNy4_ZUEvZWgm7Uiw" class="youtubeicon" target="_blank"><span>YouTube</span></a> </span> </p> </div>
+
+
+</div>
+                            
+<div id="SearchBox_tm_SearchBox1">
+	<fieldset id="SearchBox_tm_SearchBox1_ctl00_ctl00_main" class="sfsearchBox">
+
+    <input name="ctl00$SearchBox$tm_SearchBox1$ctl00$ctl00$searchTextBox" type="text" id="SearchBox_tm_SearchBox1_ctl00_ctl00_searchTextBox" class="sfsearchTxt" />
+
+    <input type="submit" name="ctl00$SearchBox$tm_SearchBox1$ctl00$ctl00$searchButton" value="" onclick="return false;" id="SearchBox_tm_SearchBox1_ctl00_ctl00_searchButton" class="sfsearchSubmit" />
+
+</fieldset>
+
+</div>  
+                        </div>
+                        <div id="logo">
+                            
+<div class='sfContentBlock'><div style="display: table;" class="logocall"> <div style="display: table-row;"> <div style="width: 594px; display: table-cell;"> <p style="margin: 0px; height: 58px;"><a title="Return to Metalogix Home" href="/"><img src="/images/default-source/v35-misc-site-graphics/Metalogix_logo.png" alt="Metalogix logo" title="Metalogix logo" /></a></p> </div> <div style="vertical-align: middle; display: table-cell;"> <img src="/images/default-source/v36-home-page/Global_Header_Call_Us.png" alt="Call us: 1-202-609-9100" /> </div> </div> </div>
+
+
+</div>
+                        </div>
+                    </div>
+                    <div id="top-nav">
+                        
+
+
+<!--googleoff: index-->
+<div id="topnavV3">
+    <div id="SiteMenu_ctl00_pnlEnglishTopNav">
+	
+        <div id="Div1">
+		    <div id="ctl00_SiteMenu_ctl00_RadMenu2" class="RadMenu RadMenu_TopNavV3">
+		<!-- 2014.1.403.40 --><ul class="rmRootGroup rmHorizontal">
+			<li class="rmItem rmFirst solutions"><a class="rmLink rmRootLink" href="/How-We-Help-You.aspx"><span class="rmText">Solutions</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst rmLast rmTemplate solutions"><div class="rmText">
+						               
+                                    <div id="solutionswrapper" class="wrapper" > 
+                                        <div class="RadSiteMap RadSiteMap_Default">
+                                            <ul class="rsmList rsmColumn rsmLevel rsmTwoLevels" style="width:50%;">
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Use-Cases/Move-to-Office-365.aspx">Move to Office 365</a>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Use-Cases/SharePoint-Migration.aspx">SharePoint Migration</a>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Use-Cases/SharePoint-Security-and-Governance.aspx">Security and Compliance</a>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Use-Cases/Optimize-SharePoint-Storage.aspx">Optimize SharePoint Storage</a>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Use-Cases/Always-On-SharePoint.aspx">Always On SharePoint</a>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Use-Cases/SharePoint-Geo-Synchronization.aspx">SharePoint Geo-Synchronization</a>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Use-Cases/Optimize-and-Secure-Exchange-and-File-Shares.aspx">Optimize & Secure Exchange & File Shares</a>
+                                                </li>
+                                                <li class="rsmItem navFeature">
+                                                    <a class="rsmLink" href="/Partners/microsoft/sharepoint-online-poc">SharePoint Online Proof of Concept</a>
+                                                </li>
+                                            </ul>      
+                                            <ul class="rsmList rsmColumn rsmLevel rsmTwoLevels" style="width:50%;">
+                                                <li class="rsmItem rsmDisabled">
+                                                    <span class="arrow"><img src="http://www.metalogix.com/images/default-source/V37-Misc-Site-Graphics/Top_Nav_-_arrow.png" alt="arrow" /></span><a class="rsmLink bullet">Industries</a>
+                                                </li>
+                                                <li class="rsmLevel1 rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Industries/SharePoint-and-Exchange-Energy-Industry-Solutions.aspx">Energy</a>
+                                                </li>
+                                                <li class="rsmLevel1 rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Industries/SharePoint-Exchange-Financial-Industry-Solutions.aspx">Financial</a>
+                                                </li>
+                                                <li class="rsmLevel1 rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Industries/SharePoint-and-Exchange-Legal-Industry-Solutions.aspx">Legal</a>
+                                                </li>
+                                                <li class="rsmLevel1 rsmItem">
+                                                    <a class="rsmLink" href="/How-We-Help-You/Industries/SharePoint-Maritime-Industry-Solutions.aspx">Maritime</a>
+                                                </li>
+                                                <li class="rsmLevel1 rsmItem">
+                                                    <a class="rsmLink" href="/public-sector">Public Sector</a>
+                                                </li>
+                                            </ul>
+                                        </div>                                                                                       
+                                    </div>
+                                
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem  products"><a class="rmLink rmRootLink" href="/Products.aspx"><span class="rmText">Products</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst rmLast rmTemplate products"><div class="rmText">
+						               
+                                    <div id="productswrapper" class="wrapper" > 
+                                         <div class="RadSiteMap RadSiteMap_Default">
+                                            <ul class="rsmList rsmColumn rsmLevel rsmTwoLevels" style="width:24%">
+                                                <li class="rsmItem rsmDisabled">
+                                                    <p class="producthdr">For the Cloud</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/essentials-for-office-365/overview">Essentials for Office 365</a>
+                                                    <p class="descriptor">Single, Unified Platform to Move, Manage, and Secure Content in Office 365</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/essentials-for-drives/overview">Essentials for Drives</a>
+                                                    <p class="descriptor">Complete Content Control. One Unified Console</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/Drive2Office365.aspx">Drive2Office365</a>
+                                                    <p class="descriptor">Migrate Files from Personal Google Drive, Box and OneDrive to Office 365 &amp; OneDrive for Business</p>
+                                                </li>
+                                              
+                                            </ul>
+                                            <ul class="rsmList rsmColumn rsmLevel rsmTwoLevels" style="width:25%">
+                                                <li class="rsmItem rsmDisabled">
+                                                    <p class="producthdr">For SharePoint</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/Content-Matrix.aspx">Content Matrix</a>
+                                                    <p class="descriptor">Migrate &amp; Manage Content for SharePoint, Office 365, and Other Clouds</p>
+                                                </li>    
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/ControlPoint.aspx">ControlPoint</a>
+                                                    <p class="descriptor">Security, Permissions, Compliance, and Administration for SharePoint</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/ControlPoint/sensitive-content-detection">Sensitive Content Manager</a>
+                                                    <p class="descriptor">Next Generation Data Loss Prevention in SharePoint</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/StoragePoint.aspx">StoragePoint</a>
+                                                    <p class="descriptor">Improve SharePoint Performance and Optimize Storage for Content Databases</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/Replicator-for-SharePoint.aspx">Replicator</a>
+                                                    <p class="descriptor">Synchronize Content Across Multiple SharePoint Farms</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/SharePoint-Backup.aspx">SharePoint Backup</a>
+                                                    <p class="descriptor">Lightning-Fast Backup and Restore for SharePoint</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/Diagnostic-Manager.aspx">Diagnostic Manager</a>
+                                                    <p class="descriptor">Monitor SharePoint Farm, Server, and SQL Health &amp; Performance</p>
+                                                </li>
+                                                                                                                                         
+                                            </ul>
+                                            
+                                            <ul class="rsmList rsmColumn rsmLevel rsmTwoLevels" style="width:24%;">
+                                                <li class="rsmItem rsmDisabled">
+                                                    <p class="producthdr">For Exchange</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/Archive-Manager/Exchange-Edition.aspx">Archive Manager Exchange Edition</a>
+                                                    <p class="descriptor">Secure and Manage Email, On-Premises or in the Cloud</p>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/Archive-Manager/Files-Edition.aspx">Archive Manager Files Edition</a>
+                                                    <p class="descriptor">Secure and Manage Files, On-Premises or in the Cloud</p>
+                                                </li>
+                                                 <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/email-migrator">Email Migrator</a>
+                                                    <p class="descriptor">Migrate Third Party Archives, On-Premises or to the Cloud</p>
+                                                </li>                                   
+                                            </ul>
+                                            
+                                            <ul class="rsmList rsmColumn rsmLevel rsmTwoLevels" style="width:24%">
+                                           
+                                                <li class="rsmItem rsmDisabled">
+                                                    <p class="producthdr">Free Tools</p>
+                                                </li>
+                                                
+                                                 <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Resources/Promotions/essentials-for-drives/file-shares-to-onedrive-download">Essentials for Drives</a>
+                                                    <p class="descriptor">Migrate File Share Content to OneDrive for Business </p>
+                                                </li> 
+                                                
+                                                   <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Resources/Promotions/Content-Matrix/Content-Matrix-Migration-Express-Download.aspx">Content Matrix Migration Express </a>
+                                                    <p class="descriptor">Upgrade, Migrate and Organize SharePoint Content</p>
+                                                </li> 
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/Migration-Expert.aspx">Migration Expert</a>
+                                                    <p class="descriptor">Plan and Prepare SharePoint for Successful Migration</p>
+                                                </li> 
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/insider-threat-index">Insider Threat Index</a>
+                                                    <p class="descriptor">Mitigate Risk of Data Leaks from Insider Threats</p>
+                                                </li>        
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/storagepoint-expert">Storage Expert</a>
+                                                    <p class="descriptor">SharePoint Storage Optimization Health Check</p>
+                                                </li>                                                                                          
+                                            </ul>
+                                            
+                                         </div>                                     
+                                    </div>
+                                
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem  cloud"><a class="rmLink rmRootLink" href="/Cloud1"><span class="rmText">Cloud</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst rmLast rmTemplate cloud"><div class="rmText">
+						               
+                                    <div id="cloudwrapper" class="wrapper" >    
+                                        <div class="RadSiteMap RadSiteMap_Default">
+                                            <ul class="rsmList rsmLevel rsmOneLevel">
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/essentials-for-office-365/overview">Essentials for Office 365</a>
+                                                    <p class="descriptor">Single, Unified Platform to Move, Manage, and Secure Content in Office 365</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="RadSiteMap RadSiteMap_Default">
+                                            <ul class="rsmList rsmLevel rsmOneLevel">
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/Products/essentials-for-drives">Essentials for Drives</a>
+                                                    <p class="descriptor">Complete Content Control. One Unified Console</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="RadSiteMap RadSiteMap_Default">
+                                            <ul class="rsmList rsmLevel rsmOneLevel">
+                                                <li class="rsmItem"">
+                                                    <a class="rsmLink" href="/Cloud1">Cloud 101</a>
+                                                    <p class="descriptor">Introduction to Cloud Computing</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+							             <div class="RadSiteMap RadSiteMap_Default">
+                                            <ul class="rsmList rsmLevel rsmOneLevel">
+                                                <li class="rsmItem navFeature">
+                                                    <a class="rsmLink" href="/Partners/microsoft/sharepoint-online-poc">SharePoint Online Proof of Concept</a>
+                                                </li>
+							            </div>	                            						
+                                    </div>
+                                
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem  public-sector"><a class="rmLink rmRootLink" href="/public-sector"><span class="rmText">Public Sector</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst rmLast rmTemplate public-sector"><div class="rmText">
+						               
+                                    <div id="public-sectorwrapper" class="wrapper" >       
+                                        <div class="RadSiteMap RadSiteMap_Default">
+                                            <ul class="rsmList rsmLevel rsmOneLevel">
+                                                <li class="rsmItem">
+                                                   <a href="/public-sector/defense" class="rsmLink bullet">Defense &amp; Intelligence</a>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/public-sector/federal-civilian">Federal Civilian</a>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/public-sector/state-local">State &amp Local</a>
+                                                </li>
+                                                <li class="rsmItem">
+                                                    <a class="rsmLink" href="/public-sector/education">Education</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem  partners"><a class="rmLink rmRootLink" href="/Partners/Partner-Program-Overview.aspx"><span class="rmText">Partners</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst rmLast rmTemplate partners"><div class="rmText">
+						               
+                                    <div id="partnerswrapper" class="wrapper" >       
+                                        <div id="ctl00_SiteMenu_ctl00_RadMenu2_i4_i0_RadSiteMap2" class="RadSiteMap RadSiteMap_Default">
+							<ul class="rsmList rsmLevel rsmOneLevel">
+								<li class="rsmItem"><a class="rsmLink" href="/Partners/Partner-Program-Overview.aspx">Partner Program Overview</a></li><li class="rsmItem"><a class="rsmLink" href="/Partners/Find-A-Partner.aspx">Find a Partner</a></li><li class="rsmItem"><a class="rsmLink" href="/Partners/Become-A-Partner.aspx">Become a Partner</a></li><li class="rsmItem"><a class="rsmLink" href="/Partners/PartnerPortal/PartnerLogin.aspx">Partner Portal</a></li><li class="rsmItem"><a class="rsmLink" href="/Support/Metalogix-Academy.aspx">Metalogix Academy</a></li>
+							</ul><input id="ctl00_SiteMenu_ctl00_RadMenu2_i4_i0_RadSiteMap2_ClientState" name="ctl00_SiteMenu_ctl00_RadMenu2_i4_i0_RadSiteMap2_ClientState" type="hidden" />
+						</div>
+                                    </div>
+                                
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem  support"><a class="rmLink rmRootLink" href="/Support.aspx"><span class="rmText">Support</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst rmLast rmTemplate support"><div class="rmText">
+						               
+                                    <div id="supportwrapper" class="wrapper" >       
+                                        <div id="ctl00_SiteMenu_ctl00_RadMenu2_i5_i0_RadSiteMap1" class="RadSiteMap RadSiteMap_Default">
+							<ul class="rsmList rsmLevel rsmOneLevel">
+								<li class="rsmItem"><a class="rsmLink" href="/Support/Product-Support.aspx">Contact Support</a></li><li class="rsmItem"><a class="rsmLink" href="/Support/Product-Resource-Center.aspx">Product Downloads and Resources</a></li><li class="rsmItem"><a class="rsmLink" href="https://metalogix.force.com/customerportal/s/login/" target="_blank">Metalogix Customer Portal</a></li><li class="rsmItem"><a class="rsmLink" href="/Support/Metalogix-Academy.aspx">Metalogix Academy</a></li><li class="rsmItem"><a class="rsmLink" href="/Support/Metalogix-Academy.aspx#QuickTakes">Quick Takes</a></li>
+							</ul><input id="ctl00_SiteMenu_ctl00_RadMenu2_i5_i0_RadSiteMap1_ClientState" name="ctl00_SiteMenu_ctl00_RadMenu2_i5_i0_RadSiteMap1_ClientState" type="hidden" />
+						</div>
+                                    </div>
+                                
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem  resources"><a class="rmLink rmRootLink" href="/Resources.aspx"><span class="rmText">Resources</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst rmLast rmTemplate resources"><div class="rmText">
+						               
+                                    <div id="resourceswrapper" class="wrapper" >       
+                                        <div id="ctl00_SiteMenu_ctl00_RadMenu2_i6_i0_RadSiteMap4" class="RadSiteMap RadSiteMap_Default">
+							<ul class="rsmList rsmLevel rsmOneLevel">
+								<li class="rsmItem"><a class="rsmLink" href="/Blog.aspx">Blog</a></li><li class="rsmItem"><a class="rsmLink" href="/Events/Webinars/Webinars-Type-all-Product-all.aspx">Webinars</a></li><li class="rsmItem"><a class="rsmLink" href="/Resources/Featured-Case-Studies.aspx">Case Studies</a></li><li class="rsmItem"><a class="rsmLink" href="/Resources/Featured-White-Papers.aspx">eBooks</a></li><li class="rsmItem"><a class="rsmLink" href="/Resources/Podcast">Podcasts</a></li><li class="rsmItem"><a class="rsmLink" href="/Events.aspx">Events</a></li><li class="rsmItem"><a class="rsmLink" href="/Events/ignite16">Microsoft Ignite</a></li>
+							</ul><input id="ctl00_SiteMenu_ctl00_RadMenu2_i6_i0_RadSiteMap4_ClientState" name="ctl00_SiteMenu_ctl00_RadMenu2_i6_i0_RadSiteMap4_ClientState" type="hidden" />
+						</div>
+                                    </div>
+                                
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem  about"><a class="rmLink rmRootLink" href="/About.aspx"><span class="rmText">About</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst rmLast rmTemplate about"><div class="rmText">
+						               
+                                    <div id="aboutwrapper" class="wrapper" >       
+                                        <div id="ctl00_SiteMenu_ctl00_RadMenu2_i7_i0_RadSiteMap5" class="RadSiteMap RadSiteMap_Default">
+							<ul class="rsmList rsmLevel rsmOneLevel">
+								<li class="rsmItem"><a class="rsmLink" href="/About/Company-Overview.aspx">Company Overview</a></li><li class="rsmItem"><a class="rsmLink" href="/About/News.aspx/2016">Metalogix in the News</a></li><li class="rsmItem"><a class="rsmLink" href="/About/Customers.aspx">Customers</a></li><li class="rsmItem"><a class="rsmLink" href="/About/Awards.aspx">Awards &amp; Recognitions</a></li><li class="rsmItem"><a class="rsmLink" href="/About/Management-Team.aspx">Management Team</a></li><li class="rsmItem"><a class="rsmLink" href="/About/Careers.aspx">Careers</a></li><li class="rsmItem"><a class="rsmLink" href="/contactus.aspx">Contact Us</a></li>
+							</ul><input id="ctl00_SiteMenu_ctl00_RadMenu2_i7_i0_RadSiteMap5_ClientState" name="ctl00_SiteMenu_ctl00_RadMenu2_i7_i0_RadSiteMap5_ClientState" type="hidden" />
+						</div>
+                                    </div>
+                                
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem rmLast top-nav-free-trial"><a class="rmLink rmRootLink" href="/free-trial-download"><span class="rmText">          </span></a></li>
+		</ul><input id="ctl00_SiteMenu_ctl00_RadMenu2_ClientState" name="ctl00_SiteMenu_ctl00_RadMenu2_ClientState" type="hidden" />
+	</div>
+        </div>
+    
+</div>
+</div>
+<!--googleon: index-->
+
+
+                    </div>
+                </div>
+                <div id="content">
+                    <div class="content">
+                        
+<div class='sfContentBlock'><section class="module parallax parallax-1"> <div class="herocontainer"> <h1 class="hero">Migrate, Manage and Secure SharePoint and Office 365 Content</h1> <h2 class="subhero">(ON-Premises and in the cloud)</h2> <a class="herocta" href="/free-trial-download">Start Your Free Trial</a> </div> <a class="viewnews" href="#resources">Leading Resources</a> </section><br />
+
+
+</div><div class='sfContentBlock'><div class="hp-solution-container"> <div class="Headline" style="margin-top: 50px; margin-bottom: 40px;">Making Collaboration Work for You</div> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr> <td align="center"> <table width="900" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr height="100"> <td style="width: 33%;"><a class="solutions-box" href="/Resources/Promotions/Metalogix/solutions-consult/migration-planning-environmental-analysis"> <div id="analyze"> <h2> Migration Planning &amp;<br />
+                        Environmental Analysis</h2> </div> </a></td> <td style="width: 34%;"><a class="solutions-box" href="/Resources/Promotions/Metalogix/solutions-consult/sharepoint-office-365-migrations"> <div id="migrate"> <h2>SharePoint &amp; Office 365<br />
+                        Migrations</h2> </div> </a></td> <td style="width: 33%;"><a class="solutions-box" href="/Resources/Promotions/Metalogix/solutions-consult/sharepoint-security-information-governance"> <div id="secure"> <h2>SharePoint Security &amp;<br />
+                        Information Governance</h2> </div> </a></td> </tr> </tbody> </table> </td> </tr> <tr height="150"> <td align="center"> <table width="560" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr> <td style="width: 50%;"><a class="solutions-box" href="/Resources/Promotions/Metalogix/solutions-consult/collaboration-platform-performance-continuity"> <div id="perform"> <h2>Collaboration Platform Performance &amp; Continuity</h2> </div> </a></td> <td style="width: 50%;"><a class="solutions-box" href="/Resources/Promotions/Metalogix/solutions-consult/information-archiving-storage-management"> <div id="store"> <h2>Information Archiving<br />
+                        &amp; Storage Management</h2> </div> </a></td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div>
+
+
+</div><div class='sfContentBlock'><div id="resources"> <div class="hp-resource-container"> <div style="margin: 0px auto; width: 980px;"> <div class="Headline" style="text-align: center; margin-top: 0px; margin-bottom: 30px;">Leading Resources</div> <div class="grid"> <a href="/Events/ignite16" style="text-decoration: none !important;"> <div class="grid-item grid-item--width2 podcast" style="background-position: 0px 0px; padding: 50px 0px 0px; line-height: 1.4em; font-size: 32px; font-weight: 100; background-image: url('/images/default-source/homepage-short/bg-microsoft-ignite.png'); background-repeat: no-repeat;">
+Microsoft<br /> <strong>Ignite 2016</strong> </div> </a> <a href="/Resources/podcast/the-pros-and-cons-of-sharepoint-2016" style="text-decoration: none !important;"> <div class="grid-item ebook" style="background-position: 0px 0px; padding: 70px 0px 0px; font-size: 14px; font-weight: 600; background-image: url('/images/default-source/homepage-short/bg-pros-cons-podcast.png'); background-repeat: no-repeat;">
+The Pros and Cons<br />
+OF SharePoint 2016
+</div> </a> <a href="/Resources/Promotions/essentials-for-office-365/white-papers-and-ebooks/dear-office-365-i-need-backup" style="text-decoration: none !important;"> <div class="grid-item grid-item--width2 third-party" style="background-position: 0px 0px; padding: 55px 0px 0px; font-size: 24px; font-weight: 500; background-image: url('/images/default-source/v36-home-page/bg-allgray-2016.png'); background-repeat: no-repeat;">
+Dear Office 365,<br />
+I Need Backup</div> </a> <a href="/Resources/sharepoint-2016" style="text-decoration: none !important;"> <div class="grid-item grid-item--height2 third-party" style="background-position: 0px 0px; padding: 120px 0px 0px; line-height: 1.4em; font-size: 24px; font-weight: 300; background-image: url('/images/default-source/v35-resources-graphics/bg-planning-for-release.jpg'); background-repeat: no-repeat;">
+Ready for<br />
+Sharepoint<br />
+2016
+</div> </a> <a href="/Resources/Promotions/ControlPoint/White-Papers-and-E-books/eu-gdpr-affects-everyone-globally" style="text-decoration: none !important;"> <div class="grid-item ebook" style="background-position: 0px 0px; padding: 65px 0px 0px; font-size: 12px; font-weight: 600; background-image: url('/images/default-source/homepage-short/bg-eugdpr-ebook.png'); background-repeat: no-repeat;">
+EU General Data<br />
+Protection Regulation<br />
+Affects Everyone
+</div> </a> <a href="/Resources/Promotions/Content-Matrix/white-papers-and-e-books/the-sharepoint-2016-migration-planning-guide" style="text-decoration: none !important;"> <div class="grid-item grid-item--width2 webinar" style="background-position: 0px 0px; padding: 50px 0px 0px; line-height: 1.4em; font-size: 20px; font-weight: 600; background-image: url('/images/default-source/v35-resources-graphics/bg-dont-wait.jpg'); background-repeat: no-repeat;">
+The SharePoint <br />
+Server
+2016 Migration<br />
+Planning Guide
+</div> </a> <a href="/Resources/Promotions/Migration-Expert/Migration-Expert-Download.aspx" style="text-decoration: none !important;"> <div class="grid-item download" style="background-position: 0px 0px; padding: 55px 0px 0px; line-height: 1.4em; font-size: 14px; font-weight: 600; background-image: url('/images/default-source/homepage-short/bg-sharepoint-best-practices.png'); background-repeat: no-repeat;">
+THE ULTIMATE<br />
+SHAREPOINT<br />
+MIGRATION<br />
+PLANNING TOOL
+</div> </a> <a href="/Resources/Promotions/essentials-for-drives/file-shares-to-onedrive-download" style="text-decoration: none !important;"> <div class="grid-item ebook" style="background-position: 0px 0px; padding: 65px 0px 0px; font-size: 12px; font-weight: 600; background-image: url('/images/default-source/homepage-short/bg-onedrive-freemium.png'); background-repeat: no-repeat;">
+Essentials for Drives:<br />
+File Shares to<br />
+OneDrive Freemium
+</div> </a> <a href="/Events.aspx" style="text-decoration: none !important;"> <div class="grid-item grid-item--width2 third-party" style="background-position: 0px 0px; padding: 70px 0px 0px; line-height: 1.4em; font-size: 32px; font-weight: 300; background-image: url('/images/default-source/homepage-short/bg-sharepoint-fest-dc.png'); background-repeat: no-repeat;">
+SHAREPOINT EVENTS</div> </a> <a href="/Resources/Promotions/ControlPoint/White-Papers-and-E-books/SharePoint-Governance-Best-Practices.aspx" style="text-decoration: none !important;"> <div class="grid-item download" style="background-position: 0px 0px; padding: 60px 0px 0px; line-height: 1.4em; font-size: 16px; background-image: url('/images/default-source/v35-resources-graphics/bg-why-you-should-plan.jpg'); background-repeat: no-repeat;">
+SharePoint<br />
+Governance<br />
+Best Practices
+</div> </a> </div> </div> </div> </div>
+
+
+</div><div class='sfContentBlock'><section class="module parallax parallax-2" style="height: 475px;"> <div class="hp-client-container"> <div class="hp-clients"> <div class="Headline" style="margin-top: 0px; margin-bottom: 30px; color: #ffffff !important;">Over 20,000 Clients Agree</div> <div id="slider-wrapper"> <div class="inner-wrapper"> <!--<input type="radio" name="slide" class="control" id="Slide1" /> <label for="Slide1" id="s1"></label> <input type="radio" name="slide" class="control" id="Slide2" /> <label for="Slide2" id="s2"></label> <input type="radio" name="slide" class="control" id="Slide3" /> <label for="Slide3" id="s3"></label>--> <div class="overflow-wrapper"> <a class="slide" href="/Resources/Featured-Case-Studies.aspx"><img alt="" src="/images/default-source/homepage-short/client-slide01.png?Status=Temp&amp;sfvrsn=2" /></a> <!--<a class="slide" href="/Resources/Featured-Case-Studies.aspx"><img alt="" src="/images/default-source/homepage-short/client-slide01.png?Status=Temp&amp;sfvrsn=2" /></a> <a class="slide" href="/Resources/Featured-Case-Studies.aspx"><img alt="" src="/images/default-source/homepage-short/client-slide01.png?Status=Temp&amp;sfvrsn=2" /></a> --> </div> </div> </div> <a class="herocta" href="/Resources/Featured-Case-Studies.aspx">View Our Case Studies</a></div> </div> </section>
+
+
+</div><div class='sfContentBlock'><div class="hp-environment-container"> <div class="hp-environment"> <div class="Headline" style="margin-top: 20px; margin-bottom: 30px;">In the Cloud and On-Premises</div> <p style="margin-bottom: 10px;">Today&rsquo;s companies don&rsquo;t just live on-premises or in the cloud but somewhere in between. <br />
+We help every company get the best of their SharePoint, Office 365 and Exchange investments no matter where they live.</p> <div class="hp-environment-box"><a href="/free-trial-download#office" class="hp-environment-link"><img alt="Office 365" src="/images/default-source/homepage-short/environment-office365.png" width="200" height="42" /> <div style="margin-top: 10px;">
+Solutions for Office 365</div> </a> </div> <div class="hp-environment-box"><a href="/free-trial-download#sharepoint" class="hp-environment-link"><img alt="SharePoint" src="/images/default-source/homepage-short/environment-sharepoint.png" width="200" height="42" /> <div style="margin-top: 10px;">
+Solutions for SharePoint</div> </a> </div> <div class="hp-environment-box"><a href="/free-trial-download#exchange" class="hp-environment-link"><img alt="Exchange" src="/images/default-source/homepage-short/environment-exchange.png" width="200" height="42" /> <div style="margin-top: 10px;">
+Solutions for Exchange</div> </a> </div> </div> </div> <div class="hp-quote-container"> <div class="hp-quote"> <div id="slider-wrapper-quote"> <div class="inner-wrapper-quote"> <input type="radio" name="slide" class="control" id="Slide1-quote" /> <label for="Slide1-quote" id="s1-quote"></label> <input type="radio" name="slide" class="control" id="Slide2-quote" /> <label for="Slide2-quote" id="s2-quote"></label> <input type="radio" name="slide" class="control" id="Slide3-quote" /> <label for="Slide3-quote" id="s3-quote"></label> <div class="overflow-wrapper"> <div class="quoteslide"> <div class="slide"> <div id="quotes">We determined the combination of solutions from Metalogix and Microsoft could address all of our concerns.</div> <div class="author">Brenda Kepner, Norwegian Cruise Line</div> </div> </div> <div class="quoteslide"> <div class="slide"> <div id="quotes">The great thing about Metalogix solutions is that as<br />
+we move to the cloud, it moves with us.</div> <div class="author">Paul Smith, Central YMCA, UK</div> </div> </div> <div class="quoteslide"> <div class="slide"> <div id="quotes">It&rsquo;s very easy to implement and manage Metalogix solutions.<br />
+They&rsquo;re extremely reliable.</div> <div class="author"> Doug Miller, Brightworks</div> </div> </div> </div> </div> </div> </div> </div>
+
+
+</div><div class='sfContentBlock'><div class="hp-cta-container"> <div class="hp-ctas"> <div class="hp-box" id="first"> <a href="/free-trial-download"><img alt="Free Trial" src="/images/default-source/homepage-short/cta-trial.png" width="125" height="100" /><br /> <br />
+Free Trial</a> </div> <div class="hp-box"> <a href="/Support"><img alt="Support" src="/images/default-source/homepage-short/cta-support.png" width="125" height="100" /><br /> <br />
+Get Support</a> </div> <div class="hp-box" id="last"><a href="/Resources.aspx"><img alt="Resources" src="/images/default-source/homepage-short/cta-resources.png" width="125" height="100" /><br /> <br />
+Free Resources</a> </div> </div> </div>
+
+
+</div><script type="text/javascript" src="https://p0.tribl.io/footer.js?orgId=6qMRGn1XXRiL9GQJjoq1"></script>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="footercontent">
+                        
+<div class='sfContentBlock'><div style="margin: 0px auto; width: 940px; padding-top: 20px; display: table;"> <div style="display: table-row;"> <div style="width: 210px; display: table-cell;"><img style="padding-top: 3px;" alt="Microsoft Partner - Gold Independent Software Vendor (ISV)" src="/images/default-source/v35-misc-site-graphics/Microsoft_Partner_Logo.png" /></div> <div style="width: 160px; display: table-cell;"> <a href="http://www.metalogix.com/News-Detail/2015/08/13/metalogix-software-named-to-inc.-500-5000-list-of-fastest-growing-private-companies" class="inc5000Roll"> </a></div> <div style="width: 170px; display: table-cell;"> <a href="http://www.metalogix.com/News-Detail/14-05-20/Metalogix_Receives_Omega_s_Prestigious_NorthFace_ScoreBoard_Award_for_Exceeding_Customer_Expectations.aspx" class="NorthfaceRoll"> </a></div> <div style="width: 55px; display: table-cell;"> <a href="http://www.metalogix.com/News-Detail/10-05-31/Leading_Analyst_Firm_Selects_Metalogix_as_a_Cool_Vendor_in_Content_Management_2010.aspx" class="gartnerRoll"> </a></div> <div style="width: 220px; padding-left: 130px; vertical-align: top; display: table-cell;"> <div id="followbuttons" style="padding-top: 0px;">Follow&nbsp;&nbsp;|&nbsp;<a href="http://www.facebook.com/Metalogix" id="facebookicon" target="_blank"><span>Facebook</span></a> <a href="http://twitter.com/metalogix" id="twittericon" target="_blank"><span>Twitter</span></a> <a href="http://www.linkedin.com/company/239787" id="linkedinicon" target="_blank"><span>Linked in</span></a> <a href="http://www.youtube.com/metalogixsharepoint" id="youtubeicon" target="_blank"><span>YouTube</span></a> | <a href="/news.rss.ashx" id="rssicon"><span>RSS</span></a> <p class="phone">U.S. +1 202.609.9100</p> </div> </div> </div> </div> <div style="margin: 0px auto; width: 940px; display: table;"> <div style="display: table-row;"> <div style="width: 400px; vertical-align: bottom; display: table-cell;"> <p class="copyright">Copyright &copy; 2001-2016 Metalogix International GmbH. All rights reserved.</p> </div> <div style="text-align: right; vertical-align: top; display: table-cell;"> <p class="footernav"><a href="http://www.metalogix.com">Home</a>&nbsp;|&nbsp;<a href="/contactus.aspx">Contact Us</a> |&nbsp;<a href="/Blog.aspx">Blog</a> |&nbsp;<a href="/Footer/Site-Map.aspx">Site Map</a> |&nbsp;<a href="/Footer/Privacy-Policy.aspx">Privacy/Cookie Policy</a> | <a href="/Footer/Terms-Of-Use.aspx">Terms of Use</a></p> <p class="footernav" style="padding-top: 0px; margin-top: 0px;">
+Language:  <a href="http://www.metalogix.com">English</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/german">German</a> </p> </div> </div> </div>
+
+
+</div>
+                        <div id="FooterRight">
+                            
+<script type="text/javascript">jq10(document).ready(function(){
+	var parameters = window.location.href.slice(window.location.href.indexOf('?') + 1);
+	if (parameters != null)
+	{
+		var parametersLower = parameters.toLowerCase();
+		if ((parametersLower.indexOf("http") == -1)
+		&& (parametersLower.indexOf("indexCatalogue") == -1)
+		&& (parametersLower.indexOf("year") == -1)
+		&& (parametersLower.indexOf("vk") == -1)
+		)
+		{
+			var frame = jq10("iframe");
+			if (frame != null) {
+			var frameSrc = frame.attr("src");
+			frame.attr("src",frameSrc + "?" + parameters);
+		}
+	jq10("a").each(function()
+	{
+		var aHref = jq10(this).attr('href');
+		var aClass = jq10(this).attr('class');
+		if (aClass == null
+			|| aClass.indexOf('banner') < 0) {
+			// not a banner ad so do normal forwarding of
+			// URL parameters for tracking
+			if (aHref != null
+				&& aHref.indexOf('mailto') < 0
+				&& aHref.indexOf('javascript') < 0) {
+				if (aHref.indexOf('?') > 0) {
+					jq10(this).attr('href', aHref + '&' + parameters);
+				} else {
+					jq10(this).attr('href', aHref + '?' + parameters);
+				}
+			}
+		} else {
+			// banner ad - pick up the product parameter from the URL
+			// swap spaces for underlines and then add it along with
+			// the other parameters as utm_content=product_name
+			var ParametersList = parameters.toLowerCase().split("&");
+			var prodindex = -1;
+			if (ParametersList != null
+				&& ParametersList.length > -1) {
+				var i;
+				for (i = 0; i < ParametersList.length; i++) {
+					if (ParametersList[i].indexOf("product=") > -1) {
+						prodindex = i;
+					}
+				}
+			}
+			if (prodindex > -1) {
+				// we found product=, get the name and change spaces to underlines
+				var name = ParametersList[prodindex].slice(8, ParametersList[prodindex].length).replace(/%20+/g, "_");
+				if (aHref.indexOf('?') > 0) {
+					jq10(this).attr('href', aHref + '&utm_content=' + name);
+				} else {
+					jq10(this).attr('href', aHref + '?utm_content=' + name);
+				}
+			}
+		}
+	});
+	}
+}
+});</script>
+                        </div>
+                        <div id="FooterLeft">
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl07_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Web.UI, Version=2014.1.403.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en:fe717150-da5c-4560-8705-07b356b5226f:ed2942d4:580b2269:eb8d8a8e';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Services.Search.Web.UI.Public.SearchBox, {"indexCatalogue":"searchindex","resultsUrl":"/Search.aspx","searchButton":$get("SearchBox_tm_SearchBox1_ctl00_ctl00_searchButton"),"searchTextBox":$get("SearchBox_tm_SearchBox1_ctl00_ctl00_searchTextBox"),"wordsMode":1}, null, null, $get("SearchBox_tm_SearchBox1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadSiteMap, null, null, null, $get("ctl00_SiteMenu_ctl00_RadMenu2_i4_i0_RadSiteMap2"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadSiteMap, null, null, null, $get("ctl00_SiteMenu_ctl00_RadMenu2_i5_i0_RadSiteMap1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadSiteMap, null, null, null, $get("ctl00_SiteMenu_ctl00_RadMenu2_i6_i0_RadSiteMap4"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadSiteMap, null, null, null, $get("ctl00_SiteMenu_ctl00_RadMenu2_i7_i0_RadSiteMap5"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_enableItemImagesPreloading":true,"_skin":"TopNavV3","clientStateFieldID":"ctl00_SiteMenu_ctl00_RadMenu2_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"items":[{"cssClass":"solutions","templated":true}],"navigateUrl":"/How-We-Help-You.aspx","outerCssClass":"solutions"},{"items":[{"cssClass":"products","templated":true}],"navigateUrl":"/Products.aspx","outerCssClass":"products"},{"items":[{"cssClass":"cloud","templated":true}],"navigateUrl":"/Cloud1","outerCssClass":"cloud"},{"items":[{"cssClass":"public-sector","templated":true}],"navigateUrl":"/public-sector","outerCssClass":"public-sector"},{"items":[{"cssClass":"partners","templated":true}],"navigateUrl":"/Partners/Partner-Program-Overview.aspx","outerCssClass":"partners"},{"items":[{"cssClass":"support","templated":true}],"navigateUrl":"/Support.aspx","outerCssClass":"support"},{"items":[{"cssClass":"resources","templated":true}],"navigateUrl":"/Resources.aspx","outerCssClass":"resources"},{"items":[{"cssClass":"about","templated":true}],"navigateUrl":"/About.aspx","outerCssClass":"about"},{"navigateUrl":"/free-trial-download","outerCssClass":"top-nav-free-trial"}]}, null, null, $get("ctl00_SiteMenu_ctl00_RadMenu2"));
+});
+//]]>
+</script>
+</form>
+
+    <script>
+
+        var isIE11 = !!navigator.userAgent.match(/Trident\/7\./);
+        var warning = document.getElementById('IEwarning');
+        if (warning != null) {
+            if (isIE11) {
+                $(document).ready(function () {
+                    $(warning).show();
+                });
+            } else {
+                $(document).ready(function () {
+                    $(warning).hide();
+                });
+            }
+        }
+    </script>
+
+    
+
+    
+    <script type="text/javascript">
+		(function() {
+		  var didInit = false;
+		  function initMunchkin() {
+			if(didInit === false) {
+			  didInit = true;
+			  Munchkin.init('176-NIZ-607');
+            }
+		  }
+		  var s = document.createElement('script');
+		  s.type = 'text/javascript';
+		  s.async = true;
+		  s.src = '//munchkin.marketo.net/munchkin.js';
+		  s.onreadystatechange = function() {
+			if (this.readyState == 'complete' || this.readyState == 'loaded') {
+			  initMunchkin();
+			}
+		  };
+		  s.onload = initMunchkin;
+		  document.getElementsByTagName('head')[0].appendChild(s);
+		})();
+    </script>
+    
+
+    
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-91967-2']);
+        _gaq.push(['_setDomainName', 'metalogix.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    
+
+    
+        <script>
+        /* <![CDATA[ */
+        var google_conversion_id = 1072204509;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+        </script>
+        <script src="//www.googleadservices.com/pagead/conversion.js">
+        </script>
+        <noscript>
+        <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1072204509/?value=0&amp;guid=ON&amp;script=0"/>
+        </div>
+        </noscript>
+    
+
+    
+    <script language="javascript">llactid = 15011</script>
+    <script>
+        if (document.location.protocol != "https:") {
+            var httpelement = window.document.createElement("script");
+            httpelement.setAttribute("src", "http://t6.trackalyzer.com/trackalyze-nodoc.js");
+            window.document.body.appendChild(httpelement);
+        } else {
+            var httpselement = window.document.createElement("script");
+            httpselement.setAttribute("src", "https://trackalyzer.com/trackalyze-secure-nodoc.js");
+            window.document.body.appendChild(httpselement);
+        }
+    </script>
+    
+
+        
+    <script type="text/javascript">
+        setTimeout(function () {
+            var a = document.createElement("script");
+            var b = document.getElementsByTagName("script")[0];
+            a.src = document.location.protocol + "//script.crazyegg.com/pages/scripts/0026/5966.js?" + Math.floor(new Date().getTime() / 3600000);
+            a.async = true; a.type = "text/javascript"; b.parentNode.insertBefore(a, b)
+        }, 1);
+    </script> 
+    
+</body>
+</html>

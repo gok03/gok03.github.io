@@ -1,0 +1,352 @@
+status: 200
+content-length: 12424
+content-location: http://www.ezds.net
+x-powered-by: ASP.NET
+accept-ranges: bytes
+server: Microsoft-IIS/7.0
+last-modified: Fri, 22 Aug 2014 15:45:36 GMT
+etag: "237cce1d20becf1:0"
+date: Tue, 13 Sep 2016 11:37:32 GMT
+content-type: text/html
+
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<link type="text/css" href="css/reset.css" rel="stylesheet" />
+	<link type="text/css" href="css/style.css" rel="stylesheet" />
+	<link type="text/css" href="css/nav.css" rel="stylesheet" />
+
+	<link rel="shortcut icon" href="ezds_BLUE.ico" type="image/x-icon" />
+
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dropshadow.js"></script>
+	<script type="text/javascript" src="js/jquery.zrssfeed.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+	<!--[if lte IE 6]>
+		<link type="text/css" href="css/ie6.css" rel="stylesheet" />		
+	<![endif]-->
+	<title>EZ DoesIt Software, LLC</title>
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function()  
+		{
+			$(".col1").dropShadow({left: 2, top: 2, blur: 2,opacity: 0.8, color: "black"});
+			$(".col2").dropShadow({left: 2, top: 2, blur: 2,opacity: 0.8, color: "black"});
+			$(".col3").dropShadow({left: 2, top: 2, blur: 2,opacity: 0.8, color: "black"});
+			$(".col4").dropShadow({left: 2, top: 2, blur: 2,opacity: 0.8, color: "black"});
+			$(".img").dropShadow({left: 2, top: 2, blur: 2,opacity: 0.8, color: "black"});
+	
+		})	
+	</script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$('#rss').rssfeed('http://hiremattlinden.wordpress.com/feed/', {
+		limit: 5,
+		header: false
+	});
+});
+</script>
+	
+<script type="text/javascript">
+
+$(document).ready(function() {		
+	
+	//Execute the slideShow
+	slideShow();
+
+});
+
+function slideShow() {
+
+	//Set the opacity of all images to 0
+	$('#gallery a').css({opacity: 0.0});
+	
+	//Get the first image and display it (set it to full opacity)
+	$('#gallery a:first').css({opacity: 1.0});
+	
+	//Set the caption background to semi-transparent
+	$('#gallery .caption').css({opacity: 0.7});
+
+	//Resize the width of the caption according to the image width
+	$('#gallery .caption').css({width: $('#gallery a').find('img').css('width')});
+	
+	//Get the caption of the first image from REL attribute and display it
+	$('#gallery .content').html($('#gallery a:first').find('img').attr('rel'))
+	.animate({opacity: 0.7}, 400);
+	
+	//Call the gallery function to run the slideshow, 6000 = change to next image after 6 seconds
+	setInterval('gallery()',6000);
+	
+}
+
+function gallery() {
+	
+	//if no IMGs have the show class, grab the first image
+	var current = ($('#gallery a.show')?  $('#gallery a.show') : $('#gallery a:first'));
+
+	//Get next image, if it reached the end of the slideshow, rotate it back to the first image
+	var next = ((current.next().length) ? ((current.next().hasClass('caption'))? $('#gallery a:first') :current.next()) : $('#gallery a:first'));	
+	
+	//Get next image caption
+	var caption = next.find('img').attr('rel');	
+	
+	//Set the fade in effect for the next image, show class has higher z-index
+	next.css({opacity: 0.0})
+	.addClass('show')
+	.animate({opacity: 1.0}, 1000);
+
+	//Hide the current image
+	current.animate({opacity: 0.0}, 1000)
+	.removeClass('show');
+	
+	//Set the opacity to 0 and height to 1px
+	$('#gallery .caption').animate({opacity: 0.0}, { queue:false, duration:0 }).animate({height: '1px'}, { queue:true, duration:300 });	
+	
+	//Animate the caption, opacity to 0.7 and heigth to 100px, a slide up effect
+	$('#gallery .caption').animate({opacity: 0.7},100 ).animate({height: '50px'},500 );
+	
+	//Display the content
+	$('#gallery .content').html(caption);
+	
+	
+}
+
+</script>
+	
+	
+</head>
+
+<body>
+
+<div id="body">
+	<div id="container">
+		<div class="bg"></div>
+		<div id="wrapper">
+			<div id="main">
+				<div id="header">
+					<div class="logo">
+						<a href="http://www.ezds.net"><img src="img/ezdsHEAD.gif" alt="EZ DoesIt Software, LLC"  /></a>						
+					</div>
+					
+					<div class="mast">
+					
+					</div>
+					
+					<div class="nav">
+						<ul id="nav-buttons">
+							<li id="home"><a href="default.htm" title="Home" class="active"><span>Home</span></a></li>
+							<li id="company"><a href="company.htm" title="Company"><span>Company</span></a></li>
+							<li id="products"><a href="services.htm" title="Products & Services"><span>Products &amp; Services</span></a></li>
+							<li id="clients"><a href="clients.htm" title="Clients"><span>Clients</span></a></li>
+							<li id="pricing"><a href="pricing.htm" title="Pricing"><span>Pricing</span></a></li>
+							<li id="contact"><a href="contact.htm" title="Contact Us"><span>Contact Us</span></a></li>
+							<li id="community"><a href="community.htm" title="Community"><span>Community</span></a></li>
+							<li id="login"><a href="login.aspx" title="Customer Login"><span>Customer Login</span></a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="content">
+				
+					<div class="upper">
+						<div class="left">
+							<h1>EZ DoesIt Software - Database Developers</h1>
+							
+							<p>
+								EZ DoesIt Software Develops Quality Custom Software Applications and 
+								Database Services
+								<br /><br />
+								We at EZ DoesIt Software are all about developing quality custom 
+								software and database applications that allow you to bring order to 
+								information chaos and spend less time managing information.
+								<br /><br />
+								We use the latest state of the art Microsoft technologies to convert 
+								your vision into reality and create software solutions that are 
+								cost-efficient, scalable, and fast.
+
+							</p>
+							
+						</div>
+						<div class="right">
+							
+							
+	<div id="gallery">
+
+		<a href="#" class="show">
+			<img src="img/chart.jpg" alt="Printed Reports" width="298px" height="236px" title="" alt="" rel="<h3>Printed Reports</h3>We can help you develop applications to mine your data and create printed reports. "/>
+		</a>
+		
+		<a href="#">
+			<img src="img/programmer.jpg" alt="Programmers" width="298px" height="236px" title="" alt="" rel="<h3>Applications</h3> We use .NET technology to develop custom applications for our customers. "/>
+		</a>
+		
+		<a href="#">
+			<img src="img/code.jpg" alt="Coding" width="298px" height="236px" title="" alt="" rel="<h3>Web Development</h3> We design and develop websites with the latest in cutting edge technology."/>
+		</a>
+	
+		<a href="#">
+			<img src="img/servers.jpg" alt="Servers" width="298px" height="236px" title="" alt="" rel="<h3>SQL Development</h3>We help customers develop high-end SQL solutions for their data needs."/>
+		</a>
+		
+		<div class="caption">
+			<div class="content"></div>
+		</div>
+	</div> 
+							
+							
+							
+							
+						</div>
+					</div>
+					
+					<div class="lower">
+						<div class="col1">
+							<div class="head"><a href="accessdev.htm"><img src="img/head1.gif" alt="Microsoft Access Development" width="220" height="55" /></a></div>
+								<div class="info">
+									<p>
+										We have been developing Microsoft Access database applications
+										for over 12 years. We know the code. We help companies create
+										simple and powerful Access applications. 
+									</p>
+									
+									<div class="btn">
+										<a href="accessdev.htm" class="trans"><img src="img/readmore_darkyel.png" alt="Read More about Microsoft Access Development" /></a>
+									</div>
+								
+								</div>
+							</div>
+							<div class="col2">
+								<div class="head"><a href="sqldev.htm"><img src="img/head2.gif" alt="Microsoft SQL Development" width="220" height="55" /></a></div>								<div class="info">
+									<p>
+										With years of SQL Server database development solutions, our team
+										of developers have had years of experience creating, maintaining
+										and getting the best out of SQL Server based applications. 
+									
+									</p>
+									
+									<div class="btn">
+										<a href="sqldev.htm" class="trans"><img src="img/readmore_yel.png" alt="Read More about Microsoft SQL Development" /></a>
+									</div>
+									
+								
+								</div>						
+							</div>
+							<div class="col3">
+								<div class="head"><a href="dotnet.htm"><img src="img/head3.gif" alt="Microsoft Dot Net Development" width="220" height="55" /></a></div>
+								<div class="info">
+									<p>
+										When .NET technology first became available, our developers added it to
+										their arsenal of development skills. Our developers can write code
+										that works on most devices and in most scenarios.
+									
+									</p>
+									<div class="btn">
+										<a href="dotnet.htm" class="trans"><img src="img/readmore_litered.png" alt="Read More about Dot Net Development" /></a>
+									</div>
+								
+								</div>						
+							</div>
+							<div class="col4">
+								<div class="head"><a href="webdev.htm"><img src="img/head4.gif" alt="Web Design and Development" width="220" height="55" /></a></div>								<div class="info">
+									<p>
+										The web has become one of the best methods for customers
+										to interact with companies. Whether it is capturing customer information,
+										processing orders or looking awesome, we can help you engage
+										the customer.
+									   
+									
+									</p>
+									<div class="btn">
+										<a href="webdev.htm" class="trans"><img src="img/readmore_blu.png"  alt="Read More about Web Development" /></a>
+									</div>
+								
+								</div>						
+							</div>
+					</div>
+
+					<hr style="width: 80%;" />
+
+					<div id="evenlower">
+						<div class="ourblog" style="position: relative">
+							<h1>Blog</h1>
+							<div id="rss">
+	
+							
+							</div>
+							<div class="moreblog"><a href="http://hiremattlinden.wordpress.com">more from the blog</a></div>
+						</div>
+						<div class="ourservices">
+							<h1>Services</h1>
+							
+							<ul id="listing">
+								<li><a href="#">Web Application Development &amp; Production</a></li>
+								<li><a href="#">Software Development &amp; Production</a></li>
+								<li><a href="#">Design</a></li>
+								<li><a href="#">Social Media</a></li>
+							
+							</ul>
+						
+						</div>
+						<div class="ourwork">
+							<h1>Our Latest Work</h1>
+							
+							<ul id="front_gallery">
+								<li>
+									<a href="cocacola.htm">
+										<img src="img/logo_cocacola.jpg" alt="case study: Coca Cola" />
+										<div>case study: Coca Cola</div>
+									</a>
+								</li>
+								<li>
+									<a href="argostrax.htm">
+										<img src="img/logo_argostrax.jpg" alt="case study: Argostrax" />
+										<div>case study: Argostrax</div>
+									</a>
+								</li>
+								<li>
+									<a href="onprocess.htm">
+										<img src="img/logo_onprocess.jpg" alt="case study: OnProcess Technology" />
+										<div>case study: OnProcess</div>
+									</a>
+								</li>
+								<li>
+									<a href="eoc.htm">
+										<img src="img/logo_eoc.jpg" alt="case study: Elements of Care" />
+										<div>case study: Elements VISTA</div>
+									</a>
+								</li>
+																																														
+							</ul>
+							
+							
+						</div>
+					</div>
+		
+				</div>
+				
+				<div id="footer">
+					<div class="footlogo">
+						<ul id="footer-buttons">
+							<li id="msisv"><a href="http://www.microsoft.com" title="Microsoft Partner"><span>Microsoft Partner</span></a></li>
+							<li id="mssql"><a href="http://www.microsoft.com/sqlserver/2008/en/us/default.aspx" title="Microsoft SQL 2008"><span>Microsoft SQL 2008</span></a></li>
+							<li id="quickbooks"><a href="http://quickbooks.intuit.com/" title="Intuit QuickBooks"><span>Intuit QuickBooks</span></a></li>
+							<li id="dotnet"><a href="http://www.microsoft.com/NET/" title="Microsoft .NET"><span>Microsoft .NET</span></a></li>
+						</ul>
+					</div>
+
+					<div class="copyright">
+						Copyright &copy; 2014 <a href="http://www.ezds.net">EZDS.net</a> All Rights Reserved. <br />
+						Design by <a href="http://www.dightondesign.com">Dighton Design</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+
+</html>

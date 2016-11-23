@@ -1,0 +1,1181 @@
+status: 200
+content-length: 67503
+content-location: http://www.engilitycorp.com
+set-cookie: exp_last_visit=1158406326; expires=Wed, 13-Sep-2017 11:32:06 GMT;
+ Max-Age=31536000; path=/; httponly, exp_last_activity=1473766326;
+ expires=Wed, 13-Sep-2017 11:32:06 GMT; Max-Age=31536000; path=/;
+ httponly,
+ exp_tracker=%7B%220%22%3A%22index%22%2C%22token%22%3A%226c14acbe79f226f138b7c65b8ebdc40e%22%7D;
+ path=/; httponly, exp_csrf_token=deleted;
+ expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/;
+ httponly, exp_csrf_token=61413bb9d7a7676334de4317a52aeed770cc8d7d;
+ expires=Tue, 13-Sep-2016 13:32:06 GMT; Max-Age=7200; path=/;
+ httponly,
+ ARRAffinity=9f82fefe2e3447a2c61d5a7de8c1ae1e66760d3cc054d2c27eae751265a585de;
+ Path=/; Domain=www.engilitycorp.com
+expires: Mon, 26 Jul 1997 05:00:00 GMT
+vary: Accept-Encoding
+server: Microsoft-IIS/8.0
+last-modified: Tue, 13 Sep 2016 11:32:07 GMT
+-content-encoding: gzip
+pragma: no-cache
+date: Tue, 13 Sep 2016 11:32:06 GMT
+x-powered-by: PHP/5.6.24, ASP.NET
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+    <!-- Document Title
+    ============================================= -->
+	<title>Engility Corporation | Home</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; IE=10; IE=9; IE=8;"/>
+
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="http://www.engilitycorp.com/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.engilitycorp.com/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.engilitycorp.com/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.engilitycorp.com/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.engilitycorp.com/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.engilitycorp.com/css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.engilitycorp.com/css/responsive.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.engilitycorp.com/css/colors.css" type="text/css" />
+	<link rel="shortcut icon" href="http://www.engilitycorp.com/favicon.ico" type="image/x-icon" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+    	<script type="text/javascript" src="http://www.engilitycorp.com/js/css3-mediaqueries.js"></script>
+    
+    
+    
+	<script type="text/javascript" src="http://www.engilitycorp.com/js/jquery.js"></script>
+	<script type="text/javascript" src="http://www.engilitycorp.com/js/plugins.js"></script>
+    
+    
+    <script type="text/javascript" src="http://www.engilitycorp.com/include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="http://www.engilitycorp.com/include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    
+    <link rel="stylesheet" type="text/css" href="http://www.engilitycorp.com/include/rs-plugin/css/settings.css" media="screen" />
+    
+    <style type="text/css">
+		div.stockTicker
+		{
+			font-family: "Raleway",sans-serif;
+    		font-weight: 600;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+		div.stockTicker span.quote2
+		{
+			margin: 0;
+			font-weight: bold;
+			color: #ccc;
+			/* padding: 0 5px 0 10px; */
+		}
+		.GreenText
+		{
+			color: Green;
+		}
+		.RedText
+		{
+			color: #C2213F;
+		}
+		.up_green
+		{
+			background: url(http://www.engilitycorp.com/images/up.gif) no-repeat left center;
+			padding-left: 10px;
+			margin-right: 5px;
+		}
+		.down_red
+		{
+			background: url(http://www.engilitycorp.com/images/down.gif) no-repeat left center;
+			padding-left: 10px;
+			margin-right: 5px;
+		}
+	</style>
+<script type="text/javascript">
+		(function($) {
+			$.fn.jStockTicker = function(options) {
+				if (typeof (options) == 'undefined') {
+					options = {};
+				}
+				var settings = $.extend( {}, $.fn.jStockTicker.defaults, options);
+				var $ticker = $(this);
+				var $wrap = null;
+				settings.tickerID = $ticker[0].id;
+				$.fn.jStockTicker.settings[settings.tickerID] = {};
+
+				if ($ticker.parent().get(0).className != 'wrap') {
+					$wrap = $ticker.wrap("<div class='wrap'></div>");
+				}
+
+				var $tickerContainer = null;
+				if ($ticker.parent().parent().get(0).className != 'container') {
+					$tickerContainer = $ticker.parent().wrap(
+							"<div class='container'></div>");
+				}
+				
+				var node = $ticker[0].firstChild;
+				var next;
+				while(node) {
+					next = node.nextSibling;
+					if(node.nodeType == 3) {
+						$ticker[0].removeChild(node);
+					}
+					node = next;
+				}
+				
+				var shiftLeftAt = $ticker.children().get(0).offsetWidth;
+				$.fn.jStockTicker.settings[settings.tickerID].shiftLeftAt = shiftLeftAt;
+				$.fn.jStockTicker.settings[settings.tickerID].left = 0;
+				$.fn.jStockTicker.settings[settings.tickerID].runid = null;
+				$ticker.width(2 * screen.availWidth);
+				
+				function startTicker() {
+					stopTicker();
+					
+					var params = $.fn.jStockTicker.settings[settings.tickerID]; 
+					params.left -= settings.speed;
+					if(params.left <= params.shiftLeftAt * -1) {
+						params.left = 0;
+						$ticker.append($ticker.children().get(0));
+						params.shiftLeftAt = $ticker.children().get(0).offsetWidth;
+					}
+					
+					$ticker.css('left', params.left + 'px');
+					params.runId = setTimeout(arguments.callee, settings.interval);
+					
+					$.fn.jStockTicker.settings[settings.tickerID] = params;
+				}
+				
+				function stopTicker() {
+					var params = $.fn.jStockTicker.settings[settings.tickerID];
+					if (params.runId)
+						clearTimeout(params.runId);
+					
+					params.runId = null;
+					$.fn.jStockTicker.settings[settings.tickerID] = params;
+				}
+				
+				function updateTicker() {			
+					stopTicker();
+					startTicker();
+				}
+				
+				$ticker.hover(stopTicker,startTicker);		
+				startTicker();
+			};
+
+			$.fn.jStockTicker.settings = {};
+			$.fn.jStockTicker.defaults = {
+				tickerID :null,
+				url :null,
+				speed :0,
+				interval :20
+			};
+		})(jQuery);
+    </script>
+	<script type="text/javascript">
+		$(window).load(function () {
+            StockPriceTicker();
+            setInterval(function() {StockPriceTicker();} , 60000);
+        });
+        function StockPriceTicker() {
+            var Symbol = "", CompName = "", Price = "", ChnageInPrice = "", PercentChnageInPrice = ""; 
+            var CNames = "EGL";
+            var flickerAPI = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22" + CNames + "%22)&env=store://datatables.org/alltableswithkeys";
+            var StockTickerHTML = "";
+            
+            var StockTickerXML = $.get(flickerAPI, function(xml) {
+                $(xml).find("quote").each(function () {
+                    Symbol = $(this).attr("symbol");
+                    $(this).find("Name").each(function () {
+                        CompName = $(this).text();
+                    });
+                    $(this).find("LastTradePriceOnly").each(function () {
+                        Price = $(this).text();
+                    });
+                    $(this).find("Change").each(function () {
+                        ChnageInPrice = $(this).text();
+                    });
+                    $(this).find("PercentChange").each(function () {
+                        PercentChnageInPrice = $(this).text();
+                    });
+                    
+                    var PriceClass = "GreenText", PriceIcon="up_green";
+                    if(parseFloat(ChnageInPrice) < 0) { PriceClass = "RedText"; PriceIcon="down_red"; }
+                    StockTickerHTML = StockTickerHTML + "<span class='" + PriceClass + "'>";
+                    StockTickerHTML = StockTickerHTML + "<span class='quote2'>" + " NYSE: (" + Symbol + ")</span><br /> ";
+                    
+                    StockTickerHTML = StockTickerHTML + parseFloat(Price).toFixed(2) + " ";
+                    StockTickerHTML = StockTickerHTML + "<span class='" + PriceIcon + "'></span>" + parseFloat(Math.abs(ChnageInPrice)).toFixed(2) + " (";
+                    StockTickerHTML = StockTickerHTML + parseFloat( Math.abs(PercentChnageInPrice.split('%')[0])).toFixed(2) + "%)</span>";
+                });
+				
+                $("#dvStockTicker").html(StockTickerHTML);
+                $("#dvStockTicker").jStockTicker({interval: 30, speed: 0});
+            });
+        }
+    </script>
+	<script language="javascript" type="text/javascript">
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+    <style>
+
+        .revo-slider-emphasis-text {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            font-family: 'Raleway', sans-serif;
+            padding: 15px 20px;
+            border-top: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+			text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .revo-slider-desc-text {
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            width: 950px;
+            text-align: center;
+            line-height: 1.5;
+			text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .revo-slider-caps-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-family: 'Raleway', sans-serif;
+			text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+    <!-- Header
+        ============================================= -->
+        <header id="header" class="full-header">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+                    <!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="http://www.engilitycorp.com" class="standard-logo" data-dark-logo="http://www.engilitycorp.com/images/logo-dark.png"><img src="http://www.engilitycorp.com/images/logo.png" alt="Engility Logo"></a>
+						<a href="http://www.engilitycorp.com" class="retina-logo" data-dark-logo="http://www.engilitycorp.com/images/logo-dark@2x.png"><img src="http://www.engilitycorp.com/images/logo@2x.png" alt="Engility Logo"></a>
+					</div><!-- #logo end -->
+
+                   <!-- Primary Navigation
+============================================= -->
+                    <nav id="primary-menu" class="sub-title">
+
+                        <ul>
+                            <li><a href="http://www.engilitycorp.com/about-us/">About<span>Our Legacy</span></a>
+                            <ul>
+                                <li><a href="http://www.engilitycorp.com/about-us/senior-leadership/">Senior Leadership</a></li>
+                                <li><a href="http://www.engilitycorp.com/about-us/board-of-directors/">Board of Directors</a></li>
+                                <li><a href="http://www.engilitycorp.com/about-us/account-executives/">Account Executives</a></li>
+                                <li><a href="http://www.engilitycorp.com/about-us/ethics/">Ethics</a></li>
+                                <li><a href="http://www.engilitycorp.com/about-us/mission-vision-values/">Mission, Vision and Values</a></li>
+                                <li><a href="http://www.engilitycorp.com/about-us/corporate-social-responsibility/">Corporate Social Responsibility</a></li>
+                                <li><a href="http://www.engilitycorp.com/about-us/history/">History</a></li>
+                                <!--<li><a href="http://www.engilitycorp.com/about-us/locations/">Locations</a></li>-->
+                                <li><a href="http://www.engilitycorp.com/about-us/contact-us/">Contact</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="http://www.engilitycorp.com/what-we-do/">What We Do<span>Capabilities</span></a>
+                            <ul>
+                                <li><a href="http://www.engilitycorp.com/what-we-do/services/">Services</a>
+                                    <ul>
+                                        <li><a href="http://www.engilitycorp.com/services/specialized-technical-consulting/">Specialized Technical Consulting</a></li>
+                                        <li><a href="http://www.engilitycorp.com/services/information-technology/">Information Technology</a></li>
+                                        <li><a href="http://www.engilitycorp.com/services/program-business-support-services/">Program &amp; Business Support Services</a></li>
+                                        <li><a href="http://www.engilitycorp.com/services/engineering-technology-life-cycle-support/">Engineering &amp; Technology Life Cycle Support</a></li>
+                                        <!--<li><a href="http://www.engilitycorp.com/services/supply-chain-services-logistics-management/">Supply Chain Services &amp; Logistics Management</a></li>-->
+                                        <li><a href="http://www.engilitycorp.com/services/training-learning-solutions/">Training &amp; Learning Solutions</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.engilitycorp.com/what-we-do/innovative-solutions/">Innovative Solutions</a>
+                                	<ul>
+                                    	<li><a href="http://www.engilitycorp.com/innovative-solutions/deployable-communications-capability-system/">DCCS</a></li>
+                                    	<li><a href="http://www.engilitycorp.com/innovative-solutions/joint-range-extension/">JRE</a></li>
+                                    	<li><a href="http://www.engilitycorp.com/innovative-solutions/shelter-integration-kits/">SIK</a></li>
+                                        <li><a href="http://www.engilitycorp.com/innovative-solutions/GPS-solutions/">GSP Solutions</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://www.engilitycorp.com/international-development/">International Development</a>
+                                	<ul>
+                                    	<li><a href="http://www.engilitycorp.com/international-development/agriculture-and-food-security">Agriculture &amp; Food Security</a></li>
+                                    	<li><a href="http://www.engilitycorp.com/international-development/energy/">Energy</a></li>
+                                    	<li><a href="http://www.engilitycorp.com/international-development/transition-and-stability/">Transition &amp; Stability</a></li>
+                                    	<li><a href="http://www.engilitycorp.com/international-development/disaster-preparedness-and-response/">Disaster Preparedness &amp; Response</a></li>
+                                    	<li><a href="http://www.engilitycorp.com/international-development/water-and-the-environment/">Water &amp; The Environment</a></li>
+                                    </ul>	
+                                </li>
+                                <li><a href="http://www.engilitycorp.com/what-we-do/heritage-conference-center/">Engility Heritage Conference Center</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="http://www.engilitycorp.com/who-we-serve/">Who We Serve<span>Our Customers</span></a>
+                                <ul>
+                                    <li><a href="http://www.engilitycorp.com/who-we-serve/defense/">Defense</a>
+                                        <ul>
+                                            <li><a href="http://www.engilitycorp.com/who-we-serve/joint-dod/"><div>Joint DoD</div></a></li>
+                                            <li><a href="http://www.engilitycorp.com/who-we-serve/air-force/">Air Force</a></li>
+                                            <li><a href="http://www.engilitycorp.com/who-we-serve/army/">Army</a></li>
+                                            <li><a href="http://www.engilitycorp.com/who-we-serve/marine-corps/">Marine Corps</a></li>
+                                            <li><a href="http://www.engilitycorp.com/who-we-serve/navy/">Navy</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="http://www.engilitycorp.com/who-we-serve/intelligence/">Intelligence</a></li>
+                                    <li><a href="http://www.engilitycorp.com/who-we-serve/federal-civilian/">Federal / Civilian</a></li>
+                                    <li><a href="http://www.engilitycorp.com/who-we-serve/space/">Space</a></li>
+                                    <li><a href="http://www.engilitycorp.com/who-we-serve/international/">International</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://www.engilitycorp.com/careers/">Careers<span>Join Us</span></a>
+                                <ul>
+                                    <li><a href="https://careers-engility.icims.com/">Opportunities</a></li>
+                                    <li><a href="http://www.engilitycorp.com/careers/benefits/">Benefits</a></li>
+                                    <li><a href="http://www.engilitycorp.com/careers/military-veterans/">Military and Veterans</a></li>
+                                    <li><a href="http://www.engilitycorp.com/careers/diversity/">Diversity</a></li>
+                                    <!--<li><a href="http://www.engilitycorp.com/careers/program-opportunities/">Program Opportunities</a>
+                                        <ul>
+                                            <li><a href="http://www.engilitycorp.com/careers/program-opportunities/dc-metro">DC Metro</a></li>
+                                            <li><a href="http://www.engilitycorp.com/careers/program-opportunities/nsroc/">NSROC</a></li>
+                                            <li><a href="http://www.engilitycorp.com/careers/program-opportunities/smc/">SMC</a></li>
+                                        </ul>
+                                    </li>-->
+                                </ul>
+                            </li>
+                            <li><a href="http://www.engilitycorp.com/media-center/">Media Center<span>News</span></a>
+                                <ul>
+              						<li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-news&nyo=0">Press Releases</a></li>
+              						<li><a href="http://www.engilitycorp.com/media-center/in-the-news">In The News</a></li>
+                                    <li><a href="http://www.engilitycorp.com/media-center/events/">Events</a></li>
+                                    <!-- <li><a href="http://www.engilitycorp.com/media-center/awards-recognition/">Awards and Recognition</a></li> -->
+                                    <!-- <li><a href="http://www.engilitycorp.com/media-center/white-papers-commentary/">White Papers and Commentary</a></li> -->
+                                    <!-- <li><a href="http://www.engilitycorp.com/media-center/contacts/">Contacts</a></li>-->
+                               </ul>
+                            </li>
+                            <li><a href="http://www.engilitycorp.com/working-with-engility/">Work With Us<span>Partnering with us</span></a>
+                                <ul>
+                                     <li><a href="http://www.engilitycorp.com/working-with-engility/contract-vehicles/">Contract Vehicles</a>
+                                     <ul>
+                                         <li><a href="http://www.engilitycorp.com/working-with-engility/legacy-drc/">Legacy DRC Contracts</a></li>
+                                         <li><a href="http://www.engilitycorp.com/working-with-engility/gsa-schedule-contracts/">GSA Schedule Contracts</a></li>
+                                         <li><a href="http://www.engilitycorp.com/working-with-engility/multi-agency-contracts/">Multi-Agency Contracts</a></li>
+                                         <li><a href="http://www.engilitycorp.com/working-with-engility/agency-specific-contracts/">Agency-Specific Contracts</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="http://www.engilitycorp.com/working-with-engility/mentor-protege/">Mentor-Prot&eacute;g&eacute; Program</a></li>
+                                    <li><a href="http://www.engilitycorp.com/working-with-engility/small-business-program/">Small Business Program</a></li>
+                                    <li><a href="http://www.engilitycorp.com/working-with-engility/supplier-portal">Engility Supplier Portal</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-irhome">Investors<span>Information</span></a>
+                            <ul>
+                                <li><a href="http://www.engilitycorp.com/about-us/senior-leadership/">Board / Leadership Team</a></li>
+                                    <li><a href="http://www.engilitycorp.com/about-us/">Company Overview</a></li>
+                                    <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-govHighlights">Corporate Governance</a>
+                                    <ul>
+                                         <li><a href="http://www.engilitycorp.com/about-us/ethics/">Ethics &amp; Business Conduct</a></li>
+                                         <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-govcommcomp">Committee Composition</a></li>
+                                    </ul>
+                                    </li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-reportsannual">Financial Reports</a></li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-faq">Frequently Asked Questions</a></li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-calendar">Events and Webcasts</a></li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-investorkit">Investor Kit</a></li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-presentations">Investor Presentations</a></li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-ownershipHolders">Ownership Profile</a></li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-news&nyo=0">Press Releases</a></li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=quarterlyearnings">Quarterly Earnings</a></li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-sec">SEC Filings</a></li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-stockquote">Stock Price Information</a>
+                                    <ul>
+                                    <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-stockchart">Stock Chart</a></li>
+                                    <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-stocklookup">Historical Price Lookup</a></li>
+                                    <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-stockcalculator">Investment Calculator</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-inforeq">Contact Us / Request Information</a></li>
+                                <li><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=irol-alerts">Email Alerts</a></li>
+                            </ul>
+                            </li>
+                        
+                            <!-- <li><a href="#">Employee Portal</a></li> -->
+                        </ul>
+
+                    
+                    <!-- Top Search
+                        ============================================= -->
+                        <div id="top-search">
+                        <!-- This code is from google: https://cse.google.com -->
+							<script>
+                              (function() {
+                                var cx = '006228583842061292556:b_wfhy8skpo';
+                                var gcse = document.createElement('script');
+                                gcse.type = 'text/javascript';
+                                gcse.async = true;
+                                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                    '//cse.google.com/cse.js?cx=' + cx;
+                                var s = document.getElementsByTagName('script')[0];
+                                s.parentNode.insertBefore(gcse, s);
+                              })();
+                            </script>
+                      <a href="#" id="top-search-trigger"><i class="icon-search3"></i><!-- <i class="icon-line-cross"></i> --> </a>
+                      <!-- <gcse:searchbox-only newWindow="false" resultsUrl="http://www.engilitycorp.com/results/?q=myQuery" queryParameterName="q"></gcse:searchbox-only> REFERENCE ONLY -->
+						    <gcse:searchbox-only newWindow="false" resultSetSize="large" safeSearch="active" resultsUrl="http://www.engilitycorp.com/results"></gcse:searchbox-only>
+                       	</div>
+                        <!-- #top-search end -->
+
+                    </nav><!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header>
+        <!-- #header end -->
+
+         <!-- Homepage Slider -->
+             		<section id="slider" class="slider-parallax revslider-wrap clearfix">
+
+            <!--
+            #################################
+                - THEMEPUNCH BANNER -
+            #################################
+            -->
+            <div class="tp-banner-container">
+                <div class="tp-banner" >
+                    <ul>
+                    	<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="http://cdn.engilitycorp.com/images/homepage-flipper-international.jpg" data-delay="10000"  data-saveperformance="off" data-title="Make Lives Better">
+                    	<!-- MAIN IMAGE -->
+                    	<img src="http://cdn.engilitycorp.com/images/homepage-flipper-international.jpg"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                    		
+                            
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase"
+                            data-x="100"
+                            data-y="175"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1000"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; padding:20px 0px 0px 0px; font-weight:lighter; border:0px; font-size:50px; text-transform:none !important; color:#fff;">Engineered to</div>
+                            
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                            data-x="100"
+                            data-y="235"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1200"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 1000px; white-space: normal; font-size:50px; text-align:left; line-height:60px; font-weight:bolder; color:#fff; padding:20px 0px 0px 0px;">Make Lives Better</div>
+                            
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                            data-x="100"
+                            data-y="285"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1200"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 1000px; white-space: normal; font-size:30px; text-align:left; line-height:60px; font-weight:medium; color:#fff; padding:20px 0px 0px 0px;">Solutions for a Better World</div>
+
+                            <div class="tp-caption customin ltl tp-resizeme"
+                            data-x="100"
+                            data-y="365"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1350"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3;">
+                            <a href="http://www.engilitycorp.com/international-development/" class="button button-white button-light button-large button-rounded tright nomargin"><span style="color:#fff; font-size:16px; padding:20px 0px 0px 0px;">Learn More</span> <i class="icon-angle-right" style="color:#fff;"></i></a></div>
+                        
+                        </li>
+                        <!-- SLIDE  -->
+                        <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="http://cdn.engilitycorp.com/images/homepage-flipper-space.jpg" data-delay="10000"  data-saveperformance="off" data-title="Make Lives Safer">
+                    	<!-- MAIN IMAGE -->
+                    	<img src="http://cdn.engilitycorp.com/images/homepage-flipper-space.jpg"  alt="kenburns1"  data-bgposition="right center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                    		
+                            
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase"
+                            data-x="100"
+                            data-y="175"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1000"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; padding:20px 0px 0px 0px; font-weight:lighter; border:0px; font-size:50px; text-transform:none !important; color:#fff;">Engineered to</div>
+                            
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                            data-x="100"
+                            data-y="235"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1200"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 1000px; white-space: normal; font-size:50px; text-align:left; line-height:60px; font-weight:bolder; color:#fff; padding:20px 0px 0px 0px;">Make Lives Safer</div>
+                            
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                            data-x="100"
+                            data-y="285"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1200"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 1000px; white-space: normal; font-size:30px; text-align:left; line-height:60px; font-weight:medium; color:#fff; padding:20px 0px 0px 0px;">Harnessing the Vast Potential of Space</div>
+
+                            <div class="tp-caption customin ltl tp-resizeme"
+                            data-x="100"
+                            data-y="365"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1350"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3;">
+                            <a href="http://www.engilitycorp.com/who-we-serve/space/" class="button button-white button-light button-large button-rounded tright nomargin"><span style="color:#fff; font-size:16px; padding:20px 0px 0px 0px;">Learn More</span> <i class="icon-angle-right" style="color:#fff;"></i></a></div>
+                        
+                        </li>
+                        
+                        <!-- SLIDE  -->
+                        
+                        <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="http://cdn.engilitycorp.com/images/homepage-flipper-army.jpg" data-delay="10000"  data-saveperformance="off" data-title="More Secure">
+                    	<!-- MAIN IMAGE -->
+                    	<img src="http://cdn.engilitycorp.com/images/homepage-flipper-army.jpg"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                    		
+                            
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase"
+                            data-x="100"
+                            data-y="175"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1000"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; padding:20px 0px 0px 0px; font-weight:lighter; border:0px; font-size:50px; text-transform:none !important; color:#fff;">Engineered to</div>
+                            
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                            data-x="100"
+                            data-y="235"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1200"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 1000px; white-space: normal; font-size:50px; text-align:left; line-height:60px; font-weight:bolder; color:#fff; padding:20px 0px 0px 0px;">Make the Country More Secure</div>
+                            
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                            data-x="100"
+                            data-y="285"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1200"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 1000px; white-space: normal; font-size:30px; text-align:left; line-height:60px; font-weight:medium; color:#fff; padding:20px 0px 0px 0px;">Changing the Way We Train</div>
+
+                            <div class="tp-caption customin ltl tp-resizeme"
+                            data-x="100"
+                            data-y="365"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1350"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3;">
+                            <a href="http://www.engilitycorp.com/who-we-serve/joint-dod/" class="button button-white button-light button-large button-rounded tright nomargin"><span style="color:#fff; font-size:16px; padding:20px 0px 0px 0px;">Learn More</span> <i class="icon-angle-right" style="color:#fff;"></i></a></div>
+                        
+                        </li>
+                        <!-- SLIDE  -->
+                        
+                		<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="http://cdn.engilitycorp.com/images/Flipper-American-Flag.jpg"  data-saveperformance="off"  data-title="Engineered to Make A Difference">
+                        <!-- MAIN IMAGE -->
+                        <img src="http://cdn.engilitycorp.com/images/Flipper-American-Flag.jpg"  alt="video_typing_cover"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption tp-fade fadeout fullscreenvideo"
+                            data-x="0"
+                            data-y="0"
+                            data-speed="1000"
+                            data-start="1100"
+                            data-easing="Power4.easeOut"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1500"
+                            data-endeasing="Power4.easeIn"
+                            data-autoplay="true"
+                            data-autoplayonlyfirsttime="false"
+                            data-nextslideatend="true"
+                 			data-volume="mute" data-forceCover="1" data-aspectratio="16:9" data-forcerewind="on" style="z-index: 2;">
+                            <video class="" preload="none" width="100%" height="100%" poster='http://www.engilitycorp.com/images/Flipper-American-Flag.jpg'>
+                                <source src='http://cdn.engilitycorp.com/videos/american-flag-video.m4v' type='video/mp4' />
+                                <source src='http://cdn.engilitycorp.com/videos/american-flag-video.webm' type='video/webm' />
+                            </video>
+                            			 
+                            <!--<iframe src='https://www.youtube.com/embed/bMDRS2-Rsds?hd=1&autoplay=1&amp;loop=1&amp;rel=0&amp;controls=0&amp;modestbranding=1&amp;disablekb=1&amp;enablejsapi=1&amp;showinfo=0' width='100%'  style='width: 100%;'>
+                            </iframe>
+                            <iframe src='https://www.youtube.com/embed/zGnpT8okBs0?hd=1&autoplay=1&amp;controls=0&amp;loop=1&amp;showinfo=0&amp;modestbranding=1&amp;disablekb=1&amp;enablejsapi=1&amp' width='100%'  style='width: 100%;'>
+                            </iframe>-->
+
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase"
+                            data-x="100"
+                            data-y="175"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1000"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; padding:20px 0px 0px 0px; font-weight:lighter; border:0px; font-size:50px; text-transform:none !important; color:#fff;">Engineered to</div>
+
+                            <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+                            data-x="100"
+                            data-y="235"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1200"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 1000px; white-space: normal; font-size:50px; text-align:left; line-height:60px; font-weight:bolder; color:#fff; padding:20px 0px 0px 0px;">Make a Difference</div>
+
+                            <div class="tp-caption customin ltl tp-resizeme"
+                            data-x="100"
+                            data-y="335"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-speed="800"
+                            data-start="1350"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 3;">
+                            <a href="http://www.engilitycorp.com/about-us/" class="button button-white button-light button-large button-rounded tright nomargin"><span style="color:#fff; font-size:16px; padding:20px 0px 0px 0px;">Learn More</span> <i class="icon-angle-right" style="color:#fff;"></i></a></div>
+
+                        </li>
+                
+            		</ul>
+                    
+                    <!-- STATIC LAYER -->
+                    <!--<div class="tp-static-layers">
+                                            
+                      <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text uppercase tp-static-layer"
+                            data-x="100"
+                            data-y="175"
+                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-startslide="0"
+                            data-endslide="4"
+                            data-end="10000000000000000000"
+                            data-speed="800"
+                            data-start="1000"
+                            data-easing="easeOutQuad"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="1000"
+                            data-endeasing="Power4.easeIn" style="z-index: 30; padding:20px 0px 0px 0px; font-weight:lighter; border:0px; font-size:50px; text-transform:none !important; color:#fff;">Engineered to
+                  	  </div>
+                    </div>-->
+            	</div>
+            </div>
+
+                        <script type="text/javascript">
+
+                jQuery(document).ready(function() {
+
+                    jQuery('.tp-banner').show().revolution(
+                    {
+                        dottedOverlay:"none",
+                        delay:16000,
+                        startwidth:1140,
+                        startheight:600,
+                        hideThumbs:200,
+
+                        thumbWidth:100,
+                        thumbHeight:50,
+                        thumbAmount:5,
+
+                        navigationType:"bullet",
+                        navigationArrows:"solo",
+                        navigationStyle:"preview4",
+
+                        touchenabled:"on",
+                        onHoverStop:"on",
+
+                        swipe_velocity: 0.7,
+                        swipe_min_touches: 1,
+                        swipe_max_touches: 1,
+                        drag_block_vertical: false,
+
+                        parallax:"mouse",
+                        parallaxBgFreeze:"on",
+                        parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+
+                        keyboardNavigation:"off",
+
+                        navigationHAlign:"center",
+                        navigationVAlign:"bottom",
+                        navigationHOffset:0,
+                        navigationVOffset:20,
+
+                        soloArrowLeftHalign:"left",
+                        soloArrowLeftValign:"center",
+                        soloArrowLeftHOffset:20,
+                        soloArrowLeftVOffset:0,
+
+                        soloArrowRightHalign:"right",
+                        soloArrowRightValign:"center",
+                        soloArrowRightHOffset:20,
+                        soloArrowRightVOffset:0,
+
+                        shadow:0,
+                        fullWidth:"on",
+                        fullScreen:"off",
+
+                        spinner:"spinner4",
+
+                        stopLoop:"off",
+                        stopAfterLoops:-1,
+                        stopAtSlide:-1,
+
+                        shuffle:"off",
+
+                        autoHeight:"off",
+                        forceFullWidth:"off",
+                        hideTimerBar:"on",
+
+
+                        hideThumbsOnMobile:"off",
+                        hideNavDelayOnMobile:1500,
+                        hideBulletsOnMobile:"off",
+                        hideArrowsOnMobile:"off",
+                        hideThumbsUnderResolution:0,
+
+                        hideSliderAtLimit:0,
+                        hideCaptionAtLimit:0,
+                        hideAllCaptionAtLilmit:0,
+                        startWithSlide:0,
+                        fullScreenOffsetContainer: ".header"
+                    });
+
+                }); //ready
+
+            </script>
+
+            <!-- END REVOLUTION SLIDER -->
+
+        </section>
+         <!-- Homepage Slider END -->
+
+        	<!-- Content
+        	============================================= -->
+        	<section id="content">
+
+            <a class="button button-full center tright " href="http://www.engilitycorp.com/what-we-do/" style="background-color: #f2f2f2;">
+                <div class="container clearfix" style="color: #333;"><h3 style="margin: 0;">Engility is dedicated to making lives <span>better, safer and more secure</span>. We deliver innovative solutions to critical challenges facing the nation and the world. <i class="icon-caret-right" style="top:4px;"></i></h3>
+                </div>
+            </a>
+            
+			</section>
+            
+            <!-- Content
+			============================================= -->
+			<section id="content" style="background-color: #005b99;">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+					
+					<h3 style="color: #fff;">Our Capabilities</h3>
+
+					<!-- Portfolio Items
+					============================================= -->
+					<div id="portfolio" class="portfolio-3 clearfix">
+
+						<article class="portfolio-item pf-media pf-icons">
+							<div class="portfolio-image">
+								<a href="http://www.engilitycorp.com/services/specialized-technical-consulting/">
+									<img src="images/capabilities/STC.jpg" alt="Specialized Technical Consulting">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="http://www.engilitycorp.com/services/specialized-technical-consulting/" class="center-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="http://www.engilitycorp.com/services/specialized-technical-consulting/" style="color: #fff;">Specialized Technical Consulting</a></h3>
+							</div>
+						</article>
+                        
+                        <article class="portfolio-item pf-media pf-icons">
+							<div class="portfolio-image">
+								<a href="http://www.engilitycorp.com/services/training-education/">
+									<img src="images/capabilities/TE.jpg" alt="Training and Learning Solutions">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="http://www.engilitycorp.com/services/training-education/" class="center-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="http://www.engilitycorp.com/services/training-education/" style="color: #fff;">Training and Learning Solutions</a></h3>
+							</div>
+						</article>
+                        
+                        <article class="portfolio-item pf-media pf-icons">
+							<div class="portfolio-image">
+								<a href="http://www.engilitycorp.com/services/information-technology/">
+									<img src="images/capabilities/ITMS.jpg" alt="Information Technology">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="http://www.engilitycorp.com/services/information-technology/" class="center-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="http://www.engilitycorp.com/services/information-technology/" style="color: #fff;">Information Technology</a></h3>
+							</div>
+						</article>
+                        
+                        <article class="portfolio-item pf-media pf-icons">
+							<div class="portfolio-image">
+								<a href="http://www.engilitycorp.com/services/program-business-support/">
+									<img src="images/capabilities/PBSS.jpg" alt="Program and Business Support Systems">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="http://www.engilitycorp.com/services/program-business-support/" class="center-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="http://www.engilitycorp.com/services/program-business-support/" style="color: #fff;">Program and Business Support Systems</a></h3>
+							</div>
+						</article>
+                        
+                        <article class="portfolio-item pf-media pf-icons">
+							<div class="portfolio-image">
+								<a href="http://www.engilitycorp.com/services/engineering-technology-life-cycle-support/">
+									<img src="images/capabilities/ETLS.jpg" alt="Training and Learning Solutions">
+								</a>
+								<div class="portfolio-overlay">
+									<a href="http://www.engilitycorp.com/services/engineering-technology-life-cycle-support/" class="center-icon"><i class="icon-line-ellipsis"></i></a>
+								</div>
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="http://www.engilitycorp.com/services/engineering-technology-life-cycle-support/" style="color: #fff;">Engineering and Technical Life Cycle Support</a></h3>
+							</div>
+						</article>
+
+
+					</div><!-- #portfolio end -->
+                   </div>
+                 </div>
+                 <!-- Portfolio Script
+					============================================= -->
+					<script type="text/javascript">
+
+						jQuery(window).load(function(){
+
+							var $container = $('#portfolio');
+
+							$container.isotope({ transitionDuration: '0.65s' });
+
+							$('#portfolio-filter a').click(function(){
+								$('#portfolio-filter li').removeClass('activeFilter');
+								$(this).parent('li').addClass('activeFilter');
+								var selector = $(this).attr('data-filter');
+								$container.isotope({ filter: selector });
+								return false;
+							});
+
+							$('#portfolio-shuffle').click(function(){
+								$container.isotope('updateSortData').isotope({
+									sortBy: 'random'
+								});
+							});
+
+							$(window).resize(function() {$container.isotope('layout');});
+
+						});
+
+					</script><!-- Portfolio Script End -->
+			</section>
+            <!-- Stop Blue -->
+          
+			<section id="content">
+            <div class="content-wrap" style="padding: 0px;">
+            	<!-- Employee Parallax Banner -->
+            	<div class="parallax bottommargin-sm" style="background-image: url('http://cdn.engilitycorp.com/images/parallax/test1.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+                    <div class="heading-block center nobottomborder nobottommargin">
+                        <h2 style="color: #fff;">"our employees are making a difference in areas that make a difference"</h2>
+                        <a href="https://careers-engility.icims.com/" class="button button-xlarge button-border button-rounded tright">Join Our Team<i class="icon-circle-arrow-right"></i></a>
+                    </div>
+                </div>
+
+				<div class="container clearfix">
+                <!-- 3 column Info Section -->
+                       <div class="col-md-6">
+
+                                <h4>Recent News</h4>
+                                <!-- Start NEWS -->
+                                    <p><strong><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=RssLanding&cat=news&id=2196569" title="Engility Appoints Michael Grasso Senior Vice President for Business Development and Strategic Planning" style="color: #666;">Engility Appoints Michael Grasso Senior Vice President for Business Development and Strategic Planning</a></strong><br /><small style="color: #333;">Posted on Monday August 22, 2016</small></p><p><strong><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=RssLanding&cat=news&id=2195504" title="Engility Completes Successful Offering of $300 Million Senior Notes and Announces New Credit Facility" style="color: #666;">Engility Completes Successful Offering of $300 Million Senior Notes and Announces New Credit Facility</a></strong><br /><small style="color: #333;">Posted on Monday August 15, 2016</small></p><p><strong><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=RssLanding&cat=news&id=2193349" title="Engility Announces Pricing of $300 Million Senior Notes" style="color: #666;">Engility Announces Pricing of $300 Million Senior Notes</a></strong><br /><small style="color: #333;">Posted on Thursday August 04, 2016</small></p><p><strong><a href="http://investors.engilitycorp.com/phoenix.zhtml?c=251345&p=RssLanding&cat=news&id=2192961" title="Engility to Present at the Jefferies 2016 Industrials Conference" style="color: #666;">Engility to Present at the Jefferies 2016 Industrials Conference</a></strong><br /><small style="color: #333;">Posted on Thursday August 04, 2016</small></p>                                <!-- ENG NEWS -->
+
+                        </div>
+                        <div class="col-md-5 bottommargin-sm" >
+                            <h4>Twitter Feed</h4>
+                                        <a class="twitter-timeline"  href="https://twitter.com/EngilityCorp" data-widget-id="704178334482223105">Tweets by @EngilityCorp</a>
+            				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          				</div>
+                                
+                </div>
+                
+                <!-- Account Feature -->
+                <a class="button button-full center tright " href="http://www.engilitycorp.com/who-we-serve/intelligence/" style="background-image: url('http://cdn.engilitycorp.com/images/homepage-intel.jpg'); padding: 100px 0px; background-position: 50% -4.95px;">
+                <div class="container clearfix">
+                                <h2 style="color: #c2213f; text-transform: uppercase; font-weight:bold; ">Providing an Intelligence Advantage<i class="icon-caret-right" style="top:4px;"></i></h2>
+                </div>
+                </a>
+            
+            </div>
+
+		</section><!-- #content end -->
+		
+              <!-- Footer
+      ============================================= -->
+      <footer id="footer" class="dark">
+
+          <div class="container">
+
+              <!-- Footer Widgets
+              ============================================= -->
+              <div class="footer-widgets-wrap clearfix">
+
+                  <div class="col_two_third">
+
+                      <div class="col_one_third">
+
+                          <div class="widget clearfix">
+
+                              <img src="http://www.engilitycorp.com/images/footer-widget-logo.png" alt="" class="footer-logo">
+
+                              <p>Engineered to Make a Difference.</p>
+
+                              <div style="background: url('http://www.engilitycorp.com/images/world-map.png') no-repeat center center; background-size: 100%;">
+                                  <address>
+                                      <strong>Headquarters:</strong><br>
+                                      4803 Stonecroft Boulevard<br>
+                                      Chantilly, VA 20151<br>
+                                  </address>
+                                  <strong>Phone:</strong> (1) 703.633.8300<br>
+                                  
+                                  <strong>Email:</strong><a href="mailto:askengility@engilitycorp.com"> askEngility@engilitycorp.com</a><br><br>
+                                  
+                                  <strong><a href="https://portal.engilitycorp.com" target="_blank" style="font-size: 1.1em;">Employee Login</a><br><br>
+                                  
+
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                      <div class="col_two_third col_last">
+
+                      <div class="widget clearfix" style="margin-bottom: -20px;">
+
+                          <div class="row">
+
+                              <div class="col-md-4 clearfix bottommargin-sm">
+                                  <a href="https://www.facebook.com/Engility" class="social-icon si-colored si-facebook">
+                                      <i class="icon-facebook"></i>
+                                      <i class="icon-facebook"></i>
+                                  </a>
+                                  <a href="https://www.facebook.com/Engility"><small style="display: block; margin-top: 3px; color:#ccc;"><strong>Like us</strong><br>on Facebook</small></a>
+                                  </div>
+                                  <div class="col-md-4 clearfix bottommargin-sm">
+                                  <a href="https://twitter.com/engilitycorp" class="social-icon si-colored si-twitter">
+                                      <i class="icon-twitter"></i>
+                                      <i class="icon-twitter"></i>
+                                  </a>
+                                  <a href="https://twitter.com/engilitycorp"><small style="display: block; margin-top: 3px; 3px; color:#ccc;"><strong>Follow us</strong><br>on Twitter</small></a>
+                                  </div>
+                                  <div class="col-md-4 clearfix bottommargin-sm">
+                                  <a href="https://www.linkedin.com/company/engility-corporation" class="social-icon si-colored si-linkedin">
+                                      <i class="icon-linkedin"></i>
+                                      <i class="icon-linkedin"></i>
+                                  </a>
+                                  <a href="https://www.linkedin.com/company/engility-corporation"><small style="display: block; margin-top: 3px; 3px; color:#ccc;"><strong>Link to us</strong><br>on Linkedin</small></a>
+                                 
+                              </div>
+
+
+                          </div>
+
+                      </div>
+
+                      </div>
+
+                  </div>
+
+                  <div class="col_one_third col_last">
+
+                      <div class="widget clearfix" style="margin-bottom: -20px;">
+
+                          <div class="row">
+
+                              <div class="bottommargin-sm">
+                                  <!-- <div class="counter counter-small"><span data-from="50" data-to="7480" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div> -->
+                                  <div id="StockTickerContainer" style="line-height: 32px; ">
+                                  <div id='dvStockTicker' class='stockTicker'></div>
+                                  </div>
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                     
+
+                  </div>
+
+              </div><!-- .footer-widgets-wrap end -->
+
+          </div>
+
+          <!-- Copyrights
+          ============================================= -->
+          <div id="copyrights">
+
+              <div class="container clearfix">
+
+                  <div class="col_half">
+                      Copyrights &copy; 2016 Engility Corporation. All Rights Reserved.<br>
+                      <div class="copyright-links"><a href="http://www.engilitycorp.com/terms-of-use">Terms of Use</a> / <a href="http://www.engilitycorp.com/privacy-policy">Privacy Policy</a></div>
+                  </div>
+
+                  <div class="col_half col_last tright">
+ 
+
+                      <div class="clear"></div>
+
+                      <div class="copyright-links"><i class="icon-envelope2"></i><a href="mailto:askEngility@engilitycorp.com"> askEngility@engilitycorp.com</a> <span class="middot">&middot;</span> <i class="icon-headphones"></i> +1.703.708.1400</div>
+                  </div>
+
+              </div>
+
+          </div><!-- #copyrights end -->
+
+      </footer><!-- #footer end -->
+<!-- Google Analtyics Code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45066798-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script type="text/javascript" src="http://www.engilitycorp.com/js/functions.js"}" ></script>
+
+</body>
+</html>

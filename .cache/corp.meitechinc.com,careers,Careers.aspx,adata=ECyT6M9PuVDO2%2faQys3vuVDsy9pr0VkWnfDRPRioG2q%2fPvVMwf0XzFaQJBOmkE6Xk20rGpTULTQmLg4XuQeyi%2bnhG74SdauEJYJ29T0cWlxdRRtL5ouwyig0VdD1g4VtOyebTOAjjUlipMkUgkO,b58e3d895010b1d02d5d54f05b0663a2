@@ -1,0 +1,418 @@
+status: 200
+content-length: 19835
+content-location: https://corp.meitechinc.com/careers/Careers.aspx?adata=ECyT6M9PuVDO2%2faQys3vuVDsy9pr0VkWnfDRPRioG2q%2fPvVMwf0XzFaQJBOmkE6Xk20rGpTULTQmLg4XuQeyi%2bnhG74SdauEJYJ29T0cWlxdRRtL5ouwyig0VdD1g4VtOyebTOAjjUlipMkUgkOLaurharYIVXxSqqva%2f849FA0SZslHLPSatNCJGL166A8715aPEg279Fehm%2fp2mK1eWjg%3d
+x-aspnet-version: 2.0.50727
+x-powered-by: ASP.NET
+server: Microsoft-IIS/7.0
+cache-control: private
+date: Fri, 30 Sep 2016 04:23:31 GMT
+content-type: text/html; charset=utf-8
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="./styles/filters/master.css" type="text/css" media="screen" />
+<!--[if gte IE 6]><link rel="stylesheet" type="text/css" href="styles/filters/ieonly.css" media="screen" /><![endif]-->
+<link rel="stylesheet" href="./styles/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="./styles/ui.tabs.css" type="text/css" />
+<title>MEI Technologies: Open Positions</title>
+<script src="./js/jquery-1.2.6.js" type="text/javascript"></script>
+<!-- script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script -->
+<script type="text/javascript" src="./js/jquery.jshowoff.js"></script>
+<script src="./js/ui.core.js" type="text/javascript"></script>
+<script src="./js/ui.tabs.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+            $(function() {
+                $('#container-1 > ul').tabs();
+				$('#container-2 > ul').tabs();
+
+            });
+</script>
+<style type="text/css">
+	#subnav ul{
+		list-style-type:none;
+	}
+	#nav{
+		margin-top:-13px;
+	}
+</style>
+
+
+<script type="text/javascript">
+function resetNavBanner(){
+	var ua = window.navigator.userAgent;
+	var msie = ua.indexOf("MSIE ");
+	if(msie!=-1){
+		$('#nav').css('margin-top','0px');
+	}
+};
+$(document).ready(function() {
+	resetNavBanner();
+});
+$(document).ready(function() {
+// hides the slickbox as soon as the DOM is ready
+// (a little sooner than page load)
+	$('#sitesearch').show();
+	$('#contractsearch').hide();
+	$('#jobsearch').hide();
+// shows the slickbox on clicking the noted link  
+	$('a#searchsite').change(function() {
+	$('#sitesearch').show();
+	$('#contractsearch').hide();
+	$('#jobsearch').hide();
+	return false;
+	});
+// hides the slickbox on clicking the noted link  
+	$('a#searchcontracts').click(function() {
+	$('#sitesearch').hide();
+	$('#contractsearch').show();
+	$('#jobsearch').hide();
+	return false;
+	});
+// toggles the slickbox on clicking the noted link  
+	$('a#searchjobs').click(function() {
+	$('#sitesearch').hide();
+	$('#contractsearch').hide();
+	$('#jobsearch').show();
+	return false;
+	});
+});
+
+</script>
+</head>
+<body id="onecol" class="careerspage">
+<div id="pagewrap">
+  <div id="wrap">
+    <style type="text/css">
+<!--
+#expo_button {
+	background-color: #363533;
+}
+-->
+</style>
+<script type="text/javascript">
+function confirmNewEmis(){
+	var message = "You are about to be redirected to the new eMIS Employee Portal.  When you are prompted to login, if you are not currently on the MUNIZ domain (the MEIT network), be sure to preface your login with 'MUNIZ\\'.  Thank you";
+	return confirm(message);
+}
+</script>
+<div id="masthead">
+      <div id="logo"><a href="http://www.meitechinc.com/">MEI Technologies</a></div>
+      <div id="globalnav">
+        <div id="topglobal"> 
+          <p>
+            <!-- <a href="http://www.facebook.com/meitechinc"><img src="./images/icon-facebook.gif" alt="Like us on Facebook" height="22" width="21" />Like us on<br />
+          Facebook</a> <a href="http://www.twitter.com/meitechinc"><img src="./images/icon-twitter.gif" alt="Follow us on Twitter" height="22" width="22" />Follow us<br />
+          on Twitter</a> --><a href="https://spnet.meitechinc.com/sites/eMIS" title="eMIS Link" onclick="return confirmNewEmis();" class="wide"><img src="./images/icon-employee.gif" alt="Employee sign-in (eMIS)" height="22" width="21" />Employee<br />
+          Sign-In (eMIS)</a> <a href="https://myid.meitechinc.com/showLogin.cc" class="wide"><img src="./images/icon_key.gif" alt="Acct" height="22" width="21" />Account Self<br />
+          Service Portal </a><a href="/status.asp" class="wide"><img src="./images/icon-weather.gif" alt="Facility &amp; Weather Status" height="22" width="21" />Facility &amp;<br />
+        Weather Status </a><a href="/status.asp" class="wide"></a></p>
+        </div>
+        <!-- /topglobal -->
+         <div id="btmglobal">
+           <form id="sitesearch" method="GET" action="/search.asp">
+             <p>
+               <input name="zoom_query" type="text" class="searchinput" />
+               <input type="submit" value="Search Site" /><br />
+           </p>
+           </form>
+           <!-- <form id="contractsearch" action="/contracts/contract_search_results.asp" method="get">
+          <input name="keyword" type="text" value="" class="searchinput" onfocus="javascript(this.value="")/>
+          <input name="Search" type="submit" value="Search Contracts" class="button" />
+          </form> 
+          <form id="jobsearch">
+          <input name="Search" type="text" value="" class="searchinput" />
+          <input name="Search" type="button" value="Search Jobs" class="button" />
+          </form>
+          <div id="searchbtns">
+          <input name="group1" type="radio" value="Entire" checked="checked" id="group1_1"/>
+            <label>Entire Site</label>
+            <input name="group1" type="radio" value="Contracts" id="group1_3" />
+            <label>Contracts</label>
+            <input name="group1" type="radio" value="Jobs" id="group1_3" />
+            <label>Jobs</label>  
+            <a href="" id="searchsite">Entire Site</a>  |  <a href="" id="searchcontracts">Contracts</a>  | <a href="" id="searchjobs">Jobs</a> -->
+         </div>
+      </div>
+        <!-- /btmglobal -->
+      </div>
+      <!-- /globalnav -->
+    </div>
+    <!-- /masthead --><style type="text/css">
+.ulWrapper{
+	position:absolute;
+}
+#contracts{
+	position:relative;
+}
+.contractDiv{
+	position:fixed;
+	opacity:.99;
+	background-image:none;
+	background-color:rgb(208,204,200);
+	border:2px solid white;
+	top:10px;
+	font-size:12px;
+	padding:4px;
+	min-width:150px;
+	font-weight:bold;
+}
+.contractDiv a{
+	text-decoration:none;
+	color:#363534;
+}
+.contractDiv a:hover {
+	color:#5e172d;
+}
+#nav{
+	position:relative;
+	z-index:100000;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#contractLink').mouseover(function(e){
+			$('.contractDiv').css('display','');
+			$('.contractDiv').css('top',(e.pageY-30)+'px');
+			$('.contractDiv').css('left',(e.pageX-30)+'px');
+		});
+		$('contractDiv').mouseout(function(){
+			$('contractDiv').hide();
+		});
+	});
+</script>
+<div id="nav">	
+	<div class='ulWrapper bottomRow'>
+		<ul class='navUl floatleft'>
+			<li id="navhome"><a href="http://www.meitechinc.com/" title="Click to open MEIT Home page"><b>Home</b></a></li>
+			<li id="navabout"><a href="http://www.meitechinc.com/about/" title="Click to learn more about MEIT"><b>About Us</b></a></li>
+			<li id="navcore"><a href="http://www.meitechinc.com/capabilities/" title="Click to for an overview of our capabilities and services"><b>Capabilities &amp; Services</b></a></li>
+		 <!--   <li id="navcontracts"><a href="http://www.meitechinc.com/contracts/"><b>Contracts</b></a></li>  -->
+			<li id="navnewsroom"><a href="http://www.meitechinc.com/newsroom/" title="Click to open the MEIT Newsroom page"><b>Newsroom</b></a></li>
+			<li id="navcareers"><a href="http://www.meitechinc.com/careers/" title="Click to view information about Careers with MEIT"><b>Careers</b></a></li>
+			<li id="navcontact"><a href="http://www.meitechinc.com/contact/" title="Click to open our Contacts page"><b>Contact</b></a></li>
+			<li id="navevents"><a href="http://www.meitechinc.com/events/" title="Click to go to our Calendar of Events"><b>Events</b></a></li>
+			<li id="contracts"><a id="contractLink" href="javascript:;"><b>Contract Vehicles & Select Contracts</b></a></li>
+		</ul>
+		<div class='contractDiv' onmouseleave='$(".contractDiv").css("display","none");' style='display:none;' title='Contract Vehicles & Select Contracts Page Links'>
+			<a href="http://www.meitechinc.com/D3I-D2/" title="Click to open the D3I-D2 page">D3I-D2</a><br />
+			<a href="http://www.meitechinc.com/seaporte/" title="Click to open the SEAPORT-E page">SEAPORT-E</a><br />   
+			<a href="http://www.meitechinc.com/oasis/" title="Click to open the OASIS page">OASIS</a><br />			
+			<a href="http://www.meitechinc.com/pdi-xz/" title="Click to open the PDI-XZ page">PDI-XZ</a><br />			
+			<a href="http://www.meitechinc.com/tmas/" title="Click to open the TMAS page">TMAS</a><br />			
+			<a href="http://www.meitechinc.com/gsa-pss/" title="Click to open the GSA-PSS page">GSA-PSS</a><br />
+		</div>
+	</div>
+</div>
+    <!-- /nav -->
+    <div id="subnav">
+      <ul class="floatleft">
+        <li id="subnav-positinos" class="selected"><a href="Careers.aspx">Open Positions</a></li>
+        <li id="subnav-benefits"><a href="http://www.meitechinc.com/careers/benefits.asp">Benefits</a></li>
+        <li id="subnav-associates" class="last"><a href="http://www.meitechinc.com/careers/associates.asp">Associates Program</a></li>
+        <!-- <li id="subnav-mymei" class="last"><a href="mymei.asp">MyMEI</a></li>  -->
+      </ul>
+      <img src="./images/banner_careers.jpg" height="229" width="631" alt="" class="floatright" />
+    </div>
+    <!-- /banner -->
+    <div id="outer">
+      <div id="innerpagewrap">
+        <div id="inner">
+          <div id="pri">
+            <table id="intro">
+            	<tr>
+                	<td width="30%"><h1>Open Positions</h1></td>
+                    <td width="70%"><div id="summary"><p>View open positions within MEI Technologies by choosing one of the options below:</p></div></td>
+                </tr>
+				<tr>
+					<td colspan="2" style="color:red; font-weight:bold; font-size:16px">ATTENTION:<br />Due to recent updates to Internet Explorer you may experience complications during the application process.  We recommend using a browser other than Internet Explorer (Mozilla Firefox, Google Chrome).</td>
+				</tr>
+            </table>
+		<form name="frmCRSS" method="post" action="Careers.aspx?adata=ECyT6M9PuVDO2%2faQys3vuVDsy9pr0VkWnfDRPRioG2q%2fPvVMwf0XzFaQJBOmkE6Xk20rGpTULTQmLg4XuQeyi%2bnhG74SdauEJYJ29T0cWlxdRRtL5ouwyig0VdD1g4VtOyebTOAjjUlipMkUgkOLaurharYIVXxSqqva%2f849FA0SZslHLPSatNCJGL166A8715aPEg279Fehm%2fp2mK1eWjg%3d" id="frmCRSS">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTkyOTAwODQ2OA9kFgICBA9kFgICAQ9kFhoCAw8PFgIeB1Zpc2libGVoZGQCBQ8PFgIfAGhkZAIHDw8WAh8AaGRkAgkPDxYCHwBoZGQCCw8PFgIfAGhkZAINDw8WAh8AaGRkAg8PDxYCHwBoZGQCEQ8PFgIfAGhkZAITDw8WAh8AZ2RkAhUPDxYCHwBoZGQCFw8PFgIfAGhkZAIbDxYCHgRUZXh0BTM8aW5wdXQgdHlwZT1oaWRkZW4gbmFtZT1saXRWZXJzaW9uIHZhbHVlPSI5LjAuMS4wIj5kAiEPFgIfAQUyPGlucHV0IHR5cGU9aGlkZGVuIG5hbWU9bGl0TkVUVmVyc2lvbiB2YWx1ZT0iMi4wIj5kZGYhT2haJURatxZ8gEfoHcU0naqS" />
+
+
+<script src="/Careers/ScriptResource.axd?d=QpLEQ12t5BPEqB1UsZKuplE49m72uUl6JVyLLccQ-o95cfK9rVHLW2FnJDAAqo-0Jpr37aTgb7grJKI57YJPclp087AwkU80tn1_2xuHgjCwSZ_RPzkjlHP4kHkv2KTelHTsfQKduSMxCL80JWtTaKNaA4kMz3QP9hJ-_thpw2cJB4F50&amp;t=3716c9ba" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+			<div>
+			
+
+<SCRIPT language="JavaScript">
+<!--	
+	function ValidatorTrim(s) {
+		var m = s.match(/^\s*(\S+(\s+\S+)*)\s*$/);
+		return (m == null) ? "" : m[1];
+	}
+	
+//-->
+</SCRIPT>
+
+<script language="JavaScript">
+    var nav = window.Event ? true : false;
+    if (nav) {
+        window.captureEvents(Event.KEYDOWN);
+        window.onkeydown = NetscapeEventHandler_KeyDown;
+    } else {
+        document.onkeydown = MicrosoftEventHandler_KeyDown;
+    }
+
+    function NetscapeEventHandler_KeyDown(e) {
+        if (e.which == 13 && e.target.type != 'textarea' && e.target.type != 'submit') {
+            return false;
+        }
+        return true;
+    }
+
+    function MicrosoftEventHandler_KeyDown() {
+        if (event.keyCode == 13 && event.srcElement.type != 'textarea' &&
+        event.srcElement.type != 'submit')
+            return false;
+        return true;
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<table id="CRCareers1_tblJobDescr" border="0" width="100%">
+	<tr>
+		<td><table id="CRCareers1_tblJobDescrDetail" border="0" width="95%">
+			<tr>
+				<td class="MainBodyText" colspan="2">MEI Technologies, Inc., is an Equal Opportunity Employer of Minorities, Females, Protected Veterans, and Individual with Disabilities. All qualified applicants will receive consideration for employment without regard to race, color, ethnicity, religion, sex, national origin, disability, veteran status or other legally protected status.<BR>
+<BR>
+The law requires MEI Technologies, Inc to post a notice describing the Federal laws prohibiting job discrimination. For information regarding your legal rights and protections, please click on the following link: <A href="http://www.dol.gov/ofccp/regs/compliance/posters/pdf/eeopost.pdf" target=_blank>Notice to Applicants</A><BR>
+<BR>
+<a href="https://corp.meitechinc.com/careers/Careers.aspx?adata=EEp3N7ZfrvA9poaK761zUZfoLfz6p2Hu0DYahXmR1CtFyiHP30wJVXmV4YpsvqsXro%2bufIhk7Q9OEv4IxmPNwWPvnqowoy7Vxtbj8A8RzCi9b5lElB%2fUtNswbUxXNKd6ulzKyARdNInxb%2b3KND5ErmTpYC%2bR1nXxDQUNRSENjtfI" class="ApplyNowStyle">Start Over with Job Search</a>&nbsp;&nbsp;<BR>
+<BR>
+Already have a profile?&nbsp;<a href="https://corp.meitechinc.com/careers/AppSelfService.aspx" class="ApplyNowStyle"> Login Now</a><BR>
+<BR>
+</A></td>
+			</tr><tr>
+				<td class="HeaderStyle" colspan="2">16:CORP-001: Associates Program<BR></td>
+			</tr><tr>
+				<td colspan="2"><table cellpadding="3" border="0">
+					<tr>
+						<td class="CaptionStyle">Job Type:</td><td class="MainBodyText">Engineering</td>
+					</tr><tr>
+						<td class="CaptionStyle">Location:</td><td class="MainBodyText">Houston, TX</td>
+					</tr><tr>
+						<td>&nbsp;</td><td>&nbsp;</td>
+					</tr>
+				</table></td>
+			</tr><tr>
+				<td class="MainBodyText" colspan="2"><br />The goal of the Associates Program is to assemble a highly talented, productive pool of engineering, science, and management experts to meet MEIT's project requirements. Our associates are expert level, experienced engineers, scientists, or professional managers with NASA or DoD experience and are available for rapid assignment to a project. Task assignments may be short duration, part time, or longer term, depending upon project requirements. Associates accept tasks that suit their schedule.</td>
+			</tr><tr>
+				<td class="MainBodyText" colspan="2"><br /><strong><br />Required:</strong><br />- Expert level experience <br />- Experience from NASA or DoD <br /><br /><br /><strong>Desired:</strong><br />-<span style="font-size: 9pt; font-family: Tahoma,sans-serif;"> TOP SECRET/SAP/SAR/SCI clearance</span> <br /><br /><br /><br /><br /><span style="font-size: 12px; font-family: Tahoma;"><span style="font-size: 12px; color: #000000;">MEI Technologies, Inc. is an Equal Opportunity Employer. <br /><br />EEO/AA-M/F/disability/protected veteran status.</span><p><span style="font-size: 12px; color: #000000;">All qualified applicants will receive consideration for employment without regard to race, color, sex, sexual orientation, gender identity,religion, national origin, disability, veteran status, or other legally protected status.<br /><br /><br /><br /><br /><br /><br /><br /><br /></span></p></span></td>
+			</tr><tr>
+				<td>&nbsp;</td><td>&nbsp;</td>
+			</tr><tr>
+				<td colspan="2"><input type=button onclick="window.location.href='Careers.aspx?adata=EJ%2fVxq92ajyuGyYcDTYDTW7%2bOjRCLSAHPzTPAlK4zuMzP9paFnBhIBMDHBV52gliHTTWcKlv9d%2fnUQBod1tVvAf7%2bvY8u7%2bE7ZNbpCD0BG0BEi2mubNyguLhr7KVjdTGCzEL7lEh%2fHFLTYdOsDdZYFFbZLeX6K0bPIMU0v6zvfujOI2QCHRIf4VRjkY9ngd3126tHvjkekF42ommuo1XVYRsavL2VlhUg4nAkt9ZUYr6wpNzkl71TgSrKmcax%2bkzRNt9VIOURpGoTECSzX%2bclxc%3d'" value="Apply Now" class="CareersButton">&nbsp;&nbsp;&nbsp;&nbsp;<input type=button onclick="window.location.href='Careers.aspx?adata=EFRa1ZPIQzIu%2fTki7foqerEHZGuMAXTN0NhGcU%2b7d5T%2bPuzODRWzbaNeY2ncoIdb%2fXRLZqj%2b4eEV6xgMCvGAi0WplUY3GZqptFE5xuTPLi2EOMXDefiE4aNkfAqOSdoQBLNBXRn5HD4I8TdCL7HvGFHZ7ztM5Rg%2fyQFeUl59Lnl7lQHSdFOOwUGGIytVsoa%2birKCFPEDXxjOnkUCq3W5MdllpzRdJnclmTYwQhUduy37'" value="Refer a Friend" class="CareersButton"></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+
+
+<input type="hidden" name="FormType">
+
+<input type=hidden name=litVersion value="9.0.1.0">
+
+
+<input type=hidden name=litNETVersion value="2.0">
+			</div>
+    	
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+<br />
+If you are an individual with a disability and require a reasonable accommodation to complete any part of the application process, limited in the ability or unable to access or use this online application process and need an alternative methods for applying, you may contact Michelle Anderson at 281-283-6051 or <a href="mailto:michelle.anderson@meitechinc.com" title="michelle.anderson@meitechinc.com">michelle.anderson@meitechinc.com</a> for assistance.  
+<br />
+          
+          <!-- /pri -->
+        </div>
+        <!-- /inner -->
+      </div>
+      <!-- /innerpagewrap -->
+    </div>
+    <!-- /outer -->
+  </div>
+  <!-- /wrap -->
+</div>
+<!-- /pagewrap -->
+<div id="ftwrap">
+  <div id="ft"><span id="everify"><a href="http://www.uscis.gov/portal/site/uscis/menuitem.eb1d4c2a3e5b9ac89243c6a7543f6d1a/?vgnextoid=75bce2e261405110VgnVCM1000004718190aRCRD&vgnextchannel=75bce2e261405110VgnVCM1000004718190aRCRD" target="_blank"><img src="./images/logo-everify.jpg" alt="E-Verify" width="140" height="47" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.gsa.gov/portal/content/104447" target="_blank"><img src="./images/logo_gsa.gif" alt="GSA" width="45" height="45" border="0" /></a></span>
+    <ul>
+      <li><a href="http://www.meitechinc.com/">Home</a></li>
+      <li><a href="http://www.meitechinc.com/about/">About Us</a></li>
+      <li><a href="http://www.meitechinc.com/capabilities/">Capabilities &amp; Services</a></li>
+      <!-- <li><a href="/contracts/">Contracts</a></li> -->
+      <li><a href="http://www.meitechinc.com/investments/">Investments &amp; Strategic Agreements</a></li>
+      <li><a href="http://www.meitechinc.com/newsroom/">Newsroom</a></li>
+      <li><a href="http://www.meitechinc.com/careers/">Careers</a></li>
+      <li class="last"><a href="http://www.meitechinc.com/contact/">Contact</a></li>
+    </ul>
+    <ul>
+      <!-- <li><a href="/privacy.asp">Privacy Policy</a></li> -->
+      <!-- <li><a href="/terms.asp">Terms of Use</a></li> -->
+      <li class="last"><a href="http://www.meitechinc.com/sitemap.asp">Site Map</a></li>
+    </ul>
+    <p>&#169; www MEI Technologies, Inc.   MEI Technologies is an Equal Employment Opportunity/Affirmative Action Employer.</p>
+  </div>
+  <!-- /ft -->
+</div>
+<!-- /ftwrap -->
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+
+
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-10662997-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+
+
+
+</body>
+</html>

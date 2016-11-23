@@ -1,0 +1,685 @@
+status: 200
+content-length: 20918
+content-location: https://www.bidselect.com/ListingsPosted?BDSOWASP_CSRFTKN=jXRq5ayQqSbQPsQsJFC5zrGz8BNhRuJkZTTSf6TwOnYs
+x-powered-by: Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+set-cookie: JSESSIONID=WVgKS4X+jUKSSOqwj1W3Mw__.10.111.31.131; Path=/;
+ Secure, JSESSIONID=4IxbcNZo-Di6VZdfVyMjDg__.10.111.31.131; Path=/; Secure
+server: Apache-Coyote/1.1
+date: Wed, 21 Sep 2016 09:17:35 GMT
+x-frame-options: SAMEORIGIN
+content-type: text/html;charset=UTF-8
+
+
+ 
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+	<head>
+	<link href="/css/k_button.css" rel="stylesheet" type="text/css" media="screen" >
+	<link href="/css/styles.css" rel="stylesheet" type="text/css" >
+	<script src='/dwr/engine.js'></script>
+	<script src='/dwr/util.js'></script>
+	<script src="/libraries/jquery/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/pages/include/md5-min.js"></script>
+	<script type="text/javascript" src="/js/jquery.cycle.all.js"></script>
+	<script src="/libraries/jquery/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+	<link href="/css/jquery-ui-1.8.18.custom.css" rel="stylesheet" type="text/css" >
+	<script src="/js/bds-dialogue.js" type="text/javascript"></script>
+	<script src="/js/dfp-common.js" type="text/javascript"></script>					
+		<meta name="DESCRIPTION" content="Manage your profile, saved searches, favorite properties, syndicated listings and offers on BidSelect.">
+		<meta name="KEYWORDS" content="bidselect login">
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta http-equiv="Content-Language" content="en-us">
+		<meta http-equiv="pragma" content="no-cache">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		
+		<script language="JavaScript" SRC="/pages/include/Common.js"></script>
+		<title>Login - BidSelect</title>
+	<script type="text/javascript" language="JavaScript">
+
+	var tokenName = 'BDSOWASP_CSRFTKN';
+	var tokenValue = 'PFgqGDphU3o82fvOlzR3pSKbTvDP23ss08pFn6GilPos';
+	
+	function homeTelosWindowOpen(sURL,sName,sFeatures,bReplace){
+		var index = sURL.indexOf('?');		
+		if(index != -1){
+			sURL = sURL + '&' + tokenName + '=' + tokenValue;
+		}else{
+			sURL = sURL + '?' + tokenName + '=' + tokenValue;
+		}
+		window.open(sURL,sName,sFeatures,bReplace);
+	}
+	
+	function homeTelosWindowLocation(sURL){
+		var index = sURL.indexOf('?');		
+		if(index != -1){
+			sURL = sURL + '&' + tokenName + '=' + tokenValue;
+		}else{
+			sURL = sURL + '?' + tokenName + '=' + tokenValue;
+		}
+		window.location = sURL; 
+	}
+	
+	function homeTelosTargetWindowLocation(target,sURL){
+		var index = sURL.indexOf('?');		
+		if(index != -1){
+			sURL = sURL + '&' + tokenName + '=' + tokenValue;
+		}else{
+			sURL = sURL + '?' + tokenName + '=' + tokenValue;
+		}
+		target.window.location = sURL; 
+	}
+	function homeTelosTargetWindowOpenerLocation(sURL){
+		var index = sURL.indexOf('?');		
+		if(index != -1){
+			sURL = sURL + '&' + tokenName + '=' + tokenValue;
+		}else{
+			sURL = sURL + '?' + tokenName + '=' + tokenValue;
+		}
+		window.opener.location =  sURL;
+	}
+	
+	function homeTelosWindowLocationBookmark(sURL){
+		var idx = sURL.indexOf('#');
+		var bk = sURL.substring(idx);
+		sURL = sURL.substring(0, idx);		
+		var index = sURL.indexOf('?');		
+		if(index != -1){
+			sURL = sURL + '&' + tokenName + '=' + tokenValue;
+		}else{
+			sURL = sURL + '?' + tokenName + '=' + tokenValue;
+		}
+		sURL = sURL + bk;
+		window.location = sURL; 
+	}
+	
+	function doNothing() {}
+
+</script>
+</head>
+	<body onLoad="document.main.p_login.focus();">
+
+		<!-- Main Content Holder -->
+		<form name="main" action="/Login" method="POST" >
+			
+
+
+	<script type="text/javascript">
+		<!--
+		function preSubmit() {        
+			           
+			   	submitHyperLink('AR1SelectAccountType','AR1SelectAccountType','CUSTOM');
+			                    
+		}
+		function forgotPasswordAction() {
+			var fpwdURL ="/ForgotPassword";
+			
+			if( window.name == "popUp" ){
+				window.location = fpwdURL;
+			} else {
+				openPopUpWithOptions( fpwdURL, 1050,700, 'menubar=no,resizable=yes,scrollbars=yes,toolbar=no'); 
+			}
+		}
+		function validateLogin() {
+
+			var fromTopNav = !document.main.p_login;
+			var _login = "";
+			var _pass = "";
+
+			if ( fromTopNav ) {
+				_login = document.main.p_tn_login.value;
+				_pass = document.main.p_tn_password.value;
+				document.main.p_tn_action.value = 'LOGIN';				
+			} else {	
+				_login = document.main.p_login.value;
+				_pass = document.main.p_password.value;	
+			}
+
+			if ( _login == "" ) {
+				alert("Please enter Account ID!");
+				return false;
+			} else if ( _pass == "" ) {
+				alert( "Please enter Password!" );
+				return false;		
+			}
+
+			doHash( fromTopNav ? document.main.p_tn_password : document.main.p_password );
+			
+			if ( document.main.p_comp_ind ) {
+				document.main.p_comp_ind.value = "";
+			}
+			
+			document.main.p_process_page.value = "Login";
+			document.main.p_form_action.value = 'LOGIN';
+			
+				if ( document.main.p_router && document.main.p_router.value != "" ) {
+					document.main.action = document.main.p_router.value;
+				} else {
+					document.main.action = "/";
+				}
+			
+
+			document.main.submit();
+	
+			return true;
+		}
+
+		function doHash( pass ) {
+			var password = pass.value; 
+		   	var hash = hex_md5( password.toLowerCase() ); 
+		   	var comboHash = hex_md5( hash + 'ca+d1HW/YGM=' ); 
+		   	pass.value = comboHash; 
+		}		
+		
+		-->
+	</script>
+
+	<input type="hidden" name="p_plum" value="">
+	<input type="hidden" name="p_last_access_time" value="2016-09-21 04:17:35.382">
+	
+		<input type="hidden" name="p_client_id" value="0">		
+	
+	
+	<div id="header">
+		<!-- Uncomment below to show maintenance message-->
+		<div style="font-family:'TitilliumText22LRegular';font-weight:bold;color:#FF0000;"><b>UPCOMING SERVICE OUTAGE:</b> Friday, September 23rd 11:00pm Central to Saturday, September 24th 6:00am Central</div>
+		 
+		
+			
+				<div id="logo">
+					<a href="/?p_build_page=Home&p_process_page=Home&p_form_action=CUSTOM&p_client_id=0&p_plum=&p_last_access_time=2016-09-21 04:17:35.382&p_session_clean_property_id=">
+			           	<img src="/images/BidSelect-logo.gif" height="87" width="199" alt="BidSelect&reg; Home" />
+			         </a>
+			    </div>
+			
+		
+	
+	    
+			
+			<div id="header-right">
+				
+				
+			</div><!-- header right -->
+			
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('#tagline-container').hide();
+		   			 $('#tagline-container').cycle({
+						fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+						pause: 1, 
+						random: 1
+					});
+					$('#tagline-container').show();
+				});
+			</script>
+			
+		
+		<div class="clear"></div>
+	</div><!-- header  -->
+	
+	
+		
+
+
+	<script type="text/javascript" >
+		$('input').live("keypress", function(e) {
+
+			if ( e.keyCode == 13 
+				&& $("input[name=p_tn_login]").length > 0 && $("input[name=p_tn_login]").val() != ""
+				&& $("input[name=p_tn_password]").length > 0 && $("input[name=p_tn_password]").val() != "" ) {			
+				
+				e.preventDefault();
+				return validateLogin();
+			}
+		});
+		function checkAgent() { 
+			if ( false ) {
+				alert( "This option is not available for your account type." ); return false;
+			}
+		}
+		function checkBuyer() {
+			if ( false ) {
+				alert( "This option is not available for your account type." ); return false;
+			}			
+		}
+	</script>
+	
+	<div id="nav-container">
+    		<div id="nav">
+    			
+            			<ul class="dropdown">
+                    		<li class="home">
+                    			<a href="/?BDSOWASP_CSRFTKN=null" class="titillium-regular " >Home</a>
+                    		</li>
+                            <li class="buy-homes">
+                            	<a href="/BuyHomes?BDSOWASP_CSRFTKN=null" class="titillium-regular " >Buy Homes</a>
+                            </li>                          
+                            <li class="my-bidselect">
+                            	<a href="/AccountTypes?BDSOWASP_CSRFTKN=null" class="titillium-regular " >My BidSelect</a>
+	                            
+	                            		<ul>
+	                            
+		                        				<li>
+		                        					<a href="/AccountTypes?BDSOWASP_CSRFTKN=null" class="titillium-regular " >Register</a>
+		                        				</li>
+		                        
+		                        				<li>
+		                        					<a href="/ProfileAccount?BDSOWASP_CSRFTKN=null" class="titillium-regular " >My Profile</a>
+		                        				</li>
+		                        
+		                        				<li>
+		                        					<a href="/ListingsPosted?BDSOWASP_CSRFTKN=null" onclick="javascript:return checkAgent(); " class="titillium-regular " >My Listings</a>
+		                        				</li>
+		                        
+		                        				<li>
+		                        					<a href="/SubmittedAll?BDSOWASP_CSRFTKN=null" onclick="javascript:return checkBuyer(); " class="titillium-regular " >My Offers</a>
+		                        				</li>
+		                        
+		                        				<li>
+		                        					<a href="/Favorites?BDSOWASP_CSRFTKN=null" class="titillium-regular " >My Favorites</a>
+		                        				</li>
+		                        
+		                        				<li>
+		                        					<a href="/Searches?BDSOWASP_CSRFTKN=null" class="titillium-regular " >My Searches</a>
+		                        				</li>
+		                        
+	                            		</ul>
+	                            
+                            </li>
+                            <li class="resources">
+                            	<a href="/FindAgent?BDSOWASP_CSRFTKN=null" class="titillium-regular " >Resources</a>
+	                            
+	                            		<ul>
+	                            
+		                        				<li>
+		                        					<a href="/FindAgent?BDSOWASP_CSRFTKN=null" class="titillium " >Find Agent</a>
+		                        				</li>
+		                        
+		                        				<li>
+		                        					<a href="/BuyerTools?BDSOWASP_CSRFTKN=null" class="titillium " >Buyer Tools</a>
+		                        				</li>
+		                        
+		                        				<li>
+		                        					<a href="/ELearning?BDSOWASP_CSRFTKN=null" class="titillium " >E-Learning</a>
+		                        				</li>
+		                        
+	                            		</ul>
+	                            
+                            </li>
+                            <li class="contact-us">
+                            	<a href="/ContactUs?BDSOWASP_CSRFTKN=null" class="titillium-regular " >Contact us</a>
+                            </li>
+                            <li class="faqs">
+                            	<a href="/FAQ?BDSOWASP_CSRFTKN=null" class="titillium-regular " >Faqs</a>
+                            </li>
+                            
+                            		<li class="sign-in">
+                            			<a href="/Login?BDSOWASP_CSRFTKN=null" class="titillium-regular " >Log In</a>
+                            
+	                            			<ul class="form-dropdown">
+	                                       		<li>
+	                                                <div>
+	                                                	<div id="dropdown-tbl">
+		                                                    <label for="login"><span class="titillium">Account ID</span></label><br />
+		                                                    <input type="text" class="text-field" autocomplete="off" name="p_tn_login" id="login"/><br />
+		                                                    	
+															<label for="password"><span class="titillium">Password</span></label><br />
+		                                                    <input type="password" class="text-field" autocomplete="off" name="p_tn_password" id="password"/><br />
+		                                                        
+
+															<a id="top-nav-login-button" onClick="javascript:return validateLogin();">
+																<span class="titillium">Login Now</span>
+															</a>		
+															<br/><br/>
+															<a href="javascript:forgotPasswordAction();" class="titillium">Forgot Account ID/Password?</a> 
+															
+															<input type="hidden" name="p_tn_action"> 
+	                                                     </div>
+	                                               </div>
+	                                        	</li>                                       		
+											</ul>
+							
+									</li>
+							
+					</ul>
+					
+            </div><!-- nav -->
+		<div class="clear"></div>
+    </div><!-- nav container -->
+	
+		
+		
+	
+		<div id="nav-container">
+			
+			<div id="social-media-container"> <span style="vertical-align:top "><em>Follow us&nbsp;</em></span>
+				<a title="Like us on Facebook" href="https://www.facebook.com/FirstPrestonHT" target="_blank"><img name="facebook" width="24" alt="Facebook" height="24" src="/images/social/facebook-small.png"/></a>
+				<a title="Follow us on Twitter" href="https://twitter.com/FirstPrestonHT" target="_blank"><img name="twitter" width="24" height="24"  alt="Twitter" src="/images/social/twitter-small.png"/></a>
+				<a title="Subscribe to BidSelect Blog" href="http://www.firstprestonht.com/blog" target="_blank"><img name="rss" width="24" height="24"  alt="RSS" src="/images/social/rss-small.png"/></a>				
+				<a title="Subscribe to BidSelect Videos" href="https://www.youtube.com/BidSelectVideos" width="24" height="24" target="_blank"><img name="youtube" alt="YouTube" src="/images/social/youtube-small.png"/></a>
+			</div>
+		</div>
+		<div class="clear"></div>
+		
+	
+	<div id= "wrapper"><!-- end tag in footer -->
+			
+
+<div id="content-zone1">
+	<div class="gray-box-tab-default">
+		<h1 class="tab-header-text">LOGIN</h1>				
+	</div>
+	<div class="gray-box-with-gradient box-model-inset">	
+		
+			<div class="white-box-model-inset">
+						
+			
+                
+
+
+
+
+	
+	<!-- BEGIN MODULE HERE -->
+	
+	
+		<p class="titillium-medium" style="font-size: 1.3em; padding-top: 15px; padding-left: 15px;">For your account protection, sessions will remain open for a limited time only.  Yours has expired so you must login again.</p>
+		
+		<div class="clear"></div>
+		
+				
+		
+		<div id="col" class="indented-tab-text width325">
+			<div class="col-label width120 font15 pad-bottom-right5">
+				<label for="login" class="titillium">Account ID: </label><span class="required-label">*</span>
+			</div>
+									
+			<div class="col-input width200 colInputAdd pad-bottom5">
+				<input type="text" autocomplete="off" name="p_login" id="login"/>
+			</div>
+				
+			<div class="clear"></div>
+							
+			<div class="col-label width120 font15 pad-bottom-right5">
+				<label for="password" class="titillium">Password: </label><span class="required-label">*</span>
+			</div>
+							
+			<div class="col-input width200 colInputAdd pad-bottom5">
+	            <input type="password" autocomplete="off" name="p_password" id="password"
+	                  value=""/>
+	        </div>
+		</div>
+		<div id="col" class="indented-tab-text  width100">
+			<div class="width100 pad-bottom5">
+				<input type="submit" value="Login" class="blue-button"
+					onClick="javascript:return validateLogin();" />
+			</div>
+			<br/>
+			<p class="ct">
+				<a href="javascript:forgotPasswordAction();">Forgot your ID or Password?</a>
+				<input type="hidden" name="p_enc_input_string" value=""/>
+			</p>
+		</div>	
+
+		<div class="clear"></div>
+		
+		<div id="col" class="indented-tab-text width550">
+			<div class="pad-left125">
+				<p class="ct">Don't have a BidSelect Account?&nbsp;&nbsp;
+					<a href="/AccountTypes?p_form_action=CUSTOM&BDSOWASP_CSRFTKN=null" >Register</a> for FREE.
+				</p>	
+			</div>
+		</div>				
+	
+	<!-- END MODULE HERE -->		
+			</div>
+</div>
+</div>
+<div id="content-zone2"> 
+	
+
+
+
+
+
+
+</div>			
+<div class="clear"></div>
+			
+
+ 
+<div class="clear"></div>
+
+
+</div><!-- #page-contents-container from header -->
+
+
+
+	<div id="footer">
+	
+		<ul>
+			<li><a href="/AboutUs?BDSOWASP_CSRFTKN=null" >About Us</a></li>
+			<li><a href="/Usage?BDSOWASP_CSRFTKN=null" >Terms of Use</a></li>
+			<li><a href="/Privacy?BDSOWASP_CSRFTKN=null" >Privacy</a></li>
+			<li><a href="/SiteMap?BDSOWASP_CSRFTKN=null" >Site Map</a></li>
+		</ul>
+	</div><!-- footer -->
+	<div id="footer-line"></div>
+
+<div id="copyright">
+	 &copy; Copyright 2016 BidSource Technologies &reg;. All Rights Reserved.
+</div>
+
+<div id="footer-logo">
+	<img src="/images/footer-logo.gif" height="28" width="26" alt="Footer Logo" />
+</div>
+
+	<input type="hidden" name="p_router" value="/ListingsPosted" />		
+
+	
+			<input type="hidden" name="p_process_page" value="Login">
+			<input type="hidden" name="p_build_page" value="null">
+			<input type="hidden" name="js_changed" value="">
+			<input type="hidden" name="p_form_action" value="">
+		<input type="hidden" name="BDSOWASP_CSRFTKN" value="PFgqGDphU3o82fvOlzR3pSKbTvDP23ss08pFn6GilPos"/>
+</form>
+
+		
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3460606-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<script type="text/javascript">
+	jQuery.getScript( "/dwr/interface/DWRFacade.js", function() {
+		DWRFacade.logVisit( window.location.hostname, window.location.pathname, window.location.search );
+	} );
+</script>
+
+
+		
+	<script type="text/javascript" language="JavaScript">
+
+	var tokenName = 'BDSOWASP_CSRFTKN';
+	var tokenValue = 'PFgqGDphU3o82fvOlzR3pSKbTvDP23ss08pFn6GilPos';
+
+	function updateAnchors()
+	{
+		updateTag('a','href');
+	}
+	
+	function updateLinks()
+	{
+		updateTag('link', 'href');
+	}
+	
+	function updateAreas()
+	{
+		updateTag('area', 'href');
+	}
+	
+	function updateFrames()
+	{
+		updateTag('frame', 'src');
+	}
+	
+	function updateIFrames()
+	{
+		updateTag('iframe', 'src');
+	}
+	
+	function updateStyles()
+	{
+		updateTag('style', 'src');
+	}
+	
+	function updateScripts()
+	{
+		updateTag('script', 'src');
+	}
+	
+	function updateImages()
+	{
+		updateTag('img', 'src');
+	}
+	
+	function updateForms()
+	{
+		var forms = document.getElementsByTagName('form');
+		
+		for(i=0; i<forms.length; i++)
+		{
+			var html = forms[i].innerHTML;
+			
+			html += '<input type=hidden name=' + tokenName + ' value=' + tokenValue + ' />';
+			
+			//alert('new html: ' + html);
+			
+			forms[i].innerHTML = html;			
+		}
+	}
+	
+	function updateTag(name,attr)
+	{
+		var links = document.getElementsByTagName(name);
+		
+		//alert('length: ' + links.length);
+		
+		for(i=0; i<links.length; i++)
+		{
+			var src = links[i].getAttribute(attr);
+			
+			if(src != null && src != '')
+			{
+				// alert('found ' + src + '!');
+				var idx = src.indexOf('#');
+				var bk = src.substring(idx);
+				
+				if (idx != -1){
+					src = src.substring(0, idx);
+				}
+			
+				if(isHttpLink(src))
+				{	
+					var saveForIE = links[i].innerHTML;
+					var index = src.indexOf('?');
+					
+					if ( src.match( tokenName ) == null )
+					{
+						if(index != -1)
+						{
+							src = src + '&' + tokenName + '=' + tokenValue;
+						}
+						else if(index == -1)
+						{   
+							src = src + '?' + tokenName + '=' + tokenValue;
+						}
+					}
+
+					if (idx != -1){
+						src = src + bk;
+					}
+					 //alert('replacing nn' + links[i].getAttribute(attr) + 'nn  with nn' + src );
+					links[i].setAttribute(attr, src);
+					
+					try {
+						links[i].innerHTML = saveForIE;
+					} catch(err) {
+						// ignore
+					}
+				}
+			}
+		}
+	}
+	
+	function isHttpLink(src)
+	{
+		var result = 0;
+		
+		if(isHttpLinkHTTP(src) || isHttpLinkSlash(src) || isHttpLinkColon(src) )
+		{
+			result = 1;
+		}
+		
+		return result;
+	}
+	
+	function isHttpLinkHTTP(src) {
+		var result = 0;
+		
+		if(src.substring(0, 4) === 'http')
+		{
+			result = 1;
+		}
+		
+		return result;
+		
+	}
+	
+	function isHttpLinkSlash(src) {
+		var result = 0;
+		
+		if(src.substring(0, 1) === '/')
+		{
+			result = 1;
+		}
+		
+		return result;
+		
+	}
+
+	function isHttpLinkColon(src) {
+		var result = 0;
+		
+		if( (src.length > 0) && (src.indexOf(':') === -1) )
+		{
+			result = 1;
+		}
+		
+		return result;
+		
+	}
+	
+	updateAnchors();
+	updateAreas();
+	updateFrames();
+	updateIFrames();
+	updateStyles();	
+	updateImages();
+	
+	
+</script>
+<meta http-equiv='cache-control' content='no-cache'><meta http-equiv='expires' content='0'><meta http-equiv='pragma' content='no-cache'>
+
+</body>
+</html>

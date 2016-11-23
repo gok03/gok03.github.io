@@ -1,0 +1,400 @@
+status: 200
+content-location: http://www.ezbluesoftware.com
+x-powered-by: PHP/5.2.6-1+lenny9
+server: Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny9 with Suhosin-Patch
+ mod_ssl/2.2.9 OpenSSL/0.9.8o mod_perl/2.0.4 Perl/v5.10.1
+date: Fri, 09 Sep 2016 06:00:09 GMT
+content-type: text/html
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="verify-v1" content="/cspq+PXIwYhBfnl6TtQdwwhcuMJYfru/XX6AYnKXWw=" >
+<meta content="How To How To Build A Home Server | Building A Home Server | Diy NAS Server, Build A Home Server, Building A Home Server, Diy NAS Server home server, business server, sbs, small business server, media server, server software, linux home server, easy home server, easy business server, linux business server, home server linux, linux homeserver, easiest business server, linux home network, linux home server, howto build a linux home server, best linux home server, howto home server, open source home server, web apps, webapps, webapp, linux home server howto, network storage, redhat, ubuntu, VPN, samba, NAS, file sharing, LAMP, backups, linux file server, linux media server, home server using linux, fedora linux, setting up home server, setting up a business server, hosting at home, linux for home server, linux home server use, build a linux home server, linux based home server, best linux for home server" name="keywords">
+<meta name="description" content="Easy to use home and business server solutions backed by powerful and durable Linux.">
+<meta name="copyright" content="2006-2008 EZblue Software Corporation, All rights reserved.">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="EZblue Software Corp.">
+<meta name="revisit-after" content="2 Days">
+<meta name="robots" content="index,follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Server Software for Your Home or Business - EZblue</title>
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+<link href="stylesheets/lightbox.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+	.scroller {
+		overflow: auto;
+		height: 340px;
+	}
+</style>
+
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+
+<style> 
+ .white {} 
+ .gray {background-color: #C9C9C9;} 
+</style>
+
+
+<script type="text/javascript">
+
+var num=new Array("i1"
+	,"i2"
+	,"i3"
+);
+var images=new Array();
+images[0] = "image1";
+images[1] = "image2";
+images[2] = "image3";
+var count=1;
+var intID=0;
+
+
+function loop() {
+	if(count > 2)
+		count=0;
+
+	oCount = count-1;
+	if(oCount < 0)
+		oCount = 2;
+
+	Obj = document.getElementById(num[oCount]);
+	Obj.className = "white";
+
+	Obj = document.getElementById(num[count]);
+	Obj.className = "gray";
+
+	opacity(images[count], 0, 100, 3000);
+	count++;
+}
+
+function opacity(id, opacStart, opacEnd, millisec) { 
+    //speed for each frame 
+    var speed = Math.round(millisec / 100); 
+    var timer = 0; 
+
+    //determine the direction for the blending, if start and end are the same nothing happens 
+    if(opacStart > opacEnd) { 
+        for(i = opacStart; i >= opacEnd; i--) { 
+            setTimeout("changeOpac(" + i + ",'" + id + "')",(timer * speed)); 
+            timer++; 
+        } 
+    } else if(opacStart < opacEnd) { 
+        for(i = opacStart; i <= opacEnd; i++) 
+            { 
+            setTimeout("changeOpac(" + i + ",'" + id + "')",(timer * speed)); 
+            timer++; 
+        } 
+    } 
+} 
+
+//change the opacity for different browsers 
+function changeOpac(opacity, id) { 
+    var object = document.getElementById(id).style; 
+
+	// If the opacity is 0 we are starting a new object... make its z-index biggest.
+    if(opacity == 0) {
+		document.getElementById("image1").style.zIndex = 0;
+		document.getElementById("image2").style.zIndex = 0;
+		document.getElementById("image3").style.zIndex = 0;
+		object.zIndex=50;
+	object.display="block";
+    }
+
+    if(opacity > 99) {
+	// Shut off the other pictures.
+	
+		if(id != "image1") {
+		document.getElementById("image1").style.opacity=0;
+		document.getElementById("image1").style.MozOpacity=0;
+		document.getElementById("image1").style.KhtmlOpacity=0;
+		document.getElementById("image1").style.filter="alpha(opacity=0)";
+	} else {
+    	object.opacity = 1;
+    	object.MozOpacity = 1;
+    	object.KhtmlOpacity = 1;
+	// Bug in IE? the image has extra pixels until you turn the filter off...
+    	object.filter = "";
+	}
+		if(id != "image2") {
+		document.getElementById("image2").style.opacity=0;
+		document.getElementById("image2").style.MozOpacity=0;
+		document.getElementById("image2").style.KhtmlOpacity=0;
+		document.getElementById("image2").style.filter="alpha(opacity=0)";
+	} else {
+    	object.opacity = 1;
+    	object.MozOpacity = 1;
+    	object.KhtmlOpacity = 1;
+	// Bug in IE? the image has extra pixels until you turn the filter off...
+    	object.filter = "";
+	}
+		if(id != "image3") {
+		document.getElementById("image3").style.opacity=0;
+		document.getElementById("image3").style.MozOpacity=0;
+		document.getElementById("image3").style.KhtmlOpacity=0;
+		document.getElementById("image3").style.filter="alpha(opacity=0)";
+	} else {
+    	object.opacity = 1;
+    	object.MozOpacity = 1;
+    	object.KhtmlOpacity = 1;
+	// Bug in IE? the image has extra pixels until you turn the filter off...
+    	object.filter = "";
+	}
+	    } else {
+    object.opacity = (opacity / 100); 
+    object.MozOpacity = (opacity / 100); 
+    object.KhtmlOpacity = (opacity / 100); 
+    object.filter = "alpha(opacity=" + opacity + ")"; 
+
+	}
+
+} 
+
+function getWidth() {
+  var myWidth = 0, myHeight = 0;
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myWidth = document.documentElement.clientWidth;
+    myHeight = document.documentElement.clientHeight;
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+    //IE 4 compatible
+    myWidth = document.body.clientWidth;
+    myHeight = document.body.clientHeight;
+  }
+  return(myWidth);
+}
+
+function movePic() {
+	myWidth=getWidth();
+	pos = (myWidth-960)/2-5;
+	if(pos < 15) pos=15;
+	controlPos = pos+900;
+		document.getElementById("image1").style.left = pos + "px";
+		document.getElementById("image2").style.left = pos + "px";
+		document.getElementById("image3").style.left = pos + "px";
+		document.getElementById("control").style.left = controlPos + "px";
+	
+}
+</script>
+
+</head>
+
+<body onLoad="
+	movePic();
+	document.getElementById('control').style.display = 'inline';
+        intID = setInterval ( 'loop()', 7000);
+	" 
+	onResize="movePic();">
+
+
+<div id="header" class="container">
+        <div id="wrap-header">
+                <div id="logo">
+                        <a href="index.php"><span>EZblue Software Corporation - Servers Made Simple</span></a>
+                </div>
+                <div id="navigation">
+                        <ul>
+                                <li class="first"><a  class="on"href="http://www.ezbluesoftware.com/index.php"><span>Home</span></a></li>
+                                <li><a  href="http://www.ezbluesoftware.com/products.php"><span>Products</span></a></li>
+                                <li><a  href="http://www.ezbluesoftware.com/trial.php"><span>Download</span></a></li>
+                                <li><a  href="http://www.ezbluesoftware.com/faq.php"><span>FAQ</span></a></li>
+                                <li><a  href="http://www.ezbluesoftware.com/support.php"><span>Support</span></a></li>
+                                <li><a  href="http://www.ezbluesoftware.com/company.php"><span>Company</span></a></li>
+                                <li class="last"><a  href="https://www.ezbluesoftware.com/store.php"><span><font color="#0C8F00">Shop Now</span></font></a></li>
+                        </ul>
+                </div>
+        </div>
+</div>
+
+<div class='wrap'>
+
+&nbsp;
+
+		<div id="image1" style="position:absolute; left:25px; top:70px; width:960px; height:360px;
+			background-image:url(images/frontSlide/image1.jpg);z-index:50;display:block;">
+		<div style="height:258px"> </div>
+                <div class="more1"><span><a href="trial.php">Download</a></span></div> &nbsp; &nbsp;
+        </div>
+		<div id="image2" style="position:absolute; left:25px; top:70px; width:960px; height:360px;
+			background-image:url(images/frontSlide/image2.jpg);display:none;">
+		<div style="height:258px"> </div>
+                <div class="more1"><span><a href=""></a></span></div> &nbsp; &nbsp;
+        </div>
+		<div id="image3" style="position:absolute; left:25px; top:70px; width:960px; height:360px;
+			background-image:url(images/frontSlide/image3.jpg);display:none;">
+		<div style="height:258px"> </div>
+                <div class="more1"><span><a href=""></a></span></div> &nbsp; &nbsp;
+        </div>
+	
+	<div style="height:355px">
+	</div>
+
+	<div id="control" style="position:absolute; left: 930px; top:408px; width:50px;display:none;z-index:99;">
+		<table width="15"><tr>
+						<td width="5" class="white" id="i1">
+					<a href="#" onClick="javascript:opacity('image1', 0, 100, 100);
+					document.getElementById('i1').className='gray';
+								document.getElementById('image1').style.display = 'none';
+								document.getElementById('i2').className='white';
+									document.getElementById('image2').style.display = 'none';
+								document.getElementById('i3').className='white';
+									document.getElementById('image3').style.display = 'none';
+									clearInterval(intID);
+					">1</a></td>
+						<td width="5" class="white" id="i2">
+					<a href="#" onClick="javascript:opacity('image2', 0, 100, 100);
+					document.getElementById('i2').className='gray';
+								document.getElementById('i1').className='white';
+									document.getElementById('image1').style.display = 'none';
+								document.getElementById('image2').style.display = 'none';
+								document.getElementById('i3').className='white';
+									document.getElementById('image3').style.display = 'none';
+									clearInterval(intID);
+					">2</a></td>
+						<td width="5" class="white" id="i3">
+					<a href="#" onClick="javascript:opacity('image3', 0, 100, 100);
+					document.getElementById('i3').className='gray';
+								document.getElementById('i1').className='white';
+									document.getElementById('image1').style.display = 'none';
+								document.getElementById('i2').className='white';
+									document.getElementById('image2').style.display = 'none';
+								document.getElementById('image3').style.display = 'none';
+									clearInterval(intID);
+					">3</a></td>
+					</tr></table>
+	</div>
+
+	
+	<div id='content'>
+	  	<div id='sub-column'>
+		<div style="font-size:12pt;">
+		<a href="http://www.pcworld.com/businesscenter/article/204423/five_reasons_linux_beats_windows_for_servers.html?tk=hp_new"><strong>Five Reasons Linux Beats Windows for Servers</strong></a></strong></div>By Katherine Noyes, PC World
+		  	
+	  		<div id="trial">
+	  			<h2>Free 30-Day Trial</h2>
+	  			<div class="grabtrial"><a href="trial.php"><span>Download a Trial</span></a></div>
+	  			<p></p>
+				<p>Test it without any obligations for 30 days to discover whether it meets your expectations</p>
+	  		</div>
+	  		
+		  	<h3>Additional Information</h3>
+		  	<ul>
+				
+				<li><a href="how-to.php">Build it Yourself in 15 mins.How To?</a></li>
+				<li><a href="system-requirements.php">System Requirements</a></li>
+				<li><a href="magellan.php">Magellan Desktop</a></li>
+		  		<li><a href="key-features.php">Key Features</a></li>
+				<li><a href="applications.php">Applications</a></li>
+		  		<li><a href="faq.php">FAQ</a></li>
+				
+				<p><strong>Watch how EZ to set up a server!</strong>
+				<a href="http://www.youtube.com/watch?v=P1tctQEryNw&feature=player_embedded"><img src="images/video_screen.jpg"></a></p>
+				
+				 
+				
+		  	</ul>
+			
+	
+		
+		</div>
+	  
+	  	<div id="main-column">
+			<div id="left-column">
+			
+					<p style="text-align:justify"><h4><strong> Build a home or a business cloud server in minutes. All you need is a spare PC and the new EZblue software! <br> </h4></strong></p>
+					<p style="text-align:justify">EZblue server software has allowed <a href="how-to.php">everyone</a> including small and medium sized businesses to be able to have a server that was only available to big business. <strong>EZblue server software is a Linux based server software that you can install yourself on any PC without any Linux knowledge.</strong> You do not need Windows or any other software.  EZblue is a complete turn-key server program loaded with enterprise performance features like storage server, web server, mail server, quickbooks enterprise server and more. For more information, see: <a href="products.php">Products.</a></br>
+					
+					
+				<strong>Store, share and backup</strong> your personal and business files, photos, and any digital documents. Stream your music to your <a href="firefly.php">iTunes&trade;</a> from all the computers in your home or business network without having the problem of duplicate data.</p>
+		
+					
+			</div>
+			
+			<div id="right-column">
+				<ol>
+					<li id="screenshots"><h3>Screenshots</h3><a href="images/ss03.jpg" rel="lightbox[dashboard]"><img src="images/ss03-thumb.jpg" width="80" height="60" /></a><a href="images/ss02.jpg" rel="lightbox[dashboard]"><img src="images/ss02-thumb.jpg" width="80" height="60" /></a><a href="images/ss01.jpg" rel="lightbox[dashboard]"><img src="images/ss01-thumb.jpg" width="80" height="60" /></a></li>
+					<li><h3>Sample Network Configuration</h3><p><img src="images/home server.jpg" width="320" height="200" /></p></li>		
+					
+					
+					</div>		
+					
+					
+
+                        <ol id="left-icons">
+                                <li id="affordable"><h3><a href="key-features.php#affordable">Shop, Compare & Save</a></h3><p style="text-align:justify">Save thousands of dollars in upfront and ongoing costs when you consider one of our servers. Order the package of your choice, pay once and use it for as long as you want. <strong><font color="green">There are no hidden fees or additional charges.</font></strong></p></li>
+                                <li id="easy-setup"><h3><a href="key-features.php#easy">Easy Setup</a></h3><p style="text-align:justify">With EZblue automated hardware discovery and network configuration, installation takes only a few minutes. The built in wizard will guide you through each step.  Our pre configured servers are ready to do business out of the box. Nothing to install and no need to have IT staff to set it up. Save time and focuse on running your business not the server.</p></li>
+                                <li id="backup"><h3><a href="key-features.php#backup">Backup and Restore</a></h3><p style="text-align:justify">Backup the server using the built in advanced automated backup module. A $695 value we have includ free with every server we sell. Simple to use with just one click or use the schedule and let the server backup itself for you.</p></li>
+                                <li id="secure"><h3><a href="key-features.php#secure">Secure Your Data</a></h3><p style="text-align:justify">Keep all data safe and secure. Only authorized users can gain access. EZblue is a Linux based server that is less vulnerable to viruses and malware attacks.</p></li>
+								<li id="print"><h3><a href="key-features.php#print">Print Server</a></h3><p style="text-align:justify">Our built-in print server module functions as a central print server which allows multiple computers connected to the same network to print to a shared printer.</p></li>
+								
+                        </ol>
+                        <ol id="right-icons">
+                                <li id="web"><h3><a href="key-features.php#web">Web & Applications Server</a></h3><p style="text-align:justify">Host as many websites including your business E-Commerce website(s). Stop spending money on outside hosting and easily deploy your own blog or forum. Chose from over 10,000 free open source applications to run on EZblue. <a href="applications.php">Applications</a></p></li>
+								
+								<li id="remote"><h3><a href="key-features.php#remote">Built-in remote access</a></h3><p style="text-align:justify">The built-in remote access module gives you the ability using your PC to access your files and manage your EZblue server remotely over the Internet. We have implemented the industry standard <a href="http://www.logmeinhamachi.com/">Hamachi</a> VPN solution.  All communications are encrypted between the remote user and the server.</p></li>
+								
+								<li id="updates"><h3><a href="key-features.php#updates">Sync Module</a></h3><p style="text-align:justify">The Sync module is a powerful real-time file and servers synchronization module that can automatically synchronize a local EZblue server (main server) to one or more remote (backup) servers. Businesses are becoming increasingly concerned about the possibility of their offices becoming inaccessible for a prolonged period in the event of a natural disaster or other problems. Using the sync module a business can switch form using the main server to the remote server without any loss of time or data. You can also use the sync module to connect multiple locations.</p></li>
+								
+                               <li id="mail"><h3><a href="key-features.php#mail">Mail Server</a></h3><p style="text-align:justify">Give your business a complete in house mail server using the mail server module. You can host SMTP, IMAP or POP3 server. You can also access your email over the Internet using webmail.</p></li>
+								
+
+                                
+                                
+                        </ol>
+				</ol>
+			</div>
+	  	</div>
+	  	
+	</div><!-- end content -->
+</div><!-- end wrap -->
+
+<div id="footer">
+	<div class="wrap">
+		<a href="legal.php">Legal</a>  Copyright &copy; EZblue Software Corp. All rights reserved.
+	</div>
+	<!-- Google Code for ezblue visit Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1067784495;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "jw30COmr0AMQr7KU_QM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1067784495/?label=jw30COmr0AMQr7KU_QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</div>
+
+
+
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.ezbluesoftware.com/piwik/" : "http://www.ezbluesoftware.com/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://www.ezbluesoftware.com/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+</body>
+</html>

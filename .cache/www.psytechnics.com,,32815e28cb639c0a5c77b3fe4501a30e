@@ -1,0 +1,16 @@
+status: 301
+content-length: 0
+access-control-allow-methods: POST, PUT, DELETE, GET, OPTIONS
+content-location: http://www.psytechnics.com
+server: nginx
+access-control-request-method: *
+connection: keep-alive
+location: http://www.netscout.com/
+date: Tue, 13 Sep 2016 08:08:57 GMT
+access-control-allow-origin: *
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept,
+ Authorization
+content-type: text/html; charset=UTF-8
+-x-permanent-redirect-url: http://www.netscout.com/
+x-pingback: http://www.netscout.com/xmlrpc.php
+

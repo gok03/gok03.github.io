@@ -1,0 +1,705 @@
+status: 200
+content-length: 26901
+content-location: http://www.360itpro.com
+-content-encoding: gzip
+accept-ranges: bytes
+expires: Sat, 05 Nov 2016 19:47:11 GMT
+vary: Accept-Encoding,User-Agent
+server: Apache/2.4.23
+last-modified: Fri, 15 Jan 2016 04:35:01 GMT
+etag: "5142a18-6915-52957ed240e01-gzip"
+cache-control: max-age=2592000
+date: Thu, 06 Oct 2016 19:47:11 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.9.2 (gzip)
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>360 IT Professionals is a web development, IT staffing company in California</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta name=p:domain_verify content=835d7a01b624e8bd386d9950ea33508d />
+<meta name=google-site-verification content=e9FxAiCKXHcOG0NHrNKDxsmeS24oZNRU9TEFtcdw-sg />
+<link rel=alternate href="http://www.360itpro.com" hreflang=en-us />
+<meta name=Author content="360 IT Professionals Inc"/>
+<meta name=robots content="index,follow,noodp,noydir"/>
+<meta name=description content="360 IT Professionals offers state of the art IT services like Web Design and development in Fremont, Los Angeles, California to help businesses emerge as the winner">
+<link rel=canonical href='http://www.360itpro.com/'/>
+<link rel=shortlink href='http://www.360itpro.com/'/>
+<meta name=viewport content="user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel=stylesheet type='text/css'>
+<meta name=msvalidate.01 content=5B2071622FB41D22D11DC9988A44DDA2 />
+<meta name=alexaVerifyID content=Oy-qcBzurWEuxKqjobw3v4yclto />
+<link rel=icon href="img/360_32x32.png" type="image/gif">
+<link href="css/bootstrap.min.css" rel=stylesheet>
+<link href="css/style.css" rel=stylesheet>
+<link rel=stylesheet href="css/normalize.css">
+<link type="text/css" href="css/style_home.css" rel=stylesheet>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel=stylesheet type='text/css'>
+<!--[if lte IE 9]>
+	<link type="text/css" href="/assets/css/ltie9.css" rel="stylesheet">
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+<link rel=apple-touch-icon-precomposed sizes=144x144 href="img/apple-touch-icon-144-precomposed.png">
+<link rel=apple-touch-icon-precomposed sizes=114x114 href="img/apple-touch-icon-114-precomposed.png">
+<link rel=apple-touch-icon-precomposed sizes=72x72 href="img/apple-touch-icon-72-precomposed.png">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/jquery_002.js"></script>
+
+<script src="js/add.js"></script>
+<script type="text/javascript">
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+
+</script>
+
+<!--Form Validations-->
+   <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>    
+    
+    <script>
+    jQuery(function($){
+
+      jQuery.validator.addMethod("lettersonly", function(value, element) {
+        // return this.optional(element) || /^[a-z]+$/i.test(value); // old condition
+        return this.optional(element) || /^[a-zA-Z ]*$/.test(value); // new condition add by vineet
+      }, "Alphabets only please   ");
+       
+        $("#contact").validate({
+          rules: {
+              name: {
+                required: true,
+                lettersonly: true,
+                minlength: 2
+              },
+              captcha: "required",
+              email: {
+                required: true,
+                email: true
+              },
+              phone: {
+                required: true,
+                digits: true,
+                minlength: 10
+              },
+              message: {
+                required: true
+              }
+          },
+          
+          
+          messages: {
+            name: {
+                lettersonly: 'Alphabets only please'
+              }
+             
+          },
+          submitHandler: function (form) {
+                var request;
+                $('.response').show();
+                $('#response').html('<img src="images/gif-load.gif" />');
+                // bind to the submit event of our form
+        
+                // let select and cache all the fields
+                var $inputs = $("#contact").find("input, select, button, textarea");
+                // serialize the data in the form
+                var serializedData = $("#contact").serialize();
+                
+                // lets disable the inputs for the duration of the ajax request
+                $inputs.prop("disabled", true);
+        
+                // fire off the request to /form.php
+                
+               // alert($("#confirmOfferForm").serialize());
+                
+                request = $.ajax({
+                        url: "ajax_form.php",
+                        type: "POST",
+                        data: serializedData,
+                });
+        
+                // callback handler that will be called on success
+                //request.done(function(response, textStatus, jqXHR) {
+                request.done(function(data) {
+                        // log a message to the console
+
+                        $("#response").fadeOut(1000, function (){
+                        $("#response").html(data);
+                        $('#contact').find("input[type=text], input[type=tel], input[type=url], input[type=email], textarea").val("");
+                  });
+                   $("#response").fadeIn(1000);
+
+                    setTimeout(function () {
+                         jQuery('.close').trigger('click');
+                      }, 4000);
+
+                });
+                request.fail(function (jqXHR, textStatus, errorThrown) {
+                        // log the error to the console
+                       
+                       $('.response').show();
+
+                });
+                request.always(function () {
+                        // reenable the inputs
+                        $inputs.prop("disabled", false);
+                });
+            }
+      });
+    
+    });
+  </script>
+
+  <!--Form Validations Ends-->
+
+</head>
+<body class="clearfix cl_win">
+<div id="sidebutton">
+<a href="#" data-toggle="modal" data-target="#basicModal"></a>
+</div>
+
+
+<!-- contact pop ups -->
+    <script>
+    $(document).ready(function(){
+            
+          theCaptcha = makeid(); 
+          $(".captcha").html(theCaptcha);
+
+          $(".refresh").click(function(){
+              theCaptcha = makeid();
+              $(".captcha").html(theCaptcha);
+          });
+
+          $("#submit").click(function(){
+            captchaVal = $("#captcha").val();
+            if (captchaVal != theCaptcha) {
+
+              $('.msg').html("The Captcha code doesn't match ");
+              return false;
+
+            } else { $('.msg').html(""); return true; }
+          });
+
+    });
+
+
+    function makeid()
+    {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for( var i=0; i < 5; i++ )
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        return text;
+    }
+    </script>
+
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <!--h4 class="modal-title" id="myModalLabel">Contact Us</h4>-->
+          </div>
+          <div class="modal-body">
+            <form id="contact" name="contact" method="post" action"#">
+              <h3>Quick query</h3>
+              <h4>Connect with our expert and get reply within 24 hours!</h4>
+
+                <fieldset id="response" class="response">
+                  
+                </fieldset>
+
+                <fieldset>
+                  <input id="name" name="name" placeholder="Your name" type="text" tabindex="1" autofocus>
+                </fieldset>
+
+                <fieldset>
+                  <input id="email" name="email" placeholder="Your Email Address" type="email" tabindex="2">
+                </fieldset>
+
+                <fieldset>
+                  <input id="phone" name="phone" placeholder="Your Phone Number" type="tel" tabindex="3">
+                </fieldset>
+
+                <fieldset>
+                  <input id="url" name="url" value="" type="url" placeholder="Your Website URL (http://www.360itpro.com/)" tabindex="4">
+                </fieldset>
+
+                <fieldset>
+                  <textarea id="message" name="message" placeholder="Type your Message Here...." tabindex="5"></textarea>
+                  
+                </fieldset>
+
+                <fieldset>
+                  <div class="myCaptcha"> 
+                    <span class="captcha"></span> 
+                    <input id="captcha" name="captcha" value="" type="text" placeholder="Please Enter The Captcha" tabindex="4">
+                    <i class='msg'></i>
+                    <i class="refresh">refresh</i>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <input id="submit" type="submit" value="Submit" name="contact360itpro">
+
+                </fieldset>
+              
+              </form>
+            </div>
+        </div>
+      </div>
+     
+ <!-- contact pop ups -->
+  </div>
+<header>
+<div class=container>
+<div class="row  menu-bar">
+<div class="col-md-12 navbar-menu">
+<button class="navbar-toggle collapsed" data-target=.bs-navbar-collapse data-toggle=collapse type=button>
+<span id=t-button class="glyphicon glyphicon-align-justify"></span>
+</button>
+<nav class="navbar-collapse bs-navbar-collapse collapse" role=navigation style="height: 1px;">
+<ul class="nav nav-pills navbar-nav">
+<li><a href="about-us.html">About Us</a></li>
+<li><a href="testimonial.html">Testimonials</a></li>
+<li><a href="careers.html">Careers</a></li>
+<li>
+<a href="/">
+<img class=img-responsive alt="360 IT Professionals" src="img/logo.png"/>
+</a>
+</li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<section style="height: 1008px;" class="screen row" id=main-services>
+<div class=service id=strategy>
+<div class="bg gray"></div>
+<div class=title-cont>
+<div class=title>
+<a href="mobile-app-development.html"><img src="img/mobile.png" alt="360 IT Staffing" class="ic retina"></a>
+<div class=txt>
+<div class=square>
+<ins class=lft></ins>
+<div class=tablink>
+<strong>
+Mobile Development
+</strong>
+<strong></strong>
+</div>
+<div class=tablink2>
+<a href="mobile-app-development.html">
+<strong>Mobile</strong>
+<strong>Development</strong>
+</a>
+</div>
+<ins class=rgt></ins>
+</div>
+</div>
+</div>
+</div>
+<div class=inner>
+<div class=col></div>
+<div class=col>
+<div class=item>
+<div class=tit>
+<div class=num><a href="mobile-app-development.html" class="icon icon-mono mob">mob</a></div>
+<strong><a href="mobile-app-development.html">IOS Application Development</a></strong>
+</div>
+<div class=txt>
+<p><a href="mobile-app-development.html" class="web_lnk">We possess expertise in Objective C and Swift that are the latest technology required to develop an app with full potential.</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="mobile-app-development.html">Read More +</a></div>
+</div>
+</div>
+<div class=item>
+<div class=tit>
+<div class=num><a href="mobile-app-development.html#hyb" class="icon icon-mono hybrid">hybrid</a></div>
+<strong><a href="mobile-app-development.html#hyb">Hybrid Mobile App Development</a></strong>
+</div>
+<div class=txt>
+<p><a href="mobile-app-development.html#hyb" class="web_lnk">A hybrid mobile app can be created for many platforms using languages such as HTML, CSS and Javascript.</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="mobile-app-development.html#hyb">Read More +</a></div>
+</div>
+</div>
+
+</div>
+<div class=col>
+<div class=item>
+<div class=tit>
+<div class=num><a href="mobile-app-development.html#develop" class="icon icon-mono android">android</a></div>
+<strong><a href="mobile-app-development.html#develop">Android App Development </a></strong>
+</div>
+<div class=txt>
+<p><a href="mobile-app-development.html#develop" class="web_lnk">We take android app development as a new way to showcase our clients the endless possibilities to create user focused apps.</a> </p>
+<div class="anchr-rdmre"><a class="web_lnk" href="mobile-app-development.html#develop">Read More +</a></div>
+</div>
+</div>
+<div class=item>
+<div class=tit>
+<div class=num><a href="mobile-app-development.html#wind" class="icon icon-mono windows">Windows</a></div>
+<strong><a href="mobile-app-development.html#wind">Windows App Development </a></strong>
+</div>
+<div class=txt>
+<p><a href="mobile-app-development.html#wind" class="web_lnk">In simple terms, Mobile web app is an process of developing a custom windows phone app is simple, concerted and opaque.</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="mobile-app-development.html#wind">Read More +</a></div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<!--Salesforce content-->
+<div class=service id=apps>
+<div class="bg gray"></div>
+<div class=title-cont>
+<div class=title>
+<a href="salesforce.html"><img src="img/salesforce.png" alt=salesforce class="ic retina"></a>
+<div class=txt>
+<div class="square square-salesforce">
+<ins class=lft></ins>
+<div class=tablink><strong>Salesforce</strong>
+<strong></strong>
+</div>
+<div class=tablink2><a href="salesforce.html"><strong>Salesforce</strong>
+</a>
+</div>
+<ins class=rgt></ins>
+</div>
+</div>
+</div>
+</div>
+<div class=inner>
+<div class=col></div>
+<div class=col>
+<div class=item>
+<div class=tit>
+<div class=num><a href="salesforce.html" class="icon icon-mono mob">Managed Services</a></div>
+<strong><a href="salesforce.html">Salesforce Managed Services</a></strong>
+</div>
+<div class=txt>
+<p><a href="salesforce.html" class="web_lnk">The reason why companies use cloud computing CRM is because they get an easy way to get more deals, keep a record of all the opportunities </a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="salesforce.html">Read More +</a></div>
+</div>
+</div>
+<div class=item>
+<div class=tit>
+<div class=num><a href="salesforce.html" class="icon icon-mono web">Customization</a></div>
+<strong><a href="salesforce.html">Salesforce Customization</a></strong>
+</div>
+<div class=txt>
+<p><a href="salesforce.html" class="web_lnk">360 IT Professionals have highly-skilled Salesforce consultants who understand the needs of your business and can come with effective</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="salesforce.html">Read More +</a></div>
+</div>
+</div>
+
+
+</div>
+<div class=col>
+<div class=item>
+<div class=tit>
+<div class=num><a href="salesforce.html" class="icon icon-mono del">delivery</a></div>
+<strong><a href="salesforce.html">Salesforce Delivery Models</a></strong>
+</div>
+<div class=txt>
+<p><a href="salesforce.html" class="web_lnk">We have years of experience and have worked with different clients, we take pride with result-driven Salesforce consultants. </a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="salesforce.html">Read More +</a></div>
+</div>
+</div>
+<div class=item>
+<div class=tit>
+<div class=num><a href="salesforce.html" class="icon icon-mono mob">Integration</a></div>
+<strong><a href="salesforce.html">Salesforce Integration</a></strong>
+</div>
+<div class=txt>
+<p><a href="salesforce.html" class="web_lnk">With Salesforce Customization, you can expand the functionality of an existing Salesforce CRM solution that your business.</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="salesforce.html">Read More +</a></div>
+</div>
+</div>
+
+</div>
+<!--start-->
+<div class="col col_in"> <div class=item>
+<div class=tit>
+<div class=num><a href="musqot.html" class="icon icon-mono imp">Musqot’s official Implementation Partner</a></div>
+<strong><a href="musqot.html">Musqot’s official Implementation Partner</a></strong>
+</div>
+<div class=txt>
+<p><a href="musqot.html" class="web_lnk">360 IT PRO is Musqot’s official Implementation Partner in America. Musqot is a cloud-based marketing automation application that aptly caters to the contemporary marketing needs and challenges. It simplifies marketing and gives you complete control over your campaign. 
+</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="musqot.html">Read More +</a></div>
+</div>
+</div>
+
+</div>
+<!--end-->
+
+</div>
+</div>
+
+<!--Software Development-->
+
+<div class=service id=ux>
+<div class="bg gray"></div>
+<div class=title-cont>
+<div class=title>
+<a href="web-development.html"><img src="img/software.png" alt="website development fremont" class="ic retina"></a>
+<div class=txt>
+<div class=square>
+<ins class=lft></ins>
+<div class=tablink>
+<strong>Web Development</strong>
+<strong></strong>
+</div>
+<div class=tablink2><a href="#">
+<strong>Web</strong>
+<strong>Development</strong></a>
+</div>
+<ins class=rgt></ins>
+</div>
+</div>
+</div>
+</div>
+<div class=inner>
+<div class=col></div>
+<div class=col>
+<div class=item>
+<div class=tit>
+<div class=num><a href="web-development.html" class="icon icon-mono del">webb</a></div>
+<strong><a href="web-development.html">Web Application Development</a></strong>
+</div>
+<div class=txt>
+<p><a href="web-development.html" class="web_lnk">We offer web development solutions to help you in establishing your presence online. we ensure that we meet with individual specifics and perfect a dynamic web product.</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="web-development.html">Read More +</a></div>
+</div>
+</div>
+<div class=item>
+<div class=tit>
+<div class=num><a href="web-development.html#webin" class="icon icon-mono des">design</a></div>
+<strong><a href="web-development.html#webin">Web Designing</a></strong>
+</div>
+<div class=txt>
+<p><a href="web-development.html#webin" class="web_lnk">360 IT Professionals is a web designer Los Angeles based company. Our company majors in creating swift models for web sites, and producing attractive and interactive designs for them</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="web-development.html#webin">Read More +</a></div>
+</div>
+</div>
+
+</div>
+<div class=col>
+<div class=item>
+<div class=tit>
+<div class=num><a href="web-development.html.html#connect" class="icon icon-mono cont">content</a></div>
+<strong><a href="web-development.html#connect">Content Management System</a></strong>
+</div>
+<div class=txt>
+<p><a href="web-development.html#connect" class="web_lnk">Content management system or CMS is an effective tool that helps in managing content in the most organized way.</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="web-development.html#connect">Read More +</a></div>
+</div>
+</div>
+<div class=item>
+<div class=tit>
+<div class=num><a href="web-development.html#gfn" class="icon icon-mono graph">app</a></div>
+<strong><a href="web-development.html#gfn">Graphics Design</a></strong>
+</div>
+<div class=txt>
+<p><a href="web-development.html.html#gfn" class="web_lnk">Graphic designing helps in projecting the concepts, more importantly the thoughts behind the project. We provide for your product graphics, including images, designs..</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="web-development.html#gfn">Read More +</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--Staffing content-->
+<div class=service id=campagin>
+<div class="bg gray"></div>
+<div class=title-cont>
+<div class=title>
+<a href="it-staffing.html"><img src="img/staffing.png" alt="360 IT Staffing" class="ic retina"></a>
+<div class=txt>
+<div class=square>
+<ins class=lft></ins>
+<div class=tablink><strong>IT Staffing</strong>
+<strong></strong>
+</div>
+<div class=tablink2>
+<a href="it-staffing.html">
+<strong>IT Staffing</strong>
+</a></div>
+<ins class=rgt></ins>
+</div>
+</div>
+</div>
+</div>
+<div class=inner>
+<div class=col></div>
+<div class=col>
+<div class=item>
+<div class=tit>
+<div class=num><a href="it-staffing.html" class="icon icon-mono mob">Quick Facts</a></div>
+<strong><a href="it-staffing.html">Quick Facts</a></strong>
+</div>
+
+
+<div class="txt list-img-app-index">
+<ul class="checkapp-index">
+<li><a href="it-staffing.html" class="web_lnk"> Successfully staffed for more than 260 roles in last 6 months through 30+ IT Staffing Services contracts across the United States of America.</a></li>
+<li><a href="it-staffing.html" class="web_lnk">Providing Staffing support to more than 23 State Customers across USA. </a></li>
+<li><a href="it-staffing.html" class="web_lnk">Physical presence in the East and West Coast capabilities reach extends across the United States.</a></li>
+<li><a href="it-staffing.html" class="web_lnk"> Working closely with Fortune 500 Companies and Key Private Sector Agencies.</a></li>
+<li><a href="it-staffing.html" class="web_lnk"> 360 IT Professionals is a Minority Business Enterprise.</a></li>
+<li><a href="it-staffing.html" class="web_lnk">Providing cost effective and Customized Workforce Solution.</a></li>
+</ul>
+
+</div>
+
+<!--div class=txt>
+<p><a href="it-staffing.html" class="web_lnk">we provide continuous training on technical screening strategies, advanced methods and behavioral techniques in order to consistently add value to our clients.</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="it-staffing.html">Read More +</a></div>
+</div-->
+</div>
+<div class=item>
+<div class=tit>
+<div class=num><a href="it-staffing.html" class="icon icon-mono cont">Flexible Engagement Models </a></div>
+<strong><a href="it-staffing.html">Flexible Engagement Models </a></strong>
+</div>
+<div class="txt list-img-app-index">
+<ul class="checkapp-index">
+<li><a href="it-staffing.html" class="web_lnk">Contract Staffing</a></li>
+<li><a href="it-staffing.html" class="web_lnk">Full Time Staffing</a></li>
+<li><a href="it-staffing.html" class="web_lnk">Contract to Hire</a></li>
+</ul>
+
+</div>
+
+
+<!--div class=txt>
+<p><a href="it-staffing.html" class="web_lnk">We have over experienced, well-trained technical recruiters who are passionate about identifying great people for our clients. Our recruiters are experts in conducting technical  skills.</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="it-staffing.html">Read More +</a></div>
+</div-->
+</div>
+<!--div class=item>
+<div class=tit>
+<div class=num><a href="#" class="icon icon-mono dvlp">development</a></div>
+<strong><a href=graphic-designing.html>Development</a></strong>
+</div>
+<div class=txt>
+<p>Graphic designing helps in projecting the concepts, more importantly the thoughts behind the project.</p>
+</div>
+</div-->
+</div>
+<div class=col>
+<div class=item>
+<div class=tit>
+<div class=num><a href="it-staffing.html" class="icon icon-mono del">360 Staffing Solutions</a></div>
+<strong><a href="it-staffing.html">360 Staffing Solutions</a></strong>
+</div>
+<div class="txt list-img-app-index">
+<ul class="checkapp-index">
+<li><a href="it-staffing.html" class="web_lnk">Customized Workforce Solutions</a></li>
+<li><a href="it-staffing.html" class="web_lnk">Complete Workforce Solutions</a></li>
+<li><a href="it-staffing.html" class="web_lnk">Project Based Staffing Solutions</a></li>
+<li><a href="it-staffing.html" class="web_lnk">Payroll Services</a></li>
+</ul>
+
+</div>
+<!--div class=txt>
+<p><a href="qa-ba-training.html" class="web_lnk">Our IT recruiters understand technology and its practical applications, which allows us to better match skills to jobs, and individual career goals to your IT staffing needs.</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="qa-ba-training.html">Read More +</a></div>
+</div-->
+</div>
+<div class=item>
+<div class=tit>
+<div class=num><a href="it-staffing.html" class="icon icon-mono imp">Quality Process </a></div>
+<strong><a href="it-staffing.html">Quality Process </a></strong>
+</div>
+<div class="txt list-img-app-index">
+<ul class="checkapp-index">
+<li><a href="it-staffing.html" class="web_lnk">Understand the Market</a></li>
+<li><a href="it-staffing.html" class="web_lnk">Understand your Customer</a></li>
+<li><a href="it-staffing.html" class="web_lnk">Sourcing Strategy and Screening</a></li>
+<li><a href="it-staffing.html" class="web_lnk">Relationship Development</a></li>
+</ul>
+
+</div>
+
+<!--div class=txt>
+<p><a href="it-staffing.html" class="web_lnk">We provide the required work for each phase of your project and gradually transition the project to your key managers and reducing your dependence on consultants.</a></p>
+<div class="anchr-rdmre"><a class="web_lnk" href="it-staffing.html">Read More +</a></div>
+</div>
+</div-->
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class=container>
+<div class="row footer-menubar">
+<div class=col-sm-7>
+<div class=footer-navbar-menu>
+<ul class="nav nav-pills navbar-nav">
+<li><a href=about-us.html>About Us</a></li>
+<li><a href=testimonial.html>Testimonials</a></li>
+<li><a href=careers.html>Careers</a></li>
+<li><a href=portfolio.html>Portfolio</a></li>
+<li><a href=contact.html>Contact Us</a></li>
+<li>
+<form name=PrePage method=post action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+<input name=LinkId value=a8f29bd2-800f-4788-945d-ad6269364d45 type=hidden>
+<input value="Pay Online" type=submit>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class=col-sm-5>
+<div class=socialmedia>
+<a href="https://twitter.com/360itpro" target=_blank>
+<img alt="IT Professionals" class="img-responsive f_l scl-icon" src="img/twitter.png"/>
+</a>
+<a href="https://www.facebook.com/360itprofessionals" target=_blank>
+<img alt="website development fremont" class="img-responsive f_l scl-icon" src="img/fb.png"/>
+</a>
+<a href="https://www.linkedin.com/company/360-it-professionals-inc-" target=_blank>
+<img alt="360 IT Professionals" class="img-responsive f_l scl-icon" src="img/in.png"/>
+</a>
+<a href="https://plus.google.com/+360itprofessional/posts" target=_blank>
+<img alt="360 IT Staffing" class="img-responsive f_l scl-icon" src="img/rss.png"/>
+</a>
+<a href="https://www.pinterest.com/360itpro/" target=_blank>
+<img alt="IT Professionals" class="img-responsive f_l scl-icon" src="img/pint.png"/>
+</a>
+<a href="https://www.youtube.com/c/360itprofessional" target=_blank>
+<img alt="website development fremont" class="img-responsive f_l scl-icon" src="img/you_tube.png"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-58206688-2','auto');ga('send','pageview');</script>
+</footer>
+<script src="js/jquery_005.js"></script>
+<script defer src="js/main.js"></script>
+<script>function ChangeUrl(page,url){if(typeof(history.pushState)!="undefined"){var obj={Page:page,Url:url};history.pushState(obj,obj.Page,obj.Url);}else{}}</script>
+<noscript><div><img src="//mc.yandex.ru/watch/25359002" style="position:absolute; left:-9999px;" alt="No Script"/></div></noscript>
+
+</body>
+</html>

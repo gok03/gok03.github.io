@@ -1,0 +1,235 @@
+status: 200
+content-length: 8770
+content-location: http://www.ondemandassessment.com/verify/apply/yBBSDBR/hDahaPaa
+set-cookie: odasession=a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22c35ce252a8031fb613774540870ef91a%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A14%3A%22104.236.64.140%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A28%3A%22Python-httplib2%2F0.9.2+%28gzip%29%22%3Bs%3A13%3A%22last_activity%22%3Bs%3A10%3A%221475149700%22%3B%7D8bc94cc0cab13808ba46ee47792438ca;
+ expires=Sat, 29-Sep-2018 11:48:20 GMT; path=/
+x-powered-by: PleskLin
+vary: Accept-Encoding
+server: Apache
+connection: close
+-content-encoding: gzip
+x-ua-compatible: IE=edge
+date: Thu, 29 Sep 2016 11:48:20 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>On Demand Assessment</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://www.ondemandassessment.com/css/global.css">
+	<script src="http://www.ondemandassessment.com/scripts/jquery-1.11.3.min.js"></script>
+	
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#eventLogon').parent().addClass('col-md-offset-3');
+		});
+		function createCookie(name,value,days) {
+			if (days) {
+				var date = new Date();
+				date.setTime(date.getTime()+(days*24*60*60*1000));
+				var expires = "; expires="+date.toGMTString();
+			}
+			else var expires = "";
+			document.cookie = name+"="+value+expires+"; path=/";
+		}
+
+		function readCookie(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0;i < ca.length;i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+		}
+
+		function eraseCookie(name) {
+			createCookie(name,"",-1);
+		}
+
+		function beginEvent(tid, eventId) {
+			$('#eventLogon').html('<p>Your event has started in a popup window. Please close this window when you are done with the assessment.</p><br><h3 class="text-center">Event ID: <strong>' + eventId + '</strong></h3><br><p>If you experience an Internet connection issue and need to restart your assessment, go to <a href="http://www.oda1.com">www.oda1.com</a>, and enter in the Event ID above to pick up from where you left off on the test.</p>');
+		}
+		
+		function showMSA() {
+			index = window.open('','index','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=500');
+		}
+		
+		function getHelp() {
+			$.ajax({
+				type: 'post',
+				url: 'http://www.ondemandassessment.com/home/help',
+									data: 'c=54056',
+								success: function(html) {
+					$('#helpModalContent').html(html);
+					$('#helpModal').modal();
+				}
+			});
+		}
+	</script>
+			<style type="text/css">
+							body {background-color: #FFFFFF;}
+													body {color: #000000;}
+										#welcome {color: #000000;}
+										#eventLogon {background-color: #F5F5F5;}
+										#eventLogon {border-color: #00ff00;}
+					</style>
+	</head>
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+							<div id="companyLogo" class="text-left"><img src="http://www.ondemandassessment.com/userfiles/logos/simpleworks_it.png"></div>
+					</div>
+	</div>
+	
+			<div class="row">
+			<div class="col-md-12">
+									<h2 id="welcome" class="text-center">Thank You for your interest in Simpleworks  IT</h2>
+							</div>
+		</div>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+   $('#proceedButton input').click(function() {
+        if ($('#agreeToTerms').is(":checked")) {
+            $('#verifyInfo').submit();
+        } else {
+            alert("You must agree to the Terms of Use and Privacy Statement before beginning your assessment.");
+        }
+   });   
+});
+</script>
+
+<script type="text/javascript">
+	createCookie('cookieTest', 'TRUE', 1);
+</script>
+
+<div class="row">
+	<div id="cookieError" class="col-md-12">
+		<p class="alert alert-danger">
+			<span class="glyphicon glyphicon-warning-sign"></span> <span>Your browser does not appear to accept cookies. Please enable cookies before continuing.</span>
+		</p>
+	</div>
+
+	
+						<div class="col-md-12">
+				<div id="customInstructions"></div>
+			</div>
+		
+		<div class="col-md-6">			
+			<div id="eventLogon" class="well">
+				<h3>Verify Your Information:</h3>
+				<p>Please verify or enter your personal information below:</p>
+
+				
+				<form name="verifyInfo" id="verifyInfo" method="post" action="/index.php/verify/apply/yBBSDBR/hDahaPaa" class="form-horizontal">
+					<input type="hidden" name="referer" value="" />
+
+					<div class="form-group">
+						<label for="testTakerFirstName" class="col-sm-4 control-label">First name:</label>
+						<div class="col-sm-8">
+							<input type="text" name="testTakerFirstName" id="testTakerFirstName" value="" size="20" maxlength="32" class="form-control" placeholder="First name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="testTakerLastName" class="col-sm-4 control-label">Last name:</label>
+						<div class="col-sm-8">
+							<input type="text" name="testTakerLastName" id="testTakerLastName" value="" size="20" maxlength="32" class="form-control" placeholder="Last name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="testTakerEmail" class="col-sm-4 control-label">E-mail address:</label>
+						<div class="col-sm-8">
+							<input type="email" name="testTakerEmail" id="testTakerEmail" value="" size="40" maxlength="40" class="form-control" placeholder="E-mail address">
+						</div>
+					</div>
+
+											<div class="form-group">
+							<label for="linkedInProfile" class="col-sm-4 control-label">LinkedIn Profile (optional):</label>
+							<div class="col-sm-8">
+								<input type="text" name="linkedInProfile" id="linkedInProfile" value="" size="40" maxlength="255" class="form-control" placeholder="LinkedIn Profile URL">
+							</div>
+						</div>
+					
+					                    
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="1" id="agreeToTerms" name="agreeToTerms">
+                            I accept and agree to the <a href="http://www.ondemandassessment.com/terms.htm" onclick="showMSA();" target="index">Terms of Use</a> and <a href="http://www.criteriacorp.com/privacy.htm" onclick="showMSA();" target="index">Privacy Statement</a>
+                        </label>
+                    </div>
+                    
+											<noscript>
+							<div style="margin: 20px 10px; border: 2px solid red; padding: 10px; background-color: #FCC; font-weight: bold;">You must have JavaScript enabled to begin testing.</div>
+						</noscript>
+						<script type="text/javascript">
+							document.write('<div id="proceedButton" class="text-center"><input type="button" value="Submit" class="btn btn-lg btn-default"></div>');
+						</script>
+									</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+			var cookieTest = readCookie('cookieTest');
+			if (cookieTest != 'TRUE') {
+				$('#cookieError').show();
+				$("input[type='submit']").prop('disabled', true);
+				eraseCookie('cookieTest');
+			}
+	</script>
+
+
+
+	</div>	<!-- Close container -->
+	
+	<div id="footer" class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<p class="small text-muted">All tests are copyrighted and all rights are reserved by the copyright owners. <a href="http://www.ondemandassessment.com/terms.htm" onclick="showMSA();" target="index">Terms of Use</a> and <a href="http://www.criteriacorp.com/privacy.htm" onclick="showMSA();" target="index">Privacy Statement</a>.</p>
+				</div>
+				<div class="col-md-3">
+					<div id="helpLink">
+						<button class="btn btn-warning" onclick="getHelp();"><span class="glyphicon glyphicon-question-sign"></span> Get Help</button>
+					</div>
+					<!--
+											<div id="helpLink">
+							<a href="http://www.ondemandassessment.com/help/index/company/54056" class="btn btn-warning"><span class="glyphicon glyphicon-question-sign"></span> Need Help?</a>
+						</div>
+										-->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="helpModalLabel">Frequently Asked Questions</h4>
+				</div>
+				<div class="modal-body" id="helpModalContent"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+</html>

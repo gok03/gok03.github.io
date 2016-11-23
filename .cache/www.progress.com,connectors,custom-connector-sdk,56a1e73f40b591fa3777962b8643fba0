@@ -1,0 +1,1488 @@
+status: 200
+content-length: 78820
+content-location: https://www.progress.com/connectors/custom-connector-sdk
+expires: -1
+vary: Accept-Encoding
+server: Microsoft-IIS/7.5
+-content-encoding: gzip
+pragma: no-cache
+cache-control: no-cache
+date: Tue, 13 Sep 2016 12:26:13 GMT
+access-control-allow-origin: http://localconverter.telerik.com
+content-type: text/html; charset=utf-8
+x-aspnet-version: 4.0.30319
+-varied-accept-encoding: gzip, deflate
+
+
+<!DOCTYPE html>
+<!--[if lte IE 7]><html id="html" class="ie oldie ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html id="html" class="ie oldie ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html id="html" class="ie ie9" lang="en"><![endif]-->
+<!--[if !IE]>-->
+<html id="html" lang="en">
+<!--<![endif]-->
+<head id="Head"><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noodp,noydir" /><meta name="robots" content="index,follow" /><title>
+	Build Custom Driver in ODBC, JDBC, ADO.NET or OLE-DB | OpenAccess SDK
+</title><link rel="shortcut icon" href="/favicon.ico?v=2" />
+    <!--[if lte IE 8]><script>(function(){var element = "header,section,article,nav,aside,hgroup,figure,figcaption,footer,mark,time".split(','), l = element.length;while (l > 0){l = l - 1; document.createElement(element[l]);}} )();</script><![endif]-->
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" type="text/css" rel="stylesheet" media="all" />    
+	<!-- Google Tag Manager (Put at top of head section) -->
+<noscript><iframe src="https://www.google-analytics.com/gtm/ns?id=GTM-MTJDV7"
+style="display:none;visibility:hidden" height="0" width="0"></iframe>
+</noscript><script>(function (p, a, l, i, n, d, r, o, m, e) {
+r = { id: 'GTM-MTJDV7', l: 'dataLayer', m: 'sync' };
+	if (!r.gac) {
+		o = /;((__utma=)|([^;=]+=GAX?\d+\.))[^;]*/g; m = l.cookie.replace(
+		/^|(; +)/g, ';').match(o); if (m) r.gac = m.sort().join('').substring(1)
+	}; e =
+	'https://www.google-analytics.com/gtm/js?'; r.m == 'sync' || (p['event'] = 'gtm.js');
+	for (d in r) if (r.hasOwnProperty(d)) e += n(d) + '=' + n(r[d]) + '&'; a[r.l] = a[r.l] || [];
+	a[r.l].push(p); if (r.m == 'sync') { l.write('<' + i + ' src="' + e + '"><\/' + i + '>'); } else {
+		j = l.createElement(i); j.async = !0; j.src = e; f = l.getElementsByTagName(i)[0];
+		f.parentNode.insertBefore(j, f);
+	}
+})({ 'gtm.start': 1 * new Date() }, window, document,
+'script', encodeURIComponent);</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript" src="https://cdn.optimizely.com/js/240828791.js"></script><meta property="og:image" content="https://www.progress.com/images/default-source/default-album/progress-album/images-album/progress1200x630.png" /><meta property="og:site_name" content="Progress.com" /><meta property="og:type" content="website" /><meta property="fb:app_id" content="154232704644633" /><meta property="twitter:site" content="@ProgressSW" /><meta property="twitter:creator" content="@ProgressSW" /><meta property="og:url" content="https://www.progress.com/connectors/custom-connector-sdk" /><meta property="twitter:url" content="https://www.progress.com/connectors/custom-connector-sdk" /><meta property="og:title" content="Build Custom Driver in ODBC, JDBC, ADO.NET or OLE-DB | OpenAccess SDK" /><meta property="twitter:title" content="Build Custom Driver in ODBC, JDBC, ADO.NET or OLE-DB | OpenAccess SDK" /><meta property="twitter:card" content="Build custom ODBC, JDBC, ADO.NET &amp; OLEDB drivers using our OpenAccess Software Development Kit (SDK). Develop in C++, Java or C# for any data source" /><meta property="og:description" content="Build custom ODBC, JDBC, ADO.NET &amp; OLEDB drivers using our OpenAccess Software Development Kit (SDK). Develop in C++, Java or C# for any data source" /><meta property="twitter:description" content="Build custom ODBC, JDBC, ADO.NET &amp; OLEDB drivers using our OpenAccess Software Development Kit (SDK). Develop in C++, Java or C# for any data source" /><meta property="progress:product" content="datadirect, custom-connector-sdk" /><meta name="Generator" content="Sitefinity 8.2.5908.0 PU" /><script type="text/javascript">
+	var _elqQ = _elqQ || [];
+			_elqQ.push(['elqSetSiteId', '1325']);
+			_elqQ.push(['elqTrackPageView']);
+
+			(function () {
+				function async_load() {
+					var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+					s.src = 'https://img.en25.com/i/elqCfg.min.js';
+					var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+				}
+				if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+				else if (window.attachEvent) window.attachEvent('onload', async_load);
+			})();(function() {
+				var script = '//s1325.t.eloqua.com/visitor/v200/svrGP?pps=70&siteid=1325';
+				(function getScript(source, callback) {
+					var script = document.createElement('script');
+					var prior = document.getElementsByTagName('script')[0];
+					script.async = 1;
+					prior.parentNode.insertBefore(script, prior);
+					script.onload = script.onreadystatechange = function( _, isAbort ) {
+						if(isAbort || !script.readyState || /loaded|complete/.test(script.readyState) ) {
+							script.onload = script.onreadystatechange = null;
+							script = undefined;
+
+							if(!isAbort) { if(callback) callback(); }
+						}
+					};
+					script.src = source;
+				})(script, function() {
+					if (typeof GetElqCustomerGUID == 'function') {
+						var userId = GetElqCustomerGUID();
+						document.cookie = 'elqUserId=' + userId + '; path=/';
+					}
+				});
+			})();
+</script><script type="text/javascript">
+	(function() {
+    var jqueryXhrModified = false;
+    var detectjs = false;
+    var executeDataIntelligenceScript = function() {
+        var source;
+        if (!window.JSON) {
+            source = '/WebResource.axd?d=_sp4iohKB5Q2sw4VOptasJPO8ecoreCW0V4u9YVWGn2Stftx5llTjz6zv_RJFSh-s0pSSva7U2CZjET8NWsyxm5t5pPmKd_whcYmiz3lHqtu83ggMd6YzfylfA85ZQVPVbwBoqyTAlJB95HTOFrLPE47uEmJVIHo3CjNcwrJ9iBP-mWK0&t=635941895820000000';
+        } else if (!window.jQuery) {
+            source = '/WebResource.axd?d=okes4at-BfXmZlfW9IIe0rt4zKGMiCj2jNOhCVJu1QLg7i9OZl5gYs4lYdffAUK-eglv8gCWGWczwQ3naVhrBrywkOqIJMsbQ7xwzS-un-QpdBPnL0xD3wZyVumUgqXAJvkjDH-I2-N8NAvNpeBec-k7VBbns7CVP1iJA2FKbulPQO4i0&t=635941895820000000';
+        } else if (!jqueryXhrModified) {
+            source = '/WebResource.axd?d=qUL6V5O3o3a6nWMMUnQp_qvVt1Z2xWzqZMW9n0L7ciBatd2baM5lZvCFmCf3qfXUz0T7y0p-OYqboKGZlp1vQvXVjfq3Y3JxzNzLiRmzb9-AvvEitv2Ul_4jwv2oWjsvRMGGqER6UcXKiyer99Khf6_DXLioG3domXUymPPCH9NtT5_HyLiGkGdJIT-QK5uW6uJFJVXAWnv0RfehCTAhGl2vC_TNitD3zSd1CjAbmw2-LTIo0&t=635941895820000000';
+            jqueryXhrModified = true;
+        } else if (!detectjs) {
+            source = '/WebResource.axd?d=fodITYsUiVIzdCYVIfZk5PISkDexSXLXN9U4XEq6xiOef5gq2V8ItLDcblApRWFAy7y9q1GqpQi48iP36yNBCl07fvru-WxHltkdOLkcLxVd1dJGDj7LJvMAcihFxYm30hbq6OUGz6NIHAEDsuY5sQeYLeguNHYhv0oafsNEY4Lz5QYd-y-dbsOm-anMjHXQHv2lyHYi7eKwVypmu-QNFXwAR_o1&t=635941895820000000';
+            detectjs = true;
+        } else if (!window.DataIntelligenceSubmitScript) {
+            source = '/WebResource.axd?d=lBQXPFK-v6LLTcSsjH9ewgq-4xtC-bMIE63qSxM9eOgcRSPxSmb_S1eGzCwAMsLHA9oJEyQanbJj7cw7ayQDKsMk9joM4XWYULf8VrpkB_V2bSKzIaCHIBxSyfigZRcD8xyGLEHpKm0GJ8EZYE0vPjpk0dHe2Z6QPv0ibFXKrjZ6zR-wXTSI70E4FgdMxGe210Xv4uXE22b9-OhNPzmT1S3_GHk9XV23tfS0uO9D0LmM3CJm0&t=635941895820000000';
+        } else if (!window.sfDataIntell) {
+            source = 'https://decsitefinitycdn.blob.core.windows.net/sdk/telerik-dec-client.min.1.0.0.121.js';
+        } else {
+            return DataIntelligenceSubmitScript.load({"apiServerUrl":"https://api.dec.sitefinity.com","apiKey":"67cbe6c3-d62b-526d-3c7b-d736a0cd7904","applicationName":"ProgressCom","trackingCookieDomain":".progress.com"});
+        }
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        var callback = function() {
+            if (!this.readyState || this.readyState === 'complete' || this.readyState === 'loaded') {
+                executeDataIntelligenceScript();
+            }
+        };
+        if(script.addEventListener) {
+            script.addEventListener('load', callback, false);
+        } else if(script.readyState) {
+            script.onreadystatechange = callback;
+        }
+        script.src = source;
+        return document.body.appendChild(script);
+    };
+    if (window.addEventListener) {
+        window.addEventListener('load', executeDataIntelligenceScript, false);
+    } else if (window.attachEvent) {
+        window.attachEvent('onload', executeDataIntelligenceScript);
+    }
+})();
+</script><link href="/Telerik.Web.UI.WebResource.axd?d=XSOUZP010jl0_6YhsF4rhXuK_INkMcjX6bbpa8ziPs4pCCjNMii3r7Bn-i_4vSr6U_8xl53q9P_EVNfAyJSjBeC_utKGKKe1c6DlyVGrs8rNlikWo0w9t2Qq4XJy8wqhVnMAsw2&amp;t=635187752960000000&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d8.2.5908.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a8cb184c0-d614-40d6-96e8-216e0bb93c28%3a7a90d6a" type="text/css" rel="stylesheet" /><style type="text/css" media="all">.Section--background-top {
+  padding-top: 80px !important;
+  background-color: #222936;
+  background-image: url("https://d117h1jjiq768j.cloudfront.net/images/default-source/Products/salesforce/bg-salseforce.png?sfvrsn=2");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Section--background-bottom {
+  background: #e7e7e7 url("https://d117h1jjiq768j.cloudfront.net/images/default-source/Products/datadirect/connectors/bg-air.jpg?24") no-repeat center -495px;
+}
+
+.Section-banner {
+  height: auto !important;
+}
+
+.Section--blue4 {
+  background-color: #deeefa;
+}
+
+.Section-background img {
+  height: 50% !important;
+}
+
+.u-mh {
+  min-height: 360px;
+}
+
+.centered-col-9 {
+  max-width: 79% !important;
+  margin: 0px auto !important;
+}
+
+.f-ls-narrow {
+  letter-spacing: -0.025em !important;
+}
+
+h1, .h1 {
+  line-height: 1.03 !important;
+}
+
+
+hr.transparent {
+  border-color: rgba(0, 0, 0, 0) !important;
+  }
+
+.col--offset-2 {
+  margin-left: 19% !important;
+}
+
+.Divider-text2:before, .Divider-text2:after, .QuickLinks a:before {
+  border-color: #4f535b !important;
+}
+
+
+.QuickLinks--breakable2 a:before {
+    padding-left: 1.5em !important;
+    margin-left: 1.2em !important;
+}
+
+  .QuickLinks--breakable-top a:before {
+    padding-left: 1.5em !important;
+  }
+
+a.h3 {
+  color: #0090d3;
+}
+
+
+.row--separated-hanging > div > [class*="col-"]:before, .row--separated-hanging > div:before {
+  margin-left: -16px !important;
+}
+
+.ie.oldie.ie8 .u-normal-visible {
+  display: none !important;
+}
+
+@media only screen and (min-width: 2501px) {
+  .Section--background-bottom {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  .Section--background-top {
+    background-position: center top;
+    background-size: contain;
+  }
+}
+
+
+@media only screen and (min-width: 1231px) and (max-width: 1600px) {
+  .Section--background-top {
+    background-position: center top;
+  }
+}
+
+@media only screen and (min-width: 771px) and (max-width: 1230px) {
+  .Section--background-top {
+    background-position: center center;
+    background-size: inherit;
+  }
+}
+
+@media only screen and (min-width: 771px) {
+
+  .Section--m {
+    padding-top: 60px !important;
+  }
+
+  .Section--xl {
+      padding-top: 100px !important;
+  }
+
+  .row--early-break .col-4, .row--early-break .col-3 {
+    width: 100% !important;
+  }
+
+}
+
+@media only screen and (max-width: 1150px) {
+  .row--custom-full > .col-6 {
+    text-align: left !important;
+  }
+
+  .u-medium-dn {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 591px) and (max-width: 1150px) {
+  .Section--customers .col-3 {
+    width: 50% !important;
+  }
+
+  .Box p.u-mh {
+    min-height: 170px;
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1150px) {
+
+  .row--custom-full .col-6 {
+      width: 100% !important;
+  }
+
+  .row--custom-full .col-6 img {
+    margin-bottom: 30px !important;
+  }
+
+}
+
+@media only screen and (min-width: 961px) {
+  .u-normal-visible {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+
+  .col--offset-2 {
+      margin-left: 0 !important;
+  }
+
+  .col--offset-2.col-8 {
+      width: 100% !important;
+  }
+
+  .Box {
+    padding-bottom: 10% !important;
+  }
+
+  .row--separated:not(.row--separated-hanging) > div:first-child {
+    margin-top: 0px !important;
+  }
+
+  .Btn.Btn--plain2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width:591px) and (max-width: 960px) {
+
+  .row--custom-half {
+    display: inline-block;
+    float: left;
+    width: 50% !important;
+    margin: 0 !important;
+  }
+
+  .row--custom-half .col-4 {
+    width: 100% !important;
+    min-height: 300px;
+    margin-bottom: 10px !important;
+  }
+
+  .row--custom-half .col-4:last-of-type {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+
+  .Section--background-top {
+    background-position: 10% 15%;
+    background-size: auto;
+  }
+  .centered-col-9 {
+    max-width: 90% !important;
+  }
+  .row--custom-half > .col-4,
+  .Section--learning .col-5,
+  .Section--learning .col-7 {
+    width: 100% !important;
+  }
+
+ html .u-modest-tac {
+    text-align: center !important;
+  }
+
+  .QuickLinks--breakable2 a:before {
+    padding-left: 0.5em !important;
+    margin-left: 0.2em !important;
+  }
+
+  .h2 {
+      font-size: 40px !important;
+      line-height: 1.2 !important;
+  }
+
+}
+
+
+@media only screen and (min-width:591px) and (max-width: 770px) {
+  .row--custom-half > .col-4 {
+    min-height: 360px;
+  }
+
+}
+
+@media only screen and (max-width: 590px) {
+
+  .Section--background-top {
+    background-position: 20% 35%;
+    background-size: auto;
+  }
+
+  .Section--learning .col-10 {
+    margin-bottom: 50px !important;
+  }
+
+  h2.u-mb6 {
+    margin-bottom: 40px !important;
+  }
+
+  .u-mh {
+    min-height: auto;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .Section--learning .u-mr3 {
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+
+  .QuickLinks--breakable2 a {
+    position: relative;
+    display: block !important;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    text-align: center;
+  }
+
+.QuickLinks--breakable2 a:before {
+    position: absolute;
+    top: 0;
+    left: 44%;
+    right: 44%;
+    border-top: 1px solid #4f535b;
+    border-left: 0px !important;
+    margin-left: 0 !important;
+    padding-left: 0;
+  }
+
+}
+
+</style><link href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.0.5/css/metric.min.css" type="text/css" rel="stylesheet" media="all" /><style type="text/css" media="all">@media only screen and (max-width: 440px) {
+.Section--background h2 {
+    font: 400 32px/1.2 "Metric-Light",Arial,Gadget,sans-serif !important;
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+ 
+  .QuickLinks.QuickLinks--spaced.QuickLinks--grey-divider a:first-child {
+     margin-left: 10px !important;
+   }
+  
+}
+</style><link href="https://d6vtbcy3ong79.cloudfront.net/progress-footer/latest/css/prgs-footer.min.css" type="text/css" rel="stylesheet" media="all" /><link href="//d3ba5g9yhie26y.cloudfront.net/cache/a85e235a792b6521f41e2cbd35b5cd0256127146/progress/prgs/dist/css/style.css" type="text/css" rel="stylesheet" /><link href="https://d6vtbcy3ong79.cloudfront.net/progress-navigation/2.0.35/css/prgs-navigation.min.css" type="text/css" rel="stylesheet" media="all" /><style type="text/css" media="all">.-sup {
+  display: inline-block!important;
+  margin-top: .6em!important;
+  padding: 0!important;
+  vertical-align: top!important;
+  font-size: .3em!important;
+  font-weight: 500!important;
+  text-indent: -.6em!important;
+}
+
+@media only screen and (max-width: 1280px) {
+  .PRGS-Nav .-sup {
+      margin-top: 1.8em!important;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .PRGS-Nav .-sup {
+      margin-top: 0.8em!important;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .PRGS-Nav .-sup {
+    margin-top: 2.5em!important;
+  }
+}
+
+
+.PRGS-Nav-sections .has-dropdown ul a.is-active {
+    color: #000!important;
+}
+
+.PRGS-Nav-sections .has-dropdown ul a.is-active:after {
+    background: none!important;
+}</style><style type="text/css" media="all">@-webkit-keyframes repaint {
+  0%{opacity:1;}
+  100%{opacity:1;}
+}
+@keyframes repaint {
+  0%{opacity:1;}
+  100%{opacity:1;}
+}
+.FormHolder {
+  -webkit-animation: repaint 1s infinite;
+  animation: repaint 1s infinite;
+}</style><meta name="description" content="Build custom ODBC, JDBC, ADO.NET &amp; OLEDB drivers using our OpenAccess Software Development Kit (SDK). Develop in C++, Java or C# for any data source" /><meta name="keywords" content="Build, Custom, Driver, SDK, ODBC, JDBC" /></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TX8G7Q"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window, document, 'script', 'dataLayer', 'GTM-TX8G7Q');</script>
+    <!-- End Google Tag Manager -->
+
+	 <script id="demandbase_js_lib" src="//scripts.demandbase.com/Wj8qFXox.min.js"></script>
+
+    <form method="post" action="./custom-connector-sdk" id="aspnetForm">
+<input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
+<input type="hidden" name="ctl08_TSSM" id="ctl08_TSSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTk5NTM3MDY5MGQYAwUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFPWN0bDAwJEdlbmVyYWxDb250ZW50JGN0bDIxJGN0bDAwJGN0bDAwJGR5bmFtaWNDb250ZW50TGlzdFZpZXcFPWN0bDAwJEdlbmVyYWxDb250ZW50JGN0bDIzJGN0bDAwJGN0bDAwJGR5bmFtaWNDb250ZW50TGlzdFZpZXcFPWN0bDAwJEdlbmVyYWxDb250ZW50JGN0bDIzJGN0bDAwJGN0bDAwJGR5bmFtaWNDb250ZW50TGlzdFZpZXcPFCsABWQUKwADDwUGXyFEU0lDAgMPBQtfIUl0ZW1Db3VudAIDDwUIXyFQQ291bnRkZBYCHgJfY2ZkZAU9Y3RsMDAkR2VuZXJhbENvbnRlbnQkY3RsMjEkY3RsMDAkY3RsMDAkZHluYW1pY0NvbnRlbnRMaXN0Vmlldw8UKwAFZBQrAAMPBQZfIURTSUMCBA8FC18hSXRlbUNvdW50AgQPBQhfIVBDb3VudGRkFgIfAGZkZDsjdvJMUadaEC0FD1XkDrnI540U" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"en","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"$","NaNSymbol":"NaN","CurrencyNegativePattern":0,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infinity","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"Infinity","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402300799999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, MMMM dd, yyyy h:mm:ss tt","LongDatePattern":"dddd, MMMM dd, yyyy","LongTimePattern":"h:mm:ss tt","MonthDayPattern":"MMMM dd","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"M/d/yyyy","ShortTimePattern":"h:mm tt","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM, yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":true,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"eras":[1,"A.D.",null,0]};//]]>
+</script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/4.5.1/1/MicrosoftAjax.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+(window.Sys && Sys._Application && Sys.Observer)||document.write('<script type="text/javascript" src="/ScriptResource.axd?d=rYo_8qVk16lcYUT1xlPD_wEqJrhW29wy69H0ReVylVlQxbVDvvU5KEnhFJjHYPwyVLlXnSrxlAu-TOvXRcSL6guuxWs5pia0Bm4XO0WODCs1tZmF_BEV1O2sMh_FFhRCb2PEI-S2oAbDXZpEkPbZ-SfN-2A1&t=5f9d5645"><\/script>');//]]>
+</script>
+
+<script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/WebResource.axd?d=LmewECSTsngw5dRQ9EDx1NJds2fIbJMQ1NWUy0OmQX6hdbM8yF3lfWbNlL7zXwvCLJpAtUgtgkQzGM0mYKQCPea_6suCU76qK39Tl1cxZavouLD6KOitEOvaZa2jDNTF34yXR-uu84SwUvFA_yspu0FLef41&amp;t=635941895820000000" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="94DCFBB4" />
+        <input type="hidden" name="ctl00$ScriptManager" id="ScriptManager" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ScriptManager", "ctl00$ScriptManager");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+		
+        
+<div class="sf_cols NavWrap">
+  <div id="HeaderContent_T978044BF070_Col00" class="sf_colsIn"><div class='sfContentBlock'><div class="PRGS-Bar" id="js-prgs-bar">
+<div class="PRGS-Bar-lang is-pushdown" id="js-region-pushdown">
+<div class="PRGS-container">
+<a href="https://www.progress.com.br/?_ga&amp;#x3D;1.167316222.1349495705.1439213477">Brazil</a>
+<a href="https://www.progress-software.fr">France</a>
+<a href="https://www.progress.de">Germany</a>
+<a href="https://www.progress.nl">Netherlands</a>
+<a href="https://www.progress.com">United States</a>
+</div>
+</div>
+<div class="PRGS-Bar-login is-pushdown" id="js-login-pushdown">
+<div class="PRGS-container">
+<a href="https://progresslink.progress.com/_layouts/login/default.aspx?ReturnUrl=%2fsupportlink%2f_layouts%2fAuthenticate.aspx%3fSource%3d%252Fsupportlink&amp;amp;amp;Source=%2Fsupportlink">Progress Support</a>
+<a href="https://www.rollbase.com/router/servlet/login">Rollbase</a>
+<a href="https://login.datadirectcloud.com">DataDirect Cloud</a>
+<a href="https://progresslink.progress.com/partnerlink">PartnerLink</a>
+<a href="https://www.telerik.com/account">Telerik Your Account</a>
+<a href="https://www.telerik.com/login/v2/platform">Telerik Platform</a>
+</div>
+</div>
+<div class="PRGS-Bar-dash is-dropdown" id="js-dash">
+<div class="PRGS-container">
+<a href="https://www.progress.com"><img src="https://d3ba5g9yhie26y.cloudfront.net/img/progress-logo-reversed.png" width="150"></a>
+<div class="PRGS-Bar-dash-wrap">
+<a href="https://www.progress.com" class="PRGS-Bar-home">Home</a>
+<button type="button" class="PRGS-Bar-dash-control is-active js-prgs-tab-trigger" id="js-products-button">Products</button>
+<div class="PRGS-Bar-dash-tab is-active js-prgs-tab" id="js-products-tab">
+<div class="PRGS-container">
+<div class="PRGS-row">
+<div class="PRGS-col-19 PRGS-Bar-tiles2">
+<div class="PRGS-row">
+<div class="PRGS-col-5">
+<h3>Digital Content &amp; Experience</h3>
+</div>
+<div class="PRGS-col-19">
+<div class="PRGS-row">
+<div class="PRGS-col-8">
+<a href="/digitalfactory">
+<h5>DigitalFactory</h5>
+<p>Comprehensive solution for crafting and managing sophisticated digital experiences</p>
+</a>
+</div>
+<div class="PRGS-col-8">
+<a href="http://www.sitefinity.com/web-content-management">
+<h5>Sitefinity CMS</h5>
+<p>Build engaging websites with intuitive web content management</p>
+</a>
+</div>
+<div class="PRGS-col-8">
+<a href="http://www.sitefinity.com/digital-experience-cloud">
+<h5>Sitefinity Digital Experience Cloud</h5>
+<p>Track, analyze and shape every step of the customer journey</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="PRGS-row">
+<div class="PRGS-col-5">
+<h3>Application Development, Testing &amp; Deployment</h3>
+</div>
+<div class="PRGS-col-19">
+<div class="PRGS-row">
+<div class="PRGS-col-8">
+<a href="http://www.telerik.com/devcraft">
+<h5>Telerik DevCraft</h5>
+<p>Leverage a complete UI toolbox for web, mobile and desktop development</p>
+</a>
+</div>
+<div class="PRGS-col-8">
+<a href="http://www.telerik.com/platform">
+<h5>Telerik Platform</h5>
+<p>Build mobile apps for iOS, Android and Windows Phone</p>
+</a>
+</div>
+<div class="PRGS-col-8">
+<a href="http://www.telerik.com/teststudio">
+<h5>Test Studio</h5>
+<p>Automate UI, load and performance testing for web, desktop and mobile</p>
+</a>
+</div>
+<div class="PRGS-col-8">
+<a href="/openedge">
+<h5>OpenEdge</h5>
+<p>Streamline business app development and management</p>
+</a>
+</div>
+<div class="PRGS-col-8">
+<a href="/rollbase">
+<h5>Rollbase</h5>
+<p>Develop SaaS business apps with point and click ease</p>
+</a>
+</div>
+<div class="PRGS-col-8">
+<a href="http://www.telerik.com/modulus">
+<h5>Modulus</h5>
+<p>Run Node.js, PHP, Java and MongoDB at scale</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="PRGS-row">
+<div class="PRGS-col-5">
+<h3>Data Connectivity Tools</h3>
+</div>
+<div class="PRGS-col-19">
+<div class="PRGS-row">
+<div class="PRGS-col-8">
+<a href="/datadirect-connectors">
+<h5>DataDirect Connectors</h5>
+<p>Optimize data integration with high-performance connectivity</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="PRGS-row">
+<div class="PRGS-col-5">
+<h3>Business Rules Management</h3>
+</div>
+<div class="PRGS-col-19">
+<div class="PRGS-row">
+<div class="PRGS-col-8">
+<a href="/corticon">
+<h5>Corticon</h5>
+<p>Rules Engine that improves productivity and lowers costs by automating your decision process</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<a href="/products" class="Btn">View All Products</a>
+</div>
+<div class="PRGS-col-5 PRGS-Bar-news">
+<h6>What's New</h6>
+<a href="/digitalfactory" class="PRGS-Bar-news-item">
+<img src="https://d6vtbcy3ong79.cloudfront.net/progress-navigation/latest/img/digital-factory.jpg">
+<div href="/digitalfactory">New DigitalFactory: Our comprehensive solution for crafting and managing sophisticated digital experiences</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="PRGS-Bar-dash-control js-prgs-tab-trigger" id="js-solutions-button">Solutions</button>
+<div class="PRGS-Bar-dash-tab js-prgs-tab" id="js-solutions-tab">
+<div class="PRGS-container">
+<div class="PRGS-row">
+<div class="PRGS-col-17 PRGS-Bar-tiles1">
+<a href="/digital-transformation">
+<h4>Digital Business Transformation</h4>
+<p>Transform your businesses in order to survive in a completely digitized and connected world driven by software innovation.</p>
+</a>
+<div class="PRGS-row">
+<div class="PRGS-col-11">
+<a href="/digitalfactory-for-sites">
+<h5>Web Scale</h5>
+<p>Globally scale websites with innovative content management and infrastructure approaches</p>
+</a>
+<a href="/digitalfactory-for-engagement">
+<h5>Omni-Channel Engagement</h5>
+<p>Content-focused web and mobile solution for empowering marketers</p>
+</a>
+<a href="/digitalfactory-for-mobile">
+<h5>Enterprise Mobility</h5>
+<p>Faster, tailored mobile experiences for any device and data source</p>
+</a>
+</div>
+<div class="PRGS-col-11">
+<a href="/modernization">
+<h5>Modernization</h5>
+<p>UX and app modernization to powerfully navigate today's digital landscape</p>
+</a>
+<a href="/apaas">
+<h5>aPaaS</h5>
+<p>Fuel agility with ever-ready applications, built in the cloud</p>
+</a>
+</div>
+</div>
+</div>
+<div class="PRGS-col-5 PRGS-col--offset-2 PRGS-Bar-news">
+<h6>New &amp; Trending</h6>
+<a href="/digital-transformation/the-digital-ultimatum-whats-your-plan" class="PRGS-Bar-news-item">
+<img src="https://d6vtbcy3ong79.cloudfront.net/progress-navigation/latest/img/the-digital-ultimatum.jpg">
+<p class="PRGS-Bar-news-title">E-book</p>
+<div>The Digital Ultimatum: Why Businesses Must Digitally Transform to Survive &mdash; and <em>Thrive</em></div>
+</a>
+<a href="/digital-transformation/the-state-of-digital-business" class="PRGS-Bar-news-item">
+<img src="https://d6vtbcy3ong79.cloudfront.net/progress-navigation/latest/img/the-state-of-digital-business.jpg">
+<p class="PRGS-Bar-news-title">Survey Report</p>
+<div>The State of Digital Business</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="PRGS-Bar-dash-control js-prgs-tab-trigger" id="js-support-button">Support &amp; Learning</button>
+<div class="PRGS-Bar-dash-tab js-prgs-tab" id="js-support-tab">
+<div class="PRGS-container">
+<div class="PRGS-row">
+<div class="PRGS-col-5">
+<h6>Support</h6>
+<a href="/support">Support Services</a>
+<a href="http://knowledgebase.progress.com">Knowledge Base</a>
+<a href="/support/customer-self-service">Customer Self Service</a>
+<a href="/support/evaluation/download-resources/download-center">Download Center</a>
+</div>
+<div class="PRGS-col-5 PRGS-col--offset-1">
+<h6>Services</h6>
+<a href="/services/education">Training</a>
+<a href="/services/consulting">Consulting Services</a>
+<a href="/services/mdba">Managed Database Offering</a>
+</div>
+<div class="PRGS-col-12 PRGS-col--offset-1">
+<h6>Learning</h6>
+<div class="PRGS-row">
+<div class="PRGS-col-11">
+<a href="/documentation">Documentation</a>
+<a href="/webinars">Webinars</a>
+<a href="/video">How-To Videos</a>
+<a href="/papers">Whitepapers</a>
+</div>
+<div class="PRGS-col-11 PRGS-col--offset-2">
+<a href="https://community.progress.com">Community</a>
+<a href="/blogs">Blogs</a>
+<a href="/customers">Success Stories</a>
+</div>
+</div>
+</div>
+</div>
+<!--  -->
+</div>
+</div>
+<a href="/partners">Partners</a>
+<a href="/company">Company</a>
+<button type="button" class="PRGS-Bar-dash-control js-prgs-tab-trigger">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14" viewBox="0 0 512 512" xml:space="preserve"><g transform="translate(192 48)">
+<path d="M301,360.8c-0.1-21.8-15.4-22.3-33.7-29.7L182,296.9c-1.5-0.6-3-1.2-4.4-1.8v0c-15.2-6.9-28.6-16.4-33.5-23.2 l-0.2-0.2l-0.1-0.1c-0.3-0.4-0.6-0.9-0.8-1.3l-0.2-0.4l0-0.1l-0.2-0.2v0c-2.3-3.4-4.6-4.9-6.5-4.3l-0.1,0.1l-0.1,0l0,0l-0.1,0.1 l-0.1,0l-0.1,0.1c-2.3,1.2-1.8-0.1-2.8-2.6c-2.3-6.2-6.1-18.1-6.7-19.9c-0.9-3.3-3.3,5.1-2.7-3.9l1-16.4c1.6-1.7,2.8-3.1,3.7-4 c5.6-6.4,5.9-23.2,8.7-27.3c2.8-4.1,8.4-5,13.9-24.1c5.6-19.1,12.4-46.3,5.2-46.8c-1.8-0.1-3.7,1-5.8,2.8c1.3-7,3.9-22.9,4.5-34.6 c0.8-15.5-1.8-55.1-10.5-69.5c-5.5-9.1-16.6-18.1-27.6-25.1c-6.6-4.2-13.2-7.7-18.6-10.1c-16.1-7.1-66.8-3.9-84,0 c-19.5,4.4-33.3,16.6-42,31.2C-36.9,30-40.7,73.5-40,89c0.4,6.9,4.5,18.6,5.6,25.8c0.6,3.7,1.2,3.8,1.6,6.4 c-0.7-0.3-1.4-0.4-2.1-0.4c-7.2,0.5-0.4,27.7,5.2,46.8c5.6,19.1,11.1,20,13.9,24.1c2.8,4.1,3.2,20.9,8.8,27.3 c0.9,1,2.2,2.5,3.9,4.2l1.1,13.4l1.9,7.4c-0.9-2.1-2.6-3.5-3.3-0.7c-2.4,7.3-4.8,14.6-7.2,21.9c-0.3-0.3-0.6-0.6-1.1-0.6 c-2.3-2-5.5-0.3-8.3,4.5c-4.2,7-18.2,17.2-34.3,24.4l-0.2,0.9l-0.2,0.9l-0.1,0.4c-1.3,0.6-2.6,1.1-3.9,1.6l-85.3,34.2 c-18.3,7.3-33.6,7.8-33.7,29.7l-14.1,74.3h512L301,360.8L301,360.8z"></path>
+</g></svg>
+Login
+</button>
+<div class="PRGS-Bar-dash-tab js-prgs-tab">
+<div class="PRGS-container">
+<a href="https://progresslink.progress.com/_layouts/login/default.aspx?ReturnUrl=%2fsupportlink%2f_layouts%2fAuthenticate.aspx%3fSource%3d%252Fsupportlink&amp;amp;amp;Source=%2Fsupportlink">Progress Support</a>
+<a href="https://www.rollbase.com/router/servlet/login">Rollbase</a>
+<a href="https://login.datadirectcloud.com">DataDirect Cloud</a>
+<a href="https://progresslink.progress.com/partnerlink">PartnerLink</a>
+<a href="https://www.telerik.com/account">Telerik Your Account</a>
+<a href="https://www.telerik.com/login/v2/platform">Telerik Platform</a>
+</div>
+</div>
+<button type="button" class="PRGS-Bar-dash-control js-prgs-tab-trigger">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14" viewBox="0 0 512 512" xml:space="preserve">
+<path d="M255.3,0.3c-141.2,0-256,114.8-256,256c0,141.1,114.8,256,256,256c141.1,0,256-114.8,256-256 C511.3,115.1,396.4,0.3,255.3,0.3z M423.4,347.9v-11l-2.8-11.1l-7.6-15.7l-12.3-14.8h-18l-16.1-5.5l-12.3-19.4l-19.9-15.7l-8.5-17.5 h-20.9l-29.4-5.5l-8.5,2.8l-12.3,13.9l-10.4,7.4l-4.7,35.1c0,0,0,37.9,0,41.6s5.7,11.1,10.4,18.5c4.7,7.4,7.6,15.7,11.4,20.3 c3.8,4.6,8.5,4.6,15.2,7.4c6.6,2.8,13.3,9.2,16.1,13.9c2.8,4.6,4.7,22.2,4.7,22.2l3.5,28.2c-14.6,3.6-29.6,6-45.3,6 c-106.1,0-192.4-86.3-192.4-192.4c0-42.2,14.1-80.9,37.2-112.7l4.2,3.1l5.7,12l0.9,16.6l-0.9,19.4l14.2,0.9l15.2,5.5 c0,0,12.3,3.7,16.1,7.4c3.8,3.7,24.7,16.6,27.5,21.2c2.8,4.6,17.1,4.6,17.1,4.6c11.4-9.2,0-22.2,0-22.2l-4.7-11.1l-3.8-11.1 l1.9-12.9l7.6-12l0.9-14.8l19-7.4h40.8l12.3-11.1l7.6-21.2l20.9-11.1l27.5-19.4l0.1-1c68.8,29.3,117.2,97.6,117.2,177.1 C447.7,289.7,438.4,320.6,423.4,347.9z"></path>
+</svg>
+Global Sites
+</button>
+<div class="PRGS-Bar-dash-tab js-prgs-tab">
+<div class="PRGS-container">
+<a href="https://www.progress.com.br/?_ga&amp;#x3D;1.167316222.1349495705.1439213477">Brazil</a>
+<a href="https://www.progress-software.fr">France</a>
+<a href="https://www.progress.de">Germany</a>
+<a href="https://www.progress.nl">Netherlands</a>
+<a href="https://www.progress.com">United States</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="PRGS-Bar-main">
+<div class="PRGS-container">
+<div class="PRGS-Bar-main-cell1">
+<button type="button" class="PRGS-Bar-main-highlighted PRGS-Bar-main-dash" id="js-dash-button">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14" viewBox="0 0 512 512" xml:space="preserve"><rect y="91" width="512" height="60"></rect><rect y="237.3" width="512" height="60"></rect><rect y="383.5" width="512" height="60"></rect></svg>
+Menu
+</button>
+<a href="tel:1-800-477-6473" class="PRGS-Bar-info" tabindex="-1">1-800-477-6473</a>
+</div>
+<div class="PRGS-Bar-main-cell2">
+<button type="button" class="js-search-panel-button" title="Search [alt+shift+f]">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14" viewBox="0 0 512 512" xml:space="preserve">
+<path d="M504.4,464L378.9,338.5c25.6-34.8,40.8-77.7,40.8-124.2c0-115.7-94.1-209.8-209.8-209.8C94.2,4.5,0,98.6,0,214.3 C0,330,94.2,424.1,209.9,424.1c50.5,0,96.9-17.9,133.1-47.8l124.5,124.5c5.1,5.1,11.8,7.6,18.4,7.6s13.3-2.5,18.4-7.6 C514.6,490.7,514.6,474.2,504.4,464z M52.2,214.3c0-87,70.7-157.7,157.7-157.7s157.7,70.7,157.7,157.7c0,41-15.7,78.3-41.4,106.4 c-0.3,0.3-0.7,0.6-1,0.9c-0.7,0.7-1.3,1.4-1.9,2.2c-28.7,29.7-68.9,48.2-113.4,48.2C122.9,372,52.2,301.3,52.2,214.3z"></path>
+</svg>
+</button>
+<button type="button" id="js-region-pushdown-button" data-open="#js-region-pushdown">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14" viewBox="0 0 512 512" xml:space="preserve">
+<path d="M255.3,0.3c-141.2,0-256,114.8-256,256c0,141.1,114.8,256,256,256c141.1,0,256-114.8,256-256 C511.3,115.1,396.4,0.3,255.3,0.3z M423.4,347.9v-11l-2.8-11.1l-7.6-15.7l-12.3-14.8h-18l-16.1-5.5l-12.3-19.4l-19.9-15.7l-8.5-17.5           h-20.9l-29.4-5.5l-8.5,2.8l-12.3,13.9l-10.4,7.4l-4.7,35.1c0,0,0,37.9,0,41.6s5.7,11.1,10.4,18.5c4.7,7.4,7.6,15.7,11.4,20.3          c3.8,4.6,8.5,4.6,15.2,7.4c6.6,2.8,13.3,9.2,16.1,13.9c2.8,4.6,4.7,22.2,4.7,22.2l3.5,28.2c-14.6,3.6-29.6,6-45.3,6 c-106.1,0-192.4-86.3-192.4-192.4c0-42.2,14.1-80.9,37.2-112.7l4.2,3.1l5.7,12l0.9,16.6l-0.9,19.4l14.2,0.9l15.2,5.5 c0,0,12.3,3.7,16.1,7.4c3.8,3.7,24.7,16.6,27.5,21.2c2.8,4.6,17.1,4.6,17.1,4.6c11.4-9.2,0-22.2,0-22.2l-4.7-11.1l-3.8-11.1          l1.9-12.9l7.6-12l0.9-14.8l19-7.4h40.8l12.3-11.1l7.6-21.2l20.9-11.1l27.5-19.4l0.1-1c68.8,29.3,117.2,97.6,117.2,177.1          C447.7,289.7,438.4,320.6,423.4,347.9z"></path>
+</svg>
+</button>
+<button type="button" id="js-login-pushdown-button" data-open="#js-login-pushdown">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14" viewBox="0 0 512 512" xml:space="preserve"><g transform="translate(192 48)">
+<path d="M301,360.8c-0.1-21.8-15.4-22.3-33.7-29.7L182,296.9c-1.5-0.6-3-1.2-4.4-1.8v0c-15.2-6.9-28.6-16.4-33.5-23.2 l-0.2-0.2l-0.1-0.1c-0.3-0.4-0.6-0.9-0.8-1.3l-0.2-0.4l0-0.1l-0.2-0.2v0c-2.3-3.4-4.6-4.9-6.5-4.3l-0.1,0.1l-0.1,0l0,0l-0.1,0.1 l-0.1,0l-0.1,0.1c-2.3,1.2-1.8-0.1-2.8-2.6c-2.3-6.2-6.1-18.1-6.7-19.9c-0.9-3.3-3.3,5.1-2.7-3.9l1-16.4c1.6-1.7,2.8-3.1,3.7-4 c5.6-6.4,5.9-23.2,8.7-27.3c2.8-4.1,8.4-5,13.9-24.1c5.6-19.1,12.4-46.3,5.2-46.8c-1.8-0.1-3.7,1-5.8,2.8c1.3-7,3.9-22.9,4.5-34.6 c0.8-15.5-1.8-55.1-10.5-69.5c-5.5-9.1-16.6-18.1-27.6-25.1c-6.6-4.2-13.2-7.7-18.6-10.1c-16.1-7.1-66.8-3.9-84,0 c-19.5,4.4-33.3,16.6-42,31.2C-36.9,30-40.7,73.5-40,89c0.4,6.9,4.5,18.6,5.6,25.8c0.6,3.7,1.2,3.8,1.6,6.4 c-0.7-0.3-1.4-0.4-2.1-0.4c-7.2,0.5-0.4,27.7,5.2,46.8c5.6,19.1,11.1,20,13.9,24.1c2.8,4.1,3.2,20.9,8.8,27.3 c0.9,1,2.2,2.5,3.9,4.2l1.1,13.4l1.9,7.4c-0.9-2.1-2.6-3.5-3.3-0.7c-2.4,7.3-4.8,14.6-7.2,21.9c-0.3-0.3-0.6-0.6-1.1-0.6 c-2.3-2-5.5-0.3-8.3,4.5c-4.2,7-18.2,17.2-34.3,24.4l-0.2,0.9l-0.2,0.9l-0.1,0.4c-1.3,0.6-2.6,1.1-3.9,1.6l-85.3,34.2 c-18.3,7.3-33.6,7.8-33.7,29.7l-14.1,74.3h512L301,360.8L301,360.8z"></path>
+</g></svg>
+</button>
+<a href="/company/contact" class="PRGS-Bar-main-highlighted">Contact Sales</a>
+</div>
+<div class="PRGS-Bar-main-cell3">
+<div class="PRGS-Bar-search js-search-panel">
+<input type="search" maxlength="80" placeholder="Looking for..." autocomplete="off" id="js-search-input" class="js-search-input">
+<a href="#search" class="PRGS-Bar-search-btn js-search-button">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14" viewBox="0 0 512 512" xml:space="preserve">
+<path d="M504.4,464L378.9,338.5c25.6-34.8,40.8-77.7,40.8-124.2c0-115.7-94.1-209.8-209.8-209.8C94.2,4.5,0,98.6,0,214.3 C0,330,94.2,424.1,209.9,424.1c50.5,0,96.9-17.9,133.1-47.8l124.5,124.5c5.1,5.1,11.8,7.6,18.4,7.6s13.3-2.5,18.4-7.6 C514.6,490.7,514.6,474.2,504.4,464z M52.2,214.3c0-87,70.7-157.7,157.7-157.7s157.7,70.7,157.7,157.7c0,41-15.7,78.3-41.4,106.4 c-0.3,0.3-0.7,0.6-1,0.9c-0.7,0.7-1.3,1.4-1.9,2.2c-28.7,29.7-68.9,48.2-113.4,48.2C122.9,372,52.2,301.3,52.2,214.3z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="js-swipearea" class="PRGS-Bar-swipe"></div>
+
+
+</div><div class='sfContentBlock'><nav class="PRGS-Nav PRGS-Nav--overlay">
+<div class="container">
+<div class="PRGS-Nav-container">
+<header class="PRGS-Nav-head">
+<a href="/datadirect-connectors" class="PRGS-Nav-anchor"><span class="PRGS-Nav-progress-logo">Progress</span><span class="Nav-title">DataDirect <span class="-sup">&reg;</span></span></a>
+</header>
+<div class="PRGS-Nav-content">
+<div class="PRGS-Nav-sections">
+<ul>
+    <li class="u-dn -dn"><a href="/datadirect-connectors">Overview</a></li>
+    <li class="has-dropdown hidden-dropdown"><a href="/datadirect-connectors">Connectors</a>
+    <ul class="u-dn -dn">
+        <li><a href="/connectors/amazon-emr-hive">Amazon EMR Hive</a></li>
+        <li><a href="/connectors/amazon-redshift">Amazon Redshift</a></li>
+        <li><a href="/connectors/apache-cassandra">Apache Cassandra</a></li>
+        <li><a href="/connectors/apache-hadoop-hive">Apache Hadoop Hive</a></li>
+        <li><a href="/odbc/clipper">Clipper</a></li>
+        <li><a href="/connectors/cloudera-hive">Cloudera CDH Hive</a></li>
+        <li><a href="/connectors/cloudera-impala">Cloudera Impala</a></li>
+        <li><a href="/data-connectivity/odata-salesforce-lightning-connect">Data Sources Using Salesforce Connect</a></li>
+        <li><a href="/odbc/dbase">dBase</a></li>
+        <li><a href="/xml-converters/edidata">EDI data</a></li>
+        <li><a href="/connectors/financial-force">FinancialForce</a></li>
+        <li><a href="/connectors/flat-files">Flat files: CSV, TSV, Text files and more</a></li>
+        <li><a href="/connectors/force-com-applications">Force.com Applications</a></li>
+        <li><a href="/odbc/foxpro">Foxpro</a></li>
+        <li><a href="/connectors/google-analytics">Google Analytics</a></li>
+        <li><a href="/xml-converters/healthcare-edi">Healthcare EDI: HIPAA, HL7 and NCPDP</a></li>
+        <li><a href="/connectors/hortonworks-hive">Hortonworks Hive</a></li>
+        <li><a href="/connectors/hubspot">Hubspot</a></li>
+        <li><a href="/connectors/ibm-db2">IBM DB2</a></li>
+        <li><a href="/connectors/ibm-informix">IBM Informix</a></li>
+        <li><a href="/connectors/mapr-hive">MapR Hive</a></li>
+        <li><a href="/connectors/marketo">Marketo</a></li>
+        <li><a href="/connectors/microsoft-dynamics-crm">Microsoft Dynamics CRM</a></li>
+        <li><a href="/connectors/microsoft-sql-azure">Microsoft SQL Azure</a></li>
+        <li><a href="/connectors/microsoft-sql-server">Microsoft SQL Server</a></li>
+        <li><a href="/connectors/mongodb">MongoDB</a></li>
+        <li><a href="/connectors/mysql">MySQL</a></li>
+        <li><a href="/connectors/oracle-database">Oracle Database</a></li>
+        <li><a href="/connectors/oracle-eloqua">Oracle Eloqua</a></li>
+        <li><a href="/connectors/oracle-service-cloud">Oracle Service Cloud</a></li>
+        <li><a href="/odbc/pervasive-sql">Pervasive SQL (Btrieve)</a></li>
+        <li><a href="/connectors/pivotal-greenplum">Pivotal Greenplum</a></li>
+        <li><a href="/connectors/pivotal-hawq">Pivotal HAWQ </a></li>
+        <li><a href="/connectors/pivotal-hd-hive">Pivotal HD Hive</a></li>
+        <li><a href="/connectors/postgresql">PostgreSQL</a></li>
+        <li><a href="/connectors/openedge">Progress&reg;&nbsp;OpenEdge&reg;</a></li>
+        <li><a href="/connectors/rollbase">Progress&reg;&nbsp;Rollbase&reg;</a></li>
+        <li><a href="/connectors/salesforce">Salesforce.com</a></li>
+        <li><a href="/odbc/sap-hana">SAP HANA</a></li>
+        <li><a href="/connectors/sybase">SAP Sybase ASE</a></li>
+        <li><a href="/connectors/sybase-iq">SAP Sybase IQ</a></li>
+        <li><a href="/connectors/servicemax">ServiceMAX</a></li>
+        <li><a href="/connectors/apache-spark-sql">Spark SQL</a></li>
+        <li><a href="/connectors/sugarcrm">SugarCRM</a></li>
+        <li><a href="/odbc/teradata">Teradata</a></li>
+        <li><a href="/connectors/veeva-crm">Veeva CRM</a></li>
+        <li><a href="/connectors/xml">XML</a></li>
+        <li><a href="/connectors/sequelink">API Adapter</a></li>
+        <li><a href="/connectors/custom-connector-sdk">Custom Driver SDK</a></li>
+    </ul>
+    </li>
+    <li class="has-dropdown hidden-dropdown"><a href="/data-connectivity">Solutions</a>
+    <ul class="u-dn -dn">
+        <li><a href="/data-connectivity/solutions-isvs/application-vendors">Application Vendors</a></li>
+        <li><a href="/data-connectivity/solutions-isvs/cloud-application-vendors">Cloud Application Vendors</a></li>
+        <li><a href="/data-connectivity/solutions-isvs/data-source-vendors">Data Source Vendors</a></li>
+        <li><a href="/data-connectivity/tableau">Tableau Users</a></li>
+        <li><a href="/data-connectivity/salesforce">Salesforce Users</a></li>
+        <li><a href="/data-connectivity/sas-access-odbc">SAS Analytics Users</a></li>
+        <li><a href="/data-connectivity/bigdata-hadoop-spark">Big Data Frameworks Users</a></li>
+        <li><a href="/data-connectivity/oracle-service-cloud">Oracle Service Cloud Users</a></li>
+        <li><a href="/data-connectivity/use-case/powering-analytics-solution">Analytics Tools Integration</a></li>
+        <li><a href="/data-connectivity/use-case/hybrid-connectivity-solution">Hybrid Connectivity</a></li>
+    </ul>
+    </li>
+    <li>
+    <a href="/partners/datadirect">Partners</a>
+    </li>
+    <li class="has-dropdown"><a href="#">Learning &amp; Support</a>
+    <ul class="right-aligned">
+        <li><a href="/blogs/data-connectivity">Blog</a></li>
+        <li><a href="/customers?product=datadirect#more-success-stories">Customers</a></li>
+        <li><a href="/papers?product=datadirect">Whitepapers</a></li>
+        <li><a href="/webinars?product=datadirect">Webinars</a></li>
+        <li><a href="/video?product=datadirect">How-To Videos</a></li>
+        <li><a href="/documentation/datadirect-documentation">Documentation</a></li>
+        <li><a href="/tutorials/datadirect">Tutorials</a></li>
+        <li><a href="http://knowledgebase.progress.com">Knowledge Base</a></li>
+        <li><a href="/matrices/supported-configurations" title="" class="" target="">Supported Configurations</a></li>
+        <li><a href="/datadirect-connectors/whats-new">Release Notes</a></li>
+        <li><a href="https://community.progress.com/community_groups/datadirect_connect">Community</a></li>
+    </ul>
+    </li>
+</ul>
+</div>
+<div class="PRGS-Nav-cta"><a href="/trial-datadirect ">Try Now</a></div>
+<div class="PRGS-Nav-drop"></div>
+</div>
+</div>
+</div>
+</nav>
+
+
+</div></div>
+</div>
+
+
+        <div class="ContentWrapper">
+<div class="sf_cols PageWrapper">
+  <div id="GeneralContent_T978044BF041_Col00" class="sf_colsIn"><div class="sf_cols Section Section--background-top">
+  <div id="GeneralContent_C027_Col00" class="sf_colsIn container"><div class='sfContentBlock'><h1 class="u-tac u-mb5 f-b9">
+<a href="/datadirect-connectors" class="f-geo1 f-2xl f-ls-narrow u-db u-mb1">DataDirect Connectors</a>&nbsp;Build Custom Driver for<br class="u-normal-dn">
+Any Data Source or API Within Days
+</h1>
+
+
+</div><div class='sfContentBlock'><div class="row u-modest-full-row u-mb3">
+<div class="col-4 u-tar u-modest-tac">
+<img class="u-mr3 u-mb2 u-modest-nm" src="/images/default-source/Products/datadirect/data-sources/openaccess/openaccess_sdk.png?Status=Temp&amp;sfvrsn=2" alt="OpenAccess SDK">
+</div>
+<div class="col-8 u-fs17 u-modest-tac">
+<h5 class="f-b9">Flexible</h5>
+<p class="f-blue4">Develop a custom driver in&nbsp;ODBC, JDBC, ADO.NET or OLE DB</p>
+<h5 class="f-b9">Comprehensive</h5>
+<p class="f-blue4">Quickly integrate data across any C++, Java, .NET, REST, ABL or C# application</p>
+<h5 class="f-b9">Fast</h5>
+<p class="f-blue4">Create quicker data access solutions to proprietary files or APIs</p>
+</div>
+</div>
+<div class="row u-mb2">
+<div class="col--offset-1 col-10">
+<div class="Divider">
+<h2 class="Divider-text2 u-fs19 f-b9 f-ttu u-tac">
+<span class="u-ml2 u-mr2">Custom Software Development Kits</span>
+</h2>
+</div>
+</div>
+</div>
+<div class="u-tac u-mb2">
+<div class="QuickLinks QuickLinks--spaced QuickLinks--grey-divider f-geo0 f-3xl">
+<a href="/odbc/custom-connector-sdk">ODBC</a>
+<a href="/jdbc/custom-connector-sdk">JDBC</a>
+<a href="/net/custom-connector-sdk">ADO.NET</a>
+<a href="/ole-db/custom-connector-sdk">OLE DB</a>
+</div>
+</div>
+
+
+</div></div>
+</div><div class='u-pr'><div class="NavAltWrap NavAltWrap-hidden">
+<nav class="NavAlt" data-fixit-render-dummy="0" data-fixit-top="0" data-fixit-class-only="true" data-tlrk-plugin="fixit">
+<div class="container">
+<div class="NavAlt-Logo">
+<h4 class="u-mb0 u-mt1"><a href="javascript:void(0)" class="scrollTop f-m f-geo2 f-black">OpenAccess SDK</a></h4>
+</div>
+<div class="NavAlt-Btn NavAlt-Btn--full">
+<div class="QuickLinks QuickLinks--breakable"><a href="/odbc/custom-connector-sdk">ODBC</a><a href="/jdbc/custom-connector-sdk">JDBC</a><a href="/net/custom-connector-sdk">ADO.NET</a><a href="/ole-db/custom-connector-sdk">OLE DB</a></div>
+</div>
+</div>
+</nav>
+</div>
+
+
+</div><div class="sf_cols Section Section--features u-tac">
+  <div id="GeneralContent_C033_Col00" class="sf_colsIn container"><div class='sfContentBlock'><h2 class="u-tac u-mb5">Features</h2>
+
+
+</div><div class="sf_cols row u-mb3">
+  <div id="GeneralContent_C090_Col00" class="sf_colsIn col-4"><div class='sfContentBlock'><img src="//d117h1jjiq768j.cloudfront.net/images/default-source/Products/datadirect/icons/portable.png?sfvrsn=4" alt="portable" title="portable" data-displaymode="Original">
+<h4 class="f-3xl u-mt3 u-mb1">Portability</h4>
+Generates the driver source code from a
+REST data source using metadata you
+provide aided by the REST IP Wizard
+
+
+</div></div>
+  <div id="GeneralContent_C090_Col01" class="sf_colsIn col-4"><div class='sfContentBlock'><img src="//d117h1jjiq768j.cloudfront.net/images/default-source/Products/datadirect/icons/usability.png?sfvrsn=10" alt="usability" title="usability easy_to_use" data-displaymode="Original">
+<h4 class="f-3xl u-mt3 u-mb1">Ease of Use</h4>
+Provides the fastest way to make your
+application compatible with data-centric
+tools, such as BI and analytics, ETL and
+more
+
+
+</div></div>
+  <div id="GeneralContent_C090_Col02" class="sf_colsIn col-4"><div class='sfContentBlock'><img src="//d117h1jjiq768j.cloudfront.net/images/default-source/Products/datadirect/icons/single_interface.png?sfvrsn=4" alt="single_interface" title="single_interface" data-displaymode="Original">
+<h4 class="f-3xl u-mt3 u-mb1">Single Interface</h4>
+Enables implementation of a single<br class="u-medium-dn">
+interface for data access from all<br class="u-medium-dn">
+standards-based APIs
+
+
+</div></div>
+</div><div class="sf_cols row u-mb1">
+  <div id="GeneralContent_C091_Col00" class="sf_colsIn col-4"><div class='sfContentBlock'><img src="//d117h1jjiq768j.cloudfront.net/images/default-source/Products/datadirect/icons/connectivity.png?sfvrsn=6" alt="connectivity" title="connectivity broad coverage interoperable" data-displaymode="Original">
+<h4 class="f-3xl u-mt3 u-mb1">Broad Coverage</h4>
+Broadens data connection and<br class="u-medium-dn">
+application platform options while<br class="u-medium-dn">
+expanding developer knowledge
+
+
+</div></div>
+  <div id="GeneralContent_C091_Col01" class="sf_colsIn col-4"><div class='sfContentBlock'><img src="//d117h1jjiq768j.cloudfront.net/images/default-source/Products/datadirect/icons/performance.png?sfvrsn=10" alt="performance" title="performance" data-displaymode="Original">
+<h4 class="f-3xl u-mt3 u-mb1">Enterprise-class Performance</h4>
+Improve efficiency and speed with
+optimized query execution completed by&nbsp;an OpenAccess SQL Engine
+
+
+</div></div>
+  <div id="GeneralContent_C091_Col02" class="sf_colsIn col-4"><div class='sfContentBlock'><img src="//d117h1jjiq768j.cloudfront.net/images/default-source/Products/datadirect/icons/extensive_sql_support.png?sfvrsn=4" alt="extensive_SQL_support" title="extensive_SQL_support" data-displaymode="Original">
+<h4 class="f-3xl u-mt3 u-mb1">Extensive SQL Support</h4>
+Optimizes CRUD operations with the
+OpenAccess SQL engine to reduce coding
+and improve usability
+
+
+</div></div>
+</div></div>
+</div><div class="sf_cols Section Section--blue4 u-tac">
+  <div id="GeneralContent_C187_Col00" class="sf_colsIn container"><div class='sfContentBlock u-tac'><p class="h2 u-mt1 u-mb2">OpenAccess Add-ons</p>
+<p class="f-l f-b0 u-mb9">Download OpenAccess for OpenEdge Application Server and OpenAccess REST IP Generator to accelerate development.</p>
+
+
+</div><div class="sf_cols row u-tac">
+  <div id="GeneralContent_C188_Col00" class="sf_colsIn"><div class="sf_cols col-9 u-medium-full">
+  <div id="GeneralContent_C189_Col00" class="sf_colsIn"><div class="sf_cols row">
+  <div id="GeneralContent_C190_Col00" class="sf_colsIn col-6"><div class="sfimageWrp u-mb6">
+	        
+<img id="GeneralContent_C192_ctl00_ctl00_imageItem" title="openaccess-for-openedge" src="//d117h1jjiq768j.cloudfront.net/images/default-source/Products/datadirect/icons/openaccess-for-openedge.png?sfvrsn=2" alt="openaccess-for-openedge" />
+
+
+</div><div class='sfContentBlock'><h4 class="u-mb2">OpenAccess for OpenEdge</h4>
+<p>Enable your OpenEdge application compatible
+with nearly all reporting and BI tools.</p>
+<p>
+<a href="/connectors/custom-connector-sdk/integration-with-openedge">More about OpenAccess for OpenEdge</a></p>
+
+
+</div></div>
+  <div id="GeneralContent_C190_Col01" class="sf_colsIn col-6"><div class="sfimageWrp u-mb6">
+	        
+<img id="GeneralContent_C193_ctl00_ctl00_imageItem" title="custom-connector-sdk" src="//d117h1jjiq768j.cloudfront.net/images/default-source/Products/datadirect/icons/custom-connector-sdk.png?sfvrsn=2" alt="custom-connector-sdk" />
+
+
+</div><div class='sfContentBlock'><h4 class="u-mb2">OpenAccess for REST API</h4>
+<p>Framework that enables you to build a driver for any REST data source quickly and easily. Available for all platforms listed for Server and IP SDK.</p>
+<a href="http://media.datadirect.com/download/files/evals/openaccessSDK/oa_rest_ip_generator.jar">Download OpenAccess for REST API</a>
+
+
+</div></div>
+</div>
+</div>
+</div></div>
+</div></div>
+</div><div class="sf_cols Section Section--border Section--xl">
+  <div id="GeneralContent_C098_Col00" class="sf_colsIn container"><div class='sfContentBlock'><h2 class="u-tac u-mb6">Technical Specs</h2>
+
+
+</div><div class='sfContentBlock'><div class="row">
+<div class="col-7 col--offset-3 u-normal-full u-normal-nm">
+<ul class="List4 Space--cozy">
+    <li>Fully complies with the latest ODBC and JDBC standards</li>
+    <li>Supports all major OS platforms including Microsoft Windows, Linux, HP-UX, AIX, Solaris, and more</li>
+    <li>Single Standard interface implements multiple Salesforce Platform APIs such as SOAP, METADATA and BULK</li>
+    <li>Supports both 32 bit and 64 bit applications</li>
+    <li>ANSI SQL-92 Compliant</li>
+</ul>
+</div>
+</div>
+
+
+</div></div>
+</div><div class="sf_cols Section Section--border u-tac">
+  <div id="GeneralContent_C140_Col00" class="sf_colsIn container"><div class='sfContentBlock'><h2 class="u-tac u-mb7">In Depth</h2>
+
+
+</div><div class="sf_cols row">
+  <div id="GeneralContent_C154_Col00" class="sf_colsIn col-6"><div class="sf_cols row row--custom-full u-mb3">
+  <div id="GeneralContent_C166_Col00" class="sf_colsIn col-6"><div class='sfContentBlock'><img src="https://www.progress.com/images/default-source/Products/datadirect/data-sources/openaccess/in_depth_openaccess-sdk-overview.png?sfvrsn=6" alt="In depth OpenAccess SDK Overview" title="In depth OpenAccess SDK Overview" />
+
+
+</div></div>
+  <div id="GeneralContent_C166_Col01" class="sf_colsIn col-6"><div class='sfContentBlock'><div class="u-tal">
+<h3 class="f-geo1 u-fs20 f-ttu">PAPER</h3>
+<a href="https://d117h1jjiq768j.cloudfront.net/docs/default-source/default-document-library/progress/documents/papers/progressovrw_datadirect_openaccess_sdk.pdf?sfvrsn=0 " target="_blank" class="h3">OpenAccess SDK Overview</a>
+</div>
+
+
+</div></div>
+</div></div>
+  <div id="GeneralContent_C154_Col01" class="sf_colsIn col-6"><div class="sf_cols row row--custom-full u-mb3">
+  <div id="GeneralContent_C167_Col00" class="sf_colsIn col-6"><div class='sfContentBlock'><img src="https://www.progress.com/images/default-source/Products/datadirect/data-sources/openaccess/in_depth_progress-datadirect-openaccess-for-progress-openedge.png?sfvrsn=6" alt="In depth Progress DataDirect OpenAccess for Progress OpenEdge" title="In depth Progress DataDirect OpenAccess for Progress OpenEdge" />
+
+
+</div></div>
+  <div id="GeneralContent_C167_Col01" class="sf_colsIn col-6"><div class='sfContentBlock'><div class="u-tal">
+<h3 class="f-geo1 u-fs20 f-ttu">USE CASE</h3>
+<a href="https://d117h1jjiq768j.cloudfront.net/docs/default-source/default-document-library/progress/documents/openaccess/progress_datadirect_sb_openaccess_for_openedge_bi_and_analytics.pdf?sfvrsn=0 " target="_blank" class="h3">Progress DataDirect OpenAccess for Progress OpenEdge </a>
+</div>
+
+
+</div></div>
+</div></div>
+</div></div>
+</div><div class="sf_cols Section Section--learning Section--learn-support Section--border">
+  <div id="GeneralContent_C037_Col00" class="sf_colsIn container"><div class='sfContentBlock'><h2 class="u-tac u-mb7">Learning &amp; Support</h2>
+
+
+</div><div class="sf_cols row row--separated u-mb1">
+  <div id="GeneralContent_C114_Col00" class="sf_colsIn col-10"><div class="sf_cols row">
+  <div id="GeneralContent_C204_Col00" class="sf_colsIn col-5"><div class='sfContentBlock'><a href="https://www.progress.com/blogs/quick-guide-build-custom-odbc-driver-in-java-or-c" title="Quick Guide to Build Custom Drivers" class="" target=""><img src="//d117h1jjiq768j.cloudfront.net/images/default-source/blogs/2015-10/progress-featured-in-crn-2015-cloud-partner-program-guide-880x440.png?sfvrsn=4" alt="Quick Guide to Build Custom Drivers" data-displaymode="Original" title="Quick Guide to Build Custom Drivers"></a>
+
+
+</div></div>
+  <div id="GeneralContent_C204_Col01" class="sf_colsIn col-7"><div class='sfContentBlock'><h3 class="f-geo1  u-fs20 f-ttu">Quick Guide</h3>
+<h3 class="f-4xl">Build a Custom Driver in C/C++, Java or C#</h3>
+<p>Are you struggling to find a driver for your amazing, unique application? Here's our quick guide for building a custom driver. This one stop guide gives you all the resources to build a custom driver in ODBC, JDBC, ADO.NET or OLEDB standard in C, C++, Java or C#</p>
+<a href="https://www.progress.com/blogs/quick-guide-build-custom-odbc-driver-in-java-or-c" title="" class="" target="">Read the Blog</a>
+
+
+</div></div>
+</div><div class='sfContentBlock'><br>
+<br>
+
+
+</div><div class="sf_cols row">
+  <div id="GeneralContent_C198_Col00" class="sf_colsIn col-5"><div class='sfContentBlock'><a href="https://www.progress.com/blogs/enabling-cognos-with-custom-data-sources-in-real-time-yep-we-got-that" title="Build Custom Drivers for IBM Cognos" class="" target=""><img src="//d117h1jjiq768j.cloudfront.net/images/default-source/blogs/4/files/2012/07/image001.jpg?sfvrsn=1" alt="Build Custom Drivers for IBM Cognos" class="u-mb3 u-small-nm" data-displaymode="Original" title="Build Custom Drivers for IBM Cognos"></a>
+
+
+</div></div>
+  <div id="GeneralContent_C198_Col01" class="sf_colsIn col-7"><div class='sfContentBlock'><div class="u-mr3">
+<h3 class="f-geo1 u-fs20 f-ttu">TUTORIAL</h3>
+<h3 class="f-4xl">Build a Custom Driver for IBM Cognos</h3>
+<p>Several consultants of IBM Cognos often get requests to support data sources with a custom ODBC driver or a Custom JDBC driver. In this tutorial, you can learn how to use OpenAccess to build custom drivers.</p>
+<a href="http://forms.progress.com/forms/wbr-BuildSQLAccess" class="u-fs18"></a><a href="https://www.progress.com/blogs/enabling-cognos-with-custom-data-sources-in-real-time-yep-we-got-that" class="u-fs18" title="" target="">Read the Tutorial</a>
+</div>
+
+
+</div></div>
+</div><div class='sfContentBlock'><br>
+<br>
+
+
+</div><div class="sf_cols row">
+  <div id="GeneralContent_C195_Col00" class="sf_colsIn col-5"><div class='sfContentBlock'><a href="https://www.progress.com/customers/voltdb" title="Build Custom Driver Case Study - VoltDB" class="" target=""><img src="//d117h1jjiq768j.cloudfront.net/images/default-source/blogs/4/files/2015/07/big_voltdb_logo_20141.gif?sfvrsn=0" alt="Build Custom Driver Case Study - VoltDB" class="u-mb3 u-small-nm" data-displaymode="Original" title="Build Custom Driver Case Study - VoltDB"></a>
+
+
+</div></div>
+  <div id="GeneralContent_C195_Col01" class="sf_colsIn col-7"><div class='sfContentBlock'><div class="u-mr3">
+<h3 class="f-geo1 u-fs20 f-ttu">CASE STUDY</h3>
+<h3 class="f-4xl">Learn how VoltDB used OpenAccess to build custom drivers</h3>
+<p>Using the Progress DataDirect OpenAccess SDK, VoltDB reduced its time to market by 50% versus using other solutions, developing a prototype in one month and releasing its new driver in just three months. In this case study learn how to build a custom driver.</p>
+<a href="https://www.progress.com/customers/voltdb" class="u-fs18">Read the Case</a>
+</div>
+
+
+</div></div>
+</div><div class='sfContentBlock'><br>
+<br>
+
+
+</div><div class="sf_cols row">
+  <div id="GeneralContent_C116_Col00" class="sf_colsIn col-5"><div class='sfContentBlock'><a href="http://forms.progress.com/forms/wbr-BuildSQLAccess" title="Build Custom Driver for your SaaS Application" class="" target="_blank"><img src="//d117h1jjiq768j.cloudfront.net/images/default-source/Products/salesforce/opening_the_salesforce_data_silo.png?sfvrsn=2" alt="Build Custom Driver for your SaaS Application" title="Build Custom Driver for your SaaS Application" displaymode="Original" class="u-mb3 u-small-nm"></a>
+
+
+</div></div>
+  <div id="GeneralContent_C116_Col01" class="sf_colsIn col-7"><div class='sfContentBlock'><div class="u-mr3">
+<h3 class="f-geo1 u-fs20 f-ttu">WEBINAR</h3>
+<h3 class="f-4xl">Build Custom Drivers for Your SaaS Application, This Week</h3>
+<p>Check out this on-demand webinar and learn how to SQL-enable your SaaS application and streamline BI connectivity for your customers. Learn how easy it is to build a custom driver of your choice - ODBC, JDBC, ADO.NET or OLEDB.</p>
+<a href="http://forms.progress.com/forms/wbr-BuildSQLAccess" class="u-fs18">Register for webinar</a>
+</div>
+
+
+</div></div>
+</div></div>
+  <div id="GeneralContent_C114_Col01" class="sf_colsIn col-2"><div class='sfContentBlock'><h3 class="f-geo1 u-fs20 f-ttu u-mb3">Resources</h3>
+<ul class="List0 List-separated Space--mid u-fs16 u-nm">
+    <li><a href="https://www.progress.com/blogs/search?start=0&amp;q=openaccess&amp;collection=progress_blogs" target="_blank">Blogs</a></li>
+    <li><a href="http://knowledgebase.datadirect.com/articles/Article/000030590?_ga=1.235818310.638687124.1424874769" target="_blank">Code Samples</a></li>
+    <li><a href="/open-access/resources/documentation">Documentation</a></li>
+    <li><a href="/open-access/whats-new">Release Notes</a></li>
+    <li><a href="/open-access/resources/platform-support">Supported Platforms</a></li>
+    <li><a href="/open-access/resources/use-cases">Use Cases</a></li>
+</ul>
+
+
+</div></div>
+</div></div>
+</div><div class="sf_cols Section Section--border Section--customers Section--xl">
+  <div id="GeneralContent_C132_Col00" class="sf_colsIn container"><div class='sfContentBlock'><h2 class="u-tac u-mb6">Customer Success Stories</h2>
+
+
+</div><div>
+	
+  
+<style type="text/css">
+  .Box{
+    padding-bottom: 50px !important;
+  }
+  .Box img {
+    max-height: 80px;
+  }
+  .Box div.Box-description{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .Box div.Box-description p{
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+</style>
+<script type="text/javascript">
+$(window).on("load resize", function (e) {
+    var boxHighest = null;
+    var boxHeight = 0;
+    function setBoxHeight() {
+        var boxH = $(this).height();
+        if (boxH > boxHeight) {
+            boxHeight = boxH;
+            boxHighest = $(this);
+        }
+    }
+    if ($(window).innerWidth() >= 960) {
+        $(".Box div.Box-description").each(setBoxHeight);
+        $(".Box div.Box-description").css({ "height": boxHighest.height() });
+    }
+    else {
+        $(".Box div.Box-description").css({ "height": "auto" });
+    }
+});
+</script>
+  
+
+<!-- 2015.3.930.40 -->
+        <div class="sf_cols row">
+            
+      <div class='sf_colsIn col-3' data-sf-provider='OpenAccessProvider' data-sf-id='fda94ca3-6379-474d-8ef7-effe4f07d1dd' data-sf-type="Telerik.Sitefinity.DynamicModules.Model.DynamicContent">
+        <div class="Box u-pt5">
+            <img src='//d117h1jjiq768j.cloudfront.net/images/default-source/customer-and-partner-logos-3.0/coins.png?sfvrsn=2' alt='coins' title='coins' class="u-pb1" />   
+            <div class="Box-description u-mt1" data-sf-field="Description" data-sf-ftype="LongText">
+		Global leader in enterprise software for the construction industry needs to share Progress OpenEdge application data with third party BI tools. Coins leveraged OpenAccess to build a semantic layer on top of OpenEdge that enables efficient, flexible data connectivity that includes business logic.
+	</div>           
+  	    <a href='/customers/coins'>Read the whole story</a>
+        </div>
+      </div>
+    
+      <div class='sf_colsIn col-3' data-sf-provider='OpenAccessProvider' data-sf-id='e3336ce7-5734-487f-abc5-771cbef9cfff' data-sf-type="Telerik.Sitefinity.DynamicModules.Model.DynamicContent">
+        <div class="Box u-pt5">
+            <img src='//d117h1jjiq768j.cloudfront.net/images/default-source/customer-and-partner-logos-3.0/netsuite-sm.png?sfvrsn=2' alt='Netsuite-sm' title='Netsuite-sm' class="u-pb1" />   
+            <div class="Box-description u-mt1" data-sf-field="Description" data-sf-ftype="LongText">
+		NetSuite needed application data connectivity demanded by existing customers and by the market at large. To solve this problem they leveraged the OpenAccess&trade; SDK for data connectivity supporting an extensive breadth of standards and implementations.
+	</div>           
+  	    <a href='/customers/netsuite'>Read the whole story</a>
+        </div>
+      </div>
+    
+      <div class='sf_colsIn col-3' data-sf-provider='OpenAccessProvider' data-sf-id='1a10d6a7-24ff-420e-bfb2-1498dabe2ca7' data-sf-type="Telerik.Sitefinity.DynamicModules.Model.DynamicContent">
+        <div class="Box u-pt5">
+            <img src='//d117h1jjiq768j.cloudfront.net/images/default-source/customer-and-partner-logos-3.0/the-resource-network.png?sfvrsn=2' alt='The-resource-network' title='The-resource-network' class="u-pb1" />   
+            <div class="Box-description u-mt1" data-sf-field="Description" data-sf-ftype="LongText">
+		The Resource Network, which helps organizations develop business initiatives, needed to tie together diverse data from multiple on-premise or cloud-based applications. Leveraging DataDirect OpenAccess for Salesforce, any ODBC-compliant application was enabled to access data sources at Salesforce.com in real time using SQL as the language.
+	</div>           
+  	    <a href='/customers/resource-network'>Read the whole story</a>
+        </div>
+      </div>
+    
+      <div class='sf_colsIn col-3' data-sf-provider='OpenAccessProvider' data-sf-id='b7ef14a6-5db6-47f3-9726-6d55d8b9d26b' data-sf-type="Telerik.Sitefinity.DynamicModules.Model.DynamicContent">
+        <div class="Box u-pt5">
+            <img src='//d117h1jjiq768j.cloudfront.net/images/default-source/customer-and-partner-logos-3.0/uz-leuven.png?sfvrsn=2' alt='UZ-Leuven' title='UZ-Leuven' class="u-pb1" />   
+            <div class="Box-description u-mt1" data-sf-field="Description" data-sf-ftype="LongText">
+		UZ Leuven, one of Belgium&rsquo;s largest hospitals, needed a efficient complex data migration from multiple sources to be shared across 200 applications and multiple facilities. Using Progress&reg; DataDirect&reg; OpenAccess their IT team was able to create a database emulation layer that made it possible to pre-configure and test database integration with DB2 on all 200 applications.
+	</div>           
+  	    <a href='/customers/uz-leuven'>Read the whole story</a>
+        </div>
+      </div>
+    
+        </div>
+    <input id="ctl00_GeneralContent_ctl21_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_GeneralContent_ctl21_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_GeneralContent_ctl21_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div></div>
+</div><div class="sf_cols Section Section--xl u-tac">
+  <div id="GeneralContent_C142_Col00" class="sf_colsIn container"><div class='sfContentBlock'><h2 class="u-tac u-mb5">Partnerships</h2>
+
+
+</div><div>
+	
+
+        <div class="sf_cols row u-tac">
+            
+      <div class='sf_colsIn col-4' data-sf-provider='OpenAccessProvider' data-sf-id='8f114545-9c2c-4d03-8849-2d53f3eecf46' data-sf-type="Telerik.Sitefinity.DynamicModules.Model.DynamicContent">
+            <img id="ctl00_GeneralContent_ctl23_ctl00_ctl00_dynamicContentListView_ctrl0_AspRelatedImageControl1" title="tableau" src="//d117h1jjiq768j.cloudfront.net/images/default-source/customer-and-partner-logos/tableau.png?sfvrsn=2" alt="tableau" />   
+      </div>
+    
+      <div class='sf_colsIn col-4' data-sf-provider='OpenAccessProvider' data-sf-id='cdcc53c1-e602-4e7f-8dc1-a2fc8d68637d' data-sf-type="Telerik.Sitefinity.DynamicModules.Model.DynamicContent">
+            <img id="ctl00_GeneralContent_ctl23_ctl00_ctl00_dynamicContentListView_ctrl1_AspRelatedImageControl1" title="datastax" src="//d117h1jjiq768j.cloudfront.net/images/default-source/customer-and-partner-logos/datastax.png?sfvrsn=2" alt="datastax" />   
+      </div>
+    
+      <div class='sf_colsIn col-4' data-sf-provider='OpenAccessProvider' data-sf-id='59fea7ad-58ad-4ec7-a145-5fe92889353b' data-sf-type="Telerik.Sitefinity.DynamicModules.Model.DynamicContent">
+            <img id="ctl00_GeneralContent_ctl23_ctl00_ctl00_dynamicContentListView_ctrl2_AspRelatedImageControl1" title="Oracle_Service_cloud" src="//d117h1jjiq768j.cloudfront.net/images/default-source/customer-and-partner-logos/oracle_service_cloud.png?sfvrsn=2" alt="Oracle_Service_cloud" />   
+      </div>
+    
+        </div>
+    <input id="ctl00_GeneralContent_ctl23_ctl00_ctl00_dynamicContentListView_ClientState" name="ctl00_GeneralContent_ctl23_ctl00_ctl00_dynamicContentListView_ClientState" type="hidden" /><span id="ctl00_GeneralContent_ctl23_ctl00_ctl00_dynamicContentListView" style="display:none;"></span>
+
+
+</div></div>
+</div><div class="sf_cols Section Section--background-bottom">
+  <div id="GeneralContent_C101_Col00" class="sf_colsIn container"><div class='sfContentBlock'><h2 class="u-tac u-mb9 u-mt3"><span class="f-geo1 f-b9 f-2xl f-ls0 u-db u-mb1">DataDirect Connectors are Part of</span>
+Progress Data Connectivity &amp; Integration Solutions
+</h2>
+
+
+</div><div class='sfContentBlock'><div class="row row--separated row--separated-hanging u-tac">
+<div class="col-6">
+<img class="u-mb2" src="//d117h1jjiq768j.cloudfront.net/images/default-source/default-album/progress-album/images-album/icon-info-b.png?sfvrsn=2" alt="icon-info-b" displaymode="Original" />
+<h3><a href="/datadirect-connectors">DataDirect Connectors</a></h3>
+<p class="f-b0">Connect any data source to any application</p>
+</div>
+<div class="col-6">
+<img class="u-mb2" src="//d117h1jjiq768j.cloudfront.net/images/default-source/default-album/progress-album/images-album/icon-contact-us-b.png?sfvrsn=2" displaymode="Original" alt="icon-contact-us-b" />
+<h3><a href="http://forms.progress.com/forms/ContactUs">Contact Us</a></h3>
+<p>A Progress sales representative will be glad get in <br class="u-normal-dn" />
+touch with you</p>
+</div>
+</div>
+
+
+</div></div>
+</div></div>
+</div></div>
+        
+<div class='sfContentBlock'><div class="PRGS-Footer">
+<div class="PRGS-container">
+<div class="PRGS-Footer-core">
+<div class="PRGS-row">
+<div class="PRGS-col-12">
+<a href="/" class="PRGS-Footer-logo">
+<img src="https://d3ba5g9yhie26y.cloudfront.net/img/progress-logo-reversed.png" width="122" height="36">
+</a>
+<p class="PRGS-Footer-copyright">Copyright &copy; 2016, Progress Software Corporation and/or its subsidiaries or affiliates.<br>
+All Rights Reserved.</p>
+<p>Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries. See <a href="https://www.progress.com/legal/trademarks">Trademarks</a> or appropriate markings.</p>
+</div>
+<div class="PRGS-col-12">
+<div class="PRGS-Footer-social">
+<a href="https://www.facebook.com/progresssw">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 512 512" xml:space="preserve">
+<path d="m307.91372,29.22911c28.66308,0.60985 50.61779,1.21971 67.23628,1.6771l0,74.85944l-41.46999,0c0,0 -42.53724,-3.65912 -42.53724,35.37147l0,53.81951l79.5858,0l-9.91011,80.04319l-69.67569,0l0,207.80736l-83.09245,0l0,-207.80736l-71.20032,0l0,-80.04319l71.20032,0l0,-61.29021c0,-0.15246 -3.81158,-106.72425 99.86341,-104.4373z"></path>
+</svg>
+</a>
+<a href="https://twitter.com/progresssw">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 512 512" xml:space="preserve">
+<path d="M337.6,56.7c45.9-1.3,62.6,12.6,86.9,31.1c20.9-7.2,41.9-14.4,62.8-21.5c-9.8,24.1-23.4,35.1-38.6,52.6 c17.7-4.8,35.4-9.6,53.1-14.4c-13.5,18.9-30.9,37.5-50.7,50.2c2.9,150.9-83,245.2-195.5,282.2c-74.9,24.7-193,9.8-236.6-33.5 c60.4,1.9,115.7-8.9,142.4-40.7C116.4,361,79.7,332,72,293.5c0.8,0,1.6,0,2.4,0c10.7,3.5,28.6,3.8,36.2-2.4 C65.8,282.6,44,252.6,38.3,205c0.8-0.8-0.8-8.8,0-9.6c12.8,4,25.7,8,38.6,12c0-0.8,0-1.6,0-2.4c-12.2-13.4-26-25-33.8-43.1 c-12.1-28.1-5.1-77,9.7-86.1c33.5,51.3,124.6,96.1,200.3,102.8c0.8-1.6,1.6-3.2,2.4-4.8C242.1,103.7,295.8,61.7,337.6,56.7z"></path>
+</svg>
+</a>
+<a href="https://www.youtube.com/user/ProgressSW">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 512 512" xml:space="preserve">
+<path d="M506.887,153.632c0,0-5.003-35.283-20.354-50.82c-19.469-20.393-41.293-20.494-51.301-21.687 c-71.647-5.179-179.121-5.179-179.121-5.179h-0.223c0,0-107.472,0-179.121,5.179c-10.008,1.194-31.824,1.295-51.301,21.687 c-15.351,15.537-20.346,50.82-20.346,50.82S0,195.065,0,236.497v38.843c0,41.433,5.12,82.865,5.12,82.865 s4.995,35.283,20.346,50.82c19.476,20.393,45.06,19.748,56.455,21.885C122.883,434.839,256,436.054,256,436.054 s107.585-0.162,179.232-5.341c10.008-1.194,31.831-1.295,51.301-21.687c15.351-15.537,20.354-50.82,20.354-50.82 S512,316.773,512,275.341v-38.843C512,195.065,506.887,153.632,506.887,153.632z M203.87,322.913v-144.36l137.342,72.18 L203.87,322.913z"></path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/company/progress-software">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 512 512" xml:space="preserve">
+<path d="M77,445.67h78.54v-265H77v265Zm39-385.76c-26.18,0-45.41,16.56-45.41,40.6s19.23,41.14,45.41,41.14c26.71,0,45.41-17.1,45.41-41.14S142.77,59.91,116.06,59.91ZM367.69,174.25c-35.8,0-62.51,18.7-84.95,40.07h-2.14l-5.34-33.66H211.15v265h78.54v-179c17.1-16.56,29.38-25.64,49.15-25.64,22.44,0,32.59,11.75,32.59,50.22V445.67H450V281.1C450,214.85,425.39,174.25,367.69,174.25Z"></path>
+</svg>
+</a>
+</div>
+<div class="PRGS-Footer-info">
+<a href="https://www.progress.com/legal/terms-of-use">Terms of Use</a>
+<a href="https://www.progress.com/legal/privacy-policy">Privacy Policy</a>
+<a href="https://www.progress.com/legal/trademarks">Trademarks</a>
+<a href="https://www.progress.com/legal">License Agreements</a>
+<a href="https://www.progress.com/company/careers">Careers</a>
+<a href="https://www.progress.com/company/offices">Offices</a>
+</div>
+<div class="PRGS-Footer-cms">
+Powered by <a href="http://www.sitefinity.com/">Progress Sitefinity</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div><div id="FooterContent_T978044BF077">
+
+</div><span id="FooterContent_T6EEB0423006"></span>
+    <script type="text/javascript">
+	StatsClient.LogVisit('54188df5-76d9-48d6-bc5f-28f9dd962da4', 'cfef0ddf-3480-45d9-93a6-8ef6fdfd5e71');
+</script>
+<script type="text/javascript">$(function () {
+  $('.hidden-dropdown > a').unbind('click');  
+});
+
+
+// fix scroll to pricing small screens
+/*
+$(function () {
+
+  if ($("Btn.Btn--plain.Btn--min-w.scrollBottom").length) {
+
+    if ($(window).width() < 600) {
+      $(".scrollBottom").on("click", function () {
+        var _el = document.getElementsByClassName("Section--scroll-to");
+        _el[0].scrollIntoView({block: "end", behavior: "smooth"});
+      });
+    }
+
+  }
+
+});
+*/
+
+if ($(".Btn.Btn--plain.Btn--min-w.scrollBottom").length > 0) {
+    
+    if ($(window).width() < 970) {
+      
+      $('.scrollBottom').click(function () {
+        
+        $('html, body').animate({
+          scrollTop: $(".Section--scroll-to").offset().top
+        }, 500);
+        
+      });
+    }
+  }</script><script type="text/javascript" src="//secure.progress.com/js/atcOverride.js"></script><script type="text/javascript" src="//secure.progress.com/js/redirect.js"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%3aen%3afbe5c836-97dc-472f-9dda-26a7edc2f42b%3a16e4e7cd%3a365331c3%3bWeb.SitefinityExtensions.EloquaConnector%3aen%3a145c3f0b-e7db-46f7-a3c3-0aca743ecae0%3af94d2b9b%3bTelerik.Web.UI%2c+Version%3d2015.3.930.40%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen%3afbe5c836-97dc-472f-9dda-26a7edc2f42b%3addbfcb67" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var sf_appPath='/';;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl08_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=8.2.5908.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:en:8cb184c0-d614-40d6-96e8-216e0bb93c28:7a90d6a';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$GeneralContent$ctl21$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_GeneralContent_ctl21_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":4,"clientStateFieldID":"ctl00_GeneralContent_ctl21_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_GeneralContent_ctl21_ctl00_ctl00_dynamicContentListView"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadListView, {"UniqueID":"ctl00$GeneralContent$ctl23$ctl00$ctl00$dynamicContentListView","_clientSettings":{"DataBinding":{"ItemPlaceHolderID":"ctl00_GeneralContent_ctl23_ctl00_ctl00_dynamicContentListView_ItemsContainer","DataService":{}}},"_virtualItemCount":3,"clientStateFieldID":"ctl00_GeneralContent_ctl23_ctl00_ctl00_dynamicContentListView_ClientState","renderMode":1}, null, null, $get("ctl00_GeneralContent_ctl23_ctl00_ctl00_dynamicContentListView"));
+});
+//]]>
+</script>
+<script src="//d3ba5g9yhie26y.cloudfront.net/cache/ada12fb19ac904a47b143760d25e4d76166f13ee/js/all.min.js" type="text/javascript"></script><script src="//d3ba5g9yhie26y.cloudfront.net/cache/087434c61b0ad3d8d61a463333f5e4c6c54e1804/progress/prgs/dist/js/all.js" type="text/javascript"></script></form>
+</body>
+</html>

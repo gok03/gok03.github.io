@@ -1,0 +1,661 @@
+status: 200
+content-length: 32127
+content-location: http://www.computersymas.com
+accept-ranges: bytes
+server: Apache
+last-modified: Mon, 01 Feb 2010 05:27:19 GMT
+date: Fri, 09 Sep 2016 09:33:56 GMT
+content-type: text/html
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+		<title>Computers y Algo Mas LLC. - Information Technology Solutions</title>
+		<meta name="description" content="Computers y Algo Mas LLC.  -  Information Technology Solutions">
+		<meta name="description" content="Computers y Algo Mas LLC.  -  Information Technology Solutions">
+		<meta content="Microsoft FrontPage 6.0" name="GENERATOR">
+		<meta content="Visual Basic 7.0" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<LINK href="Styles.css" type="text/css" rel="stylesheet">
+		<link href="EasySearchASP.css" rel="stylesheet" type="text/css">
+		<script language="JavaScript1.2">
+<!--
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+function noPostBack(sNewFormAction)
+{ 
+	document.forms[0].action = sNewFormAction;
+	document.forms[0]._VIEWSTATE.name = 'NOVIEWSTATE';
+}
+
+//-->
+
+
+		</script>
+		<script>
+
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 8000
+
+// Duration of crossfade (seconds)
+var crossFadeDuration = 3
+
+var Pic = new Array() 
+
+Pic[0] = 'images/rotater/p001.gif'
+Pic[1] = 'images/rotater/p002.gif'
+Pic[2] = 'images/rotater/p003.gif'
+Pic[3] = 'images/rotater/p004.gif'
+Pic[4] = 'images/rotater/p005.gif'
+Pic[5] = 'images/rotater/p006.gif'
+Pic[6] = 'images/rotater/p007.gif'
+Pic[7] = 'images/rotater/p008.gif'
+Pic[8] = 'images/rotater/p009.gif'
+Pic[9] = 'images/rotater/p010.gif'
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()      
+   }
+   document.images.SlideShow.src = preLoad[j].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runSlideShow()', slideShowSpeed)
+}
+		</script>
+	</HEAD>
+	<body bgColor="#cccccc" leftMargin="0" topMargin="11" onload="MM_preloadImages('images/contactnavbar1.gif','images/contactnavbardown_02.gif','images/contactnavbardown_03.gif','images/contactnavbardown_04.gif','images/clientsnavbardown_02.gif','images/clientsnavbar_02.gif','images/solutionsnavbardown_02.gif','images/solutionsnavbar_02.gif','images/solutionsnavbardown_03.gif','images/solutionsnavbar_03.gif','images/solutionsnavbardown_04.gif','images/solutionsnavbar_04.gif','images/solutionsnavbardown_05.gif','images/solutionsnavbar_05.gif','images/solutionsnavbardown_06.gif','images/solutionsnavbar_06.gif','images/solutionsnavbardown_07.gif','images/solutionsnavbar_07.gif','images/companynavbardown_02.gif','images/companynavbar_02.gif','images/companynavbardown_03.gif','images/companynavbar_03.gif','images/companynavbardown_04.gif','images/companynavbar_04.gif','images/companynavbardown_05.gif','images/companynavbar_05.gif','images/navbardown_01.gif','images/navbardown_03.gif','images/navbardown_05.gif','images/navbardown_07.gif','images/navbardown_09.gif','images/navbardown_13.gif'), runSlideShow()" MS_POSITIONING="GridLayout">
+		<form name="Body" method="post" action="Default.aspx" id="Body">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDwxMzAwODU0NjQ7dDw7bDxpPDE+Oz47bDx0PDtsPGk8MD47PjtsPHQ8O2w8aTwyPjtpPDQ+O2k8Nj47PjtsPHQ8cDw7cDxsPG9uZm9jdXM7PjtsPEluaXRFYXN5U2VhcmNoQVNQSGludHMoKVw7Oz4+Pjs7Pjt0PHA8cDxsPENhdXNlc1ZhbGlkYXRpb247PjtsPG88Zj47Pj47Pjs7Pjt0PHA8cDxsPENhdXNlc1ZhbGlkYXRpb247PjtsPG88Zj47Pj47Pjs7Pjs+Pjs+Pjs+Pjs+AOfngjxBRLnmNaV/9uWj4UDKexg=" />
+
+<script language="javascript" type="text/javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+			theform = document.Body;
+		}
+		else {
+			theform = document.forms["Body"];
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+
+<!-- EasySearch Hint Javascript -->
+<script language="javascript"><!--
+var exsa=null;var exsb=null;var exsc=null;var exsd=null;var exse=null;function InitEasySearchASPHints(){exso();
+if(exsa){exsc=exsp("results");exsd=exsp("SearchControl_EasySearchTextBox");exse=exsp("SearchControl_EasySearchLinkButton");if(exsd){exsd.focus();exsd.onkeypress=exsk;
+exsd.onkeyup=exsm;}}}function exsf(a){return a.replace(/^\s*|\s*$/g,"");}function EventSrc(e){if(e.target)
+return e.target;if(e.srcElement)return e.srcElement.tagName;}function exsg(e){var a;if(e.keyCode)a=e.keyCode;
+if(!a&&e.which)a=e.which;if(!a)return 0;return a;}function exsh(e){if(e.shiftKey)return(e.shiftKey);
+if(e.modifiers)return(e.modifiers==4);}function ria(a){exsi(a);exse.click();}function exsi(a){exsd.value=a;
+exsq(a);if(exsc.firstChild) exsj(exsc.firstChild,exsc.firstChild);}function exsj(a,b){if(exsb){exsb.className='';
+if(a)exsb=a;}else exsb=b;if(exsb)exsb.className='selHint';}function exsk(ev){var e=exsn(ev);var a=exsg(e);
+if(a==13){if(exsb){exsi(exsl());exse.click();}return false;}}function exsl(){
+var a=exsb.childNodes[1].getAttribute('href');var b=/'([^']*)'/gi;a.match(b);return RegExp.$1;}function exsm(a)
+{var e=exsn(a);var b;if(exsh(e))b=exsg(exsn(null));if(!b)b=exsg(e);if(b==0)return false;if(exsc.firstChild!=null)
+{var c=null,d;switch(b){case 40:if(exsb)c=exsb.nextSibling;d=exsc.firstChild;exsj(c,d);return true;break;case 38:
+if(exsb)c=exsb.previousSibling;d=null;exsj(c,d);return true;break;case 39:if(exsb){exsi(exsl());}return true;
+break;}}exsq(exsd.value);return true;}function exsn(e){if(!e){e=window.event;}return e;}function exso(){try{
+exsa=new ActiveXObject("Msxml2.XMLHTTP.4.0");return;}catch(ex){}try{exsa=new ActiveXObject("msxml2.xmlhttp");
+return;}catch(ex){}try{exsa=new XMLHttpRequest();return;}catch(ex){}exsa=null;}function exsp(id){
+if(document.getElementById){return document.getElementById(id);}return null;}function exsq(searchString){exsb=null;
+if(exsa&&exsc){if(exsf(searchString)==""){exsc.innerHTML="";exsc.style.display='none';
+exsc.style.visibility='hidden';return;}exsc.style.visibility='visible';
+exsc.style.display='inline';exsa.open('GET','/LiveResults.aspx?search='+searchString,false);exsa.send(null);
+var content=exsa.responseText;if(exsf(content)==""){exsc.innerHTML="";exsc.style.display='none';
+exsc.style.visibility='hidden';return;}exsc.innerHTML=content;}}
+--></script>
+
+
+
+
+
+
+			<table borderColor="#666666" height="707" cellSpacing="0" cellPadding="0" width="752" align="center" bgColor="#ffffff" border="1">
+				<tr>
+					<td class="Text" vAlign="top" borderColor="#ffffff" width="750" height="705">
+						<table height="703" cellSpacing="0" cellPadding="0" width="431" align="center" bgColor="#ffffff" border="0">
+							<tr>
+							  <td vAlign="center" align="left" width="343" height="69"><div align="left"><a href="http://www.computersymas.com"><IMG height="100" src="images/logo%20computers.jpg" width="213"></a></div>
+								</td>
+								<td vAlign="center" align="right" width="411">
+									<div align="right">
+										<table cellSpacing="0" cellPadding="0" width="370" align="center" border="0">
+                  <tr>
+                    <td>
+					  <div align="center">
+					<table width="200" border="0" align="right" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td height="25" colspan="2"><div align="right"><span class="Date">
+                      </span></div></td>
+                      </tr>
+                    <tr>
+                      <td><P align="right">
+				<span id="SearchControl_EasySearchMessageLabel"></span>
+                <input name="SearchControl:EasySearchTextBox" type="text" id="SearchControl_EasySearchTextBox" autocomplete="off" onfocus="InitEasySearchASPHints();" style="width:125px;" />
+
+                <a id="SearchControl_EasySearchLinkButton" class="SubmitButton" href="construction.htm">Search</a>
+	<br>
+<div id="results" style="width: 190; height: 12"></div>
+                      </td>
+                      <td><div align="right"></div></td>
+                    </tr>
+                  </table>
+					  </div></td>
+                  </tr>
+                </table>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td vAlign="top" colSpan="2" height="18">
+									<TABLE cellSpacing="0" cellPadding="0" width="750" border="0">
+										<TR>
+											<TD><a onmouseover="MM_swapImage('Image2','','images/navbardown_01.gif',1)" href="http://www.computersymas.com"><IMG id="Image7" alt="" src="images/navbardown_01.gif" border="0" name="Image2" width="87" height="20"></a></TD>
+											<TD><IMG height="20" alt="" src="images/navbar_02.gif" width="2"></TD>
+											<TD><a onmouseover="MM_swapImage('Image3','','images/navbardown_05.gif',1)" href="solutions.html"><IMG id="Image8" alt="" src="images/navbardown_05.gif" border="0" name="Image3" width="86" height="20"></a></TD>
+											<TD><IMG height="20" alt="" src="images/navbar_04.gif" width="2"></TD>
+											<TD><a onmouseover="MM_swapImage('Image3','','images/navbardown_03.gif',1)" href="solutions.html"><IMG id="Image3" alt="" src="images/navbardown_03.gif" border="0" name="Image3" width="87" height="20"></a></TD>
+											<TD><IMG height="20" alt="" src="images/navbar_06.gif" width="2"></TD>
+											<TD><a onmouseover="MM_swapImage('Image5','','images/navbardown_09.gif',1)" href="htmlmail/newsletter_2006_09_Eng.htm"><IMG id="Image10" alt="" src="images/cores/navbardown_07.gif" border="0" name="Image5" width="87" height="20"></a></TD>
+											<TD><IMG height="20" alt="" src="images/navbar_08.gif" width="2"></TD>
+											<TD><a onmouseover="MM_swapImage('Image5','','images/navbardown_09.gif',1)" href="contact.html"><IMG id="Image5" alt="" src="images/navbardown_09.gif" border="0" name="Image5" width="86" height="20"></a></TD>
+											<TD><IMG height="20" alt="" src="images/navbar_10.gif" width="2"></TD>
+											<TD><IMG height="20" alt="" src="images/navbar_11.gif" width="210"></TD>
+											<TD><IMG height="20" alt="" src="images/navbar_12.gif" width="2"></TD>
+											<TD><a onmouseover="MM_swapImage('Image4','','images/navbardown_13.gif',1)" href="solutions.html"><IMG id="Image9" alt="" src="images/navbardown_13.gif" border="0" name="Image4" width="95" height="20"></a></TD>
+										</TR>
+									</TABLE>
+								</td>
+							</tr>
+							<tr>
+								<td vAlign="top" colSpan="2" height="190"><img src="images/p010.gif" name="SlideShow" border="0" width="750" height="190" /></td>
+							</tr>
+							<tr>
+								<td vAlign="top" colSpan="2" height="5"><IMG height="5" src="images/border.gif" width="750"></td>
+							</tr>
+							<tr vAlign="top">
+								<td colSpan="2" height="419">
+									<table height="72%" cellSpacing="0" cellPadding="0" width="750" align="center" border="0">
+										<tr>
+										  <td vAlign="top" align="left" colSpan="3" height="419"><font face="Arial, Helvetica, sans-serif">
+													<table class="Text" height="78%" cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+														<tr>
+															<td class="Text" vAlign="bottom" width="34%" height="35">&nbsp;</td>
+															<td class="Text" vAlign="bottom" width="35%"><IMG height="26" src="images/layout_02.gif" width="215"></td>
+															<td class="Text" vAlign="bottom" align="left" width="31%"><IMG height="26" src="images/layout_03.gif" width="215"></td>
+														</tr>
+														<form method="post" enctype="application/x-www-form-urlencoded" name="copage"
+                                                           action="https:// usm.channelonline.com/CAM/storesite/Login/index.co">
+                                                              <input type="hidden" name="decor_favorite_add" value="">
+                                                              <input type="hidden" name="decor_redirect_url" value="">
+                                                              <input type="hidden" name="decor_last_prototype" value="https">
+                                                              <input type="hidden" name="delete_hotlist" value="">
+                                                              <input type='hidden' name='destination' value='/CAM/storesite/'>
+                                                              <input type=hidden name='login' value="">
+														<tr>
+															<td class="Text" vAlign="top" height="354"><div align="right">
+																	<table cellSpacing="0" cellPadding="0" width="235" align="center" border="0">
+																		<tr>
+																			<td class="Text" height="21" width="233">
+																			<p align="center">
+																			<a href="https://usm.channelonline.com/cam/storesite">
+																			VISIT 
+																			STORE</a></td>
+																		</tr>
+																		&nbsp;</form>
+
+																		<tr>
+																			<td class="SmallText" height="23" width="233">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																				</td>
+																		</tr>
+																		<tr>
+																			<td class="SmallText" height="22" width="233"><table width="84%" border="0" align="left" cellpadding="0" cellspacing="0">
+																					<tr>
+																						<td valign="center"><div align="center">
+																								<p align="center"><font face="Arial, Helvetica, sans-serif"><br>
+                                                                                                <a href="http://www.easyworship.com"><img src="images/header_background_easyW.gif" width="205" height="74"></a></font>
+																									<br>
+																									<br>
+                                                                                                <a href="http://toshiba.com">
+                                                                                                <img border="0" src="images/Toshiba_logo1.BMP" width="230" height="74">
+                                                                                                </a>
+																									<br>
+																									<br>
+                                                                                                <a href="http://infocus.com">
+                                                                                                <img border="0" src="images/infocus_logo_top.gif" width="112" height="68">																								</a>																								</p>
+																								<p align="center"><a href="http://polyvision.com"><img src="images/PolyVision_PMS294-reg.jpg" width="203" height="49"></a></p>
+																								<p align="center"><a href="http://hp.com"><img src="images/hpinvent.gif" width="64" height="55">																			                      </a>																			                      </p>
+																								</div>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+															</td>
+															<td class="Text" vAlign="top">
+																<table cellSpacing="0" cellPadding="0" width="83%" align="left" border="0">
+																	<tr>
+																		<td vAlign="top" height="282">
+																			<p class="Text"><br>
+																			Computers y Algo Mas is a global technology provider. Today's problems
+                                                                                                                                                                        require complete solutions where both hardware and software are integrated.</p>
+																			<p class="Text">We
+                                                                            specialize
+                                                                            in partnering with companies, schools and churches and help them to 
+																				create technology plans according to their needs. " An extensive relationship with more than 1800 suppliers enable us to fulfill
+                                                                                                                                                                        our customer needs in Audio/Visual, Smart Class rooms, Security, Information Technology, and Software .
+                                                                            Our financial model provides high volume pricing and products with international warranties. 
+																					</font> </p>
+																		  <p class="Text"><font face="Arial, Helvetica, sans-serif">Refer and
+                                                                          Get 
+																					  Rewards!<br>
+																					If</font><span class="Text">
+                                                                          </span><font face="Arial, Helvetica, sans-serif"> you know someone who is in need of our
+																						help,
+                                                                          <a href="mailto:edwin@computersymas.com">refer them</a>, 
+																						and if they start a contract
+																					job with us, you could receive a credit
+                                                                          towards any of our services.</font></p>
+																		  <p>&nbsp;</p></td>
+																			
+																					
+																  </tr>
+																	<tr>
+																	  <td vAlign="top">&nbsp;</td>
+																  </tr>
+																</table>
+															</td>
+															<td class="Text" vAlign="top">
+																<table height="100%" cellSpacing="0" cellPadding="0" width="100%" align="right" border="0">
+																	<tr>
+																		<td height="120" valign="top">
+																			<table cellSpacing="0" cellPadding="0" width="99%" align="right" border="0">
+																				<tr>
+																					<td vAlign="top" colSpan="2" height="102">																					  <p class="GreyText">
+																						<script src="http://securityresponse.symantec.com/avcenter/js/vir.js"></script>
+																						<script src="http://securityresponse.symantec.com/avcenter/js/tools.js"></script>
+																						<script src="http://securityresponse.symantec.com/avcenter/js/advis.js"></script>
+																						<script src="http://securityresponse.symantec.com/avcenter/js/vir_display.js"></script>
+																						<script>
+																						var symBORDcolor = 'FFFFFF';
+																						var symSshow = '0';
+																						var symRmax = '0';
+																						var symAmax = '0';
+																						symDisplay();
+																						</script>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																	  <td>&nbsp;</td>
+																  </tr>
+																	<tr>
+																	  <td vAlign="top" height="74">
+																	<!-- START OF TREND MICRO VIRUS INFO FEED -->
+                                  <p class="Text">
+                                    <script language="JavaScript">
+<!--
+// *********************************
+// WEBMASTERS: YOU MAY CHANGE THE FOLLOWING VALUES TO CUSTOMIZE
+// THE APPEARANCE OF TREND MICRO VIRUS INFO FEED ON YOUR SITE
+var showAlert='automatic' // 'automatic' OR 'never'
+var topCount=5 // NUMBER (0 to 10)
+var advisoryCount=5   // NUMBER (0 to 20)
+var showRisk=false
+var showUpdated=false
+var showPattern=false
+var showPatternLink=false
+var showEngineLink=false
+var showFreeScanLink=false
+var showFreeAlertsLink=false
+var showHoaxesLink=true
+var showMapLink=false
+var showSearch=false
+var bgColor='white' // COLOR NAME OR HEX VALUE (i.e., '#ffffff')
+var textColor='black'
+var linkColor='blue'
+var fontSize=1
+var fontName='Verdana, Arial, Helvetica, sans-serif'
+var linkTarget='_blank'
+// YOU MAY TRANSLATE THE FOLLOWING LABELS TO YOUR OWN LANGUAGE
+var saStr='SECURITY&nbsp;ALERT'
+var mrStr='MEDIUM RISK'
+var hrStr='HIGH RISK'
+var tvStr='Top Viruses'
+var vaStr='Virus Advisories'
+var rlStr='Related Links'
+var fvStr='FREE virus scan'
+var faStr='FREE email alerts'
+var hoStr='Hoaxes'
+var rtStr='Real-time virus map'
+var vsStr='Virus&nbsp;Search'
+var goStr='go'
+// *********************************
+
+
+var ct='http://www.trendmicro.com/syndication/vinfo/click.asp?go='
+var veURL=ct+'http://www.trendmicro.com'
+veURL+='/vinfo/virusencyclo/default5.asp?VName='
+var moreURL=ct+'http://www.trendmicro.com/vinfo/default.asp?advis=more'
+var ptnURL=ct+'http://www.trendmicro.com/download/pattern.asp'
+var engURL=ct+'http://www.trendmicro.com/download/engine.asp'
+var hcURL=ct+'http://housecall.trendmicro.com/'
+var subURL=ct+'http://www.trendmicro.com/subscriptions/'
+var hxURL=ct+'http://www.trendmicro.com/vinfo/hoaxes/hoax.asp'
+var wtcURL=ct+'http://wtc.trendmicro.com/wtc/'
+r1=showHoaxesLink;r2=showFreeScanLink;r3=showFreeAlertsLink
+r4=showMapLink;r5=showPatternLink;r6=showEngineLink
+lt=' target="'+linkTarget+'"'
+var lti=' title="go to www.trendmicro.com"'
+var ft='<font face="'+fontName+'" size="'+fontSize+'" '
+ft+='color="'+textColor+'">'
+var lft='<font face="'+fontName+'" size="'+fontSize+'" '
+lft+='color="'+linkColor+'">'
+
+function mainTable() {
+// INITIALIZE
+p+='<table border="0" cellspacing="0" cellpadding="'+(fontSize-1)+'">'
+
+// start ALERTS
+if (showAlert == 'automatic' && alertLevel == 'medium') {
+p+='<tr><td colspan="'+rowCount+'" bgcolor="#FFFF00">'
+p+='<table border="0" cellspacing="0" cellpadding="5" width="100%">'
+p+='<tr><td align="center">'
+p+='<font face="'+fontName+'" size="'+(fontSize-1)+'" color="#000000">'
+p+='<b>**&nbsp;'+saStr+'&nbsp;**</b><br>'
+p+='<font size="'+(fontSize+1)+'">'
+p+='<a href="'+veURL+VName+'"'+lti+lt+'>'
+p+='<font color="blue"><b><u>'+VName+'</u></b></font></a></font><br>'
+p+='<font size="'+fontSize+'">'+virusDescription+'</font><br><b>'
+p+='**&nbsp;'+mrStr+'&nbsp;**</b></font></td></tr></table></td>'
+p+='</tr><tr><td colspan="'+rowCount+'">'+ft+'&nbsp;</font></td></tr>'
+}
+if (showAlert == 'automatic' && alertLevel == 'high') {
+p+='<tr><td colspan="'+rowCount+'" bgcolor="#CC0000">'
+p+='<table border="0" cellspacing="0" cellpadding="5" width="100%"><tr>'
+p+='<td align="center">'
+p+='<font face="'+fontName+'" size="'+(fontSize-1)+'" color="#FFFFFF">'
+p+='<b>**&nbsp;'+saStr+'&nbsp;**</b><br>'
+p+='<font size="'+(fontSize+1)+'">'
+p+='<a href="'+veURL+VName+'"'+lti+lt+'>'
+p+='<font color="white"><b><u>'+VName+'</u></b></font></a></font><br>'
+p+='<font size="'+fontSize+'">'+virusDescription+'</font><br><b>'
+p+='**&nbsp;'+hrStr+'&nbsp;**</b></font></td></tr></table></td>'
+p+='</tr><tr><td colspan="'+rowCount+'">'+ft+'&nbsp;</font></td></tr>'
+}
+// end ALERTS
+
+// start TOP 10
+if (topCount > 0 && topCountOK) {
+p+='<tr><td colspan="'+rowCount+'">'+ft+'<b>'+tvStr+'</b></font></td></tr>'
+if (showUpdated || showPattern) {
+wide=true
+}else{
+wide=false
+}
+if (topCount == 10 && advisoryCount > 0 && showRisk && wide) {
+p+='<tr><td colspan="'+rowCount+'">'
+p+='<table border="0" cellspacing="0" cellpadding="0">'
+for (var i=0; i < 5; i++) {
+p+='<tr><td align="right">'+ft+(i+1)+'.&nbsp;</td><td nowrap>'+ft
+p+='<a href="'+veURL+top10[i]+'"'+lti+lt+'>'
+p+=lft+top10[i]+'</font></a></font></td>'
+p+='<td align="right">'+ft+'&nbsp;&nbsp;'+(i+6)+'.&nbsp;</td>'
+p+='<td nowrap>'+ft
+p+='<a href="'+veURL+top10[i+5]+'"'+lti+lt+'>'
+p+=lft+top10[i+5]+'</font></a></font></td></tr>'
+}
+p+='</table></td></tr>'
+} else {
+if (topCount>0 && topCount<11) {
+for (var i=0;i<topCount;i++) {
+p+='<tr><td align="right">'+ft+(i+1)+'.&nbsp;</td>'
+p+='<td colspan="'+(rowCount-1)+'" nowrap>'+ft
+p+='<a href="'+veURL+top10[i]+'"'+lti+lt+'>'
+p+=lft+top10[i]+'</font></a></font></td></tr>'
+}
+}
+}
+p+='<tr><td colspan="'+rowCount+'">'+ft+'&nbsp;</td></tr>'
+}
+// end TOP 10
+
+// start ADVISORIES
+if (advisoryCount > 0) {
+p+='<tr><td colspan="2">'+ft+'<b>'+vaStr+'</b></font></td>'
+if (advisoryCountOK) {
+if (showRisk) {
+p+='<td align="center" nowrap>'
+p+='<font size="1" face="'+fontName+'" color="'+textColor+'">'
+p+='&nbsp;-risk-&nbsp;</font></td>'
+}
+if (showUpdated) {
+p+='<td nowrap align="center">'
+p+='<font size="1" face="'+fontName+'" color="'+textColor+'">'
+p+='&nbsp;-updated on-&nbsp;</font></td>'
+}
+if (showPattern) {
+p+='<td nowrap align="center">'
+p+='<font size="1" face="'+fontName+'" color="'+textColor+'">'
+p+='&nbsp;-pattern-&nbsp;</font></td>'
+}
+p+='</tr>'
+if (advisories.length < advisoryCount) {
+tempCount=advisories.length
+} else {
+tempCount=advisoryCount
+}
+for (var i=0; i < tempCount; i++) {
+if (advisories[i].risk == "low") {
+riskBgColor=''; riskColor=textColor; riskStr='&nbsp;low&nbsp;';
+riskBullet='<font face="Arial">&#149;&nbsp;</font>'
+}
+if (advisories[i].risk == "medium") {
+riskBgColor=' bgcolor="#FFFF00"'; riskColor='#000000';
+riskStr='<b>&nbsp;medium&nbsp;</b>';
+riskBullet='<font face="Verdana"><b>&nbsp;!&nbsp;</b></font>'
+}
+if (advisories[i].risk == "high") {
+riskBgColor=' bgcolor="#CC0000"'; riskColor='#FFFFFF';
+riskStr='<b>&nbsp;high&nbsp;</b>'
+riskBullet='<font face="Verdana"><b>&nbsp;!&nbsp;</b></font>'
+}
+p+='<tr><td align="right" valign="bottom" '+riskBgColor+'>'
+p+='<font face="'+fontName+'" size="'+fontSize+'" '
+p+=' color="'+riskColor+'">'+riskBullet+'</font></td>'
+p+='<td valign="bottom">'+ft
+p+='<a href="'+veURL+advisories[i].name+'" title="'+advisories[i].risk
+p+=' risk, updated '+advisories[i].updated+'"'+lt+'>'
+p+=lft+advisories[i].name+'</font></a>&nbsp;</td>'
+if (showRisk) {
+p+='<td align="center" '+riskBgColor+'><font face="'+fontName+'"'
+p+=' size="'+fontSize+'" color="'+riskColor+'">&nbsp;'+riskStr+'&nbsp;'
+p+='</font></td>'
+}
+if (showUpdated) {
+p+='<td align="right" nowrap>'+ft+'&nbsp;'+advisories[i].updated
+p+='&nbsp;</font></td>'
+}
+if (showPattern) {
+p+='<td align="center" nowrap>'+ft+'&nbsp;<a '
+p+='href="'+ptnURL+'"'+lt
+p+='style="text-decoration:none;"'+lti+'>'
+p+=lft+'<font color="'+textColor+'">&nbsp;'+advisories[i].pattern
+p+='&nbsp;</font></font></a></td>'
+}
+p+='</tr>'
+}
+p+='<tr><td align="right">'+ft
+p+='<font face="Arial">&#149;&nbsp;</font></td><td '
+p+='colspan="'+(rowCount-1)+'">'+ft+'<a href="'+moreURL+'"'+lt
+p+='title="go to www.trendmicro.com">'+lft+'more...'
+p+='</font></a></font></td></tr><tr><td colspan="'+rowCount+'">'+ft
+p+='&nbsp;</font></td></tr>'
+}
+}
+// end ADVISORIES
+
+// start RELATED LINKS
+if (r1||r2||r3||r4||r5||r6) {
+tmp1='<tr><td align="right" valign="top">'+ft+'<font face="Arial">'
+tmp1+='&#149;&nbsp;</font></td><td colspan="'+(rowCount-1)+'">'+ft
+p+='<tr><td colspan="'+rowCount+'">'+ft+'<b>'+rlStr+'</b></font></td></tr>'
+if(r1){
+p+=tmp1+'<a href="'+hxURL+'"'+lt+'>'
+p+=lft+hoStr+'</font></a></font></td></tr>'
+}
+if(r2){
+p+=tmp1+'<a href="'+hcURL+'"'+lt+'>'
+p+=lft+fvStr+'</font></a></font></td></tr>'
+}
+if(r3){
+p+=tmp1+'<a href="'+subURL+'"'+lt+'>'
+p+=lft+faStr+'</font></a></font></td></tr>'
+}
+if(r4){
+p+=tmp1+'<a href="'+wtcURL+'"'+lt+'>'
+p+=lft+rtStr+'</font></a></font></td></tr>'
+}
+if(r5){
+p+=tmp1+'<a href="'+ptnURL+'"'+lt+'>'
+p+=lft+'Pattern '+strCurPtn+'</font></a></font></td></tr>'
+}
+if(r6){
+p+=tmp1+'<a href="'+engURL+'"'+lt+'>'
+p+=lft+'Scan engine '+strCurEng+'</font></a></font></td></tr>'
+}
+p+='<tr><td colspan="'+rowCount+'">'+ft+'&nbsp;</font></td></tr>'
+}
+// end RELATED LINKS
+
+// start SEARCH
+if (showSearch) {
+p+='<form'+lt+' action="'
+p+='http://www.trendmicro.com/vinfo/virusencyclo/BuildClauseCgi.asp" '
+p+='method="post" name="VirusEncyclo03"><tr><td colspan="'+rowCount+'">'
+p+=ft+'<b>'+vsStr+' </b></font>'
+p+='<input name="hidOK" type="hidden" value="0">'
+p+='<input name="hidChoice" type="hidden" value="3">'
+p+='<input type="text" name="keyword" size="12">&nbsp;'
+p+='<input type="submit" value="'+goStr+'"></td></tr></form>'
+}
+// end SEARCH
+
+p+='</table>'
+}
+// --></script>
+                                    <script language="JavaScript1.1"
+SRC="http://www.trendmicro.com/syndication/vinfo/vinfo_data_js2.asp"></SCRIPT>
+                                   
+                                  </p>
+                                  <!-- END TREND MICRO VIRUS INFO FEED -->
+																																      
+																      </td>
+																  </tr>
+																</table>
+																<div align="right"><br>
+																	<br>
+																	<br>
+																	<br>
+																	<br>
+																	<br>
+																	<br>
+																	<br>
+																</div>
+															</td>
+														</tr>
+													</table>
+												<table height="3%" cellSpacing="0" cellPadding="0" width="714" align="center" border="0">
+													<tr>
+														<td class="Copyright" vAlign="bottom" width="58%" height="18"><!-- #BeginLibraryItem "/Library/advtech_copyright.lbi" -->
+														Copyright © 2003-2010 Computers y Algo Mas, LLC<!-- #EndLibraryItem --></td>
+														<td vAlign="bottom" width="42%">
+															<div class="Copyright" align="right" style="width: 320; height: 19">&nbsp;</div>
+														</td>
+													</tr>
+												</table>											
+												<br></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

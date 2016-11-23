@@ -1,0 +1,2003 @@
+status: 200
+content-length: 109392
+content-type: text/html; charset=utf-8
+x-powered-by: ASP.NET
+set-cookie: sc_expview=0; path=/, country=EN; domain=.ptc.com;
+ expires=Wed, 13-Sep-2017 10:54:56 GMT; path=/, lang=en; domain=.ptc.com;
+ expires=Wed, 13-Sep-2017 10:54:56 GMT;
+ path=/, ASP.NET_SessionId=ll5kgpazirhiqmg0gqqnv150; path=/;
+ HttpOnly, ptc-current-sid=20160913-SessionA.131182376968400318;
+ expires=Tue, 13-Sep-2016 11:24:56 GMT;
+ path=/, ptc-daily-sid=20160913-SessionA.131182376968400318;
+ expires=Tue, 13-Sep-2016 15:59:59 GMT; path=/
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+-content-encoding: gzip
+cache-control: private
+date: Tue, 13 Sep 2016 10:54:55 GMT
+x-aspnetmvc-version: 5.1
+content-location: http://www.ptc.com/axeda
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script>
+        if (location.hostname == 'creo.ptc.com' && location.pathname == '/') {
+            location.href = "https://www.ptc.com/cad-software-blog";
+        }
+    </script>
+    
+
+        <title>Axeda Machine Cloud | PTC</title>
+        <meta name="description" content="The Axeda IoT Cloud Service provides advanced cloud-based software for managing connected products and assets and implementing innovative IoT applications." />
+        <meta name="keywords" content="" />
+        <meta property="og:title" content="Axeda Machine Cloud | PTC" />
+        <meta property="og:type" content="article" />
+         <meta property="og:url" content="http://www.ptc.com/axeda" />    
+        <meta property="og:image" content="http://www.ptc.com/~/media/Images/Headers/Axeda/Mobile/Axeda-Headers-MOBILE-20.jpg" />
+        <meta property="og:description" content="The Axeda IoT Cloud Service provides advanced cloud-based software for managing connected products and assets and implementing innovative IoT applications." />
+        <meta name="twitter:account_id" content="651463036197318658" />
+        <meta name="twitter:title" content="Axeda Machine Cloud | PTC" />
+        <meta name="twitter:description" content="The Axeda IoT Cloud Service provides advanced cloud-based software for managing connected products and assets and implementing innovative IoT applications." />
+        <link rel="canonical" href="http://www.ptc.com/axeda" />
+        <meta http-equiv="content-language" content="en-US" />  
+
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+            <script language="JavaScript" type="text/javascript" src="https://sadmin.brightcove.com/js/BrightcoveExperiences.js"></script>
+            <script>
+                (function (d) {
+                var config = {
+                        kitId: 'liv4xji',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s);
+        })(document);
+            </script>
+
+
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href='/css/adjustments.css?d=201609130654' rel="stylesheet" />
+
+
+
+                <!--[if IE 9]>
+                    <link rel="stylesheet" type="text/css" href="/css/ie9.css" />
+                    <script src="/js/backgroundsize.min.htc"></script>
+                <![endif]-->
+                    <script src="/js/jquery-2.1.4.min.js"></script>
+            <!-- Python-httplib2/0.9.2 (gzip) -->
+                <script src="/js/jquery.bootpag.js"></script>
+                <script src="/js/jCookie.js" type="text/javascript"></script>
+            <!-- Tracker Scripts -->
+                <script type="text/javascript">
+                var FirstLookup = true;
+                var SecondLookup = false;
+                var IsComplete = false;
+                var QueryEmailAddy = '';
+                var emailAddy = '';
+                var elqUrl = 'http://s2826.t.eloqua.com/visitor/v200/svrGP?pps=50&amp;siteid=2826&amp;DLKey=4da0a50b-e2db-4a56-a1a5-9d4bea5e0ea6&amp;DLLookup=%3CC_EmailAddress%3E{0}%3C%2FC_EmailAddress%3E&amp;ms=728';
+                var shortFormPopulated = false;
+
+                var _elqQ = _elqQ || [];
+                _elqQ.push(['elqSetSiteId', '2826']);
+                _elqQ.push(['elqTrackPageView']);
+                var checkedTimedResponse = function () {
+                    var $jq = jQuery.noConflict();
+
+                    $jq(document).ready(function () {
+					var token = $jq.cookie("tokenurl");;
+					if(token != undefined)
+					{
+					    $jq("#tokenLink").attr("href", token)
+					    $jq.removeCookie("tokenurl");
+					}
+                        var eloquaEmail = $jq.cookie('elq-uid');
+                        var fieldEmail = $jq('#contact-email').val();
+
+                        if (eloquaEmail == undefined || eloquaEmail.length < 1) {
+                            if (fieldEmail != undefined && fieldEmail.length > 0) {
+                                eloquaEmail = fieldEmail;
+                            }
+                        }
+                        if (eloquaEmail != undefined && eloquaEmail.length > 1) {
+                            if ($jq('#elqEmailScript').length < 1) {
+                                if (typeof dd != 'function') {
+                                    //check whether the Eloqua URL has been loaded
+                                    var url = "http://s2826.t.eloqua.com/visitor/v200/svrGP?pps=50&siteid=2826&DLKey=4da0a50b-e2db-4a56-a1a5-9d4bea5e0ea6&DLLookup=%3CC_EmailAddress%3E{0}%3C%2FC_EmailAddress%3E&ms=728".replace('{0}', eloquaEmail);
+                                    var s = document.createElement('script');
+                                    s.type = 'text/javascript';
+                                    s.async = true;
+                                    s.src = url;
+
+                                    $jq("head").append(s);
+                                }
+                            }
+                        }
+
+                        if ($jq('.pg1').length > 0) {
+                            addRemoveShortFormFields();
+                            $jq('input[type=checkbox]').each(function () {
+                                $jq(this).prop("checked", true);
+                            });
+                        }
+
+                        return false;
+                    });
+                }
+
+                (function () {
+                    function async_load() {
+                        var s = document.createElement('script');
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.src = '//img.en25.com/i/elqCfg.min.js';
+                        var x = document.getElementsByTagName('script')[0];
+                        x.parentNode.insertBefore(s, x);
+
+                        setTimeout(checkedTimedResponse, 2000);
+                    }
+                    if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+                    else if (window.attachEvent) window.attachEvent('onload', async_load);
+                }());
+
+                function SetElqContent() {
+                    clearTimeout(checkedTimedResponse);
+                    var $jq = jQuery.noConflict();
+
+                    $jq(document).ready(function () {
+                        if (typeof GetElqContentPersonalizationValue == 'function') {
+                            var eloquaEmail = GetElqContentPersonalizationValue('EmailAddress');
+                            if (eloquaEmail != undefined && eloquaEmail.length > 1) {
+                                populateTextFields();
+                                addRemoveShortFormFields();
+
+                                if ($jq.cookie('elq-uid') == undefined || $jq('elq-uid').length < 1) {
+                                    var eloquaEmail = GetElqContentPersonalizationValue('EmailAddress');
+                                    $jq.cookie('elq-uid', eloquaEmail, { domain: '.ptc.com', path: '/' });
+                                }
+                            }
+                        }
+                        else {
+                            //console.log('The Eloqua function "GetElqContentPersonalizationValue" does not exist');
+                        }
+
+                        if (typeof GetElqGroupMembershipStatus == 'function') {
+                            populateCheckboxes();
+                        }
+                        else {
+                            //console.log('The Eloqua function "GetElqGroupMembershipStatus" does not exist');
+
+                            if ($jq('#elqGroupScript').length < 1) {
+                                var eloquaEmail = GetElqContentPersonalizationValue('EmailAddress');
+                                if (eloquaEmail != undefined && eloquaEmail.length > 0) {
+                                    var url = "http://s2826.t.eloqua.com/visitor/v200/svrGP?pps=50&siteid=2826&DLKey=76fe18c3b55f454086dc6a4aa75e99b0&DLLookup=%3CC_EmailAddress%3E{0}%3C%2FC_EmailAddress%3E&ms=728".replace('{0}', eloquaEmail);
+                                    var s = document.createElement('script');
+                                    s.id = "elqGroupScript";
+                                    s.type = 'text/javascript';
+                                    s.async = true;
+                                    s.src = url;
+
+                                    $jq("head").append(s);
+                                }
+                            }
+                        }
+                    });
+                }
+
+                function populateTextFields() {
+                    var $jq = jQuery.noConflict();
+                    $jq(document).ready(function () {
+                        $jq('input[type=text],input[type=phone], input[type=email], select, textarea').each(
+                            function (index) {
+                                var input = $jq(this);
+                                if (typeof input.data('eloqua-name') !== 'undefined') {
+                                    var elqValue = GetElqContentPersonalizationValue(input.data('eloqua-name'));
+                                    if (elqValue != '' && elqValue.length > 0) {
+                                        input.val(elqValue);
+                                    }
+                                }
+                            }
+                        );
+                    });
+                }
+
+                function addRemoveShortFormFields() {
+                    var $jq = jQuery.noConflict();
+                    $jq(document).ready(function () {
+                        if ($jq('.pg1').length > 0) {
+                            if (typeof GetElqContentPersonalizationValue != 'function') {
+                                $jq('.pg1').slideDown("slow");
+                                $jq('.pg2, .pg3').remove();
+                                $jq('.companyGroup').hide();
+                            }
+                            else if ($jq.cookie('elq-uid') != undefined
+                                && GetElqContentPersonalizationValue('EmailAddress') != $jq.cookie('elq-uid')) {
+                                //determine whether the current user's email matches what has been provided
+                                //by the Eloqua scripts
+                                return false;
+                            }
+                            else if (!shortFormPopulated) {
+                                var fName = GetElqContentPersonalizationValue('C_FirstName');
+                                var lName = GetElqContentPersonalizationValue('C_LastName');
+                                var country = GetElqContentPersonalizationValue('C_Country');
+
+                                if (fName == '' || fName.length < 1
+                                || lName == '' || lName.length < 1
+                                || country == '' || country.length < 1) {
+                                    $jq('.pg1').slideDown("slow");
+                                    $jq('.pg2, .pg3').remove();
+                                    $jq('.companyGroup').hide();
+
+                                    shortFormPopulated = true;
+                                }
+                                else {
+                                    var company = GetElqContentPersonalizationValue('C_Company');
+                                    var jCat = GetElqContentPersonalizationValue('C_Job_Role1');
+                                    var jFunct = GetElqContentPersonalizationValue('C_Job_Function1');
+                                    if (company == '' || company.length < 1
+                                        || jCat == '' || jCat.length < 1
+                                        || jFunct == '' || jFunct.length < 1) {
+                                        $jq('.pg2, .companyGroup').slideDown("slow");
+                                        $jq('.pg1, .pg3').remove();
+
+                                        shortFormPopulated = true;
+                                    }
+                                    else {
+                                        var state = GetElqContentPersonalizationValue('C_State_Prov');
+                                        var zip = GetElqContentPersonalizationValue('C_Zip_Postal');
+                                        var phone = GetElqContentPersonalizationValue('C_BusPhone');
+
+                                        if (state == '' || state.length < 1
+                                        || zip == '' || zip.length < 1
+                                        || phone == '' || phone.length < 1) {
+                                            $jq('.pg3').slideDown("slow");
+                                            $jq('.pg1, .pg2').remove();
+                                            $jq('.companyGroup').hide();
+
+                                            shortFormPopulated = true;
+                                        }
+                                        else {
+                                            $jq('.pg1, .pg2, .pg3').slideDown("slow");
+
+                                            shortFormPopulated = true;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+
+                function populateCheckboxes() {
+                    var $jq = jQuery.noConflict();
+                    $jq(document).ready(function () {
+                        $jq('input[type=checkbox]').each(function () {
+                            var subscribedGroupd = $jq(this).data('sub-groupid');
+                            var unSubscribedGroupd = $jq(this).data('unsub-groupid');
+
+                            var status = GetElqGroupMembershipStatus(subscribedGroupd);
+                            var ustatus = GetElqGroupMembershipStatus(unSubscribedGroupd);
+
+                            if (status == null || status === undefined || status) {
+                                $jq(this).prop("checked", true);
+                            } else if (ustatus) {
+                                $jq(this).prop("checked", false);
+                            }
+                        });
+                    });
+                }
+
+                function elqVisitorTrackingOptIn() {
+                    _elqQ.push(['elqOptIn']);
+                }
+
+                function elqVisitorTrackingOptOut() {
+                    _elqQ.push(['elqOptOut']);
+                }
+
+                function elqCreateOptInBanner() {
+                    elqVisitorTrackingOptIn();
+                    var div = document.createElement('div');
+                    div.setAttribute('id', 'elqOptInBannerDiv');
+                    div.className = 'elqOptInBanner';
+                    div.innerHTML = '<div class="elqOptInBannerText"><div class="elq-msg"><h3>Important information regarding cookies and PTC.com.</h3><div>By using this website, you consent to the use of cookies in accordance with PTC\'s policy on website cookies & beacons. For more information on cookies, see our <a href="/common/privacy.htm">Privacy Policy</a>.</div></div><div class="elqClose" onclick="elqVisitorTrackingOptIn();document.getElementById(\'elqOptInBannerDiv\').style.display = \'none\';">Hide this message</div></div>';
+                    document.body.appendChild(div);
+                }
+                </script>
+
+
+
+
+
+            <script>
+                        
+                var clientId = "";
+
+                function PopulateGoogleFieldsInIE8() {
+                    var $jq2 = jQuery.noConflict();
+                    if (typeof $jq2 == 'function') {
+                        $jq2(document).ready(function () {
+                            //alert('inserting data into hidden fields=>' + ga.getAll()[0].get('clientId'));
+                            var elem1 = $jq2('.hdnGoogleUID');
+                            elem1.val(ga.getAll()[0].get('clientId'));
+
+                            var elem2 = $jq2('.hdnGoogleSessionID');
+                            elem2.val('20160913-SessionA.131182376968400318');
+                            //alert('done with data insert=> session value id field: ' + elem2.val() + '<br />Google client id: ' + ga.getAll()[0].get('clientId'));
+                        });
+                    }
+                }
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments);
+                    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-21507862-4', 'auto', {
+                    'allowLinker': true,
+                    'userId': ''
+                });
+
+                ga(function (tracker) {
+                    clientId = tracker.get('clientId');
+
+                    //Load the plugin
+                    ga('require', 'linker');
+                    //Define which domains to autoLink
+                    ga('linker:autoLink', ['ptc.com', 'ptc-de.com', 'ptc-jp.com', 'ptcfrance.com', 'ptc-taiwan.com']);
+
+                    //Set the dimenion variables to store the Google ID and the Google Session ID
+                    ga('set', 'dimension1', clientId);
+                    ga('set', 'dimension2', '20160913-SessionA.131182376968400318');
+                    ga('send', 'pageview');
+
+                    //Populate any Eloqua form field values
+                    $jq(document).ready(function () {
+                        var elem1 = $jq('.hdnGoogleUID');
+                        elem1.val(tracker.get('clientId'));
+
+                        var elem2 = $jq('.hdnGoogleSessionID');
+                        elem2.val('20160913-SessionA.131182376968400318');
+                    });
+                });
+                
+
+            </script>
+
+<script>document.write("<script type='text/javascript' src='https://d2hya7iqhf5w3h.cloudfront.net/scripts/analytics.js?v=" + Date.now() + "' async><\/script>");</script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="">
+    
+    
+
+
+
+<header>
+    <nav role="navigation" class="navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button aria-expanded="false" data-target="#bs-example-navbar-collapse-1"
+                        data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <form role="search" class="navbar-form navbar-right mobile">
+                    <button class="btn search-btn" type="submit"><img alt="search" src="/images/search.png"></button>
+                    <div class="form-group">
+                        <input type="text" placeholder="Search" class="form-control search-box" onblur="if (this.value.length == 0) { this.value = 'Search'; }"
+                               onfocus="if (this.value == 'Search') this.value = ''"
+                               value="Search" />
+                    </div>
+                </form>
+                <a href="/" class="navbar-brand"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+
+                        <li class="wide-dropdown li-1">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software &amp; Solutions <span class="sr-only">(current)</span></a>
+                                <ul class="dropdown-menu main">
+                                    <div class="dropdown-close"><span class="icon icon-close" aria-hidden="true"></span></div>
+                                    <div class="container">
+
+
+
+                                                <h4 style="display:none">
+                                                    Products
+                                                </h4>
+<div class="col-lg-16" id="solutions"><ul>                                                <li class="" style="width:90px;padding:0px 10px 0 0;">
+                                                    <a href="/cad">
+                                                        <img src="/~/media/Images/Menu-Images/CAD.png?h=42&amp;la=en&amp;w=38" alt="" width="38" height="42" />
+                                                        <span class="glyphicon"> </span><br />
+                                                        CAD Software
+                                                    </a>
+                                                </li>
+                                                <li class="" style="">
+                                                    <a href="/product-lifecycle-management">
+                                                        <img src="/~/media/Images/Menu-Images/PLM.png?h=43&amp;la=en&amp;w=49" alt="" width="49" height="43" />
+                                                        <span class="glyphicon"> </span><br />
+                                                        PLM Software
+                                                    </a>
+                                                </li>
+                                                <li class="" style="">
+                                                    <a href="/retail-plm">
+                                                        <img src="/~/media/Images/Menu-Images/RETAIL.png?h=50&amp;la=en&amp;w=49" alt="" width="49" height="50" />
+                                                        <span class="glyphicon"> </span><br />
+                                                        Retail PLM Software
+                                                    </a>
+                                                </li>
+                                                <li class="" style="">
+                                                    <a href="/application-lifecycle-management">
+                                                        <img src="/~/media/Images/Menu-Images/ALM.png?h=43&amp;la=en&amp;w=38" alt="" width="38" height="43" />
+                                                        <span class="glyphicon"> </span><br />
+                                                        ALM Software
+                                                    </a>
+                                                </li>
+                                                <li class="" style="">
+                                                    <a href="/service-lifecycle-management">
+                                                        <img src="/~/media/Images/Menu-Images/SMS.png?h=46&amp;la=en&amp;w=42" alt="" width="42" height="46" />
+                                                        <span class="glyphicon"> </span><br />
+                                                        SLM Software
+                                                    </a>
+                                                </li>
+                                                <li class="" style="width:125px;padding:0 15px 0 14px;">
+                                                    <a href="/manufacturing-software">
+                                                        <img src="/~/media/Images/Menu-Images/ManufacturingSoftware.png?h=42&amp;la=en&amp;w=38" alt="" width="38" height="42" />
+                                                        <span class="glyphicon"> </span><br />
+                                                        Manufacturing Software
+                                                    </a>
+                                                </li>
+                                                <li class="" style="">
+                                                    <a href="/engineering-math-software/mathcad">
+                                                        <img src="/~/media/Images/Menu-Images/MathCAD.png?h=43&amp;la=en&amp;w=36" alt="" width="36" height="43" />
+                                                        <span class="glyphicon"> </span><br />
+                                                        PTC Mathcad
+                                                    </a>
+                                                </li>
+                                                <li class="iot" style="padding:0 5px;">
+                                                    <a href="/internet-of-things/technology-platform-thingworx">
+                                                        <img src="/~/media/Images/Menu-Images/IoT.png?h=46&amp;la=en&amp;w=41" alt="" width="41" height="46" />
+                                                        <span class="glyphicon"> </span><br />
+                                                        IoT Technology Platform
+                                                    </a>
+                                                </li>
+                                                <li class="iot" style="">
+                                                    <a href="/augmented-reality">
+                                                        <img src="/~/media/Images/Menu-Images/AugmentedReality-icon-white.png?h=46&amp;la=en&amp;w=47" alt="" width="47" height="46" />
+                                                        <span class="glyphicon"> </span><br />
+                                                        Augmented Reality (AR)
+                                                    </a>
+                                                </li>
+                                                <li class="" style="">
+                                                    <a href="/Products">
+                                                        <img src="/~/media/Images/Menu-Images/VIEW-ALL.png?h=46&amp;la=en&amp;w=47" alt="" width="47" height="46" />
+                                                        <span class="glyphicon"> </span><br />
+                                                        All Products
+                                                    </a>
+                                                </li>
+</ul></div>                                    </div>
+                                </ul>
+                        </li>
+                        <li class="wide-dropdown li-2">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="sr-only">(current)</span></a>
+                                <ul class="dropdown-menu main">
+                                    <div class="dropdown-close"><span class="icon icon-close" aria-hidden="true"></span></div>
+                                    <div class="container">
+
+
+
+                                                <li>
+                                                    <a href="/services/training">
+                                                        Training Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/services/strategy">
+                                                        Strategy Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/services/deployment">
+                                                        Deployment Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/services/learning-and-adoption">
+                                                        Learning and Adoption
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/services/optimization">
+                                                        Optimization Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/services/cloud">
+                                                        Cloud Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/services/upgrade-windchill11">
+                                                        Windchill 11 Upgrade Services
+                                                    </a>
+                                                </li>
+                                    </div>
+                                </ul>
+                        </li>
+                        <li class="wide-dropdown li-3">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="sr-only">(current)</span></a>
+                                <ul class="dropdown-menu main">
+                                    <div class="dropdown-close"><span class="icon icon-close" aria-hidden="true"></span></div>
+                                    <div class="container">
+
+
+
+                                                <li>
+                                                    <a href="/support-services">
+                                                        Global Support Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://support.ptc.com">
+                                                        PTC eSupport
+                                                    </a>
+                                                </li>
+                                    </div>
+                                </ul>
+                        </li>
+                        <li class="wide-dropdown li-4">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Communities <span class="sr-only">(current)</span></a>
+                                <ul class="dropdown-menu main">
+                                    <div class="dropdown-close"><span class="icon icon-close" aria-hidden="true"></span></div>
+                                    <div class="container">
+
+
+
+                                                <li>
+                                                    <a href="https://www.ptcusercommunity.com/welcome">
+                                                        PTC Community
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://community.thingworx.com">
+                                                        ThingWorx Community
+                                                    </a>
+                                                </li>
+                                    </div>
+                                </ul>
+                        </li>
+                        <li class="wide-dropdown li-5">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="sr-only">(current)</span></a>
+                                <ul class="dropdown-menu main">
+                                    <div class="dropdown-close"><span class="icon icon-close" aria-hidden="true"></span></div>
+                                    <div class="container">
+
+
+
+                                                <li>
+                                                    <a href="/about/history">
+                                                        History
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/about">
+                                                        About Us
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/about/fast-facts">
+                                                        Fast Facts
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/about/executive-team">
+                                                        Leadership
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/academic-program">
+                                                        Academic Program
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/blogs">
+                                                        Blogs
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/careers">
+                                                        Careers
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/case-studies">
+                                                        Case Studies
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/events">
+                                                        Events
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/liveworx">
+                                                        LiveWorx 2016
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/office-locations-map">
+                                                        Global Office Locations
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="http://investor.ptc.com/">
+                                                        Investor Relations
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/news">
+                                                        Newsroom
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/about/social-media">
+                                                        Social Media Directory
+                                                    </a>
+                                                </li>
+                                    </div>
+                                </ul>
+                        </li>
+                        <li class="wide-dropdown li-6">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How to Buy <span class="sr-only">(current)</span></a>
+                                <ul class="dropdown-menu main">
+                                    <div class="dropdown-close"><span class="icon icon-close" aria-hidden="true"></span></div>
+                                    <div class="container">
+
+
+
+                                                <li>
+                                                    <a href="http://store.ptc.com/">
+                                                        e-Store
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/contact-us">
+                                                        Contact Sales
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="http://support.ptc.com/appserver/search/resellers.jsp">
+                                                        Find a Software Reseller
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/subscription">
+                                                        Subscription
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Products/free-downloads">
+                                                        Free Software Trials and Downloads
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/partners">
+                                                        Partners
+                                                    </a>
+                                                </li>
+                                    </div>
+                                </ul>
+                        </li>
+                </ul>
+                <ul class="nav navbar-nav secondary">
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle"
+                           href="http://support.ptc.com/appserver/support/account/my_account.jsp" target="_blank">My Account<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://support.ptc.com/appserver/support/account/my_account.jsp" target="_blank">Customer Support Login</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="/">English<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a target="_blank" href="http://zh-cn.ptc.com/?c=cn&amp;lang=zh-cn">中文 (简体)</a></li>
+                            <li><a target="_blank" href="http://zh-tw.ptc.com/?c=tw&amp;lang=zh-tw">中文 (繁體)</a></li>
+                            <li><a href="http://www.ptcfrance.com/">Français</a></li>
+                            <li><a href="http://www.ptc-de.com">Deutsch</a></li>
+                            <li><a target="_blank" href="http://it.ptc.com/?c=it&amp;lang=it">Italiano</a></li>
+                            <li><a href="http://www.ptc-jp.com">日本語</a></li>
+                            <li><a target="_blank" href="http://ko.ptc.com/?c=kr&amp;lang=ko">한국어</a></li>
+                            <li><a target="_blank" href="http://ru.ptc.com/?c=ru&amp;lang=ru">Pусский</a></li>
+                            <li><a target="_blank" href="http://es.ptc.com/?c=es&amp;lang=es">Español</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form role="search" class="navbar-form navbar-right desktop search">
+                    <div class="form-group">
+                        <input type="text" placeholder="Search" class="form-control search-box">
+                    </div>
+                    <button class="btn search-btn" type="submit"><img alt="search" src="/images/search.png"></button>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+    .talk-to-us .flag
+    {
+        background: #00548b url("/~/media/Images/Talk-To-Us/talk-to-us.png") no-repeat scroll 50% 50%;
+    }
+</style>
+
+<div class="talk-to-us">
+    <div class="flag">
+    </div>
+    <div class="talk-content">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#call" aria-controls="call" role="tab" data-toggle="tab">
+                        <img src="/~/media/Images/Talk-To-Us/call.png?h=28&amp;la=en&amp;w=33" alt="" width="33" height="28" />
+                        <span>
+                            Call US
+                        </span>
+                    </a>
+                </li>
+                <li role="presentation" class="">
+                    <a href="#mail" aria-controls="mail" role="tab" data-toggle="tab">
+                        <img src="/~/media/Images/Talk-To-Us/email.png?h=28&amp;la=en&amp;w=33" alt="" width="33" height="28" />
+                        <span>
+                            Email US
+                        </span>
+                    </a>
+                </li>
+                <li role="presentation" class="">
+                    <a href="#support" aria-controls="support" role="tab" data-toggle="tab">
+                        <img src="/~/media/Images/Talk-To-Us/support.png?h=28&amp;la=en&amp;w=33" alt="" width="33" height="28" />
+                        <span>
+                            Support
+                        </span>
+                    </a>
+                </li>
+                <li role="presentation" class="">
+                    <a href="#trials" aria-controls="trials" role="tab" data-toggle="tab">
+                        <img src="/~/media/Images/Talk-To-Us/trials.png?h=28&amp;la=en&amp;w=33" alt="" width="33" height="28" />
+                        <span>
+                            Trials
+                        </span>
+                    </a>
+                </li>
+            <li role="presentation">
+                <a href="#chat" aria-controls="chat" role="tab" data-toggle="tab">
+                    <span class="icon-chat"></span>
+                    <span>Chat Now <br />(Available for <br />Mathcad Only)</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane" id="chat">
+                <p><strong>Chat Now</strong> - Let us know how we can help.</p>
+
+                <button type="submit" class="btn btn-default"
+                        onclick="window.open('http://chat.ptc.com/newchat/chat.aspx?auth=PSLHOSTED&p=/engineering-math-software/mathcad&name=anonymous-132_253_204_23&x-Email=anonymous-132_253_204_23%40no-domain-644830.com&x-Category=&domain=www.ptc.com&timestamp=1448017095859&session=416-1448017095534', '_blank')">
+                    Start Chat
+                </button>
+            </div>
+                <div role="tabpanel" class="tab-pane active" id="call">
+
+<p>                    <a href="/contact-us">
+                        Customer Care: 1-877-ASK-4-PTC (1-877-275-4782)<br>
+Technical Support 1-800-477-6435 or <a href="https://support.ptc.com">click here</a>.<br>
+You can also <a href="/office-locations-map">search for an office</a> near you.
+                    </a>
+</p>                </div>
+                <div role="tabpanel" class="tab-pane " id="mail">
+
+<p>                    <a href="/contact-us">
+                        Have a PTC Sales Representative <a href="/contact-us">Contact Me</a><br>
+                    </a>
+</p>                </div>
+                <div role="tabpanel" class="tab-pane " id="support">
+
+<p>                    <a href="/contact-us">
+                        <a href="https://support.ptc.com">PTC eSupport</a><br>
+<a href="/support-services">Global Support Services</a>
+                    </a>
+</p>                </div>
+                <div role="tabpanel" class="tab-pane " id="trials">
+
+<p>                    <a href="/Products/free-downloads">
+                        <a href="/products/free-downloads/">Free PTC Software Trials and Downloads</a>
+                    </a>
+</p>                </div>
+        </div>
+
+    </div>
+	
+
+</div>
+
+        
+        <ol class="breadcrumb hidden-xs hidden-sm">
+            <li><a href="/">Home</a></li>
+            
+            <li id="lastChild" class="active">Axeda Machine Cloud</li>
+        </ol>
+        
+            <script type="text/javascript">
+                var $jq = jQuery.noConflict();
+                $jq(function () {
+                    //var previousUrl = document.referrer;
+                    //var currentUrl = document.URL;
+                    //if (previousUrl.indexOf("cad-software-blog") > -1 || previousUrl.indexOf("product-lifecycle-report") > -1
+                    //    || previousUrl.indexOf("integrity-blog") > -1 || previousUrl.indexOf("mathcad-software-blog") > -1) {
+                    //    if (currentUrl.indexOf("categories") > -1) {
+                    //        $jq('#lastChild').before('<li><a href="' + previousUrl + '">Blogs</a></li>');
+                    //    }
+                    //}
+                    $jq('.breadcrumb #lastChild').each(function () {
+                        $jq(this).html(String($jq(this).text()).replace("&lt;br/&gt;", ""));
+                    });
+                });
+            </script>
+
+
+
+
+
+
+        
+        <ol class="breadcrumb hidden-xs hidden-sm">
+            <li><a href="/">Home</a></li>
+            
+            <li id="lastChild" class="active">Axeda Machine Cloud</li>
+        </ol>
+        
+            <script type="text/javascript">
+                var $jq = jQuery.noConflict();
+                $jq(function () {
+                    //var previousUrl = document.referrer;
+                    //var currentUrl = document.URL;
+                    //if (previousUrl.indexOf("cad-software-blog") > -1 || previousUrl.indexOf("product-lifecycle-report") > -1
+                    //    || previousUrl.indexOf("integrity-blog") > -1 || previousUrl.indexOf("mathcad-software-blog") > -1) {
+                    //    if (currentUrl.indexOf("categories") > -1) {
+                    //        $jq('#lastChild').before('<li><a href="' + previousUrl + '">Blogs</a></li>');
+                    //    }
+                    //}
+                    $jq('.breadcrumb #lastChild').each(function () {
+                        $jq(this).html(String($jq(this).text()).replace("&lt;br/&gt;", ""));
+                    });
+                });
+            </script>
+
+
+
+<div class="interiorHeroImageWrapper">
+    <div id="interiorHeroImage" class="interiorHeroImage">
+        <div class="inner " style="background-image:url('/~/media/Images/Headers/Axeda/Desktop/Axeda-Headers-DESKTOP-20.jpg')"
+             data-desktop-style="background-image:url('/~/media/Images/Headers/Axeda/Desktop/Axeda-Headers-DESKTOP-20.jpg')"
+             data-mobile-style="background-image:url('/~/media/Images/Headers/Axeda/Mobile/Axeda-Headers-MOBILE-20.jpg')">
+            <div class="container">
+                <div class="col-md-6 caption col-sm-10 col-xs-12">
+                                <h1 class="pad60">Axeda Machine Cloud</h1>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+    <div class="heroColor">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h2>Axeda Provides the Most Advanced Cloud-Based Service and Software for Managing Connected Products and Machines<br />
+</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container two-col">
+    <div class="row">
+        <div class="col-sm-8 body">
+
+
+                    <div class="social-share">
+                        <span class='st_sharethis_large' displaytext='ShareThis'></span>
+                        <span class='st_facebook_large' displaytext='Facebook'></span>
+                        <span class='st_twitter_large' displaytext='Tweet'></span>
+                        <span class='st_linkedin_large' displaytext='LinkedIn'></span>
+                        <span class='st_pinterest_large' displaytext='Pinterest'></span>
+                        <span class='st_email_large' displaytext='Email'></span>
+                        <script type="text/javascript">var switchTo5x = true;</script>
+                        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+                        <script type="text/javascript">stLight.options({ publisher: "c6b2c6ec-c6d0-4be7-9bbc-dc15d4cc0ce5", doNotHash: false, doNotCopy: false, hashAddressBar: false });</script>
+                    </div>
+
+
+            <main>
+                <article>
+<h3>Axeda Provides the Most Advanced Cloud-Based Service and Software for Managing Connected Products and Machines</h3>
+<ul>
+    <li>We take the cost and complexity out of connecting and managing devices and machines and remotely servicing the products of the world&rsquo;s leading companies.</li>
+    <li>We turn raw machine and sensor data into useful information for business insights and better decision making.</li>
+    <li>We make it easy to integrate machine and sensor data to business systems so companies can optimize their business processes with accurate real-time machine data.</li>
+    <li>We provide a platform and application services so companies can develop new innovative M2M and IoT applications that reinvent the customer and product experience and differentiate their product and service offerings.</li>
+</ul>
+<h4>Axeda Products</h4>
+<p>The time is now for companies to get serious about <a href="/internet-of-things">IoT (Internet of Things)</a>. The benefits of IoT solutions are compelling and proven and the economics of delivering IoT solutions have never been better. Companies must integrate IoT data into existing mission-critical applications and processes and, more significantly, leverage their connected products and assets to create new innovative applications that transform their businesses.</p>
+<p>The <a href="/axeda/product/machine-cloud-service">Axeda IoT Cloud Service</a>, what we refer to as the "Machine Cloud", provides the most advanced cloud-based software for managing connected products and assets and implementing innovative IoT applications. The service provides you with a secure and scalable IoT data integration and application development platform, connectivity over wired or wireless networks, and out-of-the-box device and asset management applications to reduce the cost and complexity of implementing IoT solutions.</p>
+<p><img style="height: 270px; width: 450px; margin-top: 10px; margin-bottom: 10px;" alt="Axeda Machine Cloud diagram 1" src="/~/media/Images/Axeda/axeda-machine-cloud_diagram1.jpg?h=270&amp;w=450&amp;hash=6438EBAAE89903F30184FFCAEDA1351830E0CB0C&amp;hash=6438EBAAE89903F30184FFCAEDA1351830E0CB0C&la=en" />&nbsp;</p>
+<p>The Axeda IoT Cloud Service includes:</p>
+<ul>
+    <li><strong>Axeda Connect</strong> &ndash; <em>IoT Connectivity Middleware</em>.  Cloud-based communication software that enables you to easily and intelligently connect machines and devices to the cloud and then process, transform, organize and store machine and sensor data.</li>
+    <li><strong>Axeda Build</strong> &ndash; <em>IoT Application Enablement Platform</em>.  Cloud-based tools that simplify development and enables you to rapidly and economically implement IoT applications.  Capabilities include data management, a scripting engine, an integration framework, SDKs and web services for accessing data and application services in the Axeda Machine Cloud.</li>
+    <li><strong>Axeda Manage</strong> &ndash; <em>Connected Machine Management Applications</em>.   Cloud-based web applications that enable you to remotely monitor, manage, service, and control wired and wireless connected products and assets.  Capabilities include remote access, security management, software distribution and configuration management.</li>
+</ul>
+<p>To see the 300+ attributes &ndash; in 21 categories &ndash; of the Axeda Machine Cloud, click on the image below:</p>
+<img style="height: 348px; width: 450px; vertical-align: middle; margin-top: 10px; margin-bottom: 10px;" alt="Axeda Machine Cloud diagram 2" src="/~/media/Images/Axeda/axeda-machine-cloud-diagram2.png?h=348&amp;&amp;w=450&amp;hash=565D05C42B9050664B19F0F371AF08BD3398F9C0&amp;hash=565D05C42B9050664B19F0F371AF08BD3398F9C0&la=en" />
+<h4>Axeda IoT Solutions</h4>
+<p>Connected product management includes a set of technologies and cloud-based services for connecting and managing intelligent products, integrating the product data with back-end systems, and building M2M and IoT applications for nearly every industry.</p>
+<p>With connected products, you can more effectively and efficiently:</p>
+<ul>
+    <li>Manage your connected products</li>
+    <li>Provide remote service and analyze usage to improve performance</li>
+    <li>M2M-ize business processes to enhance service, billing, sales, inventory management, and product development</li>
+</ul>
+<p>As the leading provider of cloud-based service and software for managing connected products and implementing innovative M2M applications, Axeda can help you get your connected product solution to market quickly at a fraction of the cost of home-grown solutions.</p>
+<p><img style="height: 261px; width: 450px; vertical-align: middle; margin-top: 10px; margin-bottom: 10px;" alt="Axeda Machine Cloud diagram 3" src="/~/media/Images/Axeda/axeda-machine-cloud-diagram3.jpg?h=261&amp;&amp;w=450&amp;hash=AF94CEBC538672BDB164721F88B1A6B08C1134E5&amp;hash=AF94CEBC538672BDB164721F88B1A6B08C1134E5&la=en" /></p>
+<br />
+<br />
+<br />
+<br />
+
+                    
+
+
+                </article>
+            </main>
+        </div>
+        <div class="col-sm-3 col-xs-8 col-sm-offset-1 sidebar push230">
+
+            <aside>
+                
+<div class="leftRightMenu"><img src="/~/media/Images/navigation-images/AxedaNavImage.jpg?h=272&amp;la=en&amp;w=420" alt="Axeda" width="420" height="272" />        <nav class="navbar" role="navigation">
+            <h5>
+Axeda<br>
+                
+            </h5>
+
+            <div class="navbar  sidebar-navbar">
+                <ul class="nav navbar-nav">
+                        <li class="menu-section">
+                                    <strong>
+                                        Axeda Products
+                                    </strong>
+
+
+
+                                    <ul class="nav navbar-nav">
+                                                <li>
+                                                                    <a href="/axeda/product/applications" title="applications"
+                                                                       data-alt-title="applications">Axeda Applications</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/product/security" title="security"
+                                                                       data-alt-title="security">Axeda IoT Security</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/internet-of-things" title="internet-of-things"
+                                                                       data-alt-title="internet-of-things">Axeda Internet of Things</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/product/iot-connectivity" title="iot-connectivity"
+                                                                       data-alt-title="iot-connectivity">Axeda IoT Connectivity</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/product/machine-cloud-service" title="machine-cloud-service"
+                                                                       data-alt-title="machine-cloud-service">Axeda Machine Cloud Service</a>
+                                                </li>
+
+                                    </ul>
+
+                        </li>
+                        <li class="menu-section">
+                                    <strong>
+                                        Axeda Solutions
+                                    </strong>
+
+
+
+                                    <ul class="nav navbar-nav">
+                                                <li>
+                                                                    <a href="/axeda/asset-tracking" title="asset-tracking"
+                                                                       data-alt-title="asset-tracking">Asset Tracking</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/compliance-management" title="compliance-management"
+                                                                       data-alt-title="compliance-management">Compliance Management</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/consumables-management" title="consumables-management"
+                                                                       data-alt-title="consumables-management">Consumables Management</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/crm-erp-integration" title="crm-erp-integration"
+                                                                       data-alt-title="crm-erp-integration">CRM-ERP Integration</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/device-management" title="device-management"
+                                                                       data-alt-title="device-management">Device Management</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/iot-application-development" title="iot-application-development"
+                                                                       data-alt-title="iot-application-development">IoT App Development</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/predictive-maintenance" title="predictive-maintenance"
+                                                                       data-alt-title="predictive-maintenance">Predictive Maintenance</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/usage-based-billling" title="usage-based-billling"
+                                                                       data-alt-title="usage-based-billling">Usage-Based Billing</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/usage-based-insurance" title="usage-based-insurance"
+                                                                       data-alt-title="usage-based-insurance">Usage-Based Insurance</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/vehicle-telematics" title="vehicle-telematics"
+                                                                       data-alt-title="vehicle-telematics">Vehicle Telematics</a>
+                                                </li>
+                                                <li>
+                                                                    <a href="/axeda/warranty-management" title="warranty-management"
+                                                                       data-alt-title="warranty-management">Warranty Management</a>
+                                                </li>
+
+                                    </ul>
+
+                        </li>
+                </ul>
+            </div>
+        </nav>
+</div>
+
+
+        <div class="photo-copy-promo">
+            
+
+
+                        <a href="/contact-us" class="standalone-link additional-resources">
+Contact Us »                                     <br />                                   
+<link linktype="external" text="Contact Us" url="http://#" anchor="" target="" />
+                        </a>
+
+        </div>
+
+
+
+
+
+        <div class="photo-copy-promo">
+            
+
+
+                        <a href="https://support.ptc.com/appserver/cs/portal/" class="standalone-link blue">
+Customer Support »
+                        </a>
+
+        </div>
+
+
+
+
+
+        <div class="photo-copy-promo">
+            
+
+
+                        <a href="http://developer.axeda.com/" class="standalone-link purple">
+Developer Community » 
+                        </a>
+
+        </div>
+
+
+
+
+
+        <div class="standalone-link">
+
+<h3>Axeda Cloud Remote Service</h3>
+<p><strong>Axeda Offers a Proven, Scalable, and Secure Remote Service Solution With a Set of Out-of-the-Box Applications</strong></p>
+<p>For product manufacturers, remote service is essential to improving up-time, reducing costs through fewer field service visits, and increasing service contract sales with new managed service offerings.</p>
+<p><a href="/axeda/product/applications" title="Axeda Connected Machine Management Applications">Axeda Connected Machine Management Applications</a> fit that need in helping product manufacturers to deliver proactive service to their range of devices. These applications address:</p>
+<ul>
+    <li><span style="font-weight: normal;">Remote monitoring</span></li>
+    <li><span style="font-weight: normal;">Remote access</span></li>
+    <li><span style="font-weight: normal;">Software management</span></li>
+    <li><span style="font-weight: normal;">Reporting and analytics</span></li>
+</ul>        </div>
+
+            </aside>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    
+    <nav class="navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/contact-us">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/careers">
+                                Careers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://investor.ptc.com/">
+                                Investor Relations
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/news">
+                                News
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/partners">
+                                Partners
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blogs">
+                                Blogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/policies">
+                                Policies
+                            </a>
+                        </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right social">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/PTC.Inc">
+                                <span class="icon icon-Facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/PTC">
+                                <span class="icon icon-Twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/company/ptc">
+                                <span class="icon icon-LinkedIn"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/ptc">
+                                <span class="icon icon-YouTube"></span>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="nav navbar-nav secondary">
+                      <li class="active"><a href="/policies/copyright-and-trademarks">&copy; Copyright 2016 PTC</a></li>
+                    <li><a href="/policies/privacy">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+    
+
+            <script src="/js/jquery.mobile.custom.min.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
+            <script src="/js/main.js"></script>
+            <script src="/js/jCookie.js"></script>
+            <script>
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+            fbq('init', '750678015077321');
+            fbq('track', "PageView");</script>
+            <noscript>
+                <img height="1" width="1" style="display:none"
+                     src="https://www.facebook.com/tr?id=750678015077321&ev=PageView&noscript=1" />
+            </noscript>
+            <script type="text/javascript">
+                /*********************************/
+                /*CLM*/
+                /*********************************/
+                var $jq = jQuery.noConflict();
+                var dt = new Date();
+                var mins = 30;
+                dt.setTime(dt.getTime() + (mins * 60 * 1000));
+                var cTime = dt;
+
+                var socialCookGACID = 'elqCLM-CID';
+                var socialCookSrcVal = 'elqCLM-CMSRC';
+                var elqCIDCookSrcVal = 'elqCLM-ELQCID';
+                var elqCL1CookSrcVal = 'elqCLM-CL1';
+                var clientId = '';
+
+                function isEmpty(map) {
+                    for (var key in map) {
+                        if (map.hasOwnProperty(key) && map[key] != undefined) {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                function getQueryString() {
+                    var hash;
+                    var vars = {};
+                    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                    for (var i = 0; i < hashes.length; i++) {
+                        hash = hashes[i].split('=');
+                        vars[hash[0]] = hash[1];
+                    }
+                    return vars;
+                }
+
+                $jq(document).ready(function () {
+                    var cl1 = '';
+                    var cid = '';
+                    var cmsrc = '';
+                    var elqId = '';
+
+                    var qVals = getQueryString();
+
+                    //product trial download
+                    if (qVals != null && qVals != undefined && !isEmpty(qVals)) {
+                        var iframe = $jq('#ctl11_blneWidgetMainContent2_widget_uxIframe');
+                        if (iframe.length > 0) {
+                            var emailAddy = qVals['email'];
+                            if (emailAddy != undefined && emailAddy.length > 0) {
+                                iframe.attr('src', ('http://support.ptc.com/apps/creo_naas/demo.jsp?email=' + emailAddy));
+                            }
+                        }
+                    }
+
+                    if (qVals == null || qVals == undefined || isEmpty(qVals)) {
+                        var proceed = false;
+
+                        var cookGA = $jq.cookie(socialCookGACID);
+                        var cookSrc = $jq.cookie(socialCookSrcVal);
+                        var cookElqCID = $jq.cookie(elqCIDCookSrcVal);
+                        var cookCL1 = $jq.cookie(elqCL1CookSrcVal);
+
+                        if (cookGA != null && cookGA != undefined && cookGA.length > 0) {
+                            cid = cookGA;
+                            proceed = true;
+                        }
+                        if (cookSrc != null && cookSrc != undefined && cookSrc.length > 0) {
+                            cmsrc = cookSrc;
+                            proceed = true;
+                        }
+                        if (cookElqCID != null && cookElqCID != undefined && cookElqCID.length > 0) {
+                            elqId = cookElqCID;
+                            proceed = true;
+                        }
+                        if (cookCL1 != null && cookCL1 != undefined && cookCL1.length > 0) {
+                            cl1 = cookCL1;
+                            proceed = true;
+                        }
+
+                        //if there are no query-string values, and there are no cookie values, then do not proceed with the rest of the function
+                        if (!proceed) {
+                            return false;
+                        }
+                    }
+
+                    if (qVals['cl1'] != null && qVals['cl1'] != undefined) {
+                        cl1 = qVals['cl1'];
+                    }
+                    if (qVals['cid'] != null && qVals['cid'] != undefined) {
+                        cid = qVals['cid'];
+                    }
+                    if (qVals['cmsrc'] != null && qVals['cmsrc'] != undefined) {
+                        cmsrc = qVals['cmsrc'];
+                    }
+                    if (qVals['elqCampaignId'] != null && qVals['elqCampaignId'] != undefined) {
+                        elqId = qVals['elqCampaignId'];
+                    }
+                    if (qVals['elqCampaignID'] != null && qVals['elqCampaignID'] != undefined) {
+                        elqId = qVals['elqCampaignID'];
+                    }
+                    if (qVals['elqcampaignID'] != null && qVals['elqcampaignID'] != undefined) {
+                        elqId = qVals['elqcampaignID'];
+                    }
+                    if (qVals['elqcampaignId'] != null && qVals['elqcampaignID'] != undefined) {
+                        elqId = qVals['elqcampaignID'];
+                    }
+
+                    if (cl1 != null && cl1 != undefined && cl1.length > 1) {
+                        var elem1 = $jq('.ddlSocialCategory');
+
+                        var elem2 = $jq('.hdnMedia');
+                        if (elem2.length > 0) {
+                            elem2.val(cl1);
+                        }
+                        $jq.cookie(elqCL1CookSrcVal, cl1, { path: '/', expires: cTime });
+
+                        if (elem1.length > 0) {
+                            if (cl1.indexOf("acebook") > -1) {
+                                elem1.val('Facebook');
+                            }
+                            else if (cl1.indexOf("witter") > -1) {
+                                elem1.val('Twitter');
+                            }
+                            else if (cl1.indexOf("inkedin") > -1) {
+                                elem1.val('LinkedIn');
+                            }
+                            else if (cl1.indexOf("anner") > -1) {
+                                elem1.val('Banner Ad');
+                            }
+                            else if (cl1.indexOf("oogle") > -1) {
+                                elem1.val('Google');
+                            }
+                            else if (cl1.indexOf("ress") > -1) {
+                                elem1.val('Press Release');
+                            }
+                            else if (cl1.indexOf("hingworx") > -1) {
+                                elem1.val('Thingworx.com');
+                            }
+                            else if (cl1.indexOf("tc.com") > -1) {
+                                elem1.val('PTC.com');
+                            }
+                            else if (cl1.indexOf("mail") > -1) {
+                                elem1.val('Email');
+                            }
+                        }
+                    }
+
+                    if (cid != null && cid != undefined && cid.length > 1) {
+                        var elem1 = $jq('.hdnCID');
+                        if (elem1.length > 0) {
+                            elem1.val(cid);
+                        }
+                        $jq.cookie(socialCookGACID, cid, { path: '/', expires: cTime });
+                    }
+
+                    if (cmsrc != null && cmsrc != undefined && cmsrc.length > 1) {
+                        var elem1 = $jq('.hdnCMSource');
+                        if (elem1.length > 0) {
+                            elem1.val(cmsrc);
+                        }
+                        $jq.cookie(socialCookSrcVal, cmsrc, { path: '/', expires: cTime });
+                    }
+
+                    if (elqId != null && elqId != undefined && elqId.length > 1) {
+                        var elem1 = $jq('.elqCampaignId');
+                        if (elem1.length > 0) {
+                            elem1.val(elqId);
+                        }
+                        $jq.cookie(elqCIDCookSrcVal, elqId, { path: '/', expires: cTime });
+                    }
+
+                    var elem1 = $jq('.hdnGoogleUID');
+                    elem1.val(clientId);
+                });
+            </script>
+            <script type="text/javascript">
+                /*********************************/
+                /*UI Custom*/
+                /*********************************/
+                var $jq = jQuery.noConflict();
+                /**Get all query-string parameters from the page*/
+                function getQueryString() {
+                    var hash;
+                    var vars = {};
+                    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                    for (var i = 0; i < hashes.length; i++) {
+                        hash = hashes[i].split('=');
+                        vars[hash[0]] = hash[1];
+                    }
+                    return vars;
+                }
+                function replaceAll(str, find, replace) {
+                    return str.replace(new RegExp(find, 'g'), replace);
+                }
+                function escapeRegExp(string) {
+                    return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+                }
+                function makeMenuSmall() {
+                    $jq('header').css('background-color', '#2C3030');
+                    $jq('header').data('size', 'small').addClass('small');
+                    $jq('header').stop().animate({
+                        opacity: 0.9,
+                        paddingTop: '0',
+                        paddingBottom: '0'
+                    }, 350).addClass('opaque')
+                        .promise().done(function () {
+                            $jq('header #bs-example-navbar-collapse-1 > ul > li.selected').stop().animate({
+                                marginTop: '5px'
+                            }, 250);
+                            $jq('header #bs-example-navbar-collapse-1 > ul > li.selected > a.dropdown-toggle').stop().animate({
+                                paddingTop: '9px',
+                                paddingBottom: '5px'
+                            }, 250);
+                            //$jq('header #bs-example-navbar-collapse-1 > ul > li.selected > a.dropdown-toggle').attr('style', 'padding-top: 5px;padding-bottom: 5px;');
+                            $jq('header form.search').css('margin-top', '8px');
+                            $jq('header').css('border-bottom', 'none');
+                            $jq('header > nav').css('margin-bottom', '0');
+                            $jq('header > nav.navbar').css('background-color', '#2C3030');
+                        });
+                }
+                function makeMenuLarge() {
+                    $jq('header').data('size', 'big').removeClass('small');
+                    $jq('header form.search').attr('style', '');
+                    $jq('header').css('background-color', '#3D4647');
+                    $jq('header').stop().animate({
+                        opacity: 1,
+                        paddingTop: '25px',
+                        paddingRight: '25px',
+                        paddingBottom: '0px',
+                        paddingLeft: '25px'
+                    }, 350).removeClass('opaque')
+                        .promise().done(function () {
+                            $jq('header #bs-example-navbar-collapse-1 > ul > li.selected').stop().animate({
+                                marginTop: ''
+                            }, 250);
+                            $jq('header #bs-example-navbar-collapse-1 > ul > li.selected > a.dropdown-toggle').stop().animate({
+                                paddingTop: '14px',
+                                paddingBottom: '14px'
+                            }, 250);
+                            $jq('header').css('border-bottom', '1px solid #fff');
+                            $jq('header > nav').css('margin-bottom', '');
+                            $jq('header > nav.navbar').css('background-color', '#3D4647');
+                        });
+                }
+                function resizeMenuOnScroll() {
+                    if ($jq(document).scrollTop() > 0) {
+                        if ($jq('header').data('size') == undefined || $jq('header').data('size') == 'big') {
+                            makeMenuSmall();
+                        }
+                    }
+                    else {
+                        if ($jq('header').data('size') == 'small') {
+                            makeMenuLarge();
+                        }
+                    }
+                }
+
+                /********************************/
+                //Add on-click behaviour to the search boxes
+                var searchRedirected = false;
+                function SearchRedirect(isMobile) {
+                    if (searchRedirected)
+                        return false;
+
+                    var search = (isMobile) ? $jq('form.navbar-form.mobile input.search-box').val() : $jq('form.desktop input.search-box').val();
+
+                    var resultsUrl = '/searchresults' + location.search + ((location.search.length > 0) ? '&' : '?') + 'q=' + encodeURIComponent(search);
+                    if (location.search.indexOf('q=') > 0) {
+                        resultsUrl = '/searchresults' + '?q=' + encodeURIComponent(search);
+                    }
+                    searchRedirected = true;
+                    location.href = resultsUrl;
+                    return false;
+                }
+                $jq(document).ready(function () {
+                    $jq('.navbar-form.desktop.search button.search-btn').click(function () {
+                        return SearchRedirect(false);
+                    });
+                    $jq('input.search-box').keypress(function (e) {
+                        if (e.which == 13) {
+                            //Enter key pressed
+                            var parElem = $jq(this).parent().parent();
+                            if (parElem.hasClass('mobile')) {
+                                return SearchRedirect(true);
+                            } else {
+                                return SearchRedirect(false);
+                            }
+                        }
+                    });
+                });
+
+                $jq(document).ready(function () {
+                    //Check for empty content break tags before the widgets placeholder
+                    $jq('.col-md-6.interior-content > section, .col-sm-8.body > section').each(function () {
+                        var prevTag = $jq(this).prev();
+                        if (prevTag.prop("tagName") == "BR") {
+                            prevTag.remove();
+                        }
+                    });
+
+                    //Remove green header if the h2 tag is empty from 2-column pages
+                    $jq('.heroColor h2').each(function () {
+                        if ($jq(this).text().length == 0) {
+                            $jq('.heroColor').remove();
+                        }
+                    });
+
+                    //Remove excess break tags from CTA widgets and HTML widgets
+                    $jq('.right-left-cta, .video-copy-promo, .photo-copy-promo, .right-links, .html-content > div > div').children(':last').each(function () {
+                        if ($jq(this).prop('tagName') == "BR") {
+                            $jq(this).remove();
+                        }
+                    });
+
+                    //Homepage on-hover states
+                    $jq(".partnersCarouselWrapper .item .partnerLink").hover(
+					  function () {
+					      $jq(this).find('img:eq(0)').hide();
+					      $jq(this).find('img:eq(1)').show();
+					  }, function () {
+					      $jq(this).find('img:eq(0)').show();
+					      $jq(this).find('img:eq(1)').hide();
+					  });
+
+                    //Alternate Product Nav Item Styles
+                    var allCount = $jq("ul.navbar-nav").find("li.iot").length;
+
+                    $jq("ul.navbar-nav").find("li.iot").each(function (i) {
+                        if (i > 0) {
+                            if ($jq(this).prev().hasClass("iot")) {
+                                $jq(this).addClass("addLeftBorder");
+                            }
+                        }
+                        else if (i == 0) {
+                            $jq(this).removeClass("addLeftBorder");
+                            $jq(this).addClass("removeLeftBorder");
+                        }
+                    });
+
+                    $jq.fn.extend({
+                        renameAttr: function (name, newName, removeData) {
+                            var val;
+                            return this.each(function () {
+                                val = $jq.attr(this, name);
+                                $jq.attr(this, newName, val);
+                                $jq.removeAttr(this, name);
+                                // remove original data
+                                if (removeData !== false) {
+                                    $jq.removeData(this, name.replace('data-', ''));
+                                }
+                            });
+                        }
+                    });
+
+                    //adjust menu styles on page load
+                    var headerElem = $jq("div.interiorHeroImage div.inner");
+                    var formWrapperBackground = $jq('div.formWrapper');
+
+                    if ($jq(window).width() < 1147) {
+                        $jq("ul.navbar-nav").find("#solutions li").renameAttr('style', 'desktop-styles');
+                    }
+                    //adjust main desktop image on page load
+                    if ($jq(window).width() < 769) {
+                        if (headerElem.length > 0) {
+                            var mHeaderImage = headerElem.data('mobile-style');
+                            if (mHeaderImage != undefined &&
+                                mHeaderImage.length > 0 && mHeaderImage.indexOf("background-image:url('')") < 0) {
+                                headerElem.attr('style', mHeaderImage);
+                            }
+
+                            mHeaderImage = formWrapperBackground.data('mobile-style');
+                            if (mHeaderImage != undefined &&
+                                mHeaderImage.length > 0 && mHeaderImage.indexOf("background-image:url('')") < 0) {
+                                formWrapperBackground.css('background-image', "url('" + mHeaderImage + "')");
+                            }
+                        }
+                    }
+                    //adjust the height of the menu when scrolling
+                    if ($jq(window).width() > 1024) {
+                        $jq('header').css('position', 'fixed');
+                        $jq(window).scroll(function () {
+                            resizeMenuOnScroll();
+                        });
+                    }
+                    else {
+                        $jq('header').css('position', 'absolute');
+                    }
+
+                    $jq(window).resize(function () {
+                        //adjust menu styles
+                        if ($jq(window).width() < 1146) {
+                            $jq("ul.navbar-nav").find("#solutions li").renameAttr('style', 'desktop-styles');
+
+                            makeMenuSmall();
+                        }
+                        else {
+                            $jq("ul.navbar-nav").find("#solutions li").renameAttr('desktop-styles', 'style');
+
+                            makeMenuLarge();
+                        }
+                        //adjust main desktop image
+                        if ($jq(window).width() < 768) {
+                            var mHeaderImage = headerElem.data('mobile-style');
+                            if (mHeaderImage != undefined &&
+                                mHeaderImage.length > 0 && mHeaderImage.indexOf("background-image:url('')") < 0) {
+                                headerElem.attr('style', mHeaderImage);
+                            }
+
+                            mHeaderImage = formWrapperBackground.data('mobile-style');
+                            if (mHeaderImage != undefined &&
+                                mHeaderImage.length > 0 && mHeaderImage.indexOf("background-image:url('')") < 0) {
+                                formWrapperBackground.css('background-image', "url('" + mHeaderImage + "')");
+                            }
+                        }
+                        else {
+                            headerElem.attr('style', headerElem.data('desktop-style'));
+                            formWrapperBackground.attr('style', headerElem.data('desktop-style'));
+                        }
+                    });
+
+                    //Navigation selection
+                    if (location.pathname != "/") {
+                        $jq("ul.navbar-nav > li").each(function (i) {
+                            var celement = $jq(this).find('a[href="' + location.pathname.toLowerCase() + '"]');
+
+                            if (celement.length > 0) {
+                                $jq(this).addClass("selected");
+                            }
+                        });
+                        //leftRightMenu
+                        $jq(".sidebar .navbar-nav li").each(function (i) {
+                            var celement = $jq(this).find('a[href="' + decodeURIComponent(location.pathname.toLowerCase()) + '"]');
+
+                            if (celement.length > 0) {
+                                //$jq(this).attr('style', "font-weight:bold");
+                                celement.addClass('selected');
+                            }
+                        });
+                    }
+
+                    //Alter the width of the main menu so that everything fits into a single line
+                    var firstNavItem = $jq('header .nav .wide-dropdown:eq(0) .dropdown-menu');
+                    firstNavItem.addClass('itemcount' + firstNavItem.find('#solutions li').length);
+
+                    //Modify the title of detail pages if the title is one of the blogs on the site
+                    if (location.pathname.indexOf("mathcad-software-blog/") > 0) {
+                        $jq('.interiorHeroImageWrapper h1, ol.breadcrumb li:eq(1) > a').html('PTC Mathcad Software Blog');
+                    }
+                    else if (location.pathname.indexOf("cad-software-blog/") > 0) {
+                        $jq('.interiorHeroImageWrapper h1, ol.breadcrumb li:eq(1) > a').html('CAD Software Blog');
+                    } else if (location.pathname.indexOf("product-lifecycle-report/") > 0) {
+                        $jq('.interiorHeroImageWrapper h1, ol.breadcrumb li:eq(1) > a').html('Product Lifecycle Report');
+                    } else if (location.pathname.indexOf("integrity-blog/") > 0) {
+                        $jq('.interiorHeroImageWrapper h1, ol.breadcrumb li:eq(1) > a').html('PTC Integrity Blog');
+                    }
+
+                    //Modify the title of detail pages if the title is one of the blogs on the site
+                    if (location.pathname.indexOf("mathcad-software-blog/") > 0) {
+                        if (location.hostname.indexOf('-de')) {
+                            $jq('.interiorHeroImageWrapper h1, ol.breadcrumb li:eq(1) > a').html('PTC-Mathcad Software Blog');
+                        } else {
+                            $jq('.interiorHeroImageWrapper h1, ol.breadcrumb li:eq(1) > a').html('PTC Mathcad Software Blog');
+                        }
+                    }
+                    else if (location.pathname.indexOf("cad-software-blog/") > 0) {
+                        if (location.hostname.indexOf('-de')) {
+                            $jq('.interiorHeroImageWrapper h1, ol.breadcrumb li:eq(1) > a').html('CAD-Software Blog');
+                        }
+                        else {
+                            $jq('.interiorHeroImageWrapper h1, ol.breadcrumb li:eq(1) > a').html('CAD Software Blog');
+                        }
+                    }
+                    else if (location.pathname.indexOf("product-lifecycle-report/") > 0) {
+                        if (location.hostname.indexOf('-de')) {
+                            $jq('.interiorHeroImageWrapper h1, ol.breadcrumb li:eq(1) > a').html('Product Lifecycle Report');
+                        }
+                        else {
+                            $jq('.interiorHeroImageWrapper h1, ol.breadcrumb li:eq(1) > a').html('Product Lifecycle Report');
+                        }
+                    }
+
+
+                    //Remove unused p-tags from the news page
+                    $jq('.postDescription h3').each(function () {
+                        var ptag = $jq(this).next();
+                        if (ptag.prop('tagName') == "P") {
+                            ptag.remove();
+                        }
+                    });
+
+                    //Add a class to the 50/50 split modules for the home page
+                    if (window.location.pathname == '/') {
+                        // Index (home) page
+                        $jq('.solutionsWrapper').each(function () {
+                            $jq(this).addClass('home');
+                            $jq(this).css('max-width', 'initial');
+                        });
+                    }
+
+                    if (typeof String.prototype.trim !== 'function') {
+                        String.prototype.trim = function () {
+                            return this.replace(/^\s+|\s+$/g, '');
+                        };
+                    }
+
+                    //remove emtpy p-tags from CTAs
+                    $jq('.blogCategory .description p').each(function () {
+                        if ($jq(this).text().trim().length < 3) {
+                            $jq(this).remove();
+                        }
+                    });
+                    var validContentTags = ['h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div'];
+                    $jq("article *").each(function () {
+                        if ($jq(this).html().length == 0 &&
+                            $jq.inArray(String($jq(this).prop('tagName')).toLocaleLowerCase(), validContentTags) > -1) {
+                            jQuery(this).remove();
+                        }
+                    })
+
+                    //Hide right column if content isn't found on it (to prevent the border from showing up)
+                    if (String($jq('.push230').text()).trim().length < 1) {
+                        $jq('.push230').hide();
+                    }
+
+                    //Overrides for breadcrumbs
+                    $jq('.breadcrumb a[href="/engineering-math-software"]').each(function () {
+                        $jq(this).attr('href', 'javascript:void(0)');
+                    });
+
+                    //On the right column CTAs, dynamically add a bottom light gray border to show separation between similar components
+                    $jq('.sidebar > aside > .standalone-link,.sidebar > aside > .photo-copy-promo').each(function () {
+                        var nextSection = $jq(this).next();
+                        if (nextSection.hasClass('standalone-link') || nextSection.hasClass('photo-copy-promo')) {
+                            $jq(this).css('border-bottom', '1px solid lightgray');
+                        }
+                    });
+
+                    //Nav tabs
+                    $jq('.wide-dropdown > ul.dropdown-menu > a.nav-tabs').click(function (e) {
+                        e.preventDefault();
+                        $jq(this).tab('show');
+                        $jq(this).parent().parent().find('a.nav-tabs').removeClass('active');
+                        $jq(this).addClass('active');
+                    });
+
+                    //fix home page paragraph height
+                    /*$jq('.event .eventDescription').each(function(){
+                        $jq(this).find('h3').css('height', '60px');
+                        $jq(this).find('p:eq(1)').css('height', '45px');
+                    });*/
+
+                    //fix brake tag issue
+                    $jq(".heroMarqueeCarouselWrapper").children("br, BR").remove();
+                    //remove excess break tags from content
+
+
+                    //fix 'active browser' target attribute on all links:
+                    $jq('a[target*="Active Browser"]').each(function () {
+                        $jq(this).removeAttr('target');
+                    });
+
+                    $jq('.innerPages:eq(0)').addClass('first');
+
+                    //fix the header lengths
+                    $jq(document).ready(function () {
+                        var h1length = $jq('h1.pad60').text().length;
+                        if (h1length > 70) {
+                            $jq('h1.pad60').attr('style', 'font-size:1.9em;line-height: 45px;');
+                        }
+
+                        var hpBannerTitles = $jq('.heroMarqueeCarouselWrapper .heroMarquee .item').each(function(){
+                            $jq(this).find('.carousel-caption h1').each(function(){
+                                var thisElem = $jq(this);
+                                if (thisElem.height() > 140) {
+                                    thisElem.css('font-size', '42px');
+                                    thisElem.css('line-height', '1.1em');
+                                }
+                            });
+                        });
+
+                        var hpSplitModuleTitles = $jq('.solutionsWrapper.home .copy h2');
+                        hpSplitModuleTitles.each(function () {
+                            var thisElem = $jq(this);
+                            if (thisElem.height() > 150) {
+                                thisElem.css('font-size', '38px')
+                            }
+                        });
+
+                    });
+
+                });
+            </script>
+            <script>
+                var $jq = jQuery.noConflict();
+
+                $jq(document).ready(function () {
+                    //language link correctiosn
+                    $jq('a[href*="staging11"]').each(function () {
+                        var startIndex = $jq(this).attr('href').indexOf('.com') + 4;
+                        $jq(this).attr('href', $jq(this).attr('href').substring(startIndex));
+                    });
+                    $jq('a[href*="/sitecore/content/PTC-EN/Home/"],a[href*="/sitecore/Content/PTC-EN/Home/"]').each(function () {
+                        var startIndex = $jq(this).attr('href').indexOf('/Home') + 5;
+                        $jq(this).attr('href', $jq(this).attr('href').substring(startIndex));
+                    });
+                    $jq('a').filter("[data-alt-title]").each(function () {
+                        var altTitle = $jq(this).data('alt-title');
+                        $jq(this).attr('href', String($jq(this).attr('href')).replace($jq(this).data('alt-title'), $jq(this).attr('title')));
+                    });
+                    $jq('.full.body img[style*="float: left"],.full.body img[style*="float: left"]').each(function () {
+                        $jq(this).addClass('floatLeft');
+                    });
+                    $jq('.full.body img[style*="float: right"],.full.body img[style*="float: right"]').each(function () {
+                        $jq(this).addClass('floatRight');
+                    });
+                    if (true) {
+
+                    }
+                });
+            </script>
+                <div style="display:none">
+                    <!--Tracker script hidden to avoid spacing issues with the img it generates-->
+                    <script type="text/javascript" language="javascript">llactid = 19408;</script>
+                    
+                </div>
+                <script>
+                    var $jq = jQuery.noConflict();
+                    $jq(document).ready(function () {
+                        if (typeof ga == 'function') {
+                            $jq('a[href*="Files/PDFs"],a[href*="/File Library"]').click(function () {
+                                if ($jq(this).text() != undefined && $jq(this).text().length > 0) {
+                                    ga('send', 'event', 'Download', 'PDF', $jq(this).text());
+                                }
+                            });
+                        }
+                    });
+                </script>
+                    <script>
+                        (function (h, o, t, j, a, r) {
+                            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+                            h._hjSettings = { hjid: 128718, hjsv: 5 };
+                            a = o.getElementsByTagName('head')[0];
+                            r = o.createElement('script'); r.async = 1;
+                            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                            a.appendChild(r);
+                        })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+                    </script>
+                <!-- put this immediately before the closing /body tag -->
+                <script type="text/javascript">
+                    (function () {
+                        var s = document.createElement('script');
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        var host = (document.location.protocol == 'http:') ?
+                          'cdn.snapapp.com' : 'scdn.snapapp.com';
+                        s.src = '//' + host + '/widget/widget.js';
+                        s.id = 'eeload';
+                        document.getElementsByTagName('head')[0].appendChild(s);
+                    })();
+                </script>
+
+                
+                    
+                
+            <div class="overlayx">
+                <div id="loading-img"></div>
+            </div>
+            <div class="popup">
+                <a href="#" style="opacity: 1;" title="Close" class="tooltip popup-btn-close closex">
+                    <span style="PADDING-RIGHT: 5px" title="Close">X</span>
+                </a>
+                <div class="img-wrapper">
+                    <img style="height: initial !important;" id="DocFrame" src="/" alt="" />
+                </div>
+            </div>
+            <script>
+                function msieversion() {
+                    var ua = window.navigator.userAgent;
+                    var msie = ua.indexOf("MSIE ");
+                    if (msie > 0)      // If Internet Explorer, return version number
+                        return parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
+                    else                 // If another browser, return 0
+                        return 0;
+                }
+                var $jq = jQuery.noConflict();
+                $jq.fn.center = function () {
+                    this.css("position", "absolute");
+                    this.css("top", Math.max(0, (($jq(window).height() - $jq(this).outerHeight()) / 2) + $jq(window).scrollTop()) + "px");
+                    return this;
+                };
+                $jq(document).keyup(function (e) {
+                    if (e.keyCode == 27) {
+                        $jq('.popup').hide();
+                        $jq(".overlayx").hide();
+                    }
+                });
+
+                var newHeight = '100';
+
+                $jq('.modal-popup').click(function (e) {
+                    $jq('.closex').addClass('tooltip popup-btn-close');
+                    $jq('#DocFrame').attr('src', $jq(this).attr('href'));
+                    if ($jq(window).width() < 767) {
+
+                        $jq(this).after($jq(".popup"));
+                        $jq('.popup').addClass('popup-mobile').css('top', 0);
+                        $jq('.popup').show();
+                        $jq('.popup')[0].scrollIntoView(); document.body.scrollTop -= 20;
+                    } else {
+                        $jq('.popup').removeClass('popup-mobile').css('top', newHeight);
+                        $jq('.popup').center();
+                        setTimeout(function () { $jq('.popup').show(); }, 1500);
+                    };
+                    $jq(".overlayx").show();
+                    if (msieversion() == 8) {
+                        var hh = jQuery(window).height(); hh = hh * .7; jQuery('.img-wrapper').height(hh); jQuery('.popup').css({ top: '100px' });
+                        jQuery.fn.center = function () {
+                            this.css("position", "absolute");
+                            this.css("top", Math.max(0, (($jq(window).height() - $jq(this).outerHeight()) / 2) + $jq(window).scrollTop()) + "px");
+                            $jq('.closex').removeClass('tooltip');
+                            $jq('.closex').removeClass('popup-btn-close');
+                            return this;
+                        };
+                        $jq('.popup').center();
+
+                    }
+
+                    return false;
+                });
+
+                $jq('html').click(function () {
+                    $jq('.popup').hide();
+                    $jq(".overlayx").hide();
+                });
+
+                $jq('.popup-btn-close').click(function (e) {
+                    $jq('.popup').hide();
+                    $jq(".overlayx").hide();
+                });
+
+                $jq('.popup').click(function (e) {
+                    e.stopPropagation();
+                });
+                //For IE8 Enterprise only
+
+            </script>
+
+</body>
+</html>

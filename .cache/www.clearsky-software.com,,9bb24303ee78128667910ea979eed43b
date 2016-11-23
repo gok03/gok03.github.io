@@ -1,0 +1,942 @@
+status: 200
+content-length: 47775
+content-location: http://www.clearsky-software.com
+x-powered-by: ASP.NET
+set-cookie: ASP.NET_SessionId=kalwkbbili44oiqfdca3kdu0; path=/; HttpOnly
+x-aspnet-version: 4.0.30319
+server: Microsoft-IIS/7.5
+cache-control: private
+date: Sun, 18 Sep 2016 07:09:00 GMT
+content-type: text/html; charset=utf-8
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Clear Sky Software
+</title><link href="styles/site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <script language="JavaScript1.1" type="text/javascript">
+<!--
+        // -----------------------------------------------------------------------------
+        // Globals
+        // Major version of Flash required
+        var requiredMajorVersion = 7;
+        // Minor version of Flash required
+        var requiredMinorVersion = 0;
+        // Revision of Flash required
+        var requiredRevision = 0;
+        // the version of javascript supported
+        var jsVersion = 1.0;
+        // -----------------------------------------------------------------------------
+
+        // Detect Client Browser type
+        var isIE = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+        var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+        var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+        jsVersion = 1.1;
+        // JavaScript helper required to detect Flash Player PlugIn version information
+        function JSGetSwfVer(i) {
+            // NS/Opera version >= 3 check for Flash plugin in plugin array
+            if (navigator.plugins != null && navigator.plugins.length > 0) {
+                if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+                    var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+                    var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+                    descArray = flashDescription.split(" ");
+                    tempArrayMajor = descArray[2].split(".");
+                    versionMajor = tempArrayMajor[0];
+                    versionMinor = tempArrayMajor[1];
+                    if (descArray[3] != "") {
+                        tempArrayMinor = descArray[3].split("r");
+                    } else {
+                        tempArrayMinor = descArray[4].split("r");
+                    }
+                    versionRevision = tempArrayMinor[1] > 0 ? tempArrayMinor[1] : 0;
+                    flashVer = versionMajor + "." + versionMinor + "." + versionRevision;
+                } else {
+                    flashVer = -1;
+                }
+            }
+            // MSN/WebTV 2.6 supports Flash 4
+            else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1) flashVer = 4;
+            // WebTV 2.5 supports Flash 3
+            else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1) flashVer = 3;
+            // older WebTV supports Flash 2
+            else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 2;
+            // Can't detect in all other cases
+            else {
+
+                flashVer = -1;
+            }
+            return flashVer;
+        }
+        // If called with no parameters this function returns a floating point value
+        // which should be the version of the Flash Player or 0.0
+        // ex: Flash Player 7r14 returns 7.14
+        // If called with reqMajorVer, reqMinorVer, reqRevision returns true if that version or greater is available
+        function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision) {
+            reqVer = parseFloat(reqMajorVer + "." + reqRevision);
+            // loop backwards through the versions until we find the newest version
+            for (i = 25; i > 0; i--) {
+                if (isIE && isWin && !isOpera) {
+                    versionStr = VBGetSwfVer(i);
+                } else {
+                    versionStr = JSGetSwfVer(i);
+                }
+                if (versionStr == -1) {
+                    return false;
+                } else if (versionStr != 0) {
+                    if (isIE && isWin && !isOpera) {
+                        tempArray = versionStr.split(" ");
+                        tempString = tempArray[1];
+                        versionArray = tempString.split(",");
+                    } else {
+                        versionArray = versionStr.split(".");
+                    }
+                    versionMajor = versionArray[0];
+                    versionMinor = versionArray[1];
+                    versionRevision = versionArray[2];
+
+                    versionString = versionMajor + "." + versionRevision;   // 7.0r24 == 7.24
+                    versionNum = parseFloat(versionString);
+                    // is the major.revision >= requested major.revision AND the minor version >= requested minor
+                    if ((versionMajor > reqMajorVer) && (versionNum >= reqVer)) {
+                        return true;
+                    } else {
+                        return ((versionNum >= reqVer && versionMinor >= reqMinorVer) ? true : false);
+                    }
+                }
+            }
+            return (reqVer ? false : 0.0);
+        }
+ -->
+    </script>
+    <script language="VBScript" type="text/vbscript">
+<!-- 
+
+// Visual basic helper required to detect Flash Player ActiveX control version information
+Function VBGetSwfVer(i)
+  on error resume next
+  Dim swControl, swVersion
+  swVersion = 0
+
+  set swControl = CreateObject("ShockwaveFlash.ShockwaveFlash." + CStr(i))
+  if (IsObject(swControl)) then
+    swVersion = swControl.GetVariable("$version")
+  end if
+  VBGetSwfVer = swVersion
+End Function
+
+ -->
+    </script>
+    <script language="JavaScript" type="text/javascript">
+<!--
+        function disappear(obj) {
+            obj.style.display = "none";
+        }
+
+        function reappear(obj) {
+            obj.style.display = "";
+        }
+
+
+        //BEGIN ROLLOVER CODE
+        function newImage(arg) {
+            if (document.images) {
+                rslt = new Image();
+                rslt.src = arg;
+                return rslt;
+            }
+        }
+
+        function changeImages() {
+            if (document.images && (preloadFlag == true)) {
+                for (var i = 0; i < changeImages.arguments.length; i += 2) {
+                    document[changeImages.arguments[i]].src = changeImages.arguments[i + 1];
+                }
+            }
+        }
+
+        var preloadFlag = false;
+        if (document.images) {
+            menu_advantage_over = newImage('../images/menu_advantage-over.gif');
+            menu_advantage_on = newImage('../images/menu_advantage-on.gif');
+            menu_how_over = newImage('../images/menu_how-over.gif');
+            menu_how_on = newImage('../images/menu_how-on.gif');
+            menu_service_over = newImage('../images/menu_service-over.gif');
+            menu_service_on = newImage('../images/menu_service-on.gif');
+            menu_company_over = newImage('../images/menu_company-over.gif');
+            menu_company_on = newImage('../images/menu_company-on.gif');
+            menu_news_over = newImage('../images/menu_news-over.gif');
+            menu_news_on = newImage('../images/menu_news-on.gif');
+            menu_contact_over = newImage('../images/menu_contact-over.gif');
+            menu_contact_on = newImage('../images/menu_contact-on.gif');
+            preloadFlag = true;
+        }
+
+        //END ROLLOVER CODE
+
+
+        //BEGIN MENU CONTROLS
+        var state = 'none'
+
+        function deselect() {
+            if (state == 'menu1') {
+                changeImages('menu1', '../images/menu_advantage.gif');
+                state = 'none';
+            }
+            if (state == 'menu2') {
+                changeImages('menu2', '../images/menu_how.gif');
+                state = 'none';
+            }
+            if (state == 'menu3') {
+                changeImages('menu3', '../images/menu_service.gif');
+                state = 'none';
+            }
+            if (state == 'menu4') {
+                changeImages('menu4', '../images/menu_company.gif');
+                state = 'none';
+            }
+            if (state == 'menu5') {
+                changeImages('menu5', '../images/menu_news.gif');
+                state = 'none';
+            }
+            if (state == 'menu6') {
+                changeImages('menu6', '../images/menu_contact.gif');
+                state = 'none';
+            }
+        }
+        //BEGIN MENU OPTION 1 CONTROLS
+        function menu1_over() {
+            if (state == 'menu1') {
+            }
+            else {
+                changeImages('menu1', '../images/menu_advantage-over.gif');
+            }
+        }
+        function menu1_out() {
+            if (state == 'menu1') {
+            }
+            else {
+                changeImages('menu1', '../images/menu_advantage.gif');
+            }
+        }
+
+        // onload and onclick controls for backward and forward nav
+        function state_menu1() {
+            if (state == 'menu1') {
+            }
+            else {
+                deselect();
+                changeImages('menu1', '../images/menu_advantage-on.gif');
+                state = 'menu1';
+            }
+        }
+
+
+        //END MENU OPTION 1 CONTROLS
+
+
+        //BEGIN MENU OPTION 2 CONTROLS
+        function menu2_over() {
+            if (state == 'menu2') {
+            }
+            else {
+                changeImages('menu2', '../images/menu_how-over.gif');
+            }
+        }
+        function menu2_out() {
+            if (state == 'menu2') {
+            }
+            else {
+                changeImages('menu2', '../images/menu_how.gif');
+            }
+        }
+
+        // onload and onclick controls for backward and forward nav
+        function state_menu2() {
+            if (state == 'menu2') {
+            }
+            else {
+                deselect();
+                changeImages('menu2', '../images/menu_how-on.gif');
+                state = 'menu2';
+            }
+        }
+
+
+        //END MENU OPTION 2 CONTROLS
+
+
+        //BEGIN MENU OPTION 3 CONTROLS
+        function menu3_over() {
+            if (state == 'menu3') {
+            }
+            else {
+                changeImages('menu3', '../images/menu_service-over.gif');
+            }
+        }
+        function menu3_out() {
+            if (state == 'menu3') {
+            }
+            else {
+                changeImages('menu3', '../images/menu_service.gif');
+            }
+        }
+
+        // onload and onclick controls for backward and forward nav
+        function state_menu3() {
+            if (state == 'menu3') {
+            }
+            else {
+                deselect();
+                changeImages('menu3', '../images/menu_service-on.gif');
+                state = 'menu3';
+            }
+        }
+
+
+        //END MENU OPTION 3 CONTROLS
+
+
+        //BEGIN MENU OPTION 4 CONTROLS
+        function menu4_over() {
+            if (state == 'menu4') {
+            }
+            else {
+                changeImages('menu4', '../images/menu_company-over.gif');
+            }
+        }
+        function menu4_out() {
+            if (state == 'menu4') {
+            }
+            else {
+                changeImages('menu4', '../images/menu_company.gif');
+            }
+        }
+
+        // onload and onclick controls for backward and forward nav
+        function state_menu4() {
+            if (state == 'menu4') {
+            }
+            else {
+                deselect();
+                changeImages('menu4', '../images/menu_company-on.gif');
+                state = 'menu4';
+            }
+        }
+
+
+        //END MENU OPTION 4 CONTROLS
+
+
+        //BEGIN MENU OPTION 5 CONTROLS
+        function menu5_over() {
+            if (state == 'menu5') {
+            }
+            else {
+                changeImages('menu5', '../images/menu_news-over.gif');
+            }
+        }
+        function menu5_out() {
+            if (state == 'menu5') {
+            }
+            else {
+                changeImages('menu5', '../images/menu_news.gif');
+            }
+        }
+
+        // onload and onclick controls for backward and forward nav
+        function state_menu5() {
+            if (state == 'menu5') {
+            }
+            else {
+                deselect();
+                changeImages('menu5', '../images/menu_news-on.gif');
+                state = 'menu5';
+            }
+        }
+
+
+        //END MENU OPTION 5 CONTROLS
+
+
+        //BEGIN MENU OPTION 6 CONTROLS
+        function menu6_over() {
+            if (state == 'menu6') {
+            }
+            else {
+                changeImages('menu6', '../images/menu_contact-over.gif');
+            }
+        }
+        function menu6_out() {
+            if (state == 'menu6') {
+            }
+            else {
+                changeImages('menu6', '../images/menu_contact.gif');
+            }
+        }
+
+        // onload and onclick controls for backward and forward nav
+        function state_menu6() {
+            if (state == 'menu6') {
+            }
+            else {
+                deselect();
+                changeImages('menu6', '../images/menu_contact-on.gif');
+                state = 'menu6';
+            }
+        }
+
+
+        //END MENU OPTION 6 CONTROLS
+
+
+        // END MENU CONTROLS
+
+        //BEGIN SHOW HIDE FUNCTIONS
+        function showHide(obj) {
+            if (!document.all && document.getElementById) { document.all = document.getElementsByTagName('*') }
+            ns4 = (document.layers) ? true : false;
+            ie4 = (document.all) ? true : false;
+            objArray = obj.split(',');
+            if (ns4) { skjul = 'hide'; vis = 'show' } else { skjul = 'hidden'; vis = 'visible' }
+            for (var i = 0; i < objArray.length; ++i) {
+                if (ns4) flipObj = document.layers[objArray[i]];
+                if (ie4) flipObj = document.all[objArray[i]].style;
+                flipObj.visibility == skjul ? flipObj.visibility = vis : flipObj.visibility = skjul;
+            }
+        }
+        var selected = 'none'
+
+        function clearnav() {
+            if (selected == 'none') {
+            }
+            else {
+                showHide(selected);
+                showHide('none');
+                selected = 'none';
+            }
+        }
+        function submenu1() {
+            if (selected == 'submenu1') {
+            }
+            else {
+                showHide(selected);
+                showHide('submenu1');
+                selected = 'submenu1';
+            }
+        }
+
+
+        function facts1() {
+            showHide('facts1');
+        }
+        function facts2() {
+            showHide('facts2');
+        }
+        function facts3() {
+            showHide('facts3');
+        }
+        function facts4() {
+            showHide('facts4');
+        }
+        function facts5() {
+            showHide('facts5');
+        }
+
+ -->
+    </script>
+    <form method="post" action="./" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc3NDI4Mjk4Nw9kFgJmD2QWAgIDD2QWBAIFD2QWBAIFDw8WAh4EVGV4dGVkZAIHDw8WAh8ABRBXaGF0IGlzIDE1IC0gNCA/ZGQCCw8PFgIfAAUEMjAxNmRkZI05GdXJsoxaWnDyZDwhwdC3XBNh1Hjiy9wczXla35ki" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9F22CBDD" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAazhHlaTtSuLa4F9jWKN1qG9u3hGFS6nu9bNNaDZVmPI06kLuN23yRNzr50ulc+qnIA8peHxUmRBTw45pyC3LejcWRMwT/RwgGCiQhB8BwMLoKW95Gp8WBHwlhR3k398wD0sAGJ/iIHPt7ZnIOaSuUNrIxzVBsGkVj04Li0g0GOOw==" />
+    <div>
+        <div class="page">
+            <div id="header">
+                <div id="menucontainer">
+                    <div id="title">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <!-- top swoosh -->
+                                <td colspan="2" style="background: url(../images/menu_top.gif) no-repeat top left;">
+                                    <img id="imgMenuTopGif" alt="" border="0" src="images/clear.gif" height="44" width="1" />
+                                </td>
+                                <!-- the solution is clear tagline background -->
+                                <td rowspan="2" style="background: url(../images/menu_bkgrnd.gif) repeat top left;">
+                                    <img src="../images/clear.gif" width="1" height="1" alt="" border="0" />
+                                </td>
+                            </tr>
+                            <!-- menu row -->
+                            <tr>
+                                <td width="468px">
+                                    <table width="468px" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                <a href="../home/advantage.aspx" onmouseover="menu1_over();" onmouseout="menu1_out();"
+                                                    onclick="state_menu1();" title="the clear sky advantage">
+                                                    <img name="menu1" src="../images/menu_advantage.gif" width="116" height="45" alt="the clear sky advantage"
+                                                        border="0" /></a>
+                                            </td>
+                                            <td>
+                                                <a href="../home/how.aspx" onmouseover="menu2_over();" onmouseout="menu2_out();"
+                                                    onclick="state_menu2();" title="how it works">
+                                                    <img name="menu2" src="../images/menu_how.gif" width="75" height="45" alt="how it works"
+                                                        border="0" /></a>
+                                            </td>
+                                            <td>
+                                                <a href="../home/service.aspx" onmouseover="menu3_over();" onmouseout="menu3_out();"
+                                                    onclick="state_menu3();" title="service and support">
+                                                    <img name="menu3" src="../images/menu_service.gif" width="78" height="45" alt="service and support"
+                                                        border="0" /></a>
+                                            </td>
+                                            <td>
+                                                <a href="../home/company.aspx" onmouseover="menu4_over();" onmouseout="menu4_out();"
+                                                    onclick="state_menu4();" title="company info">
+                                                    <img name="menu4" src="../images/menu_company.gif" width="72" height="45" alt="company info"
+                                                        border="0" /></a>
+                                            </td>
+                                            <td>
+                                                <a href="../home/news.aspx" onmouseover="menu5_over();" onmouseout="menu5_out();"
+                                                    onclick="state_menu5();" title="recent news">
+                                                    <img name="menu5" src="../images/menu_news.gif" width="63" height="45" alt="recent news"
+                                                        border="0" /></a>
+                                            </td>
+                                            <td>
+                                                <a href="../home/contact.aspx" onmouseover="menu6_over();" onmouseout="menu6_out();"
+                                                    onclick="state_menu6();" title="contact us">
+                                                    <img name="menu6" src="../images/menu_contact.gif" width="64" height="45" alt="contact us"
+                                                        border="0" /></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <!-- filler between end of menu and tagline -->
+                                <td width="425px" style="background: url(../images/menu_right.gif) no-repeat top left;">
+                                    <img src="../images/clear.gif" width="1" height="1" alt="" border="0" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="tagline">
+                        <img src="../images/tagline.png" width="212" height="18" alt="the solution is clear"
+                            border="0" />
+                    </div>
+                </div>
+                <!-- end menucontainer -->
+                <div id="topfade">
+                    <img src="../images/bkgrnd-top.png" width="100%" height="13" alt="" border="0" />
+                </div>
+            </div>
+            <div id="main">
+                <!-- left side - logo -->
+                <div id="logo">
+                    <script language="JavaScript" type="text/javascript">
+                    <!--
+                    //we keep the detection of flash call in a separate script block in case that block fails
+                        var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+                    -->
+                    </script>
+                    <script language="JavaScript" type="text/javascript">
+<!--
+                        if (hasRightVersion===undefined) {  // if we've failed detection due to error
+                            hasRightVersion = false;
+                        }
+                        if (hasRightVersion) {  // if we've detected an acceptable version
+                            var oeTags = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"'
+    + 'width="215" height="115"'
+    + 'codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">'
+    + '<param name="movie" value="../images/logo-home.swf" /><param name="quality" value="high" /><param name="scale" value="noscale" /><param name="salign" value="lt" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#ffffff" />'
+    + '<embed src="../images/logo-home.swf" quality="high" scale="noscale" salign="lt" wmode="transparent" bgcolor="#ffffff" '
+    + 'width="215" height="115" name="ClearSky-logo" align="left"'
+    + 'play="true"'
+    + 'loop="false"'
+    + 'quality="high"'
+    + 'allowScriptAccess="sameDomain"'
+    + 'type="application/x-shockwave-flash"'
+    + 'pluginspage="http://www.macromedia.com/go/getflashplayer">'
+    + '<\/embed>'
+    + '<\/object>';
+                            document.write(oeTags);   // embed the flash movie
+                        } else {  // flash is too old or we can't detect the plugin
+                            var alternateContent = '';
+                            document.write("<A HREF=\"../home/home.aspx\" TITLE=\"clear sky software\"><IMG SRC=\"../images/logo-static.png\" WIDTH=\"215\" HEIGHT=\"115\" ALT=\"clear sky software\" BORDER=\"0\"\"></A>");  // insert non-flash content
+                        }
+
+ -->
+                    </script>
+                    <noscript>
+                        <a href="../home/home.aspx" title="clear sky software">
+                            <img src="../images/logo-static.png" width="215" height="115" alt="clear sky software"
+                                border="0" />
+                        </a>
+                    </noscript>
+                </div>
+                <!-- left side - clear facts -->
+                <div id="facts">
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td style="padding-left: 10px;">
+                              <!--
+                              <p class="mediumtext">
+                              Come See Us at The
+                              <br>2014 HFTP Annual
+                              <br>Convention & Tradeshow
+                              <br>October 22-23, 2014
+                              <br>New Orleans, LA
+                              <br>Booth # 103 
+                              </p>
+                              -->
+                              
+                                <!-- new HITEC image added -->
+                                <!-- <A HREF="http://www.hitec.org" target="_blank"><IMG NAME="HITEC2010" SRC="../images/HITEC2010.jpg" ALT="HITEC 2010" BORDER="0" /></A> -->
+                                <!-- filler for when there is not a HITEC image -->
+                                <!-- <br /> -->
+                                <!-- <br /> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 8px;">
+                                <img src="../images/header-clearinfo.png" width="115" height="19" alt="clear info"
+                                    border="0" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 8px; padding-top: 5px;" onmouseover="this.style.background='#dceaf3';"
+                                onmouseout="this.style.background='transparent';">
+                                <a href="../marketingDownloads/ClearSkyBEVERAGE.pdf" target="_blank">clear sky BEVERAGE</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 8px; padding-top: 5px;" onmouseover="this.style.background='#dceaf3';"
+                                onmouseout="this.style.background='transparent';">
+                                <a href="../marketingDownloads/ClearSkyFOOD.pdf" target="_blank">clear sky FOOD</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 8px; padding-top: 5px;" onmouseover="this.style.background='#dceaf3';"
+                                onmouseout="this.style.background='transparent';">
+                                <a href="../marketingDownloads/ClearSkyFOODlight.pdf" target="_blank">clear sky FOOD-light</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 8px; padding-top: 5px;" onmouseover="this.style.background='#dceaf3';"
+                                onmouseout="this.style.background='transparent';">
+                                <a href="../marketingDownloads/ClearSkyKiosk.pdf" target="_blank">clear sky KIOSK</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 8px; padding-top: 5px;" onmouseover="this.style.background='#dceaf3';"
+                                onmouseout="this.style.background='transparent';">
+                                <a href="../marketingDownloads/ClearSkyMicrosInterface.pdf" target="_blank">clear sky
+                                    MICROS interface</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 8px; padding-top: 5px;" onmouseover="this.style.background='#dceaf3';"
+                                onmouseout="this.style.background='transparent';">
+                                <a href="../marketingDownloads/ClearSkyFreshPointInterface.pdf" target="_blank">clear sky
+                                    FRESHPOINT interface</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 8px; padding-top: 5px;" onmouseover="this.style.background='#dceaf3';"
+                                onmouseout="this.style.background='transparent';">
+                                <a href="../marketingDownloads/ClearSkyGORDONFOODInterface.pdf" target="_blank">clear sky
+                                    GORDON FOOD interface</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 8px; padding-top: 5px;" onmouseover="this.style.background='#dceaf3';"
+                                onmouseout="this.style.background='transparent';">
+                                <a href="../marketingDownloads/ClearSkySyscoInterface.pdf" target="_blank">clear sky
+                                    SYSCO interface</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 8px; padding-top: 5px;" onmouseover="this.style.background='#dceaf3';"
+                                onmouseout="this.style.background='transparent';">
+                                <a href="../marketingDownloads/ClearSkyUSFOODSInterface.pdf" target="_blank">clear sky
+                                    US FOODS interface</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <P><BR><BR><BR> this was here instead of 1 <BR> before HITEC image was added, also changed all.css div#facts from top of 220px to 150px -->
+                    <br />
+                    <a href="../home/demorequest.aspx" title="request a demo" onmouseover="changeImages('demo', '../images/button-demo-over.png');"
+                        onmouseout="changeImages('demo', '../images/button-demo.png');">
+                        <img name="demo" src="../images/button-demo.png" width="145" height="53" alt="request a demo"
+                            border="0" /></a>
+                </div>
+                <!-- middle, main content -->
+                <div id="content">
+                    
+                    
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <table align="center" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="center">
+                            <script language="JavaScript" type="text/javascript">
+                            <!--
+                            //we keep the detection of flash call in a separate script block in case that block fails
+                                var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+                            -->
+                            </script>
+                            <script language="JavaScript" type="text/javascript">
+<!--
+                                if (hasRightVersion===undefined) {  // if we've failed detection due to error
+                                    hasRightVersion = false;
+                                }
+                                if (hasRightVersion) {  // if we've detected an acceptable version
+                                    var oeTags = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"'
+    + 'width="380" height="250"'
+    + 'codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">'
+    + '<param name="movie" value="../images/new-intro.swf" /><param name="quality" value="high" /><param name="scale" value="noscale" /><param name="salign" value="lt" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#ffffff" />'
+    + '<embed src="../images/new-intro.swf" quality="high" scale="noscale" salign="lt" wmode="transparent" bgcolor="#ffffff" '
+    + 'width="380" height="250" name="intro" align="center"'
+    + 'play="true"'
+    + 'loop="false"'
+    + 'quality="high"'
+    + 'allowScriptAccess="sameDomain"'
+    + 'type="application/x-shockwave-flash"'
+    + 'pluginspage="http://www.macromedia.com/go/getflashplayer">'
+    + '<\/embed>'
+    + '<\/object>';
+                                    document.write(oeTags);   // embed the flash movie
+                                } else {  // flash is too old or we can't detect the plugin
+                                    var alternateContent = '<IMG SRC=\"../images/new-intro.png\" WIDTH=\"380\" HEIGHT=\"250\" ALT=\"Tame your inventory.\" BORDER=\"0\" />';
+                                    document.write(alternateContent);  // insert non-flash content
+                                }
+
+// -->
+                            </script>
+                            <noscript>
+                                <img src="../images/new-intro.png" width="380" height="250" alt="Tame your inventory."
+                                    border="0" />
+                            </noscript>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <img src="../images/header-clear_answers.gif" width="156" height="21" alt="clear answers"
+                                border="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: Black">
+                            Have a question about
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: Black">
+                            Clear Sky Software or its products?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: Black">
+                            <div class="subnote"><a href="../home/support.aspx">(click here to submit a support question)</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 5px;">
+                            <textarea name="ctl00$centercontent$comments" rows="6" cols="55" id="centercontent_comments" onfocus="this.style.background=&#39;transparent url(../images/answersbox-over.gif) bottom right no-repeat&#39;;this.value=&#39;&#39;; this.onfocus=null;" onblur="this.style.background=&#39;transparent url(../images/answersbox-over.gif) bottom right no-repeat&#39;;">
+Enter your question</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 5px;">
+                            <input name="ctl00$centercontent$email" type="text" value="Enter your email address" size="40" id="centercontent_email" onfocus="this.style.background=&#39;#d9e8f2&#39;;if (this.value==&#39;Enter your email address&#39;) this.value=&#39;&#39;;" onblur="this.style.background=&#39;transparent url(../images/form-bkgrnd.gif) repeat&#39;;" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="padding-top: 5px;">
+                            <table>
+                                <tr>
+                                    <td colspan="2">
+                                        <span id="centercontent_Incorrect"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="centercontent_Q">What is 15 - 4 ?</span><b style="color: Red;">*</b>
+                                    </td>
+                                    <td>
+                                        <input type="hidden" name="ctl00$centercontent$ea" id="centercontent_ea" value="2VJ9qkqED459zVu2blcMrMbQFh2h7vSuzDNYko1DbXQhI+YBKr+lGos1zxOwq4r8SCFeodbrp8/VXo8cjcnJo4jLYSiFFnkN" />
+                                        <input name="ctl00$centercontent$A" type="text" size="25" id="centercontent_A" onfocus="this.style.background=&#39;#d9e8f2&#39;;" onblur="this.style.background=&#39;transparent url(../images/form-bkgrnd.gif) repeat&#39;;" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="padding-top: 5px;">
+                            <input type="submit" name="ctl00$centercontent$homeSubmit" value="SEND" id="centercontent_homeSubmit" class="submit" onmouseover="this.style.color=&#39;#0065a4&#39;;this.style.background=&#39;#d9e8f2&#39;;this.style.cursor=&#39;pointer&#39;;" onmouseout="this.style.color=&#39;#FFFFFF&#39;;this.style.background=&#39;#55a1d5&#39;;" style="background: '#55a1d5 url(../images/clear.gif)';
+                                color: #FFFFFF;" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+                    <!-- @RenderBody() -->
+                </div>
+                <!-- right side, client support -->
+                <!-- took out fade because it overlays main content, and its sole purpose is to color the top right corner behind support menu
+                <div id="toprightfade">
+                    <img src="../images/bkgrnd-topr.jpg" width="685px" height="350px" alt="" border="0" />
+                </div>
+                -->
+                <div id="support">
+                    <table width="200" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <a href="../home/support-menu.aspx" title="client support menu">
+                                    <img src="../images/header-supportbox.png" width="156" height="24" alt="client support"
+                                        border="0" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 5px;">
+                                <a href="../home/support-menu.aspx" title="support &amp; troubleshooting" onmouseover="changeImages('supportbox1', '../images/supportbox-support-over.gif');"
+                                    onmouseout="changeImages('supportbox1', '../images/supportbox-support.gif');">
+                                    <img name="supportbox1" src="../images/supportbox-support.gif" width="200" height="35"
+                                        alt="support &amp; troubleshooting" border="0" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 3px;">
+                                <a href="../home/support-software.aspx" title="software updates" onmouseover="changeImages('supportbox2', '../images/supportbox-software-over.gif');"
+                                    onmouseout="changeImages('supportbox2', '../images/supportbox-software.gif');">
+                                    <img name="supportbox2" src="../images/supportbox-software.gif" width="200" height="35"
+                                        alt="software updates" border="0" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 3px;">
+                                <a href="../home/support-manuals.aspx" title="user manuals" onmouseover="changeImages('supportbox3', '../images/supportbox-manuals-over.gif');"
+                                    onmouseout="changeImages('supportbox3', '../images/supportbox-manuals.gif');">
+                                    <img name="supportbox3" src="../images/supportbox-manuals.gif" width="200" height="35"
+                                        alt="user manuals" border="0" /></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- right side, clear facts -->
+                <!-- took out clearfacts due to concerns about non-customers having access to the content
+                <div id="clearfactsbox">
+                    <table width="200" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td colspan="2" style="padding-bottom: 6px;">
+                                <a href="../home/clearfacts.aspx" title="recent clear facts">
+                                    <img src="../images/header-clearfacts.png" width="68" height="11" alt="recent clear facts"
+                                        border="0" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table id="clearfactsboxEntries">
+
+</table>
+                            </td>
+                        </tr>
+                        <tr style="padding-bottom: 2px; padding-top: 2px;" onmouseover="this.style.background='#dceaf3';"
+                            onmouseout="this.style.background='transparent';">
+                            <td valign="top" style="padding-right: 10px; padding-bottom: 2px; padding-top: 2px;"
+                                class="small">
+                                &nbsp;
+                            </td>
+                            <td valign="top" style="padding-bottom: 2px; padding-top: 2px;">
+                                <a href="../home/clearfacts.aspx" class="small" title="view more clear facts">more clear
+                                    facts&raquo;</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                -->
+                <!-- right side, recent news -->
+                <div id="newsbox">
+                    <table width="200" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td colspan="2" style="padding-bottom: 6px;">
+                                <a href="../home/news.aspx" title="recent news">
+                                    <img src="../images/header-news.png" width="68" height="9" alt="recent news" border="0" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table id="newboxArticles">
+	<tr onMouseOver="this.style.background=&#39;#dceaf3&#39;;" onMouseOut="this.style.background=&#39;transparent&#39;;">
+		<td><a href="home/news-viewer.aspx?ArticleID=173&amp;Subject=Philadelphia Hotel Up and Running with Clear Sky Software">05.20.2016</a></td><td><a href="home/news-viewer.aspx?ArticleID=173&amp;Subject=Philadelphia Hotel Up and Running with Clear Sky Software">Philadelphia Hotel Up and Running with Clear Sky Software</a></td>
+	</tr><tr onMouseOver="this.style.background=&#39;#dceaf3&#39;;" onMouseOut="this.style.background=&#39;transparent&#39;;">
+		<td><a href="home/news-viewer.aspx?ArticleID=172&amp;Subject=Clear Sky Software Helping Control Beer Liquor &amp; Wine at Oakland California Hotel">04.26.2016</a></td><td><a href="home/news-viewer.aspx?ArticleID=172&amp;Subject=Clear Sky Software Helping Control Beer Liquor &amp; Wine at Oakland California Hotel">Clear Sky Software Helping Control Beer Liquor & Wine at Oakland California Hotel</a></td>
+	</tr><tr onMouseOver="this.style.background=&#39;#dceaf3&#39;;" onMouseOut="this.style.background=&#39;transparent&#39;;">
+		<td><a href="home/news-viewer.aspx?ArticleID=171&amp;Subject=NYC Times Square Hotel Installs Clear Sky Software’s Beverage Inventory Control System">03.22.2016</a></td><td><a href="home/news-viewer.aspx?ArticleID=171&amp;Subject=NYC Times Square Hotel Installs Clear Sky Software’s Beverage Inventory Control System">NYC Times Square Hotel Installs Clear Sky Software’s Beverage Inventory Control System</a></td>
+	</tr><tr onMouseOver="this.style.background=&#39;#dceaf3&#39;;" onMouseOut="this.style.background=&#39;transparent&#39;;">
+		<td><a href="home/news-viewer.aspx?ArticleID=170&amp;Subject=Tennessee’s Largest Waterpark Chooses Clear Sky Software to Better Manage F&amp;B Inventory">02.26.2016</a></td><td><a href="home/news-viewer.aspx?ArticleID=170&amp;Subject=Tennessee’s Largest Waterpark Chooses Clear Sky Software to Better Manage F&amp;B Inventory">Tennessee’s Largest Waterpark Chooses Clear Sky Software to Better Manage F&B Inventory</a></td>
+	</tr>
+</table>
+                            </td>
+                        </tr>
+                        <tr style="padding-bottom: 2px; padding-top: 2px;" onmouseover="this.style.background='#dceaf3';"
+                            onmouseout="this.style.background='transparent';">
+                            <td valign="top" style="padding-right: 10px; padding-bottom: 2px; padding-top: 2px;"
+                                class="small">
+                                &nbsp;
+                            </td>
+                            <td valign="top" style="padding-bottom: 2px; padding-top: 2px;">
+                                <a href="../home/news.aspx" class="small" title="view more news stories">more news&raquo;</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- footer -->
+                <div id="footer">
+                </div>
+            </div>
+            <div id="watermark">
+                <img src="../images/watermark.png" width="684" height="211" alt="" border="0" />
+            </div>
+            <div id="bottomfade">
+                <img src="../images/bkgrnd-footer.png" width="100%" height="30" alt="" border="0" />
+            </div>
+            <div id="copyright">
+                <table>
+                    <tr>
+                        <td>
+                            Copyright &copy;
+                            <span id="currentYear">2016</span>
+                            Clear Sky Software, Inc. All rights reserved.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Site design by <a href="http://www.asteriskcreative.com" target="_blank" title="Visit Asterisk Creative.">
+                                asterisk<img src="../images/asterisk.png" alt="*" border="0" width="7" height="7" />creative,
+                                inc.</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

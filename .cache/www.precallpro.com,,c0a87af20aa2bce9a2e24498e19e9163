@@ -1,0 +1,47 @@
+status: 200
+content-length: 1345
+content-location: http://www.precallpro.com
+accept-ranges: bytes, bytes
+keep-alive: timeout=30
+server: Apache/2
+connection: keep-alive
+date: Thu, 29 Sep 2016 10:35:39 GMT
+content-type: text/html
+age: 0
+
+
+        <!DOCTYPE HTML>
+        <html>
+
+            <head>
+                <title>This site is under development</title>
+
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script type="text/javascript" language="JavaScript">
+                    var url = 'http://nosite01.domainparkingserver.net/?domain_name='
+                        + document.domain + '&a_id=101960';
+
+                    $(document).ready(function() {
+                        $('#content').attr('src', url);
+                    });
+                </script>
+            </head>
+            <body>
+                <iframe src="http://nosite01.domainparkingserver.net/" id="content"
+                    frameborder="0" height="800" scrolling="auto" width="100%">
+
+                    <div id="container">
+                        <h1>This site is under development</h1>
+                        <p>This page indicates the webmaster has not uploaded a website
+                            to the server.
+                        </p>
+                        <p>For information on how to build or upload a site, please visit
+                            your web hosting company's site.
+                        </p>
+                    </div>
+
+                </iframe>
+                </body>
+
+        </html>
+    

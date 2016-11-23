@@ -1,0 +1,217 @@
+status: 200
+content-length: 7368
+content-location: http://www.rainbowdata.com
+x-powered-by: ASP.NET
+x-aspnet-version: 2.0.50727
+server: Microsoft-IIS/6.0
+cache-control: private
+date: Wed, 21 Sep 2016 10:20:16 GMT
+content-type: text/html; charset=utf-8
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>
+	Rainbow Data Systems, Inc.
+</title><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /><link rel="icon" href="favicon.ico" type="image/x-icon" /><link rel="stylesheet" href="styles/site.css" type="text/css" />
+	<script src="scripts/jquery-1.3.2.min.js" language="javascript" type="text/javascript"></script>
+	<script src="scripts/common.js" language="javascript" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript">
+	$(document).ready(function() {
+		$('img.interested').each(function() {
+			$(this).mouseover(function() {
+				this.src = 'Images/buttons/interested_on.png';
+			}).mouseout(function() {
+				this.src = 'Images/buttons/interested_off.png';
+			});
+		});
+	});
+	</script>
+	
+	<!--[if lt IE 7]>
+	<script language="javascript" type="text/javascript">
+	$(document).ready(function() {
+		$('#navbar div').mouseover(function() {
+			$(this).css('background', 'transparent url(../Images/buttons/dkorange_gradient_1x25.png) repeat scroll top left');
+		}).mouseout(function() {
+			$(this).css('background', 'transparent url(../Images/buttons/grey_gradient_1x25.png) repeat scroll top left');
+		});
+	});
+	</script>
+	<![endif]-->
+	
+    
+	<script language="javascript" type="text/javascript" src="CapabilitySummary.js"></script>
+	<script language="javascript" type="text/javascript">
+	$(document).ready(function() {
+		// TODO remove after testing with IE 6
+		//$("#popupMsg").toggle();
+		selectedBtn = $("#eis_btn").get(0);
+		capsPanel = $("#capabilities");
+		
+		preloadImages("Images/buttons/enterp_on.png", "Images/buttons/enterp_off.png",
+			"Images/buttons/supply_on.png", "Images/buttons/supply_off.png",
+			"Images/buttons/consul_on.png", "Images/buttons/consul_off.png",
+			"Images/buttons/interested_on.png", "Images/buttons/interested_off.png",
+			"Images/buttons/grey_gradient_1x25.png", "Images/buttons/dkorange_gradient_1x25.png",
+			"Images/main/grey_ddd_1x1.png", "Images/bkgnds/eg_bkgnd_1x77.png",
+			"Images/bkgnds/box_193x260.png",
+			"Images/screens/screen_50x36.png");
+		
+		// add image metadata and configure rollover and click behaviors
+		$("#eis_btn, #scm_btn, #consult_btn").each(function() {
+			addImgMeta(this);
+		}).mouseover(function() {
+			swapImg(this, "over");
+		}).mouseout(function() {
+			swapImg(this, "off");
+		}).click(function() {
+			$("#popupMsg").fadeOut(200);
+			swapSummary(this);
+		});
+
+/* TODO re-enable functionality during Phase 2 rollout
+		
+		$("#popupMsg").each(function() {
+			// TODO remove after testing with IE 6
+			//setTransparentBkgndImage(this, "../Images/main/popupMsg_343x164_90.png", "top", "left", "no-repeat");
+		}).click(function() {
+			$(this).hide();
+		});
+
+		$(".subDetail > span").live("click", function() {
+			swapContent($("#popupMsg"), "hello from " + this.innerHTML, 200, 600);
+		}).live("mouseover", function() {
+			this.style.textDecoration = 'underline';
+			this.style.color = '#9f9f9f';
+		}).live("mouseout", function() {
+			this.style.textDecoration = 'none';
+			this.style.color = '#808183';
+		});
+*/
+	});
+	</script>
+	
+	<!--[if lt IE 7]>
+	<script language="javascript" type="text/javascript">
+	$(document).ready(function() {
+		$('#popupMsg').each(function() {
+			setTransparentBkgndImage(this, "../Images/main/popupMsg_343x164_90.png", "top", "left", "no-repeat");
+		});
+	});
+	</script>
+	<![endif]-->
+
+</head>
+<body>
+	<a name="top"></a>
+	
+	<div id="view" class="center">
+	
+    <form name="aspnetForm" method="post" action="Default.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1MmRknfp13RDSl6hpRuOmaeddpSqPteE=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	
+	<div id="header">
+		<a href="Default.aspx"><img id="rdsiLogo" src="Images/banner/RDSILogo.png" /></a>
+		
+		<div class="quickLinks">
+			<a href="Gsa.aspx">GSA Schedule</a>
+			<a href="Contact.aspx">Contact Us</a>
+		</div>
+
+		<div id="navbar">
+			<a href="Default.aspx"><div>Home</div></a>
+			<a href="Products.aspx"><div>Products &amp; Services</div></a>
+			<a href="Clients.aspx"><div>Clients</div></a>
+			<a href="About.aspx"><div>About</div></a>
+			<a href="Contact.aspx"><div>Contact</div></a>
+		</div>
+		
+
+
+		<div id="breadCrumb">
+			
+		</div>
+	</div>
+	
+    
+    <div id="mainImage">
+		<img id="eis_btn" class="pic_btn" src="Images/buttons/enterp_on.png" alt="Click for our Enterprise Integration Services overview" />
+		<img id="scm_btn" class="pic_btn" src="Images/buttons/supply_off.png" alt="Click for our Supply Chain Management overview" />
+		<img id="consult_btn" class="pic_btn" src="Images/buttons/consul_off.png" alt="Click for our Consulting Services overview" />
+	</div>
+	
+	<div id="mainContent">
+		<div id="popupMsg">&nbsp;</div>
+		
+		<div id="widgetContent">
+		
+			<div class="quotePanel">
+				<div class="quoteHead">Client Testimonials</div>
+				<p>Excellent company.  In-depth knowledge of existing DoD Logistics systems...</p>
+				<p>...exceeded the requirements of the project...[and] helped us
+				increase productivity...</p>
+				<p>...consistently finds the best approach to a
+				problem utilizing the least resources.</p>
+				<p>Excellent attention to detail and responsiveness...</p>
+			</div>
+		</div>
+		
+		<div id="capContent">
+			<div id="capabilities">
+			<div class="capability" id="cap_1">
+				<div class="subHead">Data Conversion</div>
+				<div class="subDetail">
+					<span>X12, XML, EDIFACT, IDOC, MILS, UDF</span>
+					<span>Translation &amp; Mapping</span>
+					<span>DOD &amp; Commercial Vendor Integration</span>
+					<span>Any-To-Any Support</span>
+				</div>
+				<a class="capInfoLink" href="Enterprise.aspx#dataConversion">more info &#x00BB;</a>
+			</div>
+			
+		
+			
+			<div class="capability" id="cap_2">
+				<div class="subHead">Web Services</div>
+				<div class="subDetail"> 
+					<span>Interoperability</span>
+					<span>Web-based Application Integration</span>
+					<span>DOD &amp; Commercial Vendor Integration</span>
+					<span>Value-Added Capabilities</span>
+				</div>
+				<a class="capInfoLink" href="Enterprise.aspx#webServices">more info &#x00BB;</a>
+			</div>
+			
+		
+			
+			<div class="capability" id="cap_3">
+				<div class="subHead">System Integration</div>
+				<div class="subDetail"> 
+					<span>Requisitioning, Financial, Transportation &amp; Procurement</span>
+					<span>DOD &amp; Commercial Integration Support</span>
+					<span>Legacy / Emerging System Integration</span>
+					<span>Legacy &amp; ERP Fielding Support</span>
+				</div>
+				<a class="capInfoLink" href="Enterprise.aspx#systemIntegration">more info &#x00BB;</a>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	<div id="footer">
+		<span id="ctl00_Copyright" class="left">Copyright &#xA9; 2016 RDSI, All Rights Reserved</span>
+		<a class="right" style="padding-left: 18px; background: transparent url(Images/main/envelope_icon.gif) no-repeat scroll center left;" href="Contact.aspx">Contact Us</a>
+		
+	</div>
+	
+    </form>	
+	</div>
+</body>
+</html>

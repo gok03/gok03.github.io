@@ -1,0 +1,155 @@
+status: 200
+content-length: 5168
+content-location: http://www.scoprasoft.com
+accept-ranges: bytes
+server: Apache
+date: Wed, 21 Sep 2016 08:46:59 GMT
+content-type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" >
+<meta content="Scopra provides enterprise scale commercial software designed for application and network management of computing devices. Any computing device tethered to the network is a viable candidate for Scopra Monitoring and Management. Embedded systems, PDAs, RFID Readers, Thin Clients, and PC's. Scopra can be used as a stand-alone product for event " name="description">
+<meta NAME="revisit-after" CONTENT="1 days">
+
+ <meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+  <meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+  <title>Scopra Home</title>
+</head>
+<style type="text/css">
+<!--
+.m1{
+	text-align: left;
+	font-family:Tahoma;
+	font-size:24px;
+}
+.m2{
+	font-family: Verdana;
+	font-size: 16px;
+	font-style: normal;
+	font-stretch: extra-expanded;
+}
+.m3{
+	text-align: left;
+	font-family:Tahoma;
+	font-size:18px;
+}
+.m4{ text-align:center
+}
+</style>
+
+
+<body  class="m4" onLoad="startBanner()" onUnload="stopBanner()">
+<center>
+<table cellspacing="0" cellpadding="0" width="760">
+<tbody>
+<tr>
+<td>
+<table cellspacing="0" cellpadding="0" width="760">
+<tbody>
+<tr>
+<td><img height="176" src="img/header1.gif" width="760" /></td>
+</tr>
+<tr>
+<td><img height="43" src="img/m07.gif" width="140" /><a href="index.html"><img height="43" src="img/home.gif" width="97" border="0" /></a><a href="news.html"></a><a href="customers.html"><img height="43" src="img/customer.gif" width="98" border="0" /></a><a href="learn.html"><img height="43" src="img/learn.gif" width="98" border="0" /></a><a href="contact.html"><img height="43" src="img/contact.gif" width="98" border="0" /></a><img height="43" src="img/m07.gif" width="228" /></td>
+</tr>
+<tr>
+<td width="760"><hr /></td>
+</tr>
+<tr class="m1">
+<td align="center">Comprehensive Control Over Your Computing Devices</td>
+</tr>
+<tr>
+<td width="760"><hr /></td>
+</tr>
+<tr>
+<td>
+<table style="height: 366px;" width="713" cellpadding="10" cellspacing="10" cols="2">
+<tbody>
+<tr class="m2">
+<td width="400" height="344" valign="top" class="m2">Scopra provides enterprise scale commercial software designed for application and network management of computing devices. Any computing device tethered to the network is a viable candidate for Scopra Monitoring and Management. Embedded systems, PDAs, RFID Readers, Thin Clients, and PC's. Scopra can be used as a stand-alone product for event monitoring and software distribution in a network environment. Scopra can also be leveraged as a core engine that can provide monitoring and control over various key areas in a network distributed application. In this usage, Scopra provides a core engine that can be tailored to each distributed application.</td>
+<td valign="top"><img src="img/features2.jpg" height="324" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="m3">
+<td align="left">Partner With Scopra</td>
+</tr>
+<tr class="m2">
+<td align="left" valign="top">
+<p>Please <a href="contact.html">contact us</a> to see how we can help you and your application achieve success.</p>
+</td>
+</tr>
+<tr>
+<td><hr /></td>
+</tr>
+<tr>
+<td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0" id="Untitled" width="760" height="140"><param name="movie" value="Untitled.swf" /><param name="quality" value="high" /><param name="loop" value="true" /><embed src="Untitled.swf" loop="loop" quality="high" width="760" height="140" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" /> </object></td>
+</tr>
+<tr>
+<td align="center">
+<div><span>&copy;2012 Scopra Inc. All rights reserved.&nbsp;</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+</body>
+
+
+<script type="text/javascript" language="JavaScript">
+var speed = 100 
+var pause = 1000 
+var timerID = null
+var texttype = false
+var ar = new Array()
+
+ar[0] = "Welcome to Scopra, Inc"
+ar[1] = "Providing PC Administration Tools"
+ar[2] = "Alert and Event Monitoring, Imaging, Software Distribution, SSL, Secure File Transfers"
+
+var msgnow = 0
+var offset = 0
+
+function stopBanner() {
+        if (texttype)
+                clearTimeout(timerID)
+        texttype = false
+}
+
+function startBanner() {
+        stopBanner()
+        showBanner()
+}
+
+function showBanner() {
+        var text = ar[msgnow]
+
+        if (offset < text.length) {
+                if (text.charAt(offset) == " ")
+                        offset++                        
+
+                var partialMessage = text.substring(0, offset + 1) 
+                window.status = partialMessage
+                offset++ 
+                timerID = setTimeout("showBanner()", speed)
+                texttype = true
+        } else {
+                offset = 0
+                msgnow++
+                if (msgnow == ar.length)
+                        msgnow = 0
+
+                timerID = setTimeout("showBanner()", pause)
+                texttype = true
+        }
+}
+
+</script>

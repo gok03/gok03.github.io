@@ -1,0 +1,62 @@
+status: 200
+content-length: 2271
+content-location: http://venetica.com
+set-cookie: uid=venetica57de3e3d279c21.51692572;
+ expires=Tue, 18-Oct-2016 07:11:57 GMT, WEBUK=;
+ Expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/
+x-powered-by: PHP/5.3.10-1ubuntu3.24
+vary: Accept-Encoding
+x-adblock-key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANHZLSNGAhe0lWbSycFlY7t3c4tFHP+Epw8naGgm3CR8CftAihnB7Jkt+vFmvIf3BV/p3RpOrZ/XbZsX9uh0m9UCAwEAAQ==_wrlibltTiHtBXB/fdKxptVEp+gxZiQyv83x58j5ckg4YqwdEl7NZLTrxIbrPyZ7yyOOx8IqySIGR8AyA9Lt8ug==
+server: Apache/2.2.22 (Ubuntu)
+connection: close
+-content-encoding: gzip
+date: Sun, 18 Sep 2016 07:11:57 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+    <html data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANHZLSNGAhe0lWbSycFlY7t3c4tFHP+Epw8naGgm3CR8CftAihnB7Jkt+vFmvIf3BV/p3RpOrZ/XbZsX9uh0m9UCAwEAAQ==_wrlibltTiHtBXB/fdKxptVEp+gxZiQyv83x58j5ckg4YqwdEl7NZLTrxIbrPyZ7yyOOx8IqySIGR8AyA9Lt8ug==">
+
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>venetica.com</title>
+            <script type="text/javascript">;
+        if(self != top) top.location.href = 'http://'+location.hostname+'/?redir=frame&uid=venetica57de3e3d279c21.51692572';
+        </script>
+            <script type="text/javascript" src="http://return.uk.uniregistry.com/return_js.php?d=venetica.com&s=1474182717"></script>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        function GetParam(name) {
+            var match = new RegExp(name +
+                "=*([^&]+)*", "i").exec(location.search);
+            if (match == null)
+                match = new RegExp(name + "=(.+)", "i").exec(location.search);
+            if (match == null) return null;
+                match = match + "";
+            //**convert match to a string
+            result = match.split(",");
+            return decodeURIComponent(result[1]);
+        }
+
+        function logStatus(type) {
+            $.ajax({
+                cache: false,
+                global: false,
+                async: true,
+                type: "POST",
+                url: '/logpstatus.php',
+                data: {uid: GetParam('uid'), type: type}
+            });
+        }
+    </script>
+
+    </head>
+    <frameset cols="1,*,1" border=0>
+        <frame name="top" src="tg.php?uid=venetica57de3e3d279c21.51692572" scrolling=no frameborder=0 noresize framespacing=0 marginwidth=0 marginheight=0>
+        <frame src="search_caf.php?uid=venetica57de3e3d279c21.51692572&src=mountains&abp=1&country=ZZ" scrolling="auto" framespacing=0 marginwidth=0 marginheight=0 noresize>
+        <frame src="page.php?venetica57de3e3d279c21.51692572"></frame>
+    </frameset>
+    <noframes>
+        You found venetica.com, so will your customers. It's a great label for your website and will help you define your identity on the Web.    </noframes>
+</html>
+

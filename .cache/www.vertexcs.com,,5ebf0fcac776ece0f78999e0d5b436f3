@@ -1,0 +1,1312 @@
+status: 200
+content-length: 73609
+content-location: http://www.vertexcs.com
+x-aspnet-version: 4.0.30319
+set-cookie: ASP.NET_SessionId=fu2usdaow3uzppnu0xsjpan2; path=/; HttpOnly
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+-content-encoding: gzip
+cache-control: private
+date: Sun, 18 Sep 2016 09:11:51 GMT
+x-powered-by: ASP.NET
+content-type: text/html; charset=utf-8
+x-powered-by-plesk: PleskWin
+-varied-accept-encoding: gzip, deflate
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="description" content="Welcome to Vertexcs! We provide salesforce crm, sharepoint solutions and business analytics servcies to our customers to gain market differentiation and to our employees an environment to be thought leaders." />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="Keywords" content="Business Analatycs, SharePoint, Sales Force" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google-site-verification" content="qmO4K7lBiLRjCNu2d4trzXUtVU2IPkXtT7vpNSzqA9E" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/css_style01.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="css/css_style02.css" media="all" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/flexSlider.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!--<script>/*<![CDATA[*/(function (w, a, b, d, s) { w[a] = w[a] || {}; w[a][b] = w[a][b] || { q: [], track: function (r, e, t) { this.q.push({ r: r, e: e, t: t || +new Date }); } }; var e = d.createElement(s); var f = d.getElementsByTagName(s)[0]; e.async = 1; e.src = 'http://vertexcs.actonservice.com/cdnr/90/acton/bn/tracker/16072'; f.parentNode.insertBefore(e, f); })(window, 'ActOn', 'Beacon', document, 'script'); ActOn.Beacon.track();/*]]>*/</script>-->
+    <script type="text/javascript">
+        function linkClickFooter(sender) {
+            var clickLink;
+            if (sender.name == "aBLFirst")
+                clickLink = "first";
+            else if (sender.name == "aBLSecond")
+                clickLink = "second";
+            else if (sender.name == "aBLThird")
+                clickLink = "third";
+
+            InitializeRequest(clickLink);
+        }
+
+        function InitializeRequest(value) {
+            PageMethods.set_path('/subblog.aspx');
+            // call server side method
+            PageMethods.SetFooterSession(value);
+        }
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scroll-top').fadeIn('slow');
+            } else {
+                $('.scroll-top').fadeOut('slow');
+            }
+
+        });
+
+        $('.scroll-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+
+        $('.content-slider').parent('.container-slider').hover(function () {
+            $(this).find('.flex-direction-nav').animate({
+                opacity: '1'
+            }, 200);
+        },
+    function () {
+        $(this).find('.flex-direction-nav').animate({
+            opacity: '0'
+        }, 200);
+    });
+
+
+        //        var url = window.location.pathname;
+        //        var filename = url.substring(url.lastIndexOf('/') + 1);
+        //        if (filename) {
+        //            if (filename == 'index.aspx' || filename == 'case-studies.aspx' || filename == 'perspectives.aspx' || filename == 'search.aspx') {
+
+        //                $(document).ready(function () {
+        //                    $('#toggle-search').click(function (event) {
+        //                        event.stopPropagation();
+        //                        event.preventDefault();
+        //                        if ($(this).hasClass('search-open')) {
+        //                            $('.search-panel').slideDown(300);
+        //                            $(this).removeClass('search-open').addClass('search-close');
+        //                        } else if ($(this).hasClass('search-close')) {
+        //                            $('.search-panel').slideUp(300);
+        //                            $(this).removeClass('search-close').addClass('search-open');
+        //                        }
+
+        //                    });
+        //                });
+
+        //            }
+        //        }
+
+        function SaveSearch() {
+            var date = new Date();
+            date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
+            document.cookie = "vtxSearchCookie=" + $("#edit-search-block-form--2").val() + "; path=/";
+            var searchControl = "";
+            if (!searchControl) {
+                window.location.href = "Search.aspx";
+            }
+            else {
+                $("#" + searchControl).trigger("click");
+            }
+        }
+        //var emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        var emailPattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+        $(document).ready(function () {
+            $("#submit_btn").on('click', function (e) {
+                // Initialize the object, before adding data to it.
+                //  { } is declarative shorthand for new Object()
+
+                var valid = true;
+                $('#contact_form input').each(function () {
+                    var $this = $(this),
+                        inputName = $this.attr("name");
+                    if (inputName && !$this.val()) {
+                        valid = false;
+                        $(this).css("border", "2px solid red");
+                    }
+                    else {
+                        if (inputName) {
+                            $(this).css("border", "");
+                        }
+
+                    }
+
+                    if (inputName == "email" && $this.val() !== "") {
+                        if (!emailPattern.test($this.val())) {
+                            $(this).css("border", "2px solid red");
+                            valid = false;
+                        }
+                        else {
+                            $(this).css("border", "");
+                        }
+                    }
+                });
+                if ($("#message").val() == "") {
+                    $("#message").css("border", "2px solid red");
+                    valid = false;
+                }
+                else {
+                    $("#message").css("border", "");
+                }
+
+                if (!valid) {
+                    $("#h4EmailResult").hide();
+                    return false;
+                }
+
+
+                var email = {};
+                email.Name = $("#name").val();
+                email.Email = $("#email").val();
+                email.Comment = $("#message").val();
+                email.PageName = "Home";
+
+                //In order to proper pass a json string, you have to use function JSON.stringfy
+                var jsonData = JSON.stringify(email);
+
+                $.ajax({
+                    url: 'HttpHandlers/utils.ashx',
+                    type: 'POST',
+                    data: jsonData,
+                    success: function (data) {
+                        if (data == "Success") {
+                            $("#h4EmailResult").text('Email sent successfully');
+                            $("#h4EmailResult").show();
+                            $("#name").val("");
+                            $("#email").val("");
+                            $("#message").val("");
+                            $("#idContactform").click();
+
+                        }
+                        else {
+                            alert(data);
+                            $("#h4EmailResult").text('Email was not  sent.');
+                            $("#h4EmailResult").show();
+                            $("#name").val("");
+                            $("#email").val("");
+                            $("#message").val("");
+                            $("#idContactform").click();
+                        }
+                    },
+                    error: function (errorText) {
+                        $("#name").val("");
+                        $("#email").val("");
+                        $("#message").val("");
+                        $("#idContactform").click();
+                        $("#h4EmailResult").text('Email was not  sent.');
+                        $("#h4EmailResult").show();
+                    }
+                });
+                return false;
+
+
+            });
+            $("#idContactform").on("click", function () {
+                $("#name").css("border", "");
+                $("#email").css("border", "");
+                $("#message").css("border", "");
+                //$("#h4EmailResult").hide();
+
+            });
+        });
+		
+    </script>
+    
+  <script type="text/javascript" src="js/js_vertex01.js"></script>
+  <link href="imagescrolling.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="js/endless_scroll_min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+        function linkClick(sender) {
+            var clickLink;
+            if (sender.name == "aFeatureBlog" || sender.name == "aFeatureBlogReadMore")
+                clickLink = "feature";
+            else if (sender.name == "aFirstBlog" || sender.name == "aFirstBlogReadMore")
+                clickLink = "first";
+            else if (sender.name == "aSecondBlog" || sender.name == "aSecondBlogReadMore")
+                clickLink = "second";
+            InitializeRequest(clickLink);
+
+        }
+
+        function InitializeRequest(value) {
+            // call server side method
+            PageMethods.SetSession(value);
+        }
+    </script>
+  <script type="text/javascript" charset="utf-8">
+
+        (function ($, window) {
+            window.app = {};
+            app.uiSlide =
+            {
+                flexslider: function (elem, params) {
+                    if ($(elem).length > 0) {
+                        $(elem).flexslider(params);
+                    };
+                },
+                init: function () {
+                    var elem =
+                    [
+                        // Slider A
+                        {
+                            slide: '#flexslider-a',
+                            param: {
+                                controlsContainer: '.flex-container',
+                                directionNav: false,
+                            }
+                        },
+                        // Slider B
+                        {
+                            slide: '#flexslider-b',
+                            param: {
+                                animation: "slide",
+                                controlNav: false,
+                                animationLoop: true,
+                                directionNav: false,
+                                itemWidth: 80,
+                                minItems: 10,
+                                maxItems: 20,
+                            }
+                        }
+                        // Add Slide XYZ
+                        //...
+                        //...
+                    ];
+
+                    // 2 Init All
+                    for (var i = 0; i < elem.length; i++) {
+                        this.flexslider(elem[i].slide, elem[i].param)
+                    }
+
+                }
+            };
+
+            /* init all function() */
+            app.start =
+               function () {
+                   this.uiSlide.init()
+               };
+            $(document).ready(function () { app.start(); })
+
+        })(jQuery, window)
+		
+		
+		
+
+    </script>
+
+</head>
+<body>
+    <form method="post" action="./" id="contactsiteform">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTE2MzA1MzExOQ9kFgJmD2QWAgIDD2QWDgIDD2QWHgIDDxYEHgRocmVmBR8vd2hhdC1pcy1hLXNoYXJlcG9pbnQtZmFybS5hc3B4Hglpbm5lcmh0bWwFGldoYXQgaXMgYSBTaGFyZVBvaW50IEZhcm0/ZAIFDxYCHwEFoAZBIFNoYXJlUG9pbnQgZmFybSBpcyBhIGNvbGxlY3Rpb24gb2Ygb25lIG9yIG1vcmUgU2hhcmVQb2ludCBzZXJ2ZXJzIHdpdGggYSBTUUwgYmFja2VuZCB0aGF0IHdvcmsgaW4gY29uY2VydCB0byBwcm92aWRlIGNvbnRlbnQgYW5kIHNlcnZpY2VzIHRvIFNoYXJlUG9pbnQgdXNlcnMuIFRoZSBBcmNoaXRlY3R1cmUgb2YgYSBTaGFyZVBvaW50IEZhcm0gaXMgY29tcG9zZWQgb2YgYSBwaHlzaWNhbCBzdHJ1Y3R1cmUgYW5kIGEgbG9naWNhbCBzdHJ1Y3R1cmUuIFRoZSBwaHlzaWNhbCBzdHJ1Y3R1cmUgaXMgdGhlIG1ha2V1cCBvZiBhbGwgdGhlIHNlcnZlcnMgaW4gdGhlIGZhcm0gYW5kIHRoZSBwdXJwb3NlIG9mIHRob3NlIHNlcnZlcnMuIFRoZSBsb2dpY2FsIHN0cnVjdHVyZSBpcyB0aGUgbWFrZXVwIG9mIHRoZSB3ZWIgYXBwbGljYXRpb25zLCBzaXRlIGNvbGxlY3Rpb25zLCBzdWItc2l0ZXMsIHBhZ2VzLCBsaXN0cywgYW5kIGxpYnJhcmllcy4gSXQgYWxzbyBpbmNsdWRlcyB0aGUgc2VydmljZSBhcHBsaWNhdGlvbnMgc3VjaCBhcyBTZWFyY2gsIEV4Y2VsIFNlcnZpY2VzLCBNYW5hZ2VkIE1ldGFkYXRhLCBhbmQgVXNlciBQcm9maWxlIGFzIHdlbGwgYXMgdGhlIGRhdGFiYXNlcy4gVGhlIGZvdW5kYXRpb24gb2YgdGhlIFNoYXJlUG9pbnQgRmFybSBBcmNoaXRlY3R1cmUgc3RhcnRzIHdpdGggY3JlYXRpbmcgdGhlIEluZm9ybWF0aW9uIEFyY2hpdGVjdHVyZSwgd2hpY2ggZ2l2ZXMgaW5zaWdodHMgb24gd2hhdCBuZWVkcyB0byBiZSBpbmNsdWRlZCBpbiB0aGUgRmFybSBBcmNoaXRlY3R1cmUgZGVzaWduLmQCBw8WAh8ABR8vd2hhdC1pcy1hLXNoYXJlcG9pbnQtZmFybS5hc3B4ZAIJDxYEHwAFFC9yZXR1cm4tb24tZGF0YS5hc3B4HwEFDlJldHVybiBPbiBEYXRhZAILDxYCHwEFygFXaWtpcGVkaWEgcXVpdGUgYWNjdXJhdGVseSBkZWZpbmVzIGNvbW1lcmNlIGFzIGluY2x1c2l2ZSBvZiDigJxhIGNvbXBsZXggc3lzdGVtIG9mIGNvbXBhbmllcyB3aGljaCB0cnkgdG8gbWF4aW1pemUgdGhlaXIgcHJvZml0cyBieSBvZmZlcmluZyBwcm9kdWN0cyBhbmQgc2VydmljZXMgdG8gdGhlIG1hcmtldCAod2hpY2ggY29uc2lzdHMgYm90aCBvLi4uZAINDxYCHwAFFC9yZXR1cm4tb24tZGF0YS5hc3B4ZAIPDxYEHwAFNy90aGUtbWFnaWMtb2YtZHJpdmluZy1tb3JlLWJ1c2luZXNzLXNhbGVzZm9yY2UtY29tLmFzcHgfAQUyVGhlIE1hZ2ljIG9mIERyaXZpbmcgTW9yZSBCdXNpbmVzcz8gU2FsZXNmb3JjZS5jb21kAhEPFgIfAQXMAVNhbGVzZm9yY2UgaXMgaW5hcmd1YWJseSB0aGUgaW5kdXN0cnnigJlzIGxlYWRpbmcgQ1JNIOKAkyBDdXN0b21lciBSZWxhdGlvbnNoaXAgTWFuYWdlbWVudCBzb2x1dGlvbi4gQW5kLCBpZiBzdGF0ZW1lbnRzIHNlZW0gZXh0cmF2YWdhbnQsIHRoZXJlIGlzIGRhdGEgdG8gc3VwcG9ydCB0aGlzIGZhY3QuIFRoZXJlIGFyZSBvdmVyIDIwMCwwMDArIFNhbC4uLmQCEw8WAh8ABTcvdGhlLW1hZ2ljLW9mLWRyaXZpbmctbW9yZS1idXNpbmVzcy1zYWxlc2ZvcmNlLWNvbS5hc3B4ZAIVDxYEHwAFE2phdmFzY3JpcHQ6dm9pZCgwKTseB29uY2xpY2sFY1Nob3dQb3BVcCgnaHR0cDovL3d3dy52ZXJ0ZXhjcy5jb20vQ2FzZVN0dWRpZXMvVmVydGV4X0Nhc2UgU3R1ZHlfU3RyYXRlZ2ljX1Byb2plY3RNYW5hZ2VtZW50LnBkZicpOxYEAgEPFgIeA3NyYwU7L3RyYW5zZmVyL1ZlcnRleF9DYXNlLVN0dWR5X1N0cmF0ZWdpY19Qcm9qZWN0TWFuYWdlbWVudC5wbmdkAgMPFgIfAQUcU3RyYXRlZ2ljIFByb2plY3QgTWFuYWdlbWVudGQCFw8WBB8ABRNqYXZhc2NyaXB0OnZvaWQoMCk7HwIFclNob3dQb3BVcCgnaHR0cDovL3d3dy52ZXJ0ZXhjcy5jb20vQ2FzZVN0dWRpZXMvVmVydGV4X0Nhc2UgU3R1ZHlfT25lc3RvcF9SZWNvbmNpbGlhdGlvbl93aXRoUmV0YWlsZXJTeXN0ZW1zLnBkZicpOxYEAgEPFgIfAwVKL3RyYW5zZmVyL1ZlcnRleF9DYXNlLVN0dWR5X09uZXN0b3BfUmVjb25jaWxpYXRpb25fd2l0aFJldGFpbGVyU3lzdGVtcy5wbmdkAgMPFgIfAQVYT25lLXN0b3AgcmVjb25jaWxpYXRpb24gZm9yIHByb2R1Y3QsIHByaWNpbmcgJmFtcDsgcHJvbW90aW9ucyBkYXRhIHdpdGggcmV0YWlsZXIgc3lzdGVtc2QCGQ8WBB8ABRNqYXZhc2NyaXB0OnZvaWQoMCk7HwIFc1Nob3dQb3BVcCgnaHR0cDovL3d3dy52ZXJ0ZXhjcy5jb20vQ2FzZVN0dWRpZXMvVmVydGV4X0Nhc2UgU3R1ZHlfTWFpbnRlbmFuY2VUcmFja2luZ19mb3JfSW5kdXN0cmlhbE1hY2hpbmVyeS5wZGYnKTsWBAIBDxYCHwMFSy90cmFuc2Zlci9WZXJ0ZXhfQ2FzZS1TdHVkeV9NYWludGVuYW5jZVRyYWNraW5nX2Zvcl9JbmR1c3RyaWFsTWFjaGluZXJ5LnBuZ2QCAw8WAh8BBS1NYWludGVuYW5jZSBUcmFja2luZyBmb3IgSW5kdXN0cmlhbCBNYWNoaW5lcnlkAhsPFgQfAAUTamF2YXNjcmlwdDp2b2lkKDApOx8CBTJTaG93UG9wVXAoJ1BlcnNwZWN0aXZlcy9Vbmtub3duc190b19rbm93bnMucGRmICcpOxYEAgEPFgIfAwUgL3RyYW5zZmVyL3Vua25vd25zX3RvX2tub3ducy5qcGdkAgMPFgIfAQUeQ29udmVydCB0aGUgVW5rbm93bnMgdG8gS25vd25zZAIdDxYEHwAFE2phdmFzY3JpcHQ6dm9pZCgwKTsfAgUgU2hvd1BvcFVwKCdSZXR1cm5fb25fRGF0YS5wZGYnKTsWBAIBDxYCHwMFHi90cmFuc2Zlci9yZXR1cm5vbkRhdGFkNzRmLmpwZ2QCAw8WAh8BBSpSZXR1cm4gb24gRGF0YSAtIE5vdCBhIEZhciBGZXRjaGVkIENvbmNlcHRkAh8PFgQfAAUTamF2YXNjcmlwdDp2b2lkKDApOx8CBUJTaG93UG9wVXAoJ1BlcnNwZWN0aXZlcy9IYWRvb3BfUGxhdGZvcm1fIFJldmlld19XaGl0ZSBwYXBlci5wZGYnKTsWBAIBDxYCHwMFHS90cmFuc2Zlci9oYWRvb3BfcGxhdGZvcm0uanBnZAIDDxYCHwEFKlJldmlldyBvZiBIYWRvb3AgUGxhdGZvcm1zICYgRGlzdHJpYnV0aW9uc2QCBQ8WBB8ABRQvcmV0dXJuLW9uLWRhdGEuYXNweB8BBQ5SZXR1cm4gT24gRGF0YWQCBw8WAh8BBRFOb3ZlbWJlciAwNiwgMjAxNWQCCQ8WBB8ABTcvdGhlLW1hZ2ljLW9mLWRyaXZpbmctbW9yZS1idXNpbmVzcy1zYWxlc2ZvcmNlLWNvbS5hc3B4HwEFMlRoZSBNYWdpYyBvZiBEcml2aW5nIE1vcmUgQnVzaW5lc3M/IFNhbGVzZm9yY2UuY29tZAILDxYCHwEFEU5vdmVtYmVyIDA2LCAyMDE1ZAINDxYEHwAFJy9pb3QtaXMtaW4tbXktYmVkcm9vbS13aGF0LWlzLW5leHQuYXNweB8BBSNJb1QgaXMgaW4gbXkgYmVkcm9vbSEgV2hhdCBpcyBuZXh0P2QCDw8WAh8BBRFOb3ZlbWJlciAwNiwgMjAxNWRkPxhnNVt4C9TPx25LIxEZ3KIknjg=" />
+
+
+<script src="/ScriptResource.axd?d=xPrTDGEOSO25X-eSE7rWSrOabgU4R8Hv3dLQ6_1B06j6LgNr5pUxYOG2_W--3fPTip4ix7U1i-C2SrnLYtzWrdDXRZmOM-hvXg2KtRasZcQ3dNENbRXP8y6wYanHI2Dfh6LPw3RI_NvRYfpTzx4m0o9Q7jc1&amp;t=ffffffffeea0dba9" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+SetSession:function(value,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'SetSession',false,{value:value},succeededCallback,failedCallback,userContext); },
+SetFooterSession:function(value,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'SetFooterSession',false,{value:value},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("index.aspx");
+PageMethods.SetSession= function(value,onSuccess,onFailed,userContext) {PageMethods._staticInstance.SetSession(value,onSuccess,onFailed,userContext); }
+PageMethods.SetFooterSession= function(value,onSuccess,onFailed,userContext) {PageMethods._staticInstance.SetFooterSession(value,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+    
+    <header id="header" style="position: fixed;">
+        <!-- Place in the <head>, after the three links -->
+        <div class="container-center">
+            <div class="logo">
+                <a href="index.aspx">
+                    <img src="images/logo.png" alt="Vertex Computer Systems, Inc"></a>
+            </div>
+            <div class="search-container">
+                <a id="toggle-search" class="search-button search-open" href="#"><i class="fa fa-search">
+                </i></a>
+                <div class="search-panel cf">
+                    
+                    <div>
+                        <div class="container-inline">
+                            <h2 class="element-invisible">
+                                Search form</h2>
+                            <div class="form-item form-type-textfield form-item-search-block-form">
+                                <label class="element-invisible" for="edit-search-block-form--2">
+                                    Search
+                                </label>
+                                <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2"
+                                    name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+                            </div>
+                            <div class="form-actions form-wrapper" id="edit-actions" style="padding-left: 15px;">
+                                <input class="button medium-btn form-submit" type="button" id="edit-submit" name="op"
+                                    value="Search" onclick="SaveSearch();" />
+                            </div>
+                            <input type="hidden" name="form_build_id" value="form-XMIR7yzU_XRFXeiaHTycwN-SSqIMNWyIE8_oFSA6vGY" />
+                            <input type="hidden" name="form_id" value="search_block_form" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- end search-panel -->
+            </div>
+            <!-- search-container -->
+            <nav id="main-navigation" class="navigation cf">
+                <div class="region region-main-menu">
+                    <div id="block-superfish-1" class="block block-superfish">
+                        <div class="content">
+                            <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal ">
+                                <li class="first odd sf-item-1 sf-depth-1 sf-total-children-3 sf-parent-children-3 sf-single-children-0 menuparent">
+                                    <a href="#" class="noclick sf-depth-1 menuparent">Services</a>
+                                    <ul>
+                                        <li id="menu-1052-1"><a href="business-analytics.aspx">Business Analytics</a></li>
+                                        <li id="menu-1053-1"><a href="salesforce.aspx">Salesforce</a> </li>
+                                        <li id="menu-1054-1" class="last odd "><a href="custom-applications.aspx">Custom Development</a>
+                                        </li>
+                                        <li id="menu-1055-1" class="last odd "><a href="sharepoint.aspx">SharePoint</a>
+                                        </li>
+                                        <li id="menu-1056-1" class="last odd "><a href="consulting.aspx">IT Consulting</a>
+                                        </li>
+                                        <li id="menu-1057-1" class="last odd "><a href="managed-services.aspx">Managed Services</a>
+                                        </li>
+                                        <li id="menu-1058-1" class="last odd "><a href="it-talent-staffing.aspx">IT Talent &
+                                            Staffing</a> </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-682-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent">
+                                    <a href="#" class="noclick sf-depth-1 menuparent">Solutions</a>
+                                    <ul>
+                                        <li id="menu-1541-1" class="first odd sf-item-1 sf-depth-2 "><a href="bsure.aspx"
+                                            class="sf-depth-2">
+                                            <div style="text-transform: none; float: left">
+                                                b</div>
+                                            <div style="font-style: italic; float: left; text-transform: none">
+                                                Sure</div>
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-756-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="industries.aspx"
+                                    title="" class="sf-depth-1">Industries</a></li>
+                                <li id="menu-1070-1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent">
+                                    <a href="#" class="noclick sf-depth-1 menuparent">Resources</a>
+                                    <ul>
+                                        <li class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="case-studies.aspx"
+                                            class="sf-depth-2">Case Studies</a></li>
+                                        <li id="menu-1069-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="perspectives.aspx"
+                                            class="sf-depth-2">Perspectives</a></li>
+                                        <li id="menu-1068-1" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="blogs.aspx"
+                                            class="sf-depth-2">Blog</a></li>
+                                    </ul>
+                                </li>
+                                <li id="Li1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent">
+                                    <a href="#" class="noclick sf-depth-1 menuparent">Careers</a>
+                                    <ul>
+                                        <li id="menu-1067-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="work-life-vertex.aspx"
+                                            class="sf-depth-2">Work Life at Vertex</a></li>
+                                        <li id="Li2" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="current-openings-us.aspx"
+                                            class="sf-depth-2">Career Opportunities in US</a></li>
+                                        <li id="Li3" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://careers.vertexcs.com/"
+                                            target="_blank" class="sf-depth-2">Career Opportunities in India</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.aspx" title="" class="sf-depth-1">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="pull-right lowerMenu">
+                <a href="about-vertex.aspx">About Us</a> | <a href="whats-new.aspx">News</a> | <a
+                    href="events.aspx">Events</a></div>
+        </div>
+        <!-- end container-center -->
+    </header>
+    <div class="resphdr">
+        
+
+<script>/*<![CDATA[*/(function(w,a,b,d,s){w[a]=w[a]||{};w[a][b]=w[a][b]||{q:[],track:function(r,e,t){this.q.push({r:r,e:e,t:t||+new Date});}};var e=d.createElement(s);var f=d.getElementsByTagName(s)[0];e.async=1;e.src='//marketing.vertexcs.com/cdnr/90/acton/bn/tracker/16072';f.parentNode.insertBefore(e,f);})(window,'ActOn','Beacon',document,'script');ActOn.Beacon.track();/*]]>*/</script>
+  <div id="flexslider-a" class="flexslider" align="center">
+    <ul id="ContentPlaceHolder1_imageSliderList" class="slides">
+    <li><a href="/business-analytics.aspx"><img src="/transfer/BA-Banner.jpg" alt="BA-Banner.jpg"></img></a></li><li><a href="/salesforce.aspx"><img src="/transfer/banner_salesforce.jpg" alt="banner_salesforce.jpg"></img></a></li><li><a href="/bsure.aspx"><img src="/transfer/banner_bsure.jpg" alt="banner_bsure.jpg"></img></a></li><li><a href="/sharepoint.aspx"><img src="/transfer/Sharepoint.jpg" alt="Sharepoint.jpg"></img></a></li><li><a href="perspectives.aspx"><img src="/transfer/Perspective.jpg" alt="Perspective.jpg"></img></a></li><li><a href="/award.aspx"><img src="/transfer/award.jpg" alt="award.jpg"></img></a></li></ul>
+  </div>
+  <section class="content">
+    <div class="container-center">
+      <div class="region region-featured">
+        <div id="block-block-3" class="block block-block">
+          <div class="content">
+            <div class="col-row">
+              <div class="one-third">
+                <h3>Perspectives</h3>
+                <div class="field-content"> <img src="images/squarethumbs/returnonData.jpg" style="height:150px" alt=""> </div>
+                <h4><strong>Return on Data - Not a Far Fetched Concept</strong></h4>
+                <p style="color:#000000"> Read this perspective to know how you can be prepared for the Transformative era of Data Driven Organizations. </p>
+                <br>
+                <br>
+                <br>
+                <a href="Return_on_Data.pdf" target="_blank" class="button small-btn">read more</a> 
+                <!--<div id="popup"><a class="lead_form button medium-btn"  data-lightbox-type="inline"  href="#user_form" data-url="http://www.vertexcs.com/sites/default/files/Return_on_Data.pdf">Read More</a></div>--> 
+              </div>
+              <!-- end -->
+              
+              <div class="one-third">
+                <h3>What's New?</h3>
+                <div class="field-content"> <img src="images/squarethumbs/cio_certificate.jpg" style="height:150px;" alt=""> </div>
+                <h4><strong>CIO Review Recognizes Vertex</strong> </h4>
+                <p style="color:#000000"> CIO Review, one of the most widely followed technology magazines in the United States, has recognized Vertex as one among the TOP 20 MOST PROMISING SALESFORCE SOLUTION PROVIDERS </p>
+                <br>
+                <br>
+                <a href="vertex-in-top-20-most-promising-salesforce-solution-providers.asxp" class="button small-btn">read more</a> </div>
+              <!-- end -->
+              <div class="one-third">
+                <h3>Events</h3>
+                <div class="field-content"> <img src="images/squarethumbs/speak_icon.jpg" style="height:150px" alt=""> </div>
+                <h4><strong>Ganesh Iyer, President</strong> </h4>
+                <p style="color:#000000"> On winning the OHTec "Best IT Services Company" in North East Ohio award, Brad Nellis, the Director of OHTec conducted a wide ranging interview with Ganesh Iyer, President of Vertex, about Vertex, his view of the technology landscape such as Big Data, Analytics, Cloud Computing <br>
+                </p>
+                <a href="events.aspx" class="button small-btn">read more</a> </div>
+              <!-- end --> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end container-center --> 
+  </section>
+  <!-- end content -->
+  
+  <section class="content cf section-bg-3"  >
+    <div class="container-center">
+      <div class="section-title align-center"><br />
+        <h1 style="color: #133d8c; text-transform:uppercase;" class="heading-medium">Blog Corner</h1>
+      </div>
+      <div class="col-row">
+        <div class="one-half animated" data-animation="fadeInLeft">
+          <div class="view view-clone-of-industries view-id-clone_of_industries view-display-id-block_1 col-row ">
+            <div class="view-content"> 
+              <!-- featured post starts-->
+              <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+                <div class="views-field views-field-nothing"> <span class="field-content">
+                  <div class="one-half animated" data-animation="fadeInLeft">
+                    <h3><a href="/what-is-a-sharepoint-farm.aspx" id="ContentPlaceHolder1_aFeatureBlog" name="aFeatureBlog" onclick="linkClick(this);">What is a SharePoint Farm?</a></h3>
+                    <p id="ContentPlaceHolder1_pFeatureBlog" style="color:#000;">A SharePoint farm is a collection of one or more SharePoint servers with a SQL backend that work in concert to provide content and services to SharePoint users. The Architecture of a SharePoint Farm is composed of a physical structure and a logical structure. The physical structure is the makeup of all the servers in the farm and the purpose of those servers. The logical structure is the makeup of the web applications, site collections, sub-sites, pages, lists, and libraries. It also includes the service applications such as Search, Excel Services, Managed Metadata, and User Profile as well as the databases. The foundation of the SharePoint Farm Architecture starts with creating the Information Architecture, which gives insights on what needs to be included in the Farm Architecture design.</p>
+                  </div>
+                  </span> </div>
+                <!-- featured post ends-->
+                <div class="views-field views-field-view-node"> <span class="field-content"> <a href="/what-is-a-sharepoint-farm.aspx" id="ContentPlaceHolder1_aFeatureBlogReadMore" name="aFeatureBlogReadMore" onclick="linkClick(this);">Read More</a></span> </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <a href="blogs.aspx" class="button small-btn">View more blogs</a> </div>
+        <!-- end one-half -->
+        <div class="one-half animated " data-animation="fadeInRight">
+          <h3>Recent Posts</h3>
+          <div class="view view-display-id-block_2 col-row">
+            <div class="view-content"> 
+              <!--first post ends-->
+              <div class="views-row views-row-2 views-row-even views-row-last">
+                <div>
+                  <h4 class="feature-box-title h4"><a href="/return-on-data.aspx" id="ContentPlaceHolder1_aFirstBlog" name="aFirstBlog" onclick="linkClick(this);">Return On Data</a></h4>
+                </div>
+                <div class="views-field views-field-body">
+                  <div class="field-content">
+                    <div class="field-content">
+                      <p id="ContentPlaceHolder1_pFirstBlog" style="color:#000;">Wikipedia quite accurately defines commerce as inclusive of “a complex system of companies which try to maximize their profits by offering products and services to the market (which consists both o...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="views-field views-field-nid" style="padding-bottom:10px"> 
+                <span class="field-content"><a href="/return-on-data.aspx" id="ContentPlaceHolder1_aFirstBlogReadMore" class="" name="aFirstBlogReadMore" onclick="linkClick(this);">Read More</a></span> </div>
+              </div>
+              <!--first post ends--> 
+              <!--second post starts-->
+              <div class="views-row views-row-1 views-row-odd views-row-first">
+                <div>
+                  <h4 class="feature-box-title h4"><a href="/the-magic-of-driving-more-business-salesforce-com.aspx" id="ContentPlaceHolder1_aSecondBlog" name="aSecondBlog" onclick="linkClick(this);">The Magic of Driving More Business? Salesforce.com</a></h4>
+                </div>
+                <div class="views-field views-field-body">
+                  <div class="field-content">
+                    <p id="ContentPlaceHolder1_pSecondBlog" style="color:#000;">Salesforce is inarguably the industry’s leading CRM – Customer Relationship Management solution. And, if statements seem extravagant, there is data to support this fact. There are over 200,000+ Sal...</p>
+                  </div>
+                </div>
+                <div class="views-field views-field-nid" style="padding-bottom:10px"> <span class="field-content"> <a href="/the-magic-of-driving-more-business-salesforce-com.aspx" id="ContentPlaceHolder1_aSecondBlogReadMore" class="" name="aSecondBlogReadMore" onclick="linkClick(this);">Read More</a></span> </div>
+              </div>
+              <br>
+              <!--second post ends--> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end col-row --></div>
+  </section>
+  <!-- end --><br />
+  <div class="separator-1"></div>
+  <section class="content">
+    <div class="container-center">
+      <div class="col-row" style="margin-bottom: -20px;"> 
+        <!--left column with text -->
+        <div class="one-fourth">
+          <div class="section-title align-left">
+            <h1 style="color: #133d8c; text-transform:uppercase;" class="heading-medium">Recent Projects</h1>
+            <h3 class="sub-heading">Check out our latest success stories</h3>
+            <span style="color:#000000">Our solutions address diverse business challenges. We add new dimension to core processes, 
+            optimize them and improve overall efficiency</span><br />
+            <br />
+            <a href="case-studies.aspx" class="button small-btn">View more</a> </div>
+        </div>
+        <div class="one-fourth">
+          <div class="p-item"> <a href="javascript:void(0);" id="ContentPlaceHolder1_aCSFirst" onclick="ShowPopUp(&#39;http://www.vertexcs.com/CaseStudies/Vertex_Case Study_Strategic_ProjectManagement.pdf&#39;);">
+            <figure>
+              <div class="overlay-container">
+                <div class="field-content"> <img src="/transfer/Vertex_Case-Study_Strategic_ProjectManagement.png" id="ContentPlaceHolder1_imgCSFirst" /> </div>
+                <div class="overlay"> 
+                  <!--<div class="overlay-buttons"> use this class in the div below to get overlay options-->
+                  <div> </div>
+                  <!-- end overlay-buttons -->
+                  <div class="overlay-bg"></div>
+                  <!-- end overlay-bg --> 
+                </div>
+                <!-- end overlay --> 
+              </div>
+              <!-- end overlay-container -->
+              <figcaption style="height: 40px;">
+                <h5 id="ContentPlaceHolder1_h5CSFirst">Strategic Project Management</h5>
+                <span>
+                <div class="field-content"></div>
+                </span></figcaption>
+            </figure>
+            </a> </div>
+        </div>
+        <div class="one-fourth">
+          <div class="section-title align-left">
+            <div class="p-item"> <a href="javascript:void(0);" id="ContentPlaceHolder1_aCSSecond" onclick="ShowPopUp(&#39;http://www.vertexcs.com/CaseStudies/Vertex_Case Study_Onestop_Reconciliation_withRetailerSystems.pdf&#39;);">
+              <figure>
+                <div class="overlay-container">
+                  <div class="field-content"> <img src="/transfer/Vertex_Case-Study_Onestop_Reconciliation_withRetailerSystems.png" id="ContentPlaceHolder1_imgCSSecond" /> </div>
+                  <div class="overlay">
+                    <div class="overlay-bg"></div>
+                  </div>
+                </div>
+                <!-- end overlay-container -->
+                <figcaption style="height: 40px;">
+                  <h5 id="ContentPlaceHolder1_h5CSSecond">One-stop reconciliation for product, pricing &amp; promotions data with retailer systems</h5>
+                  <span>
+                  <div class="field-content"></div>
+                  </span></figcaption>
+              </figure>
+              </a> </div>
+          </div>
+        </div>
+        <div class="one-fourth">
+          <div class="section-title align-left">
+            <div class="p-item"> <a href="javascript:void(0);" id="ContentPlaceHolder1_aCSThird" onclick="ShowPopUp(&#39;http://www.vertexcs.com/CaseStudies/Vertex_Case Study_MaintenanceTracking_for_IndustrialMachinery.pdf&#39;);">
+              <figure>
+                <div class="overlay-container">
+                  <div class="field-content"> <img src="/transfer/Vertex_Case-Study_MaintenanceTracking_for_IndustrialMachinery.png" id="ContentPlaceHolder1_imgCSThird" height="300" /></div>
+                  <div class="overlay"> 
+                    <!--<div class="overlay-buttons"> use this class in the div below to get overlay options-->
+                    <div> </div>
+                    <!-- end overlay-buttons -->
+                    <div class="overlay-bg"></div>
+                    <!-- end overlay-bg --> 
+                  </div>
+                  <!-- end overlay --> 
+                </div>
+                <!-- end overlay-container -->
+                <figcaption style="height: 40px;">
+                  <h5 id="ContentPlaceHolder1_h5CSThird">Maintenance Tracking for Industrial Machinery</h5>
+                  <span>
+                  <div class="field-content"></div>
+                  </span></figcaption>
+              </figure>
+              </a> </div>
+          </div>
+        </div>
+        <!--left column with text ends--> 
+      </div>
+    </div>
+  </section>
+  <section class="content light-section perspective-bg-1">
+    <div class="container-center">
+      <div class="col-row">
+        <div class="one-fourth" style="padding-top:8px;">
+          <h1 style="color: #133d8c; text-transform:uppercase;" class="heading-medium">PERSPECTIVES</h1>
+          <p style="color:#333;">Vertex's 'Perspectives' are a reflection of our latest thoughts and opinions about the newest trends in information technology </p>
+          <a class="button small-btn" data-lightbox-type="inline" href="perspectives.aspx" >View More</a> </div>
+        <!-- end -->
+        <div class="one-fourth">
+          <div class="perspctiveimg">
+            <div class="tag"></div>
+            <p><a href="javascript:void(0);" id="ContentPlaceHolder1_aPFirst" onclick="ShowPopUp(&#39;Perspectives/Unknowns_to_knowns.pdf &#39;);"> <img src="/transfer/unknowns_to_knowns.jpg" id="ContentPlaceHolder1_imgPFirst" style="width:205px; padding-top:50px;" />
+              <center>
+                <figcaption id="ContentPlaceHolder1_h5Per1" style="height:40px; width:180px; padding:6px 0 0 15px; font-size:13px">Convert the Unknowns to Knowns</figcaption>
+              </center>
+              </a> </p>
+          </div>
+        </div>
+        <!-- end -->
+        <div class="one-fourth">
+          <div class="perspctiveimg">
+            <div class="tag"></div>
+            <p><a href="javascript:void(0);" id="ContentPlaceHolder1_aPSecond" onclick="ShowPopUp(&#39;Return_on_Data.pdf&#39;);"> <img src="/transfer/returnonDatad74f.jpg" id="ContentPlaceHolder1_imgPSecond" style="width:205px; padding-top:50px;" />
+              <center>
+                <figcaption id="ContentPlaceHolder1_h5Per2" style="height:40px; width:180px; padding:6px 0 0 15px; font-size:13px">Return on Data - Not a Far Fetched Concept</figcaption>
+              </center>
+              </a> </p>
+          </div>
+        </div>
+        <!-- end -->
+        <div class="one-fourth">
+          <div class="perspctiveimg">
+            <div class="tag"></div>
+            <p><a href="javascript:void(0);" id="ContentPlaceHolder1_aPThird" onclick="ShowPopUp(&#39;Perspectives/Hadoop_Platform_ Review_White paper.pdf&#39;);"> <img src="/transfer/hadoop_platform.jpg" id="ContentPlaceHolder1_imgPThird" style="width:205px; padding-top:50px;" />
+              <center>
+                <figcaption id="ContentPlaceHolder1_h5Per3" style="height:40px; width:180px;padding:6px 0 0 15px; font-size:13px">Review of Hadoop Platforms & Distributions</figcaption>
+              </center>
+              </a> </p>
+          </div>
+        </div>
+        <!-- end --> 
+      </div>
+      <br />
+      
+      <!-- end container-center --> 
+    </div>
+  </section>
+  <!-- end content -->
+  <section class="content">
+    <div class="container-center">
+      <div class="region region-postscript-first">
+        <div id="block-block-29" class="block block-block">
+          <div class="content">
+            <div class="section-title align-center">
+              <h2>What Have Others Said</h2>
+              <h3 class="sub-heading">Few Words From Our Satisfied Customers</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-row">
+        <div class="one-half animated" data-animation="fadeInLeft">
+          <div class="region region-postscript-second">
+            <div id="block-block-27" class="block block-block">
+              <div class="content">
+                <div class="testimony boxshadow cf">
+                  <div class="testimony-inner"> <img class="portrait" src="images/comments.png" alt="image description" />
+                    <blockquote class="testimony-text" style="color:#000000"> "It is rare to have such dedication and sense of partnership from a vendor. On behalf of our teams, 
+                      I wanted to express our gratitude and recognition/appreciation of all  of your help. </blockquote>
+                    <div class="testimony-author">
+                      <h4>Leading e-learning provider</h4>
+                      <!--<span>Temptation</span> --> 
+                    </div>
+                    <!-- end testimony-author --> 
+                  </div>
+                  <!-- end testimony --> 
+                </div>
+                <!-- end testimonial --> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="one-half animated" data-animation="fadeInRight">
+          <div class="region region-postscript-third">
+            <div id="block-block-28" class="block block-block">
+              <div class="content">
+                <div class="testimony boxshadow cf">
+                  <div class="testimony-inner"> <img class="portrait" src="images/comments.png" alt="image description" />
+                    <blockquote class="testimony-text" style="color:#000000">"The database looks great, the functionality is superb and the reports are exceptional…the overall system is outstanding. </blockquote>
+                    <div class="testimony-author">
+                      <h4>Fortune 50 CPG Company</h4>
+                      <!-- <span>Motivation, CEO</span> --> 
+                    </div>
+                    <!-- end testimony-author --> 
+                  </div>
+                  <!-- end testimony --> 
+                </div>
+                <!-- end testimonial --> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end col-row --> 
+    </div>
+    <!-- end container-center --> 
+  </section>
+  <!-- end content -->
+  <div class="container-center">
+    <div class="separator-1"></div>
+    <div class="container-center">
+      <div class="section-title align-center">
+        <h2>Our Top Customers</h2>
+        <!-- <h3 class="sub-heading">Some of Our Top Customers</h3> --> 
+      </div>
+     
+     <!-- logo slider-->
+     
+     <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden;">
+            <div style="display: none;">
+               <img src="images/customer_logo/1 Logo V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/5%20Logo%20V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/6%20Logo%20V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/7-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/8-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                <img src="images/customer_logo/9-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/10-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/11-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/12-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                <img src="images/customer_logo/13-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/14-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/15-Logo-V2.png" width="80" height="80" /> 
+            </div>
+            <div style="display: none;">
+               <img src="images/customer_logo/16-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/17-Logo-V2.png" width="80" height="80" /> 
+            </div>
+            <div style="display: none;">
+                <img src="images/customer_logo/18-Logo-V2.png" width="80" height="80" /> 
+            </div>
+            <div style="display: none;">
+               <img src="images/customer_logo/19-Logo-V2.png" width="80" height="80" /> 
+            </div>
+            <div style="display: none;">
+                <img src="images/customer_logo/20-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/21-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/22-Logo-V2.png" width="80" height="80" /> 
+            </div>
+            <div style="display: none;">
+                <img src="images/customer_logo/23-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/24-Logo-V2.png" width="80" height="80" />
+            </div>
+          <div style="display: none;">
+               <img src="images/customer_logo/25-Logo-V2.png" width="80" height="80" /> 
+            </div>
+            <div style="display: none;">
+                 <img src="images/customer_logo/26-Logo-V2.png" width="80" height="80" />
+            </div>
+            <div style="display: none;">
+                  <img src="images/customer_logo/27-Logo-V2.png" width="80" height="80" />
+            </div>
+        
+        </div>
+    </div>
+     
+     
+     
+     
+     
+     
+     <!-- logo slider -->
+     
+     
+     
+     
+     
+     </div>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+  
+  <!-- contact form end -->
+  <div id="popup_box" style="z-index: 1200; height: 700px; width: 855px">
+    <div>
+      <div>
+        <iframe id="frmActOnURL" src="" height="620px" width="855px"> </iframe>
+      </div>
+    </div>
+  </div>
+  <script>
+        $(document).ready(function () {
+            $("#popup_box").dialog({ autoOpen: false, modal: true, width: 855,
+                open: function () {
+                    jQuery('.ui-widget-overlay').bind('click', function () {
+                        jQuery('#popup_box').dialog('close');
+                    })
+                }
+            });
+        });
+
+        function ShowPopUp(url) {
+            $('#frmActOnURL').attr('src', url)
+            $("#popup_box").dialog("open");
+        }
+
+    </script> 
+    
+     <script type="text/javascript" src="js/jssor.slider-21.1.5.mini.js"></script>
+  
+   <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $Idle: 0,
+              $AutoPlaySteps: 4,
+              $SlideDuration: 1600,
+              $SlideEasing: $Jease$.$Linear,
+              $PauseOnHover: 4,
+              $SlideWidth: 140,
+              $Cols: 7
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 809);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+    
+    
+    
+    
+    
+
+    </div>
+    <section class="twitter-holder section-bg-1">
+        <div class="region region-after-bottom">
+            <div class="content">
+                <div class="container-center">
+                    <h2>
+                        FOLLOW US ON SOCIAL MEDIA!</h2>
+                    <div class="twitter-feed">
+                        <p>
+                            Engage with us on Social Media to know more about technology trends, evolving industry
+                            trends and changing business dynamics</p>
+                        <a href="https://twitter.com/VertexCS_News" class="twitter-icon" target="_blank"><i
+                            class="fa fa-twitter"></i></a>
+                        <!-- end twitter-icon -->
+                        <a href="https://www.linkedin.com/company/vertex-computer-systems?trk=top_nav_home"
+                            class="twitter-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <!-- end linkedin-icon -->
+                        <a href="https://www.facebook.com/pages/Vertex-CS/696122337146637" class="twitter-icon"
+                            target="_blank"><i class="fa fa-facebook"></i></a>
+                        <!-- end facebook-icon -->
+                        <a href="http://www.slideshare.net/MarketingCommunicati2 " class="twitter-icon" target="_blank">
+                            <i class="fa fa-slideshare"></i></a>
+                        <!-- end twitter-icon -->
+                        <!-- <a href="#" class="twitter-icon" target="_blank"><i class="fa fa-youtube"></i></a>-->
+                        <!-- end youtube-icon -->
+                    </div>
+                </div>
+                <!-- container-center -->
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="content">
+        <div class="footer-main container-center">
+            <div class="col-row">
+                <div class="one-fourth cf">
+                    <div class="region region-f2">
+                        <div id="block-block-5" class="block block-block">
+                            <h2 class="block-title">
+                                Contact Details</h2>
+                            <div class="content">
+                                <p>
+                                    Corporate HQ</p>
+                                <p>
+                                    2245 Enterprise Parkway East<br />
+                                    Twinsburg, OH 44087
+                                </p>
+                                <p>
+                                    Tel: (330) 963-0044<br />
+                                    Fax: (330) 963-3566
+                                </p>
+                                <p>
+                                    General/ Business Enquiries:<a href="mailto:info@vertexcs.com">info@vertexcs.com
+                                    </a>
+                                </p>
+                                <p>
+                                    Career Opportunities: <a href="mailto:careers@vertexcs.com">careers@vertexcs.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end  -->
+                <div class="one-fourth">
+                    <div class="region region-f3">
+                        <div id="block-views-latest-blog-posts-block" class="block block-views">
+                            <h2 class="block-title">
+                                Latest Blog Posts</h2>
+                            <div class="content">
+                                <div class="view view-latest-blog-posts view-id-latest_blog_posts view-display-id-block view-dom-id-c6376543164295ee4c04a834e375777e">
+                                    <div class="view-content">
+                                        <ul class="latest-blog-posts">
+                                            <div>
+                                                <li class="cf">
+                                                    <div class="blog-icon">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </div>
+                                                    <div class="post-details">
+                                                        <h5>
+                                                            <a href="/return-on-data.aspx" id="aBLFirst" name="aBLFirst" onclick="linkClickFooter(this);">Return On Data</a>
+                                                        </h5>
+                                                        <span id="sBLFirst" class="post-date">November 06, 2015</span>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <li class="cf">
+                                                    <div class="blog-icon">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </div>
+                                                    <div class="post-details">
+                                                        <h5>
+                                                            <a href="/the-magic-of-driving-more-business-salesforce-com.aspx" id="aBLSecond" name="aBLSecond" onclick="linkClickFooter(this);">The Magic of Driving More Business? Salesforce.com</a>
+                                                        </h5>
+                                                        <span id="sBLSecond" class="post-date">November 06, 2015</span>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <li class="cf">
+                                                    <div class="blog-icon">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </div>
+                                                    <div class="post-details">
+                                                        <h5>
+                                                            <a href="/iot-is-in-my-bedroom-what-is-next.aspx" id="aBLThird" name="aBLThird" onclick="linkClickFooter(this);">IoT is in my bedroom! What is next?</a>
+                                                        </h5>
+                                                        <span id="sBLThird" class="post-date">November 06, 2015</span>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end  -->
+                <div class="one-fourth">
+                    <div class="region region-f4">
+                        <div id="block-block-44" class="block block-block">
+                            <div class="content">
+                                <div class="one-half" valign="top">
+                                    <img src="images/vertexLocations.jpg" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end  -->
+            </div>
+            <!-- end col-row -->
+            <div class="separator-1">
+            </div>
+            <!-- end separator -->
+            <div class="col-row">
+                <div class="one-fourth">
+                    <div class="region region-f5">
+                        <div id="block-block-8" class="block block-block">
+                            <h2 class="block-title">
+                                Services</h2>
+                            <div class="content">
+                                <ul>
+                                    <li><i class="fa fa-angle-right"></i><a href="business-analytics.aspx">Business Analytics</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="salesforce.aspx">Salesforce</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="custom-applications.aspx">Custom Development</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="sharepoint.aspx">SharePoint</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="consulting.aspx">IT Consulting</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="managed-services.aspx">Managed Services</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="it-talent-staffing.aspx">IT Talent & Staffing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-fourth">
+                    <div class="region region-f6">
+                        <div id="block-block-9" class="block block-block">
+                            <h2 class="block-title">
+                                Solutions</h2>
+                            <div class="content">
+                                <ul>
+                                    <li><i class="fa fa-angle-right"></i><a href="bsure.aspx">b<span style="font-style: italic">Sure</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-fourth cf">
+                    <div class="region region-f8">
+                        <div id="block-block-41" class="block block-block">
+                            <h2 class="block-title">
+                                Resources</h2>
+                            <div class="content">
+                                <ul>
+                                    <li><i class="fa fa-angle-right"></i><a href="case-studies.aspx">Case Studies</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="perspectives.aspx">Perspectives</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="blogs.aspx">Blogs</a></li>
+                                    <!-- <li><i class="fa fa-angle-right"></i> <a href="/content/latest-news">Latest News</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-fourth">
+                    <div class="region region-f7">
+                        <div id="block-block-10" class="block block-block">
+                            <h2 class="block-title">
+                                Other Links</h2>
+                            <div class="content">
+                                <ul>
+                                    <li><i class="fa fa-angle-right"></i><a href="events.aspx">Events</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="whats-new.aspx">News</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="work-life-vertex.aspx">Careers</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="http://intranet.vertexcs.com/SitePages/Home.aspx"
+                                        target="_blank">Internal User</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end col-row -->
+        </div>
+        <!-- end footer-main -->
+        <div class="footer-bottom container-center cf">
+            <div class="bottom-left">
+                <div class="region region-footer-a">
+                    <div id="block-block-1" class="block block-block">
+                        <div class="content">
+                            <p>
+                                Copyright © 2016 Vertex Computer Systems, Inc. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end bottom-left -->
+            <div class="bottom-right">
+                <div class="region region-footer-b">
+                    <div id="block-block-2" class="block block-block">
+                        <div class="content">
+                            <nav>
+                                <ul id="footer-nav">
+                                    <li><a href="index.aspx">Home</a></li>
+                                    <li><a href="about-vertex.aspx">About</a></li>
+                                    <li><a href="contact.aspx">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end bottom-right -->
+        </div>
+        <!-- end footer-bottom -->
+    </footer>
+    <div class="scroll-top">
+        <a href="#"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Lead Form -->
+    <div id="user_form" style="display: none;">
+        <div class="content">
+            <div class="one-third">
+                
+                <input type="hidden" value="" name="submitted[rdurl]" id="rdurl">
+                <input type="hidden" value="http://vertexcs.com/" name="submitted[rdurl]" id="curl">
+                <input type="hidden" name="details[sid]">
+                <input type="hidden" value="1" name="details[page_num]">
+                <input type="hidden" value="1" name="details[page_count]">
+                <input type="hidden" value="0" name="details[finished]">
+                <input type="hidden" value="form-ZJdVIjt-Dvtzesqq7R1rlM6jULGyt7x6AgMKLY8EITs" name="form_build_id">
+                <input type="hidden" value="roSdu6ZpMujLp6jeFkEjnRgaN_pWVG29IZ14MGnNrVM" name="form_token">
+                <input type="hidden" value="webform_client_form_160" name="form_id">
+                <div class="form-actions">
+                    <input type="submit" value="Submit" name="op" class="webform-submit button-primary button medium-btn form-submit">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <a href="#" target="_blank" id="opurl"></a>
+    <!--
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-62437968-1', 'auto');
+        ga('send', 'pageview');
+    </script>-->
+    <script type="text/javascript">
+        $("#s1").endlessScroll({
+            width: '100%',
+            height: '100px',
+            steps: -2, speed: 40,
+            mousestop: true
+        });
+
+        $("#s2").endlessScroll({
+            width: '700px',
+            height: '26px',
+            steps: -2,
+            speed: 40,
+            mousestop: false
+        });
+
+        /*contactus form*/
+
+        $(document).ready(function () {
+            var _scroll = true, _timer = false, _floatbox = $("#contact_form"), _floatbox_opener = $(".contact-opener");
+            _floatbox.css("right", "-362px"); //initial contact form position
+
+            _floatbox.css("top", "62px");
+
+            //Contact form Opener button
+            _floatbox_opener.click(function () {
+                if (_floatbox.hasClass('visiable')) {
+                    _floatbox.delay(750).animate({ "right": "-362px" }, { duration: 300 }).removeClass('visiable');
+                } else {
+                    _floatbox.animate({ "right": "0px" }, { duration: 300 }).addClass('visiable');
+                    $("#h4EmailResult").hide();
+                }
+            });
+
+            //Effect on Scroll
+            $(window).scroll(function () {
+                if (_scroll) {
+                    _floatbox.animate({ "top": "30px" }, { duration: 300 });
+                    _scroll = false;
+                }
+                if (_timer !== false) { clearTimeout(_timer); }
+                _timer = setTimeout(function () {
+                    _scroll = true;
+                    _floatbox.animate({ "top": "10px" }, { easing: "linear" }, { duration: 500 });
+                }, 400);
+            });
+
+        });
+					
+    </script>
+    <!-- contact form start -->
+    
+    <div class="floating-form" id="contact_form">
+        <div class="contact-opener" id="idContactform">
+            &nbsp;&nbsp; Contact Us &nbsp;&nbsp;</div>
+        <div class="floating-form-heading" id="contactOpener">
+            <h4>
+                Contact Us</h4>
+        </div>
+        <div id="contact_results">
+        </div>
+        <div id="contact_body">
+            <label>
+                <span>Name <span class="required">*</span></span>
+                <input type="text" name="name" id="name" class="input-field">
+            </label>
+            <label>
+                <span>Email <span class="required">*</span></span>
+                <input type="email" name="email" id="email" class="input-field">
+            </label>
+            <label for="field5">
+                <span>Message <span class="required">*</span></span>
+                <textarea name="message" id="message" rows="5" style="width:291px"></textarea>
+            </label>
+            <label>
+                <span style="float: left">
+                    <input type="button" id="submit_btn" value="Send">&nbsp;</span>&nbsp;<span style="float: left;
+                        padding-top: 7px;"><h4 id="h4EmailResult" style="display: none; color: #133d8c; float: left;">
+                        </h4>
+                    </span>
+            </label>
+        </div>
+    </div>
+    
+    </form>
+</body>
+</html>

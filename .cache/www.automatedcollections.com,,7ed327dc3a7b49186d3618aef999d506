@@ -1,0 +1,536 @@
+status: 200
+content-length: 59685
+content-location: http://www.automatedcollections.com
+x-aspnet-version: 4.0.30319
+expires: -1
+server: Microsoft-IIS/7.5
+pragma: no-cache
+cache-control: no-cache
+date: Fri, 09 Sep 2016 08:04:39 GMT
+x-powered-by: ASP.NET
+content-type: text/html; charset=utf-8
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Home
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        // PRELOAD IMAGES USING jQuery
+        (function ($) {
+            var cache = [];
+            // Arguments are image paths relative to the current page.
+            $.preLoadImages = function () {
+                var args_len = arguments.length;
+                for (var i = args_len; i--; ) {
+                    var cacheImage = document.createElement('img');
+                    cacheImage.src = arguments[i];
+                    cache.push(cacheImage);
+                }
+            }
+        })(jQuery)
+
+        jQuery.preLoadImages("/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_1.jpg", "/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_1.jpg");
+        jQuery.preLoadImages("/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_3.jpg", "/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_3.jpg");
+        jQuery.preLoadImages("/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_4.jpg", "/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_4.jpg");
+        jQuery.preLoadImages("/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_5.jpg", "/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_5.jpg");
+        jQuery.preLoadImages("/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_6.jpg", "/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_6.jpg");
+
+        function ChangeImage(elementid) {
+            $("#home_rotator_image").attr('src', '/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/' + elementid + '.jpg');
+
+            // set the first button background color to off
+            $("#home_rotator_bg_image_1").css("background-color", "#012751");
+
+            if (elementid == 'home_rotator_bg_image_1') {
+                var content = "The sophisticated and interlocking layers of ACSI\'s multi-tiered security program ensure ACSI protects all client and consumer information from internal or external threats, theft, misuse, and abuse.";
+                // set the first button background color to on
+                $("#home_rotator_bg_image_1").css("background-color", "#153e72");
+            } else if (elementid == 'home_rotator_bg_image_2') {
+                var content = "No matter what characteristic or mix of accounts receivable your portfolio contains, ACSI delivers the highest possible returns across a broad spectrum of challenges.";
+            } else if (elementid == 'home_rotator_bg_image_3') {
+                var content = "Total customer satisfaction is the benchmark against which we conduct ourselves each day, not only as representatives of ACSI, but also as service providers to our clients and their customers.";
+            } else if (elementid == 'home_rotator_bg_image_4') {
+                var content = "Our most important task is staffing our ranks with the best and the brightest.";
+            } else if (elementid == 'home_rotator_bg_image_5') {
+                var content = "We build quality into every part of our organization through mandatory compliance initiatives, daily audits, and independent, third-party certifications.";
+            } else if (elementid == 'home_rotator_bg_image_6') {
+                var content = "ACSI\'s comprehensive strategies — from account placement through payment — target immediate and full resolution of each account while minimizing complaints.";
+            }
+
+            //$("#HomeRotatorLinkContainer_Text").val(content);
+
+            $('#HomeRotatorText').html(content);
+        }
+        
+        function RestoreImage() {
+            $("#home_rotator_image").attr('src', '/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_1.jpg');
+            var content = "The sophisticated and interlocking layers of ACSI\'s multi-tiered security program ensure ACSI protects all client and consumer information from internal or external threats, theft, misuse, and abuse.";
+            //$("#HomeRotatorLinkContainer_Text").val(content);
+            $('#HomeRotatorText').html(content);
+
+            // set the first button background color to on	  
+            $("#home_rotator_bg_image_1").css("background-color", "#153e72");
+        }
+	                                 
+    </script> 
+
+	
+	<!-- ADD META DATA -->
+	<meta name="keywords" /><meta name="description" /><meta name="robots" content="all" /><link rel="stylesheet" href="AutomatedCollectionsSupportingFiles/fonts/libertine.css" type="text/css" /><meta name="viewport" content="width=1020" /><meta name="format-detection" content="telephone=yes" /><meta name="Generator" content="Sitefinity 5.1.3270.0 SE" /><link href="/Telerik.Web.UI.WebResource.axd?compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c+Version%3d2012.2.607.40%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen%3a767fb6c3-728b-40e9-af4d-abc498bcae6e%3aed2942d4" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/global/custom_editor_styles.css" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/global/custom_forms.css" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/global/LayoutBasics.css" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/global/main_styles.css" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/global/Menu.MainNavigation.css" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/global/PanelBar.acsi.css" type="text/css" rel="stylesheet" /></head>
+<body> <!-- ADD ALT TEXT TO IMGS -->
+
+
+<form method="post" action="./" id="form2">
+<input type="hidden" name="ctl10_TSM" id="ctl10_TSM" value="" />
+<input type="hidden" name="ctl11_TSSM" id="ctl11_TSSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcxNTI3NjQxNmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFWmN0bDAwJGN0bDAwJGNwaE1haW5OYXZpZ2F0aW9uQ29udGFpbmVyJGNwaE1haW5OYXZpZ2F0aW9uJFQzNjI4NDBCNDAwMSRjdGwwMCRjdGwwMCRSYWRNZW51M75jbhvJtV0Kw+N8AYpYlDG+QCEqPjC0vlUajkkDA/NT" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"en","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"$","NaNSymbol":"NaN","CurrencyNegativePattern":0,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infinity","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"Infinity","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135578800000)\/","MaxSupportedDateTime":"\/Date(253402300799999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, MMMM dd, yyyy h:mm:ss tt","LongDatePattern":"dddd, MMMM dd, yyyy","LongTimePattern":"h:mm:ss tt","MonthDayPattern":"MMMM dd","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"M/d/yyyy","ShortTimePattern":"h:mm tt","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM, yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":true,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"eras":[1,"A.D.",null,0]};//]]>
+</script>
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl10_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen%3ad28568d3-e53e-4706-928f-3765912b66ca%3aea597d4b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=nLo7bX3Wm3-CyTboex_ReENPPJgDsACuaN2FzSW6pYnTE35ezCOF0cMSHrdcA73QRwlLvsBb4QauBVsNlkN65QOnYtbOE5h4HC6Cn-qpt4ZE2_RMwNjLoIHzHmn7l2PZbQ2oUkc8TKzPIeKiwGcD6km98Ughx9KfILK07mgH6vsIuDWFBJN80QSaiaKNCxdb0&amp;t=29593351" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=pZIvE6Pj2Cjf72t5ZPbB2YWDX5_iRsXNU1DeIlZNA4QSg9KcxCXHpL5J6wRk5UvkJ7ZB9swFBFNJWWjCD1Byl4npSGeE69tWd7YrmR2PxHMBHu3WHzhF3rmfMAbHXeguOEMKeyrFK9quDJ7onuiYGTmfwPl2X0eVKJRNcL22QEh1E9789-7G9NqDXRbufRkohUhGQySEtJaD9kZvG7-jIg2&amp;t=29593351" type="text/javascript"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl10_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c+Version%3d2012.2.607.40%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen%3a767fb6c3-728b-40e9-af4d-abc498bcae6e%3a16e4e7cd%3af7645509%3a24ee1bba%3a2003d0b8%3ae330518b%3a1e771326%3ac8618e41" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A4BBDFA6" /><input type="hidden" name="ctl00$ctl00$ctl10" id="ctl10" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl10", "ctl00$ctl00$ctl10");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+    <div class="OuterWrap">   
+        <div class="HeaderContainer">
+            <div class="HeaderLeft">
+                <div class="HeaderLogo"><a href="home" id="A1"><img src="Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/acsi_tem_logo.gif" id="Img1" width="246" height="117" /></a></div>
+            </div>
+            <div class="HeaderRight">
+
+                
+                <div class="HeaderRightTop" id="rotate">
+            	  
+            	<div>
+                    <span class="HeaderRightTopText"><p>ACA International membership helps keep us current on all relevant laws and regulations.</p></span>
+                    <span class="HeaderRightTopLogo"><img src="Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/acsi_tem_toplogo1.gif" id="Img2" width="120" height="120" /></span>
+                    <span style="clear:both"></span>
+                </div>
+                <div>
+                    <span class="HeaderRightTopText"><p>Our A+ BBB rating is a testament to how we conduct business and treat consumers.</p></span>
+                    <span class="HeaderRightTopLogo"><img src="Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/acsi_tem_toplogo3.gif" id="Img3" width="120" height="120" /></span>
+                    <span style="clear:both"></span>
+                </div> 
+            	                              
+            </div>
+                
+    
+
+
+
+                <div class="HeaderRightNav">
+                    
+    
+<div id="cphMainNavigationContainer_cphMainNavigation_T362840B4001">
+	<div id="ctl00_ctl00_cphMainNavigationContainer_cphMainNavigation_T362840B4001_ctl00_ctl00_RadMenu3" class="RadMenu RadMenu_MainNavigation" style="z-index: 4">
+		<!-- 2012.2.607.40 --><ul class="rmRootGroup rmHorizontal">
+			<li class="rmItem rmFirst"><a href="home/acsi/our-edge" class="rmLink rmRootLink"><span class="rmText">Our Edge</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst"><a href="home/acsi/our-edge/proven-results" class="rmLink"><span class="rmText">Proven Results</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/our-edge/proven-results/performance-based-results" class="rmLink"><span class="rmText">Performance-Based Results</span></a></li><li class="rmItem "><a href="home/acsi/our-edge/proven-results/high-client-satisfaction" class="rmLink"><span class="rmText">High Client Satisfaction </span></a></li><li class="rmItem rmLast"><a href="home/acsi/our-edge/proven-results/long-term-client-relationships" class="rmLink"><span class="rmText">Long-Term Client Relationships</span></a></li>
+						</ul>
+					</div></li><li class="rmItem "><a href="home/acsi/our-edge/effective-resolution" class="rmLink"><span class="rmText">Effective Resolution </span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/our-edge/effective-resolution/consultive-collections-approach" class="rmLink"><span class="rmText">Consultive Collections Approach </span></a></li><li class="rmItem "><a href="home/acsi/our-edge/effective-resolution/custom-client-solutions" class="rmLink"><span class="rmText">Custom Client Solutions</span></a></li><li class="rmItem rmLast"><a href="home/acsi/our-edge/effective-resolution/targeted-recovery-strategies" class="rmLink"><span class="rmText">Targeted Recovery Strategies</span></a></li>
+						</ul>
+					</div></li><li class="rmItem "><a href="home/acsi/our-edge/professional-staff" class="rmLink"><span class="rmText">Professional Staff</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/our-edge/professional-staff/qualifications-and-experience" class="rmLink"><span class="rmText">Qualifications and Experience</span></a></li><li class="rmItem "><a href="home/acsi/our-edge/professional-staff/recruiting-and-screening" class="rmLink"><span class="rmText">Recruiting and Screening</span></a></li><li class="rmItem "><a href="home/acsi/our-edge/professional-staff/training-and-development" class="rmLink"><span class="rmText">Training and Development</span></a></li><li class="rmItem rmLast"><a href="home/acsi/our-edge/professional-staff/management-and-oversight" class="rmLink"><span class="rmText">Management and Oversight </span></a></li>
+						</ul>
+					</div></li><li class="rmItem "><a href="home/acsi/our-edge/a-culture-of-service" class="rmLink"><span class="rmText">A Culture of Service</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/our-edge/a-culture-of-service/company-culture" class="rmLink"><span class="rmText">Company Culture </span></a></li><li class="rmItem "><a href="home/acsi/our-edge/a-culture-of-service/client-customer-service" class="rmLink"><span class="rmText">Client Customer Service </span></a></li><li class="rmItem "><a href="home/acsi/our-edge/a-culture-of-service/consumer-customer-service" class="rmLink"><span class="rmText">Consumer Customer Service</span></a></li><li class="rmItem rmLast"><a href="home/acsi/our-edge/a-culture-of-service/toll-free-consumer-hotline" class="rmLink"><span class="rmText">Toll-Free Consumer Hotline</span></a></li>
+						</ul>
+					</div></li><li class="rmItem "><a href="home/acsi/our-edge/comprehensive-security" class="rmLink"><span class="rmText">Comprehensive Security</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/our-edge/comprehensive-security/multi-level-security" class="rmLink"><span class="rmText">Multi-Level Security</span></a></li><li class="rmItem rmLast"><a href="home/acsi/our-edge/comprehensive-security/extensive-security-compliance" class="rmLink"><span class="rmText">Extensive Security Compliance </span></a></li>
+						</ul>
+					</div></li><li class="rmItem rmLast"><a href="home/acsi/our-edge/enterprise-wide-quality" class="rmLink"><span class="rmText">Enterprise-Wide Quality</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/our-edge/enterprise-wide-quality/regulatory-compliance" class="rmLink"><span class="rmText">Regulatory Compliance</span></a></li><li class="rmItem "><a href="home/acsi/our-edge/enterprise-wide-quality/stringent-internal-audits" class="rmLink"><span class="rmText">Stringent Internal Audits</span></a></li><li class="rmItem rmLast"><a href="home/acsi/our-edge/enterprise-wide-quality/multiple-third-party-audits" class="rmLink"><span class="rmText">Multiple Third-Party Audits </span></a></li>
+						</ul>
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem "><a href="home/acsi/about" class="rmLink rmRootLink"><span class="rmText">About</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst"><a href="home/acsi/about/profile" class="rmLink"><span class="rmText">Profile</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/about/profile/history" class="rmLink"><span class="rmText">History</span></a></li><li class="rmItem "><a href="home/acsi/about/profile/professional-affiliations" class="rmLink"><span class="rmText">Professional Affiliations</span></a></li><li class="rmItem rmLast"><a href="home/acsi/about/profile/facility-staffing" class="rmLink"><span class="rmText">Facility & Staffing</span></a></li>
+						</ul>
+					</div></li><li class="rmItem rmLast"><a href="home/acsi/about/leadership" class="rmLink"><span class="rmText">Leadership</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/about/leadership/rob-duffy-chief-executive-officer" class="rmLink"><span class="rmText">Rob Duffy, Chief Executive Officer</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/kevin-dreyer-general-counsel" class="rmLink"><span class="rmText">Kevin Dreyer, General Counsel </span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/rick-blair-chief-operating-officer" class="rmLink"><span class="rmText">Rick Blair, Chief Operating Officer</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/amanda-gilbert-director-of-operations" class="rmLink"><span class="rmText">Amanda Gilbert, Director of Operations</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/jennifer-sutton-director-of-client-services" class="rmLink"><span class="rmText">Jennifer Sutton, Director of Client Services</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/yvette-gabrielian-vice-president-of-corporate-compliance" class="rmLink"><span class="rmText">Yvette Gabrielian, Vice President of Corporate Compliance</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/stephanie-twomey-director-of-healthcare-compliance" class="rmLink"><span class="rmText">Stephanie Twomey, Director of Healthcare Compliance</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/kurt-weber-chief-information-officer" class="rmLink"><span class="rmText">Kurt Weber, Chief Information Officer</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/tom-hatch-chief-financial-officer" class="rmLink"><span class="rmText">Tom Hatch, Chief Financial Officer</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/vince-duffy-iii-vp-of-sales---southeast-region" class="rmLink"><span class="rmText">Vince Duffy, III, VP of Sales - Southeast Region</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/ian-ferguson-vice-president-of-sales" class="rmLink"><span class="rmText">Ian Ferguson, Vice President of Sales</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/steve-taylor-vice-president-of-sales---west-coast-region" class="rmLink"><span class="rmText">Steve Taylor, Vice President of Sales - West Coast Region</span></a></li><li class="rmItem "><a href="home/acsi/about/leadership/tonia-brown-vice-president-of-administrative-services" class="rmLink"><span class="rmText">Tonia Brown, Vice President of Administrative Services</span></a></li><li class="rmItem rmLast"><a href="home/acsi/about/leadership/cally-christensen-vice-president-of-healthcare-consulting" class="rmLink"><span class="rmText">Cally Christensen, Vice President of Healthcare Consulting</span></a></li>
+						</ul>
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem "><a href="home/acsi/markets" class="rmLink rmRootLink"><span class="rmText">Markets</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst"><a href="home/acsi/markets/education" class="rmLink"><span class="rmText">Education</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/markets/education/colleges-and-universities" class="rmLink"><span class="rmText">Colleges and Universities </span></a></li><li class="rmItem "><a href="home/acsi/markets/education/guarantors" class="rmLink"><span class="rmText">Guarantors</span></a></li><li class="rmItem rmLast"><a href="home/acsi/markets/education/private-lenders" class="rmLink"><span class="rmText">Private Lenders</span></a></li>
+						</ul>
+					</div></li><li class="rmItem "><a href="home/acsi/markets/healthcare" class="rmLink"><span class="rmText">Healthcare</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/markets/healthcare/hospitals-and-medical-centers" class="rmLink"><span class="rmText">Hospitals and Medical Centers </span></a></li><li class="rmItem rmLast"><a href="home/acsi/markets/healthcare/clinics-and-physician-groups" class="rmLink"><span class="rmText">Clinics and Physician Groups </span></a></li>
+						</ul>
+					</div></li><li class="rmItem "><a href="home/acsi/markets/government" class="rmLink"><span class="rmText">Government</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/markets/government/municipal" class="rmLink"><span class="rmText">Municipal</span></a></li><li class="rmItem rmLast"><a href="home/acsi/markets/government/state" class="rmLink"><span class="rmText">State</span></a></li>
+						</ul>
+					</div></li><li class="rmItem rmLast"><a href="home/acsi/markets/financial" class="rmLink"><span class="rmText">Financial</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/markets/financial/financial-institutions" class="rmLink"><span class="rmText">Financial Institutions </span></a></li><li class="rmItem "><a href="home/acsi/markets/financial/debt-buyers" class="rmLink"><span class="rmText">Debt Buyers </span></a></li><li class="rmItem rmLast"><a href="home/acsi/markets/financial/retailers" class="rmLink"><span class="rmText">Retailers</span></a></li>
+						</ul>
+					</div></li>
+				</ul>
+			</div></li><li class="rmItem "><a href="home/acsi/services" class="rmLink rmRootLink"><span class="rmText">Services</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst"><a href="home/acsi/services/comprehensive-portfolio-services" class="rmLink"><span class="rmText">Comprehensive Portfolio Services</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/services/comprehensive-portfolio-services/methodology" class="rmLink"><span class="rmText">Methodology </span></a></li><li class="rmItem "><a href="home/acsi/services/comprehensive-portfolio-services/processing-analytics-and-scoring" class="rmLink"><span class="rmText">Processing, Analytics, and Scoring </span></a></li><li class="rmItem "><a href="home/acsi/services/comprehensive-portfolio-services/skiptracing" class="rmLink"><span class="rmText">Skiptracing</span></a></li><li class="rmItem "><a href="home/acsi/services/comprehensive-portfolio-services/letters-and-calls" class="rmLink"><span class="rmText">Letters and Calls</span></a></li><li class="rmItem "><a href="home/acsi/services/comprehensive-portfolio-services/debt-resolution" class="rmLink"><span class="rmText">Debt Resolution </span></a></li><li class="rmItem "><a href="home/acsi/services/comprehensive-portfolio-services/payment-acceptance-and-processing" class="rmLink"><span class="rmText">Payment Acceptance and Processing </span></a></li><li class="rmItem "><a href="home/acsi/services/comprehensive-portfolio-services/legal-options" class="rmLink"><span class="rmText">Legal Options </span></a></li><li class="rmItem "><a href="home/acsi/services/comprehensive-portfolio-services/technology" class="rmLink"><span class="rmText">Technology</span></a></li><li class="rmItem "><a href="home/acsi/services/comprehensive-portfolio-services/reporting" class="rmLink"><span class="rmText">Reporting </span></a></li><li class="rmItem rmLast"><a href="home/acsi/services/comprehensive-portfolio-services/client-access-and-collaboration" class="rmLink"><span class="rmText">Client Access and Collaboration </span></a></li>
+						</ul>
+					</div></li><li class="rmItem "><a href="home/acsi/services/student-debt-recovery-services" class="rmLink"><span class="rmText">Student Debt Recovery Services</span></a><div class="rmSlide">
+						<ul class="rmVertical rmGroup rmLevel2">
+							<li class="rmItem rmFirst"><a href="home/acsi/services/student-debt-recovery-services/repayment-programs-for-defaulted-loans" class="rmLink"><span class="rmText">Repayment Programs for Defaulted Loans</span></a></li><li class="rmItem "><a href="home/acsi/services/student-debt-recovery-services/cohort-management" class="rmLink"><span class="rmText">COHORT Management</span></a></li><li class="rmItem "><a href="home/acsi/services/student-debt-recovery-services/consolidation-and-rehabilitation" class="rmLink"><span class="rmText">Consolidation and Rehabilitation</span></a></li><li class="rmItem "><a href="home/acsi/services/student-debt-recovery-services/administrative-wage-garnishment" class="rmLink"><span class="rmText">Administrative Wage Garnishment</span></a></li><li class="rmItem rmLast"><a href="home/acsi/services/student-debt-recovery-services/flat-fee-consolidation-program" class="rmLink"><span class="rmText">Flat Fee Consolidation Program</span></a></li>
+						</ul>
+					</div></li><li class="rmItem rmLast"><a href="home/acsi/services/medical-debt-recovery-services" class="rmLink"><span class="rmText">Medical Debt Recovery Services</span></a></li>
+				</ul>
+			</div></li><li class="rmItem "><a href="home/acsi/news" class="rmLink rmRootLink"><span class="rmText">News</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst"><a href="home/acsi/news/acsi-and-industry-news" class="rmLink"><span class="rmText">ACSI and Industry News</span></a></li><li class="rmItem "><a href="home/acsi/news/event-calendar" class="rmLink"><span class="rmText">Event Calendar</span></a></li><li class="rmItem rmLast"><a href="home/acsi/news/media-contacts" class="rmLink"><span class="rmText">Media Contacts</span></a></li>
+				</ul>
+			</div></li><li class="rmItem "><a href="home/acsi/careers" class="rmLink rmRootLink"><span class="rmText">Careers</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst rmLast"><a href="home/acsi/careers/new-careers" class="rmLink"><span class="rmText">New Careers</span></a></li>
+				</ul>
+			</div></li><li class="rmItem "><a href="home/acsi/resources" class="rmLink rmRootLink"><span class="rmText">Resources</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst"><a href="home/acsi/resources/resources" class="rmLink"><span class="rmText">Resources</span></a></li><li class="rmItem rmLast"><a href="home/acsi/resources/documents" class="rmLink"><span class="rmText">Documents</span></a></li>
+				</ul>
+			</div></li><li class="rmItem rmLast"><a href="home/acsi/contact" class="rmLink rmRootLink"><span class="rmText">Contact</span></a><div class="rmSlide">
+				<ul class="rmVertical rmGroup rmLevel1">
+					<li class="rmItem rmFirst"><a href="home/acsi/contact/do-business-with-us-more" class="rmLink"><span class="rmText">Do Business with Us & More</span></a></li><li class="rmItem "><a href="home/acsi/contact/did-you-get-a-call-or-letter-" class="rmLink"><span class="rmText">Did You Get a Call or Letter?</span></a></li><li class="rmItem rmLast"><a href="home/acsi/contact/consumer-contacts" class="rmLink"><span class="rmText">Consumer Contacts</span></a></li>
+				</ul>
+			</div></li>
+		</ul><input id="ctl00_ctl00_cphMainNavigationContainer_cphMainNavigation_T362840B4001_ctl00_ctl00_RadMenu3_ClientState" name="ctl00_ctl00_cphMainNavigationContainer_cphMainNavigation_T362840B4001_ctl00_ctl00_RadMenu3_ClientState" type="hidden" />
+	</div>
+        <div style="clear: both">
+        </div>
+</div>
+
+            	    
+                </div>
+                <div class="HeaderRightBottom">
+            	    <div class="HeaderRightBottomPhone"><!--space for later use Call Us Today: (800) 467-2316 --></div>
+                    <div class="HeaderRightBottomDate">
+                    <a href="#" onclick="window.open('http://www.techlockinc.com/verify/acsi-tech-lock-certified.html','_blank','height=620,width=800,left=10,top=10'); return false;"><img src="http://www.techlockinc.com/verify/badges/tlc_badge_long.png" alt="Tech Lock Certified" align="absmiddle" width="163" hspace="10" height="40" /></a>
+                    <span id="lblHeaderDate">Friday, September 09, 2016</span></div>
+                    <div class="Clearer"></div>
+                </div>
+            </div>
+            <div class="Clearer"></div>
+	    </div>
+	    <div class="MainContainer">
+		    <div class="PageContent">
+				
+
+                <div class="HomePageLeftSide">
+                    <div class="HomePageLeftIntro">
+                    	<div class="HomePageLeftIntroText">
+                            
+<div class="sfContentBlock">
+	<h2>ACSI Gives You a</h2> <h1>Performance Edge</h1> <p>Our <a href="/home/acsi/our-edge/professional-staff">professional staff</a>, <a href="/home/acsi/our-edge/comprehensive-security">comprehensive security</a>, <a href="/home/acsi/our-edge/a-culture-of-service">culture of service</a>, <a href="/home/acsi/our-edge/effective-resolution">effective resolution</a><strong> </strong>tactics, and <a href="/home/acsi/our-edge/enterprise-wide-quality">enterprise-wide quality</a> measures yield <a href="/home/acsi/our-edge/proven-results">proven results</a> that deliver a performance edge to improve your bottom line.<span style="line-height: 1.5;">&nbsp;</span></p>
+
+
+
+</div>
+                        	
+						</div>
+                        <div class="HomePageLeftIntroCalloutRow">                               
+
+                            <div class="HomePageLeftIntroCalloutBox">
+                                
+<div class="sfContentBlock">
+	<table width="100%" cellspacing="0" cellpadding="5" style="background-color: #ffffff; border: 1px solid #b8c7da;"> <tbody> <tr> <td> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr> <td valign="top" style="width: 68px;"><a href="/home/acsi/markets/education"><img src="/images/servicearea_callout_images/acsi-education.jpg?sfvrsn=4" style="border: 0px solid;" title="acsi_home_intro_co1" /></a><br /> </td> <td valign="top" style="width: 100%;"> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr> <td class="ServiceCallOutHeader"> <h3><a href="/home/acsi/markets/education">Education</a></h3> </td> </tr> <tr> <td class="ServiceCallOutBlurb"> <p><a href="/home/acsi/markets/education">Recover more student loans and institutional debts.</a></p> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table>
+
+
+
+</div>
+                                
+                            </div>
+
+                            <div class="HomePageLeftIntroCalloutBox">
+                                
+<div class="sfContentBlock">
+	<table width="100%" cellspacing="0" cellpadding="5" style="background-color: #ffffff; border: 1px solid #b8c7da;"> <tbody> <tr> <td> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr> <td valign="top" style="width: 68px;"><a href="/home/acsi/markets/healthcare"><img title="acsi_home_intro_co2" src="/images/servicearea_callout_images/acsi-healthcare.jpg?sfvrsn=4" /></a><br /> </td> <td valign="top" style="width: 100%;"> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr> <td class="ServiceCallOutHeader"> <h3><a href="/home/acsi/markets/healthcare">Healthcare</a></h3> </td> </tr> <tr> <td class="ServiceCallOutBlurb"> <p><a href="/home/acsi/markets/healthcare">Recoup more healthcare bills and late payments.</a></p> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table>
+
+
+
+</div>
+                                
+                            </div>
+                            <div class="Clearer"></div>
+                        </div>
+                        <div class="HomePageLeftIntroCalloutRow">
+                        	<div class="HomePageLeftIntroCalloutBox">
+                                
+<div class="sfContentBlock">
+	<table width="100%" cellspacing="0" cellpadding="5" style="background-color: #ffffff; border: 1px solid #b8c7da;"> <tbody> <tr> <td> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr> <td valign="top" style="width: 68px;"><a href="/home/acsi/markets/government"><img title="acsi_home_intro_co3" src="/images/servicearea_callout_images/acsi-government.jpg?sfvrsn=4" /></a><br /> </td> <td valign="top" style="width: 100%;"> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr> <td class="ServiceCallOutHeader"> <h3><a href="/home/acsi/markets/government">Government</a></h3> </td> </tr> <tr> <td class="ServiceCallOutBlurb"> <p><a href="/home/acsi/markets/government">Capture more funds owed to public agencies.</a><a></a></p> <a> </a></td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table>
+
+
+
+</div>
+                                
+                            </div>
+                            <div class="HomePageLeftIntroCalloutBox">
+                                
+<div class="sfContentBlock">
+	 <table width="100%" style="background-color: #ffffff; border: 1px solid #b8c7da;" cellspacing="0" cellpadding="5"> <tbody> <tr> <td> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr> <td valign="top" style="width: 68px;"><a href="/home/acsi/markets/financial"><img title="acsi_home_intro_co4" src="/images/servicearea_callout_images/acsi-private.jpg?sfvrsn=4" /></a><br /> </td> <td valign="top" style="width: 100%;"> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tbody> <tr> <td class="ServiceCallOutHeader"> <h3><a href="/acsi/markets/private">Private</a></h3> </td> </tr> <tr> <td class="ServiceCallOutBlurb"> <p><a href="/acsi/markets/private">Increase recoveries on consumer debts.</a></p> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table>
+
+
+
+</div>
+                                
+                            </div>
+                            <div class="Clearer"></div>
+                        </div>
+                    </div>
+                    <div class="Clearer"></div>
+                    <div class="HomePageLeftPhone">
+<div class="sfContentBlock">
+	Call Us Today: (800) 467-2316
+
+
+
+</div></div>
+                    <div class="HomePageLeftQuickLinks">
+                    	<div class="HomePageLeftQuickLinksTop">
+                        	<div class="HomePageLeftQuickLinksTopText">Did You Get a Call From Us?</div>
+                            <div class="HomePageLeftQuickLinksTopButton"><a href="home/acsi/contact/did-you-get-a-call-or-letter-" class="ACSIYellowButtonLink">Get Help!</a></div>
+                            <div class="Clearer"></div>
+                        </div>
+                        <div class="HomePageLeftQuickLinksBottom">
+                        	<div class="HomePageLeftQuickLinksBottomImage"><img src="Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/acsi_home_operator.jpg" width="77" height="94" /></div>
+                            <div class="HomePageLeftQuickLinksBottomList">
+                                
+<div class="sfContentBlock">
+	<h3>Borrowers</h3> <ul> <li><a href="/home/acsi/contact/consumer-contacts">Rehab My Loan</a></li> <li><a href="/home/acsi/contact/consumer-contacts">Consolidate My Loan</a></li> <li><a href="/home/acsi/contact/consumer-contacts">Talk to Counselor</a></li> <li><a href="/home/acsi/contact/consumer-contacts">Pay Now</a></li> </ul>
+
+
+
+</div>
+                            	
+                            </div>
+                            <div class="HomePageLeftQuickLinksBottomList">
+                                
+<div class="sfContentBlock">
+	<h3>Patients</h3> <ul> <li><a href="/home/acsi/contact/consumer-contacts">Report Insurance</a></li> <li><a href="/home/acsi/contact/consumer-contacts">Charity Care</a></li> <li><a href="/home/acsi/contact/consumer-contacts">Talk to Counselor</a></li> <li><a href="/home/acsi/contact/consumer-contacts">Pay Now</a></li> </ul>
+
+
+
+</div>
+                            	
+                            </div>
+                            <div class="HomePageLeftQuickLinksBottomList">
+                                
+<div class="sfContentBlock">
+	<h3>Others</h3> <ul> <li><a href="/home/acsi/contact/consumer-contacts">Address Change</a></li> <li><a href="/home/acsi/contact/consumer-survey" target="_blank">Consumer Survey</a></li> <li><a href="/home/acsi/contact/consumer-contacts">Talk to Counselor</a></li> <li><a href="/home/acsi/contact/consumer-contacts">Pay Now</a></li> </ul>
+
+
+
+</div>
+                            	
+                            </div>
+                            <div class="Clearer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                
+
+                <div class="HomePageRightSide">
+                    <div class="HomeRotatorLinkContainer">
+                        <div class="HomeRotatorLinkContainer_Header"><h4>Get the ACSI Edge!</h4></div>
+                        <div class="HomeRotatorLinkContainer_Button" style="width:179px;border-right-style: solid;border-right-width: 1px;border-right-color: #153e72;"><a href="/home/acsi/our-edge/proven-results" id="home_rotator_bg_image_2" onmouseover="ChangeImage(this.id)" onmouseout="RestoreImage()">PROVEN RESULTS</a></div>
+                        <div class="HomeRotatorLinkContainer_Button" style="width:178px;"><a href="/home/acsi/our-edge/effective-resolution" id="home_rotator_bg_image_6" onmouseover="ChangeImage(this.id)" onmouseout="RestoreImage()">EFFECTIVE RESOLUTION</a></div>
+                        <div class="Clearer"></div>
+						<div class="HomeRotatorLinkContainer_Button" style="width:179px;border-right-style: solid;border-right-width: 1px;border-right-color: #153e72;"><a href="/home/acsi/our-edge/professional-staff" id="home_rotator_bg_image_4" onmouseover="ChangeImage(this.id)" onmouseout="RestoreImage()">PROFESSIONAL STAFF</a></div>
+                        <div class="HomeRotatorLinkContainer_Button" style="width:178px;"><a href="/home/acsi/our-edge/a-culture-of-service" id="home_rotator_bg_image_3" onmouseover="ChangeImage(this.id)" onmouseout="RestoreImage()">CULTURE OF SERVICE</a></div>
+                        <div class="Clearer"></div>
+						<div class="HomeRotatorLinkContainer_Button" style="width:179px;border-right-style: solid;border-right-width: 1px;border-right-color: #153e72;"><a href="/home/acsi/our-edge/comprehensive-security" id="home_rotator_bg_image_1" onmouseover="ChangeImage(this.id)" onmouseout="RestoreImage()" style="background-color: #153e72;">COMPREHENSIVE SECURITY</a></div>
+                        <div class="HomeRotatorLinkContainer_Button" style="width:178px;"><a href="/home/acsi/our-edge/enterprise-wide-quality" id="home_rotator_bg_image_5" onmouseover="ChangeImage(this.id)" onmouseout="RestoreImage()">ENTERPRISE-WIDE QUALITY</a></div>
+                        <div class="Clearer"></div>  
+                                               
+                        <div class="HomeRotatorLinkContainer_Text"><p id="HomeRotatorText">The sophisticated and interlocking layers of ACSI's multi-tiered security program ensure ACSI protects all client and consumer information from internal or external threats, theft, misuse, and abuse.</p></div>
+                    </div>
+
+                                     
+                	<div class="HomePageRotatorContent"><img src="/Sitefinity/WebsiteTemplates/AutomatedCollections/App_Themes/AutomatedCollectionsTheme/Images/home_rotator_bg_image_1.jpg" id="home_rotator_image" alt="" /></div> 
+                </div>
+                <div class="Clearer"></div>
+
+                
+    
+            </div>
+	    </div>
+	    <div class="FooterContainer">
+		    <div class="FooterLinks">
+                
+    
+<div id="cphFooterNavContainer_cphFooterNav_T362840B4002">
+	
+
+
+
+
+        <ul class="FooterNavList">
+    
+        <li class="FooterNavListItem"><a id="cphFooterNavContainer_cphFooterNav_T362840B4002_ctl00_ctl00_rptFooterNavMenu_HyperLink1_0" href="home/acsi/our-edge">Our Edge</a></li>
+    
+        <li class="FooterNavListItem"><a id="cphFooterNavContainer_cphFooterNav_T362840B4002_ctl00_ctl00_rptFooterNavMenu_HyperLink1_1" href="home/acsi/about">About</a></li>
+    
+        <li class="FooterNavListItem"><a id="cphFooterNavContainer_cphFooterNav_T362840B4002_ctl00_ctl00_rptFooterNavMenu_HyperLink1_2" href="home/acsi/markets">Markets</a></li>
+    
+        <li class="FooterNavListItem"><a id="cphFooterNavContainer_cphFooterNav_T362840B4002_ctl00_ctl00_rptFooterNavMenu_HyperLink1_3" href="home/acsi/services">Services</a></li>
+    
+        <li class="FooterNavListItem"><a id="cphFooterNavContainer_cphFooterNav_T362840B4002_ctl00_ctl00_rptFooterNavMenu_HyperLink1_4" href="home/acsi/news">News</a></li>
+    
+        <li class="FooterNavListItem"><a id="cphFooterNavContainer_cphFooterNav_T362840B4002_ctl00_ctl00_rptFooterNavMenu_HyperLink1_5" href="home/acsi/careers">Careers</a></li>
+    
+        <li class="FooterNavListItem"><a id="cphFooterNavContainer_cphFooterNav_T362840B4002_ctl00_ctl00_rptFooterNavMenu_HyperLink1_6" href="home/acsi/resources">Resources</a></li>
+    
+        <li class="FooterNavListItem"><a id="cphFooterNavContainer_cphFooterNav_T362840B4002_ctl00_ctl00_rptFooterNavMenu_HyperLink1_7" href="home/acsi/contact">Contact</a></li>
+    
+        </ul>
+     
+
+
+</div>
+
+                
+		    </div>
+            <div class="Copyright">
+    
+<div id="cphLegalNavContainer_cphLegalNav_T362840B4003">
+	
+
+
+
+
+
+    
+        <a id="cphLegalNavContainer_cphLegalNav_T362840B4003_ctl00_ctl00_rptFooterNavMenu_HyperLink1_0" href="legal/consumer-disclosures">Consumer Disclosures</a>
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a id="cphLegalNavContainer_cphLegalNav_T362840B4003_ctl00_ctl00_rptFooterNavMenu_HyperLink1_1" href="legal/legal-information">Legal Information</a>
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a id="cphLegalNavContainer_cphLegalNav_T362840B4003_ctl00_ctl00_rptFooterNavMenu_HyperLink1_2" href="legal/terms-of-use">Terms of Use</a>
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a id="cphLegalNavContainer_cphLegalNav_T362840B4003_ctl00_ctl00_rptFooterNavMenu_HyperLink1_3" href="legal/privacy-policy">Privacy Policy</a>
+    
+
+     
+
+
+</div>
+</div>
+		    <div class="Copyright">©<span id="lblYear">2016</span> Automated Collection Services, Inc.</div>
+	        <br /><br /><br />
+        </div>
+        <div class="Clearer"></div>
+    </div>
+<div id="pnlExtendPageLength">
+	
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+</div>
+    
+
+
+<script type="text/javascript">
+//<![CDATA[
+;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl11_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Web.UI, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en:767fb6c3-728b-40e9-af4d-abc498bcae6e:ed2942d4';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_skin":"MainNavigation","attributes":{},"clientStateFieldID":"ctl00_ctl00_cphMainNavigationContainer_cphMainNavigation_T362840B4001_ctl00_ctl00_RadMenu3_ClientState","collapseAnimation":"{\"type\":1,\"duration\":0}","collapseDelay":0,"expandAnimation":"{\"type\":1,\"duration\":0}","expandDelay":0,"itemData":[{"items":[{"items":[{"value":"Performance-Based Results","navigateUrl":"~/home/acsi/our-edge/proven-results/performance-based-results"},{"value":"High Client Satisfaction ","navigateUrl":"~/home/acsi/our-edge/proven-results/high-client-satisfaction"},{"value":"Long-Term Client Relationships","navigateUrl":"~/home/acsi/our-edge/proven-results/long-term-client-relationships"}],"value":"Proven Results","navigateUrl":"~/home/acsi/our-edge/proven-results"},{"items":[{"value":"Consultive Collections Approach ","navigateUrl":"~/home/acsi/our-edge/effective-resolution/consultive-collections-approach"},{"value":"Custom Client Solutions","navigateUrl":"~/home/acsi/our-edge/effective-resolution/custom-client-solutions"},{"value":"Targeted Recovery Strategies","navigateUrl":"~/home/acsi/our-edge/effective-resolution/targeted-recovery-strategies"}],"value":"Effective Resolution ","navigateUrl":"~/home/acsi/our-edge/effective-resolution"},{"items":[{"value":"Qualifications and Experience","navigateUrl":"~/home/acsi/our-edge/professional-staff/qualifications-and-experience"},{"value":"Recruiting and Screening","navigateUrl":"~/home/acsi/our-edge/professional-staff/recruiting-and-screening"},{"value":"Training and Development","navigateUrl":"~/home/acsi/our-edge/professional-staff/training-and-development"},{"value":"Management and Oversight ","navigateUrl":"~/home/acsi/our-edge/professional-staff/management-and-oversight"}],"value":"Professional Staff","navigateUrl":"~/home/acsi/our-edge/professional-staff"},{"items":[{"value":"Company Culture ","navigateUrl":"~/home/acsi/our-edge/a-culture-of-service/company-culture"},{"value":"Client Customer Service ","navigateUrl":"~/home/acsi/our-edge/a-culture-of-service/client-customer-service"},{"value":"Consumer Customer Service","navigateUrl":"~/home/acsi/our-edge/a-culture-of-service/consumer-customer-service"},{"value":"Toll-Free Consumer Hotline","navigateUrl":"~/home/acsi/our-edge/a-culture-of-service/toll-free-consumer-hotline"}],"value":"A Culture of Service","navigateUrl":"~/home/acsi/our-edge/a-culture-of-service"},{"items":[{"value":"Multi-Level Security","navigateUrl":"~/home/acsi/our-edge/comprehensive-security/multi-level-security"},{"value":"Extensive Security Compliance ","navigateUrl":"~/home/acsi/our-edge/comprehensive-security/extensive-security-compliance"}],"value":"Comprehensive Security","navigateUrl":"~/home/acsi/our-edge/comprehensive-security"},{"items":[{"value":"Regulatory Compliance","navigateUrl":"~/home/acsi/our-edge/enterprise-wide-quality/regulatory-compliance"},{"value":"Stringent Internal Audits","navigateUrl":"~/home/acsi/our-edge/enterprise-wide-quality/stringent-internal-audits"},{"value":"Multiple Third-Party Audits ","navigateUrl":"~/home/acsi/our-edge/enterprise-wide-quality/multiple-third-party-audits"}],"value":"Enterprise-Wide Quality","navigateUrl":"~/home/acsi/our-edge/enterprise-wide-quality"}],"value":"Our Edge","navigateUrl":"~/home/acsi/our-edge"},{"items":[{"items":[{"value":"History","navigateUrl":"~/home/acsi/about/profile/history"},{"value":"Professional Affiliations","navigateUrl":"~/home/acsi/about/profile/professional-affiliations"},{"value":"Facility \u0026 Staffing","navigateUrl":"~/home/acsi/about/profile/facility-staffing"}],"value":"Profile","navigateUrl":"~/home/acsi/about/profile"},{"items":[{"value":"Rob Duffy, Chief Executive Officer","navigateUrl":"~/home/acsi/about/leadership/rob-duffy-chief-executive-officer"},{"value":"Kevin Dreyer, General Counsel ","navigateUrl":"~/home/acsi/about/leadership/kevin-dreyer-general-counsel"},{"value":"Rick Blair, Chief Operating Officer","navigateUrl":"~/home/acsi/about/leadership/rick-blair-chief-operating-officer"},{"value":"Amanda Gilbert, Director of Operations","navigateUrl":"~/home/acsi/about/leadership/amanda-gilbert-director-of-operations"},{"value":"Jennifer Sutton, Director of Client Services","navigateUrl":"~/home/acsi/about/leadership/jennifer-sutton-director-of-client-services"},{"value":"Yvette Gabrielian, Vice President of Corporate Compliance","navigateUrl":"~/home/acsi/about/leadership/yvette-gabrielian-vice-president-of-corporate-compliance"},{"value":"Stephanie Twomey, Director of Healthcare Compliance","navigateUrl":"~/home/acsi/about/leadership/stephanie-twomey-director-of-healthcare-compliance"},{"value":"Kurt Weber, Chief Information Officer","navigateUrl":"~/home/acsi/about/leadership/kurt-weber-chief-information-officer"},{"value":"Tom Hatch, Chief Financial Officer","navigateUrl":"~/home/acsi/about/leadership/tom-hatch-chief-financial-officer"},{"value":"Vince Duffy, III, VP of Sales - Southeast Region","navigateUrl":"~/home/acsi/about/leadership/vince-duffy-iii-vp-of-sales---southeast-region"},{"value":"Ian Ferguson, Vice President of Sales","navigateUrl":"~/home/acsi/about/leadership/ian-ferguson-vice-president-of-sales"},{"value":"Steve Taylor, Vice President of Sales - West Coast Region","navigateUrl":"~/home/acsi/about/leadership/steve-taylor-vice-president-of-sales---west-coast-region"},{"value":"Tonia Brown, Vice President of Administrative Services","navigateUrl":"~/home/acsi/about/leadership/tonia-brown-vice-president-of-administrative-services"},{"value":"Cally Christensen, Vice President of Healthcare Consulting","navigateUrl":"~/home/acsi/about/leadership/cally-christensen-vice-president-of-healthcare-consulting"}],"value":"Leadership","navigateUrl":"~/home/acsi/about/leadership"}],"value":"About","navigateUrl":"~/home/acsi/about"},{"items":[{"items":[{"value":"Colleges and Universities ","navigateUrl":"~/home/acsi/markets/education/colleges-and-universities"},{"value":"Guarantors","navigateUrl":"~/home/acsi/markets/education/guarantors"},{"value":"Private Lenders","navigateUrl":"~/home/acsi/markets/education/private-lenders"}],"value":"Education","navigateUrl":"~/home/acsi/markets/education"},{"items":[{"value":"Hospitals and Medical Centers ","navigateUrl":"~/home/acsi/markets/healthcare/hospitals-and-medical-centers"},{"value":"Clinics and Physician Groups ","navigateUrl":"~/home/acsi/markets/healthcare/clinics-and-physician-groups"}],"value":"Healthcare","navigateUrl":"~/home/acsi/markets/healthcare"},{"items":[{"value":"Municipal","navigateUrl":"~/home/acsi/markets/government/municipal"},{"value":"State","navigateUrl":"~/home/acsi/markets/government/state"}],"value":"Government","navigateUrl":"~/home/acsi/markets/government"},{"items":[{"value":"Financial Institutions ","navigateUrl":"~/home/acsi/markets/financial/financial-institutions"},{"value":"Debt Buyers ","navigateUrl":"~/home/acsi/markets/financial/debt-buyers"},{"value":"Retailers","navigateUrl":"~/home/acsi/markets/financial/retailers"}],"value":"Financial","navigateUrl":"~/home/acsi/markets/financial"}],"value":"Markets","navigateUrl":"~/home/acsi/markets"},{"items":[{"items":[{"value":"Methodology ","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services/methodology"},{"value":"Processing, Analytics, and Scoring ","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services/processing-analytics-and-scoring"},{"value":"Skiptracing","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services/skiptracing"},{"value":"Letters and Calls","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services/letters-and-calls"},{"value":"Debt Resolution ","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services/debt-resolution"},{"value":"Payment Acceptance and Processing ","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services/payment-acceptance-and-processing"},{"value":"Legal Options ","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services/legal-options"},{"value":"Technology","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services/technology"},{"value":"Reporting ","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services/reporting"},{"value":"Client Access and Collaboration ","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services/client-access-and-collaboration"}],"value":"Comprehensive Portfolio Services","navigateUrl":"~/home/acsi/services/comprehensive-portfolio-services"},{"items":[{"value":"Repayment Programs for Defaulted Loans","navigateUrl":"~/home/acsi/services/student-debt-recovery-services/repayment-programs-for-defaulted-loans"},{"value":"COHORT Management","navigateUrl":"~/home/acsi/services/student-debt-recovery-services/cohort-management"},{"value":"Consolidation and Rehabilitation","navigateUrl":"~/home/acsi/services/student-debt-recovery-services/consolidation-and-rehabilitation"},{"value":"Administrative Wage Garnishment","navigateUrl":"~/home/acsi/services/student-debt-recovery-services/administrative-wage-garnishment"},{"value":"Flat Fee Consolidation Program","navigateUrl":"~/home/acsi/services/student-debt-recovery-services/flat-fee-consolidation-program"}],"value":"Student Debt Recovery Services","navigateUrl":"~/home/acsi/services/student-debt-recovery-services"},{"value":"Medical Debt Recovery Services","navigateUrl":"~/home/acsi/services/medical-debt-recovery-services"}],"value":"Services","navigateUrl":"~/home/acsi/services"},{"items":[{"value":"ACSI and Industry News","navigateUrl":"~/home/acsi/news/acsi-and-industry-news"},{"value":"Event Calendar","navigateUrl":"~/home/acsi/news/event-calendar"},{"value":"Media Contacts","navigateUrl":"~/home/acsi/news/media-contacts"}],"value":"News","navigateUrl":"~/home/acsi/news"},{"items":[{"value":"New Careers","navigateUrl":"~/home/acsi/careers/new-careers"}],"value":"Careers","navigateUrl":"~/home/acsi/careers"},{"items":[{"value":"Resources","navigateUrl":"~/home/acsi/resources/resources"},{"value":"Documents","navigateUrl":"~/home/acsi/resources/documents"}],"value":"Resources","navigateUrl":"~/home/acsi/resources"},{"items":[{"value":"Do Business with Us \u0026 More","navigateUrl":"~/home/acsi/contact/do-business-with-us-more"},{"value":"Did You Get a Call or Letter?","navigateUrl":"~/home/acsi/contact/did-you-get-a-call-or-letter-"},{"value":"Consumer Contacts","navigateUrl":"~/home/acsi/contact/consumer-contacts"}],"value":"Contact","navigateUrl":"~/home/acsi/contact"}]}, null, null, $get("ctl00_ctl00_cphMainNavigationContainer_cphMainNavigation_T362840B4001_ctl00_ctl00_RadMenu3"));
+});
+//]]>
+</script>
+</form>
+
+<script type="text/javascript">
+
+    (function ($) {
+        $.fn.extend({
+            //plugin name - rotaterator
+            rotaterator: function (options) {
+
+                var defaults = {
+                    fadeSpeed: 600,
+                    pauseSpeed: 100,
+                    child: null
+                };
+
+                var options = $.extend(defaults, options);
+
+                return this.each(function () {
+                    var o = options;
+                    var obj = $(this);
+                    var items = $(obj.children(), obj);
+                    items.each(function () { $(this).hide(); })
+                    if (!o.child) {
+                        var next = $(obj).children(':first');
+                    } else {
+                        var next = o.child;
+                    }
+                    $(next).fadeIn(o.fadeSpeed, function () {
+                        $(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function () {
+                            var next = $(this).next();
+                            if (next.length == 0) {
+                                next = $(obj).children(':first');
+                            }
+                            $(obj).rotaterator({ child: next, fadeSpeed: o.fadeSpeed, pauseSpeed: o.pauseSpeed });
+                        })
+                    });
+                });
+            }
+        });
+    })(jQuery);
+
+    $(document).ready(function () {
+        $('#rotate').rotaterator({ fadeSpeed: 1200, pauseSpeed: 6000 });
+    }); 
+
+    </script>
+</body>
+</html>
+

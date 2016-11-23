@@ -1,0 +1,1092 @@
+status: 200
+content-length: 176062
+content-location: https://platform.teachermatch.org/questjobboard.do
+content-language: en
+set-cookie: JSESSIONID=2DD7745D2A54451B3D5F6AC4A390D9E1-n1; Path=/; Secure;
+ HttpOnly
+vary: Accept-Encoding
+server: Apache
+-content-encoding: gzip
+cache-control: max-age=0, no-cache
+date: Thu, 20 Oct 2016 16:05:41 GMT
+content-type: text/html;charset=UTF-8
+x-mod-pagespeed: 1.9.32.13-0
+-varied-accept-encoding: gzip, deflate
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Job Board</title>	   
+		
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><script type="text/javascript">var resourceJSON={"msgdetailsofAdditionalDocuments":"Please provide details of Additional Documents.","magPleaseenterDegree":"Please enter Degree","PlzEtrUniqueGeoZoneCode":"Please enter unique Geo Zone Code","PlzEtrPanelDate":"Please enter panel Date","msgpanelmemberattach":"Please select at least one panel member to attach in the panel list.","PlzEtrQuest":"Please enter Question Set Name","msgfillacedmicdegree":"Please feel free to provide details of all the academic records          ","msgdateattendedgreaterthan":"Dates Attended from cannot be greater than Dates Attended to","msgeachsectioninQuestion":"Please provide response for each section in Question","msgNBCLic":"National Board Certification/Licensure","msgQQO":"QQO","msgUniqueFormCode":"Please enter a unique Form Code","msgDuplicateJobCategory":"Duplicate Job Category","msgJCDnotexceed1month":"Job Created Date can not be exceed 1 Month(30 days) without District.","lblAttachment":"Attachment","JSISentSuccessfully":"JSI invite has been successfully sent to selected Candidates.","msgSpecialEducationTeacher":"Special Education Teacher","MsgInviteForVideoInterview":"Prospect does not exist in Teacher Match. Invite for Video Interview could be sent to existing Teacher Match prospects only.","enaterBranchName":"Please enter branch name.","PlzSlctReprintDate":"Please select Reprint Date","MsgDrugTestfor":"Drug Test for","msgstartdatelessthanenddateposition":"Position Start Date must be less than or equal to Position End Date","msgNonPrincipalCoverLetter":"You have declared yourself as an Internal Candidate (non Principal) while filling the Cover Letter details. This information does not match with the details we have. Please change the declaration in Cover Letter screen on contact District Administrator.","msgcertType":"certType","MsgUnhireTheCandidate":"Are you sure, you would like to UnHire the Candidate?","MsgRemoveTheNote":"Are you sure, you would like to remove the Note?","msgIncludePhilosophyStatement":"Please feel free to include a philosophy statement, a sample lesson, or any other document that will help us understand your work.","lblLast":"Last","msgSubstituteTeachers":"Substitute Teachers","msgsureremoveresum":"Are you sure, you would like to remove Resume?","msgHireHatMonth":"Please select Expires after month","ONB_SlfSrv_Communicationdefined":"Communication defined","valuemloet":"mloet","msgFemale":"Female","msguploadGEDdiplomahigher":"upload GED, high school diploma, or higher","ONB_TalentEdAPI_CHECKLST":"Unable to communicate with the Onboarding Checklist System. Please try again later or contact support.","msgpasswordcombination":"Password should be a combination of digits and characters or it should be a combination of digits and special symbols and Password length should not be less than 6 characters","msgVAlidDistribEmail":"Please enter valid Distribution Email Address","msgDetailsSubstituteTeacher":"Details of Substitute Teacher","msgitems":"items","PlzSelSalutation":"Please select salutation","msgTitleDesigRole":"Please enter Title/Designation/Role","experiencesVideo":"https://www.youtube.com/embed/815FlK5TUgk","newWrongPassord":"Your current password is incorrect","msgCurrentPassworddoesnotexis":"Current Password does not exist.","msgVolunteerWork":"Details of Involvement/Volunteer Work","msgOfficeProfessionalStandards":"Please contact the Office of Professional Standards in order to proceed with the application process.","MsgSetScoreOrEnterNoteForAttribute":"Please set Score for the attributes or enter the Note","lblPrescreen":"Prescreen","msgLetterNotUpld":"Letter Of Intent is not uploaded by the candidate.","valueNaN":"NaN","employeeStatusBox":"Please select one of the employee status","msgTeachForAmericaAffiliate":"Please select Teach For America (TFA) Affiliate","msgEPIStatusIncomp":"EPI status is set incomplete successfully.","msgDoyouwanttodeactivatetheapprovalprocess":"Do you want to deactivate this Job Approval Process?","PlzSlctPhysicalDate":"Please select Physical Date","msgMapmasterjobcategory":"Please Map your job category with master job category","msgDemoDate":"Please enter Demo Date","MsgForDifferentEmailAddress":"The email address you have provided is already registered with us, please use a different email address","MsgSuccessfullySharedTheCandidates":"You have successfully shared the Candidates to the selected User(s).","msgRequireAccommodationsAssessment":"If you require accommodations for this assessment, we recommend that you contact the district to which you are applying. The district is responsible for gathering any necessary documentation from you and to make the determination of whether to provide accommodations and of what type. At that point, we will be happy to work with you and the district on administering the assessment in whatever way has been deemed appropriate.","msgPleaseprovideyourrecentresume":"Please provide your recent resume (preferably in PDF format although MS-Word or JPG is also fine)","msgJobSpecificInventory":"Job Specific Inventory","msgErrorEmailPwd":"Please confirm password","SavedCandidate":"You have successfully saved the Candidates","PlzSelectEhnicOrigin":"Please select Ethnic Origin","msgPlzSINValid":"At least 9 digits Social Insurance Number.","msglblSchoolDep":"School/Department Name","msgActive":"Active","msgforInternalTransfer":"Internal Transfer","PlzEtrClDetail":"Please enter Call Detail","MsgCollapseTheColumnSeeScore":"Click here to expand the column to see the Scores","msgHourPerWeek":"Please enter Hours Per Week","msgIEINNumberforeachCertification":"Please provide IEIN Number for each Certification/Licensure","PlsSlctCompetencyName":"Please select Competency Name","msgEndTimeFormat":"Please enter End Time Format","msgField":"Field(s)","msgPleaseUnqCompetencyName":"Please enter a unique Competency Name","MsgForPasswordLength":"Password should be a combination of digits and characters or it should be a combination of digits and special symbols and Password length must be a minimum of 8 characters and a maximum of 12 characters.","MsgAnExpertEngagement":"an Expert Engagement","msgRecordsIndicatePosition":"Our records indicate the position you are applying for is restricted and/or not within the scope of the position you currently hold.","errorMsgDuplicateTalentEdOnboardId":"TalentEd Onboard Id already exists and associated with another District. Please confirm if you want to continue.","msgexceededtimelimitforsec2":"As a result, you will not be required to respond to any more","msgexceededtimelimitforsec1":"You have exceeded an item's time limit for second time. This is your third and final reminder. You have been timed out from the ","lblSPStatus":"SP Status","msgconfirmdeletescript":"Are you sure, you would like to delete the Transcript?","PlzEnterEndDate":"Please Enter the End Date","msgprovidereferences":"Please feel free to provide details of all the references","PlzEtrPanelName":"Please enter Panel Name","msgCreateStatusNameJSI":"You cannot create a status of name \"JSI\" as no JSI is attached with this Job Category.","msgdeleteCertificationLicensure":"Are you sure, you would like to delete the Certification/Licensure Letter.","lblAmericanIND":"American Indian or Alaskan Native","MsgSuccessfullySetTheStatus":"We have successfully set the status of all those jobs for which the previous statuses are already set. We found that one or more previous status are not set for some of the jobs. Status of such jobs are unchanged","ToOpenNewWindow":"to open in new window","msgJobStatYouvsNorm":"Job Order Status ( You Vs Norm )","PlzEtrQuestionExplanation":"Please enter Question explanation","msgRecentscorereportonfile":"Recent score report on file","msgAddfacilators":"Please add Facilitators.","msggreaterthancurrentdate":"Posting Start Date must be greater than or equal to Current Date","msgSchoolName":"School Name","msgUniqReferenceNoJobCode":"Please enter Unique Reference No./Job Code","msgSubjecttoFacilitators":"Please enter Subject to Facilitator(s)","PlzEtrVldEmail":"Please enter valid Email","msgNEF":"New employee form","BtnToGoBack":"button to go back and save your changes by clicking on","msgresumr":"Please upload Resume","msgCompanyTelephone":"Please enter Company Telephone","MsgForDrugTest":"Drug Test","lblWF2COM":"WF2 COM","msgDefaultInventoryJobCategory":"Please make sure that we have only one default Inventory for a Job Category.","msgvalidCumulativeGPA":"Please enter valid Cumulative  GPA","lblSelectaquestionset":"Virtual Video Interview Questions","MsgReference":"Reference","msgAccountManagerTM":"Please enter Account Manager  from Teacher Match.","msgOfficeofTalent":"Office of Talent","msgresume":"resume","msgcandidate":"candidate","msgCompetency":"Please select Competency","PlzEtrSub":"Please enter Subject","msgattachedtothisJobOrder":"One or more School should be attached to this Job Order","msgPleaseenterNewPassword":"Please enter New Password","msgSending":"Sending...","msgRemoveQuestionInventory":"Are you sure you would like to remove this Question from the Inventory?","msgPleaseReadCarefully":"Please Read Carefully","msgSelectGender":"Please Select Gender","msgEnterObjectiveUId":"Please enter Objective UId","msgSelectAnyStatus":"Please select any status","lblPSOCandidate":"Please select at least one candidate to hide","mainPortfolio":"https://www.youtube.com/embed/qY1Y9121GY8","MsgDetailsOfReferences":"Details of References","msgSECOND":"SECOND","lblFailed":"Failed","msgStatusAttachedJSI":"You have created a status for attached JSI. So you cannot remove the JSI attachment.","lblOnboardingCG":"Onboarding Candidates","msgWeightageWarning":"You have turned off the experimental status. Please ensure that this question has the correct scoring weight (typically 1.0) before saving.","msgplzProviderecentresume":"Please provide your recent resume","msgnationalboard":"Please select National Board Certification(s)/Licensure(s) Year","multipleFixedDate":"Multiple Fixed Date and Time","ONB_SlfSrv_NoAdminColordefined":"No Admin Color defined","msgDeleteSection":"Are you sure you would like to delete this Section?","lblCHRPending":"CHR Pending","Send":"Sending","msgFte":"Please enter FTE","msgThisStatusDeleted":"This status can not be deleted","msgmostsignificantcontributions":"Please provide most significant contributions in this role","msgThankYouforRegistering":"Thank you for registering for internal transfer opportunities! You will be receiving any matching job opportunities from now on.","PlzSlctCandidateToReject":"Please select atleast one candidate to Reject.","msgPERA":"PERA","msgDeleteCertf":"Are you sure, you would like to delete this Certification?","msgDoyouwanttoeditportfolio":"Do you want to edit portfolio?","ThankForYourInterest":"Thank you for your interest in your Professional Development Profile.  Please call our Client Services team at 8559800511 (choose Option 6) or via email at ","msgSplashScreenInstruction2":"Please enter Second Splash Screen Instructions","msgTHIRD":"THIRD","msgSplashScreenInstruction1":"Please enter First Splash Screen Instructions","msgExamCodeNotMatched":"Examination Code is not matched","msgvisitfotofolio":"Please visit any section(s) of the Portfolio that do not have a check mark above to complete all fields marked as mandatory with a red asterisk.","msgAffidavit":"Affidavit","MsgStatusofInternalCandidate":"Process of changing the status of Internal Candidate as External Candidate is completed successfully.","msgNC4":"NC4","msggreaterthanenddate":"Posting Start Date must be less than or equal to Posting End Date","msgTitleDesignationRole":"Please select Title/Designation/Role","msgRegisteredInternalCandidate":"A Candidate has already registered as an internal candidate, with the email address you provided. Please provide another email address to register.","msgAcceptablePhotoformats":"Please select Acceptable Photo formats which include GIF, PNG, and JPEG  files","msgTimedOutthestipulatedtime2":"It looks like you have gone over the time limit of <font color='red'>75 seconds<\/font> on an item in the EPI, for the <font color='red'>SECOND<\/font> time. Remember: if you receive another <font color='red'>\"Timed Out\"<\/font> message, you will need to wait 12 months before taking the EPI again. Try not to exceed the <font color='red'>75-second<\/font> time limit again. It is important that all participants abide by the time stipulations in order to support the reliability, integrity, and security of the <b>EPI<\/b>.","msgEneterAmount":"Enter Salary Amount","msgSchool":"School","msgDistrictJobsCategorylist":"Select district for relevant Jobs Category list","msgEndTime1":"Please enter End Time","msgtofacilators":"Please enter Message to Facilitator(s)","msgRetakePolicyName":"Please enter Policy Name","msgBrowserButton":"Do not close your browser or hit the \"back\" button on your browser","msgStartTimeFormat":"Please enter Start Time Format","msgLettersofRecommendation":"Please upload Letters of Recommendation/Reference for each reference","MsgAspiring":"Aspiring","msgNationalCertificationLicensure":"Details of National Board Certification/Licensure","msgatleastoneRequisitionforonemoreschool":"Please provide atleast one Requisition Number for one or more school.","msgQuestionsImportedSuccessfully":"Questions have been imported successfully.","msgdateattended":"Please enter Dates Attended from","msgacademicdegree":"academic degree(s)","msgUniqueRank":"Please enter unique rank","MsgDetailsOfEthenicity":"Details of Ethenicity","PlzSetScoreForAllAttribute":"Please set Score for all the attributes to Finalize or enter the Note ","PlzSelectUniqueMember":"Please select a unique Member","msgprovideRequisitionNumberoneormoreschool":"Please provide Requisition Number(s) same as  # of Expected Hire(s) for one or more school.","msgJobstartdateshould":"Job start date should not be less than ","MsgLoad":"Loading...","msgEPIEntiretyPrepared":"Click \"Ok\" if you are ready to take the EPI in its entirety and prepared to abide by the guidelines presented above. Otherwise, please click \"Cancel\" to exit.","August":"August","msgTemplateName":"Please enter Template Name","PlzSetStatusOfAllTranscript":"Please set status of all transcript","PlzSelectHireddate":"Please select hired date","msgPositivedrugreport":"You will not be able to apply this job because of your positive drug report.","lblStateName":"State Name","msgPreparedTheseGuidelines":"If you continue, please be prepared to follow these guidelines ","PlzEtrUniquePanelName":"Please enter a unique Panel Name","msgSubJobCategory":"Please enter Sub Job Category","msgState":"Please select State","MsgDetailsOfCertification":"Details of Certification","msgCategory1":"Category","msgfor":"for","msgGroupName":"Please enter Group Name","msgFINAL":"FINAL","msgSuccessfullyUpdatedRecord":"You have successfully updated the record.","email":"Email","msgstateorganization":"Name of State of Organization","MsgEPIInviteCouldNotBeSent":"We found that EPI invite could not be sent to some of the selected candidates due to one or more following reasons","msgNoCustomQuestionConfigured":"No Custom Question Configured","msgLblAttentionJobs":"Please enter Label for Attention Jobs","MsgQuestionExplanationLength":"Question explanation length cannot exceed 5000 characters.","msganothertitlejoborder":"Please enter another Job Title. We can not add existing Job Title in Job Order.","valuesscb":"sscb","MsgDetailsOfInvolvement":"Details of Involvement","msgErrorEmailNotMatch":"Email Address not matched","msgNCHCText":"NC Health Certificate","msgSeniorGPA":"Senior GPA must be less than or equal to 5.00","msgSubstituteTeacher":"Please select Substitute Teacher","ONB_SlfSrv_CheckpointStatusdefined":"Checkpoint Status defined","PlzEtrGeoZoneDisplayName":"Please enter Geo Zone Display Name","msgAddAQuestion":"Add a Question","msgAcceptableScoreReportformats":"Please select Acceptable Score Report formats which include PDF, MS-Word, GIF, PNG, and JPEG  files","cnfMsgDelete":"Are you sure to delete?","msgAttendeealreadyadded":"This Attendee is already added","MsgCollapseTheColumn":"Click here to collapse the column to hide the Scores","lbldays":"days","MsgMaxLengthOfField":"Maximum length of field \"Primary Responsibilities in this Role\" is 5000 characters. We cannot save more than 5000 characters in this field","errmsghirevueAdminEmail":"* Please enter Admin Email","PlzEtrOtherSchool":"Please enter Other School","workExperience":"workExperience","msgConsumerSecret":"Please enter Consumer Secret.","msgfilesizelessthan":"File size must be less than 10 MB.","cnfmsgWidrawApplicationNewMsg":"This job will be removed from your dashboard view, but you may reapply to the job by going to the Jobs of Interest section and selecting \"Re-apply\".","PlzSlctPosition":"Please select Position #/Requisition #","MsgUndeclinedTheCandidate":"Are you sure, you would like to UnDecline the Candidate?","msgAccountCode":"Please enter Account Code","MsgMailSentSuccessfully":"Invitation Mail Sent Successfully","msgNowjobAvail":"This job is now available.","msgSincerely":"Sincerely,","msgvalidCertificationLicensureName":"Please enter valid Certification/Licensure Name","MsgAnd":"and","msgSelectMembers":"Select Members","msgHispanicOther":"Hispanic All Other","labelBranch":"Branch","MsgNotSetToRED":"Overall Status of Either FP or DT of one or more selected applicant(s) is not set to RED. We cannot reject such Applicant(s).","msgcannotexceed500characters":"Qualification description length cannot exceed 500 characters.","msgRegistrationQRCodeURL":"Registration QR Code/URL","msgActiveTeacherMatchAdministrator":"This job is not Active, Please contact TeacherMatch Administrator.","msgPlzProvideValidSSN":"Please provide valid Social Security Number","msgDateInitiatedlessequalStartDate":"Date Initiated must be less than or equal to Contract Start Date","lblHired":"Hired","msgPlzEnterToDate":"Please enter To Date","MsgOverAllStatus":"Overall Status of one or more selected applicant(s) is not set to GREEN. We cannot send such Applicant(s) to SAP. Please uncheck such Applicant(s) and try again!!!","AttachFile":"Attach a File","msgAssociatedKeyContacts":"Any change in the details of this User will reflect in all the associated Key Contacts. Do you really want to continue?","lblPSStatus":"Please select Status","msgCantDelReqNo":"You can not delete this Requisition Number.","msgCompletePortfolio":"Please complete your Portfolio first.","msgEventCancelled1":"This Event has been cancelled. ","msgMale":"Male","msgatleastoneGeography":"Please select at least one Geography","msgDemoLessonscheduled":"Demo Lesson for this Teacher has been scheduled.","msgFreqOfReminderAfter1":"Frequency of Reminder after first Reminder Must be between 1 to 365.","valueUAT":"UAT","msgTeachForAmerica2015-2016":"Teach For America 2015-2016","AnyFurtherQues":"with any further questions","msgDetailsFormerEmployee":"Details of Former Employee","msgnonCompleteRetakeAllowed":"Please enter Non Complete Retake Allowed","msgAlreadyCompletedInventory":"You have already completed this Inventory","msgatleastoneDpoint":"Please select atleast one D-point.","lblPreScreen":"Pre-Screen Questions","msgWantToCancelled":"Do you really want to cancel this event?","msgEmploymentHistory":"Employment History","msgEmployeeOfMiami":"You are a current employee of Miami and you are being redirected to ","msgPleaseSelectFile":"Please select File","msgUniqueDomainUId":"Please enter a unique Domain UId","msgPositionType":"Please select Position Type","PlzEtrWaivedReason":"Please Select Waived Reason.","msgCloneJobCreation":"You are making a clone of this job.  By doing this, a new job will appear using this position number, and the existing job will be archived.  When it is archived, you will only be able view this posting and the candidates.","ONB_SlfSrv_DefaultPermissionsset":"Default Permissions set","msgVideoCorrespondingQuestion":"No Video for corresponding Question.","msgPleaseselectaState":"Please select a State","msgsuredeleteschool":"Are you sure, you would like to delete this School?","msgEnterDomainUId":"Please enter Domain UId","MsgActivate":"Activate","msgleftbutton":"left button","closingTimeChoose":"Please select closing time","errorMsgForCandidate":"Please enter numbers only","msgMonthPerYear":"Please enter Months Per Year","singleAppWithEvent":"Single Appointment within Event","btnLogin":"Login","msgSpecificInventoryfile":"Please select Job Specific Inventory file (Acceptable formats are PDF, MS-Word,GIF, PNG and JPEG. Maximum file size 10MB).","msgvalidschool":"Please enter valid School","msgFinalizedCompleteApplication":"has not been finalized. Please come back later to complete this application.   ","lblNativeHawaiian":"Native Hawaiian or Other Pacific Islander","PlzAddOneOrMoreParticipants":"Please add one or more participant to send invite for virtual video interview.","msgAndJobID":"and Job Id","lblInactiveCG":"Inactive Candidates","msgGISection":"Please check General Information section. You may have missed some required field(s) there or the information provided in this section may not be correct.","msgPostingStartDate":"Please enter Posting Start Date","MsgInstructionsCannotExceed":"Question Instructions cannot exceed 2500 characters.","msgJobCategoryName":"Please select Job Category Name","msgRestartSafaribrowser":"Restart your Safari browser.","lblRUSure":"Are you sure you want to delete this status?.","msgor":"or","MsgCannotUnHired":"You can not UnHire the Candidate","October":"October","msgSubject":"Please select Subject","lblCompanyName":"Company Name","msgNoEPIConfigured":"No EPI Configured","msgMaxLenReasonforleaving":"Maximum length of field \"Reason for leaving\" is 5000 characters. We cannot save more than 5000 characters in this field","msgpleasecomplete":"Please complete","lblEPIDateTo":"EPI Date To","msgsuccessSharedCand":"You have successfully shared the Candidate to the selected Users.","msgreadytoStrt4":"- and final - attempt to complete the <b>EPI<\/b> during this session","msgNoanyPanelMemember":"There are no any panel members in this panel.","msgreadytoStrt3":". If you don't take any action within <font color='red'>30 seconds<\/font>, you will be taken back to the Dashboard","msgreadytoStrt2":"attempt to complete the","msgreadytoStrt1":"Click <b>\"Ok\"<\/b> if you are ready to start your","msgRetirefromState":"Please provide Retired From State","msgsubjectAreas":"subjectAreas","msgPleaseEnterValidDays":"Please enter Valid Days","msgQuestion2":"Question","msgteachermatchpart":"the TeacherMatch part of the job application. We have some additional questions for you to answer. These questions are optional, but we would greatly appreciate your responses. The questions will take around 5 minutes to complete. If you are willing to participate, please click the following link. We thank you for your participation. <br/><a href='http://ssd.az1.qualtrics.com/SE/?SID=SV_823oRU171Up6b4N&id=sessionTeacherId' target='_blank'>http://ssd.az1.qualtrics.com/SE/?SID=SV_823oRU171Up6b4N&id=sessionTeacherId<\/a><br/> ","msgeitherCertificationorEnterURL":"Please either Upload the Certification/License letter or Enter URL of the Certification/License letter","lblCompanySupervisor":"Name Of Supervisor","subArt":"Art","lblEPIGroup":"EPI Group","msgThankYou":"Thank you","lblOnlineAssessment":"Online Assessment(S) Questions","cnfmsgWithdrawApp":"Are you sure you want to withdraw your application for this job? This job is being removed from your Dashboard view, but you can \"Re-Apply\" it by going to the Jobs of Interest screens and selecting Re-Apply.","msgforExternal":"External","msgCompletedSpInventory":"Candidate has \"Completed\" Smart Practices Assessment. You cannot reset his/her Smart Practices Assessment.","msgStateOfOrganisation":"Please enter State Of Organization","MsgAllNotesAreRequired":"All general notes are required","MsgGreenToSetStatus":"to GREEN to set this status. If you just want to put your notes then setting the previous status is not required","PlzEtrFormDate":"Please Enter the From Date","msg5FrendEmail":"Please enter Fifth Friend's Email","msgNCHC":"NC HC","lblUser":"User ","msgPrivilegeDistrictsection":"Please check Privilege For District section. You may have missed some required field(s) there or the information provided in this section may not be correct.","msgAttributetoScore":"Attribute to Score","OtherSelectedCandidate":"EPI invite has been successfully sent to other selected Candidates.","msgPleaseVeteranPrefrence":"Please Select Veteran Prefrence","msgFacebookSave":"Your Facebook configurations are successfully set to post the Jobs on your Facebook Wall. To post the Jobs on Facebook page you created, please select the page from the following list of page(s) if any and click on","MsgNoPositionNumberFound":"No Position Number found to make an offer to this Candidate","msgAbleSkipQuestions":"You are not able to skip questions","msgUniqAssmntName":"Please enter a unique Assessment Name","MonthOctober":"October","msgDelete":"Delete","msgTemplateBody":"Please enter Template Body","msgMustEnterTwoRecd":"Applicants must enter at least two records (1) for GED/high school background and (2) for college degree or credits/hours. Applicants may then add additional academic records","msgDetailsAddress":"Details of Address","msgDeleteCont":"Are you sure, you would like to delete this Contact?","msgapplicantshouldberedirected":"Please enter the URL, the applicant should be redirected to","PlzSelectAsscssment":"Please select assessment","PlzSlctAnyOptionBelow":"Please Select any option below","ONB_SlfSrv_CandidateColordefined":"Candidate Color defined","msgHourlyStaff":"Hourly Staff","msgawardyear":"Please select Award Year","PlzEtrFirstName":"Please enter First Name","msgAssessmentgroupType":"Please select Assessment Type","MsgLengthnotExceed":"Note length should not exceed 4000 characters","msgCurrentStatusat":"Current Status at","lblCLSC":"Certification/Licensure State of Candidates","msgTeacherRetirementNumber":"Please enter Teacher Retirement Number","MsgUndoStatusFor":"undo status for","December":"December","msgteachingjobsonly":"Please note that EPI is available for teaching jobs only.","msgPleaseselectToYear":"Please select To Year","lblRemove":"Remove","msgTitle":"Please enter Title","msgConfiguredDefault":"Configured Default","lblCLRJ":"Certification/Licensure Name Requirements for Jobs","MsgTranscript":"Transcript","MsgAnAspiringEngagement":"an Aspiring Engagement","msgRetirementNumber":"Details of Teacher Retirement Number","MsgSelectItem":"Please select Item","msgNumberofEnterRequisitionNumber":"Number of 'Enter Requisition Number(s)' should not be greater than  # of Expected Hire(s)","msgAllQMand":"All the questions are mandatory, Please answer every question in the inventory.","msgaddresslinefirst":"Please enter Address Line 1","lblResume":"Resume","msgPleaseSelectendtime":"Please select end time.","msgRequiredApplicationItemsfor":"Required Application Items for ","PlzSelectMember1":"Please select Member(s)","licenseLetterOptional":"Please upload Certification/Licensure Letter","PlzEtrDocumentCaption":"Please enter document caption.","PlzSelectPortfolio":"Please select at least one Portfolio Item","msgPassword":"Please enter Password","msgoneHighSchoolorGED":"Please provide at least one High School or GED","MsgDocument":"Document","msgPleaseQuestionSet":"Please select Question Set","msgStDatelessCurrDate":"Start Date should not be less than current date","MsgAtleastOneRace":"Please select atleast one Race.","msgNoJobPosted":"No Job Posted","msgConfirmAuthMail":"Do you really want to resend authentication(s)?","msgDetailsSSN":"Details of SSN","MsgApplicantIsNotApplicable":"This applicant is not eligible for part-time employment with Miami-Dade County Public Schools at this time. Please select either a full-time position number or a different applicant. If you have additional questions, please contact ","lblAsianorPacific":"Asian or Pacific Islander","msgPleaseprovideRequisitionNumber":"Please select either 'Enter Requisition Number' option or 'Select Requisition Number' option to provide the Requisition Number","msgUnhandledClipboardAction":"Unhandled clipboard action","msgLiekToDeleteSchool":"Are you sure, you would like to delete this School? It will also delete all requisition number attached to it.","PlzProvideResponseToAllQues":"Please provide responses to all the questions since they are required","msgFillSubj":"Please fill subject","msgDistrictNamejobcategory":"Please select District Name","msgNoAttendeeFound":"No Attendee Found","msgAppresubmitted":"Your job application has been resubmitted and your re-application is successful.","msgOptional":"Optional","msgClosingDatelessCurrDate":"Closing Date should not be less than current date","msgCompletionMessage":"Please enter Completion Message","msgNoPicforCandidate":"No Picture is available for this candidate.","MsgOneOrMoreQuestion":"We found that the score of one or more questions is set to 0 (zero). Click on \"Ok\" button if you have intentionally set the 0 score, it will set 0 as the score for such questions otherwise click on \"Cancel\" button to change the score","pleaseAddSchool":"Please Add School","msgValidDistrictName":"Please enter valid District Name","msgselectatleastoneCandidatetype":"Please activate at least one Candidate type","MsgClickOnCancelButton":"Click on \"Cancel\" button if you want to go back and set some score for such attribute(s)","msgRelevantQuestionSet":"Select District for relevant Question set","msgEventCancelled":"This event is not created. Hence it can not be cancelled.","msgPleaseuploadInventory":"Please upload Inventory.","msgGradeLevel":"Please select Grade Level(s)","msgEnterPasswordMatch":"Password and Re-enter password does not match","MsgPositionIsAttached":"Position #/Requisition # is already attached\t\t\t","msgScoreReportFilesize":"Score Report File size must be less than 10 MB.","msgCandidateHasNotCompleteIpi":"Candidate has not completed IPI.","msgPlzProvideVideoLink":"Please provide Video Link","videolinks":"videolinks","msgFrendSecondName":"Please enter Second Friend's Name","msgTeacherMatchInternalCandidate":"You have been successfully registered with TeacherMatch as an internal candidate","valueI":"I","msgfilesize":"File size must be less then 10mb.","valueE":"E","PlzValidDate":"Please enter a valid date","msgTeacherRETNO":"Please provide Teacher Retirement Number","msgisnotconfiguredforthe":"is not configured for the","msg1PaneltoView":"Please select at least one panel to view panel members.","msgCertificationLicensureUrl":"Please enter Certification/Licensure Url Or Upload Certification/Licensure Letter","msgADnotexceed1month":"Application  Date can not be exceed 1 Month(30 days) without District.","PlzEtrOtherField":"Please enter Other Field of Study","MsgTimeOutTheJSI":"Candidate has Time Out the JSI.","msgCompletionMessagelength":"Completion Message length cannot exceed 1000 characters","MsgGreatEventScheduled":"Great ! Event has been scheduled","msgPleaseprovideRace":"Please provide Race","personalInformationVideo":"https://www.youtube.com/embed/pLTuNaiejg0","msgEmailAddToRecvMsg":"Please enter Email address to receive message from teacher.","msgAlreadynotherJobCategory":"Already exist Job Category, Please select another Job Category.","MsgUnWithdrawTheCandidate":"Are you sure, you would like to UnWithdrew the Candidate?","lblCandidateStatus":"Candidate Status","lblSDate":"Start Date","MonthAugust":"August","msgNotesLen500":"Notes length cannot exceed 500 characters","msgDomainName":"Please select Domain Name","PlzSlctAcceptableNoteFormats":"Please select Acceptable Note formats which include PDF, MS-Word, GIF, PNG, and JPEG files","msgtfaregion":"Please select TFA Region","msgSumNumbersWrong":"Sum of both the numbers is wrong, please enter again","lblYearofTeachingexperience":"Year of Teaching experience","msgIntrestOfTeching":"Thank you for your interest in teaching with the School District of Philadelphia. Unfortunately we are unable to process your application because you are not eligible for re-employment with the District.","msgValidAdminEmail":"Please enter valid Admin Email","msgmanypeoplelead":"Please enter How many people you have lead","MsgQuestIsMatched":"No of Question is matched for all jobs but Questions are not same","lblStep":"Step","valueDD":"DD","msgdataforEEOCinquiries":"The following questions are to insure EEOC compliance and are strictly voluntary. We maintain this data for EEOC inquiries and to assist in any discrimination investigations by the federal, state and local governments.","msgJobCat":"Select Job Category ","msg90MinutesUninterrupted":"Make sure that you have at least 90 minutes of uninterrupted time to complete the EPI","mafDetailsofAffidavit":"Details of Affidavit","msgSubjecttoCandidate":"Please enter Subject to Candidate(s)","msgFinalDesMaker":"Please enter Final Decision Maker Name.","MsgQuestDidNotMatch":"No of Question did not match for all jobs","NoJobSpecificInventory":"No Job Specific Inventory is attached with this Job Order.","msgCertificatesCurrentStatus":"Please ensure one of your certificates references your current status in Colorado.","msgQuestionAttributeScore":"Please enter Question or select an attribute to score","msgGeneralKnowledgeScoreReport":"Are you sure, you would like to delete the General Knowledge Score Report.","lblNext":"Next","oops":"Oops : Your Session has expired!","msgcannotaddduplicateCertification1":"Please enter another Certification/Licensure Name. We cannot add duplicate Certification/Licensure Name in this Job Order.","msgCurrEmpOfMiami":"You are a current employee of Miami and you are being redirected to","msgFullTimeinstructional":"I am currently a full time instructional employee (Teacher)","MonthDecember":"December","msgSendSuccess":"Message sent successfully","subHistory":"History","MsgSuccessfullyUpdatedThatJob":"You have successfully updated that job document.","msgAjaxNotSupported":"AJAX NOT SUPPORTED BY YOUR BROWSER","msgYearstraditionalKK":"How many years of K-12 classroom teaching experience do you have?","messagePrescreen":"The Pre-Screen has not been finalized. Please come back later to complete this application.","MsgPanelScheduled":"Panel for this Teacher has been scheduled.","msgProvideAtLeast":"Please provide at least","PlzSlctNodePermsn":"Please select atleast one node selection permission ","PlzSlctBAAdmins":"Please select Branch Administrators ","msgmaximumlengthfiled":"Maximum length of field \"Reason for leaving\" is 5000 characters. We cannot save more than 5000 characters in this field","MsgUndoTheStatus":"Do you really want to Undo the status? It will also remove all the associated scores attached with this status","msgInvalidPassword":"Invalid Password","msgTeacherMatchJobURLis":"TeacherMatch Job URL is ","msgsuccessfullySaveSchool":"You have successfully save the school.","lblCompanyCity":"Company City","msgAccessToken":"Please enter Access Token.","PlzEtrQuestLength":"Please enter Question length less than 256 characters.","msgnocurrentupdatestatus":"Select \"No\", if you would like to not update your status for those previous job(s) with your current status.","MsgUnRejectTheCandidate":"Are you sure, you would like to UnReject the Candidate?","MsgPurchaseYourReport":"to purchase your report","CandidateNotProvidedCoverLtr":"Candidate has not provided Cover Letter for this job.","msgActions":"Actions","msgGrpAlreadyExist":"Group already exist. Please select the Group Name from drop down to add members in this group.","msgContLName":"Please enter Contact Last Name","msgUploadRecommendation":"Please upload Recommendation Letter","msgDocSize10mb":"Document File size must be less than 10 MB","PlzSlctHQBRAdmins":"Please select Headquarter/Branch Administrator","msgBackGroundCheck":"Background Check","lblUnlinkedCG":"Unlinked Candidates","msgSecondLanguageexperience1":"this should not include substitute teaching, tutoring, post-secondary/college-level teaching, or teaching English as a Second Language (ESL) experience. Also, please do not include this year, if you are currently teaching.","msgappropriateStatusb4mail":"Please select appropriate Status before sending mail.","msgStartExamForTeacher":"Start Exam for Teacher Id","msgDigitalTeacherLibrarian":"Digital Teacher Librarian","msgFlagValue":"You can not upload more then five files.","msgGEDhighschoolhigher":"GED, high school or higher","PlzSelectAcceptMsg":"Please select Acceptable Message formats which include PDF, MS-Word, GIF, PNG, and JPEG  files","msgLogoFormat":"Please select Acceptable Logo formats which include GIF, PNG, and JPEG  files.","PlzSelectSchedule":"Please select Schedule.","ONB_SlfSrv_NoCommunicationdefined":"No Communication defined","msgYearstraditionalK12":"Years of traditional, K-12 classroom experience completed","msgpreviouslyworkedforUNO":"Have you previously worked for UNO?","PlzSelectUsr":"Please select User","msgStafferName":"Please enter correct Staffer Name.","PlzSlctSchools":"Please select schools","ElectronicRefAlreadyRegWithProvidedEmail":"An Electronic Reference has already registered with the provided Email","PlzEtrValid4DigitYear":"Please enter a valid 4 digit year between","msgCreateChild":"You can not create child.","MsgPositionIsMandatory":"Requisition/Position # is mandatory to hire a Candidate for this Job. Currently we could not find any available Requisition/Position # for this job. Please first add a Requisition/Position number with this job order and then try again","ONB_SlfSrv_CandidateActionRequired":"Candidate Action Required","MsgDetailsOfWillingtoSubstitute":"Details of Willing to Substitute","PlzEtrSchool":"Please enter School","PlzUplMsg":"Please upload Message","msgreadwriteprivilege":"One or more Schools should be attached to this Job Order to provide read/write privilege.","msgVirtualVideoInterview":"Virtual Video Interview Questions","errmsghirevueAPIkey":"* Please enter HireVue API Key","PlzEtrOrg":"Please enter Organization","PlzEtrPanelTime":"Please select panel Time","msgDefaultInventory":"We already have a default Inventory","msgSubjectAreaScoreReport":"Are you sure, you would like to delete the Subject Area Score Report.","msgPrincipalAsstPrincipal":"Principal / Asst Principal","msgDetailsSIN":"Details of SIN","msgFinalDesMakerEmail":"Please enter Email of Final Decision Maker.","msgValidPhoneNo":"Please provide valid Phone Number","msgPleaseSelectTypeEvent":"Please select Type of Event","msgtimedOutResetAllowed":"Please enter TimedOut Reset Allowed","msgWrittenSkill":"Please select Written Skill","msgSSF":"Social security","lblPSOMCandidate":"Please select only one candidate to hide","msgEmailWithLoginDetails":"We have sent you an email with login details and an authentication link.","msgUnabletosave":"Unable to save: Read/Write privilege has been assigned to Associated Schools but no schools have been associated with this job order. Either remove the \"Associated Schools\" read/write privilege, or attach schools to this job order.","msgReallyAuthorize":"Do you really want to Authorize","msgDefaultAssessmentType":"We already have  a ## as default Assessment Type for","msgstateMaster":"stateMaster","BtnClick":"click here","msgNotRenameStatus":"You can not rename status.","msgAnotherRequisitionNumber":"Please enter another Requisition Number. We can not add existing Requisition Number in Job Order.","MsgEngagement":"Engagement","PlzSelectPhoneFormat":"Please select Acceptable Phone formats which include PDF, MS-Word, GIF, PNG, and JPEG  files","msgentercity":"Please enter City","MsgSkilled":"Skilled","lblWF3COM":"WF3 COM","msgFormatsWhichIncludes":"formats which include PDF, MS-Word, GIF, PNG, and JPEG  files","errorMsgPleasechecklist":"Please select at least one checklist.","errMsgForAppointmentNote":"Please select from the available options.","msgDefaultInventoryDistrict":"Please make sure that we have only one default Inventory for a District.","msgPlzSelectFile":"Please select File.","msgformatswhichincludePDF":"formats which include PDF, MS-Word, GIF, PNG, and JPEG  files","PlzSelectSLC":"Please select at least one SLC Item","msgDoyouwanttoactivatetheapprovalprocess":"Do you want to activate this Job Approval Process?","MsgPrint":"Print","msgEmployment":"Employment","msgUploadScoreReport":"Please upload Score Report","msgPhiladelphiawith3Ref":"The School District of Philadelphia requires at least two references.","msgNoOfExpQuestion":"Please enter No Of Experiment Questions","msgprovideMasterdegrees":"Please provide Master degrees","CandidateTimeOutBaseInvevtory":"Candidate has Timed Out Base Inventory. You cannot see Professional Development (PD) Report","ViewLink":"View","msgUsingTalentEdOnboard":"Using TalentEd Onboard","BtnContinue":"Continue","MsgRecentResumeFile":"Recent resume on file:","MsgEtrValidCertificate":"Please enter valid Certificate Type","msgDetailOfTeachingExperience":"Details of Years of Certified Teaching Experience","msgAssessmentShortName":"Please enter Short Name","June":"June","September":"September","msgSectionDescriptionlength750char":"Section Description length cannot exceed 750 characters","lblRegion":"Region","msgPlzSIN":"Please enter the Social Insurance Number.","lblLRScore":"L/R Score","msgEndEqualStartTime":"End time should not be equal to start time","msgAsstPrincipal":"Asst Principal","msgAdministrator":"Administrator","MsgNotificationNotAdded":"Notifications could not be added. Please try again.","msgDemoTime":"Please select Demo Time","msgOsceolawillaskyou":"Osceola will ask you to provide a minimum of 10 years of employment history. In certain situations the District may require that you provide a complete employment history back to high school graduation. Any gaps in employment history should be noted and an explanation provided (Unemployed, raising children, etc.).","ONB_SlfSrv_NoActionSet":"No Action Required","lblTFA":"TFA","MsgDetailsOfEthenicOrigin":"Details of Ethenic Origin","msgDateInitiatedlessequalEndDate":"Date Initiated must be less than or equal to Contract End Date","msgEveryAnsb4zero":"Please answer every question in the inventory before the timer reaches 0.","msgJuniorGPA":"Junior GPA must be less than or equal to 5.00","PlzSlctDefaultDocument":"Please select default document.","lblYou":"You","msgPleaseEnterName":"Please enter Your Name","MsgIntentionallySet":"Click on \"Score\" button if you have intentionally set the 0 score, it will set 0 as the score for such attribute(s)","subScience":"Science","msgTMStatRemain2":"You will still be able to apply to any and all positions you are interested in and schools are free to continue considering you for employment (EPI scores are merely one of the many data points schools use to guide their hiring process.)","academicsVideo":"https://www.youtube.com/embed/lcDpimONEJk","msgTMStatRemain1":"Your TeacherMatch status will remain \"Timed Out\" for 12 months.","MsgDontScore":"Don't Score\t\t\t\t","msgrightbutton":"right button","July":"July","PlzEtrValidMonth":"Please enter a valid month","msgQuestiondoesnotExistDistrict":"Question set does not exist in district.","msgValidEmailStdAssecord":"Please enter valid Email of Student Assessment Coordinator","MsgJSIInviteSuccessfullySent":"JSI invite has been successfully sent to other selected Candidates.","msgFrendsNameEmail":"Please enter Friend's Name and Friend's Email","lblAcademicsMartin":"A minimum of an Associate's Degree or 60 semester hours is required, along with a passing score on the Parapro Test. Please upload your transcript here, and upload your test results to the &#34;Additional Documents&#34; section.","MsgDetailsOfResume":"Details of Resume","MsgInformationSentToPeopleSoft":"Information sent to PeopleSoft successfully.","msgacceptableresume":"Please select Acceptable resume formats include PDF, MS-Word, GIF, PNG, and JPEG  files","msgNativeHawaiian":"Native Hawaiian","msgXlsXlsxFileOnly":"Please select xls or xlsx file only.","msgStudentAssessmentCoordinator":"Please enter Student Assessment Coordinator.","msgRemoveReqNo":"Do you really want to remove Requisition Number.","msgUserNameOrPass":"A user already exists with the credentials you've provided. If you've misplaced your user name or password, please","errorMsgTalentEdOnboardID":"Please enter TalentEd Onboard ID","msgjobExpiredTeacherMatchAdministrator":"This job is Expired, Please contact TeacherMatch Administrator.","msgfeelfreeprovideCertLic":"Please feel free to provide details of all the Certifications/Licenses","msgfillfromDate":"Please fill from date","msgschedulesAtLeast2":"Please enter schedules at least two","MsgEqualEmploymentOpportunity":"Equal Employment Opportunity Compliance for","msgschedulesAtLeast1":"Please enter schedule at least one","msgJobApprovedSuccessfully":"This job is approved successfully.","PlzEtrUniqueObjectiveName":"Please enter a unique Objective Name","msgaladyemail":"A Member has already registered with the email, you provided. Please provide another email address to register.","msgLblForCrictJob":"Please enter Label for Critical Jobs","msgdistricthumanresoursedevelopment":"This job is a closed job and can only be accessed by those who are specifically invited by the district. Please contact the district Human Resources Department for more information.","msgvalidCertificationLicensure":"Please enter valid Certification/Licensure","lblPESlry":"Please enter Salary","msgHowLongYouKnwPers":"Please enter How Long Have You Known This Person?","msgUniqueSectionName":"Please enter a unique Section Name","lblCustomQuestions":"Custom Questions","msgExclusivePGret0":"Please enter Exclusive Period greater than 0","msgAssessmentthisjob":"The Assessment for this job","lblEDate":"End Date","lblJobCategory":"Job Category","msgCAndWithinDist":"Candidates within the district","msgnumberofpeople":"Please select Number of people in this Organization","PlzSelectExtCand":"Please select external Candidates only.","PlzSelectNoteFormat":"Please select Acceptable Note formats which include PDF, MS-Word, GIF, PNG, and JPEG  files","msgValiddistrictemailaddress":"Please enter a valid district email address.","msgDistrictSpecificQuestions":"District Specific Questions","msgUniqueInventoryName":"Please enter a unique Inventory Name","ONB_TalentEdAPI_SINGLESIGNON":"Unable to communicate with the Onboarding System for single sign on. Please try again later or contact support.","msgelectronicemail":"An Electronic Reference has already registered with this Email.","msgNoOnBoardingConfigured":"No Onboarding Configured","MsgPortfolioNotCompleted":"Portfolio is not completed by the candidate.","PlzEtrExamCode":"Please enter Examination Code","msgallcertificationsheld":"Please include all certifications held.","PlzSelectEndDate":"Please Select the End Time","PlzUpldNotes":"Please upload Notes","msgCumulativeGPA":"Cumulative GPA must be less than or equal to 5.00","msgSchoolDetailsUpdatedSuccessfully":"School details has been updated successfully.","msgprovideBachelordegrees":"Please provide Bachelor degrees","lblEmpId":"Employee ID","msgcurrentpsw":"Please enter Current Password","valueslsel":"slsel","msgCurrentlyinstructional":"I am currently a part-time instructional employee (Teacher)","ONB_SlfSrv_NoCheckpointStatusdefined":"No Checkpoint Status defined","MsgSuccessfullyUpdateThisJobOrder":"You have successfully update this job order.","msgmiddlebutton":"middle button","msgPlzenterDate":"Please enter Date","msgSocialSecurityNumber":"Please enter Social Security Number","msgCandStatusTimeout":"Currently, this Candiate's EPI status is Timed-Out. Do you want to reset it to \"Incomplete\" so that the Candiate can resume the EPI?","msgEnterFavTeacher":"Please enter your Favourite Teacher Name","msgPlzProvideSSN":"Please provide Social Security Number","lblInternal":"Internal","MsgApplicantIsNotApplicableForAnyEmployment":"This applicant is not eligible for any employment with Miami-Dade County Public Schools at this time. If you have additional questions, please contact ","msgceritificationtype":"Please select Certification Type.","MsgNotCompleted":"You have not completed....","PlzsetStatus":"Please set the status","msgHourPerDay":"Please enter Hours Per day","msgErrorEmailConfirm":"Please confirm email","ONB_TalentEdAPI_EMP":"Unable to communicate with the Onboarding Employee System. Please try again later or contact support.","msgfillSchoolName":"Please fill school name","PlzSelectOneOption":"Please select at least one option","msgPleaseMaxScore":"Please enter Max Score","MsgDetailsOftfaAffiliate":"Details of tfaAffiliate","msgAccessTokenSecret":"Please enter Access Token Secret.","btnfinalizeINVtoWF3":"INV to WF3","btnfinalizeINVtoWF2":"INV to WF2","lblAScore":"A Score","msgrepasswordnotmatch":"New Password and Re-enter Password does not match","msgPEP":"Pre-Employment Physical","btnfinalizeINVtoWF1":"INV to WF1","PlzSelectCandidates":"Please select candidate(s)","lblNewFail":"New/Failed","msgExpctedSal":"Please provide Expected Salary","msgEnterMaxMarks":"Please enter Max Marks","msgBrowservideotag":"Your browser does not support the video tag.","msgSchoolAlreadyEntered":"The School you enterd is already added. Please enter another School Name","msgValidThirdFrendEmail":"Please enter valid Third Friend's Email","msgSelectAffidavit":"Please select Affidavit","headTm":"TeacherMatch","msgPzProvideCertifiedExp":"Please provide Years of Certified Teaching Experience","lblRecords":"Records","lblPrinted":"Printed","lblFirst":"First","MsgOpenOneOrMoreNote":"You opened one or more note in edit mode but did not save that note after edit. Please click on","FileSizeLessthan10Mb":"File size must be less than 10 MB.","msgIsExperimental":"If question is experimental then Weightage should be 0","msgW4":"W4","msgexceededtimelimit3":"Please respond to each item within its stipulated time limit even if you must guess.","msgmendetorafidevit":"Please complete the mandatory information to accept the terms of the affidavit.","msgexceededtimelimit2":"reminder regarding the importance of abiding by the time limits and supporting the reliability, integrity and security of the","msgexceededtimelimit1":"You exceeded the time limit for this item. This is your","msgCertificated":"Certificated","msgPleaseUploadLogo":"Please upload Logo","msgPlzPvdnumberopening":"Please provide the number of opening.","CandidateHasNotComplete":"Candidate has not completed Base Inventory for this financial year","MsgAuthMailSentSuccessfully":"Authentication Mail Sent Successfully","msgGenerateApplicantsListPrintPre":"this is function generateApplicantsListPrintPre()","msgduplicateceritificate":"Duplicate Certification(s)/Licensure(s), Please select another Certification(s)/Licensure(s)","lblPEALOCandidate":"Please select at least one candidate to send data to PeopleSoft.","msgEnterCompetencyUId":"Please enter Competency UId","msgPleaseselectaCity":"Please select a City","msgPANNOTAVBL":"PANNOTAVBL","BaseInventoryIsTimeOut":"Your Base Inventory is timed out so your Professional Development Report is not available as the Professional Development Report is based on responses to a completed Base Inventory.  Please contact Client Services at","msgRemovethisJobInventory":"Are you sure you want to remove this Job from the Inventory?","msgAspiringAssistantPrincipal":"Aspiring Assistant Principal","msgReallyWantApproveJob":"Do you really want to approve the job","PlzSlctContractDate":"Please select Contract Date","MsgNotInsertDuplicateQuestSet":"Please can not insert Duplicate Question Set","PlzChooseAnAction":"Please choose an Action","msgUniqueCompetencyUId":"Please enter a unique Competency UId","lblPortfolio":"Portfolio","msgrecentresume":"Your recent resume","msgyearReceived":"yearReceived","msgHasAppliedFor":"Has Applied For","msgStageOne":"Please select Stage One","msgAlreadyAppliedjobssameDistrict":"You have already applied other jobs for the same District. You did not declare yourself as an affiliated member for at least one of those jobs. Would you like to declare yourself as an affiliated member for those jobs as well?","msgEnterURL":"Please enter URL ","msgvalidstudy":"Please enter valid Field of Study","msgScoreGreaterthan0":"Please set a Score greater than 0","PlzEtrVldDegree":"Please enter valid Degree","academics":"academics","msgLogingAuthenticationYouerAccout3":"Invalid Email or Password. Please check the Email and Password and try again. Password is case sensitive.","msgfieldName":"fieldName","msgPanelistalreadyadded":"This Panelist is already added","errmsgCompanyName":"Please enter Company Name","PlzSelectStartTime":"Please Select the Start Time","msgJobStatus":"Please select Job Status","lblFitScore":"Fit Score","msgselectAcceptable":"Please select Acceptable","MsgDetailsOfDSPQ":"Details of DSPQ","msgacceptableidentification":"Please select Acceptable Identity Verification formats which include GIF, PNG, and JPEG  files  ","PlzEtrSTDateMSG":"Please enter start date","msgvideosize":"Please enter Video Size less than 10 MB","msgPleaseenterPositionStartDate":"Please enter Position Start Date","msgSelectExplanationRequired":"Please provide explanation required option","msgNoAssessmentConfigured":"No Assessment Configured","MonthSeptember":"September","msgEnterFrom":"Please enter From","msgComplAssmnt":"Thank you have completed the Assessment","MsgDateGreaterOrEqual":"panel Date must be greater than or equal to","msgVideoLink":"Details of Video Link","msgRankgreater1":"Please enter Rank greater than 0","lblNormScore":"Norm Score","msgStageThree":"Please select Stage Three","valueOSONP":"OSONP","MonthJune":"June","msgConsumerKey":"Please enter Consumer Key.","lblCompanyTelephone":"Company Telephone","lblCompanyState":"Company State","msgMonthofBirth":"Please select Month of Birth","AlreadyTakenJSIForThisJob":"One or more Candidates have already taken (Completed/Timed Out) the JSI for this job.","msgprimaryresponsibilities":"Please provide primary responsibilities in this role","MsgOpportunityCompliance":"Equal Employment Opportunity Compliance","msgBkHispanicorigin":"Black/Not Hispanic origin","msgGeneralKnowledgeExam":"Details of Pass/Fail General Knowledge Exam","msgHispanicLatino":"Hispanic/Latino","msgCompanySupervisor":"Please enter Name Of Supervisor","lblYes":"Yes","PlzSlctPanelTimeZone":"Please select panelTimezone","msgExclusivePeriod":"Please enter Exclusive Period","msgSchoolAlreadyExist":"School is already exist. Please enter another school","PlzEtrVldRegionName":"Please enter valid Region Name","lblDeclineAnswer":"Decline to Answer","msgAlreadyRegisteredEvent":"You are already registered for this Event.","valuedspq":"dspq","btnCancel":"Cancel","msgMaintainIntegrityEPI":"We need to maintain the integrity of the EPI and ensure that everyone has a fair and equal opportunity to complete the EPI.","msgPleaseselectToMonth":"Please select To Month","lblPTA":"Please try again.","MsgIncompleteApplication":"Incomplete Application Items for","lblPSOOCandidate":"Please select only one candidate to send data to PeopleSoft.","MonthJuly":"July","msgvideolink":"Please enter either Video Link or select Video","msgRetiredFromDistrict":"Please enter Retired From District","msgcurrentlyteachingStrive":"Formal teaching experience includes only full-time classroom teaching in K-12 setting and does not include substitute teaching, student teaching, Peace Corps service, AmeriCorps service, tutoring, work in an after-school program, higher education, or daycare.","MsgCurrentInternalCandidate":"You have declared yourself as an current Internal Candidate while filling the Cover Letter details but now you are changing your declaration. Please first change the declaration in Cover Letter screen.","msgValidEmail":"Please enter your valid Email Address","msgTypeCoverLtr":"Please type in your cover letter.","MsgDetailInsertedSuccessfully":"District details has been Inserted successfully.","February":"February","MsgAnAdvancedEngagement":"an Advanced Engagement","MsgInformationSentToSAP":"Information sent to SAP successfully.","PopUpWindowBlock":"Pop-up window is blocked on this browser. Please allow pop-ups for this site to view this report or","msgEnterRequisitionNo":"Please enter Requisition No.","msgConfirmMail":"Do you really want to resend invite(s)? ","msgEnterAssmntName":"Please enter Assessment Name.","msgvalidzipcode":"Please enter valid Zip Code","MsgSaveNote":"Save Note","msgTeachForAmericaTFA":"Please provide Teach For America (TFA) Affiliate","PlzSlctAtlstOneJobApply":"Please select at least one job to apply.","msgdaysBeforeRetake":"Please enter Days Before Retake","msgNameofCity":"Name of City","January":"January","msgActiveUser":"Are you sure you want to unlock this account?","lblLinkToKsn":"Linked to KSN","PlzSelectAnyFolder":"Please select any folder","msgDetailsRace":"Details of Race","msgExpectedHire":"Please enter # of Expected Hire(s)","msgyearreciverd":"Please select Year Received","msgMinimumSalary":"Please enter Minimum Salary/Hourly Rate","PlzEnterQuantity":"Please enter Quantity","msgCDE":"CDE license78","msgInstructionsFor":"Instructions for ","MsgEreferenceConfirmation":"e-References Confirmation","msgInactive":"Inactive","PlzSlctClearDate":"Please select Clear Date","PlzEtrNoteOrSetScore":"Please enter Note or set Score.","msgHireHatDateError":"Please select Expires after (every year) Date","msgcorpsyear":"Please select Corps Year","msgNumericTelephone":"Please enter Company Telephone only in numeric","lblWhiteNotHis":"White (Not Hispanic)","msgAddatleastoneJobCategory":"Please add atleast one Job Category.","msgPleaseselectRole":"Please select Role","MsgFingerPrint":"Finger Print for","msgParaprofessional":"Paraprofessional","lblTags":"Tags","msguploadtrascript":"Please upload Transcript","msgPleaseprovideRequisitionNumber1":"Please provide Requisition Number(s) same as  # of Expected Hire(s)","msgAdditionalDocuments":"Details of Additional Documents.","PlzEtrObjectiveName":"Please enter Objective Name","msgWhHispanicorigin":"White/Not Hispanic origin","MsgSuccessfullyRemovedThatJob":"You have successfully removed that job document.","msgNoNeedApproveJob":"No need to approve the job","MSGOnboardingCandidates":"Click here to expand the row to see the Onboarding Candidates","MsgSuccessfullyAddedThatJob":"You have successfully added that job document.","MsgAdvanced":"Advanced","BtnSave":"Save","msg4FrendValidEmail":"Please enter valid Fourth Friend's Email","msgPleasenote":"Please note","lblApplicants":"Applicants ","msgValidRank":"Please enter a valid rank","msgDegreeConferredDate":"Degree Conferred Date should not be empty.","msguploadOCTCard":"Please upload OCT Card ","msgFacebookConfig":"Your Facebook configurations are successfully set (Jobs will be posted on your Facebook Wall).","msgdeleteNotes1":"Are you sure you would like to delete this Notes?","msgSubstitutes":"Substitutes","lblDiscriptionText":"Please Enter Job Description.","lblAcadHistoryProvidedCand":"Academic History provided by Candidate","Youdashbord":"You ","PlzSlctDocumentExpireDate":"Please select document expire date.","PlzUpldCallDetail":"Please upload Call Detail","msgSectionName":"Please enter Section Name","PlzSlctHQAdmins":"Please select Headquarter Administrators ","msgGovernmentagenciesrequire":"Government agencies require our partner districts and clients to collect information and file periodic reports regarding the gender, race and ethnicity of applicants. The definition for each category below has been established by the United States Federal Government. The data collected enables us to analyze hiring processes, and to ensure equal employment opportunity compliance.<br><br>The information requested below is voluntary and refusal to provide will not affect you adversely. This information is kept separate from your application.","lblRecordsPerPage":"Records Per Page","msgProvideResToAllQ":"Please provide responses to all the questions since they are required.","MsgSelectSchool":"Select school","lblExternal":"External","msgMF":"Multi-Form","msgCurrentEmployment1":"Please select your Current Employment","msgUnexpectedError":"An error has occurred, please contact administrator.","msgCAF":"Colorado affirmation","msgPleaseEnterDescription":"Please enter Description","subGeography":"Geography","PlzEtrDescription":"Please Enter the Description","msgButtonClick":"button. If you click on","msgSectionInstructionslength2500char":"Section Instructions length cannot exceed 2500 characters","msgJobStratDateless":"Job start date should not be less than","msgPleaseselectSchool":"Please select School","msgStableReliableInternet":"Make sure that you have a stable and reliable internet connection","msgCertLicStateorName":"Certification/Licensure State or Certification/Licensure Name","msg5ValidFrendEmail":"Please enter valid Fifth Friend's Email","msgRegisterInternalCandidate":"The email address does not belong to the District. Please use your official email address to register as internal candidate.","PlzEtrOtherDegree":"Please enter Other Degree","msgPleaseaSet":"Please select a Set","sixDigitALTMSG":"Please enter 6 digit Employee ID","msgMessagetoCandidates":"Please enter Message to Candidate(s)","msgvalidAttendee":"Please select a valid Attendee","msgSomeerror":"Some error","SetScoreForAllAttributeToFinalize":"Please set Score for all the attributes to Finalize","msgDetailsGender":"Details of Gender","msgdistrict4relevantsubject":"Select district for relevant subject list","msgContacted":"who may be contacted","msgDuplicateDomain":"Duplicate Domain Name. Please enter a unique Domain Name. ","msgIncludeURLVideos":"Please include the URL to any videos that may further demonstrate your teaching. Though the video links are optional at this stage, they will be required in order to be eligible for Site Selection and before a hiring decision is made. You may re-enter your profile to include the video links at any point throughout the application process.","lblInternalCandidatesonly":"Internal Candidates only","msgSubject1":"Subject","CandidateHasNotCompleteThisJobOrder":"Candidate has not completed the Job Specific Inventory for this Job Order.","msgReminderEmpty":"No of reminder should not be empty.","msgresumesectionacceptable":"Please check Resume section. Your resume should clearly convey work history, achievements, and leadership experiences (if applicable). Acceptable resume formats include PDF, MS-Word, GIF, PNG, and JPEG files. Maximum file size 10MB.","MsgInstruction":"Instructions for","PlzSelectFileToUpload":"Please select a file to upload","msguploadLetterIntent":"Please upload Letter Of Intent","msgfreshmangpa":"Freshman GPA must be less than or equal to 5.00","MsgCompleteOrTimedOut":"One or more Candidates have already taken (Completed/Timed Out) the EPI for this job.","PlzSelectReason":"Please select Reason.","PlzSelectTiming":"Please select Timing.","msguploadedFiles":"uploadedFiles ::","msgMonthOfbirth":"Please select Month of Birth","msgPlsProvideEmpHis":"Please provide Employment History","msgReadCarefully":"Please Read Carefully","msgdeletethisSchool":"You can not delete this School.","msgDistrict":"District","msgDetailsPI":"Details of Personal Information","msgMAxLenSignificantContributions":"Maximum length of field \"Most Significant Contributions in this Role\" is 5000 characters. We cannot save more than 5000 characters in this field","PlzSlctAttendee":"Please select Attendee","msgPleaseEnterOnlyNumericValues":"Please enter only numeric values","msgPayGrade":"Please enter Pay Grade","btnOk":"Ok","msgBaseInventory":"Base Inventory","msgPleaseofApprovalsNeeded":"Please select a Number of Approvals Needed","msgleastoneDistrictAssessment":"Please select at least one District Assessment","msgPhiladelphiaReq":"The School District of Philadelphia requires at least three references.","msgDEBUGelement":"DEBUG - could not find element","msgnumericamount":"Please enter only numeric Amount","msgOralskill":"Please select Oral Skill","PlzEtrAnyDistrictName":"Please enter any District Name","lblInternalTransfer":"Internal Transfer","MonthFebruary":"February","msgThreereferences":"Three references are required.","msgReasonforleaving":"Please provide Reason for leaving","OneOrMoreSelectedCandidates":"One or more selected Candidates are internal Candidates.","msgCompleteJobPref":"Please complete your Job Preferences first.","msgEnterAtSymbol":"You have entered @ symbol in the domain name. Domain name does not contain @.","MsgForFingerPrint":"Finger Print","msgOnlineAssessments":"Online Assessment(s)","msgThisjob":"This job","cnfmsgWidrawApplication":"Are you sure you want to withdraw your application for this job? This job is being removed from your Dashboard view, but you can \"Re-Apply\" it by going to the Jobs of Interest screens and selecting Re-Apply.","MsgDontWantToScore":"Click on \"Don't Score\" button if you do not want to score such attribute(s)","msgclearinventory":"Are you sure, you would like to Clear Inventory?","lblHiredCG":"Hired Candidates","PlzEtrRetiredFromDistrict":"Please enter Retired From District","labelIsnotAvail4SMPC":"is not currently available for the SmartPractices professional development series. Please select another branch or contact a branch administrator.","msgPassCombination8To12Char":"Password should be a combination of digits and characters or it should be a combination of digits and special symbols and Password length must be a minimum of 8 characters and a maximum of 12 characters.","MsgToIncreasePowerProfile":"Click here to increase your Power Profile score","msgSelectDistrictAssessment":"Online Assessment(S) Questions","msgFacebookConfigPage":"Your Facebook configurations are successfully set (Jobs will be posted on your Facebook Page).","lblRaceStat":"Race Stats","msgsuredeletecertificationname":"Are you sure, you would like to delete this Certification Name?","msgI9":"I9","lblNo":"No","msgleastonejobrequires":"Please select at least one job requires a job specific inventory.","msgValueAllNumeric":"Value must be all numeric characters, including \".\" or \",\" non numerics will be removed from field!","msgsuredelete":"Are you sure, you would like to delete the record? ","msgResetSp":"Please enter reset message.","lblPrevious":"Previous","msgKeyContWithSameEmail":"The Key Contact with same email address is already defined in this District/School. Please provide another email address to define a new Key Contact.","MsgDateFormat":"The date format should be : mm-dd-yyyy","lblComplete":"Complete","msgYouKnowThisPerson":"Please enter How Long Have You Know This Person","msgMAxLenPrimaryResponsibilities":"Maximum length of field \"Primary Responsibilities in this Role\" is 5000 characters. We cannot save more than 5000 characters in this field","lblJobSubCategory":"Job Sub Category","msgComprehensiveOverviewTeacherMatch":"If you are interested in a more comprehensive overview of TeacherMatch's \"Assessment Development: Policies and Procedures\" please click","msgApplicationDtexccep1month":"Application Date can not be exceed 1 Month(30 days) without District.","msgLEAText":"LEA Specific Forms","errmsgCompanyCity":"Please enter Company City","MsgEPIInviteWereSuccessfully":"EPI Invites were sent successfully to the selected candidates.","msgAssessmentTimedOut":"Your Assessment is Timed Out, Please contact TeacherMatch Administrator. ","msgCandidateSpStatusTimeout":"Currently, this Candidate's Smart Practices Assessment status is Timed-Out. Do you want to reset it to \"Incomplete\" so that the Candidate can resume the Smart Practices Assessment?","msgFromLessToDate":"From Date must be less than or equal to To Date","msgofExpectedHire":"of Expected Hire","lblEPIDateFrom":"EPI Date From","msgVeteran":"Please Select Veteran","msgEnterLang":"Please enter Language","msgPleaseIEINNumber":"Please enter IEIN Number","msgcertificatenamebased":"Please enter valid Certificate Name based on Certificate Type","msgUnableRetakeEPI12Months":"If you do not follow these guidelines your status may become \"timed out\" and you will be unable to retake the EPI for 12 months.","msgFormCode":"Please enter Form Code","msgEndTimeLessStTime":"End time should not be less than start time","msgPleaseselectFromMonth":"Please select From Month","msgAdditionalQuestions":"Additional Questions","MsgProvidedBy":"provided by","msgcurrentlyteaching":"Please note: this should not include substitute teaching, tutoring, post-secondary/college-level teaching, or teaching English as a Second Language (ESL) experience. Also, please do not include this year, if you are currently teaching.","msgfailureRetakeAllowed":"Please enter Failure Retake Allowed","msgNoPanelistFound":"No Panelist Found","msgAnyChangeinDetails":"Any change in the details of this Key Contact will reflect in the associated User details. Do you really want to continue?","msgisDuplicate":"isDuplicate","msgEpiReset":"Please enter the reason of EPI reset","msgFromgreaterthan":"From should not be greater than To","errorMsgForNumber":"Please enter exactly (Ten)10 numeric digits","msgDOENumber":"Please enter DOE Number","MsgOfferReady":"Offer Ready","msgLinkedInConfigurations":"Your LinkedIn configurations are successfully set.","enterEDateALTMSG":"Please enter end date","msgenterstate":"Please enter State","November":"November","msgaddduplicateCertificationLicensure":"Please enter another Certification/Licensure . We cannot add duplicate Certification/Licensure in this Job Order.","selfScheduleLive":"true","msgHired2":"Talent Type","PlzEtrValidURL":"Please Enter Valid Url.","msgFrendsname":"Please enter First Friend's Name","toolOnPace":"On-Pace  ","PlzSlctNewRecordOnly":"Please select new record only to reject.","msg4FriendEmail":"Please enter Fourth Friend's Email","msgTwitterconfigurations":"Your Twitter configurations are successfully set.","March":"March","msgValidDescMakerEmail":"Please enter valid Email of Final Decision Maker.","MsgEmailAddressAlreadyExist":"Email address already exist.","subSocialStudies":"Social Studies","msgFrendEmail":"Please enter First Friend's Email","ResumeNotUploaded":"Resume is not uploaded by the candidate.","MsgStatus":"Status","msgPlZSelectJobCategory":"Please select a Job Category.","msgPhoneNumber":"Please enter Phone Number","MsgStatusLifeCycleFor":"Status Life Cycle for","MsgInformationMissing":"We found some of the information missing from one or more selected Candidate(s).","msgAtleaseOneValidOption":"Please provide atleast one valid option.","msguniversityName":"universityName","msgdone":"done","MaxSize10Mb":"Maximum file size 10MB","msgyesupdateyourstatus":"Select \"Yes\", if you would like to update your status for those previous job(s) with your current status.","msgquestionatleast30seconds":"Please enter time allowed per question atleast 30 seconds.","msgAssessmentexpired":"Your Assessment is expired, Please contact TeacherMatch Administrator. ","msgyouwanttodeactivateportfolio":"Do you want to deactivate portfolio?","msgAnsSaved":"Your answers are being saved","msgAnyDistOrSchool":"Please enter any District Name or School Name","msgsuccessfullycreatedajoborder":"You have successfully created a job order.","msgWouldLikeDeleteJobCategory":"Are you sure, you would like to delete this Job Category?","PlzEtrEmail":"Please enter Email","msgExamStatus":"Please select Exam Status","msgatleastoneschoolType":"Please select at least one school Type","msgPlzProvideNBICL":"Please provide National Board Certification/Licensure","msgDescexcced2500":"Description length cannot exceed 2500 characters.","BtnRemove":"Remove","msgCT":"Contract","msgDefaultEpi":"Please make sure that we have only one default Base Inventory.","msgcancelbackstart":"Select \"Cancel\", if you would like to go back and restart","PlzEtrJobID":"Please Enter Job Id","msgAISection":"Please check Account Information section. You may have missed some required field(s) there or the information provided in this section may not be correct.","msgQuickTimePlayer":"QuickTime Player","msgUniqueObjectiveUId":"Please enter a unique Objective UId","PlzSlctFaileddate":"Please select Failed Date","msgContractStDatelesseqEnddate":"Contract Start Date must be less than or equal to Contract End Date","lblPES":"Please enter Step","lblPending":"Pending","msgDeleteBAtchJobOrder":"Are you sure, you would like to delete this Batch Job Order?","msgwillingworkassubstitute":"Please select if you are willing to work as substitute teacher or not","lblCLC":"Certification/Licensure Name of Candidates","msgAcceptableIntentFormat":"Please select Acceptable Letter Of Intent formats which include PDF, MS-Word, GIF, PNG, and JPEG  files","MszAddQuestion":"Add Question","lblVirtualVideointerview":"Virtual Video interview Questions","lblPEG":"Please enter Grad","BtnToIgnore":"button to ignore the changes you had made in this note or click on","MsgSubjectAreaExam":"Details of Subject Area Exam","PlzSelectCheckbox":"Please select checkbox, the captcha is required","msgSelectGroup":"Select Group","msgPlzProvideSSN9digit":"Please provide valid Social Security Number of 9 digits","msgCompletedIpiInventory":"Candidate has \"Completed\" IPI. You cannot reset his/her IPI.","msgOrganisation":"Please enter State Of Organization","msgentercertificatename":"Please enter Certification/Licensure Name","MsgReferenceFor":"Reference for","PlzEtrPanlLocation":"Please enter panelLocation","msgFrendFirstEmail":"Please enter valid First Friend's Email","msgCheckboxCaptchaRequired":"Please select checkbox, the captcha is required","MsgTranscriptfor":"Transcript for","msgDetailsForAmericaAffiliate":"Details of Teach For America (TFA) Affiliate","lblQualificationQuestions":"Qualification Questions","JobApplySuccessfully":"Job Applied Successfully.","msgreapplyfor3years":"your Drug Test have been failed, you can not reapply for 3 years from the date of applying.","lblOnBoarding":"Onboarding","lblReprint":"Reprint","PlzSlctAtlstOneCndidate":"Please select at least one candidate.","PlzEtrDistrict":"Please enter District","msgPlzenterLocation":"Please enter Location","msgAcceptableFileFormats":"Acceptable file formats include GIF, PNG, and JPEG files.","msgTimedOutthestipulatedtime":"You have exceeded the time limit of <font color='red'>75 seconds<\/font> on this item. Remember: if you receive two more <font color='red'>\"Timed Out\"<\/font> messages, you will need to wait 12 months before taking the EPI again. Try not to exceed the* <font color='red'>75-second time limit<\/font>* again.","msgGenderStats":"Gender Stats","msgnoOfAttemptsAllowed":"Please enter No Of Attempts Allowed","msgreinstatedButIncomp":"Your job application is reinstated but it is still incomplete, you should complete all the requirements to complete the application for this job.","msgafidevitconfirm":"Please confirm that you have read the affidavit of integrity and agree to abide by its terms by selecting the checkbox.","MsgEReferences":"e-References Evaluation for","MsgBeforeFinalize":"All reference contacts must reply before you can finalize","msgPlsEnterJobCategory":"Please enter Job Category","PlzEtrVldClgAttnded":"Please enter valid College Attended","MsgCannotHiredNewCandidate":"We cannot hire new Candidate as we have already hired Candidate(s) equal to number of Expected hire(s) for this job","msgExamCodeIsNotActive":"Examination Code is not active","msgmaximumlength":"Maximum length of field \"Primary Responsibilities in this Role\" is 5000 characters. We cannot save more than 5000 characters in this field.","subMath":"Math","msgContFName":"Please enter Contact First Name","msgAcceptableJobformatswhichincludePDFfiles":"Please select Acceptable Job description formats which include PDF files.","msgposition":"Please select position","MsgQuestionLength":"Question length cannot exceed 5000 characters.","msgorgtype":"Please select Type of Organization","msgUploadLetterRecommendation":"Upload Letters of Recommendation/Reference for each reference","msgCandidateLifecycle":"Candidate Lifecycle ","MsgStatusofExternalCandidate":"Process of changing the status of External Candidate as Internal Candidate is completed successfully.","msgAcceptableLogoformats":"Please select Acceptable Logo formats which include GIF, PNG, and JPEG  filesmsgAcceptableLogoformats             \t =Please select Acceptable Logo formats which include GIF, PNG, and JPEG  filesmsgAcceptableLogoformats             \t =Please select Acceptable Logo formats which include GIF, PNG, and JPEG  files","msgCopyURL":"Copy URL","msgwanttomarkthisdemo":"Do you really want to mark this demo as completed?","MsgSelectCompetency":"Select Competency","MsgQuestionnaireRelated":"Questionnaire related to Online Activity is not sent to the Candidate. Please send the Questionnaire to the Candidate and wait for her responses before Finalize this status","MsgStatusLifeCycle":"Status Life Cycle","msgStipulatedLimit":"Please respond to each item within its stipulated time limit even if you must guess.","msgcurrentbrowserclose":"When you are done with these questions, close this tab and you will be returned to the TeacherMatch session in your current browser window. If you choose to skip the additional questions, click the OK button.","msgHispanicWhiteOnly":"Hispanic White Only","PlzSelectMember":"Please select Member","msgDetailsEthnicOrigin":"Details of Ethnic Origin","msgEnterDomainName":"Please enter Domain Name","msgSelectCandidate":"Please select Candidate","msgReminderRegardingImportance":"reminder regarding the importance of abiding by the time limits and supporting the reliability, integrity and security of the","msgElapsedHired":"Elapsed days/hired Candidate (You Vs Norm)","msgPleaseenterStafferName":"Please enter Staffer Name.","MsgCompleteJobForJSI":"We found that JSI invite could not be sent to some of the selected candidates because One or more Candidates have already taken (Completed/Timed Out) the JSI for this job.","msgifNotVeteran":"Please select if you are a Veteran or not","msgUploadsamplelesson":"Upload a sample lesson","lblJobCreatedFrom":"Job Created From","MsgPhNoIsNotAvailable":"No Phone number is available for this candidate.","lblNoResponse":"No Response","MsgDetailsofAcademics":"Details of Academics","msgAttributesExistingStatus":"You cannot rename the status because you have already set the attributes for existing status. Remove all the attributes for this status to rename it.","msgLEA":"LEA","msgInventoryName":"Please enter Inventory Name","msgOnlyUploadCertification":"Please Upload the Certification/License letter for each Certification/Licensure.","msgcompletedBaseInventory":"Candidate has \"Completed\" Base Inventory. You cannot reset his/her EPI.","CallDetailNotExceed2500":"Call Detail length cannot exceed 2500 characters","msgPleaseselectField":"Please select Field","MsgLgthNotExceed":"Message length cannot exceed 1000 characters","msgSelectStageOne":"Select Stage One","msgReallyUnauthorize":"Do you really want to Unauthorize","MsgNotHireTheCandidate":"You can not hire the Candidate","msgJEDnotexceed1month":"Job End Date can not be exceed 1 Month(30 days) without District.","MonthNovember":"November","msgCoverLetterdetails":"You have declared yourself as a current Principal while filling the Cover Letter details. This information does not match with the details we have. Please change the declaration in Cover Letter screen on contact District Administrator.","msgEnterEmployeeNo":"Please enter Employee No","msg100QuestionsInventory":"There are 100 questions in the inventory, 25 of them are experimental questions and your answers to the experimental questions do not affect your official scores. However you will not know which questions are experimental, so please answer all questions to the best of your ability.","msgCompletedJsiInventory":"Candidate has \"Completed\" JSI. You cannot reset his/her JSI.","msgTotalApplicants":"Total Applicants","MsgFRSForm":"FRS Form","msgPleaseselectstarttime":"Please select start time.","MsgDetailUpdatedSuccessfully":"District details have been updated successfully.","MsgASkilledEngagement":"a Skilled Engagement","msgDeletethisInventory":"Are you sure you would like to delete this Inventory?","msgInvalid2DigitsDecimal":"Invalid more than 2 digits after decimal","msgButtonSelect":"button without selecting any page, the Job will be posted on your configured Facebook account.","lblAcadHistoryFileNCLic":"Academic History on file with NC licensure","msgContEmail":"Please enter Contact Email","msgValidEmailaddressQQo":"Please select at least one email","msgPleaseSelectPriority":"Please select priority.","ONB_SlfSrv_NoPermissionsset":"No Permissions set","msgurlvideolession":"Provide a URL for a video lesson","lblHispanic":"Hispanic","msgAlreadyregisteredTeacherMatch":"You are already registered with TeacherMatch. Please use some other official email address to register as internal candidate.","msgStaffMemtype":"Please select Staff member Type.","msgEventName":"Please enter Event Name","msgNotCutSelectStatus":"you can not cut select status","msgteachingcertificate":"Please enter Years of Certified Teaching Experience","msgPleaseenterPositionEndDate":"Please enter Position End Date","msgServerErr":"server Error","msguploadyourtranscript":"Please upload your transcript. Transcripts can be unofficial.","msgAddedon":"Added on","msgPANNOTREQD":"PANNOTREQD","msgUniqRank":"Please enter a unique Rank","PlzEtrDocumentName":"Please enter document name.","msgAppPoolQtyconv":"Applicant Pool Quality And Conversion","msgScheduleType":"Please select Schedule Type","lblRStatus":"Remove Status","msgCopyOf":"Copy of","Msgofficialcollegetranscript":"Copy of official college transcript or paraprofessional assessment test upload, upload high school transcript.","msgDearApplicant":"Dear Applicant,","msgNotCopySelectStatus":"you can not copy select status","lblEReference":"E-Reference Questions","msgFieldofStudy":"Please enter Field of Study","msgTimeZone1":"Please Select Time Zone","msgPostingEndDate":"Please enter Posting End Date","msgCertifiedTeachingExperience":"Years of Certified Teaching Experience","msgThejob":"The job","msgPleaseaCountry":"Please select a Country","MsgContinueWithoutSchool":"Are you continue without school.","PlzEtrLocation":"Please Enter the Location","MsgCertification":"Certification","msgleastoneSchool":"Please select at least one School","MsgDetailsOfHonours":"Details of Honors","msgenterzipcode":"Please enter Zip Code","msgPleaseselectFromYear":"Please select From Year","April":"April","msgTagName":"Please enter Tag Name","MsgSentToCandidate":"Your message is successfully sent to the Candidate.","msgHighSchoolCollegeEdu":"Please include high school and college education","MsgParticipantIsAlreadyAttached":"One participant is already attached with this event so no more participants can be added.","MsgDegreeConferredDate":"Degree Conferred Date should not be empty","PlzSlctAtleastOneJobCategory":"Please select atleast one Job Category.","ONB_SlfSrv_AdminColordefined":"Admin Color defined","msgCityReq":"Address is required.","involvement":"involvement","msgDuplicateTags":"Tag Name already exists.","msgdegreeName":"degreeName","msgConfigured":"Configured","msgcertificate":"Please select Certification/Licensure Status.","msgFrendSecongEmail":"Please enter Second Friend's Email","msgMosaicSection":"Please check Mosaic section. You may have missed some required field(s) there or the information provided in this section may not be correct.  ","lblLSRJ":"Certification/Licensure State of Requirements for Jobs","msgCurrentEmploymentsection":"The information provided by you in the Current Employment section does not match with the information we have. Please check to ensure you have entered it accurately.","msguploadLettersforacademic":"Please upload Letters of Transcript for academic degree","msgprovideAddress":"Please provide Address","msgCurrentprincipal":"I am working as a current principal","msgEducatorsProfessionalInventory":"Educators Professional Inventory (EPI)","msgUploadLettersforacademic":"Upload Letters of Transcript for academic degree","msgdeletecerticicate":"Are you sure, you would like to delete the Certification/Licence Letter.","msgDefaultGroupDuplicate":"We already have  a ## as default Assessment Group for","lblWillingToSubstitute":"Willing to Substitute","AcceptFileFormat":"Acceptable file formats include PDF, MS-Word, GIF, PNG, and JPEG files","msgvaliddistrict":"Please enter valid District","msgPlzProvideSSN4digit":"Please provide valid Social Security Number of 4 digits","msgPassCobination8Char":"Password should be a combination of digits and characters or it should be a combination of digits and special symbols and Password length should not be less than 8 characters","msgDoesNotMatch":"does not match.","msgEthnicOriginStats":"Ethnic Origin Stats","MsgParaprofessionalApplicants":"Paraprofessional applicants must include transcripts for all education above high school level.","MonthMay":"May","msgExpectedSalary":"Please enter Expected Salary","lblAcademicsMartinCatSubtituteTeacher":"Associate's Degree or 60 semester hours of college credit required","msgvalidEmailaddresstoreceive":"Please enter valid Email address to receive message from teacher.","msgcannotexceed1000characters":"Qualification description length cannot exceed 1000 characters. ","msgUpdateSuccess":"Message updated successfully","msgAlreadyAppliedjobssameDistrictNot":"You have already applied other jobs for the same District. You declared yourself as an affiliated member for at least one of those jobs. Would you like to remove yourself as an affiliated member for those jobs as well?","MsgSelectAmOrPm":"PmPlease select AM/PM","msgPleaseentersalaryRange":"Please enter salary Range","lblHighestDegreeAttained":"Highest Degree Attained","msgHighSchoolorGED":"High School Diploma or GED","msgPostedJobs":"Posted Jobs","msgDetailshavebeenSavedSuccessfully":"Details have been saved successfully.","PlzSlctAtleastOneCandidate":"Please select atleast one candidate to send data to SAP.","errorMsgInvalidreceivedforsinglesignon":"Invalid response received from Onboarding System for single sign on. Please try again later or contact support.","valuemlsel":"mlsel","MsgDetailsOfGeneral":"Details of General Knowledge Exam","PlzChangeStatus":"Please select the job Ids to change status of multiple jobs.","MsgResendTheOfferLetter":"Do you really want to resend the Offer Letter?","msgSophomoreGPA":"Sophomore GPA must be less than or equal to 5.00","msgPleaseenterServicesTechnician":"Please enter Employment Services Technician","msgacademicBachelor":"academic Bachelor degree(s)","msgacceptabledocformate":"Please select Acceptable Document formats which include PDF, MS-Word, GIF, PNG, and JPEG  files","msgNewGroupName":"Please either select a Group or add new Group Name","lblWF1COM":"WF1 COM","msgPleaseEnterEmailAdd":"Please enter Your Email Address","msgselectatoneGrade":"Please select at least one Grade","msguploaddocument":"Please upload Document","lblINVWF3":"INV WF3","MsgRejectSuccessfully":"Reject successfully.","lblINVWF2":"INV WF2","lblINVWF1":"INV WF1","PlzSlctAutoUpdateDate":"Please select auto update date  ","MsgCandidateHadNotResponded":"Candidate had not responded to the associated Questionnaire. Please wait for her responses before Finalize this status","MsgIconInTheRight":"icon in the right of the note","msgnoschoolattacheddistrict":"There are no Schools attached to the District selected by you. Please add Schools in the District first.","msgSelectEthnicOrigin":"Please Select Ethnic Origin","msgdeclearyourself":"We noticed that you have applied for other jobs in this District. You did not declare yourself as an employee of the District for at least one of those jobs. Would you like to rectify that and declare yourself as an employee for those job(s) as well?","msgUniqueDomainName":"Please enter a unique Domain Name","msgInventoryDescription":"Please enter Inventory Description","msgAuthenticationKey":"Authentication Key","msgSelectCity":"Select City","msgPlzSlctAtleastOneCandidateForWaived":"Please select atleast one candidate for waived.","msgAddNumbers":"Please Add both the numbers","instX":"X","msgDistrictName1":"District Name","msgTimeutInvt":"You have Timed Out this inventory.","MsgNoPositionFound":"No Position #/Requisition found to make an offer to this Candidate","instT":"T","instR":"R","msgcorrectSchoolName":"Please enter correct School Name.","language":"language","instO":"O","instN":"N","msgRegisteredJob":"You have been successfully registered for job alerts.","msgPlzenterStTime":"Please enter Start Time","msgQualificationDescritionlength":"Qualification Descrition length cannot exceed 500 characters.","msgAboutResume":"You are about to resume the ","errSelectAppointment":"Please select appointment.","msgReenterPassword":"Please Re-enter Password","msgdeletelatter":"Are you sure, you would like to delete the Recommendation Letter.","instD":"D","msgHonors":"Honors","instC":"C","msgWouldLikeRemoveJSI":"Are you sure, you would like to remove this JSI?","ONB_TalentEdAPI_UNABLETOCOMM":"Unable to communicate with the Onboarding System. Please try again later or contact support.","instA":"A","msgUploadparaprofcert":"Upload paraprofessional certificate.","msgforInternal":"Internal","msgJobExpired":"Job has been expired.","errorMsgAllowOnlyNumericValue":"Invalid TalentEd Onboarding Client ID entered. Please use numeric values only.","msgRetiredFromState":"Please enter Retired From State","msgThankforcompleting":"Thank you for completing","msgSuccessfullyUpdateSchool":"You have successfully update the school","msgPleaseenterSchool":"Please enter School","msgSelectDistrict":"Please select District","msgreferencesinterview":"References will be contacted if you are invited for an interview.","msgPrincipal":"Principal","MsgScore":"Score","msgDirectDeposit":"Direct Deposit","msgAccommodations":"Accommodations","msgRequisitionNumbershould":"Requisition Number(s) should not be greater than  # of Expected Hire(s)","lblCandidate":"Candidate","PlzEtrURL":"Please Enter  Url.","msgdocumentname":"Please enter Document Name","valuetf":"tf","msgStageTwo":"Please select Stage Two","msgorganization":"Please enter Name of Organization","msgOrganisationEN":"Please enter Province of Organization","MsgDeactivate":"Deactivate","msgYouHaveHired":"You have been hired for this job so you cannot withdraw from this job.","msgAssmntDesc":"Please enter Assessment Description.","MsgMaxLengthOffieldReasonForLeaving":"Maximum length of field \"Reason for leaving\" is 5000 characters. We cannot save more than 5000 characters in this field","PlzEtrUniqueGeoZone":"Please enter unique Geo Zone Display Name","msgPleaseremoveduplicateEnter":"Please remove duplicate 'Enter Requisition Number(s)'","lblWaived":"Waived","msgcollagedevitcredit":"Please provide at least one college degree or credits/hours","msgReallyDeleteStatus":"Do you really want to delete this status?","UpdateMsgForUserSetting":"Email Credentials updated successfully.","PlzSelectQuestionType":"Please select Question Type","lblNRFound":"No records found.","msgDatesAttended":"Dates Attended from cannot be greater than Dates Attended to","MsgNoActiveQuestion":"There is no active question","PlzEtrLastName":"Please enter Last Name","msgPleaseupload":"Please upload","valuesl":"sl","MsgRemoveJobDocument":"Do you really want to remove this job document?","msgNC4Text":"NC Employee Withholding Allowance Certificate","PlzSlctAutoUpdateOpt":"Please select any auto status update option ","PlzSlctGender":"Please select Gender","PlzEtrNotes":"Please enter Notes","msgUploadLessonplans":"Upload lesson plans","MonthMarch":"March","errmsgCompanyState":"Please enter Company State","MsgForMostSignificantContributions":"Maximum length of field \"Most Significant Contributions in this Role\" is 5000 characters. We cannot save more than 5000 characters in this field","lblBlackNotHis":"Black (Not Hispanic)","msgExpiredTeacherMatchAdministrator":"Your Inventory is expired, Please contact TeacherMatch Administrator","MsgAreUSure":"Are you sure, you would like to remove the Attachment?","msgReferences":"References","lblSalary":"Salary","MsgNotificationAddedSuccessfully":"Notifications have been added successfully.","msgJobCode":"Please enter Job Code","valuert":"rt","msgOathOfLoyalty":"Oath of Loyalty","msgStdTeachingExp":"Please provide Student Teaching Experience.","msgDayofBirth":"Please select Day of Birth","msgtypeRole":"Please select Type of Role","msgThe":"The","lblCGPA":"CGPA","CandidateHasTimeOut":"Candidate has Timed Out this Job Order. No Job Specific Inventory report will generate.","msgAtLeastOneDistrictAdmin":"Please select at least one district admin.","MsgExpert":"Expert","msgPlzEnterDefmessage":"Default Message is not set. Please set a Default Message","MsgEvaluationFor":"Evaluation for","msgnothiredanongoing":"If not hired for an ongoing or contract position, would you be willing to substitute teach?","lblPosNumber":"Position Number","msgTMPolicy4":"Thank you and best of luck in your job search.","msgTMPolicy3":"or email us at","msgTMPolicy2":"If you have any further questions regarding this matter, please call us at","locale":"en","msgTMPolicy1":"If you would like to review TeacherMatch's policy regarding this issue in greater depth please click ","msgScoreCorrespondingOption":"Please enter Score of corresponding option","msgtfa":"Please select TFA Affiliate","ElectronicRefAlreadyReg":"An Electronic Reference has already registered with this Email","MsgOneOrMoreSelectedCandidate":"One or more selected candidate(s) have some of the mandatory information missing as follows:","msgjobyou":"The job you are applying is expired","magcannotaddexistingSchool":"Please enter another School Name. We can not add existing School Name in Job Order.","msgObjective":"Please select Objective","msgwillingserveteacher":"If required, would you be willing to serve as a substitute teacher?","ChooseFile":"Choose a File","msgUploadCertLicLtr":"Either Upload the Certification/License letter or Enter URL of the Certification/License letter","msgDetailsofPhoneNumber":"Details of Phone Number","msgAlreadyComplted":"You have already completed this Assessment.","msgValidSeconfFriendEmail":"Please enter valid Second Friend's Email","MsgNotInsertDuplicateValue":"Please can not insert Duplicate Question","msgatleastoneRegion":"Please select at least one Region","msgSelectEthnicity1":"Please select Ethnicity","msgSelectAnyOption":"Please Select any option","msgfillToDate":"Please fill to date","MonthJanuary":"January","MsgDetailsOfNational":"Details of National Board Certification","msgApprovethisjob":"You can not approve this job.","msgrole":"Please enter Role","msgTeacherLicensed":"Teacher, Licensed","msgDescriptionlengthisexceeded":"Job Description length is exceeded.","ONB_SlfSrv_Permissionsset":"Permissions set","msgNoDegree":"No Degree","msgSuccessfullychangepass":"You have successfully change the password.","msgDetailsEthnicity":"Details of Ethnicity","messageQQO":"The Qualification Question has not been finalized. Please come back later to complete this application.","msgPlsDownload":"Please Download","msgInvalidAssessment":"Invalid Assessment. ","msgschooldistrictreferences":"The School District of Philadelphia requires the contact information for at least three references. Letters of recommendation are not required.","lblComments":"Comments ","NumOfCandidates":"Number of Candidates","MsgOneOrMoreCandidateSelected":"One or more selected candidate(s) are registered as internal transfer candidate(s) for this District. Status of internal transfer candidate(s) cannot be changed.","errorMsgForRoleAccessOboarding":"Please Select Role Access for Onboarding","msgCertificationLicensure":"Duplicate Certification/Licensure , Please select another Certification/Licensure","msgExamDate":"Please enter Exam Date","msgprovideRequisitionNumber":"Please provide Requisition Number(s)","msgentervalidlicence":"Please enter Certification/Licence Url Or Upload Certification/License Letter.","msgSpStatusIncomp2":"timed-out assessment. They are now able to attempt the assessment again.","msgSpStatusIncomp1":"You have successfully reset","MsgEnterPosition":"Please enter Position #/Requisition #","msgAlreadyRegisWithEmail":"A teacher has already registered with the email address, you provided. A teacher cannot be a Key Contact.","MsgplzSlctNewRecord":"Please select new record only to send to SAP.","msgGenerateApplicantsListPDF":"this is function generateApplicantsListPDF()","MsgSingleParticipantCanBeAdded":"Only one participant can be added for this event.","msgSubjectAreaExam":"Please provide details of Subject Area Exam","PlzEtrVideoLink":"Please enter Video Link","closingDateLesserStartDate":"Event closing date time should not be greater than or equal to start date time","msgXlsXlsxFile":"Please select xls or xlsx file to import.","msgPleaseenterSchoolName":"Please enter School Name","lblCollegeAttended":"College Attended","deactivateJobApprovalProcess":"The associated Job Approval Process has been deactivated. There is no further action for you to take at this time.","kellyupdatecodelive":"no","msgClassified":"Classified","PlzEtrAtLeastTwoOptions":"Please enter at least two Options","jobsdashbord":"% jobs","MsgRegisteredAsInternalTransfer":"One or more selected candidate(s) are registered as internal transfer candidate(s) for this District. EPI cannot be offered to internal transfer candidate(s).","msgCandidateHasNotCompleteSp":"Candidate has not completed Smart Practices Assessment.","btnfinalizeLinktoKSN":"Link to KSN","msgIsAlreadyApproved":"is already approved.","msgCertificationLicense":"Certification(s)/License(s)","msgRequired":"Required","msgPlgEtrPass":"Please enter Password.","msgDemoDateGreater":"Demo Date must be greater than or equal to","msgUniqueGroupName":"Please enter a unique Group Name","msg4FriendName":"Please enter Fourth Friend's Name","msgDetailsVeteran":"Details of Veteran","lblZone":"Zone","valueml":"ml","msgSesTimeOut":"Your session time is up!","msgJobApprovalProcess":"Please select Job Approval Process","MsgNotStartedOrNotCompleted":"Candidate has either not started or not completed the JSI.","msgsufficientdistribution":"Maximum length of field \"Most Significant Contributions in this Role\" is 5000 characters. We cannot save more than 5000 characters in this field.","msgentervalidSchoolName":"Please enter valid School/Department Name","msgGeneralKnowledge":"Please provide details of General Knowledge","PlzEtrNoteOrScore":"Please enter Note or Score","msgAuthorizedApproveJob":"You are not authorized to approve the job","lblIncomplete":"Incomplete","May":"May","msgNotHispanicLatino":"Not Hispanic/Latino","msgPlzProvidePI":"Please provide Personal Information","msgprovidePhoneNo":"Please provide Phone Number","msgNoPreScreenConfigured":"No Pre-Screen Configured","msgmendetryfotofolio":"You have not completed all of the mandatory information on the four tabs of Portfolio.","msgAppresubmittedTimeout":"Your job application is resubmitted but you are still Timed Out.","PlzEtrCtctNum":"Please enter Contact Number","msgacceptablevideo":"Please select Acceptable Video format file","msgSelectObjective":"Select Objective","msgrectifydeclearyourself":"We noticed that you have applied for other jobs in this District. You declared yourself as an employee of the District for at least one of those jobs. Would you like to rectify that and declare yourself as not an employee for those job(s) as well?","msgNotConfigured":"Not Configured","msgContactedImed":"Please note that references listed will be contacted immediately upon application. If you do not want a reference to be contacted at this point, please do not list them as part of your application.","msgProvide3Ref":"Please provide 3 references.","msgforSelSchoolType":"Please Select Grade.","PlzSlctExamDate":"Please select Examination Date","msgadditionalquestions":"If you have any additional questions or concerns please email  ","lblGrade":"Grade","msgprovideGender":"Please provide Gender","msgNameActiveDistrict":"Please enter the name of an active District","msgGEDhighschool":"GED, high school, or higher","msgCheckYourEmailAuthenticate":"Please check your email to authenticate.","msgNoPortfolioConfigured":"No Portfolio Configured","msgContectHelpDesk":"If you need additional assistance please contact the help desk at","msgGenerateApplicantsListExcel":"this is function generateApplicantsListExcel()","MsgFoundThatEPIInviteCouldNotBeSent":"We found that EPI invite could not be sent to some of the selected candidates because One or more Candidates have already taken (Completed/Timed Out) the EPI for this job","msgExceededTimeLimit":"You exceeded the time limit for this item. This is your","MsgDate":"Date","msgParttimeemploymentwithMiamiDade":"At this time your eligibility for part-time employment with Miami-Dade County Public Schools is limited; however, you may apply for a full-time position, if eligible. If you have questions, please contact ","msgDetailsSubjectAreaExam":"Details of Pass/Fail Subject Area Exam","msgProblemoccured":"Problem occured due to server error.","ONB_SlfSrv_NoCandidateColordefined":"No Candidate Color defined","msgtoactivateportfolio":"Do you want to activate portfolio?","msgHiredDateHiredDate":"Hired Date can not be exceed 1 Month(30 days) without District.","msgCategoryorSubJobCategory":"Please select job Category or Sub Job Category","msgaward":"Please enter Award","msganonteachingjobcategory":"You have selected a non teaching job category.","msgCoverLtrSave":"Your Cover Letter is saved successfully.","msgRetakedescription":"Please enter Description","msgPleaseprovideatleastoneRequisitionNumber":"Please provide atleast one Requisition Number","msgEPIStipulatedTime75Seconds":"Each item in the EPI has a stipulated time limit of 75 seconds. You must respond to each item within its stipulated time limit. You must answer all of the questions in one sitting.","msghavenotcompleted":"You have not completed","msgDetailsleast":"Details of at least","msgsavecontinue":"section before \"Save & Continue\"","MsgExternalCandidate":"You have declared yourself as an External Candidate while filling the Cover Letter details but now you are changing your declaration. Please first change the declaration in Cover Letter screen.","msgJobnotActive":"Job is not active now.","msgPleaseselectaStateEN":"Please select a Province","MsgAddStatus":"Add Status","msgWouldLikeDeleteAttachment":"Are you sure you would like to delete this Attachment?","msgPleaseCompetencyName":"Please enter Competency Name","msgCurrentsubstitute":"I am a current substitute","msgapplydeactivate":"The job you are applying is deactivated","SucceccfullySharedCandidates":"You have successfully shared the Candidates to the selected Users.","msghere":"here","msgYearsfulltimeinstructor":"Years as a full-time instructor in an alternative certification program should be included. If you do not have any teaching experience, please enter 0.","msgValidEmailAddress":"Please enter valid Email Address","valuesswc":"sswc","msgAnsFollowingQn":"Please answer the following questions in section","MsgSetScoreOrEnterNote":"Please set Score or enter Note","msgValidContactEmail":"Please enter valid Contact Email","msgincompleteExpirationDays":"Please enter Incomplete Expiration Days","MsgDetailsOfEmployement":"Details of Employement","msgEnterFavTeacherStory":"Please enter your Favourite Teacher Story","lblScreening":"Screening","MonthApril":"April","msgPhiladelphiaGeoZone":"Philadelphia Geo Zone","msgCandidateHasNotCompleteJsi":"Candidate has not completed JSI.","msgDefaultInventorySchool":"Please make sure that we have only one default Inventory for a School.","PlzSelectStatus":"Please select status","msgNoRecordFound":"No Record Found","msgSchoolNurse":"School Nurse","msgaddatleastoneSchoolName":"Please add at least one School Name","MsgMoreAttribute":"We found that the score of one or more attribute(s) is set to be 0 (zero)","msgtimeout1":"Timed Out","msgPANAPPLIED":"PANAPPLIED","PlzEtrVldRgnName":"Please enter valid Region Name","SelectValidSchool":"Please select valid School","msgRankCorrespondingOption":"Please enter Rank of corresponding option","msgSelectTimeZone":"Please select TimeZone","msgDuplicateRequisitionNo":"Duplicate Requisition No. Please enter a unique Requisition No.","lblNew":"New","lblZipCode":"Zip Code","msgValidEmail4AM":"Please enter valid Email of Account Manager  from Teacher Match","msgdatetoattended":"Please enter Dates Attended to","PlzEtrGeoCode":"Please enter Geo Code","msgFreqOfReminder":"Frequency of Reminder Must be between 1 to 365.","msgwillingserveteacherSummitSchoolDis":"If you are not selected as a teacher or special service provider, would you be interested in being considered as a substitute teacher?","msgEnterDistName":"Please enter District Name","MsgEPIInviteSuccessfully":"EPI invite was sent successfully to the selected candidate.","msgDidntAnswithin3Attempt":"You did not answer the questions within three attempts. You have been \"disqualified\" and cannot continue the Assessment at this time. If you have questions, please contact support at","PlzEtrInstructions":"Please enter instructions","msgAlreadyExistStatus":"A status already exists with that name. Please try a different name.","stdTchrGrid":"stdTchrGrid","msgThirdFrendName":"Please enter Third Friend's Name","msgaacptfileformate":"Acceptable file formats include PDF, MS-Word, GIF, PNG, and JPEG files.","MsgDetailsOfTeachingExperience":"Details of Teaching Experience","optAll":"All","msgManageAttributesFor":"Manage Attributes for","msgRefContactNo":"Please provide Reference Contact Number","msgenterzipcodeEN":"Please enter Postal Code","msgValidPhoneNumber":"Please enter valid Phone Number","msgNoEReferenceConfigured":"No E-Reference Configured","msgSelectRace":"Please Select Race","lblKSNID":"KSN ID","lblIntheQueue":"In the Queue","msgIamDone":"Save Section","msgDetailsWorkExperience":"Details of Work Experience","lblSTPeopleSoft":"Sent to PeopleSoft","valueet":"et","lblGoLiveTPL7770":"false","msgmasterjobcategory":"Please map the sub job category to master job category","msg5FrendName":"Please enter Fifth Friend's Name","msgSwitchLocaion":"You are not authorise to Switch Locaion.","lblPEEID":"Please enter Employee ID","msgISection":"Please check Contact Information section. You may have missed some required field(s) there or the information provided in this section may not be correct.","msgEdit1":"Edit","msgChangeStatus":"Please Change the Status","msgNoJobCategoryExists":"No Job Category Exists. You have selected all","msgThirdFrendEmail":"Please enter Third Friend's Email","msgAcceptableInventoryformats":"Please select Acceptable Inventory formats which include PDF, MS-Word, GIF, PNG, and JPEG  files.","msgAtleast1Cand":"Please select at least one candidate to send message","msgPartTimeTeachingPos":"Are you willing to accept a part time teaching position","msgAboutStart":"You are about to start the","PlzEtrMsg":"Please enter Message","msgJSIisnotuploaded":"JSI is not uploaded.","msgIsAlreadyApprovedbyyou":"is already approved by you.","msgGroupName1":"Please select Group Name","msgAssessmentgroupName":"Please enter Group Name","lblNotes":"Notes","msgValidYearBirth":"Please enter a valid Year of Birth","msgNoVVIConfigured":"No VVI Configured","msgRemoveInventry":"Are you sure, you would like to remove Inventory?","CompleteYourBaseInventory":"Please complete your Base Inventory for this financial year to buy this report","msgcorrectDistrictName":"Please enter correct District Name.","PlzSelectInternalCandidates":"Please select internal Candidates only from accordion \"Internal Candidates\".","MsgDetailOfInternalTransferCandidate":"to view the details of internal transfer candidate(s).","msgPdfMsWordJpeg":"preferably in PDF format although MS-Word or JPG is also fine","msgEnterPassword":"Please re-enter new password","msgleastonepanel1":"Please select at least one panel to add panel members","msgjobtitleenter":"Please enter Job Title","portfolio":"portfolio","msgStatusAttachedJobCategories":"Do you really want to delete this status? It will delete all the status attached to all job categories.","msgRequisitionNumber":"Please enter Requisition Number","lblJobCreatedTo":"Job Created To","lblNationalNorm":"National Norm","msgTimedOutTeacherMatchAdministrator":"Your Inventory is Timed Out, Please contact TeacherMatch Administrator.  ","PlzEtrValidClg":"Please enter valid College Attend","msgAssessmentSession":"Assessment Session Time For","msgErrorPwdnotmatch":"Password not matched","MsgJSIInviteCouldNotBeSent":"We found that JSI invite could not be sent to some of the selected candidates due to one or more following reasons","credentialsVideo":"https://www.youtube.com/embed/k62Hl0LLAwk","MsgMarkPanelCompleted":"Do you really want to mark this panel as completed?","msgPlzAtleastSubject":"Please select atleast one Subject.","msgEnterEmployeePos":"Please enter your Last Position When Employed","msgnotexistselecstate":"Certification/Licensure Name you entered does not exist for the selected State. Please enter a correct Certification/Licensure Name.","cnfMsgHideApp":"Are you sure you want to hide your application for this job? This job is being removed from your Dashboard view, but you can \"Un-hide\" it by going to the Jobs of Interest screens and selecting Unhide.","PlzChooseAnotherSlot":"Please choose another Slot, this Slot is already booked.","msgDetailsDOB":"Details of Date Of Birth","msgMatchErrorCheck":"You selected more than one different value. So not applicable for 'Apply to all Candidate types'","msgvalidRequisitionNumber":"Please enter valid Requisition Number","platformName":"LOCAL"};</script>
+	    <link href="css/bootstrap3.css?ver=1476952880000" rel="stylesheet" type="text/css">
+		<link href="css/style3.css?ver=1476952880000" rel="stylesheet" type="text/css">	
+		<link href="css/quest.css?ver=1476952880000" rel="stylesheet" type="text/css">		
+		<link href="css/font-awesome.min.css?ver=1476952880000" rel="stylesheet" type="text/css">
+		<link href="css/font-awesome-ie7.css?ver=1476952880000" rel="stylesheet" type="text/css">
+		<link href="css/font-awesome-ie7.min.css?ver=1476952880000" rel="stylesheet" type="text/css">
+		<link href="css/font-awesome.css?ver=1476952880000" rel="stylesheet" type="text/css">				
+		<script src="js/jquery.js?var=1476952880000"></script>	  								
+	    <script src="twitter-bootstrap/js/bootstrap.min.js?var=" type="text/javascript"></script> 	      			    
+	    <script type="text/javascript" src="dwr/engine.js"></script>
+		<script type='text/javascript' src='dwr/util.js'></script>
+		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-56937648-1','auto');ga('send','pageview');</script>
+			<!-- Start of Async HubSpot Analytics Code -->
+			  <script type="text/javascript">(function(d,s,i,r){if(d.getElementById(i)){return;}
+var n=d.createElement(s),e=d.getElementsByTagName(s)[0];n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/290901.js';e.parentNode.insertBefore(n,e);})(document,"script","hs-analytics",300000);</script>
+					
+	</head>		
+	<body>
+	
+		
+			
+  
+<!-- Start feedback and support -->
+	<script type="text/javascript" src="js/jquery-te-1.3.2.2.min.js" charset="utf-8"></script>
+	<link type="text/css" rel="stylesheet" href="css/jquery-te-1.3.2.2.css" charset="utf-8">
+	<!-- Editor 2 -->
+	<link href="css/rating_simple.css" rel="stylesheet" type="text/css">
+	<script src="js/rating_simple.js" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript">function setRating()
+{$(function(){$("#rating_simple1").webwidget_rating_simple({rating_star_length:'5',rating_initial_value:'',rating_function_name:'',directory:'images/'});});}</script>
+
+        <!-- Feedback -->
+        <div onclick="feedBack();" class="feedbackposition" style="cursor:pointer;background-image:url(images/tab-right-dark.png);border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-style:solid none solid solid;border-top-color:#fff;border-bottom-color:#fff;border-left-color:#fff;border-top-left-radius:4px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:4px;-webkit-box-shadow: rgba(255, 255, 255, 0.247059) 1px 1px 1px inset, rgba(0, 0, 0, 0.498039) 0px 1px 2px;box-shadow: rgba(255, 255, 255, 0.247059) 1px 1px 1px inset, rgba(0, 0, 0, 0.498039) 0px 1px 2px;font-style:normal;font-variant:normal;font-weight:bold;font-size:14px;line-height:1em;font-family:Arial,sans-serif;position:fixed;right:0px;z-index:9999;background-color:#007ab4;display:block;background-position:50% 0px;background-repeat:no-repeat no-repeat">
+        	<br><br><br>
+        	
+		              
+						        
+						        <a href="javascript:void(0);"><img src="images/feedback-tab.png"></a>
+                                      
+
+
+                       
+
+		
+		<br><br>
+	</div>
+	
+	<div class="modal" style="display: none; z-index: 2000;" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-for-feedbackandsupport">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+					<h3 id="myModalLabel">TeacherMatch Feedback &amp; Support</h3>
+				</div>
+				
+				
+				
+				<iframe id="uploadFrameID" name="uploadFrame" height="0" width="0" frameborder="0" scrolling="yes" sytle="display:none;"></iframe>
+				<div class="modal-body" style="padding-top:0">
+    
+    					<h4 style="padding-bottom:0">Please select the option that best describes your support need:</h4>
+    					<table cellpadding="5" cellspacing="5">
+    						<tr>
+    							<td><span class="hdrSubject hidden" style="font-size:larger"></span></td>
+    							<td style="padding-top:23px;"><button type="button" class="btn btn-mini pull-right btn-reset hidden">change</button></td>
+    						</tr>
+    					</table>
+    					<form class="reqTypes form-horizontal" style="padding-top:20px">
+						<div class="control-group">
+							<h3>General</h3>
+							<label class="radio">
+								<input type="radio" value="1a" name="reqType">
+								I would like to receive more information about the benefits of the TeacherMatch Advanced Education Talent Management Solution.
+							</label>
+
+							<h3>Applicant(s)</h3>
+							<label class="radio">
+								<input type="radio" value="2a" name="reqType">
+								I cannot authenticate/login to my account.
+							</label>
+
+							<label class="radio">
+								<input type="radio" value="2b" name="reqType">
+								I have a question concerning my TeacherMatch account or application.
+							</label>
+
+							<h3>District/School Admin Users</h3>
+							<label class="radio">
+								<input type="radio" value="3a" id="spt" name="reqType">
+								I need technical support with the TeacherMatch platform.
+							</label>
+
+							<label class="radio">
+								<input type="radio" value="3c" name="reqType">
+								I would like to provide feedback or a rating of the TeacherMatch platform.
+							</label>
+						</div>
+					</form>
+
+					<!-- info div -->
+					<div class='fb-info hidden' style="padding-top:20px">
+						<p>For assistance by phone, please call TeacherMatch support at <span style="white-space:nowrap"><tel>Phone #  </tel>key press 4</span> or fill out the form below.</p>
+						<p>Your inquiry will be forwarded to a TeacherMatch member. We look forward to connecting with you!</p>
+						<script charset="utf-8" type="text/javascript" src="https://js.hubspot.com/forms/current.js"></script>
+						<script type="text/javascript">//<![CDATA[
+hbspt.forms.create({portalId:'290901',formId:'c56cc312-30c0-4498-b089-fa180bbd7278'});
+//]]></script>
+
+					</div>
+					<!-- end info div -->
+
+					<form id="frmFeedbackUpload" enctype="multipart/form-data" method="post" target="uploadFrame" class="form-inline" onsubmit="return validateFeedBack();" accept-charset="UTF-8">
+						<input type="hidden" id="visitedPageURL" name="visitedPageURL" value=""> 
+						<input type="hidden" id="visitedPageTitle" name="visitedPageTitle" value="">
+						<input type='hidden' id="msgSubject" name="msgSubject" value="">
+						<input type="hidden" id="formType" name="formType" value="1"/>
+						<input type="hidden" id="domain" name="domain" value=""/>
+						<input type="hidden" id="domainQuest" name="domainQuest" value=""/>
+						<input type="hidden" id="rqtype" name="rqtype" value=""/><!-- this field used in case of without login on feedback-->
+						<input type="hidden" id="reqType1" name="reqType1" value=""/>
+						<div class="control-group">
+							<div class="divErrorMsg" id="errordivFeedBack" style="display: block;"></div>
+						</div>
+
+						<div id="feedback" class='fb-feedback hidden'>
+							<div class="control-group">
+								<div style="" id="ratingDiv">
+									<input value="0" id="rating_simple1" name="starRating" type="hidden" style="float: left; ">
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="" id="msgFeed">
+				    					<label><strong>Feedback</strong><span class="required">*</span></label>
+			        					<textarea rows="5" class="span8" cols="" id="feedbackmsg" name="feedbackmsg" maxlength="1000"></textarea>
+			        				</div>
+			        			</div>
+			        		</div>
+
+			        		<div id="support" class='fb-support hidden'>
+
+							<div class="tel-applicant hidden">
+								<p>For assistance by phone, please call TeacherMatch support at <span style="white-space:nowrap"><tel>1-855-980-0511 (7:00am - 6:00pm CDT) </tel></span> or fill out the form below.</p>
+								<p>Your inquiry will be forwarded to a TeacherMatch member. We look forward to connecting with you!</p>
+							</div>
+
+							<div class="tel-partner hidden">
+								<p>For assistance by phone, please call TeacherMatch support at <span style="white-space:nowrap"><tel>1-855-980-0545 (7:00am - 6:00pm CDT) </tel></span> or fill out the form below.</p>
+							</div>
+				
+							<div class='fb-contactinfo hidden'>
+								<div class="col-sm-8 col-md-8" style=padding-left:0px;">
+									<label for="inputFirstName">First Name<span class="required">*</span></label>
+									<input type="text" id="inputFirstName" name="inputFirstName" class="form-control" placeholder="First Name"/>
+								</div>
+
+								<div class="col-sm-8 col-md-8" style=padding-left:0px;">
+									<label for="inputLastName">Last Name<span class="required">*</span></label>
+									<input type="text" id="inputLastName" name="inputLastName" class="form-control" placeholder="Last Name"/>
+								</div>
+
+								<div class="col-sm-8 col-md-8" style=padding-left:0px;">
+									<label for="inputEmail">Email<span class="required">*</span></label>
+									<input type="text" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email"/>
+								</div>
+					
+								<div class="col-sm-8 col-md-8" style=padding-left:0px;">
+									<label for="inputPhone">Phone Number</label>
+									<input type="text" id="inputPhone" name="inputPhone" class="form-control" placeholder="Phone"/>
+								</div>
+					
+								<div class="col-sm-8 col-md-8" style=padding-left:0px;">
+									<label for="inputDistrict">District<span class="required">*</span></label>
+									<input type="text" id="inputDistrict" name="inputDistrict" class="form-control" placeholder="District">
+								</div>
+							</div>
+					 
+							<div class="" id="msgSpt">
+								<div class="form-group">
+									<label><strong>Please describe your support need.</strong><span class="required">*</span></label>
+									<textarea name="msg"></textarea>
+									<!--<div style='background-color: #FFFFCC;' >-->
+									<div id='file1' style="padding-top:8px;">
+										<a href='javascript:void(0);' onclick='addFileType();'><img src='images/attach.png'/></a> <a href='javascript:void(0);' onclick='addFileType();'>Attach a File</a>
+									</div>
+								</div>
+							</div>
+						</div>
+			 			<br>
+			 			<div id="lodingImg" style="text-align: center; padding-top: 4px; display: none; "><img src="images/loadingAnimation.gif"> Sending...</div>
+					</form>
+				</div>
+				
+				<div class="modal-footer">
+        				<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel  </button>
+ 					<button id="buttonSubmit-frmFeedbackUpload" class="btn btn-primary hidden" onclick="saveFeedBack()">Send</button>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+
+	<script language="javascript">function getVisitedURL()
+{var ddd=document.URL;document.getElementById("visitedPageURL").value=""+ddd+"";document.getElementById("visitedPageTitle").value=""+document.title+"";}
+getVisitedURL();function showDisplay(dis)
+{$('#errordivFeedBack').empty();$('#lodingImg').hide();if(dis.value==1)
+{$('#feedback').hide();$('#support').show();$('#msgSubject').focus();}else
+{$('#feedback').show();$('#support').hide();$('#feedbackmsg').focus();}
+$('#ratingDiv').html("<input  value='0' id='rating_simple1' name='starRating' type='hidden'>");setRating();removeFile();$('#msgFeed').find(".jqte_editor").css("background-color","");$('#msgSpt').find(".jqte_editor").css("background-color","");$('#msgSubject').css("background-color","");$('#msgFeed').find(".jqte_editor").html("");$('#msgSpt').find(".jqte_editor").html("");document.getElementById("msgSubject").value="";}
+function validateEmail(sEmail){var filter=/^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;if(filter.test(sEmail)){return true;}else{return false;}}
+function validateFeedBack()
+{$('#errordivFeedBack').empty();$('#msgSubject').css("background-color","");$('#f1').css("background-color","");$('#msgFeed').find(".jqte_editor").css("background-color","");$('#msgSpt').find(".jqte_editor").css("background-color","");$('#inputFirstName').css("background-color","");$('#inputLastName').css("background-color","");$('#inputEmail').css("background-color","");$('#inputDistrict').css("background-color","");var cnt=0;var focs=0;var reqType=$('input[name=reqType]:radio:checked').val();if(reqType=="3c")
+{if($('#msgFeed').find(".jqte_editor").text().trim()=="")
+{$('#errordivFeedBack').append("&#149; Please enter FeedBack.<br>");if(focs==0)
+$('#msgFeed').find(".jqte_editor").focus();$('#msgFeed').find(".jqte_editor").css("background-color","#F5E7E1");cnt++;focs++;}else{var charCount=$('#msgFeed').find(".jqte_editor").text().trim();var count=charCount.length;if(count>1000)
+{$('#errordivFeedBack').append("&#149; Message length cannot exceed 1000 characters.<br>");if(focs==0)
+$('#msgFeed').find(".jqte_editor").focus();$('#msgFeed').find(".jqte_editor").css("background-color","#F5E7E1");cnt++;focs++;}}}else{if(trim($('#inputFirstName').val())=="")
+{$('#errordivFeedBack').append("&#149; Please enter First Name.<br>");if(focs==0)
+$('#inputFirstName').focus();$('#inputFirstName').css("background-color","#F5E7E1");cnt++;focs++;}
+if(trim($('#inputLastName').val())=="")
+{$('#errordivFeedBack').append("&#149; Please enter Last Name.<br>");if(focs==0)
+$('#inputLastName').focus();$('#inputLastName').css("background-color","#F5E7E1");cnt++;focs++;}
+if(trim($('#inputEmail').val())=="")
+{$('#errordivFeedBack').append("&#149; Please enter Email.<br>");if(focs==0)
+$('#inputEmail').focus();$('#inputEmail').css("background-color","#F5E7E1");cnt++;focs++;}else{if(validateEmail($('#inputEmail').val())){}else{$('#errordivFeedBack').append("&#149; Invalid Email Address.<br>");if(focs==0)
+$('#inputEmail').focus();$('#inputEmail').css("background-color","#F5E7E1");cnt++;focs++;}}
+if(trim($('#inputDistrict').val())=="")
+{$('#errordivFeedBack').append("&#149; Please enter District.<br>");if(focs==0)
+$('#inputDistrict').focus();$('#inputDistrict').css("background-color","#F5E7E1");cnt++;focs++;}
+if($('#msgSpt').find(".jqte_editor").text().trim()=="")
+{$('#errordivFeedBack').append("&#149; Please enter Feedback.<br>");if(focs==0)
+$('#msgSpt').find(".jqte_editor").focus();$('#msgSpt').find(".jqte_editor").css("background-color","#F5E7E1");cnt++;focs++;}else
+{var charCount=$('#msgSpt').find(".jqte_editor").text().trim();var count=charCount.length;if(count>1000)
+{$('#errordivFeedBack').append("&#149; Feedback length cannot exceed 1000 characters.<br>");if(focs==0)
+$('#msgSpt').find(".jqte_editor").focus();$('#msgSpt').find(".jqte_editor").css("background-color","#F5E7E1");cnt++;focs++;}}}
+if(cnt==0)
+return true;else
+{$('#errordivFeedBack').show();return false;}}
+function saveFeedBack()
+{var b=$("input[name=reqType]:checked").val();$("#rqtype").val(b);$("#reqType1").val(b);$("#msg").text($('#msgSpt').find(".jqte_editor").text());$("textarea[name='feedbackmsg']").text($('#msgFeed').find(".jqte_editor").text());if(!validateFeedBack())
+return;var dom=window.location.host;document.getElementById('domainQuest').value=dom;$('#lodingImg').show();document.getElementById('frmFeedbackUpload').action="feedBackUploadBeforeLoginServlet.do";$('#frmFeedbackUpload').submit();}
+function hideFeedBack(flg)
+{$('#lodingImg').hide();$('#myModal1').modal('hide');if(flg==1)
+{$('#message2show').html("Your message is successfully sent to TeacherMatch Support Team.");$('#myModal2').modal('show');}
+else if(flg==2)
+{$('#message2show').html("Your feedback is successfully sent to TeacherMatch Team.");$('#myModal2').modal('show');}
+else if(flg==3)
+{alert("Oops: Your Session has expired!");document.location='signin.do';}
+document.getElementById('msgSubject').value="";document.getElementById('msg').value="";document.getElementById('feedbackmsg').value="";}
+function addFileType()
+{$('#file1').empty();$('#file1').html("<a href='javascript:void(0);'onclick='removeFile();'><img src='images/can-icon.png' title='remove'/></a> <input id='f1' class='left20 top-35' name='f1' size='20' title='Choose a File' type='file'>&nbsp;Maximum file size 10MB.");}
+function removeFile()
+{$('#file1').empty();$('#file1').html("<a href='javascript:void(0);' onclick='addFileType();'><img src='images/attach.png'/></a> <a href='javascript:void(0);' onclick='addFileType();'>Attach a File</a>");}
+function feedBack()
+{$('#myModal1').modal('show');$('#file1').html("<a href='javascript:void(0);' onclick='addFileType();'><img src='images/attach.png'/></a> <a href='javascript:void(0);' onclick='addFileType();'>Attach a File</a>");$('#msgSubject').focus();$('#errordivFeedBack').empty();$('#msgSubject').css("background-color","");document.getElementById('msgSubject').value="";}
+function trim(s){while((s.substring(0,1)==' ')||(s.substring(0,1)=='\n')||(s.substring(0,1)=='\r')){s=s.substring(1,s.length);}
+while((s.substring(s.length-1,s.length)==' ')||(s.substring(s.length-1,s.length)=='\n')||(s.substring(s.length-1,s.length)=='\r')){s=s.substring(0,s.length-1);}
+return s;}</script>
+	<div class="modal" style="display: none;z-index: 5000" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+			<h3 id="myModalLabel">TeacherMatch</h3>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="control-group" id='message2showConfirm'>
+			</div>
+	      </div>
+	      <div class="modal-footer" id="footerbtn">
+	        	<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Ok</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal" id="myModal2" style="display: none;z-index: 5000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+					<h3 id="myModalLabel">TeacherMatch</h3>
+				</div>
+				<div class="modal-body">
+					<div class="control-group" id="message2show"></div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Feedback -->
+	<div class="modal" style="display: none;z-index: 5000;top: 0px;" id="myModalv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="vcloseBtn">x</button>
+					<h3 id="myModalLabelId">TeacherMatch</h3>
+				</div>
+				<div class="modal-body">
+      				<div class="control-group" id='message2showConfirm'></div>
+      			</div>
+				<div class="modal-body" style="max-height: 450px;overflow-y:auto;">
+					<table width="100%">
+						<tbody>
+							<tr>
+								<td width="15%" valign="top" style="padding-top: 0px;">
+									<div class="control-group" id="warningImg1"></div>
+								</td>
+								<td width="85%" style="padding-left: 10px;">
+									<div class="control-group" id="message2showConfirm1"></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="control-group" id="nextMsg"></div>	
+		 		</div>
+				<div class="modal-footer" id="footerbtn1">
+					<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" style="display: none;z-index: 5000" id="myModalvk" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog-for-cgmessage">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="vcloseBtnk">x</button>
+					<h3 id="myModalLabel">TeacherMatch</h3>
+				</div>
+				<div class="modal-body">
+					<table width="100%">
+						<tbody>
+							<tr>
+								<td width="15%" valign="top" style="padding-top: 8px;">
+									<div class="control-group" id="warningImg1k"></div>
+								</td>
+								<td width="85%" style="padding-left: 10px;">
+									<div class="control-group" id="message2showConfirm1k"></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="control-group" id="nextMsgk"></div>
+				</div>
+				<div class="modal-footer" id="footerbtn1k">
+					<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- By alok for tablet -->
+	<div class="modal hide" id="docfileNotOpen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+  					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="hideDiv();">x</button>
+					<h3 id="myModalLabel">Teachermatch</h3>
+				</div>
+				<div class="modal-body">		
+					<div class="control-group">
+						<div class="">
+			 				Document is in MS Word and hence can not be opened.
+						</div>
+					</div>
+ 				</div>
+ 				<div class="modal-footer">
+ 					<button class="btn" data-dismiss="modal" aria-hidden="true" onclick="hideDiv();">Close</button> 		
+ 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal hide" id="exelfileNotOpen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+  					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="hideDiv();">x</button>
+					<h3 id="myModalLabel">Teachermatch</h3>
+				</div>
+				<div class="modal-body">		
+					<div class="control-group">
+						<div class="">
+			 				Document is in Exel and hence can not be opened.
+						</div>
+					</div>
+ 				</div>
+ 				<div class="modal-footer">
+ 					<button class="btn" data-dismiss="modal" aria-hidden="true" onclick="hideDiv();">Close</button> 		
+ 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal hide" id="printmessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="hideDiv();">x</button>
+					<h3 id="myModalLabel">Teachermatch</h3>
+				</div>
+				<div class="modal-body">		
+					<div class="control-group">
+						<div class="">
+							Please make sure that pop ups are allowed on your browser.
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn" data-dismiss="modal" aria-hidden="true" onclick="hideDiv();">Close</button> 		
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script language='javascript'>$(document).ready(function(){function resetFbModal(){$('.btn-reset').addClass('hidden');$('.tel-applicant').addClass('hidden');$('.tel-partner').addClass('hidden');$('.reqTypes').removeClass('hidden');subjectLine="";$('.fb-info').addClass('hidden');$('.fb-feedback').addClass('hidden');$('.fb-support').addClass('hidden');$('.fb-contactinfo').addClass('hidden');$('#buttonSubmit-frmFeedbackUpload').addClass('hidden');$('.hdrSubject').html('').addClass('hidden');$('input:radio[name="reqType"]').prop('checked',false);$('#ratingDiv').html("<input  value='0' id='rating_simple1' name='starRating' type='hidden'>");setRating();removeFile();$('#msgFeed').find(".jqte_editor").css("background-color","");$('#msgSpt').find(".jqte_editor").css("background-color","");$('#msgSubject').css("background-color","");$('#msgFeed').find(".jqte_editor").html("");$('#msgSpt').find(".jqte_editor").html("");$('.divErrorMsg').html('');$('#inputFirstName').css("background-color","");$('#inputLastName').css("background-color","");$('#inputEmail').css("background-color","");$('#inputDistrict').css("background-color","");$('#inputFirstName').val("");$('#inputLastName').val("");$('#inputEmail').val("");$('#inputDistrict').val("");$('#inputPhone').val("");}
+$('#myModal1').on('show.bs.modal',function(){resetFbModal();});$('.btn-reset').click(function(e){e.preventDefault();resetFbModal();});$('#buttonSubmit-frmFeedbackUpload').click(function(e){e.preventDefault();});$('input:radio[name="reqType"]').change(function(){var subjectLine="";if($(this).is(':checked')&&$(this).val()=='1a'){subjectLine="Support Request: Product Information";$('.tel-applicant').addClass('hidden');$('.tel-partner').addClass('hidden');$('.fb-info').removeClass('hidden');$('.fb-feedback').addClass('hidden');$('.fb-support').addClass('hidden');$('.fb-contactinfo').addClass('hidden');$('#buttonSubmit-frmFeedbackUpload').addClass('hidden');}else if($(this).is(':checked')&&$(this).val()=='2a'){subjectLine="Support Request by Applicant: Login Help";$('.tel-applicant').removeClass('hidden');$('.tel-partner').addClass('hidden');$('.fb-info').addClass('hidden');$('.fb-feedback').addClass('hidden');$('.fb-support').removeClass('hidden');$('.fb-contactinfo').removeClass('hidden');$('#buttonSubmit-frmFeedbackUpload').removeClass('hidden');}else if($(this).is(':checked')&&$(this).val()=='2b'){subjectLine="Support Request by Applicant: Question";$('.tel-applicant').removeClass('hidden');$('.tel-partner').addClass('hidden');$('.fb-info').addClass('hidden');$('.fb-feedback').addClass('hidden');$('.fb-support').removeClass('hidden');$('.fb-contactinfo').removeClass('hidden');$('#buttonSubmit-frmFeedbackUpload').removeClass('hidden');}else if($(this).is(':checked')&&$(this).val()=='3a'){subjectLine="Support Request by Partner: Technical Support";$('.tel-applicant').addClass('hidden');$('.tel-partner').removeClass('hidden');$('.fb-info').addClass('hidden');$('.fb-feedback').addClass('hidden');$('.fb-support').removeClass('hidden');$('.fb-contactinfo').removeClass('hidden');$('#buttonSubmit-frmFeedbackUpload').removeClass('hidden');}else if($(this).is(':checked')&&$(this).val()=='3b'){subjectLine="Support Request by Partner: Product Help";$('.tel-applicant').addClass('hidden');$('.tel-partner').removeClass('hidden');$('.fb-info').addClass('hidden');$('.fb-feedback').addClass('hidden');$('.fb-support').removeClass('hidden');$('.fb-contactinfo').addClass('hidden');$('#buttonSubmit-frmFeedbackUpload').removeClass('hidden');}else if($(this).is(':checked')&&$(this).val()=='3c'){subjectLine="Support Request by Partner: Feedback";$('.tel-applicant').addClass('hidden');$('.tel-partner').addClass('hidden');$('.fb-info').addClass('hidden');$('.fb-feedback').removeClass('hidden');$('.fb-support').addClass('hidden');$('.fb-contactinfo').addClass('hidden');$('#buttonSubmit-frmFeedbackUpload').removeClass('hidden');}else{subjectLine="";$('.tel-applicant').addClass('hidden');$('.tel-partner').addClass('hidden');$('.fb-info').addClass('hidden');$('.fb-feedback').addClass('hidden');$('.fb-support').addClass('hidden');$('.fb-contactinfo').addClass('hidden');$('#buttonSubmit-frmFeedbackUpload').addClass('hidden');}
+$('#msgSubject').val(subjectLine);$('.hdrSubject').html('<br />'+subjectLine).removeClass('hidden');$('.btn-reset').removeClass('hidden');$('.reqTypes').addClass('hidden');});});</script>
+
+	<!-- End feedback and support -->
+
+	<!-- abbreviated script to initialize editor, may be removed -->
+	<script type="text/javascript">$(document).ready(function(){$('textarea').jqte();});</script> 
+		
+		
+	
+		
+
+
+
+
+
+<html>
+<head>  
+<script type="text/javascript" src="jquery/jquery.cookie.js"></script>
+<script type="text/javascript">function clearCookies()
+{jQuery(function($){$.cookie('noShowWelcome',null)});}</script> 
+<script>$(document).ready(function(){if(navigator.userAgent.indexOf('Safari')!=-1&&navigator.userAgent.indexOf('Chrome')==-1){$('select').change(function(){$(this).css('line-height','2.0em !important');$(this).css('text-indent','10px');}).trigger('change');}});</script>
+	<link rel="stylesheet" href="css/Menu/styledownload.css" type="text/css"/>	 
+</head> 
+<script>var deviceTypeAndroid=$.browser.device=(/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent.toLowerCase()));var deviceType=$.browser.device=(/iPhone|iPad|iPod/i.test(navigator.userAgent.toLowerCase()));var siteURL=null,menuPage=null,JobOrderVal=null,entityID=null;try{if(this.location.href.indexOf('teachermatch.org/TMDEMO/')!=-1){siteURL=this.location.href.split('teachermatch.org/TMDEMO/');}else if(this.location.href.indexOf('teachermatch.org/')!=-1){siteURL=this.location.href.split('teachermatch.org/');}else if(this.location.href.indexOf('teachermatch/')!=-1){siteURL=this.location.href.split('teachermatch/');}else if(this.location.href.indexOf('8080/')!=-1){siteURL=this.location.href.split('8080/');}
+if(siteURL[1].indexOf("JobOrderType=2")!=-1&&siteURL[1].indexOf("batch")==-1){JobOrderVal=2;}
+if(siteURL[1].indexOf("JobOrderType=3")!=-1&&siteURL[1].indexOf("batch")==-1){JobOrderVal=3;}
+if(siteURL[1].indexOf("JobOrderType=2")!=-1&&siteURL[1].indexOf("batch")!=-1){JobOrderVal=2;}
+if(siteURL[1].indexOf("JobOrderType=3")!=-1&&siteURL[1].indexOf("batch")!=-1){JobOrderVal=3;}
+if(siteURL[1].indexOf("JobOrderType=3")!=-1&&siteURL[1].indexOf("entityID=3")!=-1){entityID=3;}
+menuPage=siteURL[1].substring(0,siteURL[1].indexOf(".do")+3);}catch(err){}
+function CurrentPageWithMenuSelected(menuPageName,parentorderid,menuorderid,status){if(menuPageName.indexOf("|"+menuPage+"|")!=-1){if(JobOrderVal==null){document.getElementById("menuid"+parentorderid).className="activeText";document.getElementById("submenuid"+parentorderid+menuorderid).className="activeText";}else if(JobOrderVal==2&&menuPageName.indexOf("managejoborders")!=-1){document.getElementById("menuid"+parentorderid).className="activeText";document.getElementById("submenuid"+parentorderid+menuorderid).className="activeText";}else if(JobOrderVal==3&&menuPageName.indexOf("schooljoborders")!=-1){document.getElementById("menuid"+parentorderid).className="activeText";document.getElementById("submenuid"+parentorderid+menuorderid).className="activeText";}else if(JobOrderVal==2&&menuPageName.indexOf("|batchjoborder.do|")!=-1){document.getElementById("menuid"+parentorderid).className="activeText";document.getElementById("submenuid"+parentorderid+menuorderid).className="activeText";}else if(entityID==3&&JobOrderVal==3&&menuPageName.indexOf("|batchjoborder.do|")!=-1){document.getElementById("menuid"+parentorderid).className="activeText";document.getElementById("submenuid"+parentorderid+menuorderid).className="activeText";}else if(JobOrderVal==3&&menuPageName.indexOf("batchschooljoborder")!=-1){document.getElementById("menuid"+parentorderid).className="activeText";document.getElementById("submenuid"+parentorderid+menuorderid).className="activeText";}}}
+function CurrentPageWithParentMenuSelected(menuPageName,parentorderid){if(menuPageName.indexOf(menuPage)!=-1){document.getElementById("menuid"+parentorderid).className="activeText";}}
+function generateScoreData()
+{if(deviceType)
+{$("#exelfileNotOpen").css({"z-index":"3000"});$('#exelfileNotOpen').show();}
+else
+{$('#message2showConfirm').html("A candidate score spreadsheet will be downloaded.");$('#footerbtn').html("<button class='btn btn-primary' onclick=\"$('#myModal3').modal('hide');window.location.href='./service/getcandidatedata.do'\" >Ok</button> <button class='btn' data-dismiss='modal' aria-hidden='true'>Cancel</button>");$('#myModal3').modal('show');}}
+function updateCgGridData()
+{if(deviceType)
+{$("#exelfileNotOpen").css({"z-index":"3000"});$('#exelfileNotOpen').show();}
+else
+{$('#message2showConfirm').html("Do you want to update CG Grid data?");$('#footerbtn').html("<button class='btn btn-primary' onclick=\"$('#myModal3').modal('hide');window.location.href='./updatecgbyuser.do'\" >Ok</button> <button class='btn' data-dismiss='modal' aria-hidden='true'>Cancel</button>");$('#myModal3').modal('show');}}
+function processData()
+{$('#message2showConfirm').html("Do you want to update Mosaic data?");$('#footerbtn').html("<button class='btn btn-primary' onclick=\"$('#myModal3').modal('hide');window.location.href='./service/processdata.do'\" >Ok</button> <button class='btn' data-dismiss='modal' aria-hidden='true'>Cancel</button>");$('#myModal3').modal('show');}
+function exportData()
+{if(deviceType)
+{$("#exelfileNotOpen").css({"z-index":"3000"});$('#exelfileNotOpen').show();}
+else
+{$('#message2showConfirm').html("Do you want to Export data?");$('#footerbtn').html("<button class='btn btn-primary' onclick=\"$('#myModal3').modal('hide');window.location.href='./service/getcandidatedataexport.do'\" >Ok</button> <button class='btn' data-dismiss='modal' aria-hidden='true'>Cancel</button>");$('#myModal3').modal('show');}}</script>
+<div class="container">
+	<div style="float: left; margin-top:10px;" class="top15">
+		<div> 
+			 
+									<a href="http://www.teachermatch.org" target="_blank" class="tmlogo"><img src="images/Logo with Beta300.png" alt="" class="top14"></a>	
+								
+											
+						<script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-40462543-1','teachermatch.org');ga('send','pageview');</script>
+						
+						 
+						 </div>
+	</div>	
+	<div class="pull-right">		     		  
+					<div class="btn-group">					
+						
+			
+			
+			
+		
+				</div>
+				
+       </div>
+       
+	<div style="clear: both;"></div>
+</div> 	
+<div class="top10" style="margin-bottom: 20px;">			
+	<ul id="css3menu" class="topmenu" style="width:100%; margin-bottom: 10px;">
+		<div class="container">
+		
+													
+							
+					
+					
+							
+								
+								
+								<li class="topmenu"><a href="educationjob.do"><i class="fa fa-square arrowcolor"></i> Home</a></li>	
+								
+								
+							
+							
+								
+								
+								<li class="topmenu"><a href="aboutus.do"><i class="fa fa-square arrowcolor"></i> About Us   </a></li>
+								
+							
+							
+							
+								
+								
+								<li class="topmenu"><a href="meetyourmentor.do"> <i class="fa fa-square arrowcolor"></i> Resources   </a></li>
+								
+													
+					
+							
+								 <li class="topmenu"><a href="http://www.teachermatch.org/blog"><i class="fa fa-square arrowcolor"></i> Blog      </a></li>
+								 	
+					
+		</div>	
+	</ul>
+</div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"cb0f356021","agent":"","beacon":"bam.nr-data.net","applicationTime":2690,"applicationID":"16505287","transactionName":"ZQZWNRNYDUsAW0YPV1xMZxETUA1fIldcEkpdD1gEExYSTQRLRgxXUAFbABNdTVwOGBohfWZK","queueTime":0}</script></html>
+
+		<div class="container" style="min-height:400px;">
+			
+
+
+
+
+
+<link href="css/font-awesome.css?ver=1476952880000" rel="stylesheet" type="text/css">
+<link href="css/font-awesome-ie7.min.css?ver=1476952880000" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="dwr/engine.js"></script>
+<script type='text/javascript' src='dwr/util.js'></script>		
+<script type="text/javascript" src="dwr/interface/DashboardAjax.js?ver=1476952870000"></script>
+<script type="text/javascript" src="dwr/interface/JBServiceAjax.js?ver="></script>
+<script type="text/javascript" src="dwr/interface/QuestAjax.js?ver=1476952880000"></script>
+<script type="text/javascript" src="js/jobboard/jobboard.js" charset="utf-8"></script>
+<link type="text/css" rel="stylesheet" href="css/jobboard.css" charset="utf-8"/>
+
+<!-- <script type="text/javascript" src="js/jquery.1.11.2.min.js" charset="utf-8"></script> -->
+
+<!-- shadab -->
+
+<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- shadab end -->
+<style type="text/css">.btn-info{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.25);background-color:#006dcc;*background-color: #0044cc;background-image:-moz-linear-gradient(top,#08c,#04c);background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));background-image:-webkit-linear-gradient(top,#08c,#04c);background-image:-o-linear-gradient(top,#08c,#04c);background-image:linear-gradient(to bottom,#08c,#04c);background-repeat:repeat-x;border-color:#04c #04c #002a80;border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)}.btn-info:hover{color:#fff;background-color:#04c;*background-color: #003bb3}textarea{resize:none}h1{padding-top:4px;padding-bottom:4px;font-size:13px;font-weight:bold}</style>
+
+ 
+ <script src="https://maps.google.com/maps/api/js?key=AIzaSyCxMPQC8CqpPbxMhZbIuROrjXVbqASZOvg&sensor=false" type="text/javascript"></script>
+    
+
+
+<script type="text/javascript" src="js/jquery-te-1.3.2.2.min.js" charset="utf-8"></script>
+<link type="text/css" rel="stylesheet" href="css/jquery-te-1.3.2.2.css" charset="utf-8"/> 
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyCxMPQC8CqpPbxMhZbIuROrjXVbqASZOvg&sensor=false" type="text/javascript"></script>
+<!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+-->
+
+
+
+<div class="top5 span10" style="width:100%;">
+		<!-- Top Search -->
+		<!-- <div class="row">
+			<div class="col-sm-9 col-md-9">
+				<input type="text" name="quickSearch" id="quickSearch">
+			</div>
+		</div> -->
+		
+		<!-- Part 1 -->
+		
+		<!--  <div class="col-sm-9 col-md-9" style="border: 2px solid;border-radius: 25px;"> -->
+		<div class="col-sm-8 col-md-8" style="padding:1px;overflow: auto;">
+			<div class="sParent" style="height: 100%;">
+				<div class="sidebar" style="height: 440px;">
+				<!-- shadab start -->
+				<div class="row" style="width:650px;">
+						<div class="col-sm-12 col-md-12">
+							<!-- <span class='icon-leaf icon-large iconcolor'></span> -->
+							<label style="font-size: 12px;margin-bottom: 4px;">Keyword Search </label>
+						 	<input type="text" class="form-control" maxlength="100" id="searchTerm" value="" name="searchTerm" style="width:95%;font-size:12px;" onkeypress="return runScript(event)"/>
+							
+							
+						</div>
+						
+						</div>
+						
+							<!-- <br> -->
+						<!--<div class="row" style="margin-top: 12px;">
+							<div class="col-sm-12 col-md-12">
+								<span><button class="btn btn-primary" style="width: 588px; height: 40px;font-size:12px;" id="firstSearch" type="button" onclick="searcESJob()">Search</button></span>
+							</div>
+						</div>
+						<br>
+						--><!-- shadab end-->
+					<!--  -->
+						<!-- 1st Row -->
+						<div class="row" style="width:650px;  margin-top: -13px;">
+						<div class="col-sm-7 col-md-7">	
+							<!-- <span class='icon-leaf icon-large iconcolor'></span> -->
+							<label style="font-size: 12px;margin-top: 20px;">District ( leave blank to search across all districts )</label>
+						 	<input type="text" class="form-control" maxlength="100" id="districtName" value="" name="districtName" onfocus="getDistrictMasterAutoComp(this, event, 'divTxtDistrictData', 'districtName','districtId',''); showSchool();" onkeyup="getDistrictMasterAutoComp(this, event, 'divTxtDistrictData', 'districtName','districtId',''); showSchool();" onblur="hideDistrictMasterDiv(this,'districtId','divTxtDistrictData'); showSchool();hidestate();" onchange="removeSchool()" style="font-size: 12px;width: 94%"/>
+							<input type="hidden" id="districtId" name="districtId" value="">
+							<div id='divTxtDistrictData' style=' display:none;position:absolute; z-index: 2000;width:329px' onmouseover="mouseOverChk('divTxtDistrictData','districtName')" class='result'></div>
+						</div>
+						
+						
+						<div id="state" class="col-sm-4 col-md-4" style="width:220px; display: none">
+						<!-- <span class='icon-home icon-large iconcolor'></span> -->
+						<label style="font-size: 12px;  margin-left: -35px;margin-top: 20px;">State</label>
+						<div id="stateDivId" style="width:129%;  margin-left: -37px;font-size:12px;">
+						</div>
+						</div>
+						
+					  
+						</div>
+						<!-- 2nd Row -->
+						
+						<div class="row" style="margin-top: 7px;">
+						  <div class="col-sm-8 col-md-8">
+					    <!-- <span class='icon-home icon-large iconcolor'></span> -->
+				       	<span class=""><label style="font-size: 12px;">City</label></span>
+				       	<div id="cityDivId" style="width:83%;font-size:12px">
+						<select id="cityId" name="cityId" class="form-control" disabled="disabled" style="font-size:12px">
+						<option value="0" selected="selected">All</option>
+						</select>
+						</div>
+						</div>
+						</div>
+						
+								
+						<div class="row" style="margin-top: 7px;">		
+							<div class="col-sm-6 col-md-6">
+								<!-- <span class='icon-tasks icon-large iconcolor'></span> -->
+					       		<span class=""><label style="font-size: 12px;margin-bottom: 3px;">Posted Within Month(s)</label></span>
+					       		<table>
+					       			<tr>
+					       				<td style='padding-left:0px;' id="JBPostedWithin"></td>
+					       			</tr>
+					       		</table>
+					       		<input type="hidden" name="postedWithin" id="postedWithin"/>
+				       		</div>			    
+						</div>
+						
+					<!-- 3rd Row -->
+					
+					<div class="row" style="padding-top:12px;width:80%;" id="moreFilterBtn">
+						<div class="col-sm-12 col-md-12">
+							<span>
+							<!-- <img src="images/dropdown.png" id="" width="15" height="15" alt="" onclick="displayJBAdvanceSearch()" style="display:block"></a> -->
+								<button class="btn btn-info" style="height:40px;font-size:12px;" type="button" onclick="displayJBAdvanceSearch()">More Filter</button>
+								<!-- shadab commented lines -->
+								<!-- <button class="btn btn-primary" style="height: 40px;" type="button" onclick="searchJob()">Search</button> -->
+							</span>
+						</div>
+					</div>
+						
+					
+					<div id="moreFilterDiv" class="hide" style="padding-top: 0px;">
+					
+						<div class="row">
+							<div class="col-sm-6 col-md-6">
+								<!-- <span class='icon-building icon-large iconcolor'></span> -->
+								
+								<div id="school">
+								<label style="font-size: 12px;">School Name</label>
+								<input type="hidden" id="schoolId1" name="schoolId1" value="">
+								<input type="text" style="width: 114%;font-size:12px;" class="form-control" maxlength="100" id="schoolName1" disabled="disabled" autocomplete="off" value="" name="schoolName1" onfocus="getSchoolMasterAutoComp(this, event, 'divTxtShowData4', 'schoolName1','schoolId1','districtId','');" onkeyup="getSchoolMasterAutoComp(this, event, 'divTxtShowData4', 'schoolName1','schoolId1','districtId','');" onblur="hideSchoolMasterDiv(this,'schoolId1','divTxtShowData4');setBlankZip();"/>
+								<div id='divTxtShowData4' style=' display:none;position:absolute; z-index: 2000;width:330px;' onmouseover="mouseOverChk('divTxtShowData4','schoolName1')" class='result'></div>
+								</div>
+								
+								<!-- <span class='icon-certificate icon-large iconcolor'></span> -->
+					           	<label style="font-size: 12px;margin-top:7px">Certification/Licensure Name (leave blank for all)</label>
+					            <input type="hidden" id="certificateTypeMaster" value="">
+								<input type="text" class="form-control" style="width: 114%;font-size:12px" maxlength="100" id="certType" value="" name="certType" onfocus="getAllCertificateTypeAutoComp(this, event, 'divTxtCertTypeData', 'certType','certificateTypeMaster','');" onkeyup="getAllCertificateTypeAutoComp(this, event, 'divTxtCertTypeData', 'certType','certificateTypeMaster','');" onblur="hideAllCertificateTypeDiv(this,'certificateTypeMaster', 'divTxtCertTypeData');"/>
+								<div id='divTxtCertTypeData' style=' display:none;position:absolute;width:330px' onmouseover="mouseOverChk('divTxtCertTypeData','certType')" class='result'></div>
+								
+								<!-- <span class='icon-tag icon-large iconcolor'></span> -->
+								<label style="font-size: 12px;margin-top:7px">Zip Code ( leave blank for all )</label>
+							  	<input class="form-control" type="text" name="zipCode" id="zipCode" style="width: 114%;font-size: 12px;" onkeypress="return checkForInt(event); "/>
+							  
+							</div>
+							
+							<div class="col-sm-6 col-md-6">
+								<!-- <span class='icon-book icon-large iconcolor'></span> -->
+						        <label style="font-size: 12px;margin-left: 28px;">Subject&nbsp;&nbsp;<a href="#" id="iconpophover102" rel="tooltip" data-original-title="To select more than one subject, please hold the Shift key and select multiple subjects"><img src="images/qua-icon.png" width="15" height="15" alt=""></a></label> 
+								<select id="subjectId" name="subjectId" class="form-control" multiple="multiple" size="7" style="height:168px;font-size:12px;  width: 84%;margin-left: 27px;">
+									<option value="0">All</option>
+										
+										
+											<option value="35">AP Environmental Science</option>				
+										
+											<option value="28">Art</option>				
+										
+											<option value="44">Art Education</option>				
+										
+											<option value="20">Biology</option>				
+										
+											<option value="21">Business</option>				
+										
+											<option value="45">Career / Technical Education</option>				
+										
+											<option value="22">Career and Technical Education</option>				
+										
+											<option value="23">Chemistry</option>				
+										
+											<option value="37">Coach</option>				
+										
+											<option value="18">CTE</option>				
+										
+											<option value="1">Dance</option>				
+										
+											<option value="19">Drivers Ed</option>				
+										
+											<option value="38">Early Childhood Education</option>				
+										
+											<option value="24">Earth Science</option>				
+										
+											<option value="25">Elementary</option>				
+										
+											<option value="39">Elementary Education</option>				
+										
+											<option value="2">English</option>				
+										
+											<option value="26">English as a Second Language</option>				
+										
+											<option value="17">ESL</option>				
+										
+											<option value="36">Expeditions</option>				
+										
+											<option value="27">Family and Consumer Science</option>				
+										
+											<option value="16">Fine Arts</option>				
+										
+											<option value="3">French</option>				
+										
+											<option value="29">General Science</option>				
+										
+											<option value="30">Health</option>				
+										
+											<option value="4">Math</option>				
+										
+											<option value="5">Music</option>				
+										
+											<option value="47">Music Education</option>				
+										
+											<option value="14">Other</option>				
+										
+											<option value="6">PE</option>				
+										
+											<option value="31">Physical Education</option>				
+										
+											<option value="32">Physics</option>				
+										
+											<option value="7">Science</option>				
+										
+											<option value="40">Secondary English Language Arts</option>				
+										
+											<option value="42">Secondary Math</option>				
+										
+											<option value="43">Secondary Science</option>				
+										
+											<option value="41">Secondary Social Studies</option>				
+										
+											<option value="8">Social Science</option>				
+										
+											<option value="33">Social Studies</option>				
+										
+											<option value="9">Social Work</option>				
+										
+											<option value="11">Spanish</option>				
+										
+											<option value="12">Special Education</option>				
+										
+											<option value="34">Technology</option>				
+										
+											<option value="13">Theater</option>				
+										
+											<option value="15">World Languages</option>				
+										
+									
+								</select>
+								
+								  	 
+							</div>
+						</div>
+						
+						<!--<div class="row" style="padding-top: 20px;">
+							<div class="col-sm-12 col-md-12">
+								<span><button class="btn btn-primary" style="width: 592px; height: 40px;margin-bottom:-10px;font-size:12px" type="button" onclick="hideJBAdvanceSearch()">Show Listings</button></span>
+							</div>
+						</div>
+						
+					--><!-- 
+						<div class="row">
+							<div class="col-sm-6 col-md-6">
+								<label>Label 1</label>
+								Input Control 1
+							</div>
+							<div class="col-sm-6 col-md-6">
+								<label>Label 2</label>
+								Input Control 2
+							</div>
+						</div>
+						-->
+						
+						
+					</div>
+					
+					
+					<div id="searchButtonDiv" style="padding-top: 0px;">
+						<div class="row" style="margin-top: 12px;">
+							<div class="col-sm-12 col-md-12">
+								<span><button class="btn btn-primary" style="width: 588px; height: 40px;font-size:12px;" id="firstSearch" type="button" onclick="searcESJob()">Search</button></span>
+							</div>
+						</div>
+						<br>
+						
+						<div class="row hide" id="ShowListingsId" style="padding-top: 0px;">
+							<div class="col-sm-12 col-md-12">
+								<span><button class="btn btn-primary" style="width: 592px; height: 40px;margin-bottom:-10px;font-size:12px" type="button" onclick="hideJBAdvanceSearch()">Show Listings</button></span>
+							</div>
+						</div>
+					</div>
+					
+						
+					<div class="row" style="min-height: 0px;width:98%;padding:5px;margin-left:4px;margin-top:5px;">
+							<!--<div class="col-sm-10 col-md-10">
+								--><div class="TableContent top15" style="  margin-left: -10px;">
+									<div class="table-responsive" id="divJBData"></div>
+								</div><!--          
+							</div>
+						--></div>
+						
+					<!--  -->
+					
+				</div>
+			</div>	
+		</div>
+		<!--  Part 2 -->
+		<div class="col-sm-3 col-md-3">
+			<!--  Map Area -->
+			<!-- script type="text/javascript" 
+			src="http://www.webestools.com/google_map_gen.js?lati=44.534384&long=-86.800047&zoom=7&width=400&height=550&mapType=normal&map_btn_normal=yes&map_btn_satelite=yes&map_btn_mixte=yes&map_small=yes&marqueur=yes&info_bulle=">
+			-->
+			
+			 
+ <div id="jbMap" style="width: 460px; height: 443px;"></div>
+    
+			
+			
+			
+			<!--  -->
+		</div>  
+	  									
+</div> 
+<div class="modal hide" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" style="">		
+		 <div class="modal-dialog">
+          <div class="modal-content">
+			<div class="modal-header">	 
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick='hideDiv();'>
+					x
+				</button> 		
+				<h3 id="myModalLabel">TeacherMatch</h3>
+			</div>
+			<div class="modal-body">	
+			<div class='divErrorMsg' id='signUpServerError' style="display: block;margin-bottom: 10px;"></div>			             
+			    <div class='divErrorMsg' id='signUpErrordiv' style="display: block;margin-bottom: 10px;"></div>			    			
+				<h1 class="font25 top0" style="">Sign Up</h1>				
+				<div class="row">
+					<div class="col-sm-12 col-md-12 ">
+					<div class="" style="color: black;">First Name<span class="required">*</span></div>
+		            <input type="text" id="fname" class="form-control" style="height: 40px; width: 100%;padding: 10px;"/>		           
+					</div>
+					</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+					 <div class="" style="color: black;">Last Name<span class="required">*</span></div>
+		            <input type="text" id="lname" class="form-control" style="height: 40px; width: 100%;padding: 10px;"/>	          
+					</div>
+					</div>
+						<div class="row">	           		        
+			        <div class="col-sm-12 col-md-12 ">
+			         <div class="" style="color: black;">Email<span class="required">*</span></div>
+			           <input type="text" id="signupEmail" class="form-control" style="height: 40px; width: 100%;padding: 10px;"/>
+			        </div>	           							
+		 	</div>
+		 	</div>
+		 	<!--<div class="row">
+		 	<div class="col-sm-12 col-md-12" style="color: black;">Email<span class="required">*</span></div>
+	            <input type="text" id="signupEmail" class="form-control" style="height: 40px; width: 100%;padding: 10px;"/>
+		 	</div>
+				</div>			 
+	            -->							
+				 	
+		 	<div class="modal-footer">			 	
+		 	<button class="btn btn-primary" type="button" onclick="return signUpTempUser();">Sign Up</button>	 	
+		    <button class='btn btn-primary' data-dismiss='modal' aria-hidden='true' onclick="hideDiv()">Cancel</button>		 			
+		 	</div>
+		</div>
+	  </div>
+</div>
+
+	
+
+
+<div style="display:none;" id="loadingDiv">
+	<table align="center">
+		<tr><td style="padding-top:270px;" align="center"><!-- <img src="images/please.jpg"/> --></td></tr>
+		<tr><td style="padding-top:0px;" align="center"><img src="images/loadingAnimation.gif"/></td></tr>
+	</table>
+</div>
+
+
+
+<form method="post" action="setcl.do" onsubmit="return checkCL();">
+				<div class="modal hide" id="myModalCL" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog-for-cgmessage">
+					<div class="modal-content">
+					<div class="modal-header">
+				  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+						<h3 id="myModalLabel">Cover Letter</h3>
+					</div>
+					<div class="modal-body">	
+					<div style="padding-top: 10px;padding-bottom: 10px;">
+									<label class="redtextmsg">When you click continue, if you are not already logged into a TeacherMatch account, you will be directed to a log-in page, where you will need to log in or set up an account to continue with your application.</label>
+				   				</div>
+					<p id="cvrltrTxt" class="hide">If you are applying to a principal or Central Office position, please provide a cover letter. Applications without cover letters will be considered incomplete and will not be reviewed.</p>
+						<div class='divErrorMsg' id='errordivCL' style="display: block;"></div>						
+						<label class="">
+					        <input type="radio" value="1" id="rdoCL1" name="reqType" onclick="setCLEnable()">
+					        <span style="padding-top: 5px;">Please type in your cover letter</span>	
+				   		</label>							
+						<div id="divCoverLetter">
+							<label class="redtextmsg">(If you are planning to copy and paste text from a web page and/or a Microsoft document,
+				   			 please ensure to paste that text first into a simple text editor such as Notepad to remove
+				   			 the special characters and then copy and paste it into the field below. Otherwise,
+				   			 the text directly cut and pasted from a web page and/or a Microsoft document may not 
+				   			 display properly to the reader)</label>
+				   			<textarea id="coverLetter" name="coverLetter" rows="7" cols="100"></textarea>
+				   		</div>	
+				   		</br>	
+						<label class="">
+					        <input type="radio" value="1" id="rdoCL2" name="reqType" onclick='setClBlank()'>
+					        <span>I do not want to add a cover letter</span>
+				   		</label>
+				   		<label class="checkbox">
+					        <input type="checkbox" value="1" id="isAffilated" name="isAffilated">
+					        I am currently affiliated with this District/School&nbsp;<a href="#" id="iconpophover101" rel="tooltip" data-original-title="Please select this box if you are currently working with this District and/or any School within this District as a full time or part time employee or consultant/contractor"><img src="images/qua-icon.png" width="15" height="15" alt=""></a>
+				   		</label>
+				 	</div>
+				 	<div class="modal-footer">
+				 		<button class="btn btn-large btn-primary" type="submit"><strong>Continue <i class="icon"></i></strong></button>
+				 		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button> 		
+				 	</div>
+				</div>
+				</div>
+				</div>
+	 </form>
+	 <div class="modal hide" id="appliedJob" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" style="">		
+		 <div class="modal-dialog">
+          <div class="modal-content">
+			<div class="modal-header">	  		
+				<h3 id="myModalLabel">TeacherMatch</h3>
+			</div>
+			<div class="modal-body">				
+				<p>You have already applied this job</p>			
+		 	</div> 	
+		 	<div class="modal-footer">		 	
+		    <button class='btn btn-primary' data-dismiss='modal' aria-hidden='true' onclick="hideDiv()">Ok</button>		 			
+		 	</div>
+		</div>
+	  </div>
+</div>
+
+<div class="modal hide" id="applyJobComplete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 99999;" data-backdrop="static">
+		<div class="modal-dialog">
+		<div class="modal-content">
+	<div class="modal-header">
+  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3>Teachermatch</h3>
+	</div>
+	<div class="modal-body">	
+		<div class="control-group">
+			<div class="">
+		    	<span><b>You have successfully applied this job</b></span>	        	
+			</div>
+		</div>
+ 	</div>
+ 	<div class="modal-footer">
+ 		<button class="btn" data-dismiss="modal" aria-hidden="true" onclick="hideInfoBlog();">Ok</button> 		
+ 	</div>
+</div>
+</div>
+</div>
+			<input type="hidden" name="tempjobid" id="tempjobid"/>
+		 	<input type="hidden" name="exitUrl" id="exitUrl"/>
+		 	<input type="hidden" name="district" id="district"/>
+		 	<input type="hidden" name="school" id="school"/>
+		 	<input type="hidden" name="criteria" id="criteria"/>
+		 	<input type="hidden" name="epistatus" id="epistatus"/>
+		 	<div id="from">0</div>
+<script type="text/javascript">$('#iconpophover102').tooltip();getSlider();displayState();var map=new google.maps.Map(document.getElementById('jbMap'),{zoom:4,center:new google.maps.LatLng(37.09024,-95.712891),mapTypeId:google.maps.MapTypeId.ROADMAP});</script>
+<script>$('textarea').jqte();</script>
+<script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-40462543-1','teachermatch.org');ga('send','pageview');</script>
+<script type="text/javascript" src="dwr/interface/AssessmentCampaignAjax.js?ver=1476952872000"></script>
+<script type='text/javascript' src="js/assessment-campaign.js?ver=1476952880000"></script>
+
+
+<!-- shadab start -->
+<script>searcESJob(0);if(resourceJSON.platformName!="NC")
+{document.getElementById("state").style.display="block";}</script>
+
+<!-- shadab end -->
+		</div>	
+		
+
+
+
+
+
+
+
+<div style="min-height: 20px;"></div>
+<div style="background: #AFB3B6; min-height: 90px;" class="top20"><!-- footer -->
+	   <div class="container" style="margin: auto;">   
+		   <div style="float: left;position: relative;" class="top15">		   
+		   
+						<a href="http://www.teachermatch.org" target="_blank"> <img src="images/tmgraylogo.png" alt=""> </a>
+						 
+		         <br/>	   
+		        </div>	
+		     <div style="float: right;" class="top20">		  		  
+				    <a href="https://www.facebook.com/QuestTeacherJobs" target="_blank"><img src="images/footer-icons/fftricon.png"></a>     
+                    <a href="http://www.google.com/+TeachermatchOrganization" target="_blank"><img src="images/footer-icons/gftricon.png"></a>  
+                    <a href="https://www.linkedin.com/company/teachermatch" target="_blank"><img src="images/footer-icons/inftricon.png"></a> 
+                    <a href="https://www.youtube.com/channel/UCLi14NFiTU0bf3hTktuTtSw" target="_blank"><img src="images/footer-icons/ytftricon.png"></a> 
+                    <a href="https://twitter.com/EdQuestJobs" target="_blank"><img src="images/footer-icons/tftricon.png"></a>     
+                    <a href="http://www.pinterest.com/EdQuestJobs/" target="_blank"><img src="images/footer-icons/pfticon.png"></a>      
+	
+			   	</div>			  
+		  		 <div style="float: right;color: #4E4D52;" id="footertxtcolor" class="gray">		   
+			   <b><a href="aboutus.do"> About Us   </a> | <a href="meetyourmentor.do">Resources   </a> | <a href="http://www.teachermatch.com/blog">Blog      </a> | <a href="https://www.teachermatch.org/contact-us/">Contact Us  </a> | <a href="https://www.teachermatch.org/press-and-media/">Press & Media </a> | <a href="#">Site Map </a>			   
+			   &nbsp;&nbsp;&nbsp;&nbsp; &copy; 2015 TeacherMatch. All Rights Reserved</b>  
+		   </div><!--		  			   
+		  		  
+		   <div style="float: right;color: #4E4D52; margin-top:10px;"  class="gray">		   
+			   <b> &nbsp;&nbsp;&nbsp;&nbsp; &copy; 2015 TeacherMatch. All Rights Reserved</b>  
+		   </div>
+		 
+	    --></div>	
+  </div>  
+  <script>$('textarea').jqte();</script>
+ 
+<!-- footer End-->
+	
+		 
+	</body>
+</html>

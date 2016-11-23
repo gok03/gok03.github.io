@@ -1,0 +1,743 @@
+status: 200
+content-length: 32637
+content-location: http://www.eagleinnovations.com
+x-aspnet-version: 2.0.50727
+x-powered-by: ASP.NET
+server: Microsoft-IIS/7.5
+cache-control: private
+date: Wed, 21 Sep 2016 07:20:19 GMT
+content-type: text/html; charset=utf-8
+
+
+<html>
+<head>
+	<script language="javascript">
+function p2ecalc() {
+	var w = 572;
+	var h = 610;
+	var win = window.open("p2e_roi_calc.aspx",
+		"winRequest",
+		"height=" + h + "px,width=" + w + "px,top=" + 
+		((screen.height/2)-(h/2)-16) + "px,left=" + 
+		((screen.width/2)-(w/2)) + 
+		"px",true);
+	win.focus();
+}
+
+function openbrochurediag() {
+	var w = 440;
+	var h = 144;
+	var win = window.open("ChooseBrochure.aspx",
+		"winRequest",
+		"height=" + h + "px,width=" + w + "px,top=" + 
+		((screen.height/2)-(h/2)-16) + "px,left=" + 
+		((screen.width/2)-(w/2)) + 
+		"px",true);
+	win.focus();
+}
+
+var winbrochure = null;
+function OpenBrochure(doc) {
+	winbrochure = window.open ("brochure.aspx?doc=" + escape(doc), "winbrochure",
+		"height=" + screen.height + ",width=" + screen.width + "," +
+		"top=0,left=0,titlebar=no,status=no,scrollbars=yes,menubar=no,location=no,fullscreen=yes");
+	winbrochure.focus();
+}
+
+function demo(t, ref) {
+	var w = 640;
+	var h = 344;
+	if (ref.substring(0,1)=="?") {
+		ref = "select_" + ref.substring(1,50);
+		h = 386;
+	}
+	var win = window.open("request.aspx?title=" + escape(t) + "&ref=" + escape(ref),
+		"winRequest",
+		"height=" + h + "px,width=" + w + "px,top=" + 
+		((screen.height/2)-(h/2)-16) + "px,left=" + 
+		((screen.width/2)-(w/2)) + 
+		"px",true);
+	win.focus();
+}
+
+function OpenTypepad() {
+	var w = 390;
+	var h = 110;
+	var win = window.open("typepad.htm", "winTypepad",
+		"height=" + h + "px,width=" + w + "px,top=" + 
+		((screen.height/2)-(h/2)-16) + "px,left=" + 
+		((screen.width/2)-(w/2)) + 
+		"px",true);
+	win.focus();
+}
+
+function ds() {
+	window.open("P2E MRDS NEW.htm");
+}
+
+function blog1() {
+	window.open("http://eagleinnovations.typepad.com/healthcare/");
+}
+
+function blog2() {
+	window.open("http://eagleinnovations.typepad.com/p2e/");
+}
+
+function Support24Hr() {
+	var w = 640;
+	var h = 310;
+	var win = window.open("support/default.asp", "winSupport",
+		"height=" + h + "px,width=" + w + "px,top=" + 
+		((screen.height/2)-(h/2)-16) + "px,left=" + 
+		((screen.width/2)-(w/2)) + 
+		"px",true);
+	win.focus();
+}
+
+function hoveroption(e,infoID) {
+	document.selection.empty();
+	e.className = "menuitemSel";
+	if (infoID!="") {
+		document.selection.empty();
+		document.getElementById(infoID).className = infoID + "Class";
+	}
+}
+
+function hoveroutoption(e,infoID) {
+	document.selection.empty();
+	e.className = "menuitem";
+	if (infoID!="") {
+		document.selection.empty();
+		document.getElementById(infoID).className = infoID + "ClassHidden";
+	}
+}
+
+function showdd(strmenu) {
+	document.getElementById(strmenu).style.visibility = "";
+	document.selection.empty();
+	document.getElementById(strmenu + '_title').className = "selected";
+	document.getElementById(strmenu + '_title').style.color = "lightyellow"; //"#E36C0A";
+}
+
+function hidedd(strmenu) {
+	document.getElementById(strmenu).style.visibility = "hidden";
+	document.selection.empty();
+	document.getElementById(strmenu + '_title').className = "notselected";
+	document.getElementById(strmenu + '_title').style.color = "white";
+}
+
+function togglesize() {
+	var w = document.getElementById("tblPage").width;
+	if (w=="100%") {
+		w = 836;
+		eraseCookie("togglesize");
+	}
+	else {
+		if (w==836) {
+			w = "100%";
+			eraseCookie("togglesize");
+			createCookie("togglesize","2",360);
+		}
+	}
+	document.getElementById("tblPage").width = w;
+}
+
+function forcesize(sz) {
+	if (sz=="1") {
+		document.getElementById("tblPage").width = 936;
+	}
+	if (sz=="2") {
+		document.getElementById("tblPage").width = "100%";
+	}
+}
+
+function pageonload() {
+	var toggle = readCookie("togglesize");
+	if (toggle == "1" || toggle == "2") {
+		forcesize(toggle);
+	}
+
+	try { customloader() } catch (e) { }
+}
+
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+</script>
+	<style>body 
+{
+	background-color: #676767;
+	margin: 0px;
+}
+body, a, p, span, div, table tr td, input { font-family: Verdana; font-size: 8pt }
+
+.avatar 
+{
+	padding-bottom: 8px;
+	padding-right: 8px;
+}
+
+.cform tr td  
+{
+	padding-bottom: 4px;
+}
+
+.divP2eElecClassHidden, .divP2eElecClass
+{
+	width: 215px; 
+	padding: 8px 8px 16px 8px;
+	background-color: #e5eeff;
+	border:solid #4a7ebb 1px;
+	position: absolute;
+	left: 260px;
+	color: Black;
+	background-image: url(images/linkinfobkg.gif);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+.divP2eElecClassHidden { visibility: hidden }
+
+#tblMenu tr td 
+{
+	color: White; font-weight: bold; font-size: 10pt
+}
+
+.fontcolor 
+{
+	color: #E36C0A; font-size: 8pt; 
+}
+.boldfontcolor 
+{
+	color: #E36C0A; font-size: 10pt; font-weight:bold;
+}
+
+h3 
+{
+	font-size: 10pt;
+	color: #E36C0A;
+	font-weight:bold;
+}
+
+.dsborderstart
+{
+	border-left: solid #E36C0A 1px;
+	border-bottom: solid #E36C0A 1px;
+}
+.dsborderend
+{
+	border-right: solid #E36C0A 1px;
+	border-left: solid #E36C0A 1px;
+	border-bottom: solid #E36C0A 1px;
+}
+
+.ds tr td
+{
+	font-size: 8pt;
+}
+
+.skybox 
+{
+	border: solid #92CDDC 1px;
+	background-color: #ffffff;
+	background-image: url(images/sky_gradient.gif);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	padding: 4px;
+	margin: 0px 6px 6px 6px;
+	text-align: center;
+}
+.skybox, .skybox div, .skybox div a
+{
+	font-size: 6.5pt;
+}
+.skybox div 
+{
+	margin-bottom: 6px;
+}
+.selected 
+{
+	background-color: #000000;
+	background-image: url(images/menubevel.gif);
+	background-repeat: repeat-x;
+	background-position: center top;
+	border-left: solid dimgray 1px;
+	cursor:pointer;
+	height: 36px;
+	width: 100%;
+}
+
+.notselected 
+{
+	border-width: 0px;
+	cursor:pointer;
+}
+
+.menu 
+{
+	background-color:#1081e9;
+	background-image: url(images/menu.gif);
+	background-position:center top;
+	background-repeat: repeat-x;
+	color: white;
+	font-weight: bold;
+	font-size: 10pt;
+	border-top:solid dimgray 1px;
+	border-left:solid steelblue 1px;
+	border-right:solid dimgray 1px;
+	border-bottom:solid steelblue 1px;
+	position:absolute;
+	padding: 8px;
+}
+
+.menuitem, .menuitem a
+{
+	font-size: 10pt;
+	color: white;
+	text-decoration: none;
+}
+.menuitem
+{
+	background-image: none;
+	padding: 8px 4px 8px 4px;
+	cursor: pointer;
+}
+
+.menuitemSel, .menuitemsel a 
+{
+	font-size: 10pt;
+	color: #ffffff;
+	text-decoration: none;
+}
+.menuitemSel
+{
+	background-image: url(images/menuselbkg.gif); background-repeat: repeat-x;
+	background-position: center bottom;
+	background-color: #97afc6;
+	padding: 8px 4px 8px 4px;
+	cursor: pointer;
+}
+
+.SidePanel 
+{
+	width: 140px;
+	background-color: #DBE5F1;
+	border:solid #696969 1px; 
+	padding-top: 4px;
+}
+
+.AlignBottom 
+{
+	position: absolute; bottom: 8px;
+}
+
+.dsright 
+{
+	border-top:solid #AAAAAA 1px;
+	border-right:solid #AAAAAA 1px;
+	border-bottom:solid #AAAAAA 1px;
+}
+
+.dsleft 
+{
+	width: 44%; border:solid #AAAAAA 1px;
+	color: #E36C0A; font-size: 8pt; font-weight:bold; 
+	text-decoration: underline;
+}
+.FooterTDContent {
+    padding-right: 24px;
+}
+</style>
+	<title>Eagle Innovations, Inc. - [Home]</title>
+</head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10224537-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+<body>
+	<form name="frmMain" method="post" action="default.aspx" id="frmMain">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTkyNjM0OTk5ZGREwEy5m1n1LB4nuha0R7bxotf7OQ==" />
+
+		<table id="tblPage" border="0" cellspacing="0" cellpadding="0" width="836px" align="center">
+	<tr style="height:95px">
+		<td>
+				<script>
+	function securelogin() {
+		document.location.reload();
+	}
+</script>
+<table border=0 cellspacing=0 cellpadding=0 width='100%'>
+<tr>
+	<td valign='top' style="width:180px"><a href='default.aspx'><img 
+		src='images/eagle_logo_main.gif' alt='' border=0 /></a></td>
+	<td valign='top' align='right'
+		style="
+		background-color:white;
+		background-image: url(images/eagle_logo_bkg.gif);
+		background-repeat: no-repeat">
+		<table border=0 cellspacing=0 cellpadding=0>
+			<tr>
+				<td valign=top nowrap align=center style='
+						padding-top: 6px;
+						padding-right: 6px;
+						border-right:dotted #8094a9 1px;
+					' align=right>
+					<!--<a style="color: #2476B9; font-size: 9pt; font-weight: bold;"
+						href='javascript:Support24Hr()'>Technical Support<br />(24 Hour)</a>-->
+					<!--<a href='javascript:Support24Hr()'><img src='images/SupportText.gif' 
+						alt='' border=0 /></a>-->
+					Call for more information at 214-237-3870 ext 301
+				</td>
+				<td valign=top nowrap align=center style='
+						padding-top: 6px;
+						padding-right: 6px;
+						border-right:dotted #8094a9 1px;
+					' align=right>
+					<!--<a style="color: #2476B9; font-size: 9pt; font-weight: bold;"
+						href='javascript:Support24Hr()'>Technical Support<br />(24 Hour)</a>-->
+					<a href='javascript:Support24Hr()'><img src='images/SupportText.gif' 
+						alt='' border=0 /></a>
+				</td>
+				<td valign='top' style="padding-left: 6px">
+					<table border=0 cellspacing=0 cellpadding=0>
+					<tr>
+						<td nowrap style='color: #2476B9; font-size: 9pt; font-weight: bold;
+							padding-top: 8px; padding-right: 12px' align=right>
+							<img src='images/custlogin_icon.gif' alt=''
+								style='vertical-align: top'
+								border=0 /> Customer Login
+						</td>
+					</tr>						
+					<tr>
+						<td style="padding-top: 2px; padding-right: 12px" align=right>
+							<input type=text style="font-size: 7pt; width: 95px" />
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-top: 2px; padding-right: 12px" align=right>
+							<input type=text style="font-size: 7pt; width: 95px" />
+						</td>
+					</tr>
+					<tr>
+						<td align=right style="padding-top: 3px; padding-right: 3px">
+							<a style="vertical-align: top; font-size: 8pt; color: blue" href="javascript:securelogin()">Login</a>
+							&nbsp;
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</td>
+	</tr>
+	<tr style="height:60px">
+		<td valign="top">
+				<table border='0' cellspacing='0' cellpadding='0' width='100%'>
+<tr>
+	<td valign='top' style='width:30px'><img 
+		src='images/eagle_headerbarL.gif' alt='' border=0 
+		/></td>
+	
+	<td valign='top'
+		style='background-image: url(images/eagle_headerbarMain.gif);
+		background-repeat: repeat-x'><table id=tblMenu border=0 cellspacing=0 cellpadding=0 width='100%'  	height='50px'> <tr> 	<td align=center valign=middle width="14.2857142857143%" 		style='position: relative' 		language=javascript 		onmouseover='return showdd("menu_Solutions")' 		onmouseout='return hidedd("menu_Solutions")' 		> 		<table border=0 cellspacing=0 cellpadding=0 align=center style='width:100%'> 			<tr> 				<td align=center class=notselected id='menu_Solutions_title' >Software<br />Solutions</td> 			</tr> 		</table> 		<div align=left> 			<div align=left 				id='menu_Solutions' 				style=' 				z-index: 9999; 				visibility: hidden; 				width:270px;  				margin-top: 1px; 				' class='menu'>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "p2e_intro.aspx"' ><a class=menuitem><nobr>P2E (Paper to EDI)</nobr></a></div>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"divP2eElec")' onmouseout='return hoveroutoption(this,"divP2eElec")' onclick='document.location = "p2e_e_intro.aspx"' ><a class=menuitem><span><nobr>P2E (Paper to Electronic)</nobr>	<div id=divP2eElec class=divP2eElecClassHidden>	<p>Any organization that has paper forms, and needs to transfer data from that paper form into a computer application, is a perfect candidate for Eagle’s P2E solution. Current users of P2E include:</p>	<ul>	<li>Camps</li>	<li>Event Photographers</li>	<li>Professional Organizations</li>	<li>Associations</li>	<li>Businesses</li>	</ul>	<p><a style='color: blue' href='p2e_e_intro.aspx' &nbsp;>P2E (Paper to Electronic)</a></p>	</div></span></a></div>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "scanningindexing.aspx"' ><a class=menuitem>Scanning & Indexing</a></div>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "eclaims_entry.aspx"' ><a class=menuitem>eClaims: <nobr>Pre-Adjudication Software</nobr></a></div>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "ede_entry.aspx"' ><a class=menuitem><nobr>EDE (Electronic Data Exchange)</nobr> <nobr>Integration & Interfacing</nobr></a></div>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='return ds()' ><a class=menuitem>Converting Paper Medical Record to Electronic Medical Record</a></div>  				<div style='margin-bottom: 0px' class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "UnderConstruct.aspx"' ><a class=menuitem style='color: #5F5D5D'><nobr>Document Management</nobr></a></div>  			</div> 		</div> 	</td> 	<td align=center valign=middle width="14.2857142857143%" 		style='position: relative' 		language=javascript 		onmouseover='return showdd("menu_Services")' 		onmouseout='return hidedd("menu_Services")' 		> 		<table border=0 cellspacing=0 cellpadding=0 align=center style='width:100%'> 			<tr> 				<td align=center class=notselected id='menu_Services_title' >Services</td> 			</tr> 		</table> 		<div align=left> 			<div align=left 				id='menu_Services' 				style=' 				z-index: 9999; 				visibility: hidden; 				width:230px;  				margin-top: 1px; 				' class='menu'>  				<div style='margin-bottom: 0px' class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "UnderConstruct.aspx"' ><a class=menuitem style='color: #5F5D5D'>IT Consulting</a></div>  			</div> 		</div> 	</td> 	<td align=center valign=middle width="14.2857142857143%" 		style='position: relative' 		language=javascript 		onmouseover='return showdd("menu_Support")' 		onmouseout='return hidedd("menu_Support")' 		> 		<table border=0 cellspacing=0 cellpadding=0 align=center style='width:100%'> 			<tr> 				<td align=center class=notselected id='menu_Support_title' >Support</td> 			</tr> 		</table> 		<div align=left> 			<div align=left 				id='menu_Support' 				style=' 				z-index: 9999; 				visibility: hidden; 				width:200px;  				margin-top: 1px; 				' class='menu'>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='return Support24Hr()' ><a class=menuitem><nobr>24 Hour Technical</nobr> Support</a></div>  				<div style='margin-bottom: 0px' class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "ContactUs.aspx"' ><a class=menuitem>Contact Us</a></div>  			</div> 		</div> 	</td> 	<td align=center valign=middle width="14.2857142857143%" 		style='position: relative' 		language=javascript 		onmouseover='return showdd("menu_Company")' 		onmouseout='return hidedd("menu_Company")' 		> 		<table border=0 cellspacing=0 cellpadding=0 align=center style='width:100%'> 			<tr> 				<td align=center class=notselected id='menu_Company_title' >Company</td> 			</tr> 		</table> 		<div align=left> 			<div align=left 				id='menu_Company' 				style=' 				z-index: 9999; 				visibility: hidden; 				width:194px;  				margin-top: 1px; 				' class='menu'>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "IntroEagle.aspx"' ><a class=menuitem><nobr>Eagle's History</nobr></a></div>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "ContactUs.aspx"' ><a class=menuitem>Contact Us</a></div>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "UnderConstruct.aspx"' ><a class=menuitem style='color: #5F5D5D'><nobr>Eagle's Future Vision</nobr></a></div>  				<div style='margin-bottom: 0px' class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "UnderConstruct.aspx"' ><a class=menuitem style='color: #5F5D5D'><nobr>Leadership Team</nobr></a></div>  			</div> 		</div> 	</td> 	<td align=center valign=middle width="14.2857142857143%" 		style='position: relative' 		language=javascript 		onmouseover='return showdd("menu_Blog")' 		onmouseout='return hidedd("menu_Blog")' 		> 		<table border=0 cellspacing=0 cellpadding=0 align=center style='width:100%'> 			<tr> 				<td align=center class=notselected id='menu_Blog_title' >Blog</td> 			</tr> 		</table> 		<div align=left> 			<div align=left 				id='menu_Blog' 				style=' 				z-index: 9999; 				visibility: hidden; 				width:206px;  				margin-top: 1px; 				' class='menu'>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='return blog1()' ><a class=menuitem>Healthcare IT Software Solutions</a></div>  				<div class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='return blog2()' ><a class=menuitem>Healthcare: Paper to EDI</a></div>  				<div style='margin-bottom: 0px' class=menuitem language=javascript onmouseover='return hoveroption(this,"")' onmouseout='return hoveroutoption(this,"")' onclick='document.location = "UnderConstruct.aspx"' ><a class=menuitem style='color: #5F5D5D'>Healthcare: Converting Paper Medical Record to Electronic Record</a></div>  			</div> 		</div> 	</td> 	<td align=center valign=middle width="14.2857142857143%" 		style='position: relative' 		language=javascript 		onmouseover='return showdd("menu_Career")' 		onmouseout='return hidedd("menu_Career")' 		> 		<table border=0 cellspacing=0 cellpadding=0 align=center style='width:100%'> 			<tr> 				<td align=center class=notselected id='menu_Career_title' onclick='document.location = "underconstruct.aspx"' ><a class=menuitem>Career</a></td> 			</tr> 		</table> 		<div align=left style='display: none'> 			<div align=left 				id='menu_Career' 				style=' 				z-index: 9999; 				visibility: hidden; 				width:232px;  				margin-top: 1px; 				' class='menu'>  			</div> 		</div> 	</td> 	<td align=center valign=middle width="14.2857142857143%" 		style='position: relative' 		language=javascript 		onmouseover='return showdd("menu_ContactUs")' 		onmouseout='return hidedd("menu_ContactUs")' 		> 		<table border=0 cellspacing=0 cellpadding=0 align=center style='width:100%'> 			<tr> 				<td align=center class=notselected id='menu_ContactUs_title' onclick='document.location = "ContactUs.aspx"' ><a class=menuitem>Contact Us</a></td> 			</tr> 		</table> 		<div align=left style='display: none'> 			<div align=left 				id='menu_ContactUs' 				style=' 				z-index: 9999; 				visibility: hidden; 				width:232px;  				margin-top: 1px; 				' class='menu'>  			</div> 		</div> 	</td> </tr> </table> </td>
+	<td valign='top' style='width:30px'><img 
+		src='images/eagle_headerbarR.gif' alt='' border=0 
+		/></td>
+</tr>
+</table>
+</td>
+	</tr>
+	<tr>
+		<td>
+				<!-- content start -->
+				<table id="tblContent" border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td style="
+						width: 30px;
+						background-image: url(images/eagle_contentsideL.gif);
+						background-repeat: repeat-y;
+						" nowrap="nowrap" valign="top">
+						&nbsp;
+					</td>
+				<td id="ContentCell" valign="top" bgcolor="#FFFFFF" style="
+						padding-top: 12px;
+						padding-left: 24px; 
+						padding-right: 24px;
+						">
+<h3><center>Welcome to Eagle Innovations, Inc.</center></h3>
+
+<p>Eagle Innovations has been providing value, time, and cost savings for its customers and the Healthcare industry for over 22 years. Eagle’s team of professionals has the know-how, experience, and expertise to automate your workflow, reduce your costs, and deliver the results your organization needs.</p>
+
+<table border=0 cellspacing=0 cellpadding=4 width='85%' align=center class=ds>
+	<tr style="height: 30px">
+		<td valign=middle align=center colspan="2" 
+			style="background-color: #E36C0A; color: White">
+			<b><u>SOLUTION OVERVIEW</u></b>
+		</td>
+	</tr>
+	<tr>
+		<td class=dsborderstart align=center valign=top 
+			style="width: 40%">
+			<a style="color: blue" href='p2e_intro.aspx'><b>P2E (Paper to EDI)</b></a>
+		</td>
+		<td class=dsborderend valign=top>
+			<b>P2E</b> (Paper to EDI) is Eagle’s solution for converting healthcare paper claims to EDI. P2E has 99.9% accuracy and employs: scanning, keying, correction, recognition, verification/validation, and export.
+		</td>
+	</tr>
+	<tr>
+		<td class=dsborderstart align=center valign=top 
+			style="width: 40%">
+			<a href='javascript:ds()' style="color: blue"><b>Paper Medical Record to Electronic Conversion</b></a>
+		</td>
+		<td class=dsborderend valign=top>
+			<b>P2E</b> (Paper to Electronic) Eagle’s paper conversion solution transfers paper medical records to electronic record. EMR (Electronic Medical Record) elements are bookmarked and indexed according to user needs.
+		</td>
+	</tr>
+	<tr>
+		<td class=dsborderstart align=center valign=top 
+			style="width: 40%">
+			<a style="color: blue"href='ede_entry.aspx'><b>EDE (Electronic Data Exchange)</b></a> <div style="padding-top: 12px">&quot;Integration &amp; Interfacing&quot;</div>
+		</td>
+		<td class=dsborderend valign=top>
+			<b>EDE</b> (Electronic Data Exchange) allows your organization the ability to interface anything. Eagle has performed integration projects in over 200 hospitals, and, supports over 2000 interfaces.
+		</td>
+	</tr>
+	<tr>
+		<td class=dsborderstart align=center valign=top 
+			style="width: 40%">
+			<a href='eclaims_entry.aspx' style="color: blue"><b>eClaims<br />(Pre-Adjudication Software)</b></a>
+		</td>
+		<td class=dsborderend valign=top>
+			<b>eClaims</b> Pre-Adjudication Software that replaces and/or enhances your current method of getting claims into your adjudication system. eClaims provides automated adjudication, business process management, and revenue life-cycle management.
+		</td>
+	</tr>
+	<!--<tr>
+		<td class=dsborderstart align=center valign=top 
+			style="color: #ababab; width: 40%">
+			<b>EMR (Electronic Medical Record)</b>
+		</td>
+		<td class=dsborderend valign=top>
+			<b>Apollo</b> is designed for the user; Apollo is fully customizable and has interfacing and integration components built into the software; these components prevent the replacement of existing systems. Don’t replace systems, use Apollo.
+		</td>
+	</tr>-->
+	<tr>
+		<td class=dsborderstart align=center valign=top 
+			style="color: #ababab; width: 40%">
+			<a href='scanningindexing.aspx' style="color: blue"><b>Scanning and Indexing</b></a>
+		</td>
+		<td class=dsborderend valign=top>
+			<b>Scanning and Indexing</b> provides the conversion of paper record to electronic format. Scanning and Indexing is a superior function to the old style of filing. <div style="padding-top: 8px">Scanning and Indexing utilizes OCR technology for creating digital images and most importantly, a digital library.  The digital library acts as an electronic filing system where the user has the choice of searching their records in any possible way imaginable.</div>
+		</td>
+	</tr>
+	<tr>
+		<td class=dsborderstart align=center valign=top 
+			style="color: #ababab; width: 40%">
+			<b>Document Management System</b>
+		</td>
+		<td class=dsborderend valign=top>
+			<b>DMS</b> (Document Management System) An affordable solution for team and enterprise collaboration. Eagle’s DMS handles the following: location, filing, retrieval, security, disaster recovery, retention, archiving, distribution, workflow, creation, authentication, and traceability.
+		</td>
+	</tr>
+</table>
+
+<div style="padding-top: 40px; padding-bottom: 40px">
+	<table border=0 cellspacing=0 cellpadding=0 width='100%' class=ds>
+	<tr>
+		<td width='33.33%' valign='top' align='center'>
+			<table border=0 cellspacing=0 cellpadding=0><tr><td align=left>
+			<img src='images/boxAPOLLO.gif' alt='' border=0 width='50px' style="float:right; margin-right: 8px" />
+			<h3 style="color:#c0c0c0"><u>Apollo: EMR Software</u></h3>
+			With Apollo there is no need to worry about interfacing and integration; Apollo was designed to talk with any system using technologies incorporated in our EDE integration product.
+			</td></tr></table>
+		</td>
+		<td style="width: 16px" nowrap>&nbsp;</td>
+		<td width='33.33%' valign='top' align='center'>
+			<table border=0 cellspacing=0 cellpadding=0><tr><td align=left>
+			<a href='ede_entry.aspx'><img src='images/SolutionBox2.gif' alt='' border=0 width='50px' style="float:right; margin-right: 8px" />
+			<h3><u>EDE: Interfacing &amp; Integration</u></h3></a>
+			EDE (Electronic Data Exchange)<br />
+			An affordable interface designed with the ability to interface anything in days or weeks, rather than months.
+			</td></tr></table>
+		</td>
+		<td style="width: 16px" nowrap>&nbsp;</td>
+		<td width='33.33%' valign='top' align='center'>
+			<table border=0 cellspacing=0 cellpadding=0><tr><td align=left>
+			<a href='p2e_e_intro.aspx'><img src='images/boxP2Eblue.gif' alt='' border=0 width='50px' style="float:right; margin-right: 8px" />
+			<h3><u>P2E: Paper to Electronic</u></h3></a>
+			Paper to electronic converts paper to EDI. P2E also has modules allowing the solution to convert paper medical records to electronic records. In general P2E can convert paper to any electronic format.
+			</td></tr></table>
+		</td>
+	</tr>
+	</table>
+</div>
+</td>
+				<td id="SidePanel" valign="top" class="SidePanel" rowspan="2">
+						<table id="tblSidePanel" border="0" cellspacing="0" cellpadding="0" width="140px">
+					<tr>
+						<td valign="top" align="center">
+
+			<div style="padding: 0px 4px 8px 4px">
+				<div><a href="javascript:openbrochurediag()"><img src='images/new_eBrochures.gif' alt='' border='0' /></a></div>
+				<div align=center style="padding: 3px 2px 12px 0px"><a href="javascript:openbrochurediag()">Click here to view our solution <nobr>e-Brochures</nobr></a></div>
+			</div>
+
+			<!-- a style='cursor: default' href='underconstruct.aspx'><img src='images/d_btnRequestADemo.gif' alt='' border='0'
+				style='margin-bottom: 16px; display: block' /></a -->
+			<a href="javascript:demo('Request a Demo','?demo')"><img src='images/btnRequestADemo.gif' alt='' border='0'
+				style='margin-bottom: 16px; display: block' /></a>
+
+
+			<!-- a style='cursor: default' href='underconstruct.aspx'><img src='images/d_btnRequestAWebinar.gif' alt='' border='0'
+				style='margin-bottom: 16px' /></a -->
+			<a href="javascript:demo('Request a Webinar','?webinar')"><img src='images/btnRequestAWebinar.gif' alt='' border='0'
+				style='margin-bottom: 16px' /></a>
+
+			<!-- a style='cursor: default' href='underconstruct.aspx'><img src='images/d_btnRequestSolutionInfo.gif' alt='' border='0'
+				style='margin-bottom: 16px' /></a -->
+			<a href="javascript:demo('Request Solution Information','?info')"><img src='images/btnRequestSolutionInfo.gif' alt='' border='0'
+				style='margin-bottom: 16px' /></a>
+
+			<!-- a style='cursor: default' href='underconstruct.aspx'><img src='images/d_btnSignUpForNewsletter.gif' alt='' border='0'
+				style='margin-bottom: 16px' /></a -->
+			<a href="javascript:demo('Sign up for our newsletter','newsletter')"><img src='images/btnSignUpForNewsletter.gif' alt='' border='0'
+				style='margin-bottom: 16px' /></a>
+
+			<a style='cursor: default' href='underconstruct.aspx'><img src='images/d_btnBecomePartner.gif' alt='' border='0'
+				style='margin-bottom: 16px' /></a>
+
+			<div class='skybox'>
+				<div>Useful Links:</div>
+				<div>
+					<a style='color: #ABABAB; cursor: default' href='underconstruct.aspx'>Download Product Upgrades</a>
+				</div>
+				<div>Product Related Reading:</div>
+				<div>
+					<a style='color: #ABABAB; cursor: default' href='underconstruct.aspx'>Paper Conversion News</a>
+				</div>
+				<div>
+					<a style='color: #ABABAB; cursor: default' href='underconstruct.aspx'>Claims Processing News</a>
+				</div>
+				<div>
+					<a style='color: #ABABAB; cursor: default' href='underconstruct.aspx'>Interfacing &amp; Integration News</a>
+				</div>
+			</div>
+		</td>
+					</tr>
+					<tr>
+						<td valign="bottom" nowrap="nowrap">
+			<div style='padding-top: 8px; text-align: center; padding-left: 2px'>
+				<a target='_blank' href='http://www.linkedin.com/companies/281129/Eagle+Innovations%2C+Inc.?trk=pp_icon'><img
+				src='images/followus1.gif' alt='' border='0' /></a><a target='_blank' href='http://twitter.com/jasonelliott03'><img
+				src='images/followus2.gif' alt='' border='0' /></a><a href='javascript:OpenTypepad()'><img
+				src='images/followus3.gif' alt='' border='0' /></a>
+			</div>
+		</td>
+					</tr>
+				</table>
+				
+</td>
+				<td style="
+						width: 36px;
+						background-image: url(images/eagle_contentsideR.gif);
+						background-repeat: repeat-y;
+						background-position: 7px center;
+						background-color: white;
+						" nowrap="nowrap" valign="top">
+						&nbsp;
+					</td>
+			</tr>
+			<tr style="height: 51px">
+				<td style="
+						width: 30px;
+						background-image: url(images/eagle_contentsideL.gif);
+						background-repeat: repeat-y;
+						" nowrap="nowrap" valign="top">
+		&nbsp;
+	</td>
+				<td valign="top" bgcolor="#FFFFFF" class="FooterTDContent" style="
+						padding-top: 12px;
+						padding-left: 24px; 
+						">
+		<div id="Copyright" style="
+          margin-top: 12px; 
+          padding-top: 12px; 
+          padding-bottom: 12px; 
+          border-top: solid silver 1px; 
+          text-align:center; width: 100%; font-size: 6.5pt; color: #696969">
+
+        Copyright (c) 2015 Eagle Innovations, Inc. &nbsp;All rights reserved.<br />
+			  Terms &amp; Conditions | Privacy Policy | Copyright Policy  
+      </div>
+		</div>
+	</td>
+				<td style="
+						width: 36px;
+						background-image: url(images/eagle_contentsideR.gif);
+						background-repeat: repeat-y;
+						background-position: 7px center;
+						background-color: white;
+						" nowrap="nowrap" valign="top">
+		&nbsp;
+	</td>
+			</tr>
+		</table>
+		
+				<!-- content end -->
+			</td>
+	</tr>
+	<tr style="height: 81px">
+		<td>
+				<table border='0' cellspacing='0' cellpadding='0' width='100%'>
+	<tr>
+		<td style='width: 41px'>
+			<img src='images/eagle_footerL.gif' alt='' border='0' />
+		</td>
+		<td valign='top' align='center' style='
+			padding-top: 24px;
+			background-image: url(images/eagle_footerMain.gif); 
+			background-repeat: repeat-x'>
+			<img src='images/eagle_footerText.gif' alt='' border='0' />
+		</td>
+		<td style='width: 41px'>
+			<img src='images/eagle_footerR.gif' alt='' border='0' />
+		</td>
+	</tr>
+</table>
+</td>
+	</tr>
+</table>
+
+</form>
+</body>
+<script language=javascript>pageonload()</script>
+</html>

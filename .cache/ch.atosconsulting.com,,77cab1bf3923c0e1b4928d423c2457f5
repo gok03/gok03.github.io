@@ -1,0 +1,67 @@
+status: 200
+content-length: 2928
+content-location: http://ch.atosconsulting.com/
+accept-ranges: bytes
+server: Microsoft-IIS/8.5
+last-modified: Fri, 09 Sep 2016 11:21:41 GMT
+etag: "2980c4568cad21:0"
+date: Tue, 13 Sep 2016 11:00:34 GMT
+access-control-allow-origin: *
+content-type: text/html
+
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="appCtrl as ac">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title ng-bind="ac.title">Atos Consulting CH</title>
+    <meta name="description" content="Atos is a leader in digital services with 2014 annual revenue of circa € 11 billion and 93,000 employees worldwide. Focused on business technology, Atos operates under different brands (Atos, Atos Consulting, etc.)">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Accept-Encoding" content="gzip, deflate" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico?v=2"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/apple-touch-icon-precomposed.png">
+    <link rel="stylesheet" href="dist/small-ch.atosconsulting.com_1.1.2.css">
+</head>
+<body class="app" data-status="{{ac.ready}}">
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5QJTX4"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QJTX4');</script>
+<!-- End Google Tag Manager -->
+
+
+<div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+</div>
+
+
+<layout type="header"></layout>
+
+<div ng-view class="marker-ng-view--js"></div>
+
+<layout type="footer"></layout>
+
+
+<script> function loadCss(href){     var ss = window.document.createElement("link"),        ref = window.document.getElementsByTagName("head")[0];    ss.rel = "stylesheet";    ss.href = href;    ss.media = "only x";    ss.onload = function() {        window.document.getElementsByTagName("body")[0].setAttribute("data-css-loaded", "true");    };    ref.parentNode.insertBefore(ss, ref);       setTimeout( function(){    ss.media = "all";    },0); } loadCss("dist/ch.atosconsulting.com_1.1.2.css"); </script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script src="dist/vendors.js"></script>
+
+<script src="dist/ch.atosconsulting.com_1.1.2.js"></script>
+</body>
+</html>
+
+

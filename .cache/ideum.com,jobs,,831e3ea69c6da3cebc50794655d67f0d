@@ -1,0 +1,887 @@
+status: 200
+content-length: 60010
+content-location: http://ideum.com/jobs/
+set-cookie: __cfduid=d0ff1c846132eac322bfb0a98f02692f71473401564;
+ expires=Sat, 09-Sep-17 06:12:44 GMT; path=/; domain=.ideum.com; HttpOnly
+x-powered-by: PHP/5.5.9-1ubuntu4.14
+vary: Accept-Encoding
+server: cloudflare-nginx
+connection: keep-alive
+-content-encoding: gzip
+link: <http://ideum.com/wp-json/>;
+ rel="https://api.w.org/", <http://ideum.com/?p=13814>; rel=shortlink
+date: Fri, 09 Sep 2016 06:12:45 GMT
+cf-ray: 2df87d834b960ed3-EWR
+content-type: text/html; charset=UTF-8
+x-pingback: http://ideum.com/wordpress/xmlrpc.php
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html class="no-js" ng-app="ideum">
+<script>
+  // get Browser and OS info and put it in the html tag 
+  var b = document.documentElement;
+    b.setAttribute('data-useragent',  navigator.userAgent);
+    b.setAttribute('data-platform', navigator.platform );
+    b.className += ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':'');
+</script>
+<head>
+<meta name="robots" content="follow"><meta name="googlebot" content="index">
+<meta charset="UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"60593bb18e77256cb30e046ac1aef04f",petok:"7803dc35a928e24105ffdd6217f4b604873f011e-1473401565-1800",zone:"ideum.com",rocket:"0",apps:{"abetterbrowser":{"ie":"9","opera":"25","chrome":"30","safari":"8","firefox":"40"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=0489c402f5/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="/wp-content/themes/ideum/images/favicon.ico"/>
+<link rel="apple-touch-icon" href="/wp-content/themes/ideum/images/iPhoneIcon.png"/>
+<meta name="google-site-verification" content="brxnLtsKoz7BBFWkh_keSUHpdLYn7ZDnH8WNzvSke8Q"/>
+<title>Job Opportunities | Software & Hardware | Ideum</title>
+<meta name="description" content="Ideum is looking for talented and motivated individuals who want to join us here in Corrales, NM as we explore what’s next in software and hardware development for public spaces.">
+ 
+<meta property="og:site_name" content="Ideum - Exhibit Design + Multitouch Software and Hardware">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://ideum.com/jobs/">
+<meta property="og:title" content="Job Opportunities | Software & Hardware | Ideum">
+<meta property="og:image" content="http://ideum.com/wp-content/uploads/2016/09/jobs-creative-services.jpg">
+ 
+<meta property="og:description" content="Ideum is looking for talented and motivated individuals who want to join us here in Corrales, NM as we explore what’s next in software and hardware development for public spaces."/>
+<link rel="alternate" type="application/rss+xml" title="Ideum - Exhibit Design + Multitouch Software and Hardware &raquo; Customer Support Comments Feed" href="//ideum.com/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="Ideum - Exhibit Design + Multitouch Software and Hardware &raquo; Customer Support Comments Feed" href="//ideum.com/creative-services/feed/"/>
+<link rel="pingback" href=""/>
+ 
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"+cU1j1a8Dy002H", domain:"ideum.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="//d5nxst8fruw4z.cloudfront.net/atrk.gif?account=+cU1j1a8Dy002H" style="display:none" height="1" width="1" alt=""/></noscript>
+ 
+ 
+<script type="text/javascript">
+	function yesnoCheck() {
+		if (document.getElementById('contact-by-phone-yes').checked) {
+			document.getElementById('ifphoneYes').style.display = 'block';
+		} else {
+			document.getElementById('ifphoneYes').style.display = 'none';
+		}
+	}
+</script>
+ 
+ 
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1700940810165118');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="//www.facebook.com/tr?id=1700940810165118&ev=PageView&noscript=1"/></noscript>
+ 
+ 
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1072509777/?label=lKb-CJ638AIQ0ea0_wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+ 
+<link rel='dns-prefetch' href='//s.w.org'>
+<link rel="alternate" type="application/rss+xml" title="Ideum - Exhibit Design + Multitouch Software and Hardware &raquo; Jobs Comments Feed" href="//ideum.com/jobs/feed/"/>
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ideum.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-0.1em!important;background:none!important;padding:0!important;}</style>
+<link rel='stylesheet' id='select2-css' href='/wp-content/themes/ideum/bower_components/select2/select2.css?ver=4.6' type='text/css' media='all'/>
+<link rel='stylesheet' id='angular-carousel-css' href='/wp-content/themes/ideum/bower_components/ideum-angular-carousel/dist/angular-carousel.css?ver=4.6' type='text/css' media='all'/>
+<link rel='stylesheet' id='ideum-site-css' href='/wp-content/themes/ideum/style.css?ver=4.6' type='text/css' media='all'/>
+<link rel='https://api.w.org/' href='//ideum.com/wp-json/'/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//ideum.com/wordpress/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//ideum.com/wordpress/wp-includes/wlwmanifest.xml"/>
+<meta name="generator" content="WordPress 4.6"/>
+<link rel="canonical" href="//ideum.com/jobs/"/>
+<link rel='shortlink' href='//ideum.com/?p=13814'/>
+<link rel="alternate" type="application/json+oembed" href="//ideum.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fideum.com%2Fjobs%2F"/>
+<link rel="alternate" type="text/xml+oembed" href="//ideum.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fideum.com%2Fjobs%2F&#038;format=xml"/>
+</head>
+<body class="page page-id-13814 page-parent page-template-default jobs" data-template="base.twig">
+<header id="header" ng-controller="headerCtrl">
+<section class="social-media-links">
+<div class="social-interior">
+<div class="tabs">
+<h2 class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16713"><a href="/blog/">Blog</a></h2>
+<h2 class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16715"><a href="/our-story/">Our Story</a></h2>
+</div>
+<ul class="social-icons">
+<li><a href="http://multitouch-labs.tumblr.com/" target="_blank" title="Ideum Labs on Tumblr"><i class="icon-tumblr"></i></a></li>
+<li><a href="https://instagram.com/ideum" target="_blank" title="Ideum on Instagram"><i class="icon-instagram"></i></a></li>
+<li><a href="https://www.facebook.com/ideum" target="_blank" title="Ideum on Facebook"><i class="icon-facebook"></i></a></li>
+<li><a href="https://twitter.com/ideum" target="_blank" title="Ideum on Twitter"><i class="icon-twitter"></i></a></li>
+<li><a href="https://www.linkedin.com/company/ideum" target="_blank" title="Ideum on LinkedIn"><i class="icon-linkedin"></i></a></li>
+<li><a href="https://plus.google.com/+Ideum/posts" target="_blank" title="Ideum on Google+"><i class="icon-gplus"></i></a></li>
+<li><a href="https://www.youtube.com/user/multitouchexhibits/" target="_blank" title="Ideum on YouTube"><i class="icon-youtube"></i></a></li>
+<li><a href="https://vimeo.com/ideum" target="_blank" title="Ideum on Vimeo"><i class="icon-vimeo"></i></a></li>
+<li><a href="https://www.flickr.com/photos/ideum/" target="_blank" title="Ideum on Flickr"><i class="icon-flickr"></i></a></li>
+<li><a href="http://www.pinterest.com/ideum/" target="_blank" title="Ideum on Pinterest"><i class="icon-pinterest"></i></a></li>
+<li><a href="/?feed=rss"><i class="icon-rss" target="_blank" title="Ideum RSS Feed"></i></a></li>
+</ul>
+</div>
+</section>
+<div class="main">
+<h1 class="logo">
+<a href="/" title="Return to Ideum Home Page">Ideum - Exhibit Design + Multitouch Software and Hardware</a>
+</h1>
+<nav>
+<button ng-click="toggleMenu()"><i class="icon-menu"></i></button>
+<ul class="primary-nav">
+<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-16700"><a href="/creative-services/">Creative Services</a></li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16704"><a href="/touch-tables/">Multitouch Tables</a></li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16721"><a href="/touch-walls/">Touch Walls</a></li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16826"><a href="/contact/">Contact</a></li>
+</ul>
+</nav>
+</div>
+<div class="header-image">
+<div class="jobs">
+<div class="page-intro centered-intro">
+<div class="page-intro-inner">
+<h1>Job Opportunities</h1>
+</div>
+</div>
+</div>
+</div>
+</header>
+<nav id="mobile-slideout-menu" ideum-mobile-slideout-menu ng-cloak ng-show="open">
+<header>
+<h1>Menu</h1>
+<button class="close" ng-click="close()"><i class="icon-close"></i></button>
+</header>
+<ul>
+<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-16703"><a href="/">Home</a>
+</li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16707"><a href="/blog/">Blog</a>
+</li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16708 menu-item-has-children"><a href="/our-story/">Our Story</a>
+<ul class="sub">
+<li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16723"><a href="http://ideum.com/our-story/mission/">Mission &#038; Values</a></li>
+<li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16738"><a href="http://ideum.com/our-story/community/">Community</a></li>
+<li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16724"><a href="http://ideum.com/our-story/services/">Services</a></li>
+<li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16725"><a href="http://ideum.com/our-story/team/">Team</a></li>
+<li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16726"><a href="http://ideum.com/our-story/facilities/">Facilities</a></li>
+<li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16727"><a href="http://ideum.com/our-story/software-initiatives/">Software Initiatives</a></li>
+<li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16728"><a href="http://ideum.com/sprout/">Sprout</a></li>
+</ul>
+</li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16710"><a href="/social-media-feed/">Social Media Feed</a>
+</li>
+<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-16701"><a href="/blog/ideum_project/">Creative Services</a>
+</li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16709"><a href="/touch-tables/">Multitouch Tables</a>
+</li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16720"><a href="/touch-walls/">Touch Walls</a>
+</li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16825"><a href="/contact/">Contact</a>
+</li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16711"><a href="/client-list/">Client List</a>
+</li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16718"><a href="/customer-support/">Customer Support</a>
+</li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16717"><a href="/legal/">Legal</a>
+</li>
+<li class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-13814 current_page_item menu-item-16719"><a href="/jobs/">Jobs</a>
+</li>
+</ul>
+</nav>
+<section id="content" role="main" class="content-wrapper">
+ 
+<div class="wrapper ">
+<div id="jobs-list" class="sub-page-wrap">
+<section class="highlight-text child-page">
+<h1>Careers</h1>
+<p>Ideum is a creative company located in scenic Corrales, New Mexico. We are focused on developing a new generation of innovative visitor experiences. We work with world famous museums, Fortune 500 companies, top brands, and innovative nonprofits across the globe. We seek talented and motivated individuals who want to join us as we explore what’s next in software and hardware development for public spaces.</p>
+</section>
+<div class="accordion-wrap" id-expander>
+ 
+<section class="item-wrap color-1" id-expander-item> 
+<article>
+<header class-"expander" id-expander-button>
+
+          <h1>
+            Creative Services Intern
+          </h1>
+
+          <button><i class="icon-caret-down"></i></button>
+
+        </header>        
+
+        <div class="item-content">
+
+          <div class="item-content-2col">
+
+            <div class="text-container">
+
+              <div class="column-66-left">
+
+                <h2>Summary</h2>
+<p><strong>Compensation:</strong> $15.00 /hour<br />
+<strong>Position Type:</strong> Internship.<br />
+<strong>Location:</strong> On-site in Corrales, New Mexico.</p>
+<p>&nbsp;</p>
+<h2>The Position</h2>
+<p>We seek a full-time Intern to work with our Creative Services (CS) group. This a paid, fixed-term internship of 3 to 4 months (depending on the candidates availability and the timing of the hire). The CS group at Ideum develops interactive experiences for museums and other public spaces. Responsibilities may vary but include testing applications in various phases of development as a core part of the job. Depending on the candidate, they may also work with various teams within CS: graphic production, content development, social media, 3D printing, or programming, along with IOT electronics development.</p>
+<p>The testing part of the job may involve multitouch screens, motion recognition, voice recognition, and other emerging technologies. We will work with the candidate to help learn (tune, and if necessary, devise) the proper testing systems.</p>
+<h2>General Qualifications</h2>
+<p>The candidate needs to be passionate about new technology and about this position. We are looking for someone who is technologically proficient and has a deep knowledge of PC systems in particular. Visual design, writing, programming, and electronics experience are major pluses. The candidate will need to be able to contribute to technical documentation, client support, and social media, so strong written and verbal and communication skills are required. In addition, the position does require some repetitive work; we need a candidate that is comfortable with repetition and is extremely thorough. The candidate must be extremely proactive in both noting and communicating any aspect of an application (or other work) that seems illogical, broken, unintuitive, or in any way not behaving as expected.</p>
+<p>This position will spend 20 hours/wk performing the user interface and software testing as described above. Tasks for the remaining 20 hours/wk will be determined by the qualifications and interests of the internship candidate. Those 20 hours may be spent programming, working on electronics in the shop, designing applications or marketing materials, writing, 3D modeling and/or animating, shooting and/or editing video and audio, producing graphics, or working on other aspects of Ideum’s varied hardware and software production. We are currently hiring for one internship position starting early October and ending Dec 16. This is a fixed term, 10  or 11 week position.</p>
+<h2>About Ideum</h2>
+<p>Ideum develops custom multitouch and HCI exhibits for museums, nonprofit organizations, and socially responsible companies. The firm has worked on custom software and hardware projects with some of the world’s top museums such as: Cooper Hewitt Smithsonian Design Museum, The Field Museum, Monterey Bay Aquarium, Museum of Science and Industry (Chicago), Smithsonian National Museum of the American Indian, SFMOMA, and more. In addition, Ideum has worked with Fortune 500 companies and iconic brands such as: Apple, Adobe, Coca-Cola, Boeing, Hewlett-Packard, Intel, Union Pacific, and others. We are an internationally recognized interactive design firm located in Corrales, New Mexico (near Albuquerque, an hour from Santa Fe).</p>
+<p>Please see our <a href="http://ideum.com">website</a>, <a href="http://ideum.com/creative-services">project portfolio</a> and <a href="http://ideum.com/blog/">blog</a> to learn more about us.</p>
+<h2>How to Apply</h2>
+<p>Please respond via email (see below) and include examples of your work (URLS &#8211; if available) along with a cover letter&mdash;please include examples of your work (URLS)&mdash;and your resume. </p>
+<p><strong>PLEASE NOTE:</strong> Candidates who do not include a cover letter will not be considered. NO PHONE CALLS or DROP INS.</p>
+
+
+                <p>&nbsp;</p>
+
+                Permalink: <a href="http://ideum.com/jobs/creative-services-intern/">http://ideum.com/jobs/creative-services-intern/</a>
+
+                <p>&nbsp;</p>
+
+                <h3>
+                  <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#98;&#115;&#64;&#105;&#100;&#101;&#117;&#109;&#46;&#99;&#111;&#109;">&#106;&#111;&#98;&#115;&#64;&#105;&#100;&#101;&#117;&#109;&#46;&#99;&#111;&#109;</a>
+                </h3>
+
+              </div>
+
+              <div class="column-33-right">
+
+                                <h3>Qualifications</h3>
+                <ul>
+                                    <li>Strong organizational skills</li>
+                                    <li>Experience with social media</li>
+                                    <li>Demonstrated attention to detail</li>
+                                    <li>Highly motivated and self-directed</li>
+                                    <li>Ability to work in a team environment</li>
+                                    <li>Experience with AV and computer setup</li>
+                                    <li>Strong PC system skills with Windows OS and others</li>
+                                    <li>Demonstrated written and verbal communication skills</li>
+                                    <li>Experience with Google Apps, Word, and other Office software</li>
+                                  </ul>
+                
+                                <h3>Extra Credit</h3>
+                <ul>
+                                    <li>Programming experience</li>
+                                    <li>Experience with 3D printing</li>
+                                    <li>Experience with electronics, IOT</li>
+                                    <li>Experience with 3D modeling or animation</li>
+                                    <li>Design and/or web development experience</li>
+                                    <li>Experience with writing, research, and proofreading</li>
+                                    <li>Experience shooting and/or editing video and audio</li>
+                                  </ul>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+    <!-- pulls alphabetically, but will sort by menu order if set in WP -->
+    <section class="item-wrap color-2" id-expander-item><!-- add class only-open to make header white and text dark -->
+
+      <article>
+
+        <header class-"expander" id-expander-button>
+
+          <h1>
+            HCI Programmer
+          </h1>
+
+          <button><i class="icon-caret-down"></i></button>
+
+        </header>        
+
+        <div class="item-content">
+
+          <div class="item-content-2col">
+
+            <div class="text-container">
+
+              <div class="column-66-left">
+
+                <h2>Summary</h2>
+<p><strong>Compensation:</strong> Dependent upon Experience.<br />
+<strong>Position Type:</strong> This is a full-time position (40 hours).<br />
+<strong>Location:</strong> On-site in Corrales, New Mexico.</p>
+<p>We seek a developer with demonstrated programming experience and other complementary skills to join our team of programmers, designers, UI / UX developers, and producers. We work on custom installations for world renowned museums, Fortune 500 companies, and other interesting clients. As our company continues to expand, we are looking for a self-starter who can contribute right away, but who is also willing to learn new things.</p>
+<h2>About Ideum</h2>
+<p>Ideum creates HCI software products, multitouch hardware products along with dynamic exhibits and websites for museums, non-profit organizations, and socially responsible companies. We are an internationally recognized interactive design firm located in Corrales, New Mexico (near Albuquerque, an hour from Santa Fe). In addition, we design and sell multitouch tables and custom exhibit hardware to museums, corporations, non-profit organizations and socially responsible companies worldwide.</p>
+<p>Please see our website (<a href="http://ideum.com">http://ideum.com</a>), project portfolio (<a href="http://ideum.com/creative-services">http://ideum.com/creative-services</a>) and blog (<a href="http://ideum.com/blog/">http://ideum.com/blog/</a>) to learn more about us. </p>
+<h2>How to Apply</h2>
+<p>Please respond via email (address at bottom of page) and include relevant examples of your work (URLS) along with a cover letter and your resume. Please: NO PHONE CALLS or DROP INS. <strong>Applications without a cover letter will not be considered.</strong></p>
+<h2>Benefits and Incentives</h2>
+<p>This position includes full health benefits (65% after 90 days), Dental insurance, plus long-term and short-term disability and life insurance. </p>
+<p>Also included is a company-matched 401K Safe Harbor Profit Sharing Plan (available after one year of employment). </p>
+<p>Pay is based upon experience.</p>
+
+
+                <p>&nbsp;</p>
+
+                Permalink: <a href="http://ideum.com/jobs/hci-programmer/">http://ideum.com/jobs/hci-programmer/</a>
+
+                <p>&nbsp;</p>
+
+                <h3>
+                  <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#98;&#115;&#64;&#105;&#100;&#101;&#117;&#109;&#46;&#99;&#111;&#109;">&#106;&#111;&#98;&#115;&#64;&#105;&#100;&#101;&#117;&#109;&#46;&#99;&#111;&#109;</a>
+                </h3>
+
+              </div>
+
+              <div class="column-33-right">
+
+                                <h3>Qualifications</h3>
+                <ul>
+                                    <li>Demonstrated experience programming in multiple languages/environments</li>
+                                    <li>Demonstrated experience in programming visual interfaces of some kind</li>
+                                    <li>Ability to work in a team environment</li>
+                                    <li>Experience with version control software</li>
+                                    <li>Excellent written and verbal communication skills</li>
+                                    <li>Strong interest in science, art, history, and social issues</li>
+                                    <li>Strong conceptual and information design skills</li>
+                                    <li>Ability to organize efficiently and effectively</li>
+                                    <li>College degree in computer Science, mathematics or a scientific field - or equivalent life experience</li>
+                                  </ul>
+                
+                                <h3>Extra Credit</h3>
+                <ul>
+                                    <li>3-5 Years industry experience working on applications from concept to deployment</li>
+                                    <li>Experience with HCI and tangible interfaces</li>
+                                    <li>Hardware and systems engineering experience</li>
+                                    <li>Experience with 3D modeling and/or authoring</li>
+                                    <li>Experience with mobile authoring</li>
+                                    <li>Experience with Qt</li>
+                                    <li>Experience with Unity 3D</li>
+                                    <li>Experience with CSS, XML, JavaScript</li>
+                                    <li>Experience with Web and server-based technologies</li>
+                                    <li>Experience in the museum or non-profit world</li>
+                                    <li>Experience with hardware and systems engineering</li>
+                                  </ul>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+    <!-- pulls alphabetically, but will sort by menu order if set in WP -->
+    <section class="item-wrap color-3" id-expander-item><!-- add class only-open to make header white and text dark -->
+
+      <article>
+
+        <header class-"expander" id-expander-button>
+
+          <h1>
+            Interactive Designer
+          </h1>
+
+          <button><i class="icon-caret-down"></i></button>
+
+        </header>        
+
+        <div class="item-content">
+
+          <div class="item-content-2col">
+
+            <div class="text-container">
+
+              <div class="column-66-left">
+
+                <h2>Summary</h2>
+<p><strong>Compensation:</strong> Dependent upon Experience.<br />
+<strong>Position Type:</strong> This is a full-time position (40 hours).<br />
+<strong>Location:</strong> On-site in Corrales, New Mexico.</p>
+<p>&nbsp;</p>
+<p><img src="/wp-content/uploads/2016/06/project-page-02.png" alt="project-page-02" width="900" height="550" class="alignnone size-full wp-image-29931" srcset="/wp-content/uploads/2016/06/project-page-02.png 900w, /wp-content/uploads/2016/06/project-page-02-300x183.png 300w, /wp-content/uploads/2016/06/project-page-02-768x469.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></p>
+<h2>The Position</h2>
+<p>We seek an experienced Interactive Designer to help with our creative exhibit development projects and internal initiatives. Ideum is diverse; we work with top museums, well-known brands, and technology companies. Along with custom software development, we design and sell our own innovative multitouch tables. We also construct custom exhibits which utilize emerging technology including tangible interfaces, motion recognition, RFID, sensors, and other advances in computer technology.</p>
+<p>Ideum does a wide variety of work and the Interactive Designer would work closely with our producers, other designers, software developers and engineers to help shape unique visitor experiences and support our innovative products. We are looking for someone who owns their designs, but can also communicate with others and be responsive to suggestions and changes from colleagues, clients and usability testers. Strong design skills, attention to detail, and a passion for the work are key. Our projects range from exhibit and software development particularly for our multitouch tables and touch walls, unique HCI exhibits, product marketing, web development, media production, and much more.</p>
+<h2>General Qualifications</h2>
+<p>We are looking for a self-starter with excellent communication and interpersonal skills who can work with our diverse staff of content specialists, designers, programmers, and engineers. Hands-on, self-motivated individuals thrive at Ideum. The Interactive Designer will own, protect, and manage the user experience throughout product and project life cycles. The ideal candidate will have a passion for design, history, science, art, culture, and new technology. We are looking for someone with a minimum of three years of relevant design experience and an outstanding portfolio.</p>
+<p>In addition, the candidate needs to be technically savvy. A strong understanding of file types and preparation, file management, and optimization are needed. The ideal candidate will understand how to approach different design tasks for a diverse set of mediums including large screens, VR headsets, web, mobile, and print applications.</p>
+<h2>About Ideum</h2>
+<p>Ideum develops custom computer-based exhibits for museums, nonprofit organizations, and socially responsible companies. The firm has worked on custom software and hardware projects with some of the world’s top museums such as: Cooper Hewitt Smithsonian Design Museum, The Field Museum, Monterey Bay Aquarium, Museum of Science and Industry (Chicago), Smithsonian National Museum of the American Indian, SFMOMA, and more. In addition, Ideum has worked with Fortune 500 companies and iconic brands such as: Apple, Adobe, Coca-Cola, Boeing, Hewlett-Packard, Intel, Starbucks, Union Pacific, and others. We are an internationally recognized interactive design firm located in Corrales, New Mexico (near Albuquerque, an hour from Santa Fe).</p>
+<p>Please see our website (<a href="http://ideum.com">http://ideum.com</a>), project portfolio (<a href="http://ideum.com/creative-services">http://ideum.com/creative-services</a>) and blog (<a href="http://ideum.com/blog/">http://ideum.com/blog/</a>) to learn more about us.</p>
+<h2>Benefits and Incentives</h2>
+<p>This position includes full health benefits (65% after 90 days), Dental insurance, plus long-term and short-term disability and life insurance.</p>
+<p>Also included is a company-matched 401K Safe Harbor Profit Sharing Plan (available after one year of employment). </p>
+<p>Pay is based upon experience.</p>
+<h2>How to Apply</h2>
+<p>Please respond via email (see below) and include examples of your work (URLS &#8211; if available) along with a cover letter&mdash;please include examples of your work (URLS)&mdash;and your resume. </p>
+<p><strong>PLEASE NOTE:</strong> Candidates who do not include a cover letter will not be considered. NO PHONE CALLS or DROP INS.</p>
+
+
+                <p>&nbsp;</p>
+
+                Permalink: <a href="http://ideum.com/jobs/interactive-designer/">http://ideum.com/jobs/interactive-designer/</a>
+
+                <p>&nbsp;</p>
+
+                <h3>
+                  <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#98;&#115;&#64;&#105;&#100;&#101;&#117;&#109;&#46;&#99;&#111;&#109;">&#106;&#111;&#98;&#115;&#64;&#105;&#100;&#101;&#117;&#109;&#46;&#99;&#111;&#109;</a>
+                </h3>
+
+              </div>
+
+              <div class="column-33-right">
+
+                                <h3>Qualifications</h3>
+                <ul>
+                                    <li>Demonstrated UX/UI design experience and ability (portfolio)</li>
+                                    <li>Ability to prototype designs in lo-fidelity and hi-fidelity as required</li>
+                                    <li>Demonstrated visual design skills including layout, color, typography</li>
+                                    <li>Fluency with interactive design principles and processes (interactive examples a plus)</li>
+                                    <li>Some project management and/or client interaction experience</li>
+                                    <li>Some experience with user testing</li>
+                                    <li>Experience with Web, mobile, and kiosk design</li>
+                                    <li>Excellent written and verbal communication skills</li>
+                                    <li>Photoshop and Illustrator skills</li>
+                                    <li>Technologically savvy</li>
+                                    <li>Ability to work in a team environment</li>
+                                  </ul>
+                
+                                <h3>Extra Credit</h3>
+                <ul>
+                                    <li>Experience with museum exhibits and installations</li>
+                                    <li>Programming skills</li>
+                                    <li>Experience with 3D design programs</li>
+                                    <li>A strong interest in science, art, history, and social issues</li>
+                                    <li>Experience in the museum or non-profit world</li>
+                                    <li>College degree, not a requirement</li>
+                                    <li>Electronics experience</li>
+                                    <li>Experience with marketing or advertising</li>
+                                    <li>Knowledge of history, art, or sciences</li>
+                                  </ul>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+    <!-- pulls alphabetically, but will sort by menu order if set in WP -->
+    <section class="item-wrap color-4" id-expander-item><!-- add class only-open to make header white and text dark -->
+
+      <article>
+
+        <header class-"expander" id-expander-button>
+
+          <h1>
+            Technical Projects &#038; Facilities Manager
+          </h1>
+
+          <button><i class="icon-caret-down"></i></button>
+
+        </header>        
+
+        <div class="item-content">
+
+          <div class="item-content-2col">
+
+            <div class="text-container">
+
+              <div class="column-66-left">
+
+                <h2>Summary</h2>
+<p><strong>Compensation:</strong> Dependent upon Experience.<br />
+<strong>Position Type:</strong> This is a full-time position (40 hours).<br />
+<strong>Location:</strong> On-site in Corrales, New Mexico.</p>
+<p>&nbsp;</p>
+<p><!-- 
+<p><img src="/wp-content/uploads/2016/07/Group-14.png" alt="project-page-02" width="900" class="alignnone size-full wp-image-29931" /></p>
+
+ --></p>
+<h2>The Position</h2>
+<p>Ideum is seeking a Technical Projects &#038; Facilities Manager for our Creative Services (CS) department. The Creative Services group develops interactive exhibits for public spaces such as museums. Ideum&#8217;s exhibits typically include custom software, hardware, and one-of-a-kind visitor experiences.</p>
+<h2>General Qualifications</h2>
+<p>The Technical Projects &#038; Facilities Manager will manage staff, organize and maintain our R &#038; D and Usability Lab, and help organize our hardware installations. We are looking for a self-starter with managerial experience who can contribute right away, but who is also willing to learn new things. We are deeply interested in the future of technology and we are looking for someone who wants to help us get there.</p>
+<p>The ideal candidate will be software savvy and have strong background in computer hardware and electronics. We are looking for someone who can manage, but who also a passion for new technology and for getting things done. </p>
+<h2>Duties</h2>
+<p>The Technical Projects &#038; Facilities Manager reports directly to the Chief Experience Officer (CXO) and will work collaboratively with Producers, Programmers, Designers, Sales personnel, and other individuals and groupss throughout the company. The Technical Projects &#038; Facilities Manager is a member of the R &amp; D working group and assists as tasks are outlined.</p>
+<ul style="margin:0 0 40px 30px;">
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Directly manages Senior Exhibit Tech and Exhibit Tech in Creative Services</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Is responsible for the R &#038; D and Usability Lab</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Maintains all equipment found in the R &#038; D and Usability Lab</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Manages Quality Assurance for hardware for CS projects</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Helps write technical plans for Ideum CS projects</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Coordinates support responses for CS installations</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Helps manage R&#038;D projects (hardware) as they are approved</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Records descriptions of R&#038;D efforts</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Lead Creative Services with electronics and IOT development</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Manages Creative Services installations</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Help with staff training with periodic technology trainings</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Helps manage CS interns on hardware tasks</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Evaluates CS hardware staff along with CXO</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Works directly with CXO to improve CS hardware policies and procedures</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Help maintain the R &#038; D and Usability Lab, tools and equipment</li>
+<li><span style="font-size:18px;font-weight:900;">&middot;</span> Helps with various tech challenges for Creative Services wherever they may occur</li>
+</ul>
+<h2>About Ideum</h2>
+<p>Ideum creates custom exhibits and multitouch hardware products for museums, non-profit organizations, and socially responsible companies. We are an internationally recognized interactive design firm located in Corrales, New Mexico (near Albuquerque, an hour from Santa Fe).We design and sell multitouch tables and custom exhibit hardware to museums, corporations, non-profit organizations and socially responsible companies worldwide.</p>
+<p>Please see our <a href="http://ideum.com">website</a>, <a href="http://ideum.com/creative-services">project portfolio</a> and <a href="http://ideum.com/blog/">blog</a> to learn more about us.</p>
+<h2>Benefits and Incentives</h2>
+<p>This position includes full health benefits (after 90 days), Dental insurance, plus long-term and short-term disability and life insurance. </p>
+<p>Also included is a company-matched 401K Safe Harbor Profit Sharing Plan (available after one year of employment). </p>
+<p>Pay is based upon experience.</p>
+<h2>How to Apply</h2>
+<p>Please respond via email (see below) and include examples of your work (URLS &#8211; if available) along with a cover letter&mdash;please include examples of your work (URLS)&mdash;and your resume. </p>
+<p><strong>PLEASE NOTE:</strong> Candidates who do not include a cover letter will not be considered. NO PHONE CALLS or DROP INS.</p>
+
+
+                <p>&nbsp;</p>
+
+                Permalink: <a href="http://ideum.com/jobs/technical-projects-facilities-manager-creative-services/">http://ideum.com/jobs/technical-projects-facilities-manager-creative-services/</a>
+
+                <p>&nbsp;</p>
+
+                <h3>
+                  <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#98;&#115;&#64;&#105;&#100;&#101;&#117;&#109;&#46;&#99;&#111;&#109;">&#106;&#111;&#98;&#115;&#64;&#105;&#100;&#101;&#117;&#109;&#46;&#99;&#111;&#109;</a>
+                </h3>
+
+              </div>
+
+              <div class="column-33-right">
+
+                                <h3>Qualifications</h3>
+                <ul>
+                                    <li>Managerial experience</li>
+                                    <li>Experience with electronics</li>
+                                    <li>Experience with AV equipment</li>
+                                    <li>Ability to work in a team environment</li>
+                                    <li>Ability to organize efficiently and effectively</li>
+                                    <li>Strong conceptual and information design skills</li>
+                                    <li>Excellent written and verbal communication skills</li>
+                                    <li>Strong computer skills both hardware and software</li>
+                                  </ul>
+                
+                                <h3>Extra Credit</h3>
+                <ul>
+                                    <li>3D printing experience, a plus</li>
+                                    <li>Interest in HCI and IOT, a major plus</li>
+                                    <li>Software development experience, a plus</li>
+                                  </ul>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+    
+  </div>  
+
+  <section class="featured-page">
+
+    <article class="content team-n-clients">
+
+      <div class="txt-wrap">
+
+        <h1>
+          Our Team, Partners &amp; Clients
+        </h1>
+
+        <p>
+          Everything we do starts with our team and then involves our partners, and clients. We encourage our team members to reach their full potential and to be successful in what they do. We work with our clients and partners to create long-lasting relationships in which our collective efforts produce greater results.
+        </p>
+
+        <footer class="footer">
+          <a class="read" href="/team/">Meet Our Team</a>
+          <a class="read" href="/client-list/">View Our Client List</a>
+        </footer>
+
+      </div>
+
+    </article>
+
+  </section>
+
+
+  <section class="featured-pages">
+
+    <article class="content products">
+
+      <div class="txt-wrap">
+
+        <h1>
+          Our Products
+        </h1>
+
+        <p>
+          Innovation and user-experience drives the design process for all our products. We are meticulous in how we build our products and look to produce the best quality hardware and software. If something goes wrong, we take responsibility, provide timely support and service. The same people who build our products support and service them.
+        </p>
+
+        <footer class="footer">          
+          <a class="share" href="/touch-walls/">View Our Touch Walls</a>
+          <a class="read" href="/touch-tables/">View Our Multitouch Tables</a>
+        </footer>
+
+      </div>
+
+    </article>
+
+    <article class="content projects">
+
+      <div class="txt-wrap">
+
+        <h1>
+          Our Projects
+        </h1>
+
+        <p>
+         We are passionate about the projects that we take on. We love what we do, we are keenly interested in the technologies we utilize, and we love the topics that we explore. We attentively manage our projects and encourage the honest and open sharing of ideas, opinions, and information.
+        </p>
+
+        <footer class="footer">
+          <a class="read" href="/creative-services/">Explore our Projects</a>
+          <a class="share" href="/software-initiatives/">View our Software Initiatives</a>
+        </footer>
+
+      </div>
+
+    </article>
+
+  </section>
+
+  <!-- begin hidden content for follow-dialog -->
+<div style='display:none'>
+  <div id='follow-dialog' class="follow-share">
+    <img id="ideum-icon" src="/wp-content/themes/ideum/images/logo.png" alt="Ideum" title="Ideum">
+    <p>Like what you see? Follow Us.</p>
+    <!-- tumblr -->
+    <a href="http://multitouch-labs.tumblr.com/" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/tumblr.png" 
+    alt="Tumblr"></a>
+    <!-- Instagram -->
+    <a href="https://instagram.com/ideum" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/instagram.png" 
+    alt="Instagram"></a>
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/ideum" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/facebook.png" 
+    alt="Facebook"></a>
+    <!-- Twitter -->
+    <a href="https://twitter.com/ideum" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/twitter.png" 
+    alt="Twitter"></a>
+    <!-- Google+ -->
+    <a href="https://plus.google.com/+Ideum/posts" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/google.png" 
+    alt="Google+"></a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/company/ideum" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/linkedin.png" 
+    alt="LinkedIn"></a>
+    <!-- Pinterest -->
+    <a href="http://www.pinterest.com/ideum/" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/pinterest.png" 
+    alt="Pinterest"></a>
+    <!-- Youtube -->
+    <a href="https://www.youtube.com/user/multitouchexhibits/" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/youtube.png" 
+    alt="Youtube"></a> 
+    <!-- Vimeo -->
+    <a href="http://vimeopro.com/ideum/ideum" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/vimeo.png" 
+    alt="Vimeo"></a>
+    <!-- Flickr -->
+    <a href="https://www.flickr.com/photos/ideum/" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/flickr.png" 
+    alt="Flickr"></a>
+    <!-- RSS Feed -->
+    <a href="http://ideum.com/feed/" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/rss.png" 
+    alt="RSS Feed"></a>              
+  </div>
+</div>
+<!-- end hidden content for follow-dialog - revealed when user clicks 'Follow Us' link (below)-->
+
+  <div class="section-info">
+
+  <p class="follow-button-wrap">
+    <a href="#follow-dialog" class="button active phone-only follow-share-phone">Follow Us</a>
+    <a href="#follow-dialog" class="button active tablet-n-desktop follow-share-tab-desk">Follow Us</a>
+  </p>
+
+</div>  
+</div>
+
+<!-- begin hidden content for page-share -->
+<div style='display:none'>
+  <div id='jobs-share' class="share-dialog">
+    <img class="ideum-icon" src="/wp-content/themes/ideum/images/logo.png" alt="Ideum" title="Ideum">
+    <p>Like what you see? Share this.</p>
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fideum.com%2Fjobs%2F" target="_blank"><img class="sharing-icon" 
+    src="/wp-content/themes/ideum/images/social/facebook.png" alt="Facebook"></a>
+    <!-- Twitter -->
+    <a href="http://twitter.com/share?url=http://ideum.com/jobs/&amp;text=Ideum - Jobs and Career Opportunities" target="_blank"><img class="sharing-icon" 
+    src="/wp-content/themes/ideum/images/social/twitter.png" alt="Twitter"></a>
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=http%3A%2F%2Fideum.com%2Fjobs%2F" target="_blank"><img class="sharing-icon" 
+    src="/wp-content/themes/ideum/images/social/google.png" alt="Google"></a>
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fideum.com%2Fjobs%2F" target="_blank"><img class="sharing-icon" 
+    src="/wp-content/themes/ideum/images/social/linkedin.png" alt="LinkedIn"></a>
+    <!-- Pinterest -->
+    <a href="//www.pinterest.com/pin/create/button/?url=http://ideum.com/jobs/&amp;media=http://ideum.com/wp-content/uploads/2016/09/jobs-creative-services.jpg&amp;description=Job Opportunities | Software & Hardware | Ideum" data-pin-do="buttonBookmark" data-pin-shape="round" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/pinterest.png" alt="Pinterest"></a>
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fideum.com%2Fjobs%2F" target="_blank"><img class="sharing-icon" 
+    src="/wp-content/themes/ideum/images/social/tumblr.png" alt="Tumblr" /></a>
+  </div>
+</div>
+<!-- end hidden content for page-share - revealed when user clicks 'Share This Page' link in footer -->
+
+        
+         
+
+        <section class="chat foot-chat">
+
+          <div class="button">
+            <a href="/contact/">Ready to Start? <br class="phone-only gone">Contact Us.</a>
+          </div>
+
+        </section>
+        
+                
+      </div>
+       
+    </section>
+
+
+    
+      <footer id="footer" ng-controller="footerCtrl">
+          <div class="main">
+
+  <div class="mobile-controls">
+    <button class="sitemap" ng-click="toggleSitemap()" ng-class="{open: showSitemap}">
+      <span>Sitemap</span>
+      <i class="icon-caret-down"></i>
+    </button>
+    <button class="newsletter" ng-click="toggleNewsletter()" ng-class="{open: showNewsletter}">
+    <span>Newsletter</span>
+    <i class="icon-caret-down"></i>
+  </button>
+  </div>
+
+    <nav class="sitemap scroll-bottom" ng-show="showSitemap">
+    <ul>
+            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-16700"><a href="/creative-services/">Creative Services</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16704"><a href="/touch-tables/">Multitouch Tables</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16721"><a href="/touch-walls/">Touch Walls</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16826"><a href="/contact/">Contact</a></li>
+      
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16713"><a href="/blog/">Blog</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16715"><a href="/our-story/">Our Story</a></li>
+      
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16706"><a href="/client-list/">Client List</a></li>
+            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-16702"><a href="/customer-support/">Customer Support</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-13814 current_page_item menu-item-16722"><a href="/jobs/">Jobs</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16716"><a href="/legal/">Legal</a></li>
+                  <li class="page-share jobs 1">
+        <a class="phone-only share-dialog-phone" href="#jobs-share">Share This Page</a>
+      </li>
+        </ul>
+  </nav>
+
+    <nav class="footer-nav">
+    <ul>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16706"><a href="/client-list/">Client List</a></li>
+            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-16702"><a href="/customer-support/">Customer Support</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-13814 current_page_item menu-item-16722"><a href="/jobs/">Jobs</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16716"><a href="/legal/">Legal</a></li>
+            <li class="site-map-link">
+        <a href="/site-map/">Site Map</a>
+      </li>
+            <li class="page-share jobs 2">
+        <a class="tablet-n-desktop share-dialog-tab-desk" href="#jobs-share">Share This</a>
+        <a class="phone-only share-dialog-phone" href="#jobs-share">Share This</a>
+      </li>
+          </ul>
+    <p class="copyright">&copy; <a href="/">Ideum</a></p>
+  </nav>
+
+  <form
+    class="newsletter-signup scroll-bottom"
+    action="//ideum.createsend.com/t/y/s/eihk/"
+    method="POST"
+    ng-show="showNewsletter"
+  >
+    <input type="hidden" name="name" value="Subscriber">
+    <label for="newsletter_signup_email">Newsletter Signup</label>
+    <div class="input-button-wrap">
+      <button class="newsletter-submit">Submit</button>
+      <input
+        type="email"
+        id="newsletter_signup_email"
+        class="email"
+        name="cm-eihk-eihk"
+        placeholder="Enter Your Email Here"
+      >
+    </div>
+  </form>
+
+</div>
+      </footer>
+      <script type='text/javascript' src='/wp-content/themes/ideum/js/vendor.js'></script>
+<script type='text/javascript' src='/wp-content/themes/ideum/js/site.js'></script>
+<script type='text/javascript' src='//ideum.com/wordpress/wp-includes/js/wp-embed.min.js?ver=4.6'></script>
+
+
+        
+
+    <div class="subfooter-scripts">
+
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-198125-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <!-- begin google conversion script -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 1072509777;
+      var google_conversion_language = "en";
+      var google_conversion_format = "3";
+      var google_conversion_color = "ffffff";
+      var google_conversion_label = "lKb-CJ638AIQ0ea0_wM";
+      var google_conversion_value = 0;
+      /* ]]> */
+    </script><script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <!-- end google conversion script -->
+
+    
+    </div>
+    
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"330b5cbcfa","applicationID":"20709299","transactionName":"blFRbBMCW0UEB01dWFcbclsVClpYShRYU1I=","queueTime":0,"applicationTime":269,"atts":"QhZSGlsYSEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>

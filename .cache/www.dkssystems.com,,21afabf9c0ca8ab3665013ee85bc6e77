@@ -1,0 +1,704 @@
+status: 200
+content-length: 32773
+content-location: http://www.dkssystems.com
+x-aspnet-version: 4.0.30319
+set-cookie: ASP.NET_SessionId=tvjmdn4smg2dkmzrllt5lcih; path=/; HttpOnly
+vary: Accept-Encoding
+server: Microsoft-IIS/7.5
+-content-encoding: gzip
+cache-control: private
+date: Mon, 17 Oct 2016 16:30:27 GMT
+x-powered-by: ASP.NET
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta property="fb:admins" content="123456"/>
+        <meta name="p:domain_verify" content="d6f5ffbb0c0db198f3964a22b33bdd1a"/>
+
+        
+
+<title>
+    Minnesota Web Design & Web Development | DKS Systems | Minneapolis
+</title>
+<meta name="description" content="DKS Systems is an award-winning Minnesota web design and web development firm specializing in web design, web development, SEO web design and so much more." />
+<meta name="keywords" content="DKS Systems" />
+
+        <link rel="stylesheet" href="/Resources/css/reset.css" />
+        <link rel="stylesheet" href="/Resources/css/slideshow.css" />
+
+        <link href='http://fonts.googleapis.com/css?family=Tienne:400,700' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css' />
+
+        <link href="/Resources/styles.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
+  
+	   
+	    <script type="text/javascript" src="/Resources/jquery-1.3.2.min.js"></script>
+	    <script type="text/javascript" src="/Resources/jquery-ui-1.7.2.custom.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/Resources/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	    <script type="text/javascript" src="/Resources/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	    
+
+    <link rel="canonical" href="http://www.dkssystems.com/" />
+    <script type="text/javascript" src="/Resources/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="/Resources/slides.min.jquery.js"></script>
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<!-- jmpress plugin -->
+		<script type="text/javascript" src="/Resources/js/jmpress.min.js"></script>
+		<!-- jmslideshow plugin : extends the jmpress plugin -->
+		<script type="text/javascript" src="/Resources/js/jquery.jmslideshow.js"></script>
+		<script type="text/javascript" src="/Resources/js/modernizr.custom.48780.js"></script>
+		<noscript>
+			<style>
+			.step {
+				width: 100%;
+				position: relative;
+			}
+			.step:not(.active) {
+				opacity: 1;
+				filter: alpha(opacity=99);
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+			}
+			.step:not(.active) a.jms-link{
+				opacity: 1;
+				margin-top: 40px;
+			}
+			</style>
+		</noscript>
+
+    <script type="text/javascript">
+        var featured =
+        [
+            {
+                layers:
+                [
+                    {
+                        img: '/Images/logo.png',
+                        pos: { x: 20, y: 20 }
+                    },
+                    {
+                        img: '/Images/logo.png',
+                        pos: { x: 1, y: 1 }
+                    },
+                    {
+                        img: '/Images/logo.png',
+                        pos: { x: 100, y: 100 }
+                    }
+                ]
+            },
+            {
+                layers:
+                [
+                    {
+                        img: '/Images/logo.png',
+                        pos: { x: 30, y: 30 }
+                    },
+                    {
+                        img: '/Images/logo.png',
+                        pos: { x: 10, y: 60 }
+                    },
+                    {
+                        img: '/Images/logo.png',
+                        pos: { x: 200, y: 100 }
+                    }
+                ]
+            }
+        ]
+
+        $(document).ready(function () {
+            //Set opacity on each span to 0%
+            $(".rollover").css({ 'opacity': '0' });
+            $(".info").css({ "opacity": "0" });
+            $(".colorThumbnail").css({ "opacity": "0" });
+
+            $('#services li').hover( //change hover div
+		        function () {
+		            $(this).find('.rollover').stop().fadeTo(250, 1);
+		        },
+		        function () {
+		            $(this).find('.rollover').stop().fadeTo(250, 0);
+		        }
+	        );
+
+            $(".socialLink").hover(
+        function () {
+            $(this).find('.rollover').stop().fadeTo(250, 1);
+        },
+        function () {
+            $(this).find('.rollover').stop().fadeTo(250, 0);
+        }
+      );
+
+            $(".thumbnail").hover(
+        function () {
+            $(this).find(".colorThumbnail").stop().fadeTo(250, 1);
+        },
+        function () {
+            $(this).find(".colorThumbnail").stop().fadeTo(250, 0);
+        }
+      )
+      .click(function () {
+          var index = $(this).attr("index").valueOf();
+          var left = index * 673;
+          $(".slide").animate({ "opacity": 0 }, 150, function () {
+              $(".slide").animate({ "left": "-" + left + "px" }, 0, function () {
+                  $(this).animate({ "opacity": 1 }, 150);
+              });
+          });
+      });
+    });
+
+    </script>
+     <script language="javascript" type="text/javascript">
+         function showImage(imgId, typ) {
+             var objImg = document.getElementById(imgId);
+             if (objImg) {
+                 if (typ == "1")
+                     objImg.src = "/Images/send-info-RO.png";
+                 else if (typ == "2")
+                     objImg.src = "/Images/send-info.png";
+             }
+         }
+    </script>
+
+
+
+        <a href="https://plus.google.com/{+Dkssystems}" rel="publisher" />
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            var pluginUrl =
+            '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+            _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+
+            _gaq.push(['_setAccount', 'UA-6899049-2']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+            /**** univeral analytics *****/
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-6899049-9', 'dkssystems.com');
+            ga('send', 'pageview');
+
+
+          $(document).ready(function() {
+              //Set opacity on each span to 0%
+              $(".rollover").css({ 'opacity': '0' });
+
+            $(".requestQuoteButton, .twitterLink, .linkedinLink, .facebookLink, .backWrapper a").hover(
+              function () {
+                $(this).find(".rollover").stop().fadeTo(250, 1);
+              },
+              function () {
+                $(this).find(".rollover").stop().fadeTo(250, 0);
+              }
+            );
+        });
+
+    </script>
+    </head>
+    <body>
+      <form method="post" action="./" id="MasterForm">
+<input type="hidden" name="__SLICKBACKARGUMENT" id="__SLICKBACKARGUMENT" value="" />
+<input type="hidden" name="__SLICKBACKTARGET" id="__SLICKBACKTARGET" value="" />
+<input type="hidden" name="__SLICKBACKPROGRESS" id="__SLICKBACKPROGRESS" value="Content_NewsletterSignupControl_SlickBackProgress" />
+<input type="hidden" name="__SLICKBACKSUBMIT" id="__SLICKBACKSUBMIT" value="" />
+<input type="hidden" name="__SLICKBACKTYPE" id="__SLICKBACKTYPE" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg4NDQyMTExOQ9kFgJmD2QWBGYPDxYGHgZfdGl0bGUFQk1pbm5lc290YSBXZWIgRGVzaWduICYgV2ViIERldmVsb3BtZW50IHwgREtTIFN5c3RlbXMgfCBNaW5uZWFwb2xpcx4MX2Rlc2NyaXB0aW9uBZsBREtTIFN5c3RlbXMgaXMgYW4gYXdhcmQtd2lubmluZyBNaW5uZXNvdGEgd2ViIGRlc2lnbiBhbmQgd2ViIGRldmVsb3BtZW50IGZpcm0gc3BlY2lhbGl6aW5nIGluIHdlYiBkZXNpZ24sIHdlYiBkZXZlbG9wbWVudCwgU0VPIHdlYiBkZXNpZ24gYW5kIHNvIG11Y2ggbW9yZS4eCV9rZXl3b3Jkc2RkFgYCAQ8WAh4EVGV4dAVCTWlubmVzb3RhIFdlYiBEZXNpZ24gJiBXZWIgRGV2ZWxvcG1lbnQgfCBES1MgU3lzdGVtcyB8IE1pbm5lYXBvbGlzZAIDDxYCHwMFwQE8bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIgY29udGVudD0iREtTIFN5c3RlbXMgaXMgYW4gYXdhcmQtd2lubmluZyBNaW5uZXNvdGEgd2ViIGRlc2lnbiBhbmQgd2ViIGRldmVsb3BtZW50IGZpcm0gc3BlY2lhbGl6aW5nIGluIHdlYiBkZXNpZ24sIHdlYiBkZXZlbG9wbWVudCwgU0VPIHdlYiBkZXNpZ24gYW5kIHNvIG11Y2ggbW9yZS4iIC8+ZAIFDxYCHwMFLjxtZXRhIG5hbWU9ImtleXdvcmRzIiBjb250ZW50PSJES1MgU3lzdGVtcyIgLz5kAgIPZBYGAgMPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgUWCmYPZBYCZg8VAw4gY2xhc3M9ImhvdmVyIgovZGtzLXN0b3J5BUFCT1VUZAIBD2QWAmYPFQMOIGNsYXNzPSJob3ZlciIJL3NlcnZpY2VzCFNFUlZJQ0VTZAICD2QWAmYPFQMAAS84PGltZyBzcmM9Ii9pbWFnZXMvbmF2LWxvZ28ucG5nIiB3aWR0aD0iMTA3IiBoZWlnaHQ9IjYxIj5kAgMPZBYCZg8VAw4gY2xhc3M9ImhvdmVyIgkvb3VyLXdvcmsEV09SS2QCBA9kFgJmDxUDDiBjbGFzcz0iaG92ZXIiCy9jb250YWN0LXVzB0NPTlRBQ1RkAgUPZBYEZg8WAh8EAgQWCGYPZBYCZg8VBD5odHRwOi8vZmVlZHByb3h5Lmdvb2dsZS5jb20vfnIvZGtzc3lzdGVtcy9tTUxmL34zL2F6X3lJcHp6aGtnLwNPY3QCMjIvWW91VHViZSBSZWQg4oCTIFRoZSBVbHRpbWF0ZSBZb3VUdWJlIEV4cGVyaWVuY2VkAgEPZBYCZg8VBD5odHRwOi8vZmVlZHByb3h5Lmdvb2dsZS5jb20vfnIvZGtzc3lzdGVtcy9tTUxmL34zL1VhM0x0UC14dFhJLwNTZXACMjIkSW5zdGFncmFtIFNvY2lhbCBNZWRpYSBTdHJhdGVneSAyMDE1ZAICD2QWAmYPFQQ+aHR0cDovL2ZlZWRwcm94eS5nb29nbGUuY29tL35yL2Rrc3N5c3RlbXMvbU1MZi9+My9uRFh5WU5KdmJaMC8DU2VwAjAxGUdvb2dsZSBSZXZlYWxzIGEgTmV3IExvZ29kAgMPZBYCZg8VBD5odHRwOi8vZmVlZHByb3h5Lmdvb2dsZS5jb20vfnIvZGtzc3lzdGVtcy9tTUxmL34zL082bHFoQzMtU1dnLwNBdWcCMTAdV2hhdOKAmXMgTmV3IGluIFNvY2lhbCBNZWRpYT9kAgEPZBYCZg8WBh4LX2F1dG9VcGRhdGVoHglfY3NzQ2xhc3NkHgZfZGl2SURkFgICAQ9kFgQCAQ8PZBYCHgdPbkNsaWNrBVNTbGlja0JhY2suZmlyZSgnY3RsMDAkQ29udGVudCROZXdzbGV0dGVyU2lnbnVwQ29udHJvbCcsJ1N1Ym1pdCcsbnVsbCk7cmV0dXJuIGZhbHNlO2QCAg8WBh8FaB8GZB8HZGQCBw9kFgICAQ9kFgICBA8QDxYCHgtfIURhdGFCb3VuZGdkEBUKD1R5cGUgb2YgUHJvamVjdBNDdXN0b20gSW50ZWdyYXRpb25zCUVjb21tZXJjZRdDdXN0b20gV2ViIEFwcGxpY2F0aW9ucxpDb250ZW50IE1hbmFnZW1lbnQgU3lzdGVtcxRJbnRyYW5ldCBEZXZlbG9wbWVudApXZWIgRGVzaWduHk1vYmlsZSBXZWJzaXRlcyAmIEFwcGxpY2F0aW9ucw9XZWIgRGV2ZWxvcG1lbnQaU2VhcmNoIEVuZ2luZSBPcHRpbWl6YXRpb24VCgATQ3VzdG9tIEludGVncmF0aW9ucwlFY29tbWVyY2UXQ3VzdG9tIFdlYiBBcHBsaWNhdGlvbnMaQ29udGVudCBNYW5hZ2VtZW50IFN5c3RlbXMUSW50cmFuZXQgRGV2ZWxvcG1lbnQKV2ViIERlc2lnbh5Nb2JpbGUgV2Vic2l0ZXMgJiBBcHBsaWNhdGlvbnMPV2ViIERldmVsb3BtZW50GlNlYXJjaCBFbmdpbmUgT3B0aW1pemF0aW9uFCsDCmdnZ2dnZ2dnZ2dkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUvY3RsMDAkQ29udGVudCROZXdzbGV0dGVyU2lnbnVwQ29udHJvbCRidG5TdWJtaXQCHHLKtn8/dV38yQG+CjkkuKr+pwDKCXl4wv2WLrtwWw==" />
+
+
+<script src="/WebResource.axd?d=MIpf9LIG6nBWYjtoyHQ1Yh4h7xw7nUEqkrb_42DNKUcQfWE2EYgkNUW51G3n1ca4SenJqFhkV49TLwFxb-FlZt-SzNM1Ie_TVWSKdN1QnsJNVomx-xy4ORPzls2ZjA0tC_ZBLAWcQPaD8iw01OfM3w2&amp;t=635682436829592398" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABULA8H0g2owNW41B1R95OssekvhYPrHTGP2YIH/ZD6MXqqQxpBDTW/m8P0p/9UUqxue1bwFNujLQhTKbxlpfx/MX6Mi8cczCIBdpVwdwrOBCEJbz9h4t1mkuRRdwzyjE+Jdfa1sRsap5Y6mcOGbbVIru3ilfTQ0CKHio8SJZv8sV8jj1owcGNT/DyEyFPv6pqFUQQbCdf7r+J9y9fpGnvH3smki4Gz+n2HiRjfjEkpHIUboxGe1gFs32LP4kBfN7itg8ZCbgl+3Un/n7zrQDv3CN7P9dDPgh0dAcLZTQH+fTUgya+LOrJ8ug9OkQwUXJQhq2z/lf9UfQMgyKHFHvb8ayaAOP+ylKAlfawbHswBNO8J/Mu/Mf0qc2fOEdIRCOfQQetxmpVZ2RcmLDPhdfjnNyfBZ10XQfUbZ8yr1gh331qRKE+UWGLd/W+OFkN5dgXkXvD4maJvcC9f15pogICRl44girlTHEsZ8RDMVIgtT7Q==" />
+        <a name="top"></a>
+        
+<section id="jms-slideshow" class="jms-slideshow">
+	<div class="step">
+		<article class="jms-content">
+			<div class="bigBall">
+                <div class="innerBall">
+                    <div class="intro">
+                    <div class="amp boxShadow">&amp;</div>
+                    <span class="we textShadow">WE</span><br>
+                    <img src="/Images/double-line.png" width="405" height="6"> <br>
+                    <span class="DD textShadow">DESIGN </span><br>
+                    <span class="DD textShadow">DEVELOP</span><br>
+                    <img src="/Images/double-line.png" width="405" height="6"> <br>
+                    <span class="cursive textShadow">custom</span><span class="web shadow"> WEBSITES</span>
+                  	</div>
+           		</div>
+           	</div>
+		</article>
+	</div>
+	<div class="step" data-x="1000" data-rotate="20">
+        <div class="jms-content" align="center">
+            <div style="padding-top:40px;">
+                <a href="/services/mobile-websites-and-applications"> <img src="/Images/MOBILE-SLIDE.png" width="762" height="367" style="padding-bottom:25px;"></a>
+                <br>
+                <span style="font-size:2.375em; font-weight:600; line-height:1.5em;">DO PEOPLE STILL TALK ON THESE THINGS?</span><br>
+                <p><a href="#">LEARN MORE ABOUT OUR MOBILE WEB AND APPLICATION DEVELOPMENT</a></p>
+            </div>
+        </div>
+    </div>
+	<div class="step" data-x="5000" data-y="1500">
+		<div class="jms-content" align="center">
+			<div style="padding-top:20px;">
+            <a href="/our-work""><img src="/Images/SITES-SLIDE.png" width="827" height="402"> </a>
+            	
+                <br>
+				<span style="font-size:2em; font-weight:600; line-height:1.8em;">DOG COATS to UNDERDECKS &mdash; and anything in between</span><br>
+				<p><a href="#">VARIETY IS THE SPICE OF LIFE, AND JUDGING BY OUR CLIENTS - WE'RE RATHER SPICY</a></p>
+          	</div>
+		</div>
+	</div>
+</section>
+
+         
+
+   <script type="text/javascript">
+       $(document).ready(function () {
+           //Set opacity on each span to 0%
+           $(".rollover").css({ 'opacity': '0' });
+
+           $(".requestQuoteButton, .twitterLink, .linkedinLink, .facebookLink, .backWrapper a").hover(
+              function () {
+                  $(this).find(".rollover").stop().fadeTo(250, 1);
+              },
+              function () {
+                  $(this).find(".rollover").stop().fadeTo(250, 0);
+              }
+            );
+       });
+    </script>
+
+<div id="nav-container">
+    <div class="nav bordered">
+        <div class="navHolder">
+            
+<ul>
+  
+      <li class="hover">
+        <a href="/dks-story">ABOUT</a>
+      </li>
+    
+      <li class="hover">
+        <a href="/services">SERVICES</a>
+      </li>
+    
+      <li>
+        <a href="/"><img src="/images/nav-logo.png" width="107" height="61"></a>
+      </li>
+    
+      <li class="hover">
+        <a href="/our-work">WORK</a>
+      </li>
+    
+      <li class="hover">
+        <a href="/contact-us">CONTACT</a>
+      </li>
+    
+</ul>
+         </div>
+    </div>
+</div>
+
+
+
+
+        <div >
+	        <div>
+	          
+    
+<section id="second" class="story" data-speed="8" data-type="background">
+	<div class="secondText group">
+        <div class="header">WHAT'S HAPPENING</div>
+        <div class="newsList group">
+        
+            <div class="blogPost">
+                <div class="innerRound">
+                    <a href="http://feedproxy.google.com/~r/dkssystems/mMLf/~3/az_yIpzzhkg/"></a>
+                    <div class="month">Oct</div>
+                    <div class="day">22</div>
+                    <div class="link">YouTube Red – The Ultimate YouTube Experience</div>
+                </div>
+            </div>
+            
+            <div class="blogPost">
+                <div class="innerRound">
+                    <a href="http://feedproxy.google.com/~r/dkssystems/mMLf/~3/Ua3LtP-xtXI/"></a>
+                    <div class="month">Sep</div>
+                    <div class="day">22</div>
+                    <div class="link">Instagram Social Media Strategy 2015</div>
+                </div>
+            </div>
+            
+            <div class="blogPost">
+                <div class="innerRound">
+                    <a href="http://feedproxy.google.com/~r/dkssystems/mMLf/~3/nDXyYNJvbZ0/"></a>
+                    <div class="month">Sep</div>
+                    <div class="day">01</div>
+                    <div class="link">Google Reveals a New Logo</div>
+                </div>
+            </div>
+            
+            <div class="blogPost">
+                <div class="innerRound">
+                    <a href="http://feedproxy.google.com/~r/dkssystems/mMLf/~3/O6lqhC3-SWg/"></a>
+                    <div class="month">Aug</div>
+                    <div class="day">10</div>
+                    <div class="link">What’s New in Social Media?</div>
+                </div>
+            </div>
+            
+        </div>
+       
+      
+       
+        <div class="blogLink"><a href="http://www.dkssystems.com/blog/">VIEW ALL NEWS</a></div>
+        <div><div id="Content_NewsletterSignupControl_EmailArea">
+    <div id="Content_NewsletterSignupControl_NewsletterPanel">
+	
+    <div>
+        <div class="newsie">
+            <a href="javascript:" onclick="toggle_visibility('Content_NewsletterSignupControl_newsletterSignup');toggle_height('second','575px','619px')">JOIN NEWSLETTER</a>
+        </div>
+   
+        <div id="Content_NewsletterSignupControl_newsletterSignup" class="newsiePop" style="display:none; color:#607890">
+           
+            <div class="signupBox">
+                <input name="ctl00$Content$NewsletterSignupControl$txtEmail" type="text" value="Email" id="Content_NewsletterSignupControl_txtEmail" title="Email" class="inputGrey emailInput" onfocus="searchFocus(this)" onblur="searchBlur(this)" />
+                <input type="image" name="ctl00$Content$NewsletterSignupControl$btnSubmit" id="Content_NewsletterSignupControl_btnSubmit" class="right" src="images/SIGNUP-GREEN.png" onclick="SlickBack.fire(&#39;ctl00$Content$NewsletterSignupControl&#39;,&#39;Submit&#39;,null);return false;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Content$NewsletterSignupControl$btnSubmit&quot;, &quot;&quot;, true, &quot;newsletter&quot;, &quot;&quot;, false, false))" />
+            </div>  
+             <div id="Content_NewsletterSignupControl_ValidatorArea">
+            
+            
+            </div>
+
+             <div id="Content_NewsletterSignupControl_SlickBackProgress" style="visibility:hidden;">
+                <div align="center"><img src="/images/loader.gif" /></div>
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+    
+    
+</div></div>
+       
+        
+	</div> 
+ </section>
+
+<section id="third" class="story locked" data-speed="8" data-type="background">
+<div class="thirdText group">
+    <div class="graphic">
+        <div class="sign">
+            <div class="pin"></div>
+            <div class="wire"><img src="/Images/hanger.png" width="209" height="96"></div>
+            <div class="outerSign">
+                <div class="innerSign">
+                    <span class="come">come in</span><span class="were"> WE'RE</span><br>
+                    <span class="hiring">HIRING</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <span class="header">WORK WITH US</span><br>
+        We are currently accepting applications for the following positions.
+        <p><br />
+        <a href="/project-manager-position">Project Manager »</a><br>
+        <a href="/application-developer">.NET Developer »</a><br>
+	    <a href="/web-developer">Open Source PHP Developer »</a>
+        </p>
+    </div>	
+</div>
+        
+</section>
+
+
+ <section id="fourth" class="story" data-speed="8" data-type="background">
+    	<div class="header">WHAT WE CAN DO FOR YOU</div>
+        <div class="lineBreak"></div>
+        <div class="homeAbout group">DKS Systems is a custom web design and development company in the Twin Cities. With a strong local client base and clients from around the world, our team is dedicated to push the boundaries of internet technologies. We build more than just websites; we build business solutions. From ecommerce web design to custom integrations, we use our knowledge and expertise to solve real business problems. For outstanding web development, design, web solutions and more- call on us.
+        <p><br>
+        	<div class="serviceBlock">
+            	<div class="iconWrap">
+            		<div class="iconCircle" align="center"><a href="/services/custom-integrations"><img src="/images/custom-int-icon.png"></a></div>
+                </div>
+            	CUSTOM INTEGRATIONS
+            </div>
+            <div class="serviceBlock">
+            	<div class="iconWrap">
+            		<div class="iconCircle"><a href="/services/ecommerce-web-development"><img src="/images/ecomm-icon.png"></a></div>
+                </div>
+                ECOMMERCE
+            </div>
+            <div class="serviceBlock">
+            	<div class="iconWrap">
+            		<div class="iconCircle"><a href="/services/custom-web-applications"><img src="/images/custom-icon.png"></a></div>
+                </div>
+                CUSTOM WEB APPS
+            </div>
+            
+            <div class="serviceBlock">
+            	<div class="iconWrap">
+            		<div class="iconCircle"><a href="/services/web-content-management-system"><img src="/images/cms-icon.png"></a></div>
+                </div>
+                CONTENT MANAGEMENT
+             </div>
+            <div class="serviceBlock">
+            	<div class="iconWrap">
+            		<div class="iconCircle"><a href="/services/intranet-development"><img src="/images/intranet-icon.png"></a></div>
+                </div>
+               	INTRANET DEVELOPMENT
+            </div>
+            <div class="serviceBlock">
+            	<div class="iconWrap">
+            		<div class="iconCircle"><a href="/services/website-design"><img src="/images/design-icon.png"></a></div>
+                </div>
+                WEB DESIGN
+            </div>
+            
+            <div class="serviceBlock">
+            	<div class="iconWrap">
+            		<div class="iconCircle"><a href="/services/mobile-websites-and-applications"><img src="/images/mobile-icon.png"></a></div>
+                </div>
+               MOBILE WEBSITES<br>AND APPLICATIONS
+            </div>
+            <div class="serviceBlock">
+            	<div class="iconWrap">
+            		<div class="iconCircle"><a href="/services/minneapolis-web-development"><img src="/images/dev-icon.png"></a></div>
+                </div>
+                WEB DEVELOPMENT
+            </div>
+            <div class="serviceBlock">
+            	<div class="iconWrap">
+            		<div class="iconCircle"><a href="/services/minneapolis-seo"><img src="/images/seo-icon.png"></a></div>
+                </div>
+                SEARCH ENGINE<br>OPTIMIZATION
+            </div>
+        
+        </div>
+    </section>
+ 
+ 
+<script src="/Resources/js/waypoints.min.js" type="text/javascript"></script>
+<script src="/Resources/js/navbar2.js" type="text/javascript"></script>
+<script src="/Resources/js/jQueryRotateCompressed.2.2.js" type="text/javascript"></script>
+<script src="/Resources/js/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+
+        $('#jms-slideshow').jmslideshow();
+
+    });
+</script>
+<a href="#BOTTOM" ></a>
+
+	        </div>      
+        </div>
+      
+
+<section id="footer" class="story group" data-speed="8" data-type="background">
+
+    	<div class="contactWrap">
+            <div class="contactInfo">
+            <div id="quoteArrow" style="position:absolute; top:100px; left:270px; visibility:hidden;">
+                <img src="images/quote-arrow.png" />
+            </div>
+             <a name="BOTTOM"></a>
+                <div class="header">CONTACT US</div>
+                <p>
+                tel 612-659-8660<br>
+                fax 800-861-7411<br>
+                <a href="mailto:sales@DKSSystems.com">sales@DKSSystems.com</a>
+                </p>
+              <p></p><br />
+                DKS Systems<br />
+                8401 Wayzata Blvd<br />
+                Suite 220 <br />
+                Golden Valley, MN 55426<br />
+                <a href="https://maps.google.com/maps?ie=UTF8&f=d&daddr=DKS+Systems,+8401+Wayzata+Blvd+%23220,+Golden+Valley,+MN+55426&geocode=CTOkvnfR4XRhFds7rgIdqgVv-iEBbo4CPWgYpw&gl=US&hl=en" target="_blank" class="mapLink">Map It</a><br>
+                <ul>
+                    <li class="social"><a href="http://www.facebook.com/dkssystems" target="_blank"><img src="/images/facebook.png" width="52" height="52" border="0"></a></li>
+                    <li class="social"><a href="http://www.linkedin.com/company/dks-systems" target="_blank"><img src="/images/linkedin.png" width="52" height="52" border="0"></a></li>
+                    <li class="social"><a href="http://www.twitter.com/DKS_Systems" target="_blank"><img src="/images/twitter.png" width="52" height="52" border="0"></a></li>
+                    <li class="social"><a href="https://www.pinterest.com/dkssystems/" target="_blank"><img src="/images/pinterest.png " width="52" height="52" border="0"></a></li>
+                    <li class="social"><a href="https://plus.google.com/+Dkssystems/" target="_blank"><img src="/images/google2.png" width="52" height="52" border="0"></a></li>                    
+                    <li class="social"><a href="http://www.dkssystems.com/blog/" target="_self"><img src="/images/blog.png" width="52" height="52" border="0"></a></li>                    
+                </ul>
+                <div style="clear:both"></div>
+                <ul>
+                    <li class="socialNL"><a href="http://www.dkssystems.com/newsletter/" target="_self"><img src="/images/newsletter-archive.png" width="52" height="52" border="0"></a></li>  
+                    <li><a href="http://www.dkssystems.com/newsletter/" target="_self"><span style="font-size:14px; line-height:30px">NEWSLETTER ARCHIVE</span></a></li>
+                </ul>
+            </div>
+
+            
+
+<script type="text/javascript">
+    function FooterValidate() {
+        var fields = document.getElementsByClassName('footervalidate');
+
+        var message = "";
+
+        for (var i = 0; i < fields.length; i++) {
+            var field = fields[i];
+
+            var value = field.value;
+            value = value.replace(/^\s+|\s+$/g, '');
+
+            var tooltip = field.title;
+
+            if (value.length == 0 || value == tooltip)
+                message += tooltip + "\n";
+        }
+
+        if (message.length > 0) {
+            var alertBox = "The following fields are required:\n\n" + message;
+            alert(alertBox);
+            return false;
+        }
+
+        return true;
+    }
+
+    function searchFocusProposal(f) {
+        document.getElementById("Footer_Form_captchactr").className = "";
+        if (f.value == f.title) {
+            f.value = '';
+        }
+    }
+
+    function searchBlurProposal(f) {
+
+        if (f.value == '') {
+            f.value = f.title;
+        }
+
+
+    }
+</script>
+<div id="contactForm" class="contactForm">
+    <span class="header">LET'S GET STARTED!</span><br />
+    Have a project in mind? We'd be happy to develop a proposal or help you fine-tune
+    your development ideas.
+    <p></p>
+        <input name="ctl00$Footer$Form$NameTextBox" type="text" value="Name" id="Footer_Form_NameTextBox" title="Name" class="footervalidate" onfocus="searchFocusProposal(this)" onblur="searsearchBlurProposalchBlur(this)" />
+        <br />
+        <input name="ctl00$Footer$Form$EmailAddressTextBox" type="text" value="Email Address" id="Footer_Form_EmailAddressTextBox" title="Email Address" class="footervalidate" onfocus="searchFocusProposal(this)" onblur="searchBlurProposal(this)" />
+        <br />
+        <input name="ctl00$Footer$Form$PhoneNumberTextBox" type="text" value="Phone" id="Footer_Form_PhoneNumberTextBox" title="Phone" onfocus="searchFocusProposal(this)" onblur="searchBlurProposal(this)" />
+        <br />
+        <select name="ctl00$Footer$Form$PreferredContactDropDownList" id="Footer_Form_PreferredContactDropDownList">
+	<option value="">Preferred Contact</option>
+	<option value="Phone">Phone</option>
+	<option value="Email">Email</option>
+
+</select>
+        <br />
+        <select name="ctl00$Footer$Form$TypeOfProjectDropDownList" id="Footer_Form_TypeOfProjectDropDownList">
+	<option value="">Type of Project</option>
+	<option value="Custom Integrations">Custom Integrations</option>
+	<option value="Ecommerce">Ecommerce</option>
+	<option value="Custom Web Applications">Custom Web Applications</option>
+	<option value="Content Management Systems">Content Management Systems</option>
+	<option value="Intranet Development">Intranet Development</option>
+	<option value="Web Design">Web Design</option>
+	<option value="Mobile Websites &amp; Applications">Mobile Websites &amp; Applications</option>
+	<option value="Web Development">Web Development</option>
+	<option value="Search Engine Optimization">Search Engine Optimization</option>
+
+</select>
+        <br />
+        <textarea name="ctl00$Footer$Form$NotesTextBox" rows="2" cols="20" id="Footer_Form_NotesTextBox" title="Notes" class="footervalidate textArea" onfocus="searchFocusProposal(this)" onblur="searchBlurProposal(this)">
+Notes</textarea>
+        <br />
+        <div id="Footer_Form_captchactr" class="hidden" style="line-height:6px">
+            <script type="text/javascript">
+		var RecaptchaOptions = {
+			theme : 'white',
+			tabindex : 0
+		};
+
+</script><script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LdgO8sSAAAAAG3bZrByFPZaMyy_3Tnu9HlHf4Bj">
+
+</script><noscript>
+		<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LdgO8sSAAAAAG3bZrByFPZaMyy_3Tnu9HlHf4Bj" width="500" height="300" frameborder="0">
+
+		</iframe><br /><textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea><input name="recaptcha_response_field" value="manual_challenge" type="hidden" />
+</noscript>
+            
+        </div>
+        <input type="submit" name="ctl00$Footer$Form$SendInfoButton" value="Submit" onclick="return FooterValidate();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Footer$Form$SendInfoButton&quot;, &quot;&quot;, true, &quot;footer&quot;, &quot;&quot;, false, false))" id="Footer_Form_SendInfoButton" class="submit" />
+        &nbsp;
+</div>
+
+
+            <a href="#BOTTOM" ></a>
+            
+      </div>
+       
+      
+                 
+    </section>
+
+    </form>
+      <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+        try {
+          var pageTracker = _gat._getTracker("UA-6899049-2");
+          pageTracker._trackPageview();
+        } catch (err) { }</script>
+
+        <div id="fb-root"></div>
+<script type="text/javascript">
+<!--
+    window.fbAsyncInit = function () {
+        FB.init({ appId: '347632411927105', status: true, cookie: true, xfbml: true });
+        FB.Event.subscribe('edge.create', function (href, widget) {
+            window.location = "/FacebookLiked.aspx"
+        });
+    };
+    (function () {
+        var e = document.createElement('script');
+        e.type = 'text/javascript';
+        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+    } ());
+//-->
+</script>
+
+<script type="text/javascript" src="/Resources/scripts.js"></script>
+    </body>
+</html>

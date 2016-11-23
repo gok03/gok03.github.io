@@ -1,0 +1,1151 @@
+status: 200
+content-length: 33856
+content-location: http://www.promantechnology.com
+set-cookie: ASPSESSIONIDSARQCDBC=IELDPDCBCCFHGNAMPOKNFCOD; path=/
+x-powered-by: ASP.NET
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+connection: Keep-Alive
+-content-encoding: gzip
+cache-control: private
+date: Wed, 21 Sep 2016 08:42:13 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+
+<HEAD>
+<TITLE> ProMan Technology Home</TITLE>
+
+
+<!--
+light color  524273    
+
+dark color  322253
+-->
+
+
+
+<!--************************************************************************-->
+<!--* Revenge of the Menu Bar Demo                                         *-->
+<!--*                                                                      *-->
+<!--* Copyright 2000 by Mike Hall                                          *-->
+<!--* Please see http://www.brainjar.com for terms of use.                 *-->
+<!--************************************************************************-->
+<meta http-equiv="pragma" content="no-cache">
+<meta name=author content="Dr. Ron Yates, ProMan Technology">
+<style type="text/css">
+
+BODY {
+  margin-top: .5em;
+  margin-right: 0em;
+  margin-bottom: 5em;
+  margin-left: 1em;       
+}
+
+
+A:link		{  color: #ffee99; text-decoration: none; }
+A:hover		{  color: #ffffff; text-decoration: none;  background-color: #1166FF; }
+A:active	{  color: #ffee99; text-decoration: none;}
+A:visited	{  color: #ffee99; text-decoration: none;}
+
+
+
+div.menuBar,
+div.menuBar a.menuButton,
+div.menu,
+div.menu a.menuItem {
+  font-family: "MS Sans Serif", Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+div.menuBar {
+  background-color: #322253;
+  border: 2px outset #ffffff;
+  padding: 4px 2px 4px 2px;
+  text-align: left;
+}
+
+div.menuBar a.menuButton {
+  background-color: transparent;
+  border: 1px solid #322253;
+  color: #ffffff;
+  cursor: default;
+  left: 0px;
+  margin: 1px;
+  padding: 2px 6px 2px 6px;
+  position: relative;
+  text-decoration: none;
+  top: 0px;
+  z-index: 100;
+}
+
+div.menuBar a.menuButton:hover {
+  background-color: transparent;
+  border: 1px outset #322253;
+  color: #ffffff;
+}
+
+div.menuBar a.menuButtonActive,
+div.menuBar a.menuButtonActive:hover {
+  background-color:  #1166FF;
+  border: 1px inset #ffffff;
+  color: #ffffff;
+  left: 1px;
+  top: 1px;
+}
+
+div.menu {
+  background-color: #322253;
+  border: 2px outset #ffffff;
+  left: 0px;
+  padding: 0px 1px 1px 0px;
+  position: absolute;
+  top: 0px;
+  visibility: hidden;
+  z-index: 101;
+}
+
+div.menu a.menuItem {
+  color: #ffffff;
+  cursor: default;
+  display: block;
+  padding: 3px 1em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+div.menu a.menuItem:hover, div.menu a.menuItemHighlight {
+  background-color: #1166FF;
+  color: #ffffff;
+}
+
+div.menu a.menuItem span.menuItemText {}
+
+div.menu a.menuItem span.menuItemArrow {
+  margin-right: -.75em;
+}
+
+div.menu div.menuItemSep {
+  border: 1px inset #322253;
+  margin: 4px 2px;
+}
+
+
+</style>
+<script type="text/javascript">//<![CDATA[
+
+//*****************************************************************************
+// Do not remove this notice.
+//
+// Copyright 2000 by Mike Hall.
+// See http://www.brainjar.com for terms of use.
+//*****************************************************************************
+
+//----------------------------------------------------------------------------
+// Code to determine the browser and version.
+//----------------------------------------------------------------------------
+
+function Browser() {
+
+  var ua, s, i;
+
+  this.isIE    = false;  // Internet Explorer
+  this.isNS    = false;  // Netscape
+  this.version = null;
+
+  ua = navigator.userAgent;
+
+  s = "MSIE";
+  if ((i = ua.indexOf(s)) >= 0) {
+    this.isIE = true;
+    this.version = parseFloat(ua.substr(i + s.length));
+    return;
+  }
+
+  s = "Netscape6/";
+  if ((i = ua.indexOf(s)) >= 0) {
+    this.isNS = true;
+    this.version = parseFloat(ua.substr(i + s.length));
+    return;
+  }
+
+  // Treat any other "Gecko" browser as NS 6.1.
+
+  s = "Gecko";
+  if ((i = ua.indexOf(s)) >= 0) {
+    this.isNS = true;
+    this.version = 6.1;
+    return;
+  }
+}
+
+var browser = new Browser();
+
+//----------------------------------------------------------------------------
+// Code for handling the menu bar and active button.
+//----------------------------------------------------------------------------
+
+var activeButton = null;
+
+/* [MODIFIED] This code commented out, not needed for activate/deactivate
+   on mouseover.
+
+// Capture mouse clicks on the page so any active button can be
+// deactivated.
+
+if (browser.isIE)
+  document.onmousedown = pageMousedown;
+else
+  document.addEventListener("mousedown", pageMousedown, true);
+
+function pageMousedown(event) {
+
+  var el;
+
+  // If there is no active button, exit.
+
+  if (activeButton == null)
+    return;
+
+  // Find the element that was clicked on.
+
+  if (browser.isIE)
+    el = window.event.srcElement;
+  else
+    el = (event.target.tagName ? event.target : event.target.parentNode);
+
+  // If the active button was clicked on, exit.
+
+  if (el == activeButton)
+    return;
+
+  // If the element is not part of a menu, reset and clear the active
+  // button.
+
+  if (getContainerWith(el, "DIV", "menu") == null) {
+    resetButton(activeButton);
+    activeButton = null;
+  }
+}
+
+[END MODIFIED] */
+
+function buttonClick(event, menuId) {
+
+  var button;
+
+  // Get the target button element.
+
+  if (browser.isIE)
+    button = window.event.srcElement;
+  else
+    button = event.currentTarget;
+
+  // Blur focus from the link to remove that annoying outline.
+
+  button.blur();
+
+  // Associate the named menu to this button if not already done.
+  // Additionally, initialize menu display.
+
+  if (button.menu == null) {
+    button.menu = document.getElementById(menuId);
+    if (button.menu.isInitialized == null)
+      menuInit(button.menu);
+  }
+
+  // [MODIFIED] Added for activate/deactivate on mouseover.
+
+  // Set mouseout event handler for the button, if not already done.
+
+  if (button.onmouseout == null)
+    button.onmouseout = buttonOrMenuMouseout;
+
+  // Exit if this button is the currently active one.
+
+  if (button == activeButton)
+    return false;
+
+  // [END MODIFIED]
+
+  // Reset the currently active button, if any.
+
+  if (activeButton != null)
+    resetButton(activeButton);
+
+  // Activate this button, unless it was the currently active one.
+
+  if (button != activeButton) {
+    depressButton(button);
+    activeButton = button;
+  }
+  else
+    activeButton = null;
+
+  return false;
+}
+
+function buttonMouseover(event, menuId) {
+
+  var button;
+
+  // [MODIFIED] Added for activate/deactivate on mouseover.
+
+  // Activates this button's menu if no other is currently active.
+
+  if (activeButton == null) {
+    buttonClick(event, menuId);
+    return;
+  }
+
+  // [END MODIFIED]
+
+  // Find the target button element.
+
+  if (browser.isIE)
+    button = window.event.srcElement;
+  else
+    button = event.currentTarget;
+
+  // If any other button menu is active, make this one active instead.
+
+  if (activeButton != null && activeButton != button)
+    buttonClick(event, menuId);
+}
+
+function depressButton(button) {
+
+  var x, y;
+
+  // Update the button's style class to make it look like it's
+  // depressed.
+
+  button.className += " menuButtonActive";
+
+  // [MODIFIED] Added for activate/deactivate on mouseover.
+
+  // Set mouseout event handler for the button, if not already done.
+
+  if (button.onmouseout == null)
+    button.onmouseout = buttonOrMenuMouseout;
+  if (button.menu.onmouseout == null)
+    button.menu.onmouseout = buttonOrMenuMouseout;
+
+  // [END MODIFIED]
+
+  // Position the associated drop down menu under the button and
+  // show it.
+
+  x = getPageOffsetLeft(button);
+  y = getPageOffsetTop(button) + button.offsetHeight;
+
+  // For IE, adjust position.
+
+  if (browser.isIE) {
+    x += button.offsetParent.clientLeft;
+    y += button.offsetParent.clientTop;
+  }
+
+  button.menu.style.left = x + "px";
+  button.menu.style.top  = y + "px";
+  button.menu.style.visibility = "visible";
+}
+
+function resetButton(button) {
+
+  // Restore the button's style class.
+
+  removeClassName(button, "menuButtonActive");
+
+  // Hide the button's menu, first closing any sub menus.
+
+  if (button.menu != null) {
+    closeSubMenu(button.menu);
+    button.menu.style.visibility = "hidden";
+  }
+}
+
+//----------------------------------------------------------------------------
+// Code to handle the menus and sub menus.
+//----------------------------------------------------------------------------
+
+function menuMouseover(event) {
+
+  var menu;
+
+  // Find the target menu element.
+
+  if (browser.isIE)
+    menu = getContainerWith(window.event.srcElement, "DIV", "menu");
+  else
+    menu = event.currentTarget;
+
+  // Close any active sub menu.
+
+  if (menu.activeItem != null)
+    closeSubMenu(menu);
+}
+
+function menuItemMouseover(event, menuId) {
+
+  var item, menu, x, y;
+
+  // Find the target item element and its parent menu element.
+
+  if (browser.isIE)
+    item = getContainerWith(window.event.srcElement, "A", "menuItem");
+  else
+    item = event.currentTarget;
+  menu = getContainerWith(item, "DIV", "menu");
+
+  // Close any active sub menu and mark this one as active.
+
+  if (menu.activeItem != null)
+    closeSubMenu(menu);
+  menu.activeItem = item;
+
+  // Highlight the item element.
+
+  item.className += " menuItemHighlight";
+
+  // Initialize the sub menu, if not already done.
+
+  if (item.subMenu == null) {
+    item.subMenu = document.getElementById(menuId);
+    if (item.subMenu.isInitialized == null)
+      menuInit(item.subMenu);
+  }
+
+  // [MODIFIED] Added for activate/deactivate on mouseover.
+
+  // Set mouseout event handler for the sub menu, if not already done.
+
+  if (item.subMenu.onmouseout == null)
+    item.subMenu.onmouseout = buttonOrMenuMouseout;
+
+  // [END MODIFIED]
+
+  // Get position for submenu based on the menu item.
+
+  x = getPageOffsetLeft(item) + item.offsetWidth;
+  y = getPageOffsetTop(item);
+
+  // Adjust position to fit in view.
+
+  var maxX, maxY;
+
+  if (browser.isNS) {
+    maxX = window.scrollX + window.innerWidth;
+    maxY = window.scrollY + window.innerHeight;
+  }
+  if (browser.isIE) {
+    maxX = Math.max(document.documentElement.scrollLeft, document.body.scrollLeft) +
+      (document.documentElement.clientWidth != 0 ? document.documentElement.clientWidth : document.body.clientWidth);
+    maxY = Math.max(document.documentElement.scrollTop, document.body.scrollTop) +
+      (document.documentElement.clientHeight != 0 ? document.documentElement.clientHeight : document.body.clientHeight);
+  }
+  maxX -= item.subMenu.offsetWidth;
+  maxY -= item.subMenu.offsetHeight;
+
+  if (x > maxX)
+    x = Math.max(0, x - item.offsetWidth - item.subMenu.offsetWidth
+      + (menu.offsetWidth - item.offsetWidth));
+  y = Math.max(0, Math.min(y, maxY));
+
+  // Position and show the sub menu.
+
+  item.subMenu.style.left = x + "px";
+  item.subMenu.style.top  = y + "px";
+  item.subMenu.style.visibility = "visible";
+
+  // Stop the event from bubbling.
+
+  if (browser.isIE)
+    window.event.cancelBubble = true;
+  else
+    event.stopPropagation();
+}
+
+function closeSubMenu(menu) {
+
+  if (menu == null || menu.activeItem == null)
+    return;
+
+  // Recursively close any sub menus.
+
+  if (menu.activeItem.subMenu != null) {
+    closeSubMenu(menu.activeItem.subMenu);
+    menu.activeItem.subMenu.style.visibility = "hidden";
+    menu.activeItem.subMenu = null;
+  }
+  removeClassName(menu.activeItem, "menuItemHighlight");
+  menu.activeItem = null;
+}
+
+// [MODIFIED] Added for activate/deactivate on mouseover. Handler for mouseout
+// event on buttons and menus.
+
+function buttonOrMenuMouseout(event) {
+
+  var el;
+
+  // If there is no active button, exit.
+
+  if (activeButton == null)
+    return;
+
+  // Find the element the mouse is moving to.
+
+  if (browser.isIE)
+    el = window.event.toElement;
+  else if (event.relatedTarget != null)
+      el = (event.relatedTarget.tagName ? event.relatedTarget : event.relatedTarget.parentNode);
+
+  // If the element is not part of a menu, reset the active button.
+
+  if (getContainerWith(el, "DIV", "menu") == null) {
+    resetButton(activeButton);
+    activeButton = null;
+  }
+}
+
+// [END MODIFIED]
+
+//----------------------------------------------------------------------------
+// Code to initialize menus.
+//----------------------------------------------------------------------------
+
+function menuMouseover(event) {
+
+  var menu;
+
+  // Find the target menu element.
+
+  if (browser.isIE)
+    menu = getContainerWith(window.event.srcElement, "DIV", "menu");
+  else
+    menu = event.currentTarget;
+
+  // Close any active sub menu.
+
+  if (menu.activeItem != null)
+    closeSubMenu(menu);
+}
+
+function menuItemMouseover(event, menuId) {
+
+  var item, menu, x, y;
+
+  // Find the target item element and its parent menu element.
+
+  if (browser.isIE)
+    item = getContainerWith(window.event.srcElement, "A", "menuItem");
+  else
+    item = event.currentTarget;
+  menu = getContainerWith(item, "DIV", "menu");
+
+  // Close any active sub menu and mark this one as active.
+
+  if (menu.activeItem != null)
+    closeSubMenu(menu);
+  menu.activeItem = item;
+
+  // Highlight the item element.
+
+  item.className += " menuItemHighlight";
+
+  // Initialize the sub menu, if not already done.
+
+  if (item.subMenu == null) {
+    item.subMenu = document.getElementById(menuId);
+    if (item.subMenu.isInitialized == null)
+      menuInit(item.subMenu);
+  }
+
+  // [MODIFIED] Added for activate/deactivate on mouseover.
+
+  // Set mouseout event handler for the sub menu, if not already done.
+
+  if (item.subMenu.onmouseout == null)
+    item.subMenu.onmouseout = buttonOrMenuMouseout;
+
+  // [END MODIFIED]
+
+  // Get position for submenu based on the menu item.
+
+  x = getPageOffsetLeft(item) + item.offsetWidth;
+  y = getPageOffsetTop(item);
+
+  // Adjust position to fit in view.
+
+  var maxX, maxY;
+
+  if (browser.isNS) {
+    maxX = window.scrollX + window.innerWidth;
+    maxY = window.scrollY + window.innerHeight;
+  }
+  if (browser.isIE) {
+    maxX = Math.max(document.documentElement.scrollLeft, document.body.scrollLeft) +
+      (document.documentElement.clientWidth != 0 ? document.documentElement.clientWidth : document.body.clientWidth);
+    maxY = Math.max(document.documentElement.scrollTop, document.body.scrollTop) +
+      (document.documentElement.clientHeight != 0 ? document.documentElement.clientHeight : document.body.clientHeight);
+  }
+  maxX -= item.subMenu.offsetWidth;
+  maxY -= item.subMenu.offsetHeight;
+
+  if (x > maxX)
+    x = Math.max(0, x - item.offsetWidth - item.subMenu.offsetWidth
+      + (menu.offsetWidth - item.offsetWidth));
+  y = Math.max(0, Math.min(y, maxY));
+
+  // Position and show the sub menu.
+
+  item.subMenu.style.left = x + "px";
+  item.subMenu.style.top  = y + "px";
+  item.subMenu.style.visibility = "visible";
+
+  // Stop the event from bubbling.
+
+  if (browser.isIE)
+    window.event.cancelBubble = true;
+  else
+    event.stopPropagation();
+}
+
+function closeSubMenu(menu) {
+
+  if (menu == null || menu.activeItem == null)
+    return;
+
+  // Recursively close any sub menus.
+
+  if (menu.activeItem.subMenu != null) {
+    closeSubMenu(menu.activeItem.subMenu);
+    menu.activeItem.subMenu.style.visibility = "hidden";
+    menu.activeItem.subMenu = null;
+  }
+  removeClassName(menu.activeItem, "menuItemHighlight");
+  menu.activeItem = null;
+}
+
+// [MODIFIED] Added for activate/deactivate on mouseover. Handler for mouseout
+// event on buttons and menus.
+
+function buttonOrMenuMouseout(event) {
+
+  var el;
+
+  // If there is no active button, exit.
+
+  if (activeButton == null)
+    return;
+
+  // Find the element the mouse is moving to.
+
+  if (browser.isIE)
+    el = window.event.toElement;
+  else if (event.relatedTarget != null)
+      el = (event.relatedTarget.tagName ? event.relatedTarget : event.relatedTarget.parentNode);
+
+  // If the element is not part of a menu, reset the active button.
+
+  if (getContainerWith(el, "DIV", "menu") == null) {
+    resetButton(activeButton);
+    activeButton = null;
+  }
+}
+
+// [END MODIFIED]
+
+//----------------------------------------------------------------------------
+// Code to initialize menus.
+//----------------------------------------------------------------------------
+
+function menuInit(menu) {
+
+  var itemList, spanList;
+  var textEl, arrowEl;
+  var itemWidth;
+  var w, dw;
+  var i, j;
+
+  // For IE, replace arrow characters.
+
+  if (browser.isIE) {
+    menu.style.lineHeight = "2.5ex";
+    spanList = menu.getElementsByTagName("SPAN");
+    for (i = 0; i < spanList.length; i++)
+      if (hasClassName(spanList[i], "menuItemArrow")) {
+        spanList[i].style.fontFamily = "Webdings";
+        spanList[i].firstChild.nodeValue = "4";
+      }
+  }
+
+  // Find the width of a menu item.
+
+  itemList = menu.getElementsByTagName("A");
+  if (itemList.length > 0)
+    itemWidth = itemList[0].offsetWidth;
+  else
+    return;
+
+  // For items with arrows, add padding to item text to make the
+  // arrows flush right.
+
+  for (i = 0; i < itemList.length; i++) {
+    spanList = itemList[i].getElementsByTagName("SPAN");
+    textEl  = null;
+    arrowEl = null;
+    for (j = 0; j < spanList.length; j++) {
+      if (hasClassName(spanList[j], "menuItemText"))
+        textEl = spanList[j];
+      if (hasClassName(spanList[j], "menuItemArrow"))
+        arrowEl = spanList[j];
+    }
+    if (textEl != null && arrowEl != null)
+      textEl.style.paddingRight = (itemWidth
+        - (textEl.offsetWidth + arrowEl.offsetWidth)) + "px";
+  }
+
+  // Fix IE hover problem by setting an explicit width on first item of
+  // the menu.
+
+  if (browser.isIE) {
+    w = itemList[0].offsetWidth;
+    itemList[0].style.width = w + "px";
+    dw = itemList[0].offsetWidth - w;
+    w -= dw;
+    itemList[0].style.width = w + "px";
+  }
+
+  // Mark menu as initialized.
+
+  menu.isInitialized = true;
+}
+
+//----------------------------------------------------------------------------
+// General utility functions.
+//----------------------------------------------------------------------------
+
+function getContainerWith(node, tagName, className) {
+
+  // Starting with the given node, find the nearest containing element
+  // with the specified tag name and style class.
+
+  while (node != null) {
+    if (node.tagName != null && node.tagName == tagName &&
+        hasClassName(node, className))
+      return node;
+    node = node.parentNode;
+  }
+
+  return node;
+}
+
+function hasClassName(el, name) {
+
+  var i, list;
+
+  // Return true if the given element currently has the given class
+  // name.
+
+  list = el.className.split(" ");
+  for (i = 0; i < list.length; i++)
+    if (list[i] == name)
+      return true;
+
+  return false;
+}
+
+function removeClassName(el, name) {
+
+  var i, curList, newList;
+
+  if (el.className == null)
+    return;
+
+  // Remove the given class name from the element's className property.
+
+  newList = new Array();
+  curList = el.className.split(" ");
+  for (i = 0; i < curList.length; i++)
+    if (curList[i] != name)
+      newList.push(curList[i]);
+  el.className = newList.join(" ");
+}
+
+function getPageOffsetLeft(el) {
+
+  var x;
+
+  // Return the x coordinate of an element relative to the page.
+
+  x = el.offsetLeft;
+  if (el.offsetParent != null)
+    x += getPageOffsetLeft(el.offsetParent);
+
+  return x;
+}
+
+function getPageOffsetTop(el) {
+
+  var y;
+
+  // Return the x coordinate of an element relative to the page.
+
+  y = el.offsetTop;
+  if (el.offsetParent != null)
+    y += getPageOffsetTop(el.offsetParent);
+
+  return y;
+}
+
+//]]></script>
+</HEAD>
+
+<BODY bgcolor="#322253" text=white link=white alink=red vlink=white>
+
+
+
+<!-- Menu bar #1. -->
+
+<div class="menuBar" style="left: 54; top: 104; width:57em;  position: absolute"
+><a class="menuButton"
+    href=""
+    onclick="return buttonClick(event, 'menu1');"
+    onmouseover="buttonMouseover(event, 'menu1');"
+> Company &nbsp;&nbsp;&nbsp;</a
+><a class="menuButton"
+    href=""
+    onclick="return buttonClick(event, 'menu2');"
+    onmouseover="buttonMouseover(event, 'menu2');"
+> Software &nbsp;&nbsp;&nbsp; </a
+><a class="menuButton"
+    href=""
+    onclick="return buttonClick(event, 'menu3');"
+    onmouseover="buttonMouseover(event, 'menu3');"
+> Hardware &nbsp;&nbsp;&nbsp; </a
+><a class="menuButton"
+    href=""
+    onclick="return buttonClick(event, 'menu4');"
+    onmouseover="buttonMouseover(event, 'menu4');"
+> Services &nbsp;&nbsp;&nbsp;  </a
+><a class="menuButton"
+    href=""
+    onclick="return buttonClick(event, 'menu7');"
+    onmouseover="buttonMouseover(event, 'menu7');"
+> Resources&nbsp;&nbsp;&nbsp;  </a
+><a class="menuButton"
+    href=""
+    onclick="return buttonClick(event, 'menu5');"
+    onmouseover="buttonMouseover(event, 'menu5');"
+> Search&nbsp;&nbsp;&nbsp; </a
+><a class="menuButton"
+    href=""
+    onclick="return buttonClick(event, 'menu6');"
+    onmouseover="buttonMouseover(event, 'menu6');"
+> Contact&nbsp;&nbsp;&nbsp;  </a
+></div>
+<!--  items for menu 6 above:
+onclick="return buttonClick(event, 'menu6');"
+    onmouseover="buttonMouseover(event, 'menu6');"
+	-->
+<!-- Main menus. -->
+
+<div id="menu1" class="menu"
+     onmouseover="menuMouseover(event)">
+<a class="menuItem" href="default2.asp">  Home</a>
+<a class="menuItem" href="mission.asp">  Mission </a>
+<a class="menuItem" href="personnel.asp">  Personnel </a>
+<!--<a class="menuItem" href="blank.html"
+   onclick="return false;"
+   onmouseover="menuItemMouseover(event, 'menu1_4');"
+><span class="menuItemText"></span><span class="menuItemArrow">&#9654;</span></a>
+<div class="menuItemSep"></div>-->
+<a class="menuItem" href="about_pro-man.asp">   About ProMan Technology </a>
+</div>
+
+<div id="menu2" class="menu">
+<a class="menuItem" href="software.asp">   Software Overview  </a>
+<a class="menuItem" href="cad-cam-cae.asp">  &nbsp;&nbsp;&nbsp;&nbsp;CAD/CAM/CAE Solutions </a>
+<a class="menuItem" href="pdm-plm.asp">  &nbsp;&nbsp;&nbsp;&nbsp;PDM/PLM Solutions </a>
+<a class="menuItem" href="vis-col.asp">  &nbsp;&nbsp;&nbsp;&nbsp;Visualization/Collaboration Solutions </a>
+<a class="menuItem" href="erp.asp">  &nbsp;&nbsp;&nbsp;&nbsp;ERP Solutions </a>
+</div>
+
+<div id="menu3" class="menu"
+     onmouseover="menuMouseover(event)">
+<a class="menuItem" href="hardware.asp"> Hardware Overview
+</a>
+<a class="menuItem" href="dsc.asp"> &nbsp;&nbsp;&nbsp;&nbsp;Parts - DSC Division</a>
+<!--<div class="menuItemSep"></div>
+<a class="menuItem" href="blank.html"
+   onclick="return false;"
+   onmouseover="menuItemMouseover(event, 'menu3_3');"
+
+
+<span class="menuItemText">Menu 3 Item 3</span><span class="menuItemArrow">&#9654;</span></a>
+<a class="menuItem" href="blank.html"
+   onclick="return false;"
+   onmouseover="menuItemMouseover(event, 'menu3_4');"
+><span class="menuItemText">Menu 3 Item 4</span><span class="menuItemArrow">&#9654;</span></a>
+<a class="menuItem" href="blank.html">Menu 3 Item 5</a>
+<div class="menuItemSep"></div>
+<a class="menuItem" href="blank.html">Menu 3 Item 6</a>>-->
+</div>
+
+ 
+   
+   
+   
+   
+   
+   
+   
+   
+<div id="menu4" class="menu">
+<a class="menuItem" href="services.asp"> Services Overview</a>
+<a class="menuItem" href="consulting.asp"> &nbsp;&nbsp;&nbsp;&nbsp;Consulting </a>
+<a class="menuItem" href="training.asp"> &nbsp;&nbsp;&nbsp;&nbsp;Training </a>
+<a class="menuItem" href="custcare.asp"> &nbsp;&nbsp;&nbsp;&nbsp;Customer Care </a>
+<a class="menuItem" href="design.asp"> &nbsp;&nbsp;&nbsp;&nbsp;Engineering Design and Analysis Services </a>
+<!--
+<div class="menuItemSep"></div>
+<a class="menuItem" href="mpm.asp"
+
+   onmouseover="menuItemMouseover(event, 'menu4_1');"
+><span class="menuItemText"> &nbsp;&nbsp;&nbsp;&nbsp;Manufacturing Process Management </span><span class="menuItemArrow">&#9654;</span></a>
+-->
+<a class="menuItem" href="machining.asp"> &nbsp;&nbsp;&nbsp;&nbsp;Machining and Rapid Prototyping Services </a>
+<a class="menuItem" href="workflow-analysis.asp"> &nbsp;&nbsp;&nbsp;&nbsp;Business Process Management and Workflow Analysis  </a>
+<!--<div class="menuItemSep"></div>-->
+</div>
+
+
+<div id="menu5" class="menu">
+<a class="menuItem" href="search.asp">  Search</a>
+<a class="menuItem" href="http://search.freefind.com/find.html?id=816097&pid=r&mode=ALL&n=0&query=Enter+term&sitemap=Site+Map">   &nbsp;&nbsp;&nbsp;&nbsp;Site Map</a>
+<!--<a class="menuItem" href="blank.html">Menu 5 Item 3</a>
+<div class="menuItemSep"></div>
+<a class="menuItem" href="blank.html">Menu 5 Item 4</a>-->
+</div>
+
+
+<div id="menu6"  class="menu">
+<a class="menuItem" href="contact.asp">&nbsp;&nbsp;Contact</a>
+<a class="menuItem" href="subscribe.asp">&nbsp;&nbsp;Subscribe</a>
+</div>
+
+
+<div id="menu7"  class="menu">
+<a class="menuItem" href="news.asp">&nbsp;&nbsp;News</a>
+<a class="menuItem" href="links.asp">&nbsp;&nbsp;Websites</a>
+<a class="menuItem" href="private_login.asp">&nbsp;&nbsp;Private Login</a>
+</div>
+
+<!-- Sub menus for menu 1. -->
+
+<div id="menu1_4" class="menu"
+     onmouseover="menuMouseover(event)">
+<a class="menuItem" href="blank.html">Menu 1-4 Item 1</a>
+<a class="menuItem" href="blank.html">Menu 1-4 Item 2</a>
+<a class="menuItem" href="blank.html"
+   onclick="return false;"
+   onmouseover="menuItemMouseover(event, 'menu1_4_3');"
+><span class="menuItemText">Menu 1-4 Item 3</span><span class="menuItemArrow">&#9654;</span></a>
+<a class="menuItem" href="blank.html">Menu 1-4 Item 4</a>
+</div>
+
+<div id="menu1_4_3" class="menu"
+     onmouseover="menuMouseover(event)">
+<a class="menuItem" href="blank.html">Menu 1-4-3 Item 1</a>
+<div class="menuItemSep"></div>
+<a class="menuItem" href="blank.html">Menu 1-4-3 Item 2</a>
+<a class="menuItem" href="blank.html">Menu 1-4-3 Item 3</a>
+<div class="menuItemSep"></div>
+<a class="menuItem" href="blank.html"
+   onclick="return false;"
+   onmouseover="menuItemMouseover(event, 'menu1_4_3_4');"
+><span class="menuItemText">Menu 1-4-3 Item 4</span><span class="menuItemArrow">&#9654;</span></a>
+</div>
+
+<div id="menu1_4_3_4" class="menu">
+<a class="menuItem" href="blank.html">Menu 1-4-3-4 Item 1</a>
+<a class="menuItem" href="blank.html">Menu 1-4-3-4 Item 2</a>
+<a class="menuItem" href="blank.html">Menu 1-4-3-4 Item 3</a>
+</div>
+
+<!-- Sub menus for menu 3. -->
+
+<div id="menu3_3" class="menu">
+<a class="menuItem" href="blank.html">Menu 3-3 Item 1</a>
+<a class="menuItem" href="blank.html">Menu 3-3 Item 2</a>
+</div>
+
+
+
+
+<div id="menu4_1" class="menu">
+<a class="menuItem" href="mpm-plm.asp"> MPM Software </a>
+<a class="menuItem" href="whatismpm.asp"> What is MPM Software? </a>
+<!--
+<a class="menuItem" href="blank.html">Menu 3-4 Item 3</a>
+<div class="menuItemSep"></div>
+<a class="menuItem" href="blank.html">Menu 3-4 Item 4</a>
+<a class="menuItem" href="blank.html">Menu 3-4 Item 5</a>
+-->
+</div>
+
+
+
+<TABLE bgcolor="#524273" width=760 border=0 cellpadding=0 cellspacing=0><TR><td width=30 align=left valign=top><!--leftmargin--><IMG SRC="graphics/leftcorner.jpg" WIDTH="15" HEIGHT="15" BORDER=0 ALT="&nbsp;"></td>
+<TD width=678><IMG SRC="graphics/proman2c.jpg" WIDTH="678" HEIGHT="82" BORDER=0 ALT="ProMan Technology"><BR>
+
+
+<span style="left: 53; top: 85; position: absolute;">
+
+
+
+<FONT FACE="Tahoma" SIZE=2 COLOR="#ffee99"><STRONG>&quot;Putting The Solutions for Product, Process Management and Technology within your reach&quot;</STRONG></FONT></span>
+</td><td align=right valign=top><IMG SRC="graphics/rightcorner.jpg" WIDTH="15" HEIGHT="15" BORDER=0 ALT="">
+
+
+</td></tr></table>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+image1 = new Image();
+image1.src = "graphics/pyr/1_promanPyramid_over.jpg";
+image2 = new Image();
+image2.src = "graphics/pyr/2_promanPyramid_over.jpg";
+image3 = new Image();
+image3.src = "graphics/pyr/3_promanPyramid_over.jpg";
+//-->
+</SCRIPT>
+<TABLE bgcolor="#524273" width=760 border=0>
+<TR><td width="30"><!--leftmargin-->&nbsp;<BR></td>
+<TD>
+<FONT face="Arial"  SIZE="2" COLOR="#ffffff">
+<BR><BR>
+
+
+<H3>Welcome to ProMan Technology</H3>
+<blockquote>
+<STRONG>ProMan Technology, LLC</STRONG> puts the solutions for <STRONG>Pro</STRONG>duct, <STRONG>Pro</STRONG>cess <STRONG>Man</STRONG>agement and <STRONG>Technology</STRONG> within your reach. A scalable portfolio of software, hardware, and services uniquely positions ProMan in the marketplace to partner with its customers to meet all of their needs in Design, Engineering, Manufacturing, Production, Process, Collaboration and Product Lifecycle Management. 
+	<ul>
+
+	<li><a href="software.asp" onmouseover="image3.src='graphics/pyr/3_proman-pyramid_over.jpg';"
+onmouseout="image3.src='graphics/pyr/3_proman-pyramid.jpg';"><STRONG>Software</STRONG></A>:&nbsp; providing out-of-the-box desktop <STRONG><a href="software.asp" onmouseover="image3.src='graphics/pyr/3_proman-pyramid_over.jpg';"
+onmouseout="image3.src='graphics/pyr/3_proman-pyramid.jpg';">Technology</A></STRONG> applications such as CAD, CAM, and CAE up through industrial-strength Enterprise wide solutions for MRP, ERP, SCM, CRM, PDM and PLM, ProMan offers collaboration and product lifecycle solutions that scale to accommodate growth.  
+
+	<li><a href="hardware.asp" onmouseover="image1.src='graphics/pyr/1_proman-pyramid_over.jpg';"
+onmouseout="image1.src='graphics/pyr/1_proman-pyramid.jpg';"><STRONG>Hardware</STRONG></A>:&nbsp; supplying screws, buttons, springs and machined parts to workstations and machine tools, ProMan is the source for your hardware <STRONG><a href="hardware.asp" onmouseover="image1.src='graphics/pyr/1_proman-pyramid_over.jpg';"
+onmouseout="image1.src='graphics/pyr/1_proman-pyramid.jpg';">Products</A></STRONG> in production, engineering and manufacturing. 
+
+
+	<li><a href="services.asp" onmouseover="image2.src='graphics/pyr/2_proman-pyramid_over.jpg';"
+onmouseout="image2.src='graphics/pyr/2_proman-pyramid.jpg';"><STRONG>Services</STRONG></A>:&nbsp; from workflow analysis, consulting, training, implementations and design services to machining and rapid prototyping, ProMan adds value to the issues of product, <STRONG><a href="services.asp" onmouseover="image2.src='graphics/pyr/2_proman-pyramid_over.jpg';"
+onmouseout="image2.src='graphics/pyr/2_proman-pyramid.jpg';">Process Management</A></STRONG> and productivity. 
+
+	</ul>
+
+
+
+<TABLE  border=0>
+<TR>
+	<TD><FONT face="Arial"  SIZE="2" COLOR="#ffffff">
+	<STRONG>ProMan Technology</STRONG> believes that technology should help run the business not be the business. Looking outside-the-box and beyond isolated tasks, individual efficiency, and point solutions, we address the broader issues of achieving business results with technology. We create business processes that integrate with other systems, not just islands of software, hardware and services. Whether solving a problem on the factory floor, improving a process, assisting in a new product design, or introducing new technology and equipment, our mission is to see that you realize the most out of your investment in process, people, equipment, and technology.
+	<BR><BR>
+	12970&nbsp;Pandora&nbsp;Dr.&nbsp;#&nbsp;120,&nbsp;Dallas,&nbsp;TX&nbsp;75238
+<BR> 
+<A HREF="mailto:mike@promantechnology.com">mike@promantechnology.com</A></TD>
+	<TD>
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="325" height="300">
+  <tr>
+    <td width="325" height="50"><img src="graphics/pyr/0_proman-pyramid.jpg" width="325" height="50" border="0"></td>
+  </tr>
+  <tr>
+    <td width="325" height="78"><a href="hardware.asp" onmouseover="image1.src='graphics/pyr/1_proman-pyramid_over.jpg';"
+onmouseout="image1.src='graphics/pyr/1_proman-pyramid.jpg';">
+<img name="image1" src="graphics/pyr/1_proman-pyramid.jpg" border=0></td>
+  </tr>
+  <tr>
+    <td width="325" height="54"><a href="services.asp" onmouseover="image2.src='graphics/pyr/2_proman-pyramid_over.jpg';"
+onmouseout="image2.src='graphics/pyr/2_proman-pyramid.jpg';">
+<img name="image2" src="graphics/pyr/2_proman-pyramid.jpg" border=0></td>
+  </tr>
+  <tr>
+    <td width="325" height="50"><a href="software.asp" onmouseover="image3.src='graphics/pyr/3_proman-pyramid_over.jpg';"
+onmouseout="image3.src='graphics/pyr/3_proman-pyramid.jpg';">
+<img name="image3" src="graphics/pyr/3_proman-pyramid.jpg" border=0></td>
+  </tr>
+  <tr>
+    <td width="325" height="68"><img src="graphics/pyr/4_proman-pyramid.jpg" width="325" height="68" border="0"></td>
+  </tr>
+</table>
+
+
+
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+
+<P>
+
+</font>
+</blockquote>
+</TD>
+
+</tr>
+
+
+	
+</table>
+
+ <BR>
+<TABLE bgcolor="#524273" width=760 cellspacing=0 cellpadding=0 border=0><TR><td width=30 valign=bottom align=left><IMG SRC="graphics/lowleftcorner.jpg" WIDTH="15" HEIGHT="15" BORDER=0 ALT=""></td>
+<TD VALIGN=MIDDLE ALIGN=CENTER> <FONT SIZE="1" FACE="TAHOMA" COLOR="#e0e0e0"> <BR>
+&copy; 2003-2006 by ProMan Technology, LLC - &quot;All Rights Reserved&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- Gostats.com web hit code. Please do not change this-->
+<script>var go_mem="promante";</script>
+<script src="http://c2.gostats.com/gom.js"></script>
+<noscript>
+<a href="http://c2.gostats.com/gogi/viewstats.pl?mn=promante" target="_top">
+<img src="http://c2.gostats.com/gogi/count.pl?mn=promante&pg=multiple" border=0></a>
+</noscript>
+<!-- End of Gostats.com web hit code --><BR><BR></td>
+<td width=15 valign=bottom align=right><IMG SRC="graphics/lowrightcorner.jpg" WIDTH="15" HEIGHT="15" BORDER=0 ALT=""></td>
+</tr></table>
+
+</CENTER>
+<BR><BR><BR>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+</BODY>
+</HTML>

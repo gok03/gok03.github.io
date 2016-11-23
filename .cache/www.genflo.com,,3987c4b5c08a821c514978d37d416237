@@ -1,0 +1,186 @@
+status: 200
+content-length: 4899
+content-location: http://www.genflo.com
+x-aspnet-version: 4.0.30319
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+-content-encoding: gzip
+cache-control: private
+date: Wed, 21 Sep 2016 08:23:31 GMT
+x-powered-by: ASP.NET
+content-type: text/html; charset=utf-8
+x-powered-by-plesk: PleskWin
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 150px) {
+  .text {font-size: 11px}
+}
+</style>
+<body>
+		<h1 align="center"><font size="7" color="#800080">Genflo</font><font size="7" color="#800080">
+				Technologies</font></h1>
+		
+		<div align="center">
+			<center>
+				<table border="3" cellpadding="0" cellspacing="0" style="BORDER-COLLAPSE: collapse" bordercolor="#9900ff" width="97%" id="AutoNumber8">
+					<tr>
+						<td width="16%">
+							<p align="center"><a href="contact_us2.aspx"> 
+                            <img border="0" src="images/aboutbutton.gif" alt="About Genflo" width="117" height="20"></a></p>
+						</td>
+						<td width="16%">
+							<p align="center"><a href="bizpages/bizpg1.aspx"> 
+                            <img border="0" src="images/bizbutton2.gif" alt="Business & Economy" width="140" height="20"></a></p>
+						</td>
+						<td width="17%">
+							<p align="center">
+								<a href="http://www.columbus-software.com">
+                                <img border="0" src="images/computebuttons.gif" alt="Computing/Internet" width="140" height="20"></a></p>
+						</td>
+						<td width="17%">
+							<p align="center">
+								<a target="_parent" href=bizpages/bizpg.aspx>
+									<img border="0" src="images/shopbutton.gif" alt="Skip the Malls. Save $$$. Shop Genflo.com!" width="140" height="20"></a></p>
+						</td>
+						<!-- <td width="17%">
+							<p align="center">
+                            <a href="restaurants/default.aspx"> 
+                            <img border="0" src="images/restaurants.gif" alt="Best Restaurants" width="140" height="20"></a></p>
+						</td> -->                       
+						<td width="17%">
+							<p align="center">
+                            <a href="entertainment/default.aspx"> 
+                            <img border="0" src="images/entertainbutton.gif" alt="Your Entertainment Resource" width="140" height="20"></a></p>
+						</td>
+						<td width="17%">
+							<p align="center">
+								<a href="underconstruction.aspx">
+                                <img border="0" src="images/newsbutton.gif" alt="News" width="117" height="20"></a></p>
+						</td>
+					</tr>
+				</table>
+			</center>
+		</div>
+
+<div class="slideshow-container">
+<br>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <div align="center"><img src="/images/Chef1.jpg" style="width:50%" ></div>
+  <div class="text">Tastes</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <div align="center"><img src="/images/fashion1.jpg" style="width:50%" ></div>
+  <div class="text">Fashion</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <div align="center"><img src="/images/Realestate4.jpg" style="width:50%" >
+  </div>
+  <div class="text">Real Estate</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+
+</body>
+</html>

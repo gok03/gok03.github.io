@@ -1,0 +1,931 @@
+status: 200
+content-location: http://www.mytechnologylawyer.com/cgi-bin/FormManager/WebForms.pl?Session=MTL.142134182798&Action=ShowLevel1&Level0=MLB00&Level1=MLB07
+x-powered-by: PleskLin
+server: Apache
+connection: close
+date: Tue, 04 Oct 2016 09:24:50 GMT
+content-type: text/html; charset=ISO-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Legal Forms</TITLE>
+<BASE HREF="http://www.mytechnologylawyer.com/forms/">
+
+
+<LINK REL="stylesheet" HREF="http://www.mytechnologylawyer.com/User.css">
+<SCRIPT LANGUAGE="Javascript">
+// <!-- Hide Script
+	function RefreshNow(SessionID)
+	{	window.location = "http://www.mytechnologylawyer.com/cgi-bin/FormManager/WebForms.pl?Action=ShowLevel1&Level0=MLB00&Level1=MLB07&Session=" + SessionID + "&First=Yes"	}
+//	End Script Hiding -->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript">
+// DECLARE GLOBAL VARIABLES <!-- Hide Script
+
+//	Convert object name string or object reference into a valid object reference
+function GetObject(ThisRef)
+{
+	var Temp = '';
+		Range = '';
+		StyleObj = '';
+		
+	if(is_ie4up)
+	{	Range = "all.";
+		StyleObj = "";
+	}
+	if(is_nav6up || is_gecko) //DOM compliant
+	{	Range = "getElementById('";
+		StyleObj = "')";
+	}
+	if (typeof ThisRef == "string")
+	{	Temp = eval("document." + Range + ThisRef + StyleObj)	}
+	else	{	Temp = ThisRef	}
+	return Temp;
+}
+
+function ChangeButton(ThisName,ThisColor,IndexNum)
+{	
+	ThisObject = GetObject(ThisName);
+	if(is_ie4up){ThisObject.style.backgroundColor = ThisColor}
+	else if(is_nav6up || is_gecko){ThisObject.style.backgroundColor = ThisColor}
+	else if(document.all){document.all.IndexNum.style.backgroundColor = ThisColor}
+	else if(document.getElementById)
+	{document.getElementById(ThisName).style.backgroundColor = ThisColor}
+}
+
+//these functions "ChangeButton" and "ChangeBackground" are the same for now but 
+//we may need to add some additional features to "ChangeButton" at some later date
+
+function ChangeBackground(ThisName,ThisColor,IndexNum)
+{	
+	ThisObject = GetObject(ThisName);
+	if(is_ie4up){ThisObject.style.backgroundColor = ThisColor}
+	else if(is_nav6up || is_gecko){ThisObject.style.backgroundColor = ThisColor}
+	else if(document.all){document.all.IndexNum.style.backgroundColor = ThisColor}
+	else if(document.getElementById)
+	{document.getElementById(ThisName).style.backgroundColor = ThisColor}
+}
+
+function ChangeClass(ThisName,ThisClass)
+{	
+	ThisObject = GetObject(ThisName);
+	if(is_ie4up){ThisObject.className = ThisClass}
+	else if(is_nav6up || is_gecko){ThisObject.className = ThisClass}
+	else if(document.all){document.all.ThisName.className = ThisClass}
+	else if(document.getElementById)
+	{document.getElementById(ThisName).className = ThisClass}
+}
+// End script hiding -->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript" src="../common.js">
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript">
+// DECLARE GLOBAL VARIABLES <!-- Hide Script
+
+	window.name="MTL";
+	
+	function Reload() //hard reload
+	{window.location.reload()}
+	
+//Open New Window
+function OpenWindow(WindowHREF,InnerWidth,InnerHeight,Name,ScreenX,ScreenY,LocationBar,ToolBar)
+	{	
+		Width="";
+		Height="";
+		if (Name == null || Name == ""){Name="DataWindow"} 
+		if (WindowHREF == null || WindowHREF == ""){WindowHREF='""'} 
+		if (InnerWidth == null || InnerWidth == ""){InnerWidth = ""} else{		Width=",Width="+(InnerWidth+50);
+											InnerWidth=",InnerWidth="+InnerWidth;
+										}
+		if (InnerHeight == null || InnerHeight == ""){InnerHeight = ""} else{	Height=",Height="+(InnerHeight+100);
+											InnerHeight=",InnerHeight="+InnerHeight;
+										}
+		if (ScreenX == null || ScreenX == ""){ScreenX = ""} else{ScreenX=",ScreenX="+ScreenX+",left="+ScreenX}
+		if (ScreenY == null || ScreenY == ""){ScreenY = ""} else{ScreenY=",ScreenY="+ScreenY+",top="+ScreenY}
+		if (LocationBar == null || LocationBar == ""){LocationBar = ""} else{LocationBar=",Location=yes"}
+		if (ToolBar == null || ToolBar == ""){ToolBar = ""} else{ToolBar=",ToolBar=yes"}
+		
+		Options = InnerWidth+InnerHeight+Width+Height+ScreenX+ScreenY+LocationBar+ToolBar;
+		Options += ',menubar,status,scrollbars,resizable,titlebar';
+		DataWindow = window.open("",Name,Options);
+		if (DataWindow.opener == null){DataWindow.opener = self};
+		DataWindow.location = WindowHREF;
+		top.window[Name].focus();
+	};
+
+// End script hiding -->
+</SCRIPT>
+
+</HEAD>
+<BODY BGCOLOR="#6898D0"   TOPMARGIN="0" MARGINHEIGHT="0" LEFTMARGIN="0"  MARGINWIDTH="0" LINK="#680068" ALINK="#FF3400" VLINK="#680098" TEXT="#000000" >
+
+<A NAME="Top"></A>
+
+<TABLE  BORDER="0" CELLPADDING="0" CELLSPACING="0" >			<!--Header-->
+	<TR>
+		<TD  COLSPAN="3" VALIGN="top" ALIGN="left"  BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="4" BORDER="0"><BR>
+		</TD>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366" background="../images/rtshadow.gif"> 
+			<IMG SRC="../images/2ptblank.gif" WIDTH="24" HEIGHT="4" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD  VALIGN="top" ALIGN="left"  BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="4" BORDER="0"><BR>
+		</TD>
+		<TD  VALIGN="top" ALIGN="left">
+			<IMG SRC="../images/hdr-logo.gif" WIDTH="190" HEIGHT="39" BORDER="0" ALT="MyTechnologyLawyer.com"><BR>
+		</TD>
+		<TD VALIGN="top" ALIGN="left">
+			<IMG SRC="../images/hdr-colg_small.jpg" WIDTH="446" HEIGHT="39" BORDER="0"><IMG SRC="../images/banner_hdr_help.gif" WIDTH="120" HEIGHT="39" BORDER="0"><BR>
+		</TD>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366" background="../images/rtshadow.gif"> 
+			<IMG SRC="../images/2ptblank.gif" WIDTH="24" HEIGHT="39" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>							<!-- Separator Line -->
+		<TD COLSPAN="3"  VALIGN="top" ALIGN="left" BGCOLOR="#003366"> 
+			<IMG SRC="../images/2ptblank.gif" WIDTH="6" HEIGHT="6" BORDER="0"><BR>
+		</TD>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366" background="../images/rtshadow.gif"> 
+			<IMG SRC="../images/2ptblank.gif" WIDTH="24" HEIGHT="6" BORDER="0"><BR>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE width="784" BORDER="0" CELLSPACING="0" CELLPADDING="0"  >
+	<TR>
+		<TD width="4" valign="middle" align="left" BGCOLOR="#003366" rowspan="2">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="1" BORDER="0"><BR>
+		</td>
+		<TD width="756" valign="top" align="center" >
+			<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" bgcolor="#99ccff">
+				<tr>
+					<td bgcolor="#003366">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+					</td>
+							<TD valign="middle" align="left" id="Btn0" >
+			<font face="arial,helvetica,verdana" size="2"><div class="Button">
+				<A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=Home_Welcome" 
+				class="ButtonOff" onMouseOver="ChangeButton('Btn0','#CCFFFF')" onMouseOut="ChangeButton('Btn0','')">
+				&nbsp;Home&nbsp;<BR></a>
+			</div></font>
+		</td>
+		<td bgcolor="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</td>
+		<TD valign="middle" align="left" id="Btn1" bgcolor="#003366">
+			<font face="arial,helvetica,verdana" size="2"><div class="Button">
+				<A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel0" 
+				class="ButtonOn" onMouseOver="ChangeButton('Btn1','#003366')" onMouseOut="ChangeButton('Btn1','')">
+				&nbsp;Legal Forms&nbsp;<BR></a>
+			</div></font>
+		</td>
+		<td bgcolor="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</td>
+		<TD valign="middle" align="left" id="Btn2" >
+			<font face="arial,helvetica,verdana" size="2"><div class="Button">
+				<A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=Consult_Question_Search" 
+				class="ButtonOff" onMouseOver="ChangeButton('Btn2','#CCFFFF')" onMouseOut="ChangeButton('Btn2','')">
+				&nbsp;Consultations&nbsp;<BR></a>
+			</div></font>
+		</td>
+		<td bgcolor="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</td>
+		<TD valign="middle" align="left" id="Btn3" >
+			<font face="arial,helvetica,verdana" size="2"><div class="Button">
+				<A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=LegalCd_PageShow&ID=2" 
+				class="ButtonOff" onMouseOver="ChangeButton('Btn3','#CCFFFF')" onMouseOut="ChangeButton('Btn3','')">
+				&nbsp;CD Store&nbsp;<BR></a>
+			</div></font>
+		</td>
+		<td bgcolor="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</td>
+		<TD valign="middle" align="left" id="Btn4" >
+			<font face="arial,helvetica,verdana" size="2"><div class="Button">
+				<A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=MediaShowFeature" 
+				class="ButtonOff" onMouseOver="ChangeButton('Btn4','#CCFFFF')" onMouseOut="ChangeButton('Btn4','')">
+				&nbsp;Media&nbsp;<BR></a>
+			</div></font>
+		</td>
+		<td bgcolor="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</td>
+		<TD valign="middle" align="left" id="Btn5" >
+			<font face="arial,helvetica,verdana" size="2"><div class="Button">
+				<A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=Educ_PageShow&ID=1" 
+				class="ButtonOff" onMouseOver="ChangeButton('Btn5','#CCFFFF')" onMouseOut="ChangeButton('Btn5','')">
+				&nbsp;Technology Policy&nbsp;<BR></a>
+			</div></font>
+		</td>
+		<td bgcolor="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</td>
+		<TD valign="middle" align="left" id="Btn6" >
+			<font face="arial,helvetica,verdana" size="2"><div class="Button">
+				<A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=DirectoryShowMap" 
+				class="ButtonOff" onMouseOver="ChangeButton('Btn6','#CCFFFF')" onMouseOut="ChangeButton('Btn6','')">
+				&nbsp;Find a Lawyer&nbsp;<BR></a>
+			</div></font>
+		</td>
+		<td bgcolor="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</td>
+		<TD valign="middle" align="left" id="Btn7" >
+			<font face="arial,helvetica,verdana" size="2"><div class="Button">
+				<A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=Busn_PageShow&ID=1" 
+				class="ButtonOff" onMouseOver="ChangeButton('Btn7','#CCFFFF')" onMouseOut="ChangeButton('Btn7','')">
+				&nbsp;Business Services&nbsp;<BR></a>
+			</div></font>
+		</td>
+		<td bgcolor="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</td>
+
+				</tr>
+			</table>
+		<TD width="24" VALIGN="top" ALIGN="left"  BGCOLOR="#003366" rowspan="2" BACKGROUND="../images/rtshadow.gif">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="24" HEIGHT="4" BORDER="0"><BR>
+		</TD>
+	</TR>
+</table>
+
+<TABLE  WIDTH="784" BORDER="0" CELLPADDING="0" CELLSPACING="0">	<!--Content Division Table-->
+	<TR  >
+		<TD VALIGN="top" ALIGN="left"   BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="7" HEIGHT="7" BORDER="0"><BR>
+		</TD>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366" ROWSPAN="2">			<!--7 pt vert border-->
+			<IMG SRC="../images/2ptblank.gif" WIDTH="7" HEIGHT="7" BORDER="0"><BR>
+		</TD>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">					<!--7 pt horiz border-->
+			<IMG SRC="../images/2ptblank.gif" WIDTH="7" HEIGHT="7" BORDER="0"><BR>
+		</TD>
+		<TD WIDTH="6" VALIGN="top" ALIGN="left"  BGCOLOR="#003366" ROWSPAN="2">			<!--MiddleBorder-->
+			<IMG SRC="../images/2ptblank.gif" WIDTH="6" HEIGHT="7" BORDER="0"><BR>
+		</TD>
+		<TD WIDTH="157" VALIGN="top" ALIGN="right" BGCOLOR="#003366" >		<!--RightColumn-->
+			<IMG SRC="../images/2ptblank.gif" WIDTH="157" HEIGHT="7" BORDER="0"><BR>
+		</TD>
+		<TD WIDTH="6" VALIGN="top" ALIGN="left"  BGCOLOR="#003366" ROWSPAN="2" background="../images/rtshadow.gif">			<!--RightBorder-->
+			<IMG SRC="../images/2ptblank.gif" WIDTH="24" HEIGHT="4" BORDER="0"><BR>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD VALIGN="Top" ALIGN="Left">
+<TABLE  BORDER="0" CELLPADDING="0" CELLSPACING="0" VALIGN="top">	<!--Section Nav-->
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="35" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" BGCOLOR="#003366" valign="Top" align="center">
+			<font face="Times New Roman,Times Roman,Times" size="2" color="#FFFFFF">
+							<font face="Arial,Helvetica,Verdana" size="2">
+			<form method=GET action="http://www.mytechnologylawyer.com/cgi-bin/FormManager/WebForms.pl">
+				<input type="text" name="Terms" size="12" maxlength="100" value=""> 
+				<input type="image" SRC="../images/gobutton.gif" ALT="Start Search" border="0"><BR>
+				<font size="1">
+				<A HREF="http://www.mytechnologylawyer.com/cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=Search" class="reverse">Advanced Search</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+				</font>
+				<input type="hidden" name="Boolean" value="all">
+				<input type="hidden" name="Category" value="">
+				<input type="hidden" name="Action" value="Search">
+				<input type="hidden" name="Session" value="MTL.147557309054">
+				<input type="hidden" name="Caps" value="">
+			</form>
+			<img SRC="../images/2ptblank.gif" width="2" height="6" border="0"><br>
+			</font>
+
+
+			</font>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" VALIGN="middle" ALIGN="Center" BGCOLOR="#99CCFF">
+			<FONT FACE="Arial" SIZE="2">
+				<SPAN class="Lib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel0" STYLE="text-decoration: none">Tech Forms Overview</A></SPAN></A><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" VALIGN="middle" ALIGN="Center" BGCOLOR="#99CCFF">
+			<FONT FACE="Arial" SIZE="2">
+				<SPAN class="Lib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowAllForms" STYLE="text-decoration: none">Table of Contents</A></SPAN></A><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+				<TR>
+					<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="2" BORDER="0"><BR>
+					</TD>
+					<TD  VALIGN="top" ALIGN="left" BGCOLOR="#CCCCFF">
+						<IMG SRC="../images/pointer-1a_on.gif" WIDTH="13" HEIGHT="20" BORDER="0"><BR>
+					</TD>
+					<TD COLSPAN="2" VALIGN="middle" ALIGN="Left" BGCOLOR="#CCCCFF">
+						<FONT FACE="Arial" SIZE="2" >
+							<B><FONT COLOR="#FF0000"><SPAN class="Lib-on">Employment</SPAN></FONT></B><BR>
+						</FONT>
+					</TD>
+				</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="2" BORDER="0"><BR>
+		</TD>
+		<TD  VALIGN="top" ALIGN="left" BGCOLOR="#CCCCFF">
+			<IMG SRC="../images/pointer-1b_off.gif" WIDTH="13" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD ALIGN="left" BGCOLOR="#CCCCFF">
+			<IMG SRC="../images/pointer-1d_off.gif" WIDTH="13" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD ALIGN="left" BGCOLOR="#CCCCFF">
+			<FONT FACE="Arial" SIZE="1">
+				<SPAN class="SubLib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel2&Level0=MLB00&Level1=MLB07&Level2=SLB27" class="SubLib-off">Employee Oriented</A></SPAN><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="2" BORDER="0"><BR>
+		</TD>
+		<TD  VALIGN="top" ALIGN="left" BGCOLOR="#CCCCFF">
+			<IMG SRC="../images/pointer-1b_off.gif" WIDTH="13" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD ALIGN="left" BGCOLOR="#CCCCFF">
+			<IMG SRC="../images/pointer-1d_off.gif" WIDTH="13" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD ALIGN="left" BGCOLOR="#CCCCFF">
+			<FONT FACE="Arial" SIZE="1">
+				<SPAN class="SubLib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel2&Level0=MLB00&Level1=MLB07&Level2=SLB28" class="SubLib-off">Employer Oriented</A></SPAN><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="2" BORDER="0"><BR>
+		</TD>
+		<TD  VALIGN="top" ALIGN="left" BGCOLOR="#CCCCFF">
+			<IMG SRC="../images/pointer-1c_off.gif" WIDTH="13" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD ALIGN="left" BGCOLOR="#CCCCFF">
+			<IMG SRC="../images/pointer-1d_off.gif" WIDTH="13" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD ALIGN="left" BGCOLOR="#CCCCFF">
+			<FONT FACE="Arial" SIZE="1">
+				<SPAN class="SubLib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel2&Level0=MLB00&Level1=MLB07&Level2=SLB29" class="SubLib-off">Administration</A></SPAN><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" VALIGN="middle" ALIGN="Center" BGCOLOR="#99CCFF">
+			<FONT FACE="Arial" SIZE="2">
+				<SPAN class="Lib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel1&Level0=MLB00&Level1=MLB04" STYLE="text-decoration: none">E-Commerce</A></SPAN></A><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" VALIGN="middle" ALIGN="Center" BGCOLOR="#99CCFF">
+			<FONT FACE="Arial" SIZE="2">
+				<SPAN class="Lib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel1&Level0=MLB00&Level1=MLB05" STYLE="text-decoration: none">Intellectual Property</A></SPAN></A><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" VALIGN="middle" ALIGN="Center" BGCOLOR="#99CCFF">
+			<FONT FACE="Arial" SIZE="2">
+				<SPAN class="Lib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel1&Level0=MLB00&Level1=MLB01" STYLE="text-decoration: none">Corporation</A></SPAN></A><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" VALIGN="middle" ALIGN="Center" BGCOLOR="#99CCFF">
+			<FONT FACE="Arial" SIZE="2">
+				<SPAN class="Lib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel1&Level0=MLB00&Level1=MLB02" STYLE="text-decoration: none">Software</A></SPAN></A><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" VALIGN="middle" ALIGN="Center" BGCOLOR="#99CCFF">
+			<FONT FACE="Arial" SIZE="2">
+				<SPAN class="Lib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel1&Level0=MLB00&Level1=MLB03" STYLE="text-decoration: none">Hardware</A></SPAN></A><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" VALIGN="middle" ALIGN="Center" BGCOLOR="#99CCFF">
+			<FONT FACE="Arial" SIZE="2">
+				<SPAN class="Lib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel1&Level0=MLB00&Level1=MLB06" STYLE="text-decoration: none">Technology Services</A></SPAN></A><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" VALIGN="middle" ALIGN="Center" BGCOLOR="#99CCFF">
+			<FONT FACE="Arial" SIZE="2">
+				<SPAN class="Lib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel1&Level0=MLB00&Level1=MLB08" STYLE="text-decoration: none">Technology Marketing</A></SPAN></A><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="4" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="2" HEIGHT="20" BORDER="0"><BR>
+		</TD>
+		<TD COLSPAN="3" VALIGN="middle" ALIGN="Center" BGCOLOR="#99CCFF">
+			<FONT FACE="Arial" SIZE="2">
+				<SPAN class="Lib-off"><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel1&Level0=MLB00&Level1=MLB09" STYLE="text-decoration: none">General Business</A></SPAN></A><BR>
+			</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD  VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="6" BORDER="0"><BR>
+		</TD>
+		<TD  VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="13" HEIGHT="4" BORDER="0"><BR>
+		</TD>
+		<TD  VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="13" HEIGHT="4" BORDER="0"><BR>
+		</TD>
+		<TD  VALIGN="top" ALIGN="left" BGCOLOR="#003366">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="134" HEIGHT="4" BORDER="0"><BR>
+		</TD>
+	</TR>
+</TABLE>																<!--End Section Nav-->
+			<div align="center"><BR><A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=Radio_PageShow&ID=2"><IMG SRC="../images/banner_to_radioshow.gif" WIDTH="100" HEIGHT="76" BORDER="0" ALT="Click Here for the MyTechnologyLawyer Radio Show"></A><BR></div>
+
+
+		</TD>
+		<TD VALIGN="top" ALIGN="center" BGCOLOR="#FFFFFF">
+		
+			<TABLE  BORDER="0" CELLPADDING="10" CELLSPACING="0">		<!--BeginContent-->
+				<TR>
+					<TD ALIGN="left" VALIGN="top" BGCOLOR="#ffffff">
+						<FONT FACE="Times New Roman" SIZE="3" COLOR="#D00000"><B>
+						<DIV CLASS="Heading">
+							Employment<BR>
+							<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="4" BORDER="0"><BR>
+						</DIV>
+						</B></FONT>
+
+						<FONT FACE="Arial" SIZE="2">
+						<DIV CLASS="Content">
+							
+							Effective employee management in the technology enterprise involves allocating intellectual property rights.  Technologies purportedly brought to the new job from previous employment should be certified by the new employee.  Employers should seek written assignment of copyrights, patents, trademarks and trade secrets they expect to accrue to their ownership from the employment relationship.  Commission and stock ownership rights should be clearly stated, along with employer termination and personnel administration policies.  Care should be exercised in concluding recruiting arrangements to minimize the risk of unqualified hires and excessive recruiting fees.  The purported language addressing these issues will differ depending upon whether the agreement favors the employee or employer.<br><br>
+
+ If you would like to retain the services of a lawyer to help you  consult our <a href="http://www.mytechnologylawyer.com/cgi-bin/FormManager/WebForms.pl?Session=MTL.129338924673&Action=DirectoryShowMap"><b>lawyer directory</b></font></a><FONT FACE="Arial" SIZE="2" color="003366"> of more than 100 attorneys around the country who have used our resources. Find answers to your questions using our extensive library of <a href="http://www.mytechnologylawyer.com/cgi-bin/FormManager/WebForms.pl?Session=MTL.129338866113&Action=Consult_Question_Search"><b>audio questions and answers</b></font></a><FONT FACE="Arial" SIZE="2" color="003366">.   If you need help  you can contact Scott directly at <FONT COLOR="#FF0000"><b>(904) 868-0498</b></FONT> or send emails to his personal attention at <a href="mailto:radiodgn@gmail.com">radiodgn@gmail.com.</a><br><br> 
+
+<BR><BR>
+						</DIV>
+						</FONT>
+
+						<FONT FACE="Times New Roman" SIZE="3" COLOR="#D00000"><B>
+						<DIV CLASS="Heading-2">
+							What's in the Employment Library<BR>
+							<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="4" BORDER="0"><BR>
+						</DIV>
+						</B></FONT>
+						<FONT FACE="Arial" SIZE="2">
+															<B><DIV CLASS="SubHeadTitle">
+									<a href="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel2&Level0=MLB00&Level1=MLB07&Level2=SLB27">Employee Oriented</a><BR>
+								</DIV></B>
+								<DIV CLASS="SubHeadContent">
+									The Employee Oriented Sub-Library includes an inventory of employment agreements resolving typical employment negotiation issues in favor of the employee.<BR>
+								</DIV>
+								<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="4" BORDER="0"><BR>
+								<B><DIV CLASS="SubHeadTitle">
+									<a href="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel2&Level0=MLB00&Level1=MLB07&Level2=SLB28">Employer Oriented</a><BR>
+								</DIV></B>
+								<DIV CLASS="SubHeadContent">
+									The Employer Oriented Sub-Library includes an inventory of employee agreements resolving typical employment negotiations issues in favor of the employer.<BR>
+								</DIV>
+								<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="4" BORDER="0"><BR>
+								<B><DIV CLASS="SubHeadTitle">
+									<a href="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLevel2&Level0=MLB00&Level1=MLB07&Level2=SLB29">Administration</a><BR>
+								</DIV></B>
+								<DIV CLASS="SubHeadContent">
+									The Administration Sub-Library includes various draft contracts for negotiating ancillary employment issues including retaining independent contractors, a recruitment agreement, severance agreement and an employment manual.<BR>
+								</DIV>
+								<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="4" BORDER="0"><BR>
+
+						</FONT>
+<A NAME="Purchase"></A>
+						<br>
+						<DIV ALIGN="CENTER">
+							<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+								<TR>
+									<TD  BGCOLOR="#000066" width="1">
+										<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+									</TD>
+									<TD  BGCOLOR="#000066">
+										<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+									</TD>
+									<TD  BGCOLOR="#000066">
+										<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+									</TD>
+									<TD BGCOLOR="#000066" width="1">
+										<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+									</TD>
+								</TR>
+								<TR>
+									<TD BGCOLOR="#000066">
+										<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="20" BORDER="0"><BR>
+									</TD>
+									<TD COLSPAN="2" ALIGN="center" BGCOLOR="#000066" VALIGN="Middle">
+										<FONT FACE="Arial" SIZE="2" COLOR="#FFFFCC">
+											&nbsp; Employment &nbsp;<BR>
+										</FONT>
+									</TD>
+									<TD BGCOLOR="#000066">
+										<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="20" BORDER="0"><BR>
+									</TD>
+								</TR>
+								<TR>
+									<TD  COLSPAN="4" BGCOLOR="#000066">
+										<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+									</TD>
+								<TR>
+									<TD BGCOLOR="#000066">
+										<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="24" BORDER="0"><BR>
+									</TD>
+									<TD COLSPAN="2" BGCOLOR="#FFFFCC" ALIGN="center" VALIGN="middle">
+										<FONT FACE="Arial" SIZE="2" COLOR="#FF0000">
+											&nbsp; <b>$0.00</b> &gt;&gt; One Year Subscription &nbsp;<BR>
+										</FONT>
+									</TD>
+									<TD BGCOLOR="#000066">
+										<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="24" BORDER="0"><BR>
+									</TD>
+								</TR>
+								<TR>
+									<TD COLSPAN="4"  BGCOLOR="#000066">
+										<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+									</TD>
+								</TR>
+								<TR>
+									<TD COLSPAN="2" ALIGN="Left">
+										<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+											<TR>
+												<TD BGCOLOR="#000066">
+													<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="14" BORDER="0"><BR>
+												</TD>
+												<TD BGCOLOR="#99CCFF" VALIGN="middle">
+													<FONT FACE="Arial" SIZE="1" COLOR="#FFCC99">
+														<B>&nbsp;<A HREF="Javascript:OpenWindow('http://www.mytechnologylawyer.com/cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowIncluded&Level=1&ItemID=MLB07&ItemName=Employment',500,150,'DataWindow',200,50)" STYLE="text-decoration: none">WHAT'S&nbsp;INCLUDED</A>&nbsp;</B><BR>
+													</FONT>
+												</TD>
+												<TD BGCOLOR="#000066">
+													<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="14" BORDER="0"><BR>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="3" BGCOLOR="#000066">
+													<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+												</TD>
+											</TR>
+										</TABLE>
+									</TD>
+								<TD COLSPAN="2" ALIGN="Right">
+										<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+											<TR>
+												<TD BGCOLOR="#000066">
+													<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="14" BORDER="0"><BR>
+												</TD>
+												<TD BGCOLOR="#99CCFF" VALIGN="middle">
+													<FONT FACE="Arial" SIZE="1" COLOR="#FFCC99">
+														<B>&nbsp;<A HREF="Javascript:OpenWindow('http://www.mytechnologylawyer.com/cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=AddItem&ItemID=MLB07',600,150,'DataWindow','','','','Toolbar')" STYLE="text-decoration: none">PURCHASE&nbsp;NOW</A>&nbsp;</B><BR>
+													</FONT>
+												</TD>
+												<TD BGCOLOR="#000066">
+													<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="14" BORDER="0"><BR>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="3" BGCOLOR="#000066">
+													<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+												</TD>
+											</TR>
+										</TABLE>
+									</TD>
+								</TR>
+							</TABLE>
+						</div><BR>
+			<br>
+			<font face="Arial" size="1">
+			<div class="Closing" align="center">
+			&copy; 2001 Draughon<sup>&reg;</sup> All Rights Reserved<br>
+			United States Patent Pending<br>
+			<A HREF="javascript:OpenWindow('http://www.mytechnologylawyer.com/Terms_of_Use.html',600,200,'DataWindow','','','','Toolbar')">Terms of Use</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Privacy Statement<BR>
+			<HR WIDTH="80%" ALIGN="Center" SIZE="1">
+			Site Design by <A HREF="http://www.2create.com">Creative Innovations</A><BR><BR>
+			</div>
+			</font>
+			
+					</TD>
+				</TR>
+			</TABLE>													<!--End Content-->
+		
+		</TD>
+		<TD VALIGN="top" ALIGN="right" BGCOLOR="#003366"   >	<!--BeginRightColumn-->
+						<table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#99ccff" >
+							<tr><td align="left" valign="Top" id="BtnLoginOut">
+								<font face="Arial,Helvetica,Verdana" size="2"><div class="ButtonOff">
+								<A HREF="Javascript:OpenWindow('http://www.mytechnologylawyer.com/cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowLogin',500,150,'DataWindow',50,50,'','Toolbar')" onMouseOver="ChangeButton('BtnLoginOut','#CCFFFF')"
+								onMouseOut="ChangeButton('BtnLoginOut','')" class="ButtonOff">
+									<IMG SRC="../images/icon_login.gif" align="Left" vspace="0" hspace="0" WIDTH="23" HEIGHT="18" BORDER="0" ALT="Login">Login&nbsp;</A>
+								</div></font>
+							</td><td width="1" bgcolor="#003366">
+								<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0" ><br>
+							</td><td align="left" valign="Top" id="BtnCheckOut">
+								<font face="Arial,Helvetica,Verdana" size="2"><div class="ButtonOff">
+								<A HREF="Javascript:OpenWindow('http://www.mytechnologylawyer.com/cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=ShowCart',600,150,'DataWindow',50,50,'','Toolbar')" onMouseOver="ChangeButton('BtnCheckOut','#CCFFFF')"
+								onMouseOut="ChangeButton('BtnCheckOut','')" class="ButtonOff">
+									<IMG SRC="../images/icon_checkout.gif" align="Left" vspace="0" hspace="0"
+									WIDTH="21" HEIGHT="18" BORDER="0" ALT="Checkout">Checkout&nbsp;</A>
+								</div></font>
+							</td></tr>
+						</table>
+			<IMG SRC="../images/2ptblank.gif" WIDTH="157" HEIGHT="3" BORDER="0"><BR>
+			<TABLE WIDTH="157"  BORDER="0" CELLSPACING="0" CELLPADDING="0">
+				<TR>
+					<TD  COLSPAN="2" ALIGN="left" VALIGN="top" BGCOLOR="#FFCC99">
+						<FONT FACE="Tahoma" SIZE="1"><B>
+						<div class="RightHead">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="157" HEIGHT="3" BORDER="0"><BR>
+							&nbsp;&nbsp;EMPLOYMENT MANAGEMENT<BR>
+						</DIV>
+						</B></FONT>
+						<IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="3" BORDER="0"><BR>
+					</TD>
+				</TR>
+				<TR>
+					<TD  ALIGN="right" VALIGN="top" BGCOLOR="#003366">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+					<TD  ALIGN="left" VALIGN="top" BGCOLOR="#003366">
+						<FONT FACE="Arial" SIZE="1" COLOR="#98CCFF">
+						<div class="RightDesc">
+						<IMG SRC="../form_data/VID_RSD_1.jpg" WIDTH="74" HEIGHT="96" BORDER="0" VSPACE="0" HSPACE="0" ALIGN="Right">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="77" HEIGHT="1" BORDER="0"><BR>
+							Scott Draughon discusses some of the key tools to managing your employment relationship.<BR>
+						</DIV>
+						</FONT>
+					</TD>
+				</TR>
+			</TABLE>
+			<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" BGCOLOR="#003366">	<!--VideoLinks-->
+				<TR>
+					<TD  WIDTH="70" ALIGN="Center" VALIGN="top" BGCOLOR="#FFCC99">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+						<FONT FACE="Tahoma,Arial,Verdana" SIZE="1"><B>
+						<DIV CLASS="VideoLinkHead">
+							Real Player<BR>
+						</DIV></B>
+						</FONT>
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+					<TD  WIDTH="1" ALIGN="Center" VALIGN="top" BGCOLOR="#003366">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+					<TD  WIDTH="86" ALIGN="Center" VALIGN="top" BGCOLOR="#FFCC99">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+						<FONT FACE="Tahoma,Arial,Verdana" SIZE="1"><B>
+						<DIV CLASS="VideoLinkHead">
+							Windows Media<BR>
+						</DIV></B>
+						</FONT>
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+				</TR>
+				<TR>
+					<TD COLSPAN="3" ALIGN="Center" VALIGN="top" BGCOLOR="#003366">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+				</TR>
+				<TR>
+					<TD  WIDTH="70" ALIGN="Center" VALIGN="top" BGCOLOR="#FFFFCC">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+						<FONT FACE="Arial" SIZE="1">
+						<DIV CLASS="VideoLink">
+							<A HREF="../form_data/MLB07_rm034.ram" STYLE="text-decoration: none">56K</A>  | <A HREF="../form_data/MLB07_rm160.ram" STYLE="text-decoration: none">100K</A><BR>
+						</DIV>
+						</FONT>
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+					<TD  WIDTH="1" ALIGN="Center" VALIGN="top" BGCOLOR="#003366">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+					<TD  WIDTH="86" ALIGN="Center" VALIGN="top" BGCOLOR="#FFFFCC">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+						<FONT FACE="Arial" SIZE="1">
+						<DIV CLASS="VideoLink">
+							<A HREF="../form_data/MLB07_wm034.asx" STYLE="text-decoration: none">56K</A>  | <A HREF="../form_data/MLB07_wm160.asx" STYLE="text-decoration: none">100K</A><BR>
+						</DIV>
+						</FONT>
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+				</TR>
+								<TR>
+					<TD COLSPAN="3" ALIGN="Center" VALIGN="top" BGCOLOR="#003366">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+				</TR>
+				<TR>
+					<TD  COLSPAN="3" ALIGN="Center" VALIGN="top" BGCOLOR="#FFFFCC">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+						<FONT FACE="Arial" SIZE="1">
+						<DIV CLASS="VidSummary">
+							Can't view the video?<br>
+							<A HREF="Javascript:OpenWindow('http://www.mytechnologylawyer.com//MLB07_VS.html',600,200,'DataWindow',50,50)">Read</A> the detailed summary<BR>
+						</DIV>
+						</FONT>
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+				</TR>
+
+				<TR>
+					<TD  WIDTH="70" ALIGN="Center" VALIGN="top" BGCOLOR="#003366">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="2" BORDER="0"><BR>
+						<A HREF="http://scopes.real.com/real/player/player.html?src=010129realhome_2,010129rpchoice_h2&dc=129128127" TARGET="DownloadPlayer"><IMG SRC="../images/real_logo.gif" WIDTH="70" HEIGHT="25" BORDER="0" ALT="Click Here to Download Real Player"></A><BR>
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="2" BORDER="0"><BR>
+					</TD>
+					<TD  WIDTH="1" ALIGN="Center" VALIGN="top" BGCOLOR="#003366">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="1" BORDER="0"><BR>
+					</TD>
+					<TD  WIDTH="86" ALIGN="Center" VALIGN="top" BGCOLOR="#003366">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="2" BORDER="0"><BR>
+						<A HREF="http://www.microsoft.com/windows/windowsmedia/en/download/default.asp" TARGET="DownloadPlayer"><IMG SRC="../images/wm_logo.gif" WIDTH="70" HEIGHT="25" BORDER="0" ALT="Click Here to download Windows Media Player"></A><BR>
+						<IMG SRC="../images/2ptblank.gif" WIDTH="1" HEIGHT="2" BORDER="0"><BR><BR>
+					</TD>
+				</TR>
+			</TABLE>
+			<TABLE WIDTH="157"  BORDER="0" CELLSPACING="0" CELLPADDING="0">
+				<TR>
+					<TD  COLSPAN="2" ALIGN="left" VALIGN="top" BGCOLOR="#FFCC99">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="157" HEIGHT="3" BORDER="0"><BR>
+						<FONT FACE="Tahoma" SIZE="1">
+						<div class="RightHead">
+							<B>&nbsp;Related CD-ROMs</B><BR>
+						</div>
+						</FONT>
+						<IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="3" BORDER="0"><BR>
+					</TD>
+				</TR>
+				<TR>
+					<TD  ALIGN="right" VALIGN="top" BGCOLOR="#FFFFCC">
+						<FONT FACE="Arial" COLOR="#FF0000" size="1">&nbsp;<B>&gt;</B>&nbsp;</FONT><BR>
+					</TD>
+					<TD  ALIGN="left" VALIGN="top" BGCOLOR="#FFFFCC">
+						<FONT FACE="Arial" SIZE="1">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="77" HEIGHT="1" BORDER="0"><BR>
+							 <A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=LegalCd_ProdShow&ProdId=1114">FREE BOOK - Legal Questions (Hardcover) - 165 pgs </A><BR>
+							 <IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="3" BORDER="0"><BR>
+						</FONT>
+					</TD>
+				</TR>
+			</TABLE><br>
+			<TABLE WIDTH="157"  BORDER="0" CELLSPACING="0" CELLPADDING="0">
+				<TR>
+					<TD  COLSPAN="2" ALIGN="left" VALIGN="top" BGCOLOR="#FFCC99">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="157" HEIGHT="3" BORDER="0"><BR>
+						<FONT FACE="Tahoma" SIZE="1">
+						<div class="RightHead">
+							<B>&nbsp;Related Articles</B><BR>
+						</div>
+						</FONT>
+						<IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="3" BORDER="0"><BR>
+					</TD>
+				</TR>
+				<TR>
+					<TD  ALIGN="right" VALIGN="top" BGCOLOR="#FFFFCC">
+						<FONT FACE="Arial" COLOR="#FF0000" size="1">&nbsp;<B>&gt;</B>&nbsp;</FONT><BR>
+					</TD>
+					<TD  ALIGN="left" VALIGN="top" BGCOLOR="#FFFFCC">
+						<FONT FACE="Arial" SIZE="1">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="77" HEIGHT="1" BORDER="0"><BR>
+							 <A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=MediaShowPrint2&ID=ART1111">Competition from your Former Employee</A><BR>
+							 <IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="3" BORDER="0"><BR>
+						</FONT>
+					</TD>
+				</TR>
+				<TR>
+					<TD  ALIGN="right" VALIGN="top" BGCOLOR="#FFFFCC">
+						<FONT FACE="Arial" COLOR="#FF0000" size="1">&nbsp;<B>&gt;</B>&nbsp;</FONT><BR>
+					</TD>
+					<TD  ALIGN="left" VALIGN="top" BGCOLOR="#FFFFCC">
+						<FONT FACE="Arial" SIZE="1">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="77" HEIGHT="1" BORDER="0"><BR>
+							 <A HREF="../cgi-bin/FormManager/WebForms.pl?Session=MTL.147557309054&Action=MediaShowPrint2&ID=ART1148">Avoiding Lawsuits in the first place</A><BR>
+							 <IMG SRC="../images/2ptblank.gif" WIDTH="4" HEIGHT="3" BORDER="0"><BR>
+						</FONT>
+					</TD>
+				</TR>
+			</TABLE><br>
+			<TABLE WIDTH="157" HEIGHT="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BACKGROUND="images/MLB07.jpg" >
+				<TR>
+					<TD WIDTH="100%" HEIGHT="100%">
+						<IMG SRC="../images/2ptblank.gif" WIDTH="157" HEIGHT="480" BORDER="0"><BR>
+					</TD>
+				</TR>
+			</TABLE>
+
+		</TD>													<!--EndRightColumn-->
+	</TR>
+	<TR>
+		<TD >						<!--BottomBorder-->
+		</TD>
+		<TD COLSPAN="4" BGCOLOR="#003366">						<!--BottomBorder-->
+			<IMG SRC="../images/2ptblank.gif" WIDTH="6" HEIGHT="7" BORDER="0"><BR>
+		</TD>
+		<TD BGCOLOR="#003366"  background="../images/rtshadow.gif">
+			<IMG SRC="../images/2ptblank.gif" WIDTH="24" HEIGHT="7" BORDER="0"><BR>
+		</TD>
+	</TR>
+</TABLE>

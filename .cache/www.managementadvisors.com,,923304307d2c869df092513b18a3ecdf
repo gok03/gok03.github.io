@@ -1,0 +1,349 @@
+status: 200
+content-length: 14677
+content-location: http://www.managementadvisors.com
+accept-ranges: bytes
+server: Apache
+last-modified: Thu, 03 Oct 2013 05:45:26 GMT
+etag: "134ba5e-3955-b1518980"
+date: Thu, 29 Sep 2016 11:12:27 GMT
+content-type: text/html
+
+<html>
+<head>
+<title>Management Advisors, Inc. - Management consulting for associations & real estate</title>
+<META NAME="description" CONTENT="Management Advisors provides management consulting services to membership organizations, associations, businesses, governments, and real estate multiple listing services. Services include information technology, strategic planning, distance learning, financial analysis, organizational review and structural audit.">
+<META NAME="keywords" CONTENT="Management Advisors,Management Advisors, Inc.,MAI,Consultants,Consultant,Management consultant,Management consultants,Management consulting,Business consultant,Consulting firms,Association consultant,Association consulting,Association technology,Real estate technology,Real estate consultant,Real estate consulting,MLS consulting,Multiple listing service consulting,IT,Technology,Workflow,Strategic planning,Re-engineering,Reengineering,Information Technology,Information systems,Document management,EDM,Computer consultants,Project management,Data warehousing,Contract negotiation,Organizational development,Organization development,Financial analysis,Executive search,Meeting facilitation,Board governance,Governance,Strategic planning,Organizational review,Organization review,Operational planning,Structural audit,Business planning,Association,Associations,Non-profit,Not for profit,Cultural facility,Sorority,Fraternity,Greek,Membership organization,Multiple Listing Service,MLS,Real estate,Government,State government,County government,Local government,Municipal government,School district,Legal,Business,Industry,Denver,Western US,Rocky mountain,Colorado,Steve Yanoviak,Stephen Yanoviak,Yanoviak,Alan Browning,Al Browning,Browning">
+<script language="JavaScript">
+<!--
+function GrpRestore(grp) { //v2.0
+	var docGroup = eval("document.FWG_"+grp);if (!docGroup) return;
+	var oldSwap = docGroup.oldSwap;
+	var newSwap = docGroup.curSwap;
+	if (newSwap) {docGroup.oldSwap = newSwap;	docGroup.curSwap = null;}
+	if (oldSwap) {
+		for (i=0; i<oldSwap.length; i++) {
+			var curImg = oldSwap[i];
+			var restore = true;
+			if (newSwap) for (j=0; j<newSwap.length; j++) {
+				if (curImg == newSwap[j]) {
+					restore = false;
+				}
+			}
+			if (restore) {
+				if (curImg.atRestSrc) {
+					curImg.src = curImg.atRestSrc;
+				} else if (curImg.origSrc) {		   
+					curImg.src = curImg.origSrc;			
+				}
+			}
+		}
+	}
+	theImages = docGroup.theImages;
+	if (theImages) {
+		for (i=0; i<theImages.length; i++) {
+			var curImg = theImages[i];
+			var restore = true;
+			if (newSwap) for (j=0; j<newSwap.length; j++) {
+				if (curImg == newSwap[j]) {
+					restore = false;
+				}
+			}
+			if (restore) {
+				if (curImg.atRestSrc) {
+					curImg.src = curImg.atRestSrc;
+				} 
+			}
+		}
+	}
+}
+
+function MM_preloadImages() { //v2.0
+  if (document.images) {
+    var imgFiles = MM_preloadImages.arguments;
+    if (document.preloadArray==null) document.preloadArray = new Array();
+    var i = document.preloadArray.length;
+    with (document) for (var j=0; j<imgFiles.length; j++) if (imgFiles[j].charAt(0)!="#"){
+      preloadArray[i] = new Image;
+      preloadArray[i++].src = imgFiles[j];
+  } }
+}
+
+function FindGroup(grp, imageName) {
+	var img = FWFindImage(document, imageName, 0);
+	if (!img) return(false);
+	var docGroup = eval("document.FWG_"+grp);
+	if (!docGroup) {
+		docGroup = new Object;
+		eval("document.FWG_"+grp+" = docGroup");
+		docGroup.theImages = new Array;
+	}
+	if (img) {
+		var i;
+		for (i=0; i<docGroup.theImages.length; i++) {
+			if (docGroup.theImages[i] == img) break;
+		}
+		docGroup.theImages[i] = img; 
+		if (!img.atRestSrc) {
+			img.atRestSrc = img.src;
+			img.initialSrc = img.src;
+		}
+	}
+	return(docGroup);
+}
+
+function FWFindImage(doc, name, j)
+{
+	var theImage=false;
+	if (doc.images) {
+		theImage = doc.images[name];
+	}
+	if (theImage) return theImage;
+	if (doc.layers) {
+		for (j=0; j<doc.layers.length; j++) {
+			theImage = FWFindImage(doc.layers[j].document, name, 0);
+			if (theImage) return(theImage);
+		}
+	}
+	return(false);
+}
+
+function GrpSwap(grp){
+	var i,j=0,newSrc,objName;
+	var docGroup = false;
+	for (i=1; i < (GrpSwap.arguments.length-1); i+=2) {
+		objName = GrpSwap.arguments[i];
+		newSrc = GrpSwap.arguments[i+1];
+		docGroup = FindGroup(grp, objName);
+		if (!docGroup) continue;
+		obj = FWFindImage(document,objName,0);
+		if (!obj) continue;
+		if (obj.isDown) {
+			if (obj.downOver) { 
+				obj.src = obj.downOver;
+			}
+		} else {
+			obj.src = newSrc;
+			obj.atRestSrc = obj.initialSrc;
+		}
+		obj.skipMe = true;
+		j++;
+	}
+	if (!docGroup) return;
+	theImages = docGroup.theImages;
+	if (theImages) {
+		for (i=0; i<theImages.length; i++) {
+			var curImg = theImages[i];
+			if (curImg.atRestSrc && !curImg.skipMe) {
+				curImg.src = curImg.atRestSrc;
+			}
+			curImg.skipMe = false;
+		}
+	}
+}
+
+function InitGrp(grp) {
+	var cmd = false; if (getCookie) cmd = getCookie(grp);
+	if (cmd) {
+		eval("GrpDown("+cmd+")");
+		eval("GrpRestore("+cmd+")");
+	}
+}
+
+function getCookie(Name) {
+   var search = Name + "="
+   var retVal = "";
+   if (document.cookie.length > 0) { // if there are any cookies
+     offset = document.cookie.indexOf(search);
+     if (offset != -1) { // if cookie exists 
+         // set index of beginning of value
+         end = document.cookie.indexOf(";", offset) 
+         // set index of end of cookie value
+         offset += search.length 
+         if (end == -1) 
+            end = document.cookie.length;
+         retVal = unescape(document.cookie.substring(offset, end)) ;
+     } 
+   }
+   return(retVal);
+}
+
+function setCookie(name, value) {
+   document.cookie = name + "=" + escape(value)
+}
+
+function GrpDown(grp){
+	var i,j=0,downSrc,downOver,objName;
+	var cmd = "'" + grp + "'";
+	var docGroup=false;
+	for (i=1; i < (GrpDown.arguments.length-2); i+=3) {
+		objName = GrpDown.arguments[i];
+		downSrc = GrpDown.arguments[i+1];
+		downOver = GrpDown.arguments[i+2];
+		if(!downOver) downOver = downSrc;
+		var docGroup = FindGroup(grp, objName);
+		if (!docGroup || !downSrc) continue;
+		obj = FWFindImage(document,objName,0);
+		if (!obj) continue;
+		obj.atRestSrc = downSrc; obj.downOver = downOver;
+		obj.src = downOver; obj.isDown = true;
+		obj.skipMe = true;
+		cmd += ",'" + objName + "','" + downSrc + "','" + downOver + "'";
+		j++;
+	}
+	setCookie(grp, cmd);
+	if (!docGroup) return;
+	var theImages = docGroup.theImages;
+	if (theImages) {
+		for (i=0; i<theImages.length; i++) {
+			var curImg = theImages[i];
+			if (curImg && !curImg.skipMe) {
+				curImg.atRestSrc = curImg.initialSrc;
+				curImg.isDown = false; curImg.downOver = false;
+				curImg.src = curImg.initialSrc;
+			}
+			curImg.skipMe = false;
+		}
+	}
+}
+
+function MM_swapImgRestore() { //v2.0
+  if (document.MM_swapImgData != null)
+    for (var i=0; i<(document.MM_swapImgData.length-1); i+=2)
+      document.MM_swapImgData[i].src = document.MM_swapImgData[i+1];
+}
+
+function MM_swapImage() { //v2.0
+  var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.MM_swapImgData;
+  for (i=0; i < (MM_swapImage.arguments.length-2); i+=3) {
+    objStr = MM_swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1];
+    if ((objStr.indexOf('document.layers[')==0 && document.layers==null) ||
+        (objStr.indexOf('document.all[')   ==0 && document.all   ==null))
+      objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length);
+    obj = eval(objStr);
+    if (obj != null) {
+      swapArray[j++] = obj;
+      swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j];
+      obj.src = MM_swapImage.arguments[i+2];
+  } }
+  document.MM_swapImgData = swapArray; //used for restore
+}
+//-->
+</script>
+<script language="JavaScript">
+<!-- hide this script from non-javascript-enabled browsers
+
+if (document.images) {
+sidebars_r02_c1_F1 = new Image(194,20); sidebars_r02_c1_F1.src = "sidebars_r02_c1.gif";
+sidebars_r02_c1_F2 = new Image(194,20); sidebars_r02_c1_F2.src = "sidebars_r02_c1_F2.gif";
+sidebars_r03_c1_F1 = new Image(194,21); sidebars_r03_c1_F1.src = "sidebars_r03_c1.gif";
+sidebars_r03_c1_F2 = new Image(194,21); sidebars_r03_c1_F2.src = "sidebars_r03_c1_F2.gif";
+sidebars_r04_c1_F1 = new Image(194,20); sidebars_r04_c1_F1.src = "sidebars_r04_c1.gif";
+sidebars_r04_c1_F2 = new Image(194,20); sidebars_r04_c1_F2.src = "sidebars_r04_c1_F2.gif";
+sidebars_r05_c1_F1 = new Image(194,20); sidebars_r05_c1_F1.src = "sidebars_r05_c1.gif";
+sidebars_r05_c1_F2 = new Image(194,20); sidebars_r05_c1_F2.src = "sidebars_r05_c1_F2.gif";
+sidebars_r06_c1_F1 = new Image(194,20); sidebars_r06_c1_F1.src = "sidebars_r06_c1.gif";
+sidebars_r06_c1_F2 = new Image(194,20); sidebars_r06_c1_F2.src = "sidebars_r06_c1_F2.gif";
+sidebars_r08_c1_F1 = new Image(194,19); sidebars_r08_c1_F1.src = "sidebars_r08_c1.gif";
+sidebars_r08_c1_F2 = new Image(194,19); sidebars_r08_c1_F2.src = "sidebars_r08_c1_F2.gif";
+sidebars_r09_c1_F1 = new Image(194,20); sidebars_r09_c1_F1.src = "sidebars_r09_c1.gif";
+sidebars_r09_c1_F2 = new Image(194,20); sidebars_r09_c1_F2.src = "sidebars_r09_c1_F2.gif";
+sidebars_r10_c1_F1 = new Image(194,20); sidebars_r10_c1_F1.src = "sidebars_r10_c1.gif";
+sidebars_r10_c1_F2 = new Image(194,20); sidebars_r10_c1_F2.src = "sidebars_r10_c1_F2.gif";
+sidebars_r11_c1_F1 = new Image(194,21); sidebars_r11_c1_F1.src = "sidebars_r11_c1.gif";
+sidebars_r11_c1_F2 = new Image(194,21); sidebars_r11_c1_F2.src = "sidebars_r11_c1_F2.gif";
+}
+
+/* Function that swaps images. */
+
+function di20(id, newSrc) {
+    var theImage = FWFindImage(document, id, 0);
+    if (theImage) {
+        theImage.src = newSrc;
+    }
+}
+
+/* Functions that track and set toggle group button states. */
+
+function FWFindImage(doc, name, j) {
+    var theImage = false;
+    if (doc.images) {
+        theImage = doc.images[name];
+    }
+    if (theImage) {
+        return theImage;
+    }
+    if (doc.layers) {
+        for (j = 0; j < doc.layers.length; j++) {
+            theImage = FWFindImage(doc.layers[j].document, name, 0);
+            if (theImage) {
+                return (theImage);
+            }
+        }
+    }
+    return (false);
+}
+
+// stop hiding -->
+</script>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+
+<body bgcolor="#FFFFFF" background="BigBG.gif" link="#C60810" vlink="#C60810" alink="#C60810" onLoad="InitGrp('FwSimpleGroup');MM_preloadImages('sidebars_r02_c1_F2.gif','#986506205866');MM_preloadImages('sidebars_r03_c1_F2.gif','#986506227133');MM_preloadImages('sidebars_r04_c1_F2.gif','#986506286383');MM_preloadImages('sidebars_r05_c1_F2.gif','#986506303233');MM_preloadImages('sidebars_r06_c1_F2.gif','#986506320716');MM_preloadImages('sidebars_r08_c1_F2.gif','#986506339133');MM_preloadImages('sidebars_r09_c1_F2.gif','#986506364083');MM_preloadImages('sidebars_r10_c1_F2.gif','#986506384766');MM_preloadImages('sidebars_r11_c1_F2.gif','#986506403850');MM_preloadImages('sidebars_r12_c1_F2.gif','#986506418966')">
+<div id="Layer1" style="position:absolute; left:239px; top:111px; width:643px; height:25px; z-index:17">
+	<ul class="navtabs">
+		<li ><a href="index.html" title="Home">Home</a></li>
+		<li><a href="services.html" title="Services">Services</a>
+		<ul class="subnav">
+			<li><a href="it.html" title="Information Technology">Information Technology</a></li>
+			<li><a href="sp.html" title="Services">Strategic Planning</a></li>
+			<li><a href="op.html" title="Services">Organizational Evaluation</a></li>
+		</ul>
+		</li>
+		<li><a href="consult.html" title="Consultants">Consultants</a></li>
+		<li><a href="aaa.html" title="Clients">Clients</a></li>
+		<li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+	</ul>
+</div>
+<div id="Layer2" style="position:absolute; left:75px; top:88px; width:140px; height:164px; z-index:18"><img src="squares_anim.gif" width="150" height="150"></div>
+<table width="627" border="0">
+  <tr>
+    <td align="right" width="331" height="71" valign="top"><img src="mailogo.gif" width="250" height="70"></td>
+    <td width="286" height="71" align="center"><img src="advicetxt.gif" width="250" height="75"></td>
+  </tr>
+</table>
+<map name="navbar1">
+<area shape="rect" coords="350,10,407,21" href="contact.html" >
+<area shape="rect" coords="284,10,341,21" href="products.html" >
+<area shape="rect" coords="216,10,273,21" href="consult.html" >
+<area shape="rect" coords="150,10,207,21" href="events.html" >
+<area shape="rect" coords="82,10,139,21" href="about.html" >
+<area shape="rect" coords="15,10,72,21" href="index.html" >
+</map>
+<table width="900" border="0" style="margin-top:100px;">
+
+  <tr> 
+    <td height="308" width="250">&nbsp;</td>
+    <td width="650" valign="top" style="line-height:24px;"> 
+      <p><font face="Arial, Helvetica, sans-serif"><b><font color="c50d13" size="3">When 
+        Success Counts...</font></b><font size="2">savvy managers count on a management consulting firm with a proven track record, highly qualified staff and in-depth industry experience. Management Advisors, Inc. (MAI) is just such a firm. Founded in 1983, we have provided professional assistance and advice to hundreds of organizations nationwide. Our high percentage of repeat clients attests to our reputation and reliability.
+<br /><br />
+Management Advisors provides management consulting services to associations, foundations and other membership organizations. We provide services in information technology, strategic planning, vendor contract negotiations and organizational evaluation.
+<br /><br />
+Management Advisors is completely independent and objective. We do not consult at any time to vendors or suppliers. We offer advice without any vested interest in the companies that provide the products and services we may help you select. Our objectivity gives us the flexibility to recommend the best solutions for our clients.
+</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> That's why, <strong>when 
+        success counts</strong>, organizations turn to Management Advisors for help.</font></p>
+		 <p><font face="Arial, Helvetica, sans-serif" size="2">We categorize our services into the following areas:</font></p>
+		<ul>
+			<li><a href="it.html"><font size="2">Information Technology</font></a></li>
+			<li><a href="sp.html"><font size="2">Strategic Planning</font></a></li>
+			<li><a href="op.html"><font size="2">Organizational Evaluation</font></a></li>
+		</ul>
+    </td>
+  </tr>
+</table>
+<!--   Image Map created with Macromedia Fireworks 2.0   --> <!-------------------------- BEGIN COPYING THE TABLE HERE ----------------------------> 
+<!-- Image with table --> <!--   This table was automatically created with Macromedia Fireworks 2.0   --> 
+<!--   http://www.macromedia.com   --> <!--------------------------- STOP COPYING THE TABLE HERE ---------------------------> 
+</body>
+</html>

@@ -1,0 +1,811 @@
+status: 200
+content-length: 120757
+content-location: http://www.MyEXACTAMundo.com/JOBS2/
+vary: Accept-Encoding
+server: Apache/2.4.18 (Ubuntu)
+-content-encoding: gzip
+date: Mon, 17 Oct 2016 11:27:59 GMT
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- 
+	    <meta name="description" content="Your description goes here" />
+	    <meta name="keywords" content="your,keywords,goes,here" />
+	    <meta name="author" content="Your Name" />
+    -->
+    <!---  Addon rel -->
+    <link href="addon/accordion/style/format.css" rel="stylesheet" type="text/css" />
+    <script src="addon/jQuery/jquery-2.1.1.min.js"></script>
+    <link href="addon/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="addon/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="addon/accordion/includes/javascript.js"> </script>
+    <!---------------------------------->
+    <link rel="stylesheet" type="text/css" href="css/main/origo.css" title="PR" media="all" />
+    <link href="css/tab/template1/tabcontent.css" rel="stylesheet" type="text/css" />
+    <!--validation-->
+    <script src="addon/validation/dist/jquery.validate.min.js"></script>
+    <!--masking-->
+    <script src="addon/masking/dist/inputmask/jquery.inputmask.js"></script>
+    <!--   Paginate-->
+    <script src="addon/paginate1/src/bootstrap-pagy.min.js"></script>
+    
+    <script src="addon/tableexport/tableExport.js" type="text/javascript"></script>
+    <script src="addon/tableexport/jquery.base64.js" type="text/javascript"></script>
+    
+    <title>EXACTA JOBS</title>
+    <!-- STYLE -->
+    <style>
+        li {
+            list-style: none;
+        }
+            li.fields {
+                margin-left: 20px;
+                padding: .5em 0;
+            }
+            li.title {
+                color: #1175c4;
+                text-align: left;
+                cursor: pointer;
+                font-size: 1.00em;
+                line-height: 1.7em;
+                background: #f3f6f9;
+                border-bottom: 2px solid #b0b0b0;
+                border-top: 1px solid white;
+                text-indent: 10px;
+            }
+        .hide {
+            display: none;
+        }
+        #lean_overlay {
+            position: fixed;
+            z-index: 100;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            background: #000;
+            display: none;
+        }
+    </style>
+    <!--------------->
+    <script>
+        $(document).ready(function () {
+            //JobsOpeningPaginate
+            $("#JobsOpeningPaginate").pagy({
+                totalPages: 5.84 ,
+                currentPage: 1,
+                outerWindow: 1,
+                first: null,
+                last: null,
+                page: function (page) {
+                    if ($('#chkShowOpenJob').is(':checked')){
+                        $('#hidShowOpenJobs1').val('on');
+                    } 
+                    $('#hidJobsSorting1').val( "" );
+                    $('#hidSearch').val( $('#txtSearchJob').val() );
+                    $('#hidPage').val(page);
+                    $('#frmPaginateJobs').submit();
+                    //alert(page);
+                    //   $("#current-page").text(page);
+                }
+            });
+        });
+    </script>
+</head>
+<body class="light blue  freestyle01">
+    <div id="layout"  style="display: none">
+        <div class="row smaller">
+           
+		   <div class="col c8 alignleft">
+               </div>
+			   
+
+			<table>
+                    <tr>
+                        <td align="left" width="400">
+                            <a href="#">
+                                <img src="img/EC-EBIS2_Logo.png"   height="60px" /><br /></td>
+					  <td align="center" width="400px" nowrap>
+                            <h3>Current Job Openings</h3>
+                      </td>
+					  
+					    
+					  
+					</tr>
+                </table> 
+         <div class="col c8 alignright">
+				<a href="https://www.myexactamundo.com"><font size="2"	><b>EXACTA Homepage</b></font></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.myexactamundo.com/EMPFORMS2"><font size="2"	><b>Create/Manage Profile</b></font></a>
+            </div>
+        </div> 
+                <ul class="tabs" data-persist="true">
+                </ul>
+                <div class="tabcontents">
+                    <div id="vHOME">
+                        <!--
+                    --------------------------------------------------------------------
+                    |    Contents                                                      |
+                    --------------------------------------------------------------------  
+                -->
+                        <div class="navbar ">
+                            <div class="navbar-inner ">
+                                    <!--
+                                    <div class="btn-group ">
+                                        <button class="btn btn-small">Sort by:</button>
+                                        <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                        </button>
+                                            <ul class="dropdown-menu pull-right"  role="menu" aria-labelledby="dropdownMenu">
+                                                 <li><a tabindex="-1" href="#"><font color=darkblue><small>City</small></font></a></li>
+                                                    <li><a tabindex="-1" href="#"><font color=darkblue><small>State</small></font></a></li>
+                                            </ul>
+                                        </div>
+                               -->
+                                    <!--  <div class="dropdown">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><font color=darkblue>Sort by:</font> <b class="caret"></b></a>
+                                    <ul class="dropdown-menu pull-right"> 
+                                    
+                                            <li><a tabindex="-1" href="#"><font color=darkblue><small>City</small></font></a></li>
+                                            <li><a tabindex="-1" href="#"><font color=darkblue><small>State</small></font></a></li>
+                                       <li class="divider"></li> 
+                                   </ul>
+                                </div>-->
+                                    
+                                    
+                        <form id="formSearch" method="post" class="navbar-search">
+                                        <div class="input-append"> 
+                                            <input class="span3" name="txtSearchJob" id="txtSearchJob" type="text" value="" >
+                                            <button class="btn" type="button" name="cmdSearchJob" id="cmdSearchJob" >Search</button>
+                                         </div>
+                                        <input type="hidden" id="hidJobsSorting" name="hidJobsSorting" value="" />
+                                        <input type="hidden" id="hidShowOpenJobs" name="hidShowOpenJobs" value="" />
+                                </form>
+                                    
+                                    
+                            </div> 
+                        </div>
+                    </div>
+                    <ul class="jobs">
+                        <table border="0" style=" table-layout: fixed; width:1px ;white-space: nowrap;     "><tr>
+                                <th class="header" style="text-align:left;width:35px">&nbsp;&nbsp;S</th>
+                                <th class="header" style="text-align:left;width:35px">&nbsp;&nbsp;H</th>
+                                <th class="header" style="width:300px;text-align:left;">&nbsp;&nbsp;&nbsp;Job Title</th>
+                                <th class="header" style="text-align:left;width:200px">&nbsp;&nbsp;Industry</th>
+                                <th class="header" style="text-align:left;width:185px">&nbsp;&nbsp;Location</th>
+                                <th class="header" style="text-align:center">Due Date</th>
+                                </tr></table><li class="title"  value="6577"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Analyst - Data Warehousing and BI</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b>Government</b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6577"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:</b><br><ul><li>Requires advanced skill sets and developing proficiency within discipline.&nbsp;</li><li>Typically requires 7-9 years experience or equivalent education.&nbsp;</li><li>Ideal candidate will have experience designing BI solutions, and development experience in Business Objects.&nbsp;</li></ul>DW &amp; BI Knowledge areas:&nbsp;<br><blockquote></blockquote><ol><li>Data warehouse/data marts using Kimball &amp; Inmon methodologies&nbsp;</li><li>SAP Business Objects universe and report design/development - V 4.1&nbsp;</li><li>Xcelcius Dashboard design and development&nbsp;</li><li>Crystal reports&nbsp;</li><li>Oracle, DB2 and SQL Server&nbsp;</li><li>Dimensional Data Modeling - Star Schemas&nbsp;</li><li>Slowly Changing Dimensions&nbsp;</li><li>Infoburst&nbsp;</li><li>Requirements gathering&nbsp;</li><li>Project development life cycle process (i.e., planning, analysis, design, coding, testing, implementation, support&nbsp;</li><li>Excellent written and oral communications&nbsp;</li><li>Independent worker&nbsp;</li></ol><blockquote></blockquote><blockquote></blockquote><blockquote></blockquote><blockquote></blockquote><blockquote></blockquote><blockquote></blockquote><blockquote></blockquote><blockquote></blockquote><blockquote></blockquote><blockquote></blockquote>Business Objects (8+ years experience):&nbsp;<br><ul><li>SAP Business Objects Universe design and development&nbsp;</li><li>SAP Business Objects report design and development&nbsp;</li><li>Xcelsius dashboards&nbsp;</li></ul>Database Knowledge (8+years experience):&nbsp;<br><ul><li>ORACLE&nbsp;</li><li>SQL Server&nbsp;</li><li>DB2&nbsp;</li><li>Complex SQL statements</li></ul><b></b><br><b>Responsibilities:</b><br><ul><li>The candidate will be a strong technical leader working on BI Reporting projects, gathering &amp; documenting requirements, designing solutions, developing universes and reports using Business Objects, testing, and implementing solutions.</li><li>They will be responsible for developing report specifications, business intelligence report design, development, testing, maintenance, metadata, and implementation of reporting initiatives.</li><li>Understand user requirements, and implement solutions that ensure requirements can be achieved through high quality deliverables.</li><li>Seek continuous improvement in performance &amp; tuning and ensure security of data.</li><li>Perform analysis and testing of reports.</li><li>Proven methodology experience for complex systems integration projects and demonstrated ability to achieve deliverables on time and on budget.</li><li>Works with other IT technical teams and Business users to understand requirements, and recommend &amp; implement solutions.</li><li>Works with moderate supervision with some latitude for independent judgment performing a variety of complex tasks.</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Data Warehousing, Business Intelligence, Oracle Business Objects (Database), Microsoft Office, DB2 (IBM), PL/SQL (Oracle), SQL Server (Microsoft), Oracle (Any Version), Tools - Testing</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160928_001_SXM;;Analyst - Data Warehousing and BI;;Madison, WI;;20160928_001_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6268"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Analyst - PeopleSoft</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b>Education</b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6268"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <span>The client&nbsp;requires design, development
+and configuration assistance to support a series of initiatives aimed at
+improving the student experience.&nbsp;&nbsp;<br><br></span><b>Current environment:&nbsp;</b><br><ul><li>Microsoft SQL Server&nbsp;</li><li>PeopleSoft Campus Solutions 9.0</li><li>PeopleTools 8.53</li></ul><b>Education and Qualifications</b>&nbsp;<br><ul><li>6 years PeopleSoft&nbsp;<span>experience in
+Campus Solutions environment&nbsp;</span></li><li>5+ Years analytical problem solving&nbsp;</li></ul><b>Basic
+Qualifications</b>
+<br><ul><li>Outstanding
+verbal and written skills are essential.&nbsp;</li><li>Experience
+in PeopleSoft Campus solutions functionality&nbsp;</li><li>Experience
+in PeopleSoft Campus solutions configuration&nbsp;</li><li>Experience
+working in a deadline-driven environment, handling and prioritizing multiple
+tasks.&nbsp;</li><li>Demonstrated
+experience leading without direct authority.&nbsp;</li><li>Demonstrated
+track record of successful PeopleSoft Campus Solutions project implementations.&nbsp;</li><li>Excellent
+conceptual, problem solving, and analytical skills&nbsp;</li><li>Ability
+to work independently or as a member of a team on complex tasks.&nbsp;</li><li>Demonstrated
+competency in documenting solutions for both technical and functional
+audiences.&nbsp;</li><li>Effective
+planner and organizer.
+
+&nbsp;&nbsp;</li></ul><b>Desired
+Proactive Behaviors&nbsp;</b>
+<br><ul><li>Display energy and initiative in solving
+problems.&nbsp;</li><li>Follow all possible avenues to get the job done.&nbsp;</li><li>Adaptable - undertake a variety of tasks
+willingly.&nbsp;</li><li>Ability to switch from complex to routine tasks
+when required.&nbsp;</li><li>Work effectively with a variety of personalities
+and work styles.&nbsp;&nbsp;</li><li>Demonstrate appropriate quality and thoroughness
+in your work.&nbsp;</li><li>Decisive - ability to make decisions quickly
+when faced with multiple options.&nbsp;</li><li>Ability to influence others in decided course of
+action.&nbsp;&nbsp;</li><li>Integrity - act with personal integrity at all
+times.&nbsp;&nbsp;</li><li>Professional - work within your team's
+processes.&nbsp;</li><li>Confront problems, propose solutions and take
+ownership through to resolution or ensure a clear hand-off.&nbsp;</li><li>Have a positive can-do approach to work.&nbsp;</li></ul><br>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>PeopleSoft, SQL Server (Microsoft)</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160815_006_SXM;;Analyst - PeopleSoft;;Madison, WI;;20160815_006_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6694"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Application Architect - ASP.NET</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b>Government</b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;10/20/2016&nbsp;</td></tr></table></li><li class="fields" value="6694"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b><ul><li>Change management experience</li><li>Project Management experience</li><li>Experience in Technical Writing and Documentation</li><li>Analytical/problem solving skills</li><li>Excellent oral and written communication skills</li><li>.NET, ASP.NET, and&nbsp;ASP.Net MVC experience</li><li>Understands business objectives and problems, identifies alternative solutions, performs feasibility studies and cost benefit analysis of alternatives.&nbsp;</li><li>DB2,&nbsp;Oracle, and SQL experience</li><li>Data modeling experience</li><li>Experience using&nbsp;Microsoft Office 2010 suite</li><li>In-Depth Knowledge of System Development Life Cycle Deliverables for each Phase of Development</li><li>Requirements gathering and analysis experience</li><li>Experience with&nbsp;User test, System test, and User Acceptance test plans</li><li>Mobile development experience</li></ul><br><b>Responsibilities:</b><br><ul><li>Manage the balance between business requirements and user expectations, while being a liaison between users and technologists to drive requirements to design.&nbsp;</li><li>Project duties will be to lead teams that maintain and enhance applications using ASP.Net web forms as well as ASP.Net MVC and iOS mobile projects. In-depth knowledge of SQL, XML and web services is also required.&nbsp;</li><li>Will act as a project lead, working directly with customers to define requirements and design, oversee developers who code, test, and implement applications changes and enhancements and new applications, including iOS mobile projects.&nbsp;</li><li>Project duties will also include implementation activities such as quality assurance, and reviewing user documentation, training materials and help screens.&nbsp;</li><li><span>Evaluate and recommend programming languages, design tools, application frameworks, and applications<br></span></li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Change Management, Project Management, DB2 (IBM), Technical Writer (applications/end-user software), Oracle (Any Version), Data Modelling/Normalization, Microsoft Office, .NET, ASP.NET, SQL (all), User Acceptance Testing, MVC</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20161013_005_SXM;;Application Architect - ASP.NET;;Madison, WI;;20161013_005_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6559"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="width:300px">&nbsp<b>Application Developer - COBOL</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Brookfield, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6559"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>5-10 years of application development&nbsp;experience -</b><br><ul><li>COBOL&nbsp;</li><li>CICS&nbsp;</li><li>DB2&nbsp;</li><li>Analysis skills</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>System Analysis, COBOL (all), CICS/VS, DB2 (IBM)</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160926_004_SXM;;Application Developer - COBOL;;Brookfield, WI;;20160926_004_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="5626"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="width:300px">&nbsp<b>Architect - Business Intelligence</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b>Education</b> </td>
+                            <td style="text-align: left; width:185px ">Platteville, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="5626"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualification:</b><br>- Extensive knowledge of and experience with advanced Oracle Business Intelligence features, including creating analyses, reports, dashboards, and analytics using Oracle Business Intelligence&nbsp;<br>- Extensive experience in designing and building an analytical metadata repository, creating multiple hierarchies and drill-down analyses, and developing highly functional dashboards.&nbsp;<br>- Good Knowledge and experience in OBI Administration and development&nbsp;<br>- Good understanding of the Higher Education environment and business requirements&nbsp;<br>- Ability to work collaboratively with business users, helping them understand and define requirements for developing analytics used for data driven decision making&nbsp;<br>- Strong requirements gathering and documentation skills&nbsp;<br>- Strong written and verbal communication skills&nbsp;<br><br>Seeking a consultant to create advanced business intelligence reports and dashboards using Oracle Business Intelligence (OBIEE). The focus is on creating analytics, KPIs, and scorecards that will be used for strategic decision-making. The consultant will assist members of the client community to understand analytics and guide them through the definition of strategic questions that will be addressed when creating the analytics. The consultant will use this information to create the analytic reports and interactive dashboards.&nbsp;<br><br>The consultant will work with other Business Intelligence team members in the administration of OBI, including user provisioning and security as well as metadata repository and catalogue management.&nbsp;<br><br><br>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Architect, Business Intelligence, OBIEE (reporting to</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160401_003_SXM;;Architect - Business Intelligence;;Platteville, WI;;20160401_003_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="5745"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Richfield, MN&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="5745"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b>3-5 years experience -&nbsp;<br><ul><li>Able to analyze requirements; document and make verbal and written recommendations based on facts</li><li><div>Full knowledge of the three network carriers, AT&amp;T, Verizon and Century Link services and tools to identify areas which will assist in validation.</div></li><li>Acquire knowledge of&nbsp;the client's&nbsp;systems for inventory and billing information (Asset Manager and&nbsp;Rivermine)</li><li><div>Strong planning and organizational skills</div></li><li>Ability to work as part of a project team</li><li><div>Good knowledge of voice and data communication systems, products and services and network system configs.</div></li></ul><br><b>Responsibilities:</b><br><ul><li>Responsible for leading business requirements definition to successful completion, including the discovery, analysis and documentation of business requirements, process flows, use cases, test and training plans.</li><li>Assist in maintaining a complete and accurate understanding of how an impacted business unit conducts its business and detailed knowledge of the business’s current technology and infrastructure.</li><li>Assist in analyzing and documenting changes to existing business processes. &nbsp;</li><li>Support the effort of business representatives in identifying, analyzing, documenting and refining requirements for their business locations.</li><li>Represents TOS-Procurement and Invoice Management organization in cross-functional product/project teams.</li><li>Assists network engineers with questions concerning specific services at their respective locations.</li><li>Provides guidance and technical support for specific areas of expertise.</li><li>Acquire knowledge of the client's&nbsp;Systems, Asset Manager and the Rivermine tool to assist in determining and verifying existing system components at a client site.</li><li>Understanding the client's acquisition process and what acquisitions have completed. &nbsp;</li><li>Proactive monitoring of these locations to enable network services at these sites to be removed as soon as possible to defer unwanted billing.</li><li>Ability to work with the engineers for analysis of locations for site consolidation where possible</li><li>Understand and follow the full client disconnects process in support of cost savings requirements.</li></ul>All of the above responsibilities drive the fulfillment of meeting cost savings reductions whenever possible at any of the client's branch and corporate/admin sites.<br><div><br></div>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, AT&T, Verizon, Network configuration</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160523_002_SXM;;Business Analyst;;Richfield, MN;;20160523_002_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6427"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6427"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  The initiative to replace the legacy mainframe applications includes two project teams each working on their own project. There is one Project Manager overseeing the initiative. Each project team has one business analyst (BA), one technical lead, and 3 developers. This position will be the BA on one of the teams. The work schedule is 5 days/week in the Madison, WI office. An in person interview will be required before an offer is made.<br><b>Qualifications:<br></b><ul><li>Experience Developing Functional and Technical Requirements&nbsp;</li><li>Experience interviewing subject matter experts</li><li>Experience selecting, synthesizing and organizing pertinent information to meet user needs</li><li>Experience working directly with business users</li><li>Excellent oral and written communication skills</li><li>Excellent organization, analytical, and communication skills</li><li>Experience with&nbsp;Agile Methodologies (Scrum / XP)</li><li>Experience using MS Office products such as Excel, Visio, and PowerPoint</li><li>Scrum Team Member experience</li><li>Experience with&nbsp;Business rules identifications</li><li>Experience documenting business processes</li><li>Experience documenting requirements and design</li><li>Experience in translating design artifacts and application functionality into clear, concise documentation</li><li>Requirements gathering and analysis experience</li><li>Review Business Requirements and Technical Design Documentation to Ensure Established Requirements&nbsp;</li><li>Ability to perform testing of applications, facilitate testing by others, document results</li><li>Experience developing plans for acceptance testing</li><li>Experience&nbsp;Managing systems testing and support user acceptance testing</li></ul><b>Responsibilities:&nbsp;</b><br><ul><li>Elicit, analyze, and clearly articulate ideas and viewpoints from key stakeholders (business and technical) to your team and to senior management (and vice versa) for effective communication and decision making.&nbsp;</li><li>Facilitate Sprint 0 workshops to define product roadmap using concepts of epics and user stories&nbsp;</li><li>Decompose Epics, perform story analysis, create wireframes, and document acceptance criteria&nbsp;</li><li>Work with stakeholders and the Scrum Team to manage the Product, Release, and Sprint Backlogs; clarify and refine Backlog Items so that user goals and required outcomes are well understood; and make sure the Scrum Team has a steady flow of well-defined work for each release and each sprint in the release.&nbsp;</li><li>Collaborate with the delivery team to align and prioritize solution(s) delivery with business needs and architectural blueprints.&nbsp;</li><li>Ensure solution recommendations and solution approaches align with business and technical needs and constraints.&nbsp;</li><li>Develop verification plans based on requirements and architecture documents; conduct acceptance testing to ensure requirements are met before turning over for business testing; lead user acceptance testing and work with business and technical staff to document and resolve issues&nbsp;</li><li>Apply good judgment in balancing and advocating for the use of agile delivery concepts and business analysis tools and techniques.&nbsp;</li><li>Utilize business analysis best practices to solve complex problems.</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, Agile, SCRUM, Microsoft Visio, Microsoft Excel, Microsoft Powerpoint, Business Rules, User Acceptance Testing, FRD (Functional Requirements Document)</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160906_001_SXM;;Business Analyst;;Madison, WI;;20160906_001_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6655"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Racine, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;10/17/2016&nbsp;</td></tr></table></li><li class="fields" value="6655"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Responsibilities:</b><br><ul><li>SOX Audit support .&nbsp;</li><li>Working with both business and ICT organization in a collaborative manner to support project success.</li><li>Support and coordinate NAFTA SOX audit process.</li><li>Build and execute communication through Share point workflows.</li><li>Execute quality checks on documentation received from Control owners before delivering to Auditors.&nbsp;</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, Microsoft SharePoint, Auditing</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20161007_001_SXM;;Business Analyst;;Racine, WI;;20161007_001_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6667"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b>Government</b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;10/17/2016&nbsp;</td></tr></table></li><li class="fields" value="6667"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b><ul><li>Business Analyst/Consultant capabilities with 4-7 years of experience in the field or in a related area.</li><li>Experience with business analysis techniques, including eliciting, analyzing and documenting business requirements&nbsp;</li><li>Ability/experience analyzing enterprise business operations and technology issues across areas within a large organization&nbsp;</li><li>Advanced ability/experience recognizing how and when to improve a process and recommending, negotiating, and implementing change&nbsp;</li><li>Ability/experience analyzing facts and problems, inferring and deciding on potential appropriate solutions&nbsp;</li><li>Experience as a data analyst, or other data management role&nbsp;</li><li>Experience with data on migration projects, including product upgrades, system replacement projects&nbsp;</li><li>Ability/experience consulting with business, technical staff and product vendor to determine information needs for business functions/processes.&nbsp;</li><li>Experience working with data models&nbsp;</li><li>Experience documenting business processes and data-centric specifications.&nbsp;</li><li>Experience with artifacts like User Stories, Use Cases or related helpful.</li></ul><b>Responsibilities include, but are not limited to:</b><br><ul><li>Reviews, analyzes, and evaluates business systems and user needs and assist with testing efforts.</li><li>Formulates systems to parallel overall business strategies.&nbsp;</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, FRD (Functional Requirements Document), Use Case, User Acceptance Testing, SQL (all), QMF</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20161010_001_SXM;;Business Analyst;;Madison, WI;;20161010_001_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="5950"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="5950"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b><ul><li>Experienced with business process re-engineering, testing and training.&nbsp;</li><li>Familiar with industry standards, current and emerging technologies, and business process mapping, and re-engineering.&nbsp;</li><li><b></b>Business Analyst/Consultant capabilities with 4-7 years of experience in the field or in a related area.&nbsp;</li><li>Relies on experience and judgment to plan and accomplish goals.&nbsp;<br></li></ul><span><b>Responsibilities:</b><br></span><ul><li>Reviews, analyzes, and evaluates business systems and user needs for client record keeping&nbsp;systems.&nbsp;</li><li>Works with vendor and clinical staff to configure system modules.&nbsp;</li><li>Prepares solution options, risk identification, and financial analyses such as cost/benefit, ROI, buy/build, etc.&nbsp;</li><li>Performs a variety of tasks.&nbsp;</li><li>A certain degree of creativity and latitude is required.</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, Microsoft Office, Business Rules, BRD (Business Requirements Document), Business Process, User Acceptance Testing</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160629_002_SXM;;Business Analyst;;Madison, WI;;20160629_002_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="5860"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Saint Paul, MN&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="5860"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Mandatory Qualifications:<br></b><ul><li>3 (three) years’ experience working as a Business Analyst&nbsp;</li><li>3 (three) engagements in the Business Analyst role where the resource helped define business
+requirements as part of a technology project.&nbsp;</li></ul><b>Desired Skills:</b>&nbsp;<br><ul><li>Project experience with one or more Document Management Systems.</li><li>Project experience working on a Case Management System for a court based organization.&nbsp;</li><li>Project experience working on a Case Management System (not necessarily a court based
+organization).
+</li></ul><b><br>The client is looking to hire a Business Analyst (BA) to work on the
+two projects listed below:</b>
+<br><br><u>Project 1: Client Document Management System (DMS) Requirements
+Definition. </u><br><ul><li>The client&nbsp;has 18 divisions of various sizes. There are approximately three divisions
+that will likely be heavy users of a document management system.&nbsp;</li><li>The client&nbsp;would
+like to acquire a DMS that will benefit as many of the 18 divisions as possible.&nbsp;</li><li>The
+Business Analyst (BA) resource will meet with business staff from the 18 divisions to
+understand and document their business processes so the requirements for a DMS for
+each division is documented. This documentation will be used as information in a future
+RFP to acquire a Document Management System for the client.&nbsp;</li></ul><blockquote><b>Responsibilities:</b></blockquote><ul><ul><li>Document Management System Requirements Gathering&nbsp;</li><li>Attend meetings with client divisions.&nbsp;</li><li>Document business processes operated by&nbsp;client&nbsp;divisions.&nbsp;</li><li>Document business requirements for a DMS for&nbsp;client&nbsp;divisions.&nbsp;</li><li>Draft RFP that includes the business requirements to be used in a future solicitation of a
+DMS.&nbsp;</li><li>Provide progress reports to the client Project Manager in writing and in person.</li></ul></ul><br><u>Project 2: A client specific&nbsp;Management System </u><br><ul><li>The client has a Request for Proposal (RFP) for which the due date for
+proposals is approaching. Once a vendor is identified, the BA resource will represent the client's interest when working with the vendor.&nbsp;</li><li>The BA will need to review and
+understand recently documented business processes in order to ensure the vendor
+understands the business processes.&nbsp;</li><li>The BA resource will review design and other
+implementation design plans to ensure business requirements are met.&nbsp;</li><li>The BA resource
+is expected to be on the project through implementation.</li></ul><blockquote><b>Responsibilities:</b></blockquote><ul><ul><li>Review project documents from the client's successful vendor.&nbsp;</li><li>Judge if the vendor
+understands and can meet the business requirements as set forth in the client RFP
+for a case management system.&nbsp;</li><li>Attend meetings with&nbsp;client&nbsp;staff and/or the successful vendor.&nbsp;</li><li>Provide progress reports to&nbsp;the&nbsp;client’s Project Manager in writing and in person.</li></ul></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, BRD (Business Requirements Document), Government</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160617_002_SXM;;Business Analyst;;Saint Paul, MN;;20160617_002_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6493"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b>Government</b> </td>
+                            <td style="text-align: left; width:185px ">Milwaukee, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6493"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Required Qualifications:</b>
+<br><ul><li>Business Analyst/Consultant capabilities with approximately 1-3 years of experience in the field or in a related area.&nbsp;</li><li><span>Has knowledge of commonly-used concepts, practices, and procedures within a particular field.&nbsp;<br></span></li><li>Ability to communicate effectively at all levels
+of the organization</li><li>
+Self-starter</li><li>
+Demonstrated capability to learn on the job
+
+</li><li>Experienced with business process re-engineering and identifying new applications of technology to business problems to make business more effective.&nbsp;</li><li>Familiar with industry standards, current and emerging technologies, and business process mapping, and re-engineering.&nbsp;<br></li><li>Strong verbal communications skills with ability to clearly present information and ideas to groups&nbsp;<br></li></ul><br><b>Preferred Qualifications:
+</b><br><ul><li>Previous government experience</li><li>Prior experience in public safety domain</li></ul><b><br>Responsibilities:</b><br><ul><li>Reviews, analyzes, and evaluates business systems and user needs.</li><li>Formulates systems to parallel overall business strategies.&nbsp;</li><li><span>Prepares solution options, risk identification, and financial analyses such as cost/benefit, ROI, buy/build, etc.<br></span></li><li>Develops RFPs.</li><li>Assist with user testing and testing
+documentation.&nbsp;</li><li>Assist with collection business functional requirements.&nbsp;</li><li>Develop and complete project documents for
+requirements, support, &amp; training in accordance with client project
+management methodology.</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, Government, User Acceptance Testing, Project Management, FRD (Functional Requirements Document)</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160916_002_SXM;;Business Analyst;;Milwaukee, WI;;20160916_002_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6703"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b>Government</b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;10/21/2016&nbsp;</td></tr></table></li><li class="fields" value="6703"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b><ul><li>Phone based technical support</li><li>Problem documentation and communication</li><li>Ability to develop user documentation and perform training</li><li>Technical Assistance and User Support experience</li><li>Application Support&nbsp;experience</li><li>Experience with&nbsp;User test, System test, and User Acceptance test plans</li><li>Business Process Improvement&nbsp;experience</li></ul><br><br><b>Responsibilities:</b><br><ul><li>Review and quickly gain thorough understanding of existing legacy (home grown, mainframe based) applications.&nbsp;</li><li>Collaborate with SME’s and quickly gain thorough understanding of how business processes work.&nbsp;</li><li>Work with customers to solve problems and support their needs</li><li>Develop test plans and procedures<br></li><li>Prepare thorough, comprehensive, easy to understand documentation including user manuals, process diagrams, and other documents as needed.&nbsp;</li><li>Collaborate with team members and research/document resolutions to issues.&nbsp;</li><li>Responsible for support of client web based application and escalation of policy issues and technical issues to the appropriate channels.&nbsp;</li><li>Other responsibilities include project work, troubleshooting and resolution of issues efficiently; identify areas of improvement, testing and special projects as required.&nbsp;</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, Technical Support, Software Support, User Acceptance Testing, Business Process</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20161014_003_SXM;;Business Analyst;;Madison, WI;;20161014_003_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6487"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Richfield, MN&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6487"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b>10+ years experience&nbsp;<br><br><b>Responsibilities:&nbsp;</b><br><ul><li>The business analyst is responsible for leading business requirements definition to successful completion, including the discovery, analysis and documentation of business requirements, process flows, use cases, test and training plans.</li><li> Works closely with product, relationship management, quality assurance, project management, and technology teams.</li><li> The Business Analyst is responsible for conducting customer and market needs analysis, developing detail product and internet systems requirements and managing all stages of business requirements from initial research to user acceptance testing.</li><li> The position will be the liaison between client subject matter experts and the development team.</li><li> The position will also identify and assist in the development of additional business opportunities within current clients, applying delivery methodology standards in the creation of solutions, understanding client tactical plans and goals and expressing business requirements in terms of the function to be performed by the solution.</li><li> Other responsibilities include overseeing business to system knowledge management, and assisting in overall system design from user interface through backend processes. This is a team-based position that requires strong interpersonal skills.</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, Use Case</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160915_004_SXM;;Business Analyst;;Richfield, MN;;20160915_004_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6163"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b>Manufacturing</b> </td>
+                            <td style="text-align: left; width:185px ">Holland, MI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6163"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  Seeking a Global Business Analyst in EUC (End User Computing) with a successful track record of delivery and performance using SCCM 2012/2007. &nbsp;<b><br><br>Qualifications:<br></b><ul><li>3 to 5+ years of related experience of Client Computing environment involving SCCM 2012/2007 deployment expertise.&nbsp;</li><li>Applicant needs to have developed professional written and verbal communication skills in English.&nbsp;</li><li>Working experience with Windows 7 and 10, WAIK, MSI, SCCM 2012/2007, Active Directory.&nbsp;</li><li>Familiarity&nbsp;with Group Policies, Windows Registry, WMI, VBA, PowerShell.</li></ul><b>Responsibilities:</b><br><ul><li>Responsible for the Software Deployment of individual pcs and Mass Deployments through SCCM 2012 in a global EUC Environment.</li><li>Support “state of the art” EUC solutions through 2nd - 3rd level technical support including software deployments to end points using Microsoft SCCM 2012/2007.&nbsp;</li><li>Act as a technical escalation point for critical issues&nbsp;</li><li>Work with regional staff, global staff and regional services to support the organization to ensure operational availability of all EUC Services and provide technical documentation and troubleshooting steps for Operations.&nbsp;</li><li>Manage software deployment projects through to completion including timely, effective communication and stakeholder input.&nbsp;</li><li>Identify recurring and potential problems and document solutions.&nbsp;</li><li>Participate in operational meetings and discussions to identify problems, solutions and drive strategic alignment.&nbsp;</li><li>Identify cost-saving opportunities&nbsp;</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, SCCM  , Windows - Current (7 forward), MSI, Active Directory, VBA, PowerShell</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160729_001_SXM;;Business Analyst;;Holland, MI;;20160729_001_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6283"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6283"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b><ul><li>Ability to create a shared understanding in a team environment</li><li>Expertise in implementation of large complicated models and processes<br></li><li>Meeting management<br></li><li>Experience in Technical Writing and Documentation<br></li><li>Analytical/problem solving skills<br></li><li>Excellent organization, analytical, and communication skills<br></li><li>Experience using&nbsp;MS Office products (including Excel)</li><li>Participate in design reviews<br></li><li>Standardized processes and procedures implementation<br></li><li>SharePoint experience<br></li></ul><b>Responsibilities</b><b>:&nbsp;</b><br><ul><li>Review and quickly gain thorough understanding of existing legacy (mainframe) application.&nbsp;</li><li>Maintain an in-depth knowledge of business operations and understand the technical scope and objectives of the project.&nbsp;</li><li>Establish and maintain functional relationships both with internal and external stakeholders.&nbsp;</li><li>Facilitate communications between multiple teams.&nbsp;</li><li>Manage the scheduling and logistics of requirements gathering sessions.&nbsp;</li><li>Document and maintain a record of business decisions and issues.&nbsp;</li><li>Manage the project’s SharePoint site.&nbsp;</li><li>Actively participate in business process reviews and functional walkthroughs.&nbsp;</li><li>Plan and coordinate User Acceptance Testing.&nbsp;</li><li>Partner with business leads in coordinating and planning for implementation.&nbsp;</li><li>Coordinate events with end users to demonstrate new system functionality and manage the user feedback process.&nbsp;</li><li>Troubleshoot project-related issues and identify areas of improvement.&nbsp;</li><li>Other duties as assigned.&nbsp;</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, Troubleshooting, User Acceptance Testing, Microsoft Excel, Microsoft Office, Microsoft SharePoint, Microsoft Project</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160816_003_SXM;;Business Analyst;;Madison, WI;;20160816_003_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6634"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Richfield, MN&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6634"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b>1-3 years experience - <br><ul><li>Junior business analyst and coordinator with experience&nbsp;supporting agile software development teams and large programs.&nbsp;</li><li>This is a team-based position that requires strong interpersonal skills.</li></ul><br><b>Responsibilities:</b><br><ul><li>Responsible for leading business requirements definition to successful completion, including the discovery, analysis and documentation of business requirements, process flows, use cases, test and training plans.</li><li> Works closely with product, relationship management, quality assurance, project management, and technology teams.</li><li> Responsible for conducting customer and market needs analysis, developing detail product and internet systems requirements and managing all stages of business requirements from initial research to user acceptance testing.</li><li> The position will be the liaison between client subject matter experts and the development team.</li><li> Will also identify and assist in the development of additional business opportunities within current clients, applying delivery methodology standards in the creation of solutions, understanding client tactical plans and goals and expressing business requirements in terms of the function to be performed by the solution.</li><li> Other responsibilities include overseeing business to system knowledge management, and assisting in overall system design from user interface through back-end processes.&nbsp;</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, Agile, User Acceptance Testing</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20161005_001_SXM;;Business Analyst;;Richfield, MN;;20161005_001_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="5765"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Analyst - Pega PRPC</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Brookfield, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="5765"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:</b><br><ul><li>5+ years PRPC experience and a Certified CPM Architect Certification (CCA) &nbsp;</li><li>Strong verbal and written communications</li><li>Strong analytical and decision making skills</li><li>Bachelor’s Degree in Science, Engineering or Computers&nbsp;</li><li>6+ years of experience in Software development</li><li>HHS Case Management experience</li></ul><br><b>Responsibilities:</b><br><ul><li>Design PRPC systems</li><li>Build and configure PRPC</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>PRPC (Pega Rules Process Commander), Software Development, Communications</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160531_001_SXM;;Business Analyst - Pega PRPC;;Brookfield, WI;;20160531_001_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="5986"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business System Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Richfield, MN&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="5986"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b>5-10 years experience - <br><ul><li>This is a team-based position that requires strong interpersonal skills.<br></li><li>Ability to engage in high visibility projects to aid in the development of business requirements, user stories, use case diagrams and process flows.&nbsp;</li><li>Light design deliverables &amp; project management will also be expected.&nbsp;</li></ul><br><b>Responsibilities:</b><br><ul><li>Responsible for leading business requirements definition to successful completion, including the discovery, analysis and documentation of business requirements, process flows and use cases.&nbsp;</li><li>Works closely with product, relationship management, quality assurance, project management, and technology teams.&nbsp;</li><li>Responsible for developing detail business &amp; systems requirements and managing all stages of business requirements from initial research to user acceptance testing.&nbsp;</li><li>The position will be the liaison between client subject matter experts and the development team.&nbsp;</li></ul><div><br></div>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, Project Management, BRD (Business Requirements Document)</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160701_009_SXM;;Business System Analyst;;Richfield, MN;;20160701_009_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6568"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business System Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b>Banking</b> </td>
+                            <td style="text-align: left; width:185px ">Richfield, MN&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;10/21/2016&nbsp;</td></tr></table></li><li class="fields" value="6568"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <div><b>Qualifications:</b></div><ul><li>Bachelor's degree or equivalent work experience</li><li>At least 10 years experience with activities, tasks, practices and deliverables for assessing and documenting business opportunities, benefits, risks, and success factors of potential applications.</li></ul><div><b>Preferred Skills/Experience:</b></div><div>Working experience in:</div><ul><li>Information management</li><li>IT project management</li><li>Product and vendor evaluation</li><li>CAMS Certification&nbsp;</li></ul><div>Extensive experience in:</div><ul><li>System development life cycle – both waterfall and agile</li><li>QA environment</li><li>System testing</li><li>Financial Crime applications with specific focus on KYC/Customer Due Diligence&nbsp;</li><li>Working in a fast paced environment</li></ul><div>Subject matter expert in:</div><ul><li>Requirements definition and documentation&nbsp;</li><li>Problem solving, analysis and defect management&nbsp;</li><li>Workflow analysis</li><li>Modeling: data, process, events, objects</li><li>Business process modeling</li><li>IT standards, procedures, policy</li></ul><div><b>Responsibilities:</b><br><ul><li>Responsible for consulting to Information Technology and business management on applying technology to business opportunities, planning, and implementation of cross-functional applications.&nbsp;</li><li>Develops and maintains a complete and accurate understanding of how business units conduct business.&nbsp;</li><li>Develops and maintains detailed knowledge of business's current technology and infrastructure from a functional perspective.</li><li>Aware of and influences future technology capabilities and strategy.&nbsp;</li><li>Provides senior level consulting services regarding Financial Crimes and specifically customer due diligence projects designed to improve business results.&nbsp;</li><li>Works with senior business stakeholders to identify, refine, and document business needs using techniques like business process and data modeling and use case development.</li><li>Assists and at times, may lead clients and technical staff to investigate, analyze, and &nbsp;resolve complex application problems related to system functions.&nbsp;</li><li>Often first point of contact for user support and problem solving.&nbsp;</li><li>May manage projects.&nbsp;</li><li>Frequently interfaces with business lines, including management, and/or internal resources to ensure quality, timeliness, and testing of all project/release work.&nbsp;</li><li>Works with, and sometimes leads, technology and application development teams to design or select solutions that appropriately meet the business needs for large and complex projects.&nbsp;</li><li>Reviews and coordinates execution of test plans for multiple projects.&nbsp;</li><li>Looks for opportunities to improve testing process.</li></ul><div><br></div>Successful applicants will exemplify the client's ethical principles of uncompromising integrity, respect for others, accountability for decisions and actions, and good citizenship.<br></div>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, Project Management, Waterfall, Agile, Tools - Testing, Financial Applications, Data Modelling/Normalization, Business Process Modeling</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160927_003_SXM;;Business System Analyst;;Richfield, MN;;20160927_003_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="5657"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Systems Analyst</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="5657"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <span><b>Required Skills/Qualifications:&nbsp;</b><br></span>Operational/User Support -&nbsp;<br><ul><li>Provides on-going,
+daily operational support.</li><li>Answers questions from
+users on system capabilities and processes.&nbsp;</li><li>Provides user
+"how-to" support; first and second level user support for business
+application systems.&nbsp;</li><li>Maintains and updates knowledge documents for system
+users.</li><li>Performs training on
+new product and new system changes.&nbsp;</li><li>Troubleshoots
+day-to-day user issues.&nbsp;</li><li>Researches and resolves business application system
+incidents.&nbsp;</li><li>Gathers and analyzes data, provides possible solutions, works with
+necessary business partners and vendors to resolve problems.&nbsp;</li><li>Documents and
+tracks resolution to issues.&nbsp;</li><li>Maintains a repository
+of archived information regarding problem reports, project implementation,
+procedures and system changes.&nbsp;</li><li>Collects enhancement
+suggestions from system users and I/S and follows process to research possible
+business application system changes.&nbsp;</li><li>Supports production
+change processes.&nbsp;</li><li>
+
+Provides on-call support for business systems.&nbsp;</li><li>Insurance industry knowledge/experience (Personal Lines, Actuarial, and/or I/S)</li><li>Technical experience (Business Rules, Business Requirements, Problem management systems and/or System calculators)</li></ul><b><br>Desired Skills:</b><br><ul><li>Strong understanding
+of documentation within MS Excel&nbsp;</li><li>Document/Data
+processing background (preferably in insurance, finance or similar fields)</li><li>Basic knowledge and
+understanding of unit, functional, performance, and user acceptance testing.&nbsp;</li><li>Demonstrated
+experience using business systems to provide customer service.</li><li>Demonstrated
+experience documenting work processes and business rules.&nbsp;</li><li>
+
+Basic knowledge and understanding of how technology can be used to
+automate business processes.&nbsp;<br></li></ul><span>The individual should have work
+experience in the above skill areas.<br><br><b>Responsibilities:<br></b></span><ul><li>Responsible for providing
+operational and user support for business system applications and related
+hardware that support division and corporate strategies.&nbsp;</li><li>Responds to user
+questions, resolves user issues, escalates system problems to proper areas, and
+provides users with documents and tools to increase user capabilities within
+the application.&nbsp;</li><li>Assists in documenting and maintaining business processes and
+business rules.&nbsp;</li><li>Conducts user acceptance testing for business systems.&nbsp;</li><li>Identifies opportunities for improved user acceptance testing processes and
+methodologies.</li></ul><b></b><span><b>Interviews</b>&nbsp;<br>In-person interviews are
+preferred</span><br>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Technical Support, System Analysis, Support, Troubleshooting, Microsoft Excel, User Acceptance Testing, Customer Service, Business Rules, Insurance</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160408_001_SXM;;Business Systems Analyst;;Madison, WI;;20160408_001_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="5658"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Business Systems Specialist</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="5658"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Required Skills/Qualifications:</b><br><ul><li>Operational/User Support -&nbsp;</li><ul><li>Answers questions
+from users on system capabilities and processes.&nbsp;</li><li>Provides user
+"how-to" support; first and second level user support for business
+application systems.&nbsp;</li><li>Maintains and updates knowledge documents for system
+users.</li><li>Researches and
+resolves business application system problems.&nbsp;</li><li>Gathers and analyzes data,
+provides possible solutions, works with business partners and vendors to
+resolve problems.</li><li>Produces
+communications for global outages.&nbsp;</li><li>Documents and tracks the resolution to
+problems.&nbsp;</li><li>Collects defects or
+system issues from system users and reports them to I/S.&nbsp;</li><li>Works with system
+users to prioritize resolution to defects.&nbsp;</li><li>Collects
+enhancement suggestions from system users and follows process to research
+possible business application system changes.</li><li>Develops
+communication and training strategy for systems.&nbsp;</li><li>Coordinates training for
+business system implementation with operations and Education.&nbsp;</li></ul><li>Systems Configuration -</li><ul><li>Establishes
+and maintains user enabled system updates.&nbsp;</li><li>Sets and
+maintains user configuration baselines and evaluates all change requests and
+proposals.&nbsp;</li><li>&nbsp;Updates,
+audits, and tests tables or other department or division specific information.&nbsp;</li><li>&nbsp;Executes
+testing of business user configurations.&nbsp;</li><li>&nbsp;Identifies
+business opportunities for configuration versus customization on new software
+systems.&nbsp;
+
+</li><li>Works
+with business partner and vendors as a liaison for configuration procedures and
+best practices.&nbsp;</li><li>Configures
+and maintains, including content management, divisional website and other
+division specific web pages.</li></ul><li>Insurance industry knowledge/experience (Personal Lines, Actuarial, and/or I/S)</li><li>Technical experience (Business Rules, Business Requirements, Problem management systems and/or System calculators)</li></ul><b><br>Desired Skills:<br></b><ul><li>Demonstrated
+experience documenting work processes and business rules.</li><li>Demonstrated
+experience developing user acceptance test cases and conducting user acceptance
+testing.</li><li>Solid knowledge and
+understanding of how technology can be used to automate business processes.&nbsp;</li><li>Basic knowledge and
+understanding of project management methodologies, practices, techniques and
+tools.&nbsp;</li><li>
+
+Demonstrated experience in solving problems of a technical nature.&nbsp;</li></ul><span>The individual should have work
+experience in the above skill areas.<br><br><b>Responsibilities:<br></b></span><ul><li>Responsible for documenting and maintaining business
+rules and business processes as well as how those rules and processes are
+captured and automated through business systems.&nbsp;</li><li>Participates in projects
+related to new business systems or changes to existing systems to ensure
+business goals are met with delivery of the proposed system solution.&nbsp;</li><li>Works
+with I/S to clarify business requirements where needed and assists in the
+development of the test strategy and plan.&nbsp;</li><li>Participates in ideation and
+prioritization for future system use and enhancements.&nbsp;</li><li>Researches complex
+system issues and coordinates resolution.&nbsp;</li><li>Researches and evaluates business
+system application developments and technologies within the insurance industry
+and business markets that are relevant to the business and future business
+strategy.</li></ul><b>Interviews</b>&nbsp;<br><ul><li>In-person interviews are preferred</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Systems Analysis, Business Rules, Business Process, Technical Support, Support, Customer Service, UPMM (Unified Project Management Methodology), User Acceptance Testing, Insurance</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160408_002_SXM;;Business Systems Specialist;;Madison, WI;;20160408_002_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6370"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>Change Manager</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Knoxville, TN&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6370"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b><ul><li>Professional certification and bachelor’s degree qualification (Business administration/Communication/ Psychology) are preferred&nbsp;</li><li><u>10+ years relevant business and change management experience</u> with demonstrated “people &amp; project “success<br></li><li>Strong leadership, organizational and communication skills along with problem solving and conflict management skills.&nbsp;</li><li>Good business acumen and understanding of organizational issues and challenges&nbsp;</li><li>Flexible and adaptable; able to work in ambiguous situations and outside or normal business hours to because of global time zone differences&nbsp;</li><li>Ability to influence others and move toward a common vision or goal&nbsp;</li><li>Willing to challenge status quo and facilitate different perspectives to drive solutions in the support of business results&nbsp;</li><li>Strong organizational, change management and execution skills with a demonstrated ability to prioritize and drive multiple tasks simultaneously.</li><li>Ability to coach, communicate and collaborate with a diverse range of employees, leaders and customers&nbsp;</li><li>Drive thought leadership and be a subject matter expert in the area of change management and communications&nbsp;</li><li>Highly motivated individual who is a self-starter and takes ownership of projects and tasks.</li><li>“Hands on” experience leading and supporting multiple, global projects and change initiatives&nbsp;</li><li>Consistent track record of delivering results while creating/maintaining an engaged work environment&nbsp;</li><li>Work within a fast paced and cross functional environment including end users, leadership, and specific functional teams like Accounts Payable, IT and Procurement to ensure consistent alignment and overall project success&nbsp;</li><li>Familiarity with Vendor portals such as Taulia will be a big plus.&nbsp;</li><li>Experience with SharePoint is preferred but not required&nbsp;</li></ul><b>Responsibilities:&nbsp;<br></b><ul><li>Apply and manage a structured CM methodology for regional and/or global change initiatives&nbsp;</li><li>Manage stakeholder, customer and end user engagement and adoption&nbsp;</li><li>Work collaboratively in developing and deploying change management plans and related communications to include:&nbsp;</li><ul><li>Change Impact Analysis&nbsp;</li><li>Stakeholder Analysis&nbsp;</li><li>Change adoption, monitoring and sustainability&nbsp;</li><li>Identifying, analyzing and preparing risk mitigation tactics for change initiatives&nbsp;</li></ul><li>Lead the effort in designing, developing, delivering and overseeing both training and communications programs&nbsp;</li></ul><br>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Change Management, Microsoft SharePoint</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160826_002_SXM;;Change Manager;;Knoxville, TN;;20160826_002_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6628"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b>  </b> </td>
+                            <td style="width:300px">&nbsp<b>Community Manager</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b>Consumer Goods</b> </td>
+                            <td style="text-align: left; width:185px ">Irving, TX&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;10/21/2016&nbsp;</td></tr></table></li><li class="fields" value="6628"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:&nbsp;</b><br><ul><li>Incumbent should hold a Bachelor’s degree, preferably in a relevant discipline (i.e; PR, journalism, communication, marketing or other relevant areas), and/or demonstrated equivalent ability and experience in the targeted area.&nbsp;</li><li>A minimum of 1-3 years of experience is typically expected in entering this position.</li></ul><br><b>Responsibilities:</b><br><ul><li>Participate in new initiatives (i.e. social, global) and presentations to expand services offered and department revenue and profitability.&nbsp;</li><li>Ensure that the company continues to remain strategically opportunistic by continually evaluating the company’s online marketing and outreach strategies, including both tools presently being used and emerging technologies.&nbsp;</li><li>Participate within channels that the organization will be using in order to have firsthand knowledge of all opportunities within each platform.&nbsp;</li><li>Have knowledge of influential resources for continual self-education; such sources can be online or event based.&nbsp;</li><li>Provide professional climate and interfacing/operations of own team and other Consumer Services departments and functions.&nbsp;</li><li>Support senior staff in development, management, and maintenance of Consumer Services initiatives.&nbsp;</li><li>Contributes in creating FAQs, responses.&nbsp;</li><li>Partner with associate account lead(s) assigned to brand(s).&nbsp;</li><li>Interface with worldwide counterparts in the development of brand-focused best practices.&nbsp;</li><li>Keeps up to date on Consumer Service, Customer Experience, and contact center and social media industry trends and best practices.&nbsp;</li></ul><br>The Online Community Manager will implement the Company’s Online Community Strategy, managing engagement and interactivity with its audience, and fostering community spirit. This role coordinates with the internal Editorial and Marketing teams to support their respective missions, ensuring consistency in voice and cultivating a strong community around the brand.&nbsp;<br><br>The community manager is responsible for overseeing single or multiple client brands within a category, and ensuring that internal &amp; external customers receive the best and most effective, integrated and efficient Customer Experience available. The community manager could be responsible to communicate with multimedia communication channels when necessary including phone, email, and live chat or mobile. The community manager should be able to manage conversational calendars and proactively engage with customers.&nbsp;<br><br>The online community manager will act as the external voice of the company and specific brands while simultaneously acting as the voice of the customers internally. The value lies in the community manager serving as a hub and having the ability to personally connect with the customers (humanize the company), shepherd &amp; provide feedback to many departments internally (development, PR, marketing, legal service, tech support, digital, etc).&nbsp;<br>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Communications, Marketing, Customer Service</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20161004_003_SXM;;Community Manager;;Irving, TX;;20161004_003_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li><li class="title"  value="6511"><table id="tblJobsData" border=0  style="table-layout: fixed;  width:1px    "><tr>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="text-align:left; width:35px">&nbsp;<b> * </b> </td>
+                            <td style="width:300px">&nbsp<b>CRM Integration Specialist</b></td>
+                            <td style="text-align:left; width:200px">&nbsp;<b></b> </td>
+                            <td style="text-align: left; width:185px ">Madison, WI&nbsp;&nbsp;</td>
+                            <td style="text-align:left">&nbsp;&nbsp;Open&nbsp;</td></tr></table></li><li class="fields" value="6511"><table style="width:100%;"><tr><td valign=top><b>Jobs Description:&nbsp;&nbsp;</b></td>
+                                   <td>  <b>Qualifications:<br></b><ul><li>Must&nbsp;have&nbsp;at&nbsp;least&nbsp;4&nbsp;years’&nbsp;experience&nbsp;in&nbsp;support&nbsp;of&nbsp;Microsoft&nbsp;Dynamics&nbsp;CRM.</li><li> Excellent&nbsp;CRM&nbsp;2013&nbsp;and&nbsp;above&nbsp;out&nbsp;of&nbsp;the&nbsp;box&nbsp;Sales,&nbsp;Marketing,&nbsp;and&nbsp;Service&nbsp;Management
+experience.</li><li> Excellent&nbsp;CRM&nbsp;customization&nbsp;experience.&nbsp;</li><li>Plug­ins,&nbsp;custom&nbsp;workflow&nbsp;activities,&nbsp;and&nbsp;web&nbsp;resource
+development.</li><li> Data&nbsp;Import/Export&nbsp;experience&nbsp;with&nbsp;knowledge&nbsp;of&nbsp;CRM&nbsp;data&nbsp;entity&nbsp;layout</li><li> XML&nbsp;and&nbsp;related&nbsp;technologies&nbsp;(Schema,&nbsp;etc)</li><li> HTML&nbsp;5&nbsp;–&nbsp;Hypertext&nbsp;Markup&nbsp;Language&nbsp;(advanced)</li><li>CSS&nbsp;–&nbsp;Cascading&nbsp;Style&nbsp;Sheets&nbsp;(basic)</li><li> JavaScript&nbsp;&nbsp;(intermediate)</li><li> Client&nbsp;Web&nbsp;Debugging&nbsp;Skills</li><li> Database&nbsp;Design/Modeling&nbsp;and&nbsp;Query&nbsp;Optimization&nbsp;(intermediate)</li><li> Experience&nbsp;with&nbsp;test­ driven&nbsp;development&nbsp;and&nbsp;continuous&nbsp;integration.</li><li> Ability&nbsp;to&nbsp;partition&nbsp;and&nbsp;debug&nbsp;an&nbsp;n­tiered&nbsp;process,&nbsp;including&nbsp;isolating&nbsp;all&nbsp;levels&nbsp;and&nbsp;tracing&nbsp;data­flow
+through&nbsp;from&nbsp;end-­to-­end&nbsp;(advanced)</li><li> Software&nbsp;Development&nbsp;Life&nbsp;Cycle&nbsp;–&nbsp;Team&nbsp;Foundation&nbsp;Server&nbsp;Experience</li><li> Visual&nbsp;Studio&nbsp;2013/2015</li><li> Relational&nbsp;database&nbsp;design&nbsp;and&nbsp;development&nbsp;(advanced) &nbsp;-&nbsp;SQL&nbsp;Server&nbsp;database&nbsp;skills</li><li> SQL&nbsp;Server&nbsp;Integration&nbsp;Services&nbsp;(SSIS)&nbsp;Experience&nbsp;(intermediate)</li><li>Experience&nbsp;in&nbsp;analyzing&nbsp;enterprise&nbsp;business&nbsp;and&nbsp;technology&nbsp;issues&nbsp;in&nbsp;a&nbsp;large&nbsp;corporation&nbsp;or
+government&nbsp;organization.</li><li>Strong&nbsp;analysis&nbsp;skills&nbsp;grounded&nbsp;in&nbsp;technology&nbsp;and&nbsp;business&nbsp;planning&nbsp;and&nbsp;management.</li><li>Effective&nbsp;use&nbsp;of&nbsp;consensus&nbsp;building&nbsp;to&nbsp;reach&nbsp;decisions.</li><li> Knowledge&nbsp;of&nbsp;agile&nbsp;scrum&nbsp;practices.</li><li>Solid&nbsp;understanding&nbsp;of&nbsp;good&nbsp;programming&nbsp;and&nbsp;design&nbsp;practices</li><li> Ability&nbsp;to&nbsp;work&nbsp;independently&nbsp;in&nbsp;collaborative&nbsp;team&nbsp;effort</li><li>Ability&nbsp;to&nbsp;learn&nbsp;quickly;&nbsp;synthesize&nbsp;complex&nbsp;information;&nbsp;identify&nbsp;key&nbsp;points&nbsp;and&nbsp;communicate&nbsp;results
+accurately&nbsp;and&nbsp;effectively.</li><li> Resourceful&nbsp;in&nbsp;identifying&nbsp;and&nbsp;obtaining&nbsp;information&nbsp;sources&nbsp;needed&nbsp;to&nbsp;perform&nbsp;responsibilities
+effectively.</li><li> Ability&nbsp;to&nbsp;work&nbsp;independently&nbsp;and&nbsp;exercise&nbsp;appropriate&nbsp;discretion&nbsp;with&nbsp;a&nbsp;minimum&nbsp;of&nbsp;supervision&nbsp;and
+produce&nbsp;effective,&nbsp;acceptable&nbsp;results&nbsp;within&nbsp;short&nbsp;time&nbsp;frames.</li><li> Strong&nbsp;oral&nbsp;and&nbsp;written&nbsp;communication&nbsp;skills&nbsp;including&nbsp;the&nbsp;ability&nbsp;to&nbsp;communicate&nbsp;business&nbsp;and
+technical&nbsp;concepts&nbsp;and&nbsp;information&nbsp;effectively&nbsp;to&nbsp;a&nbsp;wide&nbsp;range&nbsp;of&nbsp;audiences&nbsp;including&nbsp;the&nbsp;public.</li><li> Strong&nbsp;inter­personal&nbsp;skills&nbsp;including&nbsp;the&nbsp;ability&nbsp;to&nbsp;work&nbsp;independently&nbsp;with&nbsp;business&nbsp;and&nbsp;IS
+managers&nbsp;and&nbsp;staff&nbsp;in&nbsp;federal,&nbsp;state&nbsp;and&nbsp;local&nbsp;agencies,&nbsp;and&nbsp;with&nbsp;division&nbsp;and&nbsp;department&nbsp;managers
+or&nbsp;staff.</li><li> Proven&nbsp;ability&nbsp;to&nbsp;communicate&nbsp;complex&nbsp;concepts&nbsp;orally;&nbsp;ability&nbsp;to&nbsp;prepare&nbsp;written&nbsp;reports&nbsp;that&nbsp;are
+clear,&nbsp;concise&nbsp;and&nbsp;meaningful.</li><li> Strong&nbsp;analytical&nbsp;skills&nbsp;and&nbsp;passion&nbsp;for&nbsp;solving&nbsp;challenging&nbsp;problems.</li><li> Strong&nbsp;debugging&nbsp;and&nbsp;troubleshooting&nbsp;skills</li></ul><br><b>Responsibilities:&nbsp;<br></b><ul><li>Responsible for Customer Relationship Management (CRM) system integration. This is includes "Out of the Box"&nbsp;features&nbsp;as well as xRM customization.</li><li>Integrate data from other systems into CRM and work with Outlook add-on.&nbsp;</li><li>Responsible&nbsp;for&nbsp;planning,&nbsp;support,&nbsp;implementation&nbsp;and&nbsp;administration&nbsp;of
+the&nbsp;agency&nbsp;Customer&nbsp;Relationship&nbsp;Management&nbsp;(CRM)&nbsp;web&nbsp;applications.&nbsp;&nbsp;</li><li>This&nbsp;position&nbsp;provides&nbsp;direction, guidance,&nbsp;technical&nbsp;services&nbsp;and&nbsp;consultation&nbsp;to&nbsp;agency&nbsp;wide&nbsp;contact&nbsp;management,&nbsp;case&nbsp;management,&nbsp;and
+custom&nbsp;workflow&nbsp;development&nbsp;including&nbsp;infrastructure&nbsp;support.&nbsp;&nbsp;</li><li>Additionally,&nbsp;this&nbsp;position&nbsp;has&nbsp;overall
+responsibility&nbsp;for&nbsp;any&nbsp;interfaces&nbsp;done&nbsp;to&nbsp;systems&nbsp;that&nbsp;manage&nbsp;any&nbsp;communication&nbsp;or&nbsp;case&nbsp;management
+needs.&nbsp;</li></ul>  </td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><b>Skills:</b></td><td>Business Analysis, SQL Server (Microsoft), SSIS, Oracle (Any Version), ASP.NET, JavaScript, MS Dynamics (CRM), SCRUM, Tools - Testing, Visual Studio (all)</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td valign=top>&nbsp;</td><td align=left>
+                                  <table border=0><tr><td style="width:450px;" >&nbsp;</td><td style="width:33%;">
+                                        <button href="#jobapplying" data-toggle="modal" class="btn btn-primary cmdJobsApply" value="20160919_005_SXM;;CRM Integration Specialist;;Madison, WI;;20160919_005_SXM"><b>I'm Interested!</b></button></td>
+                                  <td style="width:13%;" align=center></td></tr></table>
+                                 <br/></td></tr></table> </li>                    </ul>
+                        <table style="width: 100%">
+                        <tr>
+                            <td><td style="vertical-align:top">
+                                 <form id="frmPaginateJobs" method="post" action="">
+                                <span>Showing 1 
+                                to 25  of 121 jobs  <br /><input type="checkbox" name="chkShowOpenJob" id="chkShowOpenJob"  checked    />  &nbsp;Open: 97 jobs                                </span>
+                                     <input type="hidden" id="hidPage" name="hidPage" /><input type="hidden" id="hidSearch" name="hidSearch" />
+                                      <input type="hidden" id="hidJobsSorting1" name="hidJobsSorting1" value="" />
+                                      <input type="hidden" id="hidShowOpenJobs1" name="hidShowOpenJobs" value="" />
+                                    </form>
+                                </td>
+                                           <!-- Pagination -->
+                                <td style="text-align: right">
+                                    <div class="pagination" id="JobsOpeningPaginate">
+                                        <ul></ul>
+                                    </div>
+                                </td>
+                        </tr>
+                     <!--   hidden fields -->
+                    </table>  <small><b>S</b> = Subcontractor eligible&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>H</b> = H1B eligible</small>
+                    <!----------------------------------------------------------------------  -->
+                </div>
+        </div>
+    <div id="footer" class="row">
+        <p class="left">Copyright &copy; 2015. <a href="http://www.exactacorp.com/">EXACTA Corporation.&nbsp;&nbsp;</a> All Rights Reserved.</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.exactacorp.com/Terms%20Of%20Use.pdf" target="_blank">Terms Of Use&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="http://www.exactacorp.com/Website%20Privacy%20Statement.pdf" target="_blank">Privacy Statement&nbsp;&nbsp;</a>
+        <p class="right">Developed by <a href="http://www.sagacity-llc.com/">Sagacity LLC</a> & <a href="http://www.thesoftwarebin.com">The Software Bin LLC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+    </div>
+</body>
+</html>
+<!-- JQUERY -->
+<script>
+    $(document).ready(function () {
+         $("#chkShowOpenJob").attr("checked", true);  $("#hidShowOpenJobs").val("on");  
+        if ( $("#hidShowOpenJobs").val() == 'on'){
+            $("#chkShowOpenJob").attr("checked", true);
+        }
+        //header sorting click
+        $('.header').on('mouseover', function (event) {
+            $(this).css("cursor", "pointer");
+        });
+        $('.header').click(function (e) {
+            if ($('#chkShowOpenJob').is(':checked')){
+                $('#hidShowOpenJobs').val('on');
+            } 
+            $('#hidJobsSorting').val( $(this).text() );
+            $('#formSearch').submit();
+        });
+        var jobID = -1;
+        var jobApplyString = "";
+        //JOB CLICK
+        $('ul.jobs').on('click', 'li.title', function (e) {
+            function toggle(el) {
+                el.toggleClass('active', 250);
+                el.slideUp();
+            }
+            var me = $(this)
+            if (jobID == -1) {
+                toggle(me.next().slideDown(250).siblings('li.fields'));
+                jobID = me.next().val();
+            } else {
+                if (jobID == me.next().val()) {
+                    me.next().slideUp(250).siblings('li.fields').slideUp(250);
+                    jobID = -1;
+                } else {
+                    me.next().slideDown(250).siblings('li.fields').slideUp(250);
+                    jobID = me.next().val();
+                }
+            }
+        });
+        $('#chkShowOpenJob').change(function(){
+            if (this.checked){
+                $('#hidShowOpenJobs').val('on');
+            }  
+            $('#formSearch').submit();
+        });
+        $('li.fields').addClass("hide");
+        //apply click
+        $('.cmdJobsApply').click(function (e) {
+            $('#modalJobContactContent').empty();
+            $('#modalJobContactContent').load('contents/modal/modalContact.html');
+            var strJob = $(this).val();
+            if (strJob.length > 0) {
+                var myArray = $(this).val().split(';;');
+                if ((myArray[1] != "undefined")) {
+                    $('#JobDescriptionModal').html('<h5><b>' + myArray[3] + ':&nbsp;&nbsp;' + myArray[1] + ' - ' + myArray[2] + '</h5>');
+                    jobApplyString = $('#JobDescriptionModal').html();
+                }
+            } // end if
+            $('#cmdJobApplySubmit').show();
+            $('#cmdModCancel').html("Cancel");
+        });
+        $("#cmdSearchJob").click(function (e) {
+            if ($('#chkShowOpenJob').is(':checked')){
+                $('#hidShowOpenJobs').val('on');
+            }  
+            $("#formSearch").submit();
+        });
+        var JQUERY4U = {};
+        JQUERY4U.UTIL =
+        {
+            setupFormValidation: function () {
+                $('#frmJobApplying').validate({
+                    rules: {
+                        txtFirstName: "required",
+                        txtLastName: "required",
+                        txtEmail: {
+                            required: true,
+                            email: true
+                        },
+                        txtContactNumber: "required"
+                    },
+                    messages: {
+                        txtFirstName: "Please enter your First Name",
+                        txtLastName: "Please enter your Last Name",
+                        txtEmail: "Please enter a valid Email Address",
+                        txtContactNumber: "Please enter Contact Number"
+                    },
+                    submitHandler: function (form) {
+                        $('#cmdJobApplySubmit').hide();
+                        $('#cmdModCancel').html("Close");
+                        var serJobApplying = $('#frmJobApplying').serializeArray();
+                        serJobApplying.push({ "JobDes": jobApplyString });
+                         $.post("include/formActions.php", { "actionName": "requestJob", "jobrequest_data": serJobApplying }, function (data) {
+                            if ($('#radSubcontractorNo').is(":checked")){
+                                $(location).attr('href',"http://myexactamundo.com/EMPFORMS2");
+                            } else {
+                                $('#modalJobContactContent').empty();
+                                $('#modalJobContactContent').html("<h4>Thank you, your request has been sent.<br/>A subcontractor coordinator will contact you soon.</h4>");
+                            }
+                        });
+                    }
+                });
+            }
+        }
+        JQUERY4U.UTIL.setupFormValidation();
+        //when apply button click
+        $('#cmdJobApplySubmit').click(function (e) {
+            if ($('#chkShowOpenJob').is(':checked')){
+                $('#hidShowOpenJobs').val('on');
+            } 
+            $('#frmJobApplying').submit();
+            e.preventDefault();
+        });
+        //show
+        $('#layout').show();
+        
+        
+        $('#xlsOutput').click(function(){
+     
+          $('#tblJobsList').show().tableExport({type:'excel',escape:'false'})
+                  $('#tblJobsList').hide();
+
+
+        });
+        
+    });
+
+
+
+</script>
+
+
+
+<!--------------->
+<!--===================modal====================-->
+<div id="jobapplying" class="modal hide " data-backdrop="static">
+    <form id="frmJobApplying" class="form-horizontal" method="post">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h3>Contact Me About This Position</h3>
+            <div id="JobDescriptionModal"></div>
+        </div>
+        <div class="modal-body">
+            <table style="width: 100%; height: 160px">
+                <tr>
+                    <td style="text-align: center; vertical-align: central">
+                        <div id="modalJobContactContent">
+                            <!-- content at  "contents/modal/modalContact.html" -->
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="modal-footer">
+                <button id="cmdModCancel" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-primary" id="cmdJobApplySubmit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- -->
+<table id="tblJobsList" style="display:none" >
+    <tr><td>Analyst - Data Warehousing and BI</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Analyst - PeopleSoft</td><td>Education</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Application Architect - ASP.NET</td><td>Government</td><td>Madison, WI</td><td>10/20/2016</td></tr><tr><td>Application Developer - COBOL</td><td></td><td>Brookfield, WI</td><td>Open</td></tr><tr><td>Architect - Business Intelligence</td><td>Education</td><td>Platteville, WI</td><td>Open</td></tr><tr><td>Business Analyst</td><td></td><td>Richfield, MN</td><td>Open</td></tr><tr><td>Business Analyst</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Business Analyst</td><td></td><td>Racine, WI</td><td>10/17/2016</td></tr><tr><td>Business Analyst</td><td>Government</td><td>Madison, WI</td><td>10/17/2016</td></tr><tr><td>Business Analyst</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Business Analyst</td><td></td><td>Saint Paul, MN</td><td>Open</td></tr><tr><td>Business Analyst</td><td>Government</td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>Business Analyst</td><td>Government</td><td>Madison, WI</td><td>10/21/2016</td></tr><tr><td>Business Analyst</td><td></td><td>Richfield, MN</td><td>Open</td></tr><tr><td>Business Analyst</td><td>Manufacturing</td><td>Holland, MI</td><td>Open</td></tr><tr><td>Business Analyst</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Business Analyst</td><td></td><td>Richfield, MN</td><td>Open</td></tr><tr><td>Business Analyst - Pega PRPC</td><td></td><td>Brookfield, WI</td><td>Open</td></tr><tr><td>Business System Analyst</td><td></td><td>Richfield, MN</td><td>Open</td></tr><tr><td>Business System Analyst</td><td>Banking</td><td>Richfield, MN</td><td>10/21/2016</td></tr><tr><td>Business Systems Analyst</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Business Systems Specialist</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Change Manager</td><td></td><td>Knoxville, TN</td><td>Open</td></tr><tr><td>Community Manager</td><td>Consumer Goods</td><td>Irving, TX</td><td>10/21/2016</td></tr><tr><td>CRM Integration Specialist</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>CRM Integration Specialist</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Data Analyst</td><td></td><td>Earth City, MO</td><td>Open</td></tr><tr><td>Data Architect</td><td>Banking</td><td>Richfield, MN</td><td>Open</td></tr><tr><td>Data Warehouse Technical Lead - BI</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Desktop Engineer</td><td></td><td>Holland, MI</td><td>Open</td></tr><tr><td>Desktop Engineer</td><td>Manufacturing</td><td>Holland, MI</td><td>10/18/2016</td></tr><tr><td>Desktop Support</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Desktop Support</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Desktop Support</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Desktop Support</td><td></td><td>Madison, WI</td><td>10/19/2016</td></tr><tr><td>Desktop Support</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Desktop Support</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Desktop Support</td><td>Manufacturing</td><td>Fountain Inn, SC</td><td>Open</td></tr><tr><td>Developer</td><td></td><td>Franklin, TN</td><td>Open</td></tr><tr><td>Developer - .NET</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Developer - .NET</td><td></td><td>Irvine, CA</td><td>Open</td></tr><tr><td>Developer - .NET</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Developer - .NET</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Developer - BPM</td><td>Banking</td><td>Richfield, MN</td><td>Open</td></tr><tr><td>Developer - Data Warehouse</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Developer - Data Warehouse</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Developer - ETL</td><td>Manufacturing</td><td>Glendale, WI</td><td>Open</td></tr><tr><td>Developer - GuideWire</td><td>Insurance</td><td>Stevens Point, WI</td><td>10/31/2016</td></tr><tr><td>Developer - Java</td><td>Banking</td><td>Richfield, MN</td><td>Open</td></tr><tr><td>Developer - Java</td><td></td><td>Richfield, MN</td><td>Open</td></tr><tr><td>Developer - Java</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Developer - Java</td><td>Banking</td><td>Gresham, OR</td><td>Open</td></tr><tr><td>Developer - Java</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Developer - Java</td><td></td><td>Portland, OR</td><td>10/21/2016</td></tr><tr><td>Developer - Java</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Developer - TIBCO</td><td>Banking</td><td>Brookfield, WI</td><td>Open</td></tr><tr><td>Digital Producer</td><td></td><td>Roswell, GA</td><td>Open</td></tr><tr><td>Engineer - Collab and Info Access Solutions</td><td>Consumer Goods</td><td>Neenah, WI</td><td>Open</td></tr><tr><td>Engineer - Collab and Info Access Solutions</td><td>Consumer Goods</td><td>Neenah, WI</td><td>Open</td></tr><tr><td>eProcurement Analyst</td><td></td><td>Saint Paul, MN</td><td>Open</td></tr><tr><td>ERP Programmer/Analyst</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Help Desk</td><td>Government</td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>Help Desk</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Help Desk</td><td></td><td>Holland, MI</td><td>Open</td></tr><tr><td>Help Desk</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Info Security Specialist - IAM</td><td></td><td>Richfield, MN</td><td>10/21/2016</td></tr><tr><td>Marketing Specialist</td><td></td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>Network Engineer</td><td></td><td>Richfield, MN</td><td>Open</td></tr><tr><td>PC Support Specialist</td><td>Manufacturing</td><td>Owensboro, KY</td><td>Open</td></tr><tr><td>PC Support Specialist</td><td></td><td>Chicago, IL</td><td>10/21/2016</td></tr><tr><td>Principal Software Engineer - C/C++</td><td></td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>Program Manager</td><td></td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>Programmer - PeopleSoft</td><td>Education</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Programmer Analyst</td><td>Government</td><td>Madison, WI</td><td>10/24/2016</td></tr><tr><td>Programmer Analyst</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Project Coordinator</td><td></td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>Project Manager</td><td>Government</td><td>Madison, WI</td><td>10/20/2016</td></tr><tr><td>Project Manager</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Project Manager</td><td>Government</td><td>Madison, WI</td><td>10/21/2016</td></tr><tr><td>Project Manager</td><td></td><td>Denver, CO</td><td>10/21/2016</td></tr><tr><td>Project Manager</td><td>Banking</td><td>Brookfield, WI</td><td>10/21/2016</td></tr><tr><td>Project Manager</td><td></td><td>Menomonee Falls, WI</td><td>Open</td></tr><tr><td>Project Manager</td><td>Government</td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>Project Manager</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Project Manager</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Project Manager</td><td></td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>Project Manager</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Project Manager</td><td></td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>Project Manager - BI</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Project Manager - Data Warehouse</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Project Manager - Data Warehousing and BI</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Project Manager - PeopleSoft</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Project Manager - WEM</td><td>Consumer Goods</td><td>Roswell, GA</td><td>Open</td></tr><tr><td>Project Specialist</td><td>Banking</td><td>Brookfield, WI</td><td>10/21/2016</td></tr><tr><td>Project Specialist</td><td>Banking</td><td>Denver, CO</td><td>10/21/2016</td></tr><tr><td>QA Analyst</td><td></td><td>Saint Paul, MN</td><td>Open</td></tr><tr><td>QA Test Analyst</td><td></td><td>Milwaukee, WI</td><td>10/21/2016</td></tr><tr><td>QA Test Analyst</td><td></td><td>Richfield, MN</td><td>Open</td></tr><tr><td>QA Test Analyst</td><td></td><td>Richfield, MN</td><td>Open</td></tr><tr><td>QA Test Analyst</td><td></td><td>Richfield, MN</td><td>Open</td></tr><tr><td>Security Analyst</td><td>Government</td><td>Madison, WI</td><td>10/24/2016</td></tr><tr><td>Software Engineer</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Software Engineer</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Software Engineer - Firmware</td><td>Manufacturing</td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>Software Engineer - Firmware</td><td></td><td>Milwaukee, WI</td><td>Open</td></tr><tr><td>System Administrator - Domino</td><td></td><td>Gresham, OR</td><td>Open</td></tr><tr><td>Systems Administrator</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Systems Administrator</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Systems Administrator</td><td></td><td>Madison, WI</td><td>Open</td></tr><tr><td>Systems Administrator</td><td>Government</td><td>Madison, WI</td><td>10/18/2016</td></tr><tr><td>Systems Administrator</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Systems Analyst</td><td>Education</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Systems Analyst</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Systems Analyst</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Systems Engineer</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Systems Programmer - UNIX</td><td>Financial</td><td>Little Rock, AR</td><td>10/21/2016</td></tr><tr><td>Technical Architect</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Technical Lead - Business Intelligence</td><td>Government</td><td>Madison, WI</td><td>10/20/2016</td></tr><tr><td>Technical Writer</td><td>Government</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Technical Writer</td><td>Education</td><td>Madison, WI</td><td>Open</td></tr><tr><td>Tester - User Acceptance</td><td>Insurance</td><td>Madison, WI</td><td>Open</td></tr>    
+    
+</table> 
+

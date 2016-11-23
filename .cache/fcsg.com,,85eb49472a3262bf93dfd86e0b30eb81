@@ -1,0 +1,277 @@
+status: 200
+content-length: 14853
+content-location: http://fcsg.com
+x-powered-by: ASP.NET
+accept-ranges: bytes
+server: Microsoft-IIS/7.0
+last-modified: Wed, 18 Nov 2015 01:03:44 GMT
+etag: "d055bbf89c21d11:0"
+date: Wed, 21 Sep 2016 03:47:46 GMT
+content-type: text/html
+
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<title>Home - Franklin Computer Services Group</title>
+		<link rel="stylesheet" type="text/css" href="FCSG.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="scripts/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
+		<script src="scripts/ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+		<script>
+			$(function() {
+			$("#home_page_slideshow").responsiveSlides({
+			auto: true,
+			speed: 1000,
+			timeout: 7200,
+			pager: false,
+			nav: false
+			});
+			});
+		</script>
+<script>
+			function revealNav(e) {
+			if (document.querySelector('#banner_nav .expanded')) {
+			while (document.querySelector('#banner_nav .expanded')) {
+			$(document.querySelector('#banner_nav .expanded')).removeClass('expanded');
+			}
+			}
+			$(document.body).addClass('nav_active');
+			e.preventDefault();
+			}
+			function hideNav(e) {
+			if (document.querySelector('#off_canvas_nav ul li .expanded')) {
+			while (document.querySelector('#off_canvas_nav ul li .expanded')) {
+			$(document.querySelector('#off_canvas_nav ul li .expanded')).removeClass('expanded');
+			}
+			}
+			$(document.body).removeClass('nav_active');
+			e.preventDefault();
+			}
+			function toggleOffCanvSubmenu(e) {
+			e.preventDefault();
+			targ = e.target;
+			while (targ.tagName != "DIV") {
+			targ = targ.parentElement;
+			}
+			if ($(targ).hasClass('expanded')) {
+			collapseSubmenu(targ);
+			} else {
+			expandSubmenu(targ);
+			}
+			}
+			function toggleBannerSubmenu(e) {
+			e.preventDefault();
+			targ = e.target;
+			while (targ.tagName != "A") {
+			targ = targ.parentElement;
+			}
+			if ($(targ).hasClass('expanded')) {
+			collapseSubmenu(targ);
+			} else {
+			if (document.querySelector('#banner_nav .expanded')) {
+			while (document.querySelector('#banner_nav .expanded')) {
+			$(document.querySelector('#banner_nav .expanded')).removeClass('expanded');
+			}
+			}
+			expandSubmenu(targ);
+			}
+			}
+			function expandSubmenu(targ) {
+			$(targ).addClass('expanded');
+			}
+			function collapseSubmenu(targ) {
+			$(targ).removeClass('expanded');
+			}
+			function clickOut(e) {
+			if (document.querySelector('#banner_nav .expanded')) {
+			if (!isDescendant(document.getElementById("banner_nav"), e.target)) {
+			while (document.querySelector('#banner_nav .expanded')) {
+			$(document.querySelector('#banner_nav .expanded')).removeClass('expanded');
+			}
+			}
+			}
+			}
+			function isDescendant(parent, child) {
+			var node = child.parentNode;
+			while (node != null) {
+			if (node == parent) {
+			return true;
+			}
+			node = node.parentNode;
+			}
+			return false;
+			}
+			$(document).ready(function() {
+			$("html.touch #wrapper").on("swiperight", revealNav);
+			$("html.touch #off_canvas_nav, html.touch #cover_up").on("swipeleft", hideNav);
+			});
+		</script>
+		<script src="scripts/modernizr.custom.98069.js"></script>
+		<!--modernizr css classes used: no-rgba no-cssgradients-->
+		<script src="scripts/Respond-master/dest/respond.min.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-62710204-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body onclick='clickOut(event)'>
+		<div id="off_canvas_nav">
+			<div><img src="images/franklin-logo-web.png" alt="Franklin Computer Services Group logo" /></div>
+			<ul>
+				<li>
+					<div>
+						<a class="left_icon" href="#" onclick='hideNav(event)'><img src="images/hamburger-icon-white.png" alt="menu icon" /></a><a id="close_menu" href="#" onclick='hideNav(event)'>Close Menu</a><a class="right_icon X" href="#" onclick='hideNav(event)'><img src="images/x-icon.png" alt="X icon" /></a>
+					</div>
+				</li>
+				<li><div><a href="index.html">HOME</a></div></li>
+				<li><div><a href="about_us.html">ABOUT US</a></div></li>
+				<li><div><a href="brands_overview.html" onclick='toggleOffCanvSubmenu(event)'>OUR BRANDS</a><a class="right_icon arrow" href="#" onclick='toggleOffCanvSubmenu(event)'><img class="down_arrow" src="images/down-arrow.png" alt="down arrow icon" /><img class="up_arrow" src="images/up-arrow.png" alt="up arrow icon" /></a></div>
+					<ul>
+						<li><a href="brands_overview.html">Brands Overview</a></li>
+						<li class="no_phone no_tablet no_desktop taller_sub_nav"><a href="#">Franklin Administrative Services Team</a></li>
+						<li><a href="franklin_cloud_services.html">Franklin Cloud Services</a></li>
+						<li><a href="franklin_moves.html">Franklin Moves</a></li>
+						<li class="no_phone no_tablet no_desktop"><a href="#">Matrix Dental</a></li>
+						<li><a href="http://www.sps-k12.com" target="_blank">Student Provisioning Services</a></li>
+						<li><a href="k-12_group.html">K-12 Group</a></li>
+					</ul>
+				</li>
+				<li><div><a href="what_we_do_overview.html" onclick='toggleOffCanvSubmenu(event)'>WHAT WE DO</a><a class="right_icon arrow" href="#" onclick='toggleOffCanvSubmenu(event)'><img class="down_arrow" src="images/down-arrow.png" alt="down arrow icon" /><img class="up_arrow" src="images/up-arrow.png" alt="up arrow icon" /></a></div>
+					<ul>
+						<li><a href="what_we_do_overview.html">What We Do Overview</a></li>
+						<li><a href="franklin_cloud_services.html">Franklin Cloud Services</a></li>
+						<li><a href="business_consulting.html">Business Consulting</a></li>
+						<li class="taller_sub_nav"><a href="move_and_relocation_services-space_planning.html">Move and Relocation Services / Space Planning</a></li>
+						<li class="no_phone no_tablet no_desktop taller_sub_nav"><a href="#">ITAD / Equipment Lifecycle</a></li>
+						<li class="no_phone no_tablet no_desktop"><a href="#">Education</a></li>
+						<li class="no_phone no_tablet no_desktop"><a href="#">Bookkeeping / Accounting</a></li>
+						<li><a href="community_involvement.html">Community Involvement</a></li>
+					</ul>
+				</li>
+				<li><div><a href="industries.html">INDUSTRIES</a></div></li>
+				<li><div><a href="partners.html">PARTNERS</a></div></li>
+				<li><div><a href="contact_us.html">CONTACT US</a></div></li>
+			</ul>
+		</div><!--end #off_canvas_nav-->
+		<div id="cover_up" onclick="hideNav(event)"></div>
+		<div id="wrapper">
+			<div id="banner">
+				<img id="banner_FCSG_logo" src="images/franklin-logo-web.png" alt="Franklin Computer Services Group" />
+				<div id="banner_info">
+					<p><a class="tel" href="tel:+16144313327">614.431.3327</a></p><a href="https://www.linkedin.com/company/franklin-computer-services-group" target="_blank"><img src="images/in-icon-lt-gray.png" alt="LinkedIn icon"/></a><a href="mailto:info@fcsg.com"><img src="images/email-icon-lt-gray-22.png" alt="email icon"/></a><a class="no_phone no_tablet no_desktop" href="#">BLOG</a>
+				</div><!--end #banner_info-->
+				<ul id="banner_nav">
+					<li class="phone tablet no_desktop"><a class="no_dropdown" onclick='revealNav(event)' href="#"><img src="images/hamburger-icon-white.png" alt="menu icon" /><p>MENU</p></a></li><!--no white-space
+					--><li class="no_phone tablet desktop nav_here"><a class="no_dropdown" href="index.html">HOME</a></li><!--no white-space
+					--><li class="no_phone tablet desktop">
+						<a class="no_dropdown" href="about_us.html">ABOUT&#160;US</a></li><!--no white-space
+					--><li class="no_phone no_tablet desktop">
+						<a href="brands_overview.html" onclick='toggleBannerSubmenu(event)'>OUR&#160;BRANDS<div class="arrow"><span class="down">&#x25BC;</span><span class="up">&#x25B2;</span></div></a>
+						<ul>
+							<li><a href="brands_overview.html">Brands Overview</a></li>
+							<li class="no_phone no_tablet no_desktop taller_sub_nav"><a href="#">Franklin&#160;Administrative&#160;Services&#160;Team</a></li>
+							<li><a href="franklin_cloud_services.html">Franklin Cloud Services</a></li>
+							<li><a href="franklin_moves.html">Franklin Moves</a></li>
+							<li class="no_phone no_tablet no_desktop"><a href="#">Matrix Dental</a></li>
+							<li><a href="http://www.sps-k12.com" target="_blank">Student Provisioning Services</a></li>
+							<li><a href="k-12_group.html">K-12 Group</a></li>
+						</ul>
+					</li><!--no white-space
+					--><li class="no_phone no_tablet desktop">
+						<a href="what_we_do_overview.html" onclick='toggleBannerSubmenu(event)'>WHAT&#160;WE&#160;DO<div class="arrow"><span class="down">&#x25BC;</span><span class="up">&#x25B2;</span></div></a>
+						<ul>
+							<li><a href="what_we_do_overview.html">What We Do Overview</a></li>
+							<li><a href="franklin_cloud_services.html">Franklin Cloud Services</a></li>
+							<li><a href="business_consulting.html">Business Consulting</a></li>
+							<li><a href="move_and_relocation_services-space_planning.html">Move&#160;and&#160;Relocation&#160;Services&#160;/&#160;Space&#160;Planning</a></li>
+							<li class="no_phone no_tablet no_desktop"><a href="#">ITAD / Equipment Lifecycle</a></li>
+							<li class="no_phone no_tablet no_desktop"><a href="#">Education</a></li>
+							<li class="no_phone no_tablet no_desktop"><a href="#">Bookkeeping / Accounting</a></li>
+							<li><a href="community_involvement.html">Community Involvement</a></li>
+						</ul>
+					</li><!--no white-space
+					--><li class="no_phone no_tablet desktop"><a class="no_dropdown" href="industries.html">INDUSTRIES</a></li><!--no white-space
+					--><li class="no_phone no_tablet desktop"><a class="no_dropdown" href="partners.html">PARTNERS</a></li><!--no white-space
+					--><li class="no_phone tablet desktop"><a class="no_dropdown" href="contact_us.html">CONTACT&#160;US</a></li>
+				</ul>
+				<img id="swoop_curve" src="images/swoosh-on-black-167.jpg" alt="red swoop graphic" />
+				<div class="clearer"></div>
+			</div><!--end #banner-->
+			<ul id="home_page_slideshow" class="rslides">
+				<li>
+					<img src="images/home-pic-1.jpg" alt="" />
+					<div class="caption_container">
+						<p class="caption">Franklin makes technology work &#8212; and work FOR you.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/home-pic-2.jpg" alt="" />
+					<div class="caption_container">
+						<p class="caption">Franklin. Delivering quality technology and business solutions.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/home-pic-3.jpg" alt="" />
+					<div class="caption_container">
+						<p class="caption">Franklin tailors flexible teams of experts to meet your&#160;needs.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/home-pic-4.jpg" alt="" />
+					<div class="caption_container">
+						<p class="caption">Franklin. Our success is helping your business succeed.</p>
+					</div>
+				</li>
+			</ul>
+			<div id="main_content">
+				<div id="left_column">
+					<h1>Franklin Computer Services Group</h1>
+					<h2>WHY FRANKLIN</h2>
+					<p>At Franklin we give you the highest quality for the best cost. How? – Our model!<br /><br />
+					We keep our overhead low which means our techs earn more per hour than our competitors. This attracts intelligent, highly technical, punctual, friendly techs with sharp business acumen!</p>
+					<p><span class="bold italic">Trusted by over 1500 clients in Ohio, and ten other states so far!</span></p>
+					<h2>OUR PHILOSOPHY</h2>
+					<p>To provide our clients with appropriate IT and Business solutions specific to their industry, culture, budget and purpose. We focus on honesty, integrity, and a solution oriented approach with the <span class="underlined italic">highest value at the best cost delivering exceptional results!</span></p>
+					<blockquote class="italic">Integrity is doing the right thing even when no one is watching.<br />
+						<span class="attribution">C.S. Lewis</span></blockquote>
+				</div><!--end #left_column--><!--no white-space
+				--><div id="right_column">
+					<div id="reviews" class="no_phone no_tablet no_desktop">
+						<h1 class="italic">Customer Reviews</h1>
+						<blockquote>"Franklin was the best est rutrum urna vennenatis auctor. Sed quis ante. Nullam urna lorem, tepus eget, sollicitudin vitae, porta pharetra, eros. Aliquam sit amet eros. Curabitur ultricies imperdiet elit. Class aptent taciti sociosqu ad litora torquent per conubie nostra, per inceptos hymenaeoos."<br /><br />
+							<span class="italic attribution">An executive in the manufacturing industry</span></blockquote>
+						<a class="bold italic underlined">Read more reviews</a>
+					</div><!--end #reviews-->
+					<div id="call_to_action" class="aside sage_press_release">
+						<h1>Franklin Goes Green</h1>
+						<img src="images/rt-col-partnership.jpg" alt="Franklin and Sage Electronics partner up"/>
+					<p>Franklin and Sage Sustainable Electronics join forces to give back to the Columbus community starting with the Reeb Avenue Community Center.<br /><a href="docs/Franklin Sage Press Release.pdf" target="_blank">Read more on the “reuse revolution” &#62;</a></p>
+					</div><!--end .aside.sage_press_release-->
+				</div><!--end #right_column-->
+			</div><!--end #main_content-->
+			<div id="footer">
+				<ul id="footer_nav">
+					<li><a href="index.html">HOME</a></li><!--no white-space
+						--><li><a href="about_us.html">ABOUT&#160;US</a></li><!--no white-space
+						--><li><a href="brands_overview.html">OUR&#160;BRANDS</a></li><!--no white-space
+						--><li><a href="what_we_do_overview.html">WHAT&#160;WE&#160;DO</a></li><!--no white-space
+						--><li><a href="industries.html">INDUSTRIES</a></li><!--no white-space
+						--><li><a href="partners.html">PARTNERS</a></li><!--no white-space
+						--><li><a href="contact_us.html">CONTACT&#160;US</a></li><!--no white-space
+					--><li class="no_phone no_tablet no_desktop"><a href="#">BLOG</a></li><!--no white-space
+						--><li><a class="icon_container" href="https://www.linkedin.com/company/franklin-computer-services-group" target="_blank"><img src="images/in-icon-lt-gray.png" alt="LinkedIn icon"/></a></li>
+				</ul><!--no white-space
+				--><div id="footer_contact">
+					<a class="tel" href="tel:+16144313327">614.431.3327</a><!--no white-space
+					--><p>6650 East Walnut Street<br />
+						New Albany, OH 43054</p>
+				</div><!--end #contact_info--><!--no white-space
+				--><p id="footer_copyright">&#169; 2015 Franklin Computer Services Group<br />
+					All Rights Reserved</p>
+			</div><!--end #footer-->
+		</div><!--end #wrapper-->
+	</body>
+</html>

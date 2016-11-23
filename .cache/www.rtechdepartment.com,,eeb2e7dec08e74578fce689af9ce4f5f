@@ -1,0 +1,142 @@
+status: 200
+content-length: 8440
+content-location: http://www.rtechdepartment.com
+server: nginx/1.10.1
+connection: keep-alive
+-content-encoding: gzip
+date: Fri, 30 Sep 2016 02:49:01 GMT
+content-type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PC Service and Support by RTech Department</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script src="scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.validate.min.js" type="text/javascript"></script>
+<script src="scripts/functions.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+var titles = new Array("Service Contracts","PC Repair &amp; Support","Computers &amp; Hardware");
+var contents = new Array("Our service contracts are the perfect way for businesses to fulfill the need for an IT staff, at a fraction of the cost. Our service contracts enable you to do what you do best by keeping your network and systems running smoothly and efficiently. Pick from one of our several service contracts to accommodate your needs and your budget.<ul><li>Unlimited Hours of Support*</li><li>Remote Assistance</li><li>Free Phone Support</li><li>Quick Response Time (varies per plan)</li><li>Priority Access to our Experienced Staff</li><li>Discounted or free parts (varies per plan)</li></ul><br />","At RTech Department our technicians are highly experienced with computer diagnostics, repair and problem resolution. With over 25 combined years experience resolving the toughest computer problems. In addition, RTech Department provides the following computer services:<ul><li>Troubleshooting</li><li>Spyware / Malware / Virus Removal</li><li>Upgrades (Hardware / Software / Operating System)</li><li>Hardware Installation</li><li>Wireless Networks</li><li>System Optimization</li><li>Printer / Peripheral Installation</li></ul><br />","We can custom build home PCs, business workstations and servers. We provide the following and more.<ul><li>Workstations (Intel / AMD)</li><li>Servers (Intel / AMD)</li><li>Software (OS, Anti-Virus, Office, Monitoring)</li><li>LCD Monitors</li><li>Hard Drives</li><li>CPUs</li><li>Motherboards</li><li>Memory</li><li>Power Supplies</li><li>Cables</li><li>Routers / Switches</li></ul><br />");
+
+var rotKey = 1;
+function swapFeature() {
+	if (rotKey == 3) {
+		rotKey = 1;
+	} else {
+		rotKey++;
+	}
+	$("#featured").html(titles[rotKey-1]);
+	$("#content-home2").html(contents[rotKey-1]);
+}
+
+
+function rotate() {
+	$("#featured").animate({opacity:0},1000,"swing");
+	$("#content-home2").animate({opacity:0},1000,"swing",function () {														   
+		swapFeature();
+		$("#featured").animate({opacity:1},1000,"swing");
+		$("#content-home2").animate({opacity:1},1000,"swing",function() {
+			window.setTimeout('rotate();',6000);
+		});
+	});
+}
+
+$(document).ready(function(){
+	window.setTimeout('rotate();',6000);
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+	<img src="images/home_01.jpg" alt="RTech Department" />
+    <div id="nav">
+  <div class="nav-cell" id="index" onclick="gtfo(this.id)">HOME</div>     
+  <div class="nav-cell" id="about" onclick="gtfo(this.id)">ABOUT</div>
+  <div class="nav-cell" id="services" onclick="gtfo(this.id)" onmouseover="navmenu('show',this.id)" onmouseout="navmenu('hide',this.id)">
+  	SERVICES
+      <div class="nav-menu" id="menu-services" onmouseover="removeAttr('services')" onmouseout="addAttr('services')"> 
+          <div class="nav-menu-cell" id="services_agreements" onclick="gtfo(this.id)">Service Agreements</div>
+          <div class="nav-menu-cell" id="services_support" onclick="gtfo(this.id)">PC Repair &amp; Support</div>
+          <div class="nav-menu-cell" id="services_hardware" onclick="gtfo(this.id)">Computers &amp; Hardware</div>
+          <div class="nav-menu-cell" id="other" onmouseover="navmenu('show',this.id)" onmouseout="navmenu('hide',this.id)">
+          	Other Services &gt;
+              <div class="nav-menu-sub" id="menu-other">
+                  <div class="nav-menu-sub-cell" id="services_web" onclick="gtfo(this.id)">Website Solutions</div>
+                  <div class="nav-menu-sub-cell" id="services_seo" onclick="gtfo(this.id)">SEO / SEM</div>
+                  <div class="nav-menu-sub-cell" id="services_network" onclick="gtfo(this.id)">Network Support</div>
+                  <div class="nav-menu-sub-cell" id="services_data" onclick="gtfo(this.id)">Data Protection &amp; Recovery</div>
+                  <div class="nav-menu-sub-cell" id="services_remote" onclick="gtfo(this.id)">Remote Support</div>
+              </div>
+           </div>
+         </div>
+      </div>          
+  <div class="nav-cell" id="contact" onclick="gtfo(this.id)">CONTACT</div>
+  <div class="nav-cell" id="downloads" onclick="gtfo(this.id)">DOWNLOADS</div>
+  <div class="nav-cell" id="specials" onclick="gtfo(this.id)">SPECIALS</div>
+</div>    <img src="images/home_02.jpg" alt="Providing Solutions" />
+    <div id="headers-home">
+    	<div id="header-home3">
+        	Contact RTech Now
+        </div>
+        <div id="header-home2">
+       		Featured Service: <span id="featured">Service Contracts</span>
+        </div>
+        <div id="header-home1">
+        	Specials
+        </div>
+    </div>
+	<div id="content-home">
+    	<div id="content-home3">
+        	            <form action="scripts/doQuote.php" method="post" id="estForm">
+            <input type="hidden" name="page" value="index" />
+                    	<table border="0" cellpadding="10" cellspacing="0" width="300">
+            	<tr>
+                	<td>Name</td>
+                    <td><input type="text" name="name" class="textbox required" /><input type="text" name="lname" class="textbox lname" /></td>
+              </tr>
+              <tr>
+                	<td>Email</td>
+                    <td><input type="text" name="email" class="textbox required email" /></td>
+              </tr>
+              <tr>
+                	<td>Phone</td>
+                    <td><input type="text" name="phone" class="textbox required phone" /></td>
+              </tr>
+              <tr>
+                	<td>Comments</td>
+                    <td><textarea name="comments" class="textbox required" rows="3"></textarea></td>
+              </tr>
+              <tr>
+              	<td colspan="2" align="right"><input type="submit" class="button" value="SUBMIT" /></td>
+              </tr>
+           </table>
+           </form>
+                   </div>
+        <div id="content-home2">
+        	Our service contracts are the perfect way for businesses to fulfill the need for an IT staff, at a fraction of the cost. Our service contracts enable you to do what you do best by keeping your network and systems running smoothly and efficiently. Pick from one of our several service contracts to accommodate your needs and your budget.
+            <ul>
+                <li>Unlimited Hours of Support*</li>
+                <li>Remote Assistance</li>
+                <li>Free Phone Support</li>
+                <li>Quick Response Time (varies per plan)</li>
+                <li>Priority Access to our Experienced Staff</li>
+                <li>Discounted or free parts (varies per plan)</li>
+			</ul>
+            <br />
+        </div>
+        <div id="content-home1">
+        	<h1 class='dkblue'><a href='specials.php'>Acer Aspire 5251-1513</a></h1><a href='specials.php'><img src='images/specials/AcerAspire.gif' alt='Acer Aspire 5251-1513' class='special-img' border='0'/></a><h2>$475.00 | <a href='specials.php'>View Details</a></h2>        </div>
+        <div class="clear"></div>
+    </div>
+	<div id="footer">
+	Copyright &copy; 2016 RTech Department | 713.358.6000 | <a href="mailto:sales@rtechdepartment.com">sales@rtechdepartment.com</a> <!--| <a href="privacy.php">Privacy</a> | <a href="terms.php">Terms of Use</a>-->
+</div>
+<div id="footer-logos">
+	<img src="http://rtechdepartment.com/images/logo_intel.gif" alt="Intel" /> <img src="http://rtechdepartment.com/images/logo_ms.gif" alt="Microsoft" /> <img src="http://rtechdepartment.com/images/logo_amd.gif" alt="AMD" /> <img src="http://rtechdepartment.com/images/logo_avg.gif" alt="AVG" /> <img src="http://rtechdepartment.com/images/logo_spector.gif" alt="SpectorSoft" /> <img src="http://rtechdepartment.com/images/logo_nvidia.gif" alt="Nvidia" />
+</div></div>
+</body>
+</html>

@@ -1,0 +1,525 @@
+status: 200
+content-length: 28891
+content-location: http://www.ellipseinc.com
+x-powered-by: ASP.NET
+set-cookie: ASPSESSIONIDCSTCBASR=DFCCNPLACPOAGPFGDHADJFCM; path=/
+server: Microsoft-IIS/7.5
+x-ua-compatible: IE=edge
+cache-control: private
+date: Wed, 21 Sep 2016 08:11:51 GMT
+content-type: text/html
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>Ellipse Communications, Inc | Multifamily Software-as-a-Service Applications</title>
+	<meta name="KEYWORDS" content="Multifamily, Apartment Website Design,Software as a service, SAAS,SEO,e-mail marketing,custom website design,data integration,apartment websites,apartment website design,multifamily email campaign" />
+	<meta name="DESCRIPTION" content="Ellipse Communications is the leading provider of software-as-a-service (SAAS) solutions to the multifamily industry." />
+	<meta name="AUTHOR" content="Ellipse Communications, Inc." />
+	<meta name="COPYRIGHT" content="2016" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/js/jquery.backstretch.min.js" type="text/javascript"></script>
+	<script src="/js/jquery.placeholder.js" type="text/javascript"></script>
+	<script src="/js/jquery.qtip.min.js" type="text/javascript"></script>
+	<script src="/js/urchin.js" type="text/javascript"></script>
+	<script src="/js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script type="text/javascript">
+		urchinTracker();
+
+		var obj = null;
+		function checkHover() {if (obj) {obj.find('ul').fadeOut('fast');}}
+		$(document).ready(function ($) {
+			$('img').bind('mouseenter mouseleave', function () {if ($(this).attr('data-roll-src')) {$(this).attr({src: $(this).attr('data-roll-src'), 'data-roll-src': $(this).attr('src')});}});
+			$('input, textarea').placeholder();
+
+			$('[title!=""]').qtip({
+				style: {
+					classes: 'qtip-light qtip-shadow qtip-rounded'
+				}
+			});
+
+			$('#headerNav > li').hover(function () {
+				if (obj) {
+					obj.find('ul').fadeOut('fast');
+					obj = null;
+				}
+
+				$(this).find('ul').fadeIn('fast');
+			}, function () {
+				obj = $(this);
+				setTimeout(
+					"checkHover()",
+					400);
+			});
+
+			$('.subNavClick').click(function () {
+				$(this).children(".arrowUp").toggle();
+				$(this).children(".arrowDown").toggle();
+				$(this).parent().children(".subNav2").slideToggle();
+			});
+
+			$('.btnMenu').click(function () {
+				$('#dropMenu').slideToggle();
+			});
+			$('.dropMenuSubClick').click(function () {
+				$(this).children(".arrowUp").toggle();
+				$(this).children(".arrowDown").toggle();
+				$(this).parent().children(".dropMenuSub").slideToggle();
+			});
+			$('.dropMenuSub2Click').click(function () {
+				$(this).children(".arrowUp").toggle();
+				$(this).children(".arrowDown").toggle();
+				$(this).parent().children(".dropMenuSub2").slideToggle();
+			});
+			$('#CeoEmailSubmit').click(function () {
+			    if ($('#CeoEmail').val() != "") {
+			        $.ajax({ url: 'newsletter2_proc.asp', data: 'NewsEmail=' + $('#CeoEmail').val(), cache: false, success: function (html) { $('#footerCEO').html(html); } });
+			    }
+			    else {
+			        alert("Please enter your email address.");
+			    }
+			});
+			$('#NewsEmailSubmit').click(function () {
+			    if ($('#NewsEmail').val() != "") {
+                    $.ajax({ url: 'newsletter_proc.asp', data: 'NewsEmail=' + $('#NewsEmail').val(), cache: false, success: function (html) { $('#footerUpdates').html(html); } });
+			    }
+			    else {
+			        alert("Please enter your email address.");
+			    }
+			});
+			$('.backToTop').click(function () {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+			});
+		});
+	</script>
+	<link href="/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="/css/fonts.css" rel="stylesheet" type="text/css">
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
+	<link href="/css/jquery.qtip.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+	<div class="backToTop"><img src="/images/Icon_ScrollTop.png" class="picResize" /></div>
+	<div id="headerBar">
+		<div class="siteWidth siteCenter clearfix">
+			<div class="headerWidth siteCenter clearfix">
+				<div id="headerBarLeft"><a href="/"><img src="/images/Logo_Ellipse.png" class="noBorder picResize" /></a></div>
+				<div id="headerBarRight" class="clearfix">
+					<div id="headerBarRightTop" class="clearfix">
+						<div id="headerPhone" class="leftFloat">888.678.3869</div>
+						<div id="headerLoginHolder" class="leftFloat">
+							<a href="/login.asp"><div id="headerLogin">Login</div></a>
+						</div>
+						<div id="headerSocial" class="leftFloat clearfix">
+							<div class="headerSocialItem"><a href="https://www.facebook.com/leaseonline" target="_blank"><img src="/images/Social_Facebook.png" class="noBorder picResize" /></a></div><div class="headerSocialItem"><a href="http://twitter.com/TheEllipseCow" target="_blank"><img src="/images/Social_Twitter.png" class="noBorder picResize" /></a></div><div class="headerSocialItem"><a href="https://plus.google.com/110917097801475419206" target="_blank"><img src="/images/Social_Google.png" class="noBorder picResize" /></a></div><div class="headerSocialItem"><a href="http://www.linkedin.com/company/ellipse-communications-inc" target="_blank"><img src="/images/Social_LinkedIn.png" class="noBorder picResize" /></a></div>
+						</div>
+					</div>
+					<div id="headerNavHolder" class="clearfix">
+						<ul id="headerNav">
+							<li class="headerNavItem">Solutions
+								<div>
+									<ul class="subNav">
+										<a href="/ellipse-boost.asp"><li class="subNavItem">New - Ellipse Boost</li></a>
+										<li class="subNavItem">
+											<div class="subNavClick">Integrate<div class="arrowUp"></div><div class="arrowDown"></div></div>
+											<div class="subNav2">
+												<a href="/ellipse-symphony.asp"><div class="subNav2Item">Ellipse Symphony<sup>SM</sup></div></a>
+												<a href="/apartment-toolbox.asp"><div class="subNav2Item">Apartment Toolbox<sup>&reg;</sup></div></a>
+												<a href="/snaptshot.asp"><div class="subNav2Item">SnaptShot<sup>&reg;</sup></div></a>
+												<a href="/ellipsenet.asp"><div class="subNav2Item">EllipseNet<sup>SM</sup></div></a>
+											</div>
+										</li>
+										<li class="subNavItem">
+											<div class="subNavClick">Communicate<div class="arrowUp"></div><div class="arrowDown"></div></div>
+											<div class="subNav2">
+												<a href="/relate247.asp"><div class="subNav2Item">Relate 24/7<sup>SM</sup></div></a>
+												<a href="/resident-portal.asp"><div class="subNav2Item">Resident Portal</div></a>
+												<a href="/click-to-chat.asp"><div class="subNav2Item">Click to Chat</div></a>
+												<a href="/ellipse-service-advisor.asp"><div class="subNav2Item">Ellipse Service Advisor<sup>SM</sup></div></a>
+											</div>
+										</li>
+										<li class="subNavItem">
+											<div class="subNavClick">Market<div class="arrowUp"></div><div class="arrowDown"></div></div>
+											<div class="subNav2">
+												<a href="/progressive-website.asp"><div class="subNav2Item">Progressive Websites</div></a>
+												<a href="/mobile-solutions.asp"><div class="subNav2Item">Mobile Solutions</div></a>
+											</div>
+										</li>
+										<li class="subNavItem">
+											<div class="subNavClick">Train<div class="arrowUp"></div><div class="arrowDown"></div></div>
+											<div class="subNav2">
+												<a href="/ellipse-university.asp"><div class="subNav2Item">Ellipse University<sup>SM</sup></div></a>
+												<a href="/net-mystery-shopper.asp"><div class="subNav2Item">Net Mystery Shopper<sup>SM</sup></div></a>
+											</div>
+										</li>
+										<li class="subNavItemBottom">
+											<div class="subNavClick">Report<div class="arrowUp"></div><div class="arrowDown"></div></div>
+											<div class="subNav2">
+												<a href="/portfolio-reporting.asp"><div class="subNav2Item">Portfolio Reporting</div></a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="headerNavItem"><a href="#">Services</a>
+								<div>
+									<ul class="subNav">
+										<a href="/training.asp"><li class="subNavItem">Training</li></a>
+										<a href="/consulting.asp"><li class="subNavItem">Consulting</li></a>
+										<a href="/marketing.asp"><li class="subNavItem">Marketing</li></a>
+										<a href="/network-infrastructure.asp"><li class="subNavItemBottom">Network Infrastructure</li></a>
+									</ul>
+								</div>
+							</li>
+							<li class="headerNavItem"><a href="#">Support</a>
+								<div>
+									<ul class="subNav">
+										<a href="/ellipse-help-desk.asp"><li class="subNavItem">Ellipse Help Desk</li></a>
+										<a href="/faqs.asp"><li class="subNavItem">Frequently Asked Questions</li></a>
+										<a href="/schedule-training.asp"><li class="subNavItemBottom">Schedule Training</li></a>
+									</ul>
+								</div>
+							</li>
+							<li class="headerNavItem"><a href="#">About</a>
+								<div>
+									<ul class="subNav">
+										<a href="/articles.asp"><li class="subNavItem">Articles</li></a>
+										<a href="/press-releases.asp"><li class="subNavItem">Press Releases</li></a>
+										<a href="/newsletters.asp"><li class="subNavItem">Ellipse Newsletters</li></a>
+										<a href="/newsletters-training.asp"><li class="subNavItem">Training Newsletters</li></a>
+										<a href="/our-team.asp"><li class="subNavItem">Our Team</li></a>
+										<a href="/philanthropy.asp"><li class="subNavItem">Philanthropy</li></a>
+										<a href="/cows.asp"><li class="subNavItem">The Ellipse Cows</li></a>
+										<a href="/awards.asp"><li class="subNavItemBottom">Awards</li></a>
+									</ul>
+								</div>
+							</li>
+							<li class="headerNavItem"><a href="#">Blog</a>
+								<div>
+									<ul class="subNav">
+										<a href="/blog.asp"><li class="subNavItem">Ellipse Blog</li></a>
+										<a href="/training-blog.asp"><li class="subNavItem">Training Blog</li></a>
+										<a href="https://twitter.com/TheEllipseCow" target="_blank"><li class="subNavItemBottom">Tweets</li></a>
+									</ul>
+								</div>
+							</li>
+							<li class="headerNavItem"><a href="/contact-us.asp">Contact Us</a></li>
+						</ul>
+						<div id="headerNavIcon"><img src="images/Icon_Menu.png" class="btnMenu" /></div>
+						<div id="dropMenu">
+							<div class="dropMenuItem">
+								<div class="dropMenuSubClick">Solutions<div class="arrowUp"></div><div class="arrowDown"></div></div>
+								<div class="dropMenuSub">
+									<a href="/ellipse-boost.asp"><div class="dropMenuItem2">New - Ellipse Boost</div></a>
+								</div>
+								<div class="dropMenuSub">
+									<div class="dropMenuSub2Click">Integrate<div class="arrowUp"></div><div class="arrowDown"></div></div>
+									<div class="dropMenuSub2">
+										<a href="/ellipse-symphony.asp"><div class="dropMenuItem3">Ellipse Symphony<sup>SM</sup></div></a>
+										<a href="/apartment-toolbox.asp"><div class="dropMenuItem3">Apartment Toolbox<sup>&reg;</sup></div></a>
+										<a href="/snaptshot.asp"><div class="dropMenuItem3">SnaptShot<sup>&reg;</sup></div></a>
+										<a href="/ellipsenet.asp"><div class="dropMenuItem3">EllipseNet<sup>SM</sup></div></a>
+									</div>
+								</div>
+								<div class="dropMenuSub">
+									<div class="dropMenuSub2Click">Communicate<div class="arrowUp"></div><div class="arrowDown"></div></div>
+									<div class="dropMenuSub2">
+										<a href="/relate247.asp"><div class="dropMenuItem3">Relate 24/7<sup>SM</sup></div></a>
+										<a href="/resident-portal.asp"><div class="dropMenuItem3">Resident Portal</div></a>
+										<a href="/click-to-chat.asp"><div class="dropMenuItem3">Click to Chat</div></a>
+										<a href="/ellipse-service-advisor.asp"><div class="dropMenuItem3">Ellipse Service Advisor<sup>SM</sup></div></a>
+									</div>
+								</div>
+								<div class="dropMenuSub">
+									<div class="dropMenuSub2Click">Market<div class="arrowUp"></div><div class="arrowDown"></div></div>
+									<div class="dropMenuSub2">
+										<a href="/progressive-website.asp"><div class="dropMenuItem3">Progressive Websites</div></a>
+										<a href="/mobile-solutions.asp"><div class="dropMenuItem3">Mobile Solutions</div></a>
+									</div>
+								</div>
+								<div class="dropMenuSub">
+									<div class="dropMenuSub2Click">Train<div class="arrowUp"></div><div class="arrowDown"></div></div>
+									<div class="dropMenuSub2">
+										<a href="/ellipse-university.asp"><div class="dropMenuItem3">Ellipse University<sup>SM</sup></div></a>
+										<a href="/net-mystery-shopper.asp"><div class="dropMenuItem3">Net Mystery Shopper<sup>SM</sup></div></a>
+									</div>
+								</div>
+								<div class="dropMenuSub">
+									<div class="dropMenuSub2Click">Report<div class="arrowUp"></div><div class="arrowDown"></div></div>
+									<div class="dropMenuSub2">
+										<a href="/portfolio-reporting.asp"><div class="dropMenuItem3">Portfolio Reporting</div></a>
+									</div>
+								</div>
+							</div>
+							<div class="dropMenuItem">
+								<div class="dropMenuSubClick">Services<div class="arrowUp"></div><div class="arrowDown"></div></div>
+								<div class="dropMenuSub">
+									<a href="/training.asp"><div class="dropMenuItem2">Training</div></a>
+									<a href="/consulting.asp"><div class="dropMenuItem2">Consulting</div></a>
+									<a href="/marketing.asp"><div class="dropMenuItem2">Marketing</div></a>
+									<a href="/network-infrastructure.asp"><div class="dropMenuItem2">Network Infrastructure</div></a>
+								</div>
+							</div>
+							<div class="dropMenuItem">
+								<div class="dropMenuSubClick">Support<div class="arrowUp"></div><div class="arrowDown"></div></div>
+								<div class="dropMenuSub">
+									<a href="/ellipse-help-desk.asp"><div class="dropMenuItem2">Ellipse Help Desk</div></a>
+									<a href="/faqs.asp"><div class="dropMenuItem2">Frequently Asked Questions</div></a>
+									<a href="/schedule-training.asp"><div class="dropMenuItem2">Schedule Training</div></a>
+								</div>
+							</div>
+							<div class="dropMenuItem">
+								<div class="dropMenuSubClick">About<div class="arrowUp"></div><div class="arrowDown"></div></div>
+								<div class="dropMenuSub">
+									<a href="/articles.asp"><div class="dropMenuItem2">Articles</div></a>
+									<a href="/press-releases.asp"><div class="dropMenuItem2">Press Releases</div></a>
+									<a href="/newsletters.asp"><div class="dropMenuItem2">Ellipse Newsletters</div></a>
+									<a href="/newsletters-training.asp"><div class="dropMenuItem2">Training Newsletters</div></a>
+									<a href="/our-team.asp"><div class="dropMenuItem2">Our Team</div></a>
+									<a href="/philanthropy.asp"><div class="dropMenuItem2">Philanthropy</div></a>
+									<a href="/cows.asp"><div class="dropMenuItem2">The Ellipse Cows</div></a>
+									<a href="/awards.asp"><div class="dropMenuItem2">Awards</div></a>
+								</div>
+							</div>
+							<div class="dropMenuItem">
+								<div class="dropMenuSubClick">Blog<div class="arrowUp"></div><div class="arrowDown"></div></div>
+								<div class="dropMenuSub">
+									<a href="/blog.asp"><div class="dropMenuItem2">Ellipse Blog</div></a>
+									<a href="/training-blog.asp"><div class="dropMenuItem2">Training Blog</div></a>
+									<a href="https://twitter.com/TheEllipseCow" target="_blank"><div class="dropMenuItem2">Tweets</div></a>
+								</div>
+							</div>
+							<div class="dropMenuItem dropMenuItemNoArrow"><a href="/contact-us.asp">Contact Us</a></div>
+							<div class="dropMenuItem dropMenuItemNoArrow"><a href="/login.asp">Login</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="headerBarSpacer"></div>
+	<script type="text/javascript">
+		$(document).ready(function ($) {
+			$("#rotatorHolder").backstretch(["images/Rotator_On-Site.jpg"]);
+		});
+	</script>
+	<a href="http://www.whatisstudio.com/" target="_blank"><div id="rotatorHolder"></div></a>
+	<div id="subPageHolder">
+		<div class="siteWidth siteCenter">
+			<div class="homeContentPadding">
+				<div class="homeTitleWrapper clearfix">
+					<div class="homeTitleSlash">//&nbsp;&nbsp;</div>
+					<h1>Everything You Need</h1>
+					<h2>For Everything You Do</h2>
+				</div>
+				<div id="CEOWrapper">
+					<a href="/PDFs/MessagefromCEOEllipse.pdf" target="_blank"><div class="CEOBtn">Letter from the CEO</div></a>
+				</div>
+				<div class="homeContentText">
+					<p>Ellipse Communications is the leading provider of Software-as-a-Service (SAAS) solutions to the multifamily industry. With our products and services you can communicate with your residents better, integrate your data easier, manage corporate documents faster, train your staff easily and market your properties professionally.</p>
+					<p>In the business of developing technology applications for the multifamily industry for over ten years, Ellipse delivers powerful network management, sophisticated security-based data handling, client centric support and award-winning products. We have solutions to help you do everything you do.</p>
+				</div>
+				<div class="homeLine"></div>
+				<div class="homeTitleWrapper2 clearfix">
+					<h2>You Can:</h2>
+				</div>
+				<div class="clearfix">
+					<div class="homeContentColumn">
+						<ul class="homeContentList">
+							<li>Go green with <a href="relate247.asp">Relate 24/7<sup>SM</sup></a>, our customizable resident email platform.</li>
+							<li>Increase occupancy with a custom-designed, hand-coded <a href="progressive-website.asp">website</a>.</li>
+							<li>Create a corporate and property-wide intranet with the <a href="apartment-toolbox.asp">Apartment Toolbox<sup>&reg;</sup></a>.</li>
+							<li>Ensure your leasing office is successfully responding to Internet inquiries with <a href="net-mystery-shopper.asp">Net Mystery Shopper<sup>SM</sup></a>.</li>
+						</ul>
+					</div>
+					<div class="homeContentColumn">
+						<ul class="homeContentList">
+							<li>Seamlessly integrate your property management software with your favorite Internet Listing Services with <a href="snaptshot.asp">SnaptShot<sup>SM</sup></a>.</li>
+							<li>Communicate better with your residents and foster that sense of community with <a href="resident-portal.asp">Resident Portal</a>.</li>
+							<li>Get better command of your service tickets with <a href="ellipse-service-advisor.asp">Ellipse Service Advisor<sup>SM</sup></a>.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="bottomWrapper">
+				<div class="bottomSpacer"></div>
+				<div class="clearfix">
+					<div class="bottomColumn leftFloat">
+						<div class="bottomColumnItem">
+							<div class="bottomTitleWrapper clearfix">
+								<div class="bottomTitleSlash">//&nbsp;</div>
+								<h3>Recent Blog Posts</h3>
+							</div>
+							<div class="bottomBlogSpacer"></div>
+
+								<div class="bottomBlogItem">
+									<div class="bottomBlogTable">
+										<div class="bottomBlogRow">
+											<div class="bottomBlogCell bottomBlogItemDate">
+												<div class="bottomBlogItemDateWrapper">
+													<div class="bottomBlogItemMonth">May</div>
+													<div class="bottomBlogItemDay">28</div>
+													<div class="bottomBlogItemYear">2015</div>
+												</div>
+											</div>
+											<div class="bottomBlogCell bottomBlogCell100">
+												<div class="bottomBlogItemTitle"><a href="/blog.asp?view=plink&id=1338">Mediated Interpersonal Communication, It's a Thing!</a></div>
+												<div class="bottomBlogItemByline">by Haven Brown </div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bottomLine"></div>
+								<div class="bottomBlogItem">
+									<div class="bottomBlogTable">
+										<div class="bottomBlogRow">
+											<div class="bottomBlogCell bottomBlogItemDate">
+												<div class="bottomBlogItemDateWrapper">
+													<div class="bottomBlogItemMonth">May</div>
+													<div class="bottomBlogItemDay">21</div>
+													<div class="bottomBlogItemYear">2015</div>
+												</div>
+											</div>
+											<div class="bottomBlogCell bottomBlogCell100">
+												<div class="bottomBlogItemTitle"><a href="/blog.asp?view=plink&id=1334">Interpersonal communication at it's best: A Case Study. </a></div>
+												<div class="bottomBlogItemByline">by Haven Brown</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bottomLine"></div>
+								<div class="bottomBlogItem">
+									<div class="bottomBlogTable">
+										<div class="bottomBlogRow">
+											<div class="bottomBlogCell bottomBlogItemDate">
+												<div class="bottomBlogItemDateWrapper">
+													<div class="bottomBlogItemMonth">May</div>
+													<div class="bottomBlogItemDay">15</div>
+													<div class="bottomBlogItemYear">2015</div>
+												</div>
+											</div>
+											<div class="bottomBlogCell bottomBlogCell100">
+												<div class="bottomBlogItemTitle"><a href="/blog.asp?view=plink&id=1331">A Message from Bhante Wimala, in Nepal</a></div>
+												<div class="bottomBlogItemByline">by Bhante Wimala</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bottomLine"></div>
+								<div class="bottomBlogItem">
+									<div class="bottomBlogTable">
+										<div class="bottomBlogRow">
+											<div class="bottomBlogCell bottomBlogItemDate">
+												<div class="bottomBlogItemDateWrapper">
+													<div class="bottomBlogItemMonth">May</div>
+													<div class="bottomBlogItemDay">14</div>
+													<div class="bottomBlogItemYear">2015</div>
+												</div>
+											</div>
+											<div class="bottomBlogCell bottomBlogCell100">
+												<div class="bottomBlogItemTitle"><a href="/blog.asp?view=plink&id=1330">Let's refine our interpersonal skill set!</a></div>
+												<div class="bottomBlogItemByline">by Haven Brown </div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							<a href="/blog.asp"><div class="bottomBlogBtn">View More</div></a>
+						</div>
+					</div>
+					<div class="bottomColumn rightFloat">
+						<div class="bottomColumnItem">
+							<div><img src="/images/Logo_Symphony_Bottom.png" class="picResize" /></div>
+							<div class="bottomSymphonyTableHolder">
+								<table class="bottomSymphonyTable">
+									<tr>
+										<td><a href="/apartment-toolbox.asp"><img alt="Apartment Toolbox Logo" title="Apartment Toolbox<sup>&reg;</sup>" data-roll-src="/images/Icon_Bottom_Toolbox-over.png" src="/images/Icon_Bottom_Toolbox.png" class="noBorder picResize" /></a></td>
+										<td><a href="/snaptshot.asp"><img alt="SnaptShot Logo" title="SnaptShot<sup>&reg;</sup>" data-roll-src="/images/Icon_Bottom_Snaptshot-over.png" src="/images/Icon_Bottom_Snaptshot.png" class="noBorder picResize" /></a></td>
+										<td><a href="/relate247.asp"><img alt="Relate 24/7 Logo" title="Relate 24/7<sup>SM</sup>" data-roll-src="/images/Icon_Bottom_Relate-over.png" src="/images/Icon_Bottom_Relate.png" class="noBorder picResize" /></a></td>
+										<td><a href="/progressive-website.asp"><img alt="Progressive Websites Logo" title="Progressive Websites" data-roll-src="/images/Icon_Bottom_Website-over.png" src="/images/Icon_Bottom_Website.png" class="noBorder picResize" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/resident-portal.asp"><img alt="Resident Portal Logo" title="Resident Portal" data-roll-src="/images/Icon_Bottom_ResPortal-over.png" src="/images/Icon_Bottom_ResPortal.png" class="noBorder picResize" /></a></td>
+										<td><a href="/net-mystery-shopper.asp"><img alt="Net Mystery Shopper Logo" title="Net Mystery Shopper<sup>SM</sup>" data-roll-src="/images/Icon_Bottom_NMS-over.png" src="/images/Icon_Bottom_NMS.png" class="noBorder picResize" /></a></td>
+										<td><a href="/ellipse-university.asp"><img alt="Ellipse University Logo" title="Ellipse University<sup>SM</sup>" data-roll-src="/images/Icon_Bottom_EU-over.png" src="/images/Icon_Bottom_EU.png" class="noBorder picResize" /></a></td>
+										<td><a href="/click-to-chat.asp"><img alt="Click to Chat" title="Click to Chat" data-roll-src="/images/Icon_Bottom_Click-over.png" src="/images/Icon_Bottom_Click.png" class="noBorder picResize" /></a></td>
+									</tr>
+								</table>
+							</div>
+							<a href="/ellipse-symphony.asp"><div class="bottomViewBtn">Learn More</div></a>
+							<div class="bottomLineSpacer"></div>
+							<div class="bottomLine"></div>
+							<div class="bottomLineSpacer"></div>
+							<div class="bottomTitleWrapper clearfix">
+								<div class="bottomTitleSlash">//&nbsp;</div>
+								<h3>Questions</h3>
+							</div>
+							<div class="bottomBlogSpacer"></div>
+							<div class="bottomViewBtn">
+							<!--Old Provista Code-->
+							<!--<script type="text/javascript" src="/provista solutions_ellipseinc.com.js"></script>-->
+							<!--New Promptchat script-->
+							<!--Master Script and floating chat button-->
+							<script type="text/javascript" src="http://promptchat.ellipseinc.com/MasterServer/Public/ScriptProvider.php"></script>
+							<!--Static Image code-->
+							<a href="javascript:EllipseDesign_Open();"> <img alt="" src="http://promptchat.ellipseinc.com/MasterServer/Public/StatusImage.php" border="0" /></a>
+							<!--Plain Text version-->
+							<!--<a href="javascript:EllipseDesign_Open();"> --type here the text you want to display-- </a>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footerSpacer"></div>
+		</div>
+	</div>
+	<div id="footerHolder">
+		<div id="footerWrapper" class="clearfix">
+			<div id="footerCEO" class="footerColumn">
+				<div class="footerColumnTitle">Subscribe to CEO Newsletter</div>
+				<div><input id="CeoEmail" type="text" class="footerColumnInput" placeholder="example@email.com" /></div>
+				<div id="CeoEmailSubmit" class="footerColumnBtn">Subscribe</div>
+			</div>
+			<div id="footerUpdates" class="footerColumn">
+				<div class="footerColumnTitle">Subscribe to Updates</div>
+				<div><input id="NewsEmail" type="text" class="footerColumnInput" placeholder="example@email.com" /></div>
+				<div id="NewsEmailSubmit" class="footerColumnBtn">Subscribe</div>
+			</div>
+		</div>
+	</div>
+	<div id="subFooterHolder">
+		<div id="subFooterWrapper" class="clearfix">
+			<div id="footerSocial" class="clearfix">
+				<div class="outer-center clearfix">
+					<div class="inner-center clearfix">
+						<div class="footerSocialItem"><a href="https://www.facebook.com/leaseonline" target="_blank"><img src="/images/Social_Facebook.png" class="noBorder picResizer" /></a></div><div class="footerSocialItem"><a href="http://twitter.com/TheEllipseCow" target="_blank"><img src="/images/Social_Twitter.png" class="noBorder picResizer" /></a></div><div class="footerSocialItem"><a href="https://plus.google.com/110917097801475419206" target="_blank"><img src="/images/Social_Google.png" class="noBorder picResizer" /></a></div><div class="footerSocialItem"><a href="http://www.linkedin.com/company/ellipse-communications-inc" target="_blank"><img src="/images/Social_LinkedIn.png" class="noBorder picResizer" /></a></div>
+					</div>
+				</div>
+			</div>
+			<div id="subFooterNav"><a href="/">Home</a> &nbsp; | &nbsp; <a href="/solutions.asp">Solutions</a> &nbsp; | &nbsp; <a href="/services.asp">Services</a> &nbsp; | &nbsp; <a href="/support.asp">Support</a> &nbsp; | &nbsp; <a href="/about.asp">About</a> &nbsp; | &nbsp; <a href="/blog.asp">Blog</a> &nbsp; | &nbsp; <a href="/contact-us.asp">Contact Us</a> &nbsp; | &nbsp; <a href="/sitemap.asp">Sitemap</a></div>
+			<div id="subFooterCopy"><img src="/images/Icon_Ellipse.png" class="picMiddle" /> &copy; 2016 <a href="http://www.on-site.com/" target="_blank">On-Site.com</a> <span class="allRights">All Rights Reserved.</span></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-12127547-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+
+</html>

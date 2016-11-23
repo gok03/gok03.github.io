@@ -1,0 +1,283 @@
+status: 200
+content-length: 7115
+content-location: https://endurance.silkroad.com/eigext/EmploymentListings.html
+set-cookie: BIGipServersrtmsweb107=3049430538.20480.0000; path=/
+x-aspnet-version: 4.0.30319
+server: Microsoft-IIS/7.5
+-content-encoding: gzip
+cache-control: private
+date: Thu, 29 Sep 2016 11:56:48 GMT
+x-powered-by: ASP.NET
+content-type: text/html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Endurance Careers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+
+<link rel="STYLESHEET" type="text/css" href="/map_images/main/SiteGen/eigext/Admin/Skins/Skin4_Settings.css" />
+
+
+
+
+
+
+<link rel="shortcut icon" href="" />
+
+<script type="text/javascript" src="/map_images/main/SiteGen/Skins/ps_global_layout/SupportPages/incJavascript.js"></script>
+<script type="text/javascript" src="/map_images/main/SiteGen/Skins/ps_global_layout/SupportPages/niftycube.js"></script>
+<script type="text/javascript">function clear_search() {document.search_form.search_phrase.value= "";}</script>
+<script type="text/javascript">
+window.onload=function()
+{
+
+if(""=="yes")
+{
+  
+}
+}
+</script>
+
+
+
+
+
+
+<meta name="description" content="&nbsp;Employment" />
+<meta name="keywords" content=",Employment" />
+
+
+<!---->
+<!--<script type="text/javascript" src="/eprise/RedCarpetDotNet/PhysicalMaps/JS/TurboTask.js"></script>-->
+
+<script>
+function funcWriteBreadcrumbNav(BreadCrumbList) {
+	var sOutputBreadcrumbNav = new String();
+	var sClass = null;
+	var sUrl = null;
+	var sText = null;
+	var nLevel = null;
+	var aryThisLink = null;
+
+                    var sBreadCrumbOnOff ="Off";
+                    if (sBreadCrumbOnOff.length ==0) sBreadCrumbOnOff = "Off";
+                    if (sBreadCrumbOnOff.toLowerCase() == "off") return sOutputBreadcrumbNav;
+                    if ("" == "8") return sOutputBreadcrumbNav;
+
+//alert("BreadCrumbList is " + BreadCrumbList);
+
+       var sTemp = "";
+	
+	//Added variables to grab information for the current page
+
+	var sCurrentPath = "/eigext/EmploymentListings.html";
+	var sCurrentPage = "Employment Listings";
+
+	var arySubNav = unescape(BreadCrumbList);
+	//arySubNav = arySubNav.split("");
+	arySubNav = arySubNav.split(";");
+
+    sOutputBreadcrumbNav += "<div id='breadcrumbs'>"
+
+	var nLen = arySubNav.length;
+	for(var i = 0; i < nLen; i++) {
+		//aryThisLink = arySubNav[i].split("");
+		aryThisLink = arySubNav[i].split(",");
+		sText = aryThisLink[0];
+		sUrl = aryThisLink[1];
+		sClass = (parseInt(aryThisLink[2])) ? "_on" : "";
+		pageLevel = aryThisLink[3];
+		
+		sOutputBreadcrumbNav += "<!-- breadcrumb trail -->";
+		// items
+
+         var sIndex = sText.indexOf("_subnav");
+         //   sOutputBreadcrumbNav += sIndex;
+
+        if(sText!=sTemp && sIndex < 0){ // added to prevent duplicates in list
+			if (i<nLen-1) {
+				//--- loop thru regular items
+				//sOutputBreadcrumbNav += "<a href='" + sUrl + "'>" + sText.toLowerCase() + "</a> &gt; ";
+				sOutputBreadcrumbNav += "<a href='" + sUrl + "'>" + sText + "&gt; </a>";
+				
+			//check if page is a bodylink	
+			} else if (i>=nLen-1 && sUrl!=sCurrentPath){
+				//--write out last page in bc list
+				sOutputBreadcrumbNav += "<a href='" + sUrl + "'>" + sText + "&gt; </a>";
+				//--- bl-last item
+				sOutputBreadcrumbNav += "<span class='breadcrumb_item" + sClass + "'>" + sCurrentPage + "</span>";
+			} else {
+				//--- last item
+				sOutputBreadcrumbNav += "<span class='breadcrumb_item" + sClass + "'>" + sText + "</span>";
+			}
+			
+              sTemp = sText;
+	     }
+
+			
+	}
+	
+    sOutputBreadcrumbNav += "<!-- end breadcrumb trail -->";
+    sOutputBreadcrumbNav += "</div>";
+
+	return sOutputBreadcrumbNav;
+}
+</script>
+
+
+
+</head>
+<body  class="yui-skin-sam" id="ps-body">
+
+
+<div id="page_container">
+<!--NOT A HOME PAGE-->
+<div id="box_header">
+<div id="pslogo"><a href="http://www.enduranceinternational.com/our-careers/"><img src="/map_images/main/SiteGen/eigext/Content/Uploads/Images/skin/logo.PNG" border=0></a></div>
+</div>
+<div id="box_subheader">
+    <div id="main_nav">
+    <ul id="main_nav_list">
+<li id=""><a href="/" title="Home" class="main_nav_list_first">Home</a></li><li id="active"><a href="/eigext/EmploymentListings.html" title="Employment Listings" class="main_nav_list_last">Employment Listings</a></li>
+    </ul>
+    </div>
+  </div>
+<script language="JavaScript">
+  var sPageName = "EmploymentListings.html";
+  if (sPageName.length !=0) sPageName = sPageName.toLowerCase();
+
+  if(sPageName !="home.html")
+    document.write(funcWriteBreadcrumbNav("Home,/;Employment%20Listings,/eigext/EmploymentListings.html"));
+</script>
+  <div id="body_container">     
+    <div id="box_col_center_right_col">
+    
+    
+              <div id="box_col_center_banner"><img src="/map_images/main/SiteGen/eigext/Content/Uploads/Images/_._internal_external_logo_bar_png_660.png?viewmode=6&requestsize=660"  /></div>
+              <div id="box_col_center_title"><h2>Employment Listings</h2></div>
+
+              <p><span style="font-size: medium;">If you would enjoy working in a dynamic environment and are looking for an opportunity to become part of a stellar team of professionals, we invite you to apply online today. We are an equal opportunity employer.</span></p>
+<p><span style="font-size: medium;">Employment selection and related decisions are made without regard to sex, race, age, disability, religion, national origin, color or any other protected class.</span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">Click <a href="https://endurance-openhire.silkroad.com/epostings/index.cfm?version=1&amp;company_id=17060"><span style="color: #0000ff;">'Search Current Openings' </span></a>Today!</span></strong></span></p>
+  
+              <div class="RSSubContentListArea">
+              <ul>
+              
+              </ul>
+              </div>
+
+
+    </div>
+<div id="box_col_right">
+  <div id="sub_nav"><ul id="sub_nav_list"><div class="sub_nav_header"><div class="sub_nav_header_text">Employment Listings</div></div><li id=""><a href="/eigext/EmploymentListings/About-Us.html" class="sub_nav_list_first">About Us</a></li><li id=""><a href="/eigext/EmploymentListings/Our-Benefits.html" class="">Our Awesome Benefits</a></li><li id=""><a href="/eigext/EmploymentListings/Jobs1.html" class="">Search Current Openings</a></li><li id=""><a href="/eigext/EmploymentListings/Update_Your_Profile.html" class="">Update Your Profile</a></li><li id=""><a href="/eigext/EmploymentListings/Create_a_Job_Agent.html" class="">Create a Job Agent</a></li><li id=""><a href="/eigext/EmploymentListings/Update_Job_Agent.html" class="">Update Job Agent</a></li><li id=""><a href="/eigext/EmploymentListings/Recruiting_Agency_Login.html" class="sub_nav_list_last">Recruiting Agency Login</a></li></ul></div> 
+  <!--KEEP-->&nbsp; 
+</div>
+  </div>
+
+<div id="box_footer">
+<center>
+&copy;2016 Endurance International Group | <a href="/eigext/SiteMap.html">Site Map</a>
+</center>
+<div style="float:right;">
+
+</div>
+</div>
+</div>
+<!--[if lt IE 8]>&nbsp;<![endif]--><!--THERE MUST BE SOMETHING HERE ELSE IE6 AND IE7 WILL IGNORE BOTTOM PAGE MARGIN-->
+
+<!-- NEW LEAF MENU ADMIN TOOLBAR START HERE -->
+
+   <div id="leafToolbar" class="leafToolbarStyle" >
+
+        <span id="toolbar_options" style="float:right; display:inline"></span>
+
+   </div> 
+
+
+
+
+</body>
+</html>

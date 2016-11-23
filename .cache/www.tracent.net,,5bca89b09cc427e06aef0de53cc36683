@@ -1,0 +1,506 @@
+status: 200
+content-length: 18800
+content-location: http://www.tracent.net/index.htm
+x-powered-by: ASP.NET
+accept-ranges: bytes
+server: Microsoft-IIS/6.0
+last-modified: Tue, 09 Jun 2009 13:34:47 GMT
+etag: "bcb6d1e7e9c91:a369"
+date: Wed, 21 Sep 2016 08:56:51 GMT
+content-type: text/html
+
+<!-- Master.htm -->
+<html>
+<head>
+<title>Welcome to Tracent Technologies!</title>
+
+<style>
+<!-- style.css -->
+body { 
+    font-family: verdana, helvetica; 
+    font-size: 11px; 
+    color: #555555; 
+    top-margin: 0;
+    left-margin: 0;
+    right-margin: 0;
+    bottom-margin: 0;
+}
+
+A:link    { text-decoration: none; }
+A:visited { text-decoration: none; }
+A:hover   {  text-decoration: underline}
+A.foot    { 
+    color: #ffffff; ; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: xx-small; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-variant: normal
+}
+.BodyLinks {  
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    color: #F7000B; 
+    text-decoration: none; 
+    filter: Glow(Color=#f7000B, Strength=100)
+}
+
+.ArticleTitles {  
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: small; 
+    font-style: normal; 
+    font-weight: bold; 
+    font-variant: small-caps; 
+    text-decoration: none; 
+    color: #666666
+}
+
+.ArticleText { 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: x-small; 
+    color: #666666; 
+    font-style: normal; 
+    line-height: normal; 
+    font-weight: normal; 
+    font-variant: normal; 
+    list-style-type: none
+}
+
+
+.searchBox {
+    position: relative;
+    top: -26px;
+    font-size=9px;
+    height: 20px;
+    width: 70px;
+    padding: 0px; 
+    margin: 0px; 
+    margin-top: 3px; 
+}
+
+td {  
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: x-small; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-variant: normal; 
+    color: #666666
+}
+.ColumnHeadingsCenter {  
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: x-small; 
+    font-weight: bold; 
+    font-variant: small-caps; 
+    color: #F7000B; 
+    text-align: center; 
+    border-color: #FFFFFF #FFFFFF #333333; 
+    background-color: #FFFFFF; 
+    border-style: solid; 
+    border-top-width: 1px; 
+    border-right-width: 1px; 
+    border-bottom-width: thin; 
+    border-left-width: 1px
+}
+.ColumnHeadingsLeft { 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: x-small; 
+    font-weight: bold; 
+    font-variant: small-caps; 
+    color: #F7000B; 
+    text-align: left; 
+    border-color: #FFFFFF #FFFFFF #333333; 
+    background-color: #FFFFFF; 
+    border-style: solid; 
+    border-top-width: 1px; 
+    border-right-width: 1px; 
+    border-bottom-width: thin; 
+    border-left-width: 1px
+}
+.ColumnHeadingsRight {  
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: x-small; 
+    font-weight: bold; 
+    font-variant: small-caps; 
+    color: #F7000B; 
+    text-align: right; 
+    border-color: #FFFFFF #FFFFFF #333333; 
+    background-color: #FFFFFF; 
+    border-style: solid; 
+    border-top-width: 1px; 
+    border-right-width: 1px; 
+    border-bottom-width: thin; 
+    border-left-width: 1px
+}
+.TableTextCenter {  
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: x-small; 
+    color: #333333; 
+    background-color: #F5F5F5; 
+    border: #FFFFFF; 
+    text-align: center;
+    vertical-align: top;
+}
+.TableTextLeft {  
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: x-small; 
+    color: #333333; 
+    background-color: #F5F5F5; 
+    border: #FFFFFF; 
+    text-align: left;
+    vertical-align: top;
+}
+.TableTextRight {  
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: x-small; 
+    color: #333333; 
+    background-color: #F5F5F5; 
+    border: #FFFFFF; 
+    text-align: right;
+    vertical-align: top;
+}
+.TableTextSmall {  
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 8pt; 
+    color: #333333; 
+    background-color: #F5F5F5; 
+    border: #FFFFFF; 
+    text-align: left;
+    vertical-align: top;
+}
+
+
+
+
+</style>
+
+<script language="JavaScript">
+<!--
+
+var pShimTop = 0;
+var pFooterTop = 0;
+
+function ttSetFooter() {
+    // this function requies that a shim object be named  pageShim
+    // and be positioned below the main page body, and before the footer.
+    //
+    // In addition, another shim object should be named footerShim and
+    // be placed on the last line of the page.
+    //
+    // If the pageShim image is already at or below the height at which
+    // the footer is to be displayed (page height - footerShim), no adjustment
+    // to the shim image size will be made.  Otherwise, pageShim height will
+    // be adjusted to fill the unused page space.
+
+    // initialize...
+    if (pShimTop == 0) {
+        pShimTop = pageShim.offsetTop;
+        pFooterTop = footerShim.offsetTop;
+    }
+
+    var bHeight = document.body.clientHeight;
+    var footerHeight = pFooterTop;
+
+    var newShimHeight = bHeight - pShimTop - footerHeight - 6;
+
+    if (newShimHeight > 0) {
+        pageShim.height = newShimHeight;
+    } else {
+        pageShim.height = 1;
+    }
+
+}
+
+/* Function that displays status bar messages. */
+function MM_displayStatusMsg(msgStr)  { //v3.0
+    status=msgStr; document.MM_returnValue = true;
+}
+
+/* Functions that swaps images. */
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+/* Functions that handle preload. */
+function MM_preloadImages() { //v3.0
+ var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+   var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+   if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function fwLoadMenus() {
+  if (window.fw_menu_0) return;
+  window.fw_menu_0 = new Menu("root",166,17,"Verdana, Arial, Helvetica, sans-serif",10,"#666666","#ffffff","#cccccc","#ff3300");
+   fw_menu_0.addMenuItem("Site Map","location='/SiteMap'");
+   fw_menu_0.addMenuItem("About Tracent","location='/cms/view.asp?key=company'");
+   fw_menu_0.addMenuItem("Contact Us","location='/cms/view.asp?key=ContactUs'");
+   fw_menu_0.bgImageUp="/templates/ured/Images/dropdown_166x17.gif";
+   fw_menu_0.bgImageOver="/templates/ured/Images/dropdown_166x17_on.gif";
+   fw_menu_0.fontWeight="bold";
+   fw_menu_0.hideOnMouseOut=true;
+  window.fw_menu_1 = new Menu("root",166,17,"Verdana, Arial, Helvetica, sans-serif",10,"#666666","#ffffff","#cccccc","#ff3300");
+  fw_menu_1.addMenuItem("Domain Registration","location='/DomainReg'");
+  fw_menu_1.addMenuItem("Application Development","location='/cms/view.asp?key=SvcAppDev'");
+  fw_menu_1.addMenuItem("Design","location='/cms/view.asp?key=SvcDesign'");
+  fw_menu_1.addMenuItem("Hosting","location='/cms/view.asp?key=HostTypes'");
+  fw_menu_1.addMenuItem("Content Management","location='/cms/view.asp?key=HostCMS'");
+  fw_menu_1.addMenuItem("Internet Access","location='/cms/view.asp?key=SvcISP'");
+  fw_menu_1.addMenuItem("Virtual ISP","location='/cms/view.asp?key=SvcVISP'");
+  fw_menu_1.addMenuItem("Project Management","location='/cms/view.asp?key=SvcProjMgt'");
+   fw_menu_1.bgImageUp="/templates/ured/Images/dropdown_166x17.gif";
+   fw_menu_1.bgImageOver="/templates/ured/Images/dropdown_166x17_on.gif";
+   fw_menu_1.fontWeight="bold";
+   fw_menu_1.hideOnMouseOut=true;
+  window.fw_menu_2 = new Menu("root",166,17,"Verdana, Arial, Helvetica, sans-serif",10,"#666666","#ffffff","#cccccc","#ff3300");
+  fw_menu_2.addMenuItem("Application Development","location='/cms/view.asp?key=PFAppDev'");
+  fw_menu_2.addMenuItem("Web Design","location='/cms/view.asp?key=PFWebDsgn'");
+  fw_menu_2.addMenuItem("Project Management","location='/cms/view.asp?key=PFProjMgt'");
+   fw_menu_2.bgImageUp="/templates/ured/Images/dropdown_166x17.gif";
+   fw_menu_2.bgImageOver="/templates/ured/Images/dropdown_166x17_on.gif";
+   fw_menu_2.fontWeight="bold";
+   fw_menu_2.hideOnMouseOut=true;
+
+/* Function that displays status bar messages.
+  window.fw_menu_3 = new Menu("root",166,17,"Verdana, Arial, Helvetica, sans-serif",10,"#666666","#ffffff","#cccccc","#ff3300");
+  fw_menu_3.addMenuItem("Ad Link Processor","location='/cms/view.asp?key=ResAdLink'");
+  fw_menu_3.addMenuItem("Change Passwords","location='/cms/view.asp?key=ResPswChg'");
+  fw_menu_3.addMenuItem("Domain Registration","location='/cms/view.asp?key=ResDomReg'");
+  fw_menu_3.addMenuItem("Form-to-Email Processor","location='/cms/view.asp?key=ResFormEml'");
+  fw_menu_3.addMenuItem("Hit Counters","location='/cms/view.asp?key=ResHitCnt'");
+  fw_menu_3.addMenuItem("News Portal","location='/cms/view.asp?key=ResPortal'");
+  fw_menu_3.addMenuItem("Site Search Engine","location='/cms/view.asp?key=ResSearch'");
+  fw_menu_3.addMenuItem("Survey Processor","location='/cms/view.asp?key=ResSurvey'");
+  fw_menu_3.addMenuItem("Traceroute","location='/cms/view.asp?key=ResTracert'");
+   fw_menu_3.bgImageUp="/Images/UltraRed/fwmenu1_166x17_up.gif";
+   fw_menu_3.bgImageOver="/Images/UltraRed/fwmenu1_166x17_over.gif";
+   fw_menu_3.fontWeight="bold";
+   fw_menu_3.hideOnMouseOut=true;
+*/
+
+  fw_menu_2.writeMenus();
+} // fwLoadMenus()
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+//-->
+</script>
+<script language="JavaScript1.2" src="/Templates/UltraRed/fw_menu.js"></script>
+
+
+</head>
+
+<body bgcolor="WHITE" text="#666666" link="#888888" vlink="#999999" alink="#444444"
+    topmargin=0 leftmargin=0 rightmargin=0 bottommargin=0
+    marginwidth="0" marginheight="0"
+    onResize="ttSetFooter()"
+    onLoad="MM_preloadImages('/templates/ured/Images/navbar_company_on.jpg','/templates/ured/Images/navbar_services_on.jpg','/templates/ured/Images/navbar_portfolio_on.jpg')">
+
+<script language="JavaScript1.2">fwLoadMenus();</script>
+
+<form name="searchForm" action="/cms/search.asp" method="post">
+
+
+<!-- Banner Table -->
+<table width=100% cellspacing=0 cellpadding=0 border=0>
+    <tr>
+        <td height=133 width=400 rowspan=2 align=left valign=top
+            background="/templates/ured/images/bannerbg_r1_c1.jpg"><a
+            href="http://www.tracent.com"><img
+            src="/templates/ured/images/Bannerlogo.jpg" alt="Tracent Technologies, Inc."
+            border=0 height=60 width=185></a><br>
+            <img src="/templates/ured/images/spacer.gif" width=400
+            height=1 border=0></td><td
+        height=40 align=right valign=top
+            background="/templates/ured/images/bannerbg_r1_c2.jpg"><a
+            href="/"><img
+            src="/templates/ured/images/topmenu_home.jpg" border=0
+            width=36 height=40 alt="Home"></a><img
+            src="/templates/ured/images/topmenu_sep.jpg" border=0
+            width=17 height=40><a
+            href="/SiteMap"><img
+            src="/templates/ured/images/topmenu_help.jpg" border=0
+            width=29 height=40 alt="Help"></a><img
+            src="/templates/ured/images/topmenu_sep.jpg" border=0
+            width=17 height=40><a
+            href="/ContactUs"><img
+            src="/templates/ured/images/topmenu_contact.jpg" border=0
+            width=47 height=40 alt="Contact Us"></a></td>
+    </tr>
+    <tr>
+        <td height=93 background="/templates/ured/images/bannerbg_r2_c2.jpg"
+            align=left valign=top><img src="/templates/ured/images/banner_r2_c2.jpg"
+            border=0 height=93 width=332></td>
+    </tr>
+</table>
+<!-- Horiz Nav Bar -->
+<table width=100% cellspacing=0 cellpadding=0 border=0>
+    <tr>
+        <td background="/templates/ured/images/navbar_bg.jpg"
+            align=left valign=top height=60><a
+             href="/cms/search.asp?for=Company&in=ArticleType&tpl=MajorSection.htm&Title=About The Company"
+             onMouseOut="MM_swapImgRestore();FW_startTimeout()"
+             onMouseOver="window.FW_showMenu(window.fw_menu_0,21,172);
+                          MM_displayStatusMsg('Learn more about our company');
+                          MM_swapImage('btnCompany1','','/templates/ured/images/navbar_Company_on.jpg',1);
+                          return document.MM_returnValue"
+             ><img
+            src="/templates/ured/images/navbar_Company.jpg"
+            alt="Company" width=75 height=54 border=0
+            name="btnCompany1"></a><img
+
+            src="/templates/ured/images/navbar_sep.jpg"
+            height=54 width=11 border=0><a
+             href="/cms/search.asp?for=Services&in=ArticleType&tpl=MajorSection.htm&Title=About Tracent's Services"
+             onMouseOut="MM_swapImgRestore();FW_startTimeout();"
+             onMouseOver="window.FW_showMenu(window.fw_menu_1,101,172);
+                          MM_displayStatusMsg('Learn more about our services');
+                          MM_swapImage('btnServices1','','/templates/ured/Images/navbar_services_on.jpg',1);
+                          return document.MM_returnValue"
+             ><img name="btnServices1"
+             src="/templates/ured/images/navbar_Services.jpg"
+             alt="Services" width=63 height=54 border=0></a><img
+
+            src="/templates/ured/images/navbar_sep.jpg"
+            height=54 width=11 border=0><a
+             href="/cms/search.asp?for=Portfolio&in=ArticleType&tpl=MajorSection.htm&Title=About Tracent's Portfolio"
+             onMouseOut="MM_swapImgRestore();FW_startTimeout();"
+             onMouseOver="window.FW_showMenu(window.fw_menu_2,171,172);
+                          MM_displayStatusMsg('Learn more about projects we have completed');
+                          MM_swapImage('btnPortfolio1','','/templates/ured/Images/navbar_portfolio_on.jpg',1);
+                          return document.MM_returnValue"
+             ><img name="btnPortfolio1"
+             src="/templates/ured/images/navbar_Portfolio.jpg"
+             alt="Portfolio" width=61 height=54 border=0></a></td><td
+
+        background="/templates/ured/images/navbar_bg.jpg"
+            align=right valign=top height=54><img
+            src="/templates/ured/images/search_Sep.jpg"
+            width=20 height=54 border=0><input type=text
+            name="for" size=10 maxlength=40 value="" class="searchBox"><input
+            type="image" src="/templates/ured/images/Search_Button.jpg"
+            width=60 height=54 border=0 alt="Search"></td>
+    </tr>
+</table>
+
+</form>
+<!-- end of BannerMaster -->
+
+
+
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+    <tr>
+        <!-- arrow cell -->
+        <td align=right valign=top width=26>
+            <img src="/templates/ured/images/reddownarrow.gif" border=0>
+        </td>
+        
+        <!-- Main body cell -->
+        <td align=left valign=top>
+            
+                
+            <div class="ArticleTitles">
+            Welcome to Tracent Technologies!
+            
+            
+            </div>
+            
+            <br>
+            
+            <div class="ArticleText"><P>Tracent Technologies is a software development company specializing in the creation of web-based business applications. Our products and services revolve around four major categories: </P>
+<UL>
+<LI>Custom Application Development</LI>
+<LI>Web Site Design</LI>
+<LI>Web Site Hosting (includes content management, e-commerce, and co-location)</LI>
+<LI>Internet Access Service</LI></UL>
+</div>
+        
+        </td>
+        
+        <!-- divider cells -->
+        <td align=left valign=top width=10><img 
+            src="/templates/ured/images/spacer.gif" height=1 width=10
+            border=0 hspace=0 vspace=0></td>
+            
+        <td align=left valign=top width=1 bgcolor="#EF1800"><img
+            src="/templates/ured/images/spacer.gif" height=1 width=1
+            border=0 hspace=0 vspace=0></td>
+
+        <td align=left valign=top width=10><img 
+            src="/templates/ured/images/spacer.gif" height=1 width=10
+            border=0 hspace=0 vspace=0></td>
+            
+        <!-- links cell -->
+        <td align=left valign=top width=150>
+            
+            
+                <!-- (no links) -->
+            
+            <br><br>
+            <table cellpadding=0 cellspacing=0 border=0>
+                <tr>
+                    <td algin=center valign=middle>
+                        <a href="/cms/view.asp?key=mailpage&ttl=Welcome to Tracent Technologies!&pts=/cms/view.asp" target="_new">
+                        <img src="/templates/ured/images/emailpage.gif" border=0>
+                        </a>
+                    </td>
+                    <td align=left valign=middle class="ArticleText">
+                        <a href="/cms/view.asp?key=mailpage&ttl=Welcome to Tracent Technologies!&pts=/cms/view.asp" target="_new">
+                        Email This Page</a>
+                    </td>
+                </tr>
+            </table>
+            
+        </td>
+    </tr>
+</table>    
+
+
+<br>
+
+
+
+<!-- FooterMaster -->
+<img src="/Templates/ured/images/spacer.gif" name="pageShim"  border="0" height="1" width="1"><br>
+<table width=100% border=0 cellspacing=0 cellpadding=2>
+    <tr>
+        <td background="/templates/ured/images/bottomlinks_bg.gif"
+            align=left valign=top>
+            <nobr>
+            <img src="/templates/ured/images/spacer.gif" width=20 height=1 border=0>
+            <a href="/SiteMap" class="foot">Site Map</a> |
+            <a href="/Privacy" class="foot">Privacy Policy</a> |
+            <a href="/aup" class="foot">Acceptable Use Policy</a> |
+            <a href="/ContactUs" class="foot">Contact Us</a></nobr>
+
+            <br><nobr>
+            <img src="/templates/ured/images/spacer.gif" width=20 height=1 border=0>
+            <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+            Copyright &copy; 2007 Tracent Technologies, Inc.
+            All Rights Reserved.</font></nobr>
+            <img src="/Templates/ured/images/spacer.gif" name="footerShim" border="0" height="1" width="1">
+        </td>
+    </tr>
+</table>
+<script>
+// save our footer position...
+    ttSetFooter();
+    ttSetFooter();
+</script>
+<!-- end of Footer -->
+
+
+</body>
+</html>
+        
+            
+
+
+
+  

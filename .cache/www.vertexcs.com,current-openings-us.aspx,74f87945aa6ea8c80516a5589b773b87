@@ -1,0 +1,895 @@
+status: 200
+content-length: 57500
+content-location: http://www.vertexcs.com/current-openings-us.aspx
+x-aspnet-version: 4.0.30319
+set-cookie: ASP.NET_SessionId=0c4js1eez0m4krvjcdijh1ja; path=/; HttpOnly
+vary: Accept-Encoding
+server: Microsoft-IIS/8.5
+-content-encoding: gzip
+cache-control: private
+date: Sun, 18 Sep 2016 09:11:55 GMT
+x-powered-by: ASP.NET
+content-type: text/html; charset=utf-8
+x-powered-by-plesk: PleskWin
+-varied-accept-encoding: gzip, deflate
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="description" content="Welcome to Vertexcs! We provide salesforce crm, sharepoint solutions and business analytics servcies to our customers to gain market differentiation and to our employees an environment to be thought leaders." />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="Keywords" content="Business Analatycs, SharePoint, Sales Force" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google-site-verification" content="qmO4K7lBiLRjCNu2d4trzXUtVU2IPkXtT7vpNSzqA9E" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/css_style01.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="css/css_style02.css" media="all" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/flexSlider.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!--<script>/*<![CDATA[*/(function (w, a, b, d, s) { w[a] = w[a] || {}; w[a][b] = w[a][b] || { q: [], track: function (r, e, t) { this.q.push({ r: r, e: e, t: t || +new Date }); } }; var e = d.createElement(s); var f = d.getElementsByTagName(s)[0]; e.async = 1; e.src = 'http://vertexcs.actonservice.com/cdnr/90/acton/bn/tracker/16072'; f.parentNode.insertBefore(e, f); })(window, 'ActOn', 'Beacon', document, 'script'); ActOn.Beacon.track();/*]]>*/</script>-->
+    <script type="text/javascript">
+        function linkClickFooter(sender) {
+            var clickLink;
+            if (sender.name == "aBLFirst")
+                clickLink = "first";
+            else if (sender.name == "aBLSecond")
+                clickLink = "second";
+            else if (sender.name == "aBLThird")
+                clickLink = "third";
+
+            InitializeRequest(clickLink);
+        }
+
+        function InitializeRequest(value) {
+            PageMethods.set_path('/subblog.aspx');
+            // call server side method
+            PageMethods.SetFooterSession(value);
+        }
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scroll-top').fadeIn('slow');
+            } else {
+                $('.scroll-top').fadeOut('slow');
+            }
+
+        });
+
+        $('.scroll-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+
+        $('.content-slider').parent('.container-slider').hover(function () {
+            $(this).find('.flex-direction-nav').animate({
+                opacity: '1'
+            }, 200);
+        },
+    function () {
+        $(this).find('.flex-direction-nav').animate({
+            opacity: '0'
+        }, 200);
+    });
+
+
+        //        var url = window.location.pathname;
+        //        var filename = url.substring(url.lastIndexOf('/') + 1);
+        //        if (filename) {
+        //            if (filename == 'index.aspx' || filename == 'case-studies.aspx' || filename == 'perspectives.aspx' || filename == 'search.aspx') {
+
+        //                $(document).ready(function () {
+        //                    $('#toggle-search').click(function (event) {
+        //                        event.stopPropagation();
+        //                        event.preventDefault();
+        //                        if ($(this).hasClass('search-open')) {
+        //                            $('.search-panel').slideDown(300);
+        //                            $(this).removeClass('search-open').addClass('search-close');
+        //                        } else if ($(this).hasClass('search-close')) {
+        //                            $('.search-panel').slideUp(300);
+        //                            $(this).removeClass('search-close').addClass('search-open');
+        //                        }
+
+        //                    });
+        //                });
+
+        //            }
+        //        }
+
+        function SaveSearch() {
+            var date = new Date();
+            date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
+            document.cookie = "vtxSearchCookie=" + $("#edit-search-block-form--2").val() + "; path=/";
+            var searchControl = "";
+            if (!searchControl) {
+                window.location.href = "Search.aspx";
+            }
+            else {
+                $("#" + searchControl).trigger("click");
+            }
+        }
+        //var emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        var emailPattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+        $(document).ready(function () {
+            $("#submit_btn").on('click', function (e) {
+                // Initialize the object, before adding data to it.
+                //  { } is declarative shorthand for new Object()
+
+                var valid = true;
+                $('#contact_form input').each(function () {
+                    var $this = $(this),
+                        inputName = $this.attr("name");
+                    if (inputName && !$this.val()) {
+                        valid = false;
+                        $(this).css("border", "2px solid red");
+                    }
+                    else {
+                        if (inputName) {
+                            $(this).css("border", "");
+                        }
+
+                    }
+
+                    if (inputName == "email" && $this.val() !== "") {
+                        if (!emailPattern.test($this.val())) {
+                            $(this).css("border", "2px solid red");
+                            valid = false;
+                        }
+                        else {
+                            $(this).css("border", "");
+                        }
+                    }
+                });
+                if ($("#message").val() == "") {
+                    $("#message").css("border", "2px solid red");
+                    valid = false;
+                }
+                else {
+                    $("#message").css("border", "");
+                }
+
+                if (!valid) {
+                    $("#h4EmailResult").hide();
+                    return false;
+                }
+
+
+                var email = {};
+                email.Name = $("#name").val();
+                email.Email = $("#email").val();
+                email.Comment = $("#message").val();
+                email.PageName = "Home";
+
+                //In order to proper pass a json string, you have to use function JSON.stringfy
+                var jsonData = JSON.stringify(email);
+
+                $.ajax({
+                    url: 'HttpHandlers/utils.ashx',
+                    type: 'POST',
+                    data: jsonData,
+                    success: function (data) {
+                        if (data == "Success") {
+                            $("#h4EmailResult").text('Email sent successfully');
+                            $("#h4EmailResult").show();
+                            $("#name").val("");
+                            $("#email").val("");
+                            $("#message").val("");
+                            $("#idContactform").click();
+
+                        }
+                        else {
+                            alert(data);
+                            $("#h4EmailResult").text('Email was not  sent.');
+                            $("#h4EmailResult").show();
+                            $("#name").val("");
+                            $("#email").val("");
+                            $("#message").val("");
+                            $("#idContactform").click();
+                        }
+                    },
+                    error: function (errorText) {
+                        $("#name").val("");
+                        $("#email").val("");
+                        $("#message").val("");
+                        $("#idContactform").click();
+                        $("#h4EmailResult").text('Email was not  sent.');
+                        $("#h4EmailResult").show();
+                    }
+                });
+                return false;
+
+
+            });
+            $("#idContactform").on("click", function () {
+                $("#name").css("border", "");
+                $("#email").css("border", "");
+                $("#message").css("border", "");
+                //$("#h4EmailResult").hide();
+
+            });
+        });
+		
+    </script>
+    
+ <script type="text/javascript" src="js/js_vertex01.js"></script>
+<style>
+table {
+	width:100%;
+	text-align:left;
+	border-collapse:collapse;
+/*modified srinivas*/
+	border:1px solid #e1e1e1;
+	margin-bottom:20px;
+}
+th {
+	color:#f26531;
+	text-transform:uppercase;
+	font-size:14px;
+	/*modified srinivas*/
+	border-bottom:2px solid #c1c1c1;
+	/*modified srinivas*/
+	border-right:1px solid #e1e1e1;
+}
+td, caption {
+	/*modified srinivas*/
+	border-bottom:1px solid #e1e1e1;
+	/*modified srinivas*/
+	border-right:1px solid #e1e1e1;
+}
+th, td, caption {
+	padding:8px;
+}
+tr.even td {
+	background:#f4f4f4;
+}
+</style>
+
+</head>
+<body>
+    <form method="post" action="./current-openings-us.aspx" id="contactsiteform">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1Mg9kFgJmD2QWAgIDD2QWDAIFDxYEHgRocmVmBRQvcmV0dXJuLW9uLWRhdGEuYXNweB4JaW5uZXJodG1sBQ5SZXR1cm4gT24gRGF0YWQCBw8WAh8BBRFOb3ZlbWJlciAwNiwgMjAxNWQCCQ8WBB8ABTcvdGhlLW1hZ2ljLW9mLWRyaXZpbmctbW9yZS1idXNpbmVzcy1zYWxlc2ZvcmNlLWNvbS5hc3B4HwEFMlRoZSBNYWdpYyBvZiBEcml2aW5nIE1vcmUgQnVzaW5lc3M/IFNhbGVzZm9yY2UuY29tZAILDxYCHwEFEU5vdmVtYmVyIDA2LCAyMDE1ZAINDxYEHwAFJy9pb3QtaXMtaW4tbXktYmVkcm9vbS13aGF0LWlzLW5leHQuYXNweB8BBSNJb1QgaXMgaW4gbXkgYmVkcm9vbSEgV2hhdCBpcyBuZXh0P2QCDw8WAh8BBRFOb3ZlbWJlciAwNiwgMjAxNWRkGDPmsQt5HeAelKv6C8TRJ4dp76E=" />
+
+
+<script src="/ScriptResource.axd?d=xPrTDGEOSO25X-eSE7rWSrOabgU4R8Hv3dLQ6_1B06j6LgNr5pUxYOG2_W--3fPTip4ix7U1i-C2SrnLYtzWrdDXRZmOM-hvXg2KtRasZcQ3dNENbRXP8y6wYanHI2Dfh6LPw3RI_NvRYfpTzx4m0o9Q7jc1&amp;t=ffffffffeea0dba9" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+SetFooterSession:function(value,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'SetFooterSession',false,{value:value},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("current-openings-us.aspx");
+PageMethods.SetFooterSession= function(value,onSuccess,onFailed,userContext) {PageMethods._staticInstance.SetFooterSession(value,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9D1B46EA" />
+    
+    <header id="header" style="position: fixed;">
+        <!-- Place in the <head>, after the three links -->
+        <div class="container-center">
+            <div class="logo">
+                <a href="index.aspx">
+                    <img src="images/logo.png" alt="Vertex Computer Systems, Inc"></a>
+            </div>
+            <div class="search-container">
+                <a id="toggle-search" class="search-button search-open" href="#"><i class="fa fa-search">
+                </i></a>
+                <div class="search-panel cf">
+                    
+                    <div>
+                        <div class="container-inline">
+                            <h2 class="element-invisible">
+                                Search form</h2>
+                            <div class="form-item form-type-textfield form-item-search-block-form">
+                                <label class="element-invisible" for="edit-search-block-form--2">
+                                    Search
+                                </label>
+                                <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2"
+                                    name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+                            </div>
+                            <div class="form-actions form-wrapper" id="edit-actions" style="padding-left: 15px;">
+                                <input class="button medium-btn form-submit" type="button" id="edit-submit" name="op"
+                                    value="Search" onclick="SaveSearch();" />
+                            </div>
+                            <input type="hidden" name="form_build_id" value="form-XMIR7yzU_XRFXeiaHTycwN-SSqIMNWyIE8_oFSA6vGY" />
+                            <input type="hidden" name="form_id" value="search_block_form" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- end search-panel -->
+            </div>
+            <!-- search-container -->
+            <nav id="main-navigation" class="navigation cf">
+                <div class="region region-main-menu">
+                    <div id="block-superfish-1" class="block block-superfish">
+                        <div class="content">
+                            <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal ">
+                                <li class="first odd sf-item-1 sf-depth-1 sf-total-children-3 sf-parent-children-3 sf-single-children-0 menuparent">
+                                    <a href="#" class="noclick sf-depth-1 menuparent">Services</a>
+                                    <ul>
+                                        <li id="menu-1052-1"><a href="business-analytics.aspx">Business Analytics</a></li>
+                                        <li id="menu-1053-1"><a href="salesforce.aspx">Salesforce</a> </li>
+                                        <li id="menu-1054-1" class="last odd "><a href="custom-applications.aspx">Custom Development</a>
+                                        </li>
+                                        <li id="menu-1055-1" class="last odd "><a href="sharepoint.aspx">SharePoint</a>
+                                        </li>
+                                        <li id="menu-1056-1" class="last odd "><a href="consulting.aspx">IT Consulting</a>
+                                        </li>
+                                        <li id="menu-1057-1" class="last odd "><a href="managed-services.aspx">Managed Services</a>
+                                        </li>
+                                        <li id="menu-1058-1" class="last odd "><a href="it-talent-staffing.aspx">IT Talent &
+                                            Staffing</a> </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-682-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent">
+                                    <a href="#" class="noclick sf-depth-1 menuparent">Solutions</a>
+                                    <ul>
+                                        <li id="menu-1541-1" class="first odd sf-item-1 sf-depth-2 "><a href="bsure.aspx"
+                                            class="sf-depth-2">
+                                            <div style="text-transform: none; float: left">
+                                                b</div>
+                                            <div style="font-style: italic; float: left; text-transform: none">
+                                                Sure</div>
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-756-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="industries.aspx"
+                                    title="" class="sf-depth-1">Industries</a></li>
+                                <li id="menu-1070-1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent">
+                                    <a href="#" class="noclick sf-depth-1 menuparent">Resources</a>
+                                    <ul>
+                                        <li class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="case-studies.aspx"
+                                            class="sf-depth-2">Case Studies</a></li>
+                                        <li id="menu-1069-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="perspectives.aspx"
+                                            class="sf-depth-2">Perspectives</a></li>
+                                        <li id="menu-1068-1" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="blogs.aspx"
+                                            class="sf-depth-2">Blog</a></li>
+                                    </ul>
+                                </li>
+                                <li id="Li1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent">
+                                    <a href="#" class="noclick sf-depth-1 menuparent">Careers</a>
+                                    <ul>
+                                        <li id="menu-1067-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="work-life-vertex.aspx"
+                                            class="sf-depth-2">Work Life at Vertex</a></li>
+                                        <li id="Li2" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="current-openings-us.aspx"
+                                            class="sf-depth-2">Career Opportunities in US</a></li>
+                                        <li id="Li3" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://careers.vertexcs.com/"
+                                            target="_blank" class="sf-depth-2">Career Opportunities in India</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.aspx" title="" class="sf-depth-1">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="pull-right lowerMenu">
+                <a href="about-vertex.aspx">About Us</a> | <a href="whats-new.aspx">News</a> | <a
+                    href="events.aspx">Events</a></div>
+        </div>
+        <!-- end container-center -->
+    </header>
+    <div class="resphdr">
+        
+<script>/*<![CDATA[*/(function(w,a,b,d,s){w[a]=w[a]||{};w[a][b]=w[a][b]||{q:[],track:function(r,e,t){this.q.push({r:r,e:e,t:t||+new Date});}};var e=d.createElement(s);var f=d.getElementsByTagName(s)[0];e.async=1;e.src='//marketing.vertexcs.com/cdnr/90/acton/bn/tracker/16072';f.parentNode.insertBefore(e,f);})(window,'ActOn','Beacon',document,'script');ActOn.Beacon.track();/*]]>*/</script>
+
+<!-- modified srnivas <div style="padding-top:100px">-->
+<section class="page-title section-bg-1">
+  <div class="page-title-inner container-center cf">
+    <div class="page-title-icon"> <img src="images/v_icon.jpg" /> 
+      <!--     <i class="fa fa-leaf"></i>--> 
+    </div>
+    <h1>Current Openings US</h1>
+    
+  </div>
+  <!-- end container-center --> 
+</section>
+<section class="content container-center cf">
+<!-- START PCR -->
+<script src="https://www2.pcrecruiter.net/pcrimg/inc/pcrframehost.js"></script><link rel="stylesheet" href="https://www2.pcrecruiter.net/pcrimg/inc/pcrframehost.css">
+<iframe frameborder="0" host="https://www2.pcrecruiter.net/pcrbin/regmenu.aspx?uid=vertex%20computer%20systems.vertexcomputersystems" id="pcrframe" name="pcrframe" src="about:blank" style="height:640px;width:100%;background-color:transparent;border:0;margin:0; padding:0" onload="pcrframeurl();"></iframe>
+<!-- END PCR -->
+</section>
+<section class="content container-center cf">
+  <h2>Permanent U.S. Openings</h2>
+        <div class="content">
+          <div class="view view-current-openings view-id-current_openings view-display-id-page_1 view-dom-id-d2a56c2ceec803e99ef072b716714d6d">
+            <div class="view-content">
+              <table class="views-table cols-3" >
+                <thead>
+                  <tr>
+                    <th class="views-field views-field-title-1" > Job Title </th>
+                    <th class="views-field views-field-field-opening-positions" > No of Positions </th>
+                    <th class="views-field views-field-body" > Experience </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="odd views-row-first">
+                    <td class="views-field views-field-title-1" > Senior Applications Analyst </td>
+                    <td class="views-field views-field-field-opening-positions" > 1 </td>
+                    <td class="views-field views-field-body" ><p>Ref. #: 5619.100<br />
+                        JOB LOCATION: Twinsburg, Ohio<br />
+                        JOB DUTIES:Act in a senior technical role on assigned IT projects. Coordinating a team of 2-3 entry-level and mid-level Systems Analysts and Quality Assurance Analysts, apply independent, advanced technical and procedural knowledge to ensure that systems are developed pursuant to company standards and project requirements as outlined by his/her project manager. On unusual matters confer with project managers. Meet with clients on behalf of his/her project manager to resolve ongoing technical issues. Prepare guidelines of good practices for entry level and mid level team members to follow on specific assignments. Assist in business development by coordinating with his/her project manager on sharing of information which will help his/her project manager pursue leads. Act as a technical resource throughout the Full Life Cycle Development as assigned. Travel and/or Relocation to various unanticipated locations throughout the US required. Work with the following tools and technologies: QC 10.0, MS SQL Server, JIRA, HP-ALM, TIBCO MDM, Share Point.</p>
+                      <p>SPECIAL SKILLS:<br />
+                        Position requires a Bachelor's Degree in Mechanical Engineering Technology, Computer Science or Engineering and twenty-four (24) months experience. Two (2) years experience must have included: (1) QC 10.0, (2) MS SQL Server, (3) JIRA, (4) HP-ALM, (5) TIBCO MDM, and (6) Share Point. Travel and/or relocation to various unanticipated locations throughout the US required.</p>
+                      <p>TO APPLY:<br />
+                        Please send resume and cover letter referencing Ref. # 5619.100 to Vertex Computer Systems, Inc., ATTN: Sharda Iyer, 2245 Enterprise Parkway East, Twinsburg, Ohio 44087.</p></td>
+                  </tr>
+                  <tr class="even">
+                    <td class="views-field views-field-title-1" > Programmer Analyst IV </td>
+                    <td class="views-field views-field-field-opening-positions" > 1 </td>
+                    <td class="views-field views-field-body" ><p>Ref. #: 5619.009<br />
+                        JOB LOCATION: Twinsburg, Ohio<br />
+                        JOB DUTIES: ):  Act in a senior technical role on assigned software development projects. Coordinating a team of 2-3 entry-level and mid-level Computer Programmers, apply independent, advanced technical and procedural knowledge to ensure that software is developed pursuant to company standards and project requirements as outlined by his/her project manager. On unusual matters confer with project managers. Meet with clients on behalf of his/her project manager to resolve ongoing technical issues. Prepare guidelines of good practices for entry level and mid level team members to follow on specific assignments. Assist in business development by coordinating with his/her project manager on sharing of information which will help his/her project manager pursue leads. Act as a technical resource throughout the Full Life Cycle Development as assigned. Travel and/or Relocation to various unanticipated locations throughout the US required. Work with the following tools and technologies: MS.Net, C#, XML, JQuery, Java Script, SQL 2012.</p>
+                      <p>SPECIAL SKILLS:<br />
+                        Position requires a Master's Degree in Computer Information Systems, Computer Science or Engineering and one year experience. One (1) year experience must have included: (1) MS.Net, (2) C#, (3) XML, (4) JQuery, (5) Java Script, and (6) SQL 2012. Travel and/or Relocation to various unanticipated locations throughout the US required.</p>
+                      <p>TO APPLY:<br />
+                        Please send resume and cover letter referencing Ref. # 5619.009 to Vertex Computer Systems, Inc., ATTN: Sharda Iyer, 2245 Enterprise Parkway East, Twinsburg, Ohio 44087.</p></td>
+                  </tr>
+                  <tr class="odd">
+                    <td class="views-field views-field-title-1" > Programmer Analyst III </td>
+                    <td class="views-field views-field-field-opening-positions" > 1 </td>
+                    <td class="views-field views-field-body" ><p>JOB TITLE: Programmer Analyst III<br />
+                        Ref. #: 5619.011<br />
+                        JOB LOCATION: Twinsburg, Ohio<br />
+                        JOB DUTIES: Work with clients to understand their IT needs and goals.  Translate client requirements into plans to create new or modify existing computer systems.  Consult with decision makers to ensure that proposed plans meet requirements and goals.  Contribute to the development and implementation of new systems.  Develop testing procedures to ensure that systems perform as expected.  Ensure quality standards are maintained.  Document the development process and provide training materials to clients as needed.  Travel and/or relocation to various unanticipated locations throughout the U.S. required.  Utilize the following tools and technologies:  Force.com Platform, Apex Language, Force.com Data Loader, Visual Force Page, Force.com Eclipse IDE Plug-in.</p>
+                      <p>SPECIAL SKILLS:<br />
+                        Position requires a Master's Degree in Computer Science or Engineering and one (1) year of experience. One (1) year experience must have included: Force.com Platform, Apex Language, Force.com Data Loader, Visual Force Page, Force.com Eclipse IDE Plug-in.  Travel and/or relocation to various unanticipated locations throughout the U.S. required.</p>
+                      <p>TO APPLY:<br />
+                        Please send resume and cover letter referencing Ref. # 5619.011 to Vertex Computer Systems, Inc., ATTN: Sharda Iyer, 2245 Enterprise Parkway East, Twinsburg, Ohio 44087.</p></td>
+                  </tr>
+                  <tr class="even">
+                    <td class="views-field views-field-title-1" > Project Manager </td>
+                    <td class="views-field views-field-field-opening-positions" > 1 </td>
+                    <td class="views-field views-field-body" ><p>Ref. #: 5619.008<br />
+                        JOB LOCATION: Twinsburg, Ohio<br />
+                        JOB DUTIES: ):  Coordinating a team of up to 20 software developers and systems analysts on assigned client IT projects. Work with clients to develop project plans to be approved by decision makers. Submit and Track project milestones and deliverables in accordance with Vertex's best practices. Work with key parties to resolve problems that arise and ensure successful project completion. Engage in requirements gathering, analysis, and specification development for Enterprise Applications, ETL, Infrastructure upgrade and system/network security. Act as a scrum master and mentor, conduct scrum calls, sprint planning, product backlog refinement sessions, maintain product backlog, create burn down chart etc. Regularly update Vertex and client management regarding project status. Ensure client satisfaction with developed systems. Travel and/or relocation to various unanticipated locations throughout the U.S. required. Utilize the following tools and technologies: Oracle 11g, HP Quality Center, Oracle Retail Suite, MS Access, MS SharePoint, SQL.</p>
+                      <p>SPECIAL SKILLS:<br />
+                        Position requires a Master's Degree in Computer Information Systems, Engineering Management, Computer Science or Engineering and one year experience. One (1) year experience must have included: (1) Oracle 11g, (2) HP Quality Center, (3) Oracle Retail Suite, (4) MS Access, (5) MS SharePoint, and (6) SQL. Travel and/or Relocation to various unanticipated locations throughout the US required.</p>
+                      <p>TO APPLY:<br />
+                        Please send resume and cover letter referencing Ref. # 5619.008 to Vertex Computer Systems, Inc., ATTN: Sharda Iyer, 2245 Enterprise Parkway East, Twinsburg, Ohio 44087.</p></td>
+                  </tr>
+                  <tr class="odd">
+                    <td class="views-field views-field-title-1" > Programmer Analyst III </td>
+                    <td class="views-field views-field-field-opening-positions" > 1 </td>
+                    <td class="views-field views-field-body" ><p>Ref. #: 5619.007<br />
+                        JOB LOCATION: Twinsburg, Ohio<br />
+                        JOB DUTIES: ):  Design and develop product features and customer solutions.  Conduct technical expert calls and workshops in collaboration with business consultants or clients directly to understand their needs.  Develop and maintain lightweight documentation of results.  Develop and periodically review fit with target architecture.  Write code for products to address customer needs.  Work effectively individually and with team members toward customer satisfaction and success.  Create Proof of Concepts and be involved with Architecture Design.  Perform process gap analysis against critical requirements.  Travel and/or relocation to various unanticipated locations throughout the U.S. required.  Utilize the following tools and technologies:  Java, Javascript, PL/SQL, JSP, Servlets, Hibernate, Oracle, IBM DB2. </p>
+                      <p>SPECIAL SKILLS:<br />
+                        Position requires a Bachelor's Degree in Computer Science or Engineering and five years progressively responsible experience. Two (2) years of the aforementioned five years of progressively responsible experience must have included: (1) Java, (2) Javascript, (3) PL/SQL, (4) JSP, (5) Servlets, (6) Hibernate, (7) Oracle, and (8) IBM DB2. Travel and/or relocation to various unanticipated locations throughout the U.S. required.</p>
+                      <p>TO APPLY:<br />
+                        Please send resume and cover letter referencing Ref. # 5619.007 to Vertex Computer Systems, Inc., ATTN: Sharda Iyer, 2245 Enterprise Parkway East, Twinsburg, Ohio 44087.</p></td>
+                  </tr>
+                  <tr class="even">
+                    <td class="views-field views-field-title-1" > Mechanical Engineer III </td>
+                    <td class="views-field views-field-field-opening-positions" > 1 </td>
+                    <td class="views-field views-field-body" ><p>Ref. #: 5619.006<br />
+                        JOB LOCATION: Twinsburg, Ohio<br />
+                        JOB DUTIES:<br />
+                        Responsible for designing new equipment and systems taking into account cost, availability of materials, strength and maintenance requirements.  Maintaining a database of all the machine designs using Teamcenter (TCUA)-PLM Suite.  Actively involved in the concept, design and manufacturing stages of a product life cycle.  Coordinating multi-discipline design teams from concept through project completion by coordinating with Vendors, fabricators and suppliers.  Research and analyze customer proposals, specifications, manuals and other data to evaluate the feasibility, cost and maintenance requirements of designs.  Read and interpret blueprints, technical drawings, schematics, and computer-generated reports.  Provide technical input to spares enquiries and orders to ensure that the correct components to the latest design are used and to ensure quality control.  Develop product design solutions compliant with industry and regulatory standards (UL/ANSI).  Coordination of inter disciplinary activities, project expedition, project scheduling, progress reporting, &amp; controlling.  Interact with cross-functional teams (engineering, manufacturing, sourcing, and finance and product management, vendors) to define requirements, validate designs, implement products into production and support on-going operations.  Travel and/or relocation to various unanticipated locations throughout the U.S. required.  Work with the following tools and technologies: Pro E, Solid Edge, Solid Works, Teamcenter PLM Software, Six Sigma. </p>
+                      <p>SPECIAL SKILLS:<br />
+                        Position requires a Master's Degree in Aerospace Engineering or Mechanical Engineering and twelve (12) months experience. One (1) year experience must have included: Pro E, Solid Edge, Solid Works, Teamcenter PLM Software, Six Sigma. Travel and/or relocation to various unanticipated locations throughout the U.S. required.</p>
+                      <p>TO APPLY:<br />
+                        Please send resume and cover letter referencing Ref. # 5619.006 to Vertex Computer Systems, Inc., ATTN: Sharda Iyer, 2245 Enterprise Parkway East, Twinsburg, Ohio 44087.</p></td>
+                  </tr>
+                  <tr class="odd views-row-last">
+                    <td class="views-field views-field-title-1" > Senior Design Engineer </td>
+                    <td class="views-field views-field-field-opening-positions" > 1 </td>
+                    <td class="views-field views-field-body" ><p>Ref. #: 5619.006<br />
+                        JOB LOCATION: Twinsburg, Ohio<br />
+                        JOB DUTIES:<br />
+                        Provide technical expertise and team leadership on assigned engineering projects.  Supervise teams of Entry level and Mid Level Design Engineers (2-3 individuals). On unusual matters confer with supervisors. Meet with clients on behalf of Management to resolve ongoing technical issues. Prepare guidelines of good practices for entry level and mid level team members to follow on specific assignments. Assist in business development. Act as a technical resource throughout the Full Life Cycle Development as assigned. Work with the following tools and technologies: Pro E, Solid Edge, Solid Works, Teamcenter PLM Software, Six Sigma.  Travel and/or relocation to various unanticipated locations throughout the U.S required.</p>
+                      <p>SPECIAL SKILLS:<br />
+                        Position requires a Master's Degree in Aerospace Engineering or Mechanical Engineering and twelve (12) months experience. One (1) year experience must have included: Pro E, Solid Edge, Solid Works, Teamcenter PLM Software, Six Sigma. Travel and/or relocation to various unanticipated locations throughout the U.S. required.</p>
+                      <p>TO APPLY:<br />
+                        Please send resume and cover letter referencing Senior Design Engineer and Ref. # 5619.006 to Vertex Computer Systems, Inc., ATTN: Sharda Iyer, 2245 Enterprise Parkway East, Twinsburg, Ohio 44087.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="view-footer">
+              <div class="one-fourth cf"> <a class="big-button" href="mailto:careers@vertexcs.com">Submit your Resume</a> </div>
+            </div>
+    </div>
+  </div>
+  <!-- end main-content --> 
+  
+</section>
+<!-- end --> 
+
+
+    </div>
+    <section class="twitter-holder section-bg-1">
+        <div class="region region-after-bottom">
+            <div class="content">
+                <div class="container-center">
+                    <h2>
+                        FOLLOW US ON SOCIAL MEDIA!</h2>
+                    <div class="twitter-feed">
+                        <p>
+                            Engage with us on Social Media to know more about technology trends, evolving industry
+                            trends and changing business dynamics</p>
+                        <a href="https://twitter.com/VertexCS_News" class="twitter-icon" target="_blank"><i
+                            class="fa fa-twitter"></i></a>
+                        <!-- end twitter-icon -->
+                        <a href="https://www.linkedin.com/company/vertex-computer-systems?trk=top_nav_home"
+                            class="twitter-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <!-- end linkedin-icon -->
+                        <a href="https://www.facebook.com/pages/Vertex-CS/696122337146637" class="twitter-icon"
+                            target="_blank"><i class="fa fa-facebook"></i></a>
+                        <!-- end facebook-icon -->
+                        <a href="http://www.slideshare.net/MarketingCommunicati2 " class="twitter-icon" target="_blank">
+                            <i class="fa fa-slideshare"></i></a>
+                        <!-- end twitter-icon -->
+                        <!-- <a href="#" class="twitter-icon" target="_blank"><i class="fa fa-youtube"></i></a>-->
+                        <!-- end youtube-icon -->
+                    </div>
+                </div>
+                <!-- container-center -->
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="content">
+        <div class="footer-main container-center">
+            <div class="col-row">
+                <div class="one-fourth cf">
+                    <div class="region region-f2">
+                        <div id="block-block-5" class="block block-block">
+                            <h2 class="block-title">
+                                Contact Details</h2>
+                            <div class="content">
+                                <p>
+                                    Corporate HQ</p>
+                                <p>
+                                    2245 Enterprise Parkway East<br />
+                                    Twinsburg, OH 44087
+                                </p>
+                                <p>
+                                    Tel: (330) 963-0044<br />
+                                    Fax: (330) 963-3566
+                                </p>
+                                <p>
+                                    General/ Business Enquiries:<a href="mailto:info@vertexcs.com">info@vertexcs.com
+                                    </a>
+                                </p>
+                                <p>
+                                    Career Opportunities: <a href="mailto:careers@vertexcs.com">careers@vertexcs.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end  -->
+                <div class="one-fourth">
+                    <div class="region region-f3">
+                        <div id="block-views-latest-blog-posts-block" class="block block-views">
+                            <h2 class="block-title">
+                                Latest Blog Posts</h2>
+                            <div class="content">
+                                <div class="view view-latest-blog-posts view-id-latest_blog_posts view-display-id-block view-dom-id-c6376543164295ee4c04a834e375777e">
+                                    <div class="view-content">
+                                        <ul class="latest-blog-posts">
+                                            <div>
+                                                <li class="cf">
+                                                    <div class="blog-icon">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </div>
+                                                    <div class="post-details">
+                                                        <h5>
+                                                            <a href="/return-on-data.aspx" id="aBLFirst" name="aBLFirst" onclick="linkClickFooter(this);">Return On Data</a>
+                                                        </h5>
+                                                        <span id="sBLFirst" class="post-date">November 06, 2015</span>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <li class="cf">
+                                                    <div class="blog-icon">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </div>
+                                                    <div class="post-details">
+                                                        <h5>
+                                                            <a href="/the-magic-of-driving-more-business-salesforce-com.aspx" id="aBLSecond" name="aBLSecond" onclick="linkClickFooter(this);">The Magic of Driving More Business? Salesforce.com</a>
+                                                        </h5>
+                                                        <span id="sBLSecond" class="post-date">November 06, 2015</span>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <li class="cf">
+                                                    <div class="blog-icon">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </div>
+                                                    <div class="post-details">
+                                                        <h5>
+                                                            <a href="/iot-is-in-my-bedroom-what-is-next.aspx" id="aBLThird" name="aBLThird" onclick="linkClickFooter(this);">IoT is in my bedroom! What is next?</a>
+                                                        </h5>
+                                                        <span id="sBLThird" class="post-date">November 06, 2015</span>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end  -->
+                <div class="one-fourth">
+                    <div class="region region-f4">
+                        <div id="block-block-44" class="block block-block">
+                            <div class="content">
+                                <div class="one-half" valign="top">
+                                    <img src="images/vertexLocations.jpg" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end  -->
+            </div>
+            <!-- end col-row -->
+            <div class="separator-1">
+            </div>
+            <!-- end separator -->
+            <div class="col-row">
+                <div class="one-fourth">
+                    <div class="region region-f5">
+                        <div id="block-block-8" class="block block-block">
+                            <h2 class="block-title">
+                                Services</h2>
+                            <div class="content">
+                                <ul>
+                                    <li><i class="fa fa-angle-right"></i><a href="business-analytics.aspx">Business Analytics</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="salesforce.aspx">Salesforce</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="custom-applications.aspx">Custom Development</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="sharepoint.aspx">SharePoint</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="consulting.aspx">IT Consulting</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="managed-services.aspx">Managed Services</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="it-talent-staffing.aspx">IT Talent & Staffing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-fourth">
+                    <div class="region region-f6">
+                        <div id="block-block-9" class="block block-block">
+                            <h2 class="block-title">
+                                Solutions</h2>
+                            <div class="content">
+                                <ul>
+                                    <li><i class="fa fa-angle-right"></i><a href="bsure.aspx">b<span style="font-style: italic">Sure</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-fourth cf">
+                    <div class="region region-f8">
+                        <div id="block-block-41" class="block block-block">
+                            <h2 class="block-title">
+                                Resources</h2>
+                            <div class="content">
+                                <ul>
+                                    <li><i class="fa fa-angle-right"></i><a href="case-studies.aspx">Case Studies</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="perspectives.aspx">Perspectives</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="blogs.aspx">Blogs</a></li>
+                                    <!-- <li><i class="fa fa-angle-right"></i> <a href="/content/latest-news">Latest News</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-fourth">
+                    <div class="region region-f7">
+                        <div id="block-block-10" class="block block-block">
+                            <h2 class="block-title">
+                                Other Links</h2>
+                            <div class="content">
+                                <ul>
+                                    <li><i class="fa fa-angle-right"></i><a href="events.aspx">Events</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="whats-new.aspx">News</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="work-life-vertex.aspx">Careers</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="http://intranet.vertexcs.com/SitePages/Home.aspx"
+                                        target="_blank">Internal User</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end col-row -->
+        </div>
+        <!-- end footer-main -->
+        <div class="footer-bottom container-center cf">
+            <div class="bottom-left">
+                <div class="region region-footer-a">
+                    <div id="block-block-1" class="block block-block">
+                        <div class="content">
+                            <p>
+                                Copyright © 2016 Vertex Computer Systems, Inc. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end bottom-left -->
+            <div class="bottom-right">
+                <div class="region region-footer-b">
+                    <div id="block-block-2" class="block block-block">
+                        <div class="content">
+                            <nav>
+                                <ul id="footer-nav">
+                                    <li><a href="index.aspx">Home</a></li>
+                                    <li><a href="about-vertex.aspx">About</a></li>
+                                    <li><a href="contact.aspx">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end bottom-right -->
+        </div>
+        <!-- end footer-bottom -->
+    </footer>
+    <div class="scroll-top">
+        <a href="#"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Lead Form -->
+    <div id="user_form" style="display: none;">
+        <div class="content">
+            <div class="one-third">
+                
+                <input type="hidden" value="" name="submitted[rdurl]" id="rdurl">
+                <input type="hidden" value="http://vertexcs.com/" name="submitted[rdurl]" id="curl">
+                <input type="hidden" name="details[sid]">
+                <input type="hidden" value="1" name="details[page_num]">
+                <input type="hidden" value="1" name="details[page_count]">
+                <input type="hidden" value="0" name="details[finished]">
+                <input type="hidden" value="form-ZJdVIjt-Dvtzesqq7R1rlM6jULGyt7x6AgMKLY8EITs" name="form_build_id">
+                <input type="hidden" value="roSdu6ZpMujLp6jeFkEjnRgaN_pWVG29IZ14MGnNrVM" name="form_token">
+                <input type="hidden" value="webform_client_form_160" name="form_id">
+                <div class="form-actions">
+                    <input type="submit" value="Submit" name="op" class="webform-submit button-primary button medium-btn form-submit">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <a href="#" target="_blank" id="opurl"></a>
+    <!--
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-62437968-1', 'auto');
+        ga('send', 'pageview');
+    </script>-->
+    <script type="text/javascript">
+        $("#s1").endlessScroll({
+            width: '100%',
+            height: '100px',
+            steps: -2, speed: 40,
+            mousestop: true
+        });
+
+        $("#s2").endlessScroll({
+            width: '700px',
+            height: '26px',
+            steps: -2,
+            speed: 40,
+            mousestop: false
+        });
+
+        /*contactus form*/
+
+        $(document).ready(function () {
+            var _scroll = true, _timer = false, _floatbox = $("#contact_form"), _floatbox_opener = $(".contact-opener");
+            _floatbox.css("right", "-362px"); //initial contact form position
+
+            _floatbox.css("top", "62px");
+
+            //Contact form Opener button
+            _floatbox_opener.click(function () {
+                if (_floatbox.hasClass('visiable')) {
+                    _floatbox.delay(750).animate({ "right": "-362px" }, { duration: 300 }).removeClass('visiable');
+                } else {
+                    _floatbox.animate({ "right": "0px" }, { duration: 300 }).addClass('visiable');
+                    $("#h4EmailResult").hide();
+                }
+            });
+
+            //Effect on Scroll
+            $(window).scroll(function () {
+                if (_scroll) {
+                    _floatbox.animate({ "top": "30px" }, { duration: 300 });
+                    _scroll = false;
+                }
+                if (_timer !== false) { clearTimeout(_timer); }
+                _timer = setTimeout(function () {
+                    _scroll = true;
+                    _floatbox.animate({ "top": "10px" }, { easing: "linear" }, { duration: 500 });
+                }, 400);
+            });
+
+        });
+					
+    </script>
+    <!-- contact form start -->
+    
+    <div class="floating-form" id="contact_form">
+        <div class="contact-opener" id="idContactform">
+            &nbsp;&nbsp; Contact Us &nbsp;&nbsp;</div>
+        <div class="floating-form-heading" id="contactOpener">
+            <h4>
+                Contact Us</h4>
+        </div>
+        <div id="contact_results">
+        </div>
+        <div id="contact_body">
+            <label>
+                <span>Name <span class="required">*</span></span>
+                <input type="text" name="name" id="name" class="input-field">
+            </label>
+            <label>
+                <span>Email <span class="required">*</span></span>
+                <input type="email" name="email" id="email" class="input-field">
+            </label>
+            <label for="field5">
+                <span>Message <span class="required">*</span></span>
+                <textarea name="message" id="message" rows="5" style="width:291px"></textarea>
+            </label>
+            <label>
+                <span style="float: left">
+                    <input type="button" id="submit_btn" value="Send">&nbsp;</span>&nbsp;<span style="float: left;
+                        padding-top: 7px;"><h4 id="h4EmailResult" style="display: none; color: #133d8c; float: left;">
+                        </h4>
+                    </span>
+            </label>
+        </div>
+    </div>
+    
+    </form>
+</body>
+</html>

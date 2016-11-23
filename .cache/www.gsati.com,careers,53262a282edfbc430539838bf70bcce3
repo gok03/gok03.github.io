@@ -1,0 +1,586 @@
+status: 200
+content-length: 48490
+via: 1.1 varnish-v4
+vary: Accept-Encoding, Cookie
+x-styx-version: StyxGo
+x-styx-req-id: styx-d74a310d7e1c64b0d5df383b9002f316
+x-content-type-options: nosniff
+x-pantheon-styx-hostname: styxa28fb950
+cache-control: no-cache, must-revalidate, post-check=0, pre-check=0
+x-varnish: 447843740
+accept-ranges: bytes
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+-content-encoding: gzip
+link: <http://www.gsati.com/careers>;
+ rel="canonical",<http://www.gsati.com/careers>; rel="shortlink"
+date: Wed, 21 Sep 2016 09:03:12 GMT
+content-location: http://www.gsati.com/careers
+content-language: en
+age: 0
+server: nginx
+connection: keep-alive
+content-type: text/html; charset=utf-8
+x-pantheon-endpoint: dcb4d86b-ca10-48f6-9a60-0d42238e9576
+x-generator: Drupal 7 (http://drupal.org)
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link rel="shortcut icon" href="http://www.gsati.com/sites/default/files/gsati-favicon.png" type="image/png" />
+<link rel="canonical" href="http://www.gsati.com/careers" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="http://www.gsati.com/careers" />
+  <title>Careers | GSATi: Global Solutions and Technology</title>  
+  <style type="text/css" media="all">
+@import url("http://www.gsati.com/modules/system/system.base.css?nzgscj");
+@import url("http://www.gsati.com/modules/system/system.menus.css?nzgscj");
+@import url("http://www.gsati.com/modules/system/system.messages.css?nzgscj");
+@import url("http://www.gsati.com/modules/system/system.theme.css?nzgscj");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.gsati.com/modules/comment/comment.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/modules/contrib/domain/domain_nav/domain_nav.css?nzgscj");
+@import url("http://www.gsati.com/modules/field/theme/field.css?nzgscj");
+</style>
+<style type="text/css" media="screen">
+@import url("http://www.gsati.com/sites/all/modules/contrib/flexslider/assets/css/flexslider_img.css?nzgscj");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.gsati.com/sites/all/modules/contrib/mollom/mollom.css?nzgscj");
+@import url("http://www.gsati.com/modules/node/node.css?nzgscj");
+@import url("http://www.gsati.com/modules/search/search.css?nzgscj");
+@import url("http://www.gsati.com/modules/user/user.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/modules/contrib/extlink/extlink.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/modules/contrib/views/css/views.css?nzgscj");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.gsati.com/sites/all/modules/contrib/ctools/css/ctools.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/modules/contrib/panels/css/panels.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/modules/contrib/twitter_profile_widget/twitter_profile_widget.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/modules/contrib/views_slideshow/views_slideshow.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/modules/contrib/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/modules/contrib/panels/plugins/layouts/onecol/onecol.css?nzgscj");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.gsati.com/sites/all/themes/gsati/colorbox/colorbox.css?nzgscj");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.gsati.com/sites/all/themes/omega/alpha/css/alpha-reset.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/alpha/css/alpha-mobile.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/alpha/css/alpha-alpha.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/omega/css/formalize.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/omega/css/omega-text.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/omega/css/omega-branding.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/omega/css/omega-menu.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/omega/css/omega-forms.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/omega/css/omega-visuals.css?nzgscj");
+@import url("http://www.gsati.com/sites/default/files/fontyourface/wysiwyg.css?nzgscj");
+</style>
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Coustard:regular|Raleway:300,500,700&amp;subset=latin" media="all" />
+<style type="text/css" media="all">
+@import url("http://www.gsati.com/sites/all/themes/gsati/css/global.css?nzgscj");
+</style>
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<style type="text/css" media="all">
+@import url("http://www.gsati.com/sites/all/themes/gsati/css/gsati-alpha-default.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/gsati/css/gsati-alpha-default-normal.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-16.css?nzgscj");
+</style>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
+@import url("http://www.gsati.com/sites/all/themes/gsati/css/gsati-alpha-default.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/gsati/css/gsati-alpha-default-narrow.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-16.css?nzgscj");
+</style>
+<!--<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
+@import url("http://www.gsati.com/sites/all/themes/gsati/css/gsati-alpha-default.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/gsati/css/gsati-alpha-default-normal.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-16.css?nzgscj");
+</style>
+<!--<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="all and (min-width: 1220px)">
+@import url("http://www.gsati.com/sites/all/themes/gsati/css/gsati-alpha-default.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/gsati/css/gsati-alpha-default-wide.css?nzgscj");
+@import url("http://www.gsati.com/sites/all/themes/omega/alpha/css/grid/alpha_default/wide/alpha-default-wide-16.css?nzgscj");
+</style>
+<!--<![endif]-->
+  <script type="text/javascript" src="http://www.gsati.com/sites/all/modules/contrib/jquery_update/replace/jquery/jquery.min.js?v=1.5.2"></script>
+<script type="text/javascript" src="http://www.gsati.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://www.gsati.com/misc/drupal.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/modules/contrib/admin_menu/admin_devel/admin_devel.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/modules/contrib/extlink/extlink.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/modules/contrib/panels/js/panels.js?nzgscj"></script>
+<script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/modules/contrib/views_slideshow/js/views_slideshow.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/libraries/jquery.cycle/jquery.cycle.all.min.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/libraries/json2/json2.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/modules/contrib/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/modules/contrib/google_analytics/googleanalytics.js?nzgscj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-31915899-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/gsati/scripts/gsati-responsive.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/gsati/scripts/gsati.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/gsati/scripts/ticketform.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/gsati/scripts/jquery.livequery.min.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/gsati/scripts/jquery.equal-height-columns.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/gsati/scripts/jquery.rwdImageMaps.min.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/gsati/colorbox/jquery.colorbox.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/gsati/scripts/jquery.imagesloaded.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/gsati/scripts/jquery.wookmark.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/omega/omega/js/jquery.formalize.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/omega/omega/js/omega-mediaqueries.js?nzgscj"></script>
+<script type="text/javascript" src="http://www.gsati.com/sites/all/themes/omega/omega/js/omega-equalheights.js?nzgscj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"gsati","theme_token":"PizcUbyOpfN99mLUIapTc8nNtzmHZYA9bqjkaoR7iUI","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/contrib\/extlink\/extlink.js":1,"sites\/all\/modules\/contrib\/panels\/js\/panels.js":1,"http:\/\/widgets.twimg.com\/j\/2\/widget.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.min.js":1,"sites\/all\/libraries\/json2\/json2.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/gsati\/scripts\/gsati-responsive.js":1,"sites\/all\/themes\/gsati\/scripts\/gsati.js":1,"sites\/all\/themes\/gsati\/scripts\/ticketform.js":1,"sites\/all\/themes\/gsati\/scripts\/jquery.livequery.min.js":1,"sites\/all\/themes\/gsati\/scripts\/jquery.equal-height-columns.js":1,"sites\/all\/themes\/gsati\/scripts\/jquery.rwdImageMaps.min.js":1,"sites\/all\/themes\/gsati\/colorbox\/jquery.colorbox.js":1,"sites\/all\/themes\/gsati\/scripts\/jquery.imagesloaded.js":1,"sites\/all\/themes\/gsati\/scripts\/jquery.wookmark.js":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/domain\/domain_nav\/domain_nav.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/all\/modules\/contrib\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/extlink\/extlink.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/twitter_profile_widget\/twitter_profile_widget.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/gsati\/colorbox\/colorbox.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-visuals.css":1,"sites\/default\/files\/fontyourface\/wysiwyg.css":1,"http:\/\/fonts.googleapis.com\/css?family=Coustard:regular|Raleway:300,500,700\u0026subset=latin":1,"sites\/all\/themes\/gsati\/css\/global.css":1,"ie::normal::sites\/all\/themes\/gsati\/css\/gsati-alpha-default.css":1,"ie::normal::sites\/all\/themes\/gsati\/css\/gsati-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-16.css":1,"narrow::sites\/all\/themes\/gsati\/css\/gsati-alpha-default.css":1,"narrow::sites\/all\/themes\/gsati\/css\/gsati-alpha-default-narrow.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-16.css":1,"normal::sites\/all\/themes\/gsati\/css\/gsati-alpha-default.css":1,"normal::sites\/all\/themes\/gsati\/css\/gsati-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-16.css":1,"wide::sites\/all\/themes\/gsati\/css\/gsati-alpha-default.css":1,"wide::sites\/all\/themes\/gsati\/css\/gsati-alpha-default-wide.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-16.css":1}},"viewsSlideshow":{"recent_work-block":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","flexsliderViewsSlideshow","viewsSlideshowCycle"],"play":["viewsSlideshowControls","flexsliderViewsSlideshow","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"viewsSlideshowPager":{"recent_work-block":{"bottom":{"type":"viewsSlideshowPagerFields"}}},"viewsSlideshowPagerFields":{"recent_work-block":{"bottom":{"activatePauseOnHover":0}}},"viewsSlideshowCycle":{"#views_slideshow_cycle_main_recent_work-block":{"num_divs":5,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"recent_work-block","effect":"fade","transition_advanced":0,"timeout":5000,"speed":700,"delay":0,"sync":1,"random":0,"pause":1,"pause_on_click":0,"action_advanced":0,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{}"}},"extlink":{"extTarget":"_blank","extClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+//--><!]]>
+</script>
+  
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in page-careers domain-gsati-com context-careers" onunload="">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-16">
+      </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  
+  <div id="zone-menu" class="zone zone-menu clearfix container-16">
+    <div class="grid-4 region region-branding omega" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+            <div class="logo-img">
+        <a href="/" rel="home" title=""><img src="http://www.gsati.com/sites/all/themes/gsati/logo.png" alt="" id="logo" /></a>      </div>
+                </div>
+          </div>
+</div><div class="grid-12 region region-menu alpha" id="region-menu">
+  <div class="region-inner region-menu-inner">
+        <nav class="navigation">
+      <h2 class="element-invisible">Main menu</h2><ul id="main-menu" class="links inline clearfix main-menu"><li class="menu-221 first"><a href="/">Home</a></li><li class="menu-1143"><a href="/content/working-with-gsati" title="">Working With GSATi</a></li><li class="menu-561"><a href="/crew" title="">Meet the Crew</a></li><li class="menu-816"><a href="/content/contact-us" title="">Contact</a></li><li class="menu-1196"><a href="/recent-clients" title="">Recent Work</a></li><li class="menu-2140 active-trail active"><a href="/careers" title="" class="active-trail active">Careers</a></li><li class="menu-2291 last"><a href="/blogs" title="">Blogs</a></li></ul>          </nav>
+        <div class="block block-menu block-menu-mini-menu block-menu-menu-mini-menu odd block-without-title" id="block-menu-menu-mini-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf menu-1137"><a href="/content/working-with-gsati" title="" class="menu-1137">Working With GSATi</a></li>
+<li class="leaf menu-1138"><a href="/testimonials" title="" class="menu-1138">Testimonials</a></li>
+<li class="leaf menu-1195"><a href="/recent-clients" title="" class="menu-1195">Recent Work</a></li>
+<li class="leaf menu-1140"><a href="/content/giving-back" title="" class="menu-1140">Giving Back</a></li>
+<li class="leaf menu-1141"><a href="/crew" title="" class="menu-1141">Meet The Crew</a></li>
+<li class="leaf menu-1142"><a href="/content/contact-us" title="" class="menu-1142">Contact Us</a></li>
+<li class="leaf menu-2293"><a href="/blogs" title="" class="menu-2293">Blog</a></li>
+<li class="last leaf active-trail menu-2292"><a href="/careers" title="" class="active-trail menu-2292 active">Careers</a></li>
+</ul>    </div>
+  </div>
+</div><div class="block block-menu block-menu-header-icons block-menu-menu-header-icons even block-without-title" id="block-menu-menu-header-icons">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf menu-830"><a href="/testimonials" title="Testimonials" class="menu-830">Testimonials</a></li>
+<li class="leaf menu-827"><a href="/content/green-tech" title="Green Tech" class="menu-827">Green Tech</a></li>
+<li class="last leaf menu-828"><a href="/content/giving-back" title="Giving Back" class="menu-828">Giving Back</a></li>
+</ul>    </div>
+  </div>
+</div><div class="block block-block block-2 block-block-2 odd block-without-title" id="block-block-2">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <!-- begin social --><div id="social">
+<ul id="social-nav"><li id="facebook"><a href="http://www.facebook.com/pages/GSATi/137412693424" target="_blank">facebook</a></li>
+<li id="twitter"><a href="http://twitter.com/#!/gsati" target="_blank">twitter</a></li>
+<li id="linkedin"><a href="http://www.linkedin.com/company/gsat-inc.-gsati-" target="_blank">linkedin</a></li>
+</ul></div>
+<div id="phone">
+<p>866.977.GSAT (4728)</p>
+</div>
+<!-- end social -->    </div>
+  </div>
+</div>  </div>
+</div>
+  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-16">    
+        
+        <aside class="grid-4 region region-sidebar-first omega " id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="block block-block block-1 block-block-1 odd block-without-title" id="block-block-1">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+        <!-- begin technology --><a href="/technology-services" id="technology-services" class="services-tab"><div class="menu-tab">Technology Services</div><div class="menu-tab-hover"><span class="menu-tab-hover-title">Technology Services</span><span class="menu-tab-hover-services"><span class="menu-tab-services-item">Business Applications</span><span class="menu-tab-services-item">Web Development</span><span class="menu-tab-services-item">System Assessments</span><span class="menu-tab-services-item">IT Infrastructure</span>
+</span></div></a><!-- end technology -->	
+<!-- begin marketing --><a href="/marketing-services" id="marketing-services" class="services-tab"><div class="menu-tab">Marketing Services</div><div class="menu-tab-hover"><span class="menu-tab-hover-title">Marketing Services</span><span class="menu-tab-hover-services"><span class="menu-tab-services-item">Branding</span><span class="menu-tab-services-item">Web/Print Design</span><span class="menu-tab-services-item">Photography</span><span class="menu-tab-services-item">Video</span>
+</span></div></a><!-- end marketing -->	
+<!-- begin managed --><a href="/managed-services" id="managed-services" class="services-tab"><div class="menu-tab">Managed Services</div><div class="menu-tab-hover"><span class="menu-tab-hover-title">Managed Services</span><span class="menu-tab-hover-services"><span class="menu-tab-services-item">Desktop/Network/Servers</span><span class="menu-tab-services-item">Backup/Disaster Recovery</span><span class="menu-tab-services-item">Web Hosting/Hosted Exchange</span><span class="menu-tab-services-item">Hosted Phone Systems</span>
+</span></div></a><!-- end managed -->    </div>
+  </div>
+</div><section class="block block-views front-mid-tier block-recent-work-block block-views-recent-work-block even" id="block-views-recent-work-block">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Recent Work</h2>
+            
+    <div class="content clearfix">
+      <div class="view view-recent-work view-id-recent_work view-display-id-block view-dom-id-4d2c9d67f8c209917d8d52de38ec56d3">
+        
+  
+  
+      <div class="view-content">
+      
+<div class="skin-default">
+  
+  <div id="views_slideshow_cycle_main_recent_work-block" class="views_slideshow_cycle_main views_slideshow_main"><div id="views_slideshow_cycle_teaser_section_recent_work-block" class="views-slideshow-cycle-main-frame views_slideshow_cycle_teaser_section">
+  <div id="views_slideshow_cycle_div_recent_work-block_0" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-1 views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-first views-row-odd">
+    
+  <div class="views-field views-field-field-thumb-image">        <div class="field-content"><a href="/recent-clients?client=1861"><img typeof="foaf:Image" src="http://www.gsati.com/sites/default/files/BW_Homepage_thumb.png" width="200" height="170" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/recent-clients">Boisset Collection Ambassadors</a></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_recent_work-block_1" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-first views-row-odd">
+    
+  <div class="views-field views-field-field-thumb-image">        <div class="field-content"><a href="/recent-clients?client=1832"><img typeof="foaf:Image" src="http://www.gsati.com/sites/default/files/GSATi_monitor_SM_C3home.png" width="200" height="170" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/recent-clients">Organo Gold Coffee Connoisseur</a></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_recent_work-block_2" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-first views-row-odd">
+    
+  <div class="views-field views-field-field-thumb-image">        <div class="field-content"><a href="/recent-clients?client=1831"><img typeof="foaf:Image" src="http://www.gsati.com/sites/default/files/GSATi_monitor_SM_Bodacioushome.png" width="200" height="170" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/recent-clients">Bodacious Boutique</a></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_recent_work-block_3" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-even">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-first views-row-odd">
+    
+  <div class="views-field views-field-field-thumb-image">        <div class="field-content"><a href="/recent-clients?client=1830"><img typeof="foaf:Image" src="http://www.gsati.com/sites/default/files/GSATi_monitor_SM_Verushome.png" width="200" height="170" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/recent-clients">VERUS Real Estate Advisors</a></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_recent_work-block_4" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-5 views_slideshow_cycle_hidden views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-first views-row-odd">
+    
+  <div class="views-field views-field-field-thumb-image">        <div class="field-content"><a href="/recent-clients?client=1828"><img typeof="foaf:Image" src="http://www.gsati.com/sites/default/files/GSATi_monitor_SM_GBFhome.png" width="200" height="170" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/recent-clients">Got Big Freight</a></span>  </div></div>
+</div>
+</div>
+</div>
+      <div class="views-slideshow-controls-bottom clearfix">
+      <div id="widget_pager_bottom_recent_work-block" class="views-slideshow-pager-fields widget_pager widget_pager_bottom views_slideshow_pager_field">
+  <div id="views_slideshow_pager_field_item_bottom_recent_work-block_0" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views_slideshow_active_pager_field_item views-row-odd">
+  </div>
+<div id="views_slideshow_pager_field_item_bottom_recent_work-block_1" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-even">
+  </div>
+<div id="views_slideshow_pager_field_item_bottom_recent_work-block_2" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-odd">
+  </div>
+<div id="views_slideshow_pager_field_item_bottom_recent_work-block_3" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-even">
+  </div>
+<div id="views_slideshow_pager_field_item_bottom_recent_work-block_4" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-odd">
+  </div>
+</div>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</section>  </div>
+</aside><div class="grid-12 region region-content alpha omega" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                <h1 class="title" id="page-title">Careers</h1>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display omega-grid " >
+  <div class="panel-panel grid-6" id="column-1">
+    <div class="inside"><div class="panel-pane pane-node" >
+  
+        <h2 class="pane-title">Careers Slide</h2>
+    
+  
+  <div class="pane-content">
+    <article about="/careers-slide" typeof="foaf:Document" class="node node-page node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-page-604">
+        <span property="dc:title" content="" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>    
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><a href="/careers-list/all"><img src="/sites/default/files/gsati-careers-slide.jpg" width="438" height="450" /></a></p>
+</div></div></div>  </div>
+  
+  <div class="clearfix">
+          <nav class="links node-links clearfix"></nav>
+    
+      </div>
+</article>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-views-panes pane-careers-featured-panel-pane-1" >
+  
+        <h2 class="pane-title">Featured Opportunity</h2>
+    
+  
+  <div class="pane-content">
+    <div class="view view-careers-featured view-id-careers_featured view-display-id-panel_pane_1 view-dom-id-f58b84921bbe97045d08e4811f452fe9">
+            <div class="view-header">
+      <h2>Featured Opportunity</h2>
+    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/opportunities/drupal-back-end-developer">Drupal Back-End Developer</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><p><span style="font-size: 13.008px; line-height: 1.538em;">We are looking for a highly skilled Senior Back-End Drupal Developer with extensive module experience plus Drupal 7 and Drupal Commerce.</span></p></div>  </div>  
+  <div class="views-field views-field-title-1">        <span class="field-content"><a href="/opportunities/drupal-back-end-developer">View this Job Posting &gt;&gt;</a></span>  </div>  
+  <div class="views-field views-field-title-2">        <span class="field-content"><A href="/careers-list/all">View All Opportunities &gt;&gt;</a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/opportunities/drupal-front-end-developer">Drupal Front-End Developer</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><p class="MsoNormal" style="mso-pagination: none; mso-layout-grid-align: none; text-autospace: none;"><span style="font-size: 10pt; line-height: 1.538em;">We are seeking a highly skilled Senior Front-End Drupal Developer with extensive theming experience plus Drupal 7 and Drupal Commerce experience.</span></p></div>  </div>  
+  <div class="views-field views-field-title-1">        <span class="field-content"><a href="/opportunities/drupal-front-end-developer">View this Job Posting &gt;&gt;</a></span>  </div>  
+  <div class="views-field views-field-title-2">        <span class="field-content"><A href="/careers-list/all">View All Opportunities &gt;&gt;</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+  <div class="panel-panel grid-4 alpha omega" id="column-2">
+    <div class="inside"><div class="panel-pane pane-custom pane-1" >
+  
+        <h2 class="pane-title">Fun Facts About GSATi</h2>
+    
+  
+  <div class="pane-content">
+    <span class="fact-title">2008</span> <br><span class="fact-body">The year GSATi was formed</span><br><br>  <span class="fact-title">400+ Years</span><br> <span class="fact-body">Combined experience of the GSATi team</span>&nbsp;<br><br> <span class="fact-title">300,000+</span> <br><span class="fact-body">How many miles our team members have flown this year</span> <br><br> <span class="fact-title">30</span>&nbsp;<br><span class="fact-body">Full-time employees = 24 Treasured contractors = 6</span>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-2" >
+  
+      
+  
+  <div class="pane-content">
+    <ul class="cool-to-work-at-gsati"><li>We’re Diverse</li>
+<li>We’re Women Owned</li>
+<li>We’re Fun</li>
+<li>We’re Talented &amp; Smart</li>
+<li>We Work Hard</li>
+<li>We Laugh A lot</li>
+<li>Our Benefits Are Great</li>
+<li>We Like Wine</li>
+</ul>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>      </div>
+</div>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-postscript-wrapper" class="zone-wrapper zone-postscript-wrapper clearfix">  
+  <div id="zone-postscript" class="zone zone-postscript clearfix container-16">
+    <div class="grid-16 region region-postscript-first" id="region-postscript-first">
+  <div class="region-inner region-postscript-first-inner">
+    <div class="block block-block grid-4 omega block-4 block-block-4 odd block-without-title" id="block-block-4">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <span class="careers-about-title">Hello!</span>
+<span class="careers-message">“It’s all about relationships. It’s about people. The team is so important to me—that they want to come to work and that they are happy.”
+</span>
+<span class="careers-name">Cindy<br>
+Tysinger<br></span>
+<span class="careers-name-title">CEO, Founder</span>
+
+<a href="/content/working-with-gsati"><span>Read More</span><br>
+About GSATi››</a>
+    </div>
+  </div>
+</div><div class="block block-panels-mini grid-12 omega alpha block-careers-footer block-panels-mini-careers-footer even block-without-title" id="block-panels-mini-careers-footer">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panel-1col clearfix" id="mini-panel-careers_footer">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-block-5 grid-6 alpha omega pane-block" >
+  
+      
+  
+  <div class="pane-content">
+    <p>All Over The Globe</p>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-block pane-block-6 grid-6 alpha omega pane-block" >
+  
+      
+  
+  <div class="pane-content">
+    <p><span class="fact-header">Did You Know?</span> <span class="fact-text"> Our Sr. Director Finance and Business Strategy, Jason Bodor is a 10-year Denton, Texas resident where the new GSATi home office is located! </span></p>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div><div class="block block-views grid-11 block-facebook--block-1 block-views-facebook-block-1 odd block-without-title" id="block-views-facebook-block-1">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="view view-facebook- view-id-facebook_ view-display-id-block_1 view-dom-id-0a4ed559fb14e08f87923ad3dbdde342">
+        
+  
+  
+      <div class="view-content">
+      <table class="views-view-grid cols-6" class="views-view-grid">
+  
+  <tbody>
+          <tr class="row-1 row-first row-last">
+                  <td class="col-1 col-first">
+              
+          <A href="https://www.facebook.com/photo.php?fbid=10151590971408425&amp;set=a.10151590971373425.1073741826.137412693424&amp;type=1&amp;relevant_count=4" target="_blank"><img src="https://fbcdn-photos-h-a.akamaihd.net/hphotos-ak-prn1/1010073_10151590971408425_936347247_s.jpg"></a>            </td>
+                  <td class="col-2">
+              
+          <A href="https://www.facebook.com/photo.php?fbid=10151596677053425&amp;set=a.142339583424.104943.137412693424&amp;type=1&amp;relevant_count=1" target="_blank"><img src="https://photos-b.xx.fbcdn.net/hphotos-ash4/1001874_10151596677053425_282308036_s.jpg"></a>            </td>
+                  <td class="col-3">
+              
+          <A href="https://www.facebook.com/photo.php?fbid=10151597074803425&amp;set=a.142339583424.104943.137412693424&amp;type=1&amp;relevant_count=1" target="_blank"><img src="https://fbcdn-photos-b-a.akamaihd.net/hphotos-ak-ash4/1002777_10151597074803425_1579036489_s.jpg"></a>            </td>
+                  <td class="col-4">
+              
+          <A href="https://www.facebook.com/photo.php?fbid=10151607162218425&amp;set=a.142339583424.104943.137412693424&amp;type=1&amp;relevant_count=1" target="_blank"><img src="https://photos-a.xx.fbcdn.net/hphotos-ash4/1002299_10151607162218425_111387385_s.jpg"></a>            </td>
+                  <td class="col-5">
+              
+          <A href="http://www.facebook.com/photo.php?fbid=10151356381038425&amp;set=a.142339583424.104943.137412693424&amp;type=1&amp;relevant_count=1" target="_blank"><img src="http://photos-f.ak.fbcdn.net/hphotos-ak-snc6/225387_10151356381038425_838608562_s.jpg"></a>            </td>
+                  <td class="col-6 col-last">
+              
+          <A href="http://www.facebook.com/photo.php?fbid=10151323241218425&amp;set=a.10151323241098425.470995.137412693424&amp;type=1&amp;relevant_count=1" target="_blank"><img src="http://photos-c.ak.fbcdn.net/hphotos-ak-ash3/563639_10151323241218425_936580080_s.jpg"></a>            </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <p><a href="http://www.facebook.com/pages/GSATi/137412693424">See more of what we’re doing on facebook</a></p>
+    </div>
+  
+  
+</div>    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div><div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-16">
+    <div class="grid-4 region region-footer-first omega" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <div class="block block-views block-testimonials-block-2 block-views-testimonials-block-2 odd block-without-title" id="block-views-testimonials-block-2">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="view view-testimonials view-id-testimonials view-display-id-block_2 view-dom-id-2de0977bc19376afacd00e38973f41e5">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/testimonials/brenda-meyers">Brenda Meyers</a></span>  </div>  
+  <div class="views-field views-field-field-organization-name-title">        <div class="field-content">CEO Violetea, LLC</div>  </div>  
+  <div class="views-field views-field-field-short-testimonial">        <div class="field-content">Everyone at GSATi that I have come in contact with seems to really care about the success of Violetea and I am so thankful to be partnering with them on this endeavor. I know that there will be greater potential for growth with little worry about fixing mistakes that could have been avoided. </div>  </div>  
+  <div class="views-field views-field-title-1">        <span class="field-content"><a href="/testimonials">More Success Stories</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div><div class="block block-menu block-menu-footer-menu block-menu-menu-footer-menu even block-without-title" id="block-menu-menu-footer-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf menu-582"><a href="/" title="" class="menu-582">Home</a></li>
+<li class="leaf menu-814"><a href="/sitemap" title="" class="menu-814">Site Map</a></li>
+<li class="last leaf menu-815"><a href="/content/contact-us" title="" class="menu-815">Contact</a></li>
+</ul>    </div>
+  </div>
+</div><div class="block block-block block-3 block-block-3 odd block-without-title" id="block-block-3">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      © 2014 GSATi All rights reserved. <br> Powered by <a href="http://www.gsati.com">GSATi</a>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-12 region region-footer-second alpha" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <section class="block block-menu block-menu-partners block-menu-menu-partners odd" id="block-menu-menu-partners">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Partners</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf menu-578"><a href="http://apple.com" title="" class="menu-578">Apple</a></li>
+<li class="leaf menu-579"><a href="http://hp.com" title="" class="menu-579">Hewlett-Packard</a></li>
+<li class="leaf menu-580"><a href="http://dell.com" title="" class="menu-580">Dell</a></li>
+<li class="leaf menu-817"><a href="http://www.cisco.com" title="" class="menu-817">Cisco</a></li>
+<li class="leaf menu-1209"><a href="http://www.womenpresidentsorg.com/" title="" class="menu-1209">Women President&#039;s Organization</a></li>
+<li class="leaf menu-819"><a href="http://www.dsa.org/" title="" class="menu-819">Direct Selling Association</a></li>
+<li class="leaf menu-820"><a href="http://www.wbcsouthwest.org/" title="" class="menu-820">Women&#039;s Business Council Southwest</a></li>
+<li class="leaf menu-821"><a href="http://www.nawbo.org/" title="" class="menu-821">National Association of Women Business Owners</a></li>
+<li class="last leaf menu-822"><a href="http://www.wbenc.org/" title="" class="menu-822">Women&#039;s Business Enterprise National Council</a></li>
+</ul>    </div>
+  </div>
+</section>  </div>
+</div>  </div>
+</div></footer>  </div>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f92da49e4f","applicationID":"9360422","transactionName":"NFUBMEtYWkNQWhZdCw0fIgdNUFteHkkDUwE8XQIKWF5RQm5JA1MBPFUbAVpMQFU=","queueTime":0,"applicationTime":419,"atts":"GBICRgNCSU0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

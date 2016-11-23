@@ -1,0 +1,674 @@
+status: 200
+x-request-id: a84bd990-1f62-4f8e-ac02-7a1f7cd4c213
+via: 1.1 vegur
+content-location: http://www.gennovacap.com
+x-content-type-options: nosniff
+set-cookie: _gcap_session=V0h1ZDBjZ0FnQ04vdnFseVFjWG9RRXRRdlFEc2VJOFRoT1djbXI5SCt0OTNpRmhGR3o3SjYzWUJCOWp0YU9DeXFZeWRjS215NWwrTkRQU2crUncrZ0VGUTducFgrZ1NJWE13V3R3bHdCQmhHNjZObUNRcmdzT2I5L1lPTlF1V3hWKzlQY3QySjM5eS9NOHkzVGJZWXh3PT0tLVlwZk9WbUtaL2pQY1A1UFlTVzkzRHc9PQ%3D%3D--38a15b7c4d750cb6bca270c9ddddb6ffe7276239;
+ path=/; HttpOnly
+vary: Accept-Encoding
+connection: close
+content-length: 43008
+server: thin
+x-runtime: 0.341238
+x-xss-protection: 1; mode=block
+etag: W/"a506cdbb4a5980690529a75163441403"
+cache-control: max-age=0, private, must-revalidate
+date: Fri, 09 Sep 2016 09:21:37 GMT
+x-frame-options: SAMEORIGIN
+content-type: text/html; charset=utf-8
+x-rack-cache: miss
+-content-encoding: gzip
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Organization">
+<head>
+
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"144489e66b","applicationID":"8170121","transactionName":"dVcKEUEKWV9QFBdaDFtdSwxdAVBL","queueTime":31,"applicationTime":341,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+  <!-- Google Webmasters -->
+  <meta name="google-site-verification" content="2cOxLbg72GMzP6KHp5xvGpWuioIn92hqrifHGccIrsw" />
+
+  <!-- Google Publisher Tag -->
+  <link rel="publisher" href="https://plus.google.com/+GennovacapTechnologyServicesAustin/about?hl=en">
+
+  <!-- Mobile Viewports -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon-b211d8114fbf8fc4312fb1f057b55eb9.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon-b211d8114fbf8fc4312fb1f057b55eb9.ico" type="image/x-icon">
+  <title>Gennovacap - Web development and iOS app development</title>
+<meta name="description" content="Gennovacap is a ruby on rails web development and iOS mobile app development company in Austin, Texas. We generate innovative ideas and build apps for small" />
+<meta name="keywords" content="gennovacap, web, development, ruby, rails, app, ios, mobile, developers, wordpress, austin, texas, small, business, midsize, enterprise" />
+<link rel="canonical" href="http://www.gennovacap.com/" />
+<meta property="og:url" content="http://www.gennovacap.com/" />
+<meta property="og:site_name" content="Gennovacap" />
+<meta property="og:image" content="http://www.gennovacap.com/assets/gennovacap-7742c6d8a16bd8d24c031296af1b8328.png" />
+<meta property="og:description" content="Gennovacap is a ruby on rails web development and iOS mobile app development company in Austin, Texas. We generate innovative ideas and build apps for small business and midsize enterprise clients." />
+<meta property="og:type" content="website" />
+<meta property="og:separator" content="|" />
+<meta name="twitter:site_name" content="Gennovacap" />
+<meta name="twitter:site" content="@gennovacap" />
+<meta name="twitter:card" content="photo" />
+<meta name="twitter:description" content="Gennovacap is a ruby on rails web development and iOS mobile app development company in Austin, Texas. We generate innovative ideas and build apps for small business and midsize enterprise clients." />
+<meta name="twitter:image" content="http://www.gennovacap.com/assets/gennovacap-7742c6d8a16bd8d24c031296af1b8328.png" />
+<meta name="twitter:separator" content="-" />
+<meta name="image" content="http://www.gennovacap.com/assets/gennovacap-7742c6d8a16bd8d24c031296af1b8328.png" />
+
+
+  <link rel="stylesheet" media="all" href="/assets/application-217fe248f4bd3fca30a8360c2a935a67.css" />
+  <script src="/assets/application-198861f4263bda1b8ab8c86167400b45.js"></script>
+ 
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="E4DTYQNFX+Wevo9StVoYccwNTohCqKSSoETnfYoyUvmtkI7vlzhhWZ/9UQVHR2mcl6n6+EdqdoKG1Ei/HxcYJA==" />
+
+  <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount','UA-25701298-1']);
+_gaq.push(['_setDomainName','auto']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+  <script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '1431681917144763']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1431681917144763&amp;ev=PixelInitialized" /></noscript>
+  <!-- Facebook Conversion Code for Website Lead -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6025520188016', {'value':'0.00','currency':'USD'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6025520188016&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+  <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">
+twttr.conversion.trackPid('l5hxu', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l5hxu&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l5hxu&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" /></noscript>
+  <!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type='text/javascript'>
+var _vwo_code=(function(){
+var account_id=145307,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+
+  <script src="//load.sumome.com/" data-sumo-site-id="c67fcf13db068cf324cb6c464576f41effd67d615612467e6ca22c4ed1de73c1" async="async"></script>
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57662c8ecf6b6be2"></script>
+
+
+</head>
+
+<body>
+
+  <!-- <p class="notice"></p>
+  <p class="alert"></p> -->
+
+  <div class="page">
+<!-- Start Nav Section-->
+<nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard"><a href="javascript:void(0)" class="search_button"><i class="fa fa-search"></i></a>
+  <form class="h_search_form" id="search" action="/articles" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+   <div class="container">
+        <div class="h_search_form_wrapper">
+          <div class="input-group"><span class="input-group-btn"> <button class="btn btn-sm" type="submit"><i class="fa fa-search fa-lg"></i></button></span>
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Articles" />
+            <!-- In order to have the "search" icon int the button, we need to use plain HTML instead 
+                 of using a Rails form helper -->
+          </div>
+           <div class="h_search_close"><a href="#"><i class="fa fa-times"></i></a></div>
+        </div>    
+    </div>
+</form>  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle"><i class="fa fa-align-justify fa-lg"></i></button><a href="#" class="navbar-brand"><img alt="Gennovacap Technology - Web Development - Ruby on Rails - Mobile Apps" class="logo-white" src="/assets/logo-hightresolution-white-5dc62a5334f70ee9f2bd084efc497b1c.png" /><img alt="Gennovacap Technology - Web Development - Ruby on Rails - Mobile Apps" class="logo-dark" src="/assets/logo-hightresolution-blue-9761100ebeebe88e9c48c08343f5c5fd.png" /></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right service-nav">
+          <div class="social-icon navbar-brand icon-box icon-s">
+            <div class="icon-content img-circle">
+              <li><a href="https://github.com/gennovacap-technology" target="_blank" class="fa fa-github fa-lg"></a></li>
+            </div>  
+            <div class="icon-content img-circle">
+              <li><a href="https://twitter.com/gennovacap" target="_blank" class="fa fa-twitter fa-lg"></a></li>
+            </div>
+            <div class="icon-content img-circle">  
+              <li><a href="https:/facebook.com/gennovacap" target="_blank" class="fa fa-facebook fa-lg"></a></li>
+            </div>
+            <div class="icon-content img-circle">  
+              <li><a href="https://plus.google.com/u/0/+GennovacapTechnologyServicesAustin/posts" target="_blank" class="fa fa-google-plus fa-lg"></a></li>
+            </div>  
+          </div>
+       </ul>
+      <button type="button" class="navbar-toggle"><i class="fa fa-close fa-lg"></i></button>
+      <ul class="nav yamm navbar-nav navbar-left main-nav">
+              <li class=""><a title="Home" href="/">Home</a></li>
+              <li class="dropdown"><a title="Team" href="/team">Team</a></li>
+               <li class="dropdown"><a title="Our Process" href="/our-process">Our Process</a></li>
+               <li class="dropdown"><a title="Reviews" href="/reviews">Reviews</a></li>
+              <li class="dropdown"><a title="Portfolio" href="/portfolios">Clients</a></li>
+               <li class="dropdown"><a href="#" title="" data-toggle="dropdown" data-hover="dropdown" id="menu_item_" data-ref="#" class="dropdown-toggle">Services<span class="caret"></span></a>
+                <ul aria-labelledby="menu_item_Pages" class="dropdown-menu">                 
+                      <li class="dropdown-submenu">
+                        <a href="/">Web Development</a>
+                        <ul class="dropdown-menu">
+                          <li> <a href="/services/mobile-websites">Mobile Websites</a></li>
+                          <li> <a href="/services/web-design">Web Design</a></li>
+                          <li> <a href="/services/website-design">Website Design</a></li>
+                          <li> <a href="/services/austin-web-development">Austin Web Development</a></li>
+                          <li> <a href="/services/ecommerce-development">Ecommerce Development</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="/">Mobile App Development</a>
+                        <ul class="dropdown-menu">
+                          <li> <a href="/services/iphone-app-development">iPhone App Development</a></li>
+                          <li> <a href="/services/austin-mobile-app-development">Austin Mobile App Development</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="/">Ruby on Rails</a>
+                        <ul class="dropdown-menu">
+                          <li> <a href="/services/austin-ruby-on-rails-developers">Austin Ruby on Rails Developers</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a href="/">SEO Strategy</a>
+                        <ul class="dropdown-menu">
+                          <li> <a href="/services/seo-strategy">SEO Strategy</a></li>
+                        </ul>
+                      </li>
+                </ul>
+              </li>
+              <li class="dropdown"><a title="Blog" href="/articles">Blog</a></li>
+             
+              
+              <li class="dropdown"><a title="Contact" href="/contacts/new">Contact</a></li>             
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <section  class="demo-2 main-landing-image">
+  <div class="row">
+   <div class="slide-content text-center home-mobile-height">
+    <img src="assets/mark-logo.png" alt="Austin Web Development | Ruby on Rails Developers Austin | Austin Web Developers | Gennovacap Technology" class="home-slide-height no-mobile">
+    <h2 class="main-title"> Wanna start something? </h2>
+    <h4 class="main-title">You've come to the right place.</h4>
+    <br>
+    	<a title="Contact Us" class="btn btn-light btn-bordered btn-lg butt-top" href="/contacts/new">Build An App</a> &nbsp;&nbsp;
+    	<a title="How to Build an App" class="btn btn-light btn-bordered btn-lg butt-top" href="/team">Meet Our Team</a>	
+    </div>
+
+</div>
+</section>
+
+ <!-- Start About section-->
+      <section class="sep-top-sm sep-bottom-2x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="text-center">
+                <h1 class="upper">Web Development &amp; App Development</h1>
+                <p class="lead">Are you ready to develop your app idea?  With a quick, painless assessment by phone or email, <br> we’ll mobilize quickly to understand your project and establish next steps towards app development.  </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 sep-top-2x icon-gradient">
+              <div class="icon-box icon-horizontal icon-lg">
+                <div data-wow-delay=".5s" class="icon-content img-circle wow bounceInUp"><i class="fa fa-lightbulb-o"></i></div>
+                <div class="icon-box-content">
+                  <h5 class="upper">Strategy Architecture</h5>
+                  <p>We begin every project by gathering facts from our clients, examining the competition, and then building a high level strategy for app development.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 sep-top-2x icon-gradient">
+              <div class="icon-box icon-horizontal icon-lg">
+                <div data-wow-delay=".5s" class="icon-content img-circle wow bounceInUp"><i class="fa fa-cogs"></i></div>
+                <div class="icon-box-content">
+                  <h5 class="upper">User Experience Design</h5>
+                  <p>Once we develop the strategy for the application, we scope the functional requirements to bring the app to life through art and engineering expertise.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 sep-top-2x icon-gradient">
+              <div class="icon-box icon-horizontal icon-lg">
+                <div data-wow-delay=".5s" class="icon-content img-circle wow bounceInUp"><i class="fa fa-html5"></i></div>
+                <div class="icon-box-content">
+                  <h5 class="upper">Web Development</h5>
+                  <p>If you want to build an app for the web, we bring in our team of expert Ruby on Rails Developers. Each Rails Application has its own unique source code.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 sep-top-2x icon-gradient">
+              <div class="icon-box icon-horizontal icon-lg">
+                <div data-wow-delay=".5s" class="icon-content img-circle wow bounceInUp"><i class="fa fa-apple"></i></div>
+                <div class="icon-box-content">
+                  <h5 class="upper">App Development</h5>
+                  <p>If you want to build a mobile app, we bring in expert mobile app developers to create the product. Once its built, we will ship it to the app store for you.  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About section-->
+<section class="call-to-action bg-primary sep-top-md sep-bottom-md">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h5 class="action-title upper light">LEARN MORE ABOUT OUR SOFTWARE DEVELOPMENT PROCESS.</h5>
+      </div>
+      <div class="col-md-3 text-right"><a title="Agile Development Process" class="btn btn-light btn-bordered btn-lg" href="/our-process">See How We Build Apps</a></div>
+    </div>
+  </div>
+</section>
+<!-- Start Team section-->
+      <section class="sep-top-2x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="text-center">
+                <h2 data-wow-delay="0.5s" class="upper wow bounceInLeft">Our Innovators</h2>
+                <p data-wow-delay="0.5s" class="lead wow bounceInRight">
+                  Gennovacap has been developing web and mobile software for the past 8 years in Austin, Tx. <br> Our team works tirelessly to help you innovate and take your product to the next level.
+                </p>
+              </div>
+            </div>
+          </div>
+           <div id="filters" class="text-center sep-top-lg">
+            <button data-filter="*" class="btn btn-sm btn-primary upper">show all</button>
+            <button data-filter=".executive" class="btn btn-sm upper">Executive</button>
+            <button data-filter=".developer" class="btn btn-sm upper">Developer</button>
+            <button data-filter=".designer" class="btn btn-sm upper">Designer</button>
+          </div>
+          <div class="sep-top-md">
+            <ul id="isotope" class="portfolio isotope">
+              <li class="item team-item executive developer">
+                <div class="item-wrapper">
+                  <div class="sep-bottom-sm">
+                    <div class="team-photo"><img alt="Reza Piri" class="img-responsive" src="/assets/reza-dark-24c44ce72172d2d9dfe793d90679f8bf.jpg" />
+                      <div class="team-connection">
+                        <div class="team-connection-list text-center">
+                          <ul>
+                            <li><a href="https://www.github.com/austex" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                            <li><a href="https://www.linkedin.com/pub/reza-piri/59/699/286" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="https://www.twitter.com/rezapped" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team-name">
+                    <h5 class="upper">Reza Piri</h5><span>CEO and Founder</span>
+                  </div>
+                  <p></p>
+                </div>
+               <li class="item team-item developer executive">
+                <div class="item-wrapper">
+                  <div class="sep-bottom-sm">
+                    <div class="team-photo"><img alt="Anderson Brandao" class="img-responsive" src="/assets/anderson-dark-9fab8e821711846a9bf376a724c5db40.jpg" />
+                      <div class="team-connection">
+                        <div class="team-connection-list text-center">
+                          <ul>
+                            <li><a href="https://github.com/andersonbn" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                            <li><a href="http://br.linkedin.com/in/andersonbn/pt" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team-name">
+                    <h5 class="upper">Anderson Brandao</h5><span>Development Operations</span>
+                  </div>
+                  <p></p>
+                </div>
+              </li>
+              <li class="item team-item developer designer">
+                <div class="item-wrapper">
+                  <div class="sep-bottom-sm">
+                    <div class="team-photo"><img alt="Alex Koshy" class="img-responsive" src="/assets/alex-koshy-ios-developer-4cec7350a9c487d836321fb5a40628e6.jpg" />
+                      <div class="team-connection">
+                        <div class="team-connection-list text-center">
+                          <ul>
+                            <li><a href="https://github.com/ajkoshy7" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/akoshy20" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team-name">
+                    <h5 class="upper">Alex Koshy</h5><span>Senior iOS Developer &amp; Mobile Designer</span>
+                  </div>
+                  <p></p>
+                </div>
+              </li>
+              <li class="item team-item designer">
+                <div class="item-wrapper">
+                  <div class="sep-bottom-sm">
+                    <div class="team-photo"><img alt="Carlyson Oliveria" class="img-responsive" src="/assets/carlyson-dark-0e56ee110a4d7cf8200a7d1dacec7506.jpg" />
+                      <div class="team-connection">
+                        <div class="team-connection-list text-center">
+                          <ul>
+                            <li><a href="https://www.linkedin.com/in/carlyson/en" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="https://dribbble.com/Carlyson" target="_blank"><i class="fa fa-dribbble fa-2x"></i></a></li>
+                            <li><a href="https://twitter.com/carlyson" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team-name">
+                    <h5 class="upper">Carlyson Oliveira</h5><span>Creative Director</span>
+                  </div>
+                  <p></p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End Team section-->
+
+<!-- Start Parallax section-->
+<section id="parallax4" class="parallax main-blog-image">
+  <div class="sep-top-3x sep-bottom-2x">
+    <div class="container">
+      <div data-wow-delay="1s" class="section-title text-center wow bounceInDown">
+        <h3 class="upper light small-space">Product Development for Web and Mobile</h3>
+        <p class="lead light lighter">In choosing Gennovacap, our engagement begins with a consultation and inquiry into your product strategy and business objectives.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div id="charts-wrapper" class="row">
+            <div class="col-md-4 sep-top-2x icon-gradient">
+              <div class="icon-box icon-horizontal icon-lg">
+                <div data-wow-delay=".5s" class="icon-content img-circle wow bounceInLeft"><i class="fa fa-sitemap"></i></div>
+                <div class="icon-box-content">
+                  <h5 class="upper">UX Strategy</h5>
+                  <p class="white">Each of our engagements begins with a serious exploration of your product. </p>
+                </div>
+              </div>
+            </div>
+           <div class="col-md-4 sep-top-2x icon-gradient">
+              <div class="icon-box icon-horizontal icon-lg">
+                <div data-wow-delay=".5s" class="icon-content img-circle wow bounceInLeft"><i class="fa fa-diamond"></i></div>
+                <div class="icon-box-content">
+                  <h5 class="upper">Web Development</h5>
+                  <p class="white">Our web developers have extensive knowledge across every major sector.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 sep-top-2x icon-gradient">
+              <div class="icon-box icon-horizontal icon-lg">
+                <div data-wow-delay=".5s" class="icon-content img-circle wow bounceInLeft"><i class="fa fa-mobile"></i></div>
+                <div class="icon-box-content">
+                  <h5 class="upper">Mobile App Development</h5>
+                  <p class="white">Our mobile team is small, but fierce. We can build anything you think up. </p>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Parallax section-->
+<!-- Start Blog preview Section-->
+<section id="blog" class="sep-top-2x">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center">
+          <h2 class="upper">Tips and Tricks for App Development</h2>
+          <p class="lead">We love sharing our ideas with the world and that's why clients hire us. Here are some ideas about app development we want to share with you.  </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blog-preview swiper-container">
+    <div class="swiper-wrapper sep-top-2x">
+     <!--       Article-->
+      <article class="swiper-slide">
+        <div class="post-info text-center">
+        <span class="info-text pull-left text-right">Aug 23, 2016</span>
+        <a href=""><img alt="Gennovacap Technology" style="width:99px; height:99px;" class="img-circle user-thumb" src="/assets/gennovacap-7742c6d8a16bd8d24c031296af1b8328.png" /></a>
+        <span class="info-text pull-right text-left">Gennovacap<small></small></span></div>
+
+        <a href="/articles/the-dark-side-of-web-development-wordpress-plugins-security-and-backups">
+         <img alt="" class="img-responsive" src="https://gennovacap.s3.amazonaws.com/uploads/blogwork_wordpress-security-combo.png" />
+</a>        <div class="post-content">
+          <h5><a class="caps" href="/articles/the-dark-side-of-web-development-wordpress-plugins-security-and-backups">The Dark Side of Web Development: Wordpress Plugins, Security, and Backups</a></h5>
+          <p>In this article you will learn how to secure and backup your Wordpress data and manage your Wordpress through these 3 easy steps.   .. <a class="caps" href="/articles/the-dark-side-of-web-development-wordpress-plugins-security-and-backups">Read More</a></p>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <div class="post-info text-center">
+        <span class="info-text pull-left text-right">Aug 16, 2016</span>
+        <a href=""><img alt="Gennovacap Technology" style="width:99px; height:99px;" class="img-circle user-thumb" src="/assets/gennovacap-7742c6d8a16bd8d24c031296af1b8328.png" /></a>
+        <span class="info-text pull-right text-left">Gennovacap<small></small></span></div>
+
+        <a href="/articles/which-ecommerce-platform-is-right-for-my-business">
+         <img alt="" class="img-responsive" src="https://gennovacap.s3.amazonaws.com/uploads/blogwork_which-ecommerce-is-best-for-my-business-2.png" />
+</a>        <div class="post-content">
+          <h5><a class="caps" href="/articles/which-ecommerce-platform-is-right-for-my-business">Which ecommerce platform is right for my business?</a></h5>
+          <p>Whether your do-it-yourself small business is already online or you&#39;re looking to expand your business, e-commerce is your ticket to increasing sales. But how do you know which o .. <a class="caps" href="/articles/which-ecommerce-platform-is-right-for-my-business">Read More</a></p>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <div class="post-info text-center">
+        <span class="info-text pull-left text-right">Oct 12, 2015</span>
+        <a href=""><img alt="Gennovacap Technology" style="width:99px; height:99px;" class="img-circle user-thumb" src="/assets/gennovacap-7742c6d8a16bd8d24c031296af1b8328.png" /></a>
+        <span class="info-text pull-right text-left">Gennovacap<small></small></span></div>
+
+        <a href="/articles/a-practical-guide-to-app-development">
+         <img alt="" class="img-responsive" src="https://gennovacap.s3.amazonaws.com/uploads/blogwork_product-app-development-.png" />
+</a>        <div class="post-content">
+          <h5><a class="caps" href="/articles/a-practical-guide-to-app-development">A Practical Guide to App Development</a></h5>
+          <p>For the past 6 years, our firm has encountered an overwhelming problem from new clients who want to build apps.  The problem is that their expectations for developing an app are  .. <a class="caps" href="/articles/a-practical-guide-to-app-development">Read More</a></p>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <div class="post-info text-center">
+        <span class="info-text pull-left text-right">Mar 23, 2015</span>
+        <a href=""><img alt="Gennovacap Technology" style="width:99px; height:99px;" class="img-circle user-thumb" src="/assets/gennovacap-7742c6d8a16bd8d24c031296af1b8328.png" /></a>
+        <span class="info-text pull-right text-left">Gennovacap<small></small></span></div>
+
+        <a href="/articles/ruby-on-rails-vs-php">
+         <img alt="" class="img-responsive" src="https://gennovacap.s3.amazonaws.com/uploads/blogwork_ruby-on-rails-vs-php.png" />
+</a>        <div class="post-content">
+          <h5><a class="caps" href="/articles/ruby-on-rails-vs-php">Ruby on Rails vs. PHP</a></h5>
+          <p>Here, we go over the reasons why we use Ruby on Rails for your web app development. We will be focusing on working with Ruby on Rails, and the advantages it has over PHP on any p .. <a class="caps" href="/articles/ruby-on-rails-vs-php">Read More</a></p>
+        </div>
+      </article>
+      <!--       Article end-->           
+    </div>
+  </div>
+</section>
+<!-- End Blog preview Section-->
+
+
+<!-- Start Clients section-->
+<section class="sep-top-md sep-bottom-2x">
+  <div class="container">
+    <div class="text-center">
+      <h4 class="upper">We've worked for:</h4>
+    </div>
+    <div data-auto-play="3000" data-items="6" data-auto-height="true" class="owl-carousel owl-theme">
+      <div class="item"><img alt="" class="img-responsive" src="/assets/healthcare-0ac76bdf661779af0d4ff903d9475135.jpg" /></div>
+      <div class="item"><img alt="" class="img-responsive" src="/assets/homelight-df061e81af5c36e5d3f9219e4630a5a1.jpg" /></div>
+      <div class="item"><img alt="" class="img-responsive" src="/assets/elmcroft-c19d768b59375c9c6be52c3d5a255153.jpg" /></div>
+      <div class="item"><img alt="" class="img-responsive" src="/assets/bitcoin-traders-c441b206c13ef312a0a2ba783b9c0dfc.jpg" /></div>
+      <div class="item"><img alt="" class="img-responsive" src="/assets/austin-relocating-c931cb00de22cf95150a6bfe7a1713c5.jpg" /></div>
+      <div class="item"><img alt="" class="img-responsive" src="/assets/capt-bennys-6ec34f0eb6db8b92b58242242f2323e9.jpg" /></div>
+      <div class="item"><img alt="" class="img-responsive" src="/assets/dyson-c983d841a13a3809d6e9bb373ee585ff.jpg" /></div>     
+      <div class="item"><img alt="" class="img-responsive" src="/assets/kung-fu-saloon-30edc221142359c6474ed64872237511.jpg" /></div>
+      <div class="item"><img alt="" class="img-responsive" src="/assets/october-custom-762ca96aa5502865b87564e435168921.jpg" /></div>
+      <div class="item"><img alt="" class="img-responsive" src="/assets/simply-fit-a674e5687d3e5761493b7faf8ecb9110.jpg" /></div>
+      <div class="item"><img alt="" class="img-responsive" src="/assets/texas-monthly-e097f99be70b1dbf86d94662f6f57a9f.jpg" /></div>
+      <div class="item"><img alt="" class="img-responsive" src="/assets/weird-coupons-2e9874a3a4df355f04aa09374bad50a3.jpg" /></div>
+    </div>
+  </div>
+</section>
+<!-- End Clients section-->
+<section class="call-to-action bg-primary sep-top-md sep-bottom-md">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h5 class="action-title upper light">SEND US A MESSAGE TO GET STARTED.</h5>
+      </div>
+      <div class="col-md-3 text-right"><a title="Contact" class="btn btn-light btn-bordered btn-lg" href="/contacts/new">Contact Us Today</a></div>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Start Footer section-->
+      <footer id="footer">
+        <div class="inner sep-bottom-md"> 
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="widget sep-top-lg"><img alt="Gennovacap Technology - Web Development - Ruby on Rails - Mobile Apps" class="logo" src="/assets/logo-hightresolution-white-5dc62a5334f70ee9f2bd084efc497b1c.png" /><small class="sep-top-xs sep-bottom-md">Austin Web Development, Ruby on Rails Developers, Mobile App Developers, and Seo.</small>
+                  <h6 class="upper widget-title">Stay connected</h6>
+                  <ul class="social-icon sep-top-xs icon-box icon-s">
+                    <div class="icon-content img-circle">
+                      <li><a href="https://github.com/gennovacap-technology" target="_blank" class="fa fa-github fa-lg"></a></li>
+                    </div>  
+                    <div class="icon-content img-circle">
+                      <li><a href="https://twitter.com/gennovacap" target="_blank" class="fa fa-twitter fa-lg"></a></li>
+                    </div>
+                    <div class="icon-content img-circle">  
+                      <li><a href="https:/facebook.com/gennovacap" target="_blank" class="fa fa-facebook fa-lg"></a></li>
+                    </div>
+                    <div class="icon-content img-circle">  
+                      <li><a href="https://plus.google.com/u/0/+GennovacapTechnologyServicesAustin/posts" target="_blank" class="fa fa-google-plus fa-lg"></a></li>
+                    </div>  
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="widget sep-top-lg">
+                  <h6 class="upper widget-title">Latest app ideas</h6>
+                  <ul class="widget-post sep-top-xs">
+                  <li><span class="date-post">23<small class="upper">Aug</small></span><a class="title-post caps" rel="bookmark" href="/articles/the-dark-side-of-web-development-wordpress-plugins-security-and-backups">The Dark Side of Web Development: Wordpress Plugins, Security, and Backups</a></li> <br>
+                  <li><span class="date-post">16<small class="upper">Aug</small></span><a class="title-post caps" rel="bookmark" href="/articles/which-ecommerce-platform-is-right-for-my-business">Which ecommerce platform is right for my business?</a></li> <br>
+                  <li><span class="date-post">12<small class="upper">Oct</small></span><a class="title-post caps" rel="bookmark" href="/articles/a-practical-guide-to-app-development">A Practical Guide to App Development</a></li> <br>
+                 
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="widget sep-top-lg">
+                  <h6 class="upper widget-title">Visit Us</h6>
+                  <ul class="widget-address sep-top-xs" itemtype="http://schema.org/PostalAddress" itemprop="address">
+                    <a href="https://www.google.com/maps/place/Gennovacap+Technology/@30.268573,-97.742994,17z/data=!4m2!3m1!1s0x8644b44e2c1c13b1:0xea557b044e9c90e5" target="_blank">
+                        <li><i class="fa fa-map-marker fa-lg"></i><small itemprop="streetAddress">600 Congress Avenue<br>14th Floor <br><span itemprop="addressLocality">Austin</span>, <span itemprop="addressRegion">Texas</span><span itemprop="postalCode"> 78701</span><br><span itemprop="addressCountry">United States</span></small></li>
+                    </a>
+                   <!--  <li>
+                      <i class="fa fa-phone fa-lg"></i><small>
+                      Call Us Directly<br>
+                      <a itemprop="telephone" href="tel:5126402475">(512) 640-2475</a></small>
+                     </li> -->
+                    <li><i class="fa fa-clock-o fa-lg"></i><small>Mon / Friday<br>9:00 am - 6:00 pm</small></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="widget sep-top-lg">
+                  <h6 class="upper widget-title">Recent Tweets</h6>
+                  <div class="flickr_container sep-top-xs">
+                  <ul>
+                     
+                  </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright sep-top-xs sep-bottom-xs">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12"><small>Copyright 2014 © Gennovacap Technology. All rights reserved.</small></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- End Footer section-->
+      <div id="back_to_top"><a href="#" class="fa fa-arrow-up fa-lg"></a></div>
+      </div>
+</div>
+
+
+
+
+
+  <!-- Google Remarketing Code for All Visitors -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 998825356;
+var google_conversion_label = "lSRiCKeVnFkQjLuj3AM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/998825356/?value=1.00&amp;currency_code=USD&amp;label=lSRiCKeVnFkQjLuj3AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+
+</body>
+</html>
+
