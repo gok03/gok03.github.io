@@ -24,6 +24,55 @@
   			<div class="col">
   				<div class="card">
 				  <div class="card-header">
+				    Initial BMR
+				  </div>
+				  <ul class="list-group list-group-flush" id="div_init_bmr">
+				  </ul>
+				</div>
+  				<br/>
+  				<br/>
+  				<div class="card">
+				  <div class="card-header">
+				    Calories Intake
+				  </div>
+				  <ul class="list-group list-group-flush" id="div_cal_intake">
+				  </ul>
+				</div>
+  			</div>
+  			<div class="col">
+  				<div class="card">
+				  <div class="card-header">
+				    Fat
+				  </div>
+				  <ul class="list-group list-group-flush" id="div_fat">
+				  </ul>
+				</div>
+  			</div>
+  			<div class="col">
+  				<div class="card">
+				  <div class="card-header">
+				    Protein
+				  </div>
+				  <ul class="list-group list-group-flush" id="div_protein">
+				  </ul>
+				</div>
+  			</div>
+  			<div class="col">
+  				<div class="card">
+				  <div class="card-header">
+				    Carbs
+				  </div>
+				  <ul class="list-group list-group-flush" id="div_carbs">
+				  </ul>
+				</div>
+  			</div>
+  		</div>
+  		<br/>
+  		<br/>
+  		<div class="row">
+  			<div class="col">
+  				<div class="card">
+				  <div class="card-header">
 				    BMI
 				  </div>
 				  <ul class="list-group list-group-flush" id="div_bmi">
@@ -87,23 +136,59 @@
   	<div class="row">
   		<div class="col">
 			  <div class="form-group">
-			    <legend for="weigth">1. Weight (Kg)</legend>
+			    <legend for="name">1. Name</legend>
+			    <input type="text" class="form-control col-sm" id="name" placeholder="Enter Name">
+			  </div>
+			  <div class="form-group">
+			    <legend for="email">2. Email</legend>
+			    <input type="email" class="form-control col-sm" id="email" placeholder="Enter Email">
+			  </div>
+			  <div class="form-group">
+			    <legend for="phone">3. Phone Number</legend>
+			    <input type="number" class="form-control col-sm" id="phone" placeholder="Enter Phone Number">
+			  </div>
+			  <div class="form-group">
+			    <legend for="age">4. Age</legend>
+			    <input type="number" class="form-control col-sm" id="age" placeholder="Enter Weight">
+			  </div>
+			  <div class="form-group">
+			    <legend for="weigth">5. Weight (Kg)</legend>
 			    <input type="number" class="form-control col-sm" id="weigth" placeholder="Enter Weight">
 			  </div>
 			  <div class="form-group">
-			    <legend for="height">2. Height (Cm)</legend>
+			    <legend for="height">6. Height (Cm)</legend>
 			    <input type="number" class="form-control col-sm" id="height" placeholder="Enter Height">
 			  </div>
 			  <div class="form-group">
-			    <legend for="waist">3. Waist size (Inch)</legend>
+			    <legend for="waist">7. Waist size (Inch)</legend>
 			    <input type="number" class="form-control col-sm" id="waist" placeholder="Enter Waist size">
 			  </div>
 			  <div class="form-group">
-			    <legend for="hip">4. Hip size (Inch)</legend>
+			    <legend for="hip">8. Hip size (Inch)</legend>
 			    <input type="number" class="form-control col-sm" id="hip" placeholder="Enter Hip size">
 			  </div>
 			  <div class="form-group">
-			    <legend for="sleep_time">5. Sleeping time (hours)</legend>
+			    <legend for="gender">9.	Gender</legend>
+		    	<div class="card">
+				  	<div class="card-body row">
+					  	<div class="col">
+					    	Gender
+						</div>
+						<div class="col">
+							<div class="custom-control custom-radio custom-control-inline">
+							  <input type="radio" id="gender-1" name="gender" value=0 class="custom-control-input">
+							  <label class="custom-control-label" for="gender-1">Male</label>
+							</div>
+							<div class="custom-control custom-radio custom-control-inline">
+							  <input type="radio" id="gender-2" name="gender" value=1 class="custom-control-input">
+							  <label class="custom-control-label" for="gender-2">Female</label>
+							</div>
+						</div>
+				   	</div>
+				</div>
+			  </div>
+			  <div class="form-group">
+			    <legend for="sleep_time">10. Sleeping time (hours)</legend>
 			    <input type="number" class="form-control col" id="sleep_time" placeholder="Number of hours you sleep for?">
 			    <br/>
 		    	<div class="card">
@@ -125,27 +210,7 @@
 				</div>
 			  </div>
 			  <div class="form-group">
-			    <legend for="gender">6.	Gender</legend>
-		    	<div class="card">
-				  	<div class="card-body row">
-					  	<div class="col">
-					    	Gender
-						</div>
-						<div class="col">
-							<div class="custom-control custom-radio custom-control-inline">
-							  <input type="radio" id="gender-1" name="gender" value=0 class="custom-control-input">
-							  <label class="custom-control-label" for="gender-1">Male</label>
-							</div>
-							<div class="custom-control custom-radio custom-control-inline">
-							  <input type="radio" id="gender-2" name="gender" value=1 class="custom-control-input">
-							  <label class="custom-control-label" for="gender-2">Female</label>
-							</div>
-						</div>
-				   	</div>
-				</div>
-			  </div>
-			  <div class="form-group">
-			    <legend>7. Nutrition</legend>
+			    <legend>11. Nutrition</legend>
 		    	<div class="card">
 				  <div class="card-body row">
 				  	<div class="col">
@@ -348,7 +413,7 @@
 				</div>
 			  </div>
 			  <div class="form-group">
-			    <legend for="diabetes">8. Diabetes</legend>
+			    <legend for="diabetes">12. Diabetes</legend>
 		    	<div class="card">
 				  	<div class="card-body row">
 					  	<div class="col">
@@ -387,7 +452,7 @@
   		<!-- </div>
   		<div class="col"> -->
 			  <div class="form-group">
-			    <legend for="heart">9. Heart Risk</legend>
+			    <legend for="heart">13. Heart Risk</legend>
 		    	<div class="card">
 				  	<div class="card-body row">
 					  	<div class="col">
@@ -424,7 +489,7 @@
 				</div>
 			  </div>
 			<div class="form-group">
-		    <legend for="exercise">10. Exercise</legend>
+		    <legend for="exercise">14. Exercise</legend>
 		    	<div class="card">
 				  	<div class="card-body row">
 					  	<div class="col">
@@ -452,7 +517,7 @@
 				</div>
 		  </div>
 		  <div class="form-group">
-		    <legend for="stress">11. Stress</legend>
+		    <legend for="stress">15. Stress</legend>
 		    	<div class="card">
 				  	<div class="card-body row">
 					  	<div class="col">
@@ -476,7 +541,7 @@
 				</div>
 		  </div>
 		  <div class="form-group">
-		    <legend>12. Smoking and Alcohol</legend>
+		    <legend>16. Smoking and Alcohol</legend>
 		    	<div class="card">
 				  	<div class="card-body row">
 					  	<div class="col">
@@ -567,6 +632,10 @@
 	function generate() {
 		data = {};
 		// input field data
+		data["name"] = $("#name").val();
+		data["email"] = $("#email").val();
+		data["phone"] = $("#phone").val();
+		data["age"] = $("#age").val();
 		data["weigth"] = $("#weigth").val();
 		data["height"] = $("#height").val();
 		data["waist"] = $("#waist").val();
@@ -618,14 +687,15 @@
 			alert("Fill all the Fields!")
 		}
 		else{
-			$('#inputs').hide();
-			show_report(data);
+			//$('#inputs').hide();
+			show_report(data,calc_post_bmr(data));
 		}
 	}
 </script>
 <script type="text/javascript">
 	var report_data = {};
 	var risk_calc = {};
+	var day_nutrient = {};
 	function create_chart(chart_data) {
 		var data_to_chart = [];
 			var helper = {"High Risk": 3,"Moderate Risk": 2,"Low Risk": 1,"No Risk": 0};
@@ -655,7 +725,31 @@
 		});
 		chart.render();
 	}
-	function show_report(data) {
+	function calc_post_bmr(data) {
+		var init_bmr = 66 + (6.23*(parseFloat(data["weigth"])*2.2))+(12.7*(parseFloat(data["height"])*0.393701))-(6.8*data["age"]);
+		var excercise = data["exercise"][0];
+		var act_mul = 1;
+		if(excercise == "0"){
+			act_mul = 0.8;
+		}
+		else if(excercise == "1"){
+			act_mul = 1.0;
+		}
+		else if(excercise == "2"){
+			act_mul = 1.2;
+		}
+		else if(excercise == "3"){
+			act_mul = 1.3;
+		}
+		var cal_intake = init_bmr*act_mul;
+		day_nutrient["init_bmr"] = init_bmr;
+		day_nutrient["cal_intake"] = cal_intake;
+		day_nutrient["fat"] = cal_intake*0.2/9;
+		day_nutrient["protein"] = (parseFloat(data["weigth"])*act_mul);
+		day_nutrient["carbs"] = (cal_intake - ((day_nutrient["fat"]*9)+(day_nutrient["protein"]*4)))/4;
+		return day_nutrient;
+	}
+	function show_report(data,nutrient) {
 		report_data = {};
 		 risk_calc = {"High Risk":[],"Moderate Risk":[],"Low Risk":[],"No Risk":[]};
 		report_data["bmi"] = calc_bmi(data["height"],data["weigth"]);
@@ -679,7 +773,11 @@
 			for(var i in risk_calc[key])
 				$("#div_"+key.split(" ")[0]).append('<li class="list-group-item">'+risk_calc[key][i]+'</li>');
 		}
+		for(var key in nutrient){
+			$("#div_"+key).html(nutrient[key]);
+		}
 		create_chart(risk_calc);
+		var post_bmr = calc_post_bmr(data);
 		$('#report').show();
 	}
 
