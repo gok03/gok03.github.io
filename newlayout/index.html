@@ -106,6 +106,141 @@
 			</section>
 			<!-- End banner Area -->
 
+			<!--Start calculate the moving cost -->
+			<section class="section-top-border">
+				<div class="container">
+					<form action="http://ec2-13-126-145-241.ap-south-1.compute.amazonaws.com:3013/flytta_api/v0.1/portal/mover/price" method="POST">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<h3 class="mb-30">Origin</h3>
+								<div class="mt-10">
+									<input type="text" name="origin.city" placeholder="Origin locality" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input" id="origin.city">
+								</div>								
+								<div class="mt-10">
+									<textarea name="origin.address2" class="single-textarea" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" id="origin.address2" required></textarea>
+								</div>
+								<div class="single-element-widget mt-30">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-12">
+											<p class="fz-16 f700">BHK</p>
+										</div>	
+										<div class="col-lg-2 col-md-2 col-sm-6">
+											<div class="switch-wrap d-flex">
+												<p>1 BHK</p>
+												<div class="confirm-radio ml-10">
+													<input name="origin.bhk" type="radio" id="origin.bhk1" value="1 BHK">
+													<label for="origin.bhk1"></label>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-2 col-md-2 col-sm-6">
+											<div class="switch-wrap d-flex">
+												<p>2 BHK</p>
+												<div class="confirm-radio ml-10">
+													<input name="origin.bhk" type="radio" id="origin.bhk2" value="2 BHK">
+													<label for="origin.bhk2"></label>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-2 col-md-2 col-sm-6">
+											<div class="switch-wrap d-flex">
+												<p>3 BHK</p>
+												<div class="confirm-radio ml-10">
+													<input name="origin.bhk" type="radio" id="origin.bhk3" value="3 BHK">
+													<label for="origin.bhk3"></label>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-2 col-md-2 col-sm-6">
+											<div class="switch-wrap d-flex">
+												<p>4 BHK</p>
+												<div class="confirm-radio ml-10">
+													<input name="origin.bhk" type="radio" id="origin.bhk4" value="4 BHK">
+													<label for="origin.bhk4"></label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="switch-wrap d-flex">
+									<p class="fz-16 f700">Lift</p>
+									<div class="confirm-checkbox ml-10">
+										<input name="origin.lift" value="true" type="radio" id="origin.lift">
+										<label for="origin.lift"></label>
+									</div>
+								</div>								
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<h3 class="mb-30">Destination</h3>
+								<div class="mt-10">
+									<input type="text" name="destination.city" placeholder="Destination locality" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input">
+								</div>								
+								<div class="mt-10">
+									<textarea class="single-textarea" name="destination.address2" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required></textarea>
+								</div>
+								<div class="single-element-widget mt-30">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-12">
+											<p class="fz-16 f700">BHK</p>
+										</div>	
+										<div class="col-lg-2 col-md-2 col-sm-6">
+											<div class="switch-wrap d-flex">
+												<p>1 BHK</p>
+												<div class="confirm-radio ml-10">
+													<input name="destination.bhk" type="radio" value="1 BHK" id="destination.bhk1">
+													<label for="destination.bhk1"></label>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-2 col-md-2 col-sm-6">
+											<div class="switch-wrap d-flex">
+												<p>2 BHK</p>
+												<div class="confirm-radio ml-10">
+													<input name="destination.bhk" type="radio" value="2 BHK" id="destination.bhk2">
+													<label for="destination.bhk2"></label>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-2 col-md-2 col-sm-6">
+											<div class="switch-wrap d-flex">
+												<p>3 BHK</p>
+												<div class="confirm-radio ml-10">
+													<input name="destination.bhk" type="radio" value="3 BHK" id="destination.bhk3">
+													<label for="destination.bhk3"></label>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-2 col-md-2 col-sm-6">
+											<div class="switch-wrap d-flex">
+												<p>4 BHK</p>
+												<div class="confirm-radio ml-10">
+													<input name="destination.bhk" type="radio" value="4 BHK" id="destination.bhk4">
+													<label for="destination.bhk4"></label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="switch-wrap d-flex">
+									<p class="fz-16 f700">Lift</p>
+									<div class="confirm-checkbox ml-10">
+										<input name="destination.lift" value="true" type="checkbox" id="destination.lift">
+										<label for="destination.lift"></label>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<center>
+							<div class="mt-10">
+								<input type="date" name="m_date" placeholder="Relocation Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Relocation Date'" id="m_date" required class="single-input">
+							</div>	
+							<a type="submit" href="https://www.goflytta.com/mover/add-details" target="_blank" class="genric-btn primary text-uppercase mt-30">Calculate Price</a>
+						</center>
+					</form>
+				</div>
+			</section>
+			<!--End calculate the moving cost -->
+
 			<!-- Start products Area -->
 			<section class="products-area section-gap">
 				<div class="container">
