@@ -234,7 +234,7 @@
   background-image: -ms-linear-gradient( 0deg, rgb(193,147,38) 0%, rgb(245,203,37) 100%);" id="movenow">
 				<div class="container" style="color: #000">
 					<h1>Move Calculator</h1><br/>
-					<form action="http://ec2-13-126-145-241.ap-south-1.compute.amazonaws.com:3013/flytta_api/v0.1/portal/mover/price" method="POST">
+					<form id="calculateForm">
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<h3 class="mb-30">Origin</h3>
@@ -294,7 +294,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-12">
 										<div class="switch-wrap d-flex">
 											<div class="confirm-checkbox ml-10">
-												<input name="origin.lift" value="true" type="checkbox" id="destination.lift">
+												<input name="origin.lift" value="true" type="checkbox" id="origin.lift">
 												<label for="origin.lift"></label>
 											</div>
 										</div>
@@ -304,10 +304,10 @@
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<h3 class="mb-30">Destination</h3>
 								<div class="mt-10">
-									<input type="text" name="destination.city" placeholder="Destination locality" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input">
+									<input type="text" name="destination.city" placeholder="Destination locality" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Destination locality'" id="destination.city" required class="single-input">
 								</div>								
 								<div class="mt-10">
-									<textarea class="single-textarea" name="destination.address2" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required></textarea>
+									<textarea class="single-textarea" name="destination.address2" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" id="destination.address2" required></textarea>
 								</div>
 								<div class="single-element-widget mt-30">
 									<div class="row">
@@ -364,14 +364,31 @@
 											</div>
 										</div>
 									</div>
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="switch-wrap d-flex">
+											<div class="confirm-checkbox ml-10">
+												<input name="destination.lift" value="true" type="checkbox" id="destination.lift">
+												<label for="destination.lift"></label>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
+						</div>						
+						<div class="row mt-10">
+							<div class="col-lg-2 col-md-2 col-sm-12">
+								<p class="fz-16 f700">Relocation Date</p>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-12">
+								<input type="date" name="m_date" placeholder="Relocation Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Relocation Date'" id="m_date" required class="single-input">
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-12"></div>
 						</div>
 						<center>
 							<div class="mt-10">
 								<input type="date" name="m_date" placeholder="Relocation Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Relocation Date'" id="m_date" required class="single-input">
 							</div>	
-							<a style="color: #000" type="submit" href="https://www.goflytta.com/mover/add-details" target="_blank" class="genric-btn primary text-uppercase mt-30">Calculate Price</a>
+							<button type="submit" class="genric-btn primary text-uppercase mt-30">Calculate Price</button>
 						</center>
 					</form>
 				</div>
@@ -635,7 +652,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> &nbsp
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA&libraries=places"></script>
   			<script src="js/easing.min.js"></script>			
 			<script src="js/hoverIntent.js"></script>
 			<script src="js/superfish.min.js"></script>	
@@ -647,7 +664,38 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> &nbsp
 			<script src="js/jquery.counterup.min.js"></script>
 			<script src="js/waypoints.min.js"></script>							
 			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+			<script src="js/main.js"></script>				
+			<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUuXndrnnJWLi85sQGI4BmGAsZliRDDcY&libraries=places"></script> -->
+			<!-- autocomplete script -->
+			<script type="text/javascript">
+				var originInput = document.getElementById('origin.city');
+				var destinationInput = document.getElementById('destination.city');
+				var options = {
+				  types: ['(regions)'],
+				  componentRestrictions: {country: 'In'}
+				};
+				autocomplete1 = new google.maps.places.Autocomplete(originInput, options);
+				autocomplete2 = new google.maps.places.Autocomplete(destinationInput, options);
+				console.log(autocomplete1);
+				console.log(autocomplete2);
+
+				$( "#calculateForm" ).submit(function( event ) {
+					  event.preventDefault();
+					  var postData = $('calculateForm').serializeArray();
+					  console.log(postData);
+					  $.ajax({
+					  type: "POST",
+					  url: "http://ec2-13-126-145-241.ap-south-1.compute.amazonaws.com:3013/flytta_api/v0.1/portal/mover/price",
+					  data: postData,
+					  success: function(data){
+					  	window.open("https://www.goflytta.com/mover/add-details","_blank")
+					  }
+					});
+					window.open("https://www.goflytta.com/mover/add-details","_blank")
+				});
+				
+			</script>
+
 		</body>
 	</html>
 
