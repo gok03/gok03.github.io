@@ -162,11 +162,17 @@
 										</div>
 									</div>
 								</div>
-								<div class="switch-wrap d-flex">
-									<p class="fz-16 f700">Lift</p>
-									<div class="confirm-checkbox ml-10">
-										<input name="origin.lift" value="true" type="radio" id="origin.lift">
-										<label for="origin.lift"></label>
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<p class="fz-16 f700">Lift Availability</p>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="switch-wrap d-flex">
+											<div class="confirm-checkbox ml-10">
+												<input name="origin.lift" value="true" type="checkbox" id="destination.lift">
+												<label for="origin.lift"></label>
+											</div>
+										</div>
 									</div>
 								</div>								
 							</div>
@@ -221,19 +227,31 @@
 										</div>
 									</div>
 								</div>
-								<div class="switch-wrap d-flex">
-									<p class="fz-16 f700">Lift</p>
-									<div class="confirm-checkbox ml-10">
-										<input name="destination.lift" value="true" type="checkbox" id="destination.lift">
-										<label for="destination.lift"></label>
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<p class="fz-16 f700">Lift Availability</p>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="switch-wrap d-flex">
+											<div class="confirm-checkbox ml-10">
+												<input name="destination.lift" value="true" type="checkbox" id="destination.lift">
+												<label for="destination.lift"></label>
+											</div>
+										</div>
 									</div>
 								</div>	
 							</div>
+						</div>						
+						<div class="row mt-10">
+							<div class="col-lg-2 col-md-2 col-sm-12">
+								<p class="fz-16 f700">Relocation Date</p>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-12">
+								<input type="date" name="m_date" placeholder="Relocation Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Relocation Date'" id="m_date" required class="single-input">
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-12"></div>
 						</div>
 						<center>
-							<div class="mt-10">
-								<input type="date" name="m_date" placeholder="Relocation Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Relocation Date'" id="m_date" required class="single-input">
-							</div>	
 							<a type="submit" href="https://www.goflytta.com/mover/add-details" target="_blank" class="genric-btn primary text-uppercase mt-30">Calculate Price</a>
 						</center>
 					</form>
