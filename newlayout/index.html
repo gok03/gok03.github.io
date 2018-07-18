@@ -136,7 +136,7 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
 								<div class="thumb">
-									<img src="img/Icon 2.png" style="max-width: 100%;max-height: 100%" alt="">
+									<img src="img/Icon 2.png" style="max-width: 90%;max-height: 100%" alt="">
 								</div>
 								<div class="details">
 									<h4>Enterprise Mobility</h4>
@@ -653,24 +653,42 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> &nbsp
 				  types: ['(regions)'],
 				  componentRestrictions: {country: 'In'}
 				};
+				//get the origin locality details 
 				autocomplete1 = new google.maps.places.Autocomplete(originInput, options);
+				google.maps.event.addListener(autocomplete1, 'place_changed', function (event) {
+					var place1 = autocomplete1.getPlace();  
+					originLat = place1.geometry.location.lat();
+					originLng = place1.geometry.location.lng();
+				});
+				//get the destination locality details
 				autocomplete2 = new google.maps.places.Autocomplete(destinationInput, options);
-				console.log(autocomplete1);
-				console.log(autocomplete2);
+				google.maps.event.addListener(autocomplete2, 'place_changed', function (event) {
+					var place2 = autocomplete2.getPlace();
+					destinationLat = place2.geometry.location.lat();
+					destinationLng = place2.geometry.location.lng();
+				});
 
 				$( "#calculateForm" ).submit(function( event ) {
 					  event.preventDefault();
-					  var postData = $('calculateForm').serializeArray();
+					  var postData = $('#calculateForm').serializeArray();
+					  postData.push({name:"origin.lat",value:originLat});
+					  postData.push({name:"origin.lng",value:originLng});
+
+					  postData.push({name:"destination.lat",value:destinationLat});
+					  postData.push({name:"destination.lng",value:destinationLng}); 
+
 					  console.log(postData);
 					  $.ajax({
 					  type: "POST",
-					  url: "http://ec2-13-126-145-241.ap-south-1.compute.amazonaws.com:3013/flytta_api/v0.1/portal/mover/price",
+					  url: "http://ec2-13-126-145-241.ap-south-1.compute.amazonaws.com:3013/flytta_api/v0.1/portal/mover/price_new",
 					  data: postData,
 					  success: function(data){
-					  	window.open("https://www.goflytta.com/mover/add-details","_blank")
+					  		if(data){
+					  			console.log(data);
+					  			window.open("https://www.goflytta.com/mover/add-details","_blank")
+					  		}
 					  }
-					});
-					window.open("https://www.goflytta.com/mover/add-details","_blank")
+					});					
 				});
 				
 			</script>
@@ -686,6 +704,341 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> &nbsp
 
 		</body>
 	</html>
+
+
+	<script type="text/javascript">
+		
+// exports.mover_price = function(req, res) {
+//     var data = req.body;
+//     console.log(data);
+//     var o_city= data["origin"]["city"];
+//     var o_area= data["origin"]["area"];
+//     var d_city= data["destination"]["city"];
+//     var d_area= data["destination"]["area"];
+//     var o_bhk= data["origin"]["BHK"];
+//     var d_bhk= data["destination"]["BHK"];
+//     var o_lift= data["origin"]["lift"];
+//     var d_lift= data["destination"]["lift"];
+//     if(data["origin"]["lift"] == "Yes" || data["origin"]["lift"] == "yes"){
+//       o_lift = true;
+//     }
+//     else{
+//       o_lift = false;
+//     }
+//     if(data["destination"]["lift"] == "Yes" || data["destination"]["lift"] == "yes"){
+//       d_lift = true;
+//     }
+//     else{
+//       d_lift  = false;
+//     }
+
+//     if(data["origin"]["lat"] && data["origin"]["lng"] && data["destination"]["lat"] && data["destination"]["lng"]){ 
+// 	console.log("latlon");
+//         distance.get({
+//             index :1,
+//             origin: data["origin"]["lat"]+','+data["origin"]["lng"],
+//             destination: data["destination"]["lat"]+','+data["destination"]["lng"]
+//         },
+//         function(err, dataDistance) {
+//           if (!err) 
+//             {
+//               calculateCost(dataDistance);
+//             }
+//             else{
+//               res.send({"data":"0"});
+//             }
+//         });
+//     }
+//     else{
+// 	console.log("city-area");
+//         distance.get({
+//             origin: o_city,
+//             destination: d_city
+//         },
+//         function(err, dataDistance) {
+//           if (!err) 
+//             {
+//               calculateCost(dataDistance);
+//             }
+//             else{
+//               res.send({"data":"0"});
+//             }
+//         });
+//     }
+        
+    
+// }
+
+// 	var data = req.body;
+// 	var o_city, d_city, o_bhk, d_bhk, o_lift, d_lift;
+// 	for(var i in data){
+// 		switch data["name"] {
+// 			case 'origin.city':{
+// 			              o_city = data[i]["value"];
+// 			              break;
+// 			          	}
+// 			case 'destination.city':{
+// 			              d_city = data[i]["value"];
+// 			              break;
+// 			          	}
+// 			case 'origin.bhk':{
+// 			              o_bhk = data[i]["value"];
+// 			              break;
+// 			          	}
+// 			case 'destination.bhk':{
+// 			              d_bhk = data[i]["value"];
+// 			              break;
+// 			          	} 
+// 			case 'origin.lift':{
+// 			              o_lift= data[i]["value"];
+// 			              break;
+// 			          	}
+// 			case 'destination.lift':{
+// 			              d_lift = data[i]["value"];
+// 			              break;
+// 			          	}           				          				          	
+// 		}
+// 	}
+// 	distance.get({
+//         origin: o_city,
+//         destination: d_city
+//     },
+//     function(err, dataDistance) {
+//       if (!err) 
+//         {
+//           calculateCost(dataDistance);
+//         }
+//         else{
+//           res.send({"data":"0"});
+//         }
+//     });
+    
+
+//     function calculateCost(dataDistance){
+//       console.log(dataDistance);
+//       var distance_price = 0;
+//       var extra_charge = 0;
+//       var total_mover_price = 0;
+//       var dict = {}; 
+//       db.collection('service_mover', function(err, collection) {
+//           collection.find().toArray(function(err, item2) {
+//               console.log(item2[0]);
+//               if (!err) {
+//                   if ((dataDistance["distanceValue"] / 1000) < 150) {
+//                       switch (o_bhk) {
+//                           case '1 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["1BHK"]);
+//                                   dict = item2[0]["1BHK"];
+//                                   break;
+//                               }
+//                           case '2 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["2BHK"]);
+//                                   dict = item2[0]["2BHK"];
+//                                   break;
+//                               }
+//                           case '3 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["3BHK"]);
+//                                   dict = item2[0]["3BHK"];
+//                                   break;
+//                               }
+//                           case '4 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["4BHK"]);
+//                                   dict = item2[0]["4BHK"];
+//                                   break;
+//                               }
+//                           case 'Villa':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["5BHK"]);
+//                                   dict = item2[0]["5BHK"];
+//                                   break;
+//                               }
+//                       }
+//                       if(o_lift){
+//                         dict["total"] = dict["total"] - dict["lift_o"];
+//                         dict["lift_o"] =0;
+//                       }
+//                       if(d_lift){
+//                         dict["total"] = dict["total"] - dict["lift_d"];
+//                         dict["lift_d"] =0;
+//                       }
+//                       if(dataDistance["distanceValue"]/1000 < 50){
+//                         dataDistance["distanceValue"] = 50000;
+//                       }
+//                       dict["moving"] = distance_price*(dataDistance["distanceValue"] / 1000);
+//                       dict["moving"] = parseFloat(dict["moving"].toFixed(2));
+//                       var temp_price = (distance_price*(dataDistance["distanceValue"] / 1000)) + dict["total"];
+//                       dict["sub_total"] = parseFloat(temp_price.toFixed(2));
+//                       for (var j in item2[0]["extra"]) {
+//                           extra_charge += (parseInt(item2[0]["extra"][j]) / 100) * temp_price;
+//                           dict[j] = parseFloat((((parseInt(item2[0]["extra"][j])) / 100) * temp_price).toFixed(2));
+//                       }
+//                       total_mover_price = extra_charge + temp_price;
+//                       dict["total"] = parseFloat(total_mover_price.toFixed(2));
+//                   } else if ((dataDistance["distanceValue"] / 1000) >= 150 && (dataDistance["distanceValue"] / 1000) < 500) {
+//                       switch (o_bhk) {
+//                           case '1 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["1BHK"]);
+//                                   dict = item2[0]["1BHK"];
+//                                   break;
+//                               }
+//                           case '2 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["2BHK"]);
+//                                   dict = item2[0]["2BHK"];
+//                                   break;
+//                               }
+//                           case '3 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["3BHK"]);
+//                                   dict = item2[0]["3BHK"];
+//                                   break;
+//                               }
+//                           case '4 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["4BHK"]);
+//                                   dict = item2[0]["4BHK"];
+//                                   break;
+//                               }
+//                           case '5 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["5BHK"]);
+//                                   dict = item2[0]["5BHK"];
+//                                   break;
+//                               }
+//                       }
+//                       if(o_lift){
+//                         dict["total"] = dict["total"] - dict["lift_o"];
+//                         dict["lift_o"] =0;
+//                       }
+//                       if(d_lift){
+//                         dict["total"] = dict["total"] - dict["lift_d"];
+//                         dict["lift_d"] =0;
+//                       }
+//                       dict["moving"] = (distance_price*(dataDistance["distanceValue"] / 1000)) + (distance_price*50);
+//                       dict["moving"] = parseFloat(dict["moving"].toFixed(2));
+//                       var temp_price = (distance_price*(dataDistance["distanceValue"] / 1000)) + (distance_price*50) + dict["total"];
+//                       dict["sub_total"] = parseFloat(temp_price.toFixed(2));
+//                       for (var j in item2[0]["extra"]) {
+//                           extra_charge += (parseInt(item2[0]["extra"][j]) / 100) * temp_price;
+//                           dict[j] =parseFloat((((parseInt(item2[0]["extra"][j])) / 100) * temp_price).toFixed(2));
+//                       }
+//                       total_mover_price = extra_charge + temp_price;
+//                       dataDistance["total"] = parseFloat(total_mover_price.toFixed(2));
+//                   }
+//                   else if ((dataDistance["distanceValue"] / 1000) >= 500 && (dataDistance["distanceValue"] / 1000) < 1000) {
+//                       switch (o_bhk) {
+//                           case '1 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["1BHK"]);
+//                                   dict = item2[0]["1BHK"];
+//                                   break;
+//                               }
+//                           case '2 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["2BHK"]);
+//                                   dict = item2[0]["2BHK"];
+//                                   break;
+//                               }
+//                           case '3 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["3BHK"]);
+//                                   dict = item2[0]["3BHK"];
+//                                   break;
+//                               }
+//                           case '4 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["4BHK"]);
+//                                   dict = item2[0]["4BHK"];
+//                                   break;
+//                               }
+//                           case '5 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["5BHK"]);
+//                                   dict = item2[0]["5BHK"];
+//                                   break;
+//                               }
+//                       }
+//                       if(o_lift){
+//                         dict["total"] = dict["total"] - dict["lift_o"];
+//                         dict["lift_o"] = 0;
+//                       }
+//                       if(d_lift){
+//                         dict["total"] = dict["total"] - dict["lift_d"];
+//                         dict["lift_d"]= 0;
+//                       }
+//                       dict["moving"] = (distance_price*(dataDistance["distanceValue"] / 1000)) + (distance_price*50);
+//                       dict["moving"] = parseFloat(dict["moving"].toFixed(2));
+//                       var temp_price = (distance_price*(dataDistance["distanceValue"] / 1000)) + (distance_price*50) + dict["total"];
+//                       dict["sub_total"] = parseFloat(temp_price.toFixed(2));
+//                       for (var j in item2[0]["extra"]) {
+//                           extra_charge += (parseInt(item2[0]["extra"][j]) / 100) * temp_price;
+//                           dict[j] =parseFloat((((parseInt(item2[0]["extra"][j])) / 100) * temp_price).toFixed(2));
+//                       }
+//                       total_mover_price = extra_charge + temp_price;
+//                       dict["total"] = parseFloat(total_mover_price.toFixed(2));
+//                   }else if ((dataDistance["distanceValue"] / 1000) >= 1000 && (dataDistance["distanceValue"] / 1000) < 2000) {
+//                       switch (o_bhk) {
+//                           case '1 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["1BHK"]);
+//                                   dict = item2[0]["1BHK"];
+//                                   break;
+//                               }
+//                           case '2 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["2BHK"]);
+//                                   dict = item2[0]["2BHK"];
+//                                   break;
+//                               }
+//                           case '3 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["3BHK"]);
+//                                   dict = item2[0]["3BHK"];
+//                                   break;
+//                               }
+//                           case '4 BHK':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["4BHK"]);
+//                                   dict = item2[0]["4BHK"];
+//                                   break;
+//                               }
+//                           case 'Villa':
+//                               {
+//                                   distance_price = parseInt(item2[0]["cat_1"]["5BHK"]);
+//                                   dict = item2[0]["5BHK"];
+//                                   break;
+//                               }
+//                       }
+//                       if(o_lift){
+//                         dict["total"] = dict["total"] - dict["lift_o"];
+//                         dict["lift_o"] =0;
+//                       }
+//                       if(d_lift){
+//                         dict["total"] = dict["total"] - dict["lift_d"];
+//                         dict["lift_d"] =0;
+//                       }
+//                       dict["moving"] = (distance_price*(dataDistance["distanceValue"] / 1000)) + (distance_price*50);
+//                       dict["moving"] = parseFloat(dict["moving"].toFixed(2));
+//                       var temp_price = (distance_price*(dataDistance["distanceValue"] / 1000)) + (distance_price*50) + dict["total"];
+//                       dict["sub_total"] = parseFloat(temp_price.toFixed(2));
+//                       for (var j in item2[0]["extra"]) {
+//                           extra_charge += (parseInt(item2[0]["extra"][j]) / 100) * temp_price;
+//                           dict[j] =parseFloat((((parseInt(item2[0]["extra"][j])) / 100) * temp_price).toFixed(2));
+//                       }
+//                       total_mover_price = extra_charge + temp_price;
+//                       dict["total"] = parseFloat(total_mover_price.toFixed(2));
+//                   }
+//                   return dict;
+//               }
+//           });
+//       });
+//     }
+// 	</script>
 
 
 
