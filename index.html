@@ -29,6 +29,7 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/range-slider.css">
 		</head>
 		<body>	
 			  <header id="header" id="home">
@@ -75,7 +76,7 @@
 				          <li><a target="_blank" href="https://blog.goflytta.com/">Blog</a></li>						          
 				          <li><a href="team.html">Team</a></li>					          
 				          <li><a href="contact.html">Contact</a></li>			
-				          <li><a class="genric-btn primary-border small" href="index.html#movenow">Move Now</a></li>             
+				          <li id="move_now"><a class="genric-btn primary-border small" href="index.html#movenow">Move Now</a></li>             
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -124,7 +125,7 @@
 								<div class="thumb">
 									<img src="img/icon 1.png" style="max-width: 100%;max-height: 100%" alt="">
 								</div>
-								<div class="details">
+								<div class="details" style="max-height: 217px;min-height: 217px">
 									<h4>Relocation</h4>
 									<p>
 										At a single click estimate your moving cost and finalise our verified vendor for your relocation. You pay only for what you move.
@@ -138,7 +139,7 @@
 								<div class="thumb">
 									<img src="img/Icon 2.png" style="max-width: 90%;max-height: 100%" alt="">
 								</div>
-								<div class="details">
+								<div class="details" style="max-height: 217px;min-height: 217px">
 									<h4>Enterprise Mobility</h4>
 									<p>
 										Emap provides you a hand holding tool to organise and monitoring all your employees relocation.
@@ -166,7 +167,7 @@
 								<div class="thumb">
 									<img src="img/Icon 3.png" style="max-width: 100%;max-height: 100%" alt="">
 								</div>
-								<div class="details">
+								<div class="details" style="max-height: 217px;min-height: 217px">
 									<h4>Logistics and Supply Chain</h4>
 									<p>
 										 Channelise your logistics using our supply chain model with complet damage proof solution.
@@ -182,7 +183,7 @@
 
 			<!-- Start home-about Area -->
 			<section class="home-about-area">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-lg-6 home-about-left no-padding">
 							<img class="mx-auto d-block img-fluid" src="img/about vector_3.png" alt="">
@@ -233,8 +234,54 @@
   background-image: -ms-linear-gradient( 0deg, rgb(193,147,38) 0%, rgb(245,203,37) 100%);" id="movenow">
 				<div class="container" style="color: #000">
 					<center><h1>Move Calculator</h1><br/></center>
+					<div class="row">
+						<div class="col-lg-4 col-md-12 col-sm-12">
+							<h3 class="mt-30" style="font-weight: 400">Now get an instant move quote with Flytta's adaptive price recommendation built using machine learning, trained based on our 2000+ services</h3>
+						</div>
+					<div class="col-lg-8 col-md-12 col-sm-12">
 					<form id="calculateForm" target="_blank" action="https://relocation.goflytta.com/mover/add-details" method="POST">
-						<div class="row">
+						<div class="row" style="margin-left: 10%;margin-right:10%">
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<div class="mt-10">
+									<p class="fz-16 f700 mt-20">Moving From</p>
+								</div>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-12">
+								<div class="mt-10">
+									<input type="text" name="origin.city" placeholder="Origin locality" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input" id="origin.city">
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<div class="mt-10">
+									<p class="fz-16 f700 mt-20">Moving To</p>
+								</div>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-12">
+								<div class="mt-10">
+									<input type="text" name="destination.city" placeholder="Destination locality" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Destination locality'" id="destination.city" required class="single-input">
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<div class="mt-20">
+									<p class="fz-16 f700">BHK</p>
+								</div>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-12">
+								<!-- <div class="switch-wrap d-flex">
+ -->								<div class="slidecontainer mt-10 " style="border: solid 1px #666">
+									  <input class="mt-10 ml-5" style="width: 80%" name="myRange" step="10" type="range" min="0" max="50" value="20" class="slider" id="myRange" onchange="changeValue()">	
+									  <label><span id="bhkval" class="f400 ml-10 mr-5">2 BHK</span></label>
+									</div>
+									
+								<!-- </div> -->
+							</div>
+							<!-- <div class="col-lg-2 col-md-2 col-sm-12">
+								<div class="mt-10">
+									<p>2 BHK</p>
+								</div>
+							</div> -->
+						</div>
+						<!-- <div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<center><h3 class="mb-30">Origin</h3></center>
 								<div class="mt-10">
@@ -287,10 +334,10 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="col-lg-4 col-md-4 col-sm-6">
 										<p class="fz-16 f700">Lift Availability</p>
 									</div>
-									<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="col-lg-4 col-md-4 col-sm-6">
 										<div class="switch-wrap d-flex">
 											<div class="confirm-checkbox ml-10">
 												<input name="origin.lift" value="true" type="checkbox" id="origin.lift">
@@ -374,11 +421,21 @@
 								<input type="date" name="m_date" placeholder="Relocation Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Relocation Date'" id="m_date" required class="single-input">
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-12"></div>
-						</div>
+						</div> -->
+						<hr style="width:80%;margin-left: 10%">
 						<center>	
-							<button type="submit" class="genric-btn primary text-uppercase mt-30" style="background: #666">Calculate Price</button>
+							<button id="calculateButton" type="submit" class="genric-btn primary text-uppercase mt-30" style="background: #666">Calculate Price</button>
 						</center>
 					</form>
+					<center>
+						<div style="display: none;" id="estimatebutton">
+							<p class="fz-16 f700">Estimated Cost : Rs <span id="estimateCost"></span> approx.</p>
+							<a href="#" class="genric-btn default" onclick="continueMovers()"><span class="fz-16 f700">Continue</span></a>
+						</div>
+					</center>
+					</div>
+					</div>
+					
 				</div>
 			</section>
 			<!--End calculate the moving cost -->
@@ -437,7 +494,7 @@
 						</div>
 					</div>							
 					<div class="row">
-						<div class="col-lg-4 col-md-6">
+						<div class="col-lg-4 col-md-4">
 							<div class="single-feature">
 								<a href="#" class="title d-flex flex-row">
 									<span class="lnr lnr-user"></span>
@@ -445,7 +502,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6">
+						<div class="col-lg-4 col-md-4">
 							<div class="single-feature">
 								<a href="#" class="title d-flex flex-row">
 									<span class="lnr lnr-license"></span>
@@ -453,7 +510,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6">
+						<div class="col-lg-4 col-md-4">
 							<div class="single-feature">
 								<a href="#" class="title d-flex flex-row">
 									<span class="lnr lnr-phone"></span>
@@ -579,17 +636,17 @@
 			<footer class="footer-area" style="background: #232526;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- "> <div class="container">
+ "> 			<div class="container">
 					<div class="row">
-						<div class="col-lg-3 col-md-12">
+						<div class="col-lg-3 col-md-4 col-sm-12">
 							<div class="single-footer-widget mail-chimp">
 								<h6 class="mb-20"></h6>
 								<br/>
-								<img src="img/flytta_logo_2018_white.png" alt="" style="width: 300px;padding-top: 10px">
+								<img src="img/flytta_logo_2018_white.png" alt="" style="width: 100%;padding-top: 10px">
 							</div>
 						</div>	
-						<div class="col-lg-1"></div>
-						<div class="col-lg-2 col-md-8"  style="padding-top: 40px">
+						<div class="col-lg-1 col-md-1 col-sm-12"></div>
+						<div class="col-lg-2 col-md-3 col-sm-6"  style="padding-top: 40px">
 							<div class="single-footer-widget">
 								<h6>Company</h6>
 								<ul class="footer-nav">
@@ -599,7 +656,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 								</ul>
 							</div>
 						</div>	
-						<div class="col-lg-2 col-md-8"  style="padding-top: 40px">
+						<div class="col-lg-3 col-md-4 col-sm-6"  style="padding-top: 40px">
 							<div class="single-footer-widget">
 								<h6>Terms</h6>
 								<ul class="footer-nav">
@@ -609,8 +666,8 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 									<li><a target="_blank" href="http://web.goflytta.com/Infringement-Policy">Infringement Policy</a></li>
 								</ul>
 							</div>
-						</div>	
-						<div class="col-lg-4 col-sm-12 footer-social" style="padding-top: 10%">
+						</div>							
+						<div class="col-lg-3 col-md-12 col-sm-6 footer-social text-center mobile-footer-links">
 							<a target="_blank" href="https://www.facebook.com/goflytta/"><i class="fa fa-facebook"></i></a>
 							<a target="_blank" href="https://twitter.com/flyttainc"><i class="fa fa-twitter"></i></a>
 							<a target="_blank" href="https://www.linkedin.com/company/flytta"><i class="fa fa-linkedin"></i></a>
@@ -618,13 +675,14 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 						</div>				
 					</div>
 
-					<div class="row footer-bottom d-flex justify-content-between">
-						<p class="col-lg-8 col-sm-12 footer-text m-0 text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					
+				</div>
+				<div class="container-fluid footer-bottom d-flex justify-content-between">
+						<p class=" footer-text m-0 text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> &nbsp Flytta Innovations Private Limited</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 						<br/>.
 					</div>
-				</div>
 			</footer>
 			<!-- End footer Area -->	
 
@@ -647,6 +705,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> &nbsp
 			<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUuXndrnnJWLi85sQGI4BmGAsZliRDDcY&libraries=places"></script> -->
 			<!-- autocomplete script -->
 			<script type="text/javascript">
+				var originLat,originLng,destinationLat,destinationLng;
+				var bhkValue = "2 BHK";
+				var postData, estimateTotal;
+
 				var originInput = document.getElementById('origin.city');
 				var destinationInput = document.getElementById('destination.city');
 				var options = {
@@ -668,9 +730,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> &nbsp
 					destinationLng = place2.geometry.location.lng();
 				});
 
+				function changeValue(){
+					var rangeValue = $("#myRange").val();
+					if(rangeValue == 10){
+						bhkValue = "1 BHK";
+					}
+					else if(rangeValue == 20){
+						bhkValue = "2 BHK";
+					}
+					else if(rangeValue == 30){
+						bhkValue = "3 BHK";
+					}
+					else if(rangeValue == 40){
+						bhkValue = "4 BHK";
+					}
+					else if(rangeValue == 40){
+						bhkValue = "Villa";
+					}
+					$("#bhkval").html(bhkValue);
+				}
+
 				$( "#calculateForm" ).submit(function( event ) {
+					console.log(bhkValue);
 					  event.preventDefault();
-					  var postData = $('#calculateForm').serializeArray();
+					  postData = $('#calculateForm').serializeArray();
+					  postData.push({name:"origin.bhk",value:bhkValue});
 					  postData.push({name:"origin.lat",value:originLat});
 					  postData.push({name:"origin.lng",value:originLng});
 
@@ -684,30 +768,39 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> &nbsp
 					  data: postData,
 					  success: function(data){
 					  		if(data){
-					  			console.log(postData);
-					  			var url = "https://relocation.goflytta.com/mover/add-details?";
-					  			for(var i in postData){
-					  				if(postData[i]["name"]!="origin.lat" && postData[i]["name"]!="origin.lng" && postData[i]["name"]!="destination.lat" && postData[i]["name"]!="destination.lng"){
-					  						url += postData[i]["name"]+"="+postData[i]["value"]+"&";
-					  				}
-					  			}
-					  			url += "estimatedCharge="+data["dict"]["total"];
-					  			window.open(url,"_blank")
+					  			estimateTotal = data["dict"]["total"];
+					  			console.log(data);
+
+					  			$("#estimatebutton").show();
+					  			$("#estimateCost").html(estimateTotal);
+					  			$("#calculateButton").hide();
 					  		}
 					  }
 					});					
-				});
+				});				
+
+				function continueMovers(){
+					var url = "https://relocation.goflytta.com/mover/add-details?";
+		  			for(var i in postData){
+		  				if(postData[i]["name"]!="origin.lat" && postData[i]["name"]!="origin.lng" && postData[i]["name"]!="destination.lat" && postData[i]["name"]!="destination.lng" && postData[i]["name"]!="myRange"){
+		  						url += postData[i]["name"]+"="+postData[i]["value"]+"&";
+		  				}
+		  			}
+		  			url += "estimatedCharge="+estimateTotal;
+		  			window.open(url,"_blank");
+				}
 				
 			</script>
 			<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100555330-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100555330-2"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
 
-  gtag('config', 'UA-100555330-2');
-</script>
+			  gtag('config', 'UA-100555330-2');
+			</script>
 
 		</body>
 	</html>
+

@@ -597,7 +597,7 @@ td, th {
   text-align: left;
 }
 
-.text-rigth {
+.text-right {
   text-align: right;
 }
 
@@ -2127,6 +2127,11 @@ h1, h2, h3, h4, h5, h6 {
     top: 22px;
   }
 }
+@media (max-width: 767px) {
+  #move_now {
+    display: none;
+  }
+}
 
 #mobile-nav-toggle i {
   color: #fff;
@@ -2456,7 +2461,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .home-about-right {
-  padding-right: 20%;
+  /*padding-right: 20%;*/
   padding-left: 4%;
 }
 
@@ -2646,6 +2651,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .blog-area .detais .date {
   color: #222;
+}
+@media (min-width: 768.98px) {
+  .mobile-footer-links {
+    padding-top: 10%;
+  }
 }
 
 .footer-area {

@@ -75,7 +75,7 @@
 				          <li><a target="_blank"  href="https://blog.goflytta.com/">Blog</a></li>						          
 				          <li><a href="team.html">Team</a></li>					          
 				          <li><a href="contact.html">Contact</a></li>			
-				          <li><a class="genric-btn primary-border small" href="index.html#movenow">Move Now</a></li>             
+				          <li id="move_now"><a class="genric-btn primary-border small" href="index.html#movenow">Move Now</a></li>             
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -89,7 +89,7 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Flytta			
+								FLYTTA		
 							</h1>	
 							<p class="text-white link-nav">About Us</p>
 						</div>	
@@ -116,8 +116,10 @@
 							</p>
 						</div>
 						<div class="col-md-6 col-sm-12">
-								<div class="single-gallery-image" style="background: url(img/flytta_logo_2018.png);"></div>
+							<div class="single-gallery-image text-right">
+								<img src="img/flytta_logo_2018.png" width="75%">
 							</div>
+						</div>
 					</div>
 				</div>	
 			</section>
@@ -125,17 +127,17 @@
 
 			<!-- Start home-about Area -->
 			<section class="home-about-area">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-lg-6 ">
-							<img class="mx-auto d-block img-fluid" src="img/clients.png" alt="">
-						</div>
-						<div class="col-lg-6 home-about-right no-padding">
+						<div class="col-lg-12 home-about-right no-padding text-center">
 							<h1> Our Clientele</h1><p>
 								<span>Flytta provides hassle free relocation for the company and their employees</span>
 							</p><br/>
 							<a target="_blank" class="primary-btn" href="https://corporate.goflytta.com/">corporate.goflytta.com</a>
 						</div>
+						<div class="col-lg-12 ">
+							<img class="mx-auto d-block img-fluid" src="img/clients.png" alt="" width="80%">
+						</div>						
 					</div>
 				</div>	
 			</section>
@@ -144,7 +146,7 @@
 			<!-- Start brand Area -->
 			<section class="brand-area section-gap">
 				<div class="container">
-					<h1>In the news <br><br/>
+					<h1 class="text-center">In the news <br><br/>
 					<div class="row align-items-center">
 						<div class="col single-brand">
 							<a target="_blank" href="https://www.thehindu.com/todays-paper/tp-features/tp-downtown/engineering-a-solution-for-the-relocation-blues/article14401449.ece1"><img class="img-fluid" src="img/hindi_w.png" alt=""></a>
@@ -163,12 +165,15 @@
 						</div>
 					</div>
 					<br><br>
-					<h1>Our Investor </h1><br>
-						<img class="img-fluid" src="img/logo_cvc.png" alt=""><br><br>
+					<h1 class="text-center">Our Investor </h1><br>
+						<center><img class="img-fluid" src="img/logo_cvc.png" alt=""></center><br><br>
 						<p>
 								Corvus Ventures helps early stage startups succeed. Founded by respected technology professionals, Corvus Ventures assists early stage startups to achieve growth and visibility by providing them access to knowledge, resources, working space and a network of mentors and investors. Corvus Ventures is an enabler for the startup to scale. It is currently based out of India with its headquarters in Hyderabad.
-							</p><br>	
-							<a target="_blank" class="primary-btn text-uppercase" href="http://www.corvusvc.com/">Visit corvusvc.com</a>
+							</p><br>
+							<div class="text-center">
+								<a target="_blank" class="primary-btn text-uppercase" href="http://www.corvusvc.com/">Visit corvusvc.com</a>
+							</div>	
+							
 					</div>
 				</div>	
 			</section>
@@ -178,17 +183,17 @@
 			<footer class="footer-area" style="background: #232526;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- "> <div class="container">
+ "> 			<div class="container">
 					<div class="row">
-						<div class="col-lg-3 col-md-12">
+						<div class="col-lg-3 col-md-4 col-sm-12">
 							<div class="single-footer-widget mail-chimp">
 								<h6 class="mb-20"></h6>
 								<br/>
-								<img src="img/flytta_logo_2018_white.png" alt="" style="width: 300px;padding-top: 10px">
+								<img src="img/flytta_logo_2018_white.png" alt="" style="width: 100%;padding-top: 10px">
 							</div>
 						</div>	
-						<div class="col-lg-1"></div>
-						<div class="col-lg-2 col-md-8"  style="padding-top: 40px">
+						<div class="col-lg-1 col-md-1 col-sm-12"></div>
+						<div class="col-lg-2 col-md-3 col-sm-6"  style="padding-top: 40px">
 							<div class="single-footer-widget">
 								<h6>Company</h6>
 								<ul class="footer-nav">
@@ -198,7 +203,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 								</ul>
 							</div>
 						</div>	
-						<div class="col-lg-2 col-md-8"  style="padding-top: 40px">
+						<div class="col-lg-3 col-md-4 col-sm-6"  style="padding-top: 40px">
 							<div class="single-footer-widget">
 								<h6>Terms</h6>
 								<ul class="footer-nav">
@@ -208,8 +213,8 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 									<li><a target="_blank" href="http://web.goflytta.com/Infringement-Policy">Infringement Policy</a></li>
 								</ul>
 							</div>
-						</div>	
-						<div class="col-lg-4 col-sm-12 footer-social" style="padding-top: 10%">
+						</div>							
+						<div class="col-lg-3 col-md-12 col-sm-6 footer-social text-center mobile-footer-links">
 							<a target="_blank" href="https://www.facebook.com/goflytta/"><i class="fa fa-facebook"></i></a>
 							<a target="_blank" href="https://twitter.com/flyttainc"><i class="fa fa-twitter"></i></a>
 							<a target="_blank" href="https://www.linkedin.com/company/flytta"><i class="fa fa-linkedin"></i></a>
@@ -217,13 +222,14 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 						</div>				
 					</div>
 
-					<div class="row footer-bottom d-flex justify-content-between">
-						<p class="col-lg-8 col-sm-12 footer-text m-0 text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					
+				</div>
+				<div class="container-fluid footer-bottom d-flex justify-content-between">
+						<p class=" footer-text m-0 text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> &nbsp Flytta Innovations Private Limited</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 						<br/>.
 					</div>
-				</div>
 			</footer>
 			<!-- End footer Area -->	
 			<!-- Global site tag (gtag.js) - Google Analytics -->
